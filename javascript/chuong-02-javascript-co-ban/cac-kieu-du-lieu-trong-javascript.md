@@ -6,11 +6,11 @@ keywords:
     "khoá học javascript",
     "kiểu dữ liệu trong JavaScript",
     "ep kieu du lieu trong javascript",
-    "kieu du lieu",
+    "kieu du lieu trong javascript",
     "Kiểm tra kiểu dữ liệu trong JavaScript",
-    "Các kiểu dữ liệu trong Java",
-    "các kiểu dữ liệu trong java dùng để làm gì",
-    "các kiểu dữ liệu hợp lệ",
+    "các kiểu dữ liệu trong javascript dùng để làm gì",
+    "các kiểu dữ liệu hợp lệ trong javascript",
+    "Kiểu dữ liệu trong javascript là gì",
     "Kiểu dữ liệu là gì",
     "Kiểu dữ liệu Javascript"
   ]

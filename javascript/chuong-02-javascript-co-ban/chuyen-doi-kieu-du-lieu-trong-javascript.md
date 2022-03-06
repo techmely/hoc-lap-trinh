@@ -5,14 +5,14 @@ keywords:
   [
     "khoá học javascript",
     "Chuyển đổi kiểu dữ liệu trong Javascript",
-    "Chuyển đổi kiểu dữ liệu",
+    "chuyen doi kieu du lieu trong javascript",
     "chuyen tu string sang int trong javascript",
     "cac kieu du lieu trong javascript",
     "javascript chuyen so thanh chu",
     "kiem tra kieu du lieu nhap vao trong javascript",
-    "cach doi kieu du lieu",
+    "cach doi kieu du lieu javascript",
     "kieu number trong javascript",
-    "Đổi kiểu dữ liệu",
+    "Đổi kiểu dữ liệu trong Javascript",
   ]
 author:
   fullname: Techmely Team
