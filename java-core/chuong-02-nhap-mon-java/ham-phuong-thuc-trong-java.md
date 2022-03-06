@@ -1,0 +1,210 @@
+---
+title: "Hàm - Phương thức trong Java"
+description: "Hàm hay phương thức (method) trong Java là khối lệnh thực hiện các chức năng, các hành vi xử lý của lớp lên vùng dữ liệu."
+keywords:
+  [
+    "ham trong java",
+    "hàm trong java",
+    "phuong thuc trong java",
+    "phương thức trong java",
+    "biến static và hàm static trong java",
+    "bài tập về hàm trong java",
+    "các hàm cơ bản trong java",
+    "các phương thức của string trong java",
+    "các phương thức trong java",
+    "cách dùng phương thức trong java",
+    "cách gọi hàm trong hàm main java",
+    "cách sử dụng hàm boolean trong java",
+    "cách tạo hàm trong java",
+    "cách viết hàm main trong java",
+    "ghi đè phương thức trong java",
+    "gọi phương thức trong java",
+    "hàm và phương thức trong java",
+    "khai báo phương thức trong java",
+    "khởi tạo phương thức trong java",
+  ]
+author:
+  fullname: Techmely Team
+  username: Techmely Team
+  avatar: "/configs/author/logo.jpg"
+chapter:
+  name: "Nhập môn Java"
+  slug: "chuong-02-nhap-mon-java"
+category:
+  logo: "/language/java.png"
+  name: "Java"
+  slug: "java"
+  description: "Học Java từ cơ bản đến thông thạo cho mọi đối tượng"
+image: https://static.javatpoint.com/core/images/method-in-java.png
+position: 12
+---
+
+Hàm hay phương thức (method) trong Java là một khối lệnh để thực hiện một hành động cụ thể. Ví dụ khi chúng ta gọi hàm `System.out.println()` thì hệ thống sẽ hiện thị dữ liệu của chúng ta truyền vào.
+
+## Hàm trong java
+
+Cú pháp:
+
+```java
+modifier returnType nameOfMethod (Parameter List) {
+   // method body
+}
+```
+
+Trong đó:
+
+- **Modifiers**: Tạm dịch là phạm vi sửa đổi và truy cập
+- **returnType**: Là kiểu dữ liệu trả về
+- **nameOfMethod**: Là tên của hàm (method)
+- **Parameter** là các tham số đầu vào của hàm (có thể có nhiều tham số với nhiều kiểu dữ liệu khác nhau)
+- **method body**: là các mã code bên trong hàm
+
+<div class="example">Viết hàm tính tổng 2 chữ số a và b</div>
+
+```java
+public static int tongHaiSo(int a, int b) {
+  return a + b;
+}
+```
+
+## Thao tác với hàm (method)
+
+Trước khi chúng ta tìm hiểu về cách gọi hàm thì chúng ta tìm hiểu về các loại hàm. Java có 2 loại hàm, mỗi loại sẽ có cách gọi khác nhau:
+
+- Hàm có trả về kết quả
+- Hàm không trả về kết quả
+
+### Hàm có trả về kết quả
+
+Đối với hàm có kết quả trả về, chúng ta cần dùng từ khoá `return` để trả về kết qủa mà nó đã tính toán được. Khai báo biến có kiểu dữ kiệu tương ứng với kết quả trả về của hàm để nhận giá trị trả về.
+
+Như ví dụ tìm `tongHaiSo()` của chúng ta, nhiệm vụ của nó là tính tổng của 2 số nguyên **a, b** nhập vào thì kết quả sẽ ra một số nguyên. Tức là kiểu trả về (returnType) là một số nguyên (int) và kết quả của `return` cũng là một số nguyên (int). Chúng ta sẽ dùng biến có kiểu dữ liệu tương ứng để nhận kết quả trả về từ hàm.
+
+<div class="example"></div>
+
+```java
+public class Thaycacac {
+
+  public static int tongHaiSo(int a, int b) {
+    return a + b;
+  }
+
+  public static void main(String[] args) {
+    int sum = tongHaiSo(2,5);
+    System.out.println(sum);
+  }
+}
+```
+
+### Hàm không trả về kết quả
+
+Đối với loại hàm này chúng ta chỉ cần gọi để sử dụng.
+
+<div class="example"></div>
+
+```java
+public static void printHello() {
+  System.out.println("Hello");
+}
+```
+
+Hàm `printHello()` là một hàm không có kiểu trả về (returnType) nên được thay thế thành `void`. Từ khoá `void` cho chúng ta biết là method đó sẽ không có kết quả trả về.
+
+### Tóm tắt cú pháp
+
+Hàm có kết quả trả về
+
+```java
+modifier returnType nameOfMethod (Parameter List) {
+  // method body
+}
+```
+
+Hàm không có kết quả trả về
+
+```java
+<modifier> void methodName(Danh sách các tham số) {
+  // body
+}
+```
+
+## Truyền tham số khi gọi hàm (method)
+
+Khi bạn gọi đến một hàm đã được định và nó có danh sách các thông số nhất định. Thì khi gọi các bạn sẽ phải truyền đúng **thứ tự** và **kiểu dữ liệu** cho từng tham số. Nếu sai xót trong quá trình này có thể dẫn đến biên dịch lỗi hoặc là kết quả không đúng như mong muốn.
+
+## Truyền tham số theo giá trị (Passing Parameters by Value)
+
+<div class="example"></div>
+
+```java
+public class Thaycacac {
+
+  public static void hanDoiViTri(int a, int b) {
+    int c = a;
+    a = b;
+    b = c;
+    System.out.println("Sau khi hoán đổi: " + "a = " + a + " b= " + b);
+  }
+
+  public static void main(String[] args) {
+    int a = 5, b = 3;
+    System.out.println("Trước khi hoán đổi: " + "a = " + a + " b= " + b);
+    hanDoiViTri(a, b);
+  }
+}
+```
+
+<div class="window">
+  <div class="window-header">
+    <div class="action-buttons"></div>
+    <span class="title-popup">Kết quả</span>
+  </div>
+  <div class="window-body">
+    <code>Sau khi hoán đổi: a = 3 b= 5</code><br/>
+    <code>Trước khi hoán đổi: a = 5 b= 3</code>
+  </div>
+</div>
+
+<div class="note">
+  <ul>
+    <li>Hàm hoanDoiViTri sẽ không làm ảnh hưởng đến giá trị của của các tham số truyền vào.</li>
+    <li>Trong một class nếu có 2 method cùng tên và cùng tham số đầu vào thì trình biên dịch sẽ báo lỗi</li>
+    <li>Thông thường trong một lớp các phương thức nên được khai báo dùng từ khóa public, khác với vùng dữ liệu thường là dùng tiền tố private vì mục đích an toàn.</li>
+  </ul>
+</div>
+
+## Method overloading
+
+Nếu 2 method có cùng tên nhưng khác tham số đầu vào thì đó gọi là method overloading.
+
+<div class="example">
+  chúng ta có 2 hàm tìm số nhỏ nhất trong 2 và 3 số
+</div>
+
+```java
+public class Thaycacac {
+  public static int min(int a, int b) {
+    if (a <= b){
+      return a;
+    } else {
+      return b;
+    }
+  }
+
+  public static int min(int a, int b, int c) {
+    if (a <= b && a <= c){
+      return a;
+    } else if (b <= a && b <= c){
+      return b;
+    } else {
+      return c;
+    }
+  }
+
+  public static void main(String[] args) {
+    int a = 5, b = 3;
+    System.out.println(min(a, b, -1));
+    System.out.println(min(a, b));
+  }
+}
+```
