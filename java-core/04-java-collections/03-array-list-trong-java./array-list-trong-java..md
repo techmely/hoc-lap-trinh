@@ -2,10 +2,6 @@
 title: "ArrayList trong Java"
 description: "Bài này chúng ta sẽ tìm hiểu về List trong Java, chia sẻ kiến thức về java"
 keywords: []
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"

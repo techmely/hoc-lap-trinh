@@ -15,10 +15,6 @@ keywords:
     "Biến static final trống trong Java",
     "Đối số final trong Java",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

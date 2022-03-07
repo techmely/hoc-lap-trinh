@@ -13,10 +13,6 @@ keywords:
     "vòng lặp while trong java cơ bản",
     "vòng lặp while trong java example",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

@@ -2,10 +2,6 @@
 title: "Lớp Wrapper trong Java"
 description: "Lớp Wrapper trong java cung cấp cơ chế để chuyển đổi kiểu dữ liệu nguyên thủy thành kiểu đối tượng và từ đối tượng thành kiểu dữ liệu nguyên thủy"
 keywords: []
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

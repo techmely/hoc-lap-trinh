@@ -13,10 +13,6 @@ keywords:
     "hoạt động của docker",
     "hoat dong cua docker",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"

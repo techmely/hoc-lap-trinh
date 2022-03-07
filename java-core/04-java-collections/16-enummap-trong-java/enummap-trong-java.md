@@ -11,10 +11,6 @@ keywords:
     "Thay thế các phần tử EnumMap",
     "Các hàm trong EnumMap",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"

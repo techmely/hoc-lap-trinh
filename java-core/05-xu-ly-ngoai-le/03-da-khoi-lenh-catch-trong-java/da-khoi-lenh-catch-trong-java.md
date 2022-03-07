@@ -12,10 +12,6 @@ keywords:
     "try catch trong java",
     "đa khối lệnh try catch trong java 8",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"

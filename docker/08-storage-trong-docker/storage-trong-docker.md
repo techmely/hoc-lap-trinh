@@ -13,10 +13,6 @@ keywords:
     "cách hoạt động storage docker",
     "cach hoat dong storage docker",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"

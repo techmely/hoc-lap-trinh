@@ -9,10 +9,6 @@ keywords:
     "tìm hiểu docker là gì",
     "tim hieu docker la gi",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"

@@ -11,10 +11,6 @@ keywords:
     "Xóa phần tử hỏi HashTable",
     "Một số hàm của HashMap",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"

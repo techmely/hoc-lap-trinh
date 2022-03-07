@@ -12,10 +12,6 @@ keywords:
     "tao image tu docker file",
     "tạo image docker file",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"

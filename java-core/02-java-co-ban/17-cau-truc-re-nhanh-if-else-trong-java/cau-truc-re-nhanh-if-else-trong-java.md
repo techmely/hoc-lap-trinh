@@ -17,10 +17,6 @@ keywords:
     "java nâng cao",
     "hoc java co ban",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

@@ -12,10 +12,6 @@ keywords:
     "khối finally trong Java",
     "khoi finally trong Java",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"

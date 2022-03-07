@@ -15,10 +15,6 @@ keywords:
     "Loại bỏ các phần tử trong HashMap",
     "Các hàm của HashMap",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"

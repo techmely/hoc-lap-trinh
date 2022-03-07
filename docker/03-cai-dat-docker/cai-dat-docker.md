@@ -12,10 +12,6 @@ keywords:
     "cài đặt docker trên CentOS",
     "cai dat docker tren CentOS",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"

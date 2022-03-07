@@ -14,18 +14,14 @@ keywords:
     "học javascript từ cơ bản đến nâng cao",
     "học code javascript",
     "học javascript cơ bản đến nâng cao",
-    "hoc javascript"
+    "hoc javascript",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Giới thiệu Javascript"
   slug: "chuong-01-gioi-thieu-javascript"
 category:
   name: "Javascript"
-  slug: "khoa-hoc-javascript"
+  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/156756227-5a14a7e0-b668-4f32-ac3b-a625b8fbab7b.png
 position: 2
 ---

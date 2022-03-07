@@ -9,10 +9,6 @@ keywords:
     "danh sách liên kết đơn trong java",
     "linked list trong java",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"

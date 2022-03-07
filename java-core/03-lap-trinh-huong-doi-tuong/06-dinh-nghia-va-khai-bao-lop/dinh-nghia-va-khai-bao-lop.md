@@ -14,10 +14,6 @@ keywords:
     "khởi tạo lớp trong java cơ bản",
     "khởi tạo lớp trong java fpt",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

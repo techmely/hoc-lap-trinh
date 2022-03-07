@@ -10,10 +10,6 @@ keywords:
     "tìm hiểu docker container",
     "tim hieu docker container",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"

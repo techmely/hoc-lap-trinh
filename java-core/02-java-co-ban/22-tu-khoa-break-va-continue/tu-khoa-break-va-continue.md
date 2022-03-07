@@ -13,10 +13,6 @@ keywords:
     "break và continue trong java free",
     "break và continue trong java gì",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

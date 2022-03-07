@@ -9,10 +9,6 @@ keywords:
     "lệnh và câu lệnh java bị lỗi",
     "lệnh và câu lệnh java fpt",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

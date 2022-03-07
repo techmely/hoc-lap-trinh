@@ -12,10 +12,6 @@ keywords:
     "Xóa bỏ các phần tử khỏi Enumset",
     "Một số hàm trong Enumset",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"

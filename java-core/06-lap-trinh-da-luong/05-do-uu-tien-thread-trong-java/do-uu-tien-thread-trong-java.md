@@ -10,10 +10,6 @@ keywords:
     "hàm setPriority trong java",
     "hàm getPriority trong java",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"

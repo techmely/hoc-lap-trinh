@@ -14,16 +14,12 @@ keywords:
     "tom tat javascript",
     "code javascript la gi"
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Giới thiệu Javascript"
   slug: "chuong-01-gioi-thieu-javascript"
 category:
   name: "Javascript"
-  slug: "khoa-hoc-javascript"
+  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

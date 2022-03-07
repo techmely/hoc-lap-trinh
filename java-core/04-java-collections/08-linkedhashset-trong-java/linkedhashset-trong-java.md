@@ -13,10 +13,6 @@ keywords:
     "Thêm tất cả các phần tử từ một tập hợp LinkedHashSet khác",
     "Kiểm tra một phần tử đã tồn tại trong LinkedHashSet chưa",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"

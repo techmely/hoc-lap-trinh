@@ -13,10 +13,6 @@ keywords:
     "Các phương thức khác của TreeSet",
     "So sánh TreeSet và HashSet",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"

@@ -16,10 +16,6 @@ keywords:
     "học java ra làm gì",
     "hoc java lam gi",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Giới thiệu Java"
   slug: "chuong-01-gioi-thieu-java"

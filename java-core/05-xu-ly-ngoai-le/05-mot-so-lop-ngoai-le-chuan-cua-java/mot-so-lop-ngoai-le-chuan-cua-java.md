@@ -2,10 +2,6 @@
 title: "Một số lớp ngoại lệ chuẩn của Java"
 description: "Bài này chúng ta sẽ tìm hiểu về một số lớp ngoại lệ chuẩn của Java, tự học lập trình java, chia sẻ kiến thức về java"
 keywords: ["một số lớp ngoại lệ chuẩn của java"]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"

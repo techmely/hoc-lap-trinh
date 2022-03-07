@@ -8,10 +8,6 @@ keywords:
     "cách hoạt động của trình lên lịch của thread",
     "cách hoạt động của Thread scheduler",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"

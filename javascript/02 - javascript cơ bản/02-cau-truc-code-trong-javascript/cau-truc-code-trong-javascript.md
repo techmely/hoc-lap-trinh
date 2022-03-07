@@ -14,16 +14,12 @@ keywords:
     "cac cau lenh trong javascript",
     "Cú pháp JavaScript"
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"
 category:
   name: "Javascript"
-  slug: "khoa-hoc-javascript"
+  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

@@ -15,10 +15,6 @@ keywords:
     "Đa luồng trong java là gì",
     "hệ điều hành đơn nhiệm, hệ điều hành đa nhiệm",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"

@@ -17,10 +17,6 @@ keywords:
     "cach cai dat ide",
     "cách thiết lập môi trường và cài đặt ide trong java",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Giới thiệu Java"
   slug: "chuong-01-gioi-thieu-java"

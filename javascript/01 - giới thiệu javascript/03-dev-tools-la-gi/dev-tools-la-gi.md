@@ -8,16 +8,12 @@ keywords: [
 "Dev Tools",
 "dev tools là gì dùng để làm gì"
 ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Giới thiệu Javascript"
   slug: "chuong-01-gioi-thieu-javascript"
 category:
   name: "Javascript"
-  slug: "khoa-hoc-javascript"
+  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/156757527-629dee15-d91d-4236-ac82-ff8d2d2975d8.png
 position: 3
 ---

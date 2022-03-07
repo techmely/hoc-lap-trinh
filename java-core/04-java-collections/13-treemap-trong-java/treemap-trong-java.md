@@ -11,10 +11,6 @@ keywords:
     "Thay thế các phần tử trong TreeMap",
     "Một số hàm của TreeMap",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"

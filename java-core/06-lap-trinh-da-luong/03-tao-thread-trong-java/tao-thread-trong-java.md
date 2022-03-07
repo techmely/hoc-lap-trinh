@@ -14,10 +14,6 @@ keywords:
     "tạo thread bằng cách thừa kế từ lớp Thread",
     "tạo thread bằng cách implement từ Interface Runnable",
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"

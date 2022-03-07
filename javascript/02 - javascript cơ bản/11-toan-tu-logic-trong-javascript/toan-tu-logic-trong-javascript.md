@@ -1,30 +1,26 @@
 ---
 title: "Toán tử logic trong Javascript"
 description: "Toán tử logic trong Javascript"
-keywords: 
-[
-  "khoá học javascript",
-  "Toán tử logic",
-  "Toán tử logic trong Javascript",
-  "logic trong Javascript",
-  "toan tu logical trong javascript",
-  "Tính toán trong JavaScript",
-  "toan tu logic trong javascript là gì",
-  "các toán tử trong javascript",
-  "toan tu logic trong javascript cơ bản",
-  "Toán tử",
-  "toan tu logic"
+keywords:
+  [
+    "khoá học javascript",
+    "Toán tử logic",
+    "Toán tử logic trong Javascript",
+    "logic trong Javascript",
+    "toan tu logical trong javascript",
+    "Tính toán trong JavaScript",
+    "toan tu logic trong javascript là gì",
+    "các toán tử trong javascript",
+    "toan tu logic trong javascript cơ bản",
+    "Toán tử",
+    "toan tu logic"
   ]
-author:
-  fullname: Techmely Team
-  username: Techmely Team
-  avatar: "/configs/author/logo.jpg"
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"
 category:
   name: "Javascript"
-  slug: "khoa-hoc-javascript"
+  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 11
 ---
