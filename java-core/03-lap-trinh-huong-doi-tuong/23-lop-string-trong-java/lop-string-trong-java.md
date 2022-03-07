@@ -16,10 +16,8 @@ chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
 category:
-  logo: "/language/java.png"
   name: "Java"
   slug: "java"
-  description: "Học Java từ cơ bản đến thông thạo cho mọi đối tượng"
 image: https://user-images.githubusercontent.com/29374426/132494584-b9f248b5-258d-4760-9d5a-150a366f05e8.png
 position: 23
 ---

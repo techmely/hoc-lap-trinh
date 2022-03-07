@@ -14,10 +14,8 @@ chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"
 category:
-  logo: "/language/java.png"
   name: "Java"
   slug: "java"
-  description: "Học Java từ cơ bản đến thông thạo cho mọi đối tượng"
 image: https://user-images.githubusercontent.com/29374426/146481640-6aee573d-28e4-4f40-b060-36d3e3192291.png
 position: 8
 ---

@@ -16,10 +16,8 @@ chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"
 category:
-  logo: "/language/java.png"
   name: "Java"
   slug: "java"
-  description: "Học Java từ cơ bản đến thông thạo cho mọi đối tượng"
 image: https://user-images.githubusercontent.com/29374426/126114810-e1c61816-0531-42a8-b493-7232c4d2fcbc.png
 position: 4
 ---

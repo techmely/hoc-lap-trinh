@@ -21,10 +21,8 @@ chapter:
   name: "Giới thiệu Java"
   slug: "chuong-01-gioi-thieu-java"
 category:
-  logo: "/language/java.png"
   name: "Java"
   slug: "java"
-  description: "Học Java từ cơ bản đến thông thạo cho mọi đối tượng"
 image: https://user-images.githubusercontent.com/29374426/126056653-c45effaa-d29d-4e4d-857d-845388633329.png
 position: 4
 ---

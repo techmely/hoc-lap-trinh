@@ -15,10 +15,8 @@ chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
 category:
-  logo: "/language/java.png"
   name: "Java"
   slug: "java"
-  description: "Học Java từ cơ bản đến thông thạo cho mọi đối tượng"
 image: https://user-images.githubusercontent.com/29374426/145676841-ec321d4f-eb6d-46aa-b451-8a2cf775c9d9.png
 position: 12
 ---

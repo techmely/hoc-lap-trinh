@@ -22,10 +22,8 @@ chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
 category:
-  logo: "/language/java.png"
   name: "Java"
   slug: "java"
-  description: "Học Java từ cơ bản đến thông thạo cho mọi đối tượng"
 image: https://user-images.githubusercontent.com/29374426/127758202-bce42e1f-86eb-4557-aaf3-a6afa24bbe29.png
 position: 24
 ---

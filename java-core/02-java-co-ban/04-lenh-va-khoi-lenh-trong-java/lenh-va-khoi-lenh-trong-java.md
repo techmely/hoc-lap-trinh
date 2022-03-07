@@ -13,10 +13,8 @@ chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
 category:
-  logo: "/language/java.png"
   name: "Java"
   slug: "java"
-  description: "Học Java từ cơ bản đến thông thạo cho mọi đối tượng"
 image: https://upload.wikimedia.org/wikipedia/commons/2/29/Linux_command-line._Bash._GNOME_Terminal._screenshot.png
 position: 4
 ---

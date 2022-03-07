@@ -23,7 +23,6 @@ author:
 category:
   name: "Khóa học AWS từ cơ bản đến nâng cao"
   slug: "aws"
-  description: "Mang kiến thức AWS đến với mọi lập trình viên"
 chapter:
   name: "Route 53"
   slug: "route-53"

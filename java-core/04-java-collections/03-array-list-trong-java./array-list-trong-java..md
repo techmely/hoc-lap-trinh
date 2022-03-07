@@ -6,10 +6,8 @@ chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
 category:
-  logo: "/language/java.png"
   name: "Java"
   slug: "java"
-  description: "Học Java từ cơ bản đến thông thạo cho mọi đối tượng"
 image: https://viettuts.vn/images/java/java-collection/hiararchy-lop-arraylist-trong-java.png
 position: 3
 ---

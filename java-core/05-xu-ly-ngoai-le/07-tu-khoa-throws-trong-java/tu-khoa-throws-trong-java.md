@@ -16,10 +16,8 @@ chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"
 category:
-  logo: "/language/java.png"
   name: "Java"
   slug: "java"
-  description: "Học Java từ cơ bản đến thông thạo cho mọi đối tượng"
 image: https://shareprogramming.net/wp-content/uploads/2020/01/throw-1.jpg
 position: 7
 ---

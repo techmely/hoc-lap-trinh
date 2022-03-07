@@ -14,10 +14,8 @@ chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"
 category:
-  logo: "/language/docker.png"
   name: "Docker"
   slug: "docker"
-  description: "Học Docker từ cơ bản đến thông thạo cho mọi đối tượng"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---
