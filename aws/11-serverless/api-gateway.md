@@ -19,7 +19,7 @@ author:
   avatar: "/configs/author/ducpv.jpg"
 category:
   name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "cloud"
+  slug: "aws"
   description: "Mang kiến thức AWS đến với mọi lập trình viên"
 chapter:
   name: "Serverless"

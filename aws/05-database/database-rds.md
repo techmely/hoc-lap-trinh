@@ -26,8 +26,7 @@ position: 20
 
 ## AWS RDS
 
-- Viết tắt của Relational Database Service
-- Là dịch vụ quản lý Database sử dụng SQL
+- Viết tắt của Relational Database Service, là dịch vụ quản lý Database sử dụng SQL
 - Types:
 
   - Postgres

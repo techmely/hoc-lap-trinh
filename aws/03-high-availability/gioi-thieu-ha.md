@@ -1,5 +1,5 @@
 ---
-title: "High Avalability và Scalability"
+title: "High Availability và Scalability"
 description: "High availability có nghĩa “Độ sẵn sàng cao”. Tức là máy chủ luôn trong tình trạng hoạt động tốt và có tĩnh sẵn sàng cao"
 keywords: ["availability là gì", "high availability là gì"]
 author:
@@ -10,16 +10,16 @@ category:
   name: "Khóa học AWS từ cơ bản đến nâng cao"
   slug: "aws"
 chapter:
-  name: "High Avalability"
+  name: "High Availability"
   slug: "ha"
 position: 8
 ---
 
-Đến đây chúng ta sẽ đi tìm hiểu sâu hơn về thiết kế một kiến trúc tốt trong AWS. Hệ thống máy tính cần yêu cầu tính sẵn sàng cao, đảm bảo hoạt động tốt 24/7. Do đó High Avalability (HA) ra đời nhằm đem lại giải pháp tốt cho sản phẩm phần mềm.
+Đến đây chúng ta sẽ đi tìm hiểu sâu hơn về thiết kế một kiến trúc tốt trong AWS. Hệ thống máy tính cần yêu cầu tính sẵn sàng cao, đảm bảo hoạt động tốt 24/7. Do đó High Availability (HA) ra đời nhằm đem lại giải pháp tốt cho sản phẩm phần mềm.
 
 ## HA là gì?
 
-Vậy HA hay High Avalability là gì?
+Vậy HA hay High Availability là gì?
 
 Có thể hình dung đơn giản cần tối thiểu 2 máy chủ cùng chạy song song và hoạt động liên tục. Nếu xảy ra tình huống một máy chủ gặp sự cố thì máy còn lại sẽ thay thế nhằm giúp hệ thống vẫn tiếp tục hoạt động bình thường.
 

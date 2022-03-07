@@ -10,7 +10,7 @@ category:
   name: "Khóa học AWS từ cơ bản đến nâng cao"
   slug: "aws"
 chapter:
-  name: "High Avalability"
+  name: "High Availability"
   slug: "ha"
 position: 9
 ---
