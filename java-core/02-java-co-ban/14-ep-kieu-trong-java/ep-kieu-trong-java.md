@@ -35,7 +35,7 @@ Trong lập trình ta sẽ gặp một số trường hợp là ban đầu ta kh
 
 Việc ép kiểu thường được diễn ra một cách tự động trong trường hợp biểu thức gồm nhiều toán hạng có kiểu dữ liệu khác nhau. Điều này đôi khi làm cho bạn khá ngạc nhiên vì nhận được một kết quả không theo ý muốn.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 int two=2, three=3;
@@ -64,8 +64,6 @@ Lý do mà ta viết như trên là nếu trong một phép toán có sự tham 
 
 Khi gặp câu lệnh này java sẽ tính toán giá trị của biểu thức sau đó chuyển đổi kiểu giá trị của biểu thức thành kiểu **kiểu dữ liệu muốn chuyển đổi**
 
-<div class="example"></div>
-
 ```java
 (int) 2.5 * 2 = 4
 (int) 2.5 * 2.5 = 5
@@ -73,9 +71,9 @@ Khi gặp câu lệnh này java sẽ tính toán giá trị của biểu thức 
 1 + (float) 5 / 2 = 1 + 5 / (float)2 =1 + (float)5 / (float)2 = 3.5
 ```
 
-<div class="note">
+<content-note>
   <ul>
     <li>Phép toán chuyển kiểu là phép toán có độ ưu tiên cao, nên (int)3.5*2(int)(3.4*2)</li>
     <li>Cần chú ý khi chuyển một biểu thức kiểu dữ liệu có miền giá trị lớn sang một kiểu có miền giá trị nhỏ hơn. Trong trường hợp này có thể bạn sẽ bị mất thông tin.</li>
   </ul>
-</div>
+</content-note>

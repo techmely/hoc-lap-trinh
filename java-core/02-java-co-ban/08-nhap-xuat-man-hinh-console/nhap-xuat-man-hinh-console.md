@@ -39,7 +39,7 @@ position: 8
 
 Để đọc một chuỗi trong Scanner chúng ta sử dụng method `readLine()`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.Scanner;
@@ -76,7 +76,7 @@ public class NhapXuat {
 
 Để nhập xuất kiểu số, chúng ta sử dụng `nextInt()` để đọc số Integer, `nextDouble()` để đọc số Double, `nextFloat()` để đọc số float etc.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.Scanner;
@@ -120,7 +120,7 @@ public class NhapXuat {
 
 Sử dụng `readLine()` để đọc một chuỗi từ màn hình console
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.io.BufferedReader;
@@ -153,7 +153,7 @@ class Thaycacac
 
 Để đọc số trong màn hình console chúng ta sử dụng `readLine()` kết hợp với `Double.parse()` hoặc `Integer.parse()` để đọc kiểu dữ liệu tương ứng.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.io.BufferedReader;
@@ -190,7 +190,7 @@ public static void main(String[] args) throws IOException {
 
 Sử dụng Console class cũng là một trong những cách thường dùng, đặc biệt nó có thể dùng để đọc password thứ mà không hiện thị lên màn hình console mà chỉ đọc ngầm bên dưới.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.io.Console;

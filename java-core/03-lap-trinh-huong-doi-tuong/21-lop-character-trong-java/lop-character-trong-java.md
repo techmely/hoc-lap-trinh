@@ -31,7 +31,7 @@ Character class là một [Wrapper class](/bai-viet/java/lop-wrapper-trong-java)
 
 Lớp Character cung cấp một số phương thức hữu ích để thao tác các ký tự. Bạn có thể tạo một đối tượng Ký tự với hàm tạo Constructor
 
-<div class="example"></div>
+<content-example />
 
 ```java
 Character ch = new Character('a');
@@ -43,7 +43,7 @@ Character ch = new Character('a');
 
 - `isLetter()`: Xác định xem giá trị char được chỉ định có phải là một chữ cái hay không.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 Character ch = new Character('a');// true
@@ -51,7 +51,7 @@ Character ch = new Character('a');// true
 
 - `isDigit()`: Xác định xem giá trị char được chỉ định có phải là một chữ số hay không
 
-<div class="example"></div>
+<content-example />
 
 ```java
 System.out.println(Character.isDigit('0')); // true
@@ -59,7 +59,7 @@ System.out.println(Character.isDigit('0')); // true
 
 - `isWhitespace()`: Xác định xem giá trị char được chỉ định có phải là khoảng trắng hay không
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public static boolean isWhitespace(char ch)
@@ -67,7 +67,7 @@ public static boolean isWhitespace(char ch)
 
 - `isUpperCase()`: Xác định xem giá trị char được chỉ định là chữ hoa hay không.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public static boolean isUpperCase(char ch)
@@ -76,7 +76,7 @@ public static boolean isUpperCase(int codepoint)
 
 - `isLowerCase()`: Xác định xem giá trị char được chỉ định là chữ thường hay không.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public static boolean isLowerCase(char ch)
@@ -85,7 +85,7 @@ public static boolean isLowerCase(int codePoint)
 
 - `toUpperCase()`: Chuyển ký tự char thường thành chữ hoa.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public static char toUpperCase(char ch)
@@ -95,7 +95,7 @@ public static char toUpperCase(int codePoint)
 
 - `toLowerCase()`: Chuyển ký tự char thường thành chữ hoa.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public static char toLowerCase(char ch)
@@ -104,7 +104,7 @@ public static char toLowerCase(int codePoint)
 
 - `toString()`: Chuyển ký tự char trong object Character thành chuỗi.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public static String toString(char c)
@@ -112,7 +112,7 @@ public static String toString(char c)
 
 - `charValue()`: Trả về char value của object Character.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public char charValue()
@@ -120,7 +120,7 @@ public char charValue()
 
 - `equals()`: So sánh bằng 2 object Character.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public boolean equals(Object obj)

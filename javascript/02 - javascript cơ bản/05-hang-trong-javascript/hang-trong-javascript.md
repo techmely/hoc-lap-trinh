@@ -124,7 +124,7 @@ const vertex% = 50;     // sử dụng kí tự đặc biệt %
     const while = 'coding'; // sử dụng từ khoá "while"
 ```
 
-<div class="note">
+<content-note>
 📝 Một số **chú ý** khi đặt tên biến:
 
 <ul>
@@ -132,7 +132,7 @@ const vertex% = 50;     // sử dụng kí tự đặc biệt %
 <li>Bạn có thể sử dụng những chữ cái không phải chữ cái Latinh để đặt tên biến. Nhưng điều này là không nên. Bạn nên sử dụng chữ cái Latinh (a-z) để đặt tên biến.</li>
 <li>Tốt nhất là đặt theo chuẩn tiếng Anh để mọi người trên thế giới có thể hiểu code của bạn.</li>
 </ul>
-</div>
+</content-note>
 
 ## Chuẩn hóa cách đặt tên hằng số
 

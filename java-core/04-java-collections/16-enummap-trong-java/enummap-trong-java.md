@@ -49,7 +49,7 @@ Trong ví dụ trên, chúng ta đã tạo ra một `EnumMap` có tên là `size
 - `put()` – chèn cặp `key/value` được chỉ định (mục nhập) vào `EnumMap`
 - `putAll()` – chèn tất cả các mục của map được chỉ định vào `map` này
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.EnumMap;
@@ -100,7 +100,7 @@ Nó cũng có thể chèn các phần tử từ các map khác như `HashMap`, `
 - `keySet()` – trả về một tập hợp tất cả các key của EnumMap
 - `values()` – trả về một tập hợp tất cả các value của EnumMap
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.EnumMap;
@@ -147,7 +147,7 @@ class Main {
 
 - Hàm `get()` trả về `value` liên kết với key chỉ định. Nó trả về `null` nếu không tìm thấy `key` được chỉ định
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.EnumMap;
@@ -190,7 +190,7 @@ class Main {
 - `remove(key)` – trả về và xóa mục nhập được liên kết với key được chỉ định khỏi `map`
 - `remove(key, value)` – chỉ xóa mục nhập khỏi `maps` nếu key được chỉ định liên kết với `value` đã chỉ định và trả về giá trị `boolean`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.EnumMap;
@@ -241,7 +241,7 @@ class Main {
 - `replace(key, old, new)` – thay thế cũ `value` bằng va`lue mới nếu `value`cũ đã được liên kết với`key` chỉ định
 - `replaceAll(function)` – thay thế từng `value` của `map` bằng kết quả của chức năng được chỉ định
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.EnumMap;

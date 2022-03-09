@@ -90,14 +90,14 @@ console.log(language); // undefined
 
 Kiểu dữ liệu **undefined** có nghĩa là **giá trị chưa được gán**.
 
-<div class="note">
+<content-note>
 
 📝 Khác nhau cơ bản giữa **undefined** và **null**:
 
 - Kiểu dữ liệu **null** là kiểu dữ liệu **được gán** cho biến, thường được hiểu là **không biết** (không có).
 - Trong khi đó, kiểu dữ liệu **undefined** là giá trị mặc định của biến sau khi khai báo mà **không gán giá trị** cho biến.
 
-</div>
+</content-note>
 
 Ví dụ khai báo biến mà không gán giá trị:
 
@@ -186,7 +186,7 @@ Có ba cách để biểu diễn string trong JavaScript:
 - Dùng dấu nháy kép (`"`)
 - Dùng dấu "backtick" (`` ` ``)
 
-<div class="example"></div>
+<content-example />
 
 ```js
 const msg1 = "Đây là string dùng dấu nháy đơn";
@@ -211,11 +211,11 @@ console.log(`You are learning ${language}`); // You are learning JavaScript
 console.log(`1 + 2 = ${1 + 2}`); // 1 + 2 = 3
 ```
 
-<div class="note">
+<content-note>
 
 String trong JavaScript có thể chỉ gồm 1 kí tự `"a"`, nhiều kí tự `"abc"` hoặc không kí tự nào `""` (empty string).
 
-</div>
+</content-note>
 
 ### Kiểu dữ liệu symbol
 

@@ -45,7 +45,7 @@ Các điểm quan trọng về lớp TreeSet trong java là:
 - `TreeSet(Collection c)`: khởi tạo một tập hợp với các phần tử của collection c
 - `TreeSet(Comparator comparator)`: khởi tạo một tập hợp rỗng mà các phần tử được xếp thứ tự theo bộ so sánh được xác định bởi comparator.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 TreeSet<Integer> numbers = new TreeSet<>();
@@ -60,7 +60,7 @@ Tuy nhiên, chúng ta có thể tùy chỉnh việc sắp xếp các phần tử
 - `add()` – chèn phần tử được chỉ định vào tập hợp.
 - `addAll()` – chèn tất cả các phần tử của tập hợp được chỉ định vào tập hợp.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeSet;
@@ -86,22 +86,16 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>TreeSet: [2, 4, 6]</code><br/>
-    <code>New TreeSet: [1, 2, 4, 6]</code>
-  </div>
-</div>
+<content-result>
+  <code>TreeSet: [2, 4, 6]</code><br/>
+  <code>New TreeSet: [1, 2, 4, 6]</code>
+</content-result>
 
 ## Duyệt qua các phần tử trong TreeSet
 
 Để truy cập các phần tử của một tập cây, chúng ta có thể sử dụng `iterator()`. Để sử dụng phương thức này, chúng ta phải nhập gói `java.util.Iterator`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeSet;
@@ -143,7 +137,7 @@ class Main {
 - `remove()` – xóa phần tử được chỉ định khỏi tập hợp
 - `removeAll()` – xóa tất cả các phần tử khỏi tập hợp
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeSet;
@@ -186,7 +180,7 @@ Vì lớp TreeSet thực thi NavigableSet, nó cung cấp các phương thức k
 - `first()` – trả về phần tử đầu tiên của tập hợp
 - `last()` – trả về phần tử cuối cùng của tập hợp
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeSet;
@@ -227,7 +221,7 @@ class Main {
 - `ceiling(element)` – Trả về phần tử thấp nhất trong số các phần tử lớn hơn giá trị đã chỉ định thành phần. Nếu element được truyền tồn tại trong một tập hợp cây, nó trả về giá trị element được truyền dưới dạng đối số.
 - `floor(element)` – Trả về phần tử lớn nhất trong số các phần tử nhỏ hơn giá trị được chỉ định element. Nếu element được truyền tồn tại trong một tập hợp cây, nó trả về giá trị element được truyền dưới dạng đối số.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeSet;
@@ -274,7 +268,7 @@ class Main {
 - `pollFirst()` – trả về và xóa phần tử đầu tiên khỏi tập hợp
 - `pollLast()` – trả về và xóa phần tử cuối cùng khỏi tập hợp
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeSet;
@@ -314,7 +308,7 @@ class Main {
 
 - `headSet(phần tử, booleanValue)` - trả về tất cả các yếu tố của một bộ cây trước khi quy định thành phần (được chuyển như một đối số). Tham số booleanValue là tùy chọn. Giá trị mặc định của nó là `false`. Nếu `true` được thông qua dưới dạng booleanValue, phương thức trả về tất cả các phần tử trước phần tử được chỉ định bao gồm phần tử được chỉ định.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeSet;
@@ -351,7 +345,7 @@ class Main {
 
 - `tailSet(phần tử, booleanValue)` - phương thức `tailSet()` trả về tất cả các yếu tố của một bộ cây sau khi quy định thành phần (được truyền dưới dạng tham số) bao gồm thành phần. Tham số `booleanValue` là tùy chọn. Giá trị mặc định của nó là `true`. Nếu `false` được thông qua dưới dạng `booleanValue`, phương thức trả về tất cả các phần tử sau thành phần mà không bao gồm các thành phần.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeSet;
@@ -388,7 +382,7 @@ class Main {
 
 - `subSet(e1, bv1, e2, bv2)` - phương thức `subSet()` trả về tất cả các yếu tố giữa e1 và e2 kể cả e1. Các bv1 và bv2là các tham số tùy chọn. Giá trị mặc định của bv1 là `true`, và giá trị mặc định của bv2 là `false`. Nếu `false` được truyền vào bv1, phương thức trả về tất cả các phần tử giữa e1 và e2 mà không bao gồm e1. Nếu `true` được truyền vào là bv2, phương thức trả về tất cả các phần tử giữa e1 và e2, kể cả e1.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeSet;
@@ -431,7 +425,7 @@ Các phương thức của lớp `TreeSet` cũng có thể được sử dụng 
 
 Để thực hiện kết hợp giữa hai tập hợp, chúng ta sử dụng phương thức `addAll()`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeSet;;
@@ -473,7 +467,7 @@ class Main {
 
 Để thực hiện giao giữa hai tập hợp, ta sử dụng phương thức `retainAll()`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeSet;;
@@ -514,7 +508,7 @@ class Main {
 
 Để tính toán sự khác biệt giữa hai tập hợp, chúng ta có thể sử dụng phương thức `removeAll()`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeSet;;
@@ -556,7 +550,7 @@ class Main {
 
 Để kiểm tra một tập hợp có phải là tập hợp con của tập hợp khác hay không, chúng ta sử dụng phương thức `containsAll()`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeSet;
@@ -596,13 +590,13 @@ class Main {
 
 ## Các phương thức khác của TreeSet
 
-| Phương thức | Sự miêu tả |
-| --- | --- |
-| clone() | Tạo một bản sao của TreeSet |
-| contains() | Tìm kiếm TreeSet cho phần tử được chỉ định và trả về kết quả Boolean |
-| isEmpty() | Kiểm tra xem TreeSet có trống không |
-| size() | Trả về kích thước của TreeSet |
-| clear() | Loại bỏ tất cả các phần tử khỏi TreeSet |
+| Phương thức | Sự miêu tả                                                           |
+| ----------- | -------------------------------------------------------------------- |
+| clone()     | Tạo một bản sao của TreeSet                                          |
+| contains()  | Tìm kiếm TreeSet cho phần tử được chỉ định và trả về kết quả Boolean |
+| isEmpty()   | Kiểm tra xem TreeSet có trống không                                  |
+| size()      | Trả về kích thước của TreeSet                                        |
+| clear()     | Loại bỏ tất cả các phần tử khỏi TreeSet                              |
 
 ## So sánh TreeSet và HashSet
 

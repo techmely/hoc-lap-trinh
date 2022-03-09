@@ -23,7 +23,7 @@ position: 4
 
 Lệnh hay câu lệnh là tập hợp các từ khóa, tập ký tự trong java và được kết thúc bởi dấu chấm phẩy `;`
 
-<div class="example"></div>
+<content-example/>
 
 ```java
 int tuoi = 12; // đây là một dòng lệnh

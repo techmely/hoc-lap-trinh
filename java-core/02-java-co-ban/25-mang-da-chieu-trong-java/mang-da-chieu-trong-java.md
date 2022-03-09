@@ -29,7 +29,7 @@ position: 25
 
 Mảng đa chiều có thể định nghĩa đơn giản là mảng của mảng, dữ liệu bên trong một phần tử của mảng là một mảng.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 <Kiểu dữ liệu>[][][]..[] <tên mảng> = new <kiểu dữ liệu>[<kích thước thứ 1>][<kích thước thứ 2>]….[<kích thước thứ n>];
@@ -41,7 +41,7 @@ Trong đó:
 - **Tên mảng:** Tên mảng
 - **Kích thước thứ 1, kích thước thứ 2, …, kích thước thứ n:** Kích thước mảng tương ứng
 
-<div class="example"></div>
+<content-example />
 
 ```java
 // Mảng 2 chiều
@@ -64,7 +64,7 @@ Ngoài ra chúng ta có thể khởi tạo mảng và trực tiếp giá trị c
 };
 ```
 
-<div class="example"></div>
+<content-example />
 
 ```java
 Ví dụ: int[][] arr = {{1, 2}, {3, 4}};

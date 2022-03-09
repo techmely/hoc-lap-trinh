@@ -32,7 +32,7 @@ Java cung cấp cho chúng ta rất nhiều cấu trúc dữ liệu, trong đó 
 
 Cứ tưởng tượng nếu chúng ta cần sử dụng đến 100 biến `int` để lưu trữ data, thì chỉ với việc khai báo chúng ta đã ngốn hết 100 dòng code. Java cung cấp cho chúng ta rất nhiều cấu trúc dữ liệu, trong đó array là một cấu trúc cho phép lưu trữ một tập hợp các dữ liệu cùng loại, tuần tự và có số lượng xác định.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 int[] arr = new int[100];
@@ -134,9 +134,9 @@ public class Thaycacac {
   </div>
 </div>
 
-<div class="note">
+<content-note>
   Nếu index vượt ra khoảng chưá của mảng thì chúng ta sẽ bị ném một ngoại lệ. Khoảng hợp lệ 0 đến n – 1( n số lượng phần tử của mảng).
-</div>
+</content-note>
 
 Ví dụ khi mình truy xuất arr[10] là vị trí không hợp lệ mình sẽ được kết quả sau: `Exception in thread “main” ava.lang.ArrayIndexOutOfBoundsException: 10 at Main.main(Main.java:11)`
 

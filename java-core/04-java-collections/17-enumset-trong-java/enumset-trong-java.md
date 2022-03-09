@@ -40,7 +40,7 @@ Một `EnumSet` chỉ lưu trữ các giá trị `enum` của một `enum` cụ 
 
 Hàm `allof()` tạo ra một `EnumSet` có chứa tất cả các giá trị của enum kiểu `Size` đã chỉ định.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.EnumSet;
@@ -82,7 +82,7 @@ EnumSet<Size> sizes = EnumSet.allOf(Size.class);
 
 Hàm `noneOf()` tạo ra một `EnumSet` trống.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.EnumSet;
@@ -120,7 +120,7 @@ class Main {
 
 Hàm `range()` tạo ra một EnumSet chứa tất cả các giá trị của một `enum` giữa 2 giá trị `e1` và `e2` bao gồm cả hai giá trị này.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.EnumSet;
@@ -155,7 +155,7 @@ class Main {
 
 Hàm `of()` tạo ra một EnumSet có chứa các phần tử đã chỉ định.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.EnumSet;
@@ -194,7 +194,7 @@ class Main {
 - `add()` – chèn các giá trị enum được chỉ định vào `EnumSet`
 - `addAll()` chèn tất cả các phần tử của `collection` đã chỉ định vào `set`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.EnumSet;
@@ -241,7 +241,7 @@ Trong ví dụ trên, chúng ta đã sử dụng hàm `addAll()` để chèn t�
 
 Để truy cập các phần tử của `EnumSet`, chúng ta có thể sử dụng hàm `iterator()`. Để sử dụng hàm này, chúng ta phải `import` gói `java.util.Iterator`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.EnumSet;
@@ -289,7 +289,7 @@ Lưu ý:
 - `remove()` – xóa phần tử đã chỉ định khỏi `EnumSet`
 - `removeAll()` – loại bỏ tất cả các phần tử khỏi `EnumSet`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.EnumSet;

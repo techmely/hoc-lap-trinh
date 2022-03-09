@@ -41,7 +41,7 @@ Nếu bạn muốn một lớp chứa một phương thức cụ thể nhưng b�
 
 Phương thức trừu tượng được sử dụng từ khóa `abstract` để khai báo, và một phương thức abstract không có thân. Phương thức abstract sẽ không có định nghĩa, được theo sau bởi dấu chấm phảy, không có cặp dấu ngoặc nhọn.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 // Khai báo phương thwucs với từ khóa abstract và không có thân phương thức
@@ -76,13 +76,13 @@ class Honda4 extends Bike{
     </div>
 </div>
 
-<div class="note">
+<content-note>
 <ul>
   <li>Nếu trong lớp có phương thức trừu tượng thì lớp đó phải được khai báo là trừu tượng</li>
   <li>Nếu một lớp kế thừa từ lớp trừu tượng thì: hoặc chúng phải ghi đè tất cả các phương thức ảo của lớp cha, hoặc lớp đó phải là lớp trừu tượng</li>
   <li>Không thể tạo ra đối tượng của lớp trừu tượng</li>
 </ul>
-</div>
+</content-note>
 
 ## Kế thừa lớp Abstract trong Java
 

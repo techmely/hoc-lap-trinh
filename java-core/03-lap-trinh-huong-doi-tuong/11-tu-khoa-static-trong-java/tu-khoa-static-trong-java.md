@@ -92,9 +92,9 @@ public class Student {
   </div>
 </div>
 
-<div class="note">
+<content-note>
 Ta không thể sử dụng hàm tạo để khởi đầu các thuộc tính tĩnh, bởi vì hàm tạo không phải là phương thức tĩnh
-</div>
+</content-note>
 
 ## Phương thức static trong Java
 
@@ -104,7 +104,7 @@ Một phương thức được khai báo là `static` được gọi là phươn
 - Một phương thức static gọi mà không cần tạo một instance của một lớp.
 - Phương thức static có thể truy cập biến static và có thể thay đổi giá trị của nó.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Student {
@@ -156,7 +156,7 @@ public class Student {
 
 [Tìm hiểu kỹ hơn về khối static trong Java](/bai-viet/java/khoi-anonymous-va-static-trong-java)
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Student {

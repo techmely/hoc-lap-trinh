@@ -60,7 +60,7 @@ Sơ đồ khối diễn giải sự hoạt động của cấu trúc for sau:
 
 ![vong-lap-for-trong-java](https://user-images.githubusercontent.com/29374426/127631954-6589402a-aaab-4df9-b37b-ddebb90db820.png)
 
-<div class="note">
+<content-note>
   <ul>
     <li>Nếu ta khai báo biến chạy trong Biểu thức khởi tạo vòng lặp thì sau khi kết thúc, biến chạy tự giải phóng</li>
     <li>Thân của cấu trúc lặp for ta chỉ có thể đặt được duy nhất một lệnh, do vậy để có thể thực hiện nhiều tác vụ trong thân for ta phải bao chúng trong khối lệnh</li>
@@ -72,7 +72,7 @@ Sơ đồ khối diễn giải sự hoạt động của cấu trúc for sau:
     <li>Ta có thể đặt một vài khai báo biến trong phần Khởi tạo biến chạy</li>
     <li>Ta có thể mô tả cấu trúc while thông qua cấu trúc for như sau for(; Biểu thức boolean;) statement;</li>
   </ul>
-</div>
+</content-note>
 
 <div class="example"> in ra màn hình các số nguyên nhỏ hơn 11</div>
 
@@ -143,7 +143,7 @@ for (<Kiểu tập hợp> var : <Tập hợp>) {
 - **Tập hợp**: là danh sách tập hợp có thể là mảng thông thường, ArrayList, LinkedList, HashSet, ...
 - **Khối lệnh lặp lại** là câu lệnh mà ta cần phải thực hiện lặp đi lặp lại.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Thaycacac {
@@ -182,7 +182,7 @@ Cú pháp:
 }
 ```
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Thaycacac {

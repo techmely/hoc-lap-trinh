@@ -38,7 +38,7 @@ Từ khoá final trong java có nhiều nghĩa khác nhau, nghĩa của nó tu�
 
 Nếu bạn tạo bất cứ biến nào là `final`, bạn không thể thay đổi giá trị của biến này (nó sẽ là hằng số). Giả sử có một biến final là `PI`. Bạn cố ý thay đổi giá trị của biến này nhưng nó không bị thay đổi, bởi vì biến final một khi được gán giá trị thì không bao giờ thay đổi được.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Thaycacac {
@@ -65,19 +65,19 @@ public class Thaycacac {
   </div>
 </div>
 
-<div class="note">
+<content-note>
 <ul>
   <li>Khi đã khai báo một thuộc tính là final thì thuộc tính này la hăng, do vậy ta không thể thay đổi giá trị của nó</li>
   <li>Khi khai báo một thuộc tính là final thì ta phải cung cấp giá trị ban đầu cho nó</li>
   <li>Nếu một thuộc tính vừa là final vừa là static thì nó chỉ có một vùng nhớ chung duy nhất cho cả lớp</li>
 </ul>
-</div>
+</content-note>
 
 ## Phương thức final trong Java
 
 Một phương thức bình thường có thể bị ghi đè ở lớp con, đôi khi ta không muốn lớp con bị ghi đè ở lớp con vì lý do gì đó, mục đích chủ yếu của các phương thức final là tránh ghi đè, tuy nhiên ta thấy rằng các phương thức private sẽ tự động là final vì chúng không thể thấy được trong lớp con nên chúng không thể bị ghi đè, nên cho dù bạn có cho một phương thức private là final thì bạn cũng chả thấy thay đổi nào.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 class Bike {
@@ -112,7 +112,7 @@ public class SH extends Bike {
 
 Nếu bạn không muốn người khác kế thừa từ lớp của bạn, thì bạn hãy dùng từ khoá final để ngăn cản bất cứ ai muốn kế thừa từ lớp này.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 final class Bike {
@@ -146,7 +146,7 @@ _Chú ý:_ do một lớp là final (tức không thể kế thừa )do vậy ta
 
 Một biến static final mà không được khởi tạo tại thời điểm khai báo thì đó là biến static final trống. Nó chỉ có thể được khởi tạo trong khối static.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class A {

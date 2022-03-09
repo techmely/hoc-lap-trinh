@@ -59,7 +59,7 @@ Trong bảng trên thì X thể hiện cho sự truy cập hợp lệ còn – t
 
 Các thành phần private chỉ có thể sử dụng bên trong lớp, ta không thể truy cập các thành phần private từ bên ngoài lớp này.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 class Alpha {
@@ -79,18 +79,18 @@ class Beta {
 }
 ```
 
-<div class="note">
+<content-note>
 <ul>
   <li>Một lớp không thể là private hoặc protected, ngoại trừ lớp lồng nhau.</li>
   <li>Nếu bạn tạo bất kỳ constructor là private trong lớp, bạn sẽ không thể tạo instance của class bên ngoài nó.</li>
 </ul>
-</div>
+</content-note>
 
 ## Phạm vi truy cập default
 
 Nếu bạn không khai báo modifier nào, thì nó chính là trường hợp mặc định. Default Access Modifier là chỉ được phép truy cập trong cùng package.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 // Lưu file với tên Alpha.java
@@ -121,7 +121,7 @@ Trong ví dụ trên, phạm vi truy cập của lớp Alpha và phương thức
 
 Protected access modifier được truy cập bên trong package và bên ngoài package nhưng phải kế thừa.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 // Lưu file với tên Alpha.java
@@ -150,7 +150,7 @@ class Beta extends Alpha {
 
 Các thành viên public có thể truy cập từ bất cứ đâu. Để
 
-<div class="example"></div>
+<content-example />
 
 ````java
 public class Alpha {

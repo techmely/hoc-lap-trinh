@@ -42,7 +42,7 @@ Các điểm quan trọng về lớp LinkedHashSet trong java là:
 - `LinkedHashSet()`: khởi tạo một danh sách mảng trống.
 - `LinkedHashSet(Collection c)`: khởi tạo một danh sách với các phần tử của collection c.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 LinkedHashSet<Integer> numbers = new LinkedHashSet<>(8, 0.75);
@@ -55,7 +55,7 @@ LinkedHashSet<Integer> numbers = new LinkedHashSet<>(8, 0.75);
 
 Có thể tạo một LinkedHashSet mà không cần xác định công suất và hệ số tải của nó.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 LinkedHashSet<Integer> numbers1 = new LinkedHashSet<>();
@@ -105,7 +105,7 @@ class Main {
 - `add()` – chèn phần tử được chỉ định vào LinkedHashSet
 - `addAll()` – chèn tất cả các phần tử của collection đã chỉ định vào LinkedHashSet
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.LinkedHashSet;
@@ -145,7 +145,7 @@ class Main {
 
 Để truy cập các phần tử của LinkedHashSet, chúng ta có thể sử dụng hàm `iterator()`. Để sử dụng hàm này, chúng ta phải import gói `java.util.Iterator`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.LinkedHashSet;
@@ -194,7 +194,7 @@ Lưu ý:
 - `remove()` – xóa phần tử đã chỉ định khỏi LinkedHashSet
 - `removeAll()` – loại bỏ tất cả các phần tử khỏi LinkedHashSet
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.LinkedHashSet;
@@ -233,7 +233,7 @@ class Main {
 
 Để Lấy phần hợp của các set, chúng ta có thể sử dụng hàm `addAll()`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.LinkedHashSet;
@@ -273,7 +273,7 @@ class Main {
 
 Để Lấy phần giao của các set, chúng ta có thể sử dụng hàm `retainAll()`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.LinkedHashSet;
@@ -313,7 +313,7 @@ class Main {
 
 Để tìm hiệu của hai set, chúng ta có thể sử dụng hàm `removeAll()`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.LinkedHashSet;
@@ -355,7 +355,7 @@ class Main {
 
 Để kiểm tra xem một set có phải là tập con của một set khác hay không, chúng ta có thể sử dụng hàm `containsAll()`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.LinkedHashSet;

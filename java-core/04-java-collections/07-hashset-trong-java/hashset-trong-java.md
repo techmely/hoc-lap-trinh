@@ -65,7 +65,7 @@ public class HashSet<E> extends AbstractSet<E>
 - `HashSet()`: khởi tạo một danh sách mảng trống.
 - `HashSet(Collection c)`: khởi tạo một danh sách với các phần tử của collection c.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 HashSet<Integer> numbers = new HashSet<>(8, 0.75);
@@ -78,7 +78,7 @@ HashSet<Integer> numbers = new HashSet<>(8, 0.75);
 
 Cách thứ 2, có thể tạo hash table mà không cần xác định công suất và hệ số tải của nó.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 HashSet<Integer> numbers1 = new HashSet<>();
@@ -95,7 +95,7 @@ Theo mặc định:
 - `add()` – chèn phần tử được chỉ định vào set
 - `addAll()` – chèn tất cả các phần tử của collection đã chỉ định vào `set`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.HashSet;
@@ -135,7 +135,7 @@ class Main {
 
 Để truy cập các phần tử của Hashset, chúng ta có thể sử dụng hàm `iterator()`. Để sử dụng hàm này, chúng ta phải import gói `java.util.Iterator`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.HashSet;
@@ -177,7 +177,7 @@ class Main {
 - `remove()` – xóa phần tử đã chỉ định khỏi set
 - `removeAll()` – loại bỏ tất cả các phần tử khỏi set
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.HashSet;
@@ -216,7 +216,7 @@ class Main {
 
 Để lấy phần hợp của 2 set, chúng ta có thể sử dụng hàm `addAll()`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.HashSet;
@@ -256,7 +256,7 @@ class Main {
 
 Để lấy phần giao của 2 set, chúng ta có thể sử dụng hàm `retainAll()`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.HashSet;
@@ -296,7 +296,7 @@ class Main {
 
 Để tính hiệu hai set, chúng ta có thể sử dụng hàm `removeAll()`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.HashSet;
@@ -338,7 +338,7 @@ class Main {
 
 Để kiểm tra xem một set có phải là tập con của set khác hay không, chúng ta có thể sử dụng hàm `containsAll()`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.HashSet;

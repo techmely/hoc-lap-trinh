@@ -36,7 +36,7 @@ Cú pháp:
 alert(message);
 ```
 
-<div class="example"></div>
+<content-example />
 
 ```js
 alert("Say hello from completejavascript.com");

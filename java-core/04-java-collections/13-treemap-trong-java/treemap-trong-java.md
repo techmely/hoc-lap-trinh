@@ -53,7 +53,7 @@ Trong đoạn code trên, chúng ta đã tạo ra một TreeMap tên là numbers
 - `putAll()` – chèn tất cả các mục từ map được chỉ định vào map này
 - `putIfAbsent()` – chèn cặp `key/value` được chỉ định vào map nếu key được chỉ định không có trong map
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -99,7 +99,7 @@ class Main {
 - `keySet()` – trả về tập hợp gồm tất cả các key của `TreeMap`
 - `values()` – trả về một tập hợp gồm tất cả các map của `TreeMap`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -141,7 +141,7 @@ class Main {
 - `get()` - Trả về value liên kết với key được chỉ định. Trả về null nếu không tìm thấy key.
 - `getOrDefault()` - Trả về value liên kết vớikey được chỉ định. Trả về value mặc định đã chỉ định nếu không tìm thấy key.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -183,7 +183,7 @@ class Main {
 - `remove(key)` – trả về và xóa mục nhập được liên kết với key đã chỉ định khỏi TreeMap
 - `remove(key, value)` – chỉ xóa mục nhập khỏi map nếu key được chỉ định liên kết với value được chỉ định và trả về giá trị boolean
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -229,7 +229,7 @@ class Main {
 - `replace(key, old, new)` – chỉ thay thế value cũ bằng value mới nếu value cũ được liên kết với key đã chỉ định
 - `replaceAll(function)` – thay thế từng value của map bằng kết quả của một chức năng đã được chỉ định
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -282,7 +282,7 @@ numbers.replaceAll((key, oldValue) -> oldValue + 2);
 - `lastKey()` – trả về key cuối cùng của map
 - `lastEntry()` – trả về cặp key / value trong key cuối cùng của map
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -336,7 +336,7 @@ class Main {
 - `floorKey()` – Trả về key lớn nhất trong số các key nhỏ hơn key đã chỉ định. Nếu key được truyền dưới dạng đối số thì nó trả về key đó.
 - `floorEntry()` – Trả về mục được liên kết với key lớn nhất trong số các key nhỏ hơn key được chỉ định. Nếu key được truyền dưới dạng đối số có mặt, nó sẽ trả về key đó.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -394,7 +394,7 @@ class Main {
 - `pollFirstEntry()` – trả về và xóa mục nhập được liên kết với key đầu tiên của map
 - `pollLastEntry()` – trả về và xóa mục nhập được liên kết với key cuối cùng của map
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -435,7 +435,7 @@ class Main {
 
 - `headMap(key, booleanValue)`: hàm `headMap()` trả về tất cả các cặp `key / value` của một treemap đứng trước key được chỉ định (được thông qua như là một đối số). Tham số `booleanValue` là tùy chọn. Giá trị mặc định của nó là `false`. Nếu `true` được thông qua như một `booleanValue`, hàm này cũng sẽ bao gồm cặp `key/value` của key được truyền dưới dạng đối số.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -477,7 +477,7 @@ class Main {
 
 - `tailMap(key, booleanValue)`: hàm `tailMap()` trả về tất cả các cặp `key/value` của một treemap bắt đầu từ key được chỉ định (được thông qua như là một đối số). `booleanValue` là một tham số tùy chọn. Giá trị mặc định của nó là `true`. Nếu `false` được thông qua như một `booleanValue`, hàm sẽ không bao gồm cặp `key/value` của key được chỉ định.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -519,7 +519,7 @@ class Main {
 
 - `subMap (k1, bV1, k2, bV2)`: hàm `subMap()` trả về tất cả các mục có liên quan với các key trong khoảng k1 và k2 bao gồm cả mục của k1. bV1 và bV2 là các tham số `boolean` tùy chọn. Giá trị mặc định của bV1 là true và giá trị mặc định của bV2 là false. Nếu false được thông qua như bv1, hàm này sẽ trả về tất cả các mục được liên kết với các key trong khoảng k1 và k2 không bao gồm mục của k1. Nếu true được thông qua như bV2, hàm này sẽ trả về tất cả các mục được liên kết với các key trong khoảng k1 và k2 bao gồm cả mục của k2.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 class Main {
@@ -543,7 +543,7 @@ class Main {
 }
 ```
 
-<div class="example"></div>
+<content-example />
 
 <div class="window">
   <div class="window-header">

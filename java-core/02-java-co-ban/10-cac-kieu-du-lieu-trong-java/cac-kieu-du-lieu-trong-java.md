@@ -44,17 +44,17 @@ Có 8 kiểu dữ liệu nguyên thủy (Primitive Data type) đó là: boolean,
 
 Dưới đây là các thông số chi tiết
 
-| Kiểu | Mô tả | Kích cỡ | Tối thiểu | Tối đa | Lớp bao |
-| :-: | :-- | --- | --- | --- | --- |
-| byte | số nguyên một byte | 8 bit | -128 | 127 | Byte |
-| short | số nguyên ngắn | 16 bit | -2^15 | 2^15-1 | Short |
-| int | số nguyên | 32 bit | -2^31 | 2^31-1 | Integer |
-| long | số nguyên dài | 64 bit | -2^63 | -2^63-1 | Long |
-| float | kiểu thực với độ chính xác đơn | 32 bit | IEEE754 | IEEE754 | Float |
-| double | Double-precision floating point | 64 bit | IEEE754 | IEEE754 | Double |
-| char | kiểu kí tự | 16 bit | Unicode 0 | Unicode 2^16-1 | Character |
-| boolean | kiểu logic | true hoặc false | - | - | Boolean |
-| void | - | - | - | - | Void |
+|  Kiểu   | Mô tả                           | Kích cỡ         | Tối thiểu | Tối đa         | Lớp bao   |
+| :-----: | :------------------------------ | --------------- | --------- | -------------- | --------- |
+|  byte   | số nguyên một byte              | 8 bit           | -128      | 127            | Byte      |
+|  short  | số nguyên ngắn                  | 16 bit          | -2^15     | 2^15-1         | Short     |
+|   int   | số nguyên                       | 32 bit          | -2^31     | 2^31-1         | Integer   |
+|  long   | số nguyên dài                   | 64 bit          | -2^63     | -2^63-1        | Long      |
+|  float  | kiểu thực với độ chính xác đơn  | 32 bit          | IEEE754   | IEEE754        | Float     |
+| double  | Double-precision floating point | 64 bit          | IEEE754   | IEEE754        | Double    |
+|  char   | kiểu kí tự                      | 16 bit          | Unicode 0 | Unicode 2^16-1 | Character |
+| boolean | kiểu logic                      | true hoặc false | -         | -              | Boolean   |
+|  void   | -                               | -               | -         | -              | Void      |
 
 Đặc điểm của các biến có kiểu nguyên thủy là vùng nhớ của chúng được cấp phát ở phần stack. Do vậy việc truy xuất vào một biến kiểu nguyên thủy rất nhanh.
 
@@ -72,14 +72,14 @@ int x = 0;
 long y = 100;
 ```
 
-<div class="note">
-  <p>Nếu hai toán hạng kiểu long thì kết quả là kiểu long. Một trong hai toán hạng không phải kiểu long sẽ được chuyển thành kiểu long trước khi thực hiện phép toán.</p>
+<content-note>
+<p>Nếu hai toán hạng kiểu long thì kết quả là kiểu long. Một trong hai toán hạng không phải kiểu long sẽ được chuyển thành kiểu long trước khi thực hiện phép toán.</p>
   <ul>
     <li>Nếu hai toán hạng đầu không phải kiểu long thì phép tính sẽ thực hiện với kiểu int.</li>
     <li>Các toán hạng kiểu byte hay short sẽ được chuyển sang kiểu int trước khi thực hiện phép toán.</li>
     <li>Trong java không thể chuyển biến kiểu int và kiểu boolean như trong ngôn ngữ C/C++.</li>
   </ul>
-</div>
+</content-note>
 
 Ví dụ:
 
@@ -113,14 +113,14 @@ float x = 100.0/7;
 double y = 1.56E6;
 ```
 
-<div class="note">
-  <p>Một số lưu ý đối với các phép toán trên số dấu chấm động</p>
+<content-note>
+<p>Một số lưu ý đối với các phép toán trên số dấu chấm động</p>
   <ul>
     <li>Nếu mỗi toán hạng đều có kiểu dấn chấm động thì phép toán chuyển thành phép toán dấu chấm động.</li>
     <li>Nếu có một toán hạng là double thì các toán hạng còn lại sẽ được chuyển thành kiểu double trước khi thực hiện phép toán.</li>
     <li>Biến kiểu float và double có thể ép chuyển sang kiểu dữ liệu khác trừ kiểu boolean.</li>
   </ul>
-</div>
+</content-note>
 
 ## Kiểu ký tự (char) trong Java
 
@@ -140,7 +140,7 @@ char myLetter = 'D';
 - Trong java kiểu boolean không thể chuyển thành kiểu nguyên và ngược lại.
 - Giá trị mặc định của kiểu `boolean` là `false`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 boolean myBool = true;
@@ -150,10 +150,10 @@ boolean myBool = true;
 
 Trong Java có 3 kiểu dữ liệu tham chiếu
 
-| Kiểu dữ liệu | Mô tả |
-| --- | :-- |
-| Mảng (Array) | Tập hợp các dữ liệu cùng kiểu. |
-| Lớp (Class) | Là sự cài đặt mô tả về một đối tượng trong bài toán. |
+| Kiểu dữ liệu          | Mô tả                                                                           |
+| --------------------- | :------------------------------------------------------------------------------ |
+| Mảng (Array)          | Tập hợp các dữ liệu cùng kiểu.                                                  |
+| Lớp (Class)           | Là sự cài đặt mô tả về một đối tượng trong bài toán.                            |
 | Giao diện (Interface) | Là một lớp thuần trừu tượng được tạo ra cho phép cài đặt đa thừa kế trong Java. |
 
 Đặc điểm của các biến kiểu tham chiếu là nó chứa địa chỉ của đối tượng mà nó trỏ đến.

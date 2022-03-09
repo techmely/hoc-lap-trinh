@@ -71,7 +71,7 @@ _Trong đó:_
 - **extends** là từ khoá cho java biết lớp này này được kế thừa từ lớp khác
 - **implements** là từ khoá cho java biết lớp này sẽ triển khai giao diện `Interfaces`, đây là một dạng tương tự như kế thừa bội của java.
 
-<div class="note">
+<content-note>
   <ul>
     <li>Thuộc tính của lớp là một biến có kiểu dữ liệu bất kỳ, nó có thể lại là một biến có kiểu là chính lớp đó</li>
     <li>Khi khai báo các thành phần của lớp (thuộc tính và phương thức) có thể dùng một trong các từ khoá private, public, protected để giứo hạn sự truy cập đến thành phần đó</li>
@@ -83,7 +83,7 @@ _Trong đó:_
     <li>Các phương thức thường khai báo là public, để chúng có thể truy cập từ bất cứ đâu.</li>
     <li>Trong một tệp chương trình (hay còn gọi là một đơn vị biên dịch) chỉ có một lớp được khai báo là public, và tên lớp public này phải trùng với tên của tệp kể cả chữ hoa, chữ thường</li>
   </ul>
-</div>
+</content-note>
 
 ## Khai báo thuộc tính
 
@@ -110,9 +110,9 @@ _Trong đó:_
 - **Type** là một kiểu dữ liệu nào đó
 - **<Tên thuộc tính>** là tên của thuộc tính
 
-<div class="note">
+<content-note>
 Ta phải phân biệt được việc khai báo như thế nào là khai báo thuộc tính, khai báo thế nào là khai báo biến thông thường? Câu trả lời là tất cả các khai báo bên trong thân của một lớp và bên ngoài tất cả các phương thức và hàm tạo thì đó là khai báo thuộc tính, khai báo ở những chỗ khác sẽ cho ta biến.
-</div>
+</content-note>
 
 ## Khai báo phương thức
 

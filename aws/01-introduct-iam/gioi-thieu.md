@@ -58,9 +58,7 @@ AWS có hàng triệu khách hàng, họ cung cấp dịch vụ trên cơ sở h
 
 Mỗi **Regions** là collection của (min 2 AZs, max 6 AZs, **thường là 3**), có thể coi Region là cụm data centers (cluster of datacenters). Mỗi regions độc lập với các region khác để đảm bảo an toàn khi có thiên tai xảy ra. Hiện tại ở Việt Nam chưa có datacenter nào của AWS, gần nhất với chúng ra là Nhật Bản (Tokyo, Osaka), Singapore... ![Regions](https://s3-us-west-1.amazonaws.com/corpinfowebsiteuploads/content/uploads/2016/04/25051531/AWS-Global-Infrastructure.jpg)
 
-<div class="note">
-  AZs bao gồm 1 hoặc nhiều center riêng biệt, mỗi center có hệ thống điện, làm mát... Chúng được kết nối với nhau và kết nối với mạng với băng thông cao và độ trễ thấp.
-</div>
+<content-note>AZs bao gồm 1 hoặc nhiều center riêng biệt, mỗi center có hệ thống điện, làm mát... Chúng được kết nối với nhau và kết nối với mạng với băng thông cao và độ trễ thấp.</content-note>
 
 ![Regions](https://image.slidesharecdn.com/runningsharepointontheawscloudfinalv2-120712124336-phpapp02/95/slide-8-1024.jpg)
 
@@ -74,6 +72,7 @@ Khi lựa chọn region để sử dụng các services, nên chọn region gầ
 - **PaaS**: Provider cung cấp dịch vụ dưới dạng flatforms hay tool để phát triển application, bạn không cần quan tâm đến phần cứng, network... VD: AWS Elastic Beanstalk, Heroku
 - **SaaS**: Provider cung cấp software hoặc application. VD: Google Apps, Dropbox
 - **On-premises**: là mô hình phần mềm được cài đặt trên server của chính doanh nghiệp, giúp doanh nghiệp toàn quyền kiểm soát.
-<div class="note">
-  Tất cả model đều có điểm mạnh, yếu riêng biệt. Càng dễ dùng (convenient) thì càng ít kiểm soát (less-control). Vì vậy hãy chọn model cũng như dịch vụ phù hợp với đặc thù dự án của bạn.
-</div>
+
+<content-note>
+Tất cả model đều có điểm mạnh, yếu riêng biệt. Càng dễ dùng (convenient) thì càng ít kiểm soát (less-control). Vì vậy hãy chọn model cũng như dịch vụ phù hợp với đặc thù dự án của bạn.
+</content-note>

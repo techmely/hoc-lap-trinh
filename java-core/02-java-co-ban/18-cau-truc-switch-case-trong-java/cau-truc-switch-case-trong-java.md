@@ -58,7 +58,7 @@ Sau đây là sơ đồ khối mô tả sự hoạt động của cấu trúc r�
 
 Switch sẽ kiểm tra giá trị của **biến** (nằm trong ngoặc đơn sau switch kia), và so sánh biến với từng giá trị khác nhau, lần lượt từ trên xuống dưới, mỗi giá trị cần so sánh gọi là một case. Ở đoạn code trên, các giá trị để so sánh với **biến** là **giá trị 1**, **giá trị 2**. Khi một trường hợp đúng (`true`), khối lệnh ở trong `case` đó sẽ được thực thi. Câu lệnh `break` để thoát ra khỏi cấu trúc switch bạn có thể xem thêm ở bài [từ khóa break và continue](/bai-viet//bai-viet/java/tu-khoa-break-va-continue).
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Thaycacac {
@@ -130,7 +130,7 @@ Sau đây là sơ đồ khối mô tả sự hoạt động của cấu trúc sw
 
 Nếu tất cả các trường hợp đều sai (tức là các giá trị ở `case` không bằng với **biến**), thì khối lệnh ở trong `default` sẽ được thực thi.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Thaycacac {
@@ -168,9 +168,8 @@ public class Thaycacac {
   </div>
 </div>
 
-<div class="note">
-  <ul>
-    <li> <b>Biến</b> phải là một biểu thức có kiểu char, byte, short, int nhưng không thể là kiểu long, nếu <b>Biến</b> có kiểu khác với các kiểu liệt kê ở trên thì java sẽ đưa ra một thông báo lỗi.</li>
-    <li>Nếu case không có break thì nó sẽ thực hiện đến hết, khi không còn khối nào thì thôi.</li>
-  </ul>
-</div>
+<content-note><ul>
+<li> <b>Biến</b> phải là một biểu thức có kiểu char, byte, short, int nhưng không thể là kiểu long, nếu <b>Biến</b> có kiểu khác với các kiểu liệt kê ở trên thì java sẽ đưa ra một thông báo lỗi.</li>
+<li>Nếu case không có break thì nó sẽ thực hiện đến hết, khi không còn khối nào thì thôi.</li>
+
+  </ul></content-note>

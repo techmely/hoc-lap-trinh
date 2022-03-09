@@ -383,7 +383,7 @@ Các tham số của phương thức này là:
 - `ThreadFactory threadFactory`: factory được sử dụng khi tạo một Thread mới.
 - `RejectedExecutionHandler handler`: handler được sử dụng khi một execute bị chặn (blocked) khi vượt quá `maximumPoolSize`.
 
-<div class="example"></div>
+<content-example />
 
 Cài đặt `RejectedExecutionHandler` để xử lý các tác vụ bị từ chối.
 

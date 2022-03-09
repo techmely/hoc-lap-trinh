@@ -54,7 +54,7 @@ Object giống như một file dữ liệu của chúng ta. Object có **Key** c
 
 ![Key trong object](https://user-images.githubusercontent.com/29729545/147766077-fce2bc9e-0852-4d72-b89e-b30b67d78eb0.png)
 
-(prefix: _path1/path2_, object_name: _file-name.txt_)
+(prefix: _path1/path2_, object*name: \_file-name.txt*)
 
 - Object value là nội dung của body
   - Object size tối đa là: 5TB (5000GB)
@@ -66,6 +66,7 @@ Object giống như một file dữ liệu của chúng ta. Object có **Key** c
 - Tính năng này được enable ở **"bucket level"**
 - Khi 1 file có chung key, version sẽ tự động tạo ra
 - Khi đánh version cho 1 file, chúng ta có thể dễ dàng phục hồi các version của 1 file
-<div class="note">
+
+<content-note>
 Nếu enable versioning của một bucket thì những file đã tồn tại trước đó sẽ có <b>version ID = null</b>
-</div>
+</content-note>

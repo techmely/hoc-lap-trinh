@@ -73,7 +73,7 @@ Sự hoạt động của cấu trúc if thiếu được mô ta qua sơ đồ s
 
 ![Cấu trúc rẽ nhánh dạng khuyết trong java](https://user-images.githubusercontent.com/29374426/125040208-92bb7200-e0c1-11eb-9781-bc65864c5b23.png)
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Thaycacac {
@@ -112,7 +112,7 @@ Sự hoạt động của cấu trúc `if-else` thiếu được mô ta qua sơ 
 
 ![Cấu trúc rẽ nhánh dạng đủ trong java](https://user-images.githubusercontent.com/29374426/125040287-a7980580-e0c1-11eb-89cf-97da184f33cf.png)
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Thaycacac {
@@ -158,7 +158,7 @@ if (điều kiện 1) {
 }
 ```
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Thaycacac {

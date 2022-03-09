@@ -37,13 +37,13 @@ Trong cú pháp trên thì:
 - [Kiểu dữ liệu](/bai-viet/java/cac-kieu-du-lieu-trong-java) gồm: kiểu nguyên thủy, kiểu đối tượng… nó xác định kiểu dữ liệu của từng phần tử của mảng.
 - Số phần tử là số lượng phần tử của mảng và là một số nguyên
 
-<div class="note">
+<content-note>
   <ul>
     <li>Mảng trong Java là một đối tượng</li>
     <li>Cũng như các đối tượng khác, mảng phải được tạo ra bằng toán tử `new` như sau: Tên_mảng = new Kiểu_dữ_liệu[spt];</li>
     <li>Khi mảng được tạo ra thì mỗi phần tử của mảng sẽ nhận một giá trị mặc định, quy tắc khởi tạo giá trị cho các phần tử của mảng cũng chính là quy tắc khởi đầu giá trị cho các thuộc tính của đối tượng, tức là mỗi phần tử của mảng sẽ nhận giá trị: (0 - đối với kiểu number, '\0' - đối với kiểu dữ liệu là ký tự, false - đối với kiểu dữ liệu boolean, null - nếu kiểu dữ liệu là một lớp nào đó)</li>
   </ul>
-</div>
+</content-note>
 
 <div class="example">Khai báo một mảng số nguyên gồm 100 phần tử</div>
 
@@ -62,7 +62,7 @@ int mangInt[]=new int[100];
 SinhVien arraySinhVien[] = new SinhVien[100];
 ```
 
-<div class="note">Lúc này mỗi phần tử của mảng arraySinhVien là một con trỏ của lớp SinhVien và hiện giờ mỗi phần tử của mảng đang trỏ đến giá trị null. Để khởi tạo từng phần tử của mảng ta phải làm như sau:</div>
+<content-note>Lúc này mỗi phần tử của mảng arraySinhVien là một con trỏ của lớp SinhVien và hiện giờ mỗi phần tử của mảng đang trỏ đến giá trị null. Để khởi tạo từng phần tử của mảng ta phải làm như sau:</content-note>
 
 ```java
 arraySinhVien[0]=new SinhVien("sv01", "Nguyễn Văn An", "Hưng Yên");
@@ -102,9 +102,9 @@ mangSinhVien [3]=null
 Tên_mảng[Vị_trí_của_phần tử]
 ```
 
-<div class="note">Phần tử đầu tiên của mảng có chỉ số là 0</div>
+<content-note>Phần tử đầu tiên của mảng có chỉ số là 0</content-note>
 
-<div class="example"></div>
+<content-example />
 
 ```java
 int a[] = new int [3]; // Khai báo và tạo ra mảng gồm 3 phần tử
@@ -141,7 +141,7 @@ public class Thaycacac {
 
 Để thay đổi giá trị của một phần tử cụ thể, hãy gán lại giá trị dựa vào vị trí của phần tử trong mảng
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class TruyCapArray2 {
@@ -175,7 +175,7 @@ Mảng trong Java là một đối tượng, do vậy nó cũng có các thuộc
 Tên_mảng.length
 ```
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Thaycacac {
@@ -360,7 +360,7 @@ Trong đó:
 - [KDL](/bai-viet/java/cac-kieu-du-lieu-trong-java) gồm: kiểu nguyên thủy, kiểu đối tượng… nó xác định kiểu dữ liệu của từng phần tử của mảng.
 - sp1, sp2, …, sptN lần lượt là số phần tử trên chiều thứ 1, 2, .., N
 
-<div class="example"></div>
+<content-example />
 
 ```java
 // Khai báo một con trỏ của mảng 2 chiều
@@ -380,9 +380,9 @@ int a[][]={
 
 Khai báo trên sẽ tạo ra một mảng hai chiều gồm: 3 hàng, nhưng trên mỗi hàng lại có số phần tử khác nhau, cụ thể là: trên hàng thứ nhất có 3 phần tử, hảng 2 gồm 4 phần tử và hàng thứ 3 gồm 2 phần tử.
 
-<div class="note">
+<content-note>
 Với khai báo trên nếu ta liệt kê các phần tử của mảng theo trình tự từ trái qua phải và từ trên xuống dưới thì các phần tử lần lượt là: <code>a[0][0], a[0][1], a[0][2], a[1][0], a[1][1], a[1][2], a[1][3], a[2][0], a[2][1]</code>
-</div>
+</content-note>
 
 ### Truy xuất đến phần tử mảng nhiều chiều
 

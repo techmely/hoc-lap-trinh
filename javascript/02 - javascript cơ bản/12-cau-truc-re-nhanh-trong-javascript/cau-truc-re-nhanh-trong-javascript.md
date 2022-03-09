@@ -120,7 +120,7 @@ Vì `x = 3` nên x chia 2 dư 1. Do đó, `x % 2 === 0` là `false`. Vì vậy, 
 
 Trong trường hợp, bạn cần kiểm tra nhiều điều kiện liên tiếp nhau thì có thể dùng nhiều mệnh đề `else if` nối tiếp nhau.
 
-<div class="example"></div>
+<content-example />
 
 ```js
 const age = 24;

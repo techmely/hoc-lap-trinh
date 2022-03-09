@@ -38,7 +38,7 @@ try {
 }
 ```
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class TestMultipleCatchBlock {
@@ -71,7 +71,7 @@ public class TestMultipleCatchBlock {
   </div>
 </div>
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class TestMultipleCatchBlock1 {

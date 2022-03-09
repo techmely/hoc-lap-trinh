@@ -34,7 +34,7 @@ Ngoài việc ép kiểu thì chuyển đối kiểu dữ liệu từ kiểu s�
 
 Việc chuyển đổi String thành int trong java thường được sử dụng nếu chúng ta phải thực hiện các phép toán trên chuỗi có chứa số. Chúng ta sử dụng phương thức `Integer.parseInt()`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 int i = Integer.parseInt("200");
@@ -49,7 +49,7 @@ Chúng ta có thể chuyển đổi int thành **String** trong java bằng 2 c�
 - Sử dụng phương thức `String.valueOf()`
 - Sử dụng phương thức `Integer.toString()`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 // Cách 1
@@ -65,7 +65,7 @@ String s=Integer.toString(i); // kết quả là s = "10"
 
 Để chuyển đổi **String** thành **long** trong java, chúng ta có thể sử dụng phương thức `Long.parseLong()`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 long i = Long.parseLong("200");
@@ -78,7 +78,7 @@ Tương tự như chuyển đổi **int** thành **string**, ta có 2 cách sau:
 - Sử dụng phương thức `String.valueOf()`
 - Sử dụng phương thức `Long.toString()`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 // Cách 1
@@ -94,7 +94,7 @@ String s=Long.toString(i); // kết quả là s = "10"
 
 Để chuyển đổi **String** thành **float** trong java, chúng ta có thể sử dụng phương thức `Float.parseFloat()`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 float i = Float.parseFloat("200");
@@ -107,7 +107,7 @@ Chúng ta có thể chuyển đổi **float** thành **String** trong java bằn
 - Sử dụng phương thức `String.valueOf()`
 - Sử dụng phương thức `Float.toString()`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 // Cách 1
@@ -123,7 +123,7 @@ String s = Float.toString(i); // kết quả là s = "999.999"
 
 Để chuyển đổi **String** thành **double** trong java, chúng ta có thể sử dụng phương thức `Double.parseDouble()`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 double i = Double.parseLong("200");
@@ -136,7 +136,7 @@ Chúng ta có thể chuyển đổi **double** thành **String** trong java bằ
 - Sử dụng phương thức `String.valueOf()`
 - Sử dụng phương thức `Double.toString()`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 // Cách 1
@@ -152,7 +152,7 @@ String s = Double.toString(i); // kết quả là s = "999.999"
 
 Chúng ta có thể chuyển đổi **String** thành **Date** trong java bằng cách sử dụng phương thức `parse()` của các lớp `DateFormat` và SimpleDateFormat.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.text.SimpleDateFormat;
@@ -181,7 +181,7 @@ public class StringToDateExample {
 
 Ngoài các cách chuyển đổi kiểu dữ liệu số học thành **String** ở trên, java cung cấp toán tử cộng `+` cũng được sử dụng để chuyển các kiểu số thành **String**.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class ToanTuCong {

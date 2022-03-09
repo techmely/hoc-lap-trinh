@@ -34,7 +34,7 @@ ArrayList<Type> arrayList= new ArrayList<>();
 
 Trong đó `Type` là kiểu dữ liệu của `ArrayList` mà ta muốn tạo
 
-<div class="example"></div>
+<content-example />
 
 ```java
 // create Integer type arraylist
@@ -46,11 +46,11 @@ ArrayList<String> arrayList = new ArrayList<>();
 
 ## Constructor của lớp ArrayList
 
-| Constructor | Mô tả |
-| --- | --- |
-| ArrayList() | Nó được sử dụng để khởi tạo một danh sách mảng trống. |
+| Constructor             | Mô tả                                                                                          |
+| ----------------------- | ---------------------------------------------------------------------------------------------- |
+| ArrayList()             | Nó được sử dụng để khởi tạo một danh sách mảng trống.                                          |
 | ArrayList(Collection c) | Nó được sử dụng để xây dựng một danh sách mảng được khởi tạo với các phần tử của collection c. |
-| ArrayList(int capacity) | Nó được sử dụng để xây dựng một danh sách mảng mà có dung lượng ban đầu được chỉ định. |
+| ArrayList(int capacity) | Nó được sử dụng để xây dựng một danh sách mảng mà có dung lượng ban đầu được chỉ định.         |
 
 ## Phương thức của lớp ArrayList
 
@@ -215,12 +215,12 @@ class Main {
   </div>
 </div>
 
-<div class="note">
+<content-note>
 <ul>
   <li>Hàm hasNext() trả về true nếu có một phần tử tiếp theo trong ArrayList.</li>
   <li>Hàm next() trả về phần tử tiếp theo trong ArrayList.</li>
 </ul>
-</div>
+</content-note>
 
 ### Thay đổi phần tử trong ArrayList
 
@@ -598,11 +598,11 @@ class Main {
 
 ### Một số hàm trong ArrayList
 
-| Hàm | Mô tả |
-| --- | --- |
-| clone() | Tạo một ArrayList mới với cùng phần tử, kích thước và dung lượng. |
-| contains() | Tìm kiếm ArrayList cho phần tử đã chỉ định và trả về kết quả boolean. |
-| ensureCapacity() | Chỉ định tổng phần tử mà ArrayList có thể chứa. |
-| isEmpty() | Kiểm tra nếu ArrayList trống. |
-| indexOf() | Tìm kiếm một phần tử được chỉ định trong ArrayList và trả về chỉ số của phần tử. |
-| trimToSize() | Giảm dung lượng của một ArrayList về kích thước hiện tại của nó. |
+| Hàm              | Mô tả                                                                            |
+| ---------------- | -------------------------------------------------------------------------------- |
+| clone()          | Tạo một ArrayList mới với cùng phần tử, kích thước và dung lượng.                |
+| contains()       | Tìm kiếm ArrayList cho phần tử đã chỉ định và trả về kết quả boolean.            |
+| ensureCapacity() | Chỉ định tổng phần tử mà ArrayList có thể chứa.                                  |
+| isEmpty()        | Kiểm tra nếu ArrayList trống.                                                    |
+| indexOf()        | Tìm kiếm một phần tử được chỉ định trong ArrayList và trả về chỉ số của phần tử. |
+| trimToSize()     | Giảm dung lượng của một ArrayList về kích thước hiện tại của nó.                 |

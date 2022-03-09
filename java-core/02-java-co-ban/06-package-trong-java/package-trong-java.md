@@ -37,7 +37,7 @@ Java có 2 loại package chính:
 
 Các package tích hợp được java xây dựng sẵn dựa trên các nhu cầu thường xuyên của các lập trình viên.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.Scanner;
@@ -68,7 +68,7 @@ Trong một dự án lớn, nó có thể chứa đến hàm trăm, hàng ngàn 
 
 Ở ví dụ trên chúng ta có package **com** là package lớn nhất, theo sau đó là **company**. Mình đặt 2 class đều có tên `Example` trong package company nhưng được báo lỗi là không thể có 2 class cùng tên trong company. Để giải quyết vấn đề này, mình đã tạo ra 2 package package1 và package2 để chứa 2 class Example của mình.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 // File Example.java trong package1
@@ -136,7 +136,7 @@ Giả sử có 2 class **Example1**, **Example2** chứa trong package **thaycac
 
 **_Cách 1_**: import từng class vào
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import thaycacac.Example1;
@@ -153,7 +153,7 @@ public class Main {
 
 **_Cách 1_**: Thay vì import từng class như vậy sẽ khiến code trở nên dài dòng, chúng ta sẽ sử dụng \_ với hàm ý `import` tất cả các `class`, `interface` etc chứa trong **thaycacac**
 
-<div class="example"></div>
+<content-example />
 
 ```java
 // File Example1.java

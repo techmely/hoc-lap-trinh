@@ -1,7 +1,7 @@
 ---
 title: "Tìm hiểu biến trong JavaScript"
 description: "Tìm hiểu về biến trong JavaScript"
-keywords: 
+keywords:
   [
     "khoá học javascript",
     "bien trong javascript",
@@ -12,7 +12,7 @@ keywords:
     "khai bao bien trong javascript",
     "Kiểu dữ liệu trong JavaScript",
     "so sanh bien trong javascript",
-    "Lấy giá trị của biến trong JavaScript"
+    "Lấy giá trị của biến trong JavaScript",
   ]
 chapter:
   name: "Javascript cơ bản"
@@ -177,7 +177,7 @@ let 2you = 'passtion'; // bắt đầu bằng số
 let null = 'oh no';    // sử dụng từ khoá "null"
 ```
 
-<div class="note">
+<content-note>
 📝 Một số **chú ý** khi đặt tên biến:
 
 <ul>
@@ -185,7 +185,7 @@ let null = 'oh no';    // sử dụng từ khoá "null"
 <li>Bạn có thể sử dụng những chữ cái không phải chữ cái Latinh để đặt tên biến. Nhưng điều này là không nên. Bạn nên sử dụng chữ cái Latinh (a-z) để đặt tên biến.</li>
 <li>Tốt nhất là đặt theo chuẩn tiếng Anh để mọi người trên thế giới có thể hiểu code của bạn.</li>
 </ul>
-</div>
+</content-note>
 
 ## Chuẩn hóa cách đặt tên biến
 

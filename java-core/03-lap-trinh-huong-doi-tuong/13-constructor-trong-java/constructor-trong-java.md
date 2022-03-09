@@ -47,7 +47,7 @@ Phương thức tạo dựng (constructor) trong java là một phương thức 
 
 Khi xây dựng một lớp mà không xây dựng hàm tạo thế thì java sẽ cung cấp cho ta một hàm tạo không đối mặc định, hàm tạo này thực chất không làm gì cả, nếu trong lớp đã có ít nhất một hàm tạo thì hàm tạo mặc định sẽ không được tạo ra, khi ta tạo ra một đối tượng thì sẽ có một hàm tạo nào đó được gọi, nếu trình biên dịch không tìm thấy hàm tạo tương ứng nó sẽ thông báo lỗi, điều này thường xẩy ra khi chúng ta không xây dựng hàm tạo không đối nhưng khi tạo dựng đối tượng ta lại không truyền vào tham số, như được chỉ ra trong ví dụ sau:
 
-<div class="example"></div>
+<content-example />
 
 ```java
 class Student {
@@ -86,15 +86,15 @@ public class SimpleConstructor {
   </div>
 </div>
 
-<div class="note">
+<content-note>
   Nếu không có constructor trong một lớp, trình biên dịch sẽ tự động tạo một constructor mặc định trong lớp đó.
-</div>
+</content-note>
 
 ## Constructor có tham số trong java
 
 Một constructor có tham số truyền vào được gọi là constructor tham số. Constructor tham số được sử dụng để cung cấp các giá trị khác nhau cho các đối tượng khác nhau.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Student {
@@ -135,7 +135,7 @@ public class Student {
 
 Constructor Overloading là một kỹ thuật trong Java. Bạn có thể tạo nhiều constructor trong cùng một lớp với danh sách tham số truyền vào khác nhau. Trình biên dịch phân biệt các constructor này thông qua số lượng và kiểu dữ liệu của các tham số truyền vào.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 class Student {

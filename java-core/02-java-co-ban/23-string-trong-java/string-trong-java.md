@@ -76,7 +76,7 @@ Với đoạn code trên thì chúng ta sẽ được 2 object riêng biệt kh�
 
 Như đã đề cập ở trên `object immutable` thì chúng ta sẽ không thể thay đổi khi nó đã được khỏi tạo. Chúng ta cùng xem ví dụ sau:
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Main {

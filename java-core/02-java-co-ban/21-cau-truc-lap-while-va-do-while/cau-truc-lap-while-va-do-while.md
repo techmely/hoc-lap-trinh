@@ -41,7 +41,7 @@ Ta có thể thấy được luồng thực hiện của chương trình thông 
 
 Trước tiên chương trình sẽ tính giá trị của biểu thức **Điều kiện lặp**, nếu giá trị của biểu thức logic là đúng thì câu lệnh trong thân của `while` sẽ được thực hiện, sau khi thực hiện xong nó tính lại giá trị của biểu thức logic, nếu giá trị đúng nó lại tiếp tục thực hiện lệnh trong thân `while` cho đến khi giá trị của biểu thức sai.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Thaycacac {
@@ -70,7 +70,7 @@ public class Thaycacac {
   </div>
 </div>
 
-<div class="note">
+<content-note>
   <ul>
     <li>Biểu thức bên trong cặp ngoặc tròn phải là một biểu thức logic (biểu thức trả về giá trị true hoặc false)</li>
     <li>Biểu thức điều kiện phải nằm trong cặp ngoặc tròn</li>
@@ -78,7 +78,7 @@ public class Thaycacac {
     <li>Bên trong thân của vòng lặp while ta nên có lệnh làm thay đổi giá trị của biểu thức logic, nếu không chúng ta sẽ rơi vào vòng lặp vô hạn.</li>
     <li>Câu lệnh trong thân cấu trúc while có thể không được thực hiện lần nào (do biểu thức lôgic ban đầu có giá trị false )</li>
   </ul>
-</div>
+</content-note>
 
 ## Vòng lặp do - while
 
@@ -127,7 +127,7 @@ public class Thaycacac {
   </div>
 </div>
 
-<div class="note">
+<content-note>
   <ul>
     <li>Biểu thức bên trong cặp ngoặc tròn phải là một biểu thức logic (biểu thức trả về giá trị true hoặc false)</li>
     <li>Biểu thức điều kiện phải nằm trong cặp ngoặc tròn</li>
@@ -135,4 +135,4 @@ public class Thaycacac {
     <li>Bên trong thân của vòng lặp do-while ta nên có lệnh làm thay đổi giá trị của biểu thức logic, nếu không chúng ta sẽ rơi vào vòng lặp vô hạn.</li>
     <li>Câu lệnh trong thân cấu trúc do-while được thực hiện ít nhất một lần</li>
   </ul>
-</div>
+</content-note>

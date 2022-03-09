@@ -69,7 +69,7 @@ Tổng quan là vậy, còn chi tiết từng trạng thái thì chúng ta sẽ 
 
 ## Ví dụ vòng đời của Thread trong Java
 
-<div class="example"></div>
+<content-example />
 
 ```java
 class thread implements Runnable {

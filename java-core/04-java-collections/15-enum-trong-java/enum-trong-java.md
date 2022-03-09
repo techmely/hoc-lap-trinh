@@ -122,7 +122,7 @@ public class EnumExample {
 
 Chúng ta có thể duyệt trên tất cả các phần tử của Enum, thông qua method `values()`. Trình biên dịch trong java tự động thêm phương thức `values()` vào enum khi nó được biên dịch. Phương thức `values()` trả về một mảng chứa tất cả các giá trị của enum.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class EnumExample {
@@ -161,7 +161,7 @@ Các hằng số enum có giá trị ban đầu bắt đầu từ `0, 1, 2, 3, �
 
 `Constructor` của enum trong java là `private`. Khi bạn không khai báo là `private` thì trình biên dịch sẽ tạo ra `constructor private` không có tham số. Các phần tử trong enum luôn là `static final`. Có thể viết một `static method` trong enum.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class EnumExample3 {
@@ -223,7 +223,7 @@ public class EnumExample3 {
 
 Enum là một đối tượng tham chiếu giống như class, [interface](/bai-viet/java/interface-trong-java) nhưng nó cũng có thể sử dụng toán tử `==` hoặc `equals()` để so sánh các phần tử enum.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class EnumExample {
@@ -266,7 +266,7 @@ public class EnumExample {
 
 Cũng giống với các kiểu dữ liệu nguyên thủy (int,float,..) Enum có thể sử dụng như một tham số trong câu lệnh `switch case`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class EnumExample {
@@ -306,7 +306,7 @@ public class EnumExample {
 
 Do enum cũng là một kiểu dữ liệu được kết thừa từ lớp `Object`, nên chúng ta có thể ghi đè method `toString()` của lớp `Object`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class EnumExample3 {

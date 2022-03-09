@@ -43,7 +43,7 @@ Chỉ những ngoại lệ checked nên được khai báo bởi vì **ngoại l
 
 ## Ví dụ về từ khóa throws trong java
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.io.IOException;

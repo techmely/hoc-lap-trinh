@@ -42,7 +42,7 @@ Thư viện toán học Math là thư viện cung cấp các [phương thức](/
 - **E**: hằng số Euler (~ 2.7) // Math.E
 - **PI**: số pi (~ 3.14). // Math.PI
 
-<div class="example"></div>
+<content-example />
 
 ```java
 double eu = Math.E; // ~ 2.7
@@ -64,7 +64,7 @@ Math.abs(float)
 Math.abs(double)
 ```
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Main {
@@ -83,7 +83,7 @@ public class Main {
 
 `Math.ceil()` trả về giá trị double là số làm tròn lên với giá trị số nguyên gần nhất
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Main {
@@ -102,7 +102,7 @@ public class Main {
 
 `Math.floor()` trả về giá trị double là số làm tròn xuống với giá trị số nguyên gần nhất
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Main {
@@ -126,7 +126,7 @@ Math.round(float, float)
 Math.round(double, double)
 ```
 
-<div class="example"></div>
+<content-example />
 
 ```java
 double roundedDown = Math.round(23.445); // 23
@@ -163,7 +163,7 @@ Math.max(float, float)
 Math.max(double, double)
 ```
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Main {
@@ -189,7 +189,7 @@ Math.min(float, float)
 Math.min(double, double)
 ```
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Main {
@@ -222,7 +222,7 @@ System.out.println(Math.ceil(Math.random() * 100D));
 
 `Math.pow()` lấy lũy thừa (cơ-số, số mũ)
 
-<div class="example"></div>
+<content-example />
 
 ```java
 double p = Math.pow(2, 3); // 8.0
@@ -230,7 +230,7 @@ double p = Math.pow(2, 3); // 8.0
 
 `Math.sqrt()` khai căn
 
-<div class="example"></div>
+<content-example />
 
 ```java
 double a = Math.sqrt(9); //3
@@ -238,7 +238,7 @@ double a = Math.sqrt(9); //3
 
 `Math.sin(), Math.cos()` sin và cos của góc đơn vị radian
 
-<div class="example"></div>
+<content-example />
 
 ```java
 double s = Math.sin(Math.PI/2); //1
@@ -246,7 +246,7 @@ double s = Math.sin(Math.PI/2); //1
 
 `Math.toDegrees()` đổi góc radian thành độ
 
-<div class="example"></div>
+<content-example />
 
 ```java
 double goc = Math.toDegrees(Math.PI/2); //90
@@ -254,7 +254,7 @@ double goc = Math.toDegrees(Math.PI/2); //90
 
 `Math.toRadians()` đổi góc đơn vị độ ra radian
 
-<div class="example"></div>
+<content-example />
 
 ```java
 double goc = Math.toRadians(45); //0.7853981633974483

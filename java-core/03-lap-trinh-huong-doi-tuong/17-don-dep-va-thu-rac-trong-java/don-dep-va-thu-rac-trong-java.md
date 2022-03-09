@@ -48,7 +48,7 @@ Trong java không có kiểu dữ liệu con trỏ như trong C, người lập 
 - Phương thức `finalize()` là một phương thức đặc biệt được cài đặt sẵn cho các lớp. Trình dọn dẹp hệ thống sẽ gọi phương thức này trước khi hủy một đối tượng. Vì vậy việc cài đặt một số thao tác giải phóng, dọn dẹp vùng nhớ đã cấp phát cho các đối tượng dữ liệu trong phương thức finalize() sẽ giúp cho người lập trình chủ động kiểm soát tốt quá trình hủy đối tượng thay vị giao cho trình dọn dẹp hệ thống tự động. Đồng thời việc cài đặt trong phương thức finalize() sẽ giúp cho bộ nhớ được giải phóng tốt hơn, góp phần cải tiến tốc độ chương trình.
 - Phương thức `System.gc()`: gọi trình thu gom rác để nó tiến hành giải phóng các object không còn được sử dụng.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 class Thaycacac {

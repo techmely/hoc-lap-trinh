@@ -26,7 +26,7 @@ position: 8
 
 Nếu phương thức của lớp cha không khai báo một exception thì phương thức ghi đè của lớp con không thể khai báo `Checked Exception`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.io.*;
@@ -57,7 +57,7 @@ class TestExceptionChild extends Parent{
 
 Nếu phương thức của lớp cha không khai báo một exception thì phương thức ghi đè của lớp con không thể khai báo `Checked Exception` nhưng có thể khai báo `Unchecked Exception`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.io.*;

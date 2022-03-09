@@ -87,13 +87,13 @@ AWS Snow Family sử dụng trong 2 usecase chính đó là:
 - Có hệ thống giám sát, định vị 24/7, mỗi chiếc xe có hệ thống quản lý nhiệt độ
 - **Nên sử dụng Snowmobile khi transfer dữ liệu lớn hơn 10 PB**
 
-|  | Snowcone | Snowball | Snowmobile |
-| --- | --- | --- | --- |
-| Storage capacity | 8 TB usable | 80 TB usable | < 100 PB |
-| Migrate size | Lên tới 24TB, online hoặc offline | Lên tới petabytes, offline | Lên tới exabytes, offline |
-| DataSync | Pre-installed |  |  |
-| Storage Cluter |  | Có thể đặt tối đa 15 nodes để tăng khả năng lưu trữ |  |
+|                  | Snowcone                          | Snowball                                            | Snowmobile                |
+| ---------------- | --------------------------------- | --------------------------------------------------- | ------------------------- |
+| Storage capacity | 8 TB usable                       | 80 TB usable                                        | < 100 PB                  |
+| Migrate size     | Lên tới 24TB, online hoặc offline | Lên tới petabytes, offline                          | Lên tới exabytes, offline |
+| DataSync         | Pre-installed                     |                                                     |                           |
+| Storage Cluter   |                                   | Có thể đặt tối đa 15 nodes để tăng khả năng lưu trữ |                           |
 
-<div class="note">
-  Snowball không thể import trực tiếp data vào Glacier. Bạn cần import vào các storage class khác (ví dụ Standard IA), sau đó dùng đến S3 lifecycle để chuyển sang Glacier.
-</div>
+<content-note>
+Snowball không thể import trực tiếp data vào Glacier. Bạn cần import vào các storage class khác (ví dụ Standard IA), sau đó dùng đến S3 lifecycle để chuyển sang Glacier.
+</content-note>

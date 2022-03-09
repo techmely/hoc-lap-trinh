@@ -40,15 +40,15 @@ Trong đó:
 - **Câu lệnh khi biểu thức trả về true**: Giá trị trả về nếu Biểu thức logic nhận giá `true`.
 - **Câu lệnh khi biếu thức trả về false**: Giá trị trả về nếu Biểu thức logic nhận giá `false`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 String result = isTroiMua() === true ? System.out.println("Tôi sẽ nghỉ học") : System.out.println("Tôi sẽ đi học");
 ```
 
-<div class="note">
+<content-note>
   Kiểu giá trị của <b>Câu lệnh khi biểu thức trả về true</b> và <b>Câu lệnh khi biếu thức trả về false</b> phải tương thích với nhau.
-</div>
+</content-note>
 
 <div class="example"> Đoạn biểu thức điều kiện sau trả về giá trị “a là số chẵn” nếu như giá trị của biến a là số chẵn, ngược lại trả về giá trị “a là số lẻ” nếu như giá trị của biến a là số lẻ.</div>
 

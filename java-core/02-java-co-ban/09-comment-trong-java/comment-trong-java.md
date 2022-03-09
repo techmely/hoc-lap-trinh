@@ -50,7 +50,7 @@ Khi trình biên dịch thấy 2 dấu gạch chéo về phía trước, nó bi�
 
 Comment ngắn cuối dòng code để mô tả nhanh.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 int guessNumber = (int) (Math.random() * 10); // Random từ 1 đến 10

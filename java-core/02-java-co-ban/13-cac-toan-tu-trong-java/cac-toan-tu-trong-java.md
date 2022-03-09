@@ -47,15 +47,15 @@ Phép gán được thực hiện bằng toán tử `=`, nó có nghĩa là **h�
 
 ![cac-toan-tu-trong-java](https://user-images.githubusercontent.com/29374426/126589001-77ef8e76-3d2d-4194-9a0f-c662485056a2.png)
 
-<div class="note">
-  <ul>
+<content-note>
+<ul>
     <li>Câu lệnh gán gồm một dấu `=`</li>
     <li>Kiểu của biểu thức bên phải dấu gán phải tương thích với kiểu dữ liệu của biến</li>
     <li>Trong java ta có thể thực hiện một dẫy gán.</li>
   </ul>
-</div>
+</content-note>
 
-<div class="example"></div>
+<content-example />
 
 ```java
 int a = 10;
@@ -80,16 +80,16 @@ Ta mô tả tóm tắt các phép toán số học qua bảng tổng kết sau:
 
 Java cũng có phép toán tăng, giảm, ta có thể mô tả tóm tắt qua các bằng sau:
 
-| Phép toán | Sử dụng | Mô tả |
-| --- | --- | --- |
-| ++ | op++ | Tăng op lên 1 đơn vị, giá trị của op được tăng lên trước khi biểu thức chứa nó được tính |
-| ++ | ++op | Tăng op lên 1 đơn vị, giá trị của op được tăng lên sau khi biểu thức chứa nó được tính |
-| -- | op-- | Giảm op xuống1 đơn vị, giá trị của op được giảm xuống trước khi biểu thức chứa nó được tính |
-| -- | --op | Giảm op xuống1 đơn vị, giá trị của op được giảm xuống sau khi biểu thức chứa nó được tính |
+| Phép toán | Sử dụng | Mô tả                                                                                       |
+| --------- | ------- | ------------------------------------------------------------------------------------------- |
+| ++        | op++    | Tăng op lên 1 đơn vị, giá trị của op được tăng lên trước khi biểu thức chứa nó được tính    |
+| ++        | ++op    | Tăng op lên 1 đơn vị, giá trị của op được tăng lên sau khi biểu thức chứa nó được tính      |
+| --        | op--    | Giảm op xuống1 đơn vị, giá trị của op được giảm xuống trước khi biểu thức chứa nó được tính |
+| --        | --op    | Giảm op xuống1 đơn vị, giá trị của op được giảm xuống sau khi biểu thức chứa nó được tính   |
 
 Qua đây chúng ta cũng hiểu được sự khác nhau của a++ (a--) và ++a (--a)
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Thaycacac {
@@ -120,9 +120,7 @@ public class Thaycacac {
   </div>
 </div>
 
-<div class="note">
-  Nếu toán tử tăng trước, tăng sau (giảm trước, giảm sau) đứng một mình (không nằm trong biểu thức) thì chúng hoạt động như nhau, chúng chỉ khác nhau khi chúng nằm trong biểu thức
-</div>
+<content-note>Nếu toán tử tăng trước, tăng sau (giảm trước, giảm sau) đứng một mình (không nằm trong biểu thức) thì chúng hoạt động như nhau, chúng chỉ khác nhau khi chúng nằm trong biểu thức</content-note>
 
 ## Phép toán quan hệ
 
@@ -229,32 +227,32 @@ public class Thaycacac {
 
 Java hỗ trợ 6 phép toán logic được chỉ ra trong bảng sau:
 
-| Phép toán | Sử dụng | Nhận về giá trị true khi |
-| --- | --- | --- |
-| && | op1 && op2 | Cả op1 và op2 đều là true, giá trị của op2 chỉ được tính khi op1 là true |
-| \|\| | op1 \|\| op2 | Hoặc op1 hoặc op2 là true, giá trị của op2 chỉ được tính khi op1 là false |
-| ! | !op | op là false |
-| & | op1 & op2 | Cả op1 và op2 đều là true, giá trị của op2 luôn được tính kể cả khi op1 là false |
-| \| | op1 \| op2 | Hoặc op1 hoặc op2 là true, giá trị của op2 luôn luôn được tính kể cả khi op1 là true |
-| ^ | op1 ^ op2 | Nếu op1 khác op2 |
+| Phép toán | Sử dụng      | Nhận về giá trị true khi                                                             |
+| --------- | ------------ | ------------------------------------------------------------------------------------ |
+| &&        | op1 && op2   | Cả op1 và op2 đều là true, giá trị của op2 chỉ được tính khi op1 là true             |
+| \|\|      | op1 \|\| op2 | Hoặc op1 hoặc op2 là true, giá trị của op2 chỉ được tính khi op1 là false            |
+| !         | !op          | op là false                                                                          |
+| &         | op1 & op2    | Cả op1 và op2 đều là true, giá trị của op2 luôn được tính kể cả khi op1 là false     |
+| \|        | op1 \| op2   | Hoặc op1 hoặc op2 là true, giá trị của op2 luôn luôn được tính kể cả khi op1 là true |
+| ^         | op1 ^ op2    | Nếu op1 khác op2                                                                     |
 
-<div class="note">
-  <ul>
+<content-note>
+<ul>
     <li>Phép toán && ( & ) chỉ nhận giá trị true khi và chỉ khi cả hai toán hạng đều là true</li>
     <li>Phép toán || ( | ) chỉ nhận giá trị false khi và chỉ khi cả hai toán hạng là false</li>
     <li>Phép toán ^ chỉ nhận giá trị true khi và chỉ khi hai toán hạng khác nhau</li>
   </ul>
-</div>
+</content-note>
 
 ## Phép toán thao tác trên bit
 
 ### Phép toán dịch bit
 
-| Phép toán | Sử dụng | Kết quả |
-| --- | --- | --- |
-| >> | op1 >> op2 | Dịch chuyển op1 sang phải op2 bit, op2 bit phía bên phải sẽ được điền bằng các bít 0 |
-| << | op1 << op2 | Dịch chuyển op1 sang trái op2 bit(giữ nguyên dấu của op1), op2 bit nằm bên trái sẽ được điền bằng các bít 0 |
-| >>> | op1>>> op2 | Dịch chuyển op1 sang phải op2 bit, op2 bit |
+| Phép toán | Sử dụng    | Kết quả                                                                                                     |
+| --------- | ---------- | ----------------------------------------------------------------------------------------------------------- |
+| >>        | op1 >> op2 | Dịch chuyển op1 sang phải op2 bit, op2 bit phía bên phải sẽ được điền bằng các bít 0                        |
+| <<        | op1 << op2 | Dịch chuyển op1 sang trái op2 bit(giữ nguyên dấu của op1), op2 bit nằm bên trái sẽ được điền bằng các bít 0 |
+| >>>       | op1>>> op2 | Dịch chuyển op1 sang phải op2 bit, op2 bit                                                                  |
 
 Sau đây là hình minh hoạ phép toán dịch bít
 
@@ -264,9 +262,9 @@ Sau đây là hình minh hoạ phép toán dịch bít
 - `5<<1=10` vì `5=1012` do vậy khi dịch trái 1 bit ta sẽ được `10102=10`
 - `5<<2=100` vì `5=1012` do vậy khi dịch trái 2 bit ta sẽ được `101002=100`
 
-<div class="note">
+<content-note>
   Phép toán dịch trái một bit chính là phép nhân với 2, còn dịch phải chính là phép chia cho 2
-</div>
+</content-note>
 
 ### Phép toán logic trên bit
 
@@ -274,12 +272,12 @@ Các phép toán thao tác bit cho phép ta thao tác trên từng bit riêng l�
 
 Ta tóm tắt các phép toán trong bảng sau:
 
-| Phép toán | Sử dụng | Thực hiện |
-| --- | --- | --- |
-| & | op1 & op2 | Thực hiện phép and các bit tương ứng của op1 với op2 |
-| \| | op1 \| op2 | Thực hiện phép or các bit tương ứng của op1 với op2 |
-| ^ | op1 ^ op2 | Thực hiện phép xor các bit tương ứng của op1 với op2 |
-| ~ | ~op2 | Thực hiện phép lật các bit của op2 |
+| Phép toán | Sử dụng    | Thực hiện                                            |
+| --------- | ---------- | ---------------------------------------------------- |
+| &         | op1 & op2  | Thực hiện phép and các bit tương ứng của op1 với op2 |
+| \|        | op1 \| op2 | Thực hiện phép or các bit tương ứng của op1 với op2  |
+| ^         | op1 ^ op2  | Thực hiện phép xor các bit tương ứng của op1 với op2 |
+| ~         | ~op2       | Thực hiện phép lật các bit của op2                   |
 
 Bảng giá trị chân lý của các phép toán đái số boolean:
 

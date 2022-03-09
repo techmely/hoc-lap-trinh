@@ -108,15 +108,15 @@ public class HocSinh {
   </div>
 </div>
 
-<div class="note">
+<content-note>
   Nếu biến cục bộ và biến toàn cục có tên khác nhau thì không cần sử dụng từ khóa this.
-</div>
+</content-note>
 
 ## Sử dụng this() gọi constructor của lớp hiện tại.
 
 Phương thức `this()` có thể được sử dụng để gọi [constructor](/bai-viet/java/phuong-thuc-khoi-tao) của lớp hiện tại. Cách sử dụng này sẽ hữu dụng hơn nếu bạn có nhiều [constructor](/bai-viet/java/phuong-thuc-khoi-tao) trong một lớp và bạn muốn sử dụng lại.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class HocSinh2 {
@@ -202,9 +202,9 @@ public class HocSinh3 {
   </div>
 </div>
 
-<div class="note">
+<content-note>
 this() phải được khai báo dòng lệnh đầu tiên trong Constructor.
-</div>
+</content-note>
 
 ### Gọi phương thức của lớp hiện tại
 
@@ -212,7 +212,7 @@ Bạn có thể sử dụng từ khóa `this` để gọi phương thức của 
 
 ![image](https://user-images.githubusercontent.com/29374426/131204535-5cb697f9-425d-4019-af0f-e84ca1542234.png)
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class HocSinh4 {

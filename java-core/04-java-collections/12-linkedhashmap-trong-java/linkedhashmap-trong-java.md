@@ -57,7 +57,7 @@ Chú ý phần `new LinkedHashMap<>(8, 0.6)`, tham số đầu tiên là `capaci
 
 Sau đây là cách chúng ta có thể tạo một `LinkedHashMap` có chứa tất cả các phần tử của các map khác.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.LinkedHashMap;
@@ -95,7 +95,7 @@ class Main {
 - `putAll()` – chèn tất cả các mục từ map được chỉ định vào map này
 - `putIfAbsent()` – chèn `key/value` được chỉ định vào map nếu key được chỉ định không có trong map
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.LinkedHashMap;
@@ -143,7 +143,7 @@ class Main {
 - `keySet()` – trả về một tập hợp tất cả các key của map
 - `values()` – trả về một tập hợp tất cả các value của map
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.LinkedHashMap;
@@ -185,7 +185,7 @@ class Main {
 - `get()` - Trả về value liên kết với key được chỉ định. Nếu không tìm thấy key, nó sẽ trả về null.
 - `getOrDefault()` - Trả về value liên quan đến key được chỉ định. Nếu không tìm thấy key, nó sẽ trả về value mặc định đã chỉ định.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.LinkedHashMap;
@@ -227,7 +227,7 @@ class Main {
 - `remove(key)` – trả về và xóa mục liên quan đến key chỉ định từ map
 - `remove(key, value)` – chỉ xóa mục khỏi map nếu key được chỉ định liên kết với `value` được chỉ định và trả về giá trị `boolean`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.LinkedHashMap;

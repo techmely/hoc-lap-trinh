@@ -72,7 +72,7 @@ Trong đoạn code trên, chúng ta đã tạo ra một Map tên là numbers. Ch
 - `value()` – Trả về tập hợp tất gồm cả các value có trong map.
 - `entryset()` – Trả về tập hợp gồm tất cả cặp `key/value` có trong map.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 package com.gpcoder.collection.map;

@@ -74,7 +74,7 @@ Trước khi chúng ta tìm hiểu về cách gọi hàm thì chúng ta tìm hi�
 
 Như ví dụ tìm `tongHaiSo()` của chúng ta, nhiệm vụ của nó là tính tổng của 2 số nguyên **a, b** nhập vào thì kết quả sẽ ra một số nguyên. Tức là kiểu trả về (returnType) là một số nguyên (int) và kết quả của `return` cũng là một số nguyên (int). Chúng ta sẽ dùng biến có kiểu dữ liệu tương ứng để nhận kết quả trả về từ hàm.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Thaycacac {
@@ -94,7 +94,7 @@ public class Thaycacac {
 
 Đối với loại hàm này chúng ta chỉ cần gọi để sử dụng.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public static void printHello() {
@@ -128,7 +128,7 @@ Khi bạn gọi đến một hàm đã được định và nó có danh sách c
 
 ## Truyền tham số theo giá trị (Passing Parameters by Value)
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Thaycacac {
@@ -159,13 +159,13 @@ public class Thaycacac {
   </div>
 </div>
 
-<div class="note">
-  <ul>
+<content-note>
+<ul>
     <li>Hàm hoanDoiViTri sẽ không làm ảnh hưởng đến giá trị của của các tham số truyền vào.</li>
     <li>Trong một class nếu có 2 method cùng tên và cùng tham số đầu vào thì trình biên dịch sẽ báo lỗi</li>
     <li>Thông thường trong một lớp các phương thức nên được khai báo dùng từ khóa public, khác với vùng dữ liệu thường là dùng tiền tố private vì mục đích an toàn.</li>
-  </ul>
-</div>
+  </ul>s
+</content-note>
 
 ## Method overloading
 

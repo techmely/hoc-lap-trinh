@@ -58,7 +58,7 @@ Lưu ý về đoạn code `new HashMap<>(8, 0.6)`. Ở đây, tham số đầu t
 
 Sau đây là cách chúng ta có thể tạo một hashmap chứa tất cả các phần tử của các map khác.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.HashMap;
@@ -96,7 +96,7 @@ class Main {
 - `putAll()` – chèn tất cả các mục từ map được chỉ định vào map hiện tại
 - `putIfAbsent()` – chèn cặp `key/value` được chỉ định vào map nếu key được chỉ định không có trong map
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.HashMap;
@@ -142,7 +142,7 @@ class Main {
 - `keySet()` – trả về một tập hợp gồm tất cả các key của map
 - `values()` – trả về một tập hợp gồm tất cả các value của map
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.HashMap;
@@ -184,7 +184,7 @@ class Main {
 - `get()`- Trả về value liên kết với `key` được chỉ định. Trả về `null` nếu không tìm thấy key.
 - `getOrDefault()`- Trả về `value` liên kết với key được chỉ định. Trả về `value` mặc định đã chỉ định nếu không tìm thấy `key`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.HashMap;
@@ -226,7 +226,7 @@ class Main {
 - `remove(key)` – trả về và xóa mục liên kết với key được chỉ định khỏi map
 - `remove(key, value)` – chỉ xóa mục khỏi map nếu key được chỉ định liên kết với value đã chỉ định và trả về giá trị `boolean`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.HashMap;
@@ -272,7 +272,7 @@ class Main {
 - `replace(key, old, new)` – thay thế value old bằng value new nếu value old đã liên kết với Key được chỉ định
 - `replaceAll(function)` – thay thế từng value của map bằng kết quả của hàm được chỉ định
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.HashMap;
@@ -368,7 +368,7 @@ Trong ví dụ trên, chúng ta đã tính toán lại các `value` của map b�
 
 - `merge()` - liên kết value được chỉ định với để `key` được chỉ định nếu key đó chưa được liên kết với `value` nào. Tuy nhiên, nếu `key` được chỉ định đã được liên kết với một `value`, nó sẽ hợp nhất value được chỉ định mới với `value` cũ hiện có.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.HashMap;
@@ -409,7 +409,7 @@ Trong một HashMap, chúng ta có thể
 - Lặp qua các `value` của nó
 - Lặp qua các `key/value` của nó
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.HashMap;

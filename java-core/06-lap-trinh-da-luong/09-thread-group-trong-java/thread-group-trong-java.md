@@ -29,7 +29,7 @@ Chỉ có 2 [constructor](/bai-viet/java/constructor-trong-java) để khởi t�
 - `ThreadGroup(String name)` - tạo một nhóm thread có tên.
 - `ThreadGroup(ThreadGroup parent, String name)` - tạo một nhóm `thread` với một nhóm cha và tên.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 // ThreadGroupDemo.java
@@ -77,7 +77,7 @@ Có nhiều phương thức trong lớp `ThreadGroup`. Một danh sách các ph�
 
 |Method| Description| |`int activeCount()`| Trả về số no. của các thread đang chạy trong nhóm hiện tại.| |`int activeGroupCount()`| Trả về số no. của nhóm active trong nhóm thread này.| |`void destroy()`| Phá hủy nhóm thread này và tất cả các nhóm con của nó.| |`String getName()` |Trả về tên của nhóm này.| |`ThreadGroup getParent()`| Trả lại nhóm cha của nhóm này.| |`void interrupt()` |Ngắt tất cả các thread của nhóm này.| |`void list()`| In thông tin của nhóm này tới console tiêu chuẩn.|
 
-<div class="example"></div>
+<content-example />
 
 ```java
 ThreadGroup tg1 = new ThreadGroup("Group A");

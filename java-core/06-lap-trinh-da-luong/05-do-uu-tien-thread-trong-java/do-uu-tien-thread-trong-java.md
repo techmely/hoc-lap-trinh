@@ -40,7 +40,7 @@ Java có định nghĩa sẵn 3 mức ưu tiên chuẩn như sau:
 
 ## Ví dụ sử dụng độ ưu tiên Thread trong Java
 
-<div class="example"></div>
+<content-example />
 
 ```java
 class TestMultiPriority1 extends Thread {

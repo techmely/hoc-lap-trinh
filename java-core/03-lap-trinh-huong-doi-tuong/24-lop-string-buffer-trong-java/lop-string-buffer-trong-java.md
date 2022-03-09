@@ -107,7 +107,7 @@ Thiết lập dung lượng của "s1" đến 30 bởi vì dung lượng truyề
 
 - `void append()`: Phương thức này nối thêm một chuỗi hoặc một mảng ký tự vào cuối cùng của đối tượng StringBuffer. Ví dụ:
 
-<div class="example"></div>
+<content-example />
 
 ```java
 StringBuffer s1 = new StringBuffer("Good");
@@ -118,7 +118,7 @@ Giá trị trong s1 bây giờ là `Goodevening`.
 
 - `insert()`: Phương thức này có hai tham số. Tham số đầu tiên là vị trí chèn. Tham số thứ hai có thể là một chuỗi, một ký tự (char), một giá trị nguyên (int), hay một giá trị số thực (float) được chèn vào. Vị trí chèn sẽ lớn hơn hay bằng 0, và nhỏ hơn hay bằng chiều dài của đối tượng StringBuffer. Bất kỳ đối số nào, trừ ký tự hoặc chuỗi, được chuyển sang chuỗi và sau đó mới được chèn vào.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 StringBuffer str = new StringBuffer("Java sion");
@@ -137,7 +137,7 @@ str.insert(1,’b’);
 
 - `char charAt()`: Phương thức này trả về một giá trị ký tự trong đối tượng StringBuffer tại vị trí được chỉ định.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 StringBuffer str = new StringBuffer("James Gosling");
@@ -146,7 +146,7 @@ char letter = str.charAt(6); //chứa "G"
 
 - `void setCharAt(int index, char value)`: Phương thức này được sử dụng để thay thế ký tự trong một StringBuffer bằng một ký tự khác tại một vị trí được chỉ định.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 StringBuffer name = new StringBuffer("Jawa");
@@ -165,7 +165,7 @@ name.setCharAt(2,’v’);
 
 - `void setLength()`: Phương thức này thiết lập chiều dài của đối tượng StringBuffer. Nếu chiều dài được chỉ định nhỏ hơn chiều dài dữ liệu hiện tại của nó, thì các ký tự thừa sẽ bị cắt bớt. Nếu chiểu dài chỉ định nhiều hơn chiều dài dữ liệu thì các ký tự null được thêm vào phần cuối của StringBuffer
 
-<div class="example"></div>
+<content-example />
 
 ```java
 StringBuffer str = new StringBuffer(10);
@@ -179,7 +179,7 @@ str.setLength(str.length() + 10);
 - Mảng: Mảng đích, nơi mà các ký tự được sao chép.
 - Vị trí bắt đầu trong mảng đích: Các ký tự được sao chép vào mảng đích từ vị trí này.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 StringBuffer str = new StringBuffer("Leopard");
@@ -199,7 +199,7 @@ str.getChars(3,6,ch,0);
 
 - `void reverse()`: Phương thức này đảo ngược nội dung của một đối tượng StringBuffer, và trả về một đối tượng StringBuffer khác.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 StringBuffer str = new StringBuffer("devil");

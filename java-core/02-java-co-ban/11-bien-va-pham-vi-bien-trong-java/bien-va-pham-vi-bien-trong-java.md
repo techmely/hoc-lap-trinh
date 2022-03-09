@@ -52,8 +52,8 @@ _Trong đó:_
 - **ten_bien** là tên của biến, tên biến là một xâu kí tự được đặt theo quy tắc đặt tên của java
 - **InitValue** là giá trị khởi tạo cho biến, đây là phần tuỳ chọn, nếu bỏ qua phần này thì giá trị ban đầu của biến được khởi tạo giá trị mặc định. Ví dụ kieu_du_lieu là `int` thì `gia_tri` phải là kiểu số nguyên và nằm trong phạm vi từ -2,147,483,648 đến 2,147,483,647
 
-<div class="note">
-  <p>Nếu cần khai báo nhiều biến có cùng một kiểu dữ liệu ta có thể đặt các khai báo các biến trên một dòng, các biến này được phân cách nhau bởi dấu phảy. Java sẽ xử lý các biến không được khởi đầu giá trị như sau:</p>
+<content-note>
+<p>Nếu cần khai báo nhiều biến có cùng một kiểu dữ liệu ta có thể đặt các khai báo các biến trên một dòng, các biến này được phân cách nhau bởi dấu phảy. Java sẽ xử lý các biến không được khởi đầu giá trị như sau:</p>
   <ul>
     <li>Giá trị 0 cho kiểu dữ liệu số</li>
     <li>false cho kiểu logic</li>
@@ -61,7 +61,7 @@ _Trong đó:_
     <li>Giá trị null cho kiểu đối tượng</li>
     <li>Đối với các biến cục bộ thì biến không được khới gán giá trị mặc định, tuy nhiên Java sẽ báo lỗi nếu ta sử dụng một biến chưa được nhận giá trị</li>
   </ul>
-</div>
+</content-note>
 
 ## Phạm vi Biến
 
@@ -139,7 +139,7 @@ public class Bien {
 - Bên trong class mà bạn khai báo biến instance, bạn có thể gọi nó trực tiếp bằng tên khi sử dụng ở khắp nới bên trong class đó.
 - Bạn được phép sử dụng `access modifier` khi khai báo biến instance, mặc định là `default`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class SinhVien {
@@ -193,7 +193,7 @@ public class SinhVien {
 - Biến static được truy cập thông qua tên của class chứa nó, với cú pháp: `TenClass.tenBien`.
 - Trong class, các phương thức sử dụng biến static bằng cách gọi tên của nó khi phương thức đó cũng được khai báo với từ khóa `static`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Sinhvien {

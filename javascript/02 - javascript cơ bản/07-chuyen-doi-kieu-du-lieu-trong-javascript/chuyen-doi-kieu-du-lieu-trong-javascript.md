@@ -30,7 +30,7 @@ Bài viết trước bạn đã biết về [8 kiểu dữ liệu cơ bản](/ba
 
 Để chuyển đổi bất kỳ kiểu dữ liệu nào sang string, bạn có thể dùng hàm `String(value)`.
 
-<div class="example"></div>
+<content-example />
 
 ```js
 console.log(String(1)); // "1"
@@ -92,7 +92,7 @@ Quy luật chuyển đổi sang boolean như sau:
 - Những giá trị "empty" như: số `0`, string rỗng `""`, `null`, `undefined` và `NaN` sẽ trở thành `false`.
 - Những giá trị còn lại sẽ trở thành `true`.
 
-<div class="example"></div>
+<content-example />
 
 ```js
 console.log(Boolean(0)); // false

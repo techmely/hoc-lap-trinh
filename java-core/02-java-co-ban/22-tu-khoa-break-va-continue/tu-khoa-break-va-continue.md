@@ -31,7 +31,7 @@ Lệnh `break` sẽ chấm dứt quá trình lặp mà không thực hiện nố
 
 ![Từ khóa break trong trong Java](https://user-images.githubusercontent.com/29374426/127724374-6ceef48b-e07a-462b-b9b6-08eb9c293234.png)
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Thaycacac {
@@ -73,7 +73,7 @@ Lệnh `continue` có thể xuất hiện trong một vòng lặp, khi bắt g�
 
 ![Từ khóa continue trong Java](https://user-images.githubusercontent.com/29374426/127724876-382a6460-27c3-4bb0-9619-c734a072572e.png)
 
-<div class="example"></div>
+<content-example />
 
 ```java
 public class Thaycacac {

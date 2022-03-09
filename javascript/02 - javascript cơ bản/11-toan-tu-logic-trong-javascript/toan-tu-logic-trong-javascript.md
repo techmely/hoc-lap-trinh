@@ -118,7 +118,7 @@ Toán tử OR trong JavaScript sẽ tìm và trả về giá trị **truthy** đ
   - Nếu kết quả là `false` thì tiếp tục thực hiện với toán hạng tiếp theo.
 - Nếu không có giá trị **truthy** nào thì kết quả trả về là giá trị của toán hạng cuối cùng.
 
-<div class="example"></div>
+<content-example />
 
 ```js
 console.log(1 || 0); // 1 (giá trị truthy đầu tiên là 1)
@@ -140,7 +140,7 @@ if (/* true */) {
     }
 ```
 
-<div class="example"></div>
+<content-example />
 
 ```js
 const a = 1;
@@ -161,7 +161,7 @@ if (hour < 9 || hour > 17) {
 }
 ```
 
-<div class="note">toán tử so sánh có độ ưu tiên cao hơn toán tử logic, nên toán tử so sánh được thực hiện trước toán tử OR.</div>
+<content-note>toán tử so sánh có độ ưu tiên cao hơn toán tử logic, nên toán tử so sánh được thực hiện trước toán tử OR.</content-note>
 
 Vì `hour` bằng `20` nên `hour < 9` là `false` và `hour > 17` là `true`. Nghĩa là `hour < 9 || hour > 17` có thể quy đổi thành `false || true`. Suy ra, kết quả cuối cùng là `true`.
 
@@ -256,7 +256,7 @@ console.log(10 && "a"); // "a" (không có giá trị falsy, trả về giá tr�
 
 Tương tự như toán tử OR ở trên, toán tử AND cũng hay dùng với câu lệnh `if`
 
-<div class="example"></div>
+<content-example />
 
 ```js
 const a = 1;
@@ -278,7 +278,7 @@ if (hour >= 9 && hour <= 17) {
 }
 ```
 
-<div class="note">toán tử so sánh có độ ưu tiên cao hơn toán tử logic, nên toán tử so sánh được thực hiện trước toán tử AND.</div>
+<content-note>toán tử so sánh có độ ưu tiên cao hơn toán tử logic, nên toán tử so sánh được thực hiện trước toán tử AND.</content-note>
 
 Vì `hour` bằng `12` nên `hour >= 9` là `true` và `hour <= 17` là `true`. Nghĩa là `hour >= 9 && hour <= 17` có thể quy đổi thành `true && true`. Suy ra, kết quả cuối cùng là `true`.
 
@@ -290,7 +290,7 @@ Tương tự như toán tử OR, toán tử AND cũng có thể dùng cho "short
 
 Vì đặc điểm của toán tử AND trong JavaScript là sẽ xử lý các toán hạng cho đến khi tìm được giá trị **falsy** mới thôi.
 
-<div class="example"></div>
+<content-example />
 
 ```js
 true && console.log("Câu lệnh này được thực hiện"); // (1)
@@ -323,7 +323,7 @@ console.log(!false); // true
 - Chuyển giá trị của toán hạng về dạng boolean: `true` hoặc `false`.
 - Rồi trả về giá trị ngược lại.
 
-<div class="example"></div>
+<content-example />
 
 ```js
 console.log(!"hello"); // false ("hello" là truthy)
@@ -336,7 +336,7 @@ console.log(!undefined); // true (undefined là falsy)
 
 Nếu bạn sử dụng hai toán tử NOT `!!` thì nó sẽ có tác dụng chuyển đổi kiểu dữ liệu về giá trị boolean, giống hàm `Boolean()` mà mình đã nhắc ở đầu.
 
-<div class="example"></div>
+<content-example />
 
 ```js
 console.log(!!"hello"); // true
@@ -353,7 +353,7 @@ Nếu so sánh với các toán tử đã học như [toán tử số học](/ba
 
 Nếu so sánh thứ tự ưu tiên của các toán tử logic trong JavaScript với nhau thì toán tử NOT (`!`) có độ ưu tiên cao nhất. Xếp thứ hai là toán tử AND (`&&`). Và cuối cùng là toán tử OR (`||`).
 
-<div class="example"></div>
+<content-example />
 
 ```js
 console.log(1 + 2 || ("javascript" && 4 > 5));

@@ -39,7 +39,7 @@ position: 16
 
 ![Sắp xếp trong Java](https://user-images.githubusercontent.com/29374426/146035791-17258761-e284-4388-8508-adcd4a9ed2d2.png)
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.Arrays;
@@ -82,7 +82,7 @@ public class SortedArrayExample {
 
 Để sắp xếp các phần tử của danh sách, chúng ta sử dụng lớp tiện ích `Collections.sort()`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.ArrayList;
@@ -118,7 +118,7 @@ Chúng ta phải sử dụng `LinkedHashSet` để có thể giữ được th�
 
 Lớp tiện ích `Collections` chỉ hỗ trợ sắp xếp các phần tử trong một `List`. Do đó, để có thể sắp xếp được một Set chúng ta cần chuyển một `Set` qua một `List`, sau đó thực hiện sắp xếp danh sách này và cuối cùng thực hiện chuyển `List` về `Set`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.ArrayList;
@@ -168,7 +168,7 @@ public class SortedSetExample {
 
 Lớp tiện ích `Collections` chỉ hỗ trợ sắp xếp các phần tử trong một `List`. Do đó, để có thể sắp xếp được một Map chúng ta cần chuyển một `Map` qua một `List`, sau đó thực hiện sắp xếp danh sách này và cuối cùng thực hiện chuyển `List` về `Map`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.ArrayList;
@@ -233,7 +233,7 @@ Trong ví dụ trên, tôi đã tạo một bộ so sánh (`Comparator`) để c
 
 Tương tự như sắp xếp theo `Key`, chúng ta chỉ việc viết lại phương thức `Comparator` so sánh theo `value`:
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.ArrayList;
@@ -301,7 +301,7 @@ public class SortedMapExample2 {
 - `comparingByValue()`
 - `comparingByValue(Comparator<? super V> cmp)`
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.HashMap;
@@ -370,7 +370,7 @@ Giá trị trả về của 2 phương thức này:
 
 Đối với cách này, chúng ta cần thay đổi lớp gốc (original class), tức là lớp của đối tượng so sánh phải chỉnh sửa và implement `Comparable Interface` để cài đặt bộ so sánh.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 package com.gpcoder.sorting;
@@ -715,7 +715,7 @@ public class SortedObjectExample5 {
 
 Với Java 8 cung cấp một phương thức khác giúp chúng ta có thể sắp xếp đảo ngược danh sách một cách trực tiếp thông qua phương thức `comparator.reversed()`.
 
-<div class="example"></div>
+<content-example />
 
 ```java
 import java.util.Arrays;
