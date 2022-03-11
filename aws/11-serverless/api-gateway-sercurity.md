@@ -60,6 +60,6 @@ Chúng ta sẽ tìm hiểu Cognito là gì ở bài viết sau, ở bài này ch
 
 ![Cognito User Pools](https://user-images.githubusercontent.com/29729545/155876131-0a183c5b-20dd-4fb1-9bd6-27c90130b20e.png)
 
-<content-note>
+<content-info>
 Cognito chỉ giúp bạn Authentication, NOT Authorization
-</content-note>
+</content-info>

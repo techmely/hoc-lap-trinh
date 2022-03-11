@@ -145,9 +145,9 @@ Kì lạ phải không? 🤔
 
 Đây là một trong số những thứ gây đau đầu nhất khi lập trình JavaScript. Vì vậy, lời khuyên cho bạn là:
 
-<content-note>
+<content-info>
   <p>Luôn luôn sử dụng dấu chấm phẩy để kết thúc một câu lệnh.</p>
-</content-note>
+</content-info>
 
 ## Comment code trong JavaScript
 
@@ -191,7 +191,7 @@ Ví dụ chú thích trên nhiều dòng:
 
 Khi chạy chương trình, JavaScript engine sẽ bỏ qua thành phần chú thích này.
 
-<content-note>
+<content-info>
   <p>Một vài trường hợp mình viết chú thích:</p>
   <ul>
     <li>Việc đặt tên biến không diễn tả được hết ý nghĩa của nó (muốn đầy đủ ý nghĩa thì nó lại quá dài).</li>
@@ -200,7 +200,7 @@ Khi chạy chương trình, JavaScript engine sẽ bỏ qua thành phần chú t
     <li>Tạm thời bỏ qua một vài đoạn code chưa dùng tới.</li>
     <li>Và nhiều trường hợp khác nữa...</li>
   </ul>
-</content-note>
+</content-info>
 
 _Có một số khái niệm mới ở đây, mình sẽ trình bày ở các bài viết sau._
 

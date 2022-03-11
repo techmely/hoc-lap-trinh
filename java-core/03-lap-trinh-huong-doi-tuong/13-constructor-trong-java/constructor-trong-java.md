@@ -86,9 +86,9 @@ public class SimpleConstructor {
   </div>
 </div>
 
-<content-note>
+<content-info>
   Nếu không có constructor trong một lớp, trình biên dịch sẽ tự động tạo một constructor mặc định trong lớp đó.
-</content-note>
+</content-info>
 
 ## Constructor có tham số trong java
 

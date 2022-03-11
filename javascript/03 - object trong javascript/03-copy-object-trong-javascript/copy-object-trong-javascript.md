@@ -65,14 +65,14 @@ Ngoài cách sử dụng vòng lặp `for...in` như trên, bạn có thể dùn
 Object.assign(dest, [src1, src2, src3...]);
 ```
 
-<content-note>
+<content-info>
 
 Trong đó:
 
 - `dest`: là object đích.
 - `[src1, src2, src3...]`: là các object nguồn.
 
-</content-note>
+</content-info>
 
 Phương thức trên sẽ copy toàn bộ các thuộc tính của các object nguồn `src1, src2,...,srcN` vào object đích `dest`. Và giá trị trả về chính là object đích `dest`.
 

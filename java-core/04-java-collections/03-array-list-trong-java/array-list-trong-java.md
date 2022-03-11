@@ -215,12 +215,12 @@ class Main {
   </div>
 </div>
 
-<content-note>
+<content-info>
 <ul>
   <li>Hàm hasNext() trả về true nếu có một phần tử tiếp theo trong ArrayList.</li>
   <li>Hàm next() trả về phần tử tiếp theo trong ArrayList.</li>
 </ul>
-</content-note>
+</content-info>
 
 ### Thay đổi phần tử trong ArrayList
 

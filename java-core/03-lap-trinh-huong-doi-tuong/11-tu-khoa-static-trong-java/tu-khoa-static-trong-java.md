@@ -92,9 +92,9 @@ public class Student {
   </div>
 </div>
 
-<content-note>
+<content-info>
 Ta không thể sử dụng hàm tạo để khởi đầu các thuộc tính tĩnh, bởi vì hàm tạo không phải là phương thức tĩnh
-</content-note>
+</content-info>
 
 ## Phương thức static trong Java
 

@@ -46,9 +46,9 @@ Trong đó:
 String result = isTroiMua() === true ? System.out.println("Tôi sẽ nghỉ học") : System.out.println("Tôi sẽ đi học");
 ```
 
-<content-note>
+<content-info>
   Kiểu giá trị của <b>Câu lệnh khi biểu thức trả về true</b> và <b>Câu lệnh khi biếu thức trả về false</b> phải tương thích với nhau.
-</content-note>
+</content-info>
 
 <div class="example"> Đoạn biểu thức điều kiện sau trả về giá trị “a là số chẵn” nếu như giá trị của biến a là số chẵn, ngược lại trả về giá trị “a là số lẻ” nếu như giá trị của biến a là số lẻ.</div>
 

@@ -72,14 +72,14 @@ int x = 0;
 long y = 100;
 ```
 
-<content-note>
+<content-info>
 <p>Nếu hai toán hạng kiểu long thì kết quả là kiểu long. Một trong hai toán hạng không phải kiểu long sẽ được chuyển thành kiểu long trước khi thực hiện phép toán.</p>
   <ul>
     <li>Nếu hai toán hạng đầu không phải kiểu long thì phép tính sẽ thực hiện với kiểu int.</li>
     <li>Các toán hạng kiểu byte hay short sẽ được chuyển sang kiểu int trước khi thực hiện phép toán.</li>
     <li>Trong java không thể chuyển biến kiểu int và kiểu boolean như trong ngôn ngữ C/C++.</li>
   </ul>
-</content-note>
+</content-info>
 
 Ví dụ:
 
@@ -113,14 +113,14 @@ float x = 100.0/7;
 double y = 1.56E6;
 ```
 
-<content-note>
+<content-info>
 <p>Một số lưu ý đối với các phép toán trên số dấu chấm động</p>
   <ul>
     <li>Nếu mỗi toán hạng đều có kiểu dấn chấm động thì phép toán chuyển thành phép toán dấu chấm động.</li>
     <li>Nếu có một toán hạng là double thì các toán hạng còn lại sẽ được chuyển thành kiểu double trước khi thực hiện phép toán.</li>
     <li>Biến kiểu float và double có thể ép chuyển sang kiểu dữ liệu khác trừ kiểu boolean.</li>
   </ul>
-</content-note>
+</content-info>
 
 ## Kiểu ký tự (char) trong Java
 

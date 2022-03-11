@@ -33,12 +33,12 @@ Như mình đã nói trong bài [các kiểu dữ liệu trong JavaScript](/bai-
 
 Về bản chất, object là tập hợp của các **key** và **value**. Với **key** gọi là thuộc tính, còn **value** là giá trị tương ứng của thuộc tính.
 
-<content-note>
+<content-info>
 
 - Object có thể không chứa thuộc tính nào, được gọi là **object rỗng**.
 - Object phải là một danh từ **riêng**, không phải danh từ **chung**. Trong ví dụ trên, nếu chỉ nói **máy tính** thì đó không phải đối tượng, mà phải là **máy tính của mình**.
 
-</content-note>
+</content-info>
 
 ## Biểu diễn object trong JavaScript
 
