@@ -12,7 +12,7 @@ keywords:
     "tong quan ve javascript",
     "gioi thieu ve ngon ngu lap trinh javascript",
     "tom tat javascript",
-    "code javascript la gi"
+    "code javascript la gi",
   ]
 chapter:
   name: "Giới thiệu Javascript"
