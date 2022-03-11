@@ -49,7 +49,8 @@ let user = {
 };
 ```
 
-![Memory user John](/bai-viet/javascript/a12077bc8d53b0ac2db5f689a816f343/garbage-collection-memory-user-john.svg)
+![Ví dụ đơn giản về Garbage collection](https://user-images.githubusercontent.com/29374426/157900250-a849f473-cab8-4e57-b815-b46a1360a8c3.png)
+
 
 Trong hình trên, kí hiệu mũi tên biểu thị tham chiếu. Biến toàn cục `user` có tham chiếu đến object `{ name: "John"}` (sau đây mình sẽ gọi là "John" cho ngắn gọn). Thuộc tính `name` của John có giá trị là kiểu nguyên thủy nên được vẽ bên trong object.
 
@@ -59,7 +60,7 @@ Nếu giá trị của biến `user` được ghi đè thì tham chiếu sẽ b�
 user = null;
 ```
 
-![Memory user John mất tham chiếu](/bai-viet/javascript/e857e2c1f3801770fa4002fe188143a1/garbage-collection-memory-user-john-lost.svg)
+![Garbage collection](https://user-images.githubusercontent.com/29374426/157900325-3d61de6c-9676-4c0c-892f-395f7b94f284.png)
 
 Lúc này, John là "không thể tiếp cận". Không có cách nào để truy cập đến John vì không có tham chiếu đến nó. Do đó, **Garbage collector** sẽ xóa John khỏi bộ nhớ.
 
@@ -75,7 +76,7 @@ let user = {
 let admin = user;
 ```
 
-![Memory user John admin](/bai-viet/javascript/aeeb024ce4f4684e819e45c0a1af245a/garbage-collection-memory-user-john-admin.svg)
+![Hai tham chiếu đến object](https://user-images.githubusercontent.com/29374426/157900407-c5121f90-8f23-4245-8ef3-b1b10df2e34b.png)
 
 Lúc này, tồn tại hai tham chiếu đến John. Và nếu giá trị của biến `user` được ghi đè:
 
@@ -117,7 +118,7 @@ Hàm `marry` đã móc nối hai object `man` và `woman` bằng cách để hai
 
 Kết quả thu được như sau:
 
-![Family](/bai-viet/javascript/229bc9506ab65f7e47897db2992af5e1/garbage-collection-family.svg)
+![học javascript](https://user-images.githubusercontent.com/29374426/157900575-79d60ef4-b1d2-44b3-a284-28cdf1faa828.png)
 
 Trong hình trên, tất cả các object đều là "có thể tiếp cận".
 
@@ -128,15 +129,15 @@ delete family.father;
 delete family.mother.husband;
 ```
 
-![Xóa tham chiếu trong Family](/bai-viet/javascript/8ed0c2ac6186cf97f254fdddad4cb1e3/garbage-collection-family-delete-refs.svg)
+![Xoá attrubute trong object javascript](https://user-images.githubusercontent.com/29374426/157901154-bf9cfd1b-8113-40d2-85f0-7b84f85f3975.png)
 
 Bạn thấy rằng, John không có tham chiếu nào **đi đến**. Nói cách khác là không thể truy cập đến John từ **root**. Do đó, vùng nhớ của John sẽ bị xóa.
 
-![John không có tham chiếu trong Family](/bai-viet/javascript/3661cfb14378028b2868f4467987596e/garbage-collection-family-no-father.svg)
+![image](https://user-images.githubusercontent.com/29374426/157901277-2954047e-b761-43ab-8511-f0b5b7f11edf.png)
 
 Sau khi xóa vùng nhớ của John, kết quả còn lại là:
 
-![John không có tham chiếu trong Family 2](/bai-viet/javascript/268edbb0056062b6d696aa0ba8e1bf7a/garbage-collection-family-no-father-2.svg)
+![image](https://user-images.githubusercontent.com/29374426/157901323-8ae73c8c-5f3b-486d-a6e7-1d203ccd36ab.png)
 
 ## Nhóm các object không thể tiếp cận
 
@@ -150,7 +151,7 @@ family = null;
 
 Khi đó, bản đồ bộ nhớ sẽ như sau:
 
-![Không có tham chiếu từ Family](/bai-viet/javascript/b6c80bce643056c6dfc6cd3b44f72373/garbage-collection-family-no-family.svg)
+![image](https://user-images.githubusercontent.com/29374426/157901374-384430d2-e6fb-4e74-819d-7a0caf349a17.png)
 
 Mặc dù, John và Ann đều có tham chiếu nội bộ đến nhau. Thậm chí, John và Ann còn có **tham chiếu đi đến**. Nhưng như vậy là chưa đủ.
 
@@ -172,25 +173,25 @@ Các bước thực hiện của thuật toán này như sau:
 
 Ví dụ:
 
-![Garbage collection 1](/bai-viet/javascript/8090a21e61fb0de39f991832967fe142/garbage-collection-1.svg)
+![image](https://user-images.githubusercontent.com/29374426/157901554-946cc199-14a3-4ede-bea2-d064624d7369.png)
 
 Dễ thấy, nhóm object bên phải là "không thể tiếp cận". Hãy xem thuật toán "mark-and-sweep" hoạt động thế nào.
 
 Bước đầu tiên là đánh dấu root:
 
-![Garbage collection 2](/bai-viet/javascript/4a507a46dc75f268d80a54240f1e121c/garbage-collection-2.svg)
+![image](https://user-images.githubusercontent.com/29374426/157901591-98163c08-03a1-4c75-9e32-a6c74f1387c2.png)
 
 Sau đó, đánh dấu các tham chiếu từ root:
 
-![Garbage collection 3](/bai-viet/javascript/afa52a2e45c5bdb546558d1e0f9afb65/garbage-collection-3.svg)
+![image](https://user-images.githubusercontent.com/29374426/157901636-5fa50e81-3904-4d55-bb64-45b6c13979f5.png)
 
 Tại mỗi object được đánh dấu từ bước trước, tiếp tục đánh dấu các tham chiếu từ nó:
 
-![Garbage collection 4](/bai-viet/javascript/ca549105de14731faacee1abec28add0/garbage-collection-4.svg)
+![image](https://user-images.githubusercontent.com/29374426/157901674-275b72ea-4320-4599-84ab-f4d24f394da8.png)
 
 Cuối cùng, nhóm object bên phải là "không thể tiếp cận" nên sẽ bị xóa:
 
-![Garbage collection 5](/bai-viet/javascript/ca9ffca4a797ff73400470dd8c0d1ee8/garbage-collection-5.svg)
+![image](https://user-images.githubusercontent.com/29374426/157901690-f1de6f9b-15b7-479d-ad5f-e76df25fe6c7.png)
 
 Đó là cơ bản về thuật toán của Garbage collection trong JavaScript thực hiện.
 
