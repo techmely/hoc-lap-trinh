@@ -50,7 +50,7 @@ let obj = {};
 
 Bạn thấy rằng giá trị của `obj.a` không thay đổi so với giá trị ban đầu, vẫn là `1`. Đó chính là **tính bất biến**.
 
-Nếu sử dụng ở [strict mode](/bai-viet/javascript/use-strict-trong-js/) thì đoạn code trên sẽ sinh ra lỗi:
+Nếu sử dụng ở [strict mode](/bai-viet/javascript/strict-mode-trong-javascript/) thì đoạn code trên sẽ sinh ra lỗi:
 
 ```js
 "use strict";

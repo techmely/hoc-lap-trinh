@@ -39,7 +39,11 @@ Trong ví dụ trên, mình sử dụng [function expression](/bai-viet/javascri
 
 Tiếp theo, mình gọi `user.sayHello()`. Và kết quả là `Hello!` được hiển thị ra console.
 
-> 📝 Một hàm là thuộc tính của object thì nó được gọi là **phương thức**.
+<content-note>
+
+📝 Một hàm là thuộc tính của object thì nó được gọi là **phương thức**.
+
+</content-note>
 
 Vì vậy, `sayHello` chính là một phương thức của object `user`.
 
@@ -80,12 +84,17 @@ user.sayHello(); // Hello!
 
 Ngoài ra, bạn cũng có thể **bỏ qua từ khóa `function`** như sau:
 
-    let user = {
-      name: "Alex",
-      age: "28",
-      sayHello() {    console.log("Hello!");  },};
+```js
+let user = {
+  name: "Alex",
+  age: "28",
+  sayHello() {
+    console.log("Hello!");
+  },
+};
 
-    user.sayHello(); // Hello!
+user.sayHello(); // Hello!
+```
 
 Trên đây là một số kiến thức cơ bản về phương thức của object. Sau đây, mình tiếp tục tìm hiểu về từ khóa `this` trong JavaScript.
 
@@ -199,7 +208,7 @@ function sayHello() {
 sayHello(); // undefined
 ```
 
-Trong trường hợp này, giá trị của `this` là `undefined` ở [strict mode](/bai-viet/javascript/use-strict-trong-js/). Nếu bạn truy cập `this.name` thì sẽ bị lỗi **Uncaught TypeError: Cannot read properties of undefined (reading 'name')**.
+Trong trường hợp này, giá trị của `this` là `undefined` ở [strict mode](/bai-viet/javascript/strict-mode-trong-javascript/). Nếu bạn truy cập `this.name` thì sẽ bị lỗi **Uncaught TypeError: Cannot read properties of undefined (reading 'name')**.
 
 ```js
 "use strict";
@@ -218,7 +227,7 @@ Khi đó, `this.name` tương đương với `window.name` (thường là `undef
 
 ## Arrow function không có this
 
-[Arrow function](/bai-viet/javascript/arrow-function-la-gi-arrow-function-trong-js/) là một hàm đặc biệt, vì nó không có `this`.
+[Arrow function](/bai-viet/javascript/arrow-function-trong-javascript/) là một hàm đặc biệt, vì nó không có `this`.
 
 Nếu bạn truy cập `this` bên trong arrow function thì JavaScript sẽ hiểu `this` là đối tượng ứng với **ngữ cảnh gần nhất bên ngoài có `this`** lúc gọi hàm.
 
@@ -256,8 +265,6 @@ user.sayHello(); // undefined
 ```
 
 Lúc này, ngữ cảnh gần nhất có `this` lúc gọi hàm là **global**. Trong trường hợp không dùng **strict mode** thì `this` chính là `window`. Vì vậy, `this.name` bằng `undefined`.
-
-> Arrow function có nhiều vấn đề khác nữa cần quan tâm. Bạn có thể tham khảo bài [phân biệt arrow function và function](/bai-viet/javascript/phan-biet-arrow-function-va-function-trong-javascript/) để hiểu thêm về arrow function.
 
 ## Tổng kết
 

@@ -15,7 +15,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 10
 ---
 
-Symbol là một kiểu dữ liệu mới được giới thiệu từ phiên bản [ES6](/bai-viet/javascript/tag/es6/). Tuy nhiên, mình cũng chưa từng dùng Symbol trong JavaScript bao giờ cả.
+Symbol là một kiểu dữ liệu mới được giới thiệu từ phiên bản ES6. Tuy nhiên, mình cũng chưa từng dùng Symbol trong JavaScript bao giờ cả.
 
 Nếu vậy thì người ta đưa ra kiểu dữ liệu này để làm gì? Symbol có ưu điểm gì? Ứng dụng của Symbol như thế nào? Cách sử dụng Symbol trong JavaScript ra sao?
 
@@ -86,7 +86,7 @@ Tuy nhiên, nhiều khi mình muốn các description giống nhau sẽ ứng v�
 
 Để làm được việc này, mình có thể sử dụng phương thức `Symbol.for(key)`. Phương thức này sẽ tìm trong một đối tượng **Global** nào đó, xem có tồn tại một Symbol tương ứng với **key** hay không.
 
-Nếu chưa có Symbol nào thoả mãn thì [JavaScript Engine](/bai-viet/javascript/javascript-la-gi/#javascript-engine-l%C3%A0-g%C3%AC) sẽ tạo ra một Symbol mới được xác định bởi **key**. Ngược lại, nó sẽ trả về Symbol đó.
+Nếu chưa có Symbol nào thoả mãn thì JavaScript Engine sẽ tạo ra một Symbol mới được xác định bởi **key**. Ngược lại, nó sẽ trả về Symbol đó.
 
 ```js
 // Tạo một Symbol mới với description là "id"
@@ -190,7 +190,7 @@ console.log(arr);
 
 #### Ví dụ khi không dùng Symbol
 
-Giả sử mình định nghĩa một [module](/bai-viet/javascript/su-dung-es-modules-tren-trinh-duyet/) như là một object, với một key dạng string là "id". Trường "id" sẽ được sử dụng với mục đích nào đó bên trong module.
+Giả sử mình định nghĩa một module như là một object, với một key dạng string là "id". Trường "id" sẽ được sử dụng với mục đích nào đó bên trong module.
 
 ```js
 // lib.js

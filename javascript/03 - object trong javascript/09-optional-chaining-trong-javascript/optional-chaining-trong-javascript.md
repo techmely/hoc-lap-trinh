@@ -103,7 +103,11 @@ console.log(user?.address); // undefined
 console.log(user?.address?.street); // undefined
 ```
 
-> **Chú ý:** optional chaining trong JavaScript `?.` chỉ kiểm tra điều kiện của **một giá trị** đứng trước nó.
+<content-warning>
+
+**Chú ý:** optional chaining trong JavaScript `?.` chỉ kiểm tra điều kiện của **một giá trị** đứng trước nó.
+
+</content-warning>
 
 Ví dụ đoạn code sau bị lỗi:
 
@@ -185,7 +189,7 @@ userAdmin.admin?.(); // I am admin
 userGuest.admin?.(); // không có gì hiển thị
 ```
 
-Trong ví dụ trên, `?.` dùng để kiểm tra xem [phương thức](/bai-viet/javascript/phuong-thuc-object-va-this-trong-javascript/) `admin` có tồn tại hay không. Nếu tồn tại thì phương thức `admin` được gọi.
+Trong ví dụ trên, `?.` dùng để kiểm tra xem [phương thức](/bai-viet/javascript/phuong-thuc-trong-javascript/) `admin` có tồn tại hay không. Nếu tồn tại thì phương thức `admin` được gọi.
 
 Đối tượng `userAdmin` có phương thức `admin` nên `userAdmin.admin` khác `null` và `undefined`. Vì vậy, `userAdmin.admin()` được gọi.
 
@@ -193,14 +197,16 @@ Trong ví dụ trên, `?.` dùng để kiểm tra xem [phương thức](/bai-vie
 
 ► **Ví dụ `?.` với toán tử `[]`:**
 
-    let user1 = {
-      name: "Alex",
-    };
+```js
+let user1 = {
+  name: "Alex",
+};
 
-    let user2 = null;
+let user2 = null;
 
-    console.log(user1?.["name"]); // Alex
-    console.log(user2?.["name"]); // undefined
+console.log(user1?.["name"]); // Alex
+console.log(user2?.["name"]); // undefined
+```
 
 Trong ví dụ trên, `?.` dùng để kiểm tra xem `user1` và `user2` có tồn tại hay không. Nếu tồn tại thì dùng `["name"]` để truy cập giá trị thuộc tính `"name"` trong các đối tượng.
 
@@ -214,7 +220,11 @@ Trong ví dụ trên, `?.` dùng để kiểm tra xem `user1` và `user2` có t�
 delete user?.name; // xóa thuộc tính user.name nếu user tồn tại.
 ```
 
-> 💡 **Chú ý:** bạn có thể dùng `?.` để **đọc và xóa** thuộc tính trong object, nhưng không thể **thay đổi giá trị** của thuộc tính.
+<content-warning>
+
+💡 **Chú ý:** bạn có thể dùng `?.` để **đọc và xóa** thuộc tính trong object, nhưng không thể **thay đổi giá trị** của thuộc tính.
+
+</content-warning>
 
 Ví dụ:
 

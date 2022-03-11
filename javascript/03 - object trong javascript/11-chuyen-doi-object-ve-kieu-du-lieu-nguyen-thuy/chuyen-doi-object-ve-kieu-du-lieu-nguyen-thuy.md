@@ -109,7 +109,7 @@ if (user == 1) {
 
 **Để chuyển đổi object về kiểu nguyên thủy, JavaScript sẽ tìm và gọi ba phương thức trong object:**
 
-1.  Gọi phương thức `obj[Symbol.toPrimitive](hint)` nếu tồn tại - với `Symbol.toPrimitive` là giá trị [symbol](/bai-viet/javascript/tim-hieu-ve-symbol-trong-javascript/) của hệ thống.
+1.  Gọi phương thức `obj[Symbol.toPrimitive](hint)` nếu tồn tại - với `Symbol.toPrimitive` là giá trị [symbol](/bai-viet/javascript/symbol-trong-javascript/) của hệ thống.
 2.  Trường hợp không tồn tại phương thức trên, nếu "hint" là `string`: ưu tiên gọi `obj.toString()` rồi đến `obj.valueOf()` (bất kể phương thức nào tồn tại).
 3.  Trường hợp "hint" là `number` hoặc `default`: ưu tiên gọi `obj.valueOf()` rồi đến `obj.toString()` (bất kể phương thức nào tồn tại).
 
@@ -204,9 +204,13 @@ alert(user + 1); // 29
 
 Như bạn thấy là kết quả hoàn toàn giống với cách sử dụng `Symbol.toPrimitive`.
 
-> 📝 **Chú ý**: hai phương thức `toString` và `valueOf` có thể trả về bất kỳ kiểu dữ liệu nguyên thủy nào, không nhất thiết phải trả về **number** hay **string**.
->
-> Chỉ cần giá trị trả về **khác object** là được.
+<content-note>
+
+📝 **Chú ý**: hai phương thức `toString` và `valueOf` có thể trả về bất kỳ kiểu dữ liệu nguyên thủy nào, không nhất thiết phải trả về **number** hay **string**.
+
+Chỉ cần giá trị trả về **khác object** là được.
+
+</content-note>
 
 Ví dụ:
 

@@ -42,9 +42,9 @@ let root = new Point(0, 0);
 console.log(root.x, root.y); // 0 0
 ```
 
-Khi một hàm được gọi với toán tử `new`, [JavaScript Engine](/bai-viet/javascript/javascript-la-gi/#javascript-engine-l%C3%A0-g%C3%AC) sẽ xử lý các bước như sau:
+Khi một hàm được gọi với toán tử `new`, JavaScript Engine sẽ xử lý các bước như sau:
 
-1.  Khởi tạo object rỗng và gán cho [`this`](/bai-viet/javascript/phuong-thuc-object-va-this-trong-javascript/).
+1.  Khởi tạo object rỗng và gán cho [`this`](/bai-viet/javascript/this-trong-javascript/).
 2.  Các câu lệnh trong thân hàm được thực thi, thường là cập nhật `this` hoặc thêm các thuộc tính cho `this`.
 3.  Trả về giá trị của `this`.
 
@@ -71,13 +71,17 @@ let root = {
 
 Bây giờ, nếu bạn muốn tạo ra các **point** khác, bạn chỉ cần gọi `new p1(1, 2)`, `new p2(2, 3)`,... thay vì phải sử dụng cú pháp `{...}` nhiều lần (và dài dòng hơn).
 
-> 📝 **Chú ý:**
->
-> **Mục đích chính của hàm khởi tạo** là để dễ dàng **tái sử dụng code**.
->
-> [Arrow function](/bai-viet/javascript/arrow-function-la-gi-arrow-function-trong-js/) không có `this` nên không được dùng làm hàm khởi tạo.
->
-> Nếu hàm khởi tạo không có tham số thì bạn có thể bỏ qua cặp dấu ngoặc đơn `()`, ví dụ:
+<content-warning>
+
+📝 **Chú ý:**
+
+**Mục đích chính của hàm khởi tạo** là để dễ dàng **tái sử dụng code**.
+
+[Arrow function](/bai-viet/javascript/arrow-function-la-gi-arrow-function-trong-js/) không có `this` nên không được dùng làm hàm khởi tạo.
+
+</content-warning>
+
+Nếu hàm khởi tạo không có tham số thì bạn có thể bỏ qua cặp dấu ngoặc đơn `()`, ví dụ:
 
 ```js
 function Point() {
@@ -90,8 +94,6 @@ console.log(root.x, root.y); // 0
 ```
 
 > Tuy nhiên, mình khuyên bạn nên sử dụng cách gọi hàm khởi tạo với cặp dấu ng`()`, vì nó chuẩn hơn và **đúng với cú pháp gọi hàm**.
-
-## {...}`
 
 Bạn có thể khai báo, đồng thời khởi tạo object ngay với cú pháp `new function(){...}` như sau:
 
@@ -148,11 +150,15 @@ console.log(root.x, root.y); // 0 0
 
 Với cách viết như này, bạn có thể khởi tạo object với `new` hoặc không có `new` thì đều cho kết quả giống nhau.
 
-> 💡 **Chú ý:**
->
-> `new.target` ít được sử dụng trong thực tế.
->
-> Việc khởi tạo object **nên luôn luôn sử dụng từ khóa `new`** để đảm bảo code rõ ràng và dễ hiểu nhất.
+<content-warning>
+
+💡 **Chú ý:**
+
+`new.target` ít được sử dụng trong thực tế.
+
+Việc khởi tạo object **nên luôn luôn sử dụng từ khóa `new`** để đảm bảo code rõ ràng và dễ hiểu nhất.
+
+</content-warning>
 
 ## Trả về giá trị từ hàm khởi tạo
 
@@ -167,29 +173,32 @@ Ví dụ hàm khởi tạo trả về một object khác `this`:
 
 ```js
 function Point(x, y) {
-      this.x = x;
-      this.y = y;
+  this.x = x;
+  this.y = y;
 
-      return { x: 100, y: 100 }; // trả về object này thay vì this}
+  return { x: 100, y: 100 }; // trả về object này thay vì this}
+}
 
-    let p = new Point(0, 0);console.log(p.x, p.y); // 100 100
+let p = new Point(0, 0);
+console.log(p.x, p.y); // 100 100
 ```
 
 Ví dụ hàm khởi tạo trả về giá trị nguyên thủy:
 
 ```js
 function Point(x, y) {
-      this.x = x;
-      this.y = y;
+  this.x = x;
+  this.y = y;
 
-      return 1; // return trả về giá trị nguyên thủy bị bỏ qua}
-
-    let p = new Point(0, 0);console.log(p.x, p.y); // 0 0
+  return 1; // return trả về giá trị nguyên thủy bị bỏ qua}
+}
+let p = new Point(0, 0);
+console.log(p.x, p.y); // 0 0
 ```
 
 ## Định nghĩa phương thức trong hàm khởi tạo
 
-Object không chỉ có thuộc tính mà còn có cả [phương thức](/bai-viet/javascript/phuong-thuc-object-va-this-trong-javascript/).
+Object không chỉ có thuộc tính mà còn có cả [phương thức](/bai-viet/javascript/phuong-thuc-trong-javascript/).
 
 Và dĩ nhiên, bạn có thể **định nghĩa phương thức trong hàm khởi tạo** của object, ví dụ:
 
@@ -263,7 +272,7 @@ console.log(a === b); // true
 
 Viết hàm khởi tạo object `Calculator` với ba phương thức:
 
-- `read()`: sử dụng hàm [`prompt`](/bai-viet/javascript/ham-tuong-tac-nguoi-dung-alert-confirm-prompt/) đọc hai giá trị và lưu vào hai thuộc tính của object (giả sử người dùng nhập vào là số).
+- `read()`: sử dụng hàm [`prompt`](/bai-viet/javascript/ham-tuong-tac-voi-nguoi-dung-alert-confirm-prompt/) đọc hai giá trị và lưu vào hai thuộc tính của object (giả sử người dùng nhập vào là số).
 - `add()`: trả về tổng của hai số đã nhập.
 - `mul()`: trả về tích của hai số đã nhập.
 
