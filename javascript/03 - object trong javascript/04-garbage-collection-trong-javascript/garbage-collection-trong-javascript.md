@@ -15,19 +15,15 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---
 
-Quản lý bộ nhớ trong JavaScript được thực hiện tự động và trong suốt với người dùng. Khi bạn khởi tạo [dữ liệu nguyên thủy](/bai-viet/javascript/kieu-du-lieu-trong-javascript/), [object](/bai-viet/javascript/object-la-gi-object-trong-javascript/) hay [hàm](/bai-viet/javascript/ham-la-gi-ham-trong-javascript/)... thì chúng đều chiếm bộ nhớ (RAM).
+Quản lý bộ nhớ trong JavaScript được thực hiện tự động và trong suốt với người dùng. Khi bạn khởi tạo [dữ liệu nguyên thủy](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript/), [object](/bai-viet/javascript/object-la-gi-object-trong-javascript/) hay [hàm](/bai-viet/javascript/ham-trong-javascript/)... thì chúng đều chiếm bộ nhớ (RAM).
 
-Điều gì sẽ xảy ra nếu một vùng nhớ không còn sử dụng? [JavaScript engine](http://localhost:8000/javascript-la-gi/#javascript-engine-l%C3%A0-g%C3%AC) sẽ làm gì để phát hiện và giải phóng vùng nhớ đó?
-
-> Bài viết này được dịch từ: [Garbage collection](https://javascript.info/garbage-collection). Bạn có thể tham khảo bài viết gốc nếu bạn thành thạo tiếng Anh.
+Điều gì sẽ xảy ra nếu một vùng nhớ không còn sử dụng? JavaScript engine sẽ làm gì để phát hiện và giải phóng vùng nhớ đó?
 
 ## Khả năng tiếp cận
 
----
-
 Ý tưởng chính của việc quản lý bộ nhớ trong JavaScript là **khả năng tiếp cận**.
 
-Những giá trị "có thể tiếp tận" là những giá trị được lưu trong bộ nhớ theo một cách nào đó, để có thể truy cập và sử dụng.
+Những giá trị _"có thể tiếp tận"_ là những giá trị được lưu trong bộ nhớ theo một cách nào đó, để có thể truy cập và sử dụng.
 
 ► JavaScript có một số giá trị là luôn luôn "có thể tiếp cận", nên chắc chắn không bao giờ bị xóa, ví dụ:
 
@@ -43,8 +39,6 @@ Các giá trị này được gọi là **root** (gốc).
 > Luôn có một tiến trình chạy ngầm trong JavaScript engine gọi là [garbage collector](<https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)>) hay **trình thu gom rác**. Garbage collector theo dõi toàn bộ object và xóa đi các object không thể truy cập.
 
 ## Ví dụ đơn giản về Garbage collection
-
----
 
 Sau đây là ví dụ đơn giản về garbage collection trong JavaScript:
 
@@ -71,8 +65,6 @@ Lúc này, John là "không thể tiếp cận". Không có cách nào để tru
 
 ## Hai tham chiếu đến object
 
----
-
 Giả sử bạn [copy object](/bai-viet/javascript/copy-object-trong-javascript/) dạng tham chiếu từ `user` sang `admin`.
 
 ```js
@@ -97,8 +89,6 @@ Tham chiếu từ `user` đến John bị mất, nhưng vẫn còn tham chiếu 
 Chi khi nào giá trị của `admin` cũng bị ghi đè thì vùng nhớ của John mới bị xóa.
 
 ## Object có liên kết nội bộ
-
----
 
 Hãy xem một ví dụ phức tạp hơn:
 
@@ -133,8 +123,10 @@ Trong hình trên, tất cả các object đều là "có thể tiếp cận".
 
 Bây giờ, mình xóa đi hai tham chiếu:
 
-    delete family.father;
-    delete family.mother.husband;
+```js
+delete family.father;
+delete family.mother.husband;
+```
 
 ![Xóa tham chiếu trong Family](/bai-viet/javascript/8ed0c2ac6186cf97f254fdddad4cb1e3/garbage-collection-family-delete-refs.svg)
 
@@ -147,8 +139,6 @@ Sau khi xóa vùng nhớ của John, kết quả còn lại là:
 ![John không có tham chiếu trong Family 2](/bai-viet/javascript/268edbb0056062b6d696aa0ba8e1bf7a/garbage-collection-family-no-father-2.svg)
 
 ## Nhóm các object không thể tiếp cận
-
----
 
 Có trường hợp mà cả một nhóm các object là "không thể tiếp cận" và bị xóa khỏi bộ nhớ.
 
@@ -169,8 +159,6 @@ Vì quan trọng hơn cả, những object này lại không có tham chiếu t�
 Kết quả là nhóm các object này bị xóa khỏi bộ nhớ.
 
 ## Thuật toán Garbage collection trong JavaScript
-
----
 
 Thuật toán cơ bản của Garbage collection trong JavaScript gọi là "mark-and-sweep" ("đánh dấu-và-xóa").
 

@@ -15,7 +15,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---
 
-Điều cơ bản khác nhau giữa object và các [kiểu dữ liệu nguyên thủy](/bai-viet/javascript/kieu-du-lieu-trong-javascript/) khác là object lưu trữ dữ liệu theo kiểu [tham chiếu](<https://vi.wikipedia.org/wiki/Tham_chi%E1%BA%BFu_(khoa_h%E1%BB%8Dc_m%C3%A1y_t%C3%ADnh)>). Nên việc so sánh 2 object trong JavaScript là **theo địa chỉ** (chứ không phải theo giá trị).
+Điều cơ bản khác nhau giữa object và các [kiểu dữ liệu nguyên thủy](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript/) khác là object lưu trữ dữ liệu theo kiểu [tham chiếu](<https://vi.wikipedia.org/wiki/Tham_chi%E1%BA%BFu_(khoa_h%E1%BB%8Dc_m%C3%A1y_t%C3%ADnh)>). Nên việc so sánh 2 object trong JavaScript là **theo địa chỉ** (chứ không phải theo giá trị).
 
 Vì vậy, trước khi tìm hiểu chi tiết về việc so sánh giữa hai object, mình cần hiểu cơ bản về kiểu dữ liệu tham chiếu.
 
@@ -51,7 +51,7 @@ Sau đây, mình sẽ tìm hiểu các phương diện so sánh 2 object trong J
 
 ## So sánh 2 object bằng tham chiếu
 
-JavaScript cung cấp hai [toán tử so sánh](/bai-viet/javascript/toan-tu-so-sanh-trong-javascript/) là `==` và `===`, trong đó:
+JavaScript cung cấp hai [toán tử so sánh](/bai-viet/javascript/toan-tu-trong-javascript/) là `==` và `===`, trong đó:
 
 - Toán tử `===` ("bằng nghiêm ngặt") trả về `true` khi và chỉ khi hai biến có `cùng kiểu dữ liệu` và `cùng giá trị`, ngược lại thì trả về `false`.
 - Toán tử `==` trả về `true` khi hai biến có `cùng giá trị` và có thể **khác kiểu dữ liệu** (JavaScript sẽ [chuyển về cùng kiểu dữ liệu](/bai-viet/javascript/chuyen-doi-kieu-du-lieu-trong-javascript/) để so sánh), ngược lại thì trả về `false`.
@@ -154,11 +154,9 @@ console.log(isPointEqual(point1, point2)); // trueconsole.log(isPointEqual(point
 
 Thậm chí là số lượng thuộc tính không biết trước thì bạn không thể dùng cách trên được.
 
-##
+Để giải quyết bài toán số lượng các thuộc tính trong object nhiều hoặc không biết trước, bạn có thể sử dụng [vòng lặp `for...in`](/bai-viet/javascript/cau-truc-lap-trong-javascript) để duyệt hết các thuộc tính của object.
 
-Để giải quyết bài toán số lượng các thuộc tính trong object nhiều hoặc không biết trước, bạn có thể sử dụng [vòng lặp `for...in`](/bai-viet/javascript/object-la-gi-object-trong-javascript/#c%C3%A1ch-duy%E1%BB%87t-t%E1%BA%A5t-c%E1%BA%A3-c%C3%A1c-thu%E1%BB%99c-t%C3%ADnh-c%E1%BB%A7a-object) để duyệt hết các thuộc tính của object.
-
-Mình đã viết một [hàm](/bai-viet/javascript/ham-la-gi-ham-trong-javascript/) để so sánh từng thuộc tính và giá trị của object như sau:
+Mình đã viết một [hàm](/bai-viet/javascript/ham-trong-javascript/) để so sánh từng thuộc tính và giá trị của object như sau:
 
 ```js
 function isShallowEqual(obj1, obj2) {

@@ -29,16 +29,20 @@ Khi chuyển đổi object về boolean thì kết quả luôn là `true`.
 
 Ví dụ sử dụng object với [câu lệnh `if`](/bai-viet/javascript/cau-truc-re-nhanh-trong-javascript/):
 
-    let obj = {};
+```js
+let obj = {};
 
-    if (obj) {
-      console.log("obj is true"); // obj is true
-    }
+if (obj) {
+  console.log("obj is true"); // obj is true
+}
+```
 
 Hoặc chủ động convert sang kiểu boolean sử dụng `Boolean()`:
 
-    let obj = {};
-    console.log(Boolean(obj)); // true
+```js
+let obj = {};
+console.log(Boolean(obj)); // true
+```
 
 > Với kiểu dữ liệu boolean là như vậy, đối với **string** và **number** thì sao?
 
@@ -46,42 +50,46 @@ JavaScript có **ba kiểu chuyển đổi**, ứng với giá trị ngầm đ�
 
 ► Trong những ngữ cảnh cần **string** thì giá trị của "hint" là `string`. Ví dụ sử dụng object trong hàm [`alert`](/bai-viet/javascript/ham-tuong-tac-nguoi-dung-alert-confirm-prompt/) hoặc làm thuộc tính của object khác,... JavaScript sẽ chuyển đổi object về dạng string:
 
-    let obj = {};
+```js
+let obj = {};
 
-    // sử dụng trong hàm alert()
-    alert(obj); // kết quả hiển thị trên dialog là: [object Object]
+// sử dụng trong hàm alert()
+alert(obj); // kết quả hiển thị trên dialog là: [object Object]
 
-    // sử dụng làm thuộc tính của object khác
-    let anotherObj = {};
-    anotherObj[obj] = 1;
+// sử dụng làm thuộc tính của object khác
+let anotherObj = {};
+anotherObj[obj] = 1;
 
-    console.log(anotherObj["[object Object]"]); // 1
+console.log(anotherObj["[object Object]"]); // 1
+```
 
 Đối tượng `obj` đã được chuyển đổi sang string, trở thành `[object Object]`.
 
 ► Trong những ngữ cảnh cần **number**, giá trị của "hint" là `number`. Ví dụ thực hiện các phép toán số học, so sánh,... JavaScript chuyển đổi object về dạng number:
 
-    let obj = {};
+```js
+let obj = {};
 
-    // chủ động convert sang number
-    let num = Number(obj);
-    console.log(num); // NaN
+// chủ động convert sang number
+let num = Number(obj);
+console.log(num); // NaN
 
-    // sử dụng toán tử một ngôi +
-    let n = +obj;
-    console.log(num); // NaN
+// sử dụng toán tử một ngôi +
+let n = +obj;
+console.log(num); // NaN
 
-    // trừ date
-    let date1 = new Date("December 01, 2021 00:00:00");
-    let date2 = new Date("December 02, 2021 00:00:00");
-    let delta = date2 - date1;
-    console.log(delta); // 86400000 - giá trị miliseconds của 1 ngày
+// trừ date
+let date1 = new Date("December 01, 2021 00:00:00");
+let date2 = new Date("December 02, 2021 00:00:00");
+let delta = date2 - date1;
+console.log(delta); // 86400000 - giá trị miliseconds của 1 ngày
 
-    // so sánh
-    let p1 = { x: 1 };
-    let p2 = { x: 2 };
-    let greater = p2 > p1;
-    console.log(greater); // false
+// so sánh
+let p1 = { x: 1 };
+let p2 = { x: 2 };
+let greater = p2 > p1;
+console.log(greater); // false
+```
 
 ► Trong những trường hợp **không chắc chắn**, ví dụ cộng hai object với toán tử `+`, so sánh bằng không nghiêm ngặt `==`,...
 
@@ -89,13 +97,15 @@ JavaScript "không biết" nên chuyển object về kiểu dữ liệu nào, v�
 
 Khi đó, JavaScript sẽ xử lý theo **quy luật mặc định**.
 
-    // sử dụng toán tử +
-    let total = obj1 + obj2;
+```js
+// sử dụng toán tử +
+let total = obj1 + obj2;
 
-    // so sánh == với number
-    if (user == 1) {
-      // do something
-    }
+// so sánh == với number
+if (user == 1) {
+  // do something
+}
+```
 
 **Để chuyển đổi object về kiểu nguyên thủy, JavaScript sẽ tìm và gọi ba phương thức trong object:**
 
@@ -107,31 +117,38 @@ Khi đó, JavaScript sẽ xử lý theo **quy luật mặc định**.
 
 `Symbol.toPrimitive` là một giá trị **symbol mặc định của hệ thống** và thường được sử dụng như sau:
 
-    let obj = {};
+```js
+let obj = {};
 
-    obj[Symbol.toPrimitive] = function (hint) {
-      // Code trong này dùng để chuyển đổi object về kiểu nguyên thủy.
-      // Vì vậy, hàm này phải return về kiểu kiểu nguyên thủy.
-      // Giá trị của hint có thể là: string, number hoặc default.
-    };
+obj[Symbol.toPrimitive] = function (hint) {
+  // Code trong này dùng để chuyển đổi object về kiểu nguyên thủy.
+  // Vì vậy, hàm này phải return về kiểu kiểu nguyên thủy.
+  // Giá trị của hint có thể là: string, number hoặc default.
+};
+```
 
 Khi chuyển đổi object về kiểu nguyên thủy, JavaScript kiểm tra `Symbol.toPrimitive` đầu tiên và gọi phương thức `obj[Symbol.toPrimitive](hint)` với "hint" là một trong các giá trị **string, number hoặc default**, ví dụ:
 
-    let user = {
-      name: "Alex",
-      age: 28,
+```js
+let user = {
+  name: "Alex",
+  age: 28,
 
-      // sử dụng cú pháp rút gọn khai báo phương thức
-      [Symbol.toPrimitive](hint) {    return hint === "string" ? `{name: ${this.name}}` : this.age;  },};
+  // sử dụng cú pháp rút gọn khai báo phương thức
+  [Symbol.toPrimitive](hint) {
+    return hint === "string" ? `{name: ${this.name}}` : this.age;
+  },
+};
 
-    // hint là string
-    alert(user); // {name: Alex}
+// hint là string
+alert(user); // {name: Alex}
 
-    // hint là number
-    alert(+user); // 28
+// hint là number
+alert(+user); // 28
 
-    // hint là default
-    alert(user + 1); // 29
+// hint là default
+alert(user + 1); // 29
+```
 
 Trong ví dụ trên, `user` có thể chuyển thành string hoặc number tùy thuộc vào "hint". Và tất cả xử lý đều nằm trong phương thức `obj[Symbol.toPrimitive](hint)`.
 
@@ -144,12 +161,14 @@ Trường hợp object không tồn tại thuộc tính `Symbol.toPrimitive` th�
 
 `toString` và `valueOf` là hai **phương thức mặc định**, luôn luôn tồn tại khi khởi tạo object, ví dụ:
 
-    let obj = {};
+```js
+let obj = {};
 
-    console.log(obj.toString()); // [object Object]
-    console.log(obj.valueOf()); // {}
+console.log(obj.toString()); // [object Object]
+console.log(obj.valueOf()); // {}
 
-    console.log(obj === obj.valueOf()); // true
+console.log(obj === obj.valueOf()); // true
+```
 
 Qua ví dụ trên, bạn thấy rằng:
 
@@ -158,23 +177,30 @@ Qua ví dụ trên, bạn thấy rằng:
 
 Bây giờ, mình sẽ thử tùy biến hai phương thức này mà không sử dụng `Symbol.toPrimitive` nữa:
 
-    let user = {
-      name: "Alex",
-      age: 28,
+```js
+let user = {
+  name: "Alex",
+  age: 28,
 
-      // hint là string
-      toString() {    return `{name: ${this.name}}`;  },
-      // hint là number hoặc default
-      valueOf() {    return this.age;  },};
+  // hint là string
+  toString() {
+    return `{name: ${this.name}}`;
+  },
+  // hint là number hoặc default
+  valueOf() {
+    return this.age;
+  },
+};
 
-    // hint là string
-    alert(user); // {name: Alex}
+// hint là string
+alert(user); // {name: Alex}
 
-    // hint là number
-    alert(+user); // 28
+// hint là number
+alert(+user); // 28
 
-    // hint là default
-    alert(user + 1); // 29
+// hint là default
+alert(user + 1); // 29
+```
 
 Như bạn thấy là kết quả hoàn toàn giống với cách sử dụng `Symbol.toPrimitive`.
 
@@ -184,27 +210,31 @@ Như bạn thấy là kết quả hoàn toàn giống với cách sử dụng `S
 
 Ví dụ:
 
-    let user = {
-      name: "Alex",
-      age: 28,
+```js
+let user = {
+  name: "Alex",
+  age: 28,
 
-      // hint là string
-      toString() {
-        return true;  },
+  // hint là string
+  toString() {
+    return true;
+  },
 
-      // hint là number hoặc default
-      valueOf() {
-        return null;  },
-    };
+  // hint là number hoặc default
+  valueOf() {
+    return null;
+  },
+};
 
-    // hint là string
-    alert(user); // true
+// hint là string
+alert(user); // true
 
-    // hint là number
-    alert(+user); // 0 - vì +null chuyển thành 0
+// hint là number
+alert(+user); // 0 - vì +null chuyển thành 0
 
-    // hint là default
-    alert(user + 1); // 1
+// hint là default
+alert(user + 1); // 1
+```
 
 ## Một số vấn đề khác về chuyển đổi kiểu dữ liệu
 
@@ -217,13 +247,15 @@ Khi đó, JavaScript sẽ thực hiện hai quá trình:
 
 Ví dụ:
 
-    let obj = {
-      [Symbol.toPrimitive](hint) {
-        return "3";
-      },
-    };
+```js
+let obj = {
+  [Symbol.toPrimitive](hint) {
+    return "3";
+  },
+};
 
-    console.log(obj * 2); // 6
+console.log(obj * 2); // 6
+```
 
 Trong ví dụ trên, `obj` sử dụng `Symbol.toPrimitive` để chuyển đổi kiểu dữ liệu về nguyên thủy, và kết quả luôn là string `"3"` (không phụ thuộc giá trị của "hint").
 

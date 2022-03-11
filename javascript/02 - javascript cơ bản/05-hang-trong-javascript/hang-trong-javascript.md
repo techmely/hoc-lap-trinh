@@ -24,7 +24,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 5
 ---
 
-Tương tự như [biến](/bai-viet/khoa-hoc-javascript/bien-la-gi-bien-trong-javascript/), hằng cũng là một thành phần quan trọng trong lập trình JavaScript. Sau đây, mình sẽ tìm hiểu xem hằng là gì, cách khai báo hằng trong JavaScript, cách đặt tên hằng. Đồng thời, mình so sánh sự khác nhau giữa hằng và biến trong JavaScript.
+Tương tự như [biến](/bai-viet/khoa-hoc-javascript/bien-trong-javascript/), hằng cũng là một thành phần quan trọng trong lập trình JavaScript. Sau đây, mình sẽ tìm hiểu xem hằng là gì, cách khai báo hằng trong JavaScript, cách đặt tên hằng. Đồng thời, mình so sánh sự khác nhau giữa hằng và biến trong JavaScript.
 
 ## Hằng trong Javascript là gì?
 

@@ -15,7 +15,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---
 
-Trong bài viết [so sánh 2 object trong JavaScript](/bai-viet/javascript/so-sanh-object-trong-javascript/), bạn biết rằng object có kiểu dữ liệu tham chiếu. Vì vậy, copy object trong JavaScript thực chất là **copy địa chỉ**.
+Trong bài viết [so sánh 2 object trong JavaScript](/bai-viet/javascript/so-sanh-hai-object-trong-javascript/), bạn biết rằng object có kiểu dữ liệu tham chiếu. Vì vậy, copy object trong JavaScript thực chất là **copy địa chỉ**.
 
 ```js
 let p1 = { x: 1, y: 2 };
@@ -65,10 +65,14 @@ Ngoài cách sử dụng vòng lặp `for...in` như trên, bạn có thể dùn
 Object.assign(dest, [src1, src2, src3...]);
 ```
 
+<content-note>
+
 Trong đó:
 
 - `dest`: là object đích.
 - `[src1, src2, src3...]`: là các object nguồn.
+
+</content-note>
 
 Phương thức trên sẽ copy toàn bộ các thuộc tính của các object nguồn `src1, src2,...,srcN` vào object đích `dest`. Và giá trị trả về chính là object đích `dest`.
 
@@ -143,12 +147,18 @@ Trong ví dụ trên, giá trị ứng với `metadata` là một object. Với 
 
 Vì vậy, khi thay đổi ở `point2` thì `point1` cũng thay đổi theo.
 
-> 📝 Ngoài cách trên để copy nông, bạn cũng có thể dùng cú pháp spread `(...)` như sau:
->
->     let p1 = { x: 1, y: 2 };
->     let p2 = { ...p1 };
->
-> Cú pháp spread `(...)` có nhiều điều để nói và được áp dụng ở nhiều trường hợp nên mình sẽ trình bày ở bài viết sau.
+<content-warning>
+
+📝 Ngoài cách trên để copy nông, bạn cũng có thể dùng cú pháp spread `(...)` như sau:
+
+</content-warning>
+
+```js
+let p1 = { x: 1, y: 2 };
+let p2 = { ...p1 };
+```
+
+Cú pháp spread `(...)` có nhiều điều để nói và được áp dụng ở nhiều trường hợp nên mình sẽ trình bày ở bài viết sau.
 
 ##
 
@@ -166,7 +176,7 @@ let point1 = {
 
 Trong ví dụ này, giá trị của thuộc tính `metadata` không phải giá trị nguyên thủy mà là một object.
 
-Để thực hiện copy sâu, bạn có thể dùng hàm `JSON.stringify()` để chuyển object về dạng [JSON](/bai-viet/javascript/tim-hieu-ve-json-trong-javascript/). Rồi sau đó, bạn dùng hàm `JSON.parse()` để tạo lại một object mới từ JSON.
+Để thực hiện copy sâu, bạn có thể dùng hàm `JSON.stringify()` để chuyển object về dạng JSON. Rồi sau đó, bạn dùng hàm `JSON.parse()` để tạo lại một object mới từ JSON.
 
 ```js
 let point1 = {
@@ -196,7 +206,7 @@ Bạn thấy là khi thay đổi giá trị của `metadata` trong `point2` thì
 
 **Giới hạn của `JSON.stringify` và `JSON.parse`**
 
-Hàm `JSON.stringify` có giới hạn là nó sẽ bỏ qua thuộc tính mà giá trị của nó là [hàm](/bai-viet/javascript/ham-la-gi-ham-trong-javascript/) (mặc dù về bản chất hàm cũng là object).
+Hàm `JSON.stringify` có giới hạn là nó sẽ bỏ qua thuộc tính mà giá trị của nó là [hàm](/bai-viet/javascript/ham-trong-javascript/) (mặc dù về bản chất hàm cũng là object).
 
 Ví dụ giá trị của thuộc tính là hàm:
 

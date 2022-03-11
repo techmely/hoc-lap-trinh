@@ -21,7 +21,7 @@ Sau đây, mình sẽ tìm hiểu về **phương thức của object** và mộ
 
 ## Phương thức của Object
 
-Trong JavaScript, hành động của object được biểu diễn bởi [hàm](/bai-viet/javascript/ham-la-gi-ham-trong-javascript/). Ví dụ đối tượng `user` với hành động `sayHello()` như sau:
+Trong JavaScript, hành động của object được biểu diễn bởi [hàm](/bai-viet/javascript/ham-trong-javascript/). Ví dụ đối tượng `user` với hành động `sayHello()` như sau:
 
 ```js
 let user = {
@@ -45,13 +45,18 @@ Vì vậy, `sayHello` chính là một phương thức của object `user`.
 
 Ngoài cách sử dụng function expression như trên, bạn có thể dùng **function declaration** để khai báo hàm như sau:
 
-    let user = {
-      name: "Alex",
-      age: "28",
-    };
+```js
+let user = {
+  name: "Alex",
+  age: "28",
+};
 
-    function sayHello() {  console.log("Hello!");};user.sayHello = sayHello;
-    user.sayHello(); // Hello!
+function sayHello() {
+  console.log("Hello!");
+}
+user.sayHello = sayHello;
+user.sayHello(); // Hello!
+```
 
 > 💡 Cách sử dụng object để biểu diễn đối tượng với các thuộc tính và hành động như trên gọi là [**lập trình hướng đối tượng**](https://vi.wikipedia.org/wiki/L%E1%BA%ADp_tr%C3%ACnh_h%C6%B0%E1%BB%9Bng_%C4%91%E1%BB%91i_t%C6%B0%E1%BB%A3ng) hay **OOP**.
 
@@ -61,12 +66,17 @@ Trong các ví dụ trên, mình khởi tạo object xong rồi mới định ng
 
 Ví dụ khởi tạo object với phương thức:
 
-    let user = {
-      name: "Alex",
-      age: "28",
-      sayHello: function () {    console.log("Hello!");  },};
+```js
+let user = {
+  name: "Alex",
+  age: "28",
+  sayHello: function () {
+    console.log("Hello!");
+  },
+};
 
-    user.sayHello(); // Hello!
+user.sayHello(); // Hello!
+```
 
 Ngoài ra, bạn cũng có thể **bỏ qua từ khóa `function`** như sau:
 
@@ -87,14 +97,17 @@ Ví dụ phương thức `sayHello` trên muốn truy cập và hiển thị gi�
 
 Giá trị của `this` trong JavaScript chính là **object gọi phương thức** - đối tượng trước dấu chấm (`.`), ví dụ:
 
-    let user = {
-      name: "Alex",
-      age: "28",
-      sayHello() {
-        console.log(this.name + " says Hello!");  },
-    };
+```js
+let user = {
+  name: "Alex",
+  age: "28",
+  sayHello() {
+    console.log(this.name + " says Hello!");
+  },
+};
 
-    user.sayHello(); // Alex says Hello!
+user.sayHello(); // Alex says Hello!
+```
 
 Khi chương trình thực thi, giá trị của `this` chính là `user`. Hay nói cách khác `this.name` chính là `user.name`.
 
@@ -102,28 +115,35 @@ Khi chương trình thực thi, giá trị của `this` chính là `user`. Hay n
 
 Ví dụ sử dụng trực tiếp `user`:
 
-    let user = {
-      name: "Alex",
-      age: "28",
-      sayHello() {
-        console.log(user.name + " says Hello!");  },
-    };
+```js
+let user = {
+  name: "Alex",
+  age: "28",
+  sayHello() {
+    console.log(user.name + " says Hello!");
+  },
+};
 
-    user.sayHello(); // Alex says Hello!
+user.sayHello(); // Alex says Hello!
+```
 
 Kết quả vẫn **đúng**. Nhưng liệu vấn đề gì có thể xảy ra?
 
 Giả sử, bạn muốn [copy object dạng tham chiếu](/bai-viet/javascript/copy-object-trong-javascript/) từ `user` sang `admin` rồi ghi đè giá trị của `user`:
 
-    let user = {
-      name: "Alex",
-      age: "28",
-      sayHello() {
-        console.log(user.name + " says Hello!");
-      },
-    };
+```js
+let user = {
+  name: "Alex",
+  age: "28",
+  sayHello() {
+    console.log(user.name + " says Hello!");
+  },
+};
 
-    let admin = user;user = null;admin.sayHello();// Uncaught TypeError: Cannot read properties of null (reading 'name')
+let admin = user;
+user = null;
+admin.sayHello(); // Uncaught TypeError: Cannot read properties of null (reading 'name')
+```
 
 Câu lệnh cuối cùng bị lỗi.
 
@@ -139,20 +159,27 @@ Khác với các ngôn ngữ lập trình khác, từ khóa `this` có thể dù
 
 Ví dụ sau đây không bị lỗi cú pháp:
 
-    function sayHello() {
-      console.log(this.name);}
+```js
+function sayHello() {
+  console.log(this.name);
+}
+```
 
 Giá trị của `this` được **xác định trong thời gian chạy**, phụ thuộc vào đối tượng gọi hàm, ví dụ:
 
-    let user1 = { name: "Alex" };
-    let user2 = { name: "John" };
+```js
+let user1 = { name: "Alex" };
+let user2 = { name: "John" };
 
-    function sayHello() {
-      console.log(this.name);
-    }
+function sayHello() {
+  console.log(this.name);
+}
 
-    // Sử dụng cùng 1 hàm cho 2 objects
-    user1.sayHi = sayHello;user2.sayHi = sayHello;user1.sayHi(); // Alex (this tương ứng với user1)user2.sayHi(); // John (this tương ứng với user2)
+// Sử dụng cùng 1 hàm cho 2 objects
+user1.sayHi = sayHello;
+user2.sayHi = sayHello;
+user1.sayHi(); // Alex (this tương ứng với user1)user2.sayHi(); // John (this tương ứng với user2)
+```
 
 Bạn thấy rằng, tùy thuộc vào đối tượng gọi hàm là `user1` hay `user2` mà giá trị của `this` được xác định tương ứng.
 
@@ -162,23 +189,28 @@ Bạn thấy rằng, tùy thuộc vào đối tượng gọi hàm là `user1` ha
 
 Ví dụ gọi trực tiếp `sayHello()`:
 
-    "use strict";
+```js
+"use strict";
 
-    function sayHello() {
-      console.log(this);
-    }
+function sayHello() {
+  console.log(this);
+}
 
-    sayHello(); // undefined
+sayHello(); // undefined
+```
 
 Trong trường hợp này, giá trị của `this` là `undefined` ở [strict mode](/bai-viet/javascript/use-strict-trong-js/). Nếu bạn truy cập `this.name` thì sẽ bị lỗi **Uncaught TypeError: Cannot read properties of undefined (reading 'name')**.
 
-    "use strict";
+```js
+"use strict";
 
-    function sayHello() {
-      console.log(this.name);}
+function sayHello() {
+  console.log(this.name);
+}
 
-    sayHello();
-    // Uncaught TypeError: Cannot read properties of undefined (reading 'name')
+sayHello();
+// Uncaught TypeError: Cannot read properties of undefined (reading 'name')
+```
 
 Nếu **không sử dụng strict mode** thì giá trị của `this` sẽ là **đối tượng global** (đối tượng `window` trên trình duyệt).
 
@@ -192,14 +224,18 @@ Nếu bạn truy cập `this` bên trong arrow function thì JavaScript sẽ hi�
 
 Ví dụ dùng arrow function:
 
-    let user = {
-      name: "Alex",
-      age: "28",
-      sayHello() {
-        let arrowFunc = () => console.log(this.name);    arrowFunc();  },
-    };
+```js
+let user = {
+  name: "Alex",
+  age: "28",
+  sayHello() {
+    let arrowFunc = () => console.log(this.name);
+    arrowFunc();
+  },
+};
 
-    user.sayHello(); // Alex
+user.sayHello(); // Alex
+```
 
 Trong ví dụ trên, ngữ cảnh gần nhất bên ngoài có `this` là phương thức `sayHello`. Mà trong phương thức `sayHello`, giá trị của `this` được xác định lúc gọi `user.sayHello()`.
 
@@ -209,12 +245,15 @@ Do đó, `this` chính là `user`. Và kết quả là `this.name` bằng `user.
 
 Ví dụ:
 
-    let user = {
-      name: "Alex",
-      age: "28",
-      sayHello: () => console.log(this.name),};
+```js
+let user = {
+  name: "Alex",
+  age: "28",
+  sayHello: () => console.log(this.name),
+};
 
-    user.sayHello(); // undefined
+user.sayHello(); // undefined
+```
 
 Lúc này, ngữ cảnh gần nhất có `this` lúc gọi hàm là **global**. Trong trường hợp không dùng **strict mode** thì `this` chính là `window`. Vì vậy, `this.name` bằng `undefined`.
 
@@ -241,17 +280,19 @@ Từ khóa `this` trong JavaScript được xác định khi chạy chương tr�
 
 Cho đoạn code sau:
 
-    "use strict";
+```js
+"use strict";
 
-    function createUser(name) {
-      return {
-        name,
-        ref: this,
-      };
-    }
+function createUser(name) {
+  return {
+    name,
+    ref: this,
+  };
+}
 
-    let alex = createUser("Alex");
-    console.log(alex.ref.name);
+let alex = createUser("Alex");
+console.log(alex.ref.name);
+```
 
 Kết quả của `console.log` là gì?
 
@@ -273,37 +314,41 @@ Triển khai object `calculator` với ba phương thức:
 - `add()`: trả về tổng của hai số đã nhập.
 - `mul()`: trả về tích của hai số đã nhập.
 
-  let calculator = {
+```js
+let calculator = {
   // viết code trong đây
-  };
+};
 
-  calculator.read();
-  console.log(calculator.sum());
-  console.log(calculator.mul());
+calculator.read();
+console.log(calculator.sum());
+console.log(calculator.mul());
+```
 
 Xem đáp án
 
-    let calculator = {
-      // Phương thức read()
-      read() {
-        this.a = +prompt("Nhập vào số a:", 0);
-        this.b = +prompt("Nhập vào số b:", 0);
-      },
+```js
+let calculator = {
+  // Phương thức read()
+  read() {
+    this.a = +prompt("Nhập vào số a:", 0);
+    this.b = +prompt("Nhập vào số b:", 0);
+  },
 
-      // Phương thức add()
-      add() {
-        return this.a + this.b;
-      },
+  // Phương thức add()
+  add() {
+    return this.a + this.b;
+  },
 
-      // Phương thức mul()
-      mul() {
-        return this.a * this.b;
-      },
-    };
+  // Phương thức mul()
+  mul() {
+    return this.a * this.b;
+  },
+};
 
-    calculator.read();
-    console.log(calculator.add());
-    console.log(calculator.mul());
+calculator.read();
+console.log(calculator.add());
+console.log(calculator.mul());
+```
 
 **Chú ý:** hàm `prompt` trả về kết quả là string. Vì vậy, mình thêm toán tử `+` đằng trước để [chuyển đổi kiểu dữ liệu](/bai-viet/javascript/chuyen-doi-kieu-du-lieu-trong-javascript/) về number, trước khi gán cho `this.a` và `this.b`.
 
@@ -311,29 +356,33 @@ Xem đáp án
 
 Cho đoạn code sau:
 
-    // Khởi tạo obj
-    let obj = {
-      count: 0,
-      increase() {
-        this.count++;
-      },
-      decrease() {
-        this.count--;
-      },
-      showCount() {
-        console.log(this.count);
-      },
-    };
+```js
+// Khởi tạo obj
+let obj = {
+  count: 0,
+  increase() {
+    this.count++;
+  },
+  decrease() {
+    this.count--;
+  },
+  showCount() {
+    console.log(this.count);
+  },
+};
 
-    // Sử dụng obj
-    obj.increase();
-    obj.increase();
-    obj.decrease();
-    obj.showCount(); // 1
+// Sử dụng obj
+obj.increase();
+obj.increase();
+obj.decrease();
+obj.showCount(); // 1
+```
 
 Hãy sửa lại các phương thức của `obj` để có thể gọi code theo kiểu:
 
-    obj.increase().increase().decrease().showCount(); // 1
+```js
+obj.increase().increase().decrease().showCount(); // 1
+```
 
 Xem đáp án
 
@@ -341,21 +390,26 @@ Kĩ thuật này gọi là [**Method chaining**](/bai-viet/javascript/tim-hieu-k
 
 Ý tưởng là: trong mỗi phương thức, bạn sẽ `return` về `this` (đối tượng hiện tại).
 
-    // Khởi tạo obj
-    let obj = {
-      count: 0,
-      increase() {
-        this.count++;
-        return this;  },
-      decrease() {
-        this.count--;
-        return this;  },
-      showCount() {
-        console.log(this.count);
-        return this;  },
-    };
+```js
+// Khởi tạo obj
+let obj = {
+  count: 0,
+  increase() {
+    this.count++;
+    return this;
+  },
+  decrease() {
+    this.count--;
+    return this;
+  },
+  showCount() {
+    console.log(this.count);
+    return this;
+  },
+};
 
-    // Sử dụng obj
-    obj.increase().increase().decrease().showCount(); // 1
+// Sử dụng obj
+obj.increase().increase().decrease().showCount(); // 1
+```
 
 Bạn hiểu là `increase()`, `decrease()` hay `showCount()` đều trả về `this` - chính là `obj`.

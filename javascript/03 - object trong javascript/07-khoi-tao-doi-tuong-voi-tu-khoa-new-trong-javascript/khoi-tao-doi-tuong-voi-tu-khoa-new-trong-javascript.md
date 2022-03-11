@@ -19,7 +19,7 @@ Trong các bài viết trước, mình chủ yếu dùng cú pháp `{...}` để
 
 Nếu mình muốn khởi tạo **nhiều object tương tự nhau** thì sao?
 
-Để giải quyết vấn đề này, bạn có thể sử dụng toán tử `new` trong JavaScript kết hợp với một [hàm](/bai-viet/javascript/ham-la-gi-ham-trong-javascript/) khởi tạo.
+Để giải quyết vấn đề này, bạn có thể sử dụng toán tử `new` trong JavaScript kết hợp với một [hàm](/bai-viet/javascript/ham-trong-javascript/) khởi tạo.
 
 ## Hàm khởi tạo và new trong JavaScript là gì?
 
@@ -32,12 +32,15 @@ Một số đặc điểm của hàm khởi tạo là:
 
 Ví dụ:
 
-    function Point(x, y) {
-      this.x = x;
-      this.y = y;
-    }
+```js
+function Point(x, y) {
+  this.x = x;
+  this.y = y;
+}
 
-    let root = new Point(0, 0);console.log(root.x, root.y); // 0 0
+let root = new Point(0, 0);
+console.log(root.x, root.y); // 0 0
+```
 
 Khi một hàm được gọi với toán tử `new`, [JavaScript Engine](/bai-viet/javascript/javascript-la-gi/#javascript-engine-l%C3%A0-g%C3%AC) sẽ xử lý các bước như sau:
 
@@ -47,19 +50,24 @@ Khi một hàm được gọi với toán tử `new`, [JavaScript Engine](/bai-v
 
 Nói cách khác, cú pháp `new Point(...)` thực hiện:
 
-    function Point(x, y) {
-      // this = {}; // ngầm định khởi tạo object rỗng
-      this.x = x;
-      this.y = y;
+```js
+function Point(x, y) {
+  // this = {}; // ngầm định khởi tạo object rỗng
+  this.x = x;
+  this.y = y;
 
-      // return this; // ngầm định trả về this}
+  // return this; // ngầm định trả về this}
+}
+```
 
 Như vậy, `new Point(0,0)` tương đương với cách khởi tạo object là:
 
-    let root = {
-      x: 0,
-      y: 0,
-    };
+```js
+let root = {
+  x: 0,
+  y: 0,
+};
+```
 
 Bây giờ, nếu bạn muốn tạo ra các **point** khác, bạn chỉ cần gọi `new p1(1, 2)`, `new p2(2, 3)`,... thay vì phải sử dụng cú pháp `{...}` nhiều lần (và dài dòng hơn).
 
@@ -70,31 +78,35 @@ Bây giờ, nếu bạn muốn tạo ra các **point** khác, bạn chỉ cần 
 > [Arrow function](/bai-viet/javascript/arrow-function-la-gi-arrow-function-trong-js/) không có `this` nên không được dùng làm hàm khởi tạo.
 >
 > Nếu hàm khởi tạo không có tham số thì bạn có thể bỏ qua cặp dấu ngoặc đơn `()`, ví dụ:
->
->     function Point() {
->       this.x = 0;
->       this.y = 0;
->     }
->
->     let root = new Point;
->     console.log(root.x, root.y); // 0
->
+
+```js
+function Point() {
+  this.x = 0;
+  this.y = 0;
+}
+
+let root = new Point();
+console.log(root.x, root.y); // 0
+```
+
 > Tuy nhiên, mình khuyên bạn nên sử dụng cách gọi hàm khởi tạo với cặp dấu ng`()`, vì nó chuẩn hơn và **đúng với cú pháp gọi hàm**.
 
 ## {...}`
 
 Bạn có thể khai báo, đồng thời khởi tạo object ngay với cú pháp `new function(){...}` như sau:
 
-    let root = new (function () {
-      this.x = 1;
-      this.y = 2;
+```js
+let root = new (function () {
+  this.x = 1;
+  this.y = 2;
 
-      /*
-       * Code xử lý khác tại đây
-       */
-    })();
+  /*
+   * Code xử lý khác tại đây
+   */
+})();
 
-    console.log(root.x, root.y); // 1 2
+console.log(root.x, root.y); // 1 2
+```
 
 Cú pháp này gọi là [IFFE](https://en.wikipedia.org/wiki/Immediately_invoked_function_expression).
 
@@ -108,24 +120,31 @@ Vì vậy, mục đích của cách khai báo này **không phải để tái s�
 
 Nếu hàm được gọi theo cách thông thường thì `new.target` sẽ bằng `undefined`, ngược lại `new.target` bằng chính function:
 
-    function Point() {
-      console.log(new.target);
-    }
+```js
+function Point() {
+  console.log(new.target);
+}
 
-    Point(); // undefined
-    new Point(); // ƒ Point() { console.log(new.target); }
+Point(); // undefined
+new Point(); // ƒ Point() { console.log(new.target); }
+```
 
 Thuộc tính đặc biệt này có thể được áp dụng để kiểm tra xem hàm khởi tạo có được gọi với `new` hay không.
 
 Trường hợp hàm khởi tạo không được gọi với `new`, mình có thể xử lý thêm để trả về giống cách gọi hàm với `new`:
 
-    function Point(x, y) {
-      if (!new.target) {    return new Point(x, y);  }
-      this.x = x;
-      this.y = y;
-    }
+```js
+function Point(x, y) {
+  if (!new.target) {
+    return new Point(x, y);
+  }
+  this.x = x;
+  this.y = y;
+}
 
-    let root = Point(0, 0);console.log(root.x, root.y); // 0 0
+let root = Point(0, 0);
+console.log(root.x, root.y); // 0 0
+```
 
 Với cách viết như này, bạn có thể khởi tạo object với `new` hoặc không có `new` thì đều cho kết quả giống nhau.
 
@@ -146,23 +165,27 @@ Nói cách khác, `return` với một object sẽ trả về object đó, ngư�
 
 Ví dụ hàm khởi tạo trả về một object khác `this`:
 
-    function Point(x, y) {
+```js
+function Point(x, y) {
       this.x = x;
       this.y = y;
 
       return { x: 100, y: 100 }; // trả về object này thay vì this}
 
     let p = new Point(0, 0);console.log(p.x, p.y); // 100 100
+```
 
 Ví dụ hàm khởi tạo trả về giá trị nguyên thủy:
 
-    function Point(x, y) {
+```js
+function Point(x, y) {
       this.x = x;
       this.y = y;
 
       return 1; // return trả về giá trị nguyên thủy bị bỏ qua}
 
     let p = new Point(0, 0);console.log(p.x, p.y); // 0 0
+```
 
 ## Định nghĩa phương thức trong hàm khởi tạo
 
@@ -170,13 +193,19 @@ Object không chỉ có thuộc tính mà còn có cả [phương thức](/bai-v
 
 Và dĩ nhiên, bạn có thể **định nghĩa phương thức trong hàm khởi tạo** của object, ví dụ:
 
-    function Point(x, y) {
-      this.x = x;
-      this.y = y;
+```js
+function Point(x, y) {
+  this.x = x;
+  this.y = y;
 
-      this.printLog = function () {    console.log(this.x, this.y);  };}
+  this.printLog = function () {
+    console.log(this.x, this.y);
+  };
+}
 
-    let root = new Point(0, 0);root.printLog(); // 0 0
+let root = new Point(0, 0);
+root.printLog(); // 0 0
+```
 
 Để tạo nhiều object phức tạp hơn, bạn có thể sử dụng cú pháp nâng cao hơn như **prototype** hay **class** (sẽ được giới thiệu sau).
 
@@ -198,13 +227,15 @@ Sau đây là những kiến thức cơ bản cần nhớ về khởi tạo obje
 
 Cho đoạn code sau:
 
-    function A() { ... }
+```js
+function A() { ... }
     function B() { ... }
 
     let a = new A;
     let b = new B;
 
     console.log(a === b); // true
+```
 
 Có cách nào để tạo hàm `A` và `B` sao cho `new A() === new B()`?
 
@@ -214,13 +245,19 @@ Xem đáp án
 
 Để `new A() === new B()` là `true` thì hàm khởi tạo `A` và `B` phải trả về cùng một object.
 
-    let obj = {};
-    function A() {  return obj;}
-    function B() {  return obj;}
-    let a = new A();
-    let b = new B();
+```js
+let obj = {};
+function A() {
+  return obj;
+}
+function B() {
+  return obj;
+}
+let a = new A();
+let b = new B();
 
-    console.log(a === b); // true
+console.log(a === b); // true
+```
 
 ### Bài 2
 
@@ -232,35 +269,39 @@ Viết hàm khởi tạo object `Calculator` với ba phương thức:
 
 Ví dụ:
 
-    let calculator = new Calculator();
-    calculator.read();
-    console.log(calculator.sum());
-    console.log(calculator.mul());
+```js
+let calculator = new Calculator();
+calculator.read();
+console.log(calculator.sum());
+console.log(calculator.mul());
+```
 
 Xem đáp án
 
-    function Calculator() {
-      // Phương thức read()
-      this.read = function () {
-        this.a = +prompt("Nhập vào số a:", 0);
-        this.b = +prompt("Nhập vào số b:", 0);
-      };
+```js
+function Calculator() {
+  // Phương thức read()
+  this.read = function () {
+    this.a = +prompt("Nhập vào số a:", 0);
+    this.b = +prompt("Nhập vào số b:", 0);
+  };
 
-      // Phương thức add()
-      this.add = function () {
-        return this.a + this.b;
-      };
+  // Phương thức add()
+  this.add = function () {
+    return this.a + this.b;
+  };
 
-      // Phương thức mul()
-      this.mul = function () {
-        return this.a * this.b;
-      };
-    }
+  // Phương thức mul()
+  this.mul = function () {
+    return this.a * this.b;
+  };
+}
 
-    let calculator = new Calculator();
-    calculator.read();
-    console.log(calculator.add());
-    console.log(calculator.mul());
+let calculator = new Calculator();
+calculator.read();
+console.log(calculator.add());
+console.log(calculator.mul());
+```
 
 **Chú ý:** hàm `prompt` trả về kết quả là string. Vì vậy, mình thêm toán tử `+` đằng trước để [chuyển đổi kiểu dữ liệu](/bai-viet/javascript/chuyen-doi-kieu-du-lieu-trong-javascript/) về number, trước khi gán cho `this.a` và `this.b`.
 
@@ -275,26 +316,30 @@ Object tạo ra có những đặc điểm sau:
 
 Ví dụ:
 
-    let counter = new Counter(1);
+```js
+let counter = new Counter(1);
 
-    counter.read();
-    counter.read();
+counter.read();
+counter.read();
 
-    console.log(counter.value); // giá trị hiện tại của value
+console.log(counter.value); // giá trị hiện tại của value
+```
 
 Xem đáp án
 
-    function Counter(startValue) {
-      this.value = startValue;
+```js
+function Counter(startValue) {
+  this.value = startValue;
 
-      this.read = function () {
-        this.value += +prompt("Nhập vào một số:", 0);
-      };
-    }
+  this.read = function () {
+    this.value += +prompt("Nhập vào một số:", 0);
+  };
+}
 
-    let counter = new Counter(1);
+let counter = new Counter(1);
 
-    counter.read();
-    counter.read();
+counter.read();
+counter.read();
 
-    console.log(counter.value); // giá trị hiện tại của value
+console.log(counter.value); // giá trị hiện tại của value
+```

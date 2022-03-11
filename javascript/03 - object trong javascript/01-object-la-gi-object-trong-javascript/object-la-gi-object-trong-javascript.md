@@ -15,7 +15,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
 
-Như mình đã nói trong bài [các kiểu dữ liệu trong JavaScript](/bai-viet/javascript/kieu-du-lieu-trong-javascript), JavaScript có **7 kiểu dữ liệu nguyên thủy** và **1 kiểu dữ liệu dạng tham chiếu**. Đó là object trong JavaScript.
+Như mình đã nói trong bài [các kiểu dữ liệu trong JavaScript](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript), JavaScript có **7 kiểu dữ liệu nguyên thủy** và **1 kiểu dữ liệu dạng tham chiếu**. Đó là object trong JavaScript.
 
 Để hiểu object (đối tượng) là gì, mình sẽ đưa ra một ví dụ về máy tính. Cụ thể, máy tính của mình có những đặc điểm sau:
 
@@ -33,10 +33,12 @@ Như mình đã nói trong bài [các kiểu dữ liệu trong JavaScript](/bai-
 
 Về bản chất, object là tập hợp của các **key** và **value**. Với **key** gọi là thuộc tính, còn **value** là giá trị tương ứng của thuộc tính.
 
-**Chú ý:**
+<content-note>
 
 - Object có thể không chứa thuộc tính nào, được gọi là **object rỗng**.
 - Object phải là một danh từ **riêng**, không phải danh từ **chung**. Trong ví dụ trên, nếu chỉ nói **máy tính** thì đó không phải đối tượng, mà phải là **máy tính của mình**.
+
+</content-note>
 
 ## Biểu diễn object trong JavaScript
 
@@ -53,7 +55,7 @@ JavaScript object sử dụng cặp dấu ngoặc `{}` để biểu diễn:
 
 Trong đó:
 
-- _key1, key2, key3,..._: là tên thuộc tính, có kiểu dữ liệu là **string** hoặc [**symbol**](/bai-viet/javascript/tim-hieu-ve-symbol-trong-javascript).
+- _key1, key2, key3,..._: là tên thuộc tính, có kiểu dữ liệu là **string** hoặc [**symbol**](/bai-viet/javascript/symbol-trong-javascript).
 - _value1, value2, value3,..._: là giá trị tương ứng của các thuộc tính. Value có thể thuộc bất kỳ kiểu dữ liệu nào (kể cả **object**).
 - Các cặp **key-value** ngăn cách nhau bởi dấu phẩy `,`.
 
@@ -82,7 +84,7 @@ let myComputer = {};
 let yourComputer = new Object();
 ```
 
-Trong đó, `new Object()` là cú pháp [hàm](/bai-viet/javascript/ham-la-gi-ham-trong-javascript/) khởi tạo của **object**. Cách này ít sử dụng hơn cách đầu tiên.
+Trong đó, `new Object()` là cú pháp [hàm](/bai-viet/javascript/ham-trong-javascript/) khởi tạo của **object**. Cách này ít sử dụng hơn cách đầu tiên.
 
 ## Cách sử dụng object trong JavaScript
 
@@ -119,7 +121,6 @@ console.log(myComputer["graphicCard"]); // => NVIDIA
 Khi **key** chứa dấu cách, hoặc các ký tự đặc biệt khác thì bạn bắt buộc phải sử dụng toán tử `[]`.
 
 Ví dụ:
-F
 
 ```js
 let myComputer = {
@@ -137,7 +138,11 @@ console.log(myComputer.operating system); // ERROR -> lỗi cú pháp
 
 > 📝 Khi **key** chứa dấu cách hoặc các ký tự đặc biệt (khác `_` và `$`), bạn cần phải để **key** bên trong cặp dấu nháy kép `""` hoặc nháy đơn `''`.
 
-**Chú ý:** Trong các ví dụ trên, mình in ra giá trị từng thuộc tính của object để minh họa. Thực tế, bạn có thể dùng [`console.log`](/bai-viet/javascript/thu-thuat-su-dung-console-hieu-qua/) để in ra toàn bộ object.
+<content-warning>
+
+**Chú ý:** Trong các ví dụ trên, mình in ra giá trị từng thuộc tính của object để minh họa. Thực tế, bạn có thể dùng [`console.log`](/bai-viet/javascript/nhap-xuat-man-hinh-console) để in ra toàn bộ object.
+
+</content-warning>
 
 ```js
 let myComputer = {
@@ -219,7 +224,7 @@ console.log(myComputer.status); // undefinedconsole.log(myComputer["it is good"]
 
 ## Toán tử ngoặc vuông `[]` trong object JS
 
-JavaScript cho phép bạn truy cập vào thuộc tính với giá trị của **key** là [biến](/bai-viet/javascript/bien-la-gi-bien-trong-javascript/) hoặc biểu thức.
+JavaScript cho phép bạn truy cập vào thuộc tính với giá trị của **key** là [biến](/bai-viet/javascript/bien-trong-javascript/) hoặc biểu thức.
 
 Khi đó, giá trị của **key** sẽ được tính toán trong thời gian chạy (**runtime**), ví dụ:
 
@@ -238,7 +243,11 @@ console.log(myComputer[operatingSystem]); // Windows 7
 console.log(myComputer["graphic" + " " + "card"]); // NVIDIA
 ```
 
+<content-warning>
+
 **Chú ý**: bạn không thể sử dụng toán tử `.` theo cách tương tự trên.
+
+</content-warning>
 
 ```js
 let myComputer = {
@@ -342,15 +351,21 @@ Tên của thuộc tính có thể là bất kỳ string nào (hoặc symbol). V
 
 Ví dụ số `0` được chuyển về string `"0"`:
 
-    let obj = {
-      0: "Zero",
-    };
+```js
+let obj = {
+  0: "Zero",
+};
 
-    // Hai cách truy cập sau đây tương đương nhau
-    console.log(obj[0]); // Zero
-    console.log(obj["0"]); // Zero
+// Hai cách truy cập sau đây tương đương nhau
+console.log(obj[0]); // Zero
+console.log(obj["0"]); // Zero
+```
+
+<content-warning>
 
 **Chú ý:** object trong JavaScript có một thuộc tính mặc định đặc biệt là `__proto__`. Bạn không thể gán giá trị khác object cho thuộc tính này:
+
+</content-warning>
 
 ```js
 let obj = {
@@ -397,7 +412,11 @@ console.log("name" in user); // true
 console.log("age" in user); // false
 ```
 
+<content-warning>
+
 **Chú ý**: thành phần bên trái toán tử `in` là tên thuộc tính, thường đặt trong cặp dấu `""` hoặc `''`. Kết quả trả về là giá trị **boolean** ứng với `true` là có tồn tại, `false` là không tồn tại.
+
+</content-warning>
 
 ## Cách duyệt tất cả các thuộc tính của object
 
@@ -498,9 +517,7 @@ Rõ ràng, hàm `maxOf` ở trên không chứa một tham số nào. Nhưng khi
 
 ### Đối tượng Math
 
-> Cái tên đã nói lên tất cả.
-
-Đúng vậy, đối tượng `Math` chứa các hàm phục vụ cho tính toán số học như:
+Cái tên đã nói lên tất cả. Đúng vậy, đối tượng `Math` chứa các hàm phục vụ cho tính toán số học như:
 
 - `Math.min`: Tìm giá trị nhỏ nhất.
 - `Math.max`: Tìm giá trị lớn nhất.
@@ -510,7 +527,7 @@ Rõ ràng, hàm `maxOf` ở trên không chứa một tham số nào. Nhưng khi
 
 Sử dụng `Math` giúp giảm thiểu đáng kể thời gian viết code, vì bạn không phải viết lại những hàm cực kì cơ bản.
 
-> Bạn có thể tham khảo thêm về [`Math`](https://www.w3schools.com/js/js_math.asp).
+> Bạn có thể tham khảo thêm về [Math](https://www.w3schools.com/js/js_math.asp).
 
 ### Đối tượng Global
 

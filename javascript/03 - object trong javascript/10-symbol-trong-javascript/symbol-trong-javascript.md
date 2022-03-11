@@ -25,46 +25,56 @@ Bài viết này, mình sẽ đi tìm lời giải cho những câu hỏi trên.
 
 Symbol là một kiểu dữ liệu dạng [primative data](https://developer.mozilla.org/en-US/docs/Glossary/Primitive). Để tạo mới một Symbol, bạn có thể dùng hàm `Symbol()`, ví dụ:
 
-    let myId = Symbol();
+```js
+let myId = Symbol();
+```
 
 Hoặc bạn có thể thêm **description** để miêu tả Symbol:
 
-    let myId = Symbol("id");
+```js
+let myId = Symbol("id");
+```
 
 **Chú ý:** Symbol **không có hàm khởi tạo**. Do đó, bạn không thể dùng từ khoá [`new`](/bai-viet/javascript/khoi-tao-object-new-trong-javascript/) để tạo mới một Symbol:
 
-    let myId = new Symbol("id");
-    // => Uncaught TypeError: Symbol is not a constructor
+```js
+let myId = new Symbol("id");
+// => Uncaught TypeError: Symbol is not a constructor
+```
 
 Cơ bản về Symbol là vậy. Tiếp theo, mình sẽ tìm hiểu về một số đặc điểm, tính chất của nó nhé!
 
 ## Một số đặc điểm của Symbol trong JavaScript
 
-### 
+###
 
 Nghĩa là dù bạn có tạo ra bao nhiêu Symbol với cùng description thì chúng vẫn khác nhau:
 
-    let myId1 = Symbol("id");
-    let myId2 = Symbol("id");
+```js
+let myId1 = Symbol("id");
+let myId2 = Symbol("id");
 
-    console.log(myId1 == myId2); // => false
-    console.log(myId1 === myId2); // => false
+console.log(myId1 == myId2); // => false
+console.log(myId1 === myId2); // => false
+```
 
 ### Symbol không tự convert sang string
 
-Hầu hết các kiểu dữ liệu trong JavaScript đều hỗ trợ [tự động convert](/bai-viet/javascript/chuyen-doi-kieu-du-lieu-trong-javascript/) sang [string](/bai-viet/javascript/kieu-du-lieu-trong-javascript/), nhưng Symbol thì không.
+Hầu hết các kiểu dữ liệu trong JavaScript đều hỗ trợ [tự động convert](/bai-viet/javascript/chuyen-doi-kieu-du-lieu-trong-javascript/) sang [string](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript/), nhưng Symbol thì không.
 
 Ví dụ khi bạn sử dụng Symbol với phương thức [`alert()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert):
 
-    let a = true;
-    let b = [1, 2];
-    let c = { x: 1, y: 2 };
-    let d = Symbol();
+```js
+let a = true;
+let b = [1, 2];
+let c = { x: 1, y: 2 };
+let d = Symbol();
 
-    alert(a); // => true
-    alert(b); // => 1,2
-    alert(c); // => [object Object]
-    alert(d); // => TypeError: Cannot convert a Symbol value to a string
+alert(a); // => true
+alert(b); // => 1,2
+alert(c); // => [object Object]
+alert(d); // => TypeError: Cannot convert a Symbol value to a string
+```
 
 ## Sử dụng Global Symbol
 
@@ -78,24 +88,26 @@ Tuy nhiên, nhiều khi mình muốn các description giống nhau sẽ ứng v�
 
 Nếu chưa có Symbol nào thoả mãn thì [JavaScript Engine](/bai-viet/javascript/javascript-la-gi/#javascript-engine-l%C3%A0-g%C3%AC) sẽ tạo ra một Symbol mới được xác định bởi **key**. Ngược lại, nó sẽ trả về Symbol đó.
 
-    // Tạo một Symbol mới với description là "id"
-    let id1 = Symbol("id");
+```js
+// Tạo một Symbol mới với description là "id"
+let id1 = Symbol("id");
 
-    /*
-     * Tìm trong Global một Symbol với key là "id".
-     * Nếu Symbol chưa tồn tại thì tạo mới một Symbol
-     */
-    let id2 = Symbol.for("id");
+/*
+ * Tìm trong Global một Symbol với key là "id".
+ * Nếu Symbol chưa tồn tại thì tạo mới một Symbol
+ */
+let id2 = Symbol.for("id");
 
-    /*
-     * Tiếp tục tìm trong Global một Symbol với key là "id".
-     * Lần này thì Symbol đã tồn tại rồi, nên sẽ trả về Symbol trên.
-     */
-    let id3 = Symbol.for("id");
+/*
+ * Tiếp tục tìm trong Global một Symbol với key là "id".
+ * Lần này thì Symbol đã tồn tại rồi, nên sẽ trả về Symbol trên.
+ */
+let id3 = Symbol.for("id");
 
-    // Kết quả
-    console.log(id1 === id2); // => false
-    console.log(id2 === id3); // => true
+// Kết quả
+console.log(id1 === id2); // => false
+console.log(id2 === id3); // => true
+```
 
 Việc sử dụng `Symbol.for` như thế này giúp Symbol có thể được sử dụng rộng rãi, nhiều nơi trong ứng dụng hơn.
 
@@ -105,14 +117,16 @@ Ngược lại với phương thức trên, phương thức `Symbol.keyFor(symbo
 
 Tuy nhiên, phương thức này chỉ có tác dụng với Symbol được tạo ra từ phương thức `Symbol.for(key)` bên trên.
 
-    let sym1 = Symbol("id");
-    let key1 = Symbol.keyFor(sym1);
+```js
+let sym1 = Symbol("id");
+let key1 = Symbol.keyFor(sym1);
 
-    let sym2 = Symbol.for("name");
-    let key2 = Symbol.keyFor(sym2);
+let sym2 = Symbol.for("name");
+let key2 = Symbol.keyFor(sym2);
 
-    console.log("key1: ", key1); // => undefined
-    console.log("key2: ", key2); // => name
+console.log("key1: ", key1); // => undefined
+console.log("key2: ", key2); // => name
+```
 
 ## Ứng dụng của Symbol
 
@@ -120,51 +134,57 @@ Tuy nhiên, phương thức này chỉ có tác dụng với Symbol được t�
 
 Đối với [object](/bai-viet/javascript/object-la-gi-object-trong-javascript/) thì ngoài string, Symbol cũng có thể làm key cho thuộc tính của Object, ví dụ:
 
-    const id = Symbol("id");
-    const obj = {
-      [id]: "abc123",
-    };
+```js
+const id = Symbol("id");
+const obj = {
+  [id]: "abc123",
+};
 
-    console.log(obj);
-    // => {Symbol(id): "abc123"}
+console.log(obj);
+// => {Symbol(id): "abc123"}
+```
 
 Tuy nhiên, thuộc tính với Symbol sẽ là **non-enumerable**. Do đó, bạn không thể dùng [`for...in`](/bai-viet/javascript/vong-lap-trong-javascript/) để duyệt nó.
 
-    const id = Symbol("id");
-    const obj = {
-      [id]: "abc123",
-      x: 1,
-      y: 2,
-    };
+```js
+const id = Symbol("id");
+const obj = {
+  [id]: "abc123",
+  x: 1,
+  y: 2,
+};
 
-    console.log(obj);
-    // => {x: 1, y: 2, Symbol(id): "abc123"}
+console.log(obj);
+// => {x: 1, y: 2, Symbol(id): "abc123"}
 
-    for (let key in obj) {
-      console.log(key);
-    }
-    /*
-     * x
-     * y
-     */
+for (let key in obj) {
+  console.log(key);
+}
+/*
+ * x
+ * y
+ */
+```
 
 Để duyệt các thuộc tính với key là Symbol, bạn có thể sử dụng phương thức [`Object.getOwnPropertySymbols()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols). Phương thức này trả về mảng của tất cả các thuộc tính có key là Symbol, ví dụ:
 
-    const id = Symbol("id");
-    const name = Symbol("name");
+```js
+const id = Symbol("id");
+const name = Symbol("name");
 
-    const obj = {
-      [id]: "abc123",
-      [name]: "obj",
-      y: 2,
-    };
+const obj = {
+  [id]: "abc123",
+  [name]: "obj",
+  y: 2,
+};
 
-    console.log(obj);
-    // => {y: 2, Symbol(id): "abc123", Symbol(name): "obj"}
+console.log(obj);
+// => {y: 2, Symbol(id): "abc123", Symbol(name): "obj"}
 
-    const arr = Object.getOwnPropertySymbols(obj);
-    console.log(arr);
-    // => [Symbol(id), Symbol(name)]
+const arr = Object.getOwnPropertySymbols(obj);
+console.log(arr);
+// => [Symbol(id), Symbol(name)]
+```
 
 ### Symbol được dùng để tránh gây xung đột về tên
 
@@ -172,31 +192,33 @@ Tuy nhiên, thuộc tính với Symbol sẽ là **non-enumerable**. Do đó, b�
 
 Giả sử mình định nghĩa một [module](/bai-viet/javascript/su-dung-es-modules-tren-trinh-duyet/) như là một object, với một key dạng string là "id". Trường "id" sẽ được sử dụng với mục đích nào đó bên trong module.
 
-lib.js
+```js
+// lib.js
+let module = {
+  id: "abc",
+  printId: function () {
+    console.log("id in lib:", this.id);
+  },
+};
 
-    let module = {
-      id: "abc",
-      printId: function () {
-        console.log("id in lib:", this.id);
-      },
-    };
-
-    export default module;
+export default module;
+```
 
 Khi một người khác sử dụng module của mình, do không biết nên người đó lại tiếp tục sử dụng thuộc tính với key là "id". Dẫn đến giá trị của "id" bị thay đổi.
 
 Cuối cùng, các logic khác cũng bị thay đổi theo. Và đây là điều mà mình không mong muốn.
 
-main.js
+```js
+// main.js
+import module from "./lib.js";
 
-    import module from "./lib.js";
+module.id = "123";
+module.printId();
+// => id in lib: 123
 
-    module.id = "123";
-    module.printId();
-    // => id in lib: 123
-
-    console.log("id in main:", module.id);
-    // => id in main: 123
+console.log("id in main:", module.id);
+// => id in main: 123
+```
 
 Nhưng nếu mình sử dụng "id" là Symbol thì sao?
 
@@ -204,33 +226,35 @@ Nhưng nếu mình sử dụng "id" là Symbol thì sao?
 
 Định nghĩa thư viện:
 
-lib.js
+```js
+// lib.js
+let id = Symbol("id");
 
-    let id = Symbol("id");
+let module = {
+  [id]: "abc",
+  printId: function () {
+    console.log("id in lib:", this[id]);
+  },
+};
 
-    let module = {
-      [id]: "abc",
-      printId: function () {
-        console.log("id in lib:", this[id]);
-      },
-    };
-
-    export default module;
+export default module;
+```
 
 Sử dụng thư viện:
 
-main.js
+```js
+// main.js
+import module from "./lib.js";
 
-    import module from "./lib.js";
+let id = Symbol("id");
+module[id] = "123";
 
-    let id = Symbol("id");
-    module[id] = "123";
+module.printId();
+// => id in lib: abc
 
-    module.printId();
-    // => id in lib: abc
-
-    console.log("id in main:", module[id]);
-    // => id in main: 123
+console.log("id in main:", module[id]);
+// => id in main: 123
+```
 
 Rõ ràng, dù ở **main.js** có thay đổi `id` như nào thì hàm `printId` vẫn không hề thay đổi.
 

@@ -24,7 +24,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 7
 ---
 
-Bài viết trước bạn đã biết về [8 kiểu dữ liệu cơ bản](/bai-viet/khoa-hoc-javascript/kieu-du-lieu-trong-javascript/) trong JavaScript. Và khi học về [toán tử](/bai-viet/khoa-hoc-javascript/toan-tu-trong-javascript) hay hàm, bạn sẽ thấy là các kiểu dữ liệu này có thể được chuyển đổi cho nhau. Đó gọi là "chuyển đổi kiểu dữ liệu".
+Bài viết trước bạn đã biết về [8 kiểu dữ liệu cơ bản](/bai-viet/khoa-hoc-javascript/cac-kieu-du-lieu-trong-javascript/) trong JavaScript. Và khi học về [toán tử](/bai-viet/khoa-hoc-javascript/toan-tu-trong-javascript) hay hàm, bạn sẽ thấy là các kiểu dữ liệu này có thể được chuyển đổi cho nhau. Đó gọi là "chuyển đổi kiểu dữ liệu".
 
 ## Chuyển đổi kiểu dữ liệu sang string
 

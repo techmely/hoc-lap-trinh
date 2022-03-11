@@ -64,7 +64,7 @@ a !== b; // so sánh khác nghiêm ngặt
 
 ## Kết quả của phép so sánh
 
-Kết quả của phép so sánh luôn là một giá trị kiểu [boolean](/kieu-du-lieu-trong-javascript/).
+Kết quả của phép so sánh luôn là một giá trị kiểu [boolean](/cac-kieu-du-lieu-trong-javascript/).
 
 - `true`: đúng, chính xác
 - `false`: sai, không chính xác
