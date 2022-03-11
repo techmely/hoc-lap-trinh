@@ -2,7 +2,7 @@
 
 ## How to contribute content
 
-![image](https://user-images.githubusercontent.com/29374426/157843016-1f5d2103-9c1c-4c4d-b360-4738db721ce0.png)
+![image](https://user-images.githubusercontent.com/29374426/157917315-93b19591-8861-4045-85ed-4c50b56c4d30.png)
 
 Result
 
