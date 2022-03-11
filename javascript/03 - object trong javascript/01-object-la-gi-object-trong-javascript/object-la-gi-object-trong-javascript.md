@@ -27,7 +27,7 @@ Như mình đã nói trong bài [các kiểu dữ liệu trong JavaScript](/bai-
 
 Ở đây, _máy tính của mình_: chính là một **JavaScript object**. Đối tượng này có các **thuộc tính** (properties): _loại, hãng, hệ điều hành, card đồ hoạ_ với các giá trị tương ứng là _laptop, Sony, Windows 7, NVIDIA_.
 
-![Object là gì? Object trong Javascript](https://user-images.githubusercontent.com/29374426/157916014-c72792f9-d734-4416-8cf0-376f28d85d45.png)
+![Object là gì? Object trong Javascript](https://user-images.githubusercontent.com/29374426/157916139-559c45a7-19df-48ce-b34d-ec07b6ab920b.png)
 
 ## Vậy object trong JavaScript là gì?
 
