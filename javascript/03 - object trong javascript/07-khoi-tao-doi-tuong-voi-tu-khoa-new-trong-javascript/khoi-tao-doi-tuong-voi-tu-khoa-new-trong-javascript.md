@@ -1,9 +1,17 @@
 ---
-title: "Khởi tạo đối tượng với từ khóa New trong Javascript"
-description: ""
+title: "Khởi tạo đối tượng với từ khóa new trong javascript có tác dụng gì"
+description: "Trong hướng dẫn này, mình sẽ giúp bạn tìm hiểu về cách sử dụng từ khóa new để tạo một đối tượng."
 keywords: [
 "đối tượng trong javascript",
 "object trong javascript",
+"từ khóa New trong Javascript",
+"new trong javascript",
+"new in javascript",
+"tu khoa new trong javascript là gì",
+"cach su dung tu khoa new trong javascript",
+"từ khóa new trong javascript có tác dụng gì",
+"từ khóa new trong javascript cơ bản",
+"từ khóa new trong javascript nghĩa là gì"
 ]
 chapter:
   name: "Object trong Javascript"
