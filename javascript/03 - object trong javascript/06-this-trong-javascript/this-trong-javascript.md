@@ -1,9 +1,19 @@
 ---
 title: "This trong Javascript"
-description: ""
+description: "Trong bài viết này, mình sẽ bạn sẽ tìm hiểu về giá trị "this" trong JavaScript và hiểu nó rõ ràng trong các ngữ cảnh khác nhau."
 keywords: [
 "đối tượng trong javascript",
 "object trong javascript",
+"This trong Javascript",
+"this value trong javascript",
+"con tro this trong arrow function javascript",
+"this trong class javascript",
+"tu khoa this trong javascript the hien",
+"từ khóa this trong javascript",
+"this trong javascript dùng để làm gì",
+"this trong javascript là gì",
+"this trong javascript cách sử dụng",
+"hàm this trong javascript"
 ]
 chapter:
   name: "Object trong Javascript"
