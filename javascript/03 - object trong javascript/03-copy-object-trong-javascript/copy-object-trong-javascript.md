@@ -1,6 +1,6 @@
 ---
 title: "Copy Object trong Javascript"
-description: "Trong bài này, bạn sẽ học cách sao chép các đối tượng trong JavaScript. Bạn sẽ học được một số cách để copy object sau bìa học này."
+description: "Trong bài này, bạn sẽ học cách sao chép các đối tượng trong JavaScript. Bạn sẽ học được một số cách để copy object sau bài học này."
 keywords: [
 "đối tượng trong javascript",
 "object trong javascript",
