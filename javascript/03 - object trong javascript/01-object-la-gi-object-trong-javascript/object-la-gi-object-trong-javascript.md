@@ -4,6 +4,15 @@ description: ""
 keywords: [
 "đối tượng trong javascript",
 "object trong javascript",
+"mang object trong javascript",
+"kieu du lieu object trong javascript",
+"object js",
+"object trong javascript là gì",
+"xử lý object trong javascript",
+"so sánh object trong javascript",
+"kiểu object trong javascript",
+"kiểm tra object trong javascript",
+"đối tượng trong javascript là gì"
 ]
 chapter:
   name: "Object trong Javascript"
