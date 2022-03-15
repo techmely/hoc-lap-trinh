@@ -1,9 +1,15 @@
 ---
 title: "Garbage collection trong Javascript"
-description: ""
+description: "Điều gì sẽ xảy ra nếu một vùng nhớ không còn sử dụng? JavaScript engine sẽ làm gì để phát hiện và giải phóng vùng nhớ đó? Bài viết này sẽ giải thích khái nhiệm về Garbage Collection (theo dõi toàn bộ object và xóa đi các object không thể truy cập)."
 keywords: [
 "đối tượng trong javascript",
 "object trong javascript",
+"garbage collection trong javascript là gì",
+"xóa các object không thể truy cập trong javascript",
+"garbage collection in javascript",
+"garbage collection trong javascript dung de lam gi",
+"thu gom rac garbage collection là gì",
+"garbage collection trong javascript"
 ]
 chapter:
   name: "Object trong Javascript"
