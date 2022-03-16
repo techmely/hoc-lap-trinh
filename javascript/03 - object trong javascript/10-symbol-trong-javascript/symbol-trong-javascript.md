@@ -1,9 +1,19 @@
 ---
 title: "Symbol trong Javascript"
-description: ""
+description: "Symbol là một kiểu dữ liệu được sinh ra nhằm tao ra các giá trị duy nhất, mỗi một symbol được tạo ra sẽ có một giá trị khác nhau và giá trị đó là duy nhất. Và bạn cũng không có thể in ra giá trị của nó!"
 keywords: [
 "đối tượng trong javascript",
 "object trong javascript",
+"Symbol trong Javascript",
+"symbol trong js",
+"javascript symbol",
+"symbol js",
+"symbol in javascript",
+"kiểu symbol trong javascript",
+"Symbol trong Javascript là gì",
+"Symbol trong Javascript dùng để làm gì",
+"Cách sử dụng Symbol trong Javascript",
+"Symbol trong ES6"
 ]
 chapter:
   name: "Object trong Javascript"
