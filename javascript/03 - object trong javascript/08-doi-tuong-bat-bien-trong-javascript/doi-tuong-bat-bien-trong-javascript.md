@@ -1,9 +1,18 @@
 ---
 title: "Đối tượng bất biến trong Javascript"
-description: ""
+description: "Khi làm việc với javascript, hẳn mọi người đã nghe đến tính bất biến của dữ liệu (immutability). Đặc tính này, nói một cách đơn giản, là khả năng giá trị của dữ liệu không bị thay đổi sau khi đã được khai báo."
 keywords: [
 "đối tượng trong javascript",
 "object trong javascript",
+"Đối tượng bất biến trong Javascript",
+"Đối tượng bất biến trong Javascript là gì",
+"Bất biến trong javascript",
+"tính bất biến của dữ liệu trong javascript",
+"bat bien trong javascript là gì",
+"đảm bảo tính bất biến trong JavaScript",
+"bat bien javascript",
+"tinh bat bien javascript",
+"tinh bat bien javascript la gi"
 ]
 chapter:
   name: "Object trong Javascript"
