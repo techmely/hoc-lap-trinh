@@ -1,9 +1,19 @@
 ---
 title: "Optional chaining trong Javascript"
-description: ""
+description: "Optional chaining trong JavaScript là cách an toàn để truy cập vào thuộc tính của object lồng nhau, thậm chí thuộc tính không tồn tại."
 keywords: [
 "đối tượng trong javascript",
 "object trong javascript",
+"Optional chaining trong Javascript",
+"Toán tử optional chaining trong JavaScript",
+"optional chaining javascript",
+"optional chaining trong javascript la gi",
+"optional chaining trong javascript dung de",
+"cach su dung optional chaining javascript",
+"Toán tử optional chaining JavaScript ",
+"Cách sử dung toán tử optional chaining JavaScript ",
+"Toán tử optional chaining JavaScript là gì",
+" xử lý short-circuiting trong javascript"
 ]
 chapter:
   name: "Object trong Javascript"
