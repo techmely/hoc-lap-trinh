@@ -76,13 +76,13 @@ class Honda4 extends Bike{
     </div>
 </div>
 
-<content-note>
+<content-info>
 <ul>
   <li>Nếu trong lớp có phương thức trừu tượng thì lớp đó phải được khai báo là trừu tượng</li>
   <li>Nếu một lớp kế thừa từ lớp trừu tượng thì: hoặc chúng phải ghi đè tất cả các phương thức ảo của lớp cha, hoặc lớp đó phải là lớp trừu tượng</li>
   <li>Không thể tạo ra đối tượng của lớp trừu tượng</li>
 </ul>
-</content-note>
+</content-info>
 
 ## Kế thừa lớp Abstract trong Java
 

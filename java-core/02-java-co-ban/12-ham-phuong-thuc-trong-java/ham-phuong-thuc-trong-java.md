@@ -159,13 +159,13 @@ public class Thaycacac {
   </div>
 </div>
 
-<content-note>
+<content-info>
 <ul>
     <li>Hàm hoanDoiViTri sẽ không làm ảnh hưởng đến giá trị của của các tham số truyền vào.</li>
     <li>Trong một class nếu có 2 method cùng tên và cùng tham số đầu vào thì trình biên dịch sẽ báo lỗi</li>
     <li>Thông thường trong một lớp các phương thức nên được khai báo dùng từ khóa public, khác với vùng dữ liệu thường là dùng tiền tố private vì mục đích an toàn.</li>
   </ul>s
-</content-note>
+</content-info>
 
 ## Method overloading
 

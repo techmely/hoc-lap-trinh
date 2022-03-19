@@ -71,9 +71,9 @@ Khi gặp câu lệnh này java sẽ tính toán giá trị của biểu thức 
 1 + (float) 5 / 2 = 1 + 5 / (float)2 =1 + (float)5 / (float)2 = 3.5
 ```
 
-<content-note>
+<content-info>
   <ul>
     <li>Phép toán chuyển kiểu là phép toán có độ ưu tiên cao, nên (int)3.5*2(int)(3.4*2)</li>
     <li>Cần chú ý khi chuyển một biểu thức kiểu dữ liệu có miền giá trị lớn sang một kiểu có miền giá trị nhỏ hơn. Trong trường hợp này có thể bạn sẽ bị mất thông tin.</li>
   </ul>
-</content-note>
+</content-info>

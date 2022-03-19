@@ -65,13 +65,13 @@ public class Thaycacac {
   </div>
 </div>
 
-<content-note>
+<content-info>
 <ul>
   <li>Khi đã khai báo một thuộc tính là final thì thuộc tính này la hăng, do vậy ta không thể thay đổi giá trị của nó</li>
   <li>Khi khai báo một thuộc tính là final thì ta phải cung cấp giá trị ban đầu cho nó</li>
   <li>Nếu một thuộc tính vừa là final vừa là static thì nó chỉ có một vùng nhớ chung duy nhất cho cả lớp</li>
 </ul>
-</content-note>
+</content-info>
 
 ## Phương thức final trong Java
 

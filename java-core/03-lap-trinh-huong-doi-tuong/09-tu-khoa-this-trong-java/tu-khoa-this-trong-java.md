@@ -108,9 +108,9 @@ public class HocSinh {
   </div>
 </div>
 
-<content-note>
+<content-info>
   Nếu biến cục bộ và biến toàn cục có tên khác nhau thì không cần sử dụng từ khóa this.
-</content-note>
+</content-info>
 
 ## Sử dụng this() gọi constructor của lớp hiện tại.
 
@@ -202,9 +202,9 @@ public class HocSinh3 {
   </div>
 </div>
 
-<content-note>
+<content-info>
 this() phải được khai báo dòng lệnh đầu tiên trong Constructor.
-</content-note>
+</content-info>
 
 ### Gọi phương thức của lớp hiện tại
 

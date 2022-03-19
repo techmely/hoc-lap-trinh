@@ -63,13 +63,13 @@ S3 Replication là tính năng sao chép các object giữa các vùng lưu tr�
 - Việc copy là asynchronous
 - Cần cung cấp IAM permission cần thiết tới S3
 
-<content-note>
+<content-info>
   <ul>
     <li>Sau khi enable replica, bạn chỉ có thể copy những Object mới, còn objects cũ trước đó sẽ không được copy</li>
     <li>Copy không thể có tính "chaining". Có nghĩa nếu Bucket A copy sang Bucket B, Bucket B copy sang Bucket C. Thì khi tạo Object D sẽ không được copy sang Bucket C</li>
     <li>Có thể sử dụng "Replicate delete markers" để có thể xóa bản copy từ source => destination</li>
   </ul>
-</content-note>
+</content-info>
 
 ## S3 Pre-signed
 

@@ -161,7 +161,7 @@ if (hour < 9 || hour > 17) {
 }
 ```
 
-<content-note>toán tử so sánh có độ ưu tiên cao hơn toán tử logic, nên toán tử so sánh được thực hiện trước toán tử OR.</content-note>
+<content-info>toán tử so sánh có độ ưu tiên cao hơn toán tử logic, nên toán tử so sánh được thực hiện trước toán tử OR.</content-info>
 
 Vì `hour` bằng `20` nên `hour < 9` là `false` và `hour > 17` là `true`. Nghĩa là `hour < 9 || hour > 17` có thể quy đổi thành `false || true`. Suy ra, kết quả cuối cùng là `true`.
 
@@ -278,7 +278,7 @@ if (hour >= 9 && hour <= 17) {
 }
 ```
 
-<content-note>toán tử so sánh có độ ưu tiên cao hơn toán tử logic, nên toán tử so sánh được thực hiện trước toán tử AND.</content-note>
+<content-info>toán tử so sánh có độ ưu tiên cao hơn toán tử logic, nên toán tử so sánh được thực hiện trước toán tử AND.</content-info>
 
 Vì `hour` bằng `12` nên `hour >= 9` là `true` và `hour <= 17` là `true`. Nghĩa là `hour >= 9 && hour <= 17` có thể quy đổi thành `true && true`. Suy ra, kết quả cuối cùng là `true`.
 

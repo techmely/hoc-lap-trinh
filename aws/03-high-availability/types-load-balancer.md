@@ -68,7 +68,7 @@ position: 10
 - Khi enable: traffic sẽ được chia đều cho các target khác nhau, mỗi server có 10%
 - Khi disable: một bên là 8.33% còn 1 bên nhận 12.5% traffic
 
-<content-note>
+<content-info>
 <strong> Application Load Balancer </strong>
   <ul>
     <li>Luôn bật (không thể tắt option này đi)</li>
@@ -84,4 +84,4 @@ position: 10
     <li>Mặc định sẽ disabled</li>
     <li>Nếu enable, không bị tính phí inter AZ</li>
   </ul>
-</content-note>
+</content-info>

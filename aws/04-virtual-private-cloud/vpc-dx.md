@@ -44,13 +44,13 @@ Mặc định khi chúng ta launch một EC2 instance trong VPC thì không th�
 - **Customer Gateway (CGW)**
   - Có thể là phần mềm hay thiết bị trên Customer Side trong VPN Connection
 
-<content-note>
+<content-info>
 <ul>
     <li>Customer Gateway cần có public IP (hoặc thông qua NAT) để tạo kết nối</li>
     <li>Subnet trong VPC cần route đến VGW</li>
     <li>Nếu muốn access đến EC2 instance cần thêm protocol ICMP trong security groups</li>
   </ul>
-</content-note>
+</content-info>
 
 ## Direct Connect (DX)
 
@@ -70,11 +70,11 @@ Hiểu đơn giản, Direct Connection cung cấp một đường truyền chuy�
 
 ![Giới thiệu về Direct Connect](https://user-images.githubusercontent.com/29729545/147390545-1c1f9982-31c6-4ef4-a80b-51f19d8ff47e.png)
 
-<content-note>
+<content-info>
   <ul>
     <li>Thời gian setup Connection thường sẽ mất nhiều hơn 1 tháng.</li>
   </ul>
-</content-note>
+</content-info>
 
 ## Direct Connect Gateway
 

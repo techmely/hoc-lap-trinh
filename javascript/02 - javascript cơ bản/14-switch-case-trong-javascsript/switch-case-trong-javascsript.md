@@ -120,11 +120,11 @@ switch (x) {
 // Don't know the answer
 ```
 
-<content-note>
+<content-info>
 
 `switch` và `case` đều có thể chứa biểu thức - không chỉ là [biến](/bai-viet/khoa-hoc-javascript/bien-trong-javascript/) hay [hằng](/bai-viet/khoa-hoc-javascript/hang-trong-javascript/).
 
-</content-note>
+</content-info>
 
 Ví dụ lệnh switch case với biểu thức:
 

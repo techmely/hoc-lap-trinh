@@ -67,6 +67,6 @@ Object giống như một file dữ liệu của chúng ta. Object có **Key** c
 - Khi 1 file có chung key, version sẽ tự động tạo ra
 - Khi đánh version cho 1 file, chúng ta có thể dễ dàng phục hồi các version của 1 file
 
-<content-note>
+<content-info>
 Nếu enable versioning của một bucket thì những file đã tồn tại trước đó sẽ có <b>version ID = null</b>
-</content-note>
+</content-info>

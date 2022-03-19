@@ -133,9 +133,9 @@ class XeDap extends Xe {
   </div>
 </div>
 
-<content-note>
+<content-info>
   super() được tự động thêm vào mỗi Constructor của class bởi trình biên dịch.
-</content-note>
+</content-info>
 
 ![image](https://user-images.githubusercontent.com/29374426/131205555-ca114d78-97b6-4ee4-8727-55cbbeb233f9.png)
 

@@ -66,11 +66,11 @@ _Khởi tạo biến `count` bằng `1`. Kiểm tra điều kiện nếu `count 
 
 Trong đoạn code trên, nếu bạn không có `count++` thì giá trị của biến `count` mãi mãi là `1`. Nói cách khác, giá trị của `count <= 3` luôn luôn là `true`. Do đó, vòng lặp sẽ **lặp vô hạn** và không bao giờ dừng lại.
 
-<content-note>
+<content-info>
 
 thành phần **condition** có thể là biểu thức hoặc biến.
 
-</content-note>
+</content-info>
 
 Ví dụ đoạn code in ra các số từ 3 về 1:
 
@@ -167,11 +167,11 @@ for (let count = 1; count <= 3; count++) {
 
 Bạn có thể thấy là cấu trúc lặp vẫn được duy trì mà nhìn code gọn gàng hơn nhiều.
 
-<content-note>
+<content-info>
 
 Biến `count` được khai báo bên trong vòng lặp for như trên thì **phạm vi của biến** chỉ là bên trong vòng lặp for. Do đó, bạn không thể sử dụng biến `count` trên ở bên ngoài vòng lặp for.
 
-</content-note>
+</content-info>
 
 Ví dụ sau bị lỗi **Uncaught ReferenceError: count is not defined** khi cố gắng truy cập vào biến `count`:
 
@@ -318,7 +318,7 @@ for (let number = 1; number <= 5; number++) {
 
 Bạn thấy rằng kết quả hai cách làm trên là như nhau, nhưng cách làm sử dụng từ khóa `continue` giúp làm giảm một mức độ code lồng nhau.
 
-<content-note>từ khóa `continue` (và từ khóa `break`) không thể dùng trong toán tử `?`.</content-note>
+<content-info>từ khóa `continue` (và từ khóa `break`) không thể dùng trong toán tử `?`.</content-info>
 
 Ví dụ sau bị lỗi cú pháp:
 
@@ -525,4 +525,4 @@ while (true) {
 // Kiểm tra số nguyên tốif (number < 2) {  alert("It's not a prime number.");} else if (number === 2) {  alert("It's a prime number.");} else {  let isPrimeNumber = true;  for (let i = 2; i < number; i++) {    if (number % i === 0) {      isPrimeNumber = false;      break;    }  }  if (isPrimeNumber) alert("It's a prime number.");  else alert("It's not a prime number.");}
 ```
 
-<content-note>số nguyên tố là số nguyên dương lớn hơn hoặc bằng 2 thỏa mãn điều kiện chỉ chia hết cho 1 và chính nó.</content-note>
+<content-info>số nguyên tố là số nguyên dương lớn hơn hoặc bằng 2 thỏa mãn điều kiện chỉ chia hết cho 1 và chính nó.</content-info>

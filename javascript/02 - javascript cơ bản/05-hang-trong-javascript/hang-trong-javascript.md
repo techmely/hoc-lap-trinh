@@ -24,7 +24,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 5
 ---
 
-Tương tự như [biến](/bai-viet/khoa-hoc-javascript/bien-la-gi-bien-trong-javascript/), hằng cũng là một thành phần quan trọng trong lập trình JavaScript. Sau đây, mình sẽ tìm hiểu xem hằng là gì, cách khai báo hằng trong JavaScript, cách đặt tên hằng. Đồng thời, mình so sánh sự khác nhau giữa hằng và biến trong JavaScript.
+Tương tự như [biến](/bai-viet/khoa-hoc-javascript/bien-trong-javascript/), hằng cũng là một thành phần quan trọng trong lập trình JavaScript. Sau đây, mình sẽ tìm hiểu xem hằng là gì, cách khai báo hằng trong JavaScript, cách đặt tên hằng. Đồng thời, mình so sánh sự khác nhau giữa hằng và biến trong JavaScript.
 
 ## Hằng trong Javascript là gì?
 
@@ -124,7 +124,7 @@ const vertex% = 50;     // sử dụng kí tự đặc biệt %
     const while = 'coding'; // sử dụng từ khoá "while"
 ```
 
-<content-note>
+<content-info>
 📝 Một số **chú ý** khi đặt tên biến:
 
 <ul>
@@ -132,7 +132,7 @@ const vertex% = 50;     // sử dụng kí tự đặc biệt %
 <li>Bạn có thể sử dụng những chữ cái không phải chữ cái Latinh để đặt tên biến. Nhưng điều này là không nên. Bạn nên sử dụng chữ cái Latinh (a-z) để đặt tên biến.</li>
 <li>Tốt nhất là đặt theo chuẩn tiếng Anh để mọi người trên thế giới có thể hiểu code của bạn.</li>
 </ul>
-</content-note>
+</content-info>
 
 ## Chuẩn hóa cách đặt tên hằng số
 

@@ -94,6 +94,6 @@ AWS Snow Family sử dụng trong 2 usecase chính đó là:
 | DataSync         | Pre-installed                     |                                                     |                           |
 | Storage Cluter   |                                   | Có thể đặt tối đa 15 nodes để tăng khả năng lưu trữ |                           |
 
-<content-note>
+<content-info>
 Snowball không thể import trực tiếp data vào Glacier. Bạn cần import vào các storage class khác (ví dụ Standard IA), sau đó dùng đến S3 lifecycle để chuyển sang Glacier.
-</content-note>
+</content-info>
