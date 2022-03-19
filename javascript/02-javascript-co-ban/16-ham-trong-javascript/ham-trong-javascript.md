@@ -55,7 +55,7 @@ Ví dụ hàm `sayHello()`:
 
 ```js
 function sayHello() {
-  console.log("Hello from completejavascript.com");
+  console.log("Hello from kungfutech.edu.vn");
 }
 ```
 
@@ -63,13 +63,13 @@ function sayHello() {
 
 ```js
 function sayHello() {
-  console.log("Hello from completejavascript.com");
+  console.log("Hello from kungfutech.edu.vn");
 }
 
 sayHello();
 sayHello();
-// Hello from completejavascript.com
-// Hello from completejavascript.com
+// Hello from kungfutech.edu.vn
+// Hello from kungfutech.edu.vn
 ```
 
 Khi gọi hàm, đoạn code bên trong thân hàm sẽ được thực thi. Trong ví dụ trên, đoạn code `console.log` được thực hiện hai lần (ứng với hai lần gọi hàm).
@@ -86,11 +86,11 @@ Ví dụ về biến cục bộ trong JavaScript:
 
 ```js
 function sayHello() {
-  const message = "Hello from completejavascript.com";
+  const message = "Hello from kungfutech.edu.vn";
   console.log(message);
 }
 
-sayHello(); // Hello from completejavascript.com
+sayHello(); // Hello from kungfutech.edu.vn
 
 console.log(message); // Uncaught ReferenceError: message is not defined
 ```
@@ -104,18 +104,18 @@ Khi bạn cố gắng truy cập vào biến `message` ở ngoài hàm, bạn s�
 Một hàm trong JavaScript có thể truy cập vào biến được khai báo bên ngoài hàm, ví dụ:
 
 ```js
-let message = "Hello from completejavascript.com";
+let message = "Hello from kungfutech.edu.vn";
 function sayHello() {
   console.log(message);
 }
 
-sayHello(); // Hello from completejavascript.com
+sayHello(); // Hello from kungfutech.edu.vn
 ```
 
 Hơn nữa, bạn có thể thay đổi giá trị của biến ngoài hàm từ trong thân hàm:
 
 ```js
-let message = "Hello from completejavascript.com";
+let message = "Hello from kungfutech.edu.vn";
 function sayHello() {
   message = "Hi!";
   console.log(message);
@@ -128,14 +128,14 @@ console.log(message); // Hi!
 Tuy nhiên, nếu bên trong thân hàm **khai báo một biến trùng tên** với biến ngoài hàm thì biến ngoài hàm "bị bỏ qua":
 
 ```js
-let message = "Hello from completejavascript.com";
+let message = "Hello from kungfutech.edu.vn";
 function sayHello() {
   let message = "Hi!";
   console.log(message);
 }
 
 sayHello(); // Hi!
-console.log(message); // Hello from completejavascript.com
+console.log(message); // Hello from kungfutech.edu.vn
 ```
 
 📝 **Biến toàn cục**
@@ -170,14 +170,14 @@ khi truyền tham số vào hàm (ngoại trừ object là kiểu dữ liệu th
 Ví dụ:
 
 ```js
-let message = "Hello from completejavascript.com";
+let message = "Hello from kungfutech.edu.vn";
 function sayHello(message) {
   message = "Hi!";
   console.log(message);
 }
 
 sayHello(); // Hi!
-console.log(message); // Hello from completejavascript.com
+console.log(message); // Hello from kungfutech.edu.vn
 ```
 
 Bạn thấy rằng là bên trong hàm đã gán giá trị `Hi!` cho biến `message`. Nhưng giá trị của biến `message` bên ngoài không hề thay đổi.
@@ -191,7 +191,7 @@ function sayHello(message, site) {
   console.log(message + " from " + site);
 }
 
-sayHello("Hello", "completejavascript.com"); // Hello from completejavascript.com
+sayHello("Hello", "kungfutech.edu.vn"); // Hello from kungfutech.edu.vn
 ```
 
 ## Giá trị tham số mặc định
@@ -209,14 +209,14 @@ sayHello("Hello"); // Hello from undefined
 Trong trường hợp này, bạn có thể định nghĩa "giá trị mặc định" cho tham số bằng cách sử dụng [toán tử](/bai-viet/khoa-hoc-javascript/toan-tu-trong-javascript) gán `=` như sau:
 
 ```js
-function sayHello(message, site = "completejavascript.com") {
+function sayHello(message, site = "kungfutech.edu.vn") {
   console.log(message + " from " + site);
 }
 
-sayHello("Hello"); // Hello from completejavascript.com
+sayHello("Hello"); // Hello from kungfutech.edu.vn
 ```
 
-Lúc này, nếu bạn không truyền giá trị vào tham số `site` thì giá trị của nó mặc định là `completejavascript.com`.
+Lúc này, nếu bạn không truyền giá trị vào tham số `site` thì giá trị của nó mặc định là `kungfutech.edu.vn`.
 
 Trong ví dụ trên, giá trị mặc định chỉ là một giá trị `string`. Tuy nhiên, giá trị mặc định có thể là một **biểu thức** hoặc thậm chí là một **hàm khác**, ví dụ:
 
