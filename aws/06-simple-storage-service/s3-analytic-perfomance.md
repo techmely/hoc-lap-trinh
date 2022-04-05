@@ -1,5 +1,5 @@
 ---
-title: "S3 Analytics, Performance"
+title: "Giới thiệu S3 Analytics, Performance"
 description: "Storage Class Analysis giúp bạn phân tích lượng truy cập, dung lượng lưu trữ... trong một khoảng thời gian nhất định. Từ đó giúp người dùng xác định được khi nào nên chuyển đổi Objects từ Standard => Standard_IA"
 keywords:
   [

@@ -1,5 +1,5 @@
 ---
-title: "Amazon FSx"
+title: "Amazon FSx là gì"
 description: "Amazon FSx là dịch vụ cho phép bạn có thể launch hệ thống files với hiệu suất cao. FSx được xây dựng trên công nghệ máy tính, network, phần cứng mới nhất hiện nay đem lại hiệu suất cao."
 keywords:
   [

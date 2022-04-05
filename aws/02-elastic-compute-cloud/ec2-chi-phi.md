@@ -1,6 +1,6 @@
 ---
 title: "Chi phí sử dụng EC2"
-description: "Tùy theo cấu hình EC2 mình chọn, AWS sẽ tính tiền dựa trên những lựa chọn của mình"
+description: "Tùy theo cấu hình EC2 mình chọn, AWS sẽ tính tiền dựa trên những lựa chọn của mình. Khi bạn chạy những ứng dụng lâu bền, AWS cung cấp reserved instance. Bạn có thể trả trước tiền (1 phần, hoặc trả tất), hoặc commit sử dụng lâu dài. Khi đó AWS sẽ discount giá"
 keywords:
   [
     "EC2 price",

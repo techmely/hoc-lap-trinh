@@ -1,5 +1,5 @@
 ---
-title: "Redshift"
+title: "Giới thiệu Redshift"
 description: "Amazon Redshift là dịch vụ lưu trữ dữ liệu quy mô hàng petabyte nhanh và mạnh mẽ."
 keywords:
   [

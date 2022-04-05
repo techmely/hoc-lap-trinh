@@ -1,5 +1,5 @@
 ---
-title: "Địa chỉ IP trong của EC2"
+title: "Địa chỉ IP trong EC2"
 description: "Mỗi EC2 cần được cung cấp địa chỉ IP để được định danh trên AWS và trên môi trường internet. Chúng ta sẽ làm quen với 3 loại IP (public/private/elastic)"
 keywords:
   ["Private IP trong EC2", "Public IP trong EC2", "Elastic IP trong EC2"]

@@ -1,5 +1,5 @@
 ---
-title: "AWS Config"
+title: "Gới thiệu AWS Config"
 description: "AWS config là full managed service, cung cấp thông tin history cấu hình, báo notify thì có thay đổi về configuration để đảm bảo security và governance."
 keywords:
   [

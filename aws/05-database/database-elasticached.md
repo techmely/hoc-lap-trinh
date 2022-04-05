@@ -1,5 +1,5 @@
 ---
-title: "Elasticache"
+title: "Elasticache là gì"
 description: "Elasticache là dịch vụ bộ nhớ đệm được quản lý dành cho Redis và Memcached"
 keywords: ["Elasticache la gi", "Redis trong aws", "Memcached trong aws"]
 author:

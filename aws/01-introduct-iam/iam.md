@@ -1,5 +1,5 @@
 ---
-title: "IAM và CLI"
+title: "Giới thiệu về IAM và CLI"
 description: "IAM (Identify and Access Management) là công cụ để kiểm soát quyền truy cập của cá nhân và nhóm đến tài nguyên AWS của bạn một cách an toàn."
 keywords:
   ["iam trong aws", "iam trong aws cli", "aws iam là gì", "aws iam la gi"]

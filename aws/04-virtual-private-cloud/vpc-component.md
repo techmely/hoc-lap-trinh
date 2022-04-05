@@ -1,6 +1,6 @@
 ---
-title: "Component trong VPC"
-description: "Các component trong VPC, Elastic Network Intefaces, Internet Getway"
+title: "Các components trong VPC"
+description: "ENI đại diện như 1 card mạng ảo (virtual network card). Route tables chứa những rules giúp định tuyến network traffic"
 keywords:
   [
     "Elastic Network Intefaces trong AWS",
