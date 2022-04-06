@@ -1,1 +1,11 @@
+### [Tổng quan về Web] HTTP và những điều cần biết
+> #### *__Nội dung bài viết__*
+> - [HTTP là gì](#http-là-gì)
+> - [Các khía cạnh cơ bản của HTTP](#các-khía-cạnh-cơ-bản)
+> - [HTTP Messenges](#tổng-quan-về-http-messenges)
+>   - [HTTP Request](#HTTP-Reque)
+>   - [HTTP Response](#Tổng-quan-về-HTTP-Messenges)
 
+### HTTP là gì
+HTTP là một giao thức để tìm nạp các tài nguyên như tài liệu HTML. Nó là nền tảng của bất kỳ trao đổi dữ liệu nào trên Web và nó là một giao thức khách-máy chủ, có nghĩa là các yêu cầu được khởi tạo bởi người nhận, thường là trình duyệt Web. Một tài liệu hoàn chỉnh được tạo lại từ các tài liệu con khác nhau được tìm nạp, chẳng hạn như văn bản, mô tả bố cục, hình ảnh, video, tập lệnh, v.v. 
+![](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/fetching_a_page.png)
