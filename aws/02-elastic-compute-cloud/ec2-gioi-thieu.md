@@ -3,7 +3,7 @@ title: "Giới thiệu về EC2"
 description: "EC2 là dịch vụ web cung cấp năng lực điện toán bảo mật và có kích cỡ linh hoạt trên đám mây. Dịch vụ này được thiết kế để giúp các nhà phát triển dễ sử dụng điện toán đám mây ở quy mô web hơn."
 keywords:
   [
-    "amazon ec2 là gì",
+    "Amazon EC2 là gì",
     "aws ec2 là gì",
     "ec2 instance là gì",
     "ec2 là gì",
@@ -20,10 +20,13 @@ category:
 chapter:
   name: "Elastic Compute Cloud"
   slug: "ec2"
+image: https://user-images.githubusercontent.com/29729545/162225080-a2fb1728-9a20-425a-be8f-2b601ba0b67d.png
 position: 3
 ---
 
-## Giới thiệu về EC2
+## Amazon EC2 là gì
+
+![Amazon EC2 là gì](https://user-images.githubusercontent.com/29729545/162225080-a2fb1728-9a20-425a-be8f-2b601ba0b67d.png)
 
 Amazon Elastic Compute Cloud (Amazon EC2) là dịch vụ web cung cấp năng lực điện toán bảo mật và có kích cỡ linh hoạt trên đám mây. Dịch vụ này được thiết kế để giúp các nhà phát triển dễ sử dụng điện toán đám mây ở quy mô web hơn. EC2 cung cấp các ứng dụng máy tính ảo hoá có thể mở rộng về khả năng xử lý cùng các thành phần phần cứng ảo như bộ nhớ máy tính (ram), CPU, linh hoạt trong việc lựa chọn các phân vùng lưu trữ dữ liệu ở các nền tảng khác nhau và sự an toàn trong quản lý dịch vụ bởi kiến trúc ảo hoá đám mây mạnh mẽ của AWS.
 
