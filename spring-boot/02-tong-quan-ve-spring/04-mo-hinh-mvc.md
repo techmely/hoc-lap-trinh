@@ -14,7 +14,7 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---
-### Khái niệm
+### Khái niệm.
 MVC là một mô hình kiến trúc phần mềm được tạo ra với mục đích quản lí và xây dựng dự án phần mềm có hệ thống hơn, nói cụ thể thì nó là một mẫu thiết kế nhằm chia tách phần giao diện và phần code của ứng dụng để dễ dàng quản lí, bảo trì và phát triển. MVC được áp dụng trên hầu hết các ngôn ngữ lập trình hướng đối tượng hiện nay như C++, C#, Java, PHP,...
 
 MVC chia ứng dụng phần mềm ra thành 3 phần có tương tác với nhau:
@@ -26,7 +26,7 @@ MVC chia ứng dụng phần mềm ra thành 3 phần có tương tác với nha
 **Controller:** Đóng vai trò trung gian giữa Model và View, nó có nhiệm vụ nhận yêu cầu từ client sau đó xử lý request, load model và gửi data qua view tương ứng với nhau rồi trả kết quả về cho client.
 ![Mô hình MVC](https://cuongteam.com/wp-content/uploads/2020/08/mvc-khai-niem.png)
 
-### Luồng đi trong mô hình MVC như thế nào?
+### Luồng đi trong mô hình MVC.
 Bạn có thể hình dung, khi  một yêu cầu từ máy client gửi tới server, Controller sẽ thực hiện nhiệm vụ của mình đó là tiếp nhận và xử lý yêu cầu. Trong trường hợp cần thiết, nó có thể liên hệ Model – bộ phận làm việc với database để hỗ trợ.
 Khi xử lý xong yêu cầu, kết quả sẽ được trả về View. Tại View sẽ tạo mã HTML thành giao diện và trả về hiển thị trên trình duyệt.
 Ưu & nhược điểm của MVC?
@@ -43,7 +43,7 @@ Nhẹ, tiết kiệm băng thông: MVC không sử dụng viewstate nên khá ti
 - Đơn giản: Đây là một mô hình với kết cấu tương đối đơn giản. Dù bạn không có quá nhiều chuyên môn cũng có thể sử dụng được.
 #### Nhược điểm của mô hình MVC
 - Theo chia sẻ của đơn vị chuyên phát triển phần mềm (Outsource .NET Development Company – Groovetechnology.com) MVC thường được sử dụng vào những dự án lớn. Do đó, với các dự án nhỏ, mô hình MVC có thể gây cồng kềnh, tốn thời gian trong quá trình phát triển cũng như thời gian trung chuyển dữ liệu.
-### Ứng dụng của mô hình MVC
+### Ứng dụng của mô hình MVC.
 MVC đang là mô hình được ứng dụng rất nhiều trong lập trình.
 Hệ thống MVC phát triển tốt sẽ cho phép phát triển front – end, back – end cùng trên hệ thống mà không có sự can thiệp, chia sẻ, chỉnh sửa các tập tin trong khi một hoặc hai bên vẫn đang làm việc.
 
