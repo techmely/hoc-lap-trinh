@@ -20,7 +20,9 @@ MVC là một mô hình kiến trúc phần mềm được tạo ra với mục 
 MVC chia ứng dụng phần mềm ra thành 3 phần có tương tác với nhau:
 
 **Model:** thường là các class chứa thông tin đối tượng (dữ liệu), tương tác truy xuất database. Model sẽ đóng gói dữ liệu của ứng dụng và logic nghiệp vụ.
+
 **View:** là nơi nhận dữ liệu từ model, database và sắp xếp chúng chính xác nhờ yêu cầu từ controller và truyền về client. View sẽ xử lý hiễn thị trên ứng dụng.
+
 **Controller:** Đóng vai trò trung gian giữa Model và View, nó có nhiệm vụ nhận yêu cầu từ client sau đó xử lý request, load model và gửi data qua view tương ứng với nhau rồi trả kết quả về cho client.
 ![Mô hình MVC](https://cuongteam.com/wp-content/uploads/2020/08/mvc-khai-niem.png)
 
