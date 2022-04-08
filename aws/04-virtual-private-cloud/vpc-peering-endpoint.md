@@ -1,5 +1,5 @@
 ---
-title: "VPC Peering, VPC Endpoints"
+title: "Giới thiệu VPC Peering, VPC Endpoints"
 description: "VPC peering là cách liên kết giữa 2 VPC với nhau và không phát sinh thêm chi phí. Khi 2 VPC được peering, chúng có thể giao tiếp với nhau bằng private IP."
 keywords:
   [

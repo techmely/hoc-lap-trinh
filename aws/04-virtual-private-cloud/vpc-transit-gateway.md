@@ -1,5 +1,5 @@
 ---
-title: "Transit Gateway"
+title: "Giới thiệu Transit Gateway"
 description: "Transit Gateway giống như một trung tâm chuyển tiếp các gói tin dùng trong kết nối VPCs với On-premises network thông qua một central hub."
 keywords:
   [

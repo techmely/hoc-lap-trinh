@@ -1,5 +1,5 @@
 ---
-title: "IAM và CLI"
+title: "Giới thiệu về IAM và CLI"
 description: "IAM (Identify and Access Management) là công cụ để kiểm soát quyền truy cập của cá nhân và nhóm đến tài nguyên AWS của bạn một cách an toàn."
 keywords:
   ["iam trong aws", "iam trong aws cli", "aws iam là gì", "aws iam la gi"]
@@ -13,10 +13,13 @@ category:
 chapter:
   name: "Giới thiệu AWS"
   slug: "index"
+image: https://user-images.githubusercontent.com/29729545/162231353-1e81131e-5e9e-4e36-bdbb-d17d797093ee.png
 position: 2
 ---
 
-## IAM
+## IAM trong AWS
+
+![](https://user-images.githubusercontent.com/29729545/162231353-1e81131e-5e9e-4e36-bdbb-d17d797093ee.png)
 
 IAM (Identify and Access Management) là công cụ để kiểm soát quyền truy cập của cá nhân và nhóm đến tài nguyên AWS của bạn một cách an toàn.
 
@@ -49,7 +52,7 @@ AWS recommended hạn chế dùng root account hàng ngày, thay vì đó tạo 
 
 > _Use access keys to make programmatic calls to AWS from the AWS CLI, Tools for PowerShell, AWS SDKs, or direct AWS API calls. You can have a maximum of two access keys (active or inactive) at a time_
 
-## AWS CLI
+## AWS CLI là gì
 
 CLI là command line interface giúp người dùng có thể truy cập dịch vụ trông qua màn hình cmd. Chỉ với một công cụ để tải xuống và cấu hình, bạn có thể kiểm soát nhiều dịch vụ AWS bằng một dòng lệnh và tự động hóa chúng thông qua các tập lệnh.
 

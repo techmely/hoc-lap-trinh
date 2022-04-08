@@ -25,7 +25,7 @@ chapter:
 position: 15
 ---
 
-## VPC
+## VPC là gì
 
 Virtual private cloud
 
@@ -36,13 +36,13 @@ Virtual private cloud
 - **private subnet**
 - **public subnet**
 
-## AWS VPC
+## VPC trong AWS
 
 Môi trường mạng ảo riêng biệt, độc lập với môi trường Internet. Dùng để quản lý resources AWS. Dưới đây là một ví dụ về VPC trên môi trường AWS.
 
 ![VPC trong AWS](https://images.viblo.asia/33f1e7f1-0837-4ff2-886b-4e3531db8d17.png)
 
-### Classless Inter-Domain Routing (CIDR)
+### Classless Inter-Domain Routing (CIDR) là gì
 
 - Khi tạo VPC, bạn cần cung cấp cho VPC 1 IP range, được gọi là **CIDR** (VD: 10.0.0.0/12)
 - CIDR là 1 set IP tiêu chuẩn dùng để định danh, phân bố cho resource (VD: EC2) trong network
@@ -54,7 +54,7 @@ Môi trường mạng ảo riêng biệt, độc lập với môi trường Inte
   - /24 <-> 255.255.255.0
   - /32 <-> 255.255.255.255
 
-### Subnet
+### Subnet là gì
 
 Subnet là mạng con nằm trong AWS VPC của bạn. Mỗi subnet có 1 dải địa chỉ IP khác nhau. Có 2 loại subnet là private subnet và public subnet.
 
@@ -62,14 +62,14 @@ Subnet là mạng con nằm trong AWS VPC của bạn. Mỗi subnet có 1 dải 
 - **CIDR subnet** phải là tập con của **CIDR VPC**
 - Mỗi subnet phải nằm trong single AZ, **không** thể nằm rải rác ở multiple AZs
 
-#### Private subnet
+#### Private subnet là gì
 
 - Bất kỳ incomming traffic từ internet đều không thể access resources bên trong private subnet
 - Ngược lại outgoing traffic từ private subnet ra ngoài internet đều không được. Traffict của private subnet được định tuyến thông qua **Network Address Translator (NAT)** getway
 - Mỗi resource trong private subnet đều được assign cho 1 private IP, private IP này chỉ được dùng trong nội bộ VPC
 - 1 **Route table** định tuyến traffic đến/đi subnet, nó xác định được subnet là private hay public bằng cách nó có đi qua **Internet Getway (IGW)** hay không?
 
-#### Public subnet
+#### Public subnet là gì
 
 - Traffic có thể access được ra ngoài internet, và ngược lại
 - Resources trong public subnet được assign public IP, và có thể truy cập từ bên ngoài internet

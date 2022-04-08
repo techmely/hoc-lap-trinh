@@ -1,5 +1,5 @@
 ---
-title: "High Availability và Scalability"
+title: "Giới thiệu về High Availability và Scalability"
 description: "High availability có nghĩa “Độ sẵn sàng cao”. Tức là máy chủ luôn trong tình trạng hoạt động tốt và có tĩnh sẵn sàng cao"
 keywords: ["availability là gì", "high availability là gì"]
 author:

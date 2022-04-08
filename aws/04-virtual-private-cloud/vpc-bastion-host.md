@@ -1,5 +1,5 @@
 ---
-title: "Bastion hosts"
+title: "Giới thiệu về Bastion hosts"
 description: "Bastion hosts là cách để chúng ta có thể truy cập vào 1 instance trong private subnet"
 keywords: ["Bastion hosts trong AWS"]
 author:

@@ -1,6 +1,6 @@
 ---
-title: "Các loại Load Balancer"
-description: "Các loại Load Balancer"
+title: "Các loại Load Balancer trong AWS"
+description: "Application Load Balancer là giải pháp này hoạt động ở tầng ừng dụng (layer 7), phù hợp nhất để cân bằng lưu lượng HTTP và HTTPS. Gateway Load Balancer cho phép bạn triển khai, mở rộng, quản lý các ứng dụng 3th party network (Firewall...)"
 keywords:
   [
     "Load Balancer type",

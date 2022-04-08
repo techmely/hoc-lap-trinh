@@ -1,5 +1,5 @@
 ---
-title: "AWS Transfer Family"
+title: "AWS Transfer Family là gì"
 description: "AWS Transfer Family là gì? AWS Transfer Family là dịch vụ quản lý truyền file đến và ra ngoài Amazon S3 hoặc EFS sử dụng giao thức FTP."
 keywords:
   [

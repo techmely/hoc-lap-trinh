@@ -1,5 +1,5 @@
 ---
-title: "S3 Lifecycle Rules"
+title: "Giới thiệu S3 Lifecycle Rules"
 description: "Chúng ta có thể chuyển đổi Object một cách linh hoạt giữa các storage classes trong Amazon S3. Lifecycle configuration có thể giúp bạn tự động hóa việc chuyển đổi Object"
 keywords:
   [

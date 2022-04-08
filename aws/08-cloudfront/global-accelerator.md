@@ -1,5 +1,5 @@
 ---
-title: "AWS Global Accelerator"
+title: "AWS Global Accelerator là gì"
 description: "AWS Global Accelerator là dịch vụ cải thiện hiệu suất của ứng dụng của bạn bằng cách tận dụng mạng nội bộ toàn cầu của AWS."
 keywords:
   [

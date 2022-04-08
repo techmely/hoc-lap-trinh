@@ -1,7 +1,14 @@
 ---
-title: "Elastic Load Balancer"
-description: "Load Balancer là 1 server dùng để forward traffic đến nhiêu server (Ec2...)"
-keywords: ["Load Balancer là gì", "Elastic Load Balancer trong aws"]
+title: "Elastic Load Balancer trong AWS"
+description: "Load Balancer là 1 server dùng để forward traffic đến nhiêu server (Ec2...). Mỗi Target Group dùng để route request tới 1 hay nhiều target khác nhau. Như ở hình vẽ trê, ALB đặt các Rule Listener để định tuyến request."
+keywords: [
+  "Load Balancer là gì",
+  "Load Balancer la gi",
+  "Elastic Load Balancer trong aws",
+  "Target Group trong ELB",
+  "Target Group là gì",
+  "Target Group la gi"
+]
 author:
   fullname: Phan Văn Đức
   username: ducpv

@@ -52,7 +52,7 @@ Mặc định khi chúng ta launch một EC2 instance trong VPC thì không th�
   </ul>
 </content-info>
 
-## Direct Connect (DX)
+## Direct Connect (DX) là gì
 
 Hiểu đơn giản, Direct Connection cung cấp một đường truyền chuyên dụng, ổn định, được thiết lập riêng giữa AWS và Data center hay office. Khi sử dụng Direct Connection bạn không kết nối qua internet mà kết nối trực tiếp tới AWS, vì vậy đường truyền có thể lên tới 1-10 Gbps.
 
@@ -76,7 +76,7 @@ Hiểu đơn giản, Direct Connection cung cấp một đường truyền chuy�
   </ul>
 </content-info>
 
-## Direct Connect Gateway
+## Direct Connect Gateway trong AWS
 
 Nếu bạn muốn setup Direct Connect tới một hoặc nhiều VPC ở các Region khác nhau (chung account), thì cần dùng đến Direct Connect Gateway.
 
