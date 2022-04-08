@@ -3,19 +3,17 @@ title: "Tổng quan về AWS"
 description: "Amazon Web Services (AWS) là nền tảng đám mây toàn diện và được sử dụng rộng rãi nhất, cung cấp trên 200 dịch vụ đầy đủ tính năng từ các trung tâm dữ liệu trên toàn thế giới."
 keywords:
   [
-    "aws",
+    "Amazon Web Services (AWS) là gì",
+    "Amazon Web Services (AWS) la gi",
     "aws cli là gì",
     "aws là gì",
     "bằng aws là gì",
-    "chứng chỉ aws là gì",
     "cloud aws là gì",
-    "aws la gi",
     "cloud aws la gi",
     "cloud la gi",
     "học aws",
     "học aws cơ bản",
-    "hoc aws co ban",
-    "aws tiếng việt",
+    "hoc aws co ban"
   ]
 author:
   fullname: Phan Văn Đức
@@ -27,6 +25,7 @@ category:
 chapter:
   name: "Giới thiệu AWS"
   slug: "index"
+image: https://user-images.githubusercontent.com/29729545/162230977-5b127f4a-6c28-416b-9096-4cdc99010ffa.png
 position: 1
 ---
 
@@ -56,11 +55,11 @@ AWS có hàng triệu khách hàng, họ cung cấp dịch vụ trên cơ sở h
 
 ### Regions and AZs
 
-Mỗi **Regions** là collection của (min 2 AZs, max 6 AZs, **thường là 3**), có thể coi Region là cụm data centers (cluster of datacenters). Mỗi regions độc lập với các region khác để đảm bảo an toàn khi có thiên tai xảy ra. Hiện tại ở Việt Nam chưa có datacenter nào của AWS, gần nhất với chúng ra là Nhật Bản (Tokyo, Osaka), Singapore... ![Regions](https://s3-us-west-1.amazonaws.com/corpinfowebsiteuploads/content/uploads/2016/04/25051531/AWS-Global-Infrastructure.jpg)
+Mỗi **Regions** là collection của (min 2 AZs, max 6 AZs, **thường là 3**), có thể coi Region là cụm data centers (cluster of datacenters). Mỗi regions độc lập với các region khác để đảm bảo an toàn khi có thiên tai xảy ra. Hiện tại ở Việt Nam chưa có datacenter nào của AWS, gần nhất với chúng ra là Nhật Bản (Tokyo, Osaka), Singapore... 
+
+![Regions](https://user-images.githubusercontent.com/29729545/162230977-5b127f4a-6c28-416b-9096-4cdc99010ffa.png)
 
 <content-info>AZs bao gồm 1 hoặc nhiều center riêng biệt, mỗi center có hệ thống điện, làm mát... Chúng được kết nối với nhau và kết nối với mạng với băng thông cao và độ trễ thấp.</content-info>
-
-![Regions](https://image.slidesharecdn.com/runningsharepointontheawscloudfinalv2-120712124336-phpapp02/95/slide-8-1024.jpg)
 
 Khi lựa chọn region để sử dụng các services, nên chọn region gần với bạn để giảm độ trễ (latency).
 

@@ -1,5 +1,5 @@
 ---
-title: "NAT trong VPC"
+title: "Giới thiệu NAT trong AWS"
 description: "Bastion hosts là cách để chúng ta có thể truy cập vào 1 instance trong private subnet"
 keywords:
   [

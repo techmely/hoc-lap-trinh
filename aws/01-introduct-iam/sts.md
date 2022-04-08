@@ -1,5 +1,5 @@
 ---
-title: "Security Token Service"
+title: "Security Token  là gì"
 description: "AWS Security Token Service (STS) là web service cho phép người dùng gửi request tạm thời và cấp quyền một cách giới hạn cho IAM user"
 keywords:
   [
@@ -20,6 +20,7 @@ category:
 chapter:
   name: "Giới thiệu AWS"
   slug: "index"
+image: https://user-images.githubusercontent.com/29729545/162231674-0f3da49a-2fcf-40c0-8b99-9a2240094ea6.png
 position: 3
 ---
 
@@ -29,7 +30,7 @@ AWS Security Token Service (STS) là web service cho phép người dùng gửi 
 
 - Token có hiệu lực tối đa trong 1 giờ, sau đó cần phải refresh lại
 
-![Security Token Service](https://www.testpreptraining.com/tutorial/wp-content/uploads/2019/09/image-168.png)
+![Security Token Service](https://user-images.githubusercontent.com/29729545/162231674-0f3da49a-2fcf-40c0-8b99-9a2240094ea6.png)
 
 Như trên hình vẽ, Dev account không có quyền truy cập đến Amazon S3. Tuy nhiên một này vì lý do dự án muốn Dev account này xem được các bucket có trên S3 trong khoảng thời gian 30'. Alice sẽ được cấp một token tạm thời (STS) để có thể truy cập được vào S3 bucket. Token này chỉ có thời hạn 30', sau 30' Alice không thể truy cập lại S3 nữa.
 

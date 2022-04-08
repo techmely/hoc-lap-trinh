@@ -1,5 +1,5 @@
 ---
-title: "Amazon RDS"
+title: "Giới thiệu Amazon RDS"
 description: "Relational Database Service là dịch vụ quản lý Database sử dụng SQL"
 keywords:
   [
@@ -24,7 +24,7 @@ chapter:
 position: 20
 ---
 
-## AWS RDS
+## AWS RDS là gì
 
 - Viết tắt của Relational Database Service, là dịch vụ quản lý Database sử dụng SQL
 - Types:

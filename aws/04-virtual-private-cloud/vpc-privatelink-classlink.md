@@ -1,5 +1,5 @@
 ---
-title: "PrivateLink và ClassicLink"
+title: "Giới thiệu PrivateLink và ClassicLink"
 description: "AWS PrivateLink là một các kết nối an toàn giữa VPCs, AWS Serives, hay On-premises network của bạn. Kết nối này không đi qua internet, nó sẽ nằm trong network của AWS."
 keywords: ["PrivateLink trong AWS", "PrivateLink là gì", "PrivateLink la gi"]
 author:

@@ -1,5 +1,5 @@
 ---
-title: "Giới thiệu CloudHSM, Shield, WAF"
+title: "Giới thiệu CloudHSM, Shield và WAF"
 description: "AWS CloudHSM là một module bảo mật phần cứng dựa trên đám mây (HSM) cho phép bạn dễ dàng tạo và sử dụng các khóa mã hóa của riêng bạn trên AWS."
 keywords:
   [

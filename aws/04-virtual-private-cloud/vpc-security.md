@@ -1,6 +1,6 @@
 ---
-title: "VPC Security"
-description: "VPC Security Network Access Control Lits"
+title: "Bảo mật trong VPC"
+description: "Amazon cung cấp 2 features để bảo mật(network security) và theo dõi(monitoring). NACL giống như 1 firewall để control traffic vào/ra subnet"
 keywords: ["Network ACLs", "NACL trong AWS"]
 author:
   fullname: Phan Văn Đức

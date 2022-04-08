@@ -1,5 +1,5 @@
 ---
-title: "Storage Gateway"
+title: "Giới thiệu Storage Gateway"
 description: "Hybrid Cloud là concept được dùng đến khi một phần ứng dụng hay dữ liệu của bạn nằm trên Cloud và một phần nằm ở on-premise. Vì đặc thù từng loại dự án yêu cầu bảo mật, khách hàng không muốn tất cả dữ liệu của họ được đưa lên Cloud. AWS Storage Gateway là dịch vụ hybrid cloud storage cung cấp cho bạn khả năng kết nối on-premise với storage trên Cloud (S3)."
 keywords:
   [

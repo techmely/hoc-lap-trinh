@@ -1,5 +1,5 @@
 ---
-title: "EC2 Storage"
+title: "Lưu trữ trong EC2"
 description: "EBS (Elastic Block Store) là dịch vụ lưu trữ dưới dạng block của AWS. Một EBS có thể attach vào duy nhất 1 EC2 trong cùng AZ. Bạn có thể hiểu EBS sẽ giống như 1 USB hay 1 ổ cứng ngoài."
 keywords:
   [
@@ -21,15 +21,16 @@ category:
 chapter:
   name: "Elastic Compute Cloud"
   slug: "ec2"
+image: https://user-images.githubusercontent.com/29729545/162230387-c12857b1-4554-46b7-a465-861d2554e657.png
 position: 7
 ---
 
-## EBS
+## EBS là gì
 
 EBS (Elastic Block Store) là dịch vụ lưu trữ dưới dạng block của AWS. Một EBS có thể attach vào duy nhất 1 EC2 trong cùng AZ. Bạn có thể hiểu EBS sẽ giống như 1 USB hay 1 ổ cứng ngoài.
 
 - Có thể attach nhiều EBS vào 1 EC2 instance.
-- EBS không cross AZ
+- EBS trong AWS không cross AZ
 - AWS tính phí dựa trên dung lượng của EBS
 
 EBS volume bị lock trong 1 AZ, có nghĩa là:
@@ -42,12 +43,14 @@ Khi tạo EC2 instance có thể kiểm soát việc xóa EBS khi instance bị 
 - Mặc định, root EBS volume chọn xóa
 - Những EBS volume khác sẽ không bị xóa
 
-## EBS Snapshots
+## EBS Snapshots trong AWS
 
 Như đã đề cập ở phần EBS volume, chúng ta không thể cross AZ 1 EBS volume. Nhưng AWS cung cấp dịch vụ EBS snapshots giúp chúng ta có thể giải quyết bài toán đó.
 
 - EBS snapshots tạo 1 bản backup (snapshot) của EBS volume của bạn
-- Có thể copy snapshots across AZ hay region ![EBS snapshot](https://images.viblo.asia/618fe942-940b-43fa-9185-9b474bd25a4d.png)
+- Có thể copy snapshots across AZ hay region 
+
+![EBS snapshot](https://images.viblo.asia/618fe942-940b-43fa-9185-9b474bd25a4d.png)
 
 ## Các loại EBS
 
@@ -58,7 +61,9 @@ Trên thực tế chúng ta khá quen thuộc với 2 công nghệ ổ cứng l�
   - Provisioned IPOS SSD (io1/io2)
 - Hard Disk Drive (HDD)
   - Throughput Optimized HDD (st1)
-  - Cold HDD (sc1) ![EBS volume type](https://jayendrapatil.com/wp-content/uploads/2016/03/EBS_Volume_Types.png)
+  - Cold HDD (sc1) 
+  
+![EBS volume type](https://user-images.githubusercontent.com/29729545/162230387-c12857b1-4554-46b7-a465-861d2554e657.png)
 
 ## EBS multi-attach
 
@@ -67,11 +72,13 @@ Trên thực tế chúng ta khá quen thuộc với 2 công nghệ ổ cứng l�
 Như với kiến thức để thi SAA chúng ta có thể multi-attach, có nghĩa là 1 EBS có thể attach vào nhiều instance trong 1 AZ. Tuy nhiên nó sẽ có những giới hạn của nó:
 
 - EBS và các EC2 instance phải chung AZ
-- EBS volume type: **Provisioned IPOS SSD (io1/io2)** ![EBS multil-attacg](https://images.viblo.asia/f9dd2497-f955-4081-90d6-2334aab37793.png)
+- EBS volume type: **Provisioned IPOS SSD (io1/io2)** 
 
-## AMI
+![EBS multil-attacg](https://images.viblo.asia/f9dd2497-f955-4081-90d6-2334aab37793.png)
 
-AMI viết tắt của Amazon Machine Image
+## AMI là gì
+
+AMI trong AWS viết tắt của Amazon Machine Image
 
 Với AMI chúng ta có thể customize lại EC2 instance theo mình mong muốn:
 
@@ -84,12 +91,16 @@ Như vậy chúng ta có thêm 1 cách để launch EC2 instance:
 
 - Public AMI: được cung cấp bởi AWS
 - Own AMI: là AMI được tự mình tạo ra theo ý muốn
-- Market AMI: là AMI do một bên khác tạo ra và nếu bạn dùng nó thì có thể sẽ tính phí ![AMI process](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT07WeeI1BwAmVizxnFHZdAx9idLlM_LHgZGQ&usqp=CAU)
+- Market AMI: là AMI do một bên khác tạo ra và nếu bạn dùng nó thì có thể sẽ tính phí 
 
-## EFS (Elastic File System)
+![AMI process](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT07WeeI1BwAmVizxnFHZdAx9idLlM_LHgZGQ&usqp=CAU)
+
+## EFS là gì (Elastic File System)
 
 - Quản lý NFS(Network file system) có thể mount vào nhiều EC2 instance
-- Các EC2 instance ở các AZ khác nhau cũng có thể dùng chung EFS ![EFS](https://images.viblo.asia/5ba45b52-bddb-4376-aa93-57176313b73b.png)
+- Các EC2 instance ở các AZ khác nhau cũng có thể dùng chung EFS 
+
+![EFS](https://images.viblo.asia/5ba45b52-bddb-4376-aa93-57176313b73b.png)
 - EFS có giá cao hơn EBS, nhưng chỉ cần trả tiền cho dung lượng mà bạn sử dụng
 - Use case: Sử dụng trong các ứng dụng Content manage, sharing data
 - Hand-on:

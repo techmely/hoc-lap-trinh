@@ -1,5 +1,5 @@
 ---
-title: "S3 Access Logs, Replication, Pre-signed"
+title: "Giới thiệu S3 Access Logs, Replication và Pre-signed"
 description: "S3 Access Logs giúp bạn có thể lưu lại thông tin request đến S3 buckets. Dữ liệu này có thể dùng để phân tích bằng những dịch vụ phân tích như Amazon Athena...S3 Replication là tính năng sao chép các object giữa các vùng lưu trữ."
 keywords:
   [

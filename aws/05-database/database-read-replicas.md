@@ -1,5 +1,5 @@
 ---
-title: "Amazon Read Replicas"
+title: "Giới thiệu Read Replicas"
 description: "Read replicas giúp bạn scaling việc read. Read replicas cho phép bạn tạo 1 hoặc nhiều bản copies của DB instance trong chung region hoặc khác region"
 keywords: ["Read replicas la gi", "RDS multi AZ la gi"]
 author:

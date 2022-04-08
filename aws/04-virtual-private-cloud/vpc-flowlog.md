@@ -1,5 +1,5 @@
 ---
-title: "VPC FLow logs"
+title: "Giới thiệu VPC FLow logs"
 description: "VPC FLow logs là tính năng giúp chúng ta có thể nắm bắt được thông tin IP traffic đến và đi Network Interfaces trong VPC."
 keywords:
   ["VPC FLow logs trong AWS", "VPC FLow logs là gì", "VPC FLow logs la gi"]

@@ -1,5 +1,5 @@
 ---
-title: "S3 Event Notifications, Requester Pays"
+title: "Giới thiệu S3 Event Notifications, Requester Pays"
 description: "Amazon S3 Event Notifications là tính năng nhận thông báo khi có event nhất định trên S3 bucket. Với Requester Pays buckets , người request, download sẽ trả tiền cho Network transfer data"
 keywords:
   [
@@ -8,19 +8,7 @@ keywords:
     "S3 Requester Pays la gi",
     "S3 Requester Pays là gì",
     "S3 Event Notifications trong S3",
-    "S3 Requester Pays trong S3",
-    "S3 Glacier la gi",
-    "S3 Glacier là gì",
-    "S3 Glacier trong aws",
-    "S3 Standard-IA la gi",
-    "S3 Standard-IA là gì",
-    "S3 Standard-IA trong aws",
-    "S3 One Zone-IA la gi",
-    "S3 One Zone-IA là gì",
-    "S3 One Zone-IA trong aws",
-    "S3 Intelligent-Tiering la gi",
-    "S3 Intelligent-Tiering là gì",
-    "S3 Intelligent-Tiering trong aws",
+    "S3 Requester Pays trong S3"
   ]
 author:
   fullname: Phan Văn Đức
@@ -35,7 +23,7 @@ chapter:
 position: 60
 ---
 
-## S3 Event Notifications
+## S3 Event Notifications là gì
 
 Amazon S3 Event Notifications là tính năng nhận thông báo khi có event nhất định trên S3 bucket. Amazon S3 có thể publish cho nhiều events như: S3:ObjectCreated, S3:ObjectRemoved, S3:Replication...
 
@@ -46,7 +34,7 @@ Amazon S3 Event Notifications là tính năng nhận thông báo khi có event n
 
 ![S3 Event Notifications](https://user-images.githubusercontent.com/29729545/151324830-92d2db09-c437-4e21-a732-865bab8a9466.png)
 
-## Requester Pays
+## Gới thiệu Requester Pays
 
 - Mặc định Amazon S3 sẽ tính tiền sử dụng dịch vụ lưu trữ cho owner của bucket
 - Với **Requester Pays buckets** , người request, download sẽ trả tiền cho Network transfer data

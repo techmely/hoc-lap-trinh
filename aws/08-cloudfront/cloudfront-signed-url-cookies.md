@@ -1,5 +1,5 @@
 ---
-title: "CloudFront Signed URL/Signed Cookies"
+title: "Giới thiệu CloudFront Signed URL/Signed Cookies"
 description: "CloudFront Signed URL/Signed Cookies là gì? Trên thực tế có nhiều nội dung của website của bạn chỉ giới hạn cho những người dùng nhất định (người dùng đã trả phí). Chúng ta có thể dùng Cloudfront Signed URL/Cookie để dễ dàng quản lý truy cập đến nội dung của riêng mình."
 keywords:
   [

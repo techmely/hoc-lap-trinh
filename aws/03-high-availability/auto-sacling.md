@@ -1,7 +1,14 @@
 ---
-title: "Auto Scaling Group"
-description: "AWS"
-keywords: ["AWS"]
+title: "Auto Scaling Group trong AWS"
+description: "AWS Auto Scaling Group là tính năng tự động mở rộng để đảm bảo rằng các phiên bản Amazon EC2 đủ để chạy các ứng dụng của bạn. Bạn có thể tạo một nhóm AWS Auto Scaling trong các phiên bản EC2."
+keywords: [
+  "AWS ha là gì",
+  "ASG là gì",
+  "ASG la gi", 
+  "Scheduled actions trong ASG",
+  "Scaling policies trong ASG", 
+  "Tự động Scale trong AWS"
+]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -34,7 +41,7 @@ AWS Auto Scaling Group là tính năng tự động mở rộng để đảm b�
 - Min size / Max size / Initial Capacity
 - Network, subnets
 - Load Balancer (optional)
-- Sacling policies (đặt ra các policies để mở rộng, ví dụ: tỉ lệ CPU, Network...)
+- Scaling policies (đặt ra các policies để mở rộng, ví dụ: tỉ lệ CPU, Network...)
 - Scheduled actions (Lịch trình để sử dụng scaling, ví dụ: cứ 5 phút 1 lần...)
 
 <content-info>

@@ -39,7 +39,7 @@ alert(message);
 <content-example />
 
 ```js
-alert("Say hello from completejavascript.com");
+alert("Say hello from kungfutech.edu.vn");
 ```
 
 Kết quả:
