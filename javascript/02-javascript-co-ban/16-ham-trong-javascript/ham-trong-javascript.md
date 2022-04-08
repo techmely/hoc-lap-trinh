@@ -67,8 +67,6 @@ function sayHello() {
 }
 
 sayHello();
-sayHello();
-// Hello from kungfutech.edu.vn
 // Hello from kungfutech.edu.vn
 ```
 

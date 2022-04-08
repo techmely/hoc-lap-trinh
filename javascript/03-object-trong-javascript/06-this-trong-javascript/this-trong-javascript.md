@@ -2,6 +2,7 @@
 title: "This trong Javascript"
 description: "Trong bài viết này, mình sẽ bạn sẽ tìm hiểu về giá trị "this" trong JavaScript và hiểu nó rõ ràng trong các ngữ cảnh khác nhau."
 keywords: [
+"đối tượng trong javascript",
 "object trong javascript",
 "This trong Javascript",
 "this value trong javascript",
