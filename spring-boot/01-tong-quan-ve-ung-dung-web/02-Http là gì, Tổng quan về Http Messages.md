@@ -24,7 +24,7 @@ Một tài liệu hoàn chỉnh được tạo lại từ các tài liệu con k
 > Để khắc phục vấn đề này, HTTP cho phép mở rộng tự do các header. Trong đó, người dùng có thể tự tạo cho mình session trên mỗi request nhằm mục đích chia sẻ các ngữ cảnh hoặc trạng thái giữa các request với nhau. Sở dĩ trường hợp này có thể thực hiện được vì bản thân HTTP là stateless.
 
 ### Tổng quan về HTTP Message
-* #### HTTP Request
+#### **HTTP Request**
 HTTP request là thông tin được gửi từ client lên server, để yêu cầu server tìm hoặc xử lý một số thông tin, dữ liệu mà client muốn. 
 > - Method: là phương thức mà HTTP Request này sử dụng, thường là GET, POST, ngoài ra còn một số phương thức khác như HEAD, PUT, DELETE, OPTION, CONNECT. Trong ví dụ trên là GET
 >  - URI: là địa chỉ định danh của tài nguyên. Trong tường hợp này URI là / - tức request cho tài nguyên gốc, nếu request không yêu cầu một tài nguyên cụ thể, URI có thể là dấu *.
@@ -38,7 +38,7 @@ Tiếp theo là các trường request-header, cho phép client gửi thêm các
 > - Connection: tùy chọn điều khiển cho kết nối hiện thời. Ví dụ: keep-alive, Upgrade…
 > - Cookie: thông tin HTTP Cookie từ server.
 User-Agent: thông tin về user agent của người dùng.
-* #### HTTP Response
+#### **HTTP Response**
 Cấu trúc HTTP response gần giống với HTTP request, chỉ khác nhau là thay vì Request-Line, thì HTTP có response có Status-Line. Và giống như Request-Line, Status-Line cũng có ba phần như sau:
 > - HTTP-version: phiên bản HTTP cao nhất mà server hỗ trợ.
 > - Status-Code: mã kết quả trả về.
@@ -46,7 +46,7 @@ Cấu trúc HTTP response gần giống với HTTP request, chỉ khác nhau là
 
 ![](https://images.viblo.asia/d4d042c6-1606-44c8-a7cc-0130d38f281e.png)
 
-* ### HTTP Status Code
+#### **HTTP Status Code**
 Một số loại Status-Code thông dụng mà server trả về cho client như sau:
 
 > 1xx (Information Message): các status code này chỉ có tính chất tạm thời, client có thể không quan tâm.
