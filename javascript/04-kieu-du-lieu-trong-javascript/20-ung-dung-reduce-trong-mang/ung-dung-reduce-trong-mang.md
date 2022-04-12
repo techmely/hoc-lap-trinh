@@ -18,17 +18,20 @@ Bởi lẽ, reduce trong JS là một trong 3 phương thức quan trọng và t
 
 Việc sử dụng đúng `arr.reduce()` giúp code trở nên sáng sủa và ngắn gọn hơn rất nhiều.
 
-> Có thể bạn quan tâm: [Các phương thức của mảng trong JavaScript](/phuong-thuc-cua-mang-trong-javascript/).
+> Có thể bạn quan tâm: [Các phương thức của mảng trong JavaScript](/bai-viet/javascript/phuong-thuc-trong-javascript).
 
-## [](#c%C3%BA-ph%C3%A1p-c%E1%BB%A7a-reduce-trong-javascript)Cú pháp của `reduce` trong JavaScript
+## Cú pháp của `reduce` trong JavaScript
 
-JavaScript Reduce là một phương thức có sẵn của array, được sử dụng để gọi một [hàm](/ham-la-gi-ham-trong-javascript/) lên các phần tử của [mảng](/array-la-gi-array-trong-javascript/) (từ trái sang phải) với **một biến tích lũy**.
+JavaScript Reduce là một phương thức có sẵn của array, được sử dụng để gọi một [hàm](/bai-viet/javascript/ham-trong-javascript) lên các phần tử của [mảng](/bai-viet/javascript/mang-array-trong-javascript) (từ trái sang phải) với **một biến tích lũy**.
 
 Kết quả trả về là một giá trị duy nhất, ứng với biến tích lũy.
 
 Cú pháp của reduce trong JS:
 
+```js
     arr.reduce(callback[, initialValue])
+
+```
 
 Trong đó:
 
@@ -42,32 +45,34 @@ Trong đó:
 
 Trên đây là giới thiệu cơ bản về phương thức `arr.reduce()`. Tiếp theo, mình sẽ giới thiệu một số ứng dụng của Reduce trong JavaScript.
 
-## [](#%E1%BB%A9ng-d%E1%BB%A5ng-c%E1%BB%A7a-reduce-trong-javascript)Ứng dụng của Reduce trong JavaScript
+## Ứng dụng của Reduce trong JavaScript
 
 Dưới đây là một số ứng cụng của Reduce trong JS.
 
-### [](#chuy%E1%BB%83n-m%E1%BA%A3ng-2-chi%E1%BB%81u-th%C3%A0nh-m%E1%BA%A3ng-1-chi%E1%BB%81u)Chuyển mảng 2 chiều thành mảng 1 chiều
+### Chuyển mảng 2 chiều thành mảng 1 chiều
 
 ► **Đặt vấn đề**
 
 Giả sử, mình có một mảng các chủ đề trên blog, với mỗi chủ đề lại chứa một mảng các bài viết như sau:
 
-    const topics = [
-      {
-        topic: "ReactJS",
-        posts: [
-          { postID: "id1", title: "title1" },
-          { postID: "id2", title: "title2" },
-        ],
-      },
-      {
-        topic: "Vue.js",
-        posts: [
-          { postID: "id3", title: "title3" },
-          { postID: "id4", title: "title4" },
-        ],
-      },
-    ];
+```js
+const topics = [
+  {
+    topic: "ReactJS",
+    posts: [
+      { postID: "id1", title: "title1" },
+      { postID: "id2", title: "title2" },
+    ],
+  },
+  {
+    topic: "Vue.js",
+    posts: [
+      { postID: "id3", title: "title3" },
+      { postID: "id4", title: "title4" },
+    ],
+  },
+];
+```
 
 Bây giờ, mình muốn có một **mảng các bài viết** để hiển thị thành một danh sách. Vậy mình phải làm sao?
 
@@ -75,27 +80,28 @@ Bây giờ, mình muốn có một **mảng các bài viết** để hiển th�
 
 **Cách đầu tiên** mà mọi người thường suy nghĩ đến là sử dụng [vòng lặp for](/vong-lap-trong-javascript/):
 
-    // khai báo mảng rỗng để lưu kết quả
-    const allPosts = [];
+```js
+// khai báo mảng rỗng để lưu kết quả
+const allPosts = [];
 
-    // duyệt mảng các topics
-    for (let t = 0; t < topics.length; t++) {
-      // lấy ra các posts với từng topic
-      const posts = topics[t].posts;
+// duyệt mảng các topics
+for (let t = 0; t < topics.length; t++) {
+  // lấy ra các posts với từng topic
+  const posts = topics[t].posts;
 
-      // sử dụng vòng lặp for để duyệt mảng posts
-      for (let p = 0; p < posts.length; p++) {
-        // lấy ra từng post
-        const post = posts[p];
+  // sử dụng vòng lặp for để duyệt mảng posts
+  for (let p = 0; p < posts.length; p++) {
+    // lấy ra từng post
+    const post = posts[p];
 
-        // push vào mảng kết quả
-        allPosts.push(post);
-      }
-    }
+    // push vào mảng kết quả
+    allPosts.push(post);
+  }
+}
 
-    // kết quả
-    console.log(allPosts);
-    /*
+// kết quả
+console.log(allPosts);
+/*
     [
         { postID: "id1", title: "title1" },
         { postID: "id2", title: "title2" },
@@ -103,16 +109,19 @@ Bây giờ, mình muốn có một **mảng các bài viết** để hiển th�
         { postID: "id4", title: "title4" }
     ]
     */
+```
 
 Cách làm trên là suy nghĩ logic cơ bản của hầu hết mọi người. Vì đó là **cách làm nguyên thủy** - chỉ dựa vào vòng lặp `for`.
 
 Tuy nhiên, cách làm trên khá dài dòng. Thay vào đó, bạn có thể áp dụng reduce trong JS như sau:
 
-    const allPosts = topics.reduce((acc, cur) => {
-      // tại mỗi phần tử, lấy ra posts để chèn thêm vào mảng tích lũy
-      // sử dụng cú pháp spread ...
-      return [...acc, ...cur.posts];
-    }, []);
+```js
+const allPosts = topics.reduce((acc, cur) => {
+  // tại mỗi phần tử, lấy ra posts để chèn thêm vào mảng tích lũy
+  // sử dụng cú pháp spread ...
+  return [...acc, ...cur.posts];
+}, []);
+```
 
 Trong đó, `initialValue` là một mảng rỗng `[]` (tương đương với mảng `allPosts = []` ở trên).
 
@@ -120,7 +129,8 @@ Và khi thực thi hàm `callback` với mỗi phần tử của mảng `topics`
 
 - Với lượt đầu tiên: `acc = []` và `cur` ứng với phần tử đầu tiên (về `ReactJS`) nên:
 
-  // giá trị tích lũy là mảng rỗng
+```js
+// giá trị tích lũy là mảng rỗng
   acc = [];
 
   // phần tử đang duyệt là một mảng
@@ -160,33 +170,36 @@ Và khi thực thi hàm `callback` với mỗi phần tử của mảng `topics`
   { postID: 'id3', title: 'title3' },
   { postID: 'id4', title: 'title4' },
   ]
+```
 
 **Chú ý:** cách viết `[...acc, ...cur.posts]` là cách ghép mảng sử dụng [cú pháp spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) `...`.
 
 Rõ ràng, nhờ ứng dụng của Reduce trong JavaScript mà code trở nên ngắn gọn hơn rất nhiều mà vẫn dễ hiểu.
 
-### [](#chuy%E1%BB%83n-array-th%C3%A0nh-object-theo-gi%C3%A1-tr%E1%BB%8B-c%E1%BB%A7a-m%E1%BB%99t-thu%E1%BB%99c-t%C3%ADnh)Chuyển array thành object theo giá trị của một thuộc tính
+### Chuyển array thành object theo giá trị của một thuộc tính
 
 ► **Đặt vấn đề**
 
 Giả sử, mình có danh sách các bài viết như trên. Và mình muốn lấy tiêu đề bài viết (`title`) ứng với giá trị của một `postID` nào đó.
 
-    const posts = [
-      { postID: "id1", title: "title1" },
-      { postID: "id2", title: "title2" },
-      { postID: "id3", title: "title3" },
-      { postID: "id4", title: "title4" },
-    ];
+```js
+const posts = [
+  { postID: "id1", title: "title1" },
+  { postID: "id2", title: "title2" },
+  { postID: "id3", title: "title3" },
+  { postID: "id4", title: "title4" },
+];
 
-    const getPost = (postID, posts) => {
-      // TODO: triển khai sau
-    };
+const getPost = (postID, posts) => {
+  // TODO: triển khai sau
+};
 
-    // Thực hiện truy vấn
-    getPost("id1", posts).title; // title1
-    getPost("id2", posts).title; // title2
-    getPost("id3", posts).title; // title3
-    getPost("id4", posts).title; // title4
+// Thực hiện truy vấn
+getPost("id1", posts).title; // title1
+getPost("id2", posts).title; // title2
+getPost("id3", posts).title; // title3
+getPost("id4", posts).title; // title4
+```
 
 Vậy mình phải làm sao đây?
 
@@ -196,80 +209,88 @@ Tiếp tục với cách suy nghĩ logic cơ bản là sử dụng vòng lặp `
 
 Với mỗi bài viết, mình so sánh `postID` với giá trị cần tìm. Mình sẽ duyệt lần lượt từng phần tử cho đến khi **tìm đúng bài viết** thì thôi.
 
-    // hàm getPost
-    const getPost = (postID, posts) => {
-      // dùng vòng lặp for để duyệt hết các bài viết
-      for (let p = 0; p < posts.length; p++) {
-        // lấy từng post
-        const post = posts[p];
+```js
+// hàm getPost
+const getPost = (postID, posts) => {
+  // dùng vòng lặp for để duyệt hết các bài viết
+  for (let p = 0; p < posts.length; p++) {
+    // lấy từng post
+    const post = posts[p];
 
-        // so sánh postID của từng post với tham số postID truyền vào
-        if (post.postID === postID) {
-          // nếu bằng thì trả về post hiện tại
-          return post;
-        }
-      }
+    // so sánh postID của từng post với tham số postID truyền vào
+    if (post.postID === postID) {
+      // nếu bằng thì trả về post hiện tại
+      return post;
+    }
+  }
 
-      // nếu không tìm thấy thì giá trị trả về mặc định là null
-      return null;
-    };
+  // nếu không tìm thấy thì giá trị trả về mặc định là null
+  return null;
+};
+```
 
 Đây cũng là một cách làm hay và dễ hiểu bởi cách **suy nghĩ trực tiếp** vào bài toán.
 
 Tuy nhiên, cách làm này có một vấn đề là: nếu mảng các bài viết không phải 4 phần tử mà là **hàng nghìn, hàng triệu phần tử** thì việc dùng vòng lặp `for` để duyệt mảng với mỗi lần truy vấn thật sự rất tốn thời gian - độ phức tạp thuật toán là **O(N)**.
 
-Cách giải quyết cho vấn đề trên là: xây dựng một [object](/object-la-gi-object-trong-javascript/) để map mỗi `postID` với giá trị tương ứng của bài viết.
+Cách giải quyết cho vấn đề trên là: xây dựng một [object](/bai-viet/javascript/object-la-gi-object-trong-javascript) để map mỗi `postID` với giá trị tương ứng của bài viết.
 
 Và khi đã có một object như vậy thì việc tìm kiếm sẽ vô cùng đơn giản.
 
-    // Object để map mỗi postID với mỗi post tương ứng
-    const dictionary = {
-      id1: { postID: "id1", title: "title1" },
-      id2: { postID: "id2", title: "title2" },
-      id3: { postID: "id3", title: "title3" },
-      id4: { postID: "id4", title: "title4" },
-    };
+```js
+// Object để map mỗi postID với mỗi post tương ứng
+const dictionary = {
+  id1: { postID: "id1", title: "title1" },
+  id2: { postID: "id2", title: "title2" },
+  id3: { postID: "id3", title: "title3" },
+  id4: { postID: "id4", title: "title4" },
+};
 
-    const getPost = (postID, dictionary) => {
-      return dictionary[postID];
-    };
+const getPost = (postID, dictionary) => {
+  return dictionary[postID];
+};
 
-    // Thực hiện truy vấn
-    getPost("id1", dictionary).title; // title1
-    getPost("id2", dictionary).title; // title2
-    getPost("id3", dictionary).title; // title3
-    getPost("id4", dictionary).title; // title4
+// Thực hiện truy vấn
+getPost("id1", dictionary).title; // title1
+getPost("id2", dictionary).title; // title2
+getPost("id3", dictionary).title; // title3
+getPost("id4", dictionary).title; // title4
+```
 
 Vấn đề bây giờ là làm sao xây dựng được object `dictionary` như trên?
 
 Dĩ nhiên, bạn vẫn có thể sử dụng vòng lặp `for` như sau:
 
-    // object để lưu map các post
-    const dictionary = {};
+```js
+// object để lưu map các post
+const dictionary = {};
 
-    // duyệt các posts
-    for (let p = 0; p < posts.length; p++) {
-      // lấy ra post
-      const post = posts[p];
+// duyệt các posts
+for (let p = 0; p < posts.length; p++) {
+  // lấy ra post
+  const post = posts[p];
 
-      // lấy ra postID
-      const postID = post.postID;
+  // lấy ra postID
+  const postID = post.postID;
 
-      // map postID -> post
-      dictionary[postID] = post;
-    }
+  // map postID -> post
+  dictionary[postID] = post;
+}
+```
 
 Khi ứng dụng reduce trong JS, cách làm sẽ **ngắn gọn hơn**:
 
-    const dictionary = posts.reduce((acc, cur) => {
-      // lấy ra postID của từng phần tử
-      const postID = cur.postID;
+```js
+const dictionary = posts.reduce((acc, cur) => {
+  // lấy ra postID của từng phần tử
+  const postID = cur.postID;
 
-      // sử dụng cú pháp spread (...)
-      // để tạo object mới chứa object tích lũy acc
-      // và thuộc tính mới [postID]: cur
-      return { ...acc, [postID]: cur };
-    }, {});
+  // sử dụng cú pháp spread (...)
+  // để tạo object mới chứa object tích lũy acc
+  // và thuộc tính mới [postID]: cur
+  return { ...acc, [postID]: cur };
+}, {});
+```
 
 Trong đó, `initialValue` là một object rỗng `{}`.
 
@@ -277,7 +298,8 @@ Và khi thực thi hàm callback với mỗi phần tử của mảng `posts` th
 
 - Với lượt đầu tiên: `acc = {}` và `cur` ứng với post đầu tiên nên:
 
-  // giá trị tích lũy đầu tiên là object rỗng
+```js
+// giá trị tích lũy đầu tiên là object rỗng
   acc = {};
 
   // phần tử hiện tại đang xét
@@ -289,10 +311,12 @@ Và khi thực thi hàm callback với mỗi phần tử của mảng `posts` th
   acc = {...acc, [postID]: cur } = {
   'id1': { postID: 'id1', title: 'title1' }
   }
+```
 
 - Với lần thứ 2:
 
-  // giá trị tích lũy hiện tại sau lần thứ nhất
+```js
+// giá trị tích lũy hiện tại sau lần thứ nhất
   acc = {
   'id1': { postID: 'id1', title: 'title1' }
   };
@@ -307,10 +331,11 @@ Và khi thực thi hàm callback với mỗi phần tử của mảng `posts` th
   'id1': { postID: 'id1', title: 'title1' },
   'id2': { postID: 'id2', title: 'title2' }
   }
+```
 
 Cứ như vậy cho đến hết thì mình thu được kết quả như mong muốn là giá trị trả về của reduce.
 
-## [](#t%E1%BB%95ng-k%E1%BA%BFt)Tổng kết
+## Tổng kết
 
 Trên đây là một số ứng dụng của Reduce trong JavaScript:
 
