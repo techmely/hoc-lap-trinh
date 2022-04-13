@@ -151,7 +151,7 @@ console.log(str[1000]); // undefined
 console.log(str.charAt(1000)); // ""
 ```
 
-Để duyệt hết các kí tự trong string, bạn có thể dùng [vòng lặp for bình thường](/bai-viet/javascript/cau-truc-lap-trong-javascript):
+Để duyệt hết các kí tự trong string, bạn có thể dùng [vòng lặp for bình thường](/bai-viet/javascript/vong-lap-trong-javascript):
 
 ```js
 let str = "hello";

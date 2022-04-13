@@ -140,7 +140,7 @@ console.log(date.getTime()); // 1639883864463
 console.log(date.getTimezoneOffset()); // -420 (ứng với -7 giờ)
 ```
 
-## [](#thay-%C4%91%E1%BB%95i-c%C3%A1c-ph%E1%BA%A7n-t%E1%BB%AD-c%E1%BB%A7a-date)Thay đổi các phần tử của Date
+## Thay đổi các phần tử của Date
 
 Để thay đổi giá trị các phần tử của Date trong JavaScript, bạn sử dụng một trong các phương thức sau đây:
 

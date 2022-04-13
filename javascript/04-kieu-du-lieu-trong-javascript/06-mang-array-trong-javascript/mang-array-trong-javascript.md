@@ -244,7 +244,7 @@ Mục đích của array là để lưu trữ dữ liệu theo thứ tự. Nếu
 
 ## Duyệt tất cả các phần tử trong mảng
 
-Cách cơ bản nhất để **duyệt tất cả các phần tử** của mảng trong JavaScript là dùng [vòng lặp for](/bai-viet/javascript/cau-truc-lap-trong-javascript) với chỉ số:
+Cách cơ bản nhất để **duyệt tất cả các phần tử** của mảng trong JavaScript là dùng [vòng lặp for](/bai-viet/javascript/vong-lap-trong-javascript) với chỉ số:
 
 ```js
 let letters = ["a", "b", "c"];

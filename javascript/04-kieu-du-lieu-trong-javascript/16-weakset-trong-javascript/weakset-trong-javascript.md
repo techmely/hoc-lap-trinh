@@ -26,7 +26,7 @@ new WeakSet([iterable]);
 
 Trong đó:
 
-- Tham số `iterable` là một [iterable object](/bai-viet/javascript/interable-trong-javascript) (không bắt buộc), với mỗi phần tử là một object.
+- Tham số `iterable` là một [iterable object](/bai-viet/javascript/iterable-trong-javascript) (không bắt buộc), với mỗi phần tử là một object.
 - Nếu không truyền tham số vào hàm khởi tạo thì WeakSet sẽ rỗng.
 
 Ví dụ:

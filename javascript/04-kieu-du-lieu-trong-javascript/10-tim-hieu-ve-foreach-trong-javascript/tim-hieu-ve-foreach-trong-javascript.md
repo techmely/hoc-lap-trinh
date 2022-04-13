@@ -32,7 +32,7 @@ for (let i = 0; i < numbers.length; i++) {
 console.log(sum); // 55
 ```
 
-Cách giải trên khá dễ hiểu. Mình duyệt tất cả các phần tử mảng bằng [vòng lặp for với chỉ số](/bai-viet/javascript/cau-truc-lap-trong-javascript). Tại mỗi lượt lặp, mình lấy phần tử đang duyệt cộng dồn với biến `sum`.
+Cách giải trên khá dễ hiểu. Mình duyệt tất cả các phần tử mảng bằng [vòng lặp for với chỉ số](/bai-viet/javascript/vong-lap-trong-javascript). Tại mỗi lượt lặp, mình lấy phần tử đang duyệt cộng dồn với biến `sum`.
 
 Có một vấn đề với cách này, đó là việc sử dụng chỉ số `i` có thể khiến bạn bị nhầm với một biến trước đó. Dẫn đến những lỗi sai không đoán trước được.
 
@@ -528,7 +528,7 @@ console.log(newArray);
 // => [1, 2, 3, 4, 5, 6]
 ```
 
-► Sử dụng [vòng lặp for, while](/bai-tap/javascript/cau-truc-lap-trong-javascript) thông thường.
+► Sử dụng [vòng lặp for, while](/bai-tap/javascript/vong-lap-trong-javascript) thông thường.
 
 ```js
 var arrays = [[1, 2, 3], [4, 5], [6]];

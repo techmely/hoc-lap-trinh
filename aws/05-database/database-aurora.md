@@ -27,7 +27,7 @@ Là công nghệ AWS phát triển được tương thích với MySQL và Postg
 
 ### Aurora High Availability và Read Scaling
 
-![](https://docs.aws.amazon.com/zh_tw/AmazonRDS/latest/AuroraUserGuide/images/AuroraArch001.png)
+![Aurora High Availability và Read Scaling](https://docs.aws.amazon.com/zh_tw/AmazonRDS/latest/AuroraUserGuide/images/AuroraArch001.png)
 
 - 6 bản copies dữ liệu của bạn cross 3 AZ
 - 1 Aurora instance take write (master)
@@ -37,7 +37,7 @@ Là công nghệ AWS phát triển được tương thích với MySQL và Postg
 
 ### Aurora DB Cluster
 
-![](https://miro.medium.com/max/1100/1*2_cCgfIV0fuBIDSNTcMmQg.png) Như hình vẽ:
+![Aurora DB Cluster](https://miro.medium.com/max/1100/1*2_cCgfIV0fuBIDSNTcMmQg.png) Như hình vẽ:
 
 - Cluster volume là 1 "Shared storage volume" có thể expand từ 10G => 64TB
 - Cluster endpoint (Writer enpoint) point đến master
@@ -51,13 +51,13 @@ Tương tự với RDS
 
 #### Aurora Replicas - Auto scaling
 
-![](https://image.slidesharecdn.com/trainingaws-module8-rdsauroraelasticache-210907145521/95/training-aws-module-8-rds-aurora-elasticache-21-638.jpg?cb=1631026831)
+![Aurora Replicas - Auto scaling](https://image.slidesharecdn.com/trainingaws-module8-rdsauroraelasticache-210907145521/95/training-aws-module-8-rds-aurora-elasticache-21-638.jpg?cb=1631026831)
 
 Khi có nhiều request đến Reader Endpoint dẫm đến việc DB instance tăng CPU usage, do đó cần setup Replicas Auto Scaling. Read Endpoint cũng sẽ tự động extend để cover Replicas mới
 
 #### Aurora Replicas - Custom Endpoint
 
-![](https://www.icode9.com/i/l/?n=20&i=blog/364241/202108/364241-20210802210955333-624922716.png)
+![Aurora Replicas - Custom Endpoint](https://www.icode9.com/i/l/?n=20&i=blog/364241/202108/364241-20210802210955333-624922716.png)
 
 Ví dụ như trên hình vẽ, chúng ta có thể tạo ra 2 Custom Endpoint cho DB.rc3 và DB.rc5. Khi request cần cấu hình cao sẽ dùng endpoint của DB.rc5 nếu thấp hơn thì sẽ dùng endpoint của DB.rc3.
 
@@ -75,7 +75,7 @@ Ví dụ như trên hình vẽ, chúng ta có thể tạo ra 2 Custom Endpoint c
 
 #### Global Aurora
 
-![](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/aurora-global-databases-conceptual-illo.png)
+![Global Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/aurora-global-databases-conceptual-illo.png)
 
 - **Aurora Cross Region Read Replicas**
   - Hữu ích cho Disaster Recovery (DR)

@@ -309,7 +309,7 @@ let user = users.find((item) => item.id === 2);
 console.log(user.name); // John
 ```
 
-Trong ví dụ trên, hàm cung cấp cho phương thức `find` là [arrow function](/arrow-function-la-gi-arrow-function-trong-js/) `(item) => item.id === 2` với một tham số `item` (các tham số còn lại không sử dụng).
+Trong ví dụ trên, hàm cung cấp cho phương thức `find` là [arrow function](/bai-viet/javascript/arrow-function-trong-javascript) `(item) => item.id === 2` với một tham số `item` (các tham số còn lại không sử dụng).
 
 Phương thức `arr.findIndex` có cú pháp hoàn toàn giống với `arr.find`. Chỉ khác là, `arr.findIndex` trả về chỉ số của phần tử tìm thấy, ngược lại thì trả về `-1`, ví dụ:
 

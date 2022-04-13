@@ -74,7 +74,7 @@ new Set([iterable]);
 
 Trong đó:
 
-- Tham số [iterable](/bai-viet/javascript/interable-trong-javascript) là không bắt buộc. Nếu bạn **không truyền tham số** vào hàm khởi tạo thì Set sẽ rỗng - không có phần tử nào.
+- Tham số [iterable](/bai-viet/javascript/iterable-trong-javascript) là không bắt buộc. Nếu bạn **không truyền tham số** vào hàm khởi tạo thì Set sẽ rỗng - không có phần tử nào.
 - Ngược lại, nếu bạn truyền vào một iterable object thì **tất cả các phần tử** của object sẽ được thêm vào Set.
 
 > **Chú ý:** bạn có thể truyền vào **iterable object**, chứ không chỉ có array (vì array chỉ là một loại iterable object).

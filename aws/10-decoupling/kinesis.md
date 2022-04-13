@@ -45,7 +45,7 @@ Hiện tại có 4 components về Kinesis bao gồm:
 
 ## Kiến trúc Amazon Kinesis
 
-![](http://docs.aws.amazon.com/streams/latest/dev/images/architecture.png)
+![Kiến trúc Amazon Kinesis](http://docs.aws.amazon.com/streams/latest/dev/images/architecture.png)
 
 - **Procuders**: là nguồn của data, ví dụ một website send logs đến Kinesis
 - **Consumers**: lấy lại data từ Kinesis và process chúng.

@@ -26,7 +26,7 @@ new WeakMap([iterable]);
 
 Trong đó:
 
-- Tham số `iterable` là [iterable object](/bai-viet/javascript/interable-trong-javascript) (không bắt buộc) với mỗi phần tử là mảng hai chiều dạng `[key, value]`.
+- Tham số `iterable` là [iterable object](/bai-viet/javascript/iterable-trong-javascript) (không bắt buộc) với mỗi phần tử là mảng hai chiều dạng `[key, value]`.
 - Thuộc tính trong WeakMap `key` **chỉ có thể là object**.
 
 ```js

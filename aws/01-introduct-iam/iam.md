@@ -19,7 +19,7 @@ position: 2
 
 ## IAM trong AWS
 
-![](https://user-images.githubusercontent.com/29729545/162231353-1e81131e-5e9e-4e36-bdbb-d17d797093ee.png)
+![IAM trong AWS](https://user-images.githubusercontent.com/29729545/162231353-1e81131e-5e9e-4e36-bdbb-d17d797093ee.png)
 
 IAM (Identify and Access Management) là công cụ để kiểm soát quyền truy cập của cá nhân và nhóm đến tài nguyên AWS của bạn một cách an toàn.
 

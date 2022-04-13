@@ -181,6 +181,6 @@ Giải thích:
 
 **Chú ý:**
 
-Nếu sử dụng [strict mode](/use-strict-trong-js/) thì bạn sẽ bị lỗi **Uncaught TypeError: Cannot create property 'prop' on string 'Hello'**
+Nếu sử dụng [strict mode](/bai-viet/javascript/strict-mode-trong-javascript) thì bạn sẽ bị lỗi **Uncaught TypeError: Cannot create property 'prop' on string 'Hello'**
 
 Tham khảo: [Methods of primitives](https://javascript.info/primitives-methods).

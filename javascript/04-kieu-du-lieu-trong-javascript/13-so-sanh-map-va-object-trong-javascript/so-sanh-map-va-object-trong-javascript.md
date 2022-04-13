@@ -209,7 +209,7 @@ for (const [key, value] of map) {
  */
 ```
 
-Với Object, bạn chỉ có thể duyệt qua các `key`, sau đó lấy `value` thông qua `key` (vì object mặc định **không phải [iterable](/bai-viet/javascript/interable-trong-javascript)** nên không dùng được với `for...of`).
+Với Object, bạn chỉ có thể duyệt qua các `key`, sau đó lấy `value` thông qua `key` (vì object mặc định **không phải [iterable](/bai-viet/javascript/iterable-trong-javascript)** nên không dùng được với `for...of`).
 
 ```js
 const obj = { a: 1, b: 2 };

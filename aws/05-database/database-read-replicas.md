@@ -36,7 +36,7 @@ Read replicas giúp bạn scaling việc read. Read replicas cho phép bạn t�
 
 ### RDS Multi AZ (Disaster Recovery)
 
-![](https://miro.medium.com/max/1200/1*Tpg2Xo1fIMX-Cz5tzeOZ1g.png) RDS Multi AZ cung cấp khả năng sẵn sàng cho DB của bạn trong 1 Region. Dữ liệu sẽ được **SYNC replicated** tới các standby insatnce ở AZ khác
+![RDS Multi AZ](https://miro.medium.com/max/1200/1*Tpg2Xo1fIMX-Cz5tzeOZ1g.png) RDS Multi AZ cung cấp khả năng sẵn sàng cho DB của bạn trong 1 Region. Dữ liệu sẽ được **SYNC replicated** tới các standby insatnce ở AZ khác
 
 Ví dụ: DB instance chính của bạn ở AZs ap-northeast-1a, standby insatnce ở ap-northeast-1d
 
@@ -49,7 +49,7 @@ NOTES:
 
 ### RDS From single AZ to Multi AZ
 
-![](https://miro.medium.com/max/668/1*ewojRDRfLgZW7loOtSR0TQ.png)
+![RDS From single AZ to Multi AZ](https://miro.medium.com/max/668/1*ewojRDRfLgZW7loOtSR0TQ.png)
 
 - Zero downtime
 - Chỉ cần click "modify"

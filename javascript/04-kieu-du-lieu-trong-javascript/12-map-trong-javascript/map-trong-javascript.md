@@ -44,7 +44,7 @@ Cú pháp khởi tạo Map trong JavaScript là:
 new Map([iterable]);
 ```
 
-Bạn có thể truyền vào một [iterable object](/bai-viet/javascript/interable-trong-javascript) để khởi tạo Map. Khi đó, mỗi phần tử của iterable object sẽ tương ứng với một phần tử của Map.
+Bạn có thể truyền vào một [iterable object](/bai-viet/javascript/iterable-trong-javascript) để khởi tạo Map. Khi đó, mỗi phần tử của iterable object sẽ tương ứng với một phần tử của Map.
 
 Dĩ nhiên, tham số `iterable` là **không bắt buộc**. Khi bạn không truyền vào `iterable`, Map sẽ rỗng và không có phần tử nào.
 
@@ -319,7 +319,7 @@ Sau đây là các cách để duyệt qua các phần tử của Map trong Java
 
 ### Sử dụng `for...of`
 
-Map là [iterable object](/bai-viet/javascript/interable-trong-javascript). Do đó, bạn có thể sử dụng `for...of` để duyệt qua các phần tử của Map.
+Map là [iterable object](/bai-viet/javascript/iterable-trong-javascript). Do đó, bạn có thể sử dụng `for...of` để duyệt qua các phần tử của Map.
 
 ```js
 const map12 = new Map([

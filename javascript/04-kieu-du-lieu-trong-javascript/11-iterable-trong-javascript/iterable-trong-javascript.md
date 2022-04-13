@@ -1,5 +1,5 @@
 ---
-title: "Tìm hiểu về interable trong Javascript"
+title: "Tìm hiểu về iterable trong Javascript"
 description: ""
 keywords: []
 chapter:

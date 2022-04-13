@@ -477,7 +477,7 @@ drawCircle(); // vẫn hợp lệ
 
 Khi bạn **không truyền bất kỳ tham số nào** vào hàm trên, `options` sẽ lấy giá trị mặc định là object rỗng `{}`.
 
-## [](#t%E1%BB%95ng-k%E1%BA%BFt)Tổng kết
+## Tổng kết
 
 Destructuring assignment trong JavaScript cho phép bạn "mapping" object hoặc array vào các biến một cách đơn giản.
 

@@ -78,7 +78,7 @@ Bây giờ, mình muốn có một **mảng các bài viết** để hiển th�
 
 ► **Ứng dụng JavaScript Reduce để giải quyết vấn đề**
 
-**Cách đầu tiên** mà mọi người thường suy nghĩ đến là sử dụng [vòng lặp for](/vong-lap-trong-javascript/):
+**Cách đầu tiên** mà mọi người thường suy nghĩ đến là sử dụng [vòng lặp for](/bai-viet/javascript/vong-lap-trong-javascript):
 
 ```js
 // khai báo mảng rỗng để lưu kết quả
