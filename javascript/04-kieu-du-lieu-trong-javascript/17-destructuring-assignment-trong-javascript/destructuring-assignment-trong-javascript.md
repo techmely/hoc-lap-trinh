@@ -48,7 +48,7 @@ let firstName, lastName;
 
 Ở đây, JavaScript thực hiện việc gán giá trị ở **vế phải** cho biến ở **vế trái** theo đúng thứ tự chỉ số xuất hiện trong mảng.
 
-![Array destructuring assignment](/static/e43a47337056a699a8405931069e2cd0/cd94f/array-destructuring-assignment-completejavascript.com_.png "Array destructuring assignment")
+![Array destructuring assignment](https://user-images.githubusercontent.com/29374426/163092978-91a0cf87-8ada-4274-8867-ef86a0c21061.png)
 
 Đoạn code trên sẽ tương đương với:
 
@@ -225,7 +225,7 @@ let firstName, lastName;
 
 Ở đây, JavaScript thực hiện việc gán giá trị ở **vế phải** cho biến ở **vế trái** tương ứng với giá trị của **key** trong Object mà không phân biệt thứ tự.
 
-![Object destructuring assignment](/static/d1143250ce531dc7d974b7867efd32d1/11b02/object-destructuring-assignment-completejavascript.com_.png "Object destructuring assignment")
+![Object destructuring assignment](https://user-images.githubusercontent.com/29374426/163093030-66250a42-4636-45ad-b938-221a894b1dec.png)
 
 Giả sử, mình đổi thứ tự của `firstName` và `lastName` như sau thì kết quả vẫn không đổi:
 
