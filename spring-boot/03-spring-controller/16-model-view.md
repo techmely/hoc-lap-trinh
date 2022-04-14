@@ -1,9 +1,9 @@
 ---
-title: "Phân biệt giữa Get và Post"
-description: "GET và POST là hai kỹ thuật phổ biến để gửi dữ liệu đến server và browser cần chúng để giao tiếp với server. Hai phương thức này khác biệt ở chỗ phương thức GET thêm dữ liệu được mã hóa vào URI trong khi trong với phương thức POST, dữ liệu được nối vào phần body chứ không phải URI."
+title: "Model and View"
+description: "Là sự kết hợp của 2 khía cạnh truyền dữ liệu và view."
 keywords:
   [
-    "Phân biệt giữa Get và Post",
+    "Model and View",
     "post la gi",
     "get la gi",
     "get va post trong springboot",
@@ -33,7 +33,7 @@ Action sau sẽ trả về ModelAndView mang theo view có tên là success và 
 ```
 @GetMapping("/greetingaccount")
 public ModelAndView greetingAccount(){
-  Account account = new Account("van@codelean.vn", "Ha Van");
+  Account account = new Account("techmely@kungfutechh.vn", "Ha Van");
   ModelAndView modelAndView = new ModelAndView("success", "user", account),
   modelAndView.addObject("message", "Dang ky thanh cong");
   return modelAndView;
@@ -47,4 +47,22 @@ Buộc dữ liệu lên form spring
 <form:form commandName="user">
   Email: <form:input path="email"/>
 </form:form>
+```
+#### Return String
+
+Thay vì kết quả của action trả về ModelAndView thì trường hợp này chỉ trả về String chỉ ra tên view muốn hiển thị, còn model và thuộc tính đính kèm được đặt trong ModelMap. Với cách viết này sẽ linh hoạt hơn vì tách rời view và model do đó được sử dụng nhiều hơn.
+```
+@GetMapping("/greeting")
+public String greeting(@RequestParam String username, Model model){
+  model.addAttribute("username", username);
+  return "index";
+```
+#### Return void
+
+Đôi khi một action chỉ thực hiện một công việc logic nào đó mà không cần có một view để hiễn thị kết quả. Trong trường hợp đó action không trả kết quả gì là lựa chọn tốt nhất. Ví dụ sau đây khi khẩn cầu action thì bạn sẽ nhận được kết quả hiển thị trên trang web là "Hello World" mà không cần phải xây dựng View.
+```
+@RequestMapping (value=" myaction")
+public void mymethod (HttpservletResponse response) throws IOException {
+      PrintWriter out = response.getWriter();
+      out.println ("Hello World !");
 ```
