@@ -1,13 +1,17 @@
 ---
 title: "Mô hình MVC"
-description: ""
+description: "MVC là viết tắt của cụm từ “Model-View-Controller“ - một mô hình kiến trúc phần mềm được tạo ra với mục đích quản lí và xây dựng dự án phần mềm có hệ thống hơn."
 keywords:
   [
-    "Phân biệt giữa Get và Post"
+    "Mô hình MVC",
+    "Mô hình MVC là gì spring boot",
+    "Mô hình MVC để làm gì trong spring",
+    "cách sử dụng mô dình MVC trong spring",
+    "mo hinh mvc co tac dung nhuw the nao trong spring"
   ]
 chapter:
-  name: "Tổng quan về ứng dụng web"
-  slug: "01-tong-quan-ve-ung-dung-web"
+  name: "Tổng quan về Spring"
+  slug: "02-tong-quan-ve-spring"
 category:
   name: "SpringBoots"
   slug: "springboots"
