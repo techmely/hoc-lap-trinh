@@ -25,7 +25,7 @@ category:
   slug: "aws"
 chapter:
   name: "Mở rộng storage"
-  slug: "cloud-storage"
+  slug: "chap-09-cloud-storage"
 position: 93
 ---
 

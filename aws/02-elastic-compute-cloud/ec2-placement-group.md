@@ -24,7 +24,7 @@ category:
   slug: "aws"
 chapter:
   name: "Elastic Compute Cloud"
-  slug: "ec2"
+  slug: "chap-02-ec2"
 image: https://user-images.githubusercontent.com/29729545/162229203-a79a5752-25cf-41d8-a72d-abfa92d74e02.png
 position: 6
 ---

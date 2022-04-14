@@ -23,7 +23,7 @@ category:
   description: "Mang kiến thức AWS đến với mọi lập trình viên"
 chapter:
   name: "Serverless"
-  slug: "serverless"
+  slug: "chap-11-serverless"
 position: 195
 ---
 

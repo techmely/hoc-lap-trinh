@@ -24,7 +24,7 @@ category:
   slug: "aws"
 chapter:
   name: "Database"
-  slug: "database"
+  slug: "chap-05-database"
 position: 24
 ---
 

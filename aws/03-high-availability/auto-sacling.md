@@ -18,13 +18,16 @@ category:
   slug: "aws"
 chapter:
   name: "High Availability"
-  slug: "ha"
+  slug: "chap-03-ha"
+image: https://user-images.githubusercontent.com/29729545/163433393-63707570-9252-4b50-b24a-d7a29f8ef48f.png
 position: 23
 ---
 
 ## Auto Scaling Group (ASG) là gì
 
-AWS Auto Scaling Group là tính năng tự động mở rộng để đảm bảo rằng các phiên bản Amazon EC2 đủ để chạy các ứng dụng của bạn. Bạn có thể tạo một nhóm AWS Auto Scaling trong các phiên bản EC2. ![AWS Auto Scaling Group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/as-basic-diagram.png)
+AWS Auto Scaling Group là tính năng tự động mở rộng để đảm bảo rằng các phiên bản Amazon EC2 đủ để chạy các ứng dụng của bạn. Bạn có thể tạo một nhóm AWS Auto Scaling trong các phiên bản EC2. 
+
+![AWS Auto Scaling Group](https://user-images.githubusercontent.com/29729545/163433393-63707570-9252-4b50-b24a-d7a29f8ef48f.png)
 
 - Minimum size: Số lượng EC2 instance tối thiểu cần có
 - Maximum size: Số lượng EC2 instance tối đa

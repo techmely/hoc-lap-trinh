@@ -17,7 +17,7 @@ category:
   slug: "aws"
 chapter:
   name: "Elastic Compute Cloud"
-  slug: "ec2"
+  slug: "chap-02-ec2"
 image: https://user-images.githubusercontent.com/29729545/162228525-fd30478a-c651-4810-9393-7a008dd5a14c.png
 position: 100
 ---
@@ -33,7 +33,7 @@ Chúng ta sẽ cùng tìm hiểu trạng thái Hibernate của instance
 
 ![Hibernate instance](https://user-images.githubusercontent.com/29729545/162228525-fd30478a-c651-4810-9393-7a008dd5a14c.png)
 
-- Trạng thái của RAM sẽ được bảo quản
+- EC2 Hibernate là trạng thái của RAM sẽ được bảo quản
 - Instance được khởi động nhanh hơn (OS không stopped/restarted)
 - RAM state được viết vào file ở root EBS
 - Root EBS phải được **encrypted**

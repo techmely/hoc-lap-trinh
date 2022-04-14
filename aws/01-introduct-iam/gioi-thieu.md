@@ -24,7 +24,7 @@ category:
   slug: "aws"
 chapter:
   name: "Giới thiệu AWS"
-  slug: "index"
+  slug: "chap-01-introduction"
 image: https://user-images.githubusercontent.com/29729545/162230977-5b127f4a-6c28-416b-9096-4cdc99010ffa.png
 position: 1
 ---

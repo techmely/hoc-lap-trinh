@@ -2,12 +2,14 @@
 title: "Elastic Load Balancer trong AWS"
 description: "Load Balancer là 1 server dùng để forward traffic đến nhiêu server (Ec2...). Mỗi Target Group dùng để route request tới 1 hay nhiều target khác nhau. Như ở hình vẽ trê, ALB đặt các Rule Listener để định tuyến request."
 keywords: [
-  "Load Balancer là gì",
-  "Load Balancer la gi",
+  "Elastic Load Balancer là gì",
+  "Elastic Load Balancer la gi",
   "Elastic Load Balancer trong aws",
   "Target Group trong ELB",
-  "Target Group là gì",
-  "Target Group la gi"
+  "AWS Target Group là gì",
+  "AWS Target Group la gi",
+  "Target Group trong AWS",
+  "Health Check trong load balancer"
 ]
 author:
   fullname: Phan Văn Đức
@@ -18,13 +20,14 @@ category:
   slug: "aws"
 chapter:
   name: "High Availability"
-  slug: "ha"
+  slug: "chap-03-ha"
+image: https://user-images.githubusercontent.com/29729545/163431853-06f073bd-b9f2-4e4b-be19-071900a0c84b.png
 position: 9
 ---
 
 ## Elastic Load Balancer là gì
 
-![ELB là gì](https://images.viblo.asia/08716e60-0e8c-443f-8487-d461fd66ccdf.png)
+![ELB là gì](https://user-images.githubusercontent.com/29729545/163431853-06f073bd-b9f2-4e4b-be19-071900a0c84b.png)
 
 Từ hình vẽ trên chúng ta có thể hình dung được cách hoạt động của 1 load balancer là như thế nào. Load Balancer là 1 server dùng để forward traffic đến nhiêu server (Ec2...)
 
@@ -39,9 +42,11 @@ Từ hình vẽ trên chúng ta có thể hình dung được cách hoạt độ
 - Cung cấp HTTPS cho ứng dụng (sẽ được tìm hiểu ở phần ALB)
 - HA cross zone
 
-## Health Check
+## Health Check trong load balancer
 
-Đây là phần vô cùng quan trọng trong ứng dụng ELB. ![Health check trong ELB](https://i.ytimg.com/vi/fMgA3rE0aPY/maxresdefault.jpg)
+Đây là phần vô cùng quan trọng trong ứng dụng ELB. 
+
+![Health check trong ELB](https://i.ytimg.com/vi/fMgA3rE0aPY/maxresdefault.jpg)
 
 - Đây là cách để ELB xác nhận xem EC2 có khả năng tiếp nhận request hay không (health)
 - Load Balancer sẽ gửi định kỳ 1 request đến instance

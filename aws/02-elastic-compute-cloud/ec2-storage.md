@@ -4,12 +4,14 @@ description: "EBS (Elastic Block Store) là dịch vụ lưu trữ dưới dạn
 keywords:
   [
     "EBS là gì",
+    "ebs la gi aws"
     "EBS trong aws",
     "EBS snapshot trong aws",
-    "AMI là gì",
+    "AWS AMI là gì",
     "AMI trong aws",
-    "EFS là gì",
+    "AWS EFS là gì",
     "EFS trong aws",
+    "các loại ebs",
   ]
 author:
   fullname: Phan Văn Đức
@@ -20,7 +22,7 @@ category:
   slug: "aws"
 chapter:
   name: "Elastic Compute Cloud"
-  slug: "ec2"
+  slug: "chap-02-ec2"
 image: https://user-images.githubusercontent.com/29729545/162230387-c12857b1-4554-46b7-a465-861d2554e657.png
 position: 7
 ---
@@ -76,7 +78,7 @@ Như với kiến thức để thi SAA chúng ta có thể multi-attach, có ngh
 
 ![EBS multil-attacg](https://images.viblo.asia/f9dd2497-f955-4081-90d6-2334aab37793.png)
 
-## AMI là gì
+## AWS AMI là gì
 
 AMI trong AWS viết tắt của Amazon Machine Image
 
@@ -95,7 +97,7 @@ Như vậy chúng ta có thêm 1 cách để launch EC2 instance:
 
 ![AMI process](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT07WeeI1BwAmVizxnFHZdAx9idLlM_LHgZGQ&usqp=CAU)
 
-## EFS là gì (Elastic File System)
+## AWS EFS là gì (Elastic File System)
 
 - Quản lý NFS(Network file system) có thể mount vào nhiều EC2 instance
 - Các EC2 instance ở các AZ khác nhau cũng có thể dùng chung EFS 

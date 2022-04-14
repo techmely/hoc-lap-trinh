@@ -11,7 +11,7 @@ category:
   slug: "aws"
 chapter:
   name: "Virtual Private Cloud"
-  slug: "vpc"
+  slug: "chap-04-vpc"
 position: 24
 ---
 

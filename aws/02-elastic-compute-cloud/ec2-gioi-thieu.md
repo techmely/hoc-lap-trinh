@@ -1,6 +1,6 @@
 ---
 title: "Giới thiệu về EC2"
-description: "EC2 là dịch vụ web cung cấp năng lực điện toán bảo mật và có kích cỡ linh hoạt trên đám mây. Dịch vụ này được thiết kế để giúp các nhà phát triển dễ sử dụng điện toán đám mây ở quy mô web hơn."
+description: "Amazon EC2 là dịch vụ web cung cấp năng lực điện toán bảo mật và có kích cỡ linh hoạt trên đám mây. Dịch vụ này được thiết kế để giúp các nhà phát triển dễ sử dụng điện toán đám mây ở quy mô web hơn."
 keywords:
   [
     "Amazon EC2 là gì",
@@ -9,6 +9,7 @@ keywords:
     "ec2 là gì",
     "ec2 la gi",
     "ec2 instance la gi",
+    "Giới thiệu Security Group"
   ]
 author:
   fullname: Phan Văn Đức
@@ -19,7 +20,7 @@ category:
   slug: "aws"
 chapter:
   name: "Elastic Compute Cloud"
-  slug: "ec2"
+  slug: "chap-02-ec2"
 image: https://user-images.githubusercontent.com/29729545/162225080-a2fb1728-9a20-425a-be8f-2b601ba0b67d.png
 position: 3
 ---
@@ -67,7 +68,7 @@ Khi tạo 1 EC2 instance sẽ giống như bạn đang quản lý 1 máy tính s
   scp -i file_name.pem test.txt ec2-user@54.238.227.150:/home/ec2-user
 ```
 
-## Security group
+## Giới thiệu Security Group
 
 Đây là một khái niệm bạn cần làm quen khi làm việc với môi trường AWS. Security Group là một tường lửa ảo (Virtual Firewall) để quản lý truy cập vào Instance của bạn.
 
