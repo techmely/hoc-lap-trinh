@@ -1,9 +1,14 @@
 ---
-title: "Mô hình MVC"
-description: ""
+title: "Dependency Injection (DI)"
+description: "Dependency injection là một kĩ thuật trong đó một object (hoặc một static method) cung cấp các dependencies của một object khác. Một dependency là một object mà có thể sử dụng (một service). Tuy nhiên định nghĩa trên vẫn khá là khó hiểu, vậy nên hãy cùng tìm hiểu để hiểu rõ hơn về nó nào."
 keywords:
   [
-    "Phân biệt giữa Get và Post"
+    "dependency injection trong spring",
+    "Dependency Injection",
+    "Dependency Injection là gì",
+    "Dependency Injection Spring Boot",
+    "cach dung dependency injection trong spring",
+    "dependency injection trong spring de lam gi"
   ]
 chapter:
   name: "Tổng quan về Spring"
@@ -23,8 +28,7 @@ Có thể hiểu DI một cách đơn giản như sau:
 
 Các module không giao tiếp trực tiếp với nhau, mà thông qua interface. Module cấp thấp sẽ thực thi interface, module cấp cao sẽ gọi module cấp thấp thông qua
 interface.
-Ví dụ: Để giao tiếp với CSDL ta có interface IDatabase, các module cấp thấp là XMLDatabase, SQLDatabase. Module cấp cao là CustomerBusiness sẽ chỉ sử dụnginterface
-IDatabase.
+<content-example>Ví dụ: Để giao tiếp với CSDL ta có interface IDatabase, các module cấp thấp là XMLDatabase, SQLDatabase. Module cấp cao là CustomerBusiness sẽ chỉ sử dụng interface IDatabase.</content-example>
 
 Việc khởi tạo các module cấp thấp sẽ do DI container thực hiện.
 Ví dụ: Trong module CustomerBusiness, ta sẽ không khởi tạo IDatabase db = new XMLDatabase(), việc này sẽ do DI container thực hiện. Module CustomerBusiness sẽ không 
