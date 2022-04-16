@@ -50,7 +50,7 @@ Mình thường gọi loại web này nôm na là read-only, chỉ việc user t
 Chúng ta có thể tương tác qua lại với trang web, kiểu như: 2 người nói chuyện, 1 người hỏi và 1 người trả lời (cái này hay còn gọi phía thuật ngữ chuyên ngành là <b>mô hình Client - Server</b>)
 </content-info>
 
-Nội dung của web này được lấy từ cơ sở dữ liệu (database) hoặc hệ thống quản lý nội dung (CMS). Và để tạo được 1 trang website động, chúng ta thường sử dụng công cụ và ngôn ngữ backend: Java, Servlet, JSP, Python, C#,...<br/>
+Nội dung của web này được lấy từ cơ sở dữ liệu (database) hoặc hệ thống quản lý nội dung (CMS). Và để tạo được 1 trang website động, chúng ta thường sử dụng công cụ và ngôn ngữ backend: Java, Servlet, JSP, Python, C#,...<br/><br/>
 
 <content-info>
 Chúng ta tương tác với website động bằng việc gửi 1 request -> server, server nhận -> xử lý request lấy những thông tin mà người dùng yêu cầu -> gửi lại tới user.
