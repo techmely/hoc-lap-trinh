@@ -1,7 +1,17 @@
 ---
 title: "JSON trong Javascript"
-description: ""
-keywords: []
+description: "JSON là viết tắt của JavaScript Object Notation, là một kiểu định dạng dữ liệu tuân theo một quy luật nhất định mà hầu hết các ngôn ngữ lập trình hiện nay đều có thể đọc được. JSON là một tiêu chuẩn mở để trao đổi dữ liệu trên web."
+keywords: ["JSON trong Javascript",
+"json trong javascript",
+"json trong javascript la gi",
+"json trong javascript dung de lam gi",
+"cach dung json trong javascript",
+"xu ly file json trong javascript",
+"cach lay du lieu tu json trong java script",
+"Đọc file JSON trong JavaScript",
+"ham json trong javascript",
+"json_encode trong javascript"
+]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
