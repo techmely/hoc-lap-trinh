@@ -1,7 +1,17 @@
 ---
 title: "Kiểu dữ liệu string trong Javascript"
-description: ""
-keywords: []
+description: "String là kiểu dữ liệu chứa dữ liệu dưới dạng text(chữ). Kiểu string trong JavaScript cho phép bạn sử dụng cả ngoặc đơn và ngoặc kép để biểu diễn nó."
+keywords: [
+"kieu du lieu trong javascript",
+"object trong javascript",
+"kieu du lieu trong javascript",
+"kieu du lieu string trong javascript",
+"kieu du lieu text trong javascript",
+"text trong javascript",
+"thao tac voi text trong java script",
+"Kiểu dữ liệu string trong Javascript là gì",
+"Kiểu dữ liệu string trong Javascrip dùng như thế nào"
+]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
