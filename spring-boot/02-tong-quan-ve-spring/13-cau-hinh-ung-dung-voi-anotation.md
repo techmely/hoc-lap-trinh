@@ -1,9 +1,14 @@
 ---
 title: "Cấu hình ứng dụng với annotation"
-description: ""
+description: "Spring Boot làm cho việc cấu hình Spring dễ dàng hơn với tính năng cấu hình tự động của nó. Các tính năng này phần lớn được sử dụng thông qua các annotation mà Spring Boot cung cấp."
 keywords:
   [
-   "",
+   "annotation spring boot",
+   "annotation trong spring boot",
+   "annotation trong spring boot la gi",
+   "cau hinh voi annotation trong spring boot",
+   "cach cau hinh annotation trong spring boot",
+   "Cách cấu hình với annotation trong spring boot"
   ]
 chapter:
   name: "Tổng quan về Spring"
