@@ -12,8 +12,8 @@ keywords:
     "Dependency Injection và Inversion of Control"
   ]
 chapter:
-  name: "Tổng quan về ứng dụng web"
-  slug: "chuong-01-tong-quan-ve-ung-dung-web"
+  name: "Tổng quan về Spring"
+  slug: "chuong-02-tong-quan-ve-spring"
 category:
   name: "spring"
   slug: "spring"
