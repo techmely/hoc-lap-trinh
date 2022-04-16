@@ -49,6 +49,6 @@ Nhẹ, tiết kiệm băng thông: MVC không sử dụng viewstate nên khá ti
 - Theo chia sẻ của đơn vị chuyên phát triển phần mềm (Outsource .NET Development Company – Groovetechnology.com) MVC thường được sử dụng vào những dự án lớn. Do đó, với các dự án nhỏ, mô hình MVC có thể gây cồng kềnh, tốn thời gian trong quá trình phát triển cũng như thời gian trung chuyển dữ liệu.
 ### Ứng dụng của mô hình MVC.
 MVC đang là mô hình được ứng dụng rất nhiều trong lập trình.
-Hệ thống MVC phát triển tốt sẽ cho phép phát triển front – end, back – end cùng trên hệ thống mà không có sự can thiệp, chia sẻ, chỉnh sửa các tập tin trong khi một hoặc hai bên vẫn đang làm việc.
+Hệ thống MVC phát triển tốt sẽ cho phép phát triển front–end, back–end cùng trên hệ thống mà không có sự can thiệp, chia sẻ, chỉnh sửa các tập tin trong khi một hoặc hai bên vẫn đang làm việc.
 
 Việc sử dụng mô hình tương đối đơn giản. Chỉ cần hiểu rõ quy trình vận hành, nắm được các chức năng của từng bộ phận thì việc triển khai mô hình MVC tương đối dễ dàng.

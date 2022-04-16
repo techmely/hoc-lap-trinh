@@ -60,7 +60,7 @@ public String greeting(@RequestParam String username, Model model){
 ```
 #### Return void
 
-Đôi khi một action chỉ thực hiện một công việc logic nào đó mà không cần có một view để hiễn thị kết quả. Trong trường hợp đó action không trả kết quả gì là lựa chọn tốt nhất. Ví dụ sau đây khi khẩn cầu action thì bạn sẽ nhận được kết quả hiển thị trên trang web là "Hello World" mà không cần phải xây dựng View.
+Đôi khi một action chỉ thực hiện một công việc logic nào đó mà không cần có một view để hiễn thị kết quả. Trong trường hợp đó action không trả kết quả gì là lựa chọn tốt nhất. Ví dụ sau đây khi gọi action thì bạn sẽ nhận được kết quả hiển thị trên trang web là "Hello World" mà không cần phải xây dựng View.
 ```
 @RequestMapping (value=" myaction")
 public void mymethod (HttpservletResponse response) throws IOException {
