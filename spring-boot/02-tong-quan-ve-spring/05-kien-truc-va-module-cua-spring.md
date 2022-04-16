@@ -37,7 +37,7 @@ Spring Framework bao gồm nhiều tính năng được tổ chức thành kho�
 ![module Spring](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/spring-overview.png)
 
 ***Test***  
-hỗ trợ việc kiểm tra các thành phần mùa xuân với JUnit hoặc TestNG khuôn khổ.
+hỗ trợ việc kiểm tra các thành phần Spring với JUnit hoặc TestNG khuôn khổ.
 
 ***Core Container***  
 **Core Container** bao gồm các module: **spring-core** , **spring-beans**, **spring-context**, và **spring-expression** (<b>Spring Expression Language</b>).
