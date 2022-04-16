@@ -1,7 +1,17 @@
 ---
 title: "Sắp xếp mảng tiếng việt trong Javascript"
-description: ""
-keywords: []
+description: "Sắp xếp là một bài toán không thể thiếu trong lập trình. Tuy nhiên, nhiều bạn vẫn đang gặp khó khăn với việc sắp xếp Tiếng việt trong JavaScript.Vì vậy, mình sẽ giới thiệu với bạn về cách mình giải quyết bài toán sắp xếp Tiếng Việt này."
+keywords: ["Sắp xếp mảng tiếng việt trong Javascript",
+"sap xep mang javascript",
+"sap xep mang tieng viet javascript",
+"sap xep mang theo ten trong javascript",
+"sort trong javascript",
+"sap xep trong javascript",
+"cách sắp xếp mảng tiếng việt trong JavaScript",
+"sắp xếp mảng tiếng việt trong javascript như thế nào",
+"sap xep mang tieng viet trong javascript nhu the nao",
+"cac cach sap xep trong jacascript"
+]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
