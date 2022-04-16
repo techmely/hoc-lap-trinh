@@ -1,7 +1,18 @@
 ---
 title: "Kiểu dữ liệu number trong Javascript"
-description: ""
-keywords: []
+description: "Number trong JavaScript dùng cho cả số nguyên (integer) và số thực (float), và luôn là số có dấu (signed). Kiểu dữ liệu được xác định trên giá trị gán cho nó (value) chứ không cần chỉ định rõ ràng. Vì không phân biệt số nguyên và số thực, nên có thể viết số nguyên dạng có chấm hoặc không chấm như nhau."
+keywords: [
+"cac kieu du lieu trong javascript",
+"Kiểu dữ liệu number trong Javascript",
+"kiem tra kieu du lieu trong javascript",
+"kiểu dữ liệu javascript",
+"kieu du lieu javascript",
+"Các kiểu dữ liệu trong JavaScript",
+"kiểu dữ liệu trong javascript",
+"number trong javascript",
+"int trong savascript",
+"float trong javascript"
+]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
