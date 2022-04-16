@@ -5,8 +5,8 @@ keywords:
   [
     "cài đặt môi trường Spring",
     "khóa học Spring cơ bản",
-    "spring là gì",
-    "spring download",
+    "hướng dẫn cài đặt môi trường spring là gì",
+    "cách cài đặt spring",
     "cài đặt spring",
     "cài đặt môi trường Spring 2022",
     "cài đặt môi trường Spring boot",
