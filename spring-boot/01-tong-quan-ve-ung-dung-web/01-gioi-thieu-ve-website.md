@@ -43,7 +43,7 @@ Website được chia làm 2 loại:
 
 <content-info>
 Mình thường gọi loại web này nôm na là read-only, chỉ việc user truy cập web chỉ để đọc mà không tương tác được.
-</content-info>
+</content-info><br>
 
 **Web động**: là website mà nội dung có khả năng thay đổi có thể dựa theo yêu cầu client, thời gian hoặc ngữ cảnh.
 <content-info>
