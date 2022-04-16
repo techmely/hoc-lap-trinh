@@ -36,10 +36,10 @@ Kiến trúc Spring được tổ chức theo kiểu module. Mặc dù khá là 
 Spring Framework bao gồm nhiều tính năng được tổ chức thành khoảng 20 module. Nó được chia như sau:
 ![module Spring](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/spring-overview.png)
 
-***Test***
+***Test***  
 hỗ trợ việc kiểm tra các thành phần mùa xuân với JUnit hoặc TestNG khuôn khổ.
 
-***Core Container***
+***Core Container***  
 **Core Container** bao gồm các module: **spring-core** , **spring-beans**, **spring-context**, và **spring-expression** (<b>Spring Expression Language</b>).
 
 - **spring-core** và **spring-beans** cung cấp những phần cơ bản của framework, bao gồm **IoC** và **Dependency Injection** `Spring Bean` là center của `Spring Core` 
@@ -48,7 +48,7 @@ và được coi như là linh hồn của `Spring Application`.
 - **spring-expression** được mở rộng từ `Expression Language` trong **JSP**. Nó cung cấp hỗ trợ việc `setting/getting` giá trị, các method cải tiến cho phép truy cập collections, index, các toán tử logic v.v.
 
 
-***Data Access/Integration***
+***Data Access/Integration***  
 **Data Access/Integration** bao gồm các module JDBC, ORM, OXM, JMS và Transaction.
 - **Module spring-jdbc** cung cấp một lớp JDBC-abstraction để loại bỏ những code tẻ nhạt cả JDBC và phân tích những mã lỗi cụ thể của database-vendor.
 - **Module spring-orm** cung cấp lớp tích hợp với các orm API phổ biến như JPA, JDO và Hibernate.
@@ -57,7 +57,7 @@ và được coi như là linh hồn của `Spring Application`.
 - **Module spring-transaction** hỗ trợ quản lý giao dịch theo chương trình và khai báo cho các lớp mà thực hiện các giao diện đặc biệt và cho tất cả các POJO của bạn.
 
 
-***Web***
+***Web***  
 Hay còn được gọi là `Spring MVC` để hỗ trợ việc tạo ứng dụng Web, bao gồm: **spring-web** , **spring-webmvc**, **spring-websocket** và **springwebmvc-portlet**.
 
 - **Module spring-web** cung cấp tính năng tích hợp web theo định hướng cơ bản như chức năng tập tin tải lên nhiều phần dữ liệu và khởi tạo các **container 
@@ -67,7 +67,7 @@ IoC** sử dụng nghe servlet và một bối cảnh ứng dụng web theo đ�
 - **Module springwebmvc-portlet** cung cấp việc triển khai MVC được sử dụng trong môi trường portlet và ánh xạ chức năng của **module Web-Servlet**.
 
 
-***AOP, Aspects, Instrumentation và Messaging***
+***AOP, Aspects, Instrumentation và Messaging***  
 Những module này hỗ trợ cài đặt lập trình hướng khía cạnh (Aspect Oriented Programming), hỗ trợ tích hợp với AspectJ.
 - **Module AOP** cung cấp một thực hiện lập trình hướng khía cạnh cho phép bạn xác định phương pháp-chặn và pointcuts để sạch tách mã thực hiện chức 
 năng đó nên được tách ra.
