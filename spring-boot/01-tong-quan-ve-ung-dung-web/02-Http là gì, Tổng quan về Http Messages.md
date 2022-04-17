@@ -28,9 +28,9 @@ position: 2
 
 ### HTTP là gì
 **Hyper Text Transfer Protocol** (HTTP) là một giao thức để tìm nạp các tài nguyên như tài liệu HTML. Nó là nền tảng của bất kỳ trao đổi dữ liệu nào trên Web và nó là một giao thức khách-máy chủ (**Client-Server**), có nghĩa là các yêu cầu được khởi tạo bởi người nhận, thường là trình duyệt Web. 
-![](https://1.bp.blogspot.com/-L95P9p9PDfI/WqvflWNeEqI/AAAAAAAAAa0/JPzrhonvuDElUidmK0oS0jqmDwn_aPwPwCLcBGAs/s1600/Client-server-model.svg.png)
+![client-server-model](https://1.bp.blogspot.com/-L95P9p9PDfI/WqvflWNeEqI/AAAAAAAAAa0/JPzrhonvuDElUidmK0oS0jqmDwn_aPwPwCLcBGAs/s1600/Client-server-model.svg.png)
 Một tài liệu hoàn chỉnh được tạo lại từ các tài liệu con khác nhau được tìm nạp, chẳng hạn như văn bản, mô tả bố cục, hình ảnh, video, tập lệnh, v.v. 
-![](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/fetching_a_page.png)
+![fetching-page](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/fetching_a_page.png)
 
 ### Các khía cạnh cơ bản của HTTP
 * ### **Tính đơn giản (Simple)**: 
@@ -48,7 +48,7 @@ HTTP request là thông tin được gửi từ client lên server, để yêu c
 >  - URI: là địa chỉ định danh của tài nguyên. Trong tường hợp này URI là / - tức request cho tài nguyên gốc, nếu request không yêu cầu một tài nguyên cụ thể, URI có thể là dấu *.
 >  - HTTP version: là phiên bản HTTP đang sử dụng, ở đây là HTTP 1.1.  
 
-![](https://theegeek.com/wp-content/uploads/2014/12/HTTP-Request-Stream-Example.jpg)
+![request-stream](https://theegeek.com/wp-content/uploads/2014/12/HTTP-Request-Stream-Example.jpg)
 
 Tiếp theo là các trường request-header, cho phép client gửi thêm các thông tin bổ sung về thông điệp HTTP request và về chính client. Một số trường thông dụng như:
 > - Accept: loại nội dung có thể nhận được từ thông điệp response. Ví dụ: text/plain, text/html…
@@ -62,7 +62,7 @@ Cấu trúc HTTP response gần giống với HTTP request, chỉ khác nhau là
 > - Status-Code: mã kết quả trả về.
 > - Reason-Phrase: mô tả về Status-Code.
 
-![](https://images.viblo.asia/d4d042c6-1606-44c8-a7cc-0130d38f281e.png)
+![http-response](https://images.viblo.asia/d4d042c6-1606-44c8-a7cc-0130d38f281e.png)
 
 #### **HTTP Status Code**
 Một số loại Status-Code thông dụng mà server trả về cho client như sau:
@@ -71,12 +71,12 @@ Một số loại Status-Code thông dụng mà server trả về cho client nh�
 
 > 2xx (Successful): khi đã xử lý thành công request của client, server trả về status dạng này:
 
-> 3xx (Redirection): erver thông báo cho client phải thực hiện thêm thao tác để hoàn tất request:
+> 3xx (Redirection): Server thông báo cho client phải thực hiện thêm thao tác để hoàn tất request:
 
 > 4xx (Client Error): lỗi của client
 
 > 5xx (Server Error): lỗi của server
 
-![](https://softcrony.com/blog/wp-content/uploads/2020/07/http-code.png)
+![http-code](https://softcrony.com/blog/wp-content/uploads/2020/07/http-code.png)
 
 
