@@ -18,20 +18,22 @@ Có thể bạn đã quen với việc sử dụng [Promise](https://developer.m
 
 Thử xét một bài toán thực tế khi mà việc kết thúc sớm Promise chaining là cần thiết. Đó là khi triển khai API để đăng ký User qua Email. Mình có thể tóm tắt lại các bước thực hiện như sau:
 
-    Tìm kiếm User qua email
-        .then(
-          Nếu email đã tồn tại thì sẽ kết thúc sớm Promise chaining.
-          Ngược lại sẽ thực hiện bước tiếp theo.
-        )
-        .then(
-          Hash mật khẩu.
-        )
-        .then(
-          Tạo User và lưu vào cơ sở dữ liệu.
-        )
-        .catch(
-          Xử lý khi có bất kỳ lỗi gì xảy ra.
-        )
+```js
+Tìm kiếm User qua email
+  .then(
+    Nếu email đã tồn tại thì sẽ kết thúc sớm Promise chaining.
+    Ngược lại sẽ thực hiện bước tiếp theo.
+  )
+  .then(
+    Hash mật khẩu.
+  )
+  .then(
+    Tạo User và lưu vào cơ sở dữ liệu.
+  )
+  .catch(
+    Xử lý khi có bất kỳ lỗi gì xảy ra.
+  )
+```
 
 Bạn thấy đó, ngay tại bước _then_ đầu tiên, nếu email đã tồn tại thì mình sẽ kết thúc sớm Promise chaining. Có thể bạn sẽ triển khai API để đăng ký User qua Email theo cách khác của mình. Tuy nhiên, đây chỉ là một ví dụ dùng để minh hoạ mà thôi.
 
@@ -45,20 +47,22 @@ Dưới đây, mình sẽ xem xét một bài phi thực tế để biết cách
 
 Giả sử mình có đoạn code dưới đây:
 
-    const increase = (x) => {
-      console.log(x);
-      return x + 1;
-    };
+```js
+const increase = (x) => {
+  console.log(x);
+  return x + 1;
+};
 
-    const run = (x) => {
-      new Promise((resolve, reject) => {
-        resolve(x);
-      })
-        .then((res) => increase(res))
-        .then((res) => increase(res))
-        .then((res) => increase(res))
-        .catch((err) => console.log("Catched: " + err));
-    };
+const run = (x) => {
+  new Promise((resolve, reject) => {
+    resolve(x);
+  })
+    .then((res) => increase(res))
+    .then((res) => increase(res))
+    .then((res) => increase(res))
+    .catch((err) => console.log("Catched: " + err));
+};
+```
 
 Trong đó:
 
@@ -67,12 +71,14 @@ Trong đó:
 
 Với hàm _run_ như trên thì với mọi giá trị của x, 3 cái _then_ trên luôn được thực hiện. Ví dụ với x = 4 thì kết quả thu được là:
 
-    run(4);
-    /*
-     * 4
-     * 5
-     * 6
-     */
+```js
+run(4);
+/*
+ * 4
+ * 5
+ * 6
+ */
+```
 
 Nếu mình muốn kết thúc sớm Promise chaining ngay tại _then_ đầu tiên khi giá trị của _res_ lớn hơn 3 thì sao?
 
@@ -82,36 +88,38 @@ Có 2 cách để giải quyết bài toán này, đó là: **không thực hi�
 
 Bình thường, khi thực hiện _return_, giá trị _return_ sẽ được đưa đến mắt xích tiếp theo của chuỗi Promise để xử lý. Và nếu bạn không _return_ thì giá trị đó sẽ được hiểu là **undefined**. Dựa vào đặc điểm này, mình sẽ thay đổi đoạn code trên như sau:
 
-    const increase = (x) => {
-      console.log(x);
-      return x + 1;
-    };
+```js
+const increase = (x) => {
+  console.log(x);
+  return x + 1;
+};
 
-    const run = (x) => {
-      new Promise((resolve, reject) => {
-        resolve(x);
-      })
-        .then((res) => {
-          if (res <= 3) return increase(res);
-        })
-        .then((res) => {
-          if (res !== undefined) return increase(res);
-        })
-        .then((res) => {
-          if (res !== undefined) return increase(res);
-        })
-        .catch((err) => console.log("Catched: " + err));
-    };
+const run = (x) => {
+  new Promise((resolve, reject) => {
+    resolve(x);
+  })
+    .then((res) => {
+      if (res <= 3) return increase(res);
+    })
+    .then((res) => {
+      if (res !== undefined) return increase(res);
+    })
+    .then((res) => {
+      if (res !== undefined) return increase(res);
+    })
+    .catch((err) => console.log("Catched: " + err));
+};
 
-    run(3);
-    /*
-     * 3
-     * 4
-     * 5
-     */
+run(3);
+/*
+ * 3
+ * 4
+ * 5
+ */
 
-    run(4);
-    // Nothing
+run(4);
+// Nothing
+```
 
 Với **x = 3**: giá trị của _res_ tại _then_ đầu tiên là 3, thoả mãn `res <= 3` nên đoạn code đó trả về `increase(res)`. Dẫn đến, giá trị của _res_ tại các _then_ tiếp theo lần lượt là 4, 5.
 
@@ -119,36 +127,36 @@ Với **x = 4**: ngay tại _then_ đầu tiên _res_ sẽ bằng 4, không tho�
 
 Tuy nhiên, nếu để ý kĩ thì bạn sẽ thấy cách này chỉ giải quyết được về mặt kết quả. Còn về hình thức thì các mắt xích của chuỗi Promise vẫn được nhảy đến. Điều này có thể tiềm ẩn nhiều **Bug** sau này. Vì vậy, cái mà mình mong muốn thực sự là việc kết thúc sớm Promise chaining sẽ giúp thoát khỏi chuỗi Promise một cách hoàn toàn.
 
-### 
-
 Đúng vậy, việc sử dụng _Promise.reject()_ sẽ giúp bạn kết thúc sớm Promise chaining bằng cách nhảy thẳng đến phần _catch_. Khi đó, đoạn code trên sẽ trở thành:
 
-    const increase = (x) => {
-      console.log(x);
-      return x + 1;
-    };
+```js
+const increase = (x) => {
+  console.log(x);
+  return x + 1;
+};
 
-    const run = (x) => {
-      new Promise((resolve, reject) => {
-        resolve(x);
-      })
-        .then((res) => {
-          if (res <= 3) return increase(res);
-          return Promise.reject(res);
-        })
-        .then((res) => increase(res))
-        .then((res) => increase(res))
-        .catch((err) => console.log("Catched: " + err));
-    };
+const run = (x) => {
+  new Promise((resolve, reject) => {
+    resolve(x);
+  })
+    .then((res) => {
+      if (res <= 3) return increase(res);
+      return Promise.reject(res);
+    })
+    .then((res) => increase(res))
+    .then((res) => increase(res))
+    .catch((err) => console.log("Catched: " + err));
+};
 
-    run(3);
-    /*
-     * 3
-     * 4
-     * 5
-     */
-    run(4);
-    // Catched: 4
+run(3);
+/*
+ * 3
+ * 4
+ * 5
+ */
+run(4);
+// Catched: 4
+```
 
 Trong trường hợp này, mình chỉ cần thêm phần xử lý tại _then_ đầu tiên.
 

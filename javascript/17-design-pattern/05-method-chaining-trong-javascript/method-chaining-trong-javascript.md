@@ -106,7 +106,7 @@ Trong đoạn code trên, mình đã triển khai các phương thức theo Meth
 
 Cách thực hiện ở đây rất đơn giản là: mình chỉ cần thêm _**return this**_ vào cuối mỗi phương thức.
 
-_This_ ở đây đại diện cho [object](/object-la-gi-object-trong-javascript/) được tạo ra (_num_) sau khi sử dụng từ khóa _new_.
+_This_ ở đây đại diện cho [object](/bai-viet/javascript/object-la-gi-object-trong-javascript) được tạo ra (_num_) sau khi sử dụng từ khóa _new_.
 
 Rất dễ hiểu phải không bạn?
 

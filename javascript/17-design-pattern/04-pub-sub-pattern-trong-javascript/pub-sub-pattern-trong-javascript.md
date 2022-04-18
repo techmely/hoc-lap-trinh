@@ -67,7 +67,7 @@ Câu lệnh trên hiểu đơn giản là: khi có sự kiện **addItem** xảy
       events[eventName].push(fn);
     }
 
-Bạn có thể thấy rằng, **events** là một [object](/object-la-gi-object-trong-javascript/) rỗng. Sau này, mỗi thuộc tính (key) của events sẽ là tên của event được đăng ký. Giá trị của thuộc tính (value) là một [mảng](/array-la-gi-array-trong-javascript/) của các function.
+Bạn có thể thấy rằng, **events** là một [object](/bai-viet/javascript/object-la-gi-object-trong-javascript) rỗng. Sau này, mỗi thuộc tính (key) của events sẽ là tên của event được đăng ký. Giá trị của thuộc tính (value) là một [mảng](/bai-viet/javascript/mang-array-trong-javascript) của các function.
 
 Ban đầu events\[eventName\] sẽ là **undefined**, nên ta sẽ khởi tạoevents\[eventName\] = \[\] - là một mảng rỗng. Ngược lại, khi thành phần này đã tồn tại thì chỉ cần [push](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push) hàm số mới vào mảng.
 
@@ -134,7 +134,7 @@ Câu lệnh trên kích hoạt sự kiện addItem. Khi đó, tất cả những
       }
     }
 
-Hàm này sẽ duyệt toàn bộ mảng ứng với **eventName** sử dụng phương thức [forEach](/javascript-foreach-la-cai-quai-gi/). Sau đó, mỗi hàm số trong mảng sẽ được gọi và truyền vào đối số là data.
+Hàm này sẽ duyệt toàn bộ mảng ứng với **eventName** sử dụng phương thức [forEach](/bai-viet/javascript/tim-hieu-ve-foreach-trong-javascript). Sau đó, mỗi hàm số trong mảng sẽ được gọi và truyền vào đối số là data.
 
 Trong ví dụ trên, events\["addItem"\] = \[updateItem1, updateItem2\]. Do đó, khi event addItem được kích hoạt, hàm số updateItem1({ name : "apple", quantity: 2 }) và updateItem2({ name : "apple", quantity: 2 }) sẽ được thực hiện.
 

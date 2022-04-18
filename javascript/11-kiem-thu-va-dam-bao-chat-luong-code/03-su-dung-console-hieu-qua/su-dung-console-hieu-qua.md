@@ -12,7 +12,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---
 
-Có thể nói, sử dụng **console.log** để [debug](/debug-javascript-de-hay-kho/), kiểm tra lỗi là việc thường xuyên đối với hầu hết các lập trình viên JavaScript. Tuy nhiên, không phải ai cũng thực sự biết cách sử dụng công cụ này. Vì vậy, bài viết này mình sẽ chia sẻ với bạn một số thủ thuật sử dụng console hiệu quả mà mình mới học được. Mời bạn theo dõi bài viết!
+Có thể nói, sử dụng **console.log** để [debug](/bai-viet/javascript/debug-javascript-de-hay-kho), kiểm tra lỗi là việc thường xuyên đối với hầu hết các lập trình viên JavaScript. Tuy nhiên, không phải ai cũng thực sự biết cách sử dụng công cụ này. Vì vậy, bài viết này mình sẽ chia sẻ với bạn một số thủ thuật sử dụng console hiệu quả mà mình mới học được. Mời bạn theo dõi bài viết!
 
 ## Sử dụng console.log
 
@@ -24,7 +24,7 @@ Có thể nói, sử dụng **console.log** để [debug](/debug-javascript-de-h
 
     console.log(obj1 [, obj2, ..., objN]);
 
-Đối với cách 1, bạn liệt kê các giá trị, [object](/object-la-gi-object-trong-javascript/) cách nhau bởi dấu phẩy, ví dụ:
+Đối với cách 1, bạn liệt kê các giá trị, [object](/bai-viet/javascript/object-la-gi-object-trong-javascript) cách nhau bởi dấu phẩy, ví dụ:
 
     const foo = 1;
     const bar = "bar";

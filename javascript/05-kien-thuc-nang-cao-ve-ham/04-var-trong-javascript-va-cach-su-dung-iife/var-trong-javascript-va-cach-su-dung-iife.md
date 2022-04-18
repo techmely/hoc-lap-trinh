@@ -197,7 +197,7 @@ Trong ví dụ trên, một [biểu thức hàm](/bai-viet/javascript/function-e
 
 Đó chính là lợi ích khi sử dụng IFFE.
 
-Với IFFE, biểu thức hàm được **đặt trong cặp dấu ngoặc đơn** `(function(){...})`. Bởi vì, [JavaScript Engine](/javascript-la-gi/#javascript-engine-l%C3%A0-g%C3%AC) hiểu từ khóa `function` dùng để khai báo hàm. Mà khai báo hàm thì cần phải có tên.
+Với IFFE, biểu thức hàm được **đặt trong cặp dấu ngoặc đơn** `(function(){...})`. Bởi vì, [JavaScript Engine](/bai-viet/javascript/gioi-thieu-javascript#javascript-engine-l%C3%A0-g%C3%AC) hiểu từ khóa `function` dùng để khai báo hàm. Mà khai báo hàm thì cần phải có tên.
 
 Do đó, khi mình bỏ dấu ngoặc đơn để khai báo IFFE thì sẽ bị lỗi:
 

@@ -18,9 +18,11 @@ position: 2
 
 ### Đăng ký Event JavaScript
 
-Ở bài viết trước về [DOM](/co-ban-ve-dom-javascript/), bạn biết rằng mỗi phần tử trên trang web là một node. Và chúng ta có thể đăng ký nhận sự kiện cho mỗi node này bằng cách sử dụng phương thức **addEventListener** như sau:
+Ở bài viết trước về [DOM](/bai-viet/javascript/dom-la-gi), bạn biết rằng mỗi phần tử trên trang web là một node. Và chúng ta có thể đăng ký nhận sự kiện cho mỗi node này bằng cách sử dụng phương thức **addEventListener** như sau:
 
-    Node.addEventListener('tên sự kiện', hàm xử lý);
+```js
+Node.addEventListener('tên sự kiện', hàm xử lý);
+```
 
 Trong đó:
 
@@ -32,14 +34,16 @@ Trong đó:
 
 Ví dụ:
 
-    function func1() {
-      console.log("function 1");
-    }
-    function func2() {
-      console.log("function 2");
-    }
-    addEventListener("click", func1);
-    addEventListener("click", func2);
+```js
+function func1() {
+  console.log("function 1");
+}
+function func2() {
+  console.log("function 2");
+}
+addEventListener("click", func1);
+addEventListener("click", func2);
+```
 
 Trong ví dụ trên, mình đã đăng kí sự kiện _click_ cho d*ocument* với hai hàm xử lý là _func1_ và _func2_. Từ nay, mỗi khi bạn click chuột trái vào trang web thì hàm _func1_ sẽ được gọi trước, sau đó đến hàm _func2_.
 
@@ -47,45 +51,53 @@ Trong ví dụ trên, mình đã đăng kí sự kiện _click_ cho d*ocument* v
 
 Tương tự, để huỷ event trong JavaScript đã đăng ký, bạn có thể sử dụng phương thức **removeEventListener** như sau:
 
-    Node.removeEventListener('tên sự kiện', hàm xử lý);
+```js
+Node.removeEventListener('tên sự kiện', hàm xử lý);
+```
 
 Ví dụ:
 
-    function func1() {
-      console.log("function 1");
-    }
-    function func2() {
-      console.log("function 2");
-    }
-    addEventListener("click", func1);
-    addEventListener("click", func2);
+```js
+function func1() {
+  console.log("function 1");
+}
+function func2() {
+  console.log("function 2");
+}
+addEventListener("click", func1);
+addEventListener("click", func2);
 
-    removeEventListener("click", func1);
+removeEventListener("click", func1);
+```
 
 Tiếp theo ví dụ trên, nếu mình huỷ đăng ký sự kiện _click_ trên _document_ với hàm _func1_ bằng phương thức sau:
 
-    removeEventListener("click", func1);
+```js
+removeEventListener("click", func1);
+```
 
 Thì bây giờ, mỗi khi bạn click chuột trái vào trang web, chỉ có hàm _func2_ được gọi.
 
 ### Đăng ký event cho nhiều node dựa trên đối tượng event
 
-Bình thường để đăng ký event trong JavaScript cho nhiều node bạn có thể sử dụng phương thức **_addEventListener_** cho mỗi node. Tuy nhiên, bạn có thể chỉ cần sử dụng phương thức trên 1 lần và sử dụng thuộc tính target của [đối tượng](/object-la-gi-object-trong-javascript/) event để phân biệt node được gọi.
+Bình thường để đăng ký event trong JavaScript cho nhiều node bạn có thể sử dụng phương thức **_addEventListener_** cho mỗi node. Tuy nhiên, bạn có thể chỉ cần sử dụng phương thức trên 1 lần và sử dụng thuộc tính target của [đối tượng](/bai-viet/javascript/object-la-gi-object-trong-javascript) event để phân biệt node được gọi.
 
 Hãy xem ví dụ sau:
 
-    <button>A</button>
-    <button>B</button>
-    <button>C</button>
-    <p>Hello</p>
-    <script>
-      document.body.addEventListener("click", function (event) {
-        if (event.target.nodeName == "BUTTON")
-          console.log("Clicked", event.target.textContent);
-        else if (event.target.nodeName == "P")
-          console.log("Paragraph clicked", event.target.textContent);
-      });
-    </script>
+```html
+<button>A</button>
+<button>B</button>
+<button>C</button>
+<p>Hello</p>
+<script>
+  document.body.addEventListener("click", function (event) {
+    if (event.target.nodeName == "BUTTON")
+      console.log("Clicked", event.target.textContent);
+    else if (event.target.nodeName == "P")
+      console.log("Paragraph clicked", event.target.textContent);
+  });
+</script>
+```
 
 Trong ví dụ trên, mình chỉ cần gọi phương thức **addEventListener** một lần. Sau đó, mình chỉ cần sử dụng _event.target.nodeName_ để biết được node nào thật sự được _click_.
 
@@ -97,14 +109,16 @@ Tuy nhiên, nếu bạn không muốn thực hiện những hàm mặc định �
 
 Ví dụ:
 
-    <a href="https://developer.mozilla.org/">MDN</a>
-    <script>
-      var link = document.querySelector("a");
-      link.addEventListener("click", function (event) {
-        console.log("Nope.");
-        event.preventDefault();
-      });
-    </script>
+```html
+<a href="https://developer.mozilla.org/">MDN</a>
+<script>
+  var link = document.querySelector("a");
+  link.addEventListener("click", function (event) {
+    console.log("Nope.");
+    event.preventDefault();
+  });
+</script>
+```
 
 Trong ví dụ trên, khi bạn nhấn vào link thì bạn sẽ không được chuyển đến trang [https://developer.mozilla.org](https://developer.mozilla.org).
 
@@ -121,38 +135,41 @@ Key event là sự kiện khi bạn nhấn vào một key trên bàn phím. Có 
 
 Ví dụ:
 
-    addEventListener("keydown", function (event) {
-      console.log("keydown", event.keyCode);
-    });
-    addEventListener("keyup", function (event) {
-      console.log("keyup", event.keyCode);
-    });
-    addEventListener("keypress", function (event) {
-      console.log("keypress", event.keyCode);
-    });
+```js
+addEventListener("keydown", function (event) {
+  console.log("keydown", event.keyCode);
+});
+addEventListener("keyup", function (event) {
+  console.log("keyup", event.keyCode);
+});
+addEventListener("keypress", function (event) {
+  console.log("keypress", event.keyCode);
+});
+```
 
 Trong ví dụ này, mình ghi ra giá trị _keyCode_ của phím được nhấn dựa vào đối tượng _event (keyEvent_ ở đây là giá trị số nguyên của từng phím trong bảng mã Unicode).
 
 **Chú ý:** với sự kiện _keydown_ và _keyup_ thì giá trị sẽ ứng với chữ cái thường, trong khi sự kiện _keypress_ thì ta sẽ có giá trị của chữ cái viết hoa. Tức là nếu bạn nhấn phím 'a' thì kết quả sẽ là:
 
-    keydown 65
-    keypress 97
-    keyup 65
+```js
+keydown 65
+keypress 97
+keyup 65
+```
 
 Ngoài ra bạn có thể xử lý việc nhấn tổ hợp phím như ví dụ sau:
 
-    addEventListener("keydown", function(event) {
-      if (event.ctrlKey)
-        console.log("keydown", "ctrlKey", event.keyCode);
-    );
-    addEventListener("keydown", function(event) {
-      if (event.shiftKey)
-        console.log("keydown", "shiftKey", event.keyCode);
-    });
-    addEventListener("keydown", function(event) {
-      if (event.altKey)
-        console.log("keydown", "altKey", event.keyCode);
-    });
+```js
+addEventListener("keydown", function (event) {
+  if (event.ctrlKey) console.log("keydown", "ctrlKey", event.keyCode);
+});
+addEventListener("keydown", function (event) {
+  if (event.shiftKey) console.log("keydown", "shiftKey", event.keyCode);
+});
+addEventListener("keydown", function (event) {
+  if (event.altKey) console.log("keydown", "altKey", event.keyCode);
+});
+```
 
 ### Mouse Event
 
@@ -178,8 +195,6 @@ Trên đây là một số cách xử lý Event JavaScript cơ bản. Mình có 
 - Một số sự kiện với mouse: click, dbclick, mousedown, mouseup, mousemove,...
 
 Hy vọng bạn có thể nắm được những kiến thức cơ bản về JS event.
-
-Xin chào và hẹn gặp lại bạn ở [bài viết tiếp theo](/xmlhttprequest-tao-http-request-den-server-trong-javascript/), thân ái!
 
 ## Tham khảo
 

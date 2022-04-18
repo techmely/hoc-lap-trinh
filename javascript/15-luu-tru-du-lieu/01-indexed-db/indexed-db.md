@@ -24,15 +24,15 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 ---------------------------------------------------------------------------------------------------------------------
 
 *   IndexedDB sử dụng công nghệ [index db](https://en.wikipedia.org/wiki/Database_index) để nâng cao hiệu quả tìm kiếm, giúp tìm kiếm dữ liệu nhanh hơn.
-*   IndexedDB hoạt động theo kiểu bất đồng bộ (asynchronous) và còn hỗ trợ sử dụng trong [Web Worker](/javascript-web-worker-javascript-o-background/), giúp tránh việc block [DOM](/co-ban-ve-dom-javascript/). Qua đó, trình duyệt chạy sẽ mượt hơn.
+*   IndexedDB hoạt động theo kiểu bất đồng bộ (asynchronous) và còn hỗ trợ sử dụng trong [Web Worker](/javascript-web-worker-javascript-o-background/), giúp tránh việc block [DOM](/bai-viet/javascript/dom-la-gi). Qua đó, trình duyệt chạy sẽ mượt hơn.
 *   Trong khi LocalStorage chỉ hỗ trợ dung lượng tối đa là 5MB thì IndexedDB hỗ trợ lên đến 50MB. Và khi dùng [quá 50MB này](https://support.mozilla.org/en-US/questions/818987#answer-180011), trình duyệt sẽ yêu cầu permission từ người dùng để có thể tăng thêm dung lượng lưu trữ.
 
 [](#nh%E1%BB%AFng-kh%C3%A1i-ni%E1%BB%87m-c%C6%A1-b%E1%BA%A3n-trong-javascript-indexeddb)Những khái niệm cơ bản trong JavaScript IndexedDB
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 *   IndexedDB lưu trữ dữ liệu theo kiểu **key-value**. Trong đó, value có thể là những object có cấu trúc phức tạp và key có thể là thuộc tính của object. Bạn có thể áp dụng **Indexes**, sử dụng bất kỳ thuộc tính nào của object để tìm kiếm nhanh hơn, cũng như là việc [sắp xếp](/sap-xep-mang-trong-javascript/).
-*   IndexedDB được xây dựng dựa trên [Transaction](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_transaction). IndexedDB API cung cấp nhiều [object](/object-la-gi-object-trong-javascript/) như indexes, tables, cursors,... nhưng mỗi object phải được gắn liền với một transaction.
-*   IndexedDB API hầu hết là **bất đồng bộ (asynchronous)**. Các API không cung cấp dữ liệu bởi việc **return**, do đó, bạn cần phải truyền vào một hàm callback. Và việc của bạn cần làm là gửi đi request. Khi request được xử lý xong, IndexedDB sẽ trả lại kết quả thông qua hàm callback kia. Bạn sẽ biết được là request thành công hay thất bại. Và thành công thì dữ liệu nhận được là gì. Cơ chế hoạt động tương tự như [XMLHttpRequest](/xmlhttprequest-tao-http-request-den-server-trong-javascript/).
+*   IndexedDB được xây dựng dựa trên [Transaction](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB#gloss_transaction). IndexedDB API cung cấp nhiều [object](/bai-viet/javascript/object-la-gi-object-trong-javascript) như indexes, tables, cursors,... nhưng mỗi object phải được gắn liền với một transaction.
+*   IndexedDB API hầu hết là **bất đồng bộ (asynchronous)**. Các API không cung cấp dữ liệu bởi việc **return**, do đó, bạn cần phải truyền vào một hàm callback. Và việc của bạn cần làm là gửi đi request. Khi request được xử lý xong, IndexedDB sẽ trả lại kết quả thông qua hàm callback kia. Bạn sẽ biết được là request thành công hay thất bại. Và thành công thì dữ liệu nhận được là gì. Cơ chế hoạt động tương tự như [XMLHttpRequest](/bai-viet/javascript/network-requests).
 *   IndexedDB sử dụng nhiều **requests**. Requests là những đối tượng nhận sự kiện thành công hay thất bại của DOM. Chúng có các thuộc tính **onsuccess**, **onerror**. Bạn có thể gọi hàm **addEventListener()** và **removeEventListener()** với chúng.
 *   IndexedDB là **[hướng đối tượng](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/)**. Vì vậy, IndexedDB không phải là dạng cơ sở dữ liệu quan hệ với bảng, dòng, cột,...
 *   IndexedDB là cơ sở dữ liệu dạng [NoSQL](https://en.wikipedia.org/wiki/NoSQL).
@@ -57,7 +57,7 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 ### Version
 
 *   Khi một database được tạo ra, version của nó là 1.
-*   Mỗi database sẽ chỉ có một version ở một thời điểm. Vì vậy, khi muốn nâng cấp database, thì bạn cần phải thay đổi giá trị của version bởi một số tự nhiên lớn hơn. Khi đó, transaction **versionchange** bắt đầu và [event](/xu-ly-mot-event-javascript-co-ban/) **upgradeneeded** sẽ được gọi.
+*   Mỗi database sẽ chỉ có một version ở một thời điểm. Vì vậy, khi muốn nâng cấp database, thì bạn cần phải thay đổi giá trị của version bởi một số tự nhiên lớn hơn. Khi đó, transaction **versionchange** bắt đầu và [event](/bai-viet/javascript/mot-so-event-javascript) **upgradeneeded** sẽ được gọi.
 
 ### Database connection
 
@@ -83,7 +83,7 @@ Có thể bạn đã nghe thấy nhiều loại cơ sở dữ liệu (database) 
 ### Key path
 
 *   Key path xác định nơi mà trình duyệt lấy ra key ở trong một object store hay index.
-*   Key path hợp lệ có thể là: một string rỗng, một định danh JavaScript, nhiều định danh JavaScript phân cách bởi dấu chấm hay là một [mảng](/array-la-gi-array-trong-javascript/) chứa các phần tử là một trong các kiểu kia. Và key path thì không được bao gồm dấu cách.
+*   Key path hợp lệ có thể là: một string rỗng, một định danh JavaScript, nhiều định danh JavaScript phân cách bởi dấu chấm hay là một [mảng](/bai-viet/javascript/mang-array-trong-javascript) chứa các phần tử là một trong các kiểu kia. Và key path thì không được bao gồm dấu cách.
 
 [](#c%C3%A1ch-s%E1%BB%AD-d%E1%BB%A5ng-javascript-indexeddb)Cách sử dụng JavaScript IndexedDB
 --------------------------------------------------------------------------------------------

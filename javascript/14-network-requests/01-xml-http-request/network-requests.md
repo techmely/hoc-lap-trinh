@@ -16,7 +16,7 @@ Có bao giờ bạn thắc mắc, chuyện gì thực sự diễn ra khi chúng 
 
 Đầu tiên, trình duyệt sẽ tìm kiếm địa chỉ IP của server ứng với tên miền, sau đó là mở kết nối TCP đến server thông qua cổng 80 - cổng mặc định của giao thức HTTP. Nếu server tồn tại và chấp nhận kết nối, trình duyệt sẽ gửi yêu cầu dạng GET đến server để lấy thông tin trang web. Tiếp theo, server phản hồi lại trình duyệt theo đúng kết nối đó. Và cuối cùng, trình duyệt xử lý thông tin phản hồi và hiển thị nó lên trang web.
 
-Quá trình này được thực hiện hoàn toàn dựa trên trình duyệt. Tuy nhiên, bài viết này sẽ hướng dẫn bạn gửi yêu cầu HTTP đến server bằng JavaScript thông qua [đối tượng](/object-la-gi-object-trong-javascript/) XMLHttpRequest. Nhưng trước khi đi vào tìm hiểu cách sử dụng XMLHttpRequest, chúng ta hãy lướt qua một chút về giao thức HTTP để biết nó là cái gì trước đã. OK?
+Quá trình này được thực hiện hoàn toàn dựa trên trình duyệt. Tuy nhiên, bài viết này sẽ hướng dẫn bạn gửi yêu cầu HTTP đến server bằng JavaScript thông qua [đối tượng](/bai-viet/javascript/object-la-gi-object-trong-javascript) XMLHttpRequest. Nhưng trước khi đi vào tìm hiểu cách sử dụng XMLHttpRequest, chúng ta hãy lướt qua một chút về giao thức HTTP để biết nó là cái gì trước đã. OK?
 
 ## HTTP là gì?
 
@@ -155,7 +155,7 @@ Nếu như server bị lỗi, hoặc việc xử lý request mất nhiều thờ
 
 Do đó, chỉ nên sử dụng request đồng bộ với những yêu cầu có thể xử lý nhanh. Nhìn chung, bạn nên sử dụng request bất đồng bộ.
 
-Như mình đã nói ở trên, để cấu hình request là bất đồng bộ, bạn chỉ cần truyền vào **true** ở thuộc tính thứ 3 của phương thức **open**. Ngoài ra, bạn cần phải [đăng ký sự kiện](/xu-ly-mot-event-javascript-co-ban/) **load** và truyền vào hàm callback - hàm này được thực hiện khi có thông tin phản hồi từ server.
+Như mình đã nói ở trên, để cấu hình request là bất đồng bộ, bạn chỉ cần truyền vào **true** ở thuộc tính thứ 3 của phương thức **open**. Ngoài ra, bạn cần phải [đăng ký sự kiện](/bai-viet/javascript/mot-so-event-javascript) **load** và truyền vào hàm callback - hàm này được thực hiện khi có thông tin phản hồi từ server.
 
     var req = new XMLHttpRequest();
     req.open("GET", "https://httpbin.org/get", true);

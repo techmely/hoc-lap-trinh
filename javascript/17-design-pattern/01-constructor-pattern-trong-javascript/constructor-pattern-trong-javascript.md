@@ -30,7 +30,7 @@ position: 1
     console.log(dog.about()); // => Dog has 4 legs
     console.log(bird.about()); // => Bird has 2 legs
 
-Trong ví dụ trên, [đối tượng](/object-la-gi-object-trong-javascript/) sử dụng hàm khởi tạo **Animal** sẽ có 2 thuộc tính (_name_, _leg_) và 1 phương thức (_about_). Tuy nhiên, cách trên có nhược điểm là khó để kế thừa và phương thức _about_ sẽ phải định nghĩa lại đối với mỗi đối tượng. Để khắc phục nhược điểm trên, ta có cách thứ hai là sử dụng **Prototypes**.
+Trong ví dụ trên, [đối tượng](/bai-viet/javascript/object-la-gi-object-trong-javascript) sử dụng hàm khởi tạo **Animal** sẽ có 2 thuộc tính (_name_, _leg_) và 1 phương thức (_about_). Tuy nhiên, cách trên có nhược điểm là khó để kế thừa và phương thức _about_ sẽ phải định nghĩa lại đối với mỗi đối tượng. Để khắc phục nhược điểm trên, ta có cách thứ hai là sử dụng **Prototypes**.
 
 ## Constructor Pattern với Prototypes
 
@@ -54,7 +54,7 @@ Trong JavaScript, mọi object (bao gồm **function**) đều tồn tại thu�
 
 Từ khoá **class** thực chất là một hàm số đặc biệt. Sử dụng **class** cho phép khởi tạo đối tượng mới một cách trực quan, và gần với khái niệm _class_ trong các ngôn ngữ lập trình khác như C++, Java,...
 
-Một điểm khác giữa **class** và **function** là **function** thuộc dạng **hoisting**, còn **class** thì không. Nghĩa là bạn có thể sử dụng hàm số trước khi khai báo hàm. Trong khi nếu bạn sử dụng class trước khi khai báo class thì bạn sẽ nhận được [thông báo lỗi](/mot-so-loi-khi-su-dung-strict-mode-javascript/) **ReferenceError**.
+Một điểm khác giữa **class** và **function** là **function** thuộc dạng **hoisting**, còn **class** thì không. Nghĩa là bạn có thể sử dụng hàm số trước khi khai báo hàm. Trong khi nếu bạn sử dụng class trước khi khai báo class thì bạn sẽ nhận được [thông báo lỗi](/bai-viet/javascript/mo-so-loi-loi-strict-mode) **ReferenceError**.
 
     class Animal {
       constructor(name, leg) {

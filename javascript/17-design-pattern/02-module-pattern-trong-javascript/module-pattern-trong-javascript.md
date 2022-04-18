@@ -63,7 +63,7 @@ Do đó, nếu muốn truyền tham số vào function (chẳng hạn như **jQu
 
     var countModule = (function (jQ) {})(jQuery);
 
-Theo cách phân tích trên, thực chất **countModule** là thành phần **return** của function - dạng [object](/object-la-gi-object-trong-javascript/) ({}). Do đó, ta chỉ có thể truy cập đến những thuộc tính bên trong object này là: **_increase, decrease, reset_**. Hay nói cách khác, những hàm số này thuộc dạng **public**.
+Theo cách phân tích trên, thực chất **countModule** là thành phần **return** của function - dạng [object](/bai-viet/javascript/object-la-gi-object-trong-javascript) ({}). Do đó, ta chỉ có thể truy cập đến những thuộc tính bên trong object này là: **_increase, decrease, reset_**. Hay nói cách khác, những hàm số này thuộc dạng **public**.
 
 Ngược lại, biến số **count**, **log** chỉ truy cập được ở trong hàm số trên, nên thuộc dạng **private**.
 

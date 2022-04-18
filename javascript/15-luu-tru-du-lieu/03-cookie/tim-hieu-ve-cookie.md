@@ -149,7 +149,7 @@ Giá trị trả về sẽ là một đoạn string chứa tất cả các cooki
 
 Bên trên, mình đã tìm hiểu về việc thao tác với HTTP Cookie phía client sử dụng JavaScript. Phần này, mình sẽ tìm hiểu cơ bản về cách làm việc với cookie từ phía server.
 
-Khi server nhận được một [HTTP request](/xmlhttprequest-tao-http-request-den-server-trong-javascript/) từ client, response trả về sẽ sử dụng header **Set-Cookie** để xác định những cookie được trình duyệt lưu lại, với cấu trúc đơn giản:
+Khi server nhận được một [HTTP request](/bai-viet/javascript/network-requests) từ client, response trả về sẽ sử dụng header **Set-Cookie** để xác định những cookie được trình duyệt lưu lại, với cấu trúc đơn giản:
 
     HTTP/2.0 200 OK
     Content-type: text/html

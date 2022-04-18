@@ -23,11 +23,11 @@ Tuy nhiên, những bài toán này khá đơn giản nên mình sẽ không gi�
 Trước khi đi vào tìm hiểu các bài toán, các bạn có thể đọc trước các bài viết sau. Chúng khá hữu ích vì các thuật toán sau đây sẽ sử dụng đến những kiến thức trong đó.
 
 - [Các kiểu dữ liệu trong JavaScript](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript)
-- [JavaScript Array cơ bản](/array-la-gi-array-trong-javascript/)
+- [JavaScript Array cơ bản](/bai-viet/javascript/mang-array-trong-javascript)
 - [Array Sorting – vấn đề muôn thuở](/sap-xep-mang-trong-javascript/)
-- [JavaScript forEach là cái quái gì?](/javascript-foreach-la-cai-quai-gi/)
-- [JavaScript Object – last but not least](/object-la-gi-object-trong-javascript/)
-- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
+- [JavaScript forEach là cái quái gì?](/bai-viet/javascript/tim-hieu-ve-foreach-trong-javascript)
+- [JavaScript Object – last but not least](/bai-viet/javascript/object-la-gi-object-trong-javascript)
+- [Tìm hiểu Regular Expression JavaScript](/bai-viet/javascript/tim-hieu-regex-javascript)
 
 ## Basic Algorithm Scripting - Reverse a String
 
@@ -78,7 +78,7 @@ Kiểm tra xem một string có phải là **palindrome** hay không? (Một str
 
 Tham khảo:
 
-- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
+- [Tìm hiểu Regular Expression JavaScript](/bai-viet/javascript/tim-hieu-regex-javascript)
 - [String.prototype.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 - [String.prototype.toLowerCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
 

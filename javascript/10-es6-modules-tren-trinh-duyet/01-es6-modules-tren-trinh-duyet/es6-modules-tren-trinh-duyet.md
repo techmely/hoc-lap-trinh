@@ -12,7 +12,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
 
-Hiện tại, **ES Modules** đã được [support bởi khá nhiều các trình duyệt](https://caniuse.com/#feat=es6-module). Điều đó nghĩa là bạn có thể sử dụng ES Modules trực tiếp trên trình duyệt mà không cần phải [cài đặt Node.js](/huong-dan-tim-hieu-node-js-co-ban/) cùng với các công cụ như [Browserify](http://browserify.org/), [RequireJS](https://requirejs.org/), [Webpack](https://webpack.js.org/),...
+Hiện tại, **ES Modules** đã được [support bởi khá nhiều các trình duyệt](https://caniuse.com/#feat=es6-module). Điều đó nghĩa là bạn có thể sử dụng ES Modules trực tiếp trên trình duyệt mà không cần phải cài đặt Node.js cùng với các công cụ như [Browserify](http://browserify.org/), [RequireJS](https://requirejs.org/), [Webpack](https://webpack.js.org/),...
 
 Sau đây, mình sẽ tìm hiểu về ES Modules và cách sử dụng nó trực tiếp trên trình duyệt. Mời bạn theo dõi bài viết!
 
@@ -20,7 +20,7 @@ Sau đây, mình sẽ tìm hiểu về ES Modules và cách sử dụng nó tr�
 
 ES Modules (hay còn gọi là "JavaScript Modules", "JS Modules" hay "ECMAScript modules") là một tính năng mới của trình duyệt cho phép bạn làm việc với modules. Nhờ vậy, bạn có thể chia nhỏ chương trình ra thành các modules, với mỗi module có một chức năng riêng biệt.
 
-Trong một module, bạn có thể sử dụng từ khoá [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) để export bất kỳ kiểu dữ liệu nào như: biến số với [var, let](/phan-biet-var-va-let-trong-javascript/) hay const, class, [function](/bai-viet/javascript/ham-trong-javascript),... Sau đó, bạn sử dụng từ khoá [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) để sử dụng chúng ở một file khác.
+Trong một module, bạn có thể sử dụng từ khoá [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export) để export bất kỳ kiểu dữ liệu nào như: biến số với var, let hay const, class, [function](/bai-viet/javascript/ham-trong-javascript),... Sau đó, bạn sử dụng từ khoá [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) để sử dụng chúng ở một file khác.
 
 Sử dụng ES Modules có một số lợi ích như:
 
@@ -31,18 +31,19 @@ Nói vậy thì cách sử dụng ES Modules có gì khác với JavaScript thô
 
 ## ES Modules với JavaScript thông thường
 
-Bởi vì, ES Modules là một tính năng mới (từ ES6) dành cho các trình duyệt hiện đại. Do đó, nó luôn luôn được sử dụng ở chế độ [Strict mode](/mot-so-loi-khi-su-dung-strict-mode-javascript/).
+Bởi vì, ES Modules là một tính năng mới (từ ES6) dành cho các trình duyệt hiện đại. Do đó, nó luôn luôn được sử dụng ở chế độ [Strict mode](/bai-viet/javascript/mo-so-loi-loi-strict-mode).
 
 Tiếp theo, comment code theo kiểu HTML không được support ở modules, mặc dù nó vẫn hợp lệ ở JS thông thường. Ví dụ:
 
-    /*
-    * Sử dụng comment kiểu HTML trong JavaScript thông thường,
-    * không sai, nhưng không nên dùng.
-    */
-    const x = 42; <!-- TODO: Rename x to y.
-
-    // Cách sử dụng comment chuẩn
-    const x = 42; // TODO: Rename x to y.
+```js
+/*
+* Sử dụng comment kiểu HTML trong JavaScript thông thường,
+* không sai, nhưng không nên dùng.
+*/
+const x = 42; <!-- TODO: Rename x to y.
+// Cách sử dụng comment chuẩn
+const x = 42; // TODO: Rename x to y.
+```
 
 Modules có phạm vi "lexical top-level". Nghĩa là khi bạn chạy `var foo = 42;` trong modules, JS sẽ không tạo ra một biến ở global với tên _foo_. Hay nói cách khác là `window.foo` sẽ trả về **undefined**.
 
@@ -56,7 +57,9 @@ Vì vậy, phần dưới đây sẽ trình bày cách sử dụng ES Modules tr
 
 Để khai báo một script là ES Modules, bạn phải thêm **attribute** cho nó là: `type="module"`.
 
-    <script type="module" src="main.js"></script>
+```js
+<script type="module" src="main.js"></script>
+```
 
 Nghĩa là với những trình duyệt hiện đại, nó sẽ hiểu được thuộc tính này. Và trình duyệt sẽ xử lý file _main.js_ theo kiểu của module.
 
@@ -64,8 +67,10 @@ Nghĩa là với những trình duyệt hiện đại, nó sẽ hiểu được 
 
 Để chương trình có thể chạy được ở cả trình duyệt cũ và mới thì mình phải định nghĩa thêm như này:
 
-    <script type="module" src="main.js"></script>
-    <script nomodule src="fallback.js"></script>
+```js
+<script type="module" src="main.js"></script>
+<script nomodule src="fallback.js"></script>
+```
 
 Khi đó, đối với trình duyệt mới (support modules): nó sẽ hiểu thuộc tính `type="module"` và bỏ qua _script_ với thuộc tính **nomodule**. Hay nói cách khác, chương trình sẽ nhận _main.js_ và bỏ qua _fallback.js_.
 
@@ -79,44 +84,52 @@ Mình sẽ demo một chương trình cực kỳ đơn giản sử dụng Module
 
 **index.html**:
 
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Document</title>
-      </head>
-      <body>
-        <script type="module" src="./main.js"></script>
-      </body>
-    </html>
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
+```
 
 **main.js**:
 
-    import { repeat, shout } from "./lib.js";
+```js
+import { repeat, shout } from "./lib.js";
 
-    console.log("main.js");
-    console.log(repeat("hello"));
-    console.log(shout("Modules in action"));
+console.log("main.js");
+console.log(repeat("hello"));
+console.log(shout("Modules in action"));
+```
 
 **lib.js**:
 
-    export const repeat = (string) => `${string} ${string}`;
+```js
+export const repeat = (string) => `${string} ${string}`;
 
-    export function shout(string) {
-      return `${string.toUpperCase()}!`;
-    }
+export function shout(string) {
+  return `${string.toUpperCase()}!`;
+}
+```
 
 Trong file, _index.html_ mình khai báo script với `type="module"` và nội dung file là _main.js_. Tức file _main.js_ đóng vai trò là ES Modules. Trong file này, mình có sử dụng từ khoá _import_ để import nội dung từ một file modules khác _lib.js_. Dĩ nhiên, file _lib.js_ cũng là một ES Modules. Trong file này, mình sử dụng từ khoá _export_ để export ra 2 hàm cho _main.js_ sử dụng.
 
 Kết quả hiện thị ra console là:
 
-    /*
-     * => main.js
-     * => hello hello
-     * => MODULES IN ACTION
-     */
+```sh
+/*
+* => main.js
+* => hello hello
+* => MODULES IN ACTION
+*/
+```
 
 ## Cú pháp cơ bản của ES Modules
 
@@ -131,77 +144,95 @@ Khi sử dụng modules, mình phải quan tâm đến cả phần _export_ (t�
 
 Bạn có thể export bất kỳ kiểu dữ liệu nào với từ khoá export đặt trước khai báo biến:
 
-    export let x = 1;
-    export var y = "a";
-    export const z = { x: 1, y: 2 };
-    export function add(a, b) {
-      return a + b;
-    }
-    export class Utils {
-      print(text) {
-        console.log(text);
-      }
-    }
+```js
+export let x = 1;
+export var y = "a";
+export const z = { x: 1, y: 2 };
+export function add(a, b) {
+  return a + b;
+}
+export class Utils {
+  print(text) {
+    console.log(text);
+  }
+}
+```
 
-Hoặc gộp chúng vào thành 1 [object](/object-la-gi-object-trong-javascript/) với một từ khoá _export_:
+Hoặc gộp chúng vào thành 1 [object](/bai-viet/javascript/object-la-gi-object-trong-javascript) với một từ khoá _export_:
 
-    let x = 1;
-    var y = "a";
-    const z = { x: 1, y: 2 };
-    function add(a, b) {
-      return a + b;
-    }
-    class Utils {
-      print(text) {
-        console.log(text);
-      }
-    }
+```js
+let x = 1;
+var y = "a";
+const z = { x: 1, y: 2 };
+function add(a, b) {
+  return a + b;
+}
+class Utils {
+  print(text) {
+    console.log(text);
+  }
+}
 
-    export { x, y, z, add, Utils };
+export { x, y, z, add, Utils };
+```
 
 Hoặc cũng có thể đổi tên chúng khi export:
 
-    export { x as publicX, y as publicY, z as publicZ, add as sum, Utils as Tools };
+```js
+export { x as publicX, y as publicY, z as publicZ, add as sum, Utils as Tools };
+```
 
 #### Import theo tên
 
 Mình phải import theo đúng tên đã export:
 
-    import { x, y, z, add, Utils } from "./lib.js";
+```js
+import { x, y, z, add, Utils } from "./lib.js";
 
-    console.log(x); // 1
-    console.log(y); // a
-    console.log(z); // {x: 1, y: 2}
-    console.log(add(1, 2)); // 3
-    console.log(new Utils().print("hi")); // hi
+console.log(x); // 1
+console.log(y); // a
+console.log(z); // {x: 1, y: 2}
+console.log(add(1, 2)); // 3
+console.log(new Utils().print("hi")); // hi
+```
 
-Bên trên, mình import hết tất cả các giá trị. Tuy nhiên, bạn có thể chỉ import những thứ cần để sử dụng:
+Bên trên, mình `import` hết tất cả các giá trị. Tuy nhiên, bạn có thể chỉ `import` những thứ cần để sử dụng:
 
-    import { x, y, z } from "./lib.js";
+```js
+import { x, y, z } from "./lib.js";
 
-    console.log(x); // 1
-    console.log(y); // a
-    console.log(z); // {x: 1, y: 2}
+console.log(x); // 1
+console.log(y); // a
+console.log(z); // {x: 1, y: 2}
+```
 
-Ngoải ra, để tránh trường hợp trùng tên với biến khác, bạn có thể import và đồng thời đặt tên mới cho biến:
+Ngoải ra, để tránh trường hợp trùng tên với biến khác, bạn có thể `import` và đồng thời đặt tên mới cho biến:
 
-    import { x as newX, y as newY, z as newZ } from "./lib.js";
+```js
+import { x as newX, y as newY, z as newZ } from "./lib.js";
 
-    console.log(newX); // 1
-    console.log(newY); // a
-    console.log(newZ); // {x: 1, y: 2}
+console.log(newX); // 1
+console.log(newY); // a
+console.log(newZ); // {x: 1, y: 2}
+```
 
 Hoặc import tất cả các giá trị ứng với một object với tên mới:
 
-    import * as myModule from "./lib.js";
+```js
+import * as myModule from "./lib.js";
 
-    console.log(myModule.x); // 1
-    console.log(myModule.y); // a
-    console.log(myModule.z); // {x: 1, y: 2}
-    console.log(myModule.add(1, 2)); // 3
-    console.log(new myModule.Utils().print("hi")); // hi
+console.log(myModule.x); // 1
+console.log(myModule.y); // a
+console.log(myModule.z); // {x: 1, y: 2}
+console.log(myModule.add(1, 2)); // 3
+console.log(new myModule.Utils().print("hi")); // hi
+```
+
+<content-warning>
 
 **Chú ý**: Trong trường hợp này, module export và import luôn luôn là một object.
+
+</content-warning>
 
 ### Export, import default
 
@@ -211,79 +242,89 @@ Vì khi export default, mỗi file sẽ chỉ cho phép export default 1 giá tr
 
 #### Export, import default biến
 
-    // export ở file lib.js
-    let x = 1;
-    export default x;
+```js
+// export ở file lib.js
+let x = 1;
+export default x;
 
-    // import ở file main.js
-    import variable from "./lib.js";
-    console.log(variable); // 1
+// import ở file main.js
+import variable from "./lib.js";
+console.log(variable); // 1
+```
 
 Khi bạn import, giá trị của variable sẽ tương ứng với giá trị export default. Do đó, variable tương ứng với x, nên có giá trị là 1.
 
 #### Export, import default function
 
-    // export ở file lib.js
-    export default function(a, b) {
-      return a + b;
-    }
+```js
+// export ở file lib.js
+export default function(a, b) {
+  return a + b;
+}
 
-    // hoặc
-    function add(a, b) {
-      return a + b;
-    }
-    export default add;
+// hoặc
+function add(a, b) {
+  return a + b;
+}
+export default add;
 
-    // import ở file main.js
-    import func from './lib.js';
-    console.log(func(1, 2));         // 3
+// import ở file main.js
+import func from './lib.js';
+console.log(func(1, 2));         // 3
+```
 
 #### Export, import default class
 
-    // export ở file lib.js
-    export default class Utils {
-      print(text) {
-        console.log(text);
-      }
-    }
+```js
+// export ở file lib.js
+export default class Utils {
+  print(text) {
+    console.log(text);
+  }
+}
 
-    // hoặc
-    class Utils {
-      print(text) {
-        console.log(text);
-      }
-    }
-    export default Utils;
+// hoặc
+class Utils {
+  print(text) {
+    console.log(text);
+  }
+}
+export default Utils;
 
-    // import ở file main.js
-    import Tools from './lib.js';
-    console.log(new Tools().print("hi")); // hi
+// import ở file main.js
+import Tools from './lib.js';
+console.log(new Tools().print("hi")); // hi
+```
 
 ### Kết hợp export, import theo tên và default
 
 Bên trên, mình ví dụ tách biệt 2 kiểu export, import. Nhưng thực tế, bạn có thể sử dụng kết hợp chúng:
 
-    export let x = 1;
-    export var y = "a";
-    export const z = { x: 1, y: 2 };
-    export function add(a, b) {
-      return a + b;
-    }
-    export default class Utils {
-      print(text) {
-        console.log(text);
-      }
-    }
+```js
+export let x = 1;
+export var y = "a";
+export const z = { x: 1, y: 2 };
+export function add(a, b) {
+  return a + b;
+}
+export default class Utils {
+  print(text) {
+    console.log(text);
+  }
+}
+```
 
 Bên trên, mình chỉ export default Utils, còn lại là export thông thường. Khi đó, mình sẽ import như sau:
 
-    import Tools, { x, y, z, add } from "./lib.js";
+```js
+import Tools, { x, y, z, add } from "./lib.js";
 
-    console.log(x); // 1
-    console.log(y); // a
-    console.log(z); // {x: 1, y: 2}
-    console.log(add(1, 2)); // 3
-    console.log(new Tools().print("hi")); // hi
+console.log(x); // 1
+console.log(y); // a
+console.log(z); // {x: 1, y: 2}
+console.log(add(1, 2)); // 3
+console.log(new Tools().print("hi")); // hi
+```
 
 ### Dynamic import
 
@@ -291,31 +332,39 @@ Thực tế, cách import bên trên là **static**. Nghĩa là đoạn code li�
 
 Ví dụ export:
 
-    export let x = 1;
-    export var y = "a";
-    export const z = { x: 1, y: 2 };
-    export function add(a, b) {
-      return a + b;
-    }
-    export class Utils {
-      print(text) {
-        console.log(text);
-      }
-    }
+```js
+export let x = 1;
+export var y = "a";
+export const z = { x: 1, y: 2 };
+export function add(a, b) {
+  return a + b;
+}
+export class Utils {
+  print(text) {
+    console.log(text);
+  }
+}
+```
 
 Khi đó, cách dynamic import là:
 
-    setTimeout(async () => {
-      let { x, y, z, add, Utils } = await import("./lib.js");
+```js
+setTimeout(async () => {
+  let { x, y, z, add, Utils } = await import("./lib.js");
 
-      console.log(x); // 1
-      console.log(y); // a
-      console.log(z); // {x: 1, y: 2}
-      console.log(add(1, 2)); // 3
-      console.log(new Utils().print("hi")); // hi
-    }, 2000);
+  console.log(x); // 1
+  console.log(y); // a
+  console.log(z); // {x: 1, y: 2}
+  console.log(add(1, 2)); // 3
+  console.log(new Utils().print("hi")); // hi
+}, 2000);
+```
+
+<content-warning>
 
 **Chú ý**: hàm **setTimeout** trên chỉ là ví dụ để thể hiện việc delay khi load module.
+
+<content-warning/>
 
 Với cách **dynamic import** này, **import** sẽ trả về một Promise. Do đó, bạn có thể sử dụng kết hợp với **async/await** như trên.
 

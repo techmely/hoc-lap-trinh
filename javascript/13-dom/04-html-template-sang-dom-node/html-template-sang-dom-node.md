@@ -54,7 +54,7 @@ Khi trình duyệt có hỗ trợ template rồi. Bạn có thể tiếp tục v
 
 ### Lấy nội dung của HTML Template
 
-HTML template đã có sẵn ID. Vì vậy, bạn có thể sử dụng phương thức [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) (hoặc [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)) để lấy ra phần tử [DOM](/co-ban-ve-dom-javascript/) của template đó, đồng thời trích xuất ra content - dạng [DocumentFragment](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment).
+HTML template đã có sẵn ID. Vì vậy, bạn có thể sử dụng phương thức [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) (hoặc [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)) để lấy ra phần tử [DOM](/bai-viet/javascript/dom-la-gi) của template đó, đồng thời trích xuất ra content - dạng [DocumentFragment](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment).
 
     let templateFrag = document.querySelector("#my-temp").content;
 
@@ -62,7 +62,7 @@ DocumentFragment là một dạng document tối giản - không có parent. Vì
 
 ### Render HTML Template lên giao diện
 
-Trong bước này, mình muốn mô phỏng lại việc render các bình luận trên một bài viết. Nội dung các bình luận là một [mảng](/array-la-gi-array-trong-javascript/) của các [object](/object-la-gi-object-trong-javascript/) - bao gồm 2 thuộc tính là name và comment.
+Trong bước này, mình muốn mô phỏng lại việc render các bình luận trên một bài viết. Nội dung các bình luận là một [mảng](/bai-viet/javascript/mang-array-trong-javascript) của các [object](/bai-viet/javascript/object-la-gi-object-trong-javascript) - bao gồm 2 thuộc tính là name và comment.
 
     let data = [
       { name: "John", comment: "That is great" },
@@ -70,7 +70,7 @@ Trong bước này, mình muốn mô phỏng lại việc render các bình lu�
       { name: "David", comment: "Thanks a lot" },
     ];
 
-Khi người dùng nhấn vào button **Add**, mình sẽ sử dụng phương thức [forEach](/javascript-foreach-la-cai-quai-gi/) để duyệt mảng trên. Với mỗi phần tử của mảng, ta [clone](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser) lại template DocumentFragment trên để dùng lại sau này.
+Khi người dùng nhấn vào button **Add**, mình sẽ sử dụng phương thức [forEach](/bai-viet/javascript/tim-hieu-ve-foreach-trong-javascript) để duyệt mảng trên. Với mỗi phần tử của mảng, ta [clone](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser) lại template DocumentFragment trên để dùng lại sau này.
 
 Tiếp theo, để apply nội dung của bình luận vào template, bạn có thể tiếp tục sử dụng phương thức querySelector để thay đổi nội dung trong span với class là name, content tương ứng với nội dung trong mảng, rồi thêm nó vào bên trong thẻ div với **id="container"**.
 
@@ -83,7 +83,7 @@ Tiếp theo, để apply nội dung của bình luận vào template, bạn có 
       });
     });
 
-Cuối cùng, để xóa đi các thành phần [DOM](/co-ban-ve-dom-javascript/) mới thêm vào. Bạn có thể sử dụng vòng lặp, liên tục xóa đi phần tử con đầu tiên của container, cho đến khi container không còn node con nào nữa là hoàn thành nhiệm vụ.
+Cuối cùng, để xóa đi các thành phần [DOM](/bai-viet/javascript/dom-la-gi) mới thêm vào. Bạn có thể sử dụng vòng lặp, liên tục xóa đi phần tử con đầu tiên của container, cho đến khi container không còn node con nào nữa là hoàn thành nhiệm vụ.
 
     btnRm.addEventListener("click", () => {
       while (container.firstChild) {

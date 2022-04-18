@@ -81,7 +81,7 @@ Cú pháp:
 Trong đó:
 
 - **key**: là string, phân biệt hoa-thường và được sử dụng để lấy giá trị ra sau này.
-- **value**: là dữ liệu tương ứng với key. Nhưng nếu như localStorage chỉ cho phép lưu value dạng string thì localForage cho phép value với bất kì kiểu dữ liệu nào ([number, string](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript), [array](/array-la-gi-array-trong-javascript/), [object](/object-la-gi-object-trong-javascript/), [file/blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob)).
+- **value**: là dữ liệu tương ứng với key. Nhưng nếu như localStorage chỉ cho phép lưu value dạng string thì localForage cho phép value với bất kì kiểu dữ liệu nào ([number, string](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript), [array](/bai-viet/javascript/mang-array-trong-javascript), [object](/bai-viet/javascript/object-la-gi-object-trong-javascript), [file/blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob)).
 
 Ví dụ:
 
@@ -214,7 +214,7 @@ Ngoài 4 API giống với localStorage như trên ra, localForage còn hỗ tr�
 
 - length(successCallback): trả về số lượng cặp key-value trong database.
 - keys(successCallback): trả về một mảng chứa các key trong database.
-- iterate(iteratorCallback, successCallback): dùng để duyệt hết các cặp key-value trong database, hoạt động tương tự như phương thức [forEach](/javascript-foreach-la-cai-quai-gi/).
+- iterate(iteratorCallback, successCallback): dùng để duyệt hết các cặp key-value trong database, hoạt động tương tự như phương thức [forEach](/bai-viet/javascript/tim-hieu-ve-foreach-trong-javascript).
 - key(keyIndex, successCallback): trả về tên của key tương ứng với ID của nó.
 
 ## Cấu hình localForage

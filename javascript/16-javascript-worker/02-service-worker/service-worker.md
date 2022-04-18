@@ -21,7 +21,7 @@ Service Worker là một script mà trình duyệt chạy ở dưới background
 Service Worker có một số đặc điểm quan trọng là:
 
 - Không liên kết với một trang cụ thể
-- Không truy cập đến [DOM](/co-ban-ve-dom-javascript/)
+- Không truy cập đến [DOM](/bai-viet/javascript/dom-la-gi)
 - Có thể dừng khi không sử dụng và chạy khi cần thiết.
 - Chỉ hỗ trợ HTTPS
 
@@ -163,7 +163,7 @@ Sau khi đăng ký thành công, Service Worker sẽ được download về phí
       );
     });
 
-Mục đích của của việc **install** là để lưu một số resources được định nghĩa ở [array](/array-la-gi-array-trong-javascript/) **PRECACHE_URLS** vào bộ nhớ đệm **cache** với tên định nghĩa bởi **PRECACHE**.
+Mục đích của của việc **install** là để lưu một số resources được định nghĩa ở [array](/bai-viet/javascript/mang-array-trong-javascript) **PRECACHE_URLS** vào bộ nhớ đệm **cache** với tên định nghĩa bởi **PRECACHE**.
 
 Sau khi lưu xong hết tất cả các resources cần thiết, hàm [self.skipWaiting()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting) dùng để dừng công việc hiện tại lại và chuyển ngay sang công việc tiếp theo.
 

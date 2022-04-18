@@ -69,7 +69,7 @@ Giả sử bạn đã tạo một file **web_worker.js**. Để khởi tạo Web
       }
     }
 
-Bạn thấy sau khi khởi tạo JavaScript Web Worker, ta có thể implement hai [function](/bai-viet/javascript/ham-trong-javascript) quan trọng là [Worker.onmessage](https://developer.mozilla.org/en-US/docs/Web/API/Worker/onmessage) và [Worker.onerror](https://developer.mozilla.org/en-US/docs/Web/API/AbstractWorker/onerror) để xử lý [event](/xu-ly-mot-event-javascript-co-ban/).
+Bạn thấy sau khi khởi tạo JavaScript Web Worker, ta có thể implement hai [function](/bai-viet/javascript/ham-trong-javascript) quan trọng là [Worker.onmessage](https://developer.mozilla.org/en-US/docs/Web/API/Worker/onmessage) và [Worker.onerror](https://developer.mozilla.org/en-US/docs/Web/API/AbstractWorker/onerror) để xử lý [event](/bai-viet/javascript/mot-so-event-javascript).
 
 Trong đó, **Worker.onerror** được gọi khi có lỗi với Web Worker sau khi khởi tạo. Và **Worker.onmessage** được gọi khi có message từ Worker Thread lên giao diện chính.
 
@@ -90,7 +90,7 @@ Sau khi khởi tạo Web Worker thì code JavaScript ở background sẽ chạy.
 
 #### Truyền Message thông thường
 
-Trong phương pháp này, tham số truyền vào sẽ là một [object](/object-la-gi-object-trong-javascript/). Dữ liệu sẽ được copy từ phía gửi sang phía nhận.
+Trong phương pháp này, tham số truyền vào sẽ là một [object](/bai-viet/javascript/object-la-gi-object-trong-javascript). Dữ liệu sẽ được copy từ phía gửi sang phía nhận.
 
 Ví dụ như sau:
 
@@ -102,7 +102,7 @@ Ví dụ như sau:
       }
     }
 
-Ở đây object gửi đi sẽ là **{cmd : 'start', msg : 'hello'}**. Thực tế, object ở đây có thể là bất kì kiểu dữ liệu nào: [Number, String, Boolean](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript), [Array](/array-la-gi-array-trong-javascript/).
+Ở đây object gửi đi sẽ là **{cmd : 'start', msg : 'hello'}**. Thực tế, object ở đây có thể là bất kì kiểu dữ liệu nào: [Number, String, Boolean](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript), [Array](/bai-viet/javascript/mang-array-trong-javascript).
 
 Và ở Worker Thread, hàm **onmessage** sẽ được gọi:
 

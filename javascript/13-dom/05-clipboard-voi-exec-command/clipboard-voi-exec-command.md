@@ -38,7 +38,7 @@ Trong đó, thẻ _p_ với id _content-copy_ là thành phần chứa nội dun
 
 > **Chú ý**: bạn có thể copy dữ liệu từ hầu hết các phần tử như: _thẻ p, span, div, input, textarea,..._ Nhưng trong ví dụ này, mình chỉ demo với thẻ _p_.
 
-Tiếp theo, mình dùng [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) để lưu lại [DOM node](/co-ban-ve-dom-javascript/) của các phần tử:
+Tiếp theo, mình dùng [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) để lưu lại [DOM node](/bai-viet/javascript/dom-la-gi) của các phần tử:
 
     const $ = document.querySelector.bind(document);
     const contentCopyElm = $("#content-copy"),

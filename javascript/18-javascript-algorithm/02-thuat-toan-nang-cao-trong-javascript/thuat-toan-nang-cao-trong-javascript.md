@@ -17,11 +17,11 @@ Bài viết trước mình đã chia sẻ với bạn các bài toán thuộc ch
 Cũng như bài viết trước, mình chia sẻ với bạn các link bài viết hữu ích nên đọc trước khi đi vào lời giải các bài toán:
 
 - [Các kiểu dữ liệu trong JavaScript](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript)
-- [JavaScript Array cơ bản](/array-la-gi-array-trong-javascript/)
-- [JavaScript forEach là cái quái gì?](/javascript-foreach-la-cai-quai-gi/)
+- [JavaScript Array cơ bản](/bai-viet/javascript/mang-array-trong-javascript)
+- [JavaScript forEach là cái quái gì?](/bai-viet/javascript/tim-hieu-ve-foreach-trong-javascript)
 - [Array Sorting – vấn đề muôn thuở](/sap-xep-mang-trong-javascript/)
-- [JavaScript Object – last but not least](/object-la-gi-object-trong-javascript/)
-- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
+- [JavaScript Object – last but not least](/bai-viet/javascript/object-la-gi-object-trong-javascript)
+- [Tìm hiểu Regular Expression JavaScript](/bai-viet/javascript/tim-hieu-regex-javascript)
 
 ## Intermediate Algorithm Scripting - Sum All Numbers in a Range
 
@@ -117,7 +117,7 @@ Tham khảo:
 
 ## Intermediate Algorithm Scripting - Wherefore art thou
 
-Duyệt mảng của các [object](/object-la-gi-object-trong-javascript/) và trả về một mảng bao gồm các object chứa thuộc tính trùng khớp với thành phần cho trước.
+Duyệt mảng của các [object](/bai-viet/javascript/object-la-gi-object-trong-javascript) và trả về một mảng bao gồm các object chứa thuộc tính trùng khớp với thành phần cho trước.
 
     function whatIsInAName(collection, source) {
       var arr = [];
@@ -199,7 +199,7 @@ Dịch string cho trước sang ngôn ngữ **Latin Lợn**.
 
 Tham khảo:
 
-- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
+- [Tìm hiểu Regular Expression JavaScript](/bai-viet/javascript/tim-hieu-regex-javascript)
 - [String.prototype.substr()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr)
 
 ## Intermediate Algorithm Scripting - DNA Pairing
@@ -317,7 +317,7 @@ Chuyển các kí tự &, <, >, " và ' ở một string cho trước sang dạn
 
 Tham khảo:
 
-- [Tìm hiểu Regular Expression JavaScript](/tim-hieu-regular-expression-javascript/)
+- [Tìm hiểu Regular Expression JavaScript](/bai-viet/javascript/tim-hieu-regex-javascript)
 - [String.prototype.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 
 ## Intermediate Algorithm Scripting - Spinal Tap Case
