@@ -12,7 +12,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---
 
-[IndexedDB](/javascript-indexeddb-tai-sao-khong/) là một local database dạng NoSQL cho phép lưu trữ dữ liệu ngay trên trình duyệt. Nó cho phép lưu trữ một lượng dữ liệu lớn với các kiểu dữ liệu khác nhau (bao gồm cả file/blob); hỗ trợ trên nhiều trình duyệt và cung cấp khả năng truy cập nhanh. Qua đó, IndexedDB giúp cho web app có khả năng hoạt động offline một cách mượt mà.
+[IndexedDB](/bai-viet/javascript/indexed-db-trong-javascript) là một local database dạng NoSQL cho phép lưu trữ dữ liệu ngay trên trình duyệt. Nó cho phép lưu trữ một lượng dữ liệu lớn với các kiểu dữ liệu khác nhau (bao gồm cả file/blob); hỗ trợ trên nhiều trình duyệt và cung cấp khả năng truy cập nhanh. Qua đó, IndexedDB giúp cho web app có khả năng hoạt động offline một cách mượt mà.
 
 Tuy nhiên, IndexedDB lại có nhược điểm lớn là nó chỉ cung cấp API cấp thấp. Khi sử dụng IndexedDB bạn phải quan tâm đến những thứ như: transaction, objectStore, cursor,... và nó còn không hỗ trợ [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise). Điều này làm cho việc sử dụng IndexedDB trở nên khá khó khăn và phức tạp.
 
@@ -23,7 +23,7 @@ May mắn thay, [localForage](https://localforage.github.io/localForage) đã ra
 LocalForage là một thư viện JavaScript mã nguồn mở, giúp cho việc giao tiếp với database trên trình duyệt (đặc biệt là IndexedDB) trở nên đơn giản hơn và tiện lợi hơn với những đặc điểm:
 
 - API gần giống với [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) bao gồm: _setItem()_, _getItem()_, _removeItem()_, _clear()_ và thêm một số API khác nữa.
-- Hỗ trợ [ES6](/tag/es6/) Promise API
+- Hỗ trợ ES6 Promise API
 - Hỗ trợ sử dụng IndexedDB và [Web SQL](https://en.wikipedia.org/wiki/Web_SQL_Database). Tuy nhiên, nếu browser không hỗ trợ thì localForage sẽ quay về sử dụng localStorage.
 - [Hỗ trợ trên nhiều trình duyệt khác nhau](https://caniuse.com/#feat=indexeddb) như: Chrome, Firefox, IE, và Safari (bao gồm cả Safari Mobile).
 
@@ -31,52 +31,62 @@ LocalForage là một thư viện JavaScript mã nguồn mở, giúp cho việc 
 
 Việc cài đặt localForage khá đơn giản. Bạn có thể sử dụng thông qua CDN và chèn thẳng vào HTML như sau:
 
-    <script src="https://unpkg.com/localforage@1.7.3/dist/localforage.min.js"></script>
+```html
+<script src="https://unpkg.com/localforage@1.7.3/dist/localforage.min.js"></script>
+```
 
 Hoặc tải [phiên bản release mới nhất](https://github.com/mozilla/localForage/releases) trên Github về rồi sử dụng luôn:
 
-    <script src="localforage.js"></script>
-    <script>
-      console.log("localforage is: ", localforage);
-    </script>
+```html
+<script src="localforage.js"></script>
+<script>
+  console.log("localforage is: ", localforage);
+</script>
+```
 
 mà không cần phải **init** hay chờ các sự kiện như **onready**.
 
 Ngoài ra, bạn cũng có thể cài đặt localForage thông qua npm hoặc bower như sau:
 
-    # Cài đặt qua npm:
-    npm install localforage
+```sh
+# Cài đặt qua npm:
+npm install localforage
 
-    # Hoặc cài đặt qua bower:
-    bower install localforage
+# Hoặc cài đặt qua bower:
+bower install localforage
+```
 
 Và sử dụng nó với các bundler (như Webpack) bằng cách:
 
-    import localforage from "localforage";
-    localforage.setItem("key", "value");
+```js
+import localforage from "localforage";
+localforage.setItem("key", "value");
+```
 
 ## Cách sử dụng một số API của localForage
 
-### 
+### setItem()
 
-Như mình đã nói ở trên, với localForage bạn không cần phải cài đặt, init database nên có thể ghi dữ liệu ngay lập tức với phương thức _setItem()_.
+Như mình đã nói ở trên, với `localForage` bạn không cần phải cài đặt, init database nên có thể ghi dữ liệu ngay lập tức với phương thức _setItem()_.
 
 Cú pháp:
 
-    // Sử dụng callback
-    localforage.setItem(key, value, successCallback);
+```js
+// Sử dụng callback
+localforage.setItem(key, value, successCallback);
 
-    // Hoặc sử dụng promise
-    localforage
-      .setItem(key, value)
-      .then(function (value) {
-        // Xử lý khi việc lưu key-value thành công
-        console.log(value);
-      })
-      .catch(function (err) {
-        // Xử lý khi việc lưu key-value bị lỗi
-        console.log(err);
-      });
+// Hoặc sử dụng promise
+localforage
+  .setItem(key, value)
+  .then(function (value) {
+    // Xử lý khi việc lưu key-value thành công
+    console.log(value);
+  })
+  .catch(function (err) {
+    // Xử lý khi việc lưu key-value bị lỗi
+    console.log(err);
+  });
+```
 
 Trong đó:
 
@@ -85,143 +95,175 @@ Trong đó:
 
 Ví dụ:
 
-    localforage
-      .setItem("my point", { x: 1, y: 2 })
-      .then(function (value) {
-        console.log(value);
-        // => {x: 1, y: 2}
-      })
-      .catch(function (err) {
-        console.log(err);
-      });
+```js
+localforage
+  .setItem("my point", { x: 1, y: 2 })
+  .then(function (value) {
+    console.log(value);
+    // => {x: 1, y: 2}
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
+```
+
+<content-warning>
 
 **Chú ý**: nếu bạn sử dụng _setItem()_ lại một lần nữa với key đã tồn tại thì giá trị của nó sẽ bị ghi đè.
 
-### 
+</content-warning>
+
+### getItem()
 
 Sau khi sử dụng _setItem()_ để ghi dữ liệu, bạn có thể dùng _getItem()_ để lấy dữ liệu ra, với cú pháp như sau:
 
-    // Sử dụng callback
-    localforage.getItem(key, successCallback);
+```js
+// Sử dụng callback
+localforage.getItem(key, successCallback);
 
-    // Hoặc sử dụng promise
-    localforage
-      .getItem(key)
-      .then(function (value) {
-        // Xử lý khi việc lấy giá trị với key thành công
-        console.log(value);
-      })
-      .catch(function (err) {
-        // Xử lý khi việc lấy giá trị với key bị lỗi
-        console.log(err);
-      });
+// Hoặc sử dụng promise
+localforage
+  .getItem(key)
+  .then(function (value) {
+    // Xử lý khi việc lấy giá trị với key thành công
+    console.log(value);
+  })
+  .catch(function (err) {
+    // Xử lý khi việc lấy giá trị với key bị lỗi
+    console.log(err);
+  });
+```
 
 Ví dụ:
 
-    localforage
-      .getItem("my point")
-      .then(function (value) {
-        console.log(value.x, value.y);
-        // => 1 2
-      })
-      .catch(function (err) {
-        console.log(err);
-      });
+```js
+localforage
+  .getItem("my point")
+  .then(function (value) {
+    console.log(value.x, value.y);
+    // => 1 2
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
+```
+
+<content-warning>
 
 **Chú ý:** nếu bạn sử dụng _getItem()_ với key chưa tồn tại thì promise vẫn trả về trường hợp thành công, nhưng lúc này giá trị của value là **null**.
 
-    localforage
-      .getItem("her point")
-      .then(function (value) {
-        console.log(value);
-        // => null
-      })
-      .catch(function (err) {
-        console.log(err);
-      });
+</content-warning>
 
-### 
+```js
+localforage
+  .getItem("her point")
+  .then(function (value) {
+    console.log(value);
+    // => null
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
+```
+
+### removeItem()
 
 Phương thức này dùng để loại bỏ cặp key-value ra khỏi database.
 
 Cú pháp:
 
-    // Sử dụng callback
-    localforage.removeItem(key, successCallback);
+```js
+// Sử dụng callback
+localforage.removeItem(key, successCallback);
 
-    // Hoặc sử dụng promise
-    localforage
-      .removeItem(key)
-      .then(function () {
-        // Xử lý khi việc remove thành công
-        console.log("Key is cleared!");
-      })
-      .catch(function (err) {
-        // Xử lý khi việc remove bị lỗi
-        console.log(err);
-      });
+// Hoặc sử dụng promise
+localforage
+  .removeItem(key)
+  .then(function () {
+    // Xử lý khi việc remove thành công
+    console.log("Key is cleared!");
+  })
+  .catch(function (err) {
+    // Xử lý khi việc remove bị lỗi
+    console.log(err);
+  });
+```
 
 Ví dụ:
 
-    localforage
-      .removeItem("my point")
-      .then(function () {
-        console.log("Key is cleared!");
-        // => Key is cleared!
-      })
-      .catch(function (err) {
-        console.log(err);
-      });
+```js
+localforage
+  .removeItem("my point")
+  .then(function () {
+    console.log("Key is cleared!");
+    // => Key is cleared!
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
+```
+
+<content-warning>
 
 **Chú ý**: nếu bạn _removeItem()_ với key không tồn tại, thì phương thức này vẫn coi như thành công.
 
-    localforage
-      .removeItem("her point")
-      .then(function () {
-        console.log("Key is cleared!");
-        // => Key is cleared!
-      })
-      .catch(function (err) {
-        console.log(err);
-      });
+</content-warning>
 
-### 
+```js
+localforage
+  .removeItem("her point")
+  .then(function () {
+    console.log("Key is cleared!");
+    // => Key is cleared!
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
+```
+
+### clear()
 
 Phương thức _clear()_ sẽ xoá bỏ toàn bộ cặp key-value tồn tại trong database.
 
 Cú pháp:
 
-    // Sử dụng callback
-    localforage.clear(successCallback);
+```js
+// Sử dụng callback
+localforage.clear(successCallback);
 
-    // Hoặc sử dụng promise
-    localforage
-      .clear()
-      .then(function () {
-        // Xử lý khi xoá database thành công
-        console.log("Database is now empty.");
-      })
-      .catch(function (err) {
-        // Xử lý khi việc xoá bị lỗi.
-        console.log(err);
-      });
+// Hoặc sử dụng promise
+localforage
+  .clear()
+  .then(function () {
+    // Xử lý khi xoá database thành công
+    console.log("Database is now empty.");
+  })
+  .catch(function (err) {
+    // Xử lý khi việc xoá bị lỗi.
+    console.log(err);
+  });
+```
+
+<content-warning>
 
 **Chú ý:** khi sử dụng phương thức này đồng nghĩa với toàn bộ dữ liệu trong database sẽ bị xoá. Vì vậy, bạn cần phải cẩn trọng khi sử dụng phương thức này.
+
+</content-warning>
 
 ### Một số API khác
 
 Ngoài 4 API giống với localStorage như trên ra, localForage còn hỗ trợ một số API khác như:
 
-- length(successCallback): trả về số lượng cặp key-value trong database.
-- keys(successCallback): trả về một mảng chứa các key trong database.
-- iterate(iteratorCallback, successCallback): dùng để duyệt hết các cặp key-value trong database, hoạt động tương tự như phương thức [forEach](/bai-viet/javascript/tim-hieu-ve-foreach-trong-javascript).
+- `length(successCallback)`: trả về số lượng cặp key-value trong database.
+- `keys(successCallback)`: trả về một mảng chứa các key trong database.
+- `iterate(iteratorCallback, successCallback)`: dùng để duyệt hết các cặp key-value trong database, hoạt động tương tự như phương thức [forEach](/bai-viet/javascript/tim-hieu-ve-foreach-trong-javascript).
 - key(keyIndex, successCallback): trả về tên của key tương ứng với ID của nó.
 
 ## Cấu hình localForage
 
 Mặc dù, bạn không cần phải cài đặt gì vẫn có thể sử dụng localForage (như trên). Tuy nhiên, localForage cũng hỗ trợ bạn cấu hình những thông tin quan trọng cho nó.
 
-### 
+### setDriver()
 
 Phương thức này dùng để xác định loại storage sẽ được sử dụng cho localForage.
 
@@ -229,10 +271,12 @@ Mặc định, nếu sử dụng như trên mà không dùng _setDriver()_ thì 
 
 Cú pháp của phương thức này là:
 
-    setDriver(driverName);
+```js
+setDriver(driverName);
 
-    // Hoặc
-    setDriver([driverName, nextDriverName]);
+// Hoặc
+setDriver([driverName, nextDriverName]);
+```
 
 Trong đó, các tham số của phương thức nhận một trong 3 giá trị là:
 
@@ -242,26 +286,30 @@ Trong đó, các tham số của phương thức nhận một trong 3 giá trị
 
 Ví dụ:
 
-    // Yêu cầu localForage sử dụng localStorage
-    localforage.setDriver(localforage.LOCALSTORAGE);
+```js
+// Yêu cầu localForage sử dụng localStorage
+localforage.setDriver(localforage.LOCALSTORAGE);
 
-    // Yêu cầu localForage ưu tiên sử dụng WebSQL rồi mới đến IndexedDB
-    localforage.setDriver([localforage.WEBSQL, localforage.INDEXEDDB]);
+// Yêu cầu localForage ưu tiên sử dụng WebSQL rồi mới đến IndexedDB
+localforage.setDriver([localforage.WEBSQL, localforage.INDEXEDDB]);
+```
 
-### 
+### config()
 
 Phương thức này dùng để cài đặt một số thông tin như: _driver, name, size, storeName, version, description_.
 
 Cú pháp:
 
-    localforage.config({
-      driver,
-      name,
-      size,
-      storeName,
-      version,
-      description,
-    });
+```js
+localforage.config({
+  driver,
+  name,
+  size,
+  storeName,
+  version,
+  description,
+});
+```
 
 **Chú ý:** khác với hầu hết các API của localForage - là bất đồng bộ, thì phương thức _config()_ lại xử lý đồng bộ.
 
@@ -271,28 +319,32 @@ Mặc định như trên, localForage sẽ lưu dữ liệu ở một nơi gọi
 
 Ví dụ mình tạo ra 2 instance của localForage để lưu trữ toạ độ điểm ở không gian 2 chiều và 3 chiều:
 
-    let twoDStore = localforage.createInstance({
-      name: "2-D",
-    });
+```js
+let twoDStore = localforage.createInstance({
+  name: "2-D",
+});
 
-    let threeDStore = localforage.createInstance({
-      name: "3-D",
-    });
+let threeDStore = localforage.createInstance({
+  name: "3-D",
+});
+```
 
 Khi đó dữ liệu ở mỗi instance sẽ không liên quan đến nhau (kể cả khi chúng có cùng key):
 
-    twoDStore.setItem("a", { x: 1, y: 2 });
-    threeDStore.setItem("a", { x: 1, y: 2, z: 3 });
+```js
+twoDStore.setItem("a", { x: 1, y: 2 });
+threeDStore.setItem("a", { x: 1, y: 2, z: 3 });
 
-    twoDStore.getItem("a").then((value) => {
-      console.log(value);
-      // => {x: 1, y: 2}
-    });
+twoDStore.getItem("a").then((value) => {
+  console.log(value);
+  // => {x: 1, y: 2}
+});
 
-    threeDStore.getItem("a").then((value) => {
-      console.log(value);
-      // => {x: 1, y: 2, z: 3}
-    });
+threeDStore.getItem("a").then((value) => {
+  console.log(value);
+  // => {x: 1, y: 2, z: 3}
+});
+```
 
 ## Lời kết
 
@@ -304,5 +356,3 @@ Còn theo bạn, việc sử dụng localForage là dễ hay khó? Và bạn th�
 
 - [Trang chủ](https://localforage.github.io/localForage/).
 - [localForage trên Github](https://github.com/localForage/localForage/).
-
-Xin chào và hẹn gặp lại, thân ái!

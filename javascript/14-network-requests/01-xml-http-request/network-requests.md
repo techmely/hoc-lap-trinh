@@ -53,15 +53,18 @@ Thông thường, vì lý do an toàn nên server sẽ chặn các request từ 
 
 Ví dụ sau gửi phương thức request dạng GET đến [https://httpbin.org/get](https://httpbin.org/get):
 
-    var req = new XMLHttpRequest();
-    req.open("GET", "https://httpbin.org/get", false);
-    req.send(null);
-    console.log(req.status);
-    console.log(req.responseText);
+```js
+var req = new XMLHttpRequest();
+req.open("GET", "https://httpbin.org/get", false);
+req.send(null);
+console.log(req.status);
+console.log(req.responseText);
+```
 
 Kết quả trả về là:
 
-    200
+```js
+200
     {
       "args": {},
       "headers": {
@@ -76,6 +79,7 @@ Kết quả trả về là:
       "origin": "183.81.50.73",
       "url": "https://httpbin.org/get"
     }
+```
 
 ### Giải thích
 
@@ -96,32 +100,39 @@ Kết quả trả về có nhiều thuộc tính, nhưng quan trọng nhất là
 
 Ngoài ra, nhiều trường hợp bạn phải chèn thêm header cho request thì server mới chấp nhận. Để làm được việc này, bạn có thể sử dụng phương thức [setRequestHeader](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/setRequestHeader) đơn giản như sau:
 
-    XMLHttpRequest.setRequestHeader(header, value);
+```js
+XMLHttpRequest.setRequestHeader(header, value);
+```
 
 Ví dụ, để cấu hình request sử dụng body kiểu JSON, bạn có thể set header "Content-Type":
 
-    req.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+```js
+req.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+```
 
 ### Sử dụng XMLHttpRequest với phương thức POST
 
 Ví dụ sau gửi phương thức request dạng POST:
 
-    var req = new XMLHttpRequest();
-    req.open("POST", "https://httpbin.org/post", false);
-    req.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+```js
+var req = new XMLHttpRequest();
+req.open("POST", "https://httpbin.org/post", false);
+req.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
 
-    var jsonBody = {
-      name: "Lam Pham",
-      url: "completejavascript.com",
-    };
-    req.send(jsonBody);
+var jsonBody = {
+  name: "Lam Pham",
+  url: "completejavascript.com",
+};
+req.send(jsonBody);
 
-    console.log(req.status);
-    console.log(req.responseText);
+console.log(req.status);
+console.log(req.responseText);
+```
 
 Kết quả:
 
-    200
+```js
+200
     {
       "args": {},
       "data": "[object Object]",
@@ -142,6 +153,7 @@ Kết quả:
       "origin": "183.81.50.73",
       "url": "https://httpbin.org/post"
     }
+```
 
 Phần này cũng tương tự như phần sử dụng phương thức GET. Chỉ khác là ở đây, mình sử dụng phương thức **setRequestHeader** để cấu hình **content-type** là JSON. Khi gửi request, thay vì gửi **null** thì ở đây mình gửi đi một đối tượng JSON.
 
@@ -157,18 +169,21 @@ Do đó, chỉ nên sử dụng request đồng bộ với những yêu cầu c�
 
 Như mình đã nói ở trên, để cấu hình request là bất đồng bộ, bạn chỉ cần truyền vào **true** ở thuộc tính thứ 3 của phương thức **open**. Ngoài ra, bạn cần phải [đăng ký sự kiện](/bai-viet/javascript/mot-so-event-javascript) **load** và truyền vào hàm callback - hàm này được thực hiện khi có thông tin phản hồi từ server.
 
-    var req = new XMLHttpRequest();
-    req.open("GET", "https://httpbin.org/get", true);
-    req.addEventListener("load", function () {
-      console.log(req.status);
-      console.log(req.responseText);
-    });
-    req.send(null);
-    console.log("Sent");
+```js
+var req = new XMLHttpRequest();
+req.open("GET", "https://httpbin.org/get", true);
+req.addEventListener("load", function () {
+  console.log(req.status);
+  console.log(req.responseText);
+});
+req.send(null);
+console.log("Sent");
+```
 
 Kết quả:
 
-    Sent
+```js
+Sent
     200
     {
       "args": {},
@@ -184,22 +199,25 @@ Kết quả:
       "origin": "183.81.50.73",
       "url": "https://httpbin.org/get"
     }
+```
 
 Kết quả cho thấy, dòng lệnh **console.log('Sent')** được thực hiện ngay sau lệnh **req.send(null)**. Và 2 câu lệnh **console.log(req.status); console.log(req.responseText);** chỉ được thực hiện khi có thông tin phản hồi về từ server. Đó chính là cách thức hoạt động của XMLHttpRequest bất đồng bộ.
 
 Ngoài ra, bạn có thể đăng ký sự kiện **error** để xử lý trường hợp request bị lỗi:
 
-    var req = new XMLHttpRequest();
-    req.open("GET", "https://httpbin.org/get", true);
-    req.addEventListener("load", function () {
-      console.log(req.status);
-      console.log(req.responseText);
-    });
-    req.addEventListener("error", function () {
-      console.log("Error occurred!");
-    });
-    req.send(null);
-    console.log("Sent");
+```js
+var req = new XMLHttpRequest();
+req.open("GET", "https://httpbin.org/get", true);
+req.addEventListener("load", function () {
+  console.log(req.status);
+  console.log(req.responseText);
+});
+req.addEventListener("error", function () {
+  console.log("Error occurred!");
+});
+req.send(null);
+console.log("Sent");
+```
 
 ## Tổng kết
 

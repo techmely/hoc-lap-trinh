@@ -474,20 +474,22 @@ Theo bạn, thế nào là một mật khẩu mạnh? Ở đây, mình định n
 
 **Test:**
 
-    const isStrongPassword =
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*]).{8,}$/;
+```js
+const isStrongPassword =
+  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*]).{8,}$/;
 
-    console.log(isStrongPassword.test("Abcd!234")); // true
-    console.log(isStrongPassword.test("aBcd1@345")); // true
-    console.log(isStrongPassword.test("abCd12$4")); // true
-    console.log(isStrongPassword.test("AbcD1234%")); // true
-    console.log(isStrongPassword.test("@bcCd!234^")); // true
-    console.log(isStrongPassword.test("@B&d!234&*7890")); // true
-    console.log(isStrongPassword.test("12345678")); // false
-    console.log(isStrongPassword.test("!2345678")); // false
-    console.log(isStrongPassword.test("abcdefgh")); // false
-    console.log(isStrongPassword.test("AcD1%")); // false
-    console.log(isStrongPassword.test("ABCDEFGH")); // false
+console.log(isStrongPassword.test("Abcd!234")); // true
+console.log(isStrongPassword.test("aBcd1@345")); // true
+console.log(isStrongPassword.test("abCd12$4")); // true
+console.log(isStrongPassword.test("AbcD1234%")); // true
+console.log(isStrongPassword.test("@bcCd!234^")); // true
+console.log(isStrongPassword.test("@B&d!234&*7890")); // true
+console.log(isStrongPassword.test("12345678")); // false
+console.log(isStrongPassword.test("!2345678")); // false
+console.log(isStrongPassword.test("abcdefgh")); // false
+console.log(isStrongPassword.test("AcD1%")); // false
+console.log(isStrongPassword.test("ABCDEFGH")); // false
+```
 
 ## Lời kết
 

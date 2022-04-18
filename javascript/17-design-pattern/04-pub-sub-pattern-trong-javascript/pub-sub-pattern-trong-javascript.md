@@ -16,33 +16,35 @@ JavaScript PubSub Pattern, hay Publish / Subscribe Pattern, hay Events Pattern, 
 
 ## Triển khai PubSub Pattern
 
-    let Events = (() => {
-      let events = {};
-      function on(eventName, fn) {
-        events[eventName] = events[eventName] || [];
-        events[eventName].push(fn);
-      }
-      function off(eventName, fn) {
-        if (events[eventName]) {
-          for (let i = 0; i < events[eventName].length; i++) {
-            if (events[eventName][i] === fn) {
-              events[eventName].splice(i, 1);
-              break;
-            }
-          }
+```js
+let Events = (() => {
+  let events = {};
+  function on(eventName, fn) {
+    events[eventName] = events[eventName] || [];
+    events[eventName].push(fn);
+  }
+  function off(eventName, fn) {
+    if (events[eventName]) {
+      for (let i = 0; i < events[eventName].length; i++) {
+        if (events[eventName][i] === fn) {
+          events[eventName].splice(i, 1);
+          break;
         }
       }
-      function emit(eventName, data) {
-        if (events[eventName]) {
-          events[eventName].forEach((fn) => fn(data));
-        }
-      }
-      return {
-        on: on,
-        off: off,
-        emit: emit,
-      };
-    })();
+    }
+  }
+  function emit(eventName, data) {
+    if (events[eventName]) {
+      events[eventName].forEach((fn) => fn(data));
+    }
+  }
+  return {
+    on: on,
+    off: off,
+    emit: emit,
+  };
+})();
+```
 
 Trước tiên, bạn thấy rằng cách triển khai pattern này sử dụng [Revealing Module Pattern](/js-pattern-2-module-pattern/), với 3 [function](/bai-viet/javascript/ham-trong-javascript) được public là: **on**, **off** và **emit**.
 
@@ -55,17 +57,21 @@ Hàm **on** có 2 tham số đầu vào:
 
 Ví dụ:
 
-    Events.on("addItem", onItemAdded);
+```js
+Events.on("addItem", onItemAdded);
+```
 
 Câu lệnh trên hiểu đơn giản là: khi có sự kiện **addItem** xảy ra thì sẽ gọi hàm **onItemAdded**.
 
 #### Giải thích cách triển khai
 
-    let events = {};
-    function on(eventName, fn) {
-      events[eventName] = events[eventName] || [];
-      events[eventName].push(fn);
-    }
+```js
+let events = {};
+function on(eventName, fn) {
+  events[eventName] = events[eventName] || [];
+  events[eventName].push(fn);
+}
+```
 
 Bạn có thể thấy rằng, **events** là một [object](/bai-viet/javascript/object-la-gi-object-trong-javascript) rỗng. Sau này, mỗi thuộc tính (key) của events sẽ là tên của event được đăng ký. Giá trị của thuộc tính (value) là một [mảng](/bai-viet/javascript/mang-array-trong-javascript) của các function.
 
@@ -75,8 +81,10 @@ Ban đầu events\[eventName\] sẽ là **undefined**, nên ta sẽ khởi tạo
 
 Giả sử, có 2 module khác cũng đăng ký sự kiện addItem:
 
-    Events.on("addItem", updateItem1);
-    Events.on("addItem", updateItem2);
+```js
+Events.on("addItem", updateItem1);
+Events.on("addItem", updateItem2);
+```
 
 Lúc này, events\["addItem"\] = \[onItemAdded, updateItem1, updateItem2\].
 
@@ -89,22 +97,26 @@ Hàm **off** có 2 tham số đầu vào:
 
 Ví dụ:
 
-    Events.off("addItem", onItemAdded);
+```js
+Events.off("addItem", onItemAdded);
+```
 
 Câu lệnh trên sẽ bỏ đăng ký sự kiện **addItem** với hàm **onItemAdded**. Hay nói cách khác, khi có sự kiện này xảy ra thì sẽ không gọi hàm onItemAdded nữa.
 
 #### Giải thích cách triển khai
 
-    function off(eventName, fn) {
-      if (events[eventName]) {
-        for (let i = 0; i < events[eventName].length; i++) {
-          if (events[eventName][i] === fn) {
-            events[eventName].splice(i, 1);
-            break;
-          }
-        }
+```js
+function off(eventName, fn) {
+  if (events[eventName]) {
+    for (let i = 0; i < events[eventName].length; i++) {
+      if (events[eventName][i] === fn) {
+        events[eventName].splice(i, 1);
+        break;
       }
     }
+  }
+}
+```
 
 Hàm số này sẽ duyệt mảng ứng với **eventName** và kiểm tra tất cả các hàm số thành phần trong mảng đó. Nếu gặp hàm số nào trùng với hàm số cần bỏ đăng ký thì sẽ bỏ hàm số đó ra khỏi mảng thông qua hàm [splice](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/splice).
 
@@ -119,24 +131,28 @@ Hàm **emit** có 2 tham số:
 
 Ví dụ:
 
-    Events.emit("addItem", {
-      name: "apple",
-      quantity: 2,
-    });
+```js
+Events.emit("addItem", {
+  name: "apple",
+  quantity: 2,
+});
+```
 
 Câu lệnh trên kích hoạt sự kiện addItem. Khi đó, tất cả những hàm số nào đã được đăng ký sự kiện với hàm **Events.on** ở trên, sẽ được gọi, với đối số là object **{name: "apple", quantity: 2}**;
 
 #### Giải thích cách triển khai
 
-    function emit(eventName, data) {
-      if (events[eventName]) {
-        events[eventName].forEach((fn) => fn(data));
-      }
-    }
+```js
+function emit(eventName, data) {
+  if (events[eventName]) {
+    events[eventName].forEach((fn) => fn(data));
+  }
+}
+```
 
 Hàm này sẽ duyệt toàn bộ mảng ứng với **eventName** sử dụng phương thức [forEach](/bai-viet/javascript/tim-hieu-ve-foreach-trong-javascript). Sau đó, mỗi hàm số trong mảng sẽ được gọi và truyền vào đối số là data.
 
-Trong ví dụ trên, events\["addItem"\] = \[updateItem1, updateItem2\]. Do đó, khi event addItem được kích hoạt, hàm số updateItem1({ name : "apple", quantity: 2 }) và updateItem2({ name : "apple", quantity: 2 }) sẽ được thực hiện.
+Trong ví dụ trên, `events\["addItem"\] = \[updateItem1, updateItem2\]`. Do đó, khi event addItem được kích hoạt, hàm số `updateItem1({ name : "apple", quantity: 2 })` và `updateItem2({ name : "apple", quantity: 2 })` sẽ được thực hiện.
 
 ## Ví dụ sử dụng Pubsub Pattern
 
