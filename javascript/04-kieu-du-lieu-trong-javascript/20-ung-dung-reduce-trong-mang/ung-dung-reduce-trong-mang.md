@@ -1,7 +1,17 @@
 ---
 title: "Ứng dụng reduce trong mảng"
-description: ""
-keywords: []
+description: "JavaScript Reduce là một phương thức có sẵn của array, được sử dụng để gọi một hàm lên các phần tử của mảng (từ trái sang phải) với một biến tích lũy. Kết quả trả về là một giá trị duy nhất, ứng với biến tích lũy."
+keywords: ["Ứng dụng reduce trong mảng",
+"reduce trong javascript",
+"reduce javascript",
+"reduce in es6 javascript",
+"ham reduce trong javascript",
+"ham reduce trong javascript la gi",
+"ham reduce trong javascript co tac dung gi",
+"cach su dung ham reduce trong javascript",
+"cach su dung reduce trong javascript",
+"Reduce anonystick trong javascript"
+]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
