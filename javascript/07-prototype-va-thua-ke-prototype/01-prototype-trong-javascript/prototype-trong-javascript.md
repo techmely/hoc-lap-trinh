@@ -20,34 +20,36 @@ Ví dụ, bạn có một đối tượng `user` với các thuộc tính và ph
 
 # Prototype trong JavaScript
 
----
-
 JavaScript object có một thuộc tính đặc biệt là `[[Prototype]]` với giá trị có thể là `null` hoặc một **object**. Và object đó gọi là một **prototype**.
 
 Khi bạn truy cập vào một thuộc tính từ object, nếu thuộc tính đó không tồn tại thì JavaScript sẽ **tự động tìm kiếm trong prototype**. Trong lập trình, điều này gọi là **kế thừa prototype**.
 
 `[[Prototype]]` là một **thuộc tính ẩn**, nhưng có nhiều cách để **cài đặt thuộc tính này**. Và một trong những cách phổ biến nhất là sử dụng `__proto__` như sau:
 
-    let animal = {
-      eats: true,
-    };
-    let rabbit = {
-      jumps: true,
-    };
+```js
+let animal = {
+  eats: true,
+};
+let rabbit = {
+  jumps: true,
+};
 
-    rabbit.__proto__ = animal; // gán rabbit.[[Prototype]] = animal
+rabbit.__proto__ = animal; // gán rabbit.[[Prototype]] = animal
+```
 
 Nếu bạn đọc một thuộc tính trong `rabbit` và thuộc tính đó không tồn tại thì JavaScript sẽ tìm kiếm trong `animal`.
 
-    let animal = {
-      eats: true,
-    };
-    let rabbit = {
-      jumps: true,
-    };
+```js
+let animal = {
+  eats: true,
+};
+let rabbit = {
+  jumps: true,
+};
 
-    rabbit.__proto__ = animal; // (*)
-    console.log(rabbit.eats); // true (**)console.log(rabbit.jumps); // true
+rabbit.__proto__ = animal; // (*)
+console.log(rabbit.eats); // true (**)console.log(rabbit.jumps); // true
+```
 
 Tại dòng `(*)`, đối tượng `animal` được gán làm prototype cho đối tượng `rabbit`.
 
@@ -59,38 +61,47 @@ Khi đó, nếu `animal` có nhiều **thuộc tính và phương thức hữu �
 
 Ví dụ một phương thức trong `animal` có thể gọi từ `rabbit`:
 
-    let animal = {
-      eats: true,
-      walk() {    console.log("Animal walk");  },};
+```js
+let animal = {
+  eats: true,
+  walk() {
+    console.log("Animal walk");
+  },
+};
 
-    let rabbit = {
-      jumps: true,
-      __proto__: animal,
-    };
+let rabbit = {
+  jumps: true,
+  __proto__: animal,
+};
 
-    // phương thức walk() được lấy thông qua prototype
-    rabbit.walk(); // Animal walk
+// phương thức walk() được lấy thông qua prototype
+rabbit.walk(); // Animal walk
+```
 
 Ngoài ra, prototype có thể **kế thừa móc nối nhau** qua nhiều object như sau:
 
-    let animal = {
-      eats: true,
-      walk() {
-        console.log("Animal walk");
-      },
-    };
+```js
+let animal = {
+  eats: true,
+  walk() {
+    console.log("Animal walk");
+  },
+};
 
-    let rabbit = {
-      jumps: true,
-      __proto__: animal,};
+let rabbit = {
+  jumps: true,
+  __proto__: animal,
+};
 
-    let longEar = {
-      earLength: 10,
-      __proto__: rabbit,};
+let longEar = {
+  earLength: 10,
+  __proto__: rabbit,
+};
 
-    // walk() được lấy thông qua các prototype móc nối nhau
-    longEar.walk(); // Animal walk
-    console.log(longEar.jumps); // true (lấy từ rabbit)
+// walk() được lấy thông qua các prototype móc nối nhau
+longEar.walk(); // Animal walk
+console.log(longEar.jumps); // true (lấy từ rabbit)
+```
 
 Trong ví dụ trên, `animal` là prototype của `rabbit` và `rabbit` là prototype của `longEar`.
 
@@ -98,54 +109,65 @@ Nếu bạn truy cập vào một thuộc tính hoặc phương thức trong `lo
 
 # Giới hạn của prototype trong JavaScript
 
----
-
 Prototype trong JavaScript có một số giới hạn là:
 
 ► **Không được phép kế thừa prototype vòng tròn.**
 
-    let animal = {
-      eats: true,
-    };
-    let rabbit = {
-      jumps: true,
-    };
+```js
+let animal = {
+  eats: true,
+};
+let rabbit = {
+  jumps: true,
+};
 
-    // gán animal là prototype của rabbitrabbit.__proto__ = animal;// gán rabbit là prototype của animalanimal.__proto__ = rabbit;
-    // Lỗi: Cyclic __proto__ value
+// gán animal là prototype của rabbitrabbit.__proto__ = animal;// gán rabbit là prototype của animalanimal.__proto__ = rabbit;
+// Lỗi: Cyclic __proto__ value
+```
 
-► **Giá trị của `__proto__` có thể là `null` hoặc là một object, nhưng [các kiểu dữ liệu khác](/kieu-du-lieu-trong-javascript/) đều bị bỏ qua.**
+► **Giá trị của `__proto__` có thể là `null` hoặc là một object, nhưng [các kiểu dữ liệu khác](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript) đều bị bỏ qua.**
 
-    let rabbit = {
-      jumps: true,
-      __proto__: 1, // bị bỏ qua};
+```js
+let rabbit = {
+  jumps: true,
+  __proto__: 1, // bị bỏ qua};
+};
+```
 
 ► **Prototype không hỗ trợ thay đổi giá trị thuộc tính.**
 
 Prototype chỉ **hỗ trợ việc đọc dữ liệu**, còn việc **thay đổi giá trị của thuộc tính** hay **xóa thuộc tính** không được thực hiện trực tiếp prototype, ví dụ:
 
-    let animal = {
-      eats: true,
-      walk() {    console.log("Animal walk");  },};
+```js
+let animal = {
+  eats: true,
+  walk() {
+    console.log("Animal walk");
+  }
+};
 
-    let rabbit = {
-      jumps: true,
-      __proto__: animal, // gán animal là prototype của rabbit};
+let rabbit = {
+  jumps: true,
+  __proto__: animal, // gán animal là prototype của rabbit};
 
-    // định nghĩa giá trị mới cho rabbit.walkrabbit.walk = function () {  console.log("Rabbit walk");};
-    rabbit.walk(); // Rabbit walk - giá trị mớianimal.walk(); // Animal walk - giá trị cũ
+  // định nghĩa giá trị mới cho rabbit.walkrabbit.walk = function () {  console.log("Rabbit walk");};
+  rabbit.walk(); // Rabbit walk - giá trị mớianimal.walk(); // Animal walk - giá trị cũ
+}
+```
 
 Trong ví dụ trên, `rabbit` kế thừa prototype của `animal`. Nhưng khi bạn gán `rabbit.walk` bằng một hàm mới thì `animal.walk` vẫn không thay đổi.
 
-> 📝**Chú ý:** thuộc tính `__proto__` không hoàn toàn giống như `[[Prototype]]` mà đây chỉ là một [`getter/setter`](/getter-va-setter-trong-javascript/) cho `[[Prototype]]`.
->
-> Hiện tại, `__proto__` đã lỗi thời và bạn nên dùng các phương thức [`Object.getPrototypeOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf) và [`Object.setPrototypeOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf) để thay thế.
->
-> Tuy nhiên, để đơn giản thì mình vẫn dùng `__proto__` làm minh họa cho các ví dụ.
+<content-note>
 
-# Giá trị `this` khi kế thừa prototype
+thuộc tính `__proto__` không hoàn toàn giống như `[[Prototype]]` mà đây chỉ là một [`getter/setter`](/bai-viet/javascript/getter-va-setter-trong-javascript) cho `[[Prototype]]`.
 
----
+</content-note>
+
+Hiện tại, `__proto__` đã lỗi thời và bạn nên dùng các phương thức [`Object.getPrototypeOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf) và [`Object.setPrototypeOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf) để thay thế.
+
+Tuy nhiên, để đơn giản thì mình vẫn dùng `__proto__` làm minh họa cho các ví dụ.
+
+## Giá trị `this` khi kế thừa prototype
 
 Giá trị [`this`](/bai-viet/javascript/phuong-thuc-trong-javascript) là một giá trị đặc biệt trong object.
 
@@ -153,30 +175,32 @@ Câu hỏi đặt ra là: **khi kế thừa prototype, giá trị của `this` b
 
 Sau đây là một ví dụ:
 
-    // đối tượng animal với các phương thức
-    let animal = {
-      walk() {
-        if (!this.isSleeping) {
-          console.log(`I walk`);
-        }
-      },
-      sleep() {
-        this.isSleeping = true;
-      },
-    };
+```js
+// đối tượng animal với các phương thức
+let animal = {
+  walk() {
+    if (!this.isSleeping) {
+      console.log(`I walk`);
+    }
+  },
+  sleep() {
+    this.isSleeping = true;
+  },
+};
 
-    // đối tượng rabbit kế thừa prototype của animal
-    let rabbit = {
-      name: "White Rabbit",
-      __proto__: animal,
-    };
+// đối tượng rabbit kế thừa prototype của animal
+let rabbit = {
+  name: "White Rabbit",
+  __proto__: animal,
+};
 
-    // thay đổi giá trị rabbit.isSleeping
-    rabbit.sleep();
+// thay đổi giá trị rabbit.isSleeping
+rabbit.sleep();
 
-    // kết quả
-    console.log(rabbit.isSleeping); // true
-    console.log(animal.isSleeping); // undefined
+// kết quả
+console.log(rabbit.isSleeping); // true
+console.log(animal.isSleeping); // undefined
+```
 
 Trong ví dụ trên, đối tượng `rabbit` kế thừa prototype của `animal`. Khi gọi `rabbit.sleep()`, JavaScript tìm phương thức `sleep()` trong `rabbit` nhưng không có, nên tự động tìm kiếm ở `animal`.
 
@@ -184,26 +208,30 @@ Khi câu lệnh `this.isSleeping = true` xảy ra, **đối tượng đang gọi
 
 Còn đối với `animal`, do chưa gọi `animal.sleep()` nên thuộc tính `isSleeping` cũng chưa tồn tại trong `animal`. Dẫn đến kết quả là `animal.isSleeping` bằng `undefined`.
 
-> 💡 **Chú ý:** việc kế thừa prototype không ảnh hưởng tới `this`. Giá trị của `this` luôn được **xác định lúc chạy** và bằng đối tượng gọi phương thức - đối tượng đứng trước toán tử `.`.
+<content-warning>
 
-# Vòng lặp `for...in` khi kế thừa prototype
+💡 **Chú ý:** việc kế thừa prototype không ảnh hưởng tới `this`. Giá trị của `this` luôn được **xác định lúc chạy** và bằng đối tượng gọi phương thức - đối tượng đứng trước toán tử `.`.
 
----
+</content-warning>
+
+## Vòng lặp `for...in` khi kế thừa prototype
 
 [Vòng lặp `for...in`](/bai-viet/javascript/vong-lap-trong-javascript) lặp qua tất cả các thuộc tính có trong object cũng như thuộc tính kế thừa qua prototype, ví dụ:
 
-    let animal = {
-      eats: true,
-    };
+```js
+let animal = {
+  eats: true,
+};
 
-    let rabbit = {
-      jumps: true,
-      __proto__: animal,
-    };
+let rabbit = {
+  jumps: true,
+  __proto__: animal,
+};
 
-    for (let prop in rabbit) console.log(prop);
-    // jumps
-    // eats
+for (let prop in rabbit) console.log(prop);
+// jumps
+// eats
+```
 
 Nếu bạn chỉ muốn duyệt qua các thuộc tính trong object và **bỏ qua các thuộc tính kế thừa** thì có thể dùng một trong hai cách sau:
 
@@ -211,31 +239,42 @@ Nếu bạn chỉ muốn duyệt qua các thuộc tính trong object và **bỏ 
 
 Phương thức [`Object.keys()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) trả về mảng chứa tất cả các key của object, bỏ qua các thuộc tính kế thừa.
 
-    let animal = {
-      eats: true,
-    };
+```js
+let animal = {
+  eats: true,
+};
 
-    let rabbit = {
-      jumps: true,
-      __proto__: animal,
-    };
+let rabbit = {
+  jumps: true,
+  __proto__: animal,
+};
 
-    console.log(Object.keys(rabbit)); // ['jumps']
+console.log(Object.keys(rabbit)); // ['jumps']
+```
 
 ► **Sử dụng `obj.hasOwnProperty(key)` để kiểm tra**
 
 Phương thức `obj.hasOwnProperty(key)` trả về `true` nếu `key` đúng là thuộc tính của `obj` (không phải qua kế thừa), ngược lại thì trả về `false`.
 
-    let animal = {
-      eats: true,
-    };
+```js
+let animal = {
+  eats: true,
+};
 
-    let rabbit = {
-      jumps: true,
-      __proto__: animal,
-    };
+let rabbit = {
+  jumps: true,
+  __proto__: animal,
+};
 
-    for (let prop in rabbit) {  let isOwn = rabbit.hasOwnProperty(prop);  if (isOwn) {    console.log(`Our: ${prop}`); // Our: jumps  } else {    console.log(`Inherited: ${prop}`); // Inherited: eats  }}
+for (let prop in rabbit) {
+  let isOwn = rabbit.hasOwnProperty(prop);
+  if (isOwn) {
+    console.log(`Our: ${prop}`); // Our: jumps
+  } else {
+    console.log(`Inherited: ${prop}`); // Inherited: eats
+  }
+}
+```
 
 Có thể bạn đang thắc là: **phương thức `hasOwnProperty` ở đâu ra?**
 
@@ -243,11 +282,9 @@ Thực tế, phương thức `hasOwnProperty` được kế thừa thông qua pr
 
 **Nhưng tại sao phương thức `hasOwnProperty` lại không xuất hiện trong vòng lặp `for...in`?**
 
-Bởi vì phương thức `hasOwnProperty` có cờ [`enumerable:false`](/bai-viet/writable-enumerable-configurable-cua-object), tức là không xuất hiện trong vòng lặp.
+Bởi vì phương thức `hasOwnProperty` có cờ [`enumerable:false`](/bai-viet/javascript/writable-enumerable-configurable-cua-object), tức là không xuất hiện trong vòng lặp.
 
-# Tổng kết
-
----
+## Tổng kết
 
 Sau đây là những kiến thức cơ bản cần nhớ về prototype trong JavaScript:
 
@@ -259,29 +296,29 @@ Sau đây là những kiến thức cơ bản cần nhớ về prototype trong J
 - Khi bạn gọi `obj.method()` và `method()` được lấy từ prototype, giá trị của `this` vẫn tham chiếu đến `obj` chứ không phải prototype.
 - Vòng lặp `for...in` duyệt tất cả các thuộc tính trong object và thuộc tính của prototype thông qua kế thừa.
 
-# Thực hành
-
----
+## Thực hành
 
 ### Bài 1
 
 Cho đoạn code sau:
 
-    let animal = {
-      jumps: null,
-    };
-    let rabbit = {
-      __proto__: animal,
-      jumps: true,
-    };
+```js
+let animal = {
+  jumps: null,
+};
+let rabbit = {
+  __proto__: animal,
+  jumps: true,
+};
 
-    console.log(rabbit.jumps); // ? (1)
+console.log(rabbit.jumps); // ? (1)
 
-    delete rabbit.jumps;
-    console.log(rabbit.jumps); // ? (2)
+delete rabbit.jumps;
+console.log(rabbit.jumps); // ? (2)
 
-    delete animal.jumps;
-    console.log(rabbit.jumps); // ? (3)
+delete animal.jumps;
+console.log(rabbit.jumps); // ? (3)
+```
 
 Hỏi kết quả tại `(1)`, `(2)` và `(3)` là gì?
 
@@ -297,22 +334,24 @@ Kết quả:
 
 Cho các object sau:
 
-    let head = {
-      glasses: 1,
-    };
+```js
+let head = {
+  glasses: 1,
+};
 
-    let table = {
-      pen: 3,
-    };
+let table = {
+  pen: 3,
+};
 
-    let bed = {
-      sheet: 1,
-      pillow: 2,
-    };
+let bed = {
+  sheet: 1,
+  pillow: 2,
+};
 
-    let pockets = {
-      money: 2000,
-    };
+let pockets = {
+  money: 2000,
+};
+```
 
 Sử dụng `__proto__` để gán prototype cho các object sao cho việc tìm kiếm thuộc tính luôn được thực hiện theo thứ tự: `pockets` -> `bed` -> `table` -> `head`.
 
@@ -320,38 +359,45 @@ Ví dụ `pockets.pen` có kết quả là `3` (tìm thấy ở `table`) và `be
 
 Xem đáp án
 
-    let head = {
-      glasses: 1,
-    };
+```js
+let head = {
+  glasses: 1,
+};
 
-    let table = {
-      pen: 3,
-      __proto__: head,};
+let table = {
+  pen: 3,
+  __proto__: head,
+};
 
-    let bed = {
-      sheet: 1,
-      pillow: 2,
-      __proto__: table,};
+let bed = {
+  sheet: 1,
+  pillow: 2,
+  __proto__: table,
+};
 
-    let pockets = {
-      money: 2000,
-      __proto__: bed,};
+let pockets = {
+  money: 2000,
+  __proto__: bed,
+};
+```
 
 ### Bài 3
 
 Ví dụ `rabbit` kế thừa từ `animal` như sau:
 
-    let animal = {
-      eat() {
-        this.full = true;
-      },
-    };
+```js
+let animal = {
+  eat() {
+    this.full = true;
+  },
+};
 
-    let rabbit = {
-      __proto__: animal,
-    };
+let rabbit = {
+  __proto__: animal,
+};
 
-    rabbit.eat();
+rabbit.eat();
+```
 
 Nếu gọi `rabbit.eat()` thì object nào nhận thuộc tính `full`?
 

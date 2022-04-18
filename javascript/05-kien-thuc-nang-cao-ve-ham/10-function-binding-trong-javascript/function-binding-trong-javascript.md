@@ -354,5 +354,5 @@ Bởi vì kết quả của `bind` là một đối tượng khác. Và đối t
 Tham khảo:
 
 - [Function binding](https://javascript.info/bind)
-- [Decorator, forwarding của hàm trong JS](/decorator-forwarding-ham-trong-javascript/)
+- [Decorator, forwarding của hàm trong JS](/bai-viet/javascript/decorator-forwarding-cua-ham-trong-javascript)
 - [Phân biệt call, apply và bind trong JavaScript](/phan-biet-call-apply-va-bind-trong-javascript/)

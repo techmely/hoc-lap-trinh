@@ -108,7 +108,7 @@ Với cách triển khai như trên, đối tượng `user` đã có thêm một
 
 ## Đối tượng mô tả thuộc tính cho getter và setter
 
-Mỗi thuộc tính của object trong JavaScript đều có một **đối tượng mô tả thuộc tính**, bao gồm giá trị `value` và các cờ là [writable/enumerable/configurable](/bai-viet/writable-enumerable-configurable-cua-object).
+Mỗi thuộc tính của object trong JavaScript đều có một **đối tượng mô tả thuộc tính**, bao gồm giá trị `value` và các cờ là [writable/enumerable/configurable](/bai-viet/javascript/writable-enumerable-configurable-cua-object).
 
 Nhưng với getter trong JavaScript và setter trong JavaScript thì khác.
 

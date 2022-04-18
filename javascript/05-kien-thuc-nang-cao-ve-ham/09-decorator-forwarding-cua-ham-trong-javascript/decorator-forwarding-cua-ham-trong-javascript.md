@@ -210,7 +210,7 @@ worker.slow = cachingDecorator(worker.slow);
 
 Với hàm một tham số `x`, bạn có thể sử dụng `cache.set(x, result)` để lưu kết quả và dùng `cache.get(x)` để lấy kết quả đã cache.
 
-Nhưng với trường hợp bạn cần ghi nhớ hai tham số `(min, max)` thì cách trên lại không dùng được ngay. Vì [kiểu dữ liệu Map](/map-trong-javascript-thi-sao/) chỉ áp dụng được với **1 key**.
+Nhưng với trường hợp bạn cần ghi nhớ hai tham số `(min, max)` thì cách trên lại không dùng được ngay. Vì [kiểu dữ liệu Map](/bai-viet/javascript/map-trong-javascript) chỉ áp dụng được với **1 key**.
 
 Có nhiều cách để giải quyết vấn đề này:
 
