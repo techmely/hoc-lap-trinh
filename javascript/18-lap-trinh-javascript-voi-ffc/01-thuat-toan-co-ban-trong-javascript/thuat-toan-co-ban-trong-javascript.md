@@ -1,5 +1,5 @@
 ---
-title: "Ứng dụng thời tiết"
+title: "Thuật toán cơ bản trong Javascript"
 description: ""
 keywords: []
 chapter:
@@ -9,5 +9,5 @@ category:
   name: "Javascript"
   slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 9
+position: 1
 ---

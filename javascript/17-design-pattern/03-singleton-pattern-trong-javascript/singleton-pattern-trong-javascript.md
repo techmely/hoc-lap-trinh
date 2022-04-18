@@ -1,10 +1,10 @@
 ---
-title: "DOM parser là gì"
+title: "Singleton pattern trong JavaScript"
 description: ""
 keywords: []
 chapter:
-  name: "DOM"
-  slug: "13-dom"
+  name: "Design pattern"
+  slug: "17-design-pattern"
 category:
   name: "Javascript"
   slug: "javascript"

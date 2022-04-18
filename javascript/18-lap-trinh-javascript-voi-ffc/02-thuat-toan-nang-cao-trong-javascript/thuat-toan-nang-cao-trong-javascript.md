@@ -1,10 +1,10 @@
 ---
-title: "Một số lỗi ở trict mode"
+title: "Thuật toán nâng cao trong Javascript"
 description: ""
 keywords: []
 chapter:
-  name: "Kiểm thử và đảm bảo chất lượng code"
-  slug: "11-kiem-thu-va-dam-bao-chat-luong-code"
+  name: "Lập trình Javascaript với FFC"
+  slug: "18-lap-trinh-javascript-voi-ffc"
 category:
   name: "Javascript"
   slug: "javascript"

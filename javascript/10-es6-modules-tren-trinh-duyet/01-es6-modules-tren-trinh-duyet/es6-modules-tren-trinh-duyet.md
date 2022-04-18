@@ -9,5 +9,5 @@ category:
   name: "Javascript"
   slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 3
+position: 1
 ---
