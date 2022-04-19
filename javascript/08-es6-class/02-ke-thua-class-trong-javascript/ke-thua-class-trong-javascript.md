@@ -2,6 +2,8 @@
 title: "Kế thừa trong Javascript"
 description: "Kế thừa là một khái niệm quan trọng trong lập trình hướng đối tượng. Một đối tượng kế thừa một đối tượng khác thì nó sẽ có thuộc tính và phương thức có sẵn của đối tượng mà nó kế thừa."
 keywords: [
+"thừa kế trong javascript",
+"kế thừa trong javascript",
 "super trong javascript",
 "overriding trong js",
 "extends trong javascript",
