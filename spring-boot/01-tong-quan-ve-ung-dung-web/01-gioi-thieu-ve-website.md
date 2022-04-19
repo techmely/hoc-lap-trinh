@@ -19,7 +19,14 @@ category:
 position: 19
 ---
 
-## Giới Thiệu Website
+# Giới Thiệu Website
+-------------
+> #### *Nội dung bài viết*
+> - [Website là gì?](#website-là-gì)
+> - [Phân loại](#phân-loại)
+>   - [Web tĩnh](#web-tĩnh)
+>   - [Web động](#web-động)
+
 ![Website](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/website.jpg)
 
 ### Website là gì?
@@ -39,13 +46,15 @@ Website được chia làm 2 loại:
 -  **Website tĩnh** (Static Website)
 -  **Website động** (Dynamic Website)
 
-1. **Web tĩnh**: là loại website cơ bản mà người dùng hầu như không thể tương tác với web và chỉ được code bằng ngôn ngữ HTML (hoặc có thể thêm CSS, Javascript để tạo hiệu ứng).
+#### Web tĩnh: 
+là loại website cơ bản mà người dùng hầu như không thể tương tác với web và chỉ được code bằng ngôn ngữ HTML (hoặc có thể thêm CSS, Javascript để tạo hiệu ứng).
 
 <content-info>
 Mình thường gọi loại web này nôm na là read-only, chỉ việc user truy cập web chỉ để đọc mà không tương tác được.
 </content-info><br/><br/>
 
-2. **Web động**: là website mà nội dung có khả năng thay đổi có thể dựa theo yêu cầu client, thời gian hoặc ngữ cảnh.
+#### Web động: 
+là website mà nội dung có khả năng thay đổi có thể dựa theo yêu cầu client, thời gian hoặc ngữ cảnh.
 <content-info>
 Chúng ta có thể tương tác qua lại với trang web, kiểu như: 2 người nói chuyện, 1 người hỏi và 1 người trả lời (cái này hay còn gọi phía thuật ngữ chuyên ngành là <b>mô hình Client - Server</b>)
 </content-info>
