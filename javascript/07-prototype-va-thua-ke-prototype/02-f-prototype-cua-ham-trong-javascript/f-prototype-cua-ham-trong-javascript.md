@@ -1,7 +1,19 @@
 ---
 title: "Prototype của hàm trong JavaScript"
 description: ""
-keywords: []
+keywords: [
+"Prototype của hàm trong JavaScript",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+]
 chapter:
   name: "Prototype và thừa kế prototype"
   slug: "chuong-07-prototype-va-thua-ke-prototype"
