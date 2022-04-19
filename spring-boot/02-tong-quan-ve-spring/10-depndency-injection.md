@@ -39,6 +39,7 @@ Việc module gắn với interface nào sẽ được confic trong code hoặc 
 đổi module, bảo trì code và kiểm thử.
 
 ### Có 3 dạng DI
+
 - Constructor Injection: Các dependency sẽ được container tiêm vào một lớp thông quan phương thức khởi tạo của lớp đó.
 - Setter Injection: Các dependency sẽ được truyền vào một lớp thông qua các hàm setter.
 - Interface Injection: Lớp cần tiêm sẽ thực thi một interface. Interface nay chứa một hàm tên inject. Container sẽ tiêm dependency vào một lớp thông qua việc gọi hàm inject của interface đó.
