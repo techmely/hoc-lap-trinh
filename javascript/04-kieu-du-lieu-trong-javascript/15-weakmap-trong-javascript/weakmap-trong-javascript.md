@@ -1,7 +1,18 @@
 ---
 title: "Weakmap trong Javascript"
-description: ""
-keywords: []
+description: "WeakMap trong JavaScript là cũng là một loại object, cho phép lưu trữ dữ liệu dạng key-value.Nhưng WeakMap có nhiều điểm khác với Map."
+keywords: [
+"Weakmap  trong JavaScript",
+"Weakmap  trong JavaScript là gì",
+"Weakmap  trong JavaScript cách sử dụng",
+"Weakmap  JavaScript là gì",
+"Weakmap  JavaScript",
+"Collection Weakmap trong ES6 javascript",
+"Collection Weakmap  trong ES6 là gì trong javascript",
+"JavaScript Map và Weakmap ",
+"JavaScript Map và Weakmap cách sử dụng",
+"JavaScript Map và Weakmap là gì"
+]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
