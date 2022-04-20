@@ -1,7 +1,17 @@
 ---
 title: "So sánh map và object trong Javascript"
-description: ""
-keywords: []
+description: "Map là một kiểu dữ liệu mới xuất hiện trong ES6. Map có những đặc điểm giống và khác so với Object. Cụ thể là như thế nào? Sau đây, mình sẽ so sánh Map với Object trong JavaScript."
+keywords: [
+"map object js",
+"So sánh map và object trong Javascript",
+"Cách so sánh map và object trong Javascript",
+"new map trong javascript",
+"get key value map javascript",
+"Map Object js",
+"Index trong map javascript",
+"JS map",
+"so sanh map va object trong javascript như thế nào"
+]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
