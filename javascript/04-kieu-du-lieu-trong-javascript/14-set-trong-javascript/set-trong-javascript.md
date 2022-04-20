@@ -1,7 +1,19 @@
 ---
 title: "Set trong Javascript"
-description: ""
-keywords: []
+description: "Set là một bổ sung hữu ích cho bộ công cụ JavaScript của bạn, đặc biệt để làm việc với các giá trị trùng lặp trong dữ liệu."
+keywords: [
+"Set trong Javascript",
+"Set trong Javascript là gì",
+"Set trong Javascript cách sử dụng",
+"New Set(array javascript)",
+"get set trong javascript",
+"map và set trong javascript",
+"settimeout trong javascript",
+"settimeout trong javascript la gi",
+"setattribute trong javascript",
+"dùng settimeout trong javascript",
+"setcookie trong javascript"
+]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
