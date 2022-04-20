@@ -10,7 +10,7 @@ keywords:
     "tổng quan spring framework",
     "tim hieu spring framework",
   ]
-  chapter:
+chapter:
   name: "Tổng quan về Spring"
   slug: "02-tong-quan-ve-spring"
 category:
