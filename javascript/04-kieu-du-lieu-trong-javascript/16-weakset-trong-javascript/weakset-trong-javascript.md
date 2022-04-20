@@ -1,7 +1,18 @@
 ---
 title: "Weakset trong Javascript"
-description: ""
-keywords: []
+description: "WeakSet trong JavaScript cũng là một loại object đặc biệt, dùng để lưu trữ dữ liệu một cách duy nhất, không trùng lặp - tương tự như Set."
+keywords: [
+"WeakSet trong JavaScript",
+"WeakSet trong JavaScript là gì",
+"WeakSet trong JavaScript cách sử dụng",
+"WeakSet JavaScript là gì",
+"WeakSet JavaScript",
+"Collection WeakSet trong ES6 javascript",
+"Collection WeakSet trong ES6 là gì trong javascript",
+"JavaScript Set và WeakSet ",
+"JavaScript Set và WeakSet cách sử dụng",
+"JavaScript Set và WeakSet là gì"
+]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
