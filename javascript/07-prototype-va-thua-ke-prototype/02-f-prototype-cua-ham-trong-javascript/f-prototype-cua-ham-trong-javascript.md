@@ -1,18 +1,18 @@
 ---
 title: "Prototype của hàm trong JavaScript"
-description: ""
+description: "Prototype là khái niệm cốt lõi trong JavaScript và là cơ chế quan trọng trong việc thực thi mô hình OOP trong JavaScript. Là cơ chế mà các object trong javascript kế thừa các tính năng từ một object khác."
 keywords: [
 "Prototype của hàm trong JavaScript",
-"",
-"",
-"",
-"",
-"",
-"",
-"",
-"",
-"",
-""
+"prototype trong javascript",
+"prototype trong javascript la gi",
+"prototype javascript",
+"prototype nghia la gi trong javascript",
+"Class trong Javascript",
+"vi du ve prototype trogn javascript",
+"cách sử dụng prototype trong javascript",
+"prototype trong javascript dung de lam gi",
+"prototype trong javascript va cach su dung",
+"prototype design trong javascript"
 ]
 chapter:
   name: "Prototype và thừa kế prototype"
