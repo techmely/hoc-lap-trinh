@@ -1,7 +1,18 @@
 ---
 title: "Tìm hiểu về iterable trong Javascript"
-description: ""
-keywords: []
+description: "Iterable là khả năng cho phép các đối tượng trong Javascript sử dụng các kỹ thuật xử lý dữ liệu như for of loop."
+keywords: [
+"Iterable trong Javascript",
+"Iterable trong Javascript là gì",
+"iterable trong Javascript dùng để làm gì",
+"iterable Javascript",
+"iterator object la gi trong javascript",
+"cách sử dụng Iterable trong Javascript",
+"Iterable trong Javascript hoạt động như thế nào",
+"Iterable javascript",
+"Iterable javascript là gì",
+"what is iterable in javascript"
+]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
