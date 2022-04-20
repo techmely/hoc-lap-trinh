@@ -20,8 +20,10 @@ position: 2
 
 ### HTTP là gì
 **Hyper Text Transfer Protocol** (HTTP) là một giao thức để tìm nạp các tài nguyên như tài liệu HTML. Nó là nền tảng của bất kỳ trao đổi dữ liệu nào trên Web và nó là một giao thức khách-máy chủ (**Client-Server**), có nghĩa là các yêu cầu được khởi tạo bởi người nhận, thường là trình duyệt Web. 
+
 ![client-server-model](https://1.bp.blogspot.com/-L95P9p9PDfI/WqvflWNeEqI/AAAAAAAAAa0/JPzrhonvuDElUidmK0oS0jqmDwn_aPwPwCLcBGAs/s1600/Client-server-model.svg.png)
 Một tài liệu hoàn chỉnh được tạo lại từ các tài liệu con khác nhau được tìm nạp, chẳng hạn như văn bản, mô tả bố cục, hình ảnh, video, tập lệnh, v.v. 
+
 ![fetching-page](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/fetching_a_page.png)
 
 ### Các khía cạnh cơ bản của HTTP
