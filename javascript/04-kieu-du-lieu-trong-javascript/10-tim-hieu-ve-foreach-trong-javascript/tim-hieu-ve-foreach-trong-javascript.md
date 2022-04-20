@@ -1,7 +1,17 @@
 ---
 title: "Tìm hiểu về forEach trong Javascript"
-description: ""
-keywords: []
+description: "forEach là một phương thức có sẵn của array, để duyệt qua mỗi phần tử của mảng và thực hiện một hành động nào đó."
+keywords: [
+"foreach javascript dùng như thế nào",
+"cách sử dụng foreach javascript",
+"foreach javascript là gì",
+"forEach object js",
+"foreach mang trong javascript",
+"for in javascript",
+"array foreach trong javascript",
+"hàm foreach trong javascript",
+"cách sử dụng hàm foreach trong javascript"
+]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
