@@ -10,6 +10,13 @@ keywords:
     "tổng quan spring framework",
     "tim hieu spring framework",
   ]
+  chapter:
+  name: "Tổng quan về Spring"
+  slug: "02-tong-quan-ve-spring"
+category:
+  name: "Spring"
+  slug: "Spring"
+image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---
 # **Một số dự án nổi bật của Spring Framework**
