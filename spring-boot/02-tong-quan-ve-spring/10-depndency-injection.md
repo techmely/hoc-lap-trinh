@@ -12,7 +12,7 @@ keywords:
   ]
 chapter:
   name: "Tổng quan về Spring"
-  slug: "10-dependency-injection"
+  slug: "02-tong-quan-ve-spring"
 category:
   name: "SpringBoots"
   slug: "springboots"
