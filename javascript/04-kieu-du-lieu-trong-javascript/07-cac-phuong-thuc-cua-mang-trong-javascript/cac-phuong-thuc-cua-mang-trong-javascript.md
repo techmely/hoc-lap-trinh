@@ -1,7 +1,19 @@
 ---
 title: "Các phương thức của mảng trong Javascript"
-description: ""
-keywords: []
+description: "Trong bài viết này, chúng ta sẽ cùng tìm hiểu về một số phương thức của mảng trong Javascript có thể giúp bạn thao tác với dữ liệu của mình đúng cách."
+keywords: [
+"Các phương thức của mảng trong Javascript",
+"khai bao mang trong javascript",
+"tinh tong cac phan tu trong mang javascript",
+"bai tap ve mang trong javascript",
+"tim phan tu trong mang javascript",
+"lam viec voi mang trong javascript",
+"tim phan tu giong nhau giua 2 mang javascript",
+"Tổng hợp các phương thức của mảng trong Javascript",
+"Các phương thức xử lí mảng trong Javascript",
+"concat() trong javascript",
+"filter() trong javascript"
+]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
