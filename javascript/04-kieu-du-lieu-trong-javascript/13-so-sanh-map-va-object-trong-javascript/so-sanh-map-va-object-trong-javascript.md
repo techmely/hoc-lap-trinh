@@ -9,7 +9,10 @@ keywords: [
 "get key value map javascript",
 "Map Object js",
 "Index trong map javascript",
-"JS map",
+"map trong javascsript",
+"object trong javascript",
+"map trong javascript là gì",
+"object trong javascaript là gì",
 "so sanh map va object trong javascript như thế nào"
 ]
 chapter:
