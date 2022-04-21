@@ -11,7 +11,7 @@ keywords: [
 "Iterable trong Javascript hoạt động như thế nào",
 "Iterable javascript",
 "Iterable javascript là gì",
-"what is iterable in javascript"
+"iterable trong js"
 ]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
