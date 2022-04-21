@@ -1,7 +1,16 @@
 ---
 title: "Hàm đệ quy trong Javascript"
-description: ""
-keywords: []
+description: "Một hàm đệ quy là một hàm gọi chính nó cho đến khi không thể gọi. Kỹ thuật này được gọi là Đệ quy (Recursion)."
+keywords: [
+"Hàm đệ quy trong Javascript",
+"Return trong đệ quy javascript",
+"đệ quy trong Javascript",
+"đệ quy trong Javascript là gì",
+"đệ quy trong Javascript sử dụng như thế nào",
+"cách viết hàm đệ quy trong Javascript",
+"Hàm đệ quy trong Javascript để làm gì",
+"đệ quy trong Javascript có tác dụng gì"
+]
 chapter:
   name: "Kiến thức nâng cao về hàm"
   slug: "chuong-05-kien-thuc-nang-cao-ve-ham"
