@@ -1,16 +1,16 @@
 ---
-title: "Model and View"
-description: "Là sự kết hợp của 2 khía cạnh truyền dữ liệu và view."
+title: "Ứng dụng calculator đơn giản"
+description: "Một bài tập đơn giản xây dựng một ứng dụng máy tính với phép + và - để bạn có thể hiểu hơn về các method khi xây dựng ứng dụng web."
 keywords:
   [
-    "Model and View",
-    "post la gi",
-    "get la gi",
+    "Ứng dụng calculator đơn giản spring boots",
+    "Ứng dụng calculator đơn giản trong java",
+    "Xây dựng ứng dụng calculator đơn giản với spring boots",
     "get va post trong springboot",
-    "get data la gi",
-    "put va post khac nhau nhu the nao",
-    "du ieu truyen di bang phuong thuc get",
-    "du ieu truyen di bang phuong thuc post"
+    "calculator trong spring boots",
+    "put va post khac nhau nhu the nao spring boots",
+    "du lieu truyen di bang phuong thuc get spring boots",
+    "du lieu truyen di bang phuong thuc post spring boots"
   ]
 chapter:
   name: "Spring Controller"
