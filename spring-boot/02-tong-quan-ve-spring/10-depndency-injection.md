@@ -19,7 +19,7 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 10
 ---
-
+## Dependency Injection (DI)
 ![Dependency Injection](https://1.bp.blogspot.com/-FYPUWhwwCbM/Xf7C4MxUsgI/AAAAAAAAAQo/RCI3w2QmRokvmt9TuK05qxBfbuWW-LKfQCLcBGAsYHQ/s640/Design-Patterns-Explained-%25E2%2580%2593-Dependency-Injection-with-Code-Examples-881x440.png)
 ### DI là gì
 

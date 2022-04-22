@@ -21,6 +21,7 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 16
 ---
+## Model and View
 ![springboot](https://1.bp.blogspot.com/-OCMnQs3ddyU/XgGHSerSuXI/AAAAAAAAATQ/TjN5MUE3MRoIyhrQ0qQ_unaqbchik_QHACEwYBhgL/s1600/Screen%2BShot%2B2019-12-24%2Bat%2B10.33.44%2BAM.png)
 
 Công việc cuối cùng mà một action phải thực hiện là chọn View để hiển thị và chia sẽ dữ liệu với view này.Vì vậy kết quả return của một action thường là ModelAndView. Đối tượng này mang trong mình nó một đối tượng chứa dữ liệu (được gọi là thuộc tính model) và tên của một view để chỉ rõ view cần hiển thị.
