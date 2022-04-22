@@ -9,7 +9,10 @@ keywords: [
 "đệ quy trong Javascript sử dụng như thế nào",
 "cách viết hàm đệ quy trong Javascript",
 "Hàm đệ quy trong Javascript để làm gì",
-"đệ quy trong Javascript có tác dụng gì"
+"đệ quy trong Javascript có tác dụng gì",
+"de quy trong javascript",
+"đệ quy là gì",
+"de quy la gi"
 ]
 chapter:
   name: "Kiến thức nâng cao về hàm"
