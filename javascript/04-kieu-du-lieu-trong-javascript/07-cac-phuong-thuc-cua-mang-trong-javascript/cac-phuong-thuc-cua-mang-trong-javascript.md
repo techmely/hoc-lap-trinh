@@ -11,8 +11,9 @@ keywords: [
 "tim phan tu giong nhau giua 2 mang javascript",
 "Tổng hợp các phương thức của mảng trong Javascript",
 "Các phương thức xử lí mảng trong Javascript",
-"concat() trong javascript",
-"filter() trong javascript"
+"concat trong javascript",
+"filter trong javascript",
+"xử lý mảng trong javascript"
 ]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
