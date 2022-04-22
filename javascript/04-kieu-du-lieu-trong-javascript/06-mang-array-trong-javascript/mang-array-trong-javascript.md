@@ -3,12 +3,12 @@ title: "Mảng array trong Javascript"
 description: "Array, hay được gọi là mảng, là kiểu dữ liệu mà giá trị của nó chứa nhiều giá trị khác. Mỗi giá trị của mảng được gọi là element (phần tử)"
 keywords: [
 "Mảng array trong Javascript",
-"khai bao mang trong javascript",
-"tinh tong cac phan tu trong mang javascript",
-"bai tap ve mang trong javascript",
+"khai báo mảng trong javascript",
+"tính tổng các phần tử của mảng javascript",
+"bài tập về mảng trong javascript",
 "tim phan tu trong mang javascript",
-"lam viec voi mang trong javascript",
-"tim phan tu giong nhau giua 2 mang javascript",
+"làm việc với mảng trong javascript",
+"tìm phần tử giống nhau giữa 2 mảng javascript",
 "Tổng hợp các phương thức của mảng trong Javascript",
 "Đếm số phần tử trong mảng JavaScript",
 "Mảng array trong Javascript là gì",
