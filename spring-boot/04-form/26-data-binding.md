@@ -3,16 +3,16 @@ title: "Data binding."
 description: "Data Binding là cơ chế liên kết dữ liệu đầu vào hoặc đầu ra với các đối tượng model. Hay nói cách khác đó là sự kết nối dữ liệu của bean đặt trong model đến các điều khiển trên form."
 keywords:
   [
-    "data binding trong spring boot",
-    "data binding la gi",
-    "trinh bay co che data binding trong spring",
-    "data binding trong spring mvc",
+    "liên kết dữ liệu trong spring boot",
+    "liên kết dữ liệu spring là gì",
+    "trình bày cơ chế liên kết dữ liệu trong spring",
+    "liên kết dữ liệu trong spring mvc",
     "valid trong spring",
     "service trong spring",
-    "data binding trong spring boot la gi",
-    "data binding trong spring boot su dung nhu the nao",
-    "the nao la data binding trong spring boot",
-    "cach su dung data binding spring"
+    "liên kết dữ liệu trong spring boot la gi",
+    "liên kết dữ liệu trong spring boot su dung nhu the nao",
+    "the nao la liên kết dữ liệu trong spring boot",
+    "cach liên kết dữ liệu trong spring"
   ]
 chapter:
   name: "Form"
