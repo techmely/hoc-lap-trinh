@@ -21,7 +21,7 @@ category:
   name: "SpringBoots"
   slug: "springboots"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 26
+position: 25
 ---
 ## Data binding
 Data Binding là cơ chế liên kết dữ liệu đầu vào hoặc đầu ra với các đối tượng model. Hay nói cách khác đó là sự kết nối dữ liệu của bean đặt trong model đến các điều khiển trên form. 
