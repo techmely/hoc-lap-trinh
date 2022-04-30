@@ -22,6 +22,7 @@ category:
 chapter:
   name: "Virtual Private Cloud"
   slug: "chap-04-vpc"
+image: https://user-images.githubusercontent.com/29729545/166087606-f0411f25-7a2a-4df1-82c7-2da0bc8d2031.png
 position: 15
 ---
 
@@ -40,7 +41,7 @@ Virtual private cloud
 
 Môi trường mạng ảo riêng biệt, độc lập với môi trường Internet. Dùng để quản lý resources AWS. Dưới đây là một ví dụ về VPC trên môi trường AWS.
 
-![VPC trong AWS](https://images.viblo.asia/33f1e7f1-0837-4ff2-886b-4e3531db8d17.png)
+![VPC trong AWS](https://user-images.githubusercontent.com/29729545/166087606-f0411f25-7a2a-4df1-82c7-2da0bc8d2031.png)
 
 ### Classless Inter-Domain Routing (CIDR) là gì
 
@@ -73,7 +74,7 @@ Subnet là mạng con nằm trong AWS VPC của bạn. Mỗi subnet có 1 dải 
 
 - Traffic có thể access được ra ngoài internet, và ngược lại
 - Resources trong public subnet được assign public IP, và có thể truy cập từ bên ngoài internet
-- Outgoing traffic KHÔNG định tuyến qua **NAT**, mà được định tuyến qua **IGW** <img :src="('/images/vpc-subnet.png')" alt="VPC subnet">
+- Outgoing traffic KHÔNG định tuyến qua **NAT**, mà được định tuyến qua **IGW**
   > Bạn có thể thấy traffic của private subnet đi qua net-gw-xxx, còn traffic của public subnet đi qua igw-xxx
 
 ## IP addressing

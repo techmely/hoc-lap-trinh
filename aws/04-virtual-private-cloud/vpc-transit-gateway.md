@@ -19,6 +19,7 @@ category:
 chapter:
   name: "Virtual Private Cloud"
   slug: "chap-04-vpc"
+image: (https://user-images.githubusercontent.com/29729545/147404623-e06ade34-5425-4562-aece-83f160a7dce0.png
 position: 25
 ---
 
@@ -30,7 +31,7 @@ Transit Gateway giống như một trung tâm chuyển tiếp các gói tin dùn
 
 Trên thực tế chúng ta có thể sử dụng rất nhiều VPC. Hình bên trái mô tả kết nối giữa On-premises network và các VPC, chúng ta cần tạo Site-to-Site đến nhiều VPC hay VPC peering... Tuy nhiên, Transit Gateway giúp bạn đơn giản hóa chuyện này rất nhiều. Các kết nối sẽ chỉ đi qua một central hub.
 
-## Transit Gateway
+## Transit Gateway trong AWS
 
 ![Giới thiệu về Transit Gateway](https://user-images.githubusercontent.com/29729545/147404793-f4f042f7-8e2d-4fdb-96ce-3c3685ee8ea9.png)
 

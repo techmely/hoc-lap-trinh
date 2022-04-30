@@ -1,13 +1,15 @@
 ---
 title: "Giới thiệu NAT trong AWS"
-description: "Bastion hosts là cách để chúng ta có thể truy cập vào 1 instance trong private subnet"
+description: "NAT là gì? NAT (Network Address Translation) kà một kỹ thuật cho phép chuyển đổi từ một địa chỉ IP này thành một địa chỉ IP khác."
 keywords:
   [
-    "NAT trong vpc",
+    "NAT trong aws",
     "NAT là gì",
     "NAT la gi",
     "NAT instance la gi",
     "NAT getway la gi",
+    "NAT instance là gì",
+    "NAT getway là gì",
   ]
 author:
   fullname: Phan Văn Đức
@@ -19,18 +21,23 @@ category:
 chapter:
   name: "Virtual Private Cloud"
   slug: "chap-04-vpc"
+image: https://user-images.githubusercontent.com/29729545/146040993-981308a2-2164-4fba-9bce-035e723d737b.png
 position: 19
 ---
 
-## Network Address Translation (NAT)
+## Network Address Translation (NAT) trong AWS
 
-Như ở phần trước chúng ta tìm hiểu các sử dùng Bastion hosts để truy cập vào EC2 instances nằm trong private subnet. Ở bài học này chúng ta sẽ tìm hiểu làm thế nào để EC2 instances trong private subnet connect ra ngoài internet. ![NAT la gi](https://user-images.githubusercontent.com/29729545/146040993-981308a2-2164-4fba-9bce-035e723d737b.png)
+Như ở phần trước chúng ta tìm hiểu các sử dùng Bastion hosts để truy cập vào EC2 instances nằm trong private subnet. Ở bài học này chúng ta sẽ tìm hiểu làm thế nào để EC2 instances trong private subnet connect ra ngoài internet. 
+
+![NAT la gi](https://user-images.githubusercontent.com/29729545/146040993-981308a2-2164-4fba-9bce-035e723d737b.png)
 
 Khi các resources trong private subnet muốn request ra bên ngoài internet(VD: npm install package), **NAT** sẽ thay đổi IP private của tài nguyên thành IP của mình và request ra ngoài internet. Khi có response NAT sẽ gửi lại response cho private IP của resource tương ứng. Đó là cách để resources trong private subnet có thể giao tiếp ra bên ngoài internet
 
-### NAT instance
+### NAT instance là gì
 
-NAT instance giống như một nhà vận chuyển request giữa Internet và EC2 instances trong private subnet. ![NAT instance](https://user-images.githubusercontent.com/29729545/146041464-e911b8ef-2b5c-4e31-8570-8e53740987e8.png)
+NAT instance giống như một nhà vận chuyển request giữa Internet và EC2 instances trong private subnet. 
+
+![NAT instance](https://user-images.githubusercontent.com/29729545/146041464-e911b8ef-2b5c-4e31-8570-8e53740987e8.png)
 
 - Là EC2 instance được launch trong public subnet
 - Phải được attached Elastic IP
@@ -38,7 +45,7 @@ NAT instance giống như một nhà vận chuyển request giữa Internet và 
 - AWS cung cấp AMI cho NAT instances, chúng ta có thể sự dụng nó khi launch instance mới
 - NAT instances hiện nay không được sử dụng nhiều nhưng trong exam vẫn xuất hiện các câu hỏi về nó
 
-### NAT gateway
+### NAT gateway là gì
 
 NAT gateway dùng để instances trong private subnet có thể connect với services bên ngoài VPC, nhưng ko tạo kết nối giữa instances và services đó Khi tạo mới NAT getway có 2 loại kết nối:
 
