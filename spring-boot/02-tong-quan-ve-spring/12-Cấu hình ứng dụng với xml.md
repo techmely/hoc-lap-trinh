@@ -1,14 +1,14 @@
 ---
-title: "Một số dự án nổi bật của Spring"
-description: "Dưới đây là một số dự án nổi bật của Spring Framework"
+title: "Cấu hình ứng dụng với xml"
+description: ""
 keywords:
   [
-    "dự án nổi bật của Spring Framework",
-    "projects của Spring framework",
-    "dự án con của Spring",
-    "Spring framework cơ bản",
-    "tổng quan spring framework",
-    "tim hieu spring framework",
+    "cấu hình spring project với xml",
+    "cấu hình xml trong spring",
+    "cấu hình bằng xml",
+    "file xml trong spring",
+    "spring cơ bản",
+    "học spring boot",
   ]
 chapter:
   name: "Cấu hình ứng dụng với XML"
