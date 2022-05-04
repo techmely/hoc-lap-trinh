@@ -13,8 +13,8 @@ keywords:
     "du ieu truyen di bang phuong thuc post"
   ]
 chapter:
-  name: "Tổng quan về ứng dụng web"
-  slug: "01-tong-quan-ve-ung-dung-web"
+  name: "Spring Controller"
+  slug: "03-spring-controller"
 category:
   name: "SpringBoots"
   slug: "springboots"
