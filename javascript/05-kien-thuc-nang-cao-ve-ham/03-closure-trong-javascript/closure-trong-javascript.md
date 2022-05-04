@@ -1,7 +1,18 @@
 ---
 title: "Closure trong Javascript"
-description: ""
-keywords: []
+description: "Closure là một chức năng có quyền truy cập vào phạm vi cha, ngay cả sau khi scope đã đóng."
+keywords: [
+"javascript closure là gì",
+"Cách sử dụng closure trong javascript",
+"truy cập biến của hàm bên ngoài trong javascript",
+"Closure la gì trong javascript",
+"Scope trong Javascript",
+"ví dụ về Closure trong Javascript",
+"hàm closure trong javascript",
+"hàm closure trong javascript là gì",
+"Cách sử dụng hàm closure trong javascript",
+"hướng dẫn hàm closure trong javascript"
+]
 chapter:
   name: "Kiến thức nâng cao về hàm"
   slug: "chuong-05-kien-thuc-nang-cao-ve-ham"
