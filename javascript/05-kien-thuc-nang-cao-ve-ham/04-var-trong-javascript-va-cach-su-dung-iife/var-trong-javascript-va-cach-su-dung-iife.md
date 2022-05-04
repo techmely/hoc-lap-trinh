@@ -1,7 +1,16 @@
 ---
 title: "Var trong Javascript và cách sử dụng IIFE"
-description: ""
-keywords: []
+description: "Var trong JavaScript là một cách cũ để khai báo biến. Và bạn không nên sử dụng var nữa, mà thay vào đó là sử dụng let hoặc const."
+keywords: [
+"Var trong Javascript và cách sử dụng IIFE",
+"iife trong javascript dung de lam gi",
+"iife trong javascript la gi",
+"Iife trong Javascript dụng để làm gì",
+"cách sử dụng Iife trong Javascript",
+"Iife trong Javascript có ý nghĩa gì",
+"ví dụ về Iife trong Javascript",
+"Iife trong Javascript"
+]
 chapter:
   name: "Kiến thức nâng cao về hàm"
   slug: "chuong-05-kien-thuc-nang-cao-ve-ham"
