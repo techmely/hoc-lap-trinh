@@ -1,7 +1,15 @@
 ---
 title: "Đối tượng global trong Javascript"
-description: ""
-keywords: []
+description: "Đối tượng global trong JavaScript cung cấp các biến và hàm được sử dụng ở mọi nơi trong chương trình."
+keywords: [
+"Đối tượng global trong Javascript",
+"Thêm sửa xoá trong Javascript",
+"Sự kiện trong JavaScript",
+"classname trong javascript",
+"dung javascript xu ly su kien",
+"Đối tượng global trong Javascript là gì",
+"Cách sử dụng đối tượng global trong Javascript"
+]
 chapter:
   name: "Kiến thức nâng cao về hàm"
   slug: "chuong-05-kien-thuc-nang-cao-ve-ham"
