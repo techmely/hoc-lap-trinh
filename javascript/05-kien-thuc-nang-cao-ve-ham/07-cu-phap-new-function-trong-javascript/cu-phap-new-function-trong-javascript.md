@@ -1,7 +1,15 @@
 ---
 title: "Cú pháp new Function trong Javascript"
-description: ""
-keywords: []
+description: "Là một cách khác để định nghĩa hàm. Cách này ít khi được sử dụng, nhưng đôi khi lại rất hữu ích."
+keywords: [
+"Cú pháp new Function trong Javascript",
+"new Function trong Javascript",
+"new Function trong Javascript dùng để làm gì",
+"cách sử dụng new Function trong Javascript",
+"ham trong ham javascript",
+"cach tao ham moi trong javascript",
+"cu phap new function trong javascript làm gì"
+]
 chapter:
   name: "Kiến thức nâng cao về hàm"
   slug: "chuong-05-kien-thuc-nang-cao-ve-ham"
