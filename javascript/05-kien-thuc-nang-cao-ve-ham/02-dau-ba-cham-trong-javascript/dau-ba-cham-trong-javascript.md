@@ -1,7 +1,17 @@
 ---
 title: "Dấu ba chấm trong Javascript"
-description: ""
-keywords: []
+description: "Dấu ba chấm trong JavaScript được sử dụng trong rất nhiều hàm, cho phép truyền tham số vào hàm không giới hạn số lượng"
+keywords: [
+"dau 3 cham trong javascript",
+"dau 3 cham trong javascript la gi",
+"cach su dung dau 3 cham trong javascript",
+"Dấu 3 chấm trong JavaScript là gì",
+"Cách sử dụng dấu 3 chấm trong JavaScript",
+"toan tu spread trong javascript",
+"Toán tử spread trong JavaScript",
+"Spread trong JavaScript",
+"Dấu trong JavaScript"
+]
 chapter:
   name: "Kiến thức nâng cao về hàm"
   slug: "chuong-05-kien-thuc-nang-cao-ve-ham"
