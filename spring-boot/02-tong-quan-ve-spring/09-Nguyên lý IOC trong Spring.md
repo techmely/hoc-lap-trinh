@@ -11,17 +11,17 @@ keywords:
     "hoc Spring co ban",
     "IOC Container"
   ]
-position: 
+chapter:
+  name: "Nguyên lý IOC trong Spring"
+  slug: "09-nguyen-ly-ioc-trong-spring"
+category:
+  name: "Spring"
+  slug: "Spring"
+image: https://kungfutech.edu.vn/thumbnail.png
+position: 9
 ---
 # **IoC Container**
 -------
-> #### *__Nội dung bài viết__*
-> - [IoC là gì](#ioc-là-gì)
-> - [Spring IoC](#spring-ioc)
-> - [Các kiểu IoC Container trong Spring](#các-kiểu-ioc-container)
->   - [Bean Factory](#bean-factory)
->   - [Application Context](#application-context)
-
 ## IoC là gì?
 IoC còn có tên gọi đầy đủ là Inversion of Control, được hiểu là một nguyên lý thiết kế ứng dụng trong công nghệ phần mềm. Kiến trúc phần mềm khi áp dụng nguyên lý thiết kế này sẽ đảo ngược quyền điều khiển so với kiểu lập trình hướng thủ tục. 
 
