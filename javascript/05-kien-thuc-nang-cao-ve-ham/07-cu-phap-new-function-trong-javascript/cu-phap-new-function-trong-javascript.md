@@ -8,7 +8,9 @@ keywords: [
 "cách sử dụng new Function trong Javascript",
 "ham trong ham javascript",
 "cach tao ham moi trong javascript",
-"cu phap new function trong javascript làm gì"
+"cu phap new function trong javascript làm gì",
+"function trong javascript",
+"từ khoá new trong javascript"
 ]
 chapter:
   name: "Kiến thức nâng cao về hàm"
