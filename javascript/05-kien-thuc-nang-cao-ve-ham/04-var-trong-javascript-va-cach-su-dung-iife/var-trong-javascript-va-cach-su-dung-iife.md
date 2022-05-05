@@ -9,7 +9,7 @@ keywords: [
 "cách sử dụng Iife trong Javascript",
 "Iife trong Javascript có ý nghĩa gì",
 "ví dụ về Iife trong Javascript",
-"Iife trong Javascript"
+"iife trong Javascript"
 ]
 chapter:
   name: "Kiến thức nâng cao về hàm"
