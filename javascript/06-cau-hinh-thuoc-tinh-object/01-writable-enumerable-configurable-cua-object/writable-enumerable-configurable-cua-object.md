@@ -1,7 +1,15 @@
 ---
 title: "Thuộc tính writable, enumerable và configurable của object trong Javascript"
-description: ""
-keywords: []
+description: "Writable, enumerable và configurable là những cờ quan trọng để cấu hình cho thuộc tính trong Javascript."
+keywords: [
+"Thuộc tính writable, enumerable và configurable của object trong Javascript",
+"writable trong Javascript",
+"enumerable trong Javascript",
+"configurable trong Javascript",
+"Thuộc tính trong Javascript",
+"object defineproperty trong Javascript la gi",
+"them thuoc tinh vao object trong Javascript"
+]
 chapter:
   name: "Cấu hình thuộc tính object"
   slug: "chuong-06-cau-hinh-thuoc-tinh-object"
