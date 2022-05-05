@@ -8,7 +8,9 @@ keywords: [
 "classname trong javascript",
 "dung javascript xu ly su kien",
 "Đối tượng global trong Javascript là gì",
-"Cách sử dụng đối tượng global trong Javascript"
+"Cách sử dụng đối tượng global trong Javascript",
+"scope trong javascript",
+"global trong javascript"
 ]
 chapter:
   name: "Kiến thức nâng cao về hàm"
