@@ -57,7 +57,7 @@ Engine áp dụng tối ưu hóa ở mỗi bước của quá trình. Nó thậm
 
 ![Khoá học javascript cơ bản](https://user-images.githubusercontent.com/29374426/156755813-bd4d0c75-d34c-4585-9423-42fdb45b66d0.png)
 
-## Lịch sử Javascript
+## Lịch sử Javascript.
 
 Javascript được tạo bởi lập trình viên kỳ cựu Brendan Eich, giới thiệu lần đầu năm 1995, xuất hiện trên trình duyệt Netscape, một trình duyệt phổ biến thời bấy giờ.
 
