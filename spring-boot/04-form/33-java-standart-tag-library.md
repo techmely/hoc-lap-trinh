@@ -58,7 +58,7 @@ Bảng dưới đây là các thẻ có trong `Core Tags`, các bạn có thể 
 ![core tag](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/core-tag.png)
 
 #### Formatting Tags
-Nhóm `Formatting Tags` trong **JSTL** được sử dụng để định dạng và hiển thị text, date, time và số ngôn ngữ trong Website. Sau đây là cú pháp cơ bản để include thư viện thẻ định dạng trong **JSP** của bạn.
+Nhóm `Formatting Tags` trong **JSTL** được sử dụng để định dạng và hiển thị text, date, time và số ngôn ngữ trong Website. Sau đây là cú pháp cơ bản để include thư viện `Formatting Tags` trong **JSP** của bạn.
 ```java
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/html/fmt" %>
 ```
