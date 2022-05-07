@@ -8,7 +8,11 @@ keywords:
     "khái niệm jstl",
     "thư viện jstl",
     "JavaServer Pages Standard Tag Library là gì",
-    "jstl viết tắt"
+    "jstl viết tắt",
+    "core tag là gì",
+    "formatting tag là gì",
+    "phân loại jstl tag",
+    "custom tag trong jstl"
   ]
 chapter:
   name: "form"
