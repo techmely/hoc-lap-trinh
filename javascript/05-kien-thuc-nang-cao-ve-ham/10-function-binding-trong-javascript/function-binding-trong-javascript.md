@@ -9,7 +9,7 @@ keywords: [
 "bind javascript",
 "Bind trong JavaScript",
 "Bind trong JavaScript để làm gì",
-"bind() javascript",
+"hàm bind javascript",
 "function binding trong javascript là gì"
 ]
 chapter:
