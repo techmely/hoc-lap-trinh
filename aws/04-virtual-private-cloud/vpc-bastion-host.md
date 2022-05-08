@@ -1,7 +1,7 @@
 ---
 title: "Giới thiệu về Bastion hosts"
 description: "Bastion hosts là cách để chúng ta có thể truy cập vào 1 instance trong private subnet"
-keywords: ["Bastion hosts trong AWS"]
+keywords: ["Bastion hosts trong AWS", "Bastion hosts là gì", "giới thiệu về Bastion hosts", "tìm hiểu về Bastion hosts trong aws"]
 author:
   fullname: Phan Văn Đức
   username: ducpv
