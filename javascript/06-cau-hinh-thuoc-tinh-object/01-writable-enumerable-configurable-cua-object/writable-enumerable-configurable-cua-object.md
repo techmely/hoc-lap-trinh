@@ -8,7 +8,10 @@ keywords: [
 "configurable trong Javascript",
 "Thuộc tính trong Javascript",
 "object defineproperty trong Javascript la gi",
-"them thuoc tinh vao object trong Javascript"
+"them thuoc tinh vao object trong Javascript",
+"writable là gì",
+"enumerable là gì",
+"configurable là gì"
 ]
 chapter:
   name: "Cấu hình thuộc tính object"
