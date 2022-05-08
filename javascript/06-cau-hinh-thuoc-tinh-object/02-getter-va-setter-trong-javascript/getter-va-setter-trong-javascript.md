@@ -9,7 +9,9 @@ keywords: [
 "Hàm Get trong JavaScript",
 "Getter và setter là gì trong javascript",
 "Getter và setter cách sử dụng",
-"khai báo getter và setter"
+"khai báo getter và setter",
+"getter trong javascript",
+"setter trong javascript"
 ]
 chapter:
   name: "Cấu hình thuộc tính object"
