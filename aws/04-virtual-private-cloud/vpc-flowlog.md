@@ -5,7 +5,10 @@ keywords:
   [
     "VPC FLow logs trong AWS",
     "VPC FLow logs là gì",
-    "VPC FLow logs la gi"
+    "VPC FLow logs la gi",
+    "giới thiệu VPC FLow logs",
+    "tìm hiểu về VPC FLow logs",
+    "tìm hiểu về VPC FLow logs trong aws"
   ]
 author:
   fullname: Phan Văn Đức
