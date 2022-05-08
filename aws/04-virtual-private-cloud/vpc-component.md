@@ -8,7 +8,9 @@ keywords:
     "Internet Getway trong AWS",
     "Route table là gì",
     "Route table trong AWS",
-    "Egress-only IGW trong AWS"
+    "Egress-only IGW trong AWS",
+    "Các components trong VPC",
+    "Các components trong VPC aws"
   ]
 author:
   fullname: Phan Văn Đức
