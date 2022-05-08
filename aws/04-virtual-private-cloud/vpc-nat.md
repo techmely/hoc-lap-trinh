@@ -10,6 +10,9 @@ keywords:
     "NAT getway la gi",
     "NAT instance là gì",
     "NAT getway là gì",
+    "Giới thiệu NAT trong AWS",
+    "tìm hiểu về NAT trong AWS",
+    "giới thiệu NAT trong AWS"
   ]
 author:
   fullname: Phan Văn Đức
