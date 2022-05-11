@@ -1,7 +1,16 @@
 ---
 title: "Prototype trong JavaScript"
-description: ""
-keywords: []
+description: "Prototype là khái niệm cốt lõi trong JavaScript và là cơ chế quan trọng trong việc thực thi mô hình OOP trong JavaScript."
+keywords: [
+"prototype trong javascript",
+"prototype trong javascript la gi",
+"prototype trong javascript dung de lam gi",
+"cach su dung prototype trong javascript",
+"prototype va oop trong javascript",
+"object prototype trong javascript",
+"object prototype trong javascript la gi",
+"khi nao can dung prototype trong javascript"
+]
 chapter:
   name: "Prototype và thừa kế prototype"
   slug: "chuong-07-prototype-va-thua-ke-prototype"
