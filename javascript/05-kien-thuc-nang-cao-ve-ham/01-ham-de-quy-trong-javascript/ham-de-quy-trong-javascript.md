@@ -20,11 +20,14 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168244997-b83b39b6-4985-4b14-9b2e-b3e9b7a7c977.png
 position: 1
 ---
 
 Hàm đệ quy trong JavaScript chính là **một hàm tự gọi lại chính nó**.
+
+![Hàm đệ quy trong Javascript](https://user-images.githubusercontent.com/29374426/168244997-b83b39b6-4985-4b14-9b2e-b3e9b7a7c977.png)
+
 
 Ví dụ sau in ra **Hello world!** `n` lần sử dụng hàm đệ quy:
 
