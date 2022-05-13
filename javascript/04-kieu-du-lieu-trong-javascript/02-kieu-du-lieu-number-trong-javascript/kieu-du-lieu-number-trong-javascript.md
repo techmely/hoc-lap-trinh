@@ -19,9 +19,11 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168241811-a6e5438e-3e6f-4e15-b87b-ab20aaba0691.png
 position: 2
 ---
+
+![Kiểu dữ liệu number trong Javascript](https://user-images.githubusercontent.com/29374426/168241811-a6e5438e-3e6f-4e15-b87b-ab20aaba0691.png)
 
 Có hai kiểu dữ liệu liên quan đến **number trong JavaScript** là: number thông thường và bigInt.
 
