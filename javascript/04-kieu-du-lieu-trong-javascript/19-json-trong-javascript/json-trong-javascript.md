@@ -18,11 +18,14 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168244482-e12888eb-898f-427c-ad6c-4a403cd31dd3.png
 position: 19
 ---
 
 Giả sử, bạn có một object phức tạp. Và bạn muốn **chuyển object thành dạng string** để gửi lên server hoặc ghi log ra file.
+
+![JSON trong Javascript](https://user-images.githubusercontent.com/29374426/168244482-e12888eb-898f-427c-ad6c-4a403cd31dd3.png)
+
 
 Cách đơn giản là bạn viết phương thức `toString()` chứa tất cả các thuộc tính của object, ví dụ:
 
