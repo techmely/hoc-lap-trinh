@@ -18,11 +18,13 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168241987-e96c8d4c-c105-49ff-a02b-d9e4c27bf4ce.png
 position: 3
 ---
 
 Kiểu dữ liệu string trong JavaScript dùng để **lưu trữ giá trị dạng text**. Và không có kiểu dữ liệu đặc biệt nào cho một ký tự.
+
+![Kiểu dữ liệu string trong Javascript](https://user-images.githubusercontent.com/29374426/168241987-e96c8d4c-c105-49ff-a02b-d9e4c27bf4ce.png)
 
 Có **ba loại kí tự** dùng để biểu diễn string trong JavaScript là: dấu nháy đơn, dấu nháy kép và dấu "backtick", ví dụ:
 
