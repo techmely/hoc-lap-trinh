@@ -18,11 +18,14 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168244791-cd8329c4-6a81-4801-b7ae-0846859d3912.png
 position: 20
 ---
 
 Trước khi bắt đầu, mình muốn bạn hiểu tại sao mình lại viết về phương thức Reduce trong JavaScript mà không phải là một phương thức nào khác.
+
+![Ứng dụng reduce trong mảng](https://user-images.githubusercontent.com/29374426/168244791-cd8329c4-6a81-4801-b7ae-0846859d3912.png)
+
 
 Bởi lẽ, reduce trong JS là một trong 3 phương thức quan trọng và thường **sử dụng trong lập trình hàm** - đó là [`arr.map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [`arr.filter()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) và [`arr.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
 
