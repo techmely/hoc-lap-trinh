@@ -21,7 +21,7 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168243549-4803ac2f-e047-4230-8cad-6a059f529826.png
 position: 13
 ---
 
