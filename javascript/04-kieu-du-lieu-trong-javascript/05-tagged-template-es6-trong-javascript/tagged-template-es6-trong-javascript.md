@@ -18,11 +18,13 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168242173-f4c90841-cb1f-4f3f-b978-286dbc7fbd1e.png
 position: 5
 ---
 
 Trong bài viết về [sử dụng ES6 Template String có gì hay](/bai-viet/javascript/es6-template-string-trong-javascript), mình đã giới thiệu với bạn về ES6 Template String là gì, cũng như cách dùng và ứng dụng của nó.
+
+https://user-images.githubusercontent.com/29374426/168242173-f4c90841-cb1f-4f3f-b978-286dbc7fbd1e.png
 
 Tuy nhiên, có một tính năng mà mình chưa đề cập đến là: **Tagged template**. Sau đây, mình sẽ tìm hiểu xem rốt cuộc Tagged template ES6 là gì và sử dụng Tagged template như thế nào nhé.
 
