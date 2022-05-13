@@ -19,11 +19,14 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168243960-1fc99145-3e3b-4bb8-b829-b5233a336e90.png
 position: 15
 ---
 
 WeakMap trong JavaScript là cũng là **một loại object**. WeakMap có những đặc điểm giống và khác Map như thế nào?
+
+![Weakmap trong Javascript](https://user-images.githubusercontent.com/29374426/168243960-1fc99145-3e3b-4bb8-b829-b5233a336e90.png)
+
 
 Sau đây, mình sẽ cùng tìm hiểu về WeakMap trong JavaScript.
 
