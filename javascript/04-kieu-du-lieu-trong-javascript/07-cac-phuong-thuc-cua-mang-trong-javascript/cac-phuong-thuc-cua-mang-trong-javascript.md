@@ -21,11 +21,13 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168242680-a06573d8-935e-4e59-8933-7a46204eb822.png
 position: 7
 ---
 
 Có rất nhiều phương thức của mảng trong JavaScript. Nhờ đó, việc xử lý mảng trở nên dễ dàng hơn. Sau đây, mình sẽ tìm hiểu chi tiết về các phương thức xử lý mảng phổ biến nhất.
+
+![Các phương thức của mảng trong Javascript](https://user-images.githubusercontent.com/29374426/168242680-a06573d8-935e-4e59-8933-7a46204eb822.png)
 
 ## Các phương thức thêm/xóa phần tử mảng
 
