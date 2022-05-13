@@ -19,11 +19,14 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168244102-624b9c52-c648-49d6-93ee-188e99530e1a.png
 position: 16
 ---
 
 WeakSet trong JavaScript cũng là một loại object đặc biệt, dùng để **lưu trữ dữ liệu một cách duy nhất**, không trùng lặp - tương tự như [Set](/bai-viet/javascript/set-trong-javascript/).
+
+![Weakset trong Javascript](https://user-images.githubusercontent.com/29374426/168244102-624b9c52-c648-49d6-93ee-188e99530e1a.png)
+
 
 Tuy nhiên, cũng giống như [WeakMap](/bai-viet/javascript/weakmap-trong-javascript), WeakSet chỉ cho phép lưu trữ dữ liệu kiểu [object](/bai-viet/javascript/object-la-gi-object-trong-javascript) (không chấp nhận kiểu nguyên thủy).
 
