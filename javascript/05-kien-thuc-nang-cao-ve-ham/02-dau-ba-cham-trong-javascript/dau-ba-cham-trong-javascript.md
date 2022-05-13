@@ -18,9 +18,12 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168245396-7febe5dc-f20f-485b-a96d-79801f6cbc05.png
 position: 2
 ---
+
+![Dấu ba chấm trong Javascript](https://user-images.githubusercontent.com/29374426/168245396-7febe5dc-f20f-485b-a96d-79801f6cbc05.png)
+
 
 Rất nhiều hàm trong JavaScript hỗ trợ truyền vào **số lượng tham số không giới hạn**, ví dụ:
 
