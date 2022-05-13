@@ -20,11 +20,14 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168244363-d816a9cf-84ff-4f0e-ad13-a96200f22b93.png
 position: 18
 ---
 
 Date trong JavaScript là một [đối tượng sẵn có](/bai-viet/javascript/object-la-gi-object-trong-javascript) giúp bạn lưu trữ **date (ngày, tháng, năm)**, **time (giờ, phút, giây)** và quản lý date/time.
+
+![Đối tượng Date trong Javascript](https://user-images.githubusercontent.com/29374426/168244363-d816a9cf-84ff-4f0e-ad13-a96200f22b93.png)
+
 
 Ví dụ, bạn có thể sử dụng `Date` để lưu thời gian tạo và chỉnh sửa dữ liệu, đo lường thời gian hay hiển thị thời gian hiện tại.
 
