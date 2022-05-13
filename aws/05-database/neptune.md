@@ -19,13 +19,15 @@ category:
   slug: "aws"
 chapter:
   name: "Database"
-  slug: "database"
+  slug: "chap-05-database"
+image: https://user-images.githubusercontent.com/29729545/166097186-a22dce8c-8f7b-49f4-afa2-856e2e91f269.png
 position: 26
 ---
 
-- Là dịch vụ Graph database
+## Neptune trong AWS
+- Neptune là dịch vụ Graph database trong AWS
 - Được sử dụng trong bài toán dữ liệu có mối quan hệ phức tạp như Social Networking
 - High available cross 3 AZ, có thể có 15 read replicas
 - Trả phí theo số lượng node bạn sử dụng
 
-![AWS Neptune là gì](https://techcrunch.com/wp-content/uploads/2018/05/neptune-diagram_knowledge-graph-22076f2eae8aa3e7f3c6c7e7b11a181dfe1b4002.png)
+![AWS Neptune là gì](https://user-images.githubusercontent.com/29729545/166097186-a22dce8c-8f7b-49f4-afa2-856e2e91f269.png)

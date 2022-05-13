@@ -9,8 +9,6 @@ keywords:
     "AWS Glue Data Catalog la gi",
     "AWS Glue Data Catalog là gì",
     "Glue Data Catalog trong AWS",
-    "ETL la gi",
-    "ETL là gì",
   ]
 author:
   fullname: Phan Văn Đức
@@ -21,7 +19,8 @@ category:
   slug: "aws"
 chapter:
   name: "Database"
-  slug: "database"
+  slug: "chap-05-database"
+image: https://user-images.githubusercontent.com/29729545/156197109-261efa39-6875-49b0-8817-937244765d9d.png
 position: 25
 ---
 
@@ -31,7 +30,7 @@ position: 25
 
 ![AWS Glue là gì](https://user-images.githubusercontent.com/29729545/156197109-261efa39-6875-49b0-8817-937244765d9d.png)
 
-## Glue Data Catalog
+## Glue Data Catalog trong AWS
 
 - Glue Data Catalog là nơi lưu trữ metadata của data nguồn
 - Ví dụ bạn muốn transform dữ liều từ Amazon RDS:

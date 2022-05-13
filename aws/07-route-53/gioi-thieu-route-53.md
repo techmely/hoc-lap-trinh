@@ -22,7 +22,7 @@ category:
   slug: "aws"
 chapter:
   name: "Route 53"
-  slug: "route-53"
+  slug: "chap-07-route-53"
 position: 61
 ---
 

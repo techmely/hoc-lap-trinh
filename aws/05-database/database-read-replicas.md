@@ -1,7 +1,13 @@
 ---
 title: "Giới thiệu Read Replicas"
 description: "Read replicas giúp bạn scaling việc read. Read replicas cho phép bạn tạo 1 hoặc nhiều bản copies của DB instance trong chung region hoặc khác region"
-keywords: ["Read replicas la gi", "RDS multi AZ la gi"]
+keywords:
+  [
+    "Read replicas la gi",
+    "Read Replicas là gì",
+    "RDS multi AZ la gi",
+    "RDS Multi AZ là gì",
+  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -11,17 +17,18 @@ category:
   slug: "aws"
 chapter:
   name: "Database"
-  slug: "database"
+  slug: "chap-05-database"
+image: https://user-images.githubusercontent.com/29729545/166090886-13879896-c4b5-4f75-a711-fbabc8bb35e4.png
 position: 21
 ---
 
 ## RDS Read Replicas vs Multiple AZ
 
-### Read Replicas
+### Read Replicas là gì
 
-![Read](https://cacoo.com/diagrams/2XNdewVsgellO3x8-1506D.png)
+![Read Replicas là gì](https://user-images.githubusercontent.com/29729545/166090886-13879896-c4b5-4f75-a711-fbabc8bb35e4.png)
 
-Read replicas giúp bạn scaling việc read. Read replicas cho phép bạn tạo 1 hoặc nhiều bản copies của DB instance trong chung region hoặc khác region. Handle việc bạn có 1 RDS database phải tiếp nhận nhiều request,RDS instance sẽ **ASYNC replicated** các bản sao khác
+Read replicas giúp bạn scaling việc read. Read replicas cho phép bạn tạo 1 hoặc nhiều bản copies của DB instance trong chung region hoặc khác region. Handle việc bạn có 1 RDS database phải tiếp nhận nhiều request, RDS instance sẽ **ASYNC replicated** các bản sao khác
 
 - Up to 5 Read Replicas, mỗi Read Replicas có 1 DNS enpoind khác nhau.
 - Cross AZ, hoặc cross Region
@@ -34,9 +41,9 @@ Read replicas giúp bạn scaling việc read. Read replicas cho phép bạn t�
 - Nếu trong cùng 1 region thì giá sẽ free
 - Nếu cross AZ ở khác region thì AWS sẽ tính phí của bạn
 
-### RDS Multi AZ (Disaster Recovery)
+### RDS Multi AZ là gì (Disaster Recovery)
 
-![RDS Multi AZ](https://miro.medium.com/max/1200/1*Tpg2Xo1fIMX-Cz5tzeOZ1g.png) RDS Multi AZ cung cấp khả năng sẵn sàng cho DB của bạn trong 1 Region. Dữ liệu sẽ được **SYNC replicated** tới các standby insatnce ở AZ khác
+![RDS Multi AZ là gì](https://user-images.githubusercontent.com/29729545/166091087-d38b26ae-322b-4743-8cd3-00b53198479e.png) RDS Multi AZ cung cấp khả năng sẵn sàng cho DB của bạn trong 1 Region. Dữ liệu sẽ được **SYNC replicated** tới các standby insatnce ở AZ khác
 
 Ví dụ: DB instance chính của bạn ở AZs ap-northeast-1a, standby insatnce ở ap-northeast-1d
 
@@ -49,7 +56,12 @@ NOTES:
 
 ### RDS From single AZ to Multi AZ
 
+<<<<<<< HEAD
 ![RDS From single AZ to Multi AZ](https://miro.medium.com/max/668/1*ewojRDRfLgZW7loOtSR0TQ.png)
+=======
+![RDS From single AZ to Multi AZ](https://user-images.githubusercontent.com/29729545/166091197-9297d163-dc31-4eb5-a825-5e11e769ec2b.png)
+
+> > > > > > > 7fb9103af39c50fad6f772177ac752def017d784
 
 - Zero downtime
 - Chỉ cần click "modify"

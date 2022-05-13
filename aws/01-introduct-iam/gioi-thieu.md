@@ -3,11 +3,10 @@ title: "Tổng quan về AWS"
 description: "Amazon Web Services (AWS) là nền tảng đám mây toàn diện và được sử dụng rộng rãi nhất, cung cấp trên 200 dịch vụ đầy đủ tính năng từ các trung tâm dữ liệu trên toàn thế giới."
 keywords:
   [
-    "Amazon Web Services (AWS) là gì",
-    "Amazon Web Services (AWS) la gi",
+    "Amazon Web Services là gì",
+    "Amazon Web Services la gi",
     "aws cli là gì",
     "aws là gì",
-    "bằng aws là gì",
     "cloud aws là gì",
     "cloud aws la gi",
     "cloud la gi",
@@ -24,7 +23,7 @@ category:
   slug: "aws"
 chapter:
   name: "Giới thiệu AWS"
-  slug: "index"
+  slug: "chap-01-introduction"
 image: https://user-images.githubusercontent.com/29729545/162230977-5b127f4a-6c28-416b-9096-4cdc99010ffa.png
 position: 1
 ---

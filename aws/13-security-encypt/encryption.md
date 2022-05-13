@@ -21,7 +21,7 @@ category:
   slug: "aws"
 chapter:
   name: "Security & Encryption"
-  slug: "security"
+  slug: "chap-13-security"
 position: 241
 ---
 

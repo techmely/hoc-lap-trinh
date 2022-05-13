@@ -27,7 +27,7 @@ category:
   slug: "aws"
 chapter:
   name: "Elastic Compute Cloud"
-  slug: "ec2"
+  slug: "chap-02-ec2"
 image: https://user-images.githubusercontent.com/29729545/162227316-62f67100-d142-4a64-9c78-8f15b94143ac.png
 position: 4
 ---
@@ -43,7 +43,7 @@ position: 4
 
 ### 1. On-demand instance là gì
 
-Tùy theo cấu hình EC2 mình chọn, AWS sẽ tính tiền dựa trên những lựa chọn của mình
+On-demand instance là các tính tiền dễ hiểu nhất "dùng bao nhiêu trả tiền bấy nhiêu" . Tùy theo cấu hình EC2 mình chọn, AWS sẽ tính tiền dựa trên những lựa chọn của mình
 
 - Tính tiền theo thời gian sử dụng thực tế (Chỉ tính tiền khi state running)
 - Option đắt tiền nhất
@@ -52,7 +52,7 @@ Tùy theo cấu hình EC2 mình chọn, AWS sẽ tính tiền dựa trên nhữn
 
 Bạn sẽ bid (đấu thầu) giá **max_price** mà mình muốn trả, pot instance sẽ có **current_price** và current_price này sẽ thay đổi theo thời gian <br /> AWS sẽ lấy lại spot instance của bạn khi **max_price** < **current_price**
 
-- Dùng cho những ứng dụng flexible, có thể bị interrupted
+- Use-case: dùng cho những ứng dụng flexible, có thể bị interrupted.
 
 ### 3. Reserved instances là gì
 

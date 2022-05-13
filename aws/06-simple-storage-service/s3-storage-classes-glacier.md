@@ -28,7 +28,7 @@ category:
   slug: "aws"
 chapter:
   name: "Simple Storage Serivce"
-  slug: "s3"
+  slug: "chap-06-s3"
 position: 57
 ---
 
