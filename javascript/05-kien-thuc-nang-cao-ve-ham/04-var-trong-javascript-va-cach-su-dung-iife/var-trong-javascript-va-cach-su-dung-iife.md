@@ -17,9 +17,12 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168245793-4a038927-177c-4921-aba9-c04651f21190.png
 position: 4
 ---
+
+![Var trong Javascript và cách sử dụng IIFE](https://user-images.githubusercontent.com/29374426/168245793-4a038927-177c-4921-aba9-c04651f21190.png)
+
 
 Var trong JavaScript là một **cách cũ** để khai báo biến. Và bạn không nên sử dụng `var` nữa, mà thay vào đó là sử dụng `let` hoặc `const`.
 
