@@ -4,7 +4,7 @@ description: "EBS (Elastic Block Store) là dịch vụ lưu trữ dưới dạn
 keywords:
   [
     "EBS là gì",
-    "ebs la gi aws"
+    "ebs la gi aws",
     "EBS trong aws",
     "EBS snapshot trong aws",
     "AWS AMI là gì",
