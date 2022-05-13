@@ -18,11 +18,14 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168243187-23ec7564-4b55-402b-8663-06ebc2d677f6.png
 position: 10
 ---
 
 Trong JavaScript, để duyệt [array](/bai-viet/javascript/mang-array-trong-javascript) thì **forEach** là một hàm rất hay. Vậy hàm forEach trong JavaScript cụ thể là như thế nào? Cách sử dụng forEach JavaScript ra sao? Mình hãy cùng tìm hiểu để làm chủ forEach js nhé!
+
+![Tìm hiểu về forEach trong Javascript](https://user-images.githubusercontent.com/29374426/168243187-23ec7564-4b55-402b-8663-06ebc2d677f6.png)
+
 
 ## Đặt bài toán
 
