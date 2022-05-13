@@ -146,7 +146,7 @@ switch (x - 1) {
 // case 2
 ```
 
-Vì `x = "3"` nên ta có `x - 1` bằng `"3" - 1`. Trường hợp này là phép trừ hai giá trị khác kiểu dữ liệu, nên kí tự `"3"` được [chuyển đổi về dạng số](/chuyen-doi-kieu-du-lieu-trong-javascript/) thành số `3`. Vì vậy, `x - 1` sẽ bằng `2`.
+Vì `x = "3"` nên ta có `x - 1` bằng `"3" - 1`. Trường hợp này là phép trừ hai giá trị khác kiểu dữ liệu, nên kí tự `"3"` được [chuyển đổi về dạng số](/bai-viet/javascript/chuyen-doi-kieu-du-lieu-trong-javascript) thành số `3`. Vì vậy, `x - 1` sẽ bằng `2`.
 
 Mà ta có `v = 0`, nên `v + 1` bằng `1` và `v + 2` bằng `2`. Suy ra, trường hợp `case v + 2` thỏa mãn. Do đó, `case 2` được in ra.
 

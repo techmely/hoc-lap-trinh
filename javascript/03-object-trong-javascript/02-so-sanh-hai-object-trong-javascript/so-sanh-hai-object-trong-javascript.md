@@ -160,7 +160,7 @@ console.log(isPointEqual(point1, point2)); // trueconsole.log(isPointEqual(point
 
 Thậm chí là số lượng thuộc tính không biết trước thì bạn không thể dùng cách trên được.
 
-Để giải quyết bài toán số lượng các thuộc tính trong object nhiều hoặc không biết trước, bạn có thể sử dụng [vòng lặp `for...in`](/bai-viet/javascript/cau-truc-lap-trong-javascript) để duyệt hết các thuộc tính của object.
+Để giải quyết bài toán số lượng các thuộc tính trong object nhiều hoặc không biết trước, bạn có thể sử dụng [vòng lặp `for...in`](/bai-viet/javascript/vong-lap-trong-javascript) để duyệt hết các thuộc tính của object.
 
 Mình đã viết một [hàm](/bai-viet/javascript/ham-trong-javascript/) để so sánh từng thuộc tính và giá trị của object như sau:
 

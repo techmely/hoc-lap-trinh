@@ -1,12 +1,13 @@
 ---
 title: "Elasticache là gì"
 description: "Elasticache là dịch vụ bộ nhớ đệm được quản lý dành cho Redis và Memcached"
-keywords: [
-  "Amazon Elasticache la gi",
-  "Amazon Elasticache là gì",
-  "Redis trong aws",
-  "Memcached trong aws"
-]
+keywords:
+  [
+    "Amazon Elasticache la gi",
+    "Amazon Elasticache là gì",
+    "Redis trong aws",
+    "Memcached trong aws",
+  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

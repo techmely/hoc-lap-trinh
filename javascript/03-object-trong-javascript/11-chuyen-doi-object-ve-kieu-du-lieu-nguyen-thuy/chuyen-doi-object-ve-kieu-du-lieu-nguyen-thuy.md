@@ -20,11 +20,13 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168241168-64b96466-5b10-4953-b3ef-81a23b40d3ff.png
 position: 11
 ---
 
 Trong bài viết [chuyển đổi kiểu dữ liệu](/bai-viet/javascript/chuyen-doi-kieu-du-lieu-trong-javascript/), mình đã giới thiệu về cách chuyển đổi các kiểu dữ liệu nguyên thủy sang **number** và **string**.
+
+![Chuyển đổi Object về kiểu dữ liệu nguyên thủy trong Javascript](https://user-images.githubusercontent.com/29374426/168241168-64b96466-5b10-4953-b3ef-81a23b40d3ff.png)
 
 Nhưng nếu toán hạng **không phải kiểu dữ liệu nguyên thủy mà là object** thì sao? Hay làm sao để chuyển đổi object về kiểu dữ liệu nguyên thủy?
 
