@@ -18,11 +18,13 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168244233-2501bbc6-9db0-4284-8494-a86d95178fc8.png
 position: 17
 ---
 
 **Destructuring Assignment trong JavaScript** là một cú pháp đặc biệt cho phép bạn **lấy ra dữ liệu** từ [Object](/bai-viet/javascript/object-la-gi-object-trong-javascript) hoặc [Array](/bai-viet/javascript/mang-array-trong-javascript) và gán chúng vào các biến thông thường.
+
+![Destructuring assignment trong Javascript](https://user-images.githubusercontent.com/29374426/168244233-2501bbc6-9db0-4284-8494-a86d95178fc8.png)
 
 Tuy nhiên, việc "lấy ra dữ liệu" này **chỉ copy mà không làm thay đổi cấu trúc** của Object hoặc Array.
 
