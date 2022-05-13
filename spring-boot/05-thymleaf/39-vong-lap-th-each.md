@@ -1,5 +1,5 @@
 ---
-title: "Vòng lặp th:each."
+title: "Vòng lặp th:each trong Thymeleaf"
 description: "Thymeleaf cung cấp cho bạn vòng lặp each, và bạn có thể sử dụng nó thông qua thuộc tính (attribute) th:each. Đây là vòng lặp duy nhất được hỗ trợ trong Thymeleaf.."
 keywords:
   [
@@ -11,7 +11,8 @@ keywords:
     "cach su dung vong lap trong spring",
     "lap cac phan tu trong spring voi thymleaf",
     "cach su dung thymleaf trong spring",
-    "spring boot vong lap thymleaf"
+    "spring boot vong lap thymleaf",
+    "Vòng lặp th:each trong Thymeleaf"
 chapter:
   name: "Form"
   slug: "04-form"
