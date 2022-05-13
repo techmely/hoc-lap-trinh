@@ -9,7 +9,10 @@ keywords: [
 "prototype va oop trong javascript",
 "object prototype trong javascript",
 "object prototype trong javascript la gi",
-"khi nao can dung prototype trong javascript"
+"khi nao can dung prototype trong javascript",
+"prototype trong javascript là gì",
+"cách sử dụng prototype trong javascript",
+"tìm hiểu prototype trong javascript"
 ]
 chapter:
   name: "Prototype và thừa kế prototype"
