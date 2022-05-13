@@ -20,11 +20,14 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168242982-85255f57-649f-4ce2-9d8f-b18e7000d66d.png
 position: 8
 ---
 
 Bài viết sau đây tập trung tìm hiểu về **phương thức sắp xếp mảng trong JavaScript**. Và cách triển khai một số **thuật toán sắp xếp mảng cơ bản**.
+
+![Sắp xếp mảng trong Javascript](https://user-images.githubusercontent.com/29374426/168242982-85255f57-649f-4ce2-9d8f-b18e7000d66d.png)
+
 
 Nói về sắp xếp mảng thì đây là một vấn đề vô cùng phổ biến trong các chương trình. Nhiều ứng dụng (từ điển, danh bạ, quản lý tài khoản,...) thường có chức năng sắp xếp theo thứ tự từ điển (a-z). Việc sắp xếp giúp người quản lý và người dùng dễ dàng tìm kiếm nội dung hơn.
 
