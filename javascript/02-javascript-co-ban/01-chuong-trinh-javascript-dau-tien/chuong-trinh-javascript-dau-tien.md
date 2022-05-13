@@ -124,4 +124,4 @@ Một số Text Editor Online gợi ý cho bạn:
 
 Ưu điểm của những trình Text Editor Online này là dễ sử dụng, được tích hợp sẵn mọi thứ, không cần cài đặt thêm gì cả. Việc của bạn chỉ là gõ code và chạy
 
-Đọc đến đây, minh hi vọng bạn đã hiểu được phần nào về ngôn ngữ lập trình Javascript, biết cách tạo một ứng dụng đơn giản với Javascript. Phần tiếp theo, chúng ta sẽ cùng nhau tìm hiểu các cú pháp từ cơ bản tới nâng cao của Javascript nhé
+Đọc đến đây, mình hi vọng bạn đã hiểu được phần nào về ngôn ngữ lập trình Javascript, biết cách tạo một ứng dụng đơn giản với Javascript. Phần tiếp theo, chúng ta sẽ cùng nhau tìm hiểu các cú pháp từ cơ bản tới nâng cao của Javascript nhé
