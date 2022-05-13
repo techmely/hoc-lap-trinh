@@ -1,7 +1,6 @@
 # How to contribute content
 
-<iframe width="100%" height="444" src="https://www.youtube.com/embed/okedCA_uZ_k">
-</iframe>
+[![Hướng dẫn contribute bài viết trên Kungfu Tech](https://user-images.githubusercontent.com/29374426/168232535-07a84486-babf-420d-a322-f5a1e88ae395.png)](https://www.youtube.com/watch?v=okedCA_uZ_k)
 
 ### Example
 
