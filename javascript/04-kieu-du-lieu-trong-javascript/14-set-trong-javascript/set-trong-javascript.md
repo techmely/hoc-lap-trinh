@@ -20,11 +20,14 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168243792-6464321c-f082-4646-bac9-4edf0441231b.png
 position: 14
 ---
 
 Mình đã tìm hiểu về [Map](/bai-viet/javascript/map-trong-javascript) trong JavaScript rồi. Bài viết này mình tiếp tục tìm hiểu về một loại **object đặc biệt** nữa. Đó là Set trong Javascript
+
+![Set trong Javascript](https://user-images.githubusercontent.com/29374426/168243792-6464321c-f082-4646-bac9-4edf0441231b.png)
+
 
 ## Set trong JavaScript là gì?
 
