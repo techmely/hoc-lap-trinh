@@ -18,11 +18,13 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168241439-75b68bba-22a5-4a2c-a3a1-727cd6cb9839.png
 position: 1
 ---
 
 JavaScript cho phép bạn sử dụng kiểu nguyên thủy giống như object. Nghĩa là bạn có thể **gọi các phương thức của kiểu nguyên thủy** giống như gọi với object.
+
+<img width="600" alt="Các phương thức của kiểu dữ liệu nguyên thủy trong Javascript" src="https://user-images.githubusercontent.com/29374426/168241439-75b68bba-22a5-4a2c-a3a1-727cd6cb9839.png">
 
 Nghe có vẻ vô lý nhưng đúng là như vậy. Trước khi đi vào chi tiết, bạn cần phân biệt rõ kiểu nguyên thủy và object.
 
