@@ -1,6 +1,6 @@
 # How to contribute content
 
-[Hướng dẫn contribute bài viết trên Kungfu Tech](https://www.youtube.com/watch?v=okedCA_uZ_k)
+[https://www.youtube.com/watch?v=okedCA_uZ_k](https://www.youtube.com/watch?v=okedCA_uZ_k)
 
 ### Example
 
