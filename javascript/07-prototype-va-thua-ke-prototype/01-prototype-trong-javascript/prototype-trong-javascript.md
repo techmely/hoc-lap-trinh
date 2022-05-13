@@ -20,9 +20,11 @@ chapter:
 category:
   name: "Javascript"
   slug: "javascript"
-image: https://kungfutech.edu.vn/thumbnail.png
+image: https://user-images.githubusercontent.com/29374426/168246011-4f728c59-d02c-47df-9c65-50ea792567d8.png
 position: 1
 ---
+
+![Prototype trong JavaScript](https://user-images.githubusercontent.com/29374426/168246011-4f728c59-d02c-47df-9c65-50ea792567d8.png)
 
 Khi lập trình, mọi người thường mong muốn có thể **tái sử dụng code và mở rộng thêm các tính năng**.
 
