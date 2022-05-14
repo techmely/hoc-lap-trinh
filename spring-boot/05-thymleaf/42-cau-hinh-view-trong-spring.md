@@ -5,11 +5,13 @@ keywords:
   [
     "Cấu hình view trong Spring.",
     "Cach Cấu hình view trong Spring.",
-    "lam the nao cấu hình view trong Spring.",
+    "làm thế nào cấu hình view trong spring",
+    "lam the nao cau hinh view trong Spring"
     "Cấu hình view trong Spring co tac dung gi",
     "Cấu hình view trong Spring nhu the nao",
     "view trong spring",
-    "view trong spring la gi"
+    "view trong spring la gi",
+    "view trong spring là "
   ]
 chapter:
   name: "Thymleaf"
