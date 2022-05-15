@@ -4,6 +4,7 @@ description: "Amazon S3 (Amazon Simple Storage Service) là dịch vụ lưu tr�
 keywords:
   [
     "S3 la gi",
+    "AWS S3 là gì",
     "S3 trong aws",
     "S3 Buckets trong aws",
     "Buckets trong s3",
@@ -25,6 +26,7 @@ category:
 chapter:
   name: "Simple Storage Serivce"
   slug: "chap-06-s3"
+image: https://user-images.githubusercontent.com/29729545/147766077-fce2bc9e-0852-4d72-b89e-b30b67d78eb0.png
 position: 50
 ---
 
@@ -32,21 +34,21 @@ position: 50
 
 Amazon S3 (Amazon Simple Storage Service) là dịch vụ lưu trữ dữ liệu đơn giản của Amazon cung cấp. Amazon S3 cung cấp khả nẳng mở rộng, tính khả dụng của dữ liệu, bảo mật cao.
 
-## S3 Buckets và Object
+## S3 Buckets và Object trong AWS
 
 Amazon S3 cho phép người dùng có thể lưu trữ Objects (files) trong Buckets (directories).
 
-### Buckets
+### S3 Buckets là gì
 
-- Bucket cần có tên là duy nhất trên toàn cầu
-- Khi tạo buckets cần chon region
-- Naming convention:
+- S3 Buckets trong aws cần có tên là duy nhất trên toàn cầu
+- Khi tạo buckets cần chọn region
+- Quy tắc đặt tên:
   - Chỉ chưa ký tự viết thường, số, dấu chấm (.), gạch ngang (-)
   - Độ dài từ 3-63 ký tự
   - Không được có format của IP
   - Phải bắt đầu bằng ký tự thường hoặc số
 
-### Objects
+### S3 Objects là gì
 
 Object giống như một file dữ liệu của chúng ta. Object có **Key** chính là path tên object trong bucket.
 
@@ -60,7 +62,7 @@ Object giống như một file dữ liệu của chúng ta. Object có **Key** c
   - Object size tối đa là: 5TB (5000GB)
   - Nếu muốn upload nhiều hơn 5GB, cần dùng **"multi-path upload"** để chia nhỏ upload nhiều phần.
 
-## S3 Versioning
+## S3 versioning là gì
 
 - Chúng ta có thể tạo các version của file
 - Tính năng này được enable ở **"bucket level"**
