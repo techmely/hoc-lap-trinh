@@ -29,10 +29,11 @@ category:
 chapter:
   name: "Simple Storage Serivce"
   slug: "chap-06-s3"
+image: https://user-images.githubusercontent.com/29729545/150820622-f7eebb9c-aa28-45b7-9d80-a343b31fb451.png
 position: 56
 ---
 
-## S3 Access Logs
+## S3 Access Logs trong AWS
 
 - S3 Access Logs lưu lại thông tin request đến S3 buckets của bạn
 - Như hình vẽ dưới đây, những request đến "S3 Bucket", cho dù accept hay denied đều được ghi lại vào "Log Bucket"
@@ -51,7 +52,7 @@ S3 access logs format:
 
 ![S3 Access Logs loop](https://user-images.githubusercontent.com/29729545/150823145-ec002c49-da51-43de-aaed-d3547f1cfd65.png)
 
-## S3 Replication (CRR & SRR)
+## S3 Replication (CRR & SRR) trong AWS
 
 - CRR: Cross Region Replication
 - SRR: Same Region Replication
@@ -71,7 +72,7 @@ S3 Replication là tính năng sao chép các object giữa các vùng lưu tr�
   </ul>
 </content-info>
 
-## S3 Pre-signed
+## S3 Pre-signed trong AWS
 
 Pre-signed URL là URL mà bạn có thể cung cấp cho người dùng của mình để cấp quyền truy cập tạm thời vào một đối tượng S3 cụ thể. Sử dụng URL, người dùng có thể đọc và ghi đối tượng (hoặc cập nhật đối tượng hiện có). URL chứa các thông số cụ thể do ứng dụng mà bạn cài đặt.
 

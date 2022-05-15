@@ -13,6 +13,8 @@ keywords:
     "Chan truy cap S3",
     "Quan ly truy cap S3",
     "Cap quyen truy cap trong S3",
+    "S3 Bucket Policies trong AWS",
+    "Bảo mật người dùng trong S3"
   ]
 author:
   fullname: Phan Văn Đức
@@ -24,10 +26,11 @@ category:
 chapter:
   name: "Simple Storage Serivce"
   slug: "chap-06-s3"
+image: https://user-images.githubusercontent.com/29729545/147956862-919f469d-1203-4478-a698-ae6bd5790ebb.png
 position: 53
 ---
 
-## S3 Security
+## S3 Security trong AWS
 
 S3 security là quản lý quyền truy cập dữ liệu trong Amazon S3. Chúng ta có 3 phương thức để quản lý truy cập, đó là:
 
@@ -37,7 +40,7 @@ S3 security là quản lý quyền truy cập dữ liệu trong Amazon S3. Chún
   - Objects ALC: Quản lý cấp độ Objects
 - **Bucket policies**: Có thể add/deny quyền truy cập một cách linh hoạt được đinh nghĩa trong file JSON.
 
-## S3 Bucket Policies
+## S3 Bucket Policies trong AWS
 
 ![S3 Bucket Policies](https://user-images.githubusercontent.com/29729545/147956862-919f469d-1203-4478-a698-ae6bd5790ebb.png)
 
@@ -59,7 +62,7 @@ Ví dụ như trên hình vẽ đang định nghĩa policy: Tất cả user có 
 
 Mặc định khi tạo một bucket trên S3, Amazon sẽ block tất cả public access. Có nghĩa là khi bạn upload một file ảnh lên bucket đó, bạn sẽ không thể view file đó được luôn. Để có thể xem được file ảnh đó, bạn cần cấp quyền để có thể xem từ mọi nơi.
 
-## User Security
+## Bảo mật người dùng trong S3
 
 - **MFA Delete**: Chúng ta có thể anable MFA (multi factor authentication) khi muốn delete object. Việc này đảm bảo không phải ai cũng có thể xóa dữ liệu của bạn
 - **Pre-Signed URLs**: Ví dụ video của bạn là premium (giới hạn cho những user đã trả phí). Khi tạo Pre-Signed URLs cho object đó, urls sẽ có expire.
