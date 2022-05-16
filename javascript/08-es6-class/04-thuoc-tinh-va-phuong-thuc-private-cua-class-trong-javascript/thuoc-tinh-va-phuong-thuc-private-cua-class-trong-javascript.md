@@ -1,7 +1,17 @@
 ---
 title: "Thuộc tính và phương thức private của class trong Javascript"
-description: ""
-keywords: []
+description: "Tính bao đóng trong Java thể hiện bằng cách để phạm vi truy cập của các thuộc tính là private và truy xuất tới các thuộc tính này thông qua phương thức public."
+keywords: [
+"Thuộc tính và phương thức private của class trong Javascript",
+"Thuộc tính và phương thức private của class trong Javascript là gì",
+"Thuộc tính và phương thức private của class trong Javascript có ý nghĩa như thế nào",
+"private trong javascript",
+"private trong javascript la gi",
+"thế nào là private trong javascript",
+"Phương thức private trong JavaScript",
+"Phương thức private trong JavaScript là gì",
+"Cách sử dụng private trong javascript"
+]
 chapter:
   name: "ES6 Class"
   slug: "chuong-08-es6-class"
