@@ -1,7 +1,17 @@
 ---
 title: "Bất đồng bộ song song hay tuần tự?"
-description: ""
-keywords: []
+description: "Khi bạn có một chuỗi các hành động thì câu hỏi đặt ra là: bạn sẽ xử lý chúng như thế nào? Bạn quyết định xử lý bất đồng bộ song song hay tuần tự."
+keywords: [
+"Bất đồng bộ song song hay tuần tự?",
+"Bất đồng bộ song song hay tuần tự là gì trong javascript",
+"Bất đồng bộ là gì trong javascript",
+"Bất đồng bộ trong javascript",
+"tuần tự là gì trong javascript",
+"Thế nào là tuần tự là gì trong javascript",
+"Xử lí bất đồng bộ song song trong javascript",
+"async await trong javascript",
+"xu ly bat dong bo asyncawait trong javascript"
+]
 chapter:
   name: "Callback, Promise, async/await"
   slug: "chuong-09-callback-promise-asyn-await"
