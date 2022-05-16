@@ -1,7 +1,19 @@
 ---
 title: "Xử lý bất đồng bộ với callback, promise, async/await"
-description: ""
-keywords: []
+description: "Xử lý bất đồng bộ là cơ chế xử lý không thể thiếu trong JavaScript. Cùng xem cách triển khai nó với callback, promise và async/await trong javascript."
+keywords: [
+"Xử lý bất đồng bộ với callback, promise, async/await",
+"Xử lý bất đồng bộ với callback, promise, async/await như thế nào",
+"bất đồng bộ trong javascript",
+"callback trong javascript",
+"promise trong javascript",
+"async/await trong javascript",
+"callback trong javascript là gì",
+"promise trong javascript là gì",
+"async/await trong javascript là gì",
+"Xử lí bất đồng bộ trong javascript",
+"thế nào là bất đồng bộ trong javascript"
+]
 chapter:
   name: "Callback, Promise, async/await"
   slug: "chuong-09-callback-promise-asyn-await"
