@@ -1,7 +1,14 @@
 ---
 title: "Kết thúc Promise chaining trong JavaScript"
-description: ""
-keywords: []
+description: "Trong trường hợp thực hiện nhiều Promise liên tiếp nhau mà bạn muốn dừng giữa chừng thì sao? Hay nói cách khác là làm sao để kết thúc sớm Promise chaining trong JavaScript?"
+keywords: [
+"Kết thúc Promise chaining trong JavaScript",
+"Kết thúc Promise chaining trong JavaScript là gì",
+"promise chain la gi trong javascript",
+"promise chain có ý nghĩa gì trong javascript",
+"Xử lý tuần tự JavaScript",
+"chaining trong JavaScript"
+]
 chapter:
   name: "Callback, Promise, async/await"
   slug: "chuong-09-callback-promise-asyn-await"
