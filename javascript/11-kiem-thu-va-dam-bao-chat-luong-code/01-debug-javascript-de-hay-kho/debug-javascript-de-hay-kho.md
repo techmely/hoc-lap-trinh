@@ -1,7 +1,17 @@
 ---
 title: "Debug Javascript dễ hay khó"
-description: ""
-keywords: []
+description: "Chúng ta sẽ cùng nhau tìm hiểu về debug trong JavaScript sau đây."
+keywords: [
+"Debug Javascript dễ hay khó",
+"Debug Javascript là gì",
+"Debug trong Javascript",
+"Debug trong Javascrip để làm gì",
+"Cách debug trong Javascript",
+"Debug trong Javascript như thế nào",
+"cach debug javascript tren chrome",
+"Cách debug javascript trên Chrome",
+"Debug js vscode"
+]
 chapter:
   name: "Kiểm thử và đảm bảo chất lượng code"
   slug: "11-kiem-thu-va-dam-bao-chat-luong-code"
