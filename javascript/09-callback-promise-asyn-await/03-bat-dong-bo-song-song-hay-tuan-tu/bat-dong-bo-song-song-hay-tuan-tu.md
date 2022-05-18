@@ -10,7 +10,9 @@ keywords: [
 "Thế nào là tuần tự là gì trong javascript",
 "Xử lí bất đồng bộ song song trong javascript",
 "async await trong javascript",
-"xu ly bat dong bo asyncawait trong javascript"
+"xu ly bat dong bo asyncawait trong javascript",
+"xử lý song song",
+"xử lý tuần tự"
 ]
 chapter:
   name: "Callback, Promise, async/await"
