@@ -1,7 +1,17 @@
 ---
 title: "Một số lỗi khi sử dụng Strict mode JavaScript"
-description: ""
-keywords: []
+description: "Một số lỗi phổ biến khi sử dụng Strict mode trong JavaScript để giảm thiểu những sai sót ngớ ngẩn của lập trình viên khi lập trình JavaScript."
+keywords: [
+"Một số lỗi khi sử dụng Strict mode JavaScript",
+"strict mode javascript là gì",
+"strict mode javascript để làm gì",
+"Strict trong javascript",
+"Strict trong javascrip dùng để làm gì",
+"Strict trong javascrip có tác dụng như thế nào",
+"Strict javascrip",
+"javascrip Strict mode là gì",
+"cách dùng javascrip Strict mode"
+]
 chapter:
   name: "Kiểm thử và đảm bảo chất lượng code"
   slug: "11-kiem-thu-va-dam-bao-chat-luong-code"

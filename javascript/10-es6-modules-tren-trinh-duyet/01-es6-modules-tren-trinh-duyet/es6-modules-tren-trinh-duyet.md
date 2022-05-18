@@ -1,7 +1,15 @@
 ---
 title: "ES6 Modules trên trình duyệt"
-description: ""
-keywords: []
+description: "ES Modules với JavaScript thông thường. Bởi vì, ES Modules là một tính năng mới (từ ES6) dành cho các trình duyệt hiện đại."
+keywords: [
+"es6 modules tren trinh duyet",
+"es6 modules tren trinh duyet la gi",
+"Module trong JavaScript",
+"Module trong JavaScript la gi",
+"Module trong JavaScript co y nghia như thế nào",
+"import trong es6 trong javascript",
+"es6 modules tren trinh duyet trong javascript"
+]
 chapter:
   name: "ES6 Modules"
   slug: "10-es6-modules-tren-trinh-duyet"

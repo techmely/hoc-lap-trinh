@@ -1,7 +1,17 @@
 ---
 title: "Tìm hiểu regex trong Javascript"
-description: ""
-keywords: []
+description: "Biểu thức chính quy (regular expressions ) là các mẫu dùng để tìm kiếm các bộ kí tự được kết hợp với nhau trong các chuỗi kí tự."
+keywords: [
+"Tìm hiểu regex trong Javascript",
+"regex trong Javascript",
+"regex trong Javascript là gì",
+"Cách sử dụng regex trong Javascript",
+"regex javascript",
+"Kí tự đặc biệt trong regex javascript",
+"Regular expression trong javascript",
+"biểu thức chính quy RegEx trong Javascript",
+"biểu thức chính quy trong Javascript"
+]
 chapter:
   name: "Regular expression"
   slug: "12-regular-expression"
