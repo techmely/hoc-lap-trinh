@@ -21,6 +21,7 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---
+## Phân biệt giữa Get và Post
 
 POST VÀ GET khác nhau như thế nào?
 
