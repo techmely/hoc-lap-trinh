@@ -11,7 +11,7 @@ keywords: [
 "Kế thừa trong Javascript",
 "ke thua built in class trong javascript là gì",
 "built in class trong javascript là gì",
-"built in trong"
+"built in trong js"
 ]
 chapter:
   name: "ES6 Class"
