@@ -3,11 +3,12 @@ title: "Các loại Load Balancer trong AWS"
 description: "Application Load Balancer là giải pháp này hoạt động ở tầng ừng dụng (layer 7), phù hợp nhất để cân bằng lưu lượng HTTP và HTTPS. Gateway Load Balancer cho phép bạn triển khai, mở rộng, quản lý các ứng dụng 3th party network (Firewall...)"
 keywords:
   [
-    "Load Balancer type",
+    "Các loại Load Balancer",
     "Application Load Balancer trong aws",
     "Network Load Balancer trong aws",
     "Getway Load Balancer trong aws",
     "Load Balancer trong aws",
+    "Sticky Session trong load balancer"
   ]
 author:
   fullname: Phan Văn Đức
@@ -18,45 +19,51 @@ category:
   slug: "aws"
 chapter:
   name: "High Availability"
-  slug: "ha"
+  slug: "chap-03-ha"
+image: https://user-images.githubusercontent.com/29729545/163432577-faca8832-ac36-441c-8a62-2821101c2a29.png
 position: 10
 ---
+
+## Các loại Load Balancer
 
 - Classic Load Balancer - 2009 - CLB
 - Application Load Balancer - 2016 - ALB
 - Network Load Balancer - 2017 - NLB
 - Getway Load Balancer - 2020 - GLB Chúng ta nên sử dụng các phiên bản mới nhất để được hỗ trợ nhiều tính năng nhất có thể. Classic Load Balancer hiện tại không còn được sử dụng nhiều.
 
-## Application Load Balancer
+## Application Load Balancer trong AWS
 
-![Application Load Balancer](https://d1.awsstatic.com/Digital%20Marketing/House/1up/products/elb/Product-Page-Diagram_Elastic-Load-Balancing_ALB_HIW%402x.cb3ce6cfd5dd549c99645ed51eef9e8be8a27aa3.png)
+![Application Load Balancer trong aws](https://d1.awsstatic.com/Digital%20Marketing/House/1up/products/elb/Product-Page-Diagram_Elastic-Load-Balancing_ALB_HIW%402x.cb3ce6cfd5dd549c99645ed51eef9e8be8a27aa3.png)
 
 - Giải pháp này hoạt động ở tầng ừng dụng (layer 7), phù hợp nhất để cân bằng lưu lượng HTTP và HTTPS
 - Load balancing đến nhiều HTTP ứng dụng qua nhiều machine
 - Hỗ trợ redirect HTTP/HTTPs
 - Hỗ trợ route đến nhiều target group
-  - VD: sample/users và sample/pots sẽ gọi đến 2 target group khác nhau ![ALB route](https://fitdevops.in/wp-content/uploads/Screenshot-from-2020-02-24-22-22-40.png)
+  - VD: sample/users và sample/pots sẽ gọi đến 2 target group khác nhau 
+  
+![ALB route](https://user-images.githubusercontent.com/29729545/163432577-faca8832-ac36-441c-8a62-2821101c2a29.png)
+
 - ALB rất phù hợp với ứng dụng micro service
 - Chúng ta sẽ truy cập vào ALB trông qua 1 fixed hostname (xxx.region.elb.amazon.com)
 
-## Network Load Balancer
+## Network Load Balancer trong AWS
 
-![Network Load Balancer](https://d1.awsstatic.com/Digital%20Marketing/House/1up/products/elb/Product-Page-Diagram_Elastic-Load-Balancing_NLB_HIW%402x.2f8ded8b565042980c4ad5f8ec57d6b2fafe54ba.png) Hoạt động ở layer 4 dùng để forward TCP&UDP traffic đến instance của bạn. có thể xử lý hàng triệu request trong 1 giây nhưng vẫn đảm bảo độ trễ thấp (~100ms, so với ALB ~400ms).
+![Network Load Balancer trong aws](https://d1.awsstatic.com/Digital%20Marketing/House/1up/products/elb/Product-Page-Diagram_Elastic-Load-Balancing_NLB_HIW%402x.2f8ded8b565042980c4ad5f8ec57d6b2fafe54ba.png) Hoạt động ở layer 4 dùng để forward TCP&UDP traffic đến instance của bạn. có thể xử lý hàng triệu request trong 1 giây nhưng vẫn đảm bảo độ trễ thấp (~100ms, so với ALB ~400ms).
 
 - NLB có 1 static IP mỗi AZ
 - **Chú ý**: NLB không support free tier nên chú ý khi sử dụng.
 
-## Gateway Load Balancer
+## Gateway Load Balancer trong AWS
 
-![Getway Load Balancer](https://d1.awsstatic.com/Digital%20Marketing/House/1up/products/elb/Product-Page-Diagram_Elastic-Load-Balancing_GWLB_HIW%402x.58547db68b537b4aa4b0cdf7e593a6415d588a09.png)
+![Getway Load Balancer trong aws](https://d1.awsstatic.com/Digital%20Marketing/House/1up/products/elb/Product-Page-Diagram_Elastic-Load-Balancing_GWLB_HIW%402x.58547db68b537b4aa4b0cdf7e593a6415d588a09.png)
 
 - GLB cho phép bạn triển khai, mở rộng, quản lý các ứng dụng 3th party network (Firewall...)
 - Hoak động ở Layer 3 (Network layer)
 - Sử dụng GENEVE protocol trên port 6081
 
-## Sticky Session
+## Sticky Session trong load balancer
 
-![Sticky Session](https://miro.medium.com/max/1400/1*3ep3GKsiel011VLGYig8Yg.png) Sticky Session là một tính năng trong một hệ thống cân bằng tải cho website. Khi 1 user gửi request lần đầu tiên đến được Load Banlancer chỉ định 1 server xử lý request đó, đến lần request sau, cũng sẽ vẫn là server đó xử lý request. Tính năng này chủ yếu được sử dụng để đảm bảo một in-proc session nào đó sẽ không bị mất bởi các yêu cầu cho session được route đến các máy chủ khác nhau.
+![Sticky Session trong aws](https://user-images.githubusercontent.com/29729545/163432991-ae56d5dd-acf1-483a-a855-95cd36ad5657.png) Sticky Session là một tính năng trong một hệ thống cân bằng tải cho website. Khi 1 user gửi request lần đầu tiên đến được Load Banlancer chỉ định 1 server xử lý request đó, đến lần request sau, cũng sẽ vẫn là server đó xử lý request. Tính năng này chủ yếu được sử dụng để đảm bảo một in-proc session nào đó sẽ không bị mất bởi các yêu cầu cho session được route đến các máy chủ khác nhau.
 
 - Option này chỉ hoạt động với Classic Load Banlancers & Application Load Balancers
 - Để tính năng này hoạt động, Client phải hỗ trợ cookies

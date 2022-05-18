@@ -1,7 +1,7 @@
 ---
 title: "Giới thiệu về Bastion hosts"
 description: "Bastion hosts là cách để chúng ta có thể truy cập vào 1 instance trong private subnet"
-keywords: ["Bastion hosts trong AWS"]
+keywords: ["Bastion hosts trong AWS", "Bastion hosts là gì", "giới thiệu về Bastion hosts", "tìm hiểu về Bastion hosts trong aws"]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -11,13 +11,15 @@ category:
   slug: "aws"
 chapter:
   name: "Virtual Private Cloud"
-  slug: "vpc"
+  slug: "chap-04-vpc"
+image: https://user-images.githubusercontent.com/29729545/166088413-89b4f088-78c8-4510-911b-242f4ef41068.png
 position: 18
 ---
 
+## Bastion hosts trong AWS
 Đây là bài toán khá phổ biến khi làm việc với VPC và EC2 instance.
 
-![Bastion host la gi](https://user-images.githubusercontent.com/29729545/146036055-8a9991ba-d596-4e3c-aed8-fcd71d5dedd6.png)
+![Bastion host la gi](https://user-images.githubusercontent.com/29729545/166088413-89b4f088-78c8-4510-911b-242f4ef41068.png)
 
 Như hình vẽ trên, chúng ta không thể SSH vào EC2 vì nó đang nằm trong Private subnet (B). Bài toán đặt ra là cần truy cập vào được máy EC2 nằm trong 1 private subnet. Giải pháp của chúng ta sẽ là sử dụng 1 EC2 instance ở Public subnet (A) hay còn gọi là Bastion hosts. Người dùng sẽ ssh vào Bastion hosts thông qua port 22, từ Bastion hosts đó sẽ ssh đến máy đang nằm trong private subnet.
 

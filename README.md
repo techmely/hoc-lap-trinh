@@ -1,6 +1,10 @@
-# Học lập trình
+# How to contribute content
 
-## How to contribute content
+[https://www.youtube.com/watch?v=okedCA_uZ_k](https://www.youtube.com/watch?v=okedCA_uZ_k)
+
+### Example
+
+Preview page: https://kungfutech.edu.vn/editor
 
 ![image](https://user-images.githubusercontent.com/29374426/157917315-93b19591-8861-4045-85ed-4c50b56c4d30.png)
 

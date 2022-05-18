@@ -1,7 +1,13 @@
 ---
 title: "Giới thiệu về High Availability và Scalability"
 description: "High availability có nghĩa “Độ sẵn sàng cao”. Tức là máy chủ luôn trong tình trạng hoạt động tốt và có tĩnh sẵn sàng cao"
-keywords: ["availability là gì", "high availability là gì"]
+keywords: [
+  "aws availability là gì",
+  "AWS high availability là gì",
+  "AWS HA là gì",
+  "Lợi ích của aws high availability là gì",
+  "AWS Scalability là gì"
+]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -11,19 +17,22 @@ category:
   slug: "aws"
 chapter:
   name: "High Availability"
-  slug: "ha"
+  slug: "chap-03-ha"
+image: https://user-images.githubusercontent.com/29729545/163431154-ff19f3d4-2db6-4c47-9e83-f4e41f0ba6ac.png
 position: 8
 ---
 
 Đến đây chúng ta sẽ đi tìm hiểu sâu hơn về thiết kế một kiến trúc tốt trong AWS. Hệ thống máy tính cần yêu cầu tính sẵn sàng cao, đảm bảo hoạt động tốt 24/7. Do đó High Availability (HA) ra đời nhằm đem lại giải pháp tốt cho sản phẩm phần mềm.
 
-## HA là gì?
+![AWS high availability là gì](https://user-images.githubusercontent.com/29729545/163431154-ff19f3d4-2db6-4c47-9e83-f4e41f0ba6ac.png)
+
+## AWS high availability là gì?
 
 Vậy HA hay High Availability là gì?
 
 Có thể hình dung đơn giản cần tối thiểu 2 máy chủ cùng chạy song song và hoạt động liên tục. Nếu xảy ra tình huống một máy chủ gặp sự cố thì máy còn lại sẽ thay thế nhằm giúp hệ thống vẫn tiếp tục hoạt động bình thường.
 
-## Lợi ích của high availability là gì?
+## Lợi ích của AWS high availability là gì?
 
 Với một hệ thống lớn hệ thống đảm bảo tính sẵn sàng cao là vô cùng quan trọng. Một trang chắc hẳn ai cũng dùng đó là Facebook, HA đảm bảo cho trang mạng xã hội này luôn hoạt động tốt.
 
@@ -36,7 +45,7 @@ Tiếp đến là về đảm bảo dữ liệu được lưu trữ ở nhiều 
 - **Failover**: Khả năng chuyển đổi giữa hệ thống đang chạy sang hệ thống dự phòng
 - **Failback**: Khả năng chuyển trở lại từ thành phần dự phòng thành thành phần hoạt động chính khi nó đã khôi phục sau lỗi.
 
-## Scalability là gì
+## AWS Scalability là gì
 
 Scalability là ứng dụng của bạn có khả năng mở rộng một cách nhanh chóng để đối ứng với những vấn đề phát sinh. Ví dụ như website của bạn 1 ngày nào đó tự nhiên trở nên hot và có quá nhiều người truy cập vào , khi đó với tài nguyên hiện hữu thì application của bạn không đủ khả năng phục vụ hết tất cả mọi người, khi đó chúng ta cần scale nó lên .
 

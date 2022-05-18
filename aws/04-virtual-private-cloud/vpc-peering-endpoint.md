@@ -19,11 +19,12 @@ category:
   slug: "aws"
 chapter:
   name: "Virtual Private Cloud"
-  slug: "vpc"
+  slug: "chap-04-vpc"
+image: https://user-images.githubusercontent.com/29729545/146628771-2fa2c807-c51f-4c7e-8870-256e2fa7f74a.jpg
 position: 21
 ---
 
-## VPC Peering
+## VPC Peering trong AWS
 
 ![VPC Peering](https://user-images.githubusercontent.com/29729545/146628771-2fa2c807-c51f-4c7e-8870-256e2fa7f74a.jpg)
 
@@ -45,7 +46,7 @@ Khi VPC-B và VPC-C được peering với VPC-A, chúng không thể bắc cầ
   </ul>
 </content-info>
 
-## VPC Endpoints (AWS PrivateLink)
+## VPC Endpoints (AWS PrivateLink) trong AWS
 
 ![Kungfutech VPC Enpoints](https://user-images.githubusercontent.com/29729545/146681296-eb3a3d74-61e0-4327-b0a0-33a830a5663d.png)
 

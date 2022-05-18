@@ -21,7 +21,7 @@ category:
   slug: "aws"
 chapter:
   name: "Monitoring & Audit"
-  slug: "monitoring"
+  slug: "chap-12-monitoring"
 position: 223
 ---
 

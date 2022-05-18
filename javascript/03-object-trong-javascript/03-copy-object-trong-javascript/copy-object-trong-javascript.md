@@ -40,7 +40,7 @@ Trong ví dụ trên, hai biến `p2` và `p1` đang cùng tham chiếu đến m
 
 Sau đây là một số cách để copy object thành hai đối tượng độc lập:
 
-- Copy từng thuộc tính sử dụng vòng lặp [`for...in`](/bai-viet/javascript/vong-lap-trong-javascript/).
+- Copy từng thuộc tính sử dụng vòng lặp [`for...in`](/bai-viet/javascript/bai-viet/javascript/vong-lap-trong-javascript).
 - Copy nông (shallow copy) sử dụng hàm [`Object.assign()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) hoặc [cú pháp spread (...)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 - Copy sâu (deep copy) sử dụng [`JSON.stringify()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) và [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) hoặc thư viện có sẵn.
 

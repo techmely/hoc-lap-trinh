@@ -5,20 +5,7 @@ keywords:
   [
     "S3 Lifecycle Rules la gi",
     "S3 Lifecycle Rules là gì",
-    "Lifecycle Rules trong S3",
-    "S3 Glacier la gi",
-    "S3 Glacier là gì",
-    "S3 Glacier trong aws",
-    "S3 Standard-IA la gi",
-    "S3 Standard-IA là gì",
-    "S3 Standard-IA trong aws",
-    "S3 One Zone-IA la gi",
-    "S3 One Zone-IA là gì",
-    "S3 One Zone-IA trong aws",
-    "S3 Intelligent-Tiering la gi",
-    "S3 Intelligent-Tiering là gì",
-    "S3 Intelligent-Tiering trong aws",
-    "Chuyển đổi storage classes",
+    "Lifecycle Rules trong S3"
   ]
 author:
   fullname: Phan Văn Đức
@@ -29,7 +16,8 @@ category:
   slug: "aws"
 chapter:
   name: "Simple Storage Serivce"
-  slug: "s3"
+  slug: "chap-06-s3"
+image: https://docs.aws.amazon.com/AmazonS3/latest/userguide/images/lifecycle-transitions-v3.png
 position: 58
 ---
 
@@ -44,7 +32,7 @@ Chúng ta có thể chuyển đổi Object một cách linh hoạt giữa các s
 - S3 standard là loại storage class linh hoạt nhất
 - Ngược lại S3 Glacier Deep Archive là loại không thể chuyển đổi thành các storage class khác
 
-## S3 Lifecycle Rules
+## S3 Lifecycle Rules là gì
 
 **Transition actions**
 

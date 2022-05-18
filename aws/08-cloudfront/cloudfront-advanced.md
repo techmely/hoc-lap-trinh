@@ -25,7 +25,7 @@ category:
   slug: "aws"
 chapter:
   name: "Cloudfront, Accelerator"
-  slug: "cloud-front"
+  slug: "chap-08-cloud-front"
 position: 72
 ---
 
