@@ -25,7 +25,7 @@ category:
 
 ---
 ## Standard Expression trong Thymeleaf
-![Thymeleaf](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/expression%20thymeleaf.png.png)
+![Thymeleaf](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/expression%20thymeleaf.png)
 
 
 > ***Nội dung bài viết***
