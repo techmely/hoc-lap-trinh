@@ -45,6 +45,6 @@ Như trên hình vẽ, Dev account không có quyền truy cập đến Amazon S
   - SAML 2.0
   - Cognito
   - Single Sign On
-- **Khi dùng Federation bạn không bần tạo IAM user (vì user được quản lý ở bên thứ 3)**
+- Khi dùng Federation bạn không cần tạo IAM user (vì user được quản lý ở bên thứ 3)
 
 ![Identity Federation](https://user-images.githubusercontent.com/29729545/156547213-ce09e199-9d6a-4868-af21-5fdc656925c4.png)
