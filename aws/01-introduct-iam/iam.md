@@ -32,10 +32,10 @@ AWS IAM thiết kế để quản lý users, groups, roles, policies để quả
 
 ## AWS root user
 
-Khi tạo tài khoản AWS lần đầu tiên, thì đó cũng là root user. Khi dùng email và password được gọi là "**root account credentials**"\
+Khi tạo tài khoản AWS lần đầu tiên, thì đó cũng là root user. Khi dùng email và mật khẩu được gọi là "**root account credentials**"\
 Root account có quyền cao nhất bao gồm cả thông tin billing.
 
-AWS recommended hạn chế dùng root account hàng ngày, thay vì đó tạo các IAM user tùy thuộc vào role của nó
+AWS khuyên rằng nên hạn chế dùng root account hàng ngày, thay vì đó tạo các IAM user tùy thuộc vào vai trò (role) của nó
 
 ## Thành phần chính của IAM
 
