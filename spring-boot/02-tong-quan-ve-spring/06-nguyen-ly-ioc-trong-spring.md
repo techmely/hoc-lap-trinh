@@ -9,25 +9,30 @@ keywords:
     "ioc là gì",
     "nguyên lý ioc",
     "hoc Spring co ban",
-    "IOC Container"
+    "IOC Container",
   ]
 chapter:
-  name: "Nguyên lý IOC trong Spring"
-  slug: "09-nguyen-ly-ioc-trong-spring"
+  name: "Tổng quan về Spring"
+  slug: "chuong-02-tong-quan-ve-spring"
 category:
   name: "Spring"
-  slug: "Spring"
+  slug: "spring"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 9
+position: 6
 ---
-# **IoC Container**
--------
-## IoC là gì?
-IoC còn có tên gọi đầy đủ là Inversion of Control, được hiểu là một nguyên lý thiết kế ứng dụng trong công nghệ phần mềm. Kiến trúc phần mềm khi áp dụng nguyên lý thiết kế này sẽ đảo ngược quyền điều khiển so với kiểu lập trình hướng thủ tục. 
 
-> Nếu như trong lập trình hướng thủ tục, các đoạn mã được thêm vào sẽ gọi các thư viện thì ở IoC lại hoàn toàn khác. Những IoC container sẽ __tiêm những dependencies__ (Dependency Injection) khi khởi tạo bean.
+# **IoC Container**
+
+---
+
+## IoC là gì?
+
+IoC còn có tên gọi đầy đủ là Inversion of Control, được hiểu là một nguyên lý thiết kế ứng dụng trong công nghệ phần mềm. Kiến trúc phần mềm khi áp dụng nguyên lý thiết kế này sẽ đảo ngược quyền điều khiển so với kiểu lập trình hướng thủ tục.
+
+> Nếu như trong lập trình hướng thủ tục, các đoạn mã được thêm vào sẽ gọi các thư viện thì ở IoC lại hoàn toàn khác. Những IoC container sẽ **tiêm những dependencies** (Dependency Injection) khi khởi tạo bean.
 
 ## Spring IoC
+
 IoC Container là thành phần thực hiện IoC.
 
 Trong Spring, Spring Container (IoC Container) sẽ tạo các đối tượng, lắp rắp chúng lại với nhau, cấu hình các đối tượng và quản lý vòng đời của chúng từ lúc tạo ra cho đến lúc bị hủy.
@@ -37,10 +42,13 @@ Spring container sử dụng DI để quản lý các thành phần, đối tư�
 Để tạo đối tượng, cấu hình, lắp rắp chúng, Spring Container sẽ đọc thông tin từ các file xml và thực thi chúng.
 
 ![spring-ioc](https://images.viblo.asia/e8537ffa-e5a5-4b78-9aa5-be2ad0ac236e.jpg)
+
 ## Các kiểu IoC Container
 
 ### 1.Bean Factory
+
 Để sử dụng Spring Bean ta cần khai báo thư viện spring-bean sau:
+
 ```
 <dependency>
   <groupId>org.springframework</groupId>
@@ -66,6 +74,7 @@ public class HelloWorld {
 ```
 
 Để tạo đối tượng HelloWorld thông qua IoC container ta sẽ cấu hình nó trong file beans.xml
+
 ```
 <?xml version = "1.0" encoding = "UTF-8"?>
 
@@ -86,7 +95,7 @@ Bây giờ ta sẽ tạo một BeanFactory để đọc các thông tin cấu h�
 BeanFactory chỉ là 1 interface, nên ở đây mình dùng DefaultListableBeanFactory, một implement của BeanFactory. Ở các version cũ thì bạn sẽ thấy hay sử dụng XmlBeanFactory nhưng nó bị đánh dấu @Deprecated ở các version mới.
 
 ```
-// tạo factory		
+// tạo factory
 DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
 
 // đọc thông tin file cấu hình và gán vào factory
@@ -98,8 +107,11 @@ HelloWorld obj = (HelloWorld) factory.getBean("helloWorld");
 obj.getMessage();
 
 ```
+
 ### 2.Application Context
+
 Để sử dụng Spring Bean ta cần khai báo thư viện spring-context sau:
+
 ```
 <dependency>
   <groupId>org.springframework</groupId>
@@ -108,9 +120,11 @@ obj.getMessage();
 </dependency>
 
 ```
+
 Mình sẽ tạo đối tượng phức tạp hơn HelloWorl.java một chút.
 
 Ví dụ class DataResource.java chứa thông tin kết nối tới database.
+
 ```
 public class DataResource {
   private String driverClassName;
@@ -155,6 +169,7 @@ public class DataResource {
   }
 }
 ```
+
 Để tạo đối tượng HelloWorld thông qua IoC container ta sẽ cấu hình nó trong file applicationContext.xml (lưu ý là bạn đặt tên file là gì cũng được: bean.xml, applicationContext.xml, dataresource.xml… nhưng cần phải nhớ file cấu hình cho cái gì)
 
 ```
@@ -170,7 +185,9 @@ public class DataResource {
 
 </beans>
 ```
+
 Tạo một đối tượng ApplicationContext để lấy thông tin từ file cấu hình và tạo đối tượng DataResource
+
 ```
 public static void main(String[] args) {
   ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -178,7 +195,9 @@ public static void main(String[] args) {
   obj.printConnection();
 }
 ```
+
 Kết quả:
+
 ```
 url: jdbc:mysql://localhost/database_name
 username/password: root/admin1234
@@ -189,6 +208,7 @@ Done!
 Bây giờ bạn muốn thay đổi messge trong đối tượng HelloWorld, hay database của bạn thay đổi username/password hay bạn đổi kết nối sang database khác bạn chỉ cần đổi lại thông tin trong file config .xml là đã thay đổi được luồng chạy của chương trình, đó chính là IoC.
 
 ---
+
 Loạt bài chủ đề Java trên trang stackjava.com bản quyền thuộc thầy Trần Hữu Cương. Bài viết đăng trên blog Techmaster được sự đồng ý của tác giả.
 
 Thầy Trần Hữu Cương đã và đang tham gia giảng dạy tại Techmater khoá Lộ trình Java Spring Boot Full Stack

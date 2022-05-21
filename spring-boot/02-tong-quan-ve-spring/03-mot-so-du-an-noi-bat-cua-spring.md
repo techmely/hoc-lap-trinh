@@ -12,10 +12,10 @@ keywords:
   ]
 chapter:
   name: "Tổng quan về Spring"
-  slug: "02-tong-quan-ve-spring"
+  slug: "chuong-02-tong-quan-ve-spring"
 category:
   name: "Spring"
-  slug: "Spring"
+  slug: "spring"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

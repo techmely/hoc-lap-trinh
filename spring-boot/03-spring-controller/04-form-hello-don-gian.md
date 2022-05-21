@@ -6,71 +6,68 @@ keywords:
     "Form hello đơn giản",
     "khóa học Spring cơ bản",
     "tạo form hello",
-    "tạo chương trình Spring đơn giản"
+    "tạo chương trình Spring đơn giản",
   ]
 chapter:
   name: "Spring controller"
   slug: "chuong-03-spring-controller"
 category:
-  name: "spring"
+  name: "Spring"
   slug: "spring"
 # image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
-position: 19
+position: 4
 ---
 
 ## Tạo form hello đơn giản
-Sau khi học được 1 chút kiến thức cơ bản của Spring thì bài này chúng ta hãy cùng nhau tạo 1 chương trình đơn giản nhé. 
 
-> ***Nội dung bài viết***
+Sau khi học được 1 chút kiến thức cơ bản của Spring thì bài này chúng ta hãy cùng nhau tạo 1 chương trình đơn giản nhé.
+
+> **_Nội dung bài viết_**
+>
 > - [Tạo project](#tạo-project)
 > - [Bắt đầu viết chương trình hello](#bắt-đầu-viết-chương-trình-hello)
 
 ### Tạo project
+
 Đầu tiên mình sẽ hướng dẫn các bạn cách tạo project Spring Web để chạy chương trình.
 
-***Bước 1***
+**_Bước 1_**
 Chọn **File** -> **New** -> **Project**
 
 ![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-1.png)
 
-
-***Bước 2***
+**_Bước 2_**
 Chọn mục **Spring Initializr** -> Đặt **tên project** và điền các mục như dưới đây (nếu **jdk** của bạn là **1.8** hoặc bản cũ hơn thì chọn **Java: 8**) -> **Next**
 
 ![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-2.png)
 
-
-***Bước 3***
+**_Bước 3_**
 Ở mục **Web** chọn **Spring Web** và ở **Template Engines** chọn **Thymeleaf** (bạn chưa biết cái này thì cứ hiểu nó công cụ hỗ trợ generate dữ liệu ra trang HTML) -> cuối cùng chọn **Finish**
 
 ![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-3.png)
 
-
-***Bước 4***
+**_Bước 4_**
 Sau khi tạo xong cấu trúc project sẽ như này:
 
 ![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-4.png)
 
-
-***Bước 5***
-Bây giờ đến bước tạo các file để viết chương trình, bạn *click chuột phải* vào package chứa class main của project, ở đây chính là package: `com.example.hellospring` -> tiếp theo chọn **New** -> **Java Class**
+**_Bước 5_**
+Bây giờ đến bước tạo các file để viết chương trình, bạn _click chuột phải_ vào package chứa class main của project, ở đây chính là package: `com.example.hellospring` -> tiếp theo chọn **New** -> **Java Class**
 
 ![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-5.png)
 
-
-***Bước 6***
+**_Bước 6_**
 Ở đây, bạn đặt tên là **WebController** với mục đích nó sẽ là class xử lý các `request` từ browser gửi đến
 
 ![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-6.png)
 
-
-***Bước 7***
+**_Bước 7_**
 Tiếp đến, bạn tạo thêm 2 file html: `index.html` và `hello.html`. Mình sẽ vứt 2 file này ở `resouces/template` (quy ước chung)
 
 ![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-7.png)
 
+_File pom.xml_
 
-*File pom.xml*
 ```java
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -121,7 +118,8 @@ Tiếp đến, bạn tạo thêm 2 file html: `index.html` và `hello.html`. Mì
 
 ### Bắt đầu viết chương trình hello
 
-*WebController.java*
+_WebController.java_
+
 ```java
 package com.example.hellospring;
 
@@ -161,14 +159,14 @@ public class WebController {
 Đầu tiên, mình đánh dấu `@Controller` trên class Webcontroller để cho Spring biết đây là nơi tiếp đón các request.
 Mình viết 2 hàm cho việc xử lý request có method Get và Post.
 <content-info>
-  Ở `hàm index()`, nó sẽ đón nhận *request tới địa chỉ "/" và có phương thức Get* (đánh dấu Annotation @GetMapping). Hàm này thì chỉ có nhiệm vụ trả về `1 String "index"`, đây chính là tên của trang html `index.html` mà mình đã tạo trước đó, mục đích là mình muốn nó chuyển đến trang này.
+Ở `hàm index()`, nó sẽ đón nhận _request tới địa chỉ "/" và có phương thức Get_ (đánh dấu Annotation @GetMapping). Hàm này thì chỉ có nhiệm vụ trả về `1 String "index"`, đây chính là tên của trang html `index.html` mà mình đã tạo trước đó, mục đích là mình muốn nó chuyển đến trang này.
 </content-info>
 <content-info>
-  Hàm `hello()` thì về ý nghĩa thì cũng tương tự hàm index() chỉ khác là nó xử lý *request có method POST*. Còn về nhiệm vụ, cụ thể nó sẽ nhận tham số chứa dữ liệu input (chính là trường Your name) của form bên trang `index.html`, rồi nhét vào thằng 1 object Model -> chuyển dữ liệu sang trang `hello.html` để làm việc, generate data đó.
+Hàm `hello()` thì về ý nghĩa thì cũng tương tự hàm index() chỉ khác là nó xử lý _request có method POST_. Còn về nhiệm vụ, cụ thể nó sẽ nhận tham số chứa dữ liệu input (chính là trường Your name) của form bên trang `index.html`, rồi nhét vào thằng 1 object Model -> chuyển dữ liệu sang trang `hello.html` để làm việc, generate data đó.
 </content-info>
 
+_index.html_
 
-*index.html*
 ```java
 <!DOCTYPE html>
 <html lang="en">
@@ -208,7 +206,8 @@ hello.html
 
 Sau khi viết xong giờ là lúc bạn chạy chương trình, mở class main của project (ở đây thì có tên `HelloSpringApplication.java`) rồi chạy project thôi!
 
-*HelloSpringApplication.java*
+_HelloSpringApplication.java_
+
 ```java
 package com.example.hellospring;
 
@@ -229,6 +228,5 @@ public class HelloSpringApplication {
 Sau khi chạy xong thì chương trình đang ở đường dẫn `http://localhost:8080/` rồi.
 
 ![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-8.png)
-
 
 ![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-9.png)

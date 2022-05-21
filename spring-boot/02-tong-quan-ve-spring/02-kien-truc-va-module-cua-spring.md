@@ -15,9 +15,9 @@ chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-02-tong-quan-ve-spring"
 category:
-  name: "spring"
+  name: "Spring"
   slug: "spring"
-position: 19
+position: 2
 ---
 
 # Kiến trúc và module của Spring
