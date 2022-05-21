@@ -19,7 +19,6 @@ category:
   name: "Spring Boot"
   slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
-image: https://kungfutech.edu.vn/thumbnail.png
 position: 5
 ---
 
