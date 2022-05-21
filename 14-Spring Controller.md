@@ -18,8 +18,8 @@ chapter:
   name: "Spring Controller"
   slug: "chuong-03-spring-controller"
 category:
-  name: "spring"
-  slug: "spring"
+  name: "Spring Boot"
+  slug: "spring-boot"
 position: 14
 ---
 
