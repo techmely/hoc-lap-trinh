@@ -12,7 +12,7 @@ keywords:
   ]
 chapter:
   name: "Tổng quan về Spring"
-  slug: "13-cau-hinh-ung-dung-voi-annotation"
+  slug: "chuong-13-cau-hinh-ung-dung-voi-annotation"
 category:
   name: "SpringBoots"
   slug: "springboots"

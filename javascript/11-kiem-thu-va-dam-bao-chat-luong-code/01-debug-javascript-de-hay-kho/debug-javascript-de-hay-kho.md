@@ -14,7 +14,7 @@ keywords: [
 ]
 chapter:
   name: "Kiểm thử và đảm bảo chất lượng code"
-  slug: "11-kiem-thu-va-dam-bao-chat-luong-code"
+  slug: "chuong-11-kiem-thu-va-dam-bao-chat-luong-code"
 category:
   name: "Javascript"
   slug: "javascript"

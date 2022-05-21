@@ -4,7 +4,7 @@ description: ""
 keywords: []
 chapter:
   name: "Thuật toán với Javascript"
-  slug: "18-javascript-algorithm"
+  slug: "chuong-18-javascript-algorithm"
 category:
   name: "Javascript"
   slug: "javascript"

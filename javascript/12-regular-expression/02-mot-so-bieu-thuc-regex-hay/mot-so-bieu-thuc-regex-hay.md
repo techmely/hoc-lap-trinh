@@ -4,7 +4,7 @@ description: ""
 keywords: []
 chapter:
   name: "Regular expression"
-  slug: "12-regular-expression"
+  slug: "chuong-12-regular-expression"
 category:
   name: "Javascript"
   slug: "javascript"

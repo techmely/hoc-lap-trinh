@@ -12,7 +12,7 @@ keywords:
   ]
 chapter:
   name: "Cấu hình ứng dụng với XML"
-  slug: "12-cau-hinh-ung-dung-voi-XML"
+  slug: "chuong-11-cau-hinh-ung-dung-voi-XML"
 category:
   name: "Spring"
   slug: "Spring"

@@ -4,7 +4,7 @@ description: ""
 keywords: []
 chapter:
   name: "Javascript worker"
-  slug: "16-javascript-worker"
+  slug: "chuong-16-javascript-worker"
 category:
   name: "Javascript"
   slug: "javascript"
