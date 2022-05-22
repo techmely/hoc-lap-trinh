@@ -22,6 +22,7 @@ category:
 chapter:
   name: "Cloudfront, Accelerator"
   slug: "chap-08-cloud-front"
+image: https://user-images.githubusercontent.com/29729545/152831976-e7241d9a-97db-41a4-9354-f179743e43d5.jpg
 position: 71
 ---
 

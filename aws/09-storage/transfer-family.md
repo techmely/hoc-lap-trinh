@@ -3,21 +3,7 @@ title: "AWS Transfer Family là gì"
 description: "AWS Transfer Family là gì? AWS Transfer Family là dịch vụ quản lý truyền file đến và ra ngoài Amazon S3 hoặc EFS sử dụng giao thức FTP."
 keywords:
   [
-    "Hybrid Cloud for Storage là gì",
-    "Hybrid Cloud for Storage la gi",
-    "Hybrid Cloud for Storage trong AWS",
-    "AWS Storage Gateway là gì",
-    "AWS Storage Gateway la gi",
-    "AWS Storage Gateway trong AWS",
-    "AWS File Gateway là gì",
-    "AWS File Gateway la gi",
-    "AWS File Gateway trong AWS",
-    "AWS Volume Gateway là gì",
-    "AWS Volume Gateway la gi",
-    "AWS Volume Gateway trong AWS",
-    "AWS Tape Gateway là gì",
-    "AWS Tape Gateway la gi",
-    "AWS Tape Gateway trong AWS",
+    "AWS Transfer Family là gì",
   ]
 author:
   fullname: Phan Văn Đức
@@ -29,6 +15,7 @@ category:
 chapter:
   name: "Mở rộng storage"
   slug: "chap-09-cloud-storage"
+image: https://user-images.githubusercontent.com/29729545/154086310-497a2c10-cfcf-4170-9547-5911854ae7ad.png
 position: 95
 ---
 

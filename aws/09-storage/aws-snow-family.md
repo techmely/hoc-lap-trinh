@@ -23,10 +23,11 @@ category:
 chapter:
   name: "Mở rộng storage"
   slug: "chap-09-cloud-storage"
+image: https://user-images.githubusercontent.com/29729545/153702726-8c021c92-5402-490f-8036-5ba008edf4d5.png
 position: 91
 ---
 
-## AWS Snow Family
+## AWS Snow Family là gì
 
 Trước tiên mình sẽ đưa ra một bài toán chúng ta sẽ cùng thảo luận. Nếu mình muốn upload dữ liệu có dung lượng hàng TetaByte lên một S3 Bucket.
 
@@ -46,7 +47,9 @@ Như các bạn có thể thấy để upload một khối dữ liệu có size 
 
 Vậy AWS Snow Family là gì ?
 
-AWS Snow Family là tập hợp những thiết bị vật lý giúp cho việc thu thập và phân tích dữ liệu; hay migrate dữ liệu từ bên ngoài vào AWS hoặc ngược lại, từ AWS ra bên ngoài. Giải pháp migrate dữ liệu này không phụ thuộc vào các yếu tố của network (tốc độ, băng thông). Nếu dữ liệu của bạn cần nhiều hơn 1 tuần để có thể tranfer qua internet, hãy nghĩ đến những thiết bị Snowball. ![AWS Snow Family là gì](https://user-images.githubusercontent.com/29729545/153702726-8c021c92-5402-490f-8036-5ba008edf4d5.png)
+AWS Snow Family là tập hợp những thiết bị vật lý giúp cho việc thu thập và phân tích dữ liệu; hay migrate dữ liệu từ bên ngoài vào AWS hoặc ngược lại, từ AWS ra bên ngoài. Giải pháp migrate dữ liệu này không phụ thuộc vào các yếu tố của network (tốc độ, băng thông). Nếu dữ liệu của bạn cần nhiều hơn 1 tuần để có thể tranfer qua internet, hãy nghĩ đến những thiết bị Snowball. 
+
+![AWS Snow Family là gì](https://user-images.githubusercontent.com/29729545/153702726-8c021c92-5402-490f-8036-5ba008edf4d5.png)
 
 AWS Snow Family sử dụng trong 2 usecase chính đó là:
 
@@ -58,7 +61,7 @@ AWS Snow Family sử dụng trong 2 usecase chính đó là:
   - **Snowcone**
   - **Snowball Edge**
 
-## Snowball Edge (dùng cho data tranfers)
+## Snowball Edge là gì (dùng cho data tranfers)
 
 ![Snowball Edge](https://cafedev.vn/wp-content/uploads/2021/02/cafedev-aws-snowball3.png)
 
@@ -69,7 +72,7 @@ AWS Snow Family sử dụng trong 2 usecase chính đó là:
 - **Snowball Edge Compute Optimized**: tối ưu hóa về tính toán
 - Use case: migrate lượng dữ liệu lớn, disaster recovery
 
-## AWS Snowcone
+## AWS Snowcone là gì
 
 ![AWS Snowcone](https://d1.awsstatic.com/cloud-storage/Storage/AWS-Snowcone.650f397305c8b7e9891b72d6b6dd490b0985e735.png)
 
@@ -79,7 +82,7 @@ AWS Snow Family sử dụng trong 2 usecase chính đó là:
 - Bạn cần tự cung cấp nguồn, cap mạng để sử dụng Snowcone
 - Có thể gửi lại Snowcone cho AWS hoặc kết nối tới internet và dùng **AWS DataSync** để gửi dữ liệu
 
-## AWS Snowmobile
+## AWS Snowmobile là gì
 
 - AWS Snowmobile thực ra là một chiếc xe tải hay container
 - Dùng để transfer dữ liệu rất lớn, mỗi Snowmobile có sức chứa 100 PB dữ liệu

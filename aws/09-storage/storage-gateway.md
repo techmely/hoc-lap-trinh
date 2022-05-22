@@ -29,18 +29,22 @@ category:
 chapter:
   name: "Mở rộng storage"
   slug: "chap-09-cloud-storage"
+image: https://user-images.githubusercontent.com/29729545/153909576-6789f647-f2f9-4d0a-bf19-993e0aec4404.png
 position: 94
 ---
 
-## Hybrid Cloud for Storage
+## Hybrid Cloud for Storage là gì
 
-"Hybrid Cloud" là concept được dùng đến khi một phần ứng dụng hay dữ liệu của bạn nằm trên Cloud và một phần nằm ở on-premise. Vì đặc thù từng loại dự án yêu cầu bảo mật, khách hàng không muốn tất cả dữ liệu của họ được đưa lên Cloud. **AWS Storage Gateway** là dịch vụ hybrid cloud storage cung cấp cho bạn khả năng kết nối on-premise với storage trên Cloud (thường là S3). ![Hybrid Cloud for Storage](https://d1.awsstatic.com/pdp-how-it-works-assets/product-page-diagram_AWS-Storage-Gateway_HIW@2x.6df96d96cdbaa61ed3ce935262431aabcfb9e52d.png) Có 3 loại Storage Gateway bao gồm:
+"Hybrid Cloud" là concept được dùng đến khi một phần ứng dụng hay dữ liệu của bạn nằm trên Cloud và một phần nằm ở on-premise. Vì đặc thù từng loại dự án yêu cầu bảo mật, khách hàng không muốn tất cả dữ liệu của họ được đưa lên Cloud. **AWS Storage Gateway** là dịch vụ hybrid cloud storage cung cấp cho bạn khả năng kết nối on-premise với storage trên Cloud (thường là S3). 
 
+![Hybrid Cloud for Storage](https://d1.awsstatic.com/pdp-how-it-works-assets/product-page-diagram_AWS-Storage-Gateway_HIW@2x.6df96d96cdbaa61ed3ce935262431aabcfb9e52d.png) 
+
+Có 3 loại Storage Gateway bao gồm:
 - File Gateway
 - Volume Gateway
 - Tape Gateway
 
-## File Gateway
+## AWS File Gateway là gì
 
 - Cấu hình cho phép truy cập S3 bucket sử dụng NFS/SMB protocol
 - Hỗ trợ **S3 standard, S3 IA, S3 One Zone IA**
@@ -50,7 +54,7 @@ position: 94
 
 ![File Gateway](https://user-images.githubusercontent.com/29729545/153909576-6789f647-f2f9-4d0a-bf19-993e0aec4404.png)
 
-## Volume Gateway
+## AWS Volume Gateway là gì
 
 - Block storage sử dụng iSCSI
 - Bạn sẽ lưu lại dữ liệu của mình bằng EBS snapshot, từ đó có thể restore volume của on-premise
@@ -60,7 +64,7 @@ position: 94
 
 ![Volume Gateway](https://user-images.githubusercontent.com/29729545/154086310-497a2c10-cfcf-4170-9547-5911854ae7ad.png)
 
-## Tape Gateway (Tape: băng đĩa)
+## AWS Tape Gateway là gì (Tape: băng đĩa)
 
 - Tape Gateway chủ yếu được sử dụng để sao lưu dữ liệu
 - Tape Gateway cho phép thay thế việc sử dụng các tape vật lý trên on-premise bằng các Virtual Tape trên AWS
