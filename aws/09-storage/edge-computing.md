@@ -3,19 +3,12 @@ title: "Giới thiệu Edge Computing"
 description: "Edge computing là quá trình phân tích, xử lý dữ liệu khi chúng được tạo ở một Edge location (không giống Edge location trong Cloudfront). Một egde location có thể là bất kỳ đâu, có thể là một trang trại, hay một chiếc tàu thủy..."
 keywords:
   [
-    "AWS Snow Family là gì",
-    "AWS Snow Family la gi",
-    "Snowball Edge là gì",
-    "Snowball Edge la gi",
-    "Snowcone là gì",
-    "Snowcone la gi",
     "Edge computing là gì",
     "Edge computing la gi",
     "AWS OpsHub là gì",
     "AWS OpsHub la gi",
     "Snow Family trong AWS",
-    "Migrate dữ liệu trong AWS",
-    "AWS migrate data",
+    "Migrate dữ liệu trong AWS"
   ]
 author:
   fullname: Phan Văn Đức
@@ -27,10 +20,13 @@ category:
 chapter:
   name: "Mở rộng storage"
   slug: "chap-09-cloud-storage"
+image: https://user-images.githubusercontent.com/29729545/169690071-850e190d-504d-4d10-a888-e190adcc8a75.png
 position: 92
 ---
 
-## Edge Computing
+## Edge Computing là gì
+
+![Edge Computing là gì](https://user-images.githubusercontent.com/29729545/169690071-850e190d-504d-4d10-a888-e190adcc8a75.png)
 
 Edge computing là quá trình phân tích, xử lý dữ liệu khi chúng được tạo ở một **Edge location** (không giống Edge location trong Cloudfront). Một egde location có thể là bất kỳ đâu, có thể là một trang trại, hay một chiếc tàu thủy...
 
@@ -53,6 +49,6 @@ Mình sẽ đưa ra một ví dụ để mọi người dễ hình dung hơn v�
 
 **Tất cả có thể chạy EC2 instance hoặc Lambda function** (Sử dụng dịch vụ IoT Greengrass)
 
-## AWS OpsHub
+## AWS OpsHub là gì
 
 AWS OpsHub là phần mềm được cài trên máy tính của bạn với mục đích quản lý những thiết bị Snow Family

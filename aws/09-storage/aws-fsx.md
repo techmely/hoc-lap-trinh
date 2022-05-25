@@ -5,6 +5,7 @@ keywords:
   [
     "AWS FSx là gì",
     "AWS FSx la gi",
+    "Giới thiệu Amazon FSx",
     "FSx trong AWS",
     "FSx File System Deployment Options",
     "AWS FSx Lustre là gì",
@@ -26,6 +27,7 @@ category:
 chapter:
   name: "Mở rộng storage"
   slug: "chap-09-cloud-storage"
+image: https://user-images.githubusercontent.com/29729545/153895635-377566d8-82a7-418b-a3ac-0b25739c6e3b.png
 position: 93
 ---
 
@@ -37,7 +39,7 @@ Amazon FSx là dịch vụ cho phép bạn có thể launch hệ thống files v
 - **FSx for Window File Server**
 - FSx for NetApp ONTAP... (Không có trong exam)
 
-## FSx for Window File Server
+## AWS FSx Window File Server là gì
 
 Như chúng ta đã biết, EFS là dịch vụ có thể share tới nhiều **EC2 Linux instance**. Điểm hạn chế của EFS là không tương tích với những server chạy trên OS là Window.
 
@@ -49,7 +51,7 @@ Như chúng ta đã biết, EFS là dịch vụ có thể share tới nhiều **
 - Có thể cấu hình Multi-AZ
 - Dữ liệu được backup hằng ngày lên S3
 
-## FSx for Lustre
+## AWS FSx Lustre là gì
 
 ![FSx for Lustre](https://d1.awsstatic.com/pdp-how-it-works-assets/product-page-diagram_Amazon-FSx-for-Lustre.097ed5e5175fa96e8ac77a2470151965774eec32.png)
 
