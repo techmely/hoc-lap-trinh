@@ -9,8 +9,8 @@ keywords:
     "get va post trong springboot",
     "get data la gi",
     "put va post khac nhau nhu the nao",
-    "du ieu truyen di bang phuong thuc get",
-    "du ieu truyen di bang phuong thuc post"
+    "du lieu truyen di bang phuong thuc get",
+    "du lieu truyen di bang phuong thuc post"
   ]
 chapter:
   name: "Tổng quan về ứng dụng web"

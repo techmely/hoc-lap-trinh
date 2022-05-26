@@ -17,7 +17,7 @@ category:
   name: "SpringBoots"
   slug: "springboots"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 13
+position: 10
 ---
 ## Cấu hình ứng dụng với annotation
 File cấu hình được viết bằng Java.

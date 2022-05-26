@@ -20,7 +20,7 @@ category:
   name: "SpringBoots"
   slug: "springboots"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 42
+position: 7
 ---
 
 ## Cấu hình view trong Spring

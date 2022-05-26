@@ -20,7 +20,8 @@ chapter:
 category:
   name: "spring"
   slug: "spring"
-
+image: https://kungfutech.edu.vn/thumbnail.png
+position: 9
 ---
 ## JavaServer Pages Standard Tag Library (JSTL)
 

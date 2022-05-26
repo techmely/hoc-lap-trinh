@@ -13,6 +13,7 @@ keywords:
     "cach su dung thymleaf trong spring",
     "spring boot vong lap thymleaf",
     "Vòng lặp th:each trong Thymeleaf"
+    ]
 chapter:
   name: "Form"
   slug: "04-form"
