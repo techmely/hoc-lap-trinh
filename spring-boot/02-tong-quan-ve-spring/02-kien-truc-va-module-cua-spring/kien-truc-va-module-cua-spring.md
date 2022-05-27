@@ -17,7 +17,7 @@ chapter:
 category:
   name: "spring"
   slug: "spring"
-position: 19
+position: 2
 ---
 
 # Kiến trúc và module của Spring
