@@ -1,6 +1,6 @@
 ---
 title: "Một số event trong Javascript"
-description: ""
+description: "Event là sự tương tác của JavaScript với HMTL được xử lý thông qua các sự kiện xảy ra khi người sử dụng hoặc trình duyệt thao tác một trang."
 keywords: [
 "Một số event trong Javascript",
 "event target javascript",
