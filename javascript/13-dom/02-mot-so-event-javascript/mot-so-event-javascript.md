@@ -1,7 +1,19 @@
 ---
 title: "Một số event trong Javascript"
 description: ""
-keywords: []
+keywords: [
+"Một số event trong Javascript",
+"event target javascript",
+"event target trong javascript",
+"event trong javascript",
+"all event javascript",
+"dom event javascript",
+"dom event trong javascript",
+"bat su kien enter trong javascript",
+"mot so event javascript là gì",
+"mot so event javascript trong javascript",
+"DOM Event trong JavaScript"
+]
 chapter:
   name: "DOM"
   slug: "13-dom"
