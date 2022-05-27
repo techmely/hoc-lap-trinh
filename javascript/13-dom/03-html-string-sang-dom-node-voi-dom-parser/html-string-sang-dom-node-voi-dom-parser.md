@@ -1,7 +1,18 @@
 ---
 title: "HTML String sang DOM Node với DOMParser"
 description: ""
-keywords: []
+keywords: [
+"HTML String sang DOM Node với DOMParser",
+"html dom parser",
+"nodejs domparser",
+"domparser script tag",
+"javascript parse html from url",
+"domparser react",
+"chrome html parser",
+"domparser online",
+"javascript html parser",
+"html string sang dom node voi domparser trong javascript"
+]
 chapter:
   name: "DOM"
   slug: "13-dom"
