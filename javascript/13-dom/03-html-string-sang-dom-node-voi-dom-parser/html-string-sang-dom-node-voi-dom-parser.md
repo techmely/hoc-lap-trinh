@@ -1,6 +1,6 @@
 ---
 title: "HTML String sang DOM Node với DOMParser"
-description: ""
+description: "Bài này mình sẽ hướng dẫn mọi người cách chuyển từ HTML String sang DOM Node với DOMParser"
 keywords: [
 "HTML String sang DOM Node với DOMParser",
 "html dom parser",
