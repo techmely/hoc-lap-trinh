@@ -1,7 +1,14 @@
 ---
 title: "Clipboard với exec command"
-description: ""
-keywords: []
+description: "Copy nội dung trên web page vào clipboard."
+keywords: [
+"Clipboard với exec command trong javascript",
+"clipboard voi exec command line trong javascript",
+"Copy nội dung trên web page vào clipboard trong javascript",
+"Giao tiếp với clipboard sử dụng execCommand trong javascript",
+"tao nut copy trong html trong javascript",
+"Sao chép vào clipboard trong javascript"
+]
 chapter:
   name: "DOM"
   slug: "13-dom"
