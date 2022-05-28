@@ -6,7 +6,7 @@ keywords: [
 "clipboard voi exec command line trong javascript",
 "Copy nội dung trên web page vào clipboard trong javascript",
 "Giao tiếp với clipboard sử dụng execCommand trong javascript",
-"tao nut copy trong html trong javascript,
+"tao nut copy trong html trong javascript",
 "Sao chép vào clipboard trong javascript"
 ]
 chapter:
