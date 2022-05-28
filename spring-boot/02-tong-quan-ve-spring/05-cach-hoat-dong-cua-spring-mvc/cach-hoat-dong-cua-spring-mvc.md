@@ -17,7 +17,7 @@ chapter:
 category:
   name: "spring"
   slug: "spring"
-position: 19
+position: 5
 ---
 
 ## MVC hoạt động thế nào trong Spring
