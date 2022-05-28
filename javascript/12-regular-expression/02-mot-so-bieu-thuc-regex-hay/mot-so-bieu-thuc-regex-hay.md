@@ -13,7 +13,8 @@ keywords: [
 "mot so bieu thuc regex hay trong javascript",
 "mot so bieu thuc regex hay nhat trong javascript",
 "Kiểm tra string là số thập phân trong javascript",
-"",
+"các regex thường gặp trong javascript",
+"regex thuong gap trong javascript",
 ]
 chapter:
   name: "Regular expression"
