@@ -1,18 +1,18 @@
 ---
 title: "Spring data repository"
-description: "Thymeleaf cung cấp cho bạn vòng lặp each, và bạn có thể sử dụng nó thông qua thuộc tính (attribute) th:each. Đây là vòng lặp duy nhất được hỗ trợ trong Thymeleaf.."
+description: "Spring Data là một module của Spring Framework. Mục đích của Spring Data JPA là giảm thiểu việc thực hiện quá nhiều bước để có thể implement được JPA."
 keywords:
   [
-    "thymeleaf loop 1 to 10",
-    "Vòng lặp th:each trong spring",
-    "Cach su dung vòng lặp th:each trong spring",
-    "th:each trong spring",
-    "thymleaf trong spring",
-    "cach su dung vong lap trong spring",
-    "lap cac phan tu trong spring voi thymleaf",
-    "cach su dung thymleaf trong spring",
-    "spring boot vong lap thymleaf",
-    "Vòng lặp th:each trong Thymeleaf"
+    "Spring data repository",
+    "spring data jpa repository",
+    "vi du spring data jpa repository",
+    "spring data repository la gi",
+    "spring data repository co tac dung gi",
+    "cau truy xuat spring data repository",
+    "Repository Spring Boot là gì",
+    "Spring Data JPA là gì",
+    "repository trong spring boots",
+    "repository trong spring boots co tac dung gi"
     ]
 chapter:
   name: "Spring data JPA"

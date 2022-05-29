@@ -20,7 +20,7 @@ category:
   name: "SpringBoots"
   slug: "springboots"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 45
+position: 10
 ---
 ## Sử dụng Layout
 
