@@ -24,6 +24,7 @@ category:
 chapter:
   name: "Serverless"
   slug: "chap-11-serverless"
+image: https://user-images.githubusercontent.com/29729545/170851439-0c785f18-9246-4af6-b8c5-986819a6f031.png
 position: 195
 ---
 
@@ -42,9 +43,9 @@ position: 195
   - HTTP endpoint
   - AWS services
 
-![API Gateway là gì](https://d1.awsstatic.com/serverless/New-API-GW-Diagram.c9fc9835d2a9aa00ef90d0ddc4c6402a2536de0d.png)
+![API Gateway là gì](https://user-images.githubusercontent.com/29729545/170851439-0c785f18-9246-4af6-b8c5-986819a6f031.png)
 
-## API Gateway Throttle
+## API Gateway Throttle là gì
 
 Để tránh việc API bị quá tải và lạm dụng do quá nhiều request(tốn nhiều tiền), Amazon API Gateway cho phép thắt cổ chai (Throttle)
 
@@ -53,7 +54,7 @@ position: 195
 
 Khi số lượng request vượt quá Rate hoặc Burst hệ thống sẽ trả về lỗi: _429 - Too many Requests._
 
-## API Gateway Endpoint Types
+## API Gateway Endpoint Types là gì
 
 AWS cung cấp 3 cách để deploy API Gateway của bạn:
 
