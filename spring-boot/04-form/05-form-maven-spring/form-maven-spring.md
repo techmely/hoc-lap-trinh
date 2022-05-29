@@ -133,7 +133,8 @@ VD: ở method addEmployee: ```model.addAttribute("employee", new Employee());``
 </beans>
 ```
 #### File web.xml
-```
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="http://java.sun.com/xml/ns/javaee"
