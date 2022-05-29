@@ -6,11 +6,9 @@ keywords:
     "No-SQL la gi",
     "No-SQL là gì",
     "No-SQL trong aws",
-    "Dynamo DB la gi",
-    "Dynamo DB là gì",
-    "Dynamo DB trong aws",
-    "Limit cua Lambda",
-    "Limit của Lambda",
+    "DynamoDB la gi",
+    "DynamoDB là gì",
+    "DynamoDB trong aws",
     "DynamoDB Read/Write Capacity Modes",
   ]
 author:

@@ -5,7 +5,7 @@ keywords:
   [
     "Amazon Kinesis là gì",
     "AWS Kinesis la gi",
-    "Kinesis trong AWS",
+    "Kiến trúc Amazon Kinesis",
     "Streaming data trong Kinesis",
     "Kinesis Data Streams là gì",
     "Kinesis Data Streams la gi",
@@ -25,6 +25,7 @@ category:
 chapter:
   name: "Decoupling trong AWS"
   slug: "chap-10-decoupling"
+image: https://user-images.githubusercontent.com/29729545/170851127-9dfb7b17-d9fa-4cfd-a4a2-44d9d204c52a.png
 position: 175
 ---
 
@@ -45,13 +46,13 @@ Hiện tại có 4 components về Kinesis bao gồm:
 
 ## Kiến trúc Amazon Kinesis
 
-![Kiến trúc Amazon Kinesis](http://docs.aws.amazon.com/streams/latest/dev/images/architecture.png)
+![Kiến trúc Amazon Kinesis](https://user-images.githubusercontent.com/29729545/170851127-9dfb7b17-d9fa-4cfd-a4a2-44d9d204c52a.png)
 
 - **Procuders**: là nguồn của data, ví dụ một website send logs đến Kinesis
 - **Consumers**: lấy lại data từ Kinesis và process chúng.
 - **Shards**: là một nhóm data records được xác định và duy nhất trên Stream. Hiểu đơn giản ở đây thì Stream giống như là dòng nước từ điểm A đến điểm B thì _shards giống như là ống nước_ vậy. Càng nhiều ống nước thì bạn càng chuyển được nhiều nước. Mỗi một ống nước này đầu vào có thể ghi đến 1MB/1s (hay là 1000 data records / 1s), trong khi đó đầu ra có thể đưa ra 2MB/1s. Shards thể hiện lưu lượng dữ liệu của bạn truyền vào stream. Nếu lượng dữ liệu lớn thì bạn cần nhiều shard và ngược lại.
 
-## Kinesis Data Streams
+## Kinesis Data Streams là gì
 
 - Amazon sẽ tính phí dựa trên số lượng Shard, bạn có thể có nhiều shard để tăng throughput
 - Khi data được insert vào Kinesis sẽ không thể xóa được (immutability)
@@ -60,9 +61,9 @@ Hiện tại có 4 components về Kinesis bao gồm:
   - Kinesis Client Library (KCL), AWS SDK
   - Kinesis Data Firehorse, Kinesis Data Analytics
 
-## Kinesis Data Firehorse
+## Kinesis Data Firehorse là gì
 
-![Kinesis Data Firehorse](https://www.bogotobogo.com/DevOps/AWS/images/AWS-Kinesis-Lambda-ElasticSearch/kinesis-lambda-elasticsearch.png)
+![Kinesis Data Firehorse](https://user-images.githubusercontent.com/29729545/170851143-4b32bf62-9864-4eb5-918e-f4b95ed4b84e.png)
 
 - Kinesis Firehose là một dịch vụ được sử dụng để cung cấp dữ liệu trực tuyến đến các điểm đến như Amazon S3, Amazon Redshift, Amazon Elasticsearch.
 - Kinesis Firehose là dịch vụ serverless, automatic scaling
@@ -76,11 +77,11 @@ Hiện tại có 4 components về Kinesis bao gồm:
 | Quản lý scaling (tăng, giảm shard) | Automatic scaling |
 | Data storage từ 1-365 ngày | Không có data storage |
 
-## Kinesis Data Analytics
+## Kinesis Data Analytics là gì
 
 Kinesis Analytics là một dịch vụ của Kinesis, trong đó dữ liệu truyền trực tuyến được xử lý và phân tích bằng cách sử dụng SQL.
 
-![Kinesis Data Analytics](https://d1.awsstatic.com/architecture-diagrams/Product-Page-Diagram_Amazon-Kinesis-Data-Analytics_HIW.82e3aa53a5c87db03c766218b3d51f1a110c60eb.png)
+![Kinesis Data Analytics](https://user-images.githubusercontent.com/29729545/170851158-2ae1bd39-85e9-4b40-a165-e5e3866ed1dd.png)
 
 - Fully managed, serverless
 - Automatic sacling
