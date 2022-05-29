@@ -41,7 +41,8 @@ Bản thân mình thấy annoation config thì khá là gọn nhẹ và nhanh ch
 Nhập thông tin của 1 nhân viên (gồm id và name) sau đó chuyển name thành chữ hoa và in ra màn hình.
 
 #### Các thư viện sử dụng:
-```
+
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
@@ -73,7 +74,8 @@ Nhập thông tin của 1 nhân viên (gồm id và name) sau đó chuyển name
 </project>
 ```
 #### Các file entities:
-```
+
+```java
 package stackjava.com.springmvchello.entities;
 public class Employee {
   private int id;
@@ -82,7 +84,8 @@ public class Employee {
 }
 ```
 #### File Controller
-```
+
+```java
 package stackjava.com.springmvchello.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -110,7 +113,8 @@ Tham số model hay modelMap trong các method là các biến được dùng đ
 VD: ở method addEmployee: ```model.addAttribute("employee", new Employee());``` nó sẽ truyền một đối tượng ```new Employee()``` với name là employee tới màn hình add-employee.
 
 #### File Spring Config
-```
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
@@ -149,7 +153,8 @@ VD: ở method addEmployee: ```model.addAttribute("employee", new Employee());``
 
 ```
 #### File add-employee.jsp sẽ định nghĩa form để nhập thông tin id/name
-```
+
+```html
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
@@ -169,7 +174,8 @@ VD: ở method addEmployee: ```model.addAttribute("employee", new Employee());``
 - modelAttribute: biểu thị đối tượng được sử dụng trong form. Ví dụ modelAttribute=”employee” tức là form này sẽ thực hiện xử lý các thuộc tính của đối tượng employee vừa truyền tới từ controller.
 - Thuộc tính path trong các thẻ form thực hiện map với các thuộc tính của đối tượng trong modelAttribute. Ví dụ path=”id” sẽ được hiểu là giá trị của thuộc tính ‘id’ trong đối tượng employee.
 #### File view-employee.jsp sẽ hiển thị các thông tin id/name vừa nhập
-```
+
+```html
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
