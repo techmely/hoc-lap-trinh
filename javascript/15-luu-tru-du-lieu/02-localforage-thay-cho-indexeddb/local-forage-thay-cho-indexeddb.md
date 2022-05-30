@@ -1,7 +1,19 @@
 ---
 title: "Local storage thay cho Index DB"
-description: ""
-keywords: []
+description: "LocalStorage cho phép web dev lưu dữ liệu dưới dạng key-value trên máy của user. Việc lưu dữ liệu như vậy sẽ giúp cải thiện performance khi mà số lượng request database phía server được giảm đi, từ đó giảm chi phí hạ tầng server."
+keywords: [
+"Javascript IndexedDB là gì",
+"IndexedDB trong javascript",
+"tim hieu javascript indexeddb la gi trong javascript",
+"indexeddb co tac dung gi trong javascript",
+"IndexedDB vs localStorage trong javascript",
+"IndexedDB max size trong javascript",
+"kho lưu trữ dữ liệu trong javascript",
+"JavaScript IndexedDB",
+"Local storage trong javascript",
+"Local storage la gi trong javascript",
+"luu tru du lieu voi Local storage trong javascript"
+]
 chapter:
   name: "Lưu trữ dữ liệu"
   slug: "15-luu-tru-du-lieu"
