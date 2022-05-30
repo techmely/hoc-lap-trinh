@@ -1,7 +1,16 @@
 ---
-title: "Method chaining trong Javascaript"
-description: ""
-keywords: []
+title: "Method chaining trong Javascript"
+description: "Đơn giản thì Method Chainning là một kỹ thuật được sử dụng để viết code một cách ngắn gọn và đơn giản hơn trong việc gọi các hàm liên tiếp trên cùng một đối tượng."
+keywords: [
+"Method chaining trong Javascript",
+"Tìm hiểu kĩ thuật Method Chaining",
+"tìm hiểu Method Chainning trong Javascript",
+"Promises Chaining Trong JavaScript",
+"Optional chaining trong Javascript",
+"Chaining là gì",
+"Optional chaining JavaScript",
+"method chaining trong javascript là gì"
+]
 chapter:
   name: "Design pattern"
   slug: "17-design-pattern"
