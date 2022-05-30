@@ -1,7 +1,16 @@
 ---
 title: "Tạo HTTP request đến server trong JavaScript qua XMLHttpRequest"
-description: ""
-keywords: []
+description: "Interface XMLHttpRequest trong Javascript được thiết kế để đọc các nguồn dữ liệu từ một URL."
+keywords: [
+"xmlhttprequest trong javascript",
+"xmlhttprequest la gi",
+"ghi file bang javascript",
+"ví dụ xmlhttprequest trong javascript",
+"xmlhttprequest trong javascript có tác dụng gì",
+"XMLHttpRequest open",
+"XMLHttpRequest JavaScript",
+"javascript xmlhttprequest events"
+]
 chapter:
   name: "Network request"
   slug: "14-network-requests"
