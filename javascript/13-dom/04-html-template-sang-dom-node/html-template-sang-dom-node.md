@@ -1,7 +1,19 @@
 ---
 title: "HTML template sang DOM"
-description: ""
-keywords: []
+description: "Như đã nói trong bài viết trước, bài này mình sẽ hướng dẫn các bạn chuyển HTML Template sang DOM Node. Với phương pháp này, bạn không cần phải sử dụng DOMParser nữa, mà sẽ sử dụng trực tiếp thẻ template của HTML."
+keywords: [
+"HTML template sang DOM trong javascript",
+"dom element trong javascript",
+"chuyển HTML Template sang DOM",
+"chuyển HTML Template sang DOM như thế nào trong Javascript",
+"chuyển HTML Template sang DOM là gì trong Javascript",
+"HTML Template",
+"HTML Template là gì",
+"DOM trong Javascript",
+"DOM trong Javascript là gì",
+"Render HTML Template",
+"Render HTML Template trong Javascript"
+]
 chapter:
   name: "DOM"
   slug: "13-dom"
