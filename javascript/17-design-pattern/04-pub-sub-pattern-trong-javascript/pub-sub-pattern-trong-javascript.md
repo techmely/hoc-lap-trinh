@@ -1,7 +1,15 @@
 ---
 title: "PubSub pattern trong Javascaript"
-description: ""
-keywords: []
+description: "Publisher/Subscriber pattern, hoặc có tên gọi ngắn hơn "PubSub" là một pattern giúp chúng ta tạo những module mà có thể giao tiếp với những module khác."
+keywords: [
+"pubsub pattern trong javascript là gì",
+"pubsub pattern trong javascript",
+"cách dùng pubsub pattern trong javascript",
+"ví dụ pubsub pattern trong javascript",
+"Các mẫu JavaScript",
+"pattern trong javascript là gì",
+"pattern trong javascript"
+]
 chapter:
   name: "Design pattern"
   slug: "17-design-pattern"
