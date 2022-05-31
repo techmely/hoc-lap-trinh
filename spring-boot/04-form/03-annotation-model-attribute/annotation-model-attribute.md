@@ -1,6 +1,6 @@
 ---
 title: "Annotation @ModelAttribute"
-description:"@ModelAttribute là một trong những annotation quan trọng nhất trong Spring MVC."
+description: "@ModelAttribute là một trong những annotation quan trọng nhất trong Spring MVC."
 keywords:
   [
     "khóa học Spring cơ bản",
