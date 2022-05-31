@@ -8,7 +8,10 @@ keywords: [
 "lưu trữ dữ liệu trong javascript",
 "Cách dùng cookie trong Javascript",
 "Tìm hiểu về HTTP Cookie với JavaScript",
-"ví dụ cookie trong javascript"
+"ví dụ cookie trong javascript",
+"cookie trong javascript là gì",
+"tìm hiểu về cookie trong javascript",
+"cookie trong js"
 ]
 chapter:
   name: "Lưu trữ dữ liệu"
