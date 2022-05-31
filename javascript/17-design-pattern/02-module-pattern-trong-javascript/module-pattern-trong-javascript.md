@@ -7,7 +7,8 @@ keywords: [
 "observer pattern trong javascript",
 "design pattern trong nodejs",
 "Module pattern trong plain JavaScript",
-"cách sử dụng Module pattern trong plain JavaScript"
+"cách sử dụng Module pattern trong plain JavaScript",
+"tìm hiểu về Module pattern trong "
 ]
 chapter:
   name: "Design pattern"
