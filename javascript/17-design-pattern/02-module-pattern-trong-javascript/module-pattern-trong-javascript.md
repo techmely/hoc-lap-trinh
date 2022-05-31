@@ -1,7 +1,15 @@
 ---
 title: "Module pattern trong JavaScript"
-description: ""
-keywords: []
+description: "Module cho phép chúng đóng gói các property, method, biến và function bằng cách tận dụng một đặc điểm rất đặc trưng của Javascript."
+keywords: [
+"Module pattern trong JavaScript",
+"Module pattern là gì trong JavaScript",
+"observer pattern trong javascript",
+"design pattern trong nodejs",
+"Module pattern trong plain JavaScript",
+"cách sử dụng Module pattern trong plain JavaScript",
+"tìm hiểu về Module pattern trong "
+]
 chapter:
   name: "Design pattern"
   slug: "17-design-pattern"

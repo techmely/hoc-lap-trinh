@@ -1,7 +1,18 @@
 ---
 title: "XML Http request với Promise"
-description: ""
-keywords: []
+description: "Bài viết này sẽ hướng dẫn các bạn kết hợp XMLHttpRequest với Promise JavaScript trong xử lý bất đồng bộ."
+keywords: [
+"XML Http request với Promise",
+"XML Http request với Promise trong javascript",
+"xml http request trong javascript",
+"xml http request la gi",
+"ghi file bang javascript",
+"ví dụ xmlhttprequest trong javascript",
+"xml http request trong javascript có tác dụng gì",
+"XML Http Request open",
+"XML Http Request JavaScript",
+"javascript xmlhttprequest events"
+]
 chapter:
   name: "Network request"
   slug: "14-network-requests"

@@ -1,7 +1,18 @@
 ---
 title: "Tìm hiểu về HTTP Cookie trong JavaScript"
-description: ""
-keywords: []
+description: "Cookie là phương thức hiệu quả nhất để nhớ và theo dấu vết của việc đặt mua, đặt bán, các ưu đãi, và thông tin khác được yêu cầu cho sự trải nghiệm tốt hơn của khách truy cập."
+keywords: [
+"HTTP Cookie trong JavaScript",
+"cookie trong javascript",
+"http cookie trong javascript là gì",
+"lưu trữ dữ liệu trong javascript",
+"Cách dùng cookie trong Javascript",
+"Tìm hiểu về HTTP Cookie với JavaScript",
+"ví dụ cookie trong javascript",
+"cookie trong javascript là gì",
+"tìm hiểu về cookie trong javascript",
+"cookie trong js"
+]
 chapter:
   name: "Lưu trữ dữ liệu"
   slug: "15-luu-tru-du-lieu"

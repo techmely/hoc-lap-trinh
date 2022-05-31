@@ -1,7 +1,16 @@
 ---
 title: "Tìm hiểu Javascript IndexedDB là gì"
-description: ""
-keywords: []
+description: "IndexedDB là một dạng kho lưu trữ dữ liệu ở phía trình duyệt người dùng (tương tự local storage, session storage hay cookie). Thường được sử dụng để lưu trữ dữ liệu lớn và thực hiện các thao tác tìm kiếm với hiệu năng cao tại chính trình duyệt."
+keywords: [
+"Javascript IndexedDB là gì",
+"IndexedDB trong javascript",
+"tim hieu javascript indexeddb la gi trong javascript",
+"indexeddb co tac dung gi trong javascript",
+"IndexedDB vs localStorage trong javascript",
+"IndexedDB max size trong javascript",
+"kho lưu trữ dữ liệu trong javascript",
+"JavaScript IndexedDB"
+]
 chapter:
   name: "Lưu trữ dữ liệu"
   slug: "15-luu-tru-du-lieu"

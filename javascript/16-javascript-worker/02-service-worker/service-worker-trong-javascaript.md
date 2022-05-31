@@ -1,7 +1,15 @@
 ---
-title: "Javascript Service worker là gì"
-description: ""
-keywords: []
+title: "Javascript Service Worker là gì"
+description: "Service Worker là một script mà trình duyệt chạy ở dưới background, tách khỏi trang web và giúp thực hiện các tính năng không cần đến trang web, hay tương tác người dùng."
+keywords: [
+"Javascript Service worker là gì trong javascript",
+"Tìm hiểu về service worker trong javascript",
+"Giới thiệu về Service Worker trong javascript",
+"làm việc với service worker trong javascript",
+"Service provider worker là gì trong javascript",
+"Service Worker, Progressive Web Apps là gì trong javascript",
+"Javascript Service Worker là gì"
+]
 chapter:
   name: "Javascript worker"
   slug: "16-javascript-worker"
