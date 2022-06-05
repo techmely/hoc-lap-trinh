@@ -97,5 +97,5 @@ Amazon sử dụng IPv4 cho instance và VPC CIDR
 ### Elastic IP address
 
 - **Elastic IP address** là public IPv4 được allocate cho AWS account. Elastic IP có thể được assign hoặc release
-- **Elastic IP address** mà ko assign cho instance nào| hoặc instance stopped, Amazon sẽ tính phí theo giờ vì lẵng phí. Amazon sẽ không tính phí nếu nó được assign cho instance running
+- **Elastic IP address** mà ko assign cho instance nào hoặc instance stopped, Amazon sẽ tính phí theo giờ vì lẵng phí. Amazon sẽ không tính phí nếu nó được assign cho instance running
 - Không thể dùng chung 1 Elastic IP address ở regions khác nhau
