@@ -30,7 +30,7 @@ position: 19
 
 ## Network Address Translation (NAT) trong AWS
 
-Như ở phần trước chúng ta tìm hiểu các sử dùng Bastion hosts để truy cập vào EC2 instances nằm trong private subnet. Ở bài học này chúng ta sẽ tìm hiểu làm thế nào để EC2 instances trong private subnet connect ra ngoài internet. 
+Như ở phần trước chúng ta tìm hiểu cách sử dùng Bastion hosts để truy cập vào EC2 instances nằm trong private subnet. Ở bài học này chúng ta sẽ tìm hiểu làm thế nào để EC2 instances trong private subnet connect ra ngoài internet. 
 
 ![NAT la gi](https://user-images.githubusercontent.com/29729545/146040993-981308a2-2164-4fba-9bce-035e723d737b.png)
 
