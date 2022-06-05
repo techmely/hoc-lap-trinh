@@ -56,12 +56,7 @@ NOTES:
 
 ### RDS From single AZ to Multi AZ
 
-<<<<<<< HEAD
-![RDS From single AZ to Multi AZ](https://miro.medium.com/max/668/1*ewojRDRfLgZW7loOtSR0TQ.png)
-=======
 ![RDS From single AZ to Multi AZ](https://user-images.githubusercontent.com/29729545/166091197-9297d163-dc31-4eb5-a825-5e11e769ec2b.png)
-
-> > > > > > > 7fb9103af39c50fad6f772177ac752def017d784
 
 - Zero downtime
 - Chỉ cần click "modify"
