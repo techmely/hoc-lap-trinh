@@ -48,7 +48,10 @@ S3 access logs format:
 
 ![S3 Access Logs](https://user-images.githubusercontent.com/29729545/150820622-f7eebb9c-aa28-45b7-9d80-a343b31fb451.png)
 
-<span style="color:red">Chú ý: Log bucket KHÔNG được là monitored bucket</span> Điều này sẽ tạo một vòng lặp vô tận.
+<content-warning>
+Log bucket KHÔNG được là monitored bucket
+Điều này sẽ tạo một vòng lặp vô tận.
+</content-warning>
 
 ![S3 Access Logs loop](https://user-images.githubusercontent.com/29729545/150823145-ec002c49-da51-43de-aaed-d3547f1cfd65.png)
 
