@@ -3,8 +3,8 @@ title: "Giới thiệu Read Replicas"
 description: "Read replicas giúp bạn scaling việc read. Read replicas cho phép bạn tạo 1 hoặc nhiều bản copies của DB instance trong chung region hoặc khác region"
 keywords:
   [
-    "Read replicas la gi",
-    "Read Replicas là gì",
+    "RDS Read replicas la gi",
+    "RDS Read Replicas là gì",
     "RDS multi AZ la gi",
     "RDS Multi AZ là gì",
   ]
@@ -22,9 +22,9 @@ image: https://user-images.githubusercontent.com/29729545/166090886-13879896-c4b
 position: 21
 ---
 
-## RDS Read Replicas vs Multiple AZ
+## So sánh RDS Read Replicas với Multiple AZ
 
-### Read Replicas là gì
+### RDS Read Replicas là gì
 
 ![Read Replicas là gì](https://user-images.githubusercontent.com/29729545/166090886-13879896-c4b5-4f75-a711-fbabc8bb35e4.png)
 
@@ -43,7 +43,9 @@ Read replicas giúp bạn scaling việc read. Read replicas cho phép bạn t�
 
 ### RDS Multi AZ là gì (Disaster Recovery)
 
-![RDS Multi AZ là gì](https://user-images.githubusercontent.com/29729545/166091087-d38b26ae-322b-4743-8cd3-00b53198479e.png) RDS Multi AZ cung cấp khả năng sẵn sàng cho DB của bạn trong 1 Region. Dữ liệu sẽ được **SYNC replicated** tới các standby insatnce ở AZ khác
+![RDS Multi AZ là gì](https://user-images.githubusercontent.com/29729545/166091087-d38b26ae-322b-4743-8cd3-00b53198479e.png) 
+
+RDS Multi AZ cung cấp khả năng sẵn sàng cho DB của bạn trong 1 Region. Dữ liệu sẽ được **SYNC replicated** tới các standby insatnce ở AZ khác
 
 Ví dụ: DB instance chính của bạn ở AZs ap-northeast-1a, standby insatnce ở ap-northeast-1d
 
@@ -54,7 +56,7 @@ NOTES:
 - Không sử dụng cho scaling
 - Read Replicas có thể setup như là Multi AZ cho Disaster Recovery
 
-### RDS From single AZ to Multi AZ
+### RDS from single AZ to multi AZ
 
 ![RDS From single AZ to Multi AZ](https://user-images.githubusercontent.com/29729545/166091197-9297d163-dc31-4eb5-a825-5e11e769ec2b.png)
 

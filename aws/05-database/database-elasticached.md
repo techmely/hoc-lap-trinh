@@ -25,7 +25,9 @@ position: 23
 ## Amazon ElasticCache là gì
 
 - Elasticache là dịch vụ bộ nhớ đệm được quản lý dành cho Redis và Memcached
-- Giúp giảm thiểu thời gian load dữ liệu, vì load từ cache chắc chắn sẽ nhanh hơn ![](https://user-images.githubusercontent.com/29729545/166097048-404380f8-ed8a-4f61-9698-0b59720cd83e.png)
+- Giúp giảm thiểu thời gian load dữ liệu, vì load từ cache chắc chắn sẽ nhanh hơn 
+
+![](https://user-images.githubusercontent.com/29729545/166097048-404380f8-ed8a-4f61-9698-0b59720cd83e.png)
 
 ### Phân biệt Redis (Remote Dictionary Server) và Memcached
 
