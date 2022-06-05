@@ -29,7 +29,7 @@ position: 9
 
 ![ELB là gì](https://user-images.githubusercontent.com/29729545/163431853-06f073bd-b9f2-4e4b-be19-071900a0c84b.png)
 
-Từ hình vẽ trên chúng ta có thể hình dung được cách hoạt động của 1 load balancer là như thế nào. Load Balancer là 1 server dùng để forward traffic đến nhiêu server (Ec2...)
+Từ hình vẽ trên chúng ta có thể hình dung được cách hoạt động của 1 load balancer là như thế nào. Load Balancer là 1 server dùng để forward traffic đến nhiều server (Ec2...)
 
 ## Tại sao cần sử dụng Load Balancer?
 
