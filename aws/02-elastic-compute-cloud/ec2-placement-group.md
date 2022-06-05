@@ -37,12 +37,12 @@ Placement group xác định cách các instance được đặt trên phần c�
 
 - Những EC2 được đặt gần nhau trong cùng 1 availability zone, có thể là đặt trên cùng 1 máy vật lý của AWS
 - Phù hợp với những ứng dụng có độ trễ thấp
-- Tuy nhiên khi có lỗi ở 1 AZ thất cả EC2 trong cluster có thể bị down
+- Tuy nhiên khi có lỗi ở 1 availability zone thất cả EC2 trong cluster có thể bị down
 
 ## Spread Placement Group là gì
 
 - Pros:
-  - Các máy được đặt ở các AZ, hardware khác nhau
+  - Các máy được đặt ở các availability zone, hardware khác nhau
   - Giảm thiểu risk khi 1 máy down các máy khác vẫn hoạt động tốt
 - Cons:
   - Giới hạn 7 instance/mỗi AZ/mỗi placement group
