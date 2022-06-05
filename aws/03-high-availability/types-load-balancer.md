@@ -35,7 +35,7 @@ position: 10
 
 ![Application Load Balancer trong aws](https://d1.awsstatic.com/Digital%20Marketing/House/1up/products/elb/Product-Page-Diagram_Elastic-Load-Balancing_ALB_HIW%402x.cb3ce6cfd5dd549c99645ed51eef9e8be8a27aa3.png)
 
-- Giải pháp này hoạt động ở tầng ừng dụng (layer 7), phù hợp nhất để cân bằng lưu lượng HTTP và HTTPS
+- Giải pháp này hoạt động ở tầng ứng dụng (layer 7), phù hợp nhất để cân bằng lưu lượng HTTP và HTTPS
 - Load balancing đến nhiều HTTP ứng dụng qua nhiều machine
 - Hỗ trợ redirect HTTP/HTTPs
 - Hỗ trợ route đến nhiều target group
