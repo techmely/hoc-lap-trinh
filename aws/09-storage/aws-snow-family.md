@@ -45,7 +45,7 @@ Như các bạn có thể thấy để upload một khối dữ liệu có size 
 
 Đừng lo về vấn đề này, Amazon sẽ giúp bản giải quyết những vấn đề này với dịch vụ **AWS Snow Family**.
 
-Vậy AWS Snow Family là gì ?
+**Vậy AWS Snow Family là gì ?**
 
 AWS Snow Family là tập hợp những thiết bị vật lý giúp cho việc thu thập và phân tích dữ liệu; hay migrate dữ liệu từ bên ngoài vào AWS hoặc ngược lại, từ AWS ra bên ngoài. Giải pháp migrate dữ liệu này không phụ thuộc vào các yếu tố của network (tốc độ, băng thông). Nếu dữ liệu của bạn cần nhiều hơn 1 tuần để có thể tranfer qua internet, hãy nghĩ đến những thiết bị Snowball. 
 
