@@ -34,7 +34,7 @@ S3 hosting cho phép bạn có thể tạo 1 public website từ source code htm
 
 - URL website sẽ có format:
 
-```
+```ssh
 http://<bucket-name>.s3-website-<region>.amazonaws.com
 Hoặc
 http://<bucket-name>.s3-website.<region>.amazonaws.com
