@@ -35,7 +35,7 @@ Placement group xác định cách các instance được đặt trên phần c�
 
 ## Clustered Placement Group là gì
 
-- Những EC2 được đặt gần nhau trong cùng 1 AZ, có thể là đặt trên cùng 1 máy vật lý của AWS
+- Những EC2 được đặt gần nhau trong cùng 1 availability zone, có thể là đặt trên cùng 1 máy vật lý của AWS
 - Phù hợp với những ứng dụng có độ trễ thấp
 - Tuy nhiên khi có lỗi ở 1 AZ thất cả EC2 trong cluster có thể bị down
 
