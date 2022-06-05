@@ -29,16 +29,16 @@ position: 7
 
 ## EBS là gì
 
-EBS (Elastic Block Store) là dịch vụ lưu trữ dưới dạng block của AWS. Một EBS có thể attach vào duy nhất 1 EC2 trong cùng AZ. Bạn có thể hiểu EBS sẽ giống như 1 USB hay 1 ổ cứng ngoài.
+EBS (Elastic Block Store) là dịch vụ lưu trữ dưới dạng block của AWS. Một EBS có thể attach vào duy nhất 1 EC2 trong cùng availability zone. Bạn có thể hiểu EBS sẽ giống như 1 USB hay 1 ổ cứng ngoài.
 
 - Có thể attach nhiều EBS vào 1 EC2 instance.
-- EBS trong AWS không cross AZ
+- EBS trong AWS không cross availability zone
 - AWS tính phí dựa trên dung lượng của EBS
 
-EBS volume bị lock trong 1 AZ, có nghĩa là:
+EBS volume bị lock trong 1 availability zone, có nghĩa là:
 
 - 1 EBS được tạo ở us-east-1a thì không thể attach vào EC2 instance ở us-east-1b
-- Để cross AZ chúng ta cần snapshot volume đó
+- Để cross availability zone chúng ta cần snapshot volume đó
 
 Khi tạo EC2 instance có thể kiểm soát việc xóa EBS khi instance bị xóa (terminate)
 
@@ -47,10 +47,10 @@ Khi tạo EC2 instance có thể kiểm soát việc xóa EBS khi instance bị 
 
 ## EBS Snapshots trong AWS
 
-Như đã đề cập ở phần EBS volume, chúng ta không thể cross AZ 1 EBS volume. Nhưng AWS cung cấp dịch vụ EBS snapshots giúp chúng ta có thể giải quyết bài toán đó.
+Như đã đề cập ở phần EBS volume, chúng ta không thể cross availability zone 1 EBS volume. Nhưng AWS cung cấp dịch vụ EBS snapshots giúp chúng ta có thể giải quyết bài toán đó.
 
 - EBS snapshots tạo 1 bản backup (snapshot) của EBS volume của bạn
-- Có thể copy snapshots across AZ hay region 
+- Có thể copy snapshots across availability zone hay region 
 
 ![EBS snapshot](https://images.viblo.asia/618fe942-940b-43fa-9185-9b474bd25a4d.png)
 
@@ -73,7 +73,7 @@ Trên thực tế chúng ta khá quen thuộc với 2 công nghệ ổ cứng l�
 
 Như với kiến thức để thi SAA chúng ta có thể multi-attach, có nghĩa là 1 EBS có thể attach vào nhiều instance trong 1 AZ. Tuy nhiên nó sẽ có những giới hạn của nó:
 
-- EBS và các EC2 instance phải chung AZ
+- EBS và các EC2 instance phải chung availability zone
 - EBS volume type: **Provisioned IPOS SSD (io1/io2)** 
 
 ![EBS multil-attacg](https://images.viblo.asia/f9dd2497-f955-4081-90d6-2334aab37793.png)
@@ -106,7 +106,7 @@ Như vậy chúng ta có thêm 1 cách để launch EC2 instance:
 - EFS có giá cao hơn EBS, nhưng chỉ cần trả tiền cho dung lượng mà bạn sử dụng
 - Use case: Sử dụng trong các ứng dụng Content manage, sharing data
 - Hand-on:
-  - Tạo 2 EC2 ở 2 AZ khác nhau
+  - Tạo 2 EC2 ở 2 availability zone khác nhau
   - Tạo 1 EFS
   - Mount EFS đó vào 2 EC2 (cần tạo)
   - 2 EC instance này có thể sharing data với nhau
