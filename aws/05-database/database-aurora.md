@@ -16,6 +16,7 @@ category:
 chapter:
   name: "Database"
   slug: "chap-05-database"
+image: https://user-images.githubusercontent.com/29729545/172041829-ff34741c-82fc-4ffd-88b6-3f98b2ef4787.png
 position: 22
 ---
 
@@ -31,8 +32,6 @@ Là công nghệ AWS phát triển được tương thích với MySQL và Postg
 
 ### Aurora High Availability và Read Scaling
 
-![Aurora High Availability và Read Scaling](https://docs.aws.amazon.com/zh_tw/AmazonRDS/latest/AuroraUserGuide/images/AuroraArch001.png)
-
 - 6 bản copies dữ liệu của bạn cross 3 AZ
 - 1 Aurora instance take write (master)
 - Tự động phục hội < 30s nếu master bị lỗi hay có vấn đề
@@ -41,10 +40,10 @@ Là công nghệ AWS phát triển được tương thích với MySQL và Postg
 
 ### Aurora DB Cluster
 
-![Aurora DB Cluster](https://miro.medium.com/max/1100/1*2_cCgfIV0fuBIDSNTcMmQg.png) Như hình vẽ:
+![Aurora DB Cluster](https://user-images.githubusercontent.com/29729545/172041829-ff34741c-82fc-4ffd-88b6-3f98b2ef4787.png) Như hình vẽ:
 
-- Cluster volume là 1 "Shared storage volume" có thể expand từ 10G => 64TB
-- Cluster endpoint (Writer enpoint) point đến master
+- Cluster volume là 1 "Shared storage volume" có thể lưu trữ dữ liệu từ 10G => 64TB
+- Cluster endpoint (Writer enpoint) được trỏ đến master
 - Read enpoint point đến connection Load Balancing các Replicas
 
 ### Aurora security
@@ -55,13 +54,13 @@ Tương tự với RDS
 
 #### Aurora Replicas - Auto scaling
 
-![Aurora Replicas - Auto scaling](https://image.slidesharecdn.com/trainingaws-module8-rdsauroraelasticache-210907145521/95/training-aws-module-8-rds-aurora-elasticache-21-638.jpg?cb=1631026831)
+![Aurora Replicas - Auto scaling](https://user-images.githubusercontent.com/29729545/172041975-4329a3f0-b18a-424c-bc56-3f00a1d00791.png)
 
 Khi có nhiều request đến Reader Endpoint dẫm đến việc DB instance tăng CPU usage, do đó cần setup Replicas Auto Scaling. Read Endpoint cũng sẽ tự động extend để cover Replicas mới
 
 #### Aurora Replicas - Custom Endpoint
 
-![Aurora Replicas - Custom Endpoint](https://www.icode9.com/i/l/?n=20&i=blog/364241/202108/364241-20210802210955333-624922716.png)
+![Aurora Replicas - Custom Endpoint](https://user-images.githubusercontent.com/29729545/172041992-822ef411-f834-4987-8e93-fc7a540f67bd.png)
 
 Ví dụ như trên hình vẽ, chúng ta có thể tạo ra 2 Custom Endpoint cho DB.rc3 và DB.rc5. Khi request cần cấu hình cao sẽ dùng endpoint của DB.rc5 nếu thấp hơn thì sẽ dùng endpoint của DB.rc3.
 
