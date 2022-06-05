@@ -25,7 +25,7 @@ Là công nghệ AWS phát triển được tương thích với MySQL và Postg
 
 - Cả Postgres và MySQL đều được support bởi Aurora DB (Có nghĩa là driver vẫn hoạt động nếu Aurora là Postgres hay MySQL database)
 - Aurora là "AWS Cloud optimized", được cho rằng x5 performance so với MySQL trên RDS, x3 Postgres
-- Aurora tự động scal storage, bạn không cần phải lo nghĩ đến việc monitor storage
+- Aurora tự động scale storage, bạn không cần phải lo nghĩ đến việc monitor storage
 - Aurora có 15 replicas (MySQL có 5)
 - Cost cao hơn RDS ~20%
 
