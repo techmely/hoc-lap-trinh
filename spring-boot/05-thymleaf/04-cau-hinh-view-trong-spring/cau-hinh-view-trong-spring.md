@@ -63,7 +63,7 @@ Thymeleaf cung cấp các triển khai cho hai interface được đề cập �
 Hai lớp này sẽ chịu trách nhiệm xử lý các template Thymeleaf như là kết quả của việc thực thi các controller.
 Cấu hình của Thymeleaf View Resolver rất giống với cấu hình của JSP:
 
-```
+```java
 @Bean
 public ThymeleafviewResolver viewResolver (){
    ThymeleafviewResolver viewResolver=new ThymeleafviewResolver ();
@@ -77,7 +77,7 @@ public ThymeleafviewResolver viewResolver (){
 
 Hoặc trong XML:
 
-```
+```xml
 <bean class="org.thymeleaf.spring4.view. ThymeleafViewResolver">
    <property name="templateEngine" ref="templateEngine" />
    <!-- NOTE 'order' and 'viewNames' are optional -->
@@ -90,7 +90,7 @@ Hoặc trong XML:
 Và điều gì xảy ra nếu chúng ta muốn định nghĩa một bean “View" và thêm một số biến tĩnh vào nó?
 Chúng ta chỉ cần xác định một prototype (nguyên mẫu) bean cho nó:
 
-```
+```java
 @Bean
 @Ecope ("prototype")
 public Thymeleafview mainview (){

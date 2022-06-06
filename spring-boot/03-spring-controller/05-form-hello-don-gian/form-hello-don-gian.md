@@ -162,7 +162,7 @@ Hàm `hello()` thì về ý nghĩa thì cũng tương tự hàm index() chỉ kh
 
 _index.html_
 
-```java
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -184,7 +184,7 @@ _index.html_
 
 hello.html
 
-```java
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>

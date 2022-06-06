@@ -37,7 +37,7 @@ View thì cần đúng một cái, nhưng dữ liệu được chia sẽ giữa 
 
 Action sau sẽ trả về ModelAndView mang theo view có tên là success và model có tên là user được sinh ra từ lớp AccountInfo. Hơn thế nữa, ModelAndView còn đính kèm một attribute có tên message.
 
-```
+```java
 @GetMapping("/greetingaccount")
 public ModelAndView greetingAccount(){
   Account account = new Account("techmely@kungfutechh.vn", "Ha Van");

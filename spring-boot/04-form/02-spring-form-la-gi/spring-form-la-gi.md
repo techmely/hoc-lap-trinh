@@ -40,7 +40,7 @@ Spring MVC cung cấp thư viện thẻ giúp việc buộc dữ liệu từ bea
 
 Để sử dụng các thẻ form ta cần khai báo:
 
-```
+```java
  <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 ```
 
