@@ -32,6 +32,7 @@ position: 5
 - Cuối cùng, quá trình chọn _view_ hoàn thành, **DispatcherServlet** chuyển model dữ liệu tới _view_ đó và cuối cùng chuyển tới trình duyệt.
 
 Túm lại, luồng hoạt động của **Spring MVC** có thể được hiểu như sau:
+
 <content-info>
 Đầu tiên mỗi request đến sẽ được đón nhận và xử lý bởi **DispatcherServlet**, về cơ bản **DispatcherServlet** được sử dụng để xử lý các **HTTP request**, vì nó được kế thừa từ **HTTPServlet**. **DispatcherServlet** gửi các request tới các _controller_ và quyết định hồi đáp bằng cách gửi lại _view_.
 </content-info>

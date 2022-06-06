@@ -51,7 +51,7 @@ http://localhost:8080/techmely?param1=techmely&param2=hoclaptrinh
 
 Để nhận giá trị của một request parameter sử dụng annotation @RequestParam như sau:
 
-```
+```java
 public String getValueWithRequestParam(@RequestParam(value="param1", required=true) String param1){
     ...
 }
@@ -66,16 +66,16 @@ Một số thuộc tính của annotation :
 ### 2. Path Variable
 
 Với @PathVariable không cần key truyền trên URL chỉ cần value.
-<content-example>Ví dụ:
-URL sau mang giá trị là hoclaptrinh được gán trên URL
+<content-example>
+Ví dụ: URL sau mang giá trị là hoclaptrinh được gán trên URL
 http://localhost:8080/techmely/hoclaptrinh
 
-- value = hoclaptrinh
-  </content-example>
+value = hoclaptrinh
+</content-example>
 
 Để sử dụng @PathVariable cần thêm biến thuộc tính value của annotation @RequestMapping
 
-```
+```java
 @RequestMapping(value="/getValueWithPathVariable/{name}",method = GET)
 public String getValueWithPathVariable(@PathVariable String name, Model model){
     model.addAttribute("name", name);
@@ -83,8 +83,8 @@ public String getValueWithPathVariable(@PathVariable String name, Model model){
 }
 ```
 
-- value=”/getValueWithPathVariable/{name}” :Khi sử dụng nó sẽ map với trình duyệt có định dạng là getValueWithPathVariable/hoclaptrinh
-- @PathVariable chúng ta sẽ lấy giá trị là hoclaptrinh từ trình duyệt và gắn vào biến String name.
+- `value=”/getValueWithPathVariable/{name}` :Khi sử dụng nó sẽ map với trình duyệt có định dạng là `getValueWithPathVariable/hoclaptrinh`
+- `@PathVariable` chúng ta sẽ lấy giá trị là hoclaptrinh từ trình duyệt và gắn vào biến String name.
 
 ### 3. Kết luận
 

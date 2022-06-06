@@ -44,7 +44,7 @@ Phương thức POST
 - Không thể đánh dấu ghi nhớ lại (bookmarked)
 - Không bị giới hạn với độ dài của dữ liệu
 
-## Lưu ý:
+## Lưu ý
 
 - Phương thức GET thì được dùng nhiều để nhận dữ liệu, ít được sử dụng để gửi các dữ liệu nhạy cảm,
   và có nhiều giới hạn về độ dài cũng như kiểu dữ liệu.

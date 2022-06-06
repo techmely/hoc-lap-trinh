@@ -30,7 +30,7 @@ dụng annotation lúc định nghĩa.
 
 File cấu hình ứng dụng
 
-![cau hinh ung dung](https://1.bp.blogspot.com/-oRr1QEA6qEM/Xg7KBxBC57I/AAAAAAAAAcA/o8kPwFt27N421GadfgAp5j7xeLL2BehBACLcBGAsYHQ/s1600/p1.png)
+![Cấu hình ứng dụng Spring boot bằng XML](https://1.bp.blogspot.com/-oRr1QEA6qEM/Xg7KBxBC57I/AAAAAAAAAcA/o8kPwFt27N421GadfgAp5j7xeLL2BehBACLcBGAsYHQ/s1600/p1.png)
 
 Trong ứng dụng đơn gian, chung ta thương cau hình ứng dụng với3file:
 
@@ -40,18 +40,17 @@ Trong ứng dụng đơn gian, chung ta thương cau hình ứng dụng với3fi
 
 Trong ứng dụng đơn giản, chúng ta thường cấu hình ứng dụng với 2 file web.xml và dispatcher-servlet.xml:
 
-- web.xml: cấu hình ứng dụng web của java, trong đó có chỉ ra file cấu hình Spring MVC là
-  dispatcher-servlet.xml
-- dispatcher-servlet.xml: cấu hình dành riêng cho ứng dụng Spring MVC
-- applicationContext.xml định nghĩa các bean được chia sẻ giữa tất cả các servlet.
+- `web.xml`: cấu hình ứng dụng web của java, trong đó có chỉ ra file cấu hình Spring MVC là dispatcher-servlet.xml
+- `dispatcher-servlet.xml`: cấu hình dành riêng cho ứng dụng Spring MVC
+- `applicationContext.xml` định nghĩa các bean được chia sẻ giữa tất cả các servlet.
 
-Nếu ứng dụng có nhiều hơn một servlet thì việc xác định các tài nguyên phổ biến trong applicationContext.ml sẽ có ý nghĩa hơn.
+Nếu ứng dụng có nhiều hơn một servlet thì việc xác định các tài nguyên phổ biến trong `applicationContext.ml` sẽ có ý nghĩa hơn.
 
 ## File cấu hình web.xml
 
 File web.xml được sử dụng để cấu hình nhiều công việc khác nhau cho ứng dụng web nói chung (jsp, servlet, structs, spring v.v) Trong phần này chúng ta chỉ khai thác các khai báo liên quan đến ứng dụng Spring MVC.
 
-```java
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -83,7 +82,7 @@ Nếu chúng ta đặt tên là **<'servlet-name'>my-config</'servlet-name'>** t
 
 ## File cầu hình dispatcher-servlet.xml
 
-```java
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -138,7 +137,7 @@ public String greeting(){
 
 Với khai báo ViewResolver được cấu hình
 
-```java
+```xml
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
   <property name="prefix" value="/WEB-INF/views/"/>
   <property name="suffix" value=".jsp"/>
@@ -151,7 +150,7 @@ Khi đó view WEB-INF/views/greeting.jsp se được lựa chọn để sinh gia
 
 Trong các ứng dụng Spring MVC phát triển từ 3+ gần như sử dụng annotation để đơn giải hoá công việc phát triển ứng dụng. Để ứng dụng Spring nhận biết điều này cần khai báo trong file cấu hình dispatcher-servlet dòng mã sau:
 
-```java
+```xml
 <mvc:annotation-driven/>
 ```
 
@@ -169,14 +168,12 @@ Với khai báo này, trong Spring MVC có thể đánh dấu các thành phần
 Khi bạn yêu cần một action, ứng dụng Spring phải truy tìm phương thức ánh xạ tới action đó thông qua @RequestMapping hoặc @PostMapping hoặc @GetMapping.
 Như vậy cần phải biết phương thức của lớpn nào được ánh xạ để thực hiện yêu cầu với khai báo:
 
-```java
+```ssh
 context:component-scan base-package="codelean.controller"/>
 ```
 
 Trong trường hợp này, các lớp controller thuộc gói codelean.controller sẽ được tham chiếu đến. Trong trường hợp có nhiều controller thuộc nhiều gói khác nhau thì phải chỉ rõ các gói bằng dấu phẩy.
 
-```java
+```xml
 <context:component-scan base-package%="codelean.controller1, codelean.controller2, "/>
 ```
-
-Nguồn: [Codelean](https://www.codelean.vn/2020/01/spring-framework-cau-hinh-ung-dung.html)

@@ -53,7 +53,7 @@ Truy xuất và hiễn thị email và message trên trang jsp bằng cách sử
 - ${message}
   Buộc dữ liệu lên form spring
 
-```
+```xml
 <form:form commandName="user">
   Email: <form:input path="email"/>
 </form:form>
@@ -63,7 +63,7 @@ Truy xuất và hiễn thị email và message trên trang jsp bằng cách sử
 
 Thay vì kết quả của action trả về ModelAndView thì trường hợp này chỉ trả về String chỉ ra tên view muốn hiển thị, còn model và thuộc tính đính kèm được đặt trong ModelMap. Với cách viết này sẽ linh hoạt hơn vì tách rời view và model do đó được sử dụng nhiều hơn.
 
-```
+```java
 @GetMapping("/greeting")
 public String greeting(@RequestParam String username, Model model){
   model.addAttribute("username", username);
@@ -74,7 +74,7 @@ public String greeting(@RequestParam String username, Model model){
 
 Đôi khi một action chỉ thực hiện một công việc logic nào đó mà không cần có một view để hiễn thị kết quả. Trong trường hợp đó action không trả kết quả gì là lựa chọn tốt nhất. Ví dụ sau đây khi gọi action thì bạn sẽ nhận được kết quả hiển thị trên trang web là "Hello World" mà không cần phải xây dựng View.
 
-```
+```java
 @RequestMapping (value=" myaction")
 public void mymethod (HttpservletResponse response) throws IOException {
       PrintWriter out = response.getWriter();

@@ -34,13 +34,19 @@ Một tài liệu hoàn chỉnh được tạo lại từ các tài liệu con k
 
 ### Các khía cạnh cơ bản của HTTP
 
-- ### Tính đơn giản (Simple):
-  HTTP thường được thiết kế để trở nên đơn giản và thân thiện để con người có thể đọc được. Với các HTTP message, chúng ta có thể được đọc và hiểu được, cung cấp khả năng testing hơn cho các dev và giảm thiểu độ phức tạp cho bất cứ người mới nào.
-- ### Có thể mở rộng (Extensible):
-  Được giới thiệu trong HTTP/1.0, các header HTTP làm cho giao thức này dễ dàng mở rộng và thử nghiệm hơn nữa. Chức năng mới thậm chí có thể được giới thiệu bằng 1 thỏa thuận đơn giản giữa 1 client và 1 máy chủ về ngữ nghĩa của 1 header mới.
-- ### Stateless (But Not Sessionless)
-  Server và Client biết về nhau chi trong một yêu cầu hiện tại. Sau đó, cả hai chúng nó quên tất cả về nhau. Do bản chất của giao thức, cả Client và các trình duyệt có thể giữ lại thông tin giữa các yêu cầu khác nhau giữa các trang web.
-  > Để khắc phục vấn đề này, HTTP cho phép mở rộng tự do các header. Trong đó, người dùng có thể tự tạo cho mình session trên mỗi request nhằm mục đích chia sẻ các ngữ cảnh hoặc trạng thái giữa các request với nhau. Sở dĩ trường hợp này có thể thực hiện được vì bản thân HTTP là stateless.
+#### Tính đơn giản (Simple):
+
+HTTP thường được thiết kế để trở nên đơn giản và thân thiện để con người có thể đọc được. Với các HTTP message, chúng ta có thể được đọc và hiểu được, cung cấp khả năng testing hơn cho các dev và giảm thiểu độ phức tạp cho bất cứ người mới nào.
+
+#### Có thể mở rộng (Extensible):
+
+Được giới thiệu trong HTTP/1.0, các header HTTP làm cho giao thức này dễ dàng mở rộng và thử nghiệm hơn nữa. Chức năng mới thậm chí có thể được giới thiệu bằng 1 thỏa thuận đơn giản giữa 1 client và 1 máy chủ về ngữ nghĩa của 1 header mới.
+
+#### Stateless (But Not Sessionless)
+
+Server và Client biết về nhau chi trong một yêu cầu hiện tại. Sau đó, cả hai chúng nó quên tất cả về nhau. Do bản chất của giao thức, cả Client và các trình duyệt có thể giữ lại thông tin giữa các yêu cầu khác nhau giữa các trang web.
+
+> Để khắc phục vấn đề này, HTTP cho phép mở rộng tự do các header. Trong đó, người dùng có thể tự tạo cho mình session trên mỗi request nhằm mục đích chia sẻ các ngữ cảnh hoặc trạng thái giữa các request với nhau. Sở dĩ trường hợp này có thể thực hiện được vì bản thân HTTP là stateless.
 
 ### Tổng quan về HTTP Message
 
@@ -77,13 +83,9 @@ Cấu trúc HTTP response gần giống với HTTP request, chỉ khác nhau là
 Một số loại Status-Code thông dụng mà server trả về cho client như sau:
 
 > 1xx (Information Message): các status code này chỉ có tính chất tạm thời, client có thể không quan tâm.
-
 > 2xx (Successful): khi đã xử lý thành công request của client, server trả về status dạng này:
-
 > 3xx (Redirection): Server thông báo cho client phải thực hiện thêm thao tác để hoàn tất request:
-
 > 4xx (Client Error): lỗi của client
-
 > 5xx (Server Error): lỗi của server
 
 ![http-code](https://softcrony.com/blog/wp-content/uploads/2020/07/http-code.png)

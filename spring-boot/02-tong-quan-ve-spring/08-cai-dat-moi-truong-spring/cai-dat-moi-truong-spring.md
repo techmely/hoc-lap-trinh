@@ -26,12 +26,6 @@ category:
 position: 8
 ---
 
-> **_Nội dung bài viết_**
->
-> - [JDK (phiên bản 1.8 trở lên)](#jdk-phiên-bản-18-trở-lên)
-> - [Apache Tomcat (hoặc Glassfish)](#apache-tomcat-hoặc-glassfish)
-> - [IDE IntellJ (hoặc Eclipse)](#ide-intellj-hoặc-eclipse)
-
 Trong bài này, mình sẽ hướng dẫn các bạn nên cài những gì để chạy một ứng dụng Spring như: jdk, Tomcat, IntellJ,...
 
 ### JDK (phiên bản 1.8 trở lên)

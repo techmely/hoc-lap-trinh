@@ -46,13 +46,9 @@ position: 6
 Các thẻ **JSTL** có thể được phân loại, theo tính năng của nó, thành các nhóm thư viện thẻ **JSTL** sau, mà có thể được sử dụng khi tạo một **JSP** page:
 
 - `Core Tags`: Nhóm thẻ cơ bản
-
 - `Formatting Tags`: Nhóm thẻ định dạng
-
 - `SQL Tags`: Nhóm thẻ SQL
-
 - `XML Tags`: Nhóm thẻ XML
-
 - `JSTL Functions`: Nhóm hàm JSTL
 
 Tuy nhiên vì `Core Tags` và `Formatting Tags` được sử dụng nhiều nhất nên ở bài này mình sẽ tập trung vào 2 loại tag này.

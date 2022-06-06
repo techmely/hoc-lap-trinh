@@ -21,20 +21,13 @@ category:
 position: 2
 ---
 
-## Lớp ModelAndView
-
-> **_Nội dung bài viết_**
->
-> - [ModelAndView là gì?](#modelandview-là-gì)
-> - [Cú pháp tạo ModelAndView](#cú-pháp-tạo-modelandview)
-
-### ModelAndView là gì?
+## ModelAndView là gì?
 
 Lớp ModelAndView là nơi chứa 2 class là Model và View trong framework MVC web. 2 lớp này riêng biệt, không giống nhau. ModelAndView thì đơn thuần là chứa 2 thằng trên để giúp controller có thể return được cả model và view trong 1 giá trị duy
 nhất.
 View được giải quyết bởi đối tượng ViewResolver còn Model chính là dữ liệu được chứa trong Map.
 
-### Cú pháp tạo ModelAndView
+## Cú pháp tạo ModelAndView
 
 ```java
 new ModelAndView (logical_name_of_View, logical_name_of_model_data, actual_value_of_model_data)

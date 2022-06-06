@@ -21,9 +21,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 6
 ---
 
-# **IoC Container**
-
----
+## IoC Container
 
 ## IoC là gì?
 
@@ -49,7 +47,7 @@ Spring container sử dụng DI để quản lý các thành phần, đối tư�
 
 Để sử dụng Spring Bean ta cần khai báo thư viện spring-bean sau:
 
-```
+```xml
 <dependency>
   <groupId>org.springframework</groupId>
   <artifactId>spring-beans</artifactId>
@@ -59,7 +57,7 @@ Spring container sử dụng DI để quản lý các thành phần, đối tư�
 
 _Class HelloWorld.java_
 
-```
+```java
 public class HelloWorld {
   private String message;
 
@@ -75,7 +73,7 @@ public class HelloWorld {
 
 Để tạo đối tượng HelloWorld thông qua IoC container ta sẽ cấu hình nó trong file beans.xml
 
-```
+```xml
 <?xml version = "1.0" encoding = "UTF-8"?>
 
 <beans xmlns = "http://www.springframework.org/schema/beans"
@@ -94,7 +92,7 @@ Bây giờ ta sẽ tạo một BeanFactory để đọc các thông tin cấu h�
 
 BeanFactory chỉ là 1 interface, nên ở đây mình dùng DefaultListableBeanFactory, một implement của BeanFactory. Ở các version cũ thì bạn sẽ thấy hay sử dụng XmlBeanFactory nhưng nó bị đánh dấu @Deprecated ở các version mới.
 
-```
+```java
 // tạo factory
 DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
 
@@ -112,20 +110,19 @@ obj.getMessage();
 
 Để sử dụng Spring Bean ta cần khai báo thư viện spring-context sau:
 
-```
+```xml
 <dependency>
   <groupId>org.springframework</groupId>
   <artifactId>spring-context</artifactId>
   <version>4.3.13.RELEASE</version>
 </dependency>
-
 ```
 
 Mình sẽ tạo đối tượng phức tạp hơn HelloWorl.java một chút.
 
 Ví dụ class DataResource.java chứa thông tin kết nối tới database.
 
-```
+```java
 public class DataResource {
   private String driverClassName;
   private String url;
@@ -172,7 +169,7 @@ public class DataResource {
 
 Để tạo đối tượng HelloWorld thông qua IoC container ta sẽ cấu hình nó trong file applicationContext.xml (lưu ý là bạn đặt tên file là gì cũng được: bean.xml, applicationContext.xml, dataresource.xml… nhưng cần phải nhớ file cấu hình cho cái gì)
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
@@ -188,7 +185,7 @@ public class DataResource {
 
 Tạo một đối tượng ApplicationContext để lấy thông tin từ file cấu hình và tạo đối tượng DataResource
 
-```
+```java
 public static void main(String[] args) {
   ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
   DataResource obj = (DataResource) context.getBean("dataResource");
@@ -198,7 +195,7 @@ public static void main(String[] args) {
 
 Kết quả:
 
-```
+```ssh
 url: jdbc:mysql://localhost/database_name
 username/password: root/admin1234
 ```
@@ -206,11 +203,3 @@ username/password: root/admin1234
 Done!
 
 Bây giờ bạn muốn thay đổi messge trong đối tượng HelloWorld, hay database của bạn thay đổi username/password hay bạn đổi kết nối sang database khác bạn chỉ cần đổi lại thông tin trong file config .xml là đã thay đổi được luồng chạy của chương trình, đó chính là IoC.
-
----
-
-Loạt bài chủ đề Java trên trang stackjava.com bản quyền thuộc thầy Trần Hữu Cương. Bài viết đăng trên blog Techmaster được sự đồng ý của tác giả.
-
-Thầy Trần Hữu Cương đã và đang tham gia giảng dạy tại Techmater khoá Lộ trình Java Spring Boot Full Stack
-
-Link gốc bài viết [tại đây](https://stackjava.com/spring/spring-ioc-container.html)
