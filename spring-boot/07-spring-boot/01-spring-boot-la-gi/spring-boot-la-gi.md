@@ -70,7 +70,7 @@ Với những ưu điểm mà Spring Boot mang lại, nó cũng mang theo rất 
 - SpringApplication: Đây là class được dùng để khởi chạy ứng dụng từ hàm main(). Vì thế, khi khởi chạy ứng dụng, các lập trình viên chỉ cần gọi method run() là được. 
 - Externalized Configuration: Spring Boot cho phép người dùng có thể sử dụng cấu hình (config) từ bên ngoài. Chính vì vậy mà mỗi ứng dụng được tạo ra có thể chạy được trên nhiều môi trường khác nhau. 
 - Profiles: Dùng để phân chia các loại cấu hình cho các môi trường khác nhau.
-- Loggin: Sử dụng phục vụ cho toàn bộ chức năng log trong phạm vi nội bộ. Những logging này sẽ được quản lý một cách mặc định.
+- Login: Sử dụng phục vụ cho toàn bộ chức năng log trong phạm vi nội bộ. Những logging này sẽ được quản lý một cách mặc định.
 
 Ngoài ra còn rất nhiều các tính năng tương tự khác của Spring Boot như: Developing web Applications, Working with SQL Technologies, Security, Messaging, Caching, Calling rest Services with RestTemplate/WebClient, Sending Email, Validation,….
 
@@ -93,13 +93,13 @@ Cách học Spring Boot đúng đắn nhất chính là học thực hành, làm
 
  #### JPA/MongoDB/SQL
 Để tạo nên một chương trình, ứng dụng không thể thiếu được Database, do vậy các bạn cần tìm hiểu về:
-Cách cấu hình database trong Spring Boot
-Cấu trúc lớp và interface của JPA
-Tìm hiểu các thao tác cơ bản CRUD.
-Query creation
-Thực hiện các câu query phức tạp bằng MongoTemplate.
-Sắp xếp và phân trang data query được.
-Thực hiện aggregation
+- Cách cấu hình database trong Spring Boot
+- Cấu trúc lớp và interface của JPA
+- Tìm hiểu các thao tác cơ bản CRUD.
+- Query creation
+- Thực hiện các câu query phức tạp bằng MongoTemplate.
+- Sắp xếp và phân trang data query được.
+- Thực hiện aggregation
 #### Template engine
 Template engine đảm nhiệm xử lý phần View trong ứng dụng MVC. Trong Spring Boot chúng ta sử dụng template engine để paste dữ liệu vào View và trả về một trang HTML. Những kiến thức về cách trả về trang HTML, sử dụng Thymeleaf, JSP trong Spring Boot bạn cũng nên tìm hiểu trước.
 #### Các tool khác
