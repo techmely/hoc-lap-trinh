@@ -36,13 +36,13 @@ List<Customer>findAllByOrderByName Desc();
 
 - Sử dụng câu query bên trong @Query
 ```
-@Query("SELECTeFROM CustomereORDER BY e.name DESC")
+@Query("SELECT * FROM Customer ORDER BY e.name DESC")
 List<Customer>findAll();
 ```
 
 - Sử dụng tham số Sort trong method:
 ```
-@Query("SELECTeFROM Customere")
+@Query("SELECT * FROM Customere")
 List<Customer>findAll(Sort sort);
 ```
 
@@ -54,20 +54,20 @@ Sort sort=Sort.by("name").descending();
 Để phân trang trong spring data jpa,trong method truy vấn, thay vì trả về 1 stream hay 1 list thì trả về 1 page
 Ví dụ:
 ```
-@Query("SELECTeFROM Customere")
+@Query("SELECT * FROM Customere")
 Page<Customer>findCustomers(Pageable pageable);
 ```
 Trong đó:
 - Pageable sẽ chứa các thông tin phân trang như số phần tử được lấy,vị trí trang được lấy
 - Page sẽ chứa kết quả trả về(gồm số phần tử,danh sách các phần tử)
-- Pageable là1interface,để tạo nó ta sử dụng PageRequest
+- Pageable là 1 interface, để tạo nó ta sử dụng PageRequest
   
-Ví dụ tạo pageable với thông tin là page thứ 1với 10 phần tử:
+Ví dụ tạo pageable với thông tin là page thứ 1 với 10 phần tử:
 ```
 Pageable pageable=PageRequest.of(1,10);
 ```
 Ngoài ra bạn cũng có thể sắp xếp các phần tử trong page bằng cách thêm tham số sort vào trong pageable:
 ```
-Sort sort=Sort.by("name").descending();
-Pageable pageable=PageRequest.of(1,10,sort);
+Sort sort = Sort.by("name").descending();
+Pageable pageable = PageRequest.of(1,10,sort);
 ```
