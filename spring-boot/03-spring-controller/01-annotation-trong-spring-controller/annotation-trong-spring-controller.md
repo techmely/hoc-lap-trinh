@@ -132,4 +132,3 @@ public class UserController {
 
 Trong bài sau chúng ta sẽ đi sâu hơn về một số Annotaion trong Spring
 
-Nguồn: [tại đây](https://viblo.asia/p/spring-boot-xu-ly-request-trong-controller-nhu-the-nao-phan-1-gGJ59ANj5X2)
