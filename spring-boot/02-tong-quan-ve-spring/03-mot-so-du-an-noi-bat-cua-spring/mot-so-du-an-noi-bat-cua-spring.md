@@ -55,5 +55,3 @@ Dự án này sẽ kết nối ứng dụng của bạn với các API bên th�
 ---
 
 Tham khảo tất cả các projects con <orange> [tại đây](https://spring.io/projects) </orange>
-
-Nguồn: [Codelean.vn](https://www.codelean.vn/2019/12/spring-mvc-mot-so-du-noi-bat-cua-spring.html)
