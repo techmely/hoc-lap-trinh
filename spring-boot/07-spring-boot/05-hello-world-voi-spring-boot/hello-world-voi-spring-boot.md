@@ -33,15 +33,14 @@ dòng chữ:Hello World!
 Bước1:Truy cập vào:https://start.spring io
 
 Tạo ứng dụng spring boot với thông số sau
-![helloworld](https://1.bp.blogspot.com/-kVXK15UOqgU/XjfS79-pWKI/AAAAAAAAAz8/5kCQ1jP-CfQ1eIqkXLDIJZUmrWFwNUn5gCLcBGAsYHQ/s640/q1.png)
-
+![tao ung dung](../../images/taoungdung.png)
 Bước2:Mở IntellJ Idea.
 
 Mở project vừa tạo và tổ chức lại thư mục dự án như sau:
-![helloworld](https://1.bp.blogspot.com/-JfrIDfv8wyo/XjfTC0KB21I/AAAAAAAAA0A/iNnZPC9q8HQZ7W0IPXG8wOMQijk9IhtMACLcBGAsYHQ/s640/q2.png)
+![to chuc thu muc](../../images/to%20chuc%20thu%20muc.png)
 Bước3:Cài đặt GreetingController
 
-```
+```java
 package com.codelean.controller;
 import org.springframework.web.bind.annotation RequestMapping;
 import org.springframework.web.bind.annotation RestController;
@@ -54,8 +53,10 @@ public class GreetingController{
  }
 }
 ```
+
 Bước4:Điều chỉnh lại file GreetingSpringbootApplication
-```
+
+```java
 package com.codelean.app;
 import org.springframework.boot Spring Application;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -69,5 +70,6 @@ public class GreetingSpringbootApplication{
  }
 }
 ```
+
 Bước5:Cấu hình và chạy ứng dụng
 http://localhost:8080/home
