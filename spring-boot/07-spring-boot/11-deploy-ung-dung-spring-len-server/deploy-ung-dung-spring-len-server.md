@@ -20,14 +20,19 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 11
 ---
+
 ## Deployment ứng dụng Spring boot trên server
+
 ### Mục tiêu
+
 Luyện tập đóng gói và deploy ứng dụng được phát triển trên Spring Boot.
 
 ### Mô tả
+
 Trong phần này, chúng ta sẽ đóng gói và deploy ứng dụng được phát triển trên Spring Boot lên server Tomcat.
 
 ### Hướng dẫn
+
 **Bước 1**: Tạo dự án Spring Boot
 
 Để tạo mới dự án, các bạn chọn File -> New -> Project.
@@ -145,7 +150,7 @@ Chuột phải vào file SpringBootWebApplication -> Run…
 Màn hình console sẽ hiển thị như sau:
 
 
-Truy cập http://localhost:8080
+Truy cập `http://localhost:8080`
 
 
 **Bước 9**: Đóng gói project
