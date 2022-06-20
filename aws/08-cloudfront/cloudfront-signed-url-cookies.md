@@ -1,5 +1,5 @@
 ---
-title: "CloudFront Signed URL/Signed Cookies"
+title: "Giới thiệu CloudFront Signed URL/Signed Cookies"
 description: "CloudFront Signed URL/Signed Cookies là gì? Trên thực tế có nhiều nội dung của website của bạn chỉ giới hạn cho những người dùng nhất định (người dùng đã trả phí). Chúng ta có thể dùng Cloudfront Signed URL/Cookie để dễ dàng quản lý truy cập đến nội dung của riêng mình."
 keywords:
   [
@@ -21,7 +21,8 @@ category:
   slug: "aws"
 chapter:
   name: "Cloudfront, Accelerator"
-  slug: "cloud-front"
+  slug: "chap-08-cloud-front"
+image: https://user-images.githubusercontent.com/29729545/152831976-e7241d9a-97db-41a4-9354-f179743e43d5.jpg
 position: 71
 ---
 

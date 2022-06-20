@@ -14,22 +14,17 @@ keywords:
     "cài đặt glassfish",
     "cài đặt jdk",
     "cài đặt IntellJ",
-    "cài đặt Eclipse"
+    "cài đặt Eclipse",
   ]
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-02-tong-quan-ve-spring"
 category:
-  name: "spring"
-  slug: "spring"
+  name: "Spring Boot"
+  slug: "spring-boot"
 # image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
 position: 8
 ---
-
-> ***Nội dung bài viết***
-> - [JDK (phiên bản 1.8 trở lên)](#jdk-phiên-bản-18-trở-lên)
-> - [Apache Tomcat (hoặc Glassfish)](#apache-tomcat-hoặc-glassfish)
-> - [IDE IntellJ (hoặc Eclipse)](#ide-intellj-hoặc-eclipse)
 
 Trong bài này, mình sẽ hướng dẫn các bạn nên cài những gì để chạy một ứng dụng Spring như: jdk, Tomcat, IntellJ,...
 
@@ -40,7 +35,6 @@ JDK viết tắt của Java Development Kit là một bộ phần mềm cung c�
 ![download-jdk](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/download-jdk.png)
 
 Link tải: https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
-
 
 ### Apache Tomcat (hoặc Glassfish)
 

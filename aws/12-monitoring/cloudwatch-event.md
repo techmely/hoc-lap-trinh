@@ -6,14 +6,12 @@ keywords:
     "CloudWatch la gi",
     "CloudWatch là gì",
     "CloudWatch trong aws",
-    "CloudWatch Events la gi",
-    "CloudWatch Events là gì",
-    "EventBridge la gi",
-    "EventBridge là gì",
-    "CloudWatch Alarms la gi",
-    "CloudWatch Alarms là gì",
-    "CloudWatch Logs metric filter la gi",
-    "CloudWatch Logs metric filter là gì",
+    "AWS CloudWatch Events la gi",
+    "AWS CloudWatch Events là gì",
+    "AWS EventBridge la gi",
+    "AWS EventBridge là gì",
+    "EventBridge Schema Registry la gi",
+    "EventBridge Schema Registry là gì"
   ]
 author:
   fullname: Phan Văn Đức
@@ -24,11 +22,14 @@ category:
   slug: "aws"
 chapter:
   name: "Monitoring & Audit"
-  slug: "monitoring"
+  slug: "chap-12-monitoring"
+image: https://user-images.githubusercontent.com/29729545/172041126-1b9595ec-2bba-4509-8639-36944c107bb4.png
 position: 222
 ---
 
-## CloudWatch Events là gì
+## AWS CloudWatch Events là gì
+
+![AWS CloudWatch Events là gì](https://user-images.githubusercontent.com/29729545/172041126-1b9595ec-2bba-4509-8639-36944c107bb4.png)
 
 CloudWatch Events cung cấp các event để mô tả những thay đổi resource trên AWS. Bằng cách sử dụng những **rules**, bạn có thể định nghĩa những target mà khi một event được gọi tới.
 
@@ -38,14 +39,14 @@ Ví dụ: Bạn có thể cài đặt một Event: nhận biết state của EC2
 - **Rules**: định nghĩa những event và target khi event đó xảy ra
 - **Target**: nơi xử lý khi event xảy ra. Target có thể là: Lambda, SNS, Batch jobs, SQS...
 
-## EventBridge là gì
+## AWS EventBridge là gì
 
 - EventBridge là giải pháp thay thế cho CloudWatch Events
 - **Default event bus**: được tạo ra bởi AWS (giống với CloudWatch Events)
 - **Partner event bus**: tiếp nhập event từ một dịch vụ SaaS hoặc một Application (DataDog, Zendesk...)
 - **Custom Event Buses**: custom để sử dụng cho application của riêng bạn
 
-## EventBridge Schema Registry
+## EventBridge Schema Registry là gì
 
 - EventBridge có thể phân tích các events
 - EventBridge Schema Registry lưu trữ các cấu trúc của event hoặc schema

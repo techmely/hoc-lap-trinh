@@ -3,8 +3,8 @@ title: "Giới thiệu KMS"
 description: "Key Management Service (KMS) là dịch vụ dùng để quản lý key. KMS giúp bạn dễ dàng encrypt/decrypt dữ liệu trên AWS resources."
 keywords:
   [
-    "KMS la gi",
-    "KMS là gì",
+    "AWS KMS la gi",
+    "AWS KMS là gì",
     "KMS trong aws",
     "Symmetric trong KMS",
     "KMS Symmetric la gi",
@@ -21,11 +21,14 @@ category:
   slug: "aws"
 chapter:
   name: "Security & Encryption"
-  slug: "security"
+  slug: "chap-13-security"
+image: https://user-images.githubusercontent.com/29729545/172041483-cd0784e1-4a91-47e6-9a61-3599fe3e24f9.png
 position: 241
 ---
 
-## Key Management Service (KMS)
+## AWS KMS là gì
+
+![AWS KMS là gì](https://user-images.githubusercontent.com/29729545/172041483-cd0784e1-4a91-47e6-9a61-3599fe3e24f9.png)
 
 Key Management Service (KMS) là dịch vụ dùng để quản lý key. KMS giúp bạn dễ dàng encrypt/decrypt dữ liệu trên AWS resources.
 
@@ -36,7 +39,7 @@ Key Management Service (KMS) là dịch vụ dùng để quản lý key. KMS gi�
 ## KMS - Customer Master Key (CMK) Types
 
 - **Symmetric (AES-256 keys)** - khóa đối xứng
-  - Single encyption key dùng trong cả Encryptvaf Decrypt
+  - Single encyption key dùng trong cả Encrypt và Decrypt
   - Những dịch vụ trên AWS sử dụng KMS-Symmetric để mã hóa
 - **Asymmetric(RSA & ECC key pairs)** - bất đối xứng
   - Cặp Public (encrypt) và Private Key (decrypt)
@@ -46,5 +49,6 @@ Key Management Service (KMS) là dịch vụ dùng để quản lý key. KMS gi�
 
 ## KMS Automatic Key Rotation
 
-- Cho Customer-managed CMK (không phải AWS managed CMK)
+- Được dùng cho Customer-managed CMK (không phải AWS managed CMK)
+- Sau một thời gian nhất định, khóa của bạn sẽ bị hết hiệu lực => cần phải gia hạn
 - Bạn có thể lựa chọn key tự động gia hạn mỗi năm, hoặc gia hạn bằng tay (90 ngày, 180 ngày...)

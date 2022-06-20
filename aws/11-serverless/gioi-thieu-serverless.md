@@ -5,13 +5,7 @@ keywords:
   [
     "Serverless là gì",
     "Serverless la gi",
-    "Serverless trong AWS",
-    "Serverless lambda là gì",
-    "Serverless lambda la gi",
-    "Serverless lambda trong AWS",
-    "Lambda function là gì",
-    "Lambda function la gi",
-    "Lambda function trong AWS",
+    "Serverless trong AWS"
   ]
 author:
   fullname: Phan Văn Đức
@@ -23,11 +17,14 @@ category:
   description: "Mang kiến thức AWS đến với mọi lập trình viên"
 chapter:
   name: "Serverless"
-  slug: "serverless"
+  slug: "chap-11-serverless"
+image: https://user-images.githubusercontent.com/29729545/170851215-177f86f6-61f6-473a-a3a8-cf2d1888645c.png
 position: 191
 ---
 
 ## Serverless là gì
+
+![Serverless là gì](https://user-images.githubusercontent.com/29729545/170851215-177f86f6-61f6-473a-a3a8-cf2d1888645c.png)
 
 Serverless là môi trường, nền tảng thực thi ứng dụng và dịch vụ mà không phải quan tâm đến máy chủ. Ứng dụng serverless không cần phải quan tâm việc phân bổ, quản lý tài nguyên của hệ điều hành, và bỏ qua các vấn đề về nâng cấp và bảo mật. Với khái niệm là chỉ cần tập trung phát triển sản phẩm, việc còn lại về vận hành sẽ để nền tảng này đảm nhiệm.
 

@@ -32,7 +32,7 @@ Function expression hiểu đơn giản là hàm được định nghĩa trong m
 
 ```js
 let sayHello = function () {
-  console.log("Hello from completejavascript.com");
+  console.log("Hello from kungfutech.edu.vn");
 };
 ```
 
@@ -40,11 +40,11 @@ Có thể hiểu là mình khởi tạo một hàm, rồi gán hàm đó cho bi�
 
 ```js
 let sayHello = function () {
-  console.log("Hello from completejavascript.com");
+  console.log("Hello from kungfutech.edu.vn");
 };
 
 console.log(sayHello); // ƒ () {
-//  console.log("Hello from completejavascript.com");
+//  console.log("Hello from kungfutech.edu.vn");
 // }
 ```
 
@@ -54,14 +54,14 @@ Kết quả hiển thị ra là một string biểu diễn hàm.
 
 ```js
 let sayHello = function () {
-  console.log("Hello from completejavascript.com");
+  console.log("Hello from kungfutech.edu.vn");
 };
 
-console.log(sayHello()); // Hello from completejavascript.com
+console.log(sayHello()); // Hello from kungfutech.edu.vn
 // undefined
 ```
 
-Kết quả là function expression với `sayHello` được gọi, nên dòng chữ **Hello from completejavascript.com** được in ra.
+Kết quả là function expression với `sayHello` được gọi, nên dòng chữ **Hello from kungfutech.edu.vn** được in ra.
 
 Sau đó là dòng `undefined` - vì biểu thức hàm `sayHello` không có `return` giá trị nào cả.
 
@@ -71,11 +71,11 @@ Vì biểu thức hàm cũng là một giá trị, nên bạn hoàn toàn có th
 
 ```js
 let sayHello = function () {
-  console.log("Hello from completejavascript.com");
+  console.log("Hello from kungfutech.edu.vn");
 };
 
 let sayHi = sayHello;
-sayHi(); // Hello from completejavascript.com
+sayHi(); // Hello from kungfutech.edu.vn
 ```
 
 Khi đó, bạn gọi `sayHi()` cũng giống như gọi `sayHello()`.
@@ -86,11 +86,11 @@ Ví dụ:
 
 ```js
 function sayHello() {
-  console.log("Hello from completejavascript.com");
+  console.log("Hello from kungfutech.edu.vn");
 }
 
 let sayHi = sayHello;
-sayHi(); // Hello from completejavascript.com
+sayHi(); // Hello from kungfutech.edu.vn
 ```
 
 ## Hàm callback

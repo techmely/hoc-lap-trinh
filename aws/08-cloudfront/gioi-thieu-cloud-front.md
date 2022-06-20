@@ -11,6 +11,7 @@ keywords:
     "Cloudfront giới hạn địa lý",
     "Cloudfront hoạt động",
     "Cloudfront hoat dong",
+    "Giới thiệu Cloudfront Origins"
   ]
 author:
   fullname: Phan Văn Đức
@@ -21,7 +22,8 @@ category:
   slug: "aws"
 chapter:
   name: "Cloudfront, Accelerator"
-  slug: "cloud-front"
+  slug: "chap-08-cloud-front"
+image: https://user-images.githubusercontent.com/29729545/152686502-58ce75ad-3018-4eac-842a-bb039aea1c66.png
 position: 70
 ---
 
@@ -35,7 +37,7 @@ Amazon CloudFront là một dạng Content Delivery Network(CDN) giúp tăng t�
 
 ![AWS Cloudfront là gì](https://images.viblo.asia/b039a4e3-ce07-4dda-8896-2220fdfcf2f0.png)
 
-## Cloudfront - Origins
+## Giới thiệu Cloudfront Origins
 
 - S3 bucket:
   - Dùng cho cache các file tại các Edge location
@@ -44,7 +46,9 @@ Amazon CloudFront là một dạng Content Delivery Network(CDN) giúp tăng t�
 - Custom origin (HTTP)
   - Application Load Balancer
   - EC2 instance
-  - S3 website ![Cloudfront-S3 as an origin](https://user-images.githubusercontent.com/29729545/152686502-58ce75ad-3018-4eac-842a-bb039aea1c66.png)
+  - S3 website 
+  
+  ![Cloudfront-S3 as an origin](https://user-images.githubusercontent.com/29729545/152686502-58ce75ad-3018-4eac-842a-bb039aea1c66.png)
 
 ## Cloudfront - Giới hạn địa lý (geo restriction)
 

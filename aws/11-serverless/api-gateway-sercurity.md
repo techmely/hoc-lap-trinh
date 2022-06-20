@@ -1,23 +1,11 @@
 ---
-title: "API Gateway Sercurity"
+title: "API Gateway Sercurity là gì"
 description: "API Gateway đóng vai trò là cửa trước cho các ứng dụng để truy cập dữ liệu, logic nghiệp vụ hoặc chức năng từ các dịch vụ backend của bạn"
 keywords:
   [
-    "API Gateway la gi",
-    "API Gateway là gì",
-    "API Gateway trong aws",
-    "API Gateway Throttling la gi",
-    "API Gateway Throttling là gì",
-    "API Gateway Throttling trong aws",
-    "API Gateway Endpoint Types la gi",
-    "API Gateway Endpoint Types là gì",
-    "API Gateway Endpoint Types trong aws",
-    "Lambda authorizer la gi",
-    "Lambda authorizer là gì",
-    "Lambda authorizer trong aws",
-    "Cognito la gi",
-    "Cognito là gì",
-    "Cognito trong aws",
+    "IAM Permissions trong API Gateway",
+    "Cognito User Pools là gì",
+    "API Gateway trong aws"
   ]
 author:
   fullname: Phan Văn Đức
@@ -29,11 +17,11 @@ category:
   description: "Mang kiến thức AWS đến với mọi lập trình viên"
 chapter:
   name: "Serverless"
-  slug: "serverless"
+  slug: "chap-11-serverless"
 position: 196
 ---
 
-## IAM Permissions
+## IAM Permissions trong API Gateway
 
 - Tạo IAM policy authorization và attach vào User/Role
 - API Gateway sẽ verifies IAM policy
@@ -51,7 +39,7 @@ position: 196
 
 ![Custome Authorizers](https://user-images.githubusercontent.com/29729545/155875516-df64436d-4ded-4bbf-b239-0a3af8ec133c.png)
 
-## Cognito User Pools
+## Cognito User Pools là gì
 
 Chúng ta sẽ tìm hiểu Cognito là gì ở bài viết sau, ở bài này chung ta sẽ đi tìm hiểu API Gateway sử dụng user pool trong Cognito như thế nào.
 

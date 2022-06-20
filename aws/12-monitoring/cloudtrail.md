@@ -21,11 +21,12 @@ category:
   slug: "aws"
 chapter:
   name: "Monitoring & Audit"
-  slug: "monitoring"
+  slug: "chap-12-monitoring"
+image: https://user-images.githubusercontent.com/29729545/156514323-4e79540d-4b9f-4294-8922-9ccbefbcd2ca.png
 position: 223
 ---
 
-## CloudTrail là gì
+## AWS CloudTrail là gì
 
 AWS CloudTrail là một dịch vụ cho phép thực hiện việc quản lý, kiểm tra vận hành và đánh giá rủi ro cho tài khoản AWS của bạn. Với CloudTrail, bạn có thể ghi nhật ký, giám sát liên tục và duy trì hoạt động của tài khoản có liên quan đến các hoạt động diễn ra trên cơ sở hạ tầng AWS của bạn.
 
@@ -41,7 +42,7 @@ AWS CloudTrail là một dịch vụ cho phép thực hiện việc quản lý, 
 
 ![CloudTrail là gì](https://user-images.githubusercontent.com/29729545/156514323-4e79540d-4b9f-4294-8922-9ccbefbcd2ca.png)
 
-## CloudTrail Events
+## CloudTrail Events là gì
 
 - **Management Events**
   - Hoạt động được thực thi trên resource của AWS account

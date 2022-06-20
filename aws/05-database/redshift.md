@@ -1,5 +1,5 @@
 ---
-title: "Redshift"
+title: "Giới thiệu Redshift"
 description: "Amazon Redshift là dịch vụ lưu trữ dữ liệu quy mô hàng petabyte nhanh và mạnh mẽ."
 keywords:
   [
@@ -24,7 +24,8 @@ category:
   slug: "aws"
 chapter:
   name: "Database"
-  slug: "database"
+  slug: "chap-05-database"
+image: https://user-images.githubusercontent.com/29729545/156191122-d0a4153b-6c80-4288-9106-b881acdec4cc.png
 position: 24
 ---
 
@@ -64,6 +65,6 @@ position: 24
 
 ![Redshift - Snapshot & DR (Disaster recovery)](https://user-images.githubusercontent.com/29729545/156191122-d0a4153b-6c80-4288-9106-b881acdec4cc.png)
 
-## Redshift Spectrum
+## Redshift Spectrum là gì
 
 ![Redshift Spectrum](https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2017/07/18/redshift_spectrum-1.gif)

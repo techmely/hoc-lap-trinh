@@ -18,53 +18,57 @@ chapter:
   name: "Thymeleaf"
   slug: "chuong-05-thymeleaf"
 category:
-  name: "spring"
-  slug: "spring"
-
+  name: "Spring Boot"
+  slug: "spring-boot"
 ---
-## Vòng lặp trong Thymeleaf
-
-> ***Nội dung bài viết***
-> - [Định nghĩa](#định-nghĩa)
-> - [Cú pháp](#cú-pháp)
->   - [Cú pháp 1](#cú-pháp-1)
->   - [Cú pháp 2](#cú-pháp-2)
 
 ### Định nghĩa
+
 `Thymeleaf` cung cấp cho bạn vòng lặp **'each'**, và bạn có thể sử dụng nó thông qua thuộc tính (attribue) `th:each`. Đây là vòng lặp duy nhất được hỗ trợ trong `Thymeleaf`.
 
 Vòng lặp này chấp nhận một vài loại dữ liệu như:
+
 - Các đối tượng implements interface **java.util.Iterable**.
 - Các đối tượng implements interface **java.util.Map**.
 - Các mảng (**Arrays**)
 
 ### Cú pháp
+
 Mình sẽ giới thiệu đến các bạn 2 loại cú pháp vòng lặp của `Thymeleaf`:
+
 #### Cú pháp 1
+
 ```java
 <someHtmlTag th:each="item : ${items}">
      ...
 </someHtmlTag>
 ```
+
 Thẻ `<th:block>` là một thẻ ảo trong `Thymeleaf`, nó không tương ứng với bất kỳ thẻ nào của **HTML**, nhưng nó rất có ích trong nhiều trường hợp, chẳng hạn bạn có thể đặt thuộc tính (attribute) `th:each` trong thẻ này.
+
 ```java
 <th:block th:each="item : ${items}">
      ....
 </th:block>
 ```
+
 Ví dụ đơn giản với vòng lặp `th:each`:
 <content-example>
+
 ```html
-<h1>th:each</h1> 
+<h1>th:each</h1>
 <ul>
-  <th:block th:each="member : ${techmely}"> //String[] techmely = new String[] {"thaycacac","tony hoang","Harry Tran"};
+  <th:block th:each="member : ${techmely}">
+    //String[] techmely = new String[] {"thaycacac","tony hoang","Harry Tran"};
     <li th:utext="${member}">..</li>
   </th:block>
 </ul>
 ```
+
 </content-example>
 
-***Kết quả:***
+**_Kết quả:_**
+
 ```HTML
 <!DOCTYPE HTML>
 <html>
@@ -84,21 +88,21 @@ Ví dụ đơn giản với vòng lặp `th:each`:
 ```
 
 #### Cú pháp 2
+
 Cú pháp đầy đủ của `th:each` bao gồm 2 biến, **biến phần tử** (item variable) và **biến trạng thái** (state variable).
+
 ```html
-<someHtmlTag th:each="item, iState : ${items}">
-       .....
-</someHtmlTag>
+<someHtmlTag th:each="item, iState : ${items}"> ..... </someHtmlTag>
 
 <!-- OR: -->
 
-<th:block th:each="item, iState : ${items}">
-       .....
-</th:block>
+<th:block th:each="item, iState : ${items}"> ..... </th:block>
 ```
+
 **Biến trạng thái** là một đối tượng hữu ích, nó chứa các thông tin cho bạn biết trạng thái hiện tại của vòng lặp, chẳng hạn như số phần tử của vòng lặp, chỉ số hiện tại của vòng lặp,...
 
-Dưới đây là danh sách các *thuộc tính* của **biến trạng thái**:
+Dưới đây là danh sách các _thuộc tính_ của **biến trạng thái**:
+
 > - **index**: Chỉ số hiện tại của phép lặp (iteration), bắt đầu với số 0.
 > - **count**: Số phần tử đã được xử lý cho tới hiện tại.
 > - **size**: Tổng số phần tử trong danh sách.
@@ -107,49 +111,57 @@ Dưới đây là danh sách các *thuộc tính* của **biến trạng thái**
 > - **last**: Kiểm tra xem lần lặp hiện tại là lần lặp cuối hay không?
 
 Ví dụ khác với `th:each` và **biến trạng thái**:
+
 ```java
 @RequestMapping("/loop-example")
 public String loopExample(Model model) {
-    String[] flowers = new String[] { "Rose", "Lily", "Tulip", "Carnation", "Hyacinth" }; 
+    String[] flowers = new String[] { "Rose", "Lily", "Tulip", "Carnation", "Hyacinth" };
     model.addAttribute("flowers", flowers);
     return "loop-example";
 }
 ```
 
 ```html
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Loop</title>
-    <style>table th, table td {padding: 5px;}</style>
-</head>
-<body>
+    <style>
+      table th,
+      table td {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
     <h1>th:each</h1>
     <table border="1">
-        <tr>
-          <th>index</th>
-          <th>count</th>
-          <th>size</th>
-          <th>even</th>
-          <th>odd</th>
-          <th>first</th>
-          <th>last</th>
-          <th>Flower Name</th>
-        </tr>
-        <tr th:each="flower, state : ${flowers}">
-          <td th:utext="${state.index}">index</td>
-          <td th:utext="${state.count}">count</td>
-          <td th:utext="${state.size}">size</td>
-          <td th:utext="${state.even}">even</td>
-          <td th:utext="${state.odd}">odd</td>
-          <td th:utext="${state.first}">first</td>
-          <td th:utext="${state.last}">last</td>
-          <td th:utext="${flower}">Flower Name</td>
-        </tr>
+      <tr>
+        <th>index</th>
+        <th>count</th>
+        <th>size</th>
+        <th>even</th>
+        <th>odd</th>
+        <th>first</th>
+        <th>last</th>
+        <th>Flower Name</th>
+      </tr>
+      <tr th:each="flower, state : ${flowers}">
+        <td th:utext="${state.index}">index</td>
+        <td th:utext="${state.count}">count</td>
+        <td th:utext="${state.size}">size</td>
+        <td th:utext="${state.even}">even</td>
+        <td th:utext="${state.odd}">odd</td>
+        <td th:utext="${state.first}">first</td>
+        <td th:utext="${state.last}">last</td>
+        <td th:utext="${flower}">Flower Name</td>
+      </tr>
     </table>
-</body>
+  </body>
 </html>
 ```
-***Kết quả:***
+
+**_Kết quả:_**
+
 ![Vong lap Thymeleaf](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/vong-lap-thymeleaf.png)

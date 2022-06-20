@@ -1,19 +1,10 @@
 ---
-title: "SQS Queue Access Policy"
+title: "Access Policy trong SQS Queue"
 description: "Amazon Simple Queue Service (SQS) là một dịch vụ hàng đợi (queue) lưu trữ message nhanh chóng, đáng tin cậy, có khả năng mở rộng và quản lý một cách đầy đủ. Với SQS, bạn có thể gửi, nhận và lưu trữ message giữa các thành phần trong một phần mềm."
 keywords:
   [
-    "Amazon SQS là gì",
-    "AWS SQS la gi",
-    "SQS trong AWS",
-    "AWS Standard SQS là gì",
-    "AWS Standard SQS la gi",
-    "Producing message trong SQS",
-    "Consuming message trong SQS",
-    "Multiple consuming message trong SQS",
-    "SQS - auto scaling group",
-    "SQS security",
-    "Queue Access Policy",
+    "Cross Account Access là gì",
+    "Publish S3 Event Notifications"
   ]
 author:
   fullname: Phan Văn Đức
@@ -25,11 +16,12 @@ category:
   description: "Mang kiến thức AWS đến với mọi lập trình viên"
 chapter:
   name: "Decoupling trong AWS"
-  slug: "decoupling"
+  slug: "chap-10-decoupling"
+image: https://user-images.githubusercontent.com/29729545/154985076-c1e7036c-2d22-40e7-8ab3-2498892ae77a.png
 position: 172
 ---
 
-## Cross Account Access
+## Cross Account Access là gì
 
 ![Cross Account Access](https://user-images.githubusercontent.com/29729545/154985076-c1e7036c-2d22-40e7-8ab3-2498892ae77a.png)
 

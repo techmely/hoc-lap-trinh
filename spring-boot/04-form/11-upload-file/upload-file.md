@@ -1,20 +1,21 @@
 ---
 title: "Upload file trong Spring Boot"
 description: "Upload file trong Spring Boot."
-keywords: [
+keywords:
+  [
     "khóa học Spring cơ bản",
-     "Upload file trong Spring Boot",
-      "Upload file spring boots",
-      "cach Upload file spring boots",
-      "lam the nao Upload file spring boots",
-      "gioi han upload file spring boots"
-      ]
+    "Upload file trong Spring Boot",
+    "Upload file spring boots",
+    "cach Upload file spring boots",
+    "lam the nao Upload file spring boots",
+    "gioi han upload file spring boots",
+  ]
 chapter:
   name: "form"
   slug: "chuong-04-form"
 category:
-  name: "spring"
-  slug: "spring"
+  name: "Spring Boot"
+  slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 11
 ---
@@ -27,7 +28,7 @@ Nếu mọi người muốn lưu trữ một ảnh vào trong cơ sở dữ li�
 
 Mọi người tạo ứng dụng Spring Boot và thêm một số thư viện như sau:
 
-```
+```java
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
@@ -45,7 +46,7 @@ Mọi người tạo ứng dụng Spring Boot và thêm một số thư viện n
 
 Ở file application.properties chúng ta cấu hình như sau:
 
-```
+```java
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://localhost:3306/product_management
 spring.datasource.username=root
@@ -64,11 +65,15 @@ Trong đó **upload.path** được cấu hình để lữu trữ ảnh sau khi 
 **spring.servlet.multipart.max-file-size**: kích cỡ file lưu trữ tối đa.
 **spring.servlet.multipart.max-request-size**: kích thước file upload lên server tối đa.
 **spring.resources.static-locations=file: ///${upload.path}**: cấu hình đường dẫn file tĩnh đến ảnh của Spring Boot
+
 ### Hướng dẫn upload file trong SpringBoot
+
 #### Model
-Chúng ta tạo 2 file class lần lượt là Product và ProductFrom sử dụng Builder Pattern trong đó Product sẽ là Entity được tạo trong cơ sở dữ liệu có kiểu dữ liệu của thuộc tính image là String còn ProductForm là một class trung gian để lưu trữ ảnh dưới dạng MultipartFile. 
+
+Chúng ta tạo 2 file class lần lượt là Product và ProductFrom sử dụng Builder Pattern trong đó Product sẽ là Entity được tạo trong cơ sở dữ liệu có kiểu dữ liệu của thuộc tính image là String còn ProductForm là một class trung gian để lưu trữ ảnh dưới dạng MultipartFile.
 
 Product.java
+
 ```java
 package com.example.demo.model;
 
@@ -126,7 +131,9 @@ public class Product {
     }
 }
 ```
+
 ProductForm.java
+
 ```java
 package com.example.demo.model;
 
@@ -174,8 +181,11 @@ public class ProductForm {
     }
 }
 ```
+
 #### Repository
+
 ProductRepository.java
+
 ```java
 package com.example.demo.repository;
 
@@ -187,8 +197,11 @@ import org.springframework.stereotype.Repository;
 public interface IProductRepository extends CrudRepository<Product, Long> {
 }
 ```
+
 #### Service
+
 GeneralService.java
+
 ```java
 package com.example.demo.service;
 
@@ -204,7 +217,9 @@ public interface GeneralService<T> {
     void remove(Long id);
 }
 ```
+
 IProductService.java
+
 ```java
 package com.example.demo.service;
 
@@ -213,7 +228,9 @@ import com.example.demo.model.Product;
 public interface IProductService extends GeneralService<Product> {
 }
 ```
+
 ProductService.java
+
 ```java
 package com.example.demo.service;
 
@@ -250,7 +267,9 @@ public class ProductService implements IProductService {
     }
 }
 ```
+
 ProductController.java
+
 ```java
 package com.example.demo.controller;
 
@@ -314,122 +333,77 @@ public class ProductController {
     }
 }
 ```
+
 Sử dụng **@Value** để lấy giá trị đường dẫn từ file application.properties.
+
 ### Thymleaf
+
 list.html
+
 ```html
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-</head>
-<body>
-<h1>Tasks</h1>
-<table border="1px">
-    <thead>
-    <tr>
-        <th>
-            Name
-        </th>
-        <th>
-            Description
-        </th>
-        <th>
-            Image
-        </th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="product: ${products}">
-        <td th:text="${product.getName()}"></td>
-        <td th:text="${product.getDescription()}"></td>
-        <td>
-            <img th:src="${product.image}">
-        </td>
-    </tr>
-    </tbody>
-</table>
-</body>
+  </head>
+  <body>
+    <h1>Tasks</h1>
+    <table border="1px">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="product: ${products}">
+          <td th:text="${product.getName()}"></td>
+          <td th:text="${product.getDescription()}"></td>
+          <td>
+            <img th:src="${product.image}" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
 ```
+
 create.html
+
 ```html
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Create new product</title>
-</head>
-<body>
-<h1>Create new product</h1>
-<form method="post" th:object="${product}" enctype="multipart/form-data">
-    <table>
+  </head>
+  <body>
+    <h1>Create new product</h1>
+    <form method="post" th:object="${product}" enctype="multipart/form-data">
+      <table>
         <tr>
-            <td>Name</td>
-            <td><input type="text" th:field="*{name}"></td>
+          <td>Name</td>
+          <td><input type="text" th:field="*{name}" /></td>
         </tr>
         <tr>
-            <td>Desciption</td>
-            <td><input type="text" th:field="*{description}"></td>
+          <td>Desciption</td>
+          <td><input type="text" th:field="*{description}" /></td>
         </tr>
         <tr>
-            <td>Image</td>
-            <td><input type="file" th:field="*{image}"></td>
+          <td>Image</td>
+          <td><input type="file" th:field="*{image}" /></td>
         </tr>
         <tr>
-            <td></td>
-            <td><input type="submit" value="Create"></td>
+          <td></td>
+          <td><input type="submit" value="Create" /></td>
         </tr>
-    </table>
-</form>
-</body>
+      </table>
+    </form>
+  </body>
 </html>
 ```
+
 Vậy là bạn đã có lưu được đường dẫn ảnh vào trong cơ sở dữ liệu và lưu trữ file tại máy mình. Hi vọng bài viết này sẽ giúp ích cho mọi người trong việc xử lý lưu trữ file ảnh trong Spring Boot.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

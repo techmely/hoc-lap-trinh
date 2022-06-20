@@ -3,14 +3,12 @@ title: "Giới thiệu Lambda"
 description: "AWS Lambda là một dịch vụ tính toán nơi mà bạn có thể upload code của mình lên, và AWS Lambda sẽ giúp bạn chạy đoạn code đó bằng việc sử dụng các tài nguyên sẵn có của AWS. Sau khi bạn upload code, và bạn tạo ra một Lambda function, AWS sẽ cung cấp và quản lý các server mà bạn sử dụng để chạy code."
 keywords:
   [
-    "Serverles la gi",
-    "Serverles là gì",
-    "Serverles trong aws",
     "Lambda la gi",
     "Lambda là gì",
     "Lambda trong aws",
-    "Limit cua Lambda",
-    "Limit của Lambda",
+    "Lợi ích của Lambda",
+    "Giới hạn cua Lambda",
+    "Giới hạn của Lambda",
     "Lambda@Edge là gì",
     "Lambda@Edge la gi",
     "Lambda Edge là gì",
@@ -26,7 +24,8 @@ category:
   description: "Mang kiến thức AWS đến với mọi lập trình viên"
 chapter:
   name: "Serverless"
-  slug: "serverless"
+  slug: "chap-11-serverless"
+image: https://user-images.githubusercontent.com/29729545/170851240-bb6217ad-471d-48b5-a0f0-5e939dab7b49.png
 position: 192
 ---
 
@@ -58,7 +57,7 @@ Lambda có 2 phần chính: Lambda Function và Event Source
 - Event Source: là nơi phát sinh ra sư kiện để gọi đến Lambda function
 - Lambda Function: function thực thi code logic của bạn. Bạn chỉ cần upload source code lên, phần còn lại AWS sẽ quản lý.
 
-## Lambda limit
+## Giới hạn của Lambda
 
 - Memory allocation: 128MB - 10 GB
 - Maximum timeout: 900s (15min)
@@ -80,4 +79,4 @@ Bạn có thể chạy function của Lambda để thay đổi CloudFront reques
 <content-info>Để có thể tạo mới một Lambda@Edge, bạn cần chon Region là us-east-1
 "CloudFront blueprints are available only in the US-East-1 (N. Virginia) Region (us-east-1)."</content-info>
 
-![Lambda@Edge là gì](https://docs.aws.amazon.com/lambda/latest/dg/images/cloudfront-events-that-trigger-lambda-functions.png)
+![Lambda@Edge là gì](https://user-images.githubusercontent.com/29729545/170851240-bb6217ad-471d-48b5-a0f0-5e939dab7b49.png)

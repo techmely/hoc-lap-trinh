@@ -1,5 +1,5 @@
 ---
-title: "S3 Access Logs, Replication, Pre-signed"
+title: "Giới thiệu S3 Access Logs, Replication và Pre-signed"
 description: "S3 Access Logs giúp bạn có thể lưu lại thông tin request đến S3 buckets. Dữ liệu này có thể dùng để phân tích bằng những dịch vụ phân tích như Amazon Athena...S3 Replication là tính năng sao chép các object giữa các vùng lưu trữ."
 keywords:
   [
@@ -28,11 +28,12 @@ category:
   slug: "aws"
 chapter:
   name: "Simple Storage Serivce"
-  slug: "s3"
+  slug: "chap-06-s3"
+image: https://user-images.githubusercontent.com/29729545/150820622-f7eebb9c-aa28-45b7-9d80-a343b31fb451.png
 position: 56
 ---
 
-## S3 Access Logs
+## S3 Access Logs trong AWS
 
 - S3 Access Logs lưu lại thông tin request đến S3 buckets của bạn
 - Như hình vẽ dưới đây, những request đến "S3 Bucket", cho dù accept hay denied đều được ghi lại vào "Log Bucket"
@@ -40,18 +41,21 @@ position: 56
 
 S3 access logs format:
 
-```
+```ssh
 79a59df900b949e55d96a1e698fbacedfd6e09d98eacf8f8d5218e7cd47ef2be awsexamplebucket1 [06/Feb/2019:00:00:38 +0000] 192.0.2.3 79a59df900b949e55d96a1e698fbacedfd6e09d98eacf8f8d5218e7cd47ef2be 3E57427F3EXAMPLE REST.GET.VERSIONING - "GET /awsexamplebucket1?versioning HTTP/1.1" 200 - 113 - 7 - "-" "S3Console/0.4" - s9lzHYrFp76ZVxRcpX9+5cjAnEH2ROuNkd2BHfIa6UkFVdtjf5mKR3/eTPFvsiP/XV/VLi31234= SigV2 ECDHE-RSA-AES128-GCM-SHA256 AuthHeader awsexamplebucket1.s3.us-west-1.amazonaws.com TLSV1.1
 
 ```
 
 ![S3 Access Logs](https://user-images.githubusercontent.com/29729545/150820622-f7eebb9c-aa28-45b7-9d80-a343b31fb451.png)
 
-<span style="color:red">Chú ý: Log bucket KHÔNG được là monitored bucket</span> Điều này sẽ tạo một vòng lặp vô tận.
+<content-warning>
+Log bucket KHÔNG được là monitored bucket
+Điều này sẽ tạo một vòng lặp vô tận.
+</content-warning>
 
 ![S3 Access Logs loop](https://user-images.githubusercontent.com/29729545/150823145-ec002c49-da51-43de-aaed-d3547f1cfd65.png)
 
-## S3 Replication (CRR & SRR)
+## S3 Replication (CRR & SRR) trong AWS
 
 - CRR: Cross Region Replication
 - SRR: Same Region Replication
@@ -71,7 +75,7 @@ S3 Replication là tính năng sao chép các object giữa các vùng lưu tr�
   </ul>
 </content-info>
 
-## S3 Pre-signed
+## S3 Pre-signed trong AWS
 
 Pre-signed URL là URL mà bạn có thể cung cấp cho người dùng của mình để cấp quyền truy cập tạm thời vào một đối tượng S3 cụ thể. Sử dụng URL, người dùng có thể đọc và ghi đối tượng (hoặc cập nhật đối tượng hiện có). URL chứa các thông số cụ thể do ứng dụng mà bạn cài đặt.
 

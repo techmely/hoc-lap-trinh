@@ -7,6 +7,7 @@ keywords:
     "DNS là gì",
     "DNS hoạt động như thế nào",
     "DNS hoat dong nhu the nao",
+    "Thuật ngữ trong DNS",
     "DNS Records là gì",
     "DNS Records la gi",
     "Name Server là gì",
@@ -23,11 +24,12 @@ category:
   slug: "aws"
 chapter:
   name: "Route 53"
-  slug: "route-53"
+  slug: "chap-07-route-53"
+image: https://user-images.githubusercontent.com/29729545/149654735-e330eab1-a835-42c9-aa2a-6b67e961c43b.png
 position: 60
 ---
 
-## Khái niệm về DNS
+## DNS là gì
 
 DNS là viết tắt của: **Domain Name System** là hệ thống phân giải tên miền được phát minh vào năm 1984. Hiểu một cách ngắn gọn nhất, DNS cơ bản là một hệ thống chuyển đổi các tên miền website mà chúng ta đang sử dụng, ở dạng *www.domain.com* sang một địa chỉ IP dạng số tương ứng với tên miền đó và ngược lại.
 
@@ -38,9 +40,11 @@ DNS là viết tắt của: **Domain Name System** là hệ thống phân giải
 - **Domain Registrar**: Nơi đăng ký tên miền (Route 53, Tenten, MatBao...)
 - **DNS Records**: A, AAAA, CNAME, NS,...
 - **Zone File**: Lưu trữ DNS records
-- **Name Server**: Là hệt thống có chức năng điều phối quá trình chuyển đổi từ tên miền sang địa chỉ IP.
+- **Name Server**: Là hệ thống có chức năng điều phối quá trình chuyển đổi từ tên miền sang địa chỉ IP.
 - **Top Level Domain (TLD)**: .com, .us, .edu,...
-- **Second Level Domain (SLD)**: amazon.com, google.com,... ![DNS giai thich](https://user-images.githubusercontent.com/29729545/149654735-e330eab1-a835-42c9-aa2a-6b67e961c43b.png)
+- **Second Level Domain (SLD)**: amazon.com, google.com,... 
+
+![DNS giai thich](https://user-images.githubusercontent.com/29729545/149654735-e330eab1-a835-42c9-aa2a-6b67e961c43b.png)
 
 ## DNS hoạt động như thế nào
 

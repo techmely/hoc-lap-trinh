@@ -1,5 +1,5 @@
 ---
-title: "AWS Global Accelerator"
+title: "AWS Global Accelerator là gì"
 description: "AWS Global Accelerator là dịch vụ cải thiện hiệu suất của ứng dụng của bạn bằng cách tận dụng mạng nội bộ toàn cầu của AWS."
 keywords:
   [
@@ -9,7 +9,7 @@ keywords:
     "Anycast IP la gi",
     "AWS Global Accelerator là gì",
     "AWS Global Accelerator la gi",
-    "Phân biệt AWS Global Accelerator với Cloudfront",
+    "Phân biệt AWS Global Accelerator và Cloudfront",
     "AWS Global Accelerator với Cloudfront",
     "AWS Global Accelerator vs Cloudfront",
   ]
@@ -22,11 +22,12 @@ category:
   slug: "aws"
 chapter:
   name: "Cloudfront, Accelerator"
-  slug: "cloud-front"
+  slug: "chap-08-cloud-front"
+image: https://user-images.githubusercontent.com/29729545/153176578-7e06fe25-f933-4a02-a619-1fc275d90d73.png
 position: 73
 ---
 
-## Unicast IP và Anycast IP
+## Unicast IP là gì? Anycast IP là gì
 
 Đầu tiên chúng ta sẽ cùng tìm hiểu về 2 concepts là **Unicast IP và Anycast IP**
 

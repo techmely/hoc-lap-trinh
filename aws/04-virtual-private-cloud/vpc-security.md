@@ -1,7 +1,11 @@
 ---
-title: "VPC Security"
-description: "VPC Security Network Access Control Lits"
-keywords: ["Network ACLs", "NACL trong AWS"]
+title: "Bảo mật trong VPC"
+description: "Amazon cung cấp 2 features để bảo mật(network security) và theo dõi(monitoring). NACL giống như 1 firewall để control traffic vào/ra subnet"
+keywords: [
+  "NACL là gì",
+  "NACL trong AWS",
+  "Bảo mật trong VPC"
+]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -11,11 +15,12 @@ category:
   slug: "aws"
 chapter:
   name: "Virtual Private Cloud"
-  slug: "vpc"
+  slug: "chap-04-vpc"
+image: https://user-images.githubusercontent.com/29729545/146217503-9914d98e-6d78-4f74-81e4-a619320da7be.png
 position: 20
 ---
 
-## Security
+## Bảo mật trong VPC
 
 - Amazon cung cấp 2 features để bảo mật(network security) và theo dõi(monitoring)
 - **Security group and NACL** dùng cho network security, **Flow logs** cho network monitoring
@@ -23,7 +28,7 @@ position: 20
 - **NACL - Network Access Control Lists** hoạt động như firewall level của subnet
 - **Flow logs** cung cấp thông tin về network traffic
 
-### Network ACLs (NACLs)
+### Network Access Control List (NACL) trong AWS
 
 ![NACL-network access control lists](https://user-images.githubusercontent.com/29729545/146217503-9914d98e-6d78-4f74-81e4-a619320da7be.png)
 

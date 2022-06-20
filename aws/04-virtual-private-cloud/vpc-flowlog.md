@@ -1,8 +1,15 @@
 ---
-title: "VPC FLow logs"
+title: "Giới thiệu VPC FLow logs"
 description: "VPC FLow logs là tính năng giúp chúng ta có thể nắm bắt được thông tin IP traffic đến và đi Network Interfaces trong VPC."
 keywords:
-  ["VPC FLow logs trong AWS", "VPC FLow logs là gì", "VPC FLow logs la gi"]
+  [
+    "VPC FLow logs trong AWS",
+    "VPC FLow logs là gì",
+    "VPC FLow logs la gi",
+    "giới thiệu VPC FLow logs",
+    "tìm hiểu về VPC FLow logs",
+    "tìm hiểu về VPC FLow logs trong aws"
+  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -12,7 +19,8 @@ category:
   slug: "aws"
 chapter:
   name: "Virtual Private Cloud"
-  slug: "vpc"
+  slug: "chap-04-vpc"
+image: https://user-images.githubusercontent.com/29729545/147268701-1e638881-bee6-4e67-a529-0708c689e879.png
 position: 22
 ---
 

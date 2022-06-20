@@ -1,7 +1,13 @@
 ---
-title: "Elasticache"
+title: "Elasticache là gì"
 description: "Elasticache là dịch vụ bộ nhớ đệm được quản lý dành cho Redis và Memcached"
-keywords: ["Elasticache la gi", "Redis trong aws", "Memcached trong aws"]
+keywords:
+  [
+    "Amazon Elasticache la gi",
+    "Amazon Elasticache là gì",
+    "Redis trong aws",
+    "Memcached trong aws",
+  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -11,14 +17,17 @@ category:
   slug: "aws"
 chapter:
   name: "Database"
-  slug: "database"
+  slug: "chap-05-database"
+image: https://user-images.githubusercontent.com/29729545/166097048-404380f8-ed8a-4f61-9698-0b59720cd83e.png
 position: 23
 ---
 
-## Amazon ElasticCache
+## Amazon ElasticCache là gì
 
 - Elasticache là dịch vụ bộ nhớ đệm được quản lý dành cho Redis và Memcached
-- Giúp giảm thiểu thời gian load dữ liệu, vì load từ cache chắc chắn sẽ nhanh hơn ![](https://d1.awsstatic.com/Getting%20Started/Boosting%20Database%20Performance/image001.0660c8da047acc2702ca49a548d4721101f7dd38.png)
+- Giúp giảm thiểu thời gian load dữ liệu, vì load từ cache chắc chắn sẽ nhanh hơn 
+
+![](https://user-images.githubusercontent.com/29729545/166097048-404380f8-ed8a-4f61-9698-0b59720cd83e.png)
 
 ### Phân biệt Redis (Remote Dictionary Server) và Memcached
 

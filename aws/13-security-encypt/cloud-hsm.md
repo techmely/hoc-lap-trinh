@@ -1,16 +1,16 @@
 ---
-title: "Giới thiệu CloudHSM, Shield, WAF"
+title: "Giới thiệu CloudHSM, Shield và WAF"
 description: "AWS CloudHSM là một module bảo mật phần cứng dựa trên đám mây (HSM) cho phép bạn dễ dàng tạo và sử dụng các khóa mã hóa của riêng bạn trên AWS."
 keywords:
   [
-    "CloudHSM la gi",
-    "CloudHSM là gì",
+    "AWS CloudHSM la gi",
+    "AWS CloudHSM là gì",
     "CloudHSM trong aws",
     "AWS Shield la gi",
     "AWS Shield là gì",
     "Shield trong aws",
     "DDoS la gi",
-    "DDoS là gì",
+    "Tấn công DDoS là gì",
     "AWS WAF la gi",
     "AWS WAF là gì",
     "WAF trong aws",
@@ -24,18 +24,21 @@ category:
   slug: "aws"
 chapter:
   name: "Security & Encryption"
-  slug: "security"
+  slug: "chap-13-security"
+image: https://user-images.githubusercontent.com/29729545/172041759-334616af-83bc-4660-99e7-6e6d18c086cd.png
 position: 242
 ---
 
-## Cloud Hardware Security Module (CloudHSM) là gì
+## AWS CloudHSM là gì
+
+![AWS CloudHSM là gì](https://user-images.githubusercontent.com/29729545/172041759-334616af-83bc-4660-99e7-6e6d18c086cd.png)
 
 - KMS: AWS quản lý phần mềm cho encryption
-- CloudHSM: AWS cung cấp phần cứng (**hardware**) encryption
+- Cloud Hardware Security Module(CloudHSM): AWS cung cấp phần cứng (**hardware**) encryption
 - Với CloudHSM, bạn có thể quản lý các khóa mã hóa bằng các HSM đạt chuẩn FIPS 140-2 level 3
 - **Phù hợp với SSE-C encryption**
 
-## DDoS là gì
+## Tấn công DDoS là gì
 
 Distributed Denial of Service (DDoS) là hình thức tấn công vào hệ thống của bạn. Hacker dùng DDoS sẽ gửi rất nhiều request đến server của bạn cùng một lúc (ví dụ hàng triệu request). Khi request gửi lên quá nhiều, server của bạn trở nên quá tải và không thể tiếp nhận những request khác, và hệ thống của bạn không thể hoạt động bình thường như mong muốn.
 
@@ -57,6 +60,6 @@ AWS Shield là dịch vụ chống lại các cuộc tấn công bằng DDoS.
 - Web ACL (Web Access Control List)
   - Giới hạn IP không được phép truy cập vào website của bạn
   - Bảo vệ bởi tấn công SQL Injection, Cross-Site Scripting (XSS)
-  - Size contraints (Ví dụ giới hạn size quuery string < 5MB)
+  - Size contraints (Ví dụ giới hạn size query string < 5MB)
   - Geo-match (block contries)
-  - **Rate-based rules** - dùng cho DDoS. Ví dụ bạn có thể define mỗi IP chỉ được gửi lên 5 request/per second
+  - **Rate-based rules** - dùng cho ngăn ngừa tấn công DDoS. Ví dụ bạn có thể config để mỗi IP chỉ được gửi lên 5 request mỗi giây (request/s)

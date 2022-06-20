@@ -1,8 +1,8 @@
 ---
 title: "Giới thiệu về Thymeleaf"
-description:"Thymeleaf một một thư viện mở và được coi là một Java Template Engine,
+description: "Thymeleaf một một thư viện mở và được coi là một Java Template Engine,
 được dùng để xử lý và tạo ra HTML, XML, JavaScript, CSS, text, Raw, nó có thể
-làm việc với cả môi trường web và non-web."
+làm việc với cả môi trường web và non-web"
 keywords:
   [
     "khóa học Spring cơ bản",
@@ -23,36 +23,24 @@ chapter:
   name: "Thymeleaf"
   slug: "chuong-05-thymeleaf"
 category:
-  name: "spring"
-  slug: "spring"
+  name: "Spring Boot"
+  slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
-## Giới thiệu về Thymeleaf
 
 ![Thymeleaf](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/thymeleaf.png)
 
+## Thymeleaf là gì?
 
-> ***Nội dung bài viết***
-> - [Thymeleaf là gì?](#thymeleaf-là-gì)
-> - [Ưu điểm của Thymeleaf](#ưu-điểm-của-thymeleaf)
-> - [Các loại template của Thymeleaf](#các-loại-template-của-thymeleaf)
->   - [HTML Template](#html-template)
->   - [XML Template](#xml-template)
->   - [Text Template](#text-template)
->   - [Javascript Template](#javascript-template)
->   - [CSS Template](#css-template)
->   - [RAW Template](#raw-template)
-
-### Thymeleaf là gì?
-
-`Thymeleaf` một một thư viện mở và được coi là một ***Java Template Engine***,
+`Thymeleaf` một một thư viện mở và được coi là một **_Java Template Engine_**,
 được dùng để xử lý và tạo ra **HTML**, **XML**, **JavaScript**, **CSS**, **text**, **Raw**, nó có thể
 làm việc với cả môi trường web và non-web.
 Mục tiêu chính của `Thymeleaf` là mong muốn tạo ra các template đơn giản,
-dễ bảo trì cho các công việc phát triển giao diện. 
+dễ bảo trì cho các công việc phát triển giao diện.
 
-### Ưu điểm của Thymeleaf
+## Ưu điểm của Thymeleaf
+
 `Thymeleaf` sử dụng các thẻ **HTML** làm view và tham gia vào file html dưới
 dạng các thuộc tính của các thẻ html. Do đó không cần phải thêm bất cứ loại thẻ
 **non-HTML** nào cả. Ví dụ với **JSP** nếu muốn sử dụng các thẻ chuẩn của jsp như **JSTL**
@@ -63,9 +51,11 @@ Thông thường với các view như jsp, jsf muốn nhìn thấy được sự
 của giao diện phải nhấn refresh lại trang web. Với `Thymeleaf` ta có thể xem các
 thay đổi trên giao diện mà không cần tải lại trang
 
-### Các loại template của Thymeleaf
+## Các loại template của Thymeleaf
+
 `Thymeleaf` cho phép bạn xử lý 6 loại template, mỗi loại được gọi là một
 chế độ template bao gồm:
+
 - HTML
 - XML
 - TEXT
@@ -73,39 +63,45 @@ chế độ template bao gồm:
 - CSS
 - RAW
 
-#### HTML Template
+### HTML Template
+
 Template này cho phép bất kỳ loại đầu vào là các file **HTML** như
 **HTML5, HTML4 và XHTML**. Việc kiểm tra tính hợp lệ hoặc tính đúng đắn sẽ được
 thực hiện và cấu trúc mẫu (hoặc code mẫu) sẽ được ưu tiên ở mức độ cao nhất
 trong đầu ra.
 
-#### XML Template
+### XML Template
+
 cho phép đầu vào là các file **XML**. Trình phân tích cú
 pháp sẽ ném ra lỗi khi file **XML** vi phạm các lỗi như thiếu thẻ đóng/mở, thiếu
 dấu <>, thiếu thuộc tính v.v. Tuy nhiên trình phân tích cú pháp không áp
 dụng với **DTD hoặc schema**.
 
-#### Text Template
- cho phép sử dụng cú pháp đặc biệt cho các template
+### Text Template
+
+cho phép sử dụng cú pháp đặc biệt cho các template
 không đánh dấu (markup). Ví dụ về các template như vậy có thể là email hoặc các
-tài liệu thông thường. 
+tài liệu thông thường.
 Lưu ý rằng, các template **HTML hoặc XML** cũng có thể được xử lý dưới dạng
 **TEXT**, trong trường hợp này, chúng sẽ không được coi là đánh dấu (markup) và tất
-cả các thẻ, DOCTYPE, comment, v.v. sẽ được coi là văn bản thuần túy. 
+cả các thẻ, DOCTYPE, comment, v.v. sẽ được coi là văn bản thuần túy.
 
-#### Javascript Template
- cho phép xử lý các tệp **JavaScript** trong ứng dụng
+### Javascript Template
+
+cho phép xử lý các tệp **JavaScript** trong ứng dụng
 `Thymeleaf`. Điều này có nghĩa là có thể sử dụng dữ liệu mô hình bên trong các
 tệp **JavaScript** theo cùng cách thực hiện trong các tệp **HTML**. Chế độ template
 **JAVASCRIPT** được coi là văn bản và do đó, nó sử dụng cú pháp đặc biệt giống như
-chế độ template **TEXT**. 
+chế độ template **TEXT**.
 
-#### CSS Template
+### CSS Template
+
 Template này sẽ cho phép xử lý các tệp **CSS** liên quan đến ứng dụng
 `Thymeleaf`. Tương tự như chế độ template **JAVASCRIPT**, chế độ template **CSS** cũng là
 một chế độ văn bản và sử dụng cú pháp xử lý đặc biệt từ chế độ template **TEXT**.
 
-#### RAW Template
+### RAW Template
+
 Template này đơn giản là không xử lý các template. Có nghĩa là, nó được sử dụng để
 chèn các tài nguyên không bị ảnh hưởng (tệp, phản hồi URL, v.v.) vào các
 template đang được xử lý.

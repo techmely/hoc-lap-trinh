@@ -6,11 +6,9 @@ keywords:
     "No-SQL la gi",
     "No-SQL là gì",
     "No-SQL trong aws",
-    "Dynamo DB la gi",
-    "Dynamo DB là gì",
-    "Dynamo DB trong aws",
-    "Limit cua Lambda",
-    "Limit của Lambda",
+    "DynamoDB la gi",
+    "DynamoDB là gì",
+    "DynamoDB trong aws",
     "DynamoDB Read/Write Capacity Modes",
   ]
 author:
@@ -23,7 +21,7 @@ category:
   description: "Mang kiến thức AWS đến với mọi lập trình viên"
 chapter:
   name: "Serverless"
-  slug: "serverless"
+  slug: "chap-11-serverless"
 position: 193
 ---
 
@@ -45,7 +43,7 @@ position: 193
 - Mỗi item có kích thước tối đa **400KB** (Dynamo chỉ phù hợp với lưu trữ dữ liệu không quá lớn)
 - Hỗ trợ nhiều kiểu dữ liệu khác nhau
 
-![](https://d2908q01vomqb2.cloudfront.net/887309d048beef83ad3eabf2a79a64a389ab1c9f/2018/09/10/dynamodb-partition-key-1.gif)
+![Tính chất của DynamoDB](https://d2908q01vomqb2.cloudfront.net/887309d048beef83ad3eabf2a79a64a389ab1c9f/2018/09/10/dynamodb-partition-key-1.gif)
 
 ## DynamoDB Read/Write Capacity Modes
 

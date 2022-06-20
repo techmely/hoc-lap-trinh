@@ -6,7 +6,7 @@ keywords:
     "CloudWatch la gi",
     "CloudWatch là gì",
     "CloudWatch trong aws",
-    "Metric trong CloudWatch",
+    "CloudWatch Metrics trong AWS",
     "Log trong CloudWatch",
     "CloudWatch Log la gi",
     "CloudWatch Log là gì",
@@ -26,7 +26,8 @@ category:
   slug: "aws"
 chapter:
   name: "Monitoring & Audit"
-  slug: "monitoring"
+  slug: "chap-12-monitoring"
+image: https://user-images.githubusercontent.com/29729545/172035832-f10e7f18-5289-4309-a3e8-cf5e9bf9113e.png
 position: 221
 ---
 
@@ -34,7 +35,7 @@ position: 221
 
 AWS CloudWatch là một dịch vụ giúp giám sát, tổng hợp, phân tích dữ liệu, nguồn tài nguyên chạy trên AWS. Dịch vụ này giúp cung cấp thông tin thực tiễn một cách realtime, cho phép giám sát các vùng nhớ của ứng dụng, cơ sở hạ tầng và dịch vụ ví dụ như Ram, Disk,... và sử dụng cảnh báo, tự động hành động; hỗ trợ việc tối ưu hóa hiệu suất ứng dụng, quản lý sử dụng tài nguyên và hiểu rõ tình trạng hoạt động của toàn hệ thống.
 
-## CloudWatch Metrics
+## CloudWatch Metrics trong AWS
 
 - CloudWatch cung cấp các metric cho mọi dịch vụ trên AWS
 - Metric là một biến số dùng để monitor (lượng CPU sử dụng, NetworkIn, NetworkOut...)
@@ -44,7 +45,7 @@ AWS CloudWatch là một dịch vụ giúp giám sát, tổng hợp, phân tích
 - Mỗi metric data point cần được liên kết với một timestamp
 - Bạn có thể tạo các custome metric bằng cách sử dụng API call **PutMetricData**
 
-## CloudWatch Logs
+## CloudWatch Logs là gì
 
 CloudWatch Logs là dịch vụ ghi lại log của hệ thống hoặc của các dịch vụ AWS khác
 
@@ -59,14 +60,14 @@ CloudWatch Logs là dịch vụ ghi lại log của hệ thống hoặc của c�
 - Metric filters có thể dùng để trigger CloudWatch Alarm
 - **CloudWatch Logs Insights** có thể được dùng để query log đơn giản
 
-## CloudWatch Agent
+## CloudWatch Agent là gì
 
 - Mặc định EC2 sẽ không thể gửi log đến CloudWatch
 - Bạn cần chạy **CloudWatch Agent** trên EC2 để push log theo ý muốn
 
-![CloudWatch Agent](https://www.entechlog.com/images/blog/ksqldb-cloudwatch/header.jpeg)
+![CloudWatch Agent](https://user-images.githubusercontent.com/29729545/172035832-f10e7f18-5289-4309-a3e8-cf5e9bf9113e.png)
 
-## CloudWatch Alarms
+## CloudWatch Alarms là gì
 
 - Dùng để trigger thông báo cho metric đã được định nghĩa
 - Có nhiểu option để lựa chọn phân tích (sampling, %, max, min,...)

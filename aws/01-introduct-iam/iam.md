@@ -1,8 +1,8 @@
 ---
-title: "IAM và CLI"
-description: "IAM (Identify and Access Management) là công cụ để kiểm soát quyền truy cập của cá nhân và nhóm đến tài nguyên AWS của bạn một cách an toàn."
+title: "Giới thiệu về IAM và CLI"
+description: "AWS IAM (Identify and Access Management) là công cụ để kiểm soát quyền truy cập của cá nhân và nhóm đến tài nguyên AWS của bạn một cách an toàn."
 keywords:
-  ["iam trong aws", "iam trong aws cli", "aws iam là gì", "aws iam la gi"]
+  ["iam trong aws", "iam trong aws cli", "aws iam là gì", "aws iam la gi", "tìm hiểu về iam trong aws", "tìm hiểu về cli trong aws"]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -12,11 +12,14 @@ category:
   slug: "aws"
 chapter:
   name: "Giới thiệu AWS"
-  slug: "index"
+  slug: "chap-01-introduction"
+image: https://user-images.githubusercontent.com/29729545/162231353-1e81131e-5e9e-4e36-bdbb-d17d797093ee.png
 position: 2
 ---
 
-## IAM
+## IAM trong AWS
+
+![IAM trong AWS](https://user-images.githubusercontent.com/29729545/162231353-1e81131e-5e9e-4e36-bdbb-d17d797093ee.png)
 
 IAM (Identify and Access Management) là công cụ để kiểm soát quyền truy cập của cá nhân và nhóm đến tài nguyên AWS của bạn một cách an toàn.
 
@@ -29,10 +32,10 @@ AWS IAM thiết kế để quản lý users, groups, roles, policies để quả
 
 ## AWS root user
 
-Khi tạo tài khoản AWS lần đầu tiên, thì đó cũng là root user. Khi dùng email và password được gọi là "**root account credentials**"\
+Khi tạo tài khoản AWS lần đầu tiên, thì đó cũng là root user. Khi dùng email và mật khẩu được gọi là "**root account credentials**"\
 Root account có quyền cao nhất bao gồm cả thông tin billing.
 
-AWS recommended hạn chế dùng root account hàng ngày, thay vì đó tạo các IAM user tùy thuộc vào role của nó
+AWS khuyên rằng nên hạn chế dùng root account hàng ngày, thay vì đó tạo các IAM user tùy thuộc vào vai trò (role) của nó
 
 ## Thành phần chính của IAM
 
@@ -49,7 +52,7 @@ AWS recommended hạn chế dùng root account hàng ngày, thay vì đó tạo 
 
 > _Use access keys to make programmatic calls to AWS from the AWS CLI, Tools for PowerShell, AWS SDKs, or direct AWS API calls. You can have a maximum of two access keys (active or inactive) at a time_
 
-## AWS CLI
+## AWS CLI là gì
 
 CLI là command line interface giúp người dùng có thể truy cập dịch vụ trông qua màn hình cmd. Chỉ với một công cụ để tải xuống và cấu hình, bạn có thể kiểm soát nhiều dịch vụ AWS bằng một dòng lệnh và tự động hóa chúng thông qua các tập lệnh.
 
