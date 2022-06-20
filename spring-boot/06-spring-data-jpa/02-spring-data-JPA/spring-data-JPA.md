@@ -23,13 +23,17 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---
+
 ## Java Persistence API
+
 Trong Java để thực hiện các thao tác CRU (create–read–update-delete)đến CSDL thường sử dụng JDBC.Với JDBC chúng ta cần thực hiện các việc chúng ta cần hiểu code Java và SQL.Khi CSDL thay đổi thì cần phải thay đổi lại code của câu lệnh sql vì mỗi hệ quản trị CSDL sẽ có một số phần khác nhau.Công việc sửa code lại đòi hỏi phải test lại ứng dụng.Điều này gây tốn thày gian,chi phí phát triển và cũng gặp không ít rủi ro.
 
 Để khắc phục nhược điểm trên,đã có nhiều Framework ra đời với mục đích xoá đi vấn đề về tương thích giữa các CSDL giúp tập trung vào phần xử lý nghiệp vụ.Và JPA là một chuẩn đặc tả cho các ORM Framework để giải quyết vấn đề trên.
+
 #### Java Persistence API(JPA)là gì
 JPA là một bộ đặc tả tiêu chuẩn của Java,trong đó mô tả các thao tác quản lý dữ liệu quan hệ sử dụng công nghệ ORM trong các ứng dụng sử dụng Java.
-![springjpa](https://1.bp.blogspot.com/-q_sEfFEdFTA/XgMyYGIHcHI/AAAAAAAAAWU/4FyCahv0Hy8E3hWaaDeqlDZZA9DXtv9wwCLcBGAsYHQ/s640/b1.png)
+
+![Java Persistence API(JPA)là gì](https://user-images.githubusercontent.com/29374426/174511700-1b2170bd-bbad-4221-9ffc-46b7a4532240.png)
 
 JPA cung cấp đầy đủ các công cụ cho phép thao tác với CSDL một cách đơn giản và nhanh chóng. JPA có thể dùng để persist một đối tượng POJO vào trong CSDL hoặc lấy dữ liệu từ CSDL và ánh xạ ra các đối tượng POJO.
 JPA hoạt động như một cầu nối giữa các bảng/các mối quan hệ giữa các bảng trong cơ sở dữ liệu và các lớp/mối quan hệ giữa các đối tượng.Ví dụ:table USER với các cột(Id,username,password)sẽ tương ứng với lớp Userjava với các field Id,username,password.Từ đó mỗi khi truy vấn bảng hay các cột ta sẽ gọi trực tiếp các phương thức trên các lớp,các thuộc tính của class mà không cần quan tâm tới việc đang dùng loại cơ sở dữ liệu nào.
