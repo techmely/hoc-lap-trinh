@@ -25,7 +25,9 @@ position: 5
 ---
 ## Ứng dụng quản lý khách hàng: Kỹ thuật Phân trang và lọc
 
-![phantrangvaloc](https://1.bp.blogspot.com/-OCMnQs3ddyU/XgGHSerSuXI/AAAAAAAAATQ/GrgP9UJW-Y8C9LP0kgliqyjUXUOACFq2gCPcBGAYYCw/s1600/Screen%2BShot%2B2019-12-24%2Bat%2B10.33.44%2BAM.png)
+![Ứng dụng quản lý khách hàng: Kỹ thuật Phân trang và lọc](https://user-images.githubusercontent.com/29374426/174510815-8e442209-1a39-4b1d-b5a2-d3317bea5e0f.png)
+
+
 ### Sắp xếp trong spring data jpa
 Để sắp xếp trong spring data jpa ta có khá nhiều cách ví dụ tìm kiếm tất cả các đối tượng customer và sắp xếp theo thứ tự name giảm dần(DESC)
 
