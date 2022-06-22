@@ -66,7 +66,7 @@ Lớp bạn có thể hiểu nó như là khuôn mẫu, đối tượng là mộ
 
 Java có 4 tính chất của lập trình hướng đối tượng là:
 
-- [Tính đóng gói](/bai-viet/java/tinh-dong-goi-trong-java)
-- [Tính thừa kế](/bai-viet/java/tinh-thua-ke-trong-java)
-- [Tính đa hình](/bai-viet/java/tinh-da-hinh-trong-java)
-- [Tính trừu tượng](/bai-viet/java/tinh-truu-tuong-trong-java)
+- [Tính đóng gói](/bai-viet/java/tinh-dong-goi-trong-oop)
+- [Tính thừa kế](/bai-viet/java/tinh-thua-ke-trong-oop)
+- [Tính đa hình](/bai-viet/java/tinh-da-hinh-trong-oop)
+- [Tính trừu tượng](/bai-viet/java/tinh-truu-tuong-trong-oop)
