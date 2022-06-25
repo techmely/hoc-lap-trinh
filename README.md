@@ -11,7 +11,7 @@ Chúng tôi luôn chào đón sự đóng góp của bạn!
 
 Xem hướng dẫn đóng góp ở đây 👇
 
-[![YouTube video Hướng dẫn đóng góp kungfutech]([https://img.shields.io/discord/891604244602437682](https://img.shields.io/youtube/views/okedCA_uZ_k?style=social))]([https://discord.gg/ZNucm5ND](https://www.youtube.com/watch?v=okedCA_uZ_k&t=1s&ab_channel=TechMely))
+[![Youtube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=okedCA_uZ_k&t=1s&ab_channel=TechMely)
 
 ```bash
 <content-info>This is note content</content-info>
@@ -42,7 +42,7 @@ Kết quả
 
 ## 🔗 Links
 
-[![Discrod online](https://img.shields.io/discord/891604244602437682)](https://discord.gg/ZNucm5ND)
+[![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/ZNucm5ND)
 
 [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/techmely)
 
