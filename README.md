@@ -48,7 +48,7 @@ Kết quả
 
 <table>
   <tr>
-    <td align="center"><a href="https://www.facebook.com/thaycacac/"><img src="[https://avatars.githubusercontent.com/u/1500684?v=3?s=100](https://avatars.githubusercontent.com/u/29374426?v=4)" width="100px;" alt=""/><br /><sub><b>Thaycacac</b></sub></a></td>
+    <td align="center"><a href="https://www.facebook.com/thaycacac/"><img src="https://avatars.githubusercontent.com/u/29374426?v=4" width="100px;" alt=""/><br /><sub><b>Thaycacac</b></sub></a></td>
   </tr>
 </table>
 
