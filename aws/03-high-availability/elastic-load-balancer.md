@@ -57,7 +57,7 @@ Từ hình vẽ trên chúng ta có thể hình dung được cách hoạt độ
 
 ![Security trong Load Balancer](https://images.viblo.asia/1f07c53f-368e-4fe2-b85b-6d881aef19de.png)
 
-- ELB chúng ta tạo 1 SG cho phép các request từ ngoài internet vào ELB qua cổng 80 (HTTP), 442(HTTPS) và sẽ chuyển request này đễn EC2 instance qua cổng 80 (HTTP)
+- ELB chúng ta tạo 1 SG cho phép các request từ ngoài internet vào ELB qua cổng 80 (HTTP), 443(HTTPS) và sẽ chuyển request này đễn EC2 instance qua cổng 80 (HTTP)
 - EC2 instance tạo 1 SG chỉ nhận request từ ELB qua cổng 80 (HTTP)
 - Như vậy sẽ ko có 1 request nào từ internet có thể tấn công được vào EC2 instance
 

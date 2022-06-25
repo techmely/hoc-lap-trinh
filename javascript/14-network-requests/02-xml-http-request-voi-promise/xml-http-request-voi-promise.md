@@ -15,7 +15,7 @@ keywords: [
 ]
 chapter:
   name: "Network request"
-  slug: "14-network-requests"
+  slug: "chuong-14-network-requests"
 category:
   name: "Javascript"
   slug: "javascript"

@@ -10,7 +10,7 @@ keywords: [
 ]
 chapter:
   name: "DOM"
-  slug: "13-dom"
+  slug: "chuong-13-dom"
 category:
   name: "Javascript"
   slug: "javascript"

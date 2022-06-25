@@ -16,14 +16,13 @@ keywords:
     ]
 chapter:
   name: "Spring data JPA"
-  slug: "06-spring-data-jpa"
+  slug: "chuong-06-spring-data-jpa"
 category:
   name: "SpringBoots"
   slug: "springboots"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---
-
 ## Java Persistence API
 
 Trong Java để thực hiện các thao tác CRU (create–read–update-delete)đến CSDL thường sử dụng JDBC.Với JDBC chúng ta cần thực hiện các việc chúng ta cần hiểu code Java và SQL.Khi CSDL thay đổi thì cần phải thay đổi lại code của câu lệnh sql vì mỗi hệ quản trị CSDL sẽ có một số phần khác nhau.Công việc sửa code lại đòi hỏi phải test lại ứng dụng.Điều này gây tốn thày gian,chi phí phát triển và cũng gặp không ít rủi ro.

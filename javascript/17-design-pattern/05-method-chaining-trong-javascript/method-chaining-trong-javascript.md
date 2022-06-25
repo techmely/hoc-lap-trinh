@@ -13,7 +13,7 @@ keywords: [
 ]
 chapter:
   name: "Design pattern"
-  slug: "17-design-pattern"
+  slug: "chuong-17-design-pattern"
 category:
   name: "Javascript"
   slug: "javascript"
