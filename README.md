@@ -24,6 +24,18 @@ Kết quả
 
 ![Kết quả](https://user-images.githubusercontent.com/29374426/157842539-5601feee-528e-46f4-9156-3f01bdc2bb3f.png)
 
+## Contributor
+
+<table>
+  <tr>
+    <td align="center"><a href="https://www.facebook.com/thaycacac/"><img src="https://avatars.githubusercontent.com/u/29374426?v=4" width="100px;" alt=""/><br /><sub><b>Thaycacac</b></sub></a></td>
+    <td align="center"><a href="https://github.com/AnhBDHE151175"><img src="https://avatars.githubusercontent.com/u/97071021?v=4" width="100px;" alt=""/><br /><sub><b>Duc Anh</b></sub></a></td>
+    <td align="center"><a href="https://github.com/tonyhoang2001"><img src="https://avatars.githubusercontent.com/u/97163071?v=4" width="100px;" alt=""/><br /><sub><b>Tony Hoang</b></sub></a></td>
+    <td align="center"><a href="https://github.com/AnthonyKhieu"><img src="https://avatars.githubusercontent.com/u/86510312?v=4" width="100px;" alt=""/><br /><sub><b>AnthonyKhieu</b></sub></a></td>
+    <td align="center"><a href="https://github.com/phanduc0908"><img src="https://avatars.githubusercontent.com/u/29729545?v=4" width="100px;" alt=""/><br /><sub><b>Phan Van Duc</b></sub></a></td>
+  </tr>
+</table>
+
 ## Documentation
 
 [Documentation](https://kungfutech.edu.vn/huong-dan-dong-gop)
@@ -43,18 +55,6 @@ Kết quả
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/techmely)
 
 
-
-## Contributor
-
-<table>
-  <tr>
-    <td align="center"><a href="https://www.facebook.com/thaycacac/"><img src="https://avatars.githubusercontent.com/u/29374426?v=4" width="100px;" alt=""/><br /><sub><b>Thaycacac</b></sub></a></td>
-    <td align="center"><a href="https://github.com/AnhBDHE151175"><img src="https://about.techmely.com/assets/DucAnh.3bb51a06.avif" width="100px;" alt=""/><br /><sub><b>Duc Anh</b></sub></a></td>
-    <td align="center"><a href="https://github.com/tonyhoang2001"><img src="https://avatars.githubusercontent.com/u/97163071?v=4" width="100px;" alt=""/><br /><sub><b>Tony Hoang</b></sub></a></td>
-    <td align="center"><a href="https://github.com/AnthonyKhieu"><img src="https://avatars.githubusercontent.com/u/86510312?v=4" width="100px;" alt=""/><br /><sub><b>AnthonyKhieu</b></sub></a></td>
-    <td align="center"><a href="https://github.com/phanduc0908"><img src="https://avatars.githubusercontent.com/u/29729545?v=4" width="100px;" alt=""/><br /><sub><b>Phan Van Duc</b></sub></a></td>
-  </tr>
-</table>
 
 ## License
 
