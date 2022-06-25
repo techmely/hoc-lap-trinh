@@ -5,7 +5,7 @@ Nơi tổng hợp các khoá học lập trình dành cho lập trình viên
 
 ![kungfutech](https://user-images.githubusercontent.com/29374426/175779753-dfd1511a-0cf5-4599-a4b6-ca46a57bd552.png)
 
-## Đóng góp
+## How to contribute
 
 Chúng tôi luôn chào đón sự đóng góp của bạn!
 
@@ -28,7 +28,7 @@ Kết quả
 
 [Documentation](https://kungfutech.edu.vn/huong-dan-dong-gop)
 
-## 🔗 Xem thêm về chúng tôi
+## 🔗 Links
 
 [![Discrod online](https://img.shields.io/discord/891604244602437682)](https://discord.gg/ZNucm5ND)
 
@@ -46,6 +46,11 @@ Kết quả
 
 ## Contributor
 
+<table>
+  <tr>
+    <td align="center"><a href="https://www.facebook.com/thaycacac/"><img src="[https://avatars.githubusercontent.com/u/1500684?v=3?s=100](https://avatars.githubusercontent.com/u/29374426?v=4)" width="100px;" alt=""/><br /><sub><b>Thaycacac</b></sub></a></td>
+  </tr>
+</table>
 
 ## License
 
