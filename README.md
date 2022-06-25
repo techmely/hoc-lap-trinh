@@ -21,7 +21,9 @@ Xem hướng dẫn đóng góp ở đây 👇
 ```
 
 Kết quả
+
 ![Kết quả](https://user-images.githubusercontent.com/29374426/157842539-5601feee-528e-46f4-9156-3f01bdc2bb3f.png)
+
 ## Documentation
 
 [Documentation](https://kungfutech.edu.vn/huong-dan-dong-gop)
