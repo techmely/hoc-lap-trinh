@@ -14,7 +14,7 @@ keywords:
   ]
 chapter:
   name: "Spring boots"
-  slug: "07-spring-boots"
+  slug: "chuong-07-spring-boots"
 category:
   name: "SpringBoots"
   slug: "springboots"

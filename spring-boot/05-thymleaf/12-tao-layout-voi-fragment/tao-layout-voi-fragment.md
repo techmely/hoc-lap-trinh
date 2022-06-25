@@ -14,11 +14,11 @@ keywords:
     "lam the nao tạo layout với Fragment trong Spring",
   ]
 chapter:
-  name: "Thymleaf"
-  slug: "05-thymleaf"
+  name: "Thymeleaf"
+  slug: "chuong-05-thymeleaf"
 category:
-  name: "SpringBoots"
-  slug: "springboots"
+  name: "Spring Boot"
+  slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 12
 ---

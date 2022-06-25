@@ -15,14 +15,13 @@ keywords:
   ]
 chapter:
   name: "Form"
-  slug: "04-form"
+  slug: "chuong-04-form"
 category:
-  name: "SpringBoots"
-  slug: "springboots"
+  name: "Spring Boot"
+  slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---
-
 ## Xử lý Form trong Spring MVC
 
 Các công nghệ sử dụng trong bài viết này

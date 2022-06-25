@@ -16,7 +16,6 @@ category:
   name: "Spring Boot"
   slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
-# image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
 position: 3
 ---
 

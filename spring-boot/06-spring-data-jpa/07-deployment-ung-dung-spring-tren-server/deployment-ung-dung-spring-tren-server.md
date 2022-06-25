@@ -4,7 +4,7 @@ description: "Deployment ứng dụng Spring trên server"
 keywords: []
 chapter:
   name: "Spring data JPA"
-  slug: "06-spring-data-jpa"
+  slug: "chuong-06-spring-data-jpa"
 category:
   name: "SpringBoots"
   slug: "springboots"
