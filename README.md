@@ -20,7 +20,7 @@ Xem hướng dẫn đóng góp ở đây 👇
 <content-result>This is result content</content-result>
 ```
 
-Kết quả
+[Kết quả](https://kungfutech.edu.vn/editor)
 
 <img width="1666" alt="Kết quả" src="https://user-images.githubusercontent.com/29374426/175781031-a63f0e31-72c8-476f-b380-f666550c85c1.png">
 
