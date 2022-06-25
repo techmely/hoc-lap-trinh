@@ -22,7 +22,7 @@ Xem hướng dẫn đóng góp ở đây 👇
 
 Kết quả
 
-![Kết quả](https://user-images.githubusercontent.com/29374426/157842539-5601feee-528e-46f4-9156-3f01bdc2bb3f.png)
+<img width="1666" alt="Kết quả" src="https://user-images.githubusercontent.com/29374426/175781031-a63f0e31-72c8-476f-b380-f666550c85c1.png">
 
 ## Contributor
 
