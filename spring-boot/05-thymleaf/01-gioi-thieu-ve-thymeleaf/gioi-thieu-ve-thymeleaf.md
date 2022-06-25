@@ -25,7 +25,8 @@ chapter:
 category:
   name: "Spring Boot"
   slug: "spring-boot"
-position: 2
+image: https://kungfutech.edu.vn/thumbnail.png
+position: 1
 ---
 
 ![Thymeleaf](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/thymeleaf.png)
@@ -62,7 +63,7 @@ chế độ template bao gồm:
 - CSS
 - RAW
 
-#### HTML Template
+### HTML Template
 
 Template này cho phép bất kỳ loại đầu vào là các file **HTML** như
 **HTML5, HTML4 và XHTML**. Việc kiểm tra tính hợp lệ hoặc tính đúng đắn sẽ được

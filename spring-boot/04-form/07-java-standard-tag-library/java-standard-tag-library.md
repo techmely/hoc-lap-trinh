@@ -21,7 +21,7 @@ category:
   name: "Spring Boot"
   slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 6
+position: 7
 ---
 
 ![JSTL](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/jstl.jpg)

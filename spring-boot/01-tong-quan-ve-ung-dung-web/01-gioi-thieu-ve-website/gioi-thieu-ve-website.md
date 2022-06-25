@@ -20,15 +20,6 @@ position: 1
 
 # Giới Thiệu Website
 
----
-
-> #### _Nội dung bài viết_
->
-> - [Website là gì?](#website-là-gì)
-> - [Phân loại](#phân-loại)
->   - [Web tĩnh](#web-tĩnh)
->   - [Web động](#web-động)
-
 ![Website](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/website.jpg)
 
 ### Website là gì?

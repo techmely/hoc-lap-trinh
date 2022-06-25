@@ -21,8 +21,32 @@ category:
   name: "Spring Boot"
   slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 3
+position: 5
 ---
+
+## Vòng lặp th:each
+
+**Thymeleaf** cung cấp cho bạn vòng lặp **each**, và bạn có thể sử dụng nó thông qua thuộc tính (attribute) **th:each**. Đây là vòng lặp duy nhất được hỗ trợ trong Thymeleaf.
+Vòng lặp này chấp nhận một vài loại dữ liệu như:
+
+- Các đối tượng thực hiện (implements) interface java.util.Iterable.
+- Các đối tượng thực hiện (implements) interface java.util.Map.
+- Các mảng (Arrays)
+
+```html
+<someHtmlTag th:each="item : ${items}"> .... </someHtmlTag>
+```
+
+Thẻ **<th:block>** là một thẻ ảo trong Thymeleaf, nó không tương ứng với bất kỳ thẻ nào của HTML, nhưng nó rất có ích trong nhiều trường hợp, chẳng hạn bạn có thể đặt thuộc tính (attribute) **th:each** trong thẻ này.
+
+```html
+<th:block th:each="item : ${items}"> .... </th:block>
+```
+
+Ví dụ đơn giản với vòng lặp th:each
+<content-example>
+CONTROLLER
+</content-example>
 
 ```java
 @RequestMapping("/loop-simple-example") public String loopExample1(Model model) {

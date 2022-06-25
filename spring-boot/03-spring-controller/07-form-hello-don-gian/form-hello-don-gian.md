@@ -15,7 +15,7 @@ category:
   name: "Spring Boot"
   slug: "spring-boot"
 image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
-position: 5
+position: 7
 ---
 
 Sau khi học được 1 chút kiến thức cơ bản của Spring thì bài này chúng ta hãy cùng nhau tạo 1 chương trình đơn giản nhé.

@@ -19,7 +19,7 @@ category:
   name: "Spring Boot"
   slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 2
+position: 3
 ---
 
 ## Model and View

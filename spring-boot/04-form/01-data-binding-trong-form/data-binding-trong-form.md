@@ -35,4 +35,5 @@ Một cách hiểu khác là ràng buộc dữ liệu có thể là một chiề
 - Chiều về: Hiển thị dữ liệu từ của các thuộc tính của đối tượng lên các điều khiển của form
 
 ![databinding](https://1.bp.blogspot.com/-H8EUpjgF_Ls/XgElekvDX1I/AAAAAAAAARY/XsVIZPJITWUf3hjXfB0gbbpEUrAdowEugCLcBGAsYHQ/s640/a1.png)
+
 Ngoài ta data binding hỗ trợ chuyển đổi dữ liệu (data conversioin) và validate dữ liệu. Data binding trong Spring hoạt động dựa trên Data Binder.

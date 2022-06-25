@@ -19,16 +19,9 @@ category:
 position: 1
 ---
 
-## Giới Thiệu về Spring
-
-> **_Nội dung bài viết_**
->
-> - [Spring là gì](#spring-là-gì)
-> - [Vì sao nên học Spring?](#vì-sao-nên-học-spring)
-
 ![Spring Framework](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/spring.jpg)
 
-### Spring là gì?
+## Spring là gì?
 
 <content-info>
 Spring Framework là một framework mã nguồn mở được viết bằng Java, được phát triển, chia sẻ và có cộng đồng người dùng rất lớn.
@@ -39,7 +32,7 @@ _Ngoài ra, Spring là một framework mãnh mẽ và phổ biến nhất hiện
 
 Spring Framework được xây dựng dựa trên 2 nguyên tắc design chính là: **Dependency Injection** và **Aspect Oriented Programming (AOP)**.
 
-### Vì sao nên học Spring?
+## Vì sao nên học Spring?
 
 Đầu tiên, chúng ta cùng nhau xem biểu đồ so sánh mức độ phổ biến của các framework cho Java:
 ![Framework java chart](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/bieu%20do%20framework%20java.png)

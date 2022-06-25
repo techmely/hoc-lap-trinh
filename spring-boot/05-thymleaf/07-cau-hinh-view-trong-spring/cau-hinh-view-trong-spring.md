@@ -20,7 +20,7 @@ category:
   name: "Spring Boot"
   slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 4
+position: 7
 ---
 
 ## Cấu hình view trong Spring
@@ -43,7 +43,7 @@ hợp một đối tượng View được trả vể và điều khiển đượ
 
 Một cấu hình điển hình cho JSP+ViewResolver JSPL trong ứng dụng Spring MVC trước đây trông như sau:
 
-```xml
+```
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
   <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
   <property name="prefix" value="/WEB-INF/jsps/" />

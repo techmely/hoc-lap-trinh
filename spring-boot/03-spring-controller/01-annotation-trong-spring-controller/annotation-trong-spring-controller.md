@@ -20,7 +20,7 @@ chapter:
 category:
   name: "Spring Boot"
   slug: "spring-boot"
-position: 14
+position: 1
 ---
 
 ### Giới thiệu
@@ -131,4 +131,3 @@ public class UserController {
 ---
 
 Trong bài sau chúng ta sẽ đi sâu hơn về một số Annotaion trong Spring
-
