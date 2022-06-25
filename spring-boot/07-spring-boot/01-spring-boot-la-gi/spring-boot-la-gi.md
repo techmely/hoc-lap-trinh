@@ -10,8 +10,8 @@ keywords:
     "java spring boot là gì?",
     "khoá học java spring boot",
     "cách tự học java spring boot",
-    "khoá học spring boot miễn phí"
-    ]
+    "khoá học spring boot miễn phí",
+  ]
 chapter:
   name: "Spring boots"
   slug: "07-spring-boots"
@@ -34,9 +34,10 @@ Là một phần cực kỳ quan trọng của Spring framework, do vậy trư�
 
 ### Spring framework là gì?
 
-Spring là một framework được ra đời để giúp các nhà phát triển có thể xây dựng hệ thống và chạy ứng dụng trên JVM một cách thuận tiện, đơn giản và nhanh chóng. Đây là một mã nguồn mở được phát triển và rất nhiều người sử dụng. 
+Spring là một framework được ra đời để giúp các nhà phát triển có thể xây dựng hệ thống và chạy ứng dụng trên JVM một cách thuận tiện, đơn giản và nhanh chóng. Đây là một mã nguồn mở được phát triển và rất nhiều người sử dụng.
 Trên thực tế, Spring framework là tập hợp gồm rất nhiều các dự án nhỏ khác nhau như: Spring MVC (sử dụng để xây dựng các ứng dụng trên nền tảng web), Spring Data, Spring Boot,…
 Để phát triển một ứng dụng web cơ bản sử dụng Spring framework, bạn cần trải qua ít nhất 5 công đoạn sau:
+
 - Tạo một project sử dụng Maven với các dependency cần thiết.
 - Tạo một tập tin web đuôi (.xml) để khai báo DispatcherServlet (thuộc Spring MVC).
 - Một tập tin có cấu hình của Spring MVC.
@@ -88,8 +89,8 @@ Với những ưu điểm mà Spring Boot mang lại, nó cũng mang theo rất 
 
 #### Đặc điểm nổi bật của Spring Boot
 
-- SpringApplication: Đây là class được dùng để khởi chạy ứng dụng từ hàm main(). Vì thế, khi khởi chạy ứng dụng, các lập trình viên chỉ cần gọi method run() là được. 
-- Externalized Configuration: Spring Boot cho phép người dùng có thể sử dụng cấu hình (config) từ bên ngoài. Chính vì vậy mà mỗi ứng dụng được tạo ra có thể chạy được trên nhiều môi trường khác nhau. 
+- SpringApplication: Đây là class được dùng để khởi chạy ứng dụng từ hàm main(). Vì thế, khi khởi chạy ứng dụng, các lập trình viên chỉ cần gọi method run() là được.
+- Externalized Configuration: Spring Boot cho phép người dùng có thể sử dụng cấu hình (config) từ bên ngoài. Chính vì vậy mà mỗi ứng dụng được tạo ra có thể chạy được trên nhiều môi trường khác nhau.
 - Profiles: Dùng để phân chia các loại cấu hình cho các môi trường khác nhau.
 - Login: Sử dụng phục vụ cho toàn bộ chức năng log trong phạm vi nội bộ. Những logging này sẽ được quản lý một cách mặc định.
 
@@ -98,7 +99,9 @@ Ngoài ra còn rất nhiều các tính năng tương tự khác của Spring Bo
 ### Khi học về Spring Boot cần tìm hiểu những gì?
 
 #### Java Core
+
 Trước khi học về Spring Boot, bạn cần biết về một số kiến thức cần biết của Java
+
 - Java cơ bản: hàm, biến, vòng lặp,...
 - Lập trình hướng đối tượng (OOP)
 - Các tính năng của Java
@@ -116,9 +119,10 @@ Package manager được cài thêm để quản lý các thư viện khi code d
 
 Cách học Spring Boot đúng đắn nhất chính là học thực hành, làm project. Nhiều thứ trong Spring Boot rất dễ, hoặc thành chuẩn mực rồi, chủ yếu là bạn đã từng đụng tới và thử áp dụng chưa thôi.Bạn nên tìm hiểu nên học Spring Boot bắt đầu từ đâu, tạo dự án Spring Boot đầu tiên như thế nào, các luồng đi trong Spring Boot, Dependency injection áp dụng vào Spring Boot như thế nào, cấu trúc một dự án Spring Boot như thế nào cho chuẩn,...
 
- #### JPA/MongoDB/SQL
- 
+#### JPA/MongoDB/SQL
+
 Để tạo nên một chương trình, ứng dụng không thể thiếu được Database, do vậy các bạn cần tìm hiểu về:
+
 - Cách cấu hình database trong Spring Boot
 - Cấu trúc lớp và interface của JPA
 - Tìm hiểu các thao tác cơ bản CRUD.
@@ -126,7 +130,8 @@ Cách học Spring Boot đúng đắn nhất chính là học thực hành, làm
 - Thực hiện các câu query phức tạp bằng MongoTemplate.
 - Sắp xếp và phân trang data query được.
 - Thực hiện aggregation
-- 
+-
+
 #### Template engine
 
 Template engine đảm nhiệm xử lý phần View trong ứng dụng MVC. Trong Spring Boot chúng ta sử dụng template engine để paste dữ liệu vào View và trả về một trang HTML. Những kiến thức về cách trả về trang HTML, sử dụng Thymeleaf, JSP trong Spring Boot bạn cũng nên tìm hiểu trước.
@@ -134,6 +139,7 @@ Template engine đảm nhiệm xử lý phần View trong ứng dụng MVC. Tron
 #### Các tool khác
 
 Ngoài ra, trong một dự án Spring Boot còn sử dụng các Tool khác các bạn có thể tìm hiểu về cấu hình và cách sử dụng để nâng cao hiệu suất viết code như:
+
 - Cấu hình và sử dụng Swagger.
 - Thiết lập Logger cho project.
 - Lombok - viết code Java ngắn.
