@@ -1,6 +1,6 @@
 ---
-title: "Greeting Codelean và cấu hình thymeleaf với Spring Boot"
-description: "Greeting Codelean và cấu hình thymeleaf với Spring Boot"
+title: "Greeting codelean và cấu hình Thymeleaf với Spring Boot"
+description: "Greeting codelean và cấu hình Thymeleaf với Spring Boot"
 keywords: []
 chapter:
   name: "Spring boots"
@@ -11,5 +11,3 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 6
 ---
-
-Đang viết

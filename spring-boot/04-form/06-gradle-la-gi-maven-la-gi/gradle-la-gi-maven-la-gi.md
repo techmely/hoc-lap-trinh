@@ -1,6 +1,6 @@
 ---
-title: "Gradle là gì, Maven là gì"
-description: "Gradle là gì, Maven là gì"
+title: "Gradle là gì? Maven là gì?"
+description: "Gradle là gì? Maven là gì?"
 keywords: []
 chapter:
   name: "Form"
@@ -11,5 +11,3 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 6
 ---
-
-Đang viết
