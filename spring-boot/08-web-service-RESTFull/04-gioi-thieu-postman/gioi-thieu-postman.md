@@ -21,13 +21,17 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---
+
 ## Giới thiệu POSTMAN
+
 ### Postman là gì?
+
 Postman là một công cụ cho phép chúng ta thao tác với API, phổ biến nhất là REST. Postman hiện là một trong những công cụ phổ biến nhất được sử dụng trong thử nghiệm các API. Với Postman, ta có thể gọi Rest API mà không cần viết dòng code nào.
 
 Postman hỗ trợ tất cả các phương thức HTTP (GET, POST, PUT, PATCH, DELETE, …). Bên cạnh đó, nó còn cho phép lưu lại lịch sử các lần request, rất tiện cho việc sử dụng lại khi cần.
 
 ### Tại sao sử dụng Postman?
+
 Những lợi ích khi sử dụng Postman:
 - Sử dụng Collections (Bộ sưu tập) 
 - Postman cho phép người dùng tạo bộ sưu tập cho các lệnh gọi API của họ. Mỗi bộ sưu tập có thể tạo các thư mục con và nhiều yêu cầu (request). Điều này giúp việc tổ chức các bộ thử nghiệm.
@@ -36,17 +40,23 @@ Những lợi ích khi sử dụng Postman:
 - Gỡ lỗi – Bảng điều khiển Postman giúp kiểm tra dữ liệu nào đã được truy xuất giúp dễ dàng gỡ lỗi kiểm tra.
 
 ### Cách sử dụng Postman
+
 #### Các chức năng cơ bản
+
 - Cho phép gửi HTTP Request với các method GET, POST, PUT, DELETE.
 - Cho phép post dữ liệu dưới dạng form (key-value), text, json.
 - Hiện kết quả trả về dạng text, hình ảnh, XML, JSON.
 - Hỗ trợ authorization (Oauth1, 2).
 - Cho phép thay đổi header của các request.
+
 #### Giao diện POSTMAN
+
 ![giao dien postmen](../../images/giaodien-post-man.png)
 
 Việc sử dụng Postman rất đơn giản. Bạn chỉ cần chọn method, điền URL, thêm các thông tin cho body, header trong những trường hợp cần thiết, rồi nhấn SEND. Việc của bạn là đợi và Postman sẽ cho bạn kết quả trả về nó có hình thù như thế nào.
+
 ### Những chức năng phần mềm chính
+
 - New: Là nơi cho phép bạn tạo request, enviroment mới hoặc collection. 
 - Import: Được sử dụng nhằm import collection hoặc environment. Một số tùy chọn còn được dùng để import từ file folder, paste từ text thuần hoặc link
 - Open new: Dùng để mở một tab mới, cửa sổ postman hoặc cửa sổ runner bằng việc kích nút này. 
