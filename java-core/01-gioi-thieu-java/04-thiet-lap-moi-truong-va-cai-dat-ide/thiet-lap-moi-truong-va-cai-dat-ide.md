@@ -27,6 +27,38 @@ image: https://user-images.githubusercontent.com/29374426/126056653-c45effaa-d29
 position: 4
 ---
 
+## Cài đặt JDK
+
+Tiến hành cài đặt
+
+- Kiểm tra máy tính đã cài **JDK** hay chưa, mở `cmd` và gõ `java -version`
+- Nếu thấy hiển thị như hình dưới thì máy đã cài sắn **JDK** (version 1.8 có nghĩa là **JDK 8**), bạn có thể chuyển luôn xuống bước cái IDE.
+![](https://github.com/AnestAcademy/Course-Java-Introduce/blob/master/Images/check-jdk.PNG)
+- Nếu máy chưa cài **JDK** thì tiếp tục - tải **JDK** trực tiếp [tại đây](https://drive.google.com/file/d/1YT-OeFTLAgpbBt_WGY6_sn9RQz2s1nu8/view?usp=sharing) hoặc lên trang chủ [oracle.com](https://www.oracle.com/java/technologies/javase-downloads.html) (nhớ chọn Java SE 8).
+- Tiến hành cài đặt bình thường mặc định như các phần mềm khác.
+- Cài đặt xong kiểm tra `cmd` giống trong hình là xong.
+
+<br />
+
+## Cài đặt IDE (Integrated Development Environment)
+
+IDE là phần mềm soạn thảo văn bản có tích hợp rất nhiều chức năng hỗ trợ cho chúng ta trong việc viết mã code, đối với Java có khá nhiều IDEs như vậy, ví dụ một số IDE phổ biến:
+- [Eclipse](https://www.eclipse.org/)
+- [Netbeans](https://netbeans.org/)
+- [IntelliJ](https://www.jetbrains.com/idea/)
+
+Trọng phạm vi học tập, các bạn nên sử dụng Netbeans vì nó nhẹ và dễ sử dụng - đầy đủ các chức năng cơ bản, các IDE còn lại dành cho người có nhiều kinh nghiệm hơn.
+
+- Các bạn truy cập trang tải Netbeans 8.2 RC [tại đây](https://netbeans.org/downloads/8.2/rc/) (vì dùng JDK 8 nên chúng ta sẽ chọn Netbeans 8.2).  
+- Chọn `Platform: Windows` và `Bundles: All`
+
+<br />
+
+![](https://github.com/AnestAcademy/Course-Java-Introduce/blob/master/Images/netbeans8.2.PNG)
+- Tiến hành cài đặt bình thường mặc định như các phần mềm khác.
+
+## Các bước cài đặt
+
 Bước 1: Download Netbeans tại: [https://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-3413139-esa.html](https://www.oracle.com/technetwork/java/javase/downloads/jdk-netbeans-jsp-3413139-esa.html). Bạn nhớ chọn Netbeans With JDK.
 
 Bước 2: Tiến hành cài đặt chương trình như các chương trình thông thường khác.
