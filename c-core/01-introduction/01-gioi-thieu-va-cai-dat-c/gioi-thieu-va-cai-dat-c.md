@@ -13,13 +13,13 @@ image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982
 position: 1
 ---
 
-## I. Giới thiệu về ngôn ngữ C
+## Giới thiệu về ngôn ngữ C
 
 Ngôn ngữ lập trình C là một ngôn ngữ mệnh lệnh được phát triển từ đầu thập niên 1970 bởi Dennis Ritchie để dùng trong hệ điều hành UNIX. Từ đó, ngôn ngữ này đã lan rộng ra nhiều hệ điều hành khác và trở thành một những ngôn ngữ phổ dụng nhất. C là ngôn ngữ rất có hiệu quả và được ưa chuộng nhất để viết các phần mềm hệ thống, mặc dù nó cũng được dùng cho việc viết các ứng dụng. Ngoài ra, C cũng thường được dùng làm phương tiện giảng dạy trong khoa học máy tính.
 
 C là một ngôn ngữ lập trình tương đối nhỏ gọn vận hành gần với phần cứng và nó giống với ngôn ngữ Assembler hơn hầu hết các ngôn ngữ bậc cao. Hơn thế, C đôi khi được đánh giá như là "có khả năng di động", cho thấy sự khác nhau quan trọng giữa nó với ngôn ngữ bậc thấp như là Assembler, đó là việc mã C có thể được dịch và thi hành trong hầu hết các máy tính, hơn hẳn các ngôn ngữ hiện tại trong khi đó thì Assembler chỉ có thể chạy trong một số máy tính đặc biệt. Vì lý do này C được xem là ngôn ngữ bậc trung.
 
-### 1. Điểm mạnh ngôn ngữ C
+### Điểm mạnh ngôn ngữ C
 
 - **Ngôn ngữ lập trình cấp thấp**  
   Hệ điều hành Unix có tới 90% là được viết bởi ngôn ngữ C. 10% là được viết bởi hợp ngữ. Ngoài ra có rất nhiều các trình điều khiển hỗ trợ lập trình bằng ngôn ngữ C.
@@ -33,7 +33,7 @@ C là một ngôn ngữ lập trình tương đối nhỏ gọn vận hành gầ
 - **Ngôn ngữ có tính khả chuyển**  
   Một chương trình viết bằng C cho một hệ máy tính (ví dụ như IBM PC) có thể được dịch và chạy trên hệ máy tính khác (chẳng hạn như DEC VAX) chỉ với rất ít các sử đổi. Tính khả chuyển đã được bởi chuẩn ANSI cho C.
 
-### 2. Điểm yếu ngôn ngữ C
+### Điểm yếu ngôn ngữ C
 
 - **Các chương trình của C dễ bị lỗi**  
   Do tính mềm dẻo của ngôn ngữ C cũng chính là nguyên nhân dễ gây lỗi. Giống như các ngôn ngữ lập trình hợp ngữ các lỗi chỉ được phát hiện khi thực hiện biên dịch chương trình.
@@ -44,7 +44,7 @@ C là một ngôn ngữ lập trình tương đối nhỏ gọn vận hành gầ
 - **Các chương trình viết bằng ngôn ngữ C khó chỉnh sửa**  
   Các chương trình lớn viết bằng ngôn ngữ C có thể khó chỉnh sửa nếu các tài liệu thiết kế chương trình không được thực hiện chi tiết. Các chương trình lớn thông thương được thiết kế theo các lớp và gói thông tin tuy nhiên ngôn ngữ C thiếu đặc điểm này.
 
-## II. Cài đặt IDE (Integrated Development Environment)
+## Cài đặt IDE (Integrated Development Environment)
 
 IDE là phần mềm soạn thảo văn bản có tích hợp rất nhiều chức năng hỗ trợ cho chúng ta trong việc viết mã code, đối với C có khá nhiều IDEs như vậy, ví dụ một số IDE phổ biến:
 
