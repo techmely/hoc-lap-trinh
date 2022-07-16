@@ -28,16 +28,27 @@ position: 2
 Trong phần này hướng dẫn tạo ứng dụng Spring Boot sử dụng IntelliJ Idea
 
 Bước 1:Mở IntelliJ Idea
-![mo tool](../../images/a1.png)
-Bước 2:Chọn next
-![chon buoc tiep theo](../../images/a2.png)
-Bước 3:Chọn next
-![chon buoc tiep theo](../../images/a3.png)
 
-![taoungdungvoiintellij](../../images/a4.png)
+![image](https://user-images.githubusercontent.com/29374426/179366936-6d2fb3f2-567d-46ac-b97f-93d4700716fe.png)
+
+Bước 2:Chọn next
+
+![image](https://user-images.githubusercontent.com/29374426/179366953-96ad9694-c4e0-4ab9-ac3c-6be9fc4f3fa7.png)
+
+Bước 3:Chọn next
+
+![image](https://user-images.githubusercontent.com/29374426/179366961-670b895a-9f50-4317-b586-8f4e8f44fffb.png)
+
+![image](https://user-images.githubusercontent.com/29374426/179366966-b76e160b-87a6-474f-9237-ea20d0fb0a2e.png)
+
 Bước 4:Chọn Web=>Spring Web=>Chọn next
-![taoungdungvoiintellij](../../images/a5.png)
+
+![image](https://user-images.githubusercontent.com/29374426/179366977-e3981f8d-d8b9-4361-94ea-6df369bc9efc.png)
+
 Bước 5:Chọn Finish
-![taoungdungvoiintellij](../../images/a6.png)
+
+![image](https://user-images.githubusercontent.com/29374426/179366987-1e408f08-5248-4fa2-89d5-97d90fc82d49.png)
+
 Bước 6:Run Project
-![taoungdungvoiintellij](../../images/a7.png)
+
+![image](https://user-images.githubusercontent.com/29374426/179366998-1a80b702-6815-4f0b-825d-a36e583b9c97.png)
