@@ -89,4 +89,4 @@ Một số loại Status-Code thông dụng mà server trả về cho client nh�
 > 4xx (Client Error): lỗi của client
 > 5xx (Server Error): lỗi của server
 
-![http-code](https://softcrony.com/blog/wp-content/uploads/2020/07/http-code.png)
+[https://www.youtube.com/watch?v=pnevRKSANLc&ab_channel=TechMely](https://www.youtube.com/watch?v=pnevRKSANLc&ab_channel=TechMely)
