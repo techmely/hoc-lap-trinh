@@ -24,7 +24,7 @@ position: 5
 
 Ở bài này thì mình sẽ chia sẻ cách thức hoạt động của Spring MVC, từ đó các bạn sẽ hiểu được luồng đi của nó.
 
-![Spring MVC](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/cach-hoat-dong-spring-mvc.png)
+![Spring MVC](https://user-images.githubusercontent.com/29374426/179367062-8b4e0328-d5f8-40ae-9825-e2895c0561b0.png)
 
 - Đầu tiên. sau khi nhận được yêu cầu **HTTP**, **DispatcherServlet** liên lạc với **HandlerMapping** để xác định _controller_ nào sẽ xử lý yêu cầu này.
 - **DispatcherServlet** gửi yêu cầu đến _controller_ sau khi biết được _controller_ nào sẽ xử lý yêu cầu. _Controller_ nhận các yêu cầu và gọi phương thức thích hợp bằng cách sử dụng phương thức `GET` hoặc `POST`. Tại đây phương thức thích hợp được gọi sẽ thiết lập model dữ liệu và trả về tên view (đối tượng ModelAndView) cho **DispatcherServlet**.
