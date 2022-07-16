@@ -2,6 +2,8 @@
 
 ## 1
 
+<img width="751" alt="Screen Shot 2022-07-17 at 01 42 59" src="https://user-images.githubusercontent.com/29374426/179368107-7a322147-f799-4b9a-809a-e1cf4e1ea1ca.png">
+
 ```c
 #include <stdio.h>
   char str[5][80], tmp[80];#include <stdlib.h>
@@ -48,6 +50,8 @@ int main()
 ```
 
 ## 2
+
+<img width="762" alt="Screen Shot 2022-07-17 at 01 43 21" src="https://user-images.githubusercontent.com/29374426/179368118-66aa0e64-2609-4fc4-bdb4-7913a75c6a0d.png">
 
 ```c
 #include <stdio.h>
