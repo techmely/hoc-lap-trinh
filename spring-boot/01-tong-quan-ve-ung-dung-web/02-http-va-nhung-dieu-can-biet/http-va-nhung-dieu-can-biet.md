@@ -27,10 +27,11 @@ position: 2
 
 **Hyper Text Transfer Protocol** (HTTP) là một giao thức để tìm nạp các tài nguyên như tài liệu HTML. Nó là nền tảng của bất kỳ trao đổi dữ liệu nào trên Web và nó là một giao thức khách-máy chủ (**Client-Server**), có nghĩa là các yêu cầu được khởi tạo bởi người nhận, thường là trình duyệt Web.
 
-![client-server-model](https://1.bp.blogspot.com/-L95P9p9PDfI/WqvflWNeEqI/AAAAAAAAAa0/JPzrhonvuDElUidmK0oS0jqmDwn_aPwPwCLcBGAs/s1600/Client-server-model.svg.png)
+![HTTP là gì](https://user-images.githubusercontent.com/29374426/179367094-97b45cff-58f6-4b11-aee6-fd681f31064a.png)
+
 Một tài liệu hoàn chỉnh được tạo lại từ các tài liệu con khác nhau được tìm nạp, chẳng hạn như văn bản, mô tả bố cục, hình ảnh, video, tập lệnh, v.v.
 
-![fetching-page](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview/fetching_a_page.png)
+![fetching page](https://user-images.githubusercontent.com/29374426/179367104-e8b8b257-329f-44d7-87c2-76847aeeadbb.png)
 
 ### Các khía cạnh cơ bản của HTTP
 
@@ -58,7 +59,7 @@ HTTP request là thông tin được gửi từ client lên server, để yêu c
 > - URI: là địa chỉ định danh của tài nguyên. Trong tường hợp này URI là / - tức request cho tài nguyên gốc, nếu request không yêu cầu một tài nguyên cụ thể, URI có thể là dấu \*.
 > - HTTP version: là phiên bản HTTP đang sử dụng, ở đây là HTTP 1.1.
 
-![request-stream](https://theegeek.com/wp-content/uploads/2014/12/HTTP-Request-Stream-Example.jpg)
+![HTTP Request](https://user-images.githubusercontent.com/29374426/179367117-5f551e99-54f8-45b4-bd69-85ff9fc96b15.png)
 
 Tiếp theo là các trường request-header, cho phép client gửi thêm các thông tin bổ sung về thông điệp HTTP request và về chính client. Một số trường thông dụng như:
 
@@ -76,7 +77,7 @@ Cấu trúc HTTP response gần giống với HTTP request, chỉ khác nhau là
 > - Status-Code: mã kết quả trả về.
 > - Reason-Phrase: mô tả về Status-Code.
 
-![http-response](https://images.viblo.asia/d4d042c6-1606-44c8-a7cc-0130d38f281e.png)
+![HTTP Response](https://user-images.githubusercontent.com/29374426/179367127-ff540474-060e-4641-9e8a-a71c206b6444.png)
 
 #### HTTP Status Code
 
