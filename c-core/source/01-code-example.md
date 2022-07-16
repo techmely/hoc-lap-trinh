@@ -167,6 +167,8 @@ int main()
 
 ## Example 3
 
+<img width="807" alt="Screen Shot 2022-07-17 at 01 54 47" src="https://user-images.githubusercontent.com/29374426/179368427-23cc765f-3e42-4b4d-88ea-7d9ce1a7e64a.png">
+
 ```c
 #include <stdio.h>
 int main()
