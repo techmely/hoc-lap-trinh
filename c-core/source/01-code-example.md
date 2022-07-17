@@ -592,6 +592,8 @@ int main()
 
 ## Example 9
 
+<img width="754" alt="Screen Shot 2022-07-17 at 10 26 47" src="https://user-images.githubusercontent.com/29374426/179382522-110268c1-4331-47c5-85c4-f79516be8ab2.png">
+
 ```c
 #include <stdio.h>
 #include <string.h>
@@ -632,6 +634,8 @@ int main()
 ```
 
 ## Example 10
+
+<img width="752" alt="Screen Shot 2022-07-17 at 10 26 28" src="https://user-images.githubusercontent.com/29374426/179382513-92c3875a-110b-4abb-96b4-aaa3f1d67697.png">
 
 ```c
 #include <stdio.h>
@@ -693,6 +697,8 @@ int main()	,
 
 ## Example 11
 
+<img width="685" alt="Screen Shot 2022-07-17 at 10 26 06" src="https://user-images.githubusercontent.com/29374426/179382502-08dca9df-db8a-4cf0-90d5-4a608f60ae12.png">
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -729,6 +735,8 @@ int main()
 ```
 
 ## Example 12
+
+<img width="792" alt="Screen Shot 2022-07-17 at 10 25 31" src="https://user-images.githubusercontent.com/29374426/179382495-1a796d0a-23b0-4f2a-837c-63e15769e099.png">
 
 ```c
 #include <stdio.h>
@@ -768,6 +776,8 @@ int main()
 ```
 
 ## Example 13
+
+<img width="787" alt="Screen Shot 2022-07-17 at 10 25 10" src="https://user-images.githubusercontent.com/29374426/179382477-ebc96ec3-4b2b-49f9-bc46-b30b1ffdd408.png">
 
 ```c
 #include <stdio.h>
