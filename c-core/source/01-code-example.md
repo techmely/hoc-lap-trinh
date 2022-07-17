@@ -589,3 +589,226 @@ int main()
 }
 
 ```
+
+## Example 9
+
+```c
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    system("cls");
+    // INPUT - @STUDENT:ADD YOUR CODE FOR INPUT HERE:
+    char s[100];
+    gets(s);
+    int i, j, count = 0;
+    char tmp[50][50];
+    for (i = 0; i < strlen(s); i++)
+    {
+        j = 0;
+ 
+        while (s[i] != ' ' && s[i] != '\0')
+        {
+            tmp[count][j] = s[i];
+            j++;
+            i++;
+        }
+        tmp[count][j] = '\0';
+        if (tmp[count][0] == 'h' && tmp[count][j - 1] == 'g')
+            count++;
+    }
+ 
+    // Fixed Do not edit anything here.
+    printf("\nOUTPUT:\n");
+    //@STUDENT: WRITE YOUR OUTPUT HERE:
+ 
+    printf("%d", count);
+ 
+    //--FIXED PART - DO NOT EDIT ANY THINGS HERE
+    printf("\n");
+    system("pause");
+    return (0);
+}
+```
+
+## Example 10
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+int main()	,
+{
+    system("cls");
+    // INPUT - @STUDENT:ADD YOUR CODE FOR INPUT HERE:
+    int n, i, str[21], j, k, count = 0;
+    char c[21];
+    scanf("%d ", &n);
+    for (i = 0; i < n; i++)
+    {
+        scanf("%c", &c[i]);
+        getchar();
+    }
+    // Fixed Do not edit anything here.
+    printf("OUTPUT:\n");
+    //@STUDENT: WRITE YOUR OUTPUT HERE:
+    for (i = 0; i < n; i++)
+    {
+        str[i] = 1;
+        for (j = 0; j < n + 1; j++)
+        {
+            if (i != j)
+            {
+                if (c[i] == c[j])
+                {
+                    str[i]++;
+                    for (k = j; k < n; k++)
+                        c[k] = c[k + 1];
+                    n--;
+                    j--;
+                }
+            }
+        }
+    }
+    for (i = 0; i < n; i++)
+    {
+        if (str[i] >= 2)
+        {
+            printf("%c", c[i]);
+            if (count != 1)
+                printf("\n");
+            count++;
+            if (count == 2)
+                break;
+        }
+    }
+    //--FIXED PART - DO NOT EDIT ANY THINGS HERE
+    printf("\n");
+    system("pause");
+    return (0);
+}
+
+```
+
+## Example 11
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+int main()
+{
+    system("cls");
+    // INPUT - @STUDENT:ADD YOUR CODE FOR INPUT HERE:
+    int a, tmp, flag = 0;
+    scanf("%d", &a);
+    tmp = a;
+    while (a % 2 == 0)
+    {
+        a /= 2;
+        flag++;
+    }
+    // Fixed Do not edit anything here.
+    printf("OUTPUT:\n");
+    //@STUDENT: WRITE YOUR OUTPUT HERE:
+    if (a == 1)
+    {
+        printf("%d", flag);
+    }
+    else
+    {
+        printf("%d is not a power of 2", tmp);
+    }
+    //--FIXED PART - DO NOT EDIT ANY THINGS HERE
+    printf("\n");
+    system("pause");
+    return (0);
+}
+```
+
+## Example 12
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+int main()
+{
+    system("cls");
+    // INPUT - @STUDENT:ADD YOUR CODE FOR INPUT HERE:
+    char s[100];
+    int i, count = 0, tmp = 0;
+    gets(s);
+    // Fixed Do not edit anything here.
+    printf("OUTPUT:\n");
+    //@STUDENT: WRITE YOUR OUTPUT HERE:
+ 
+    for (i = 0; i < strlen(s); i++)
+    {
+        if (s[i] != ' ' && tmp < 3)
+        {
+            while (s[i] != ' ')
+            {
+                count++;
+                ++i;
+                ;
+            }
+            tmp++;
+        }
+    }
+    printf("%d", count);
+    //--FIXED PART - DO NOT EDIT ANY THINGS HERE
+    printf("\n");
+    system("pause");
+    return (0);
+}
+```
+
+## Example 13
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include <ctype.h>
+int checkprime(int n)
+{
+    int i;
+    if (n < 2)
+        return 0;
+    for (i = 2; i <= sqrt(n); i++)
+        if (n % i == 0)
+            return 0;
+    return 1;
+}
+int main()
+{
+    system("cls");
+    // INPUT - @STUDENT:ADD YOUR CODE FOR INPUT HERE:
+    int n;
+    scanf("%d", &n);
+ 
+    // Fixed Do not edit anything here.
+    printf("OUTPUT:\n");
+    //@STUDENT: WRITE YOUR OUTPUT HERE:
+ 
+    if (checkprime(n))
+    {
+        printf("0x%X", n);
+    }
+ 
+    else
+    {
+        printf("%d is not a prime number", n);
+    }
+    //--FIXED PART - DO NOT EDIT ANY THINGS HERE
+    printf("\n");
+    system("pause");
+    return (0);
+}
+
+```
