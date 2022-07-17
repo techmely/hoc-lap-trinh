@@ -438,7 +438,9 @@ int main() {
 
 ```
 
-## Example 5
+## Example 6
+
+<img width="735" alt="Screen Shot 2022-07-17 at 10 17 27" src="https://user-images.githubusercontent.com/29374426/179382380-6c959254-4619-4781-94d3-d93002b240c8.png">
 
 ```c
 #include <stdio.h>
@@ -484,7 +486,9 @@ int main()
 
 ```
 
-## Example 6
+## Example 7
+
+<img width="774" alt="Screen Shot 2022-07-17 at 10 21 01" src="https://user-images.githubusercontent.com/29374426/179382390-7611ddc3-fc17-42b0-88e5-326fd542f61a.png">
 
 ```c
 #include <stdio.h>
@@ -531,7 +535,9 @@ int main()
 
 ```
 
-## Example 7
+## Example 8
+
+<img width="765" alt="Screen Shot 2022-07-17 at 10 21 32" src="https://user-images.githubusercontent.com/29374426/179382400-dad6f566-8476-4eee-8a5f-c39e9c2931cf.png">
 
 ```c
 #include <stdio.h>
