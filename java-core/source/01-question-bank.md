@@ -12,7 +12,7 @@ C. JAVADB
 
 D. None of the others
 
-ANSWER: B
+**ANSWER: B**
 
 MIX
 CHOICES:
@@ -30,7 +30,7 @@ C. listen()
 
 D.
 
-ANSWER: B
+**ANSWER: B**
 
 MIX
 CHOICES:
@@ -49,7 +49,7 @@ C. Type 1
 
 D. Type 4
 
-ANSWER: A
+**ANSWER: A**
 
 MIX
 CHOICES:
@@ -68,7 +68,7 @@ C. Type 2
 
 D. Type 1
 
-ANSWER: A
+**ANSWER: A**
 
 MIX
 CHOICES:
@@ -87,7 +87,7 @@ C. Type 1
 
 D. Type 4
 
-ANSWER: A
+**ANSWER: A**
 
 MIX
 CHOICES:
@@ -106,7 +106,7 @@ C. Type 3
 
 D. Type 4
 
-ANSWER: A
+**ANSWER: A**
 
 MIX
 CHOICES:
@@ -137,7 +137,7 @@ C. An exception is thrown at line 26 at runtime.
 
 D. Compilation of class A will fail due to an error in line 6.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -191,7 +191,7 @@ e.
 The exception will be propagated back to line 27.
 f.
 
-ANSWER: BE
+**ANSWER: B**E
 MARK:
 2
 
@@ -246,7 +246,7 @@ e.
 Doing finally part
 f.
 Carrying on
-ANSWER: BEF
+**ANSWER: B**EF
 MARK:
 2
 
@@ -291,7 +291,7 @@ e.
 Doing finally part
 f.
 Carrying on
-ANSWER: AEF
+**ANSWER: A**EF
 MARK:
 2
 
@@ -326,7 +326,7 @@ output would be 2.
 f.
 If lines 24, 25 and 26 were removed, the code would compile and the
 output would be 1.
-ANSWER: BEF
+**ANSWER: B**EF
 MARK:
 2
 
@@ -381,7 +381,7 @@ C. The code runs with no output.
 
 D. An exception is thrown at runtime.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 2
 
@@ -432,7 +432,7 @@ e.
 third first second snootchy 420
 f.
 first second first third snootchy 420
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -454,7 +454,7 @@ C. Unmodel
 
 D. None of the above
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -487,7 +487,7 @@ D.
 D. Construct a FileReader, passing the name of the file. Onto the FileReader,
 chain a DataInputStream, and call its readInt() metho
 D.
-ANSWER: AC
+**ANSWER: A**C
 MARK:
 1
 
@@ -508,7 +508,7 @@ C.
 
 D.
 
-ANSWER: B
+**ANSWER: B**
 
 
 
@@ -533,7 +533,7 @@ e.
 You cannot specify which thread will get notifie
 D. f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 1
 
@@ -561,7 +561,7 @@ C. public void logIt(String... msgs)
 
 D. public void logIt(String msg1, String msg2, String msg3)
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -583,7 +583,7 @@ C.
 
 D.
 
-ANSWER: B
+**ANSWER: B**
 
 
 
@@ -605,7 +605,7 @@ C.
 
 D.
 
-ANSWER: B
+**ANSWER: B**
 
 
 
@@ -637,7 +637,7 @@ C. At line 2, the thread will stop running. It will resume running in exactly
 D. At line 2, the thread will stop running. It will resume running some time
 after 100 milliseconds have elapse
 D.
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -658,7 +658,7 @@ C. Statement
 
 D. DriverManager
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -679,7 +679,7 @@ C. DriverManager
 
 D. JDBCManager
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -704,7 +704,7 @@ C. x = 13, a = 7, b = 8
 
 D. x = 13, a = 6, b = 7
 
-ANSWER: C
+**ANSWER: C**
 
 
 
@@ -744,7 +744,7 @@ e.
 Compilation fails because of an error at line 25.
 f.
 Compilation fails because of an error at line 30.
-ANSWER: BE
+**ANSWER: B**E
 MARK:
 2
 
@@ -768,7 +768,7 @@ e.
 finalist
 f.
 
-ANSWER: ABCDE
+**ANSWER: A**BCDE
 
 
 
@@ -805,7 +805,7 @@ C. Compilation of class A will fail. Compilation of class B will succee
 D.
 D. Compilation of class B will fail. Compilation of class A will succee
 D.
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -853,7 +853,7 @@ Line 46 will compile if enclosed in a try block, where TestException is
 caught.
 f.
 
-ANSWER: DE
+**ANSWER: D**E
 MARK:
 2
 
@@ -891,7 +891,7 @@ C. 100
 
 D. 101
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -928,7 +928,7 @@ C. 12.3
 
 D. 11.3
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -962,7 +962,7 @@ e.
 Test t = (new Base()).new Test(1);
 f.
 
-ANSWER: BC
+**ANSWER: B**C
 MARK:
 1
 
@@ -992,7 +992,7 @@ C. Base(int j, int k) { }
 
 D. Base(int j, int k, int l) { }
 
-ANSWER: AC
+**ANSWER: A**C
 MARK:
 1
 
@@ -1033,7 +1033,7 @@ e.
 The code will compile and produce the following output: String version.
 f.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 2
 
@@ -1080,7 +1080,7 @@ e.
 I was passed 5I was passed 6
 f.
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 2
 
@@ -1109,7 +1109,7 @@ C. Line 6
 
 D. Line 7
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -1140,7 +1140,7 @@ C. The args array must have exactly zero elements.
 
 D. The args array must have one or more elements.
 
-ANSWER: BD
+**ANSWER: B**D
 MARK:
 1
 
@@ -1168,7 +1168,7 @@ collection.
 D. After line 3 executes, the StringBuffer object is eligible for garbage
 collection.
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -1208,7 +1208,7 @@ The code will compile but will throw an exception at line 7, because the
 runtime class of wawa cannot be converted to type SwampThing.
 f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 2
 
@@ -1247,7 +1247,7 @@ The code will compile and run, but the cast in line 6 is not required and can
 be eliminate
 D. f.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -1282,7 +1282,7 @@ i = 1 j = 1
 f.
 i = 1 j = 2
 
-ANSWER: BCDF
+**ANSWER: B**CDF
 MARK:
 1
 
@@ -1317,7 +1317,7 @@ e.
 i = 1 j = 1
 f.
 i = 1 j = 2
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -1359,7 +1359,7 @@ The code will compile but will throw an exception at line 7, because the
 runtime class of w cannot be converted to type SwampThing.
 f.
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 2
 
@@ -1398,7 +1398,7 @@ e.
 e
 f.
 f
-ANSWER: ABCE
+**ANSWER: A**BCE
 MARK:
 1
 
@@ -1426,7 +1426,7 @@ e.
 x.length is 25
 f.
 
-ANSWER: AE
+**ANSWER: A**E
 
 
 
@@ -1456,7 +1456,7 @@ C. public float aMethod(float a, float b) throws Exception {...}
 
 D. public float aMethod(float p, float q) {...}
 
-ANSWER: BD
+**ANSWER: B**D
 MARK:
 1
 
@@ -1488,7 +1488,7 @@ e.
 private float aMethod(int a, int b, int c) { }
 f.
 
-ANSWER: ACE
+**ANSWER: A**CE
 MARK:
 1
 
@@ -1525,7 +1525,7 @@ e.
 An exception is thrown at runtime.
 f.
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -1550,7 +1550,7 @@ e.
 s.concat(s);
 f.
 None of the above
-ANSWER: F
+**ANSWER: F**
 MARK:
 1
 
@@ -1572,7 +1572,7 @@ C. java.util.List.compare(a1, a2);
 
 D.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -1602,7 +1602,7 @@ e.
 iAmVolatile
 f.
 
-ANSWER: ABE
+**ANSWER: A**BE
 MARK:
 1
 
@@ -1637,7 +1637,7 @@ e.
 line 3: public; line 8: protected
 f.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -1664,7 +1664,7 @@ e.
 String ob = new String(); Spice sp = ob;
 f.
 
-ANSWER: ABD
+**ANSWER: A**BD
 MARK:
 1
 
@@ -1689,7 +1689,7 @@ C. while (String s:names)
 
 D.
 
-ANSWER: AB
+**ANSWER: A**B
 
 
 
@@ -1726,7 +1726,7 @@ e.
 Compilation fails because of an error in line 18.
 f.
 Compilation fails because of an error in line 19.
-ANSWER: F
+**ANSWER: F**
 
 MARK:
 2
@@ -1762,7 +1762,7 @@ e.
 1 2 3
 f.
 Compilation fails.
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -1790,7 +1790,7 @@ C. public interface B instanceOf A {}
 
 D. public interface B inheritsFrom A { }
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -1823,7 +1823,7 @@ C. private double getSalesAmount() { return 1230.45; }
 
 D. protected double getSalesAmount() { return 1230.45; }
 
-ANSWER: BD
+**ANSWER: B**D
 MARK:
 1
 
@@ -1864,7 +1864,7 @@ Line 13 creates a directory named “d” in the file system.
 f.
 Line 16 creates a directory named “d” and a file ‘f’ within it in the file
 system.
-ANSWER: BCD
+**ANSWER: B**CD
 MARK:
 2
 
@@ -1894,7 +1894,7 @@ C. Direction d = Direction.NORTH;
 
 D. Nav.Direction d = Nav.Direction.NORTH;
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -1927,7 +1927,7 @@ C. new Foo() { public int bar(){return 1; } }
 
 D. new class Foo { public int bar() { return 1; } }
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -1961,7 +1961,7 @@ e.
 ExceptionlnlnitializerError
 f.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -1996,7 +1996,7 @@ e.
 Circle c = new Circle(); c.Shape.setAnchor(10,10); c.Shape.draw();
 f.
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -2027,7 +2027,7 @@ e.
 A ClassCastException is thrown at runtime.
 f.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -2062,7 +2062,7 @@ C. Compilation fails.
 
 D. NullPointerException
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -2098,7 +2098,7 @@ C. A ParseException is thrown by the parse method at runtime.
 
 D. A NumberFormatException is thrown by the parse method at runtime.
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -2128,7 +2128,7 @@ e.
 An exception is thrown at runtime.
 f.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -2173,7 +2173,7 @@ An AssertionException is thrown with the word “stuff” added to the stack tra
 f.
 passed
 An AssertionException is thrown without the word “stuff” added to the stack trace.
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -2212,7 +2212,7 @@ e.
 An exception is thrown at runtime.
 f.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -2251,7 +2251,7 @@ e.
 doStuff x = 5 main x = 6
 f.
 doStuff x = 6 main x = 5
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -2291,7 +2291,7 @@ e.
 doStuffx = 5 main x = 6
 f.
 doStuffx = 6 main x = 5
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -2330,7 +2330,7 @@ e.
 The setCardlnformation method breaks encapsulation.
 f.
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -2368,7 +2368,7 @@ e.
 The value of all four objects prints in natural order.
 f.
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 2
 
@@ -2403,7 +2403,7 @@ e.
 The code on line 33 executes successfully.
 f.
 
-ANSWER: BCE
+**ANSWER: B**CE
 MARK:
 1
 
@@ -2439,7 +2439,7 @@ e.
 bc
 f.
 abc
-ANSWER: D
+**ANSWER: D**
 
 MARK:
 1
@@ -2467,7 +2467,7 @@ C. Compilation will fail because of an error in line 55.
 
 D. Compilation will fail because of an error in line 56.
 
-ANSWER: B
+**ANSWER: B**
 
 
 
@@ -2499,7 +2499,7 @@ e.
 java -ea test file1 file2
 f.
 java -ea:test test file1
-ANSWER: BE
+**ANSWER: B**E
 MARK:
 1
 
@@ -2537,7 +2537,7 @@ StringBuilder s = new StringBuilder(”123456789”);
 s.delete(0,3).delete( 1 ,3).delete(2,5).insert( 1, “24”);
 f.
 
-ANSWER: BE
+**ANSWER: B**E
 MARK:
 1
 
@@ -2560,7 +2560,7 @@ C. The Point class cannot be instatiated at line 15.
 
 D. Line l = new Line() ; Point p = new l.Point();
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -2583,7 +2583,7 @@ C. while( x.hasNext()) System.out.println( x.next());
 
 D. for( int i=0; i< x.length; i++ ) System.out.println(x[i]);
 
-ANSWER: BD
+**ANSWER: B**D
 MARK:
 1
 
@@ -2609,7 +2609,7 @@ e.
 protected
 f.
 abstract
-ANSWER: ABD
+**ANSWER: A**BD
 MARK:
 1
 
@@ -2649,7 +2649,7 @@ RuntimeException
 f.
 Compilation fails because of an error in line: try { ((A)new
 B()).process(); }
-ANSWER: B
+**ANSWER: B**
 MARK:
 2
 
@@ -2671,7 +2671,7 @@ C. Vary the priorities of your threads.
 
 D. There is no single technique that can guarantee non-deadlocking code.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -2697,7 +2697,7 @@ e.
 Set all references to the object to new values (null, for example).
 f.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -2719,7 +2719,7 @@ C. Use only static variables.
 
 D. Access the variables only via synchronized methods.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -2741,7 +2741,7 @@ C. StringBuilder[] contents = myFile.list();
 
 D. The File class does not provide a way to list the contents of a directory.
 
-ANSWER: A
+**ANSWER: A**
 
 MARK:
 1
@@ -2776,7 +2776,7 @@ e.
 The number of bytes depends on the underlying system.
 f.
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -2797,7 +2797,7 @@ C. One for each synchronized method
 
 D. One for each non-static synchronized method
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -2824,7 +2824,7 @@ Imports must come first; order for package declarations and
 class/interface/enum definitions is not significant
 f.
 
-ANSWER: D
+**ANSWER: D**
 
 
 
@@ -2847,7 +2847,7 @@ C.
 
 D.
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -2885,7 +2885,7 @@ C.
 
 D.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -2907,7 +2907,7 @@ C. TreeSet
 
 D.
 
-ANSWER: C
+**ANSWER: C**
 
 
 
@@ -2929,7 +2929,7 @@ C. Compare interface and its compareTo method
 
 D. Comparable interface and its equals method
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -2955,7 +2955,7 @@ C.
 
 D.
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -2980,7 +2980,7 @@ C.
 
 D.
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -3007,7 +3007,7 @@ e.
 int, long, float, double
 f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 1
 
@@ -3029,7 +3029,7 @@ C. Statement
 
 D. Connection
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -3053,7 +3053,7 @@ C.
 
 D.
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -3076,7 +3076,7 @@ C.
 
 D.
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -3097,7 +3097,7 @@ C. Three-tier and four-tier
 
 D. None of the others
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -3118,7 +3118,7 @@ C. Metal-View-Controller
 
 D.
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -3150,7 +3150,7 @@ e.
 No output because of compile error at line: byte b = 3;
 f.
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -3180,7 +3180,7 @@ C. Have a nice day!
 
 D. No output
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -3212,7 +3212,7 @@ Have a nice day!
 
 D. None of the above
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -3244,7 +3244,7 @@ e.
 No output
 f.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -3276,7 +3276,7 @@ e.
 No output
 f.
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -3311,7 +3311,7 @@ e.
 No output
 f.
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -3345,7 +3345,7 @@ e.
 No output
 f.
 
-ANSWER: C
+**ANSWER: C**
 
 MARK:
 1
@@ -3370,7 +3370,7 @@ and a client.
 
 D. All the above
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -3391,7 +3391,7 @@ C. It is the class whose methods provide services to clients.
 
 D. All the others choices
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -3416,7 +3416,7 @@ e.
 All the others choices
 f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 1
 
@@ -3440,7 +3440,7 @@ to another object, every referenced object is not serialized along with the orig
 D. When an object is serialized, it will probably be deserialized by a different
 JVM.
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -3463,7 +3463,7 @@ traverses its references to other objects recursively to deserialize all objects
 
 D.
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -3489,7 +3489,7 @@ server specifies a name for every remote object it provides.
 
 D. A client accesses a remote object by specifying only the server name.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -3513,7 +3513,7 @@ method, which returns an instance of ServerSocket
 
 D. There is no way to know how long the accept() call will take.
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -3537,7 +3537,7 @@ C. You do not directly read from or write to a socket
 D. The java.net.Socket class contains code that knows how to find and
 communicate with a server through TCP.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -3562,7 +3562,7 @@ the commands to the data source.
 
 D.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -3584,7 +3584,7 @@ C. HAVING
 
 D. WHERE
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -3605,7 +3605,7 @@ C. RecordSet
 
 D. RowSet
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -3628,7 +3628,7 @@ C. Both 1 and 2 are true
 
 D. Both 1 and 2 are not true
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -3653,7 +3653,7 @@ in a way that causes another exception to be thrown.
 D. If the JVM doesn't crash and the code does not execute a System.exit() call,
 the finally block will always execute.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -3675,7 +3675,7 @@ C. Class loading takes significantly more time.
 
 D.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -3697,7 +3697,7 @@ C. Compilation takes significantly more time.
 
 D.
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -3719,7 +3719,7 @@ C. C must have a no-args constructor.
 
 D. There are no restrictions regarding no-args constructors.
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 2
 
@@ -3741,7 +3741,7 @@ C. C must have a no-args constructor.
 
 D. There are no restrictions regarding no-args constructors.
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 2
 
@@ -3763,7 +3763,7 @@ C. protected
 
 D. Default
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -3785,7 +3785,7 @@ C. Default
 
 D. private
 
-ANSWER: AB
+**ANSWER: A**B
 MARK:
 1
 
@@ -3810,7 +3810,7 @@ C. public void doSomething(int a, float b) throws java.io.IOException { … }
 
 D. private void doSomething(int a, float b) throws java.io.IOException { … }
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -3832,7 +3832,7 @@ C. The class will compile if it is declared abstract.
 
 D. The class may not be instantiate
 D.
-ANSWER: CD
+**ANSWER: C**D
 MARK:
 1
 
@@ -3857,7 +3857,7 @@ e.
 All the above
 f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 1
 
@@ -3879,7 +3879,7 @@ C. for (float f::salaries)
 
 D. for (int i::salaries)
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -3901,7 +3901,7 @@ C. Always
 
 D. Never
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -3923,7 +3923,7 @@ C. Never
 
 D. None of the others choices
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -3945,7 +3945,7 @@ C. if (x.toString().equals(y.toString()))
 
 D. if (x.hashCode() == y.hashCode())
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -3967,7 +3967,7 @@ C. default
 
 D. private
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -3989,7 +3989,7 @@ C. default
 
 D. private
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -4011,7 +4011,7 @@ C. Override start().
 
 D. Make sure that all access to all data is via synchronized methods.
 
-ANSWER: B
+**ANSWER: B**
 
 
 
@@ -4036,7 +4036,7 @@ e.
 The strategy fails because you cannot add static methods to a subclass.
 f.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -4057,7 +4057,7 @@ C.
 
 D.
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -4078,7 +4078,7 @@ C. ODBCDriver
 
 D. None of the others
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -4100,7 +4100,7 @@ C. MenuItem
 
 D. PopUp
 
-ANSWER: B
+**ANSWER: B**
 
 
 
@@ -4121,7 +4121,7 @@ C.
 
 D.
 
-ANSWER: B
+**ANSWER: B**
 
 
 
@@ -4143,7 +4143,7 @@ C. javax.swings
 
 D. javax.Swing
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -4165,7 +4165,7 @@ C. DatagramPack and DatagramSock
 
 D.
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -4215,7 +4215,7 @@ Compilation of Parrot.java succeeds, but a runtime exception is thrown if
 method getRefCount() is ever called on an instance of class Parrot.
 f.
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 2
 
@@ -4263,7 +4263,7 @@ Compilation of Nightingale will succeed, but an exception will be thrown
 at line 10, because method fly() is protected in the superclass.
 f.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 2
 
@@ -4290,7 +4290,7 @@ C. void doSomething() throws EOFException { … }
 
 D. void doSomething() throws IOException, EOFException { … }
 
-ANSWER: ACD
+**ANSWER: A**CD
 MARK:
 1
 
@@ -4311,7 +4311,7 @@ C. jdbc:odbc:datasoursename
 
 D. jdbc:datasoursename
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -4338,7 +4338,7 @@ e.
 char
 f.
 byte
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -4361,7 +4361,7 @@ C. Compile error
 
 D.
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -4395,7 +4395,7 @@ e.
 There is no output because the code throws an exception at line 5.
 f.
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -4425,7 +4425,7 @@ C. 1000
 
 D. -1
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -4462,7 +4462,7 @@ C. An exception is thrown at line 10.
 
 D. No compiler error and no exception.
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -4488,7 +4488,7 @@ C. The code compiles, and prints out >>null<<
 
 D.
 
-ANSWER: C
+**ANSWER: C**
 
 
 
@@ -4523,7 +4523,7 @@ e.
 No exception is thrown.
 f.
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -4547,7 +4547,7 @@ e.
 13
 f.
 25
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -4568,7 +4568,7 @@ C. -4
 
 D. 4
 
-ANSWER: B
+**ANSWER: B**
 
 
 
@@ -4590,7 +4590,7 @@ C. -2
 
 D. 2
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -4615,7 +4615,7 @@ not.
 D. Method-call conversion supports narrowing if the method declares that it
 throws ClassCastException.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -4657,7 +4657,7 @@ e.
 The code will compile as is. No modification is neede
 D. f.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 2
 
@@ -4682,7 +4682,7 @@ e.
 −2^15 through 2^15 − 1
 f.
 
-ANSWER: D
+**ANSWER: D**
 
 
 
@@ -4707,7 +4707,7 @@ e.
 −2^31 through 2^31 − 1
 f.
 
-ANSWER: D
+**ANSWER: D**
 
 
 
@@ -4744,7 +4744,7 @@ C. The code compiles and executes but has no effect on the local file system.
 D. The code compiles and executes; afterward, the current working directory
 contains a file called datafile.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 2
 
@@ -4764,7 +4764,7 @@ C. An int
 
 D. A boolean
 
-ANSWER: D
+**ANSWER: D**
 
 
 
@@ -4789,7 +4789,7 @@ e.
 createNewFile()
 f.
 
-ANSWER: E
+**ANSWER: E**
 
 
 
@@ -4817,7 +4817,7 @@ C. The output: value is 9.0
 
 D. A compiler error at line 4
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -4848,7 +4848,7 @@ C. The output: b contains 250
 
 D. The output: b contains 245
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -4885,7 +4885,7 @@ C. message three
 
 D. message four
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -4909,7 +4909,7 @@ e.
 You can’t add a byte to a char.
 f.
 
-ANSWER: C
+**ANSWER: C**
 
 
 
@@ -4931,7 +4931,7 @@ C. Negative
 
 D. All the above
 
-ANSWER: C
+**ANSWER: C**
 
 
 
@@ -4953,7 +4953,7 @@ C. Negative
 
 D. All the above
 
-ANSWER: D
+**ANSWER: D**
 
 
 
@@ -4974,7 +4974,7 @@ C. float
 
 D. You can’t add a short to a float.
 
-ANSWER: C
+**ANSWER: C**
 
 
 
@@ -4999,7 +4999,7 @@ e.
 writing a line separator to the stream
 f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 1
 
@@ -5021,7 +5021,7 @@ C. When the exception is caught
 
 D. When the exception’s printStackTrace() method is called
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -5044,7 +5044,7 @@ C. When the exception is being thrown from a public method
 
 D. When the exception is being thrown from a private method
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -5069,7 +5069,7 @@ e.
 Never
 f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 1
 
@@ -5090,7 +5090,7 @@ C. When neither x nor y is a float, a long, or a double
 
 D. None of the others
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -5115,7 +5115,7 @@ e.
 window closed
 f.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -5136,7 +5136,7 @@ C. Item event
 
 D. None of the others
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -5158,7 +5158,7 @@ C. machine code
 
 D. cpu instruction
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -5180,7 +5180,7 @@ C. throwable
 
 D. nothrows
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -5205,7 +5205,7 @@ DriverManager.getConnection (url, “user", "password");
 
 D.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -5227,7 +5227,7 @@ C. Arrays.createList
 
 D. Arrays.makeList
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -5253,7 +5253,7 @@ Choose layout managers. Isolate regions of behavior. Sketch the GUI.
 
 D.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -5286,7 +5286,7 @@ D. 1)Create a statement and execute the query
 3)Look at the result set
 4)Close connection
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -5308,7 +5308,7 @@ C. one-tier
 
 D. four-tier
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -5333,7 +5333,7 @@ e.
 sc.useDelimiter("\d+");
 f.
 sc.useDelimiter("\\d+");
-ANSWER: C
+**ANSWER: C**
 
 MARK:
 1
@@ -5359,7 +5359,7 @@ e.
 class Man { private Dog<bestFriend> }
 f.
 class Man { private BestFriend<dog> }
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -5383,7 +5383,7 @@ e.
 getNameString()
 f.
 
-ANSWER: BC
+**ANSWER: B**C
 
 
 
@@ -5408,7 +5408,7 @@ e.
 volatile
 f.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -5433,7 +5433,7 @@ e.
 char
 f.
 String
-ANSWER: ABE
+**ANSWER: A**BE
 
 
 
@@ -5474,7 +5474,7 @@ weight = w;
 }
 f.
 
-ANSWER: ACE
+**ANSWER: A**CE
 MARK:
 1
 
@@ -5495,7 +5495,7 @@ C. import static java.util.Vector.\_;
 
 D. import java.util.Vector static;
 
-ANSWER: AC
+**ANSWER: A**C
 
 
 
@@ -5528,7 +5528,7 @@ System.out.println("j=" + j++);
 if (j==3) continue loop;
 } while (j<10);
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -5552,7 +5552,7 @@ e.
 for (int a==0; a<100; a++) { /_ whatever _/ }
 f.
 None of the above.
-ANSWER: F
+**ANSWER: F**
 MARK:
 1
 
@@ -5576,7 +5576,7 @@ e.
 while(1)
 f.
 
-ANSWER: ABD
+**ANSWER: A**BD
 MARK:
 1
 
@@ -5597,7 +5597,7 @@ C. double d = 1.2d5;
 
 D. double d = 1.2D5;
 
-ANSWER: AB
+**ANSWER: A**B
 
 
 
@@ -5621,7 +5621,7 @@ e.
 int f = 0ABCD;
 f.
 
-ANSWER: CD
+**ANSWER: C**D
 
 
 
@@ -5642,7 +5642,7 @@ C. char c = '\u1234';
 
 D.
 
-ANSWER: AC
+**ANSWER: A**C
 
 
 
@@ -5663,7 +5663,7 @@ C. Vector <String> theVec = new Vector<String>;
 
 D. Vector <String> theVec = new Vector<String>();
 
-ANSWER: BD
+**ANSWER: B**D
 
 
 
@@ -5688,7 +5688,7 @@ e.
 subMap
 f.
 
-ANSWER: CDE
+**ANSWER: C**DE
 MARK:
 1
 
@@ -5713,7 +5713,7 @@ e.
 subSet
 f.
 All the above
-ANSWER: F
+**ANSWER: F**
 MARK:
 1
 
@@ -5738,7 +5738,7 @@ All the above
 
 f.
 
-ANSWER: E
+**ANSWER: E**
 
 
 
@@ -5759,7 +5759,7 @@ C. The JVM runs until there is only one non-daemon threa
 D.
 D. The JVM runs until there are no non-daemon threads.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -5783,7 +5783,7 @@ D.
 D. A thread created by a non-daemon thread is initially also a non-daemon
 threa
 D.
-ANSWER: BCD
+**ANSWER: B**CD
 MARK:
 1
 
@@ -5808,7 +5808,7 @@ block always synchronizes on the lock of the current object.
 D. When you declare a block of code inside a method to be synchronized, you
 can specify the object on whose lock the block should synchronize.
 
-ANSWER: AD
+**ANSWER: A**D
 MARK:
 1
 
@@ -5829,7 +5829,7 @@ C. An enum may contain public method definitions.
 
 D. An enum may contain private dat
 A.
-ANSWER: CD
+**ANSWER: C**D
 
 
 
@@ -5850,7 +5850,7 @@ C. References are passed by reference.
 
 D. References are passed by value.
 
-ANSWER: BD
+**ANSWER: B**D
 
 
 
@@ -5876,7 +5876,7 @@ An anonymous inner class that implements several interfaces may extend a
 parent class other than Object.
 f.
 
-ANSWER: AC
+**ANSWER: A**C
 MARK:
 1
 
@@ -5898,7 +5898,7 @@ C. FileInputStream
 
 D. RandomAccessFile
 
-ANSWER: C
+**ANSWER: C**
 
 
 
@@ -5923,7 +5923,7 @@ e.
 All the above
 f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 1
 
@@ -5948,7 +5948,7 @@ e.
 All the above
 f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 1
 
@@ -5969,7 +5969,7 @@ C. java.util.TreeSet
 
 D. java.util.Stack
 
-ANSWER: AD
+**ANSWER: A**D
 
 
 
@@ -5990,7 +5990,7 @@ C. PriorityQueue
 
 D. CopyOnWriteArraySet
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -6014,7 +6014,7 @@ e.
 abstract final double hyperbolicCosine();
 f.
 
-ANSWER: ADE
+**ANSWER: A**DE
 
 
 
@@ -6035,7 +6035,7 @@ C. int x = 6; x = ~x;
 
 D.
 
-ANSWER: BC
+**ANSWER: B**C
 
 
 
@@ -6056,7 +6056,7 @@ C. String x = "Hello"; int y = 9; x = x + y;
 
 D. String x = "Hello"; int y = 9; y = y + x;
 
-ANSWER: AC
+**ANSWER: A**C
 
 
 
@@ -6078,7 +6078,7 @@ C. byte x = –1; x = x >>> 5;
 
 D. int x = –1; x = x >> 5;
 
-ANSWER: A
+**ANSWER: A**
 
 
 
@@ -6100,7 +6100,7 @@ C. List
 
 D.
 
-ANSWER: B
+**ANSWER: B**
 
 
 
@@ -6122,7 +6122,7 @@ C. Preconditions of a private method
 
 D. Postconditions of a private method
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -6143,7 +6143,7 @@ C. /\* comment
 
 D. // comment
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -6167,7 +6167,7 @@ D.
 D. Use non-assert code to check for argument validity. If invalid arguments
 are detected, explicitly throw AssertionError.
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -6191,7 +6191,7 @@ e.
 None of the above
 f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 1
 
@@ -6214,7 +6214,7 @@ D. e.
 All the above
 f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 1
 
@@ -6236,7 +6236,7 @@ C. An interface
 
 D. A variable of primitive type
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -6261,7 +6261,7 @@ e.
 The name of a primitive type
 f.
 
-ANSWER: BC
+**ANSWER: B**C
 MARK:
 1
 
@@ -6281,7 +6281,7 @@ C. Methods
 
 D.
 
-ANSWER: AC
+**ANSWER: A**C
 
 
 
@@ -6302,7 +6302,7 @@ C. Static field names
 
 D. Method-local variable names
 
-ANSWER: BC
+**ANSWER: B**C
 
 
 
@@ -6326,7 +6326,7 @@ e.
 Variables
 f.
 
-ANSWER: BCD
+**ANSWER: B**CD
 
 
 
@@ -6350,7 +6350,7 @@ e.
 All of the others
 f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 1
 
@@ -6372,7 +6372,7 @@ C. Primitives
 
 D. All of the above
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -6393,7 +6393,7 @@ C. Blocks within static methods
 
 D. Classes
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -6417,7 +6417,7 @@ e.
 private int xyz(float f)
 f.
 
-ANSWER: AB
+**ANSWER: A**B
 MARK:
 1
 
@@ -6439,7 +6439,7 @@ C. start() and stop()
 
 D. sleep() and yield()
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -6485,7 +6485,7 @@ A.
   None of the others
   f.
 
-ANSWER: D
+**ANSWER: D**
 
 
 
@@ -6509,7 +6509,7 @@ D. \* - e.
 ~
 f.
 !
-ANSWER: ABE
+**ANSWER: A**BE
 MARK:
 1
 
@@ -6531,7 +6531,7 @@ C. They may only call final methods of the enclosing class.
 
 D. They may not call the enclosing class’ synchronized methods.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -6551,7 +6551,7 @@ C. Assertion errors
 
 D. Errors other than assertion errors
 
-ANSWER: B
+**ANSWER: B**
 
 
 
@@ -6576,7 +6576,7 @@ e.
 public static int main(String [] arg)
 f.
 
-ANSWER: BD
+**ANSWER: B**D
 
 
 
@@ -6599,7 +6599,7 @@ C. The thread that calls wait() goes into the monitor’s pool of waiting thread
 
 D. The thread that calls notify() gives up the lock.
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -6622,7 +6622,7 @@ setPriority() metho
 D.
 D. Thread priority is an integer ranging from 1 to 100.
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -6643,7 +6643,7 @@ C. A final class may not contain non-final data fields.
 
 D. A final class may not be extende
 D.
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -6678,7 +6678,7 @@ can be constructed and returned from a method like this:
 5. }
 6. };
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -6702,7 +6702,7 @@ e.
 An abstract class must declare that it implements an interface.
 f.
 None of the above
-ANSWER: F
+**ANSWER: F**
 MARK:
 1
 
@@ -6723,7 +6723,7 @@ C. StringBuilder is threadsafe; StringBuffer is not.
 
 D. StringBuffer is threadsafe; StringBuilder is not.
 
-ANSWER: AD
+**ANSWER: A**D
 MARK:
 1
 
@@ -6747,7 +6747,7 @@ C. Both statement 1 and 2
 
 D.
 
-ANSWER: B
+**ANSWER: B**
 MARK:
 1
 
@@ -6773,7 +6773,7 @@ e.
 Casting of numeric types may require a runtime check.
 f.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -6798,7 +6798,7 @@ Transient variables are not serialize
 D.
 f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 1
 
@@ -6824,7 +6824,7 @@ e.
 Object references can never be converte
 D. f.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -6848,7 +6848,7 @@ e.
 Bytecode characters are all 16 bits.
 f.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -6873,7 +6873,7 @@ changeWorkingDirectory() method of the File class.
 
 D. None of the above
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -6897,7 +6897,7 @@ local file system is delete
 D.
 D. None of the above.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -6932,7 +6932,7 @@ e.
 Line 9
 f.
 Line 6
-ANSWER: F
+**ANSWER: F**
 MARK:
 1
 
@@ -6977,7 +6977,7 @@ execute concurrently, taking time-sliced turns in the CPU.
 
 D. None of the above scenarios can be guaranteed to happen in all cases.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -7007,7 +7007,7 @@ e.
 Compilation succeeds and no exception is thrown during execution.
 f.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -7039,7 +7039,7 @@ e.
 Compilation succeeds. No exception is thrown during execution.
 f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 1
 
@@ -7067,7 +7067,7 @@ C. Line 6 executes and line 4 does not.
 
 D. Neither line 4 nor line 6 executes.
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 1
 
@@ -7110,7 +7110,7 @@ The code will compile correctly and will execute without throwing any
 exceptions.
 f.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 2
 
@@ -7150,7 +7150,7 @@ The output would be the text value is two, followed by the text value is
 three, followed by the text value is 2.
 f.
 
-ANSWER: D
+**ANSWER: D**
 MARK:
 1
 
@@ -7174,7 +7174,7 @@ C. It always an int where every bit is 1.
 
 D. The returned value varies depending on the argument.
 
-ANSWER: A
+**ANSWER: A**
 MARK:
 1
 
@@ -7214,7 +7214,7 @@ e.
 The code compiles and execution produces the output x = 3.
 f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 1
 
@@ -7258,7 +7258,7 @@ e.
 The program compiles and the output is x = 104.
 f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 1
 
@@ -7285,7 +7285,7 @@ e.
 JDBC is a Java database system.
 f.
 JDBC is a Java API for connecting to any kind of DBMS
-ANSWER: EF
+**ANSWER: E**F
 MARK:
 1
 
@@ -7307,7 +7307,7 @@ C. static final int[] a = new int[2] { 100,200 };
 
 D. static final int[] a; static void init() {a=new int[3];a[0]=100; a[1]=200;}
 
-ANSWER: AB
+**ANSWER: A**B
 MARK:
 1
 
@@ -7332,7 +7332,7 @@ e.
 Collection
 f.
 List
-ANSWER: BE
+**ANSWER: B**E
 MARK:
 1
 
@@ -7362,7 +7362,7 @@ e.
 No directory is created, and no file is create
 D. f.
 
-ANSWER: E
+**ANSWER: E**
 MARK:
 1
 
@@ -7388,7 +7388,7 @@ C. public class Cat extends Pet
 
 D. private class Cat extends Pet
 
-ANSWER: C
+**ANSWER: C**
 MARK:
 2
 
@@ -7416,7 +7416,7 @@ e.
 boolean neutered;
 f.
 String markings;
-ANSWER: EF
+**ANSWER: E**F
 MARK:
 2
 
