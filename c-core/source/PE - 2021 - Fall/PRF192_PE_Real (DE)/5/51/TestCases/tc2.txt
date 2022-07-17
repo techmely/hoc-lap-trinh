@@ -1,0 +1,16 @@
+INPUT:
+6
+1
+5
+7
+9
+3
+5
+OUTPUT:
+Odd array of 6 elements
+REMOVE_SPACES:
+YES
+CASE_SENSITIVE:
+NO
+MARK:
+0.5

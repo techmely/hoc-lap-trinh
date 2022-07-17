@@ -1,0 +1,12 @@
+INPUT:
+there is a too too car
+too
+old
+OUTPUT:
+there is a too old car
+REMOVE_SPACES:
+YES
+CASE_SENSITIVE:
+NO
+MARK:
+0.5

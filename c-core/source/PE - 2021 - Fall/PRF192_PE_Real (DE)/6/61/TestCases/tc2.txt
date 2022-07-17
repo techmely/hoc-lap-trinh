@@ -1,0 +1,12 @@
+INPUT:
+this is a a nouvo
+a
+an
+OUTPUT:
+this is an a nouvo
+REMOVE_SPACES:
+YES
+CASE_SENSITIVE:
+NO
+MARK:
+0.5

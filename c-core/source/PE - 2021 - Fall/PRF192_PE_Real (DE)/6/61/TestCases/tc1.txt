@@ -1,0 +1,12 @@
+INPUT:
+i am jou thank you
+jou
+chow
+OUTPUT:
+i am chow thank you
+REMOVE_SPACES:
+YES
+CASE_SENSITIVE:
+NO
+MARK:
+0.5

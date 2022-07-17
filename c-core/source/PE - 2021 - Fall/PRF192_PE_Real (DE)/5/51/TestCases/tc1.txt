@@ -1,0 +1,14 @@
+INPUT:
+4
+2
+3
+5
+2
+OUTPUT:
+Not odd array of 4 elements
+REMOVE_SPACES:
+YES
+CASE_SENSITIVE:
+NO
+MARK:
+0.5

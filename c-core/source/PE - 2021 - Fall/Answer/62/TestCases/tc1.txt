@@ -1,0 +1,12 @@
+INPUT:
+i am so so
+so
+ok
+OUTPUT:
+i am so ok
+REMOVE_SPACES:
+YES
+CASE_SENSITIVE:
+NO
+MARK:
+0.5

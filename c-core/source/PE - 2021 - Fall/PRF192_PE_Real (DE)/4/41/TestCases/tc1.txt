@@ -1,0 +1,13 @@
+INPUT:
+3
+7
+OUTPUT:
+*******
+*******
+*******
+REMOVE_SPACES:
+YES
+CASE_SENSITIVE:
+NO
+MARK:
+0.5

@@ -1,0 +1,17 @@
+INPUT:
+a
+e
+f
+g
+h
+h
+i
+OUTPUT:
+2 h
+1 i
+REMOVE_SPACES:
+YES
+CASE_SENSITIVE:
+NO
+MARK:
+0.5

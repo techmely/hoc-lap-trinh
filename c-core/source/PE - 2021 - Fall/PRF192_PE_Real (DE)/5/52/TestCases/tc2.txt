@@ -1,0 +1,16 @@
+INPUT:
+6
+6
+4
+4
+2
+8
+6
+OUTPUT:
+Even array of 6 elements
+REMOVE_SPACES:
+YES
+CASE_SENSITIVE:
+NO
+MARK:
+0.5
