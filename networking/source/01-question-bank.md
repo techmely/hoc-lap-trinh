@@ -362,7 +362,7 @@ MIX CHOICES:
 Yes
 
 QN=22 (8851)
-The job of delivering the data in a transport-layer segment to the correct application process is called****\_****.
+The job of delivering the data in a transport-layer segment to the correct application process is called\***\*\_\*\***.
 a.
 De-multiplexing
 b.
@@ -857,7 +857,7 @@ MIX CHOICES:
 Yes
 
 QN=57 (8830)
-IMAP and POP are****\_****
+IMAP and POP are\***\*\_\*\***
 a.
 Mail access protocols
 b.
@@ -1319,7 +1319,7 @@ MIX CHOICES:
 Yes
 
 QN=23 (8858)
-Electronic mail uses \_**\_ while streaming multimedia typically uses********\_**********
+Electronic mail uses \_**\_ while streaming multimedia typically uses**\*\*****\_****\*\*****
 a.
 TCP……..UDP
 b.
@@ -1357,7 +1357,7 @@ MIX CHOICES:
 Yes
 
 QN=25 (8877)
-TCP connection provides ****\_\_\_****.
+TCP connection provides \***\*\_\_\_\*\***.
 a.
 Full-duplex service
 b.
@@ -1549,7 +1549,7 @@ MIX CHOICES:
 Yes
 
 QN=5 (8881)
-To accomplish (hoàn thành) flow control, TCP uses a ****\_\_\_**** window protocol.
+To accomplish (hoàn thành) flow control, TCP uses a \***\*\_\_\_\*\*** window protocol.
 a.
 sliding
 b.
@@ -1644,7 +1644,7 @@ MIX CHOICES:
 Yes
 
 QN=11 (8950)
-In classless addressing, ****\_\_**** is assigned to an organization.
+In classless addressing, \***\*\_\_\*\*** is assigned to an organization.
 a.
 a variable-length block
 b.
@@ -2349,7 +2349,7 @@ MIX CHOICES:
 Yes
 
 QN=24 (8871)
-Reliable data transfer in TCP ensures that data is delivered from sending process to receiving process****\_\_****
+Reliable data transfer in TCP ensures that data is delivered from sending process to receiving process\***\*\_\_\*\***
 a.
 Correctly and in order
 b.
@@ -2368,7 +2368,7 @@ MIX CHOICES:
 Yes
 
 QN=25 (8882)
-TCP allows the sending process to deliver data as a **\_\_\_**of bytes and allows the receiving process to obtain data as a ****\_**** of bytes.
+TCP allows the sending process to deliver data as a **\_\_\_**of bytes and allows the receiving process to obtain data as a \***\*\_\*\*** of bytes.
 a.
 stream; stream
 b.
@@ -2387,7 +2387,7 @@ MIX CHOICES:
 Yes
 
 QN=26 (8887)
-In Congestion avoidance of TCP congestion control, if timeout occurs while the current congestion window size is 16, the congestion window will******\_\_\_******
+In Congestion avoidance of TCP congestion control, if timeout occurs while the current congestion window size is 16, the congestion window will**\*\***\_\_\_**\*\***
 a.
 Reduce to 1
 b.
@@ -2865,7 +2865,7 @@ MIX CHOICES:
 Yes
 
 QN=21 (8848)
-The connection establishment procedure in TCP is susceptible (d? b? t?n công) to a serious security problem called the ****\_**** attack.
+The connection establishment procedure in TCP is susceptible (d? b? t?n công) to a serious security problem called the \***\*\_\*\*** attack.
 a.
 SYN flooding
 b.
@@ -2884,7 +2884,7 @@ MIX CHOICES:
 Yes
 
 QN=22 (8853)
-The job of delivering the data in a transport-layer segment to the correct socket is called****\_****.
+The job of delivering the data in a transport-layer segment to the correct socket is called\***\*\_\*\***.
 a.
 De-multiplexing
 b.
@@ -2941,7 +2941,7 @@ MIX CHOICES:
 Yes
 
 QN=25 (8877)
-TCP connection provides ****\_\_\_****.
+TCP connection provides \***\*\_\_\_\*\***.
 a.
 Full-duplex service
 b.
@@ -2998,7 +2998,7 @@ MIX CHOICES:
 Yes
 
 QN=28 (8910)
-If the segment has sequence number of 128 and length of 8 bytes, the receiving computer will send ACK with value of ****\_****
+If the segment has sequence number of 128 and length of 8 bytes, the receiving computer will send ACK with value of \***\*\_\*\***
 a.
 136
 b.
@@ -3646,7 +3646,7 @@ MIX CHOICES:
 Yes
 
 QN=3 (8657)
-Today's Internet is a ******\_\_\_******network.
+Today's Internet is a **\*\***\_\_\_**\*\***network.
 a.
 packet-switched
 b.
@@ -3952,7 +3952,7 @@ MIX CHOICES:
 Yes
 
 QN=21 (8844)
-The combination of an IP address and a port number is called a ****\_****.
+The combination of an IP address and a port number is called a \***\*\_\*\***.
 a.
 socket
 b.
@@ -4088,7 +4088,7 @@ MIX CHOICES:
 Yes
 
 QN=28 (8911)
-If the segment has sequence number of 118 and length of 8 bytes, the receiving computer will send ACK with value of ****\_****
+If the segment has sequence number of 118 and length of 8 bytes, the receiving computer will send ACK with value of \***\*\_\*\***
 a.
 126
 b.
@@ -4544,7 +4544,7 @@ MIX CHOICES:
 Yes
 
 QN=52 (8737)
-The telephone networks are examples of ****\_\_****.
+The telephone networks are examples of \***\*\_\_\*\***.
 a.
 Circuit-switched networks
 b.
@@ -4718,7 +4718,7 @@ Yes
 
 MULTIPLE CHOICES QUESTIONS:
 QN=1 (8950)
-In classless addressing, ****\_\_**** is assigned to an organization (t? ch?c).
+In classless addressing, \***\*\_\_\*\*** is assigned to an organization (t? ch?c).
 a.
 a variable-length block
 b.
@@ -4775,7 +4775,7 @@ MIX CHOICES:
 Yes
 
 QN=4 (8977)
-IP is ****\_**** datagram protocol.
+IP is \***\*\_\*\*** datagram protocol.
 a.
 An unreliable(không ?áng tin c?y) and connectionless (không k?t n?i)
 b.
@@ -5098,7 +5098,7 @@ MIX CHOICES:
 Yes
 
 QN=21 (8727)
-There are two categories of****\_\_****: Guided medium and unguided medium
+There are two categories of\***\*\_\_\*\***: Guided medium and unguided medium
 a.
 physical transmission medium
 b.
