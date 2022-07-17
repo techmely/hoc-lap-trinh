@@ -437,3 +437,149 @@ int main() {
 }
 
 ```
+
+## Example 5
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+int sochan_max(int a[], int n)
+{
+    int max;
+    int i = 0;
+    while (a[i] % 2 != 0)
+        i++;
+    max = a[i];
+    for (int j = i + 1; j < n; j++)
+        if (a[j] % 2 == 0)
+            if (max < a[j])
+                max = a[j];
+    return max;
+}
+
+int main()
+{
+     system("cls");
+    // INPUT - @STUDENT:ADD YOUR CODE FOR INPUT HERE:
+    int arr[5];
+    for (int i = 0; i < 5; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    // Fixed Do not edit anything here.
+    printf("\nOUTPUT:\n");
+    //@STUDENT: WRITE YOUR OUTPUT HERE:
+    printf("%d", sochan_max(arr, 5));
+
+
+
+  //--FIXED PART - DO NOT EDIT ANY THINGS HERE
+  printf("\n");
+  system("pause");
+  return (0);
+}
+
+```
+
+## Example 6
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+ 
+ 
+int main()
+{
+    // system("cls");
+    // INPUT - @STUDENT:ADD YOUR CODE FOR INPUT HERE:
+    int arr[5];
+    int i, j;
+    for (i = 0; i < 5; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+ 
+    // Fixed Do not edit anything here.
+    printf("OUTPUT:\n");
+    //@STUDENT: WRITE YOUR OUTPUT HERE:
+    for (i = 0; i < 5; i++)
+    {
+        for (j = 4; j > i; j--)
+        {
+            if (arr[j] < arr[j - 1])
+            {
+                int tmp = arr[j];
+                arr[j] = arr[j - 1];
+                arr[j - 1] = tmp;
+            }
+        }
+    }
+ 
+    for (i = 0; i < 5; i++)
+    {
+        if (arr[i] % 2 == 0)
+        {
+            printf("%d\n", arr[i]);
+        }
+    }
+}
+
+```
+
+## Example 7
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+int main()
+{
+    system("cls");
+    // INPUT - @STUDENT:ADD YOUR CODE FOR INPUT HERE:
+    int n, arr[10], i, check = 0, j, k;
+    scanf("%d", &n);
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+ 
+    for (i = 0; i < n - 1; i++)
+    {
+        for (j = i + 1; j < n; j++)
+        {
+            if (arr[i] == arr[j] && arr[i] % 2 != 0)
+            {
+                for (k = j; k < n; k++)
+                {
+                    arr[k] = arr[k + 1];
+                }
+ 
+                n--;
+                j--;
+            }
+        }
+    }
+    // Fixed Do not edit anything here.
+    printf("OUTPUT:\n");
+    //@STUDENT: WRITE YOUR OUTPUT HERE:
+    for (i = 0; i < n; i++)
+    {
+        if (check == 0)
+            check = 1;
+        else
+            printf("\n");
+        printf("%d", arr[i]);
+    }
+    //--FIXED PART - DO NOT EDIT ANY THINGS HERE
+    printf("\n");
+    system("pause");
+    return (0);
+}
+
+```
