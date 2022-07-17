@@ -390,8 +390,9 @@ CHOICES:
 Yes
 
 QN=13 11.
+
+```java
 public class Bootchy {
-(1515) 12.
 int bootch;
 
 String snootch;
@@ -416,7 +417,6 @@ Bootchy b = new Bootchy();
 System.out.print(b.snootch +“ “ + b.bootch);
 }
 }
-
 ```
 
 What is the result? (Choose one.)
