@@ -811,6 +811,8 @@ int main()
 
 ## Example 20
 
+<img width="128" alt="Screen Shot 2022-07-17 at 10 50 59" src="https://user-images.githubusercontent.com/29374426/179383124-93eacd81-b028-4b21-ab8f-537a84fe5fbd.png">
+
 ```c
 #include <stdio.h>
 int main()
@@ -834,6 +836,8 @@ int main()
 ```
 
 ## Example 21
+
+<img width="203" alt="Screen Shot 2022-07-17 at 10 50 39" src="https://user-images.githubusercontent.com/29374426/179383109-6e2bc6e9-bc32-493f-8d3a-d47523e40f6e.png">
 
 ```c
 #include <stdio.h>
