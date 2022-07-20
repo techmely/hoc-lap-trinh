@@ -1,0 +1,5 @@
+Scholar list
+Name		term	grade	
+Tuan    	1   	8.0      	   	   
+Son    	 	1    	7.0      
+Dat   	 	1      	5.0     		
