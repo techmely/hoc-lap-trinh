@@ -1,0 +1,10 @@
+Lecturers wage for grading assignments
+Name	Subject	NumOfPaper	Price		
+Tuan	Python	160		15000	
+Tuan	Java	80		15000	
+Lan	PHP	40		12000		
+Lan	Java	40		12000		
+Hue	C#	35		20000	
+Hue	PHP	52		20000	
+Anh	DB	70		15000	
+Anh	Python	30		15000	
