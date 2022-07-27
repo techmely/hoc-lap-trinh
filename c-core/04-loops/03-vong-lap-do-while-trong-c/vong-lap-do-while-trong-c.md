@@ -10,7 +10,7 @@ category:
   name: "C"
   slug: "c-core"
 image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
-position: 2
+position: 3
 ---
 
 Vòng lặp **`do-while`** cũng gần giống như vòng lặp **`while`** nhưng sự khác biệt chính giữa vòng lặp **`do-while`** và vòng lặp **`while`** là trong vòng lặp **`do-while`**, điều kiện được kiểm tra ở cuối thân vòng lặp. Khối câu lệnh bên trong vòng lặp sẽ được thực hiện 1 hoặc nhiều lần cho đến khi kiểm tra điều kiện trả về bằng false thì sẽ kết thúc vòng lặp.

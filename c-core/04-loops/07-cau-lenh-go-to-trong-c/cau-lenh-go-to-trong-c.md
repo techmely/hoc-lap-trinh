@@ -1,0 +1,156 @@
+---
+title: "Câu lệnh go to trong C"
+description: "Câu lệnh go to trong C"
+keywords:
+  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
+chapter:
+  name: "Vòng lặp"
+  slug: "chuong-04-loops"
+category:
+  name: "C"
+  slug: "c-core"
+image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
+position: 7
+---
+
+Câu lệnh **`goto`** là một câu lệnh nhảy đôi khi cũng được gọi là câu lệnh nhảy vô điều kiện. Câu lệnh **`goto`** có thể được sử dụng để nhảy từ bất cứ đâu đến bất cứ đâu trong một hàm.
+
+## The syntax of the goto statement
+
+```c
+Syntax1       |    Syntax2
+------------------------------
+goto label;   |    label:
+.             |    .
+.             |    .
+.             |    .
+label:        |    goto label;
+```
+
+Các `label` là một định danh (tuỳ bạn đặt tên như tên biến). Khi gặp câu lệnh **`goto`**, chương trình sẽ nhảy tới `label` và bắt đầu thực thi mã.
+
+## Examples
+
+### Syntax 1
+
+Ví dụ 1:
+
+> Kiểm tra một số là số chẵn hay số lẻ.
+
+```c
+#include <stdio.h>
+
+int main() {
+
+    int n;
+
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    if (n % 2 == 0) {
+        // jump to even
+        goto even;
+    } else {
+        // jump to odd
+        goto odd;
+    }
+
+    even:
+        printf("%d is even.", n);
+        // return if even
+        return 0;
+    odd:
+        printf("%d is odd.", n);
+}
+```
+
+Kết quả chương trình:
+
+```c
+Enter n: 44
+44 is even.
+```
+
+Ví dụ 2:
+
+> Chương trình tính tổng và trung bình của các số dương. Nếu người dùng nhập số âm, tổng và trung bình được hiển thị.
+
+```c
+#include <stdio.h>
+
+int main() {
+
+    int maxInput = 5, i;
+    double number, average, sum = 0;
+
+    for (i = 1; i <= maxInput; i++) {
+        printf("Enter a number: ", i);
+        scanf("%lf",&number);
+
+        if(number < 0) {
+            goto jump;
+        }
+        sum += number;
+    }
+
+    jump:
+    average = sum/(i-1);
+    printf("\nSum = %.2f\n", sum);
+    printf("Average = %.2f", average);
+}
+```
+
+Kết quả chương trình:
+
+```c
+Enter a number: 4
+Enter a number: 6
+Enter a number: 6
+Enter a number: -1
+
+Sum = 16.00
+Average = 5.33
+```
+
+### Syntax 2
+
+Ví dụ:
+
+> In ra các số từ `1` đến `10`.
+
+```c
+#include <stdio.h>
+
+int main() {
+
+    int n = 1;
+
+    label:
+        printf("%d\n", n);
+        n++;
+        if (n <= 10) {
+            goto label;
+        }
+}
+```
+
+Kết quả chương trình:
+
+```c
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+```
+
+## Disadvantages of using goto statement
+
+- Việc sử dụng câu lệnh **`goto`** rất không được khuyến khích vì nó làm cho logic chương trình rất phức tạp.
+- Việc sử dụng **`goto`** làm cho nhiệm vụ phân tích và xác minh tính đúng đắn của các chương trình (đặc biệt là các chương trình liên quan đến các vòng lặp) rất khó khăn.
+- Tránh sử dụng **`goto`** - có thể thay thế đơn giản bằng cách sử dụng các câu lệnh **`break`** và **`continue`**.
