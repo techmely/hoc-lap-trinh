@@ -21,7 +21,7 @@ Trong bài này chúng ta sẽ tìm hiểu về cách làm việc với mảng:
 - Thay đổi giá trị phần tử của mảng
 - Nhập xuất phần tử mảng
 
-## Declare an array
+## Khai  mảng trong C
 
 #### Syntax:
 
@@ -39,7 +39,7 @@ Tại đây, chúng ta đã khai báo một mảng `number` thuộc loại `int`
 
 Điều quan trọng cần lưu ý là không thể thay đổi kích thước và kiểu của một mảng sau khi nó được khai báo.
 
-## Access Array Elements
+## Truy cập vào các phần tử của mảng trong C
 
 Chúng ta có thể truy cập các phần tử của một mảng theo các chỉ số.
 
@@ -50,7 +50,7 @@ Giả sử chúng ta đã khai báo một mảng `number` như trên. Phần t�
 - Mảng có 0 là chỉ mục đầu tiên, không phải 1. Trong ví dụ này, `number[0]` là phần tử đầu tiên.
 - Nếu kích thước của một mảng là `n`, thì để truy cập phần tử cuối cùng, `n-1` chỉ mục được sử dụng. Trong ví dụ này, `number[4]` là phần tử cuối cùng
 
-## Initialize An Array
+## Khởi tạo một mảng trong 
 
 ### Chúng ta có thể khởi tạo mảng trong quá trình khai báo.
 
@@ -75,7 +75,7 @@ Lúc này ta có các giá trị được lưu vào các biến
 | `number[3]` | `31` |
 | `number[4]` | `56` |
 
-## Change Value of Array elements
+## Thay đổi giá trị của mảng trong C
 
 ```c
 int number[5] = {10, 15, 13, 31, 56};
@@ -87,7 +87,7 @@ mark[0] = -10;
 mark[3] = 6;
 ```
 
-## Input and Output Array Elements
+## Nhập và xuất các phần tử trong mảng
 
 Để nhập giá trị cho các phần tử trong mảng chúng ta sử dụng vòng lặp `for` để duyệt mảng và gán giá trị lần lượt cho các phần tử hoặc chỉ định ra phần tử nhập giá trị trực tiếp `scanf("%d", &number[2]);`
 
