@@ -73,9 +73,7 @@ hoặc chúng ta có thể vừa khai báo vừa gán luôn giá trị cho biế
 
 `kiểu dữ liệu` `tên biến` = `giá trị;`
 
-<p align="center">
-  <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/declare-and-initialize-variables.jpg">
-</p>
+![Khai báo và khởi tạo biến trong C](https://user-images.githubusercontent.com/29374426/183091478-ad3c5920-88e9-4255-bd62-8aa667ead43a.png)
 
 ### Số nguyên
 
