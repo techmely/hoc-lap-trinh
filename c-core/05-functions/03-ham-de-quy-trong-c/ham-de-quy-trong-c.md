@@ -15,11 +15,11 @@ position: 3
 
 Trong bài viết này, chúng ta sẽ tìm hiểu và học cách viết các hàm đệ quy trong lập trình C.
 
-## What is recursion?
+## Hàm đệ quy là gì
 
 Một hàm gọi lại chính nó bên trong body code được gọi là hàm đệ quy. Và kỹ thuật này được gọi là đệ quy.
 
-### Syntax
+### Cấu trúc của hàm đệ quy
 
 ```c
 void recurse() {
@@ -35,7 +35,7 @@ int main() {
 }
 ```
 
-## How recursion works?
+## Cách hàm đệ quy hoạt động
 
 Vì đệ quy là một hàm gọi lại chính nó nên có thể xem như là lặp đi lặp lại, vì vậy để ngăn đệ quy chạy vô hạn, cần có điều kiện để kết thúc nó. Thông thường chúng ta sẽ sử dụng `if-else` để làm việc đó.
 
@@ -45,7 +45,7 @@ Ví dụ:
 
 Đối với bài toán này chúng ta có 3 cách giải như sau:
 
-### Solution 1
+### Giải pháp 1
 
 Sử dụng công thức toán học.
 
@@ -65,7 +65,7 @@ int main() {
 }
 ```
 
-### Solution 2
+### Giải  2
 
 Sử dụng vòng lặp `for`.
 
@@ -109,7 +109,7 @@ int main() {
 }
 ```
 
-### Solution 3
+### Giải pháp 3
 
 Sử dụng hàm đệ quy.
 
@@ -145,7 +145,7 @@ int sum(int n) {
 - Giả sử, giá trị của `n` truyền vào trong `sum()` là `3`. Trong lần gọi hàm tiếp theo, bạn có thể thấy chúng ta sẽ truyền giá trị `n-1` vào hàm `sum()` → `2` được truyền vào hàm `sum()`. Quá trình này tiếp tục cho đến khi `n = 0` thì kết thúc (kiểm tra trong `if`).
 - Khi `n = 0`, `if` trả về `false` và phần `else` được thực thi trả về tổng số nguyên cuối cùng cho hàm `main()`.
 
-## Advantages and Disadvantages of Recursion
+## Ưu và nhược điểm của hàm đệ quy
 
 - Đệ quy làm cho chương trình trông gọn gàng hơn. Tuy nhiên, một chương trình quan trọng hiệu suất hơn, thay vì sử dụng đệ quy hãy sử dụng các vòng lặp vì đệ quy thường chạy chậm hơn nhiều.
 - Nhưng đệ quy lại là một khái niệm quan trọng cần biết. Vì nó thường được sử dụng trong cấu trúc dữ liệu và thuật toán.
