@@ -22,7 +22,7 @@ Chuyển đổi một kiểu dữ liệu này thành một kiểu dữ liệu kh
 - Ép kiểu ngầm định (Implicit Type Conversion)
 - Ép kiểu tường minh (Explicit Type Conversion)
 
-## Implicit Type Conversion
+## Ép kiểu ngầm định trong C
 
 Chuyển đổi ngầm định là việc chuyển đổi được thực hiện tự động bởi trình biên dịch và chúng ta không cần làm gì - lập trình viên không cần can thiệp trực tiếp vào quá trình chuyển đổi.
 
@@ -142,7 +142,7 @@ Chữ `f` cuối cùng để phân biệt đây là giá trị thập phân củ
 
 > Chuyển đổi giá trị **từ một kiểu sang một kiểu dữ liệu tương tự nhỏ hơn**, hoặc **giữa các kiểu dữ liệu khác nhau** thường **không an toàn**, nó có thể dẫn đến **mất mát dữ liệu** sau khi chuyển đổi.
 
-## Explicit Type Conversion
+## Ép kiểu tường minh trong C
 
 Ép kiểu tường minh là việc chuyển đổi được thực hiện một cách rõ ràng bởi yêu cầu của người lập trình bằng cách sử dụng toán tử ép kiểu (**casting operator**) để thực hiện việc chuyển đổi.
 
