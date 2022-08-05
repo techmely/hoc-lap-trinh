@@ -15,9 +15,9 @@ position: 4
 
 Vòng lặp lồng nhau có nghĩa là một câu lệnh vòng lặp nằm bên trong một câu lệnh vòng lặp khác.
 
-## Syntax for Nested loop
+## Cấu trúc vòng lặp lồng nhau
 
-### Nested `for` loop
+### Cấu trúc lặp for lồng nhau nhau trong C
 
 ```c
 for (initialization; condition; increment) {
@@ -31,7 +31,7 @@ for (initialization; condition; increment) {
 }
 ```
 
-### Nested `while` loop
+### Cấu trúc lặp while lồng nhau nhau trong C
 
 ```c
 while (condition) {
@@ -45,7 +45,7 @@ while (condition) {
 }
 ```
 
-### Nested `do-while` loop
+### Cấu trúc do-while lồng nhau trong C
 
 ```c
 do {
