@@ -178,9 +178,7 @@ Kết quả nhận được:
 
 Lúc này tổng chiều dài hiển thì cho mỗi số là `8` ký tự (đã tính cả dấu `.` và `2` số sau dấu `.`). Xem hình minh hoạ để hiểu rõ hơn:
 
-<p align="center">
-  <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/format-display.jpg">
-</p>
+![Output trong C](https://user-images.githubusercontent.com/29374426/183091622-ad3ac602-1978-4b6b-9d8f-0f89dfd7b639.png)
 
 Đối với các kiểu dữ liệu khác, bạn cũng sẽ làm tương tự như ví dụ trên.
 
