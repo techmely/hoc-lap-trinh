@@ -160,8 +160,6 @@ int main() {
 }
 ```
 
-Nếu bạn không nhớ `sum += i;` là gì? Bạn có thể xem lại bài viết về toán tử Assignment Operators [tại đây](https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/2.%20Basic%20Concepts/5.%20Operators.md).
-
 Kết quả:
 
 ```c
