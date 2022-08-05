@@ -20,7 +20,7 @@ Có hai loại hàm trong lập trình C là:
 
 Trong bài viết này, chúng ta sẽ cùng đi tìm hiểu chi tiết về 2 loại hàm này.
 
-## Standard library functions
+## Các hàm trong thư viện tiêu 
 
 - Standard library functions (Hàm thư viện chuẩn) là những hàm có sẵn trong lập trình C.
 - Các hàm với tên và chức năng riêng biệt đã được định nghĩa trong các thư viện tiêu chuẩn.
@@ -80,7 +80,7 @@ Absolute value = 7
 
 > Chúng ta có thể xem lại một số thư viện thường dùng khác [tại đây](https://github.com/AnestAcademy/Course-C-Fundamentals/blob/master/1.%20Introduction/3.%20C%20Standard%20Library%20Functions.md).
 
-## User-defined functions
+## Định nghĩa hàm trong C
 
 - Ngoài việc sử dụng các hàm viết sẵn được định nghĩa trong các thư viện của chương trình C
   chúng ta cũng có thể tạo các hàm theo mục đích hoặc yêu cầu của bài toán.
