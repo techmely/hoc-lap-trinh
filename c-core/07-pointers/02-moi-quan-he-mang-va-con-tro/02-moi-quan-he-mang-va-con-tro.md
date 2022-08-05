@@ -15,7 +15,7 @@ position: 2
 
 Trong bài học này, chúng ta sẽ tìm hiểu về mối quan hệ giữa mảng và con trỏ trong lập trình C. Ta cũng sẽ học cách truy cập các phần tử mảng bằng cách sử dụng con trỏ.
 
-## Relationship Between Arrays and Pointers
+## Mối quan hệ giữa mảng và con 
 
 Mảng là một khối dữ liệu tuần tự, khi chúng ta in ra địa chỉ các phần tử của mảng như chương trình sau:
 
