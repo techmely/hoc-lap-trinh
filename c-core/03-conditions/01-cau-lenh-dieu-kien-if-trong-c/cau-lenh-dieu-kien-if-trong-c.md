@@ -21,7 +21,7 @@ Mệnh đề `if-else` trong C được sử dụng để kiểm tra một **bi�
 
 Trước khi tìm hiểu luôn về `if-else` thì chúng ta cần tìm hiểu và ghi nhớ một số toán tử tiếp theo vì những toán tử này được dùng rất nhiều trong **condition** ở mệnh đề `if`.
 
-_Bạn có thể xem lại bài viết về toán tử [tại đây](https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/2.%20Basic%20Concepts/5.%20Operators.md)._
+_Bạn có thể xem lại bài viết về toán tử [tại đây](http://localhost:7985/bai-viet/c/cac-loai-toan-tu-trong-c)._
 
 ## Toán tử quan hệ trong C
 

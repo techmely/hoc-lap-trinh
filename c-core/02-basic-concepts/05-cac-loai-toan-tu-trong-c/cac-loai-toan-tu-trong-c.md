@@ -4,7 +4,7 @@ description: "Các loại toán tử trong C"
 keywords:
   ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
-  name: "Giới thiệu"
+  name: "Nhập môn C"
   slug: "chuong-02-basic-concepts"
 category:
   name: "C"
@@ -177,7 +177,7 @@ result = 2.000000
 
 **VÌ SAO LẠI NHƯ VẬY?**
 
-Các bạn hãy chuyển sang đọc tiếp riêng một bài viết về vấn đề này tại đây [Type Conversion](https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/2.%20Basic%20Concepts/6.%20Type%20Conversion.md).
+Các bạn hãy chuyển sang đọc tiếp riêng một bài viết về vấn đề này tại đây Type Conversion
 
 ## Tăng giá trị và giảm giá trị trong 
 

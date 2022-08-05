@@ -4,7 +4,7 @@ description: "Output trong C"
 keywords:
   ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
-  name: "Giới thiệu"
+  name: "Nhập môn C"
   slug: "chuong-02-basic-concepts"
 category:
   name: "C"
@@ -40,7 +40,7 @@ Kết quả:
 I am student.
 ```
 
-Nếu bạn cần phải sử dụng các ký tự không thể gõ hoặc có ý nghĩa đặc biệt - hãy xem lại bài viết này [Escape Sequences](https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/1.%20Introduction/4.%20Keywords%20&%20Escape%20Sequences.md).
+Nếu bạn cần phải sử dụng các ký tự không thể gõ hoặc có ý nghĩa đặc biệt Escape Sequences
 
 ## Hiển thị giá trị biến trong output
 
