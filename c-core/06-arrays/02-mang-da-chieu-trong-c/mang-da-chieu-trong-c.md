@@ -15,7 +15,7 @@ position: 2
 
 Trong bài học này, chúng ta sẽ học cách làm việc với mảng đa chiều
 
-## Declare a multidimensional arrays
+## Mảng đa chiều trong C
 
 Trong lập trình C, chúng ta có thể tạo một mảng mảng. Mảng này được gọi là mảng nhiều chiều.
 
@@ -43,7 +43,7 @@ int num[4][2][3]
 
 Và mảng `num` này có thể chứa `4` _ `2` _ `3` = `24` phần tử
 
-## Initializing a multidimensional array
+## Khởi tạo một mảng đa chiều trong C
 
 chúng ta có thể khởi tạo mảng đa chiều bằng một trong các cách sau
 
@@ -64,7 +64,7 @@ int num[2][3][4] = {
 };
 ```
 
-## Input and Output Array Elements
+## Nhập và xuất phần tử trong mảng
 
 để nhập vào, lưu trữ và hiển thị giá trị các phần tử của mảng hai chiều chúng ta sẽ sử dụng **`nested loop`**
 
