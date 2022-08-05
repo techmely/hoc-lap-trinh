@@ -53,9 +53,7 @@ switch (expression) {
 
 Dưới đây là sơ đồ khối mô tả hoạt động của lệnh `switch-case`
 
-<p align="center">
-  <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/switch-case-in-c.jpg">
-</p>
+![Switch case trong C](https://user-images.githubusercontent.com/29374426/183097818-22fed6e4-c35a-465e-9810-227b9aa33dfc.png)
 
 Ví dụ minh họa:
 
