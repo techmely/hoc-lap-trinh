@@ -15,7 +15,7 @@ position: 2
 
 Trong bài học này, ta sẽ học cách thao tác với các chuỗi trong C bằng cách sử dụng các hàm thư viện như `gets()`, `puts()`, `strlen()` v.v. Ta cũng sẽ học cách lấy chuỗi từ người dùng và thực hiện các thao tác trên chuỗi.
 
-## Using Library Functions
+## Các hàm tương tác với chuỗi trong C
 
 Chúng ta cần phải thường xuyên thao tác các chuỗi tùy theo nhu cầu của đề bài. Hầu hết, việc ta thao tác chuỗi có thể được thực hiện thủ công nhưng điều này làm cho việc lập trình trở nên phức tạp.
 
