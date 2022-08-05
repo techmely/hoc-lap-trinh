@@ -46,11 +46,10 @@ while (i < 10) {
 - Quá trình diễn ra cho đến khi biểu thức kiểm tra được đánh giá là **`false`**.
 - Nếu biểu thức kiểm tra là **`false`**, vòng lặp chấm dứt (kết thúc).
 
-## Luồng hoạt độngc ủa vòng lặp white
+## Luồng hoạt động của vòng lặp white
 
-<p align="center">
-  <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-while-loop.jpg">
-</p>
+![Luồng hoạt động của vòng lặp white](https://user-images.githubusercontent.com/29374426/183098269-e3c60457-2a26-4c53-a745-c0520308384f.png)
+
 
 ## Ví dụ vòng lặp white trong c
 
