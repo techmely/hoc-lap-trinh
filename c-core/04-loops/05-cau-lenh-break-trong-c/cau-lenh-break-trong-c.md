@@ -17,7 +17,7 @@ Câu lệnh **`break`** trong C là một câu lệnh điều khiển vòng lặ
 
 Về cơ bản các câu lệnh **`break`** thường được sử dụng trong các tình huống khi chúng ta không chắc chắn về số lần lặp thực tế cho vòng lặp hoặc chúng ta muốn chấm dứt vòng lặp dựa trên một số điều kiện.
 
-## The syntax of the `break` statement
+## Cú pháp câu lệnh break trong C
 
 ```c
 break;
@@ -25,33 +25,33 @@ break;
 
 Câu lệnh **`break`** thường được sử dụng với câu lệnh **`if-else`** bên trong vòng lặp.
 
-## How `break` statement works?
+## Cách câu lệnh break hoạt động trong C
 
-### for loop
+### Vòng lặp for trong C
 
 <p align="center">
   <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-break-statement-works-1.jpg">
 </p>
 
-### do-while loop
+### Vòng lặp do-while trong C
 
 <p align="center">
   <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-break-statement-works-2.jpg">
 </p>
 
-### while loop
+### Vòng lặp while trong C
 
 <p align="center">
   <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-break-statement-works-3.jpg">
 </p>
 
-## break statement flowchart
+## Luồng hoạt động câu lệnh break trong C
 
 <p align="center">
   <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-break-statement-flowchart.jpg">
 </p>
 
-## Example
+## Ví dụ về câu lệnh break trong C
 
 Chúng ta sẽ cùng xem qua cách sử dụng lệnh **`break`** với ba loại vòng lặp:
 
@@ -61,7 +61,7 @@ Chúng ta sẽ cùng xem qua cách sử dụng lệnh **`break`** với ba loạ
 
 Bây giờ chúng ta sẽ đi xem xét chi tiết các ví dụ cho từng loại trong ba loại vòng lặp trên.
 
-### Simple loops
+### Một cấu trúc lặp đơn giản
 
 Ví dụ:
 
@@ -104,7 +104,7 @@ sum = 17.00
 
 Chương trình này tính tổng của tối đa 10 số. Nhưng vì sao mới nhập 3 số dương và 1 số âm nó đã dừng lại và tính tổng? Đó là bởi vì nếu người dùng nhập số âm, câu lệnh **`break`** được thực thi. Điều này sẽ kết thúc vòng lặp **`for`**, tổng được tính và hiển thị.
 
-### Nested loops
+### Sử dụng break trong trường hợp vòng lặp lồng nhau
 
 Chúng ta cũng có thể sử dụng lệnh **`break`** trong khi làm việc với các vòng lặp lồng nhau. Nếu câu lệnh **`break`** được sử dụng trong vòng lặp nào, nó sẽ chỉ chấm dứt vòng lặp đó.
 
@@ -166,7 +166,7 @@ Kết quả chương trình:
 
 Bạn có thể thấy vòng **`for i`** vẫn chạy 3 lần, **`break`** chỉ kết thúc vòng **`for j`**, nơi nó được viết mã khi thoã màn câu lệnh **`if-else`**.
 
-### Infinite loops
+### Sử dụng câu lệnh break cho vòng lặp vô tận
 
 Hãy xem xét vòng lặp vô hạn dưới đây:
 
