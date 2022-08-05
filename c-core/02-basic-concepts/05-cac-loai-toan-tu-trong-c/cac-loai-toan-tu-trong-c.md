@@ -15,7 +15,7 @@ position: 5
 
 Trong bài này chúng ta sẽ cùng nhau tìm hiểu về những loại toán tử trong lập trình C.
 
-## Arithmetic Operators
+## Toán tử số học trong C
 
 Đầu tiên chúng ta sẽ cùng nhau thực hiện những phép tính toán toán học cơ bản trong lập trình C.
 
@@ -179,7 +179,7 @@ result = 2.000000
 
 Các bạn hãy chuyển sang đọc tiếp riêng một bài viết về vấn đề này tại đây [Type Conversion](https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/2.%20Basic%20Concepts/6.%20Type%20Conversion.md).
 
-## Increment and Decrement Operators
+## Tăng giá trị và giảm giá trị trong 
 
 ### Incrementing (Phương pháp tăng giá trị)
 
@@ -239,7 +239,7 @@ int main() {
 }
 ```
 
-### Type of Increment and Decrement Operators
+### Kiểu tăng và giảm giá trị trong C
 
 Toán tử **Increment** và **Decrement** được chia làm 2 loại tuỳ vào vị trí của dấu `++` hoặc `--` đứng trước hay sau một biến:
 
