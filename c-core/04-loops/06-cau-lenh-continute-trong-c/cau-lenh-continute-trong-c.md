@@ -29,27 +29,22 @@ Câu lệnh **`continue`** thường được sử dụng với câu lệnh **`i
 
 ### Continue trong vòng lặp for
 
-<p align="center">
-  <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-continue-statement-works-1.jpg">
-</p>
+![Continue trong vòng lặp for](https://user-images.githubusercontent.com/29374426/183126659-14f696b2-2349-4012-8dd7-4eb5b82c8170.png)
+
 
 ### Continue trong vòng lặp do-while
 
-<p align="center">
-  <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-continue-statement-works-2.jpg">
-</p>
+![Continue trong vòng lặp do-while](https://user-images.githubusercontent.com/29374426/183126863-bdade997-9ea3-4069-9bd3-e8cd26546505.png)
+
 
 ### Continue trong vòng lặp while
 
-<p align="center">
-  <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-continue-statement-works-3.jpg">
-</p>
+![Continue trong vòng lặp while](https://user-images.githubusercontent.com/29374426/183126835-f795ef01-55f1-4bfa-89a7-843669a1e1e3.png)
+
 
 ## Sơ đồ hoạt động câu lệnh continue trong C
 
-<p align="center">
-  <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-continue-statement-flowchart.jpg">
-</p>
+![Sơ đồ hoạt động câu lệnh continue trong C](https://user-images.githubusercontent.com/29374426/183126760-6d1fb767-07c2-4d54-9773-2725d2a99d6c.png)
 
 ## Ví 
 
