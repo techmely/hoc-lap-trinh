@@ -29,27 +29,19 @@ Câu lệnh **`break`** thường được sử dụng với câu lệnh **`if-e
 
 ### Vòng lặp for trong C
 
-<p align="center">
-  <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-break-statement-works-1.jpg">
-</p>
+![Vòng lặp for trong C](https://user-images.githubusercontent.com/29374426/183126406-356d321f-8277-4bd3-96ec-82572122c4d4.png)
 
 ### Vòng lặp do-while trong C
 
-<p align="center">
-  <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-break-statement-works-2.jpg">
-</p>
+![Vòng lặp do-while trong C](https://user-images.githubusercontent.com/29374426/183126464-1d56b1ef-14a3-41fe-be18-6078ea8fb5d2.png)
 
 ### Vòng lặp while trong C
 
-<p align="center">
-  <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-break-statement-works-3.jpg">
-</p>
+![Vòng lặp while trong C](https://user-images.githubusercontent.com/29374426/183126520-36c66aa6-52ad-4a55-b29c-0964137fb2be.png)
 
 ## Luồng hoạt động câu lệnh break trong C
 
-<p align="center">
-  <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-break-statement-flowchart.jpg">
-</p>
+![Luồng hoạt động câu lệnh break trong C](https://user-images.githubusercontent.com/29374426/183126557-c6fd7a77-01c5-4846-8ff6-a8b891d24dc2.png)
 
 ## Ví dụ về câu lệnh break trong C
 
