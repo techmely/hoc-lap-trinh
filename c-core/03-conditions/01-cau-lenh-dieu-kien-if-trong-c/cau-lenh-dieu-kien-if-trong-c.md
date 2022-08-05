@@ -23,7 +23,7 @@ Trước khi tìm hiểu luôn về `if-else` thì chúng ta cần tìm hiểu v
 
 _Bạn có thể xem lại bài viết về toán tử [tại đây](https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/2.%20Basic%20Concepts/5.%20Operators.md)._
 
-## Relational Operators
+## Toán tử quan hệ trong C
 
 Một toán tử quan hệ kiểm tra mối quan hệ giữa hai toán hạng. Nếu quan hệ là `true`, nó trả về `1`; nếu quan hệ là `false`, nó trả về giá trị `0`.
 
@@ -38,7 +38,7 @@ Vì vậy, hãy nhớ trong lập trình C - **giá trị `1` đại diện cho 
 |   >=    | Lớn hơn hoặc bằng | a >= b               | `false` |
 |   <=    | Nhỏ hơn hoặc bằng | a <= b               | `true`  |
 
-## Logical Operators
+## Toán tử logic trong C
 
 Một biểu thức chứa toán tử logic trả về `0` hoặc `1` tùy thuộc vào kết quả biểu thức đúng hay sai.
 
@@ -48,7 +48,7 @@ Một biểu thức chứa toán tử logic trả về `0` hoặc `1` tùy thu�
 | &#124; &#124; | Toán tử OR - `true` nếu một toán hạng là `true`         | (a == 3 &#124; &#124; b < 5) | `true`  |
 |       !       | Toán tử NOT - `true` nếu toán hạng bằng `false`         | !(a == 3)                    | `false` |
 
-## if-else statement
+## Câu lệnh if-else
 
 ### if statement
 
