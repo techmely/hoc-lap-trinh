@@ -13,7 +13,7 @@ image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982
 position: 4
 ---
 
-## Keywords trong C
+## Từ khoá (keyword) trong C
 
 Ngôn ngữ C có một số từ khoá đặc biệt được tạo ra với mục đích nhất định. Trong quá trình học các bạn sẽ gặp các từ khoá này thường xuyên.
 
