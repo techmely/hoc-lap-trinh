@@ -17,7 +17,7 @@ position: 6
 
 Khi câu lệnh **`continue`** được thực thi trong vòng lặp, mã bên trong vòng lặp sau câu lệnh **`continue`** sẽ bị bỏ qua và lần lặp tiếp theo của vòng lặp sẽ bắt đầu.
 
-## The syntax of the continue statement
+## Cú pháp câu lệnh continue trong C
 
 ```c
 continue;
@@ -25,33 +25,33 @@ continue;
 
 Câu lệnh **`continue`** thường được sử dụng với câu lệnh **`if-else`** bên trong vòng lặp.
 
-## How continue statement works?
+## Cách hoạt động của câu lệnh continue hoạt động trong C
 
-### for loop
+### Continue trong vòng lặp for
 
 <p align="center">
   <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-continue-statement-works-1.jpg">
 </p>
 
-### do-while loop
+### Continue trong vòng lặp do-while
 
 <p align="center">
   <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-continue-statement-works-2.jpg">
 </p>
 
-### while loop
+### Continue trong vòng lặp while
 
 <p align="center">
   <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-continue-statement-works-3.jpg">
 </p>
 
-## continue statement flowchart
+## Sơ đồ hoạt động câu lệnh continue trong C
 
 <p align="center">
   <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-continue-statement-flowchart.jpg">
 </p>
 
-## Example
+## Ví 
 
 Ví dụ 1:
 
