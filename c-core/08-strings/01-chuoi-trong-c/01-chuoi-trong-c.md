@@ -22,7 +22,7 @@ Trong bài học này, chúng ta sẽ tìm hiểu về chuỗi trong lập trìn
 - Truyền chuỗi vào mảng
 - Chuỗi và con trỏ
 
-## What is String?
+## Chuỗi trong C là gì
 
 Chuỗi là một mảng các kí tự được kết thúc bằng kí tự **_null_** `\0`
 
@@ -37,7 +37,7 @@ Khi trình biên dịch gặp một chuỗi các ký tự được đặt trong 
 | H   |  e  | l   | l   | o   |     | A   | n   | e   | s   | t   | \0  |
 | --- | :-: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-## Declare a string
+## Khởi tạo chuỗi trong C
 
 Đây là cách ta khai báo một chuỗi gồm 10 kí tự:
 
@@ -45,7 +45,7 @@ Khi trình biên dịch gặp một chuỗi các ký tự được đặt trong 
 char str[10];
 ```
 
-## Initialize strings
+## Khởi tạo chuỗi
 
 Ta có thể khởi ta một chuỗi bằng một trong các cách sau:
 
@@ -71,7 +71,7 @@ char c[5] = "abcde";
 
 Lúc này, ta đang cố gán 6 ký tự (ký tự cuối cùng là `\0`) cho một mảng c có 5 ký tự. Điều này thật tệ và ta không nên làm như thế.
 
-## III. Assigning Values to Strings
+## Gán giá trị vào chuỗi trong C
 
 Chuỗi không hỗ trợ cho toán tử gán `=` nên ta phải dùng hàm `strcpy()` để sao chép chuỗi
 
@@ -98,7 +98,7 @@ Hello Anest
 
 > Lưu ý: khi sử dụng hàm `strcpy()` hãy khai báo thư viên `<string.h>`
 
-## Read String from the user
+## Đọc chuỗi từ người dùng 
 
 ### Chúng ta có thể sử dụng hàm `scanf()` để đọc một chuỗi.
 
@@ -163,7 +163,7 @@ puts(name);
 
 `sizeof(name)` sẽ mang giá trị là 30, do đó chúng ta có thể đọc được một chuỗi tối đa 30 kí tự
 
-## Passing Strings to Functions
+## Truyền chuỗi vào hàm trong C
 
 Các chuỗi có thể được truyền cho một hàm theo cách tương tự như các mảng.
 
@@ -201,7 +201,7 @@ Tại đây chúng ta truyền một chuỗi `name` vào hàm `displayString()`
 displayString(name);
 ```
 
-## Strings and Pointers
+## Chuỗi và con 
 
 Ví dụ
 
