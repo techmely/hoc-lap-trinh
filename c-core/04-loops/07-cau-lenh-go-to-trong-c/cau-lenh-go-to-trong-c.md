@@ -15,7 +15,7 @@ position: 7
 
 Câu lệnh **`goto`** là một câu lệnh nhảy đôi khi cũng được gọi là câu lệnh nhảy vô điều kiện. Câu lệnh **`goto`** có thể được sử dụng để nhảy từ bất cứ đâu đến bất cứ đâu trong một hàm.
 
-## The syntax of the goto statement
+## Cú pháp câu lệnh goto trong C
 
 ```c
 Syntax1       |    Syntax2
@@ -29,7 +29,7 @@ label:        |    goto label;
 
 Các `label` là một định danh (tuỳ bạn đặt tên như tên biến). Khi gặp câu lệnh **`goto`**, chương trình sẽ nhảy tới `label` và bắt đầu thực thi mã.
 
-## Examples
+## Ví dụ câu lệnh goto trong C
 
 ### Syntax 1
 
