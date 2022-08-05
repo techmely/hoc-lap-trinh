@@ -15,7 +15,7 @@ position: 1
 
 Trong bài này chúng ta sẽ cùng nhau tìm hiểu về cấu trúc của một hàm (function) trong C.
 
-## Declare and initialize function
+## Khai báo và khởi tạo hàm trong C
 
 Cú pháp để khai báo 1 hàm như sau:
 
