@@ -52,7 +52,6 @@ do {
 
 ![Luồng hoạt động của vòng lặp do-while](https://user-images.githubusercontent.com/29374426/183098360-68d525b2-fcb1-41b7-8ef1-35b333729efa.png)
 
-
 ## Ví dụ về vòng lặp do-while
 
 Ví dụ:

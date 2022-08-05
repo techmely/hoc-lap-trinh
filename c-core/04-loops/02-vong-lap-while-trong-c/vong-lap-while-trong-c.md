@@ -50,7 +50,6 @@ while (i < 10) {
 
 ![Luồng hoạt động của vòng lặp white](https://user-images.githubusercontent.com/29374426/183098269-e3c60457-2a26-4c53-a745-c0520308384f.png)
 
-
 ## Ví dụ vòng lặp white trong c
 
 Ví dụ 1:
