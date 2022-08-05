@@ -23,7 +23,7 @@ và trong bài học ngày hôm nay chúng ta sẽ cùng tìm hiểu về:
 - Thay đổi giá trị được trỏ bởi con trỏ
 - Cách con trỏ hoạt động
 
-## Pointer syntax
+## Cú pháp con trỏ trong C
 
 Đây là cách chúng ta dùng để khai báo con trỏ
 
@@ -48,7 +48,7 @@ int* p1, p2;
 
 Dòng lệnh trên có nghĩa là chúng ta khai báo một con trỏ `p1` kiểu dữ liệu `int` và một biến `p2` cùng kiểu dữ liệu
 
-## Assigning addresses to Pointers
+## Gắn địa chỉ cho con trỏ trong C
 
 Ví dụ:
 
@@ -62,7 +62,7 @@ Như đã nói ở trên, tại đây chúng ta đang khai báo con trỏ `pc` v
 
 Ở đây 10 được gán cho biến `c`, sau đó địa chỉ của c được gán cho con trỏ `pc`
 
-## Get Value of Thing Pointed by Pointers
+## Lấy giá trị của con trỏ trong C
 
 Để nhận giá trị từ địa chỉ được con trỏ trỏ vào ta sử dụng `*`, Ví dụ:
 
@@ -77,7 +77,7 @@ printf("%d", *pc);   // Output: 5
 
 > `pc` là một con trỏ trỏ tới một địa chỉ, còn `*pc` là cú pháp để lấy giá trị được lưu trữ trong địa chỉ mà con trỏ `pc` trỏ vào nên chúng ta không được code như `*pc = &c`
 
-## Changing Value Pointed by Pointers
+## Thay đổi giá trị của con trỏ
 
 Ví dụ 1:
 
@@ -110,7 +110,7 @@ mà giá trị của biến `a` lúc này là 2 nên giá trị của `*pa` cũn
 
 sau đó con trỏ `pa` sẽ trỏ vào địa chỉ của biến `b`, tương tự `*pa` lúc này mang giá trị là -3 do `b = -3`
 
-## Working of Pointers
+## Cách làm việc của con trỏ
 
 Ví dụ:
 
