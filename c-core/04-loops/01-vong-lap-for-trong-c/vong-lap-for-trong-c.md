@@ -35,9 +35,7 @@ for (int i = 0; i <= 10; i++) {
 
 ## Vòng lặp hoạt động như thế nào?
 
-<p align="center">
-  <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-for-loop-structure.jpg">
-</p>
+![Vòng lặp hoạt động như thế nào](https://user-images.githubusercontent.com/29374426/183098010-5ac9e1d3-66cb-4a83-8a3e-103365f3d933.png)
 
 - Bước 1: Khởi tạo giá trị biến lặp, chỉ thực hiện 1 lần duy nhất
 - Bước 2: Kiểm tra điều kiện lặp, nếu điều kiện bằng **`false`** thì kết thúc vòng lặp.
@@ -48,9 +46,7 @@ Quá trình này diễn ra cho đến khi biểu thức điều kiện (bước 
 
 ## Luồng của vòng lặp for
 
-<p align="center">
-  <img src="https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/Images/c-for-loop.jpg">
-</p>
+![Luồng của vòng lặp for](https://user-images.githubusercontent.com/29374426/183098078-3a8046f5-14f4-4194-aae2-db4154e17ee8.png)
 
 ## Example
 
