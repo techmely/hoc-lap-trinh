@@ -15,7 +15,7 @@ position: 2
 
 Hôm nay chúng ta sẽ tìm hiểu về biến trong lập trình C, nhưng trước khi tìm hiểu về nó chúng ta cần biết một khái niệm khác trước đó là kiểu dữ liệu (**data type**).
 
-## Data types in C
+## Kiểu dữ liệu trong C
 
 Trong lập trình, một **kiểu dữ liệu** là một cách phân loại dữ liệu cho chương trình hiểu các lập trình viên muốn sử dụng dữ liệu gì.
 
@@ -33,7 +33,7 @@ Một kiểu dữ liệu chỉ định kích thước và loại giá trị. Có
 | `double`     |  8 bytes   | Lưu trữ số thập phân. Đủ để lưu trữ 15 chữ số thập phân sau dấu phẩy                              |
 | `char`       |  2 bytes   | Lưu trữ một ký tự/chữ cái hoặc giá trị trong bảng mã [ASCII](https://en.wikipedia.org/wiki/ASCII) |
 
-## What is the variable?
+## Biến trong C là gì?
 
 `Biến` là nơi để lưu trữ tạm thời các giá trị với một kiểu dữ liệu xác định.
 
@@ -47,7 +47,7 @@ Các bạn sẽ thấy chương trình của chúng ta sẽ chứa rất nhiều
 
 <br/>
 
-## III. Variable naming rules
+## Cách đặt tên biến trong C
 
 Trong ngôn ngữ C, mỗi biến có một tên gọi, nhưng không phải muốn đặt tên thế nào tùy theo ý thích của bạn cũng được. Dưới đây là một số nguyên tắc khi đặt tên cho biến:
 
@@ -63,7 +63,7 @@ Trong ngôn ngữ C, mỗi biến có một tên gọi, nhưng không phải mu�
 - Tên của biến phải bắt đầu bằng một chữ cái viết thường, nếu tên biến có 2 từ trở lên, hãy viết hoa chữ cái đầu tiên của từ tiếp theo. Ví dụ: `phoneNumber`...
 - Tên biến cần tường minh, có nghĩa là tên biến phải thể hiện được ý nghĩa rõ ràng đúng với mục đích nó được khai báo. Ví dụ: `name` thay vì chỉ `n`, `age` thay vì chỉ `a`...
 
-## Declare and initialize variables
+## Khai báo và khởi tạo biến trong C
 
 Cú pháp để khai báo 1 biến như sau:
 
@@ -140,7 +140,7 @@ C
 
 > **Khi bạn khai báo mà không gán giá trị cho biến, lúc này biến sẽ chứa một giá trị không xác định.**
 
-## Constants
+## Hằng số trong C
 
 Nếu bạn muốn khởi tạo một biến có giá trị **không thể thay đổi**, bạn có thể sử dụng 2 cách sau:
 
@@ -180,14 +180,14 @@ int main() {
 - Nên dùng hằng số khi bạn muốn một biến không thể thay đổi giá trị do ngẫu nhiên hay sơ ý của bản thân hoặc không mong muốn người khác sơ ý hay cố ý thay đổi giá trị biến của bạn, điều này có thể dẫn đến chương trình chạy sai hoặc bị lỗi.
 - Quy tắc đặt tên biến hằng số hơi khác với quy tắc đặt tên biến thông thường đó là sẽ viết hoa tất cả ký tự tên biến, nếu tên biến hằng số có nhiều hơn 1 từ, thì mỗi từ nên được ngăn cách bằng dấu gạch dưới `_`. Ví dụ: `PI`, `NEW_LINE`...
 
-## Scope of variable
+## Phạm vi biến trong C
 
 Trong ngôn ngữ lập trình C, mọi biến khi khai báo đều có 2 thuộc tính: kiểu dữ liệu (type) và lớp lưu trữ (storage class) của nó. Lớp lữu trữ ở đây chính là thuộc tính thể hiện phạm vi của biến - nơi nào có thể dùng biến đó và biến đó tồn tại trong bao lâu. Có 2 loại phạm vi chính cần quan tâm như sau:
 
 - Global variables (biến toàn cục)
 - Local variables (biến cục bộ)
 
-### Global variable
+### Biến toàn cục trong C
 
 Các biến được khai báo ở bên ngoài tất cả các khối code của hàm main thì được gọi là biến toàn cục (external or global variable). Các biến toàn cục có thể sử dụng ở mọi hàm - hay mọi nơi trong chương trình. Biến toàn cục cũng tồn tại cho tới khi chương trình kết thúc.
 
@@ -210,7 +210,7 @@ Kết quả:
 7
 ```
 
-### Local variables
+### Biến cục bộ trong C
 
 Các biến được khai báo trong thân một hàm thì được gọi là các biến cục bộ (local variables). Các biến cục bộ này chỉ tồn tại và chỉ có thể sử dụng bên trong hàm nó được khai báo.
 
@@ -230,7 +230,7 @@ int main() {
 }
 ```
 
-### Priority
+### Độ ưu tiên phạm vi biến
 
 Nếu chúng ta sử dụng cùng một tên biến `global variable` và `local variables` thì biến `local variables` sẽ được ưu tiên hơn.
 
