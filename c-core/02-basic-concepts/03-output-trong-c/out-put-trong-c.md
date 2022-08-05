@@ -19,7 +19,7 @@ Trong ngôn ngữ lập trình C, hàm `printf()` được sử dụng để in 
 
 Hôm nay chúng ta sẽ cùng tìm hiểu kỹ hơn về hàm `printf()`.
 
-## Displays the string
+## Hiển thị chuỗi output trong output
 
 In ra một chuỗi rất đơn giản trong C, bạn chỉ cần truyền chuỗi văn bản vào hàm `printf()` như ví dụ sau:
 
@@ -42,7 +42,7 @@ I am student.
 
 Nếu bạn cần phải sử dụng các ký tự không thể gõ hoặc có ý nghĩa đặc biệt - hãy xem lại bài viết này [Escape Sequences](https://github.com/AnestLearning/Course-C-Fundamentals/blob/master/1.%20Introduction/4.%20Keywords%20&%20Escape%20Sequences.md).
 
-## Displays the value of a variable
+## Hiển thị giá trị biến trong output
 
 Bây giờ, chúng ta sẽ xem làm sao để hiển thị một giá trị của biến cũng với hàm này. Chúng ta cũng sẽ sử dụng `printf()` với phương pháp cũ, nhưng thêm vào một định dạng đặc biệt tại vị trí mà chúng ta muốn hiển thị giá trị của biến đó.
 
@@ -103,7 +103,7 @@ I am 25 year old.
 
 Ở ví dụ này, tuy bạn đã khai báo và gán giá trị cho biến `age = 22` nhưng ngay dòng tiếp theo chúng ta lại gán lại `age = 25` - vì vậy lúc này giá trị của biến `age` sẽ bị ghi đè và mang giá trị mới.
 
-## Format display the value of a variable
+## Định dạng cách hiển thị giá trị của biến
 
 Nếu chúng ta thực hiện in ra giá trị một số thập phân, bạn sẽ thấy như sau:
 
