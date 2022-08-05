@@ -8,7 +8,7 @@ chapter:
   slug: "chuong-05-functions"
 category:
   name: "C"
-  slug: "c-core"
+  slug: "c"
 image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
 position: 2
 ---
@@ -20,7 +20,7 @@ Có hai loại hàm trong lập trình C là:
 
 Trong bài viết này, chúng ta sẽ cùng đi tìm hiểu chi tiết về 2 loại hàm này.
 
-## Các hàm trong thư viện tiêu 
+## Các hàm trong thư viện tiêu
 
 - Standard library functions (Hàm thư viện chuẩn) là những hàm có sẵn trong lập trình C.
 - Các hàm với tên và chức năng riêng biệt đã được định nghĩa trong các thư viện tiêu chuẩn.
@@ -73,12 +73,10 @@ int main() {
 
 Kết quả:
 
-```
+```c
 Enter a number: -7
 Absolute value = 7
 ```
-
-> Chúng ta có thể xem lại một số thư viện thường dùng khác [tại đây](https://github.com/AnestAcademy/Course-C-Fundamentals/blob/master/1.%20Introduction/3.%20C%20Standard%20Library%20Functions.md).
 
 ## Định nghĩa hàm trong C
 
@@ -120,7 +118,7 @@ int addition(int a, int b){ // Định nghĩa hàm (Function definition)
 
 Kết quả:
 
-```
+```c
 Enter x: 3
 Enter y: 4
 x + y = 7
