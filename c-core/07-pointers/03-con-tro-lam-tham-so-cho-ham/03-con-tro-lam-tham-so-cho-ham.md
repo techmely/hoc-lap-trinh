@@ -18,7 +18,7 @@ Trong bài này, chúng ta sẽ học cách chuyển địa chỉ và con trỏ 
 - Truyền địa chỉ đến hàm
 - Truyền con trỏ đến hàm
 
-## Pass Addresses to Functions
+## Truyền địa chỉ vào hàm trong 
 
 Ví dụ:
 
@@ -69,7 +69,7 @@ Bên trong hàm `swap()`, `*n1` và `*n2` hoán đổi. Kể từ đây,`num1` v
 
 > Lưu ý rằng `swap()` không trả lại bất cứ điều gì; kiểu trả về của nó là `void`.
 
-## Passing Pointers to Functions
+## Truyền con trỏ vào hàm trong C
 
 Ví dụ:
 
