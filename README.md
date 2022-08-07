@@ -34,6 +34,7 @@ Xem hướng dẫn đóng góp ở đây 👇
     <td align="center"><a href="https://github.com/AnthonyKhieu"><img src="https://avatars.githubusercontent.com/u/86510312?v=4" width="100px;" alt=""/><br /><sub><b>AnthonyKhieu</b></sub></a></td>
     <td align="center"><a href="https://github.com/phanduc0908"><img src="https://avatars.githubusercontent.com/u/29729545?v=4" width="100px;" alt=""/><br /><sub><b>Phan Van Duc</b></sub></a></td>
     <td align="center"><a href="https://github.com/luutu868"><img src="https://avatars.githubusercontent.com/u/86488558?v=4" width="100px;" alt=""/><br /><sub><b>luutu868</b></sub></a></td>
+    <td align="center"><a href="https://github.com/kieuminhduc01"><img src="https://avatars.githubusercontent.com/u/50008521?v=4" width="100px;" alt=""/><br /><sub><b>Kieu Duc</b></sub></a></td>
   </tr>
 </table>
 
