@@ -1,59 +1,138 @@
----
-title: "Cấu trúc một chương trình Java"
-description: "Ngôn ngữ lập trình Java được thiết kế với các đặc tính xoay quanh đặc trưng hướng đối tượng. Bài này chúng ta cùng nhau tìm hiểu xem cấu trúc của một chương trình java"
-keywords:
-  [
-    "cấu trúc 1 chương trình java",
-    "cấu trúc chương trình java",
-    "cấu trúc của 1 chương trình java",
-    "cấu trúc của một chương trình",
-    "cấu trúc của một chương trình java",
-    "cấu trúc một chương trình java",
-    "cấu trúc một chương trình java bị lỗi",
-    "cấu trúc một chương trình java desktop",
-    "cấu trúc một chương trình java developer",
-    "cấu trúc một chương trình java eclipse",
-    "cấu trúc một chương trình java example",
-  ]
+—
+title:”Biến trong C#”
+description:”Trong bài này mình sẽ giới thiệu định nghĩa của biến trong C#, cách hoạt động của biến và cách thao tác với biến và cuối cùng là quy tắc đặt tên biến”
+keywords:[
+“biến trong C#”,
+“bien trong C#”,
+]
 chapter:
-  name: "Nhập môn Java"
-  slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
-image: https://user-images.githubusercontent.com/29374426/126427809-717c3eb0-ffba-4fa5-8e52-ec12ad9b548d.png
-position: 5
----
+name: ”Biến trong C#”
+slug: ”Bien-trong-C#”
+categoy:
+name: "C#"
+slug: "C#"
+image: <https://kungfutech.edu.vn/thumbnail.png>
+position: 2
+—
 
-Ngôn ngữ lập trình Java được thiết kế với các đặc tính xoay quanh đặc trưng hướng đối tượng. Đó chính là việc xoay quanh việc thiết kế các lớp (Class) và việc tạo các đối tượng (Object) là thể hiện của lớp.
+# Định nghĩa về biến trong C#
 
-Trong ngôn ngữ Java, lớp là một đơn vị mẫu có chứa dữ liệu và mã lệnh liên quan đến một thực thể nào đó. Khi xây dựng một lớp, thực chất bạn đang tạo ra một một kiểu dữ liệu. Kiểu dữ liệu mới này được sử dụng để xác định các biến mà ta thương gọi là “đối tượng”. Đối tượng là các thể hiện (instance) của lớp. Tất cả các đối tượng đều thuộc về một lớp có chung đặc tính và hành vi. Mỗi lớp xác định một thực thể, trong khi đó mỗi đối tượng là một thể hiện thực sự.
+<content-info>
+Tương tự với biến trong toán học, biến trong ngôn ngữ lập trình là một giá trị dữ liệu có thể thay đổi được. Biến là tên gọi tham chiếu đến một vùng nhớ nào đó trong bộ nhớ.
+</content-info>
 
-Phát triển ứng dụng Java sẽ được khởi đầu bằng việc định nghĩa các lớp, Sau khi định nghĩa các lớp xong, định dạng của tệp lưu trữ các lớp sẽ có đuôi mở rộng là .java. Ví dụ:
+## Tại sao phải sử dụng biến?
 
-```java
-package <package_name>;
+Biến sinh ra với mục đích lưu trữ dữ liệu và tái sử dụng khi cần. Ví dụ khi chương trình yêu cầu người dùng nhập ngày tháng năm sinh nhưng lại không lưu lại ở đâu cả, đến khi cần sử dụng thông tin đó thì chương trình sẽ không thể lấy được thông tin người dùng nhập trước đó để sử dụng. Để giải quyết bài toán trên biến sinh ra cho phép chương trình lưu trữ tạm thông tin người dùng trên một vùng nhớ và thực hiện truy suất khi cần sử dụng.
 
-import <oher_package>;
+## Biến thao tác với bộ nhớ như thế nào?
 
-public class ClassName {
-  <Variables (also known as fields)>;
+Cấu trúc của bộ nhớ gồm nhiều ô nhớ liên tiếp nhau, mỗi ô nhớ có một địa chỉ riêng (địa chỉ ô nhớ thường mã hex). Khi chương trình muốn thao tác với ô nhớ nào (lấy giá trị, hủy giá trí, lưu giá trị) thì phải thông qua địa chỉ của ô nhớ đó. Để làm được việc đó ta sẽ khai báo biến, nó sẽ tham chiếu đến ô nhớ, sau đó ta khởi tạo giá trị cho biến, lúc này ô nhớ đó sẽ mang giá trị của biến, khi muốn thao tác với giá trị của ô nhớ ta sẽ sử dụng biến.
 
-  <constructor method(s)>;
+# Khai báo sử dụng biến
 
-  <other methods>;
-}
+cú pháp:
+
+```
+{kiểu dữ liệu} {tên biến};
 ```
 
-_Trong đó:_
+{kiểu dữ liệu}: có thể là kiểu dữ liệu cơ bản hoặc kiểu dữ liệu có cầu trúc (kiểu dữ liệu sẽ được trình bày chi tiết tại link bài viết kiểu dữ liệu.)
 
-- **package**: Một package (gói) mô tả không gian tên có chứa các lớp của Java, sử dụng ký tự thường và dấu chấm để định nghĩa tên, chúng ta có thể xem package như là một thư mục, còn class chính là các file trực thuộc thư mục.
-- **import**: Từ khóa được sử dụng trong Java nhằm để xác định các class hoặc các package được sử dụng trong lớp này.
-- **class**: Từ khóa nhằm để định nghĩa lớp của Java. Nó đứng trước khai báo tên lớp của Java. Ngoài ra còn có từ khóa public, từ khóa này xác định phạm vi truy cập của lớp. Đặc tính này chính là tính đóng gói trong lập trình hướng đối tượng. (chúng ta sẽ tìm hiểu phần này ở các bài sau)
-- **variables**: Biến hay còn gọi là trường, cũng có một số tài liệu gọi là thuộc tính trực thuộc lớp. Nó chứa thông tin cụ thể liên quan tới các đối tượng là thể hiện của lớp.
-- **methods**: Phương thức hay còn gọi là hàm chứa các hành động thực thi của đối tượng. Đương nhiên nội dung của phương thức chính là các đoạn mã thực thi của chính phương thức này.
-- **constructors** : Phương thức khởi tạo (Hay hàm khởi tạo) của đối tượng. Hình dạng của đối tượng được thể hiện ra sao sẽ phụ thuộc vào phương thức này.
+{tên biến}: là tên do người dùng đặt, phải tuân thủ theo quy tắc đặt tên (sẽ được trình bày ở phần dưới).
 
-<content-example />
+## ví dụ về khai báo biến
 
-![cau-truc-mot-chuong-trinh-java](https://user-images.githubusercontent.com/29374426/126427809-717c3eb0-ffba-4fa5-8e52-ec12ad9b548d.png)
+Biến kiểu số nguyên:
+
+```
+int bienKieuSoNguyen;
+```
+
+Biến kiểu số thực:
+
+```
+float bienKieuSoThuc;
+```
+
+Biến kiểu chuỗi:
+
+```
+string bienKieuChuoi;
+```
+
+Biến kiểu luận lý:
+
+```
+bool bienKieuKieuLuanLy;
+```
+
+Biến kiểu ký tự:
+
+```
+char bienKieuKieuKyTu;
+```
+
+# Sử dụng biến trong C#
+
+## Tạo 1 biến có giá trị
+
+Để tạo 1 biến có giá trị ta có 2 cách.
+<space><space>
+
+Cách 1: Khai báo biến rồi gán giá trị
+
+```
+int soNguyen; //Khai báo biến
+soNguyen = 1; //Gán giá trị
+```
+
+Cách 2: khởi tạo giá trị cho biến
+
+```
+int soNguyen = 1;
+```
+
+## Sửa giá trị của biến
+
+Để sử giá trị của biến ta thực hiện gán giá trị mới cho biến đó
+
+```
+soNguyen = 1; //Gán giá trị
+soNguyen = 2; //Gán giá trị mới cho biến
+```
+
+## Lấy giá trị của biến
+
+Để lấy giá trị của biến ta chỉ cần gọi tên của biến đó
+
+```
+int soNguyen; //Khai báo biến
+soNguyen = 1; //Gán giá trị
+Console.WriteLine(soNguyen);
+Output: 1
+```
+
+```
+int a = 1, b = 2 ;
+int c = a + b; 
+Console.WriteLine(c);
+
+Output: 3
+```
+
+# Quy tắc đặt tên biến
+
+Sau đây là một số quy tắc đặt tên biến:
+
+- Tên biến là một chuỗi ký tự liên kết (không có khoảng trắng) và không chứa ký tự đặc biệt.
+- Tên biến không được đặt bằng tiếng việt có dấu.
+- Tên biến không được bắt đầu bằng số.
+- Tên biến không được trùng với từ khóa.
+
+Dưới đây là danh sách các từ khóa trong C#:
+![15471](https://user-images.githubusercontent.com/50008521/183381973-fda2b2d9-3a74-48e1-a732-b6e02a2fbdba.jpg)
+
+<content-info>
+Biến trong C# thường được đặt tên bằng quy tắc (camel case) tức là viết thường từ đầu tiên và viết hoa chữ cái đầu tiên của những từ tiếp theo.
+</content-info>
