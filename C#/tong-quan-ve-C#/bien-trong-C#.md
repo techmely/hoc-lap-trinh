@@ -129,7 +129,7 @@ Sau đây là một số quy tắc đặt tên biến:
 - Tên biến không được trùng với từ khóa.
 
 Dưới đây là danh sách các từ khóa trong C#:
-https://voer.edu.vn/file/15471
+![15471](https://user-images.githubusercontent.com/50008521/183381973-fda2b2d9-3a74-48e1-a732-b6e02a2fbdba.jpg)
 
 <content-info>
 Biến trong C# thường được đặt tên bằng quy tắc (camel case) tức là viết thường từ đầu tiên và viết hoa chữ cái đầu tiên của những từ tiếp theo.
