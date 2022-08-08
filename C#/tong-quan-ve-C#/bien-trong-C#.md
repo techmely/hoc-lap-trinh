@@ -33,9 +33,9 @@ Cấu trúc của bộ nhớ gồm nhiều ô nhớ liên tiếp nhau, mỗi ô 
 
 cú pháp:
 
-<content-result>
+```
 {kiểu dữ liệu} {tên biến};
-</content-result>
+```
 
 {kiểu dữ liệu}: có thể là kiểu dữ liệu cơ bản hoặc kiểu dữ liệu có cầu trúc (kiểu dữ liệu sẽ được trình bày chi tiết tại link bài viết kiểu dữ liệu.)
 
@@ -45,31 +45,33 @@ cú pháp:
 
 Biến kiểu số nguyên:
 
-<content-result>
+```
 int bienKieuSoNguyen;
-</content-result>
+```
 
 Biến kiểu số thực:
 
-<content-result>
+```
 float bienKieuSoThuc;
-</content-result>
+```
 
 Biến kiểu chuỗi:
 
-<content-result>
+```
 string bienKieuChuoi;
-</content-result>
+```
 
 Biến kiểu luận lý:
-<content-result>
+
+```
 bool bienKieuKieuLuanLy;
-</content-result>
+```
 
 Biến kiểu ký tự:
-<content-result>
+
+```
 char bienKieuKieuKyTu;
-</content-result>
+```
 
 # Sử dụng biến trong C#
 
@@ -80,44 +82,44 @@ char bienKieuKieuKyTu;
 
 Cách 1: Khai báo biến rồi gán giá trị
 
-<content-result>
+```
 int soNguyen; //Khai báo biến
 soNguyen = 1; //Gán giá trị
-</content-result>
+```
 
 Cách 2: khởi tạo giá trị cho biến
-<content-result>
+
+```
 int soNguyen = 1;
-</content-result>
+```
 
 ## Sửa giá trị của biến
 
 Để sử giá trị của biến ta thực hiện gán giá trị mới cho biến đó
 
-<content-result>
+```
 soNguyen = 1; //Gán giá trị
 soNguyen = 2; //Gán giá trị mới cho biến
-</content-result>
+```
 
 ## Lấy giá trị của biến
 
 Để lấy giá trị của biến ta chỉ cần gọi tên của biến đó
 
-<content-result>
+```
 int soNguyen; //Khai báo biến
 soNguyen = 1; //Gán giá trị
 Console.WriteLine(soNguyen);
-
 Output: 1
-</content-result>
+```
 
-<content-result>
+```
 int a = 1, b = 2 ;
 int c = a + b; 
 Console.WriteLine(c);
 
 Output: 3
-</content-result>
+```
 
 # Quy tắc đặt tên biến
 
