@@ -25,8 +25,8 @@ chapter:
 name: ”Tạo chương trình C# đầu tiên với Visual Studio”
 slug: “tao-chuong-trinh-C#-dau-tien”
 categoy:
-name: "Javascript"
-slug: "javascript"
+name: "C#"
+slug: "C#"
 image: <https://kungfutech.edu.vn/thumbnail.png>
 position: 2
 —
