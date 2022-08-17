@@ -16,7 +16,7 @@ position: 2
 Dưới đây là một đoạn mã chương trình cơ bản nhất khi bắt đầu học lập trình với ngôn ngữ C.
 Hãy sao chép đoạn mã ví dụ bên dưới vào **Dev C** và nhấn `F11` để chạy chương trình.
 
-```C
+```c
 #include <stdio.h>
 
 int main() {
@@ -28,7 +28,7 @@ int main() {
 
 Kết quả nhận được:
 
-```C
+```c
 Hello World!
 
 --------------------------------
