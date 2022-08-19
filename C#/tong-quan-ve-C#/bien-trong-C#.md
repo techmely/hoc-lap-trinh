@@ -1,4 +1,4 @@
-—
+---
 title:”Biến trong C#”
 description:”Trong bài này mình sẽ giới thiệu định nghĩa của biến trong C#, cách hoạt động của biến và cách thao tác với biến và cuối cùng là quy tắc đặt tên biến”
 keywords:[
@@ -6,14 +6,14 @@ keywords:[
 “bien trong C#”,
 ]
 chapter:
-name: ”Biến trong C#”
-slug: ”Bien-trong-C#”
+  name: "Biến trong C#"
+  slug: "Bien-trong-C#"
 categoy:
-name: "C#"
-slug: "C#"
-image: <https://kungfutech.edu.vn/thumbnail.png>
+  name: "C#"
+  slug: "C#"
+image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
-—
+---
 
 # Định nghĩa về biến trong C#
 
@@ -29,9 +29,9 @@ Biến sinh ra với mục đích lưu trữ dữ liệu và tái sử dụng kh
 
 Cấu trúc của bộ nhớ gồm nhiều ô nhớ liên tiếp nhau, mỗi ô nhớ có một địa chỉ riêng (địa chỉ ô nhớ thường mã hex). Khi chương trình muốn thao tác với ô nhớ nào (lấy giá trị, hủy giá trí, lưu giá trị) thì phải thông qua địa chỉ của ô nhớ đó. Để làm được việc đó ta sẽ khai báo biến, nó sẽ tham chiếu đến ô nhớ, sau đó ta khởi tạo giá trị cho biến, lúc này ô nhớ đó sẽ mang giá trị của biến, khi muốn thao tác với giá trị của ô nhớ ta sẽ sử dụng biến.
 
-# Khai báo sử dụng biến
+# Khai báo, sử dụng biến trong C#
 
-cú pháp:
+cú pháp khai báo biến:
 
 ```
 {kiểu dữ liệu} {tên biến};
@@ -131,7 +131,7 @@ Sau đây là một số quy tắc đặt tên biến:
 - Tên biến không được trùng với từ khóa.
 
 Dưới đây là danh sách các từ khóa trong C#:
-![15471](https://user-images.githubusercontent.com/50008521/183381973-fda2b2d9-3a74-48e1-a732-b6e02a2fbdba.jpg)
+![Danh sách từ khóa trong C#](https://user-images.githubusercontent.com/50008521/183381973-fda2b2d9-3a74-48e1-a732-b6e02a2fbdba.jpg)
 
 <content-info>
 Biến trong C# thường được đặt tên bằng quy tắc (camel case) tức là viết thường từ đầu tiên và viết hoa chữ cái đầu tiên của những từ tiếp theo.
