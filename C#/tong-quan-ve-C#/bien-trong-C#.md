@@ -64,13 +64,13 @@ string bienKieuChuoi;
 Biến kiểu luận lý:
 
 ```
-bool bienKieuKieuLuanLy;
+bool bienKieuLuanLy;
 ```
 
 Biến kiểu ký tự:
 
 ```
-char bienKieuKieuKyTu;
+char bienKieuKyTu;
 ```
 
 # Sử dụng biến trong C#
