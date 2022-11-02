@@ -1,51 +1,43 @@
-—
-title:”Kiểu dữ liệu của biến”
-description:”Trong bài này mình sẽ giới thiệu kiểu dữ liệu của biến và phân loại chúng như thế nào.”
-keywords:[
-“kiểu dữ liệu của biến”,
-“kieu du lieu cua bien”
-]
-chapter:—
-title:”Kiểu dữ liệu của biến”
-description:”Trong bài này mình sẽ giới thiệu kiểu dữ liệu của biến và phân loại chúng như thế nào.”
-keywords:[
-“kiểu dữ liệu của biến”,
-“kieu du lieu cua bien”
+---
+title: "Kiểu dữ liệu của biến"
+description: "Trong bài này mình sẽ giới thiệu kiểu dữ liệu của biến và phân loại chúng như thế nào."
+keywords: [
+"kiểu dữ liệu của biến",
+"kieu du lieu cua bien"
 ]
 chapter:
-name: ”Kiểu dữ liệu của biến”
-slug: “kieu-du-lieu-cua-bien”
+  name: "Tổng quan về C#"
+  slug: "chuong-01-tong-quan-ve-csharp"
 categoy:
-name: "C#"
-slug: "C#"
-image: <https://kungfutech.edu.vn/thumbnail.png>
+  name: "C#"
+  slug: "C#"
+image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
-—
+---
 
-# Kiểu dữ liệu là gì
+## Kiểu dữ liệu là gì
 
 Kiểu dữ liệu (data type) là một tập hợp gồm các nhóm loại dữ liệu có cùng đặc tính, cùng cách lưu trữ của dữ liệu và cùng cách thao tác xử lý trên trường dữ liệu đó nhằm mục đích phân loại các loại dữ liệu. Trong C#, một biến (variable) khi khởi tạo lên đã được chỉ định một kiểu dữ liệu xác định cho nó.
 
 > Mọi biến khi khởi tạo trong C# đều phải có kiểu dữ liệu xác định.
 
-# Các cách phân loại kiểu dữ liệu
+## Các cách phân loại kiểu dữ liệu
 
 Trong C#, kiểu dữ liệu được chia thành 2 tập hợp kiểu dữ liệu chính:
 
-* Kiểu dữ liệu nguyên thủy mà ngôn ngữ cung cấp (Primitive Data Types)
-* Kiểu dữ liệu do người dùng định nghĩa (user - defined)
+- Kiểu dữ liệu nguyên thủy mà ngôn ngữ cung cấp (Primitive Data Types)
+- Kiểu dữ liệu do người dùng định nghĩa (user - defined)
 
 Mỗi tập hợp kiểu dữ liệu trên lại chia thành 2 loại đó là:
 
-* Kiểu dữ liệu giá trị
-* Kiểu dữ liệu tham chiếu
-
+- Kiểu dữ liệu giá trị
+- Kiểu dữ liệu tham chiếu
 
 ### Kiểu dữ liệu nguyên thủy và kiểu người dùng tự định nghĩa
 
 #### Kiểu dữ liệu nguyên thủy (Primitive Data Types) trong C#
 
- là kiểu các kiểu dữ liệu mặc định được C# cung cấp sẵn.
+là kiểu các kiểu dữ liệu mặc định được C# cung cấp sẵn.
 Các kiểu dữ liệu nguyên thủy trong C# bao gồm:
 | Ký hiệu| .NET Class| Kiểu dữ liệu| Độ rộng (bit) | Miền giá trị|
 | --- | --- | --- | --- | --- |
@@ -66,15 +58,16 @@ Các kiểu dữ liệu nguyên thủy trong C# bao gồm:
 | **decimal** | Decimal| Logical boolean type |128 | từ +-1.0 x 10**e**-28 đến +-7.9 x 10**e**28 |
 
 #### Kiểu dữ liệu người dùng tự định nghĩa
+
 Là kiểu dữ liệu dữ liệu được lập trình viên định nghĩa dựa trên các kiểu dữ liệu nguyên thủy hoặc kiểu dữ liệu tự định nghĩa khác. Chúng ta sẽ tìm hiểu kĩ hơn về phần này trong loạt bài về Class, interface, struct trong C#
 
-## Kiểu tham chiếu và kiểu tham trị
+### Kiểu tham chiếu và kiểu tham trị
 
-### Kiểu dữ liệu tham trị
+#### Kiểu dữ liệu tham trị
 
 Một biến khi khai báo kiểu dữ liệu tham trị thì vùng nhớ của biến đó sẽ lưu trữ giá trị của đối tượng lưu trữ (khác với kiểu tham chiếu biến chứa địa chỉ trỏ đến nơi lưu đối tượng thực). Giá trị này được lưu trữ trong bộ nhớ **Stack**.
 
-### Kiểu dữ liệu tham chiếu
+#### Kiểu dữ liệu tham chiếu
 
 Một biến khi khai báo kiểu dữ liệu tham chiếu thì vùng nhớ của biến đó chỉ chứa địa chỉ của đối tượng dữ liệu và lưu trong bộ nhớ **Stack**. Dữ liệu thực sự được lưu trong bộ nhớ **Heap**.
 

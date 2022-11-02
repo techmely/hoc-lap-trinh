@@ -1,28 +1,20 @@
-—
-title:”Chú thích (comment) trong C#”
-description:”Trong bài này mình sẽ giới thiệu chú thích trong lập trình để làm gì và các cách chú thích trong C#.”
-keywords:[
-“chú thích trong C#”,
-“comment trong C#”,
-“chu thich trong C#”
-]
-chapter:—
-title:”Chú thích (comment) trong C#”
-description:”Trong bài này mình sẽ giới thiệu chú thích trong lập trình để làm gì và các cách chú thích trong C#.”
-keywords:[
-“chú thích trong C#”,
-“comment trong C#”,
-“chu thich trong C#”
+---
+title: "Chú thích (comment) trong C#"
+description: "Trong bài này mình sẽ giới thiệu chú thích trong lập trình để làm gì và các cách chú thích trong C#."
+keywords: [
+	"chú thích trong C#",
+	"comment trong C#",
+	"chu thich trong C#"
 ]
 chapter:
-name: ”Chú thích (comment) trong C#”
-slug: “chu-thich-trong-C#”
+  name: "Tổng quan về C#"
+  slug: "chuong-01-tong-quan-ve-csharp"
 categoy:
-name: "C#"
-slug: "C#"
-image: <https://kungfutech.edu.vn/thumbnail.png>
-position: 6
-—
+  name: "C#"
+  slug: "C#"
+image: https://kungfutech.edu.vn/thumbnail.png
+position: 3
+---
 
 ## Giới thiệu
 
@@ -33,26 +25,28 @@ Chú thích (comment) trong mã nguồn giúp cho các đoạn code của bạn 
 ## Các kiểu Comment trong C#
 
 C# có 3 kiểu Comment khác nhau
-* Comment trên 1 dòng
-* Comment trên nhiều dòng
-* Comment cho hàm, phương thức, interface hoặc class (XML Comment)
+
+- Comment trên 1 dòng
+- Comment trên nhiều dòng
+- Comment cho hàm, phương thức, interface hoặc class (XML Comment)
 
 ### Comment trên 1 dòng
 
 Comment trên một dòng sẽ bắt đầu bằng dấu `//`. Trình biên dịch sẽ bỏ qua tất cả đoạn code đằng sau dấu `//` trên dòng code đó. Ví dụ:
 
-```
+```c#
 int a = 5 + 7; // Cộng 5 với 7
 ```
+
 ### Comment trên nhiều dòng
 
-Comment trên nhiều dòng sẽ bắt đầu bằng dấu `/*` và kết thúc bằng dấu `*/`.  Trình biên dịch sẽ bỏ qua tất cả đoạn code nằm giữa dấu `/*` và dấu  `*/`.
+Comment trên nhiều dòng sẽ bắt đầu bằng dấu `/*` và kết thúc bằng dấu `*/`. Trình biên dịch sẽ bỏ qua tất cả đoạn code nằm giữa dấu `/*` và dấu `*/`.
 
 ### Comment cho hàm, phương thức, interface hoặc class (XML Comment)
 
 Đây là một loại Comment đặc biệt trong C#. Nó bắt đầu bằng dấu `///` ở mỗi dõng và nó sử dụng thêm các thẻ ( do từng dự án quy định) để làm rõ nghĩa cho comment. Loại comment này có cấu trúc giống với một đoạn mã XML nên còn được gọi là (XLM documentation Comments). Trình biên dịch sẽ bỏ qua tất cả đoạn code đằng sau dấu `///` trên dòng code đó. Ví dụ:
 
-```
+```c#
 /// <summary>
 ///  This is a hello world program.
 /// </summary>
@@ -71,7 +65,7 @@ namespace HelloWorld
 }
 ```
 
-Trong ví dụ trên ta dùng thẻ <summary> (Theo quy định từng dự án) để bổ nghĩa Cho ý nghĩa tổng quan của chương trình. 
+Trong ví dụ trên ta dùng thẻ <summary> (Theo quy định từng dự án) để bổ nghĩa Cho ý nghĩa tổng quan của chương trình.
 
 Trong tài liệu của microsoft đưa ra danh sách gợi ý gồm 18 thẻ hay sử dụng trong mã nguồn C#. Các bạn có thể tham khảo ở link bên dưới:
 
@@ -81,13 +75,13 @@ https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-spec
 
 Comment là cách hữu hiệu để giải thích mã nguồn nhưng chúng ta không được lạm dụng nó quá mức. Ví dụ:
 
-```
+```c#
 // In ra dòng chứ Hello World
 Console.WriteLine("Hello World");
 ```
 
 Comment như kiểu trên là không cần thiết. Thay vào đó khi sử dụng Comment chúng ta nên lưu ý những điều sau:
 
-* Comment để giải thích các thuật toán phức tạp và các công nghệ được sử dụng trong dự án.
-* Comment phải ngắn gọn và dễ hiểu.
-* Comment nên giải thích "lý do tại sao" thay vì giải thích "làm như thể nào"
+- Comment để giải thích các thuật toán phức tạp và các công nghệ được sử dụng trong dự án.
+- Comment phải ngắn gọn và dễ hiểu.
+- Comment nên giải thích "lý do tại sao" thay vì giải thích "làm như thể nào"
