@@ -66,6 +66,8 @@ Angular có cơ chế routing tải trang một cách bất đồng bộ trên c
 
 Angular giúp định nghĩa các đường dẫn (route) cho mỗi page view của ứng dụng. Developer sẽ kích hoạt route dựa trên tương tác của người dùng (user).
 
+![Giới thiệu Angular](https://user-images.githubusercontent.com/29374426/213211743-ea58a57d-99d8-4cdf-931e-c0fa9024b709.png)
+
 ### Mở rộng HTML
 
 Nhờ Angular, developer có thể sử dụng cấu trúc lập trình giống như điều kiện IF, vòng lặp FOR, những biến địa phương “local variables”, …để render các control.
