@@ -85,7 +85,7 @@ console.log("World");
 
 Nguyên nhân là do trình thông dịch **tự động thêm dấu chấm phẩy** dựa trên kí tự xuống dòng. Tuy nhiên, vẫn có nhiều trường hợp xuống dòng nhưng JavaScript vẫn hiểu đó là một câu lệnh, ví dụ:
 
-```
+```js
 console.log(1 +
 1 +
 1);
