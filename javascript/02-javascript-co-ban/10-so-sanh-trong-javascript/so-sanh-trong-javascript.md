@@ -146,7 +146,7 @@ console.log("11" == 1); // false, vì "11" chuyển thành 11
 
 ```js
 console.log(true == 1); // true
-console.log(false == 0); // false
+console.log(false == 0); // true
 ```
 
 Việc so sánh khác kiểu dữ liệu sử dụng toán tử bằng "không nghiêm ngặt" `==` dẫn đến một số trường hợp "phi logic", ví dụ:
