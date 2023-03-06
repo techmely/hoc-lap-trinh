@@ -1,5 +1,5 @@
 ---
-title: "Khởi tạo component"
+title: "Khám phá Angular App"
 description: "Ở trong AppModule, chúng ta đã thấy được một trong những thành phần quan trọng nhất của các ứng dụng Angular đó là các Component, ở đây là AppComponent, nó được import từ file app.component.ts Với mỗi một ứng dụng Angular, một component sẽ định nghĩa ra một view tương ứng."
 keywords:
   [
@@ -15,8 +15,8 @@ keywords:
     "code angular la gi",
   ]
 chapter:
-  name: "Khởi tạo một component mới"
-  slug: "03-khoi-tao-mot-component-moi"
+  name: "Khám phá Angular App"
+  slug: "03-kham-pha-angular-app"
 category:
   name: "Angular"
   slug: "angular"
@@ -110,7 +110,7 @@ Các bạn hãy thử tìm hiểu cấu trúc ứng dụng và tạo thêm nhi�
 
 ## Link tham khảo
 
-Link document các bạn cần tìm hiểu trong Day 2
+Link document các bạn cần tìm hiểu 
 
 - https://angular.io/guide/architecture
 - https://angular.io/guide/architecture-modules
