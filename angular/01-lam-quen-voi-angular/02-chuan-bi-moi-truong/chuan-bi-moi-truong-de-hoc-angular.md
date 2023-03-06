@@ -21,7 +21,7 @@ category:
   name: "Angular"
   slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 1
+position: 2
 ---
 
 Để chuẩn bị cho chặng đường phía trước, chúng ta cần một số thứ như sau:
