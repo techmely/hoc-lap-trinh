@@ -1,34 +1,24 @@
 ---
-title: "Structure directive If Else"
+title: "Cấu trúc If-else"
 description: "Trong Angular để thêm, xóa, thay đổi structure (structure HTML chẳng hạn) ở trên view của component chúng ta sẽ dùng Structure Directive."
 keywords:
   [
-    "gioi thieu angular",
-    "giới thiệu angular",
-    "khoá học angular",
-    "giới thiệu angular",
-    "giới thiệu angular cơ bản",
-    "angular la gi",
-    "tong quan ve angular",
-    "gioi thieu ve ngon ngu lap trinh angular",
-    "tom tat angular",
-    "code angular la gi",
+    
   ]
 chapter:
-  name: "Structure directive If Else"
-  slug: "02-structure-directive-if-else"
+  name: "Chương 2: Nhập môn Angular"
+  slug: "02-nhap-mon-angular"
 category:
   name: "Angular"
   slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---
-# Day 4: ANGULAR STRUCTURE DIRECTIVE - NGIF
 
 Theo như một lẽ tự nhiên trong lập trình, có những lúc chúng ta cần phụ thuộc vào điều kiện gì đó để đưa ra quyết định tương ứng. Giả sử chúng ta đang xây dựng ứng dụng xem video trực tuyển, lúc này có những bộ phim PG-13 yêu cầu người xem phải từ 13 tuổi trở lên mới xem được. Làm thế nào để hiển thị cho người dùng biết được họ có đủ điều kiện để xem video đó hay không? Lúc này chúng ta có thể dùng cấu trúc IF-ELSE mà Angular cung cấp để đáp ứng yêu cầu đó.
 Trong Angular để thêm, xóa, thay đổi structure (structure HTML chẳng hạn) ở trên view của component chúng ta sẽ dùng Structure Directive.
 
-## CẤU TRÚC IF-ELSE
+## Cấu trúc If-else
 
 Để hiển thị một phần view (template) theo một điều kiện, chúng ta sẽ gắn thêm một property đặc biệt vào một tag, với cú pháp có chứa dấu `* (asterisk)` như sau `*ngIf="expression"`:
 
@@ -68,7 +58,7 @@ Hoặc chúng ta có cách hay ho khác, đó là dùng đến ng-template. Tag 
 </ng-template>
 ```
 
-## NG-TEMPLATE
+## Ng-template
 
 Với cú pháp sử dụng dấu `*` ở trên, có thể các bạn sẽ thấy nó khác lạ, nhưng thực tế, nó được gọi là Syntactic sugar (giúp nhìn code dễ hiểu, dễ đọc hơn chẳng hạn) được chuyển đổi sang dạng property binding như sau:
 
@@ -78,7 +68,7 @@ Với cú pháp sử dụng dấu `*` ở trên, có thể các bạn sẽ thấ
 </ng-template>
 ```
 
-## SUMMARY
+## Lời kết
 
 Trong ngày thứ 4, chúng ta cần hiểu cách dùng cấu trúc ngIf-else, ngoài các cách sử dụng ở trên Angular còn cung cấp cách dùng ngIf-then-else nữa, các bạn có thể tìm hiểu thêm tại link tham khảo phía dưới.
 Link document các bạn cần tìm hiểu 

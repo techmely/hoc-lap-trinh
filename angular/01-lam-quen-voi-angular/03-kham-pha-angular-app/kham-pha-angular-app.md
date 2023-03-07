@@ -15,15 +15,15 @@ keywords:
     "code angular la gi",
   ]
 chapter:
-  name: "Khám phá Angular App"
-  slug: "03-kham-pha-angular-app"
+  name: "Chương 1: Làm quen với Angular"
+  slug: "01-lam-quen-voi-angular"
 category:
   name: "Angular"
   slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---
-# Day 2: EXPLORE ANGULAR APP
+
 
 Từ project được generate bởi Angular CLI chúng ta có thể thấy được trong đó có khá nhiều các file/folder, vậy application của chúng ta bắt đầu từ đâu.
 Đầu tiên, từ folder src bạn có thể thấy được file index.html, bên trong tag body sẽ có một tag HTML khá khác lạ (app-root trong hầu hết trường hợp). Tag này không hề tồn tại trong HTML, ắt hẳn đây là một custom tag/selector của application, hay nói cách khác, đây là cái gì đó bao ngoài của một view nào đó trong ứng dụng.
@@ -40,7 +40,7 @@ Với mỗi một ứng dụng Angular, một component sẽ định nghĩa ra m
 View của một component có thể coi là phần HTML mở rộng, nó có nhiều tính năng hơn HTML thông thường. Ở trong view chúng ta có thể sẽ nhúng các component/directive khác.
 Vậy là đã rõ, tag app-root mà chúng ta nhìn thấy từ index.html sau một vòng tìm hiểu chúng ta sẽ tìm ra nó thuộc về AppComponent.
 
-## KHỞI TẠO THÊM MỘT COMPONENT MỚI
+## Khởi tạo thêm một component mới
 
 Một Angular application sẽ được tạo từ nhiều component, nên chúng ta sẽ không để hết code vào AppComponent, bây giờ hãy làm thử một component khác xem sao.
 Chúng ta sẽ tạo mới file hello.component.ts cùng trong thư mục của app.component.ts và thực hiện coding.
@@ -103,10 +103,6 @@ Với cách tạo bằng tool thì bạn sẽ không cần phải làm những g
 That's all for today.
 
 Các bạn hãy thử tìm hiểu cấu trúc ứng dụng và tạo thêm nhiều component nữa nào.
-
-## Youtube Video
-
-[![Day 02](https://img.youtube.com/vi/jgFw8tAgKNs/0.jpg)](https://youtu.be/jgFw8tAgKNs)
 
 ## Link tham khảo
 

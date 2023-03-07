@@ -1,29 +1,19 @@
 ---
-title: "Structure directive NgFor"
+title: "Cấu trúc NgFor"
 description: "Sẽ ra sao nếu trong ứng dụng bạn cần phải hiển thị một danh sách các phần tử ra ngoài template? Nếu danh sách đó chúng ta có được là một array thì có cách nào thực hiện vòng lặp ở template không? Nếu chúng ta cần sử dụng for loop như trong code TypeScript thì sao? Câu trả lời cho những câu hỏi trên chính là NgForOf trong Angular."
 keywords:
   [
-    "gioi thieu angular",
-    "giới thiệu angular",
-    "khoá học angular",
-    "giới thiệu angular",
-    "giới thiệu angular cơ bản",
-    "angular la gi",
-    "tong quan ve angular",
-    "gioi thieu ve ngon ngu lap trinh angular",
-    "tom tat angular",
-    "code angular la gi",
+    
   ]
 chapter:
-  name: "Structure directive NgFor"
-  slug: "03-structure-directive-ng-for"
+  name: "Chương 2: Nhập môn Angular"
+  slug: "02-nhap-mon-angular"
 category:
   name: "Angular"
   slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---
-# Day 5: ANGULAR STRUCTURE DIRECTIVE NGFOROF
 
 Sẽ ra sao nếu trong ứng dụng bạn cần phải hiển thị một danh sách các phần tử ra ngoài template? Nếu danh sách đó chúng ta có được là một array thì có cách nào thực hiện vòng lặp ở template không? Nếu chúng ta cần sử dụng for loop như trong code TypeScript thì sao?
 Câu trả lời cho những câu hỏi trên chính là NgForOf trong Angular. (Một số bạn có thể gọi nó là `NgFor`).
@@ -62,7 +52,7 @@ Dưới đây là ví dụ về cách sử dụng NgForOf:
 
 Cấu trúc sử dụng này khá giống for (let author of authors) trong TypeScript đúng không.
 
-## MỘT SỐ LOCAL VARIABLE TRONG MỘT NGFOROF TEMPLATE
+## Một số biến local trong một NgForOf
 
 Khi sử dụng NgForOf, ở mỗi vòng lặp chúng ta sẽ có thể truy xuất đến một số local variable như:
 
@@ -89,7 +79,7 @@ Khi sử dụng NgForOf, ở mỗi vòng lặp chúng ta sẽ có thể truy xu�
 
 Lúc này biến `idx = index`, và `total = count`. Tương tự đối với các biến còn lại.
 
-## CẤU TRÚC NGFOROF VÀ NG-TEMPLATE
+## Cấu trúc NgForOf và Ng-template
 
 Với cấu trúc dùng dấu sao (\*) như trên chúng ta có thể chuyển đổi tương ứng về dạng ng-template và property binding như sau:
 
@@ -108,7 +98,7 @@ Với cấu trúc dùng dấu sao (\*) như trên chúng ta có thể chuyển �
 </ng-template>
 ```
 
-## SỬ DỤNG NHIỀU STRUCUTRE DIRECTIVE TRÊN CÙNG MỘT PHẦN TỬ
+## Sử dụng nhiều structure directive trên cùng một phần tử
 
 Trong nhiều trường hợp, bạn có thể cần kiểm tra một dữ liệu nào đó trong vòng lặp, nếu bạn đặt NgIf và NgForOf trên cùng một phần tử thì nó sẽ không work. Liệu có cách nào khác không?
 Câu trả lời đó là bạn không thể đặt nhiều hơn một structure directive lên một phần tử được. Hãy thử xem ví dụ sau:
@@ -141,7 +131,7 @@ Giả sử nếu bạn không được phép hoặc không muốn sinh ra một 
 </div>
 ```
 
-## SUMMARY
+## Lời kết
 
 Trong ngày thứ 5, chúng ta cần hiểu cách dùng cấu trúc NgForOf và một số lưu ý khi sử dụng các local variable. Thêm nữa chúng ta cũng cần tìm hiểu cách để sử dụng các cấu trúc lồng nhau với nhiều Structure directive
 Link document các bạn cần tìm hiểu 

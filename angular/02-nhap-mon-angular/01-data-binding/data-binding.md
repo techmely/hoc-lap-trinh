@@ -3,35 +3,25 @@ title: "Data Binding"
 description: "Trong Angular chúng ta đã được Angular làm nhiệm vụ đồng bộ những dữ liệu bị ràng buộc lại với nhau, chúng ta chỉ cần update data/state cần thiết. Vậy có những dạng data binding nào?"
 keywords:
   [
-    "gioi thieu angular",
-    "giới thiệu angular",
-    "khoá học angular",
-    "giới thiệu angular",
-    "giới thiệu angular cơ bản",
-    "angular la gi",
-    "tong quan ve angular",
-    "gioi thieu ve ngon ngu lap trinh angular",
-    "tom tat angular",
-    "code angular la gi",
+    
   ]
 chapter:
-  name: "Data Binding"
-  slug: "01-data-binding"
+  name: "Chương 2: Nhập môn Angular"
+  slug: "02-nhap-mon-angular"
 category:
   name: "Angular"
   slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
-# Day 3: ANGULAR DATA BINDING
 
 So, **what is data binding**? Hãy thử tưởng tượng rằng công ty X có anh nhân viên A, anh này có vợ là chị B, bằng một cách nào đó cứ đến kỳ chuyển lương thì chị B sẽ nhận được thông báo về điện thoại của mình rằng số tiền trong tài khoản của anh A đã được công ty X trả Y triệu. Tương tự như thế trong lập trình khi chúng ta có data D thuộc object O sẽ được ràng buộc với data G thuộc object OP, bằng một cách nào đó, mỗi khi data D thay đổi thì G cũng sẽ biết sự thay đổi và thay đổi theo. Đó là một dạng của data binding.
 Trong Angular chúng ta đã được Angular làm nhiệm vụ đồng bộ những dữ liệu bị ràng buộc lại với nhau, chúng ta chỉ cần update data/state cần thiết.
 Vậy có những dạng data binding nào?
 
-## INTERPOLATION
+## Mở đầu
 
-Bây giờ hãy nhớ lại, một component trong Angular chỉ là một TypeScript (TS) class thông thường, và nó đi kèm với một decorator để gắn thêm meta-data như template mà nó định nghĩa là gì. Như vậy, TS class và template này hoàn toàn không biết đến nhau, mà nó sẽ được Angular xử lý để gắn chúng lại. Câu hỏi đặt ra là làm thế nào để tôi hiển thị một dữ liệu nào đó (tên, tuổi, ngày tháng năm sinh, một string, number bất kỳ, hay bất kỳ thứ gì (object) có thể hiển thị được? Đây chính là nơi tỏa sáng của cặp đôi hoàn cảnh (mà chúng ta gọi là interpolation) `{{ expression }}`.
+Bây giờ hãy nhớ lại, một component trong Angular chỉ là một TypeScript (TS) class thông thường, và nó đi kèm với một decorator để gắn thêm meta-data như template mà nó định nghĩa là gì. Như vậy, TS class và template này hoàn toàn không biết đến nhau, mà nó sẽ được Angular xử lý để gắn chúng lại. Câu hỏi đặt ra là làm thế nào để tôi hiển thị một dữ liệu nào đó (tên, tuổi, ngày tháng năm sinh, một string, number bất kỳ, hay bất kỳ thứ gì (object)) có thể hiển thị được? Đây chính là nơi tỏa sáng của cặp đôi hoàn cảnh (mà chúng ta gọi là interpolation) `{{ expression }}`.
 Nó có thể hiểu là hãy tính toán cái expression này, nếu có trả về cái gì thì phun (display) nó ra ngay vị trí chỗ dấu `{{}}` này cho tôi.
 Chỉ đơn giản thế. Giờ các bạn có thể phun data về tên tuổi của một người thành cái profile đơn giản như sau:
 
@@ -53,7 +43,7 @@ export class HelloComponent {
 }
 ```
 
-## PROPERTY BINDING
+## Property binding
 
 Một số tag khi sử dụng bạn cần phải truyền vào data cho một property nào đó. Đối với DOM chúng ta có 2 khái niệm khác nhau là property và attribute. À mà khoan DOM là gì? Khi browser load trang web của bạn, nó sẽ parse phần HTML và xây dựng nên một cây Document Object Model (DOM) từ đó để biểu diễn tương ứng những gì HTML đang được dựng, cho phép chúng ta có thể tương tác với phần HTML như đọc, sửa HTML bằng JavaScript.
 Giả sử khi bạn có phần HTML:
@@ -84,7 +74,7 @@ Trong ví dụ ở trên chúng ta đã binding từ TS class ra ngoài template
 
 **Lưu ý**: ngoài property binding cho các phần tử HTML, chúng ta cũng có thể áp dụng property binding cho các component.
 
-## EVENT BINDING
+## Event binding
 
 JavaScript sử dụng rất nhiều đến khái niệm event. Khi một điều gì đó xảy ra, chúng ta muốn thực hiện một số task nào đó. Ví dụ, khi người dùng click vào button, tôi muốn hiển thị alert cho người dùng nhìn thấy.
 Angular có cách nào chính thống cho việc này không đây, hay chúng ta sẽ dùng addEventListener như thường?
@@ -112,7 +102,7 @@ Khá là giống như chúng ta sử dụng inline event listener đó.
 <button onclick="showInfo()">Click me!</button>
 ```
 
-## TWO-WAY BINDING
+## Two-way binding
 
 Trong thực tế two-way binding chính là kết hợp của binding dữ liệu từ class ra template thông qua property binding, và từ template vào class thông qua event binding.
 Nó chứa cú pháp ngắn gọn dạng vuông vuông tròn tròn như sau:
@@ -129,7 +119,7 @@ Nó chứa cú pháp ngắn gọn dạng vuông vuông tròn tròn như sau:
 
 Trong một buổi khác chúng ta sẽ tìm hiểu về Two-way binding và Custom Two-way binding sau.
 
-## SUMMARY
+## Lời kết
 
 Trong ngày thứ 3 này, chúng ta chỉ cần nắm được có các loại data binding nào trong Angular, làm thế nào để sử dụng chúng là được.
 Từ bây giờ các bạn có thể hoàn toàn tạo được một cái profile card theo phong cách của mình bằng Angular rồi.

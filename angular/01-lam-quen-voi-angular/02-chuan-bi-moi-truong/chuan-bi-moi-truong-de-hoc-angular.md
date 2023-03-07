@@ -15,8 +15,8 @@ keywords:
     "code angular la gi",
   ]
 chapter:
-  name: "Chuẩn bị môi trường để học Angular"
-  slug: "02-chuan-bi-moi-truong"
+  name: "Chương 1: Làm quen với Angular"
+  slug: "01-lam-quen-voi-angular"
 category:
   name: "Angular"
   slug: "angular"
