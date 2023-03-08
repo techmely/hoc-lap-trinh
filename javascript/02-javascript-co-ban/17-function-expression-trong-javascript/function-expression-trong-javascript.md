@@ -153,10 +153,10 @@ function ask(question, handleYes, handleNo) {
 ask(
   "Bạn muốn tiếp tục thực hiện chương trình không?",
   function () {
-    console.log("You chose Yes!");
+    console.log("Bạn đã chọn Yes!");
   },
   function () {
-    console.log("You chose No!");
+    console.log("Bạn đã chọn No!");
   },
 );
 ```
