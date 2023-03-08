@@ -6,8 +6,8 @@ keywords:
     
   ]
 chapter:
-  name: "Chương 2: Nhập môn Angular"
-  slug: "02-nhap-mon-angular"
+  name: "Nhập môn Angular"
+  slug: "chuong-02-nhap-mon-angular"
 category:
   name: "Angular"
   slug: "angular"
