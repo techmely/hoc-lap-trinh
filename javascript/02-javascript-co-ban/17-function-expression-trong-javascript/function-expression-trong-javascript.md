@@ -116,11 +116,11 @@ function ask(question, handleYes, handleNo) {
 }
 
 function handleYes() {
-  console.log("You chose Yes!");
+  console.log("Bạn đã chọn Yes!");
 }
 
 function handleNo() {
-  console.log("You chose No!");
+  console.log("Bạn đã chọn No!");
 }
 
 ask("Bạn muốn tiếp tục thực hiện chương trình không?", handleYes, handleNo);
