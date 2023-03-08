@@ -15,8 +15,8 @@ keywords:
     "code angular la gi",
   ]
 chapter:
-  name: "Làm quen với angular"
-  slug: "01-lam-quen-voi-angular"
+  name: "Làm quen với Angular"
+  slug: "chuong-01-lam-quen-voi-angular"
 category:
   name: "Angular"
   slug: "angular"
