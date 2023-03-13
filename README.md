@@ -34,7 +34,7 @@ Xem hướng dẫn đóng góp ở đây 👇
     <td align="center"><a href="https://github.com/phanduc0908"><img src="https://avatars.githubusercontent.com/u/29729545?v=4" width="100px;" alt=""/><br /><sub><b>Phan Van Duc</b></sub></a></td>
     <td align="center"><a href="https://github.com/luutu868"><img src="https://avatars.githubusercontent.com/u/86488558?v=4" width="100px;" alt=""/><br /><sub><b>luutu868</b></sub></a></td>
     <td align="center"><a href="https://github.com/kieuminhduc01"><img src="https://avatars.githubusercontent.com/u/50008521?v=4" width="100px;" alt=""/><br /><sub><b>Kieu Duc</b></sub></a></td>
-    <td align="center"><a href="https://github.com/thanh-huong"><img src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-6/326735119_713328830168011_9202986046312186056_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Lwa1HExaHSUAX88UXJj&_nc_ht=scontent.fhan15-1.fna&oh=00_AfB6roIK4ZfKpzplYDnMm0bQRjGdguLbLZTMJuKGYJbbDg&oe=641393A0" width="100px;" alt=""/><br /><sub><b>Thanh Huong</b></sub></a></td>
+    <td align="center"><a href="https://github.com/thanh-huong"><img src="https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-1/285500332_2228558547310053_3709849046467668096_n.jpg?stp=c88.0.480.480a_dst-jpg_p480x480&_nc_cat=109&ccb=1-7&_nc_sid=7206a8&_nc_ohc=joKa676FfPYAX_Ovdv9&_nc_ht=scontent.fhan5-9.fna&oh=00_AfCumAyQGIjtkxLaKD7m38PhKyKUdSGqj3-p8ZPToEZ7jQ&oe=64137D4E" width="100px;" alt=""/><br /><sub><b>Thanh Huong</b></sub></a></td>
   </tr>
 </table>
 
