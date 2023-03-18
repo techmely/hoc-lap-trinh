@@ -1,3 +1,23 @@
+---
+title: "Tổng hợp các câu hỏi java"
+description: ""
+keywords:
+  [
+    "Tổng hợp các câu hỏi java",
+    "các câu hỏi java",
+    "Tong hop cac cau hoi java",
+    "cac cau hoi java",
+  ]
+chapter:
+  name: "Tài nguyên"
+  slug: "chuong-07-tai-nguyen"
+category:
+  name: "Java"
+  slug: "java"
+image: https://user-images.githubusercontent.com/29374426/146175674-fa7e09f7-4e42-485e-a2b5-8c664601b203.png
+position: 1
+---
+
 ## Question blank
 
 QN=1
@@ -436,7 +456,6 @@ first second first third snootchy 420
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -455,9 +474,6 @@ C. Unmodel
 D. None of the above
 
 **ANSWER: A**
-
-
-
 
 MIX
 CHOICES:
@@ -491,7 +507,6 @@ D.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -509,9 +524,6 @@ C.
 D.
 
 **ANSWER: B**
-
-
-
 
 MIX
 CHOICES:
@@ -536,7 +548,6 @@ D. f.
 **ANSWER: E**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -565,7 +576,6 @@ D. public void logIt(String msg1, String msg2, String msg3)
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -585,9 +595,6 @@ D.
 
 **ANSWER: B**
 
-
-
-
 MIX
 CHOICES:
 Yes
@@ -606,10 +613,6 @@ C.
 D.
 
 **ANSWER: B**
-
-
-
-
 
 MIX
 CHOICES:
@@ -641,7 +644,6 @@ D.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -662,7 +664,6 @@ D. DriverManager
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -682,7 +683,6 @@ D. JDBCManager
 **ANSWER: C**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -705,9 +705,6 @@ C. x = 13, a = 7, b = 8
 D. x = 13, a = 6, b = 7
 
 **ANSWER: C**
-
-
-
 
 MIX
 CHOICES:
@@ -748,7 +745,6 @@ Compilation fails because of an error at line 30.
 MARK:
 2
 
-
 MIX
 CHOICES:
 Yes
@@ -769,9 +765,6 @@ finalist
 f.
 
 **ANSWER: A**BCDE
-
-
-
 
 MIX
 CHOICES:
@@ -808,7 +801,6 @@ D.
 **ANSWER: D**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -857,7 +849,6 @@ f.
 MARK:
 2
 
-
 MIX CHOICES:
 Yes
 
@@ -895,7 +886,6 @@ D. 101
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -932,7 +922,6 @@ D. 11.3
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -966,7 +955,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -995,7 +983,6 @@ D. Base(int j, int k, int l) { }
 **ANSWER: A**C
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -1036,7 +1023,6 @@ f.
 **ANSWER: D**
 MARK:
 2
-
 
 MIX
 Yes
@@ -1084,7 +1070,6 @@ f.
 MARK:
 2
 
-
 MIX
 CHOICES:
 Yes
@@ -1112,7 +1097,6 @@ D. Line 7
 **ANSWER: C**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -1144,7 +1128,6 @@ D. The args array must have one or more elements.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -1171,7 +1154,6 @@ collection.
 **ANSWER: C**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -1212,7 +1194,6 @@ f.
 MARK:
 2
 
-
 MIX
 Yes
 
@@ -1251,7 +1232,6 @@ D. f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -1286,7 +1266,6 @@ i = 1 j = 2
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -1320,7 +1299,6 @@ i = 1 j = 2
 **ANSWER: D**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -1363,7 +1341,6 @@ f.
 MARK:
 2
 
-
 MIX
 CHOICES:
 Yes
@@ -1402,7 +1379,6 @@ f
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -1427,9 +1403,6 @@ x.length is 25
 f.
 
 **ANSWER: A**E
-
-
-
 
 MIX
 CHOICES:
@@ -1459,7 +1432,6 @@ D. public float aMethod(float p, float q) {...}
 **ANSWER: B**D
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -1491,7 +1463,6 @@ f.
 **ANSWER: A**CE
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -1529,7 +1500,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -1554,7 +1524,6 @@ None of the above
 MARK:
 1
 
-
 MIX
 CHOICES:
 No
@@ -1575,7 +1544,6 @@ D.
 **ANSWER: A**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -1605,7 +1573,6 @@ f.
 **ANSWER: A**BE
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -1641,7 +1608,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -1668,7 +1634,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -1690,9 +1655,6 @@ C. while (String s:names)
 D.
 
 **ANSWER: A**B
-
-
-
 
 MIX
 CHOICES:
@@ -1731,7 +1693,6 @@ Compilation fails because of an error in line 19.
 MARK:
 2
 
-
 MIX
 CHOICES:
 Yes
@@ -1766,7 +1727,6 @@ Compilation fails.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -1791,9 +1751,6 @@ C. public interface B instanceOf A {}
 D. public interface B inheritsFrom A { }
 
 **ANSWER: A**
-
-
-
 
 MIX
 CHOICES:
@@ -1826,7 +1783,6 @@ D. protected double getSalesAmount() { return 1230.45; }
 **ANSWER: B**D
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -1868,7 +1824,6 @@ system.
 MARK:
 2
 
-
 MIX
 CHOICES:
 Yes
@@ -1897,7 +1852,6 @@ D. Nav.Direction d = Nav.Direction.NORTH;
 **ANSWER: D**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -1931,7 +1885,6 @@ D. new class Foo { public int bar() { return 1; } }
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -1964,7 +1917,6 @@ f.
 **ANSWER: A**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -2000,7 +1952,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -2030,7 +1981,6 @@ f.
 **ANSWER: A**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -2065,7 +2015,6 @@ D. NullPointerException
 **ANSWER: C**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -2102,7 +2051,6 @@ D. A NumberFormatException is thrown by the parse method at runtime.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -2131,7 +2079,6 @@ f.
 **ANSWER: D**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -2177,7 +2124,6 @@ An AssertionException is thrown without the word “stuff” added to the stack 
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -2215,7 +2161,6 @@ f.
 **ANSWER: D**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -2255,8 +2200,6 @@ doStuff x = 6 main x = 5
 MARK:
 1
 
-
-
 MIX
 CHOICES:
 Yes
@@ -2294,7 +2237,6 @@ doStuffx = 6 main x = 5
 **ANSWER: D**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -2334,7 +2276,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -2372,7 +2313,6 @@ f.
 MARK:
 2
 
-
 MIX
 CHOICES:
 Yes
@@ -2406,7 +2346,6 @@ f.
 **ANSWER: B**CE
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -2444,7 +2383,6 @@ abc
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -2468,9 +2406,6 @@ C. Compilation will fail because of an error in line 55.
 D. Compilation will fail because of an error in line 56.
 
 **ANSWER: B**
-
-
-
 
 MIX
 CHOICES:
@@ -2502,7 +2437,6 @@ java -ea:test test file1
 **ANSWER: B**E
 MARK:
 1
-
 
 MIX
 Yes
@@ -2541,7 +2475,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -2564,7 +2497,6 @@ D. Line l = new Line() ; Point p = new l.Point();
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -2586,7 +2518,6 @@ D. for( int i=0; i< x.length; i++ ) System.out.println(x[i]);
 **ANSWER: B**D
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -2612,7 +2543,6 @@ abstract
 **ANSWER: A**BD
 MARK:
 1
-
 
 MIX CHOICES:
 Yes
@@ -2653,7 +2583,6 @@ B()).process(); }
 MARK:
 2
 
-
 MIX
 CHOICES:
 Yes
@@ -2674,8 +2603,6 @@ D. There is no single technique that can guarantee non-deadlocking code.
 **ANSWER: D**
 MARK:
 1
-
-
 
 MIX
 CHOICES:
@@ -2701,7 +2628,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -2722,7 +2648,6 @@ D. Access the variables only via synchronized methods.
 **ANSWER: D**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -2745,7 +2670,6 @@ D. The File class does not provide a way to list the contents of a directory.
 
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -2780,7 +2704,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -2798,9 +2721,6 @@ C. One for each synchronized method
 D. One for each non-static synchronized method
 
 **ANSWER: A**
-
-
-
 
 MIX
 CHOICES:
@@ -2826,9 +2746,6 @@ f.
 
 **ANSWER: D**
 
-
-
-
 MIX
 CHOICES:
 Yes
@@ -2850,7 +2767,6 @@ D.
 **ANSWER: B**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -2889,7 +2805,6 @@ D.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -2908,9 +2823,6 @@ C. TreeSet
 D.
 
 **ANSWER: C**
-
-
-
 
 MIX
 CHOICES:
@@ -2932,8 +2844,6 @@ D. Comparable interface and its equals method
 **ANSWER: A**
 MARK:
 1
-
-
 
 MIX
 CHOICES:
@@ -2957,9 +2867,6 @@ D.
 
 **ANSWER: A**
 
-
-
-
 MIX
 CHOICES:
 Yes
@@ -2981,9 +2888,6 @@ C.
 D.
 
 **ANSWER: A**
-
-
-
 
 MIX
 CHOICES:
@@ -3011,7 +2915,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -3032,7 +2935,6 @@ D. Connection
 **ANSWER: D**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -3055,10 +2957,6 @@ D.
 
 **ANSWER: A**
 
-
-
-
-
 MIX
 CHOICES:
 Yes
@@ -3077,9 +2975,6 @@ C.
 D.
 
 **ANSWER: A**
-
-
-
 
 MIX
 CHOICES:
@@ -3101,7 +2996,6 @@ D. None of the others
 MARK:
 1
 
-
 MIX
 CHOICES:
 No
@@ -3119,10 +3013,6 @@ C. Metal-View-Controller
 D.
 
 **ANSWER: A**
-
-
-
-
 
 MIX
 CHOICES:
@@ -3154,7 +3044,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -3183,7 +3072,6 @@ D. No output
 **ANSWER: C**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -3216,7 +3104,6 @@ D. None of the above
 MARK:
 1
 
-
 MIX
 CHOICES:
 No
@@ -3248,7 +3135,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -3279,7 +3165,6 @@ f.
 **ANSWER: C**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -3315,7 +3200,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -3350,7 +3234,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -3374,7 +3257,6 @@ D. All the above
 MARK:
 1
 
-
 MIX
 CHOICES:
 No
@@ -3394,7 +3276,6 @@ D. All the others choices
 **ANSWER: D**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -3420,7 +3301,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -3444,7 +3324,6 @@ JVM.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -3466,7 +3345,6 @@ D.
 **ANSWER: B**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -3493,7 +3371,6 @@ D. A client accesses a remote object by specifying only the server name.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -3517,7 +3394,6 @@ D. There is no way to know how long the accept() call will take.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -3540,7 +3416,6 @@ communicate with a server through TCP.
 **ANSWER: A**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -3566,7 +3441,6 @@ D.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -3588,7 +3462,6 @@ D. WHERE
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -3608,7 +3481,6 @@ D. RowSet
 **ANSWER: B**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -3631,7 +3503,6 @@ D. Both 1 and 2 are not true
 **ANSWER: C**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -3657,7 +3528,6 @@ the finally block will always execute.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -3678,7 +3548,6 @@ D.
 **ANSWER: A**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -3701,7 +3570,6 @@ D.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -3722,7 +3590,6 @@ D. There are no restrictions regarding no-args constructors.
 **ANSWER: C**
 MARK:
 2
-
 
 MIX
 CHOICES:
@@ -3745,7 +3612,6 @@ D. There are no restrictions regarding no-args constructors.
 MARK:
 2
 
-
 MIX
 CHOICES:
 Yes
@@ -3767,7 +3633,6 @@ D. Default
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -3788,7 +3653,6 @@ D. private
 **ANSWER: A**B
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -3812,9 +3676,6 @@ D. private void doSomething(int a, float b) throws java.io.IOException { … }
 
 **ANSWER: A**
 
-
-
-
 MIX
 CHOICES:
 Yes
@@ -3835,7 +3696,6 @@ D.
 **ANSWER: C**D
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -3861,7 +3721,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 No
@@ -3880,9 +3739,6 @@ C. for (float f::salaries)
 D. for (int i::salaries)
 
 **ANSWER: A**
-
-
-
 
 MIX
 CHOICES:
@@ -3905,7 +3761,6 @@ D. Never
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -3927,7 +3782,6 @@ D. None of the others choices
 MARK:
 1
 
-
 MIX
 CHOICES:
 No
@@ -3946,9 +3800,6 @@ C. if (x.toString().equals(y.toString()))
 D. if (x.hashCode() == y.hashCode())
 
 **ANSWER: A**
-
-
-
 
 MIX
 CHOICES:
@@ -3971,7 +3822,6 @@ D. private
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -3993,7 +3843,6 @@ D. private
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -4012,9 +3861,6 @@ C. Override start().
 D. Make sure that all access to all data is via synchronized methods.
 
 **ANSWER: B**
-
-
-
 
 MIX
 CHOICES:
@@ -4040,7 +3886,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -4058,9 +3903,6 @@ C.
 D.
 
 **ANSWER: A**
-
-
-
 
 MIX
 CHOICES:
@@ -4082,7 +3924,6 @@ D. None of the others
 MARK:
 1
 
-
 MIX
 CHOICES:
 No
@@ -4102,9 +3943,6 @@ D. PopUp
 
 **ANSWER: B**
 
-
-
-
 MIX
 CHOICES:
 Yes
@@ -4122,9 +3960,6 @@ C.
 D.
 
 **ANSWER: B**
-
-
-
 
 MIX
 CHOICES:
@@ -4145,9 +3980,6 @@ D. javax.Swing
 
 **ANSWER: A**
 
-
-
-
 MIX
 CHOICES:
 Yes
@@ -4166,9 +3998,6 @@ C. DatagramPack and DatagramSock
 D.
 
 **ANSWER: A**
-
-
-
 
 MIX
 CHOICES:
@@ -4219,7 +4048,6 @@ f.
 MARK:
 2
 
-
 MIX
 CHOICES:
 Yes
@@ -4267,7 +4095,6 @@ f.
 MARK:
 2
 
-
 MIX CHOICES:
 Yes
 
@@ -4294,7 +4121,6 @@ D. void doSomething() throws IOException, EOFException { … }
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -4314,7 +4140,6 @@ D. jdbc:datasoursename
 **ANSWER: A**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -4342,7 +4167,6 @@ byte
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -4364,7 +4188,6 @@ D.
 **ANSWER: B**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -4399,7 +4222,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -4428,7 +4250,6 @@ D. -1
 **ANSWER: D**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -4466,7 +4287,6 @@ D. No compiler error and no exception.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -4489,9 +4309,6 @@ C. The code compiles, and prints out >>null<<
 D.
 
 **ANSWER: C**
-
-
-
 
 MIX
 CHOICES:
@@ -4527,7 +4344,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -4551,7 +4367,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -4570,10 +4385,6 @@ D. 4
 
 **ANSWER: B**
 
-
-
-
-
 MIX
 CHOICES:
 Yes
@@ -4591,9 +4402,6 @@ C. -2
 D. 2
 
 **ANSWER: A**
-
-
-
 
 MIX
 CHOICES:
@@ -4618,7 +4426,6 @@ throws ClassCastException.
 **ANSWER: A**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -4661,7 +4468,6 @@ D. f.
 MARK:
 2
 
-
 MIX
 CHOICES:
 Yes
@@ -4684,9 +4490,6 @@ f.
 
 **ANSWER: D**
 
-
-
-
 MIX
 CHOICES:
 Yes
@@ -4708,9 +4511,6 @@ e.
 f.
 
 **ANSWER: D**
-
-
-
 
 MIX
 CHOICES:
@@ -4748,7 +4548,6 @@ contains a file called datafile.
 MARK:
 2
 
-
 MIX
 CHOICES:
 Yes
@@ -4765,9 +4564,6 @@ C. An int
 D. A boolean
 
 **ANSWER: D**
-
-
-
 
 MIX
 CHOICES:
@@ -4790,9 +4586,6 @@ createNewFile()
 f.
 
 **ANSWER: E**
-
-
-
 
 MIX
 CHOICES:
@@ -4820,7 +4613,6 @@ D. A compiler error at line 4
 **ANSWER: C**
 MARK:
 1
-
 
 MIX
 Yes
@@ -4851,7 +4643,6 @@ D. The output: b contains 245
 **ANSWER: B**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -4889,7 +4680,6 @@ D. message four
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -4911,9 +4701,6 @@ f.
 
 **ANSWER: C**
 
-
-
-
 MIX
 CHOICES:
 Yes
@@ -4932,9 +4719,6 @@ C. Negative
 D. All the above
 
 **ANSWER: C**
-
-
-
 
 MIX
 CHOICES:
@@ -4955,9 +4739,6 @@ D. All the above
 
 **ANSWER: D**
 
-
-
-
 MIX
 CHOICES:
 No
@@ -4975,9 +4756,6 @@ C. float
 D. You can’t add a short to a float.
 
 **ANSWER: C**
-
-
-
 
 MIX
 CHOICES:
@@ -5003,7 +4781,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -5024,7 +4801,6 @@ D. When the exception’s printStackTrace() method is called
 **ANSWER: A**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -5047,7 +4823,6 @@ D. When the exception is being thrown from a private method
 **ANSWER: B**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -5073,7 +4848,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -5093,7 +4867,6 @@ D. None of the others
 **ANSWER: B**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -5119,7 +4892,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -5139,7 +4911,6 @@ D. None of the others
 **ANSWER: B**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -5162,7 +4933,6 @@ D. cpu instruction
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -5181,9 +4951,6 @@ C. throwable
 D. nothrows
 
 **ANSWER: A**
-
-
-
 
 MIX
 CHOICES:
@@ -5209,7 +4976,6 @@ D.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -5228,9 +4994,6 @@ C. Arrays.createList
 D. Arrays.makeList
 
 **ANSWER: A**
-
-
-
 
 MIX
 CHOICES:
@@ -5256,7 +5019,6 @@ D.
 **ANSWER: A**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -5290,7 +5052,6 @@ D. 1)Create a statement and execute the query
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -5311,7 +5072,6 @@ D. four-tier
 **ANSWER: A**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -5338,7 +5098,6 @@ sc.useDelimiter("\\d+");
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -5363,7 +5122,6 @@ class Man { private BestFriend<dog> }
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -5384,9 +5142,6 @@ getNameString()
 f.
 
 **ANSWER: B**C
-
-
-
 
 MIX
 CHOICES:
@@ -5412,7 +5167,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -5434,9 +5188,6 @@ char
 f.
 String
 **ANSWER: A**BE
-
-
-
 
 MIX
 CHOICES:
@@ -5478,7 +5229,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -5496,9 +5246,6 @@ C. import static java.util.Vector.\_;
 D. import java.util.Vector static;
 
 **ANSWER: A**C
-
-
-
 
 MIX
 CHOICES:
@@ -5532,7 +5279,6 @@ if (j==3) continue loop;
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -5555,7 +5301,6 @@ None of the above.
 **ANSWER: F**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -5580,7 +5325,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -5598,9 +5342,6 @@ C. double d = 1.2d5;
 D. double d = 1.2D5;
 
 **ANSWER: A**B
-
-
-
 
 MIX
 CHOICES:
@@ -5623,9 +5364,6 @@ f.
 
 **ANSWER: C**D
 
-
-
-
 MIX
 CHOICES:
 Yes
@@ -5644,9 +5382,6 @@ D.
 
 **ANSWER: A**C
 
-
-
-
 MIX
 CHOICES:
 Yes
@@ -5664,9 +5399,6 @@ C. Vector <String> theVec = new Vector<String>;
 D. Vector <String> theVec = new Vector<String>();
 
 **ANSWER: B**D
-
-
-
 
 MIX
 CHOICES:
@@ -5692,7 +5424,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -5717,7 +5448,6 @@ All the above
 MARK:
 1
 
-
 MIX
 CHOICES:
 No
@@ -5740,9 +5470,6 @@ f.
 
 **ANSWER: E**
 
-
-
-
 MIX
 CHOICES:
 No
@@ -5762,7 +5489,6 @@ D. The JVM runs until there are no non-daemon threads.
 **ANSWER: D**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -5786,7 +5512,6 @@ D.
 **ANSWER: B**CD
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -5812,7 +5537,6 @@ can specify the object on whose lock the block should synchronize.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -5831,9 +5555,6 @@ D. An enum may contain private dat
 A.
 **ANSWER: C**D
 
-
-
-
 MIX
 CHOICES:
 Yes
@@ -5851,9 +5572,6 @@ C. References are passed by reference.
 D. References are passed by value.
 
 **ANSWER: B**D
-
-
-
 
 MIX
 CHOICES:
@@ -5880,7 +5598,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -5899,9 +5616,6 @@ C. FileInputStream
 D. RandomAccessFile
 
 **ANSWER: C**
-
-
-
 
 MIX
 CHOICES:
@@ -5927,7 +5641,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 No
@@ -5952,7 +5665,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 No
@@ -5970,9 +5682,6 @@ C. java.util.TreeSet
 D. java.util.Stack
 
 **ANSWER: A**D
-
-
-
 
 MIX
 CHOICES:
@@ -5993,7 +5702,6 @@ D. CopyOnWriteArraySet
 **ANSWER: B**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -6016,9 +5724,6 @@ f.
 
 **ANSWER: A**DE
 
-
-
-
 MIX
 CHOICES:
 Yes
@@ -6037,9 +5742,6 @@ D.
 
 **ANSWER: B**C
 
-
-
-
 MIX
 CHOICES:
 Yes
@@ -6057,9 +5759,6 @@ C. String x = "Hello"; int y = 9; x = x + y;
 D. String x = "Hello"; int y = 9; y = y + x;
 
 **ANSWER: A**C
-
-
-
 
 MIX
 CHOICES:
@@ -6080,9 +5779,6 @@ D. int x = –1; x = x >> 5;
 
 **ANSWER: A**
 
-
-
-
 MIX
 CHOICES:
 Yes
@@ -6101,9 +5797,6 @@ C. List
 D.
 
 **ANSWER: B**
-
-
-
 
 MIX
 CHOICES:
@@ -6126,7 +5819,6 @@ D. Postconditions of a private method
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -6146,7 +5838,6 @@ D. // comment
 **ANSWER: C**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -6171,7 +5862,6 @@ are detected, explicitly throw AssertionError.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -6195,7 +5885,6 @@ f.
 MARK:
 1
 
-
 MIX No
 CHOICES:
 
@@ -6218,7 +5907,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 No
@@ -6239,7 +5927,6 @@ D. A variable of primitive type
 **ANSWER: A**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -6265,7 +5952,6 @@ f.
 MARK:
 1
 
-
 MIX CHOICES:
 Yes
 
@@ -6282,9 +5968,6 @@ C. Methods
 D.
 
 **ANSWER: A**C
-
-
-
 
 MIX
 CHOICES:
@@ -6303,9 +5986,6 @@ C. Static field names
 D. Method-local variable names
 
 **ANSWER: B**C
-
-
-
 
 MIX
 CHOICES:
@@ -6327,9 +6007,6 @@ Variables
 f.
 
 **ANSWER: B**CD
-
-
-
 
 MIX CHOICES:
 Yes
@@ -6354,7 +6031,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 No
@@ -6376,7 +6052,6 @@ D. All of the above
 MARK:
 1
 
-
 MIX
 CHOICES:
 No
@@ -6396,7 +6071,6 @@ D. Classes
 **ANSWER: D**
 MARK:
 1
-
 
 MIX CHOICES:
 Yes
@@ -6421,7 +6095,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -6443,7 +6116,6 @@ D. sleep() and yield()
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -6464,7 +6136,6 @@ A.
 > > > ANSWER: > > > D
 > > > MARK:
 > > > 0.5
-> > >
 
 MIX CHOICES:
 Yes
@@ -6486,9 +6157,6 @@ A.
   f.
 
 **ANSWER: D**
-
-
-
 
 MIX
 CHOICES:
@@ -6513,7 +6181,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -6535,7 +6202,6 @@ D. They may not call the enclosing class’ synchronized methods.
 MARK:
 1
 
-
 MIX CHOICES:
 Yes
 
@@ -6552,9 +6218,6 @@ C. Assertion errors
 D. Errors other than assertion errors
 
 **ANSWER: B**
-
-
-
 
 MIX
 CHOICES:
@@ -6578,9 +6241,6 @@ f.
 
 **ANSWER: B**D
 
-
-
-
 MIX
 CHOICES:
 Yes
@@ -6603,8 +6263,6 @@ D. The thread that calls notify() gives up the lock.
 MARK:
 1
 
-
-
 MIX
 CHOICES:
 Yes
@@ -6626,7 +6284,6 @@ D. Thread priority is an integer ranging from 1 to 100.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -6646,7 +6303,6 @@ D.
 **ANSWER: D**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -6682,7 +6338,6 @@ can be constructed and returned from a method like this:
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -6706,7 +6361,6 @@ None of the above
 MARK:
 1
 
-
 MIX
 CHOICES:
 No
@@ -6726,8 +6380,6 @@ D. StringBuffer is threadsafe; StringBuilder is not.
 **ANSWER: A**D
 MARK:
 1
-
-
 
 MIX
 CHOICES:
@@ -6750,7 +6402,6 @@ D.
 **ANSWER: B**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -6777,7 +6428,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -6801,7 +6451,6 @@ f.
 **ANSWER: E**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -6828,7 +6477,6 @@ D. f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -6851,7 +6499,6 @@ f.
 **ANSWER: D**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -6877,7 +6524,6 @@ D. None of the above
 MARK:
 1
 
-
 MIX
 CHOICES:
 No
@@ -6900,7 +6546,6 @@ D. None of the above.
 **ANSWER: D**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -6935,7 +6580,6 @@ Line 6
 **ANSWER: F**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -6981,7 +6625,6 @@ D. None of the above scenarios can be guaranteed to happen in all cases.
 MARK:
 1
 
-
 MIX
 CHOICES:
 No
@@ -7010,7 +6653,6 @@ f.
 **ANSWER: A**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -7043,7 +6685,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -7070,7 +6711,6 @@ D. Neither line 4 nor line 6 executes.
 **ANSWER: C**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -7114,8 +6754,6 @@ f.
 MARK:
 2
 
-
-
 MIX
 CHOICES:
 Yes
@@ -7154,7 +6792,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -7177,8 +6814,6 @@ D. The returned value varies depending on the argument.
 **ANSWER: A**
 MARK:
 1
-
-
 
 MIX
 CHOICES:
@@ -7217,7 +6852,6 @@ f.
 **ANSWER: E**
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -7262,7 +6896,6 @@ f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -7289,7 +6922,6 @@ JDBC is a Java API for connecting to any kind of DBMS
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -7310,7 +6942,6 @@ D. static final int[] a; static void init() {a=new int[3];a[0]=100; a[1]=200;}
 **ANSWER: A**B
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -7335,7 +6966,6 @@ List
 **ANSWER: B**E
 MARK:
 1
-
 
 MIX
 CHOICES:
@@ -7366,7 +6996,6 @@ D. f.
 MARK:
 1
 
-
 MIX
 CHOICES:
 Yes
@@ -7391,7 +7020,6 @@ D. private class Cat extends Pet
 **ANSWER: C**
 MARK:
 2
-
 
 MIX
 CHOICES:
@@ -7420,8 +7048,10 @@ String markings;
 MARK:
 2
 
-
 MIX
 CHOICES:
 Yes
+
+```
+
 ```

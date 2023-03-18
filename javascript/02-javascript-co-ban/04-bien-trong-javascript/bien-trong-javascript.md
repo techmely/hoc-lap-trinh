@@ -32,8 +32,6 @@ Biến là "tên biểu tượng" dùng để đại diện cho một giá trị
 
 ![Biến trong JavaScript](https://user-images.githubusercontent.com/29374426/156797884-2817ae97-98cc-4748-829d-aafee9886aa1.png)
 
-Biến là "tên biểu tượng" dùng để đại diện cho một giá trị. Và giá trị của biến có thể thay đổi trong chương trình.
-
 Giả sử `x`là số lượng người đang đọc bài viết này, thì `x` chính là một biến. Ví dụ giá trị của biến `x` bây giờ là 100. Nhưng năm phút sau, số lượng người đọc bài viết tăng lên thành 150. Lúc này, giá trị của biến `x` sẽ là 150.
 
 ## Cách khai báo biến trong JavaScript

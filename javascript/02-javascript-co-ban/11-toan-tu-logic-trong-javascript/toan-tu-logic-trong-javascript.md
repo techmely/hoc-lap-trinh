@@ -356,7 +356,7 @@ Nếu so sánh thứ tự ưu tiên của các toán tử logic trong JavaScript
 <content-example />
 
 ```js
-console.log(1 + 2 || ("javascript" && 4 > 5));
+console.log(1 + 2 || !"javascript" && 4 > 5);
 ```
 
 Dựa theo độ ưu tiên thì quá trình thực hiện sẽ như sau (mình sử dụng cặp dấu ngoặc đơn `()` để biểu thị phần được xử lý trước):
