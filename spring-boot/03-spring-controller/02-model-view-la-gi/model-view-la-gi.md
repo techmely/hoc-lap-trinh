@@ -6,7 +6,7 @@ keywords:
     "Model and View",
     "post la gi",
     "get la gi",
-    "get va post trong springboot",
+    "get va post trong spring boot",
     "get data la gi",
     "put va post khac nhau nhu the nao",
     "du ieu truyen di bang phuong thuc get",
