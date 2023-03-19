@@ -1,10 +1,7 @@
 ---
 title: "Angular CDK Coercion"
 description: "Sau hai tutorial với Jira clone, hôm nay chúng ta sẽ đổi gió tìm hiểu thêm một chút về Angular CDK Coercion, một bộ API rất hữu dụng nhưng rất tiếc chưa có documentation chi tiết 🤣"
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"
@@ -65,17 +62,23 @@ export class ChildComponent {
 Để truyền `someFlag` thì chúng ta cần sử dụng binding expresss `[]`
 
 ```html
-<child [someFlag]="true"></child>  <!-- works -->
-<child [someFlag]="false"></child> <!-- works -->
+<child [someFlag]="true"></child>
+<!-- works -->
+<child [someFlag]="false"></child>
+<!-- works -->
 ```
 
 Còn nếu pass string, hoặc không có `[]` thì sẽ không work nhé các bợn 😂 Từ ngày có Ivy thì chúng ta còn không thể build dc app nếu pass input khác kiểu như đã define trong component nữa nhé.
 
 ```html
-<child someFlag="false"></child>      <!-- doesn't work -->
-<child someFlag="true"></child>       <!-- doesn't work -->
-<child [someFlag]="'false'"></child>  <!-- doesn't work -->
-<child [someFlag]="'true'"></child>   <!-- doesn't work -->
+<child someFlag="false"></child>
+<!-- doesn't work -->
+<child someFlag="true"></child>
+<!-- doesn't work -->
+<child [someFlag]="'false'"></child>
+<!-- doesn't work -->
+<child [someFlag]="'true'"></child>
+<!-- doesn't work -->
 ```
 
 ![Angular CDK Coercion](./assets/day42-01.png)
@@ -122,14 +125,6 @@ Và dùng ở trên template như sau, cách dùng tiêu chuẩn với template 
 
 ![Angular CDK Coercion](./assets/day42-02.png)
 
-
 ## Source code
 
 https://stackblitz.com/edit/angular-ivy-cdk-coercion?file=src/app/child/child.component.ts
-
-## Tài liệu tham khảo
-
-- https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/
-- https://indepth.dev/posts/1315/angular-cdk-coercion
-
-

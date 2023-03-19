@@ -1,9 +1,12 @@
 ---
-title: "Cấu trúc If-else"
+title: "Cấu trúc if-else trong angular"
 description: "Trong Angular để thêm, xóa, thay đổi structure (structure HTML chẳng hạn) ở trên view của component chúng ta sẽ dùng Structure Directive."
 keywords:
   [
-    
+    "Cấu trúc if-else trong Angular",
+    "Angular template syntax",
+    "cau truc if else trong angular",
+    "cau truc if-else trong angular",
   ]
 chapter:
   name: "Nhập môn Angular"
@@ -18,13 +21,13 @@ position: 2
 Theo như một lẽ tự nhiên trong lập trình, có những lúc chúng ta cần phụ thuộc vào điều kiện gì đó để đưa ra quyết định tương ứng. Giả sử chúng ta đang xây dựng ứng dụng xem video trực tuyển, lúc này có những bộ phim PG-13 yêu cầu người xem phải từ 13 tuổi trở lên mới xem được. Làm thế nào để hiển thị cho người dùng biết được họ có đủ điều kiện để xem video đó hay không? Lúc này chúng ta có thể dùng cấu trúc IF-ELSE mà Angular cung cấp để đáp ứng yêu cầu đó.
 Trong Angular để thêm, xóa, thay đổi structure (structure HTML chẳng hạn) ở trên view của component chúng ta sẽ dùng Structure Directive.
 
-## Cấu trúc If-else
+## Cấu trúc `if-else` trong angular
 
 Để hiển thị một phần view (template) theo một điều kiện, chúng ta sẽ gắn thêm một property đặc biệt vào một tag, với cú pháp có chứa dấu `* (asterisk)` như sau `*ngIf="expression"`:
 
 ```typescript
 @Component({
-  selector: 'app-hello',
+  selector: "app-hello",
   template: `
     <h2>Hello there!</h2>
     <h3>Your name: {{ user.name }}</h3>
@@ -34,7 +37,7 @@ Trong Angular để thêm, xóa, thay đổi structure (structure HTML chẳng h
 })
 export class HelloComponent {
   user = {
-    name: 'Tiep Phan',
+    name: "Tiep Phan",
     age: 30,
   };
 }
@@ -58,7 +61,7 @@ Hoặc chúng ta có cách hay ho khác, đó là dùng đến ng-template. Tag 
 </ng-template>
 ```
 
-## Ng-template
+## `Ng-template` trong angular
 
 Với cú pháp sử dụng dấu `*` ở trên, có thể các bạn sẽ thấy nó khác lạ, nhưng thực tế, nó được gọi là Syntactic sugar (giúp nhìn code dễ hiểu, dễ đọc hơn chẳng hạn) được chuyển đổi sang dạng property binding như sau:
 
@@ -71,7 +74,7 @@ Với cú pháp sử dụng dấu `*` ở trên, có thể các bạn sẽ thấ
 ## Lời kết
 
 Trong ngày thứ 4, chúng ta cần hiểu cách dùng cấu trúc ngIf-else, ngoài các cách sử dụng ở trên Angular còn cung cấp cách dùng ngIf-then-else nữa, các bạn có thể tìm hiểu thêm tại link tham khảo phía dưới.
-Link document các bạn cần tìm hiểu 
+Link document các bạn cần tìm hiểu
 
 - https://angular.io/guide/structural-directives
 - https://angular.io/api/common/NgIf

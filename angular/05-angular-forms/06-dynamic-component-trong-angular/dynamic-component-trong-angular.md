@@ -1,10 +1,7 @@
 ---
 title: "Dynamic Component trong Angular"
 description: "Việc load động 1 component khác trong lúc runtime được thực hiện như thế nào? Điều đó dẫn ta đến bài hôm nay, **Dynamic Component** sẽ là câu trả lời phù hợp để làm việc này."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Angular Forms"
   slug: "chuong-05-angular-forms"
@@ -238,19 +235,19 @@ Code sẽ như sau:
   Code sẽ như sau:
 
 ```typescript
-  import { BrowserModule } from "@angular/platform-browser";
-  import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-  import { AppComponent } from "./app.component";
-  import { ExampleContainerComponent } from "./example-container/example-container.component";
+import { AppComponent } from "./app.component";
+import { ExampleContainerComponent } from "./example-container/example-container.component";
 
-  @NgModule({
-    declarations: [AppComponent, ExampleContainerComponent],
-    imports: [BrowserModule],
-    providers: [],
-    bootstrap: [AppComponent],
-  })
-  export class AppModule {}
+@NgModule({
+  declarations: [AppComponent, ExampleContainerComponent],
+  imports: [BrowserModule],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
 ```
 
 Vậy là đã xong, các bạn đã thực hiện thành công việc lazy load các dynamic components mà không phải add trực tiếp vào như ở những step đầu.
@@ -292,12 +289,3 @@ Trong bài này chúng ta đã học được những concepts liên quan đ
 ## Code sample
 
 - https://github.com/januaryofmine/Dynamic-Component-Demo
-
-## Tài liệu tham khảo
-
-Các bạn có thể đọc thêm ở các bài viết sau
-
-- https://angular.io/guide/dynamic-component-loader
-- https://www.tiepphan.com/angular-trong-5-phut-dynamic-component-rendering/
-- https://stackblitz.com/edit/angular-dynamic-components-example
-- https://www.youtube.com/watch?v=dZD7pw6rmRA

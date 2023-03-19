@@ -1,10 +1,7 @@
 ---
 title: "RxJS Error Handling and Conditional Operators"
 description: "Trong ngày hôm nay chúng ta sẽ cùng tìm hiểu một số operators để xử lý lỗi và một số khác để làm việc với các loại điều kiện (Error Handling and Conditional Operators)."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
@@ -14,6 +11,7 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 6
 ---
+
 Trong ngày đầu tiên tìm hiểu RxJS chúng ta được biết rằng, mỗi Observable có thể gửi về các message cho `Next`, `Error`, `Complete`. Và nếu như có Error được phát sinh thì Observable sẽ dừng lại. Vậy làm thế nào để chúng ta có thể catch được Error đó?
 
 ![Values over time](assets/rxjs-streams.gif)
@@ -26,13 +24,13 @@ Trong bài này, chúng ta sẽ tiếp tục sử dụng observer mặc định 
 const observer = {
   next: (val) => console.log(val),
   error: (err) => console.error(err),
-  complete: () => console.log('complete'),
+  complete: () => console.log("complete"),
 };
 ```
 
 ## RxJS Error Handling Operators
 
-### catchError
+### catchError trong RxJS
 
 Đối với trường hợp các bạn muốn bắt được lỗi và muốn xử lý lỗi đó, ví dụ: biến đổi Error thành một value thông thường, tránh bị terminate stream. Bạn có thể dùng catchError (`.catch` cho prototype chain).
 
@@ -41,14 +39,14 @@ const observer = {
 `catchError<T, O extends ObservableInput<any>>(selector: (err: any, caught: Observable<T>) => O): OperatorFunction<T, T | ObservedValueOf<O>>`
 
 ```ts
-import { of } from 'rxjs';
-import { map, catchError } from 'rxjs/operators';
+import { of } from "rxjs";
+import { map, catchError } from "rxjs/operators";
 const cached = [4, 5];
 of(1, 2, 3, 4, 5)
   .pipe(
     map((n) => {
       if (cached.includes(n)) {
-        throw new Error('Duplicated: ' + n);
+        throw new Error("Duplicated: " + n);
       }
       return n;
     }),
@@ -67,7 +65,7 @@ Trong trường hợp trên nếu chúng ta không bắt error thì `observer.er
 Một ví dụ trong ứng dụng là khi các bạn làm việc với `forkJoin` [Day 23](Day023-rxjs-combination.md), lúc này nếu một stream nào đó emit error thì toàn bộ stream sẽ bị văng ra error. Trong trường hợp các bạn muốn nó vẫn tiếp tục chạy hết và chúng ta sẽ tách Error ra ở pipe tiếp theo thì chỉ cần `catchError` lại như trên là được.
 
 ```ts
-forkJoin([of(1), of(2), throwError(new Error('401'))]).subscribe(observer);
+forkJoin([of(1), of(2), throwError(new Error("401"))]).subscribe(observer);
 /**
  * Output:
  * --(x: Error 401)--
@@ -78,7 +76,7 @@ forkJoin([of(1), of(2), throwError(new Error('401'))]).subscribe(observer);
 forkJoin([
   of(1),
   of(2),
-  throwError(new Error('401')).pipe(catchError((err) => of(err))),
+  throwError(new Error("401")).pipe(catchError((err) => of(err))),
 ]).subscribe(observer);
 
 /**
@@ -97,7 +95,7 @@ of(1, 2, 3, 4, 5)
   .pipe(
     map((n) => {
       if (cached.includes(n)) {
-        throw new Error('Duplicated: ' + n);
+        throw new Error("Duplicated: " + n);
       }
       return n;
     }),
@@ -114,7 +112,7 @@ of(1, 2, 3, 4, 5)
 
 Ngoài ra, trong catchError bạn hoàn toàn có thể throw về một error để pipe phía sau có thể handle tiếp.
 
-### retry
+### retry trong RxJS
 
 > Returns an Observable that mirrors the source Observable with the exception of an error. If the source Observable calls error, this method will resubscribe to the source Observable for a maximum of count resubscriptions (given as a number parameter) rather than propagating the error call.
 
@@ -130,7 +128,7 @@ of(1, 2, 3, 4, 5)
   .pipe(
     map((n) => {
       if (cached.includes(n)) {
-        throw new Error('Duplicated: ' + n);
+        throw new Error("Duplicated: " + n);
       }
       return n;
     }),
@@ -163,7 +161,7 @@ export function retryBackoff(
     shouldRetry = () => true,
     resetOnSuccess = false,
     backoffDelay = exponentialBackoffDelay,
-  } = typeof config === 'number' ? { initialInterval: config } : config;
+  } = typeof config === "number" ? { initialInterval: config } : config;
   return <T>(source: Observable<T>) =>
     defer(() => {
       let index = 0;
@@ -194,7 +192,7 @@ export function retryBackoff(
 
 ## RxJS Error Conditional Operators
 
-### defaultIfEmpty/throwIfEmpty
+### defaultIfEmpty/throwIfEmpty trong RxJS
 
 `defaultIfEmpty<T, R>(defaultValue: R = null): OperatorFunction<T, T | R>`
 
@@ -205,16 +203,16 @@ Hai operators này cho phép chúng ta trả về các giá trị tương ứng 
 Giả sử, chúng ta cần làm yêu cầu nếu người dùng không click vào sau 1s thì sẽ báo lỗi. Ví dụ tạo transaction sau 1s không confirm thì hủy và báo lỗi cho người dùng.
 
 ```ts
-import { fromEvent, timer } from 'rxjs';
-import { throwIfEmpty, takeUntil } from 'rxjs/operators';
+import { fromEvent, timer } from "rxjs";
+import { throwIfEmpty, takeUntil } from "rxjs/operators";
 
-const click$ = fromEvent(document, 'click');
+const click$ = fromEvent(document, "click");
 
 click$
   .pipe(
     takeUntil(timer(1000)),
     throwIfEmpty(
-      () => new Error('the document was not clicked within 1 second')
+      () => new Error("the document was not clicked within 1 second")
     )
   )
   .subscribe(observer);
@@ -222,7 +220,7 @@ click$
 
 ![RxJS throwIfEmpty](assets/rxjs-throwIfEmpty.png)
 
-### every
+### every trong RxJS
 
 > Returns an Observable that emits whether or not every item of the source satisfies the condition specified.
 
@@ -261,7 +259,7 @@ of(1, 2, 3, 14, 5, 6)
  */
 ```
 
-### iif
+### iif trong RxJS
 
 > Decides at subscription time which Observable will actually be subscribed. [RxJS iff](https://rxjs.dev/api/index/function/iif)
 
@@ -276,10 +274,10 @@ Opeartor này cho phép chúng ta lựa chọn Observable tương ứng với h�
 > If you have more complex logic that requires decision between more than two Observables, `defer` will probably be a better choice. Actually `iif` can be easily implemented with `defer` and exists only for convenience and readability reasons.
 
 ```ts
-import { iif, of } from 'rxjs';
+import { iif, of } from "rxjs";
 
 let subscribeToFirst;
-const firstOrSecond = iif(() => subscribeToFirst, of('first'), of('second'));
+const firstOrSecond = iif(() => subscribeToFirst, of("first"), of("second"));
 
 subscribeToFirst = true;
 firstOrSecond.subscribe((value) => console.log(value));
@@ -297,9 +295,3 @@ firstOrSecond.subscribe((value) => console.log(value));
 ## Lời kết
 
 Như vậy ngày hôm nay chúng ta đã tăng cường thêm nội lực (💪) về RxJS qua một số operators: Error Handling và Conditional. Hẹn gặp lại các bạn vào ngày mai.
-
-## Tài liệu tham khảo
-
-- [RxJS Overview](https://rxjs.dev/guide/overview)
-- [LearnRxJS](https://www.learnrxjs.io/)
-- [rxmarbles](https://rxmarbles.com/)

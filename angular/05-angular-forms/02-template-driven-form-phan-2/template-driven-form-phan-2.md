@@ -1,10 +1,7 @@
 ---
 title: "Template-driven Forms Trong Angular Phần 2"
 description: "Vậy trong trường hợp người dùng nhập các thông tin đó không chính xác thì sao? Chúng ta có cần kiểm tra tính đúng đắn của dữ liệu được nhập hay không? Câu trả lời cho vấn đề trên chính là việc validate data. Ví dụ, người nhân viên ngân hàng khi nhận được form mở tài khoản của một người dùng, người tiếp viên đó sẽ phải kiểm tra những thông tin như tên, ngày tháng năm sinh có chính xác như thông tin được in trên hộ chiếu (hoặc các giấy tờ tương tự) hay không."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Angular Forms"
   slug: "chuong-05-angular-forms"
@@ -48,7 +45,6 @@ Angular Template-driven Forms có cung cấp sẵn một số directives cơ b�
 
 Source code: [validators.ts](https://github.com/angular/angular/blob/10.0.x/packages/forms/src/directives/validators.ts)
 
-
 ## Validate Forms
 
 Đối với form Sign In như đã đề cập từ [Day 33][day33], giả sử theo dự án yêu cầu:
@@ -60,22 +56,40 @@ Với yêu cầu trên chúng ta sẽ làm thế nào để hiển thị cho ng�
 
 ```html
 <div class="container">
-  <form class="sign-in-form" novalidate #signInForm="ngForm" (submit)="onSubmit(signInForm)">
+  <form
+    class="sign-in-form"
+    novalidate
+    #signInForm="ngForm"
+    (submit)="onSubmit(signInForm)"
+  >
     <h2>Sign in</h2>
     <div class="row-control">
       <mat-form-field appearance="outline">
         <mat-label>Username</mat-label>
-        <input matInput placeholder="Username" [(ngModel)]="userInfo.userName" name="username">
+        <input
+          matInput
+          placeholder="Username"
+          [(ngModel)]="userInfo.userName"
+          name="username"
+        />
       </mat-form-field>
     </div>
     <div class="row-control">
       <mat-form-field appearance="outline">
         <mat-label>Password</mat-label>
-        <input type="password" matInput placeholder="Password" [(ngModel)]="userInfo.password" name="password">
+        <input
+          type="password"
+          matInput
+          placeholder="Password"
+          [(ngModel)]="userInfo.password"
+          name="password"
+        />
       </mat-form-field>
     </div>
     <div class="row-control">
-      <mat-checkbox [(ngModel)]="userInfo.rememberMe" name="rememberMe">Remember me</mat-checkbox>
+      <mat-checkbox [(ngModel)]="userInfo.rememberMe" name="rememberMe"
+        >Remember me</mat-checkbox
+      >
     </div>
     <div class="row-control row-actions">
       <button mat-raised-button color="primary" type="submit">Sign in</button>
@@ -86,11 +100,13 @@ Với yêu cầu trên chúng ta sẽ làm thế nào để hiển thị cho ng�
   </form>
 </div>
 ```
+
 ![Sign In](assets/day33-sign-in-form.png)
 
 ### Username input
 
 Chúng ta sẽ lần lượt thêm các directives vào để validate như sau:
+
 ```html
 <input
   matInput
@@ -100,8 +116,10 @@ Chúng ta sẽ lần lượt thêm các directives vào để validate như sau:
   maxlength="32"
   [pattern]="usernamePattern"
   [(ngModel)]="userInfo.userName"
-  name="username">
+  name="username"
+/>
 ```
+
 ```ts
 export class SignInComponent {
   usernamePattern = /^[a-z]{6,32}$/i;
@@ -124,10 +142,12 @@ Nếu chúng ta muốn hiển thị message báo lỗi tùy thuộc vào từng 
   [pattern]="usernamePattern"
   #username="ngModel"
   [(ngModel)]="userInfo.userName"
-  name="username">
+  name="username"
+/>
 
 <pre>{{ username.errors | json }}</pre>
 ```
+
 ![Sign In form errors](assets/day34-sign-in-form-2.gif)
 
 Giờ đây chúng ta có thể sử dụng `NgIf` để hiển thị được lỗi tương ứng:
@@ -144,7 +164,8 @@ Giờ đây chúng ta có thể sử dụng `NgIf` để hiển thị được l
     [pattern]="usernamePattern"
     #username="ngModel"
     [(ngModel)]="userInfo.userName"
-    name="username">
+    name="username"
+  />
   <mat-error *ngIf="username.errors.required">Username is required!</mat-error>
 </mat-form-field>
 ```
@@ -167,7 +188,8 @@ Nhưng khi chạy bạn sẽ thấy có một lỗi runtime như sau:
     [pattern]="usernamePattern"
     #username="ngModel"
     [(ngModel)]="userInfo.userName"
-    name="username">
+    name="username"
+  />
   <mat-error *ngIf="username.errors?.required">Username is required!</mat-error>
 </mat-form-field>
 ```
@@ -177,10 +199,16 @@ Nếu bạn sử dụng Angular Material như ở trên, nó sẽ check một c�
 ```html
 <mat-error *ngIf="username.touched && !username.valid">
   <span *ngIf="username.errors.required">Username is required</span>
-  <span *ngIf="username.errors.minlength || username.errors.maxlength">Length from 6 to 32 characters</span>
-  <span *ngIf="!(username.errors.minlength || username.errors.maxlength) && username.errors.pattern">Only alphabet</span>
+  <span *ngIf="username.errors.minlength || username.errors.maxlength"
+    >Length from 6 to 32 characters</span
+  >
+  <span
+    *ngIf="!(username.errors.minlength || username.errors.maxlength) && username.errors.pattern"
+    >Only alphabet</span
+  >
 </mat-error>
 ```
+
 Giờ đây bạn sẽ có thể có những validation giúp UX được nâng cao hơn trước đây.
 
 ![Sign In form errors](assets/day34-sign-in-form-3.gif)
@@ -188,6 +216,7 @@ Giờ đây bạn sẽ có thể có những validation giúp UX được nâng 
 ### Password input
 
 Tương tự như Username input, bạn cũng có thể làm cho Password input với cách thức như đã được đề cập.
+
 ```html
 <mat-form-field appearance="outline">
   <mat-label>Password</mat-label>
@@ -201,36 +230,31 @@ Tương tự như Username input, bạn cũng có thể làm cho Password input 
     [pattern]="passwordPattern"
     #password="ngModel"
     [(ngModel)]="userInfo.password"
-    name="password">
+    name="password"
+  />
   <mat-error *ngIf="password.touched && !password.valid">
     <span *ngIf="password.errors.required">Password is required</span>
-    <span *ngIf="password.errors.minlength || password.errors.maxlength">Length from 6 to 32 characters</span>
-    <span *ngIf="!(password.errors.minlength || password.errors.maxlength) && password.errors.pattern">
+    <span *ngIf="password.errors.minlength || password.errors.maxlength"
+      >Length from 6 to 32 characters</span
+    >
+    <span
+      *ngIf="!(password.errors.minlength || password.errors.maxlength) && password.errors.pattern"
+    >
       Only alphabet, digit and at least one of !@#$%^&*
     </span>
   </mat-error>
 </mat-form-field>
 ```
+
 ```ts
 passwordPattern = /^(?=.*[!@#$%^&*]+)[a-z0-9!@#$%^&*]{6,32}$/;
 ```
 
-
 ## Lời kết
+
 Trong bài học này chúng ta hiểu hơn về Angular Forms, cụ thể ở đây là Template-driven Forms Validation.
 
 ## Code sample
 
 - https://github.com/tieppt/100-doc-angular/tree/day34
 - https://stackblitz.com/edit/100-days-of-angular-day-34?file=src%2Fapp%2Fsign-in%2Fsign-in.component.html
-
-## Tài liệu tham khảo
-
-Các bạn có thể đọc thêm ở các bài viết sau:
-
-- https://angular.io/guide/form-validation
-- https://angular.io/guide/forms-overview
-- https://angular.io/guide/forms
-- https://angular.io/guide/reactive-forms
-- https://www.tiepphan.com/thu-nghiem-voi-angular-template-driven-forms-trong-angular/
-

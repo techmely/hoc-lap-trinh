@@ -1,9 +1,13 @@
 ---
-title: "Cấu trúc NgFor"
-description: "Sẽ ra sao nếu trong ứng dụng bạn cần phải hiển thị một danh sách các phần tử ra ngoài template? Nếu danh sách đó chúng ta có được là một array thì có cách nào thực hiện vòng lặp ở template không? Nếu chúng ta cần sử dụng for loop như trong code TypeScript thì sao? Câu trả lời cho những câu hỏi trên chính là NgForOf trong Angular."
+title: "Cấu trúc NgFor trong angular"
+description: "Chủ đề 'Cấu trúc NgFor trong Angular' là một trong những chủ đề được quan tâm trong cộng đồng lập trình Angular. Trong bài viết này, chúng tôi sẽ cung cấp cho bạn một hướng dẫn chi tiết về cách sử dụng Cấu trúc NgFor để lặp lại dữ liệu trong Angular. Bài viết bao gồm các ví dụ minh họa cụ thể, giải thích chi tiết về cú pháp và các tính năng của Cấu trúc NgFor. Nếu bạn mới bắt đầu với Angular hoặc muốn củng cố kiến thức của mình về lặp lại dữ liệu trong Angular, bài viết này sẽ là một tài liệu hữu ích và cung cấp cho bạn những kiến thức cần thiết để tối ưu hóa ứng dụng của mình. Hãy đọc bài viết này để biết thêm thông tin chi tiết về Cấu trúc NgFor trong Angular"
 keywords:
   [
-    
+    "Cấu trúc NgFor trong Angular",
+    "Cấu trúc NgFor trong Angular là gi",
+    "Angular for loop",
+    "Angular NgFor directive",
+    "cau truc ngfor trong angular la gi",
   ]
 chapter:
   name: "Nhập môn Angular"
@@ -24,25 +28,25 @@ Giả sử chúng ta có một danh sách các tác giả của các cuốn sác
 authors = [
   {
     id: 1,
-    firstName: 'Flora',
-    lastName: 'Twell',
-    email: 'ftwell0@phoca.cz',
-    gender: 'Female',
-    ipAddress: '99.180.237.33',
+    firstName: "Flora",
+    lastName: "Twell",
+    email: "ftwell0@phoca.cz",
+    gender: "Female",
+    ipAddress: "99.180.237.33",
   },
   {
     id: 2,
-    firstName: 'Priscella',
-    lastName: 'Signe',
-    email: 'psigne1@berkeley.edu',
-    gender: 'Female',
-    ipAddress: '183.243.228.65',
+    firstName: "Priscella",
+    lastName: "Signe",
+    email: "psigne1@berkeley.edu",
+    gender: "Female",
+    ipAddress: "183.243.228.65",
   },
   // more data
 ];
 ```
 
-Dưới đây là ví dụ về cách sử dụng NgForOf:
+Dưới đây là ví dụ về cách sử dụng `NgForOf`:
 
 ```html
 <div *ngFor="let author of authors">
@@ -116,7 +120,7 @@ Ví dụ:
 
 ```html
 <div *ngFor="”let" item of list”>
-  <div *ngIf="”somethingGoood”">More code</div>
+  <div *ngIf="”somethingGood”">More code</div>
 </div>
 ```
 
@@ -124,20 +128,14 @@ Giả sử nếu bạn không được phép hoặc không muốn sinh ra một 
 
 ```html
 <div *ngFor="”let" item of list”>
-  <ng-container *ngIf="”somethingGoood”"> More code </ng-container>
+  <ng-container *ngIf="”somethingGood”"> More code </ng-container>
 </div>
 <div *ngFor="”let" item of list”>
-  <ng-template [ngIf]="”somethingGoood”"> More code </ng-template>
+  <ng-template [ngIf]="”somethingGood”"> More code </ng-template>
 </div>
 ```
 
 ## Lời kết
 
 Trong ngày thứ 5, chúng ta cần hiểu cách dùng cấu trúc NgForOf và một số lưu ý khi sử dụng các local variable. Thêm nữa chúng ta cũng cần tìm hiểu cách để sử dụng các cấu trúc lồng nhau với nhiều Structure directive
-Link document các bạn cần tìm hiểu 
-
-- https://angular.io/guide/structural-directives
-- https://angular.io/api/common/NgForOf
-- https://www.tiepphan.com/thu-nghiem-voi-angular-2-built-in-directives-ngif-ngfor-ngswitchcase/
-- https://www.tiepphan.com/thu-nghiem-voi-angular-2-ngfor-index-first-last-even-odd-trackby/
-- https://www.youtube.com/watch?v=dXDC-4KGIGI
+Link document các bạn cần tìm hiểu

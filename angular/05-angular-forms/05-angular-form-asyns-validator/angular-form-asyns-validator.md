@@ -1,10 +1,7 @@
 ---
 title: "Async Validator trong Angular Form"
 description: "Trong bài trước, chúng ta đã tìm hiểu về validate reactive forms trong Angular, cũng như viết một custom validator đơn giản để check xem input có dấu cách hay ko. Trong bài này sẽ nói thêm về Async Validator trong Angular."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Angular Forms"
   slug: "chuong-05-angular-forms"
@@ -74,7 +71,7 @@ const PASSWORD_PATTERN = /^(?=.*[!@#$%^&*]+)[a-z0-9!@#$%^&*]{6,32}$/;
 
 this.registerForm = this._fb.group({
   username: [
-    '',
+    "",
     Validators.compose([
       Validators.required,
       Validators.minLength(6),
@@ -82,7 +79,7 @@ this.registerForm = this._fb.group({
     ]),
   ],
   password: [
-    '',
+    "",
     Validators.compose([
       Validators.required,
       Validators.minLength(6),
@@ -90,7 +87,7 @@ this.registerForm = this._fb.group({
     ]),
   ],
   confirmPassword: [
-    '',
+    "",
     Validators.compose([
       Validators.required,
       Validators.minLength(6),
@@ -208,7 +205,7 @@ Sau khi viết xong function, chúng ta cần config control để sử dụng v
 ```ts
 this.registerForm = this._fb.group({
   username: [
-    '',
+    "",
     Validators.compose([
       Validators.required,
       Validators.minLength(6),
@@ -253,7 +250,7 @@ Sau đó config control để dùng `validateUserNameFromAPIDebounce`.
 ```ts
 this.registerForm = this._fb.group({
   username: [
-    '',
+    "",
     Validators.compose([
       Validators.required,
       Validators.minLength(6),
@@ -295,11 +292,11 @@ this.formSubmit$
     switchMap(() =>
       this.registerForm.statusChanges.pipe(
         startWith(this.registerForm.status),
-        filter((status) => status !== 'PENDING'),
+        filter((status) => status !== "PENDING"),
         take(1)
       )
     ),
-    filter((status) => status === 'VALID'),
+    filter((status) => status === "VALID"),
     tap(() => {
       this.submitForm();
     })
@@ -395,12 +392,3 @@ Trong bài này chúng ta đã tìm hiểu về async validator với reactive f
 ## Code sample
 
 - https://stackblitz.com/edit/100-days-of-angular-day-37-async-validator
-
-## Tài liệu tham khảo
-
-Các bạn có thể đọc thêm ở các bài viết sau
-
-- https://trungk18.com/experience/angular-async-validator/
-- https://www.tiepphan.com/thu-nghiem-voi-angular-reactive-forms-trong-angular/
-- https://www.tiepphan.com/thu-nghiem-voi-angular-template-driven-forms-trong-angular/
-

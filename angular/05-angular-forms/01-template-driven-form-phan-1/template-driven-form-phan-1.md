@@ -1,10 +1,7 @@
 ---
 title: "Template-driven Forms Trong Angular Phần 1"
 description: "Form hay biểu mẫu là một thành phần khá quan trọng trong các hệ thống/công ty hiện nay. Ví dụ khi bạn mở một tài khoản ngân hàng, hay form đăng ký trường Đại học, hoặc kể cả là một số form các bạn cần phải điền khi đi làm ở một công ty mới chẳng hạn. Do đó các ứng dụng sẽ có thể có khá nhiều ứng dụng cần phải thiết lập chức năng Forms để có thể thu thập thông tin cần thiết của người dùng."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Angular Forms"
   slug: "chuong-05-angular-forms"
@@ -14,6 +11,7 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
+
 ## Giới thiệu
 
 Angular là một full-fledged framework, nó đã cung cấp sẵn hai giải pháp cho Forms là **Template-driven Forms** và **Reactive Forms** hay còn gọi làm **Model-driven Forms**.
@@ -80,7 +78,7 @@ ng g c sign-in
 ```ts
 const routes: Routes = [
   {
-    path: 'sign-in',
+    path: "sign-in",
     component: SignInComponent,
   },
 ];
@@ -121,10 +119,10 @@ Chúng ta có thể có template như sau:
 Lưu ý, để có thể sử dụng các components/directives từ Angular Material các bạn cần import `NgModule` tương ứng vào `NgModule` quản lý component hiện tại. Ví dụ trong trường hợp này `SignInComponent` được quản lý bởi `AppModule` nên chúng ta có một số imports sau:
 
 ```ts
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from "@angular/material/input";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatCheckboxModule } from "@angular/material/checkbox";
+import { MatButtonModule } from "@angular/material/button";
 
 @NgModule({
   declarations: [AppComponent, SignInComponent],
@@ -151,7 +149,7 @@ Khi render chúng ta sẽ có giao diện như sau:
 Để có thể sử dụng các APIs mà Angular cung cấp cho việc thao tác với **Template-driven Forms**, chúng ta cần import `NgModule` là `FormsModule` từ package `@angular/forms` như sau vào `AppModule`:
 
 ```ts
-import { FormsModule } from '@angular/forms';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [AppComponent, SignInComponent],
@@ -212,11 +210,10 @@ Lúc này bạn sẽ cần phải register các control vào form thông qua `ng
 
 Ngay khi chúng ta save lại, bạn sẽ nhận được một thông báo lỗi runtime như sau ở console:
 
-```
+```bash
 Error: If ngModel is used within a form tag, either the name attribute must be set or the form control must be defined as 'standalone' in ngModelOptions.
-
-  Example 1: <input [(ngModel)]="person.firstName" name="first">
-  Example 2: <input [(ngModel)]="person.firstName" [ngModelOptions]="{standalone: true}">
+Example 1: <input [(ngModel)]="person.firstName" name="first">
+Example 2: <input [(ngModel)]="person.firstName" [ngModelOptions]="{standalone: true}">
 ```
 
 Một thông báo khá rõ ràng, chúng ta cần phải gắn thêm `name` attribute cho thẻ `input` hoặc sẽ thêm một config nữa. Trong trường hợp này, chúng ta mong muốn register control nên chúng ta sẽ thêm `name` attribute.
@@ -302,8 +299,8 @@ Ví dụ, chúng ta có thể có một object (model) với những data có s�
 ```ts
 export class SignInComponent implements OnInit {
   userInfo = {
-    userName: 'tiepphan',
-    password: '',
+    userName: "tiepphan",
+    password: "",
     rememberMe: true,
   };
   constructor() {}
@@ -424,13 +421,3 @@ Trong bài này chúng ta đã tìm hiểu một số concept cơ bản về Ang
 
 - https://github.com/tieppt/100-doc-angular/tree/day33
 - https://stackblitz.com/edit/100-days-of-angular-day-33?file=src%2Fapp%2Fsign-in%2Fsign-in.component.html
-
-## Tài liệu tham khảo
-
-Các bạn có thể đọc thêm ở các bài viết sau
-
-- https://angular.io/guide/forms-overview
-- https://angular.io/guide/forms
-- https://angular.io/guide/reactive-forms
-- https://www.tiepphan.com/thu-nghiem-voi-angular-template-driven-forms-trong-angular/
-

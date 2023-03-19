@@ -1,10 +1,7 @@
 ---
 title: "Angular Router"
 description: "Trước đây khi các ứng dụng web vẫn chủ yếu follow theo mô hình server side rendering. Tức là khi bạn mở một website, phía server sẽ gửi cho bạn toàn bộ page đó để render. Khi bạn chuyển trang, ví dụ như từ trang chủ của một website mua bán trực tuyến, bạn click vào một đường dẫn để xem phần thông tin các sản phẩm về giày dép. Phần server sẽ gửi lại toàn bộ HTML của page đó, bao gồm từ thẻ <html>, <head> và các thẻ script, cho đến phần nội dung cần được hiển thị. Điều này dẫn đến việc với mỗi click lên website, cả website sẽ được reload với phần nội dung mới. Thuật ngữ đó là refresh, hay postback trong một số ngôn ngữ."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Angular Router"
   slug: "chuong-04-angular-router"
@@ -142,11 +139,11 @@ Với yêu cầu của mình và hai component vừa được tạo, thì cấu 
 ```ts
 const routes: Routes = [
   {
-    path: 'detail',
+    path: "detail",
     component: ArticleDetailComponent,
   },
   {
-    path: '',
+    path: "",
     component: ArticleListComponent,
   },
 ];
@@ -192,22 +189,22 @@ Bây giờ mình sẽ render ra một danh sách các bài viết dựa vào dat
 ```ts
 const Articles: Article[] = [
   {
-    id: '1',
-    slug: 'bai-viet-1',
-    title: 'Bai viet 1',
-    content: 'Day la noi dung bai viet 1',
-    updateAt: '2020-07-06T13:26:31.785Z',
+    id: "1",
+    slug: "bai-viet-1",
+    title: "Bai viet 1",
+    content: "Day la noi dung bai viet 1",
+    updateAt: "2020-07-06T13:26:31.785Z",
   },
   {
-    id: '2',
-    slug: 'bai-viet-2',
-    title: 'Bai viet 2',
-    content: 'Day la noi dung bai viet 2 nhe',
-    updateAt: '2020-07-15:00:00.000Z',
+    id: "2",
+    slug: "bai-viet-2",
+    title: "Bai viet 2",
+    content: "Day la noi dung bai viet 2 nhe",
+    updateAt: "2020-07-15:00:00.000Z",
   },
 ];
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class ArticleService {
   getArticles(): Observable<Article[]> {
@@ -254,11 +251,11 @@ Giờ phần việc còn lại là config để route detail có thể nhận dc
 ```ts
 const routes: Routes = [
   {
-    path: ':slug',
+    path: ":slug",
     component: ArticleDetailComponent,
   },
   {
-    path: '',
+    path: "",
     component: ArticleListComponent,
   },
 ];
@@ -274,7 +271,7 @@ export class ArticleDetailComponent implements OnInit {
   constructor(private _route: ActivatedRoute, private _api: ArticleService) {}
 
   ngOnInit(): void {
-    let slug = this._route.snapshot.paramMap.get('slug');
+    let slug = this._route.snapshot.paramMap.get("slug");
     this.article$ = this._api.getArticleBySlug(slug);
   }
 }
@@ -293,13 +290,3 @@ Hy vọng các bạn nắm được qua bài viết này
 - Cách config router
 - Cách lấy data từ route
 - Thứ tự sắp xếp của route khi config là quan trọng.
-
-Các bạn có thể đọc thêm ở các bài viết sau
-
-- https://angular.io/guide/router
-- https://www.tiepphan.com/angular-router-series/
-
-## Code example
-
-https://stackblitz.com/edit/angular-100-days-of-code-day-27-router-basic
-

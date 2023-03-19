@@ -1,10 +1,11 @@
 ---
-title: "Two-way binding"
-description: "Trong các ngày trước chúng ta đã tìm hiểu về Two-way binding ở trong Angular. Ngoài ra chúng ta cũng đã biết cách để truyền @Input và @Output cho component. Vậy có cách nào để chúng ta tự tạo Custom Two-way binding hay không?
-Câu trả lời chính là từ cặp input-ouput ngModel và ngModelChange."
+title: "Two-way binding trong angular"
+description: "Trong các ngày trước chúng ta đã tìm hiểu về Two-way binding ở trong Angular. Ngoài ra chúng ta cũng đã biết cách để truyền @Input và @Output cho component. Vậy có cách nào để chúng ta tự tạo Custom Two-way binding hay không? Câu trả lời chính là từ cặp input-ouput ngModel và ngModelChange."
 keywords:
   [
-    
+    "Two-way binding trong angular",
+    "Two-way binding trong angular là gì",
+    "Two-way binding trong angular la gi",
   ]
 chapter:
   name: "Nhập môn Angular"
@@ -15,18 +16,19 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 7
 ---
-## Giới thiệu lại ngModel
+
+## Giới thiệu lại `ngModel`
 
 Như chúng ta đã biết, `ngModel` được cung cấp là một directive ở trong NgModule có tên là `FormsModule`, vậy nên để sử dụng được nó chúng ta sẽ cần imports FormsModule vào NgModule quản lý component hiện tại. Hay nói cách khác, nếu component của bạn muốn sử dụng NgModel thì bạn phải imports `FormsModule` và NgModule quản lý component đó.
 
 Ví dụ, chúng ta có `AppComponent` và nó được quản lý bởi `AppModule`, vậy nên chúng ta sẽ imports `FormsModule` vào `AppModule` như sau.
 
 ```ts
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { FormsModule } from "@angular/forms";
 
-import { AppComponent } from './app.component';
+import { AppComponent } from "./app.component";
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -38,24 +40,22 @@ export class AppModule {}
 
 Như thế là chúng ta có thể sử dụng được `ngModel` ở template, và sử dụng cú pháp vuông vuông tròn tròn `[(ngModel)]` để có được Two-way binding.
 
-**app.component.html**
-
 ```html
+<!-- app.component.html -->
 <p>Your name: {{ name }}</p>
 
 <input type="text" [(ngModel)]="name" />
 ```
 
-**app.component.ts**
-
 ```ts
+// app.component.ts
 @Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: "my-app",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
-  name = 'Tiep Phan';
+  name = "Tiep Phan";
 }
 ```
 
@@ -79,15 +79,14 @@ ng g c toggle
 
 Phần code của component sẽ được implement như sau:
 
-**toggle.component.ts**
-
 ```ts
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+// toggle.component.ts
+import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 
 @Component({
-  selector: 'app-toggle',
-  templateUrl: './toggle.component.html',
-  styleUrls: ['./toggle.component.css'],
+  selector: "app-toggle",
+  templateUrl: "./toggle.component.html",
+  styleUrls: ["./toggle.component.css"],
 })
 export class ToggleComponent implements OnInit {
   @Input() checked = false;
@@ -104,9 +103,8 @@ export class ToggleComponent implements OnInit {
 }
 ```
 
-**toggle.component.html**
-
 ```html
+<!-- toggle.component.html -->
 <div
   class="toggle-wrapper"
   [class.checked]="checked"
@@ -117,9 +115,8 @@ export class ToggleComponent implements OnInit {
 </div>
 ```
 
-**toggle.component.css**
-
 ```css
+/* toggle.component.css */
 .toggle-wrapper {
   display: flex;
   align-items: center;
@@ -185,8 +182,3 @@ Chỉ với việc sử dụng suffix `change` cho property `checked` chúng ta 
 ## Lời kết
 
 Như vậy trong bài này, chúng ta sẽ phải tìm hiểu cách để tạo ra custom Two-way binding bằng cách kết hợp giữa @Input và @Output. Ngoài ra chúng ta còn thực hành một số bài học trước đây như class binding. Hi vọng những bài viết dưới đây sẽ giúp ích cho các bạn tìm hiểu chi tiết hơn.
-
-- https://www.tiepphan.com/thu-nghiem-voi-angular-2-truyen-du-lieu-cho-component-voi-input/
-- https://www.tiepphan.com/thu-nghiem-voi-angular-2-component-event-voi-eventemitter-output/
-- https://www.tiepphan.com/thu-nghiem-voi-angular-2-two-way-binding-custom-two-way-data-binding/
-- https://angular.io/api/forms/NgModel

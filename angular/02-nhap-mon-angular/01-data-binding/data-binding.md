@@ -1,10 +1,7 @@
 ---
 title: "Data Binding"
 description: "Trong Angular chúng ta đã được Angular làm nhiệm vụ đồng bộ những dữ liệu bị ràng buộc lại với nhau, chúng ta chỉ cần update data/state cần thiết. Vậy có những dạng data binding nào?"
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -19,16 +16,16 @@ So, **what is data binding**? Hãy thử tưởng tượng rằng công ty X có
 Trong Angular chúng ta đã được Angular làm nhiệm vụ đồng bộ những dữ liệu bị ràng buộc lại với nhau, chúng ta chỉ cần update data/state cần thiết.
 Vậy có những dạng data binding nào?
 
-## Mở đầu
+## Data Binding trong angular là gì?
 
 Bây giờ hãy nhớ lại, một component trong Angular chỉ là một TypeScript (TS) class thông thường, và nó đi kèm với một decorator để gắn thêm meta-data như template mà nó định nghĩa là gì. Như vậy, TS class và template này hoàn toàn không biết đến nhau, mà nó sẽ được Angular xử lý để gắn chúng lại. Câu hỏi đặt ra là làm thế nào để tôi hiển thị một dữ liệu nào đó (tên, tuổi, ngày tháng năm sinh, một string, number bất kỳ, hay bất kỳ thứ gì (object)) có thể hiển thị được? Đây chính là nơi tỏa sáng của cặp đôi hoàn cảnh (mà chúng ta gọi là interpolation) `{{ expression }}`.
 Nó có thể hiểu là hãy tính toán cái expression này, nếu có trả về cái gì thì phun (display) nó ra ngay vị trí chỗ dấu `{{}}` này cho tôi.
 Chỉ đơn giản thế. Giờ các bạn có thể phun data về tên tuổi của một người thành cái profile đơn giản như sau:
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 @Component({
-  selector: 'app-hello',
+  selector: "app-hello",
   template: `
     <h2>Hello there!</h2>
     <h3>Your name: {{ user.name }}</h3>
@@ -37,23 +34,27 @@ import { Component } from '@angular/core';
 })
 export class HelloComponent {
   user = {
-    name: 'Tiep Phan',
+    name: "Tiep Phan",
     age: 30,
   };
 }
 ```
 
-## Property binding
+## Property binding trong angular là gì?
 
 Một số tag khi sử dụng bạn cần phải truyền vào data cho một property nào đó. Đối với DOM chúng ta có 2 khái niệm khác nhau là property và attribute. À mà khoan DOM là gì? Khi browser load trang web của bạn, nó sẽ parse phần HTML và xây dựng nên một cây Document Object Model (DOM) từ đó để biểu diễn tương ứng những gì HTML đang được dựng, cho phép chúng ta có thể tương tác với phần HTML như đọc, sửa HTML bằng JavaScript.
 Giả sử khi bạn có phần HTML:
-<input type=”text” value=”something”>
+
+```html
+<input type="”text”" value="”something”" />
+```
+
 Sau khi parse xong sẽ có một object (node) thuộc type HTMLInputElement được tạo ra. Ở đây type=”text” hay value=”something” là các HTML attribute. Mỗi tag HTML có thể có nhiều attribute khác nữa (xin mời bạn Search Google). Object được tạo tương ứng sẽ có dạng
 
 ```typescript
 obj = {
-  type: 'text',
-  value: 'something',
+  type: "text",
+  value: "something",
   attributes: [], // thuộc type NamedNodeMap, dạng như một array
   // … các thuộc tính, method khác
 };
@@ -74,7 +75,7 @@ Trong ví dụ ở trên chúng ta đã binding từ TS class ra ngoài template
 
 **Lưu ý**: ngoài property binding cho các phần tử HTML, chúng ta cũng có thể áp dụng property binding cho các component.
 
-## Event binding
+## Event binding trong angular là gì?
 
 JavaScript sử dụng rất nhiều đến khái niệm event. Khi một điều gì đó xảy ra, chúng ta muốn thực hiện một số task nào đó. Ví dụ, khi người dùng click vào button, tôi muốn hiển thị alert cho người dùng nhìn thấy.
 Angular có cách nào chính thống cho việc này không đây, hay chúng ta sẽ dùng addEventListener như thường?
@@ -82,7 +83,7 @@ Câu trả lời chính là Event binding. Để gắn event listener vào một
 
 ```typescript
 @Component({
-  selector: 'app-hello',
+  selector: "app-hello",
   template: `
     <h2>Hello there!</h2>
     <button (click)="showInfo()">Click me!</button>
@@ -90,7 +91,7 @@ Câu trả lời chính là Event binding. Để gắn event listener vào một
 })
 export class HelloComponent {
   showInfo() {
-    alert('Inside Angular Component method');
+    alert("Inside Angular Component method");
   }
 }
 ```
@@ -102,7 +103,7 @@ Khá là giống như chúng ta sử dụng inline event listener đó.
 <button onclick="showInfo()">Click me!</button>
 ```
 
-## Two-way binding
+## Two-way binding trong angular là gì?
 
 Trong thực tế two-way binding chính là kết hợp của binding dữ liệu từ class ra template thông qua property binding, và từ template vào class thông qua event binding.
 Nó chứa cú pháp ngắn gọn dạng vuông vuông tròn tròn như sau:
@@ -126,6 +127,6 @@ Từ bây giờ các bạn có thể hoàn toàn tạo được một cái profi
 
 - https://www.w3schools.com/howto/howto_css_profile_card.asp
 
-Link document các bạn cần tìm hiểu 
+Link document các bạn cần tìm hiểu
 
 - https://angular.io/guide/architecture-components#data-binding

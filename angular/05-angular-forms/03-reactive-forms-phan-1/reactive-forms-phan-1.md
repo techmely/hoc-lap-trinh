@@ -1,10 +1,7 @@
 ---
 title: "Reactive Forms Trong Angular Phần 1"
 description: "Ngoài cách tạo form như đã học, Angular còn cung cấp cho chúng ta một dạng form khác khá mạnh mẽ đó là Reactive Forms hay Model-driven Forms. Vậy dạng form này có gì khác biệt so với Template-driven Forms đã học, nó có thể tạo các form phức tạp được hay không? Trong những ngày tới đây chúng ta sẽ cùng tìm hiểu để trả lời câu hỏi đó."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Angular Forms"
   slug: "chuong-05-angular-forms"
@@ -53,11 +50,11 @@ ng g c sign-in-rf
 ```ts
 const routes: Routes = [
   {
-    path: 'sign-in',
+    path: "sign-in",
     component: SignInComponent,
   },
   {
-    path: 'sign-in-rf',
+    path: "sign-in-rf",
     component: SignInRfComponent,
   },
 ];
@@ -100,7 +97,7 @@ Sau khi khởi chạy ứng dụng với lệnh `ng serve` bạn có thể visit
 Để sử dụng được **Reactive Forms** ở trong ứng dụng, chúng ta cần imports một `NgModule` là `ReactiveFormsModule` vào NgModule quản lý component của chúng ta - trong trường hợp của component hiện tại là `AppModule`.
 
 ```ts
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -129,8 +126,8 @@ Thông thường, mỗi một form sẽ bắt đầu bởi một **FormGroup**, 
 ```ts
 export class SignInRfComponent implements OnInit {
   signInForm = new FormGroup({
-    username: new FormControl(''), // <== default value
-    password: new FormControl(''), // <== default value
+    username: new FormControl(""), // <== default value
+    password: new FormControl(""), // <== default value
     rememberMe: new FormControl(false), // <== default value
   });
   constructor() {}
@@ -197,8 +194,8 @@ export class SignInRfComponent implements OnInit {
 
   ngOnInit(): void {
     this.signInForm = this.fb.group({
-      username: '',
-      password: '',
+      username: "",
+      password: "",
       rememberMe: false,
     });
   }
@@ -259,14 +256,3 @@ Trong bài này chúng ta đã tìm hiểu một số concept cơ bản về Ang
 
 - https://github.com/tieppt/100-doc-angular/tree/day35
 - https://stackblitz.com/edit/100-days-of-angular-day-35
-
-## Tài liệu tham khảo
-
-Các bạn có thể đọc thêm ở các bài viết sau
-
-- https://angular.io/guide/forms-overview
-- https://angular.io/guide/forms
-- https://angular.io/guide/reactive-forms
-- https://www.tiepphan.com/thu-nghiem-voi-angular-reactive-forms-trong-angular/
-- https://www.tiepphan.com/thu-nghiem-voi-angular-template-driven-forms-trong-angular/
-

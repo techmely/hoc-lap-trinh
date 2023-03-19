@@ -1,10 +1,7 @@
 ---
 title: "Ứng dụng dependency injection để lấy data từ trong ActivatedRoute"
 description: "Chào các bạn, trong bài viết này, mình xin chia sẻ một cách giúp giảm thiểu code trùng lặp khi lấy dữ liệu từ trong `ActivatedRoute` service bằng cách ứng dụng dependency injection."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"
@@ -25,12 +22,12 @@ Chào các bạn, trong bài viết này, mình xin chia sẻ một cách giúp 
 
 ```typescript
 @Component({
-  selector: 'app-my-component'
+  selector: "app-my-component",
 })
 export class MyComponent implements OnInit {
   id$: Observable<string> = this.route.paramMap.pipe(
-    map(params => params.get('id')),
-    takeUntil(this.destroy$),
+    map((params) => params.get("id")),
+    takeUntil(this.destroy$)
   );
 
   constructor(private route: ActivatedRoute) {}
@@ -74,33 +71,33 @@ Và unit test cho `MyComponent` class sẽ trông như thế này
 ```typescript
 const activatedRouteStub = new ActivatedRouteStub();
 
-describe('MyComponent', () => {
+describe("MyComponent", () => {
   let fixture: ComponentFixture<MyComponent>;
   let component: MyComponent;
 
   beforeEach(async () => {
     // mock the value of paramMap
-    activatedRoute.setParamMap({id: 1234});
+    activatedRoute.setParamMap({ id: 1234 });
 
     await TestBed.configureTestingModule({
       declarations: [MyComponent],
       providers: [
         {
           provide: ActivatedRoute,
-          useValue: activatedRouteStub
-        }
-      ]
+          useValue: activatedRouteStub,
+        },
+      ],
     }).compileComponents();
 
     fixture = TestBed.createComponent(MyComponent);
     component = fixture.componentInstance;
   });
 
-  it('should get :id from route param', (done) => {
+  it("should get :id from route param", (done) => {
     fixture.detectChanges();
 
-    component.id$.subscribe(id => {
-      expect(id).toBe('1234');
+    component.id$.subscribe((id) => {
+      expect(id).toBe("1234");
       done();
     });
   });
@@ -116,9 +113,9 @@ Thực tế là bạn có thể làm cho logic get data ở bên trên clean hơ
 Đầu tiên là bạn sẽ tạo một file mới có tên là `activated-route.factories.ts`, và viết một factory function như bên dưới để lấy data từ `ActivatedRoute`. Hàm này bạn sẽ chỉ viết nó một lần và sẽ dùng lại nó ở nhiều chỗ khác sau này.
 
 ```typescript
-import {ActivatedRoute} from '@angular/router';
-import {Observable} from 'rxjs';
-import {map} from 'rxjs/operators';
+import { ActivatedRoute } from "@angular/router";
+import { Observable } from "rxjs";
+import { map } from "rxjs/operators";
 
 // this factory function will get value as an observable from route paramMap
 // based on the param key you passed in
@@ -128,7 +125,7 @@ export function routeParamFactory(
   paramKey: string
 ): (route: ActivatedRoute) => Observable<string | null> {
   return (route: ActivatedRoute): Observable<string | null> => {
-    return route.paramMap.pipe(map(param => param.get(paramKey)));
+    return route.paramMap.pipe(map((param) => param.get(paramKey)));
   };
 }
 
@@ -149,7 +146,7 @@ export function queryParamFactory(
   paramKey: string
 ): (route: ActivatedRoute) => Observable<string | null> {
   return (route: ActivatedRoute): Observable<string | null> => {
-    return route.queryParamMap.pipe(map(param => param.get(paramKey)));
+    return route.queryParamMap.pipe(map((param) => param.get(paramKey)));
   };
 }
 
@@ -169,20 +166,20 @@ Bước này bạn sẽ khai náo một `InjectionToken` và provide value cho n
 
 ```typescript
 export const APP_SOME_ID = new InjectionToken<Observable<string>>(
-  'stream of id from route param',
+  "stream of id from route param"
 );
 
 @Component({
-  selector: 'app-my-component',
-  templateUrl: './my-component.template.html',
+  selector: "app-my-component",
+  templateUrl: "./my-component.template.html",
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [
     {
       provide: APP_SOME_ID,
-      useFactory: routeParamFactory('id'),
-      deps: [ActivatedRoute]
-    }
-  ]
+      useFactory: routeParamFactory("id"),
+      deps: [ActivatedRoute],
+    },
+  ],
 })
 export class MyComponent {}
 ```
@@ -192,9 +189,9 @@ Trong `providers` list của component, bạn provide value cho `APP_SOME_ID` b�
 ```typescript
 const routes: Routes = [
   {
-    path: ':id',
-    component: MyComponent
-  }
+    path: ":id",
+    component: MyComponent,
+  },
 ];
 ```
 
@@ -204,17 +201,17 @@ Bước tiếp theo bạn chỉ cần inject token đã khai báo ở bên trên
 
 ```typescript
 export const APP_SOME_ID = new InjectionToken<Observable<string>>(
-  'stream of id from route param',
+  "stream of id from route param"
 );
 
 @Component({
-  selector: 'app-my-component',
-  templateUrl: './my-component.template.html',
+  selector: "app-my-component",
+  templateUrl: "./my-component.template.html",
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [
     {
       provide: APP_SOME_ID,
-      useFactory: routeParamFactory('id'),
+      useFactory: routeParamFactory("id"),
       deps: [ActivatedRoute],
     },
   ],
@@ -232,7 +229,7 @@ export class MyComponent {
 Và bây giờ unit test cho component của bạn sẽ trở nên đơn giản hơn khi mình có thể truyền vào trực tiếp value cho `id$` observable mà không cần phải mock `ActivatedRoute` service nữa.
 
 ```typescript
-describe('MyComponent', () => {
+describe("MyComponent", () => {
   let fixture: ComponentFixture<MyComponent>;
   let component: MyComponent;
 
@@ -240,27 +237,29 @@ describe('MyComponent', () => {
     TestBed.overrideComponent(MyComponent, {
       set: {
         // you provide value for APP_SOME_ID directly here
-        providers: [{
-          provide: APP_SOME_ID,
-          // here I use asyncScheduler to make it truely async, instead of `of('1234')`
-          useValue: scheduled(of('1234'), asyncScheduler)
-        }]
-      }
+        providers: [
+          {
+            provide: APP_SOME_ID,
+            // here I use asyncScheduler to make it truely async, instead of `of('1234')`
+            useValue: scheduled(of("1234"), asyncScheduler),
+          },
+        ],
+      },
     });
 
     await TestBed.configureTestingModule({
-      declarations: [MyComponent]
+      declarations: [MyComponent],
     }).compileComponents();
 
     fixture = TestBed.createComponent(MyComponent);
     component = fixture.componentInstance;
   });
 
-  it('should get :id from route param', (done) => {
+  it("should get :id from route param", (done) => {
     fixture.detectChanges();
 
-    component.id$.subscribe(id => {
-      expect(id).toBe('1234');
+    component.id$.subscribe((id) => {
+      expect(id).toBe("1234");
       done();
     });
   });
@@ -278,33 +277,33 @@ Một khi bạn đã thuần thục được cách dùng injection token như tr
 
 ```typescript
 export const APP_CUSTOMER_ID = new InjectionToken<Observable<string>>(
-  'stream of id from route param',
+  "stream of id from route param"
 );
 
 export const APP_CUSTOMER_DETAILS = new InjectionToken<Observable<Customer>>(
-  'stream of customer details'
+  "stream of customer details"
 );
 
 export const PROVIDERS: Provider[] = [
   {
     provide: APP_CUSTOMER_ID,
-    useFactory: routeParamFactory('id'),
+    useFactory: routeParamFactory("id"),
     deps: [ActivatedRoute],
   },
   {
     provide: APP_CUSTOMER_DETAILS,
     useFactory: (id$: Observable<string>, apiService: ApiService) => {
       return id$.pipe(
-        switchMap((id: string) => apiService.getCustomerById(id)),
+        switchMap((id: string) => apiService.getCustomerById(id))
       );
     },
-    deps: [APP_CUSTOMER_ID, ApiService]
-  }
+    deps: [APP_CUSTOMER_ID, ApiService],
+  },
 ];
 
 @Component({
-  selector: 'app-my-component',
-  templateUrl: './my-component.template.html',
+  selector: "app-my-component",
+  templateUrl: "./my-component.template.html",
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [PROVIDERS],
 })
@@ -329,7 +328,6 @@ Cảm ơn các bạn đã theo dõi bài viết và hẹn gặp lại trong nh�
 - [https://indepth.dev/posts/1306/private-providers](https://indepth.dev/posts/1306/private-providers)
 - [https://indepth.dev/posts/1471/leveraging-dependency-injection-to-reduce-duplicated-code-in-angular](https://indepth.dev/posts/1471/leveraging-dependency-injection-to-reduce-duplicated-code-in-angular)
 
-
 ## Code repo
-- [https://github.com/phhien203/ngx-router](https://github.com/phhien203/ngx-router)
 
+- [https://github.com/phhien203/ngx-router](https://github.com/phhien203/ngx-router)

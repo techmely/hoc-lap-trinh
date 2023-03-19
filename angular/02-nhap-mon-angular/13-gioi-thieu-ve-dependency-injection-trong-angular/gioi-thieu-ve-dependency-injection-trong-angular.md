@@ -1,11 +1,7 @@
 ---
 title: "Giới thiệu Dependency Injection trong Angular"
-description: "Dependency Injection (DI) là một pattern rất quan trọng trong lập trình, có thể bạn đã nghe qua những Spring Framework của Java hay ASP.NET có support DI, vậy với Frontend application thì có thật sự cần thiết?
-Hiện nay có rất nhiều Frontend Framework có support DI, Angular sử dụng rất nhiều và nó có riêng một DI framework được thiết kế để đáp ứng được yêu cầu về mặt như kiến trúc hệ thống của Angular."
-keywords:
-  [
-    
-  ]
+description: "Dependency Injection (DI) là một pattern rất quan trọng trong lập trình, có thể bạn đã nghe qua những Spring Framework của Java hay ASP.NET có support DI, vậy với Frontend application thì có thật sự cần thiết? Hiện nay có rất nhiều Frontend Framework có support DI, Angular sử dụng rất nhiều và nó có riêng một DI framework được thiết kế để đáp ứng được yêu cầu về mặt như kiến trúc hệ thống của Angular."
+keywords: []
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -15,7 +11,8 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 13
 ---
-## Dependency Injection
+
+## Dependency Injection là gi?
 
 Dependency Injection (DI) là một pattern rất quan trọng trong lập trình, có thể bạn đã nghe qua những Spring Framework của Java hay ASP.NET có support DI, vậy với Frontend application thì có thật sự cần thiết?
 
@@ -136,7 +133,7 @@ Ví dụ về cách provide `CartService`:
 
 ```ts
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class CartService {
   // properties and methods
@@ -145,9 +142,9 @@ export class CartService {
 
 ```ts
 @Component({
-  selector: 'app-product',
-  templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css'],
+  selector: "app-product",
+  templateUrl: "./product.component.html",
+  styleUrls: ["./product.component.css"],
 })
 export class ProductComponent implements OnInit {
   constructor(private cartService: CartService) {}
@@ -160,7 +157,7 @@ export class ProductComponent implements OnInit {
 
 Với `@Injectable` decorator, chúng ta đã thêm metadata để Angular biết được cách để tạo instance của `CartService` khi có một class nào đó request như `ProductComponent`. Và thông tin `providedIn: 'root'` sẽ chỉ cách cho Angular biết rằng chúng ta mong muốn service này sẽ có một instance (singleton) cho suốt toàn bộ app.
 
-## Override Provider
+## Override Provider trong angular
 
 Giờ đây nếu hệ thống yêu cầu chúng ta thay vì lưu trữ tính toán thông tin giỏ hàng ở client, thì sẽ call đến một external datasource (API chẳng hạn) để thao tác như **Thêm vào giỏ hàng**, **Tính tổng tiền**. Lúc này về mặt coding, chúng ta sẽ tuân thủ theo đúng những gì class `CartService` đang có (public APIs của CartService), chỉ khác về mặt implementation như sau:
 
@@ -197,7 +194,7 @@ Hoặc có thể override vào `@Injectable` của service
 
 ```ts
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
   useClass: CartExtService,
 })
 export class CartService {
@@ -208,10 +205,3 @@ export class CartService {
 ## Lời kết
 
 Như vậy, trong bài này chúng ta đã làm quen về khái niệm cũng như cách sử dụng cơ bản của Dependency Injection trong Angular.
-
-Để tìm hiểu sâu hơn, các bạn cần theo dõi thêm một số nguồn sau đây:
-
-- https://www.tiepphan.com/thu-nghiem-voi-angular-dependency-injection-trong-angular/
-- https://angular.io/guide/glossary#injector
-- https://angular.io/guide/dependency-injection
-- https://blog.thoughtram.io/angular/2015/05/18/dependency-injection-in-angular-2.html

@@ -1,11 +1,7 @@
 ---
 title: "Giới thiệu Reactive Programming, RxJS và Observable"
-description: "Khi bạn tìm hiểu về Angular, bạn sẽ thấy rằng nó có phụ thuộc vào một library là RxJS. Có khá nhiều concept trong Angular sử dụng đến RxJS như là Forms, HttpClient, hay như là QueryList, EventEmitter, etc.
-Đây vừa là một điểm mạnh, cũng vừa là điểm yếu của Angular. Vì RxJS xử lý asynchronous rất mạnh, nhưng bù lại bạn sẽ phải học thêm một số các concept khác xoay quanh stream. Thinking in streams."
-keywords:
-  [
-    
-  ]
+description: "Khi bạn tìm hiểu về Angular, bạn sẽ thấy rằng nó có phụ thuộc vào một library là RxJS. Có khá nhiều concept trong Angular sử dụng đến RxJS như là Forms, HttpClient, hay như là QueryList, EventEmitter, etc. Đây vừa là một điểm mạnh, cũng vừa là điểm yếu của Angular. Vì RxJS xử lý asynchronous rất mạnh, nhưng bù lại bạn sẽ phải học thêm một số các concept khác xoay quanh stream. Thinking in streams."
+keywords: []
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
@@ -15,7 +11,8 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
-## Observable
+
+## Observable trong angular
 
 Trong lập trình đồng bộ thông thường, chúng ta có một kiểu dữ liệu có thể lưu trữ nhiều phần tử đó chính là Array.
 
@@ -42,13 +39,13 @@ Thông thường để xử lý một số event xảy ra quá nhanh và nhiều
 Bây giờ chúng ta thử implement giải pháp thông thường và giải pháp với RxJS xem sao. Các bạn hãy khoan đi vào chi tiết những phần code RxJS dưới đây:
 
 ```ts
-const btnjsThrottle = document.querySelector('#jsThrottle');
-const btnrxjsThrottle = document.querySelector('#rxjsThrottle');
+const btnjsThrottle = document.querySelector("#jsThrottle");
+const btnrxjsThrottle = document.querySelector("#rxjsThrottle");
 // PURE JS version
 let count = 0;
 let rate = 500;
 let lastClick = Date.now() - rate;
-btnjsThrottle.addEventListener('click', () => {
+btnjsThrottle.addEventListener("click", () => {
   if (Date.now() - lastClick >= rate) {
     console.log(`Clicked ${++count} times`);
     lastClick = Date.now();
@@ -56,10 +53,10 @@ btnjsThrottle.addEventListener('click', () => {
 });
 
 // RxJS version
-import { fromEvent } from 'rxjs';
-import { throttleTime, scan } from 'rxjs/operators';
+import { fromEvent } from "rxjs";
+import { throttleTime, scan } from "rxjs/operators";
 
-fromEvent(btnrxjsThrottle, 'click')
+fromEvent(btnrxjsThrottle, "click")
   .pipe(
     throttleTime(500),
     scan((count) => count + 1, 0)
@@ -69,7 +66,7 @@ fromEvent(btnrxjsThrottle, 'click')
 
 Với cách sử dụng RxJS cho bài toán trên quả không tệ, và nếu cần transform thêm nữa thì chúng ta hoàn toàn có thể handle được.
 
-## RxJS core concepts
+## RxJS core concepts trong angular
 
 ### Observable
 
@@ -106,7 +103,7 @@ Với cách sử dụng RxJS cho bài toán trên quả không tệ, và nếu c
 ```ts
 const observable = new Observable(function subscribe(observer) {
   const id = setTimeout(() => {
-    observer.next('Hello Rxjs');
+    observer.next("Hello Rxjs");
     observer.complete();
   }, 1000);
 });
@@ -117,7 +114,7 @@ const observable = new Observable(function subscribe(observer) {
 ```ts
 const observable = new Observable(function subscribe(observer) {
   const id = setTimeout(() => {
-    observer.next('Hello Rxjs');
+    observer.next("Hello Rxjs");
     observer.complete();
   }, 1000);
   return function unsubscribe() {
@@ -141,7 +138,7 @@ const subscription = observable.subscribe({
     console.log(error);
   },
   complete: () => {
-    console.log('Done');
+    console.log("Done");
   },
 });
 ```
@@ -187,7 +184,7 @@ const subscription = observable.subscribe({
     console.log(error);
   },
   complete: () => {
-    console.log('Done');
+    console.log("Done");
   },
 });
 
@@ -204,9 +201,9 @@ Một Observer có dạng như sau:
 
 ```ts
 const observer = {
-  next: (x) => console.log('Observer got a next value: ' + x),
-  error: (err) => console.error('Observer got an error: ' + err),
-  complete: () => console.log('Observer got a complete notification'),
+  next: (x) => console.log("Observer got a next value: " + x),
+  error: (err) => console.error("Observer got an error: " + err),
+  complete: () => console.log("Observer got a complete notification"),
 };
 ```
 
@@ -226,17 +223,17 @@ Cách dùng này hiện tại không khuyến cáo sử dụng, chỉ dùng các
 
 ```ts
 observable.subscribe(
-  (x) => console.log('Observer got a next value: ' + x),
-  (err) => console.error('Observer got an error: ' + err),
-  () => console.log('Observer got a complete notification')
+  (x) => console.log("Observer got a next value: " + x),
+  (err) => console.error("Observer got an error: " + err),
+  () => console.log("Observer got a complete notification")
 );
 
 // tương đương với
 
 const observer = {
-  next: (x) => console.log('Observer got a next value: ' + x),
-  error: (err) => console.error('Observer got an error: ' + err),
-  complete: () => console.log('Observer got a complete notification'),
+  next: (x) => console.log("Observer got a next value: " + x),
+  error: (err) => console.error("Observer got an error: " + err),
+  complete: () => console.log("Observer got a complete notification"),
 };
 
 observable.subscribe(observer);
@@ -246,13 +243,13 @@ observable.subscribe(observer);
 
 ```ts
 observable.subscribe(
-  (x) => console.log('Observer got a next value: ' + x),
+  (x) => console.log("Observer got a next value: " + x),
   null,
-  () => console.log('Observer got a complete notification')
+  () => console.log("Observer got a complete notification")
 );
 ```
 
-# Subscription
+## Subscription trong angular
 
 Subscription là một object đại diện cho một nguồn tài nguyên có khả năng hủy được, thông thường trong Rxjs là hủy Observable execution. Subscription có chứa một method quan trọng unsubscribe (từ Rxjs 5 trở lên), khi method này được gọi, execution sẽ bị hủy.
 
@@ -277,8 +274,8 @@ Một Subscription có thể chứa trong nó nhiều Subscriptions con, khi Sub
 const foo = interval(500);
 const bar = interval(700);
 
-const subscription = foo.subscribe((x) => console.log('first: ' + x));
-const childSub = bar.subscribe((x) => console.log('second: ' + x));
+const subscription = foo.subscribe((x) => console.log("first: " + x));
+const childSub = bar.subscribe((x) => console.log("second: " + x));
 
 subscription.add(childSub);
 
@@ -291,11 +288,3 @@ setTimeout(() => {
 ## Lời kết
 
 Vậy là qua bài học này, hy vọng các bạn đã hiểu được cơ bản về RxJS và Observable.
-
-Để tìm hiểu sâu hơn, các bạn cần theo dõi thêm một số nguồn sau đây:
-
-- https://www.tiepphan.com/rxjs-reactive-programming/
-- https://rxjs.dev/guide/overview
-- https://angular.io/guide/observables
-- https://medium.com/@benlesh/learning-observable-by-building-observable-d5da57405d87
-- https://medium.com/@benlesh/hot-vs-cold-observables-f8094ed53339

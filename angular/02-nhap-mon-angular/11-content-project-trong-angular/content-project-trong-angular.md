@@ -1,10 +1,7 @@
 ---
 title: "Content Projection trong Angular"
 description: "Có những khi trong quá trình phát triển ứng dụng với Angular chúng ta có thể sẽ gặp một số dạng component giống nhau về phần layout chẳng hạn, điểm khác biệt chỉ là một số label, content bên trong nó. Lúc này rất dễ để các bạn có thể tạo một component có nhận vào các Input, và render dựa vào các Input đó."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -14,6 +11,7 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 11
 ---
+
 ## ng-content và những câu hỏi
 
 ### Làm thế nào để sử dụng ng-content?
@@ -22,9 +20,8 @@ Giả sử trong ứng dụng của chúng ta sẽ sử dụng lại component T
 
 Đó là một perfect use-case cho `ng-content` có thể được sử dụng. Bạn chỉ cần đặt `ng-content` vào bất kỳ đâu trong template của component là được.
 
-**toggle.component.html**
-
 ```html
+<!-- toggle.component.html -->
 <div
   class="toggle-wrapper"
   [class.checked]="checked"
@@ -38,9 +35,8 @@ Giả sử trong ứng dụng của chúng ta sẽ sử dụng lại component T
 </div>
 ```
 
-**app.component.html**
-
 ```html
+<!-- app.component.html -->
 <app-toggle [(checked)]="questions.question1">
   <span>Question 1</span>
 </app-toggle>
@@ -54,15 +50,14 @@ Giả sử trong ứng dụng của chúng ta sẽ sử dụng lại component T
 
 Bạn có thể nghĩ rằng nếu mình đặt `ng-content` hai lần ở trên template thì sẽ thế nào? liệu nó có hiển thị gấp đôi số phần tử hay không?
 
-**toggle.component.html**
-
 ```html
-<div class="toogle-label">
+<!-- toggle.component.html -->
+<div class="toggle-label">
   <div>content 1</div>
   <ng-content></ng-content>
 </div>
 
-<div class="toogle-label">
+<div class="toggle-label">
   <div>content 2</div>
   <ng-content></ng-content>
 </div>
@@ -89,9 +84,8 @@ Các dạng của selector có thể bao gồm:
 
 Ví dụ với Toggle component:
 
-**toggle.component.html**
-
 ```html
+<!-- toggle.component.html -->
 <header>
   <ng-content select=".toogle-header"></ng-content>
 </header>
@@ -103,7 +97,7 @@ Ví dụ với Toggle component:
 >
   <div class="toggle"></div>
 </div>
-<div class="toogle-label">
+<div class="toggle-label">
   <ng-content select="label"></ng-content>
 </div>
 
@@ -112,11 +106,10 @@ Ví dụ với Toggle component:
 </div>
 ```
 
-**app.component.html**
-
 ```html
+<!-- app.component.html -->
 <app-toggle [(checked)]="questions.question1">
-  <h3 class="toogle-header">Header 1</h3>
+  <h3 class="toggle-header">Header 1</h3>
   <label>Question 1</label>
   <span>Some paragraph</span>
 </app-toggle>
@@ -126,7 +119,7 @@ Và dù ở **app.component.html** chúng ta có đặt sai thứ tự thì Togg
 
 ```html
 <app-toggle [(checked)]="questions.question2">
-  <h3 class="toogle-header">Header 2</h3>
+  <h3 class="toggle-header">Header 2</h3>
   <span>Some paragraph 2</span>
   <label>Question 2</label>
 </app-toggle>
@@ -139,7 +132,7 @@ Và dù ở **app.component.html** chúng ta có đặt sai thứ tự thì Togg
 Giả sử Toggle component mong muốn nhận vào một component có selector là `app-label`, và chúng ta sẽ cung cấp một component `app-label` với nhiều tính năng rất xịn xò.
 
 ```html
-<div class="toogle-label">
+<div class="toggle-label">
   <ng-content select="app-label"></ng-content>
 </div>
 ```
@@ -150,9 +143,8 @@ Lúc này, selector kia của chúng ta sẽ không thể nhận dạng được
 
 Cứu cánh chính là `ngProjectAs`, nó là một cách khai báo tường minh để Angular biết lối mà xử lý.
 
-**app.component.html**
-
 ```html
+<!-- app.component.html -->
 <app-toggle [(checked)]="questions.question1">
   <h3 class="toogle-header">Header 1</h3>
   <label ngProjectAs="app-label">Question 1</label>
@@ -168,8 +160,3 @@ https://github.com/peterfreeman/ngx-dropzone
 
 Đây là ngày đầu tiên chúng ta tìm hiểu về `ng-content` hay một số framework/web component có một concept tương tự là `slot`. Nó giúp chúng ta tạo những component có thể dễ dàng tái sử dụng hơn. Ngày hôm nay là một buổi giới thiệu về `ng-content` nên hi vọng các bạn có thể hiểu hơn về nó mà không thấy quá nhàm chán.
 Còn để có thể hiểu tường tận về `ng-content` sẽ còn nhiều nội dung khác nữa, nên chúng ta sẽ còn gặp lại nó trong thời gian sắp tới.
-
-Một số link mà các bạn cần tìm hiểu:
-
-- https://www.tiepphan.com/thu-nghiem-voi-angular-content-projection-trong-angular/
-- https://medium.com/claritydesignsystem/ng-content-the-hidden-docs-96a29d70d11b

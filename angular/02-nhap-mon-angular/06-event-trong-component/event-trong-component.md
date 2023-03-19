@@ -1,10 +1,10 @@
 ---
 title: "Event trong component"
 description: "Thông thường, trong một trang HTML khi có một sự kiện nào đó phát sinh ở một thẻ HTML (ví dụ sự kiện click của thẻ button, submit của form, etc) thì chúng ta sẽ có thể listen ở đâu đó trong code JavaScript.
-Vậy với những Component mà chúng ta tự định nghĩa thì có cách nào bắn ra các event mà chungs ta mong muốn hay không (component event). Câu trả lời cho vấn đề này chính là EventEmitter và @Output decorator."
+Vậy với những Component mà chúng ta tự định nghĩa thì có cách nào bắn ra các event mà chúng ta mong muốn hay không (component event). Câu trả lời cho vấn đề này chính là EventEmitter và @Output decorator."
 keywords:
   [
-    
+    "Event trong component", "event trong component cua angular"
   ]
 chapter:
   name: "Nhập môn Angular"
@@ -15,12 +15,13 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 6
 ---
+
 ## Khởi tạo components
 
 Đầu tiên chúng ta sẽ cần khởi tạo một số component để minh họa như: Author List Component, Author Detail Component:
 Các bạn chạy lệnh sau để tạo:
 
-```
+```bash
 ng g c author-list
 ng g c author-detail
 ```
@@ -39,10 +40,10 @@ export interface Author {
 ```
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
-import { authors } from '../authors';
+import { Component, OnInit } from "@angular/core";
+import { authors } from "../authors";
 @Component({
-  selector: 'app-author-list',
+  selector: "app-author-list",
   template: `<app-author-detail
     *ngFor="let author of authors"
     [author]="author"
@@ -59,10 +60,10 @@ export class AuthorListComponent implements OnInit {
 Author Detail Component
 
 ```typescript
-import { Component, OnInit, Input } from '@angular/core';
-import { Author } from '../authors';
+import { Component, OnInit, Input } from "@angular/core";
+import { Author } from "../authors";
 @Component({
-  selector: 'app-author-detail',
+  selector: "app-author-detail",
   template: `
     <div *ngIf="author">
       <strong>{{ author.firstName }} {{ author.lastName }}</strong>
@@ -98,7 +99,7 @@ export class AuthorDetailComponent implements OnInit {
 
 ```typescript
 @Component({
-  selector: 'app-author-list',
+  selector: "app-author-list",
   template: `<app-author-detail
     *ngFor="let author of authors"
     [author]="author"
@@ -122,9 +123,4 @@ export class AuthorListComponent implements OnInit {
 Như vậy trong bài này, chúng ta sẽ phải tìm hiểu cách để khai báo custom event cho một component, từ đó giúp parent component có thể listen được những event cần thiêt từ child component.
 Ngoài những gì trong report trên, chúng ta có thể tìm hiểu thêm về việc tạo alias cho property và outputs array trong bài sau:
 
-- https://www.tiepphan.com/thu-nghiem-voi-angular-2-component-event-voi-eventemitter-output/
-
-Dưới đây là các link document mà các bạn cần tìm hiểu:
-
-- https://angular.io/guide/component-interaction
 - https://www.tiepphan.com/thu-nghiem-voi-angular-2-component-event-voi-eventemitter-output/

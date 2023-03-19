@@ -1,10 +1,7 @@
 ---
-title: "Template Variable và ViewChild/ViewChildren"
+title: "Template Variable và ViewChild/ViewChildren trong Angular"
 description: "Nếu bạn cần trỏ tới một phần tử (HTMLElement/component/directive) ở trong template và thao tác trực tiếp lên nó thì sao. Có cách nào để chúng ta tạo ra một `variable` ở trong template và sử dụng nó không? Câu hỏi trên sẽ được trả lời trong bài học này."
-keywords:
-  [
-    
-  ]
+keywords: ["Template Variable và ViewChild/ViewChildren trong Angular", ""]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -14,7 +11,10 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 8
 ---
-## Parent interacts with child via local variable
+
+Nếu bạn cần trỏ tới một phần tử (`HTMLElement/component/directive`) ở trong template và thao tác trực tiếp lên nó thì sao. Có cách nào để chúng ta tạo ra một `variable` ở trong template và sử dụng nó không? Câu hỏi trên sẽ được trả lời trong bài học này
+
+## Các phần tử cha tương tác với phần tử con thông qua biến cục bộ
 
 Giả sử chúng ta có `AppComponent` có nhúng một phần template như sau:
 
@@ -100,7 +100,7 @@ Lúc này chúng ta có thể query một Template variable ở trong Component 
 
 ```ts
 export class AppComponent {
-  @ViewChild('toggleComp') toggleComp: ToggleComponent;
+  @ViewChild("toggleComp") toggleComp: ToggleComponent;
   toggleInside() {
     this.toggleComp.toggle();
   }
@@ -115,7 +115,7 @@ Nếu bạn sử dụng ViewChild cho một HTMLElement thì chúng ta sẽ nh�
 
 ```ts
 export class AppComponent {
-  @ViewChild('chartContainer') container: ElementRef<HTMLDivElement>;
+  @ViewChild("chartContainer") container: ElementRef<HTMLDivElement>;
 }
 ```
 
@@ -160,10 +160,10 @@ Trong đó các `selector` có thể là:
 ```ts
 export class NameFormComponent implements OnInit {
   model = {
-    name: 'Tiep Phan',
+    name: "Tiep Phan",
   };
 
-  @ViewChild('nameForm', {
+  @ViewChild("nameForm", {
     read: ElementRef,
     static: true,
   })
@@ -206,9 +206,3 @@ ngAfterViewInit() {
 Như vậy trong bài học này, chúng ta cần tìm hiểu về Template variable và cách sử dụng ViewChild/ViewChildren ở trong component class. Ngoài ra, các bạn cần lưu ý các options có thể thêm vào cho ViewChild/ViewChildren theo các link dưới đây.
 
 Cũng trong bài này chúng ta học thêm một component lifecycle khác là `ngAfterViewInit` để có thể thao tác được với ViewChild/ViewChildren.
-
-- https://angular.io/api/core/ViewChild
-- https://angular.io/api/forms/NgModel
-- https://angular.io/api/core/ViewChildren
-- https://www.tiepphan.com/thu-nghiem-voi-angular-template-variable-trong-angular/
-- https://www.tiepphan.com/angular-trong-5-phut-dynamic-component-rendering/

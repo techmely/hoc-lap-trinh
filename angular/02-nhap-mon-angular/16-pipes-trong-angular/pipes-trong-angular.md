@@ -1,10 +1,7 @@
 ---
 title: "Pipe trong Angular"
 description: "Hiểu đơn giản, pipe là một function nhận **input** mà chúng ta truyền vào, và **output** ra giá trị mình mong muốn."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -14,6 +11,7 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 16
 ---
+
 Các ứng dụng thông thường đều bao gồm các tác vụ khá đơn giản:
 
 1. Lấy dữ liệu từ server. Đơn giản là gọi API call lên server, phức tạp thì listen tới một websocket để nhận được dữ liệu theo thời gian thực.
@@ -37,7 +35,7 @@ Tuy nhiên khi hiển thị, mình ko thể hiển trị trực tiếp ISO strin
 
 Điểm lợi thế của Pipe là dễ tái sử dụng. Vì thông thường sẽ có khá nhiều page cần hiển thị date time, việc dùng Pipe sẽ đem lại nhiều ưu điểm hơn là function.
 
-## Dùng pipe như thế nào?
+## Dùng pipe trong angular như thế nào?
 
 Angular có cung cấp sẵn một số pipes thường dùng trong package `@angular/common`. Tuy nhiên số lượng pipe có sẵn đó cũng không thể nào đáp ứng được hết các nhu cầu trong các ứng dụng khác nhau, nên chúng ta cũng hoàn toàn có thể viết các custom pipe theo nhu cầu thực tế.
 
@@ -47,11 +45,11 @@ Mình có một biến tên là `now` ở trong component.
 
 ```ts
 export class PipeExampleComponent implements OnInit {
-  now = '2020-06-24T09:00:00.000Z';
+  now = "2020-06-24T09:00:00.000Z";
 }
 ```
 
-Và đây là cách mình hiển thị với built in pipe [Date][date] trong Angular
+Và đây là cách mình hiển thị với built in pipe `Date` trong Angular
 
 ```html
 <div>{{ now | date }}</div>
@@ -129,7 +127,7 @@ Thế là mình quyết định viết một pipe đơn giản là nhận vào m
 
 Để viết một pipe dành riêng cho nhu cầu của từng dự án, cần follow hai bước sau.
 
-### 1. Trước tiên chúng ta cần tạo một class có implement interface [`PipeTransform`][pipetransform].
+### 1. Trước tiên chúng ta cần tạo một class có implement interface `PipeTransform`.
 
 Interface này chỉ bao gồm một method duy nhất tên là `transform`.
 
@@ -146,7 +144,7 @@ interface PipeTransform {
 ```ts
 export class AppTitlePipe implements PipeTransform {
   transform(resourceId: string): string {
-    return resourceId ? 'Edit' : 'Add';
+    return resourceId ? "Edit" : "Add";
   }
 }
 ```
@@ -159,11 +157,11 @@ Giống như component có decorator `@Component`. Pipe cũng có decorator `@Pi
 
 ```ts
 @Pipe({
-  name: 'appTitle',
+  name: "appTitle",
 })
 export class AppTitlePipe implements PipeTransform {
   transform(resourceId: string): string {
-    return resourceId ? 'Edit' : 'Add';
+    return resourceId ? "Edit" : "Add";
   }
 }
 ```
@@ -175,7 +173,7 @@ Nhớ là phải đặt `AppTitlePipe` trong mảng `declarations` ở module t�
 Xong rồi đây, giờ mình có thể dùng `appTitle` như bình thường.
 
 ```html
-<h2 class="ibox-title">{{ userId | appTitle }} User</h2>
+<h2 class="inbox-title">{{ userId | appTitle }} User</h2>
 ```
 
 > Chú ý cách đặt tên cho pipe và class:
@@ -183,8 +181,6 @@ Xong rồi đây, giờ mình có thể dùng `appTitle` như bình thường.
 - Class name follow `UpperCamelCase`, tức là viết hoa các chữ cái đầu của từng từ
 - `name` của pipe sẽ follow theo `camelCase`, tức là chữ cái đầu của từ đầu tiên viết thường. Các chữ cái đầu của các từ tiếp theo viết hoa.
 - Không được dùng dấu gạch ngang `-` cho `name`
-
-Chi tiết có trong [Angular Style Guide][styleguide]
 
 ### Thay đổi pipe parameters
 
@@ -217,18 +213,18 @@ Method `transform` sẽ nhận vào nhiều argument. Trong đó:
 
 ## Phát hiện thay đổi với data binding in pipes
 
-### Primitive type
+### Primitive type trong angular
 
 Với pipe `appTitle` ở trên, vì mình truyền vào giá trị string cho argument `resourceId`. Nên khi value của `resourceId` thay đổi, pipe nhận biết được là có sự thay đổi và update UI tương ứng. Ví dụ:
 
 ```ts
 export class PipeExampleComponent implements OnInit {
-  userIdChangeAfterFiveSeconds = '14324';
+  userIdChangeAfterFiveSeconds = "14324";
   time$: Observable<number> = timer(0, 1000).pipe(
     map((val) => 5 - (val + 1)),
     startWith(5),
     finalize(() => {
-      this.userIdChangeAfterFiveSeconds = '';
+      this.userIdChangeAfterFiveSeconds = "";
     }),
     takeWhile((val) => val >= 0)
   );
@@ -243,8 +239,6 @@ export class PipeExampleComponent implements OnInit {
 <pre ngNonBindable>{{ userIdChangeAfterFiveSeconds | appTitle}}</pre>
 <div>Form title: {{ userIdChangeAfterFiveSeconds | appTitle}} User</div>
 ```
-
-![Day 18 Pipe example][ss1]
 
 Vậy đối với primitive type như string, boolean, number. Angular detech changes khá là straight forward. Mỗi khi value thay đổi thì pipe cũng sẽ update theo. Còn đối với các reference type như object hay array thì sao nhỉ?
 
@@ -277,7 +271,7 @@ Mình có một pipe tên là `isAdult`, để filter ra những user lớn hơn
 
 ```ts
 @Pipe({
-  name: 'isAdult',
+  name: "isAdult",
 })
 export class IsAdultPipe implements PipeTransform {
   transform(arr: User[]): User[] {
@@ -303,13 +297,9 @@ Và mình render cả 2 list lên màn hình
 </div>
 ```
 
-![Day 18 Pipe example][ss2]
-
 Như các bạn thấy list những người trưởng thành hiện không có user `Tuan Anh` dc render, chứng tỏ pipe đã hoạt động như ý mình muốn
 
 Bây giờ mình add thêm 2 textbox để điền user và tuổi, cùng với một button để add thêm user vào mảng `users`. Tuy nhiên khi add thêm một user với tuổi lớn 18 vào mảng `users`. Phần render list người lớn bên phải ko tự update.
-
-![Day 18 Pipe example][ss3]
 
 ```ts
 addUser() {
@@ -341,8 +331,6 @@ addUserByUpdateReference() {
 
 Bây giờ thì bạn thấy list người lớn cũng đã được update khi mình bấm nút.
 
-![Day 18 Pipe example][ss4]
-
 ### 2. Set impure Pipe
 
 Nếu bạn muốn trigger pipe khi có thay đổi value của một phần tử trong array, hay khi một property của object bị thay đổi. Bạn có thể cấu hình pipe của bạn với thuộc tính `pure` với giá trị `false` trong decorator. Mặc định, `pure` luôn có giá trị true.
@@ -359,9 +347,3 @@ Nếu bạn muốn trigger pipe khi có thay đổi value của một phần t�
 ## Lời kết
 
 Vậy là qua bài này, hy vọng các bạn đã hiểu được Pipe và các use case phổ biến trong việc dùng Pipe. Cũng như sự khác nhau giữa pure và impure Pipe cùng change detection.
-
-Để tìm hiểu sâu hơn, các bạn cần theo dõi thêm một số nguồn sau đây:
-
-- https://angular.io/guide/pipes
-- https://angular.io/api/common/CommonModule#pipes
-- https://trungk18.com/experience/angular-pipe-singular-plural/

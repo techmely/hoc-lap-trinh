@@ -1,10 +1,7 @@
 ---
 title: "Feature Modules, Child Routes and Services"
 description: "Tiếp tục với Angular Router từ hôm trước, hôm nay chúng ta sẽ tìm hiểu những thành phần tiếp theo như Feature Module, Child Routes và một số Services hay sử dụng."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Angular Router"
   slug: "chuong-04-angular-router"
@@ -14,6 +11,7 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---
+
 ## Feature Modules
 
 Giả sử với [ứng dụng hôm trước](https://stackblitz.com/edit/angular-100-days-of-code-day-27-router-basic), chúng ta mong muốn tách ra nhiều NgModule khác nhau để chia nhỏ ứng dụng ra thay vì chỉ sử dụng một NgModule duy nhất thì có được không? Chẳng phải chúng ta có thể sử dụng nhiều NgModule trong một ứng dụng Angular hay sao??? Làm thế nào để có nhiều Feature Modules mà có support Router?
@@ -25,10 +23,10 @@ Câu trả lời chính là sử dụng `RouterModule.forChild` ở các Feature
 Đầu tiên chúng ta sẽ tạo mới một NgModule và đưa những phần cần quản lý bởi NgModule đó vào trong như components, services, etc.
 
 ```ts
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ArticleListComponent } from './article-list/article-list.component';
-import { ArticleDetailComponent } from './article-detail/article-detail.component';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { ArticleListComponent } from "./article-list/article-list.component";
+import { ArticleDetailComponent } from "./article-detail/article-detail.component";
 
 @NgModule({
   imports: [CommonModule],
@@ -40,19 +38,19 @@ export class ArticleModule {}
 Tiếp theo, chúng ta sẽ config RouterModule giống như đã từng làm với AppRoutingModule, nhưng thay vì gọi `forRoot` thì chúng ta sẽ gọi `forChild` (nguyên nhân tại sao thì các bạn quay trở lại Day 27).
 
 ```ts
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
-import { ArticleListComponent } from './article-list/article-list.component';
-import { ArticleDetailComponent } from './article-detail/article-detail.component';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { Routes, RouterModule } from "@angular/router";
+import { ArticleListComponent } from "./article-list/article-list.component";
+import { ArticleDetailComponent } from "./article-detail/article-detail.component";
 
 const routes: Routes = [
   {
-    path: 'article',
+    path: "article",
     component: ArticleListComponent,
   },
   {
-    path: 'article/:slug',
+    path: "article/:slug",
     component: ArticleDetailComponent,
   },
 ];
@@ -67,7 +65,7 @@ export class ArticleModule {}
 Như thế là chúng ta đã tạo xong Feature Module kèm theo Router, bây giờ chúng ta cần import nó vào AppModule để có thể sử dụng.
 
 ```ts
-import { ArticleModule } from './article/article.module';
+import { ArticleModule } from "./article/article.module";
 
 @NgModule({
   imports: [
@@ -93,9 +91,9 @@ Bây giờ chúng ta có thể vào app với path `article` để xem Article L
 ```ts
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'article',
-    pathMatch: 'full',
+    path: "",
+    redirectTo: "article",
+    pathMatch: "full",
   },
 ];
 ```
@@ -120,11 +118,11 @@ Bạn hoàn toàn có thể áp dụng kỹ thuật này với các Feature Modu
 ```ts
 const routes: Routes = [
   {
-    path: 'article',
+    path: "article",
     component: ArticleListComponent,
   },
   {
-    path: 'article/:slug',
+    path: "article/:slug",
     component: ArticleDetailComponent,
   },
 ];
@@ -143,7 +141,7 @@ export class ArticleRoutingModule {}
 Ở đây chúng ta sẽ config routing với `RouterModule.forChild(routes)`, sau đó chúng ta exports `RouterModule` ra ngoài để `ArticleModule` có thể sử dụng những directives/components mà `RouterModule` cung cấp mà không cần imports `RouterModule`.
 
 ```ts
-import { ArticleRoutingModule } from './article-routing.module';
+import { ArticleRoutingModule } from "./article-routing.module";
 
 @NgModule({
   imports: [CommonModule, ArticleRoutingModule],
@@ -163,11 +161,11 @@ Nhìn vào config phía dưới đây các bạn sẽ thấy rằng có một ph
 ```ts
 const routes: Routes = [
   {
-    path: 'article',
+    path: "article",
     component: ArticleListComponent,
   },
   {
-    path: 'article/:slug',
+    path: "article/:slug",
     component: ArticleDetailComponent,
   },
 ];
@@ -178,14 +176,14 @@ Angular Router cho phép bạn truyền vào cấu trúc parent-child như sau:
 ```ts
 const routes: Routes = [
   {
-    path: 'article',
+    path: "article",
     children: [
       {
-        path: '',
+        path: "",
         component: ArticleListComponent,
       },
       {
-        path: ':slug',
+        path: ":slug",
         component: ArticleDetailComponent,
       },
     ],
@@ -200,15 +198,15 @@ Ngoài ra, parent route có thể activate một component, chúng ta thường 
 ```ts
 const routes: Routes = [
   {
-    path: 'article',
+    path: "article",
     component: ArticleComponent, // <== this component can be called `Layout component`
     children: [
       {
-        path: '',
+        path: "",
         component: ArticleListComponent,
       },
       {
-        path: ':slug',
+        path: ":slug",
         component: ArticleDetailComponent,
       },
     ],
@@ -234,7 +232,7 @@ export class ArticleDetailComponent implements OnInit {
   constructor(private _route: ActivatedRoute, private _api: ArticleService) {}
 
   ngOnInit(): void {
-    let slug = this._route.snapshot.paramMap.get('slug');
+    let slug = this._route.snapshot.paramMap.get("slug");
     this.article$ = this._api.getArticleBySlug(slug);
   }
 }
@@ -249,7 +247,7 @@ export class ArticleDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.article$ = this._route.paramMap.pipe(
-      map((params) => params.get('slug')),
+      map((params) => params.get("slug")),
       switchMap((slug) => this._api.getArticleBySlug(slug))
     );
   }
@@ -292,7 +290,7 @@ Ví dụ bạn vào một URL là `tiepphan.com/page/2?sort=createdDate`, thì b
 
 ```ts
 queryParamMap.subscribe((query) => {
-  console.log(query.get('sort'));
+  console.log(query.get("sort"));
 });
 ```
 
@@ -316,7 +314,7 @@ class SomeComponent {
   constructor(private router: Router) {}
   onClick() {
     // do something
-    this.router.navigate(['/article']);
+    this.router.navigate(["/article"]);
   }
 }
 ```
@@ -334,12 +332,3 @@ this.router.events
 ## Lời kết
 
 Bài này cũng đã có nhiều concept về Angular Router, đây đều là những concept không thể thiếu khi bạn phát triển một ứng dụng thực tế, vì thế các bạn nên đọc thêm nhiều về code của nó trên github, cũng như documentation từ Angular.io
-
-## Tài liệu tham khảo
-
-Các bạn có thể đọc thêm ở các bài viết sau
-
-- https://angular.io/guide/router
-- https://www.tiepphan.com/angular-router-series/
-
-

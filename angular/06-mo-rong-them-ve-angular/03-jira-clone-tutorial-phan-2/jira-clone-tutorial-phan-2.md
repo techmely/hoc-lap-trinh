@@ -1,10 +1,7 @@
 ---
 title: "Jira Clone Tutorial 02"
 description: "Phần thứ hai của series sẽ nói về việc dựng layout của ứng dụng với flexbox và TailwindCSS."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"
@@ -121,7 +118,7 @@ export class ResizerComponent implements OnInit {
   @Input() expanded: boolean;
 
   get icon() {
-    return this.expanded ? 'chevron-left' : 'chevron-right';
+    return this.expanded ? "chevron-left" : "chevron-right";
   }
   constructor() {}
 
@@ -167,15 +164,15 @@ Và bắt đầu config route cho `ProjectModule`. Xong xuôi rồi đấy!
 ```ts
 const routes: Routes = [
   {
-    path: '',
+    path: "",
     component: ProjectComponent,
     children: [
       {
-        path: 'board',
+        path: "board",
         component: BoardComponent,
       },
       {
-        path: 'settings',
+        path: "settings",
         component: SettingsComponent,
       },
       {
@@ -183,9 +180,9 @@ const routes: Routes = [
         component: FullIssueDetailComponent,
       },
       {
-        path: '',
-        redirectTo: 'board',
-        pathMatch: 'full',
+        path: "",
+        redirectTo: "board",
+        pathMatch: "full",
       },
     ],
   },
@@ -201,5 +198,3 @@ Có feedback gì mọi người cứ tạo PR nhé, cảm ơn anh em đã đọc
 ## Source code
 
 https://github.com/trungk18/jira-clone-angular/tree/leftnav-sidebar
-
-

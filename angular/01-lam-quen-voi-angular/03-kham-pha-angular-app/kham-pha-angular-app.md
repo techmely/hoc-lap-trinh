@@ -3,16 +3,10 @@ title: "Khám phá Angular App"
 description: "Ở trong AppModule, chúng ta đã thấy được một trong những thành phần quan trọng nhất của các ứng dụng Angular đó là các Component, ở đây là AppComponent, nó được import từ file app.component.ts Với mỗi một ứng dụng Angular, một component sẽ định nghĩa ra một view tương ứng."
 keywords:
   [
-    "gioi thieu angular",
-    "giới thiệu angular",
+    "Khám phá Angular App",
+    "angular app là gì",
+    "kham pha angular app",
     "khoá học angular",
-    "giới thiệu angular",
-    "giới thiệu angular cơ bản",
-    "angular la gi",
-    "tong quan ve angular",
-    "gioi thieu ve ngon ngu lap trinh angular",
-    "tom tat angular",
-    "code angular la gi",
   ]
 chapter:
   name: "Làm quen với Angular"
@@ -23,7 +17,6 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---
-
 
 Từ project được generate bởi Angular CLI chúng ta có thể thấy được trong đó có khá nhiều các file/folder, vậy application của chúng ta bắt đầu từ đâu.
 Đầu tiên, từ folder src bạn có thể thấy được file index.html, bên trong tag body sẽ có một tag HTML khá khác lạ (app-root trong hầu hết trường hợp). Tag này không hề tồn tại trong HTML, ắt hẳn đây là một custom tag/selector của application, hay nói cách khác, đây là cái gì đó bao ngoài của một view nào đó trong ứng dụng.
@@ -52,9 +45,9 @@ export class HelloComponent {}
 Nó là một TS class rất đơn giản phải không, bây giờ chúng ta sẽ gắn meta-data cho nó như sau.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 @Component({
-  selector: 'app-hello',
+  selector: "app-hello",
   template: ` <h2>Hello there!</h2> `,
 })
 export class HelloComponent {}
@@ -86,7 +79,7 @@ error NG8001: 'app-hello' is not a known element:
    Yeah, chính là nó đó, giờ chỉ việc import component lên đầu và thêm HelloComponent vào declarations là xong.
 
 ```typescript
-import { HelloComponent } from './hello.component';
+import { HelloComponent } from "./hello.component";
 ```
 
 ```typescript
@@ -103,11 +96,3 @@ Với cách tạo bằng tool thì bạn sẽ không cần phải làm những g
 That's all for today.
 
 Các bạn hãy thử tìm hiểu cấu trúc ứng dụng và tạo thêm nhiều component nữa nào.
-
-## Link tham khảo
-
-Link document các bạn cần tìm hiểu 
-
-- https://angular.io/guide/architecture
-- https://angular.io/guide/architecture-modules
-- https://angular.io/guide/architecture-components

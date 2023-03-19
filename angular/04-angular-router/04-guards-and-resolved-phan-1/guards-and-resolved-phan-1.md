@@ -1,10 +1,7 @@
 ---
 title: "Guards and Resolvers Phần 1"
 description: "Đối với các ứng dụng Single Page Apps (SPAs) được viết bằng Angular (hoặc có thể là React, Vue, etc), do chúng ta đã tải hết resouces cần thiết về và chỉ call đến DataSources để lấy về data và render Component/View tương ứng mà không cần phải reload lại pages. Do đó nhiệm vụ kiểm tra tính hợp lệ khi người dùng muốn render một/một vài component sẽ bao gồm cả phần frontend."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Angular Router"
   slug: "chuong-04-angular-router"
@@ -36,14 +33,14 @@ Khi nhận một URL, Angular Router sẽ thực hiện các hành động sau:
 ```ts
 const routes: Routes = [
   {
-    path: 'admin',
+    path: "admin",
     loadChildren: () =>
-      import('./admin/admin.module').then((m) => m.AdminModule),
+      import("./admin/admin.module").then((m) => m.AdminModule),
   },
   {
-    path: '',
-    redirectTo: 'article',
-    pathMatch: 'full',
+    path: "",
+    redirectTo: "article",
+    pathMatch: "full",
   },
 ];
 ```
@@ -53,15 +50,15 @@ const routes: Routes = [
 ```ts
 const routes: Routes = [
   {
-    path: 'article',
+    path: "article",
     component: ArticleComponent,
     children: [
       {
-        path: '',
+        path: "",
         component: ArticleListComponent,
       },
       {
-        path: ':slug',
+        path: ":slug",
         component: ArticleDetailComponent,
       },
     ],
@@ -74,11 +71,11 @@ const routes: Routes = [
 ```ts
 const routes: Routes = [
   {
-    path: '',
+    path: "",
     component: AdminComponent,
     children: [
       {
-        path: '',
+        path: "",
         component: AdminArticleListComponent,
       },
     ],
@@ -225,19 +222,19 @@ Giả sử chúng ta có chức năng edit bài viết, yêu cầu đưa ra là 
 ```ts
 const routes: Routes = [
   {
-    path: 'article',
+    path: "article",
     component: ArticleComponent,
     children: [
       {
-        path: '',
+        path: "",
         component: ArticleListComponent,
       },
       {
-        path: ':slug',
+        path: ":slug",
         component: ArticleDetailComponent,
       },
       {
-        path: ':slug/edit',
+        path: ":slug/edit",
         component: ArticleEditComponent,
       },
     ],
@@ -252,17 +249,17 @@ Giờ đây bạn có thể vào bất cứ bài nào cũng sẽ có thể navig
 Giờ đây bạn có thể tạo một service, sau đó kiểm tra các quyền để có thể cho phép người dùng có được di chuyển vào hay không.
 
 ```ts
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 import {
   CanActivate,
   ActivatedRouteSnapshot,
   RouterStateSnapshot,
   UrlTree,
-} from '@angular/router';
-import { Observable } from 'rxjs';
+} from "@angular/router";
+import { Observable } from "rxjs";
 
 @Injectable({
-  providedIn: 'root', // you can change to any level if needed
+  providedIn: "root", // you can change to any level if needed
 })
 export class CanEditArticleGuard implements CanActivate {
   canActivate(
@@ -283,12 +280,12 @@ export class CanEditArticleGuard implements CanActivate {
 ```ts
 const routes: Routes = [
   {
-    path: 'article',
+    path: "article",
     component: ArticleComponent,
     children: [
       // other configurations
       {
-        path: ':slug/edit',
+        path: ":slug/edit",
         component: ArticleEditComponent,
         canActivate: [CanEditArticleGuard], // <== this is an array, we can have multiple guards
       },
@@ -300,14 +297,14 @@ const routes: Routes = [
 Giả định rằng, chúng ta có một service để biết được user hiện tại là ai như sau:
 
 ```ts
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class UserService {
   currentUser = {
-    username: 'TiepPhan',
+    username: "TiepPhan",
   };
   constructor() {}
 }
@@ -317,7 +314,7 @@ Guard của chúng ta sẽ có thể có logic như sau:
 
 ```ts
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class CanEditArticleGuard implements CanActivate {
   constructor(
@@ -333,7 +330,7 @@ export class CanEditArticleGuard implements CanActivate {
     | boolean
     | UrlTree {
     return this.articleService
-      .getArticleBySlug(next.paramMap.get('slug'))
+      .getArticleBySlug(next.paramMap.get("slug"))
       .pipe(
         map(
           (article) => article.author === this.userService.currentUser.username
@@ -357,14 +354,3 @@ Trong bài này có khá nhiều concept về Angular Router Navigation Lifecycl
 
 - https://stackblitz.com/edit/angular-100-days-of-code-day-30?file=src%2Fapp%2Farticle%2Farticle.service.ts
 - https://stackblitz.com/edit/angular-100-days-of-code-day-30-01?file=src%2Fapp%2Farticle%2Farticle-routing.module.ts
-
-
-## Tài liệu tham khảo
-Các bạn có thể đọc thêm ở các bài viết sau
-
-- https://angular.io/guide/router
-- https://vsavkin.com/angular-2-router-d9e30599f9ea
-- https://www.tiepphan.com/angular-router-series/
-- https://indepth.dev/angular-router-series-pillar-2-understanding-the-routers-navigation-cycle/
-- https://vsavkin.com/the-powerful-url-matching-engine-of-angular-router-775dad593b03
-

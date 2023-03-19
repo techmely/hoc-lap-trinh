@@ -1,10 +1,7 @@
 ---
 title: "DisabledControlDirective to disable Reactive Form control"
 description: ""
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"
@@ -42,7 +39,7 @@ export class ReactiveFormWarningComponent implements OnInit {
 
   ngOnInit() {
     this.form = this.fb.group({
-      name: [''],
+      name: [""],
     });
   }
 }
@@ -72,15 +69,15 @@ Có một số cách giải quyết như sau:
 
 ```ts
 this.form = this.fb.group({
-  name: [{ value: '', disabled: false }],
+  name: [{ value: "", disabled: false }],
 });
 ```
 
 ### 2. Dùng FormControl.enable() hoặc FormControl.disable()
 
 ```ts
-this.form.get('name').enable();
-this.form.get('name').disable();
+this.form.get("name").enable();
+this.form.get("name").disable();
 ```
 
 Hai cách trên đều hoạt động tốt nhưng lại khá bất cập nếu như bạn muốn điều khiển **disable state của FormControl trên template** như đoạn code bị warn lúc đầu tiên.
@@ -101,15 +98,15 @@ Vậy hướng giải quyết là gì? Câu trả lời là dùng một **Direct
 Mình sẽ gọi là **DisabledControlDirective** nhé. Directive này chỉ được áp dụng khi dùng chung với `formControlName` directive hoặc `formControl` directive. Khi các bạn muốn disable một `FormControl` trên template, dùng `[disableControl]` thay thế cho `[disabled]` bình thường.
 
 ```ts
-import { Directive, Input } from '@angular/core';
-import { NgControl } from '@angular/forms';
+import { Directive, Input } from "@angular/core";
+import { NgControl } from "@angular/forms";
 
 @Directive({
-  selector: '([formControlName], [formControl])[disabledControl]',
+  selector: "([formControlName], [formControl])[disabledControl]",
 })
 export class DisabledControlDirective {
   @Input() set disabledControl(state: boolean) {
-    const action = state ? 'disable' : 'enable';
+    const action = state ? "disable" : "enable";
     this.ngControl.control[action]();
   }
 
@@ -136,4 +133,3 @@ Các bạn lưu ý là nếu một control bị disabled thì value của contro
 ## Source code
 
 https://stackblitz.com/edit/angular-disable-reactive-form-control-directive?file=src/app/disabled-control.directive.ts
-

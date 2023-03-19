@@ -1,10 +1,7 @@
 ---
 title: "ContentChild & ContentChildren"
 description: "Trong những bài học trước chúng ta đã tìm hiểu khác nhiều thứ liên quan đến Content Projection. Đối với view, chúng ta có thể query các phần tử trên view với ViewChild hay ViewChildren, vậy đối với content, chúng ta có thể query nó được không? Angular cũng cung cấp cho chúng ta các APIs: `ContentChild` và `ContentChildren` để có thể tương tác được với content truyền vào."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -14,6 +11,7 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 15
 ---
+
 ## Query single directive/component
 
 Giả sử chúng ta sẽ sử dụng Tab Component đã được tạo từ Day 16, bây giờ chúng ta có một component Couter để đếm xem liệu chúng ta có bao nhiêu component đã được khởi tạo như sau:
@@ -55,10 +53,10 @@ ContentChild(selector: string | Function | Type<any>, opts?: {
 Trước tiên, chúng ta sẽ tạo một directive đã.
 
 ```ts
-import { Directive } from '@angular/core';
+import { Directive } from "@angular/core";
 
 @Directive({
-  selector: 'ng-template[tabPanelContent]',
+  selector: "ng-template[tabPanelContent]",
 })
 export class TabPanelContentDirective {
   constructor() {}
@@ -240,12 +238,3 @@ Câu trả lời cho bạn đây:
 ## Lời kết
 
 Như vậy, trong bài này bạn sẽ cần tìm hiểu sự khác biệt giữa view và content, làm thế nào để query một hoặc một số element được project vào component/directive đó.
-
-Để tìm hiểu sâu hơn, các bạn cần theo dõi thêm một số nguồn sau đây:
-
-- https://www.tiepphan.com/thu-nghiem-voi-angular-content-projection-trong-angular/
-- https://www.tiepphan.com/thu-nghiem-voi-angular-thuc-hanh-content-projection-va-lifecycle-angular/
-- https://www.tiepphan.com/thu-nghiem-voi-angular-querylist-changes-event-trong-angular/
-- https://angular.io/api/core/ContentChild
-- https://angular.io/api/core/ContentChildren
-- https://netbasal.com/understanding-viewchildren-contentchildren-and-querylist-in-angular-896b0c689f6e

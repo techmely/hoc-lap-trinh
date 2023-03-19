@@ -1,10 +1,7 @@
 ---
 title: "Guards and Resolvers Phần 2"
 description: "Trong ngày hôm nay chúng ta sẽ tiếp tục với các guard như CanDeactivate và CanLoad."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Angular Router"
   slug: "chuong-04-angular-router"
@@ -27,25 +24,59 @@ Angular Router cung cấp một số guards như sau:
 
 ```ts
 interface CanActivate {
-  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree
+  canActivate(
+    route: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot
+  ):
+    | Observable<boolean | UrlTree>
+    | Promise<boolean | UrlTree>
+    | boolean
+    | UrlTree;
 }
 ```
+
 ```ts
 interface CanActivateChild {
-  canActivateChild(childRoute: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree
+  canActivateChild(
+    childRoute: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot
+  ):
+    | Observable<boolean | UrlTree>
+    | Promise<boolean | UrlTree>
+    | boolean
+    | UrlTree;
 }
 ```
 
 - Deactivate components:
+
 ```ts
 interface CanDeactivate<T> {
-  canDeactivate(component: T, currentRoute: ActivatedRouteSnapshot, currentState: RouterStateSnapshot, nextState?: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree
+  canDeactivate(
+    component: T,
+    currentRoute: ActivatedRouteSnapshot,
+    currentState: RouterStateSnapshot,
+    nextState?: RouterStateSnapshot
+  ):
+    | Observable<boolean | UrlTree>
+    | Promise<boolean | UrlTree>
+    | boolean
+    | UrlTree;
 }
 ```
+
 - Load children (lazy loading route):
+
 ```ts
 interface CanLoad {
-  canLoad(route: Route, segments: UrlSegment[]): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree
+  canLoad(
+    route: Route,
+    segments: UrlSegment[]
+  ):
+    | Observable<boolean | UrlTree>
+    | Promise<boolean | UrlTree>
+    | boolean
+    | UrlTree;
 }
 ```
 
@@ -60,23 +91,23 @@ Giả sử phần config routing của chúng ta sẽ có từ bài trước nh�
 ```ts
 const routes: Routes = [
   {
-    path: 'article',
+    path: "article",
     component: ArticleComponent,
     children: [
       {
-        path: '',
+        path: "",
         component: ArticleListComponent,
       },
       {
-        path: ':slug',
-        component: ArticleDetailComponent
+        path: ":slug",
+        component: ArticleDetailComponent,
       },
       {
-        path: ':slug/edit',
+        path: ":slug/edit",
         component: ArticleEditComponent,
-        canActivate: [CanEditArticleGuard]
-      }
-    ]
+        canActivate: [CanEditArticleGuard],
+      },
+    ],
   },
 ];
 ```
@@ -84,16 +115,30 @@ const routes: Routes = [
 Lúc này chúng ta có thể thêm một service, và nó sẽ implement CanDeactivate guard để check như sau.
 
 ```ts
-import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, RouterStateSnapshot, CanDeactivate, UrlTree } from '@angular/router';
-import { Observable } from 'rxjs';
-import { ArticleEditComponent } from './article-edit/article-edit.component';
+import { Injectable } from "@angular/core";
+import {
+  ActivatedRouteSnapshot,
+  RouterStateSnapshot,
+  CanDeactivate,
+  UrlTree,
+} from "@angular/router";
+import { Observable } from "rxjs";
+import { ArticleEditComponent } from "./article-edit/article-edit.component";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class CanLeaveEditGuard implements CanDeactivate<ArticleEditComponent> {
-  canDeactivate(component: ArticleEditComponent, currentRoute: ActivatedRouteSnapshot, currentState: RouterStateSnapshot, nextState?: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+  canDeactivate(
+    component: ArticleEditComponent,
+    currentRoute: ActivatedRouteSnapshot,
+    currentState: RouterStateSnapshot,
+    nextState?: RouterStateSnapshot
+  ):
+    | Observable<boolean | UrlTree>
+    | Promise<boolean | UrlTree>
+    | boolean
+    | UrlTree {
     return true; // replace with actual logic
   }
 }
@@ -104,17 +149,17 @@ Sau đó chúng ta sẽ thêm guard vào config routing như đối với `CanAc
 ```ts
 const routes: Routes = [
   {
-    path: 'article',
+    path: "article",
     component: ArticleComponent,
     children: [
       // other configurations
       {
-        path: ':slug/edit',
+        path: ":slug/edit",
         component: ArticleEditComponent,
         canActivate: [CanEditArticleGuard],
         canDeactivate: [CanLeaveEditGuard], // <== this is an array, we can have multiple guards
-      }
-    ]
+      },
+    ],
   },
 ];
 ```
@@ -123,25 +168,47 @@ Giờ đây mỗi khi người dùng navigate ra khỏi màn hình edit này, An
 
 ```ts
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class CanLeaveEditGuard implements CanDeactivate<ArticleEditComponent> {
-  canDeactivate(component: ArticleEditComponent, currentRoute: ActivatedRouteSnapshot, currentState: RouterStateSnapshot, nextState?: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+  canDeactivate(
+    component: ArticleEditComponent,
+    currentRoute: ActivatedRouteSnapshot,
+    currentState: RouterStateSnapshot,
+    nextState?: RouterStateSnapshot
+  ):
+    | Observable<boolean | UrlTree>
+    | Promise<boolean | UrlTree>
+    | boolean
+    | UrlTree {
     return !component.isEditing;
   }
 }
 ```
-![CanDeactivate Guard](assets/day31-router-01.gif)
 
+![CanDeactivate Guard](assets/day31-router-01.gif)
 
 Để tăng tính reuse của guard, chúng ta có thể sử dụng implement interface như sau.
 
 ```ts
-import { ActivatedRouteSnapshot, RouterStateSnapshot, CanDeactivate, UrlTree } from '@angular/router';
-import { Observable } from 'rxjs';
+import {
+  ActivatedRouteSnapshot,
+  RouterStateSnapshot,
+  CanDeactivate,
+  UrlTree,
+} from "@angular/router";
+import { Observable } from "rxjs";
 
 export interface CheckDeactivate {
-  checkDeactivate(currentRoute: ActivatedRouteSnapshot, currentState: RouterStateSnapshot, nextState?: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree;
+  checkDeactivate(
+    currentRoute: ActivatedRouteSnapshot,
+    currentState: RouterStateSnapshot,
+    nextState?: RouterStateSnapshot
+  ):
+    | Observable<boolean | UrlTree>
+    | Promise<boolean | UrlTree>
+    | boolean
+    | UrlTree;
 }
 ```
 
@@ -149,31 +216,47 @@ Sau đó component của chúng ta sẽ chịu trách nhiệm implement logic n�
 
 ```ts
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class CanLeaveEditGuard implements CanDeactivate<CheckDeactivate> {
-  canDeactivate(component: CheckDeactivate, currentRoute: ActivatedRouteSnapshot, currentState: RouterStateSnapshot, nextState?: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+  canDeactivate(
+    component: CheckDeactivate,
+    currentRoute: ActivatedRouteSnapshot,
+    currentState: RouterStateSnapshot,
+    nextState?: RouterStateSnapshot
+  ):
+    | Observable<boolean | UrlTree>
+    | Promise<boolean | UrlTree>
+    | boolean
+    | UrlTree {
     return component.checkDeactivate(currentRoute, currentState, nextState);
   }
 }
 ```
+
 ```ts
 export class ArticleEditComponent implements OnInit, CheckDeactivate {
   slug$ = this.activatedRoute.paramMap.pipe(
-    map(params => params.get('slug'))
+    map((params) => params.get("slug"))
   );
 
   isEditing = false;
-  
-  constructor(private activatedRoute: ActivatedRoute) { }
 
-  ngOnInit() {
-  }
+  constructor(private activatedRoute: ActivatedRoute) {}
 
-  checkDeactivate(currentRoute: ActivatedRouteSnapshot, currentState: RouterStateSnapshot, nextState?: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+  ngOnInit() {}
+
+  checkDeactivate(
+    currentRoute: ActivatedRouteSnapshot,
+    currentState: RouterStateSnapshot,
+    nextState?: RouterStateSnapshot
+  ):
+    | Observable<boolean | UrlTree>
+    | Promise<boolean | UrlTree>
+    | boolean
+    | UrlTree {
     return !this.isEditing;
   }
-
 }
 ```
 
@@ -184,34 +267,42 @@ Trường hợp cần thiết chúng ta hoàn toàn có thể hiển thị confi
 ```ts
 export class ArticleEditComponent implements OnInit, CheckDeactivate {
   slug$ = this.activatedRoute.paramMap.pipe(
-    map(params => params.get('slug'))
+    map((params) => params.get("slug"))
   );
 
   isEditing = false;
-  
-  constructor(private activatedRoute: ActivatedRoute, private dialog: MatDialog) { }
 
-  ngOnInit() {
-  }
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private dialog: MatDialog
+  ) {}
+
+  ngOnInit() {}
 
   openDialog() {
     const ref = this.dialog.open(ConfirmDialogComponent, {
       data: {
-        title: 'Do you want to leave this page?'
-      }
+        title: "Do you want to leave this page?",
+      },
     });
     return ref.afterClosed();
   }
 
-  checkDeactivate(currentRoute: ActivatedRouteSnapshot, currentState: RouterStateSnapshot, nextState?: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+  checkDeactivate(
+    currentRoute: ActivatedRouteSnapshot,
+    currentState: RouterStateSnapshot,
+    nextState?: RouterStateSnapshot
+  ):
+    | Observable<boolean | UrlTree>
+    | Promise<boolean | UrlTree>
+    | boolean
+    | UrlTree {
     return !this.isEditing || this.openDialog();
   }
-
 }
 ```
 
 Full code: https://stackblitz.com/edit/angular-100-days-of-code-day-31-02?file=src%2Fapp%2Farticle%2Farticle-edit%2Farticle-edit.component.ts
-
 
 ![CanDeactivate with ConfirmDialog](assets/day31-router-02.gif)
 
@@ -222,32 +313,46 @@ Full code: https://stackblitz.com/edit/angular-100-days-of-code-day-31-02?file=s
 Ví dụ, application của chúng ta có chức năng cho admin vào xem để quản lý. Đối với người dùng thông thường, chúng ta không cần thiết phải tải phần code của route `/admin` về. Lúc đó `CanLoad` sẽ là một guard hữu ích cho chúng ta sử dụng.
 
 ```ts
-import { Injectable } from '@angular/core';
-import { CanLoad, UrlSegment, Route, RouterStateSnapshot, UrlTree } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Injectable } from "@angular/core";
+import {
+  CanLoad,
+  UrlSegment,
+  Route,
+  RouterStateSnapshot,
+  UrlTree,
+} from "@angular/router";
+import { Observable } from "rxjs";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class CanLoadAdminGuard implements CanLoad {
-  canLoad(route: Route, segments: UrlSegment[]): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+  canLoad(
+    route: Route,
+    segments: UrlSegment[]
+  ):
+    | Observable<boolean | UrlTree>
+    | Promise<boolean | UrlTree>
+    | boolean
+    | UrlTree {
     return true;
   }
 }
 ```
+
 ```ts
 const routes: Routes = [
   {
-    path: 'admin',
+    path: "admin",
     loadChildren: () =>
-      import('./admin/admin.module').then((m) => m.AdminModule),
+      import("./admin/admin.module").then((m) => m.AdminModule),
     canLoad: [CanLoadAdminGuard], // <== this is an array, we can have multiple guards
   },
   {
-    path: '',
-    redirectTo: 'article',
-    pathMatch: 'full'
-  }
+    path: "",
+    redirectTo: "article",
+    pathMatch: "full",
+  },
 ];
 ```
 
@@ -255,18 +360,27 @@ Từ đây chúng ta có thể implement các logic để check xem có thể lo
 
 ```ts
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class CanLoadAdminGuard implements CanLoad {
   constructor(private userService: UserService) {}
-  canLoad(route: Route, segments: UrlSegment[]): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+  canLoad(
+    route: Route,
+    segments: UrlSegment[]
+  ):
+    | Observable<boolean | UrlTree>
+    | Promise<boolean | UrlTree>
+    | boolean
+    | UrlTree {
     return this.userService.currentUser.isAdmin;
   }
 }
 ```
+
 ![CanLoad Guard](assets/day31-router-03.gif)
 
 ## Lời kết
+
 Trong bài này chúng ta đã biết thêm một số guard khác khá hữu ích để check xem có thể deactivate, load hay không.
 
 ## Code sample
@@ -274,13 +388,3 @@ Trong bài này chúng ta đã biết thêm một số guard khác khá hữu í
 - https://stackblitz.com/edit/angular-100-days-of-code-day-31-01?file=src%2Fapp%2Farticle%2Farticle-edit%2Farticle-edit.component.ts
 - https://stackblitz.com/edit/angular-100-days-of-code-day-31-02?file=src%2Fapp%2Farticle%2Farticle-edit%2Farticle-edit.component.ts
 - https://stackblitz.com/edit/angular-100-days-of-code-day-31-03?file=src%2Fapp%2Fcan-load-admin.guard.ts
-
-## Tài liệu tham khảo
-
-Các bạn có thể đọc thêm ở các bài viết sau
-
-- https://angular.io/guide/router
-- https://vsavkin.com/angular-2-router-d9e30599f9ea
-- https://www.tiepphan.com/angular-router-series/
-- https://indepth.dev/angular-router-series-pillar-2-understanding-the-routers-navigation-cycle/
-- https://vsavkin.com/the-powerful-url-matching-engine-of-angular-router-775dad593b03

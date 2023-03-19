@@ -1,10 +1,7 @@
 ---
 title: "Jira Clone Tutorial 01"
 description: "Đây là ứng dụng mô phỏng lại ứng dụng Jira của Atlassian được mình viết bằng Angular trong thời gian rảnh. Mục tiêu là để kiểm chứng lại khả năng của bản thân, và cũng là nguồn tư liệu để viết bài cho series khóa học Angular từ cơ bản đến nâng cao :)"
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"
@@ -202,9 +199,9 @@ npm i tailwindcss postcss-scss postcss-import postcss-loader @angular-builders/c
 ### Import Tailwind CSS trong file style.scss
 
 ```scss
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 ```
 
 ### Tạo file webpack.config.js trong frontend folder với content như ở dưới
@@ -217,14 +214,14 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
-        loader: 'postcss-loader',
+        loader: "postcss-loader",
         options: {
-          ident: 'postcss',
-          syntax: 'postcss-scss',
+          ident: "postcss",
+          syntax: "postcss-scss",
           plugins: () => [
-            require('postcss-import'),
-            require('tailwindcss'),
-            require('autoprefixer'),
+            require("postcss-import"),
+            require("tailwindcss"),
+            require("autoprefixer"),
           ],
         },
       },
@@ -243,12 +240,12 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
-        loader: 'postcss-loader',
+        loader: "postcss-loader",
         options: {
           postcssOptions: {
-            ident: 'postcss',
-            syntax: 'postcss-scss',
-            plugins: ['postcss-import', 'tailwindcss', 'autoprefixer'],
+            ident: "postcss",
+            syntax: "postcss-scss",
+            plugins: ["postcss-import", "tailwindcss", "autoprefixer"],
           },
         },
       },
@@ -317,4 +314,3 @@ Mình đã cố viết chi tiết nhất có thể, nhưng bài viết này vi�
 ## Source code
 
 - https://github.com/trungk18/jira-clone-angular/tree/tailwind-configuration
-

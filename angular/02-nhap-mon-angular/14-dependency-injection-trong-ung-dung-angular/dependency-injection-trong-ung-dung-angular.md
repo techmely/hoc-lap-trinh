@@ -1,10 +1,7 @@
 ---
 title: "Dependency Injection trong Ứng Dụng Angular"
 description: "Trong bài 13 chúng ta đã tìm hiểu và thấy rằng Dependency Injection được sử dụng trong ứng dụng Angular để tạo ra các Service, và các Service này được inject vào các class (ví dụ: component, directive, service) khác thông qua constructor injection. Vậy ngoài để tạo ra Service thì nó còn có thể sử dụng ở những đâu nữa."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -14,6 +11,7 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 14
 ---
+
 ## Inject component cha đến component con
 
 Angular application là một component tree có dạng như sau.
@@ -42,9 +40,9 @@ Giả sử bạn cài đặt **tab-group.component.ts** như sau:
 
 ```ts
 @Component({
-  selector: 'app-tab-group',
-  templateUrl: './tab-group.component.html',
-  styleUrls: ['./tab-group.component.css'],
+  selector: "app-tab-group",
+  templateUrl: "./tab-group.component.html",
+  styleUrls: ["./tab-group.component.css"],
 })
 export class TabGroupComponent implements OnInit {
   tabPanelList: TabPanelComponent[] = [];
@@ -108,13 +106,13 @@ Việc của chúng ta bây giờ chỉ là inject và call các method để re
 
 ```ts
 @Component({
-  selector: 'app-tab-panel',
+  selector: "app-tab-panel",
   template: `
     <ng-template>
       <ng-content></ng-content>
     </ng-template>
   `,
-  styles: [''],
+  styles: [""],
 })
 export class TabPanelComponent implements OnInit, OnDestroy {
   @Input() title: string;
@@ -136,13 +134,12 @@ Như bạn có thể thấy, tab group của chúng ta ở trên có UI cực k�
 
 Đây là nơi tỏa sáng của DI. Bạn chỉ cần đơn giản là provide một provider để override là được.
 
-**bs-tab-group.component.ts**
-
 ```ts
+// bs-tab-group.component.ts
 @Component({
-  selector: 'app-bs-tab-group',
-  templateUrl: './bs-tab-group.component.html',
-  styleUrls: ['./bs-tab-group.component.css'],
+  selector: "app-bs-tab-group",
+  templateUrl: "./bs-tab-group.component.html",
+  styleUrls: ["./bs-tab-group.component.css"],
   providers: [
     {
       provide: TabGroupComponent,
@@ -153,9 +150,8 @@ Như bạn có thể thấy, tab group của chúng ta ở trên có UI cực k�
 export class BsTabGroupComponent extends TabGroupComponent {}
 ```
 
-**bs-tab-group.component.html**
-
 ```html
+<!-- bs-tab-group.component.html -->
 <ul class="nav nav-tabs" role="tablist">
   <li
     class="nav-item"
@@ -211,9 +207,9 @@ const BsTabGroupProvider = {
 };
 
 @Component({
-  selector: 'app-bs-tab-group',
-  templateUrl: './bs-tab-group.component.html',
-  styleUrls: ['./bs-tab-group.component.css'],
+  selector: "app-bs-tab-group",
+  templateUrl: "./bs-tab-group.component.html",
+  styleUrls: ["./bs-tab-group.component.css"],
   providers: [BsTabGroupProvider],
 })
 export class BsTabGroupComponent extends TabGroupComponent {}
@@ -316,10 +312,3 @@ Tương đương với cú pháp:
 ## Lời kết
 
 Như vậy, trong bài này bạn sẽ cần tìm hiểu một số kỹ thuật sử dụng DI trong Angular, như thế sẽ giúp bạn hiểu sâu hơn về DI trong Angular và có thể tạo những phần code dễ reuse, flexible hơn.
-
-Để tìm hiểu sâu hơn, các bạn cần theo dõi thêm một số nguồn sau đây:
-
-- https://www.tiepphan.com/thu-nghiem-voi-angular-dependency-injection-trong-angular/
-- https://angular.io/guide/glossary#injector
-- https://angular.io/guide/dependency-injection
-- https://blog.thoughtram.io/angular/2015/05/18/dependency-injection-in-angular-2.html

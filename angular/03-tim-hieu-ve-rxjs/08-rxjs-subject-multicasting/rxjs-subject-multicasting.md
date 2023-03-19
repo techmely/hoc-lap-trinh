@@ -1,10 +1,7 @@
 ---
 title: "RxJS Subject and Multicasting"
 description: "Trong ngày đầu tiên tìm hiểu về RxJS chúng ta đã được giới thiệu đến **Observable**, và cũng đã nhắc đến một số kiểu dữ liệu vệ tinh như **Subject**. Vậy **Subject** có chức năng gì trong hệ sinh thái RxJS? Hôm nay chúng ta sẽ cùng tìm hiểu."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
@@ -14,6 +11,7 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 8
 ---
+
 ## Observable Execution
 
 Như chúng ta đã biết, đối với các **Observable** thông thường, mỗi khi thực hiện `subscribe` sẽ sinh ra một `execution` mới, và chúng độc lập với nhau.
@@ -197,9 +195,9 @@ Dưới đây là một ví dụ về type ahead:
 
 ```ts
 @Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: "my-app",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent implements OnInit {
   searchTerm$ = new Subject<string>();
@@ -238,14 +236,14 @@ Một trong những vấn đề khi làm việc với Subject đó là tình hu�
 const subject = new Subject();
 
 subject.subscribe({
-  next: (v) => console.log('observerA: ' + v),
+  next: (v) => console.log("observerA: " + v),
 });
 
 subject.next(1);
 subject.next(2);
 
 subject.subscribe({
-  next: (v) => console.log('observerB: ' + v),
+  next: (v) => console.log("observerB: " + v),
 });
 
 subject.next(3);
@@ -274,14 +272,14 @@ Lưu ý: BehaviorSubject yêu cầu phải có giá trị khởi tạo khi tạo
 const subject = new BehaviorSubject(0); // 0 is the initial value
 
 subject.subscribe({
-  next: (v) => console.log('observerA: ' + v),
+  next: (v) => console.log("observerA: " + v),
 });
 
 subject.next(1);
 subject.next(2);
 
 subject.subscribe({
-  next: (v) => console.log('observerB: ' + v),
+  next: (v) => console.log("observerB: " + v),
 });
 
 subject.next(3);
@@ -313,7 +311,7 @@ Tham số đầu vào của ReplaySubject có thể là:
 const subject = new ReplaySubject(3); // buffer 3 values for new subscribers
 
 subject.subscribe({
-  next: (v) => console.log('observerA: ' + v),
+  next: (v) => console.log("observerA: " + v),
 });
 
 subject.next(1);
@@ -322,7 +320,7 @@ subject.next(3);
 subject.next(4);
 
 subject.subscribe({
-  next: (v) => console.log('observerB: ' + v),
+  next: (v) => console.log("observerB: " + v),
 });
 
 subject.next(5);
@@ -348,7 +346,7 @@ Hoặc kết hợp buffer với `windowTime`:
 const subject = new ReplaySubject(100, 500 /* windowTime */);
 
 subject.subscribe({
-  next: (v) => console.log('observerA: ' + v),
+  next: (v) => console.log("observerA: " + v),
 });
 
 let i = 1;
@@ -356,7 +354,7 @@ const id = setInterval(() => subject.next(i++), 200);
 
 setTimeout(() => {
   subject.subscribe({
-    next: (v) => console.log('observerB: ' + v),
+    next: (v) => console.log("observerB: " + v),
   });
 }, 1000);
 
@@ -398,7 +396,7 @@ AsyncSubject khá giống Promise đấy chứ.
 const subject = new AsyncSubject();
 
 subject.subscribe({
-  next: (v) => console.log('observerA: ' + v),
+  next: (v) => console.log("observerA: " + v),
 });
 
 subject.next(1);
@@ -407,7 +405,7 @@ subject.next(3);
 subject.next(4);
 
 subject.subscribe({
-  next: (v) => console.log('observerB: ' + v),
+  next: (v) => console.log("observerB: " + v),
 });
 
 subject.next(5);
@@ -433,16 +431,16 @@ Kể cả khi AsyncSubject complete rồi, Observer vẫn có thể subscribe v�
 const subject = new BehaviorSubject(0); // 0 is the initial value
 
 subject.subscribe({
-  next: (v) => console.log('observerA: ' + v),
-  complete: () => console.log('observerA: done'),
+  next: (v) => console.log("observerA: " + v),
+  complete: () => console.log("observerA: done"),
 });
 
 subject.next(1);
 subject.next(2);
 
 subject.subscribe({
-  next: (v) => console.log('observerB: ' + v),
-  complete: () => console.log('observerB: done'),
+  next: (v) => console.log("observerB: " + v),
+  complete: () => console.log("observerB: done"),
 });
 
 subject.next(3);
@@ -450,8 +448,8 @@ subject.next(3);
 subject.complete();
 
 subject.subscribe({
-  next: (v) => console.log('observerC: ' + v),
-  complete: () => console.log('observerC: done'),
+  next: (v) => console.log("observerC: " + v),
+  complete: () => console.log("observerC: done"),
 });
 
 /**
@@ -473,8 +471,8 @@ observerC: done
 const subject = new ReplaySubject(3);
 
 subject.subscribe({
-  next: (v) => console.log('observerA: ' + v),
-  complete: () => console.log('observerA: done'),
+  next: (v) => console.log("observerA: " + v),
+  complete: () => console.log("observerA: done"),
 });
 
 let i = 1;
@@ -484,8 +482,8 @@ setTimeout(() => {
   subject.complete();
   clearInterval(id);
   subject.subscribe({
-    next: (v) => console.log('observerB: ' + v),
-    complete: () => console.log('observerB: done'),
+    next: (v) => console.log("observerB: " + v),
+    complete: () => console.log("observerB: done"),
   });
 }, 1000);
 
@@ -509,8 +507,8 @@ observerB: done
 const subject = new AsyncSubject();
 
 subject.subscribe({
-  next: (v) => console.log('observerA: ' + v),
-  complete: () => console.log('observerA: done'),
+  next: (v) => console.log("observerA: " + v),
+  complete: () => console.log("observerA: done"),
 });
 
 subject.next(1);
@@ -522,8 +520,8 @@ subject.next(5);
 subject.complete();
 
 subject.subscribe({
-  next: (v) => console.log('observerB: ' + v),
-  complete: () => console.log('observerB: done'),
+  next: (v) => console.log("observerB: " + v),
+  complete: () => console.log("observerB: done"),
 });
 /**
 Output:
@@ -715,7 +713,7 @@ Việc phải connect và disconnect manually khá là low level. Do đó `Conne
 const subject = new Subject();
 
 const connectableObservable = interval(500).pipe(
-  tap((x) => console.log('log.info: ' + x)),
+  tap((x) => console.log("log.info: " + x)),
   multicast(subject)
 ) as ConnectableObservable<number>;
 
@@ -756,7 +754,7 @@ Trong trường hợp Subject bị complete, nó sẽ không thể next thêm m�
 ```ts
 const connectableObservable = interval(500).pipe(
   take(10),
-  tap((x) => console.log('log.info: ' + x)),
+  tap((x) => console.log("log.info: " + x)),
   multicast(new Subject())
 ) as ConnectableObservable<number>;
 
@@ -791,7 +789,7 @@ Sau 5s `sharedObservable` đã emit complete nên khi ở thời điểm 6s chú
 ```ts
 const connectableObservable = interval(500).pipe(
   take(10),
-  tap((x) => console.log('log.info: ' + x)),
+  tap((x) => console.log("log.info: " + x)),
   multicast(() => new Subject())
 ) as ConnectableObservable<number>;
 ```
@@ -827,7 +825,7 @@ Việc sử dụng `multicast(new Subject())` có thể được viết gọn l�
 
 ```ts
 const connectableObservable = interval(500).pipe(
-  tap((x) => console.log('log.info: ' + x)),
+  tap((x) => console.log("log.info: " + x)),
   publish()
 ) as ConnectableObservable<number>;
 
@@ -879,7 +877,7 @@ Việc sử dụng `multicast(() => new Subject()) + refCount` khá phổ biến
 
 ```ts
 const sharedObservable = interval(500).pipe(
-  tap((x) => console.log('log.info: ' + x)),
+  tap((x) => console.log("log.info: " + x)),
   share()
 );
 
@@ -930,12 +928,12 @@ Source code & documentation: https://github.com/ReactiveX/rxjs/blob/6.x/src/inte
 Một use-case khá phổ biến là sử dụng `shareReplay` để làm [caching](https://blog.thoughtram.io/angular/2018/03/05/advanced-caching-with-rxjs.html).
 
 ```ts
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
-import { Subject } from 'rxjs/Subject';
-import { timer } from 'rxjs/observable/timer';
-import { switchMap, shareReplay, map, takeUntil } from 'rxjs/operators';
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { Observable } from "rxjs/Observable";
+import { Subject } from "rxjs/Subject";
+import { timer } from "rxjs/observable/timer";
+import { switchMap, shareReplay, map, takeUntil } from "rxjs/operators";
 
 export interface Joke {
   id: number;
@@ -948,7 +946,7 @@ export interface JokeResponse {
   value: Array<Joke>;
 }
 
-const API_ENDPOINT = 'https://api.icndb.com/jokes/random/5?limitTo=[nerdy]';
+const API_ENDPOINT = "https://api.icndb.com/jokes/random/5?limitTo=[nerdy]";
 const REFRESH_INTERVAL = 10000;
 const CACHE_SIZE = 1;
 
@@ -1000,14 +998,3 @@ export class JokeService {
 ## Lời kết
 
 Như vậy, trong những ngày gần đây chúng ta đã tìm hiểu khá nhiều concept xung quanh Observable và RxJS. Hi vọng đây sẽ là một cẩm nang để giúp các bạn có thể áp dụng RxJS (kể cả ở các ngôn ngữ khác cũng có Reactive Extension) dễ dàng hơn trong các dự án sắp tới.
-
-## Code sample:
-
-https://stackblitz.com/edit/angular-ivy-wbyobn?file=src%2Fapp%2Fapp.component.ts
-
-## Tài liệu tham khảo
-
-- [RxJS Overview](https://rxjs.dev/guide/overview)
-- [LearnRxJS](https://www.learnrxjs.io/)
-- [rxmarbles](https://rxmarbles.com/)
-- https://www.tiepphan.com/rxjs-reactive-programming/#rxjs-subject

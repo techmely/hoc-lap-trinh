@@ -1,11 +1,7 @@
 ---
 title: "RxJS Creation Operators"
-description: "Hôm nay, chúng ta sẽ tìm về các `Operators` dùng để khởi tạo `Observable` mà **RxJS** cung cấp nhé.
-"
-keywords:
-  [
-    
-  ]
+description: "Hôm nay, chúng ta sẽ tìm về các `Operators` dùng để khởi tạo `Observable` mà **RxJS** cung cấp nhé."
+keywords: []
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
@@ -15,12 +11,13 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---
+
 Ở bài trước, chúng ta đã tìm hiểu qua về `Observable` và chúng ta đã biết cách tạo 1 `Observable` bằng tay như sau:
 
 ```typescript
 const observable = new Observable(function subscribe(observer) {
   const id = setTimeout(() => {
-    observer.next('Hello Rxjs');
+    observer.next("Hello Rxjs");
     observer.complete();
   }, 1000);
   return function unsubscribe() {
@@ -31,7 +28,7 @@ const observable = new Observable(function subscribe(observer) {
 
 Chắc sẽ có một số bạn tự hỏi "Vậy chẳng lẽ lúc nào cũng phải nhớ cú pháp này để tạo `Observable` sao? Nào là `next`, rồi `complete`, rồi cả `unsubscribe`". Để trả lời câu hỏi này thì ở ngày hôm nay, chúng ta sẽ tìm về các `Operators` dùng để khởi tạo `Observable` mà **RxJS** cung cấp nhé.
 
-> - Operators là các pure functions cho phép lập trình functional với Observable. 
+> - Operators là các pure functions cho phép lập trình functional với Observable.
 
 ## Mở đầu
 
@@ -41,25 +38,25 @@ Chắc sẽ có một số bạn tự hỏi "Vậy chẳng lẽ lúc nào cũng 
 const observer = {
   next: (val) => console.log(val),
   error: (err) => console.log(err),
-  complete: () => console.log('complete'),
+  complete: () => console.log("complete"),
 };
 ```
 
 ## Common Creation Operators
 
-#### `of()`
+### Hàm `of()`
 
 `of()` là operator dùng để tạo 1 `Observable` từ bất cứ giá trị gì: primitives, Array, Object, Function v.v... `of()` sẽ nhận vào các giá trị và sẽ `complete` ngay sau khi tất cả các giá trị truyền vào được `emit`.
 
-1. Primitive value
+**Primitive value**
 
 ```typescript
 // output: 'hello'
 // complete: 'complete'
-of('hello').subscribe(observer);
+of("hello").subscribe(observer);
 ```
 
-2. Object/Array
+**Object/Array**
 
 ```typescript
 // output: [1, 2, 3]
@@ -67,22 +64,22 @@ of('hello').subscribe(observer);
 of([1, 2, 3]).subscribe(observer);
 ```
 
-3. Dãy giá trị (sequence of values)
+**Dãy giá trị (sequence of values)**
 
 ```typescript
 // output: 1, 2, 3, 'hello', 'world', {foo: 'bar'}, [4, 5, 6]
 // complete: 'complete'
-of(1, 2, 3, 'hello', 'world', { foo: 'bar' }, [4, 5, 6]).subscribe(observer);
+of(1, 2, 3, "hello", "world", { foo: "bar" }, [4, 5, 6]).subscribe(observer);
 ```
 
-#### `from()`
+### Hàm `from()`
 
 `from()` cũng gần giống với `of()`, cũng được sử dụng để tạo `Observable` từ 1 giá trị. Tuy nhiên, điểm khác biệt đối với `of()` là `from()` chỉ nhận
 vào giá trị là một `Iterable` hoặc là một `Promise`.
 
 > Iterable là những giá trị có thể iterate qua được, ví dụ: array, map, set, hoặc string. Khi bạn loop qua 1 string, thì các bạn sẽ nhận đc 1 dãy các ký tự trong string.
 
-1. Array
+**Array**
 
 ```typescript
 // output: 1, 2, 3
@@ -92,20 +89,20 @@ from([1, 2, 3]).subscribe(observer);
 
 Khi nhận vào 1 `Array`, `from()` sẽ emit các giá trị trong array theo sequence. Điều này tương đương với `of(1, 2, 3)`.
 
-2. String
+**String**
 
 ```typescript
 // output: 'h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'
 // complete: 'complete'
-from('hello world').subscribe(observer);
+from("hello world").subscribe(observer);
 ```
 
-3. Map/Set
+**Map/Set**
 
 ```typescript
 const map = new Map();
-map.set(1, 'hello');
-map.set(2, 'bye');
+map.set(1, "hello");
+map.set(2, "bye");
 
 // output: [1, 'hello'], [2, 'bye']
 // complete: 'complete'
@@ -120,54 +117,54 @@ set.add(2);
 from(set).subscribe(observer);
 ```
 
-4. Promise
+**Promise**
 
 ```typescript
 // output: 'hello world'
 // complete: 'complete'
-from(Promise.resolve('hello world')).subscribe(observer);
+from(Promise.resolve("hello world")).subscribe(observer);
 ```
 
 Các bạn có thể thấy là `from()` sẽ unwrap và return được giá trị `resolved` của `Promise`. Đây là cách chuyển đổi `Promise` thành `Observable`.
 
-#### `fromEvent()`
+### Hàm `fromEvent()`
 
 `fromEvent()` được dùng để chuyển đổi 1 sự kiện (Event) sang `Observable`. Ví dụ chúng ta có `DOM Event` như mouse click hoặc input.
 
 ```typescript
-const btn = document.querySelector('#btn');
-const input = document.querySelector('#input');
+const btn = document.querySelector("#btn");
+const input = document.querySelector("#input");
 
 // output (example): MouseEvent {...}
 // complete: không có gì log.
-fromEvent(btn, 'click').subscribe(observer);
+fromEvent(btn, "click").subscribe(observer);
 
 // output (example): KeyboardEvent {...}
 // complete: không có gì log.
-fromEvent(input, 'keydown').subscribe(observer);
+fromEvent(input, "keydown").subscribe(observer);
 ```
 
 Các bạn chú ý là `fromEvent()` sẽ tạo 1 `Observable` không tự `complete`. Việc này hoàn toàn hợp lý vì chúng ta muốn lắng nghe các sự kiện như `click` và `keydown` cho đến
 khi nào chính chúng ta không cần lắng nghe nữa thì thôi. `fromEvent()` không thể quyết định được lúc nào chúng ta không cần những sự kiện này nữa. Điều này cũng đồng nghĩa
 với việc các bạn phải chủ động `unsubscribe` các `Observable` tạo từ `fromEvent()` này nếu không muốn bị **tràn bộ nhớ** (memory leak).
 
-#### `fromEventPattern()`
+### Hàm `fromEventPattern()`
 
 `fromEventPattern()` là 1 dạng _nâng cao_ của `fromEvent()`. Nói về concept thì `fromEventPattern()` cũng giống với `fromEvent()` là tạo `Observable` từ sự kiện. Tuy nhiên, `fromEventPattern()` rất khác với `fromEvent()` về cách dùng, cũng như loại sự kiện để xử lý. Để hiểu rõ hơn, chúng ta cùng tham khảo ví dụ sau:
 
 ```typescript
 // fromEvent() từ ví dụ trên
 // output: MouseEvent {...}
-fromEvent(btn, 'click').subscribe(observer);
+fromEvent(btn, "click").subscribe(observer);
 
 // fromEventPattern
 // output: MouseEvent {...}
 fromEventPattern(
   (handler) => {
-    btn.addEventListener('click', handler);
+    btn.addEventListener("click", handler);
   },
   (handler) => {
-    btn.removeEventListener('click', handler);
+    btn.removeEventListener("click", handler);
   }
 ).subscribe(observer);
 ```
@@ -176,26 +173,26 @@ Một ví dụ khác nếu chúng ta cần biết được ví trị con trỏ t
 
 ```typescript
 // output: 10 10
-fromEvent(btn, 'click')
-  .pipe(map((ev: MouseEvent) => ev.offsetX + ' ' + ev.offsetY))
+fromEvent(btn, "click")
+  .pipe(map((ev: MouseEvent) => ev.offsetX + " " + ev.offsetY))
   .subscribe(observer);
 
 // fromEventPattern
 // Ở ví dụ này, chúng ta sẽ tách `addHandler` và `removeHandler` ra thành function riêng nhé
 
 function addHandler(handler) {
-  btn.addEventListener('click', handler);
+  btn.addEventListener("click", handler);
 }
 
 function removeHandler(handler) {
-  btn.removeEventListener('click', handler);
+  btn.removeEventListener("click", handler);
 }
 
 // output: 10 10
 fromEventPattern(
   addHandler,
   removeHandler,
-  (ev: MouseEvent) => ev.offsetX + ' ' + ev.offsetY
+  (ev: MouseEvent) => ev.offsetX + " " + ev.offsetY
 ).subscribe(observer);
 ```
 
@@ -229,7 +226,7 @@ return fromEventPattern(
 );
 ```
 
-#### `interval()`
+### Hàm `interval()`
 
 `interval()` là hàm để tạo `Observable` mà sẽ emit giá trị số nguyên từ số 0 theo 1 chu kỳ nhất định. Hàm này giống với `setInterval`.
 
@@ -241,7 +238,7 @@ interval(1000) // emit giá trị sau mỗi giây
 
 Giống như `fromEvent()`, `interval()` không tự động `complete` cho nên các bạn phải xử lý việc `unsubscribe`.
 
-#### `timer()`
+### Hàm `timer()`
 
 `timer()` có 2 cách sử dụng:
 
@@ -257,19 +254,19 @@ timer(1000).subscribe(observer);
 timer(1000, 1000).subscribe(observer);
 ```
 
-#### `throwError()`
+### Hàm `throwError()`
 
 `throwError()` sẽ dùng để tạo `Observable` mà thay vì emit giá trị, `Observable` này sẽ throw 1 error ngay lập tức sau khi `subscribe`.
 
 ```typescript
 // error: 'an error'
-throwError('an error').subscribe(observer);
+throwError("an error").subscribe(observer);
 ```
 
 `throwError()` thường dùng trong việc xử lý lỗi của 1 `Observable`, sau khi xử lý lỗi, chúng ta muốn throw tiếp error cho `ErrorHandler` tiếp theo, chúng ta sẽ dùng `throwError`. Khi làm
 việc với `Observable`, có 1 số `operators` yêu cầu các bạn phải cung cấp 1 `Observable` (ví dụ như `switchMap`, `catchError`) thì việc `throwError` trả về 1 `Observable` là rất thích hợp.
 
-#### `defer()`
+### Hàm `defer()`
 
 Cuối cùng, chúng ta sẽ tìm hiểu 1 operator rất hay ho đó là `defer()`. `defer()` nhận vào 1 `ObservableFactory` và sẽ trả về `Observable` này. Điểm đặc biệt của `defer()` là ở việc `defer()` sẽ dùng `ObservableFactory` này để tạo 1 `Observable` mới cho mỗi `Subscriber`. Chúng ta cùng tham khảo ví dụ sau:
 
@@ -301,8 +298,3 @@ Với `defer()`, chúng ta đã có 3 giá trị khác nhau cho mỗi lần subs
 ## Lời kết
 
 Ở bài này, chúng ta đã tìm hiểu qua kha khá các `operators` dùng để tạo `Observable`, với tên gọi chính thức là `Creation Operators`. Đây là những operators khá phổ biến, tuy nhiên, các bạn chỉ cần nắm kĩ: `from()`, `of()`, `interval()`, `timer()`, và `defer()` là được. `fromEvent()` và `fromEventPattern()` rất ít khi sử dụng trong ứng dụng Angular. Ngoài những `operators` mình liệt kê trên, **RxJS** còn cung cấp 1 số `Creation Operators` khác như: `ajax()`, `fromFetch()`, `generate()`. Và cũng như lý do trên, trong `Angular`, chúng ta rất ít khi sử dụng những operators này. Ví dụ thay vì `ajax()` và `fromFetch()` chúng ta đã có `HttpClientModule`.
-
-## Tài liệu tham khảo
-
-- [RxJS Overview](https://rxjs.dev/guide/overview)
-- [LearnRxJS](https://www.learnrxjs.io/)

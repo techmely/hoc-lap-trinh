@@ -1,10 +1,7 @@
 ---
 title: "Một số kỹ thuật TypeScript Nâng Cao"
 description: "> Hệ thống types của **TypeScript** thực sự rất mạnh mẽ và phức tạp, không thể truyền đạt được hết qua 1 vài bài viết. Các bạn phải thực hành, luyện tập, và nghiên cứu rất nhiều thì mới có thể nắm vững được **TS** nhé."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -14,7 +11,8 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 10
 ---
-## Union Type
+
+## Union Type là gì?
 
 `Union Type` là những types mang tính chất: **EITHER OR** (tạm dịch là **Hoặc cái này Hoặc cái kia**). Để viết `Union Type`, chúng ta dùng **Pipe Symbol** (`|`).
 
@@ -22,19 +20,19 @@ Ví dụ, chúng ta có 1 hàm `listen()` như sau:
 
 ```typescript
 function listen(port: unknown) {
-  if (typeof port === 'string') {
+  if (typeof port === "string") {
     port = parseInt(port, 10);
   }
   server.listen(port);
 }
 ```
 
-#### `typeof`
+### `typeof` là gì?
 
 Ở ví dụ trên, chúng ta gặp 1 cú pháp lạ `typeof`. `typeof` là 1 operator dùng để lấy về type của 1 biến. Giá trị mà `typeof` trả về luôn có type là `string`
 
 ```typescript
-typeof 'string'; // string
+typeof "string"; // string
 typeof 123; // number
 typeof true; // boolean
 typeof {}; // object
@@ -62,7 +60,7 @@ function listen(port: string | number) {
   // do listen
 }
 
-listen('3000'); // ok
+listen("3000"); // ok
 listen(3000); // ok
 listen(true); // TypeError: Argument of type true is not assignable to parameter type string | number
 listen(); // TypeError: Invalid number of arguments, expected 1
@@ -76,7 +74,7 @@ Tương tự như tạo `Union Type` cho tham số, các bạn cũng có thể t
 
 ```typescript
 function getSomething(): string | number {
-  return 'string'; // works
+  return "string"; // works
   return 30; // works
   return true; // TypeError: Returned expression type boolean is not assignable to type string | number
 }
@@ -91,7 +89,7 @@ function listen(port: StringOrNumber) {...}
 function getSomething(): StringOrNumber {...}
 ```
 
-## Intersection Type
+## Intersection Type là gì?
 
 Ngược với `Union Type`, `Intersection Type` là type mà kết hợp nhiều type lại với nhau. Nói cách khác, `Intersection Type` là type có tính chất: **AND** (dịch nôm na là **và**).
 
@@ -100,7 +98,7 @@ function merge<T1, T2>(o1: T1, o2: T2): T1 & T2 {
   return { ...o1, ...o2 };
 }
 
-merge({ foo: 'bar' }, { bar: 'foo' });
+merge({ foo: "bar" }, { bar: "foo" });
 ```
 
 Hàm `merge({ foo: 'bar' }, { bar: 'foo' })` này sẽ có giá trị trả về là `{ foo: string } & { bar: string }`.
@@ -131,7 +129,7 @@ Những `Component` này có những type `Style` khác nhau, nhưng cũng có n
 
 > `Type Composition` là 1 chủ đề rất hay, và rộng lớn trong **TS**. Các bạn nên google để tự tìm hiểu thêm nhé.
 
-## Conditional Type
+## Conditional Type là gì?
 
 `Conditional Type` có mặt trong **TS** từ version 2.8 và có thể nói đây là một trong những tính năng nổi bật nhất của **TS**. `Conditional Type`, đúng như tên gọi của nó, giúp cho chúng ta có thể tạo ra những type theo điều kiện. Điều này dẫn đến 1 hệ thống type cực kỳ linh hoạt (_robust_) mà **TS** mang lại cho người dùng. Ví dụ:
 
@@ -141,11 +139,11 @@ T extends U ? X : Y;
 
 Đoạn code trên có thể hiểu nôm na là khi type `T` có thể gán được cho type `U` thì sẽ trả về type `X`, còn không thì trả về type `Y`.
 
-## Type Alias
+## Type Alias là gì?
 
 `Type Alias` có thể hiểu là _alias_ (tên thay thế) một hoặc nhiều loại types nào đó thành 1 type, giống như `StringOrNumber` phía trên. `StringOrNumber` là 1 `Type Alias` của `string | number` (`Union Type`). `Type Alias` có thể dùng cho bất cứ loại type nào.
 
-#### Type Alias và Union Type
+### Type Alias và Union Type
 
 Sau đây, chúng ta sẽ cùng xem qua thêm 1 ví dụ về `Type Alias` dùng cho `Union Type` nhé. Tưởng tượng chúng ta cần tạo 1 component `Flex` và component này có những yêu cầu cơ bản sau:
 
@@ -154,17 +152,17 @@ Sau đây, chúng ta sẽ cùng xem qua thêm 1 ví dụ về `Type Alias` dùng
 
 ```typescript
 @Component({
-  selector: 'flex-container',
+  selector: "flex-container",
   template: `<ng-content></ng-content>`,
 })
 export class FlexComponent {
-  @Input() flexDirection: string = 'row';
+  @Input() flexDirection: string = "row";
 
-  @HostBinding('style.display') get display() {
-    return 'flex';
+  @HostBinding("style.display") get display() {
+    return "flex";
   }
 
-  @HostBinding('style.flex-direction') get direction() {
+  @HostBinding("style.flex-direction") get direction() {
     return this.flexDirection;
   }
 }
@@ -245,10 +243,10 @@ type Exclude<T, U> = T extends U ? never : T;
 type Extract<T, U> = T extends U ? T : never;
 
 // Exclude: Loại bỏ những types ở T nếu như những types này gán được cho U
-type SomeDiff = Exclude<'a' | 'b' | 'c', 'c' | 'd'>; // 'a' | 'b'. 'c' đã bị removed.
+type SomeDiff = Exclude<"a" | "b" | "c", "c" | "d">; // 'a' | 'b'. 'c' đã bị removed.
 
 // Extract: Loại bỏ những types ở T nếu như những types này KHÔNG gán được cho U
-type SomeFilter = Extract<'a' | 'b' | 'c', 'c' | 'd'>; // 'c'. 'a' và 'b' đã bị removed.
+type SomeFilter = Extract<"a" | "b" | "c", "c" | "d">; // 'c'. 'a' và 'b' đã bị removed.
 
 // hoặc có thể dùng Exclude để tạo type alias NonNullable
 type NonNullable<T> = Exclude<T, null | undefined>; // loại bỏ null và undefined từ T
@@ -267,10 +265,10 @@ type Person = {
   password: string;
 };
 
-type PersonWithNames = Pick<Person, 'firstName' | 'lastName'>; // {firstName: string, lastName: string}
+type PersonWithNames = Pick<Person, "firstName" | "lastName">; // {firstName: string, lastName: string}
 
 // Record: Gán type T cho lần lượt từng key P trong K
-type ThreeStringProps = Record<'prop1' | 'prop2' | 'prop3', string>;
+type ThreeStringProps = Record<"prop1" | "prop2" | "prop3", string>;
 // { prop1: string, prop2: string, prop3: string }
 
 type ReturnType<T> = T extends (...args: any[]) => infer R ? R : any;
@@ -281,7 +279,7 @@ type Result = ReturnType<() => string>; // string
 type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
 
 // Omit: loại bỏ type có key là K trong T
-type PersonWithoutPassword = Omit<Person, 'password'>; // {firstName: string, lastName: string}
+type PersonWithoutPassword = Omit<Person, "password">; // {firstName: string, lastName: string}
 ```
 
 > Xem thêm tại: [Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html)

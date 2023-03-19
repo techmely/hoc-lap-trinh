@@ -1,10 +1,7 @@
 ---
 title: "RxJS Higher Order Observables and Utility Operators"
 description: "Ngày hôm nay, chúng ta sẽ cùng nhau tìm hiểu 2 (trong 3) loại **Operators** cuối cùng là: **RxJS Higher Order Observables** và **Utility Operators** nhé."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
@@ -14,6 +11,7 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 7
 ---
+
 ## RxJS Higher Order Observables (HOOs)
 
 **HOOs** là những operators mà sẽ nhận vào giá trị của **Outer Observable** (hay còn gọi là **Source**) và sẽ trả về một **Inner Observable** (hay còn gọi là **Destination**) khác. Nhắc lại ngày trước 1 chút, chúng ta đã cùng tìm hiểu về `map()`, là **Transformation Operator**
@@ -32,7 +30,7 @@ Các bạn sẽ thấy là `map()` dùng giá trị của `interval(1000)` là `
 Trước khi tìm hiểu về cái HOOs, chúng ta sẽ tìm hiểu các operators sau: `mergeAll()`, `concatAll()`, và `switchAll()`. Như mình vừa nói qua ở trên, operator `map()` dùng để chuyển giá trị được emit từ `Source Observable` sang 1 giá trị mới rồi emit giá trị mới này. Ở ví dụ trên, chúng ta thấy `map()` trả về 1 giá trị bình thường. Vậy trường hợp `map()` trả về giá trị là 1 `Observable` thì sao? Chúng ta hãy thử nhé.
 
 ```ts
-fromEvent(document, 'click')
+fromEvent(document, "click")
   .pipe(map(() => interval(1000)))
   .subscribe(console.log);
 // Click
@@ -46,7 +44,7 @@ fromEvent(document, 'click')
 Như các bạn thấy, chúng ta nhận được `Observable {}` ở trên Console. Lí do là vì `map()` trả về 1 `Observable`, là `interval(1000)` ở đây. Và lúc này các bạn đang có 1 **Higher Order Observable** (aka `Observable<Observable>`). Các bạn có thể hiểu là mỗi lần click, chúng ta sẽ có 1 `interval()` mới. Lúc này, chúng ta có thể dùng 1 trong 3 operators mình vừa liệt kê ở trên để `pipe` vào `Source Observable` này:
 
 ```ts
-const source = fromEvent(document, 'click').pipe(map(() => interval(1000)));
+const source = fromEvent(document, "click").pipe(map(() => interval(1000)));
 
 source.pipe(mergeAll()).subscribe(console.log);
 source.pipe(switchAll()).subscribe(console.log);
@@ -86,7 +84,7 @@ Mọi thứ đều đẹp như mơ, cho đến khi có thêm các bước như s
 
 Trên đây chỉ là 1 ví dụ trong vô vàn ví dụ vì sao Nested Subscription là không tốt. Lí do ở đây chính là đối với Nested Subscription, chúng ta không thể quản lý cả 2 `Observable` và làm cho chúng đồng bộ với nhau được, cho nên các bạn nên **tránh** cái lỗi ngớ ngẩn này ra. Và cách **tránh** tốt nhất chính là hiểu + áp dụng **HOOs**
 
-#### switchMap()
+#### switchMap() trong RxJS
 
 `switchMap<T, R, O extends ObservableInput<any>>(project: (value: T, index: number) => O, resultSelector?: (outerValue: T, innerValue: ObservedValueOf<O>, outerIndex: number, innerIndex: number) => R): OperatorFunction<T, ObservedValueOf<O> | R>`
 
@@ -95,7 +93,7 @@ Trên đây chỉ là 1 ví dụ trong vô vàn ví dụ vì sao Nested Subscrip
 ![RxJS switchMap](assets/rxjs-switchMap.png)
 
 ```ts
-fromEvent(document, 'click').pipe(
+fromEvent(document, "click").pipe(
   switchMap(() => interval(1000).pipe(take(10)))
 );
 ```
@@ -126,13 +124,13 @@ this.queryInput.valueChanges
   });
 ```
 
-##### Lưu ý:
+##### Lưu ý
 
 Như ở phần **Nguồn gốc**, mình có đề cập đến `switchMap = switchAll + map`. Tuy nhiên, một số trường hợp sẽ làm cho `switchAll + map` không hoạt động đúng tính chất của `switchMap()` nữa. Điển hình là khi bạn dùng với `Promise`. Vì tính chất `non-cancellable` của `Promise`, nên nếu các bạn có request gửi đi thì `switchAll()` cũng không cancel được vì `Promise` không hề cancel được.
 
 Một lưu ý nữa, khi làm việc với Http Client trong Angular chẳng hạn, bạn chỉ nên dùng `switchMap` cho những task get dữ liệu, nếu bạn sử dụng cho Create, Update, Delete có thể sinh ra race condition. Lúc này các bạn nên thay thế bằng `mergeMap` hoặc `concatMap`.
 
-#### mergeMap()
+#### mergeMap() trong RxJS
 
 `mergeMap<T, R, O extends ObservableInput<any>>(project: (value: T, index: number) => O, resultSelector?: number | ((outerValue: T, innerValue: ObservedValueOf<O>, outerIndex: number, innerIndex: number) => R), concurrent: number = Number.POSITIVE_INFINITY): OperatorFunction<T, ObservedValueOf<O> | R>`
 
@@ -143,7 +141,7 @@ Một lưu ý nữa, khi làm việc với Http Client trong Angular chẳng h�
 Khác với `switchMap()`, `mergeMap()` sẽ không `unsubscribe` `Inner Observable` cũ nếu như có `Inner Observable` mới. Nói đúng hơn, `mergeMap()` sẽ giữ nhiều `Subscription`. Vì tính chất này, `mergeMap()` thích hợp khi bạn có nghiệp vụ mà không cần/được dừng `Inner Observable` nếu như `Outer Observable` có emit giá trị mới (ví dụ những nghiệp vụ liên quan đến **Write vào Database**, `switchMap()` sẽ thích hợp với **Read**).
 
 ```ts
-fromEvent(document, 'click').pipe(
+fromEvent(document, "click").pipe(
   mergeMap(() => interval(1000).pipe(take(10)))
 );
 
@@ -164,7 +162,7 @@ Operator này còn nhận vào một tham số là `concurrent` giống như `me
 
 Nếu bạn set `concurrent = 1` chúng ta sẽ có cách hoạt động tương tự như `concatMap` phía dưới.
 
-#### concatMap()
+#### concatMap() trong RxJS
 
 `concatMap<T, R, O extends ObservableInput<any>>(project: (value: T, index: number) => O, resultSelector?: (outerValue: T, innerValue: ObservedValueOf<O>, outerIndex: number, innerIndex: number) => R): OperatorFunction<T, ObservedValueOf<O> | R>`
 
@@ -173,7 +171,7 @@ Giống với `mergeMap()` và `switchMap()`, `concatMap()` cũng nhận vào 1 
 ![RxJS concatMap](assets/rxjs-concatMap.png)
 
 ```ts
-fromEvent(document, 'click').pipe(
+fromEvent(document, "click").pipe(
   concatMap(() => interval(1000).pipe(take(5))) // mình giảm từ take(10) thành take(5) để type ít hơn 😅
 );
 // Click, subscribe {1}
@@ -197,20 +195,20 @@ from([image1, image2, image3]).pipe(
 );
 ```
 
-##### Lưu ý:
+##### Lưu ý
 
 Như phần **Nguồn gốc** mình có đề cập tới `concatMap = concatAll + map`. Tuy nhiên, có một số trường hợp `concatAll + map` sẽ hoạt động không đúng với tính chất của `concatMap`. Điển hình chính là khi các bạn nhúng `Promise` vào. Các bạn xem ví dụ sau:
 
 ```ts
-fromEvent(document, 'click').pipe(
-  map(() => axios('...')),
+fromEvent(document, "click").pipe(
+  map(() => axios("...")),
   concatAll()
 );
 ```
 
 Lúc này, vì bản chất **eager** của `Promise`, khi được invoke là sẽ gửi request ngay lặp tức, nghĩa là `axios(...)` kia đã gửi request tại thời điểm `map()` mất rồi cho nên `concatAll()` ở đây để thực thi theo thứ tự thì hoàn toàn vô nghĩa, và nhiều trường hợp sẽ bị **Racing Condition** ngay.
 
-#### exhaustMap()
+#### exhaustMap() trong RxJS
 
 `exhaustMap<T, R, O extends ObservableInput<any>>(project: (value: T, index: number) => O, resultSelector?: (outerValue: T, innerValue: ObservedValueOf<O>, outerIndex: number, innerIndex: number) => R): OperatorFunction<T, ObservedValueOf<O> | R>`
 
@@ -223,14 +221,14 @@ Cách hoạt động khá khá giống với `throttle` mà chúng ta đã tìm 
 ```ts
 function log(val) {
   // helper function thôi
-  console.log(val + ' emitted!!!');
-  console.log('-----------------');
+  console.log(val + " emitted!!!");
+  console.log("-----------------");
 }
 
 concat(
-  timer(1000).pipe(mapTo('first timer'), tap(log)), // emit "first timer" sau 1 giây
-  timer(5000).pipe(mapTo('second timer'), tap(log)), // emit "second timer" sau 5 giây
-  timer(3000).pipe(mapTo('last timer'), tap(log)) // emit "last timer" sau 3 giây
+  timer(1000).pipe(mapTo("first timer"), tap(log)), // emit "first timer" sau 1 giây
+  timer(5000).pipe(mapTo("second timer"), tap(log)), // emit "second timer" sau 5 giây
+  timer(3000).pipe(mapTo("last timer"), tap(log)) // emit "last timer" sau 3 giây
 )
   .pipe(
     exhaustMap((c) =>
@@ -260,19 +258,19 @@ concat(
 
 Các bạn có thể thấy là khi `exhaustMap()` đang chạy `Inner Observable` của `second timer` mà `last timer` emit, thì `exhaustMap()` bỏ qua hoàn toàn `Inner Observable` của `last timer` và mọi nghiệp vụ dừng lại sau khi `Inner Observable` của `second timer` complete. Đây là tính chất của `exhaustMap()`, là 1 trong những **Rate Limiting HOO** hiếm hoi 😎
 
-#### switch/concat/mergeMapTo()
+#### switch/concat/mergeMapTo() trong RxJS
 
 3 HOOs này đều có cách HOO `*mapTo()` tương ứng. Cách thức hoạt động giống với HOO nguyên bản. Tuy nhiên, thay vì nhận vào `projectFunction` thì các bạn truyền hẳn vào `Inner Observable` luôn. Nếu các bạn có các nghiệp vụ cần dùng đến cái HOOs này mà không quan tâm giá trị của `Outer Observable`, thì cứ dùng các HOO `*mapTo()` này.
 
 ```ts
-fromEvent(document, 'click').pipe(switchMapTo(interval(1000).pipe(take(10))));
+fromEvent(document, "click").pipe(switchMapTo(interval(1000).pipe(take(10))));
 
-fromEvent(document, 'click').pipe(mergeMapTo(interval(1000).pipe(take(10))));
+fromEvent(document, "click").pipe(mergeMapTo(interval(1000).pipe(take(10))));
 
-fromEvent(document, 'click').pipe(concatMapTo(interval(1000).pipe(take(10))));
+fromEvent(document, "click").pipe(concatMapTo(interval(1000).pipe(take(10))));
 ```
 
-#### partition()
+#### partition() trong RxJS
 
 `partition<T>(source: any, predicate: (value: T, index: number) => boolean, thisArg?: any): [Observable<T>, Observable<T>]`
 
@@ -306,7 +304,7 @@ Trên đây là những HOOs thường dùng nhất trong **RxJS**. Ngoài ra, *
 
 Đúng với tên gọi, đây là những operators cung cấp 1 số tiện ích cho chúng ta mà đôi khi rất hiệu quả.
 
-#### tap()
+#### tap() trong RxJS
 
 `tap<T>(nextOrObserver?: NextObserver<T> | ErrorObserver<T> | CompletionObserver<T> | ((x: T) => void), error?: (e: any) => void, complete?: () => void): MonoTypeOperatorFunction<T>`
 
@@ -317,9 +315,9 @@ Ngoài hàm `subscribe` thì chắc `tap()` là 1 trong những operator đượ
 ```ts
 interval(1000)
   .pipe(
-    tap((val) => console.log('before map', val)),
+    tap((val) => console.log("before map", val)),
     map((val) => val * 2),
-    tap((val) => console.log('after map', val))
+    tap((val) => console.log("after map", val))
   )
   .subscribe();
 
@@ -346,7 +344,7 @@ interval(1000)
 ![RxJS delay](assets/rxjs-delay.png)
 
 ```ts
-fromEvent(document, 'click').pipe(delay(1000)).subscribe(console.log);
+fromEvent(document, "click").pipe(delay(1000)).subscribe(console.log);
 
 // click
 // 1s -- MouseEvent
@@ -361,7 +359,7 @@ fromEvent(document, 'click').pipe(delay(1000)).subscribe(console.log);
 ![RxJS delayWhen](assets/rxjs-delayWhen.png)
 
 ```ts
-fromEvent(document, 'click')
+fromEvent(document, "click")
   .pipe(delayWhen(() => timer(1000)))
   .subscribe(console.log);
 // click
@@ -370,7 +368,7 @@ fromEvent(document, 'click')
 // 1s -- MouseEvent
 ```
 
-#### finalize()
+#### finalize() trong RxJS
 
 `finalize<T>(callback: () => void): MonoTypeOperatorFunction<T>`
 
@@ -384,7 +382,7 @@ this.apiService
   .subscribe();
 ```
 
-#### repeat()
+#### repeat() trong RxJS
 
 `repeat<T>(count: number = -1): MonoTypeOperatorFunction<T>`
 
@@ -393,13 +391,13 @@ this.apiService
 ![RxJS repeat](assets/rxjs-repeat.png)
 
 ```ts
-of('repeated data').pipe(repeat(3)).subscribe(console.log);
+of("repeated data").pipe(repeat(3)).subscribe(console.log);
 // 'repeated data'
 // 'repeated data'
 // 'repeated data'
 ```
 
-#### timeInterval()
+#### timeInterval() trong RxJS
 
 `timeInterval<T>(scheduler: SchedulerLike = async): OperatorFunction<T, TimeInterval<T>>`
 
@@ -408,12 +406,12 @@ of('repeated data').pipe(repeat(3)).subscribe(console.log);
 ![RxJS timeInterval](assets/rxjs-timeInterval.png)
 
 ```ts
-fromEvent(document, 'click').pipe(timeInterval()).subscribe(console.log);
+fromEvent(document, "click").pipe(timeInterval()).subscribe(console.log);
 // click
 // TimeInterval {value: MouseEvent, interval: 1000 } // nghĩa là từ lúc subscribe đến lúc click lần đầu thì mất 1s
 ```
 
-#### timeout()
+#### timeout() trong RxJS
 
 `timeout<T>(due: number | Date, scheduler: SchedulerLike = async): MonoTypeOperatorFunction<T>`
 
@@ -427,7 +425,7 @@ interval(2000).pipe(timeout(1000)).subscribe(console.log, console.error);
 // Error { name: "TimeoutError" }
 ```
 
-#### timeoutWith()
+#### timeoutWith() trong RxJS
 
 `timeoutWith<T, R>(due: number | Date, withObservable: any, scheduler: SchedulerLike = async): OperatorFunction<T, T | R>`
 
@@ -435,14 +433,14 @@ interval(2000).pipe(timeout(1000)).subscribe(console.log, console.error);
 
 ![RxJS timeoutWith](assets/rxjs-timeoutWith.png)
 
-#### toPromise()
+#### toPromise() trong RxJS
 
 À ha, mình đặt cái này cuối cùng là có ý đồ 😅. Nhìn tên hàm các bạn cũng đoán được hàm này làm gì rồi phải không? Đây không phải là 1 operator nhưng được **RxJS** liệt kê vào **Utility Operator**. `toPromise()` là 1 instance method trên class `Observable` dùng để chuyển đổi 1 `Observable` thành `Promise`🤦‍. Tuy nhiên, `toPromise()` sẽ bị `deprecated` vào **RxJS v7** sắp tới, các bạn nào dùng thì cẩn thận nhé.
 
 ```ts
 async function test() {
-  const helloWorld = await of('hello')
-    .pipe(map((val) => val + ' World'))
+  const helloWorld = await of("hello")
+    .pipe(map((val) => val + " World"))
     .toPromise();
   console.log(helloWorld); // hello World
 }
@@ -453,9 +451,3 @@ Trên đây là các **Utility Operator** mà **RxJS** cung cấp. Sử dụng n
 ## Lời kết
 
 Trong ngày hôm nay, chúng ta đã tìm hiểu những operators có thể nói là quan trọng nhất nhì trong **RxJS** và đặc biệt là trong **Angular** vì nhưng operators này giúp chúng ta xử lý được những Asynchronous Flow rất khéo léo. Nếu có 1 lời khuyên, mình khuyên các bạn hãy làm quen (thật quen) với 4 thằng `switch/concat/merge/exhaustMap()` thì công cuộc chinh phục **Angular** của các bạn sẽ dễ thở hơn rất nhiều.
-
-## Tài liệu tham khảo
-
-- [RxJS Overview](https://rxjs.dev/guide/overview)
-- [LearnRxJS](https://www.learnrxjs.io/)
-

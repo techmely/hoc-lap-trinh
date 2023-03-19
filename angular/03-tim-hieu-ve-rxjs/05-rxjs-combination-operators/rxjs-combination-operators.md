@@ -1,10 +1,7 @@
 ---
 title: "RxJS Combination Operators"
 description: "Tiếp tục cuộc hành trình tìm hiểu về các `operators` của **RxJS** nhé. Lần này, chúng ta sẽ tìm hiểu về 1 loại `operators` rất quan trọng khi làm việc với **Angular** vì những `operators` này sẽ cho phép các bạn kết hợp nhiều `Observable` lại với nhau. Những `operators` này gọi là **Combination Operators**."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
@@ -14,17 +11,18 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 5
 ---
+
 Tiếp tục cuộc hành trình tìm hiểu về các `operators` của **RxJS** nhé. Lần này, chúng ta sẽ tìm hiểu về 1 loại `operators` rất quan trọng khi làm việc với **Angular** vì những `operators` này sẽ cho phép các bạn kết hợp nhiều `Observable` lại với nhau. Những `operators` này gọi là **Combination Operators**.
 
 ```ts
 const observer = {
   next: (val) => console.log(val),
   error: (err) => console.log(err),
-  complete: () => console.log('complete'),
+  complete: () => console.log("complete"),
 };
 ```
 
-### forkJoin()
+### forkJoin() trong RxJS
 
 `forkJoin(...sources: any[]): Observable<any>`
 
@@ -35,11 +33,11 @@ Nếu bạn nào đã dùng quen `Promise` qua rồi thì `forkJoin()` sẽ là 
 ![RxJS forkJoin](assets/rxjs-forkJoin.png)
 
 ```ts
-forkJoin([of(1), of('hello'), of({ foo: 'bar' })]).subscribe(observer);
+forkJoin([of(1), of("hello"), of({ foo: "bar" })]).subscribe(observer);
 // output: [1, 'hello', {foo: 'bar'}]
 // output: 'complete'
 
-forkJoin({ one: of(1), hello: of('hello'), foo: of({ foo: 'bar' }) }).subscribe(
+forkJoin({ one: of(1), hello: of("hello"), foo: of({ foo: "bar" }) }).subscribe(
   observer
 );
 /**
@@ -53,12 +51,12 @@ forkJoin({ one: of(1), hello: of('hello'), foo: of({ foo: 'bar' }) }).subscribe(
  */
 ```
 
-#### Lưu ý:
+#### Lưu ý
 
 - `forkJoin()` chỉ emit khi các children `Observables` complete. Nếu như 1 trong số các children `Observables` không complete, `forkJoin()` sẽ không bao giờ emit.
 - `forkJoin()` sẽ throw error khi 1 trong các children `Observables` throw error, và giá trị của các children `Observables` đã complete khác sẽ bị _nuốt_ mất nếu như các bạn không xử lý error hợp lý.
 
-#### Use-case:
+#### Use-case
 
 `forkJoin()` sử dụng rất nhiều trong ứng dụng **Angular**, đặc biệt là khi bạn cần request cùng lúc một loạt các `Dropdown/Select`.
 
@@ -127,7 +125,7 @@ combineLatest([
 // [First 2, Second 5, Third 1] -- {3} emit lần thứ 2
 ```
 
-#### Lưu ý:
+#### Lưu ý
 
 - Qua ví dụ, các bạn cũng có thể thấy là `combineLatest()`, sau lần emit đầu tiên của các children `Observables`, thì sẽ emit giá trị mới nhất của child `Observable` đang emit + giá trị gần nhất của các children `Observables` đã emit.
 - Cũng qua ví dụ, các bạn có thể thấy là `Observable` thứ 2 **{2}** (`interval(1000)`) bị _nuốt_ mất 2 giá trị đầu tiên là `0` và `1` vì **{2}** đã emit với tần suất nhanh hơn là `Observable` có khoảng thời gian lâu nhất **{3}**. Đây là điều các bạn cần lưu ý để có thể tránh hiện tượng **racing condition**.
@@ -135,7 +133,7 @@ combineLatest([
 - `combineLatest()` sẽ không bao giờ complete nếu như 1 trong số các children `Observables` không bao giờ complete.
 - `combineLatest()` sẽ throw error nếu như 1 trong số các children `Observables` throw error và giá trị của các children `Observables` đã emit khác sẽ bị _nuốt_ (behavior này giống với `forkJoin()`)
 
-#### Use-case
+#### Use case
 
 Dùng rất nhiều trong việc combine state khi dùng `Service` trong **Angular**. Vì tính chất **long-lived** không complete sau 1 lần emit, `combineLatest()` là sự lựa chọn tốt cho việc combine các state trong `Service` và kết hợp với `AsyncPipe` để dùng trong template.
 
@@ -206,7 +204,7 @@ this.vm$ = combineLatest(
 );
 ```
 
-### zip()
+### zip() trong RxJS
 
 `zip<O extends ObservableInput<any>, R>(...observables: (O | ((...values: ObservedValueOf<O>[]) => R))[]): Observable<ObservedValueOf<O>[] | R>`
 
@@ -244,7 +242,7 @@ zip(of(1, 2, 3, 99), of(4, 5, 6), of(7, 8, 9)).subscribe(observer);
 - `zip()` sẽ throw error nếu 1 trong các children `Observables` throw error.
 - Nếu tham số cuối cùng của `zip()` là 1 `Function` thì `zip()` sẽ coi tham số này là `projectFunction`. Cách thức hoạt động hoàn toàn giống với `projectFunction` của `combineLatest()` và `forkJoin()`.
 
-#### Use-case
+#### Use case
 
 `zip()` cực kỳ hữu hiệu nếu như các bạn rơi vào các trường hợp sau:
 
@@ -252,7 +250,7 @@ zip(of(1, 2, 3, 99), of(4, 5, 6), of(7, 8, 9)).subscribe(observer);
 
 ```ts
 const age$ = of<number>(29, 28, 30);
-const name$ = of<string>('Chau', 'Trung', 'Tiep');
+const name$ = of<string>("Chau", "Trung", "Tiep");
 const isAdmin$ = of<boolean>(true, false, true);
 
 zip(age$, name$, isAdmin$).pipe(
@@ -285,15 +283,15 @@ const getCoords = pipe(
 const documentEvent = (eventName) =>
   fromEvent(document, eventName).pipe(getCoords);
 
-zip(documentEvent('mousedown'), documentEvent('mouseup')).subscribe((e) =>
-  console.log(`${log('start', e[0])} ${log('end', e[1])}`)
+zip(documentEvent("mousedown"), documentEvent("mouseup")).subscribe((e) =>
+  console.log(`${log("start", e[0])} ${log("end", e[1])}`)
 );
 // output:
 // start: {"x":291,"y":136} end: {"x":143,"y":168}
 // start: {"x":33,"y":284} end: {"x":503,"y":74}
 ```
 
-### concat()
+### concat() trong RxJS
 
 `concat<O extends ObservableInput<any>, R>(...observables: (SchedulerLike | O)[]): Observable<ObservedValueOf<O> | R>`
 
@@ -335,7 +333,7 @@ concat(fiveSecondTimer.pipe(repeat(3))).subscribe(observer);
 // output: 'complete'
 ```
 
-### merge()
+### merge() trong RxJS
 
 `merge<T, R>(...observables: any[]): Observable<R>`
 
@@ -361,8 +359,8 @@ Các bạn thấy sự khác biệt với `concat()` chưa? Ở đây, `merge()`
 
 ```ts
 merge(
-  interval(2000).pipe(mapTo('emit every 2 seconds'), take(3)),
-  interval(1000).pipe(mapTo('emit every 1 second'), take(3))
+  interval(2000).pipe(mapTo("emit every 2 seconds"), take(3)),
+  interval(1000).pipe(mapTo("emit every 1 second"), take(3))
 ).subscribe(observer);
 
 // output:
@@ -384,9 +382,9 @@ Ví dụ trên sẽ cho các bạn thấy `merge()` sẽ emit khi mà child `Obs
 
 ```ts
 merge(
-  interval(1000).pipe(mapTo('first'), take(5)), // will take 5 seconds to complete
-  interval(2000).pipe(mapTo('second'), take(3)), // will take 6 seconds to complete
-  interval(3000).pipe(mapTo('third'), take(2)), // will take 6 seconds to complete
+  interval(1000).pipe(mapTo("first"), take(5)), // will take 5 seconds to complete
+  interval(2000).pipe(mapTo("second"), take(3)), // will take 6 seconds to complete
+  interval(3000).pipe(mapTo("third"), take(2)), // will take 6 seconds to complete
   2
 ).subscribe(observer);
 
@@ -413,7 +411,7 @@ merge(
 
 Các bạn sẽ thấy khi truyền vào tham số `concurrent` là 2, `merge` sẽ chỉ subscribe vào `first` và `second` song song mà thôi. Cho đến khi `first` complete, thì `third` mới bắt đầu đc subscribe. Điều này cũng sẽ cho các bạn thấy được rằng thật ra `concat()` chính là `merge()` với `concurrent` là 1.
 
-#### Use-case:
+#### Use case
 
 Trong **Angular**, `merge()` có thể được sử dụng khi các bạn có 1 `FormGroup` và các bạn muốn lắng nghe vào từng `FormControl.valueChanges` để thực hiện 1 nghiệp vụ nào đó. Lúc này, các bạn không hề quan tâm thứ tự việc `FormControl` nào sẽ thay đổi, các bạn chỉ cần quan tâm là nếu `FormControl` đó thay đổi thì sẽ xử lý hợp lý.
 
@@ -438,14 +436,14 @@ merge(...formControlValueChanges).subscribe(({key, value}) => {
 
 ```ts
 race(
-  interval(1000).pipe(mapTo('fast')),
-  interval(2000).pipe(mapTo('medium')),
-  interval(3000).pipe(mapTo('slow'))
+  interval(1000).pipe(mapTo("fast")),
+  interval(2000).pipe(mapTo("medium")),
+  interval(3000).pipe(mapTo("slow"))
 ).subscribe(observer);
 // output: fast - 1s -> fast - 1s -> fast - 1s -> fast...
 ```
 
-#### Use-case:
+#### Use-case
 
 Ở một ứng dụng bất kỳ, các bạn lâu lâu sẽ phải hiển thị 1 Banner nào đó dựa vào hành động của người dùng. Ví dụ: Người dùng vừa submit 1 form, bạn hiển thị 1 Banner ([ng-ant-zorro Alert](https://ng.ant.design/components/alert/en)) báo người dùng là họ submit thành công, hoặc họ có gặp lỗi. Nghiệp vụ lúc này muốn Banner này sẽ tắt đi khi 1 trong 3 điều kiện sau được thoả:
 
@@ -476,7 +474,7 @@ Tất cả các operators trên đây đều là `static function`. Các operato
 ![RxJS withLatestFrom](assets/rxjs-withLatestFrom.png)
 
 ```ts
-fromEvent(document, 'click')
+fromEvent(document, "click")
   .pipe(withLatestFrom(interval(1000)))
   .subscribe(observer);
 // output:
@@ -487,7 +485,7 @@ fromEvent(document, 'click')
 
 `withLatestFrom()` cũng nhận vào tham số thứ 2 optional là `projectFunction`. Cách thức hoạt động như những `projectFunction` được đề cập trong bài viết này.
 
-#### Use-case
+#### Use case
 
 Vì tính chất chỉ emit khi **Outer Observable** emit nên `withLatestFrom()` sẽ phù hợp với những nghiệp vụ mà các bạn cần lắng nghe 1 `Observable` (đây là **Outer Observable**) và cần thêm giá trị gần nhất của 1 `Observable` khác. Nếu dùng `combineLatest()` thì mỗi lần `Observable` khác kia emit, thì `combineLatest()` cũng emit và đây là điều chúng ta không muốn.
 
@@ -496,7 +494,7 @@ this.apiService.getSomething().pipe(withLatestFrom(this.currentLoggedInUser$));
 // các bạn gọi một API và các bạn muốn dùng kết quả của API này + với thông tin của người dùng đang đăng nhập để thực hiện nghiệp vụ ké tiếp
 ```
 
-### startWith()
+### startWith() trong RxJS
 
 `startWith<T, D>(...array: (SchedulerLike | T)[]): OperatorFunction<T, T | D>`
 
@@ -505,14 +503,14 @@ this.apiService.getSomething().pipe(withLatestFrom(this.currentLoggedInUser$));
 ![RxJS startWith](assets/rxjs-startWith.png)
 
 ```ts
-of('world').pipe(starWith('Hello')).subscribe(observer);
+of("world").pipe(starWith("Hello")).subscribe(observer);
 // output:
 // 'Hello'
 // 'word'
 // 'complete'
 ```
 
-#### Use-case
+#### Use case
 
 `startWith()` có thể được dùng trong **Angular** để cung cấp giá trị ban đầu cho các API call. Ví dụ:
 
@@ -526,7 +524,7 @@ this.books$ = this.apiService.getBooks().pipe(startWith([]));
 </ng-container>
 ```
 
-### endWith()
+### endWith() trong RxJS
 
 `endWith<T>(...array: (SchedulerLike | T)[]): MonoTypeOperatorFunction<T>`
 
@@ -535,8 +533,8 @@ this.books$ = this.apiService.getBooks().pipe(startWith([]));
 ![RxJS endWith](assets/rxjs-endWith.png)
 
 ```ts
-of('hi', 'how are you?', 'sorry, I have to go now')
-  .pipe(endWith('goodbye!'))
+of("hi", "how are you?", "sorry, I have to go now")
+  .pipe(endWith("goodbye!"))
   .subscribe(observer);
 // output:
 // 'hi'
@@ -545,7 +543,7 @@ of('hi', 'how are you?', 'sorry, I have to go now')
 // 'goodbye!'
 ```
 
-### pairwise()
+### pairwise() trong RxJS
 
 `pairwise<T>(): OperatorFunction<T, [T, T]>`
 
@@ -570,8 +568,3 @@ from([1, 2, 3, 4, 5])
 ## Lời kết
 
 Lại 1 ngày quá nhiều kiến thức 💪. Một lần nữa, các operators và use-case mình liệt kê ở đây là những gì mình có thể nghĩ tới được, hoặc đã từng áp dụng. Các bạn có nghiệp vụ nào dùng qua những operators này thì post lên chia sẻ nhé. Hẹn gặp lại các bạn trong ngày mai.
-
-## Tài liệu tham khảo
-
-- [RxJS Overview](https://rxjs.dev/guide/overview)
-- [LearnRxJS](https://www.learnrxjs.io/)

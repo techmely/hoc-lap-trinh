@@ -1,10 +1,7 @@
 ---
 title: "Guards and Resolvers Phần 3"
 description: "Trong những ngày trước chúng ta đã tìm hiểu về Route Guards, chúng ta đã đi qua khá nhiều case cụ thể để học cách sử dụng những Guards cơ bản này. Trong bài này chúng ta sẽ tìm hiểu tiếp một phần nữa là Route Resolvers, chúng là gì, và cách dùng như thế nào, các câu hỏi trên sẽ lần lượt được giải quyết trong những phần sắp tới."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Angular Router"
   slug: "chuong-04-angular-router"
@@ -32,7 +29,7 @@ export class ArticleDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.article$ = this._route.paramMap.pipe(
-      map((params) => params.get('slug')),
+      map((params) => params.get("slug")),
       switchMap((slug) => this._api.getArticleBySlug(slug))
     );
   }
@@ -66,7 +63,7 @@ Ví dụ, chúng ta có thể tạo một resolver để lấy về thông tin m
 
 ```ts
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class ArticleResolver implements Resolve<Article> {
   constructor(private articleService: ArticleService) {}
@@ -75,7 +72,7 @@ export class ArticleResolver implements Resolve<Article> {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<Article> | Promise<Article> | Article {
-    const slug = route.paramMap.get('slug');
+    const slug = route.paramMap.get("slug");
     return this.articleService.getArticleBySlug(slug);
   }
 }
@@ -86,15 +83,15 @@ Sau đó, config routing của article detail sẽ có thêm một key mới:
 ```ts
 const routes: Routes = [
   {
-    path: 'article',
+    path: "article",
     component: ArticleComponent,
     children: [
       {
-        path: '',
+        path: "",
         component: ArticleListComponent,
       },
       {
-        path: ':slug',
+        path: ":slug",
         component: ArticleDetailComponent,
         resolve: {
           article: ArticleResolver, // <== key: value (service or Dependency injection token)
@@ -165,14 +162,3 @@ Trong bài này chúng ta đã biết thêm về Route Resolvers, chúng ta cũn
 - https://stackblitz.com/edit/angular-100-days-of-code-day-32-01
 - https://stackblitz.com/edit/angular-100-days-of-code-day-32-02?file=src%2Fapp%2Farticle-resolver.service.ts
 - https://stackblitz.com/edit/angular-100-days-of-code-day-32-03?file=src%2Fapp%2Farticle%2Farticle.service.ts
-
-## Tài liệu tham khảo
-
-Các bạn có thể đọc thêm ở các bài viết sau
-
-- https://angular.io/guide/router
-- https://vsavkin.com/angular-2-router-d9e30599f9ea
-- https://www.tiepphan.com/angular-router-series/
-- https://www.tiepphan.com/angular-route-resolver/
-- https://indepth.dev/angular-router-series-pillar-2-understanding-the-routers-navigation-cycle/
-- https://vsavkin.com/the-powerful-url-matching-engine-of-angular-router-775dad593b03

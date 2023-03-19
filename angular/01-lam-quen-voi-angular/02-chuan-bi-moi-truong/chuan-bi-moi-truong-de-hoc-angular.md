@@ -10,9 +10,9 @@ keywords:
     "giới thiệu angular cơ bản",
     "angular la gi",
     "tong quan ve angular",
-    "gioi thieu ve ngon ngu lap trinh angular",
-    "tom tat angular",
-    "code angular la gi",
+    "Chuẩn bị môi trường",
+    "Chuẩn bị môi trường angular",
+    "chuan bi moi truong angular",
   ]
 chapter:
   name: "Làm quen với Angular"
@@ -66,7 +66,7 @@ Thì các bạn cần phải `enable policy` để chạy được command. Đ�
 
 Sau khi mọi thứ đã xong xuôi thì bạn có thể khởi tạo dự án được rồi. Bạn mở Terminal và chạy lệnh:
 
-```
+```js
 ng new <tên-project>
 ```
 
@@ -88,8 +88,3 @@ Lúc này các bạn sẽ cần trả lời 1 số câu hỏi về routing, styl
 
   Sau khi serve thành công các bạn có thể mở trình duyệt và navigate vào địa chỉ URL: `http://localhost:4200/` ở đây các bạn sẽ thấy được thành quả của mình.
   Như vậy, chúng ta đã hoàn thành ngày đầu tiên tìm hiểu Angular. Hẹn gặp lại trong các ngày tiếp theo.
-
-## Link tham khảo
-
-- https://angular.io/guide/setup-local
-- https://angular.io/tutorial/toh-pt0

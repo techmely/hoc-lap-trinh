@@ -1,10 +1,7 @@
 ---
 title: "Reactive Forms Trong Angular Phần 2"
 description: "Trong bài trước, chúng ta đã tìm hiểu về Reactive Forms trong Angular. Trong bài này chúng ta sẽ nói thêm về validate input của Reactive Forms."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Angular Forms"
   slug: "chuong-05-angular-forms"
@@ -26,8 +23,8 @@ export class SignInRfComponent implements OnInit {
 
   ngOnInit(): void {
     this.signInForm = this.fb.group({
-      username: '',
-      password: '',
+      username: "",
+      password: "",
       rememberMe: false,
     });
   }
@@ -96,9 +93,9 @@ Ví dụ như input cần có độ dài tối thiểu là 6, thì function vali
 Khi khởi tạo `FormControl` thì Sync validators sẽ được truyền vào ở argument số 2. Argument số 1 sẽ là giá trị mặc định khi khởi tạo form nhé.
 
 ```ts
-let control = new FormControl('', Validators.required);
+let control = new FormControl("", Validators.required);
 //Or
-this.fb.control('', Validators.required);
+this.fb.control("", Validators.required);
 ```
 
 #### 2. Async validators (bất đồng bộ)
@@ -145,7 +142,7 @@ Mình sẽ cần dùng `Validators.required`, `Validators.minLength` và `Valida
 ```ts
 this.signInForm = this.fb.group({
   username: [
-    '',
+    "",
     Validators.compose([
       Validators.required,
       Validators.minLength(6),
@@ -153,7 +150,7 @@ this.signInForm = this.fb.group({
     ]),
   ],
   password: [
-    '',
+    "",
     Validators.compose([
       Validators.required,
       Validators.minLength(6),
@@ -185,7 +182,7 @@ Như ví dụ ở trên thì sau khi mình điền đủ 6 kí tự khoảng tr�
 ```ts
 this.signInForm = this.fb.group({
   username: [
-    '',
+    "",
     Validators.compose([
       Validators.required,
       Validators.minLength(6),
@@ -202,17 +199,17 @@ Bây giờ khi điền dủ 6 dấu cách thì input đã pass validators!
 Để xử lý trường hợp trên mà ko dùng thêm tới `Validators.pattern(/^[a-z]{6,32}$/i)`, mình sẽ viết một custom validator có tên là `NoWhitespaceValidator`.
 
 ```ts
-import { AbstractControl, ValidatorFn } from '@angular/forms';
+import { AbstractControl, ValidatorFn } from "@angular/forms";
 
 export function NoWhitespaceValidator(): ValidatorFn {
   return (control: AbstractControl): { [key: string]: any } => {
     let controlVal = control.value;
-    if (typeof controlVal === 'number') {
+    if (typeof controlVal === "number") {
       controlVal = `${controlVal}`;
     }
-    let isWhitespace = (controlVal || '').trim().length === 0;
+    let isWhitespace = (controlVal || "").trim().length === 0;
     let isValid = !isWhitespace;
-    return isValid ? null : { whitespace: 'value is only whitespace' };
+    return isValid ? null : { whitespace: "value is only whitespace" };
   };
 }
 ```
@@ -229,7 +226,7 @@ Giờ thì mình sẽ bỏ `Validators.required` và thay bằng `NoWhitespaceVa
 ```ts
 this.signInForm = this.fb.group({
   username: [
-    '',
+    "",
     Validators.compose([
       //Validators.required,
       NoWhitespaceValidator(),
@@ -253,14 +250,3 @@ Trong bài này chúng ta đã tìm hiểu cách để validate data với React
 ## Code sample
 
 - https://stackblitz.com/edit/100-days-of-angular-day-36
-
-## Tài liệu tham khảo
-
-Các bạn có thể đọc thêm ở các bài viết sau
-
-- https://angular.io/guide/forms-overview
-- https://angular.io/guide/forms
-- https://angular.io/guide/reactive-forms
-- https://www.tiepphan.com/thu-nghiem-voi-angular-reactive-forms-trong-angular/
-- https://www.tiepphan.com/thu-nghiem-voi-angular-template-driven-forms-trong-angular/
-

@@ -1,10 +1,7 @@
 ---
 title: "Observable for @Output"
 description: "Hôm nay mình có gợi ý cho 1 Angular dev về cách dùng Observable cho Output. Mình nghĩ cái này cũng có 1 số các bạn Angular dev mới không biết vì trong documentations không đề cập tới. Mình sẽ đi vào code ngay lập tức và sẽ giải thích ở dưới"
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"
@@ -56,11 +53,3 @@ Source code [của phần này][output_interpreter] có một path check nếu n
 EventEmitter thực chất chỉ là 1 subclass của `Subject` mà thôi. Và như phần lớn các bạn cũng đã biết thì `Subject` vừa là 1 Observable vừa là 1 Observer nên thực chất `@Output` hoạt động là nhờ vào đoạn code trên kia của Angular Compiler (subscribe tự động).
 
 Nắm được 2 khái niệm trên, cách hoạt động của `@Output`, và cách hoạt động của Angular Compiler thì các bạn chắc chắn đã hiểu được tại sao đoạn code After kia lại work.
-
-## Một số use-case
-
-- Interval Output
-- State Selector (ngrx)
-- ... bất cứ thể loại stream gì mà các bạn nghĩ đến...
-
-

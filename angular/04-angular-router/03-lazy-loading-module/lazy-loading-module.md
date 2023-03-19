@@ -1,10 +1,7 @@
 ---
 title: "Lazy Loading Modules"
 description: "Tiếp tục với Angular Router, các bạn đã biết cách tách phần routing ra thành feature tương ứng. Từ đó code của chúng ta đã hoạt động khá riêng biệt, nếu bạn cần reuse module nào thì có thể copy nguyên phần code đó sang app Angular khác và import vào `AppModule` là được. Vẫn tiếp tục là ứng dụng hiển thị danh sách các bài viết hôm trước. Nhưng bây giờ mình sẽ có thêm một phần nữa để quản lý bài viết nằm ở đường dẫn `/admin`. Phần code này sẽ được đặt trong `AdminModule`."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Angular Router"
   slug: "chuong-04-angular-router"
@@ -32,15 +29,15 @@ export class ArticleModule {}
 ```ts
 const routes: Routes = [
   {
-    path: 'article',
+    path: "article",
     component: ArticleComponent,
     children: [
       {
-        path: '',
+        path: "",
         component: ArticleListComponent,
       },
       {
-        path: ':slug',
+        path: ":slug",
         component: ArticleDetailComponent,
       },
     ],
@@ -94,11 +91,11 @@ Giờ chúng ta bắt tay vào code nhé. Mình cũng sẽ tạo ra một `Admin
 ```ts
 const routes: Routes = [
   {
-    path: 'admin',
+    path: "admin",
     component: AdminComponent,
     children: [
       {
-        path: '',
+        path: "",
         component: AdminArticleListComponent,
       },
     ],
@@ -214,18 +211,18 @@ Có một số module mà mình biết rằng thường là khi user mở ứng 
 Để enable preloading cho tất cả các lazy loaded modules, các bạn cần import `PreloadAllModules` từ package `@angular/router` và cấu hình nó ở trong AppRoutingModule, đoạn forRoot.
 
 ```ts
-import { PreloadAllModules } from '@angular/router';
+import { PreloadAllModules } from "@angular/router";
 
 const routes: Routes = [
   {
-    path: 'admin',
+    path: "admin",
     loadChildren: () =>
-      import('./admin/admin.module').then((m) => m.AdminModule),
+      import("./admin/admin.module").then((m) => m.AdminModule),
   },
   {
-    path: '',
-    redirectTo: 'article',
-    pathMatch: 'full',
+    path: "",
+    redirectTo: "article",
+    pathMatch: "full",
   },
 ];
 
@@ -255,14 +252,3 @@ Hy vọng các bạn đã thấy được lợi ích của Lazy Loading và bi�
 ## Code example
 
 https://stackblitz.com/edit/angular-100-days-of-code-day-29-router-lazy
-
-## Tài liệu tham khảo
-
-Các bạn có thể đọc thêm ở các bài viết sau
-
-- https://angular.io/guide/router
-- https://angular.io/guide/lazy-loading-ngmodules#preloading-modules
-- https://www.tiepphan.com/angular-router-series/
-- https://web.dev/route-preloading-in-angular/
-
-

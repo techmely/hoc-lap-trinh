@@ -1,10 +1,7 @@
 ---
 title: "JavaScript Widget và Embedded Script"
 description: "Tìm hiểu về khái niệm, cách xây dựng và triển khai một JavaScript Widget và Embedded Script"
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"
@@ -25,7 +22,7 @@ Một ứng dụng web ngày nay có rất nhiều tính năng và nghiệp vụ
 
 JavaScript Widget là một giải pháp để đưa thêm các dịch vụ và tính năng vào 1 trang web có sẵn chỉ bằng việc import 1 đoạn mã nhúng (embedded script) và 1 số config đơn giản.
 
-Script được nhúng vào trang web sẽ thực hiện tất cả những bước cần có để từ đó provide cho trang web làm “host” có được thêm 1 tính năng hoàn chỉnh và chạy độc lập. 
+Script được nhúng vào trang web sẽ thực hiện tất cả những bước cần có để từ đó provide cho trang web làm “host” có được thêm 1 tính năng hoàn chỉnh và chạy độc lập.
 
 Có thể lấy ví dụ về dịch vụ chat support của intercom cung cấp, chỉ cần chèn thêm 1 số đoạn code vào website hiện có, website sẽ có thêm tính năng chat support hoàn chỉnh được cung cấp bởi intercom trong ứng dụng.
 
@@ -51,11 +48,13 @@ Với các lưu ý này, chúng ta có thể có nhiều cách để có thể g
 Trong bài viết lần này, chúng ta sẽ tìm hiểu việc xây dựng 1 embedded script với 2 giải pháp trending hiện nay là React và Angular. Với React chúng ta sẽ sử dụng webpack và webpack-cli, còn với Angular chúng ta sẽ sử dụng giải pháp Angular Element để thực hiện.
 
 ### React
+
 Với cách triển khai này, ta sẽ thực hiện như 1 React app bình thường, tuy nhiên sẽ cần 1 số cấu hình webpack custom để có thể có đc "thành quả" như ý muốn.
 
 Khác với React app thông thường sẽ sử dụng file `app.tsx` để có thể mount lên DOM thuộc `index.html`, thì ở đây chúng ta sẽ thực hiện entry khác với thông thường.
 
 `embeddable-widget.tsx`
+
 ```ts
 export default class WidgetBooking {
   static htmlelment: any;
@@ -67,7 +66,12 @@ export default class WidgetBooking {
     divId: string = ""
   ) {
     const component = (
-      <Widget id={id} locale={locale} fullscreened={fullscreened} divId={divId} />
+      <Widget
+        id={id}
+        locale={locale}
+        fullscreened={fullscreened}
+        divId={divId}
+      />
     );
 
     function doRender() {
@@ -126,7 +130,7 @@ module.exports = {
     filename: "[name].js",
     library: "WidgetBooking",
     libraryExport: "default",
-    libraryTarget: "window"
+    libraryTarget: "window",
   },
   plugins: [new CleanWebpackPlugin()],
   module: {
@@ -138,11 +142,11 @@ module.exports = {
           {
             loader: "babel-loader",
             options: {
-              plugins: []
-            }
+              plugins: [],
+            },
           },
-          "ts-loader"
-        ]
+          "ts-loader",
+        ],
       },
       {
         test: /\.(scss|css)$/,
@@ -150,19 +154,19 @@ module.exports = {
           "style-loader",
           "css-loader",
           "sass-loader",
-          "cssimportant-loader"
-        ]
-      }
-    ]
+          "cssimportant-loader",
+        ],
+      },
+    ],
   },
   resolve: {
-    extensions: ["*", ".js", ".jsx", ".ts", ".tsx"]
+    extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
   },
   performance: {
     maxEntrypointSize: 2048000,
-    maxAssetSize: 2048000
-  }
-}
+    maxAssetSize: 2048000,
+  },
+};
 ```
 
 `webpack.config.dev.js`
@@ -172,8 +176,8 @@ const base = require("./webpack.config.base");
 const merge = require("webpack-merge");
 
 module.exports = merge(base, {
-  mode: "development"
-})
+  mode: "development",
+});
 ```
 
 `webpack.config.prod.js`
@@ -184,24 +188,24 @@ const merge = require("webpack-merge");
 const webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const JavaScriptObfuscator = require("webpack-obfuscator");
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = merge(base, {
   mode: "production",
   plugins: [
     new BundleAnalyzerPlugin({
-      analyzerMode: "static"
+      analyzerMode: "static",
     }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
       filename: "[name].[hash].css",
-      chunkFilename: "[id].[hash].css"
+      chunkFilename: "[id].[hash].css",
     }),
-    new JavaScriptObfuscator()
-  ]
+    new JavaScriptObfuscator(),
+  ],
 });
-
 ```
 
 Khi đã đầy đủ các cấu hình như vậy, chúng ta sẽ provide các script cần thiết ở trong `package.json` để có thể bắt đầu development cũng như build embedded script
@@ -220,11 +224,11 @@ Sau khi thành phẩm được phát triển và sẵn sàng được sử dụn
 ```html
 <script src="./widget.js"></script>
 <script>
-    WidgetBooking.mount(
-        'idXXX',
+  WidgetBooking.mount(
+    "idXXX",
     "en",
     true // fullscreen
-    );
+  );
 </script>
 ```
 
@@ -235,12 +239,12 @@ Với giải pháp này, bản thân widget vẫn sẽ là 1 angular app bình t
 Việc khai báo AppModule sẽ có 1 số thay đổi như sau
 
 ```ts
-import { createCustomElement } from '@angular/elements';
+import { createCustomElement } from "@angular/elements";
 
 export class AppModule {
   constructor(injector: Injector) {
     const el = createCustomElement(AppComponent, { injector });
-    customElements.define('online-booking', el);
+    customElements.define("online-booking", el);
   }
 
   ngDoBootstrap() {}
@@ -254,28 +258,31 @@ ng build booking-widget --output-hashing none
 ```
 
 ```js
-const fs = require('fs-extra');
-const concat = require('concat');
+const fs = require("fs-extra");
+const concat = require("concat");
 
 (async function build() {
   const files = [
-    './dist/apps/booking-widget/runtime-es2015.js',
-    './dist/apps/booking-widget/polyfills-es2015.js',
-    './dist/apps/booking-widget/main-es2015.js'
+    "./dist/apps/booking-widget/runtime-es2015.js",
+    "./dist/apps/booking-widget/polyfills-es2015.js",
+    "./dist/apps/booking-widget/main-es2015.js",
   ];
 
   const es5Files = [
-    './dist/apps/booking-widget/runtime-es5.js',
-    './dist/apps/booking-widget/polyfills-es5.js',
-    './dist/apps/booking-widget/main-es5.js'
+    "./dist/apps/booking-widget/runtime-es5.js",
+    "./dist/apps/booking-widget/polyfills-es5.js",
+    "./dist/apps/booking-widget/main-es5.js",
   ];
 
-  await concat(files, './dist/booking-widget.js');
-  await concat(es5Files, './dist/booking-widget-es5.js');
+  await concat(files, "./dist/booking-widget.js");
+  await concat(es5Files, "./dist/booking-widget-es5.js");
 
-  await fs.ensureDir('./dist/assets/booking-widget');
+  await fs.ensureDir("./dist/assets/booking-widget");
 
-  await fs.copyFile('./dist/apps/booking-widget/styles.css', './dist/assets/booking-widget/styles.css');
+  await fs.copyFile(
+    "./dist/apps/booking-widget/styles.css",
+    "./dist/assets/booking-widget/styles.css"
+  );
 })();
 ```
 
@@ -312,24 +319,21 @@ Với giải pháp này, ta có thể kết hợp với giải pháp sử dụng
 class Widget extends HTMLElement {
   connectedCallback() {
     const mountPoint = document.createElement(div);
-    this.attachShadow({ mode: 'open' }).appendChild(mountPoint);
+    this.attachShadow({ mode: "open" }).appendChild(mountPoint);
 
-    const id = this.getAttribute('id');
+    const id = this.getAttribute("id");
     ReactDOM.render(<WidgetApp id={id} />, mountPoint);
   }
 }
-customElements.define('embedded-widget', Widget);
+customElements.define("embedded-widget", Widget);
 
 // when using
-<embedded-widget id="Idxxx"></embedded-widget>
+<embedded-widget id="Idxxx"></embedded-widget>;
 ```
 
 Lưu ý: Khi đặt tên define cho custom web component, chúng ta nên đặt tên mang theo logic và ngăn cách bằng dấu “-” do native component các HTML tag chỉ có 1 word.
 
 ## Tổng kết
+
 Với các cách triển khai embedded script như trên, dễ thấy, đây là 1 hướng implement rất phù hợp với giải pháp Micro-frontend hiện nay. Tuy nhiên, để thêm hoàn thiện, các embedded script cần có 1 giải pháp để trao đổi dữ liệu với nhau. Chúng ta sẽ cùng nhau tìm hiểu giải pháp ở các bài viết tiếp theo.
 Như vậy qua chia sẻ ngày hôm nay, chúng ta đã đã được tìm hiểu về JavaScript Widget, các thức thực hiện để có được 1 embedded script nhằm tạo ra các widget như ý muốn.
-
-Chúc các bạn thành công.
-
-

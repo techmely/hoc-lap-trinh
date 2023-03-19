@@ -1,10 +1,7 @@
 ---
 title: "ngTemplateOutlet trong Angular"
 description: "ng-template, ngTemplateOutlet và ng-container trong Angular"
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -14,6 +11,7 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 12
 ---
+
 ## ng-template
 
 Trong bài 2 của chương 2 này, mình đã nói có nói đến một trường hợp dùng `ng-template`. Đó là khi dùng `*ngIf` với điều kiện else, chúng ta có thể truyền vào một template reference đc định nghĩa thông qua cú pháp `#templateReferenceName` để render lên UI.
@@ -27,7 +25,7 @@ Trong bài 2 của chương 2 này, mình đã nói có nói đến một trư�
 
 Thông qua ví dụ trên, chắc các bạn cũng đã nhận ra được đôi điều:
 
-- Khi code HTML của bạn dc bao quanh bởi `ng-template`, phần HTML đó sẽ <u>không dc render lên UI ngay lập tức</u>. Mà chỉ dc render trong một số trường hợp, ví dụ như khi `*ngIf else tmpl` hoặc thông qua `ngTemplateOutlet` mà chúng ta sẽ đề cập đến ở phần sau của bài viết.
+- Khi code HTML của bạn dc bao quanh bởi `ng-template`, phần HTML đó sẽ <u> không dc render lên UI ngay lập tức</u>. Mà chỉ dc render trong một số trường hợp, ví dụ như khi `*ngIf else tmpl` hoặc thông qua `ngTemplateOutlet` mà chúng ta sẽ đề cập đến ở phần sau của bài viết.
 - Tên gọi của ng-template cũng phần nào nói lên đc ý nghĩa của nó. Template hiểu nôm na là mẫu, dạng. Dịch ra tiếng Việt hơi khó, tuy nhiên khi kết hợp nhiều template với nhau thì chúng ta có thể có một UI đầy đủ.
 
 Từ những điểm trên, có thể định nghĩa `ng-template` là một thành phần của Angular để render HTML code. Và phần HTML code nằm trong `ng-template` không bao giờ được hiển thị trực tiếp ở nơi nó được định nghĩa
@@ -38,7 +36,7 @@ Một số trường hợp hay cần dùng đến ng-template theo như kinh ngh
 
 #### 1. Dùng kết hợp với các Structure Directive của Angular, ví dụ như `*ngIf`
 
-#### 2. Khi một số UI element trong một component bị lặp lại trong chính component đó, nhưng phần code đó quá nhỏ để tách ra làm một component riêng.
+#### 2. Khi một số UI element trong một component bị lặp lại trong chính component đó, nhưng phần code đó quá nhỏ để tách ra làm một component riêng
 
 Ví dụ như bạn có một component có chứa biến một biển tên là `counter`. Phần UI của counter này sẽ đc lặp lại ở trong component của bạn vài lần với UI giống nhau.
 
@@ -95,7 +93,7 @@ Ví dụ mình có component `tab-container`, mặc định sẽ render tab vớ
 
 ```ts
 @Component({
-  selector: 'tab-container',
+  selector: "tab-container",
   template: `
     <ng-template #defaultTabButtonsTmpl>
       <div class="default-tab-buttons">...</div>
@@ -230,10 +228,3 @@ Nếu bạn có style CSS chặt chẽ theo kiểu `parent > child`. Thì khi th
 ## Lời kết
 
 Phew, lâu quá không giải thích bằng tiếng Việt nên có thể sẽ không được tường minh như mong muốn. Hy vọng các bạn đã hiểu sơ qua về cách khái niệm `ng-template`, `ng-container` và `ngTemplateOutlet` trong bài viết này.
-
-Một số bài viết khác bạn có thể đọc thêm.
-
-- https://alligator.io/angular/reusable-components-ngtemplateoutlet/
-- https://angular.io/guide/structural-directives#the-ng-template
-- [Angular render recursive view using \*ngFor and ng-template](https://trungk18.com/experience/angular-recursive-view-render/)
-- https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/

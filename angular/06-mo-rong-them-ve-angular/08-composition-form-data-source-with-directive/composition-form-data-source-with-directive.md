@@ -1,10 +1,7 @@
 ---
 title: "Composition form datasource with Directive"
 description: "Trong quá trình phát triển một ứng dụng web, chúng ta chắc hẳn đã phải trải qua làm việc với Form không ít thì nhiều. Khi làm việc với form, ta sẽ gặp phải trường hợp một form control với logic rất đơn giản nhưng chỉ khác duy nhất dữ liệu nguồn (data source). Ví dụ, khi làm việc với các select control, chúng ta sẽ phải lặp đi lặp lại việc gọi data source select đó, khi control đó được sử dụng lại ở nhiều nơi khác nhau, việc lặp lại code là không thể tránh khỏi."
-keywords:
-  [
-    
-  ]
+keywords: []
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"
@@ -16,6 +13,7 @@ position: 8
 ---
 
 ## Giới thiệu
+
 Trong quá trình phát triển một ứng dụng web, chúng ta chắc hẳn đã phải trải qua làm việc với Form không ít thì nhiều. Khi làm việc với form, ta sẽ gặp phải trường hợp một form control với logic rất đơn giản nhưng chỉ khác duy nhất dữ liệu nguồn (data source). Ví dụ, khi làm việc với các select control, chúng ta sẽ phải lặp đi lặp lại việc gọi data source select đó, khi control đó được sử dụng lại ở nhiều nơi khác nhau, việc lặp lại code là không thể tránh khỏi.
 
 ![SelectExample](assets/day-047-select-example.jpg)
@@ -27,7 +25,7 @@ Từ đó, tác giả bài viết đã khám phá ra một cách làm có thể 
   <h1>Select</h1>
   <!-- using mode data source -->
   <app-select-control
-    appModeDataSource 
+    appModeDataSource
     formControlName="mode"
     placeholder="Select mode"
   ></app-select-control>
@@ -111,33 +109,34 @@ export class BaseControlValueAccessor implements ControlValueAccessor {
 ```
 
 ### Step 3: Thiếp lập Select control
+
 Sau khi thiết lập Project và các component cần có, ta sẽ thực hiện một số thay đổi tại select-control để có thể apply đc control value accessor đã viết ở trên.
 
 ```typescript
 @Component({
-  selector: 'app-select-control',
-  templateUrl: './select-control.component.html',
+  selector: "app-select-control",
+  templateUrl: "./select-control.component.html",
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
       useExisting: SelectControlComponent,
       multi: true,
-    }
+    },
   ],
 })
 export class SelectControlComponent extends BaseControlValueAccessor {
-  @Input() placeholder = '';
+  @Input() placeholder = "";
 
-  constructor(
-    @Optional() controlContainer: ControlContainer,
-  ) {
+  constructor(@Optional() controlContainer: ControlContainer) {
     super(controlContainer);
   }
 }
 ```
 
 ### Step 4: Thiết lập Interface và InjectToken
+
 Ta sẽ tạo thêm typing và các constranst cần thiết cho select control đã viết như sau:
+
 ```sh
 ├───select-control
 │   │   select-control.component.html
@@ -148,49 +147,56 @@ Ta sẽ tạo thêm typing và các constranst cần thiết cho select control 
 │           types.ts
 
 ```
+
 `types.ts`
+
 ```typescript
-import { Observable } from 'rxjs';
+import { Observable } from "rxjs";
 
 export interface Option {
-  value: string,
-  label: string
+  value: string;
+  label: string;
 }
 
 export interface SelectDirective {
   options$: Observable<Option[]>;
 }
 ```
-`constrants.ts`
-```typescript
-import { InjectionToken } from '@angular/core';
 
-export const SELECT_DIRECTIVE = new InjectionToken<SelectDirective>('SELECT_DIRECTIVE');
+`constrants.ts`
+
+```typescript
+import { InjectionToken } from "@angular/core";
+
+export const SELECT_DIRECTIVE = new InjectionToken<SelectDirective>(
+  "SELECT_DIRECTIVE"
+);
 ```
 
 ### Step 5: Cấu hình cho Select control
+
 Như flow đã nêu trong concept tại select control của chúng ta sẽ phải có Inject token của directive cũng như biến `options$` để có thể sử dụng tại control.
 
 ```typescript
 @Component({
-  selector: 'app-select-control',
-  templateUrl: './select-control.component.html',
+  selector: "app-select-control",
+  templateUrl: "./select-control.component.html",
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
       useExisting: SelectControlComponent,
       multi: true,
-    }
+    },
   ],
 })
 export class SelectControlComponent extends BaseControlValueAccessor {
-  @Input() placeholder = '';
+  @Input() placeholder = "";
 
   options$: Observable<Option[]> = of([]);
 
   constructor(
     @Optional() controlContainer: ControlContainer,
-    @Optional() @Inject(SELECT_DIRECTIVE) private directive: SelectDirective,
+    @Optional() @Inject(SELECT_DIRECTIVE) private directive: SelectDirective
   ) {
     super(controlContainer);
     this.options$ = directive ? directive.options$ : of([]);
@@ -199,6 +205,7 @@ export class SelectControlComponent extends BaseControlValueAccessor {
 ```
 
 ### Step 6: Cấu hình cho Directive datasource
+
 Trong ví dụ của bài viết, ta sẽ có 2 select control tương ứng với 2 field trên form là `mode` và `condition`. Từ đó 2 datasource directive mà ta sẽ sử dụng trong bài viết ẽ là 2 directive mới tên gọi tương ứng với `mode` và `condition`.
 
 ```sh
@@ -207,6 +214,7 @@ ng g d condition-data-source.directive
 ```
 
 Sau bước này cấu trúc folder mới của chúng ta sẽ như sau:
+
 ```sh
 ├───select-control
 │   │   select-control.component.html
@@ -223,7 +231,7 @@ Sau đây chúng ta sẽ thực hiện các thay đổi tại file `mode-data-so
 
 ```typescript
 @Directive({
-  selector: 'app-select-control[appModeDataSource]',
+  selector: "app-select-control[appModeDataSource]",
   providers: [
     {
       provide: SELECT_DIRECTIVE,
@@ -233,14 +241,16 @@ Sau đây chúng ta sẽ thực hiện các thay đổi tại file `mode-data-so
 })
 export class ModeDataSourceDirective implements SelectDirective {
   options$: Observable<Option[]> = of([
-    { label: 'Auto', value: 'auto' },
-    { label: 'Manual', value: 'manual' },
+    { label: "Auto", value: "auto" },
+    { label: "Manual", value: "manual" },
   ]);
 }
 ```
-Trong đoạn code bên trên, ta đã thực hiện modify selector để cho directive này sẽ chỉ có hiệu lực khi đi kèm đúng với selector của control. 
+
+Trong đoạn code bên trên, ta đã thực hiện modify selector để cho directive này sẽ chỉ có hiệu lực khi đi kèm đúng với selector của control.
 
 Sau khi thực hiện tới bước này, ta đã có thể rõ ràng được ý tưởng của tác giả bài viết, trong use-case sử dụng ta sẽ viết code như sau:
+
 ```html
 <!-- using mode data source -->
 <app-select-control
@@ -249,13 +259,14 @@ Sau khi thực hiện tới bước này, ta đã có thể rõ ràng được �
   placeholder="Select mode"
 ></app-select-control>
 ```
+
 Có thể dễ dàng nhận thấy, ta đã thực hiện kết hợp 2 thành phần khi viết là selector của component `app-select-control` và directive `appModeDataSource`. Khi component được khởi tạo, bản thân component sẽ lấy directive thông qua Inject Token trong `constructor` và khi được viết như trên. Token đó thông qua keyword `useExisting` trong `providers` của Directive đã định vị được component sẽ sử dụng Directive nào để kết hợp. Từ đó, kết hợp với việc Directive đã được implement từ 1 interface đã chuẩn hóa, việc get `options$` tương ứng được thực hiện khi khởi tạo component.
 
 Ngoài ra, không chỉ có thể tạo các data source với data fix cứng, ta có thể tạo directive datasource được lấy từ Service, và thông qua các operator của Observable ta có thể chuẩn hóa đúng với yêu cầu của control.
 
 ```typescript
 @Directive({
-  selector: 'app-select-control[appConditionDataSource]',
+  selector: "app-select-control[appConditionDataSource]",
   providers: [
     {
       provide: SELECT_DIRECTIVE,
@@ -269,9 +280,11 @@ export class ConditionDataSourceDirective implements SelectDirective {
   options$: Observable<Option[]> = this.ref.getConditions();
 }
 ```
+
 Và với sự tùy biến của directive ta có thể bổ sung các `@Input` khác tại directive nhắm tùy biến và mở rộng logic cho control trong form.
 
 ## Lời kết
+
 Với ý tưởng này, tác giả đã giúp việc phát triển ứng dụng Web được dễ dàng hơn, giảm thiểu việc lặp lại code khi thực hiện các component có chung logic.
 
 Tuy nhiên, cách triển khai này sẽ thực sự phù hợp với các form cần tái sử dụng nhiều, data source độc lập và ít phụ thuộc vào nhau (với các datasource có sự phụ thuộc ta có thể sử dụng thêm `@Input` để giải quyết vấn đề).
@@ -279,5 +292,5 @@ Tuy nhiên, cách triển khai này sẽ thực sự phù hợp với các form 
 Với các Datasource được trả về đồng thời trong một lần call API, cách thực hiện này vẫn chưa thực sự phù hợp.
 
 ## Code sample
-- https://github.com/ngoctuanle/composition-datasource-with-directive
 
+- https://github.com/ngoctuanle/composition-datasource-with-directive

@@ -1,10 +1,7 @@
 ---
 title: "Typescript trong Angular"
-description: "> Kiến thức nền của **TS** rất quan trọng để chúng ta đi sâu vào những concept khó nhai hơn của **Angular**, điển hình là `Dependency Injection`"
-keywords:
-  [
-    
-  ]
+description: "Bài viết cung cấp đầy đủ thông tin về TypeScript từ cách cài đặt và sử dụng đến các tính năng của TypeScript như Static Types, Interface, Type và Default Types"
+keywords: []
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -14,6 +11,7 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 9
 ---
+
 ## TypeScript là gì?
 
 **TS** là một **superset** của **JavaScript** (**JS**). Khi các bạn cài đặt **TS** vào hệ thống của mình, các bạn sẽ có quyền truy xuất đến được 1 **Command Line Interface** (**CLI**) gọi là **TypeScript Compiler** (`tsc`). Nhiệm vụ của `tsc` chính là _compile_ code **TS** về **JS** để trình duyệt (hoặc runtime environment như **NodeJS**) có thể hiểu và xử lý được.
@@ -28,7 +26,7 @@ Theo như hình minh hoạ thì **TS** = **JS** plus (+) **something else**.
 Đầu tiên và quan trọng nhất là **TS** cung cấp **Static Types**. **JS** là một ngôn ngữ mang tính chất `Dynamic` và vì thế nên **JS** rất _thoải mái_, nếu không muốn nói là _quá thoải mái_. Các bạn xem qua ví dụ sau:
 
 ```javascript
-let john = 'John';
+let john = "John";
 john = 123;
 ```
 
@@ -85,14 +83,14 @@ type User = {
 };
 
 const john: User = {
-  firstName: 'John',
-  lastName: 'Doe',
+  firstName: "John",
+  lastName: "Doe",
   age: 20,
-  job: 'Student',
+  job: "Student",
 };
 const susan: User = {
-  firstName: 'Sue',
-  lastName: 'Smith',
+  firstName: "Sue",
+  lastName: "Smith",
   age: 40,
 };
 ```
@@ -216,4 +214,3 @@ Nhưng lợi ích của **TS** mang lại thực sự là lớn hơn so với ph
 ## Lời kết
 
 Như vậy ngày hôm nay chúng ta đã tìm hiểu thêm về **What**, **How** và **Why** của **TypeScript**. Với những kiến thức nền này và cộng thêm luyện tập, các bạn sẽ cảm thấy tự tin hơn khi làm việc cùng **Angular** trong các ngày cũng như các dự án của bản thân trong thời gian sắp tới.
-

@@ -3,7 +3,9 @@ title: "Truyền dữ liệu giữa các component"
 description: "Trong các ứng dụng thực tế, đôi khi chúng ta sẽ có những component mà không cần truyền gì vào nó vẫn sẽ hoạt động, nhưng có rất nhiều component mà khi thiết kế chúng ta mong muốn có thể tái sử dụng cao hơn, tùy thuộc vào các properties được truyền vào mà sẽ hiển thị, xử lý tương ứng."
 keywords:
   [
-    
+    "khoá học angular"
+    "Truyền dữ liệu giữa các component",
+    "truyen du lieu giua cac component angular",
   ]
 chapter:
   name: "Nhập môn Angular"
@@ -14,17 +16,18 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 5
 ---
+
 Làm sao để có thể tạo một component mà nó có thể nhận vào các properties.
 Đầu tiên, chúng ta sẽ đi tạo component trước, nếu bạn vẫn chưa biết cách tạo thì có thể Google hoặc xem lại chương 1.
 Chúng ta sẽ dùng lệnh để generate 1 component tên là progress-bar
 
-```
+```bash
 ng g c progress-bar
 ```
 
 Đó là cách viết tắt, hoặc có thể tường minh hơn là:
 
-```
+```bash
 ng generate component progress-bar
 ```
 
@@ -73,10 +76,10 @@ Khi đã có component và khai báo input rồi thì làm sao để sử dụng
 Đây là component progress-bar của chúng ta.
 
 ```typescript
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-progress-bar',
+  selector: "app-progress-bar",
   template: `
     <div
       class="progress-bar-container"
@@ -113,7 +116,7 @@ export class ProgressBarComponent implements OnInit {
 }
 ```
 
-## Constructor và ngOnInit
+## Constructor và ngOnInit trong angular
 
 Khi làm việc các bạn có thể thấy rằng Angular giới thiệu một số method gọi là life-cycle, chúng làm nhiệm vụ gì.
 Theo như lẽ thông thường, con người từ khi sinh ra đến khi chết đi sẽ đều trải qua một số sự kiện trọng đại trong đời, ví du: sinh ra, đầy tháng, sinh nhật hàng năm, kết hôn, chết đi. Tương tự như thế trong ứng dụng Angular sẽ có vòng đời cho các component. Angular được xây dựng xung quanh Component và Directive, ở một thời điểm có thể có 1 component được khởi tạo, một thời điểm khác chúng lại được xóa đi khỏi view, và có một số “sự kiện” khác cũng được xảy ra, do đó Angular cung cấp cho chúng ta một số method mà chúng ta chỉ việc khai báo cho component/directive, còn lại Angular sẽ tự call khi có những sự kiện tương ứng xảy ra.
@@ -142,9 +145,9 @@ export class ProgressBarComponent implements OnInit, OnChanges {
   constructor() {}
 
   ngOnChanges(changes: SimpleChanges) {
-    if ('progress' in changes) {
-      if (typeof changes['progress'].currentValue !== 'number') {
-        const progress = Number(changes['progress'].currentValue);
+    if ("progress" in changes) {
+      if (typeof changes["progress"].currentValue !== "number") {
+        const progress = Number(changes["progress"].currentValue);
         if (Number.isNaN(progress)) {
           this.progress = 0;
         } else {
@@ -170,7 +173,7 @@ export class ProgressBarComponent implements OnInit {
     return this.$progress;
   }
   set progress(value: number) {
-    if (typeof value !== 'number') {
+    if (typeof value !== "number") {
       const progress = Number(value);
       if (Number.isNaN(progress)) {
         this.$progress = 0;
@@ -191,9 +194,3 @@ export class ProgressBarComponent implements OnInit {
 ## Lời kết
 
 Như vậy trong bài này, chúng ta sẽ phải tìm hiểu cách để khai báo input binding cho một component, từ đó giúp dễ dàng thiết kế các component có tính tái sử dụng cao.
-
-Dưới đây là các link document mà các bạn cần tìm hiểu:
-
-- https://angular.io/guide/component-interaction
-- https://angular.io/guide/lifecycle-hooks
-- https://www.tiepphan.com/thu-nghiem-voi-angular-2-truyen-du-lieu-cho-component-voi-input/
