@@ -1,11 +1,7 @@
 ---
 title: "Unsubscribe Một Subscription"
-description: "Khi bạn làm việc với Angular, có những khi bạn thắc mắc "Khi nào chúng ta cần `unsubscribe` một `Subscription`". Tại sao chỗ này thì không unsubcribe cũng không sao. Hoặc có cách nào để đỡ phải unsubcribe hay không?
-Hôm nay chúng ta sẽ cùng tìm hiểu một số khí cạnh về việc unsubscribe đó."
-keywords:
-  [
-    
-  ]
+description: "Trong các trường hợp trên, nếu bạn dùng event binding thì không cần unsubscribe, vì Angular đã tự làm việc đó cho bạn. Trường hợp bạn từ subscribe thì bạn phải tìm một cách nào đó để unsubscribe, tránh trường hợp có thể bị memory leak."
+keywords: []
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"

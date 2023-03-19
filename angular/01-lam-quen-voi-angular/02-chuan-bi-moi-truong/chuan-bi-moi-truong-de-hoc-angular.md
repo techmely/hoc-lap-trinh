@@ -46,19 +46,33 @@ npm -v
 
 Để phát triển một dự án Angular, chúng ta sẽ sử dụng đến công cụ chính thức từ team Angular đó là Angular CLI, (nó là một tool chạy các lệnh từ Terminal), và chúng ta sẽ cài đặt thông qua NPM bằng câu lệnh sau:
 
-`npm install -g @angular/cli@latest`
+```bash
+npm install -g @angular/cli@latest
+```
 
 Sau khi cài đặt thành công các bạn có thể verify bằng lệnh:
 `ng version`
 
 Ở thời điểm hiện tại Angular CLI đang là version 9.
-Lưu ý:
 
-- Một số bạn sử dụng Windows có thể phải cài đặt thêm Python hoặc windows-build-tools để có thể sử dụng SCSS ở trong project sắp tới.
-- Nếu các bạn không thể chạy `ng version` vì nó báo `'ng' is not recognized as an internal or external command.` thì các bạn cần phải thêm npm global vào PATH.
-- Một số bạn sử dụng PowerShell có thể bị báo lỗi
+<content-info>
+📝 Lưu ý
+<ul>
+<li>Một số bạn sử dụng Windows có thể phải cài đặt thêm Python hoặc windows-build-tools để có thể sử dụng SCSS ở trong project sắp tới.</li>
+<li>Nếu các bạn không thể chạy `ng version` vì nó báo `'ng' is not recognized as an internal or external command.` thì các bạn cần phải thêm npm global vào PATH.</li>
+<li>Một số bạn sử dụng PowerShell có thể bị báo lỗi.</li>
+</ul>
+</content-info>
 
-`File C:\Users\< username >\AppData\Roaming\npm\ng.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.`
+<div class="window">
+  <div class="window-header">
+    <div class="action-buttons"></div>
+    <span class="title-popup">Kết quả</span>
+  </div>
+  <div class="window-body">
+    <code>File C:\Users\< username >\AppData\Roaming\npm\ng.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.</code><br/>
+  </div>
+</div>
 
 Thì các bạn cần phải `enable policy` để chạy được command. Để enable các bạn mở `Powershell as Administrator` và chạy lệnh này `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine` hoặc mở link ở thông báo lỗi để tìm hiểu thêm.
 
@@ -66,7 +80,7 @@ Thì các bạn cần phải `enable policy` để chạy được command. Đ�
 
 Sau khi mọi thứ đã xong xuôi thì bạn có thể khởi tạo dự án được rồi. Bạn mở Terminal và chạy lệnh:
 
-```js
+```bash
 ng new <tên-project>
 ```
 
@@ -76,15 +90,18 @@ Lúc này các bạn sẽ cần trả lời 1 số câu hỏi về routing, styl
 
 - Would you like to add Angular routing?
 - Which stylesheet format would you like to use?
-  Cơ bản thì các bạn có thể để default cũng được, hoặc chọn tùy thích như (Y cho routing, SCSS cho style) như mình đang dùng cho các project thực tế thì hầu hết sẽ chọn như trên.
-  Sau khi khởi tạo xong, chúng ta có thể mở dự án ở Editor quen thuộc (ví dụ: VS Code) để xem project đã được generate ra.
-  Để khởi chạy dự án, chúng ta chạy lệnh sau ở trong directory của dự án.
 
-- `ng serve`
-  Mặc định dự án sẽ chạy ở port 4200, nếu bạn muốn đổi port thì chỉ cần thêm tham số
+Cơ bản thì các bạn có thể để default cũng được, hoặc chọn tùy thích như (Y cho routing, SCSS cho style) như mình đang dùng cho các project thực tế thì hầu hết sẽ chọn như trên.
+
+Sau khi khởi tạo xong, chúng ta có thể mở dự án ở Editor quen thuộc (ví dụ: VS Code) để xem project đã được generate ra.
+
+Để khởi chạy dự án, chúng ta chạy lệnh sau ở trong directory của dự án.
+
+- `ng serve` Mặc định dự án sẽ chạy ở port 4200, nếu bạn muốn đổi port thì chỉ cần thêm tham số
 
 - `ng serve --port=other-port`
   Ví dụ: `ng serve --port=9000`
 
-  Sau khi serve thành công các bạn có thể mở trình duyệt và navigate vào địa chỉ URL: `http://localhost:4200/` ở đây các bạn sẽ thấy được thành quả của mình.
-  Như vậy, chúng ta đã hoàn thành ngày đầu tiên tìm hiểu Angular. Hẹn gặp lại trong các ngày tiếp theo.
+Sau khi serve thành công các bạn có thể mở trình duyệt và navigate vào địa chỉ URL: `http://localhost:4200/` ở đây các bạn sẽ thấy được thành quả của mình.
+
+Như vậy, chúng ta đã hoàn thành ngày đầu tiên tìm hiểu Angular. Hẹn gặp lại trong các ngày tiếp theo.

@@ -3,7 +3,7 @@ title: "Truyền dữ liệu giữa các component"
 description: "Trong các ứng dụng thực tế, đôi khi chúng ta sẽ có những component mà không cần truyền gì vào nó vẫn sẽ hoạt động, nhưng có rất nhiều component mà khi thiết kế chúng ta mong muốn có thể tái sử dụng cao hơn, tùy thuộc vào các properties được truyền vào mà sẽ hiển thị, xử lý tương ứng."
 keywords:
   [
-    "khoá học angular"
+    "khoá học angular",
     "Truyền dữ liệu giữa các component",
     "truyen du lieu giua cac component angular",
   ]
