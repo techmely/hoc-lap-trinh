@@ -529,7 +529,22 @@ while (true) {
   if (!isNaN(number) && number > 0) break;
 }
 
-// Kiểm tra số nguyên tốif (number < 2) {  alert("It's not a prime number.");} else if (number === 2) {  alert("It's a prime number.");} else {  let isPrimeNumber = true;  for (let i = 2; i < number; i++) {    if (number % i === 0) {      isPrimeNumber = false;      break;    }  }  if (isPrimeNumber) alert("It's a prime number.");  else alert("It's not a prime number.");}
+// Kiểm tra số nguyên tố
+if (number < 2) {
+  alert("It's not a prime number.");
+} else if (number === 2) {
+  alert("It's a prime number.");
+} else {
+  let isPrimeNumber = true;
+  for (let i = 2; i < number; i++) {
+    if (number % i === 0) {
+      isPrimeNumber = false;
+      break;
+    }
+  }
+  if (isPrimeNumber) alert("It's a prime number.");
+  else alert("It's not a prime number.");
+}
 ```
 
 <content-info>số nguyên tố là số nguyên dương lớn hơn hoặc bằng 2 thỏa mãn điều kiện chỉ chia hết cho 1 và chính nó.</content-info>
