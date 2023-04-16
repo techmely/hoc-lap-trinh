@@ -27,8 +27,8 @@ position: 2
 
 Có hai kiểu dữ liệu liên quan đến **number trong JavaScript** là: number thông thường và bigInt.
 
-1.  Number thông thường được lưu dưới dạng **số thực dấu phẩy động** theo chuẩn [IEEE-754](https://vi.wikipedia.org/wiki/S%E1%BB%91_th%E1%BB%B1c_d%E1%BA%A5u_ph%E1%BA%A9y_%C4%91%E1%BB%99ng#IEEE_754:_chu%E1%BA%A9n_d%E1%BA%A5u_ph%E1%BA%A9y_%C4%91%E1%BB%99ng_trong_m%C3%A1y_t%C3%ADnh_ng%C3%A0y_nay) với **độ chính xác kép**.
-2.  BigInt là kiểu dữ liệu dùng để biểu diễn **số nguyên với độ dài tùy ý**. Số bigInt được sử dụng trong một số trường hợp cần biểu diễn số nguyên lớn. Vì số thông thường không thể lớn hơn `253` và nhỏ hơn `-253`.
+- Number thông thường được lưu dưới dạng **số thực dấu phẩy động** theo chuẩn [IEEE-754](https://vi.wikipedia.org/wiki/S%E1%BB%91_th%E1%BB%B1c_d%E1%BA%A5u_ph%E1%BA%A9y_%C4%91%E1%BB%99ng#IEEE_754:_chu%E1%BA%A9n_d%E1%BA%A5u_ph%E1%BA%A9y_%C4%91%E1%BB%99ng_trong_m%C3%A1y_t%C3%ADnh_ng%C3%A0y_nay) với **độ chính xác kép**.
+- BigInt là kiểu dữ liệu dùng để biểu diễn **số nguyên với độ dài tùy ý**. Số bigInt được sử dụng trong một số trường hợp cần biểu diễn số nguyên lớn. Vì số thông thường không thể lớn hơn `253` và nhỏ hơn `-253`.
 
 Kiểu **bigInt** là kiểu số đặc biết nên mình sẽ tìm hiểu sau. Bài viết này chỉ tập trung vào **number thông thường**.
 
