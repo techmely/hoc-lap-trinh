@@ -1,7 +1,13 @@
 ---
 title: "Pipe trong Angular"
 description: "Hiểu đơn giản, pipe là một function nhận **input** mà chúng ta truyền vào, và **output** ra giá trị mình mong muốn."
-keywords: []
+keywords:
+  [
+    "Pipe trong Angular",
+    "Dùng pipe trong angular như thế nào",
+    "Pipe và parameters trong Angular",
+    "Phát hiện thay đổi với data binding in pipes",
+  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -64,7 +70,7 @@ Chú ý phần giữa hai dấu ngoặc nhọn `{{ }}`, ngoài việc truyền v
 {{ interpolated_value | pipe_name }}
 ```
 
-### Pipe và parameters
+### Pipe và parameters trong Angular
 
 Pipe cho phép truyền thêm các parameters, ví dụ `date` ở trên mình có thể truyền thêm format `medium` phân tách nhau bằng dấu hai chấm `:`. Đó cũng là cú pháp để pass parameter cho pipe.
 
@@ -107,8 +113,6 @@ Angular cung cấp sẵn khá nhiều pipes để có thể sử dụng được
 | [`JsonPipe`](https://angular.io/api/common/JsonPipe)           | Hiển thị json                                                              |
 | [`AsyncPipe`](https://angular.io/api/common/AsyncPipe)         | Hiển thị value của observable và tự động unsubscribe khi view được destroy |
 
-Toàn bộ các pipe có sẵn trong `CommonModule`, bạn có thể xem thêm [ở đây][pipes]
-
 ## Viết custom pipe
 
 Ví dụ này lấy từ chính application đang chạy của mình. Use case đơn giản là bọn mình cần code rất nhiều form CRUD. Vì thường form dành cho add item và form dành cho edit item sẽ được reuse cùng code HTML. Nếu bạn click Add item, form add sẽ được hiển thị và title của form lúc đó sẽ là Add Item, tương tự cho edit.
@@ -127,7 +131,7 @@ Thế là mình quyết định viết một pipe đơn giản là nhận vào m
 
 Để viết một pipe dành riêng cho nhu cầu của từng dự án, cần follow hai bước sau.
 
-### 1. Trước tiên chúng ta cần tạo một class có implement interface `PipeTransform`.
+### 1. Trước tiên chúng ta cần tạo một class có implement interface `PipeTransform`
 
 Interface này chỉ bao gồm một method duy nhất tên là `transform`.
 

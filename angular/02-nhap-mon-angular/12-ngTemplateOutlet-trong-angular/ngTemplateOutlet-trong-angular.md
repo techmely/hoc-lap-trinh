@@ -1,7 +1,14 @@
 ---
 title: "ngTemplateOutlet trong Angular"
 description: "ng-template, ngTemplateOutlet và ng-container trong Angular"
-keywords: []
+keywords:
+  [
+    "ngTemplateOutlet trong Angular",
+    "ng-template trong Angular",
+    "Khi nào thì nên dùng ng-template",
+    "ngTemplateOutlet trong Angular",
+    "ng-container trong Angular",
+  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -12,7 +19,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 12
 ---
 
-## ng-template
+## ng-template trong Angular
 
 Trong bài 2 của chương 2 này, mình đã nói có nói đến một trường hợp dùng `ng-template`. Đó là khi dùng `*ngIf` với điều kiện else, chúng ta có thể truyền vào một template reference đc định nghĩa thông qua cú pháp `#templateReferenceName` để render lên UI.
 
@@ -25,18 +32,18 @@ Trong bài 2 của chương 2 này, mình đã nói có nói đến một trư�
 
 Thông qua ví dụ trên, chắc các bạn cũng đã nhận ra được đôi điều:
 
-- Khi code HTML của bạn dc bao quanh bởi `ng-template`, phần HTML đó sẽ <u> không dc render lên UI ngay lập tức</u>. Mà chỉ dc render trong một số trường hợp, ví dụ như khi `*ngIf else tmpl` hoặc thông qua `ngTemplateOutlet` mà chúng ta sẽ đề cập đến ở phần sau của bài viết.
+- Khi code HTML của bạn dc bao quanh bởi `ng-template`, phần HTML đó sẽ _không dc render lên UI ngay lập tức_. Mà chỉ dc render trong một số trường hợp, ví dụ như khi `*ngIf else tmpl` hoặc thông qua `ngTemplateOutlet` mà chúng ta sẽ đề cập đến ở phần sau của bài viết.
 - Tên gọi của ng-template cũng phần nào nói lên đc ý nghĩa của nó. Template hiểu nôm na là mẫu, dạng. Dịch ra tiếng Việt hơi khó, tuy nhiên khi kết hợp nhiều template với nhau thì chúng ta có thể có một UI đầy đủ.
 
 Từ những điểm trên, có thể định nghĩa `ng-template` là một thành phần của Angular để render HTML code. Và phần HTML code nằm trong `ng-template` không bao giờ được hiển thị trực tiếp ở nơi nó được định nghĩa
 
-### Khi nào thì nên dùng ng-template?
+## Khi nào thì nên dùng ng-template?
 
 Một số trường hợp hay cần dùng đến ng-template theo như kinh nghiệm của mình.
 
-#### 1. Dùng kết hợp với các Structure Directive của Angular, ví dụ như `*ngIf`
+### 1. Dùng kết hợp với các Structure Directive của Angular, ví dụ như `*ngIf`
 
-#### 2. Khi một số UI element trong một component bị lặp lại trong chính component đó, nhưng phần code đó quá nhỏ để tách ra làm một component riêng
+### 2. Khi một số UI element trong một component bị lặp lại trong chính component đó, nhưng phần code đó quá nhỏ để tách ra làm một component riêng
 
 Ví dụ như bạn có một component có chứa biến một biển tên là `counter`. Phần UI của counter này sẽ đc lặp lại ở trong component của bạn vài lần với UI giống nhau.
 
@@ -84,10 +91,10 @@ Và đây là cách chúng ta có thể viết lại bằng cách dùng `ng-temp
 
 Khi viết lại code dùng `ng-template`, ưu điểm dễ nhận thấy đó là:
 
-- Nếu cần sửa lại UI cho counter. Thay vì phải sửa ở 3 nơi, bây giờ ta chỉ cần sửa ở một vị trí đó là `ng-template` của counter thôi. Tránh những lỗi typo hay find and replace bị thiếu.
+- Nếu cần sửa lại UI cho counter. Thay vì phải sửa ở 3 nơi, bây giờ ta chỉ cần sửa ở một vị trí đó là `ng-template` của counter thôi. Tránh những lỗi typo hay find and `replace` bị thiếu.
 - Vì phần template này chỉ gói gọn trong đúng một dòng code nên dùng ng-template tiện hơn hẳn là phải tách phần counter ra một component mới.
 
-#### 3. Dùng ng-template để pass vào component khác. Hỗ trợ override template có sẵn trong component.
+### Dùng ng-template để pass vào component khác. Hỗ trợ override template có sẵn trong component.
 
 Ví dụ mình có component `tab-container`, mặc định sẽ render tab với template default là `defaultTabButtonsTmpl`.
 
@@ -130,7 +137,7 @@ Tuy nhiên, khi dùng `tab-container` bạn hoàn toàn có thể pass vào temp
 })
 ```
 
-## ngTemplateOutlet
+## ngTemplateOutlet trong Angular
 
 Qua ví dụ trên thì có thể thấy ngay `ngTemplateOutlet` là cách dùng để render một template được tạo ra bởi `ng-template` lên UI. Cú pháp như sau
 
@@ -204,7 +211,7 @@ Vài điểm chú ý:
 
 - Khi dùng variable ở trong `ng-template`, bạn sẽ mất type safe. Ví dụ bạn pass vào một object user theo cú pháp `let-user="user"` với `firstName`, `lastName` và `age`. Thì trong ng-template, bạn muốn làm gì cái object này cũng được, ví dụ như thử dùng `user.fullName`, compiler sẽ không catch được lỗi, và cả angular language service cũng không báo lỗi trên IDE.
 
-## ng-container
+## ng-container trong Angular
 
 ng-container là một custom html tag để khi render trên UI sẽ không có extra tag để tránh ảnh hưởng đến style mình viết. Như ở ví dụ trên, bạn hoàn toàn có thể viết lại thành.
 

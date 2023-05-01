@@ -1,7 +1,12 @@
 ---
 title: "Dependency Injection trong Ứng Dụng Angular"
 description: "Trong bài 13 chúng ta đã tìm hiểu và thấy rằng Dependency Injection được sử dụng trong ứng dụng Angular để tạo ra các Service, và các Service này được inject vào các class (ví dụ: component, directive, service) khác thông qua constructor injection. Vậy ngoài để tạo ra Service thì nó còn có thể sử dụng ở những đâu nữa."
-keywords: []
+keywords:
+  [
+    "Inject component cha đến component con",
+    "Dependency Injection trong Ứng Dụng Angular",
+    "Provide một tab group khác có cùng APIs",
+  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"

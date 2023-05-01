@@ -1,7 +1,7 @@
 ---
-title: "RxJS Filtering Operators"
-description: "Hôm nay chúng ta sẽ tiếp tục tìm hiểu về thêm về **RxJS Operators**, điển hình là **Filtering Operators**. Đúng với tên gọi của chúng, các `operators` này được dùng để lược/lọc các giá trị được `emit` từ `Observable` gốc, giống như bạn lược/lọc qua phần tử của 1 `Array` vậy."
-keywords: []
+title: "RxJS Filtering Operators trong RxJS"
+description: "Hôm nay chúng ta sẽ tiếp tục tìm hiểu về thêm về RxJS Operators, điển hình là **Filtering Operators**. Đúng với tên gọi của chúng, các `operators` này được dùng để lược/lọc các giá trị được `emit` từ `Observable` gốc, giống như bạn lược/lọc qua phần tử của 1 `Array` vậy."
+keywords: ["RxJS Filtering Operators trong Angular", "filter() trong RxJS"]
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
@@ -12,7 +12,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---
 
-### filter() trong RxJS
+### `filter()` trong RxJS
 
 `filter<T>(predicate: (value: T, index: number) => boolean, thisArg?: any): MonoTypeOperatorFunction<T>`
 
@@ -67,7 +67,7 @@ from([1, 2, 3, 4, 5, 6])
   .subscribe(console.log, null, () => console.log("complete")); // output: 'defaultValue' -> complete
 ```
 
-### last() trong RxJS
+### `last()` trong RxJS
 
 `last<T, D>(predicate?: (value: T, index: number, source: Observable<T>) => boolean, defaultValue?: D): OperatorFunction<T, T | D>`
 
@@ -90,7 +90,7 @@ of() // an empty Observable
   .subscribe(null, console.log, null); // Error: EmptyError
 ```
 
-### find() trong RxJS
+### `find()` trong RxJS
 
 `find<T>(predicate: (value: T, index: number, source: Observable<T>) => boolean, thisArg?: any): OperatorFunction<T, T | undefined>`
 
@@ -106,7 +106,7 @@ from([1, 2, 3, 4, 5, 6])
   .subscribe(console.log, null, () => console.log("complete")); // output: 2 -> complete
 ```
 
-### single() trong RxJS
+### `single()` trong RxJS
 
 `single<T>(predicate?: (value: T, index: number, source: Observable<T>) => boolean): MonoTypeOperatorFunction<T>`
 
@@ -126,7 +126,7 @@ from([1, 2, 3])
   .subscribe(null, console.log, null); // error: Error -> có nhiều hơn 1 giá trị > 1.
 ```
 
-### take() trong RxJS
+### `take()` trong RxJS
 
 `take<T>(count: number): MonoTypeOperatorFunction<T>`
 
@@ -150,7 +150,7 @@ Như các bạn cũng đã nhận ra là không có gì ngăn cản chúng ta tr
 - Snapshot của data tại 1 thời điểm
 - Route Guard mà return `Observable`.
 
-### takeLast() trong RxJS
+### `takeLast()` trong RxJS
 
 `takeLast<T>(count: number): MonoTypeOperatorFunction<T>`
 
@@ -164,7 +164,7 @@ from([1, 2, 3, 4])
   .subscribe(console.log, null, () => console.log("complete")); // output: 3, 4 -> complete
 ```
 
-### takeUntil() trong RxJS
+### `takeUntil()` trong RxJS
 
 `takeUntil<T>(notifier: Observable<any>): MonoTypeOperatorFunction<T>`
 
@@ -182,7 +182,7 @@ interval(1000)
 
 `takeUntil()` được dùng để **unsubscribe** `Observable` trong `ngOnDestroy()` là rất phổ biến. Các bạn suy nghĩ mình có 1 `destroySubject: Subject<void>` tượng trưng cho `notifier`. Khi `ngOnDestroy()` thực thi, chúng ta sẽ cho `destroySubject.next()` (emit) và sử dụng `takeUntil(this.destroySubject)` thì `Observable` trong `Component` sẽ được **unsubscribe** khi `ngOnDestroy()` thực thi -> khi `Component` unmount.
 
-### takeWhile() trong RxJS
+### `takeWhile()` trong RxJS
 
 `takeWhile<T>(predicate: (value: T, index: number) => boolean, inclusive: boolean = false): MonoTypeOperatorFunction<T>`
 
@@ -198,7 +198,7 @@ interval(1000)
 
 `takeWhile()` hoạt động hiệu quả nhất khi bạn muốn `unsusbcribe` từ chính giá trị mà `Observable` emit (internal). Giống như ví dụ trên, mình lấy chính giá trị của `interval` để kiểm tra điều kiện. `takeUntil()` hoạt động hiệu quả khi bạn có `notifier` từ bên ngoài (external).
 
-### skip() trong RxJS
+### `skip()` trong RxJS
 
 `skip<T>(count: number): MonoTypeOperatorFunction<T>`
 
@@ -212,7 +212,7 @@ from([1, 2, 3, 4])
   .subscribe(console.log, null, () => console.log("complete")); // output: 2, 3, 4 --> complete
 ```
 
-### skipUntil() trong RxJS
+### `skipUntil()` trong RxJS
 
 `skipUntil<T>(notifier: Observable<any>): MonoTypeOperatorFunction<T>`
 
@@ -226,7 +226,7 @@ interval(1000)
   .subscribe(console.log); // output: click at 5 seconds -> 5, 6, 7, 8, 9....
 ```
 
-### skipWhile() trong RxJS
+### `skipWhile()` trong RxJS
 
 `skipWhile<T>(predicate: (value: T, index: number) => boolean): MonoTypeOperatorFunction<T>`
 
@@ -240,7 +240,7 @@ interval(1000)
   .subscribe(console.log); // output: 6, 7, 8, 9....
 ```
 
-### distinct() trong RxJS
+### `distinct()` trong RxJS
 
 `distinct<T, K>(keySelector?: (value: T) => K, flushes?: Observable<any>): MonoTypeOperatorFunction<T>`
 
@@ -260,7 +260,7 @@ of({ age: 4, name: "Foo" }, { age: 7, name: "Bar" }, { age: 5, name: "Foo" })
   .subscribe(console.log, null, () => console.log("complete")); // output: { age: 4, name: 'Foo' }, { age: 7, name: 'Bar' } -> complete
 ```
 
-### distinctUntilChanged() trong RxJS
+### `distinctUntilChanged()` trong RxJS
 
 `distinctUntilChanged<T, K>(compare?: (x: K, y: K) => boolean, keySelector?: (x: T) => K): MonoTypeOperatorFunction<T>`
 
@@ -285,7 +285,7 @@ of(
   .subscribe(console.log, null, () => console.log("complete")); // output: { age: 4, name: 'Foo' }, { age: 7, name: 'Bar' }, { age: 5, name: 'Foo' } -> complete
 ```
 
-### distinctUntilKeyChanged() trong RxJS
+### `distinctUntilKeyChanged()` trong RxJS
 
 `distinctUntilKeyChanged<T, K extends keyof T>(key: K, compare?: (x: T[K], y: T[K]) => boolean): MonoTypeOperatorFunction<T>`
 
@@ -306,7 +306,7 @@ of(
 
 Chúng ta còn 8 `operators` nữa. Tuy nhiên, 8 `operators` này đi theo cặp ví dụ: `throttle/throttleTime`, `debounce/debounceTime` ... Mình sẽ chỉ nói về `*Time` thôi vì cái kia hoạt động tương tự. `throttle()` nhận vào 1 `Observable` còn `throttleTime()` nhận vào 1 khoảng thời gian trong millisecond. Phần lớn, các `*Time` operators dùng nhiều hơn là cái không có `*Time` trong công việc hàng ngày.
 
-### throttle()/throttleTime() trong RxJS
+### `throttle()/throttleTime()` trong RxJS
 
 `throttle<T>(durationSelector: (value: T) => SubscribableOrPromise<any>, config: ThrottleConfig = defaultThrottleConfig): MonoTypeOperatorFunction<T>`
 `throttleTime<T>(duration: number, scheduler: SchedulerLike = async, config: ThrottleConfig = defaultThrottleConfig): MonoTypeOperatorFunction<T>`
@@ -327,7 +327,7 @@ fromEvent(document, "mousemove")
 
 `throttleTime()` thường được sử dụng khi bạn có `event` từ DOM như `mousemove` để tránh quá nhiều `event` được emit.
 
-### debounce()/debounceTime() trong RxJS
+### `debounce()/debounceTime()` trong RxJS
 
 `debounce<T>(durationSelector: (value: T) => SubscribableOrPromise<any>): MonoTypeOperatorFunction<T>`
 `debounceTime<T>(dueTime: number, scheduler: SchedulerLike = async): MonoTypeOperatorFunction<T>`
@@ -344,7 +344,7 @@ this.filterControl.valueChanges.pipe(debounceTime(500)).subscribe(console.log); 
 
 Vì cách hoạt động như trên, `debounceTime()` được dùng phổ biến nhất cho 1 `input` dùng để filter 1 danh sách gì đó.
 
-### audit()/auditTime() trong RxJS
+### `audit()/auditTime()` trong RxJS
 
 `audit<T>(durationSelector: (value: T) => SubscribableOrPromise<any>): MonoTypeOperatorFunction<T>`
 `auditTime<T>(duration: number, scheduler: SchedulerLike = async): MonoTypeOperatorFunction<T>`
@@ -357,7 +357,7 @@ Vì cách hoạt động như trên, `debounceTime()` được dùng phổ biế
 fromEvent(document, "click").pipe(auditTime(1000)).subscribe(console.log); // output: click - wait 1s -> MouseEvent {} -click  wait 1s (trong 1s, click 10 times) -> MouseEvent {} -> click wait 1s -> MouseEvent {}
 ```
 
-### sample()/sampleTime() trong RxJS
+### `sample()/sampleTime()` trong RxJS
 
 `sample<T>(notifier: Observable<any>): MonoTypeOperatorFunction<T>`
 `sampleTime<T>(period: number, scheduler: SchedulerLike = async): MonoTypeOperatorFunction<T>`

@@ -1,7 +1,13 @@
 ---
 title: "Content Projection trong Angular"
 description: "Có những khi trong quá trình phát triển ứng dụng với Angular chúng ta có thể sẽ gặp một số dạng component giống nhau về phần layout chẳng hạn, điểm khác biệt chỉ là một số label, content bên trong nó. Lúc này rất dễ để các bạn có thể tạo một component có nhận vào các Input, và render dựa vào các Input đó."
-keywords: []
+keywords:
+  [
+    "Content Projection trong Angular",
+    "Sử dụng multiple ng-content được không?",
+    "ng-content và selector trong angular",
+    "ng-content và ngProjectAs trong angular",
+  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -11,8 +17,6 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 11
 ---
-
-## ng-content và những câu hỏi
 
 ### Làm thế nào để sử dụng ng-content?
 
@@ -67,7 +71,7 @@ Khi nhìn vào kết quả render, chúng ta sẽ thấy chỉ có `content 2` l
 
 ![multiple ng-content](assets/ng100doc-d013-multiple-ng-content.png)
 
-### ng-content và selector
+### ng-content và selector trong angular
 
 Khi để ý thẻ `table` của html các bạn sẽ thấy rằng, dù `thead`, `tbody`, `tfoot` có đặt ở bất kỳ thứ tự nào trong thẻ `table`, nó đều được đưa về đúng thứ tự là `thead` rồi đến `tbody`, sau cùng là `tfoot`. Điều này các bạn cũng có thể làm tương tự với `ng-content` kết hợp **selector**. Ngoài việc **project** có thứ tự ra, nó còn cho phép chúng ta dùng nhiều `ng-content`.
 
@@ -127,7 +131,7 @@ Và dù ở **app.component.html** chúng ta có đặt sai thứ tự thì Togg
 
 > Lưu ý: khi sử dụng _selector_ nếu chúng ta project vào nhiều elements thỏa mãn _selector_ đó thì `ng-content select` sẽ nhận hết tất cả các elements.
 
-### ng-content và ngProjectAs
+### ng-content và ngProjectAs trong angular
 
 Giả sử Toggle component mong muốn nhận vào một component có selector là `app-label`, và chúng ta sẽ cung cấp một component `app-label` với nhiều tính năng rất xịn xò.
 
@@ -152,9 +156,7 @@ Cứu cánh chính là `ngProjectAs`, nó là một cách khai báo tường min
 </app-toggle>
 ```
 
-Có khá nhiều library cũng sử dụng kỹ thuật này để cho phép người dùng customize nhiều hơn. Ví dụ như `ngx-dropzone`:
-
-https://github.com/peterfreeman/ngx-dropzone
+Có khá nhiều library cũng sử dụng kỹ thuật này để cho phép người dùng customize nhiều hơn. Ví dụ như [ngx-dropzone](https://github.com/peterfreeman/ngx-dropzone)
 
 ## Lời kết
 

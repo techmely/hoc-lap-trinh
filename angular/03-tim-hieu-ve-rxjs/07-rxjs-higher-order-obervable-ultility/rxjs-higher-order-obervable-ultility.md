@@ -1,7 +1,13 @@
 ---
-title: "RxJS Higher Order Observables and Utility Operators"
+title: "RxJS Higher Order Observables và Utility Operators trong RxJS"
 description: "Ngày hôm nay, chúng ta sẽ cùng nhau tìm hiểu 2 (trong 3) loại **Operators** cuối cùng là: **RxJS Higher Order Observables** và **Utility Operators** nhé."
-keywords: []
+keywords:
+  [
+    "RxJS Higher Order Observables trong Angular",
+    " Utility Operators trong Angular",
+    "Nguồn gốc của các HOOs",
+    "Tại sao lại cần HOOs?",
+  ]
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
@@ -73,9 +79,7 @@ Tại sao điều này không tốt? Để hiểu được chúng ta cần phả
 2. Sau 500ms (`debounceTime()`), `valueChanges` emit giá trị `abc` và chúng ta `subscribe` vào `valueChanges` với `observer`: `query => {...}`
 3. Từ `query`, chúng ta ngay lặp tức gọi `apiService.filterData(query)` và đây cũng là 1 `Observable`, nên chúng ta `subscribe`.
 4. Sau 1 khoảng thời gian ngẫu nhiên (vì là API request mà, hên xui 😅), chúng ta có `data` và bắt đầu hiển thị lên template.
-
-Mọi thứ đều đẹp như mơ, cho đến khi có thêm các bước như sau.
-
+   Mọi thứ đều đẹp như mơ, cho đến khi có thêm các bước như sau.
 5. Người dùng xoá `abc` đi và type vào `xyz`. Mọi thứ diễn ra dưới 500ms và người dùng dừng lại ở `xyz`.
    6-7. Như bước 2 và 3, chúng ta có `query` với giá trị là `xyz` và sẽ gọi `apiService.filterData(query)`. (tạm gọi đây là {1})
 6. Sau 1 khoảng thời gian **KHÁ LÂU**, người dùng lại tiếp tục đổi `query` từ `xyz` thành `abcxyz`.
@@ -208,7 +212,7 @@ fromEvent(document, "click").pipe(
 
 Lúc này, vì bản chất **eager** của `Promise`, khi được invoke là sẽ gửi request ngay lặp tức, nghĩa là `axios(...)` kia đã gửi request tại thời điểm `map()` mất rồi cho nên `concatAll()` ở đây để thực thi theo thứ tự thì hoàn toàn vô nghĩa, và nhiều trường hợp sẽ bị **Racing Condition** ngay.
 
-#### exhaustMap() trong RxJS
+#### `exhaustMap()` trong RxJS
 
 `exhaustMap<T, R, O extends ObservableInput<any>>(project: (value: T, index: number) => O, resultSelector?: (outerValue: T, innerValue: ObservedValueOf<O>, outerIndex: number, innerIndex: number) => R): OperatorFunction<T, ObservedValueOf<O> | R>`
 
@@ -258,7 +262,7 @@ concat(
 
 Các bạn có thể thấy là khi `exhaustMap()` đang chạy `Inner Observable` của `second timer` mà `last timer` emit, thì `exhaustMap()` bỏ qua hoàn toàn `Inner Observable` của `last timer` và mọi nghiệp vụ dừng lại sau khi `Inner Observable` của `second timer` complete. Đây là tính chất của `exhaustMap()`, là 1 trong những **Rate Limiting HOO** hiếm hoi 😎
 
-#### switch/concat/mergeMapTo() trong RxJS
+#### `switch/concat/mergeMapTo()` trong RxJS
 
 3 HOOs này đều có cách HOO `*mapTo()` tương ứng. Cách thức hoạt động giống với HOO nguyên bản. Tuy nhiên, thay vì nhận vào `projectFunction` thì các bạn truyền hẳn vào `Inner Observable` luôn. Nếu các bạn có các nghiệp vụ cần dùng đến cái HOOs này mà không quan tâm giá trị của `Outer Observable`, thì cứ dùng các HOO `*mapTo()` này.
 
@@ -270,7 +274,7 @@ fromEvent(document, "click").pipe(mergeMapTo(interval(1000).pipe(take(10))));
 fromEvent(document, "click").pipe(concatMapTo(interval(1000).pipe(take(10))));
 ```
 
-#### partition() trong RxJS
+#### `partition()` trong RxJS
 
 `partition<T>(source: any, predicate: (value: T, index: number) => boolean, thisArg?: any): [Observable<T>, Observable<T>]`
 
@@ -304,7 +308,7 @@ Trên đây là những HOOs thường dùng nhất trong **RxJS**. Ngoài ra, *
 
 Đúng với tên gọi, đây là những operators cung cấp 1 số tiện ích cho chúng ta mà đôi khi rất hiệu quả.
 
-#### tap() trong RxJS
+#### `tap()` trong RxJS
 
 `tap<T>(nextOrObserver?: NextObserver<T> | ErrorObserver<T> | CompletionObserver<T> | ((x: T) => void), error?: (e: any) => void, complete?: () => void): MonoTypeOperatorFunction<T>`
 
@@ -382,7 +386,7 @@ this.apiService
   .subscribe();
 ```
 
-#### repeat() trong RxJS
+#### `repeat()` trong RxJS
 
 `repeat<T>(count: number = -1): MonoTypeOperatorFunction<T>`
 
@@ -397,7 +401,7 @@ of("repeated data").pipe(repeat(3)).subscribe(console.log);
 // 'repeated data'
 ```
 
-#### timeInterval() trong RxJS
+#### `timeInterval()` trong RxJS
 
 `timeInterval<T>(scheduler: SchedulerLike = async): OperatorFunction<T, TimeInterval<T>>`
 
@@ -425,7 +429,7 @@ interval(2000).pipe(timeout(1000)).subscribe(console.log, console.error);
 // Error { name: "TimeoutError" }
 ```
 
-#### timeoutWith() trong RxJS
+#### `timeoutWith()` trong RxJS
 
 `timeoutWith<T, R>(due: number | Date, withObservable: any, scheduler: SchedulerLike = async): OperatorFunction<T, T | R>`
 
@@ -433,7 +437,7 @@ interval(2000).pipe(timeout(1000)).subscribe(console.log, console.error);
 
 ![RxJS timeoutWith](assets/rxjs-timeoutWith.png)
 
-#### toPromise() trong RxJS
+#### `toPromise()` trong RxJS
 
 À ha, mình đặt cái này cuối cùng là có ý đồ 😅. Nhìn tên hàm các bạn cũng đoán được hàm này làm gì rồi phải không? Đây không phải là 1 operator nhưng được **RxJS** liệt kê vào **Utility Operator**. `toPromise()` là 1 instance method trên class `Observable` dùng để chuyển đổi 1 `Observable` thành `Promise`🤦‍. Tuy nhiên, `toPromise()` sẽ bị `deprecated` vào **RxJS v7** sắp tới, các bạn nào dùng thì cẩn thận nhé.
 

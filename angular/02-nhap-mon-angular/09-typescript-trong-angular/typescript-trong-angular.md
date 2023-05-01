@@ -1,7 +1,15 @@
 ---
 title: "Typescript trong Angular"
 description: "Bài viết cung cấp đầy đủ thông tin về TypeScript từ cách cài đặt và sử dụng đến các tính năng của TypeScript như Static Types, Interface, Type và Default Types"
-keywords: []
+keywords:
+  [
+    "Typescript trong Angular",
+    "TypeScript là gì",
+    "Default Types trong angular",
+    "Class trong typescript",
+    "Interface trong typescript",
+    "Type trong typescript",
+  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -40,7 +48,7 @@ Cùng 1 đoạn code trên nhưng trong **TS** thì **TS** trước tiên sẽ _
 
 > Lỗi trên là **Compilation Time Error**. Các bạn sẽ thường gặp lỗi này ở thời điểm _viết code_. Tuy nhiên, việc các bạn nhận được error ở thời điểm _viết code_ thì đó là nhờ TextEditor/IDE trợ giúp chứ trên thực tế, đoạn error trên vẫn là 1 **Compilation Time Error** nhé.
 
-#### Default Types
+### Default Types trong typescript
 
 Sau đây là danh sách các **default types** trong **TS**
 
@@ -62,7 +70,7 @@ let someFunction: () => string; // một hàm trả về giá trị có type "st
 
 > `someVoidFunction` và `someFunction` đều có type là `Function` nhưng mình ghi cả 2 để cho các bạn thấy được type `void`.
 
-#### Interface/Type
+### Interface/Type trong typescript
 
 **TS** cung cấp `Interface` và `Type` để các bạn có thể định nghĩa được **type** cho một đối tượng (`object`)
 
@@ -105,7 +113,7 @@ Việc sử dụng `interface` sẽ giúp cho trình soạn thảo (`text editor
 
 > `Interface` và `Type` trong nhiều trường hợp có thể sử dụng qua lại được. Tuy nhiên, các bạn nên chọn 1 trong 2 và giữ chuẩn này trong toàn bộ dự án của mình. `Interface` và `Type` có 1 số điểm khác biệt, các bạn có thể xem thêm tại: [interface-vs-type](https://medium.com/@martin_hotell/interface-vs-type-alias-in-typescript-2-7-2a8f1777af4c)
 
-#### Class
+### Class trong typescript
 
 `class` là cú pháp xuất hiện trong **ES2015** hay **ES6** (và xuất hiện rất nhiều ở những ngôn ngữ lập trình hướng đối tượng khác). Trong **JS**, `class` thực chất chỉ là _syntactic sugar_ cho **Prototypal Inheritance** ([Prototypal Programming](https://en.wikipedia.org/wiki/Prototype-based_programming), hay các bạn hay gọi trong **JS** là **prototype chain**).
 

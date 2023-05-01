@@ -1,7 +1,16 @@
 ---
 title: "Template Variable và ViewChild/ViewChildren trong Angular"
 description: "Nếu bạn cần trỏ tới một phần tử (HTMLElement/component/directive) ở trong template và thao tác trực tiếp lên nó thì sao. Có cách nào để chúng ta tạo ra một `variable` ở trong template và sử dụng nó không? Câu hỏi trên sẽ được trả lời trong bài học này."
-keywords: ["Template Variable và ViewChild/ViewChildren trong Angular", ""]
+keywords:
+  [
+    "Template Variable và ViewChild/ViewChildren trong Angular",
+    "Các phần tử cha tương tác với phần tử con thông qua biến cục bộ",
+    "template variable trong angular",
+    "ViewChild trong angular",
+    "ViewChildren trong angular",
+    "ViewChild trong angular là gì",
+    "ViewChildren trong angular là gì",
+  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -136,10 +145,10 @@ ViewChild(selector: string | Function | Type<any>, opts?: {
 Trong đó các `selector` có thể là:
 
 - Any class with the @Component or @Directive decorator
-- A template reference variable as a string (e.g. query <my-component #cmp></my-component> with @ViewChild('cmp'))
+- A template reference variable as a string (e.g. query `<my-component #cmp></my-component>` with @ViewChild('cmp'))
 - Any provider defined in the child component tree of the current component (e.g. @ViewChild(SomeService) someService: SomeService)
 - Any provider defined through a string token (e.g. @ViewChild('someToken') someTokenVal: any)
-- A TemplateRef (e.g. query <ng-template></ng-template> with @ViewChild(TemplateRef) template;)
+- A TemplateRef (e.g. query `<ng-template></ng-template>` with @ViewChild(TemplateRef) template;)
 
 `opts.read` có thể là bất cứ một token nào - có thể là một directive, một component, một service, etc. Nếu match với token nào thì sẽ trả về. Ví dụ:
 

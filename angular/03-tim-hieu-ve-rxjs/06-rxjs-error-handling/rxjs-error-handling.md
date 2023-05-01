@@ -1,7 +1,7 @@
 ---
-title: "RxJS Error Handling and Conditional Operators"
+title: "RxJS Error Handling và Conditional Operators trong RxJS"
 description: "Trong ngày hôm nay chúng ta sẽ cùng tìm hiểu một số operators để xử lý lỗi và một số khác để làm việc với các loại điều kiện (Error Handling and Conditional Operators)."
-keywords: []
+keywords: ["RxJS Error Handling", "Conditional Operators"]
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"

@@ -1,7 +1,12 @@
 ---
-title: "RxJS Transformation Operators"
-description: "Trong bài trước chúng ta đã biết về một số **Creation Operators**, chúng là những operators có thể call như call một function thông thường. Trong bài này, chúng ta sẽ bắt đầu đi vào tìm hiểu **Pipeable Operators**, thay vì được call độc lập thì nó sẽ được call ở trong `pipe()` method của một Observable instance."
-keywords: []
+title: "RxJS Transformation Operators trong RxJS"
+description: "Trong bài trước chúng ta đã biết về một số Creation Operators, chúng là những operators có thể call như call một function thông thường. Trong bài này, chúng ta sẽ bắt đầu đi vào tìm hiểu **Pipeable Operators**, thay vì được call độc lập thì nó sẽ được call ở trong `pipe()` method của một Observable instance."
+keywords:
+  [
+    "RxJS Transformation Operators",
+    "Pipeable Operators trong angular",
+    "map trong RxJS",
+  ]
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"

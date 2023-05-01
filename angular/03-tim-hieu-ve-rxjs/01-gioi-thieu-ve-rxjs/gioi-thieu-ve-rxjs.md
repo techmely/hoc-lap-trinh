@@ -1,7 +1,16 @@
 ---
 title: "Giới thiệu Reactive Programming, RxJS và Observable"
 description: "Khi bạn tìm hiểu về Angular, bạn sẽ thấy rằng nó có phụ thuộc vào một library là RxJS. Có khá nhiều concept trong Angular sử dụng đến RxJS như là Forms, HttpClient, hay như là QueryList, EventEmitter, etc. Đây vừa là một điểm mạnh, cũng vừa là điểm yếu của Angular. Vì RxJS xử lý asynchronous rất mạnh, nhưng bù lại bạn sẽ phải học thêm một số các concept khác xoay quanh stream. Thinking in streams."
-keywords: []
+keywords:
+  [
+    "Giới thiệu Reactive Programming",
+    "RxJS và Observable",
+    "Observable trong Angular",
+    "Subscription trong Angular",
+    "Operators trong Angular",
+    "Subject trong Angular",
+    "Schedulers trong Angular",
+  ]
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
@@ -68,11 +77,10 @@ Với cách sử dụng RxJS cho bài toán trên quả không tệ, và nếu c
 
 ## RxJS core concepts trong angular
 
-### Observable
+### Observable trong Angular
 
 - Observable: đại diện cho ý tưởng về một tập hợp các giá trị hoặc các sự kiện trong tương lai. Khi các giá trị hoặc sự kiện phát sinh trong tương lai, Observable sẽ điều phối nó đến Observer.
 - Observable chỉ là một function (class) mà nó có một số yêu cầu đặc biệt. Nó nhận đầu vào là một Function, mà Function này nhận đầu vào là một Observer và trả về một function để có thể thực hiện việc cancel quá trình xử lý. Thông thường (RxJS 5 trở lên) chúng ta đặt tên function đó là unsubscribe.
-  > Observables are functions that tie an observer to a producer. That’s it. They don’t necessarily set up the producer, they just set up an observer to listen to the producer, and generally return a teardown mechanism to remove that listener. The act of subscription is the act of “calling” the observable like a function, and passing it an observer. [Ben Lesh: Hot vs Cold Observables][benleshhotandcold]
 
 ### Observer
 
@@ -162,7 +170,6 @@ Next notifications thường được sử dụng rộng rãi, nó cực kỳ qu
 Error và Complete notifications có thể chỉ xảy ra duy nhất một lần trong một Observable Execution.
 
 > Lưu ý rằng, chỉ có 1 trong 2 loại tín hiệu trên được gửi đi, nếu đã complete thì không có error, nếu có error thì không có complete. (Chúng không thuộc về nhau :D). Và nếu đã gửi đi complete, hoặc error signal, thì sau đó không có dữ liệu nào được gửi đi nữa. Tức là stream đã close.
-
 > In an Observable Execution, zero to infinite Next notifications may be delivered. If either an Error or Complete notification is delivered, then nothing else can be delivered afterwards.
 
 ### Disposing Observable Executions
@@ -172,7 +179,6 @@ Bởi vì quá trình thực thi Observable có thể lặp vô hạn, hoặc tr
 Observable có cơ chế tương ứng, cho phép chúng ta hủy việc thực thi. Đó là khi subscribe được gọi, một Observer sẽ bị gắn với một _Observable execution_ mới được tạo, sau đó nó sẽ trả về một object thuộc type Subscription. Kiểu dữ liệu này có một method `unsubscribe` khi chúng ta gọi đến, nó sẽ thực hiện cơ chế để hủy việc thực thi.
 
 > Lưu ý: nếu bạn tự tạo Observable (bằng new Observable chẳng hạn) thì bạn phải tự thiết lập cơ chế để hủy.
-
 > When you subscribe, you get back a Subscription, which represents the ongoing execution. Just call `unsubscribe()` to cancel the execution.
 
 ```ts
