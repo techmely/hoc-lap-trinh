@@ -69,7 +69,7 @@ Bạn có thể nghĩ rằng nếu mình đặt `ng-content` hai lần ở trên
 
 Khi nhìn vào kết quả render, chúng ta sẽ thấy chỉ có `content 2` là được hiển thị với label mà chúng ta truyền vào. Như vậy nếu sử dụng nhiều lần `ng-content` sẽ dẫn đến kết quả có thể không như chúng ta mong muốn. Điều này là hoàn toàn bình thường, giống như bao thẻ html khác như `header`, chúng ta chỉ có duy nhất 1 `slot` để hiển thị. Vậy nên đối với `ng-content` ở dạng trên, chúng ta chỉ nên có một tag duy nhất.
 
-![multiple ng-content](assets/ng100doc-d013-multiple-ng-content.png)
+![multiple ng-content](https://user-images.githubusercontent.com/29374426/235444477-549b737d-7323-4878-b1a8-cb40bfae94e7.png)
 
 ### ng-content và selector trong angular
 
