@@ -265,7 +265,7 @@ const users$ = new Observable<User>((observer) => {
 users$.pipe(scan((acc, curr) => acc + curr.postCount, 0)).subscribe(observer);
 ```
 
-![RxJS scan](assets/rxjs-scan.png)
+![RxJS scan](https://user-images.githubusercontent.com/29374426/235444736-946e5d87-86e9-4a7d-ac7a-f0b6d0a28e62.png)
 
 ### reduce trong RxJS
 
@@ -277,7 +277,7 @@ Operator này khá giống `scan` là nó sẽ reduce value overtime, nhưng nó
 users$.pipe(reduce((acc, curr) => acc + curr.postCount, 0)).subscribe(observer);
 ```
 
-![RxJS reduce](assets/rxjs-reduce.png)
+![RxJS reduce](https://user-images.githubusercontent.com/29374426/235444776-f47d6694-811e-4346-b66e-4284ad7e8e27.png)
 
 ### toArray trong RxJS
 
@@ -317,7 +317,7 @@ const subscribe = buffer$.subscribe((val) =>
 "Buffered Values: "[(2, 3, 4, 5, 6)];
 ```
 
-![RxJS buffer](assets/rxjs-buffer.png)
+![RxJS buffer](https://user-images.githubusercontent.com/29374426/235444847-ade31f71-5b4b-4c9d-88a2-0020e968a1f3.png)
 
 ### bufferTime trong RxJS
 
@@ -345,7 +345,7 @@ const bufferTimeSub = bufferTime.subscribe(
 ...
 ```
 
-![RxJS bufferTime](assets/rxjs-bufferTime.png)
+![RxJS bufferTime](https://user-images.githubusercontent.com/29374426/235444887-65cc1a41-6ce1-440f-9ed5-935ba27ce566.png)
 
 ## Lời kết
 
