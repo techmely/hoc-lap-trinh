@@ -25,7 +25,8 @@ position: 9
 **TS** là một **superset** của **JavaScript** (**JS**). Khi các bạn cài đặt **TS** vào hệ thống của mình, các bạn sẽ có quyền truy xuất đến được 1 **Command Line Interface** (**CLI**) gọi là **TypeScript Compiler** (`tsc`). Nhiệm vụ của `tsc` chính là _compile_ code **TS** về **JS** để trình duyệt (hoặc runtime environment như **NodeJS**) có thể hiểu và xử lý được.
 
 Để có cái nhìn bao quát hơn về **superset**, các bạn xem hình sau:
-![TypeScript Graphics](assets/typescript-graphics.png)
+
+![TypeScript là gì](https://user-images.githubusercontent.com/29374426/235444312-856b355a-2f8e-4c3e-8529-d0fc8bb7bc9d.png)
 
 Theo như hình minh hoạ thì **TS** = **JS** plus (+) **something else**.
 
