@@ -169,7 +169,8 @@ source.pipe(map((user) => user.id)).subscribe(observer);
 
 Cách dùng map này _khá giống_ cách dùng map của array ở trên phải không???
 
-![RxJS map](assets/rxjs-map.png)
+![RxJS map là gì](https://user-images.githubusercontent.com/29374426/235444583-46a8bb55-532d-4e9d-9080-aef08a3fa0e2.png)
+
 
 ### pluck trong RxJS
 
@@ -183,7 +184,7 @@ import { pluck } from "rxjs/operators";
 source.pipe(pluck("id")).subscribe(observer);
 ```
 
-![RxJS pluck](assets/rxjs-pluck.png)
+![RxJS pluck](https://user-images.githubusercontent.com/29374426/235444620-6ca1e03e-4f18-472a-b38d-81758baf2e33.png)
 
 ### mapTo trong RxJS
 
@@ -213,7 +214,7 @@ hover$.subscribe(observer);
 
 Giờ đây chúng ta đã có một stream `hover$` để biết được khi nào chúng ta in/out ở một element.
 
-![RxJS mapTo](assets/rxjs-mapTo.png)
+![RxJS mapTo](https://user-images.githubusercontent.com/29374426/235444662-4a4f4dd6-f1b0-4b64-95f6-4662da2a3df8.png)
 
 ### scan trong RxJS
 
