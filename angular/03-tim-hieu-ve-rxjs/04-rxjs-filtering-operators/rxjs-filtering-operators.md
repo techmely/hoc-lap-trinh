@@ -18,7 +18,7 @@ position: 4
 
 Như `signature` trên thì `filter()` sẽ nhận vào 1 `predicate` là 1 `function` mà `function` này phải trả về giá trị `truthy` hoặc `falsy`. Nếu như `truthy` thì `filter()` sẽ emit giá trị của `Observable` tại thời điểm đó. Ngược lại nếu như `falsy`, thì `filter()` sẽ không emit giá trị đó. Cách hoạt động giống như `Array.prototype.filter()` vậy.
 
-![RxJS filter](assets/rxjs-filter.png)
+![RxJS filter](https://user-images.githubusercontent.com/29374426/235445019-d200c497-2676-4cd6-86a1-acbfd967ba88.png)
 
 ```typescript
 from([1, 2, 3, 4, 5, 6])
@@ -34,7 +34,7 @@ from([1, 2, 3, 4, 5, 6])
 
 Giống như cái tên, `first()` sẽ emit giá trị đầu tiên của 1 `Observable` rồi `complete`. `first()` sẽ throw `EmptyError` nếu như `Observable` tự `complete` trước khi emit 1 giá trị nào (ví dụ như `EMPTY` chẳng hạn, là 1 `Observable` rỗng. Hoặc `of()` mà không nhận vào giá trị nào).
 
-![RxJS first](assets/rxjs-first.png)
+![RxJS first](https://user-images.githubusercontent.com/29374426/235445056-b0307c8e-6a5d-4c8d-8383-d44d8c9ab0bc.png)
 
 ```typescript
 from([1, 2, 3, 4, 5, 6])
@@ -78,7 +78,7 @@ Hoàn toàn ngược lại với `first()`, `last()` sẽ emit giá trị cuối
 - Throw `Error` nếu như **chỉ** có `predicate` và không có giá trị nào thoả điều kiện.
 - Emit `defaultValue` nếu như có `predicate` và `defaultValue` và không có giá trị nào thoả điều kiện.
 
-![RxJS last](assets/rxjs-last.png)
+![RxJS last](https://user-images.githubusercontent.com/29374426/235445100-57a3ec2b-9679-410a-9511-06b5c8203be5.png)
 
 ```typescript
 from([1, 2, 3, 4, 5, 6])
@@ -96,7 +96,7 @@ of() // an empty Observable
 
 Lại là một `operator` có `signature` khác quen thuộc. Giống như `Array.prototype.find()`, `find()` sẽ emit giá trị đầu tiên mà thoả mãn được điều kiện từ `predicate` rồi `complete`. Khác với `first()`, `find()` **phải** có `predicate` và `find()` sẽ không emit `Error` nếu như không có giá trị nào thoả mãn điều kiện.
 
-![RxJS find](assets/rxjs-find.png)
+![RxJS find](https://user-images.githubusercontent.com/29374426/235445142-a19cc2e4-4635-4428-9f89-f0bd271dcc41.png)
 
 ```typescript
 from([1, 2, 3, 4, 5, 6])
@@ -112,7 +112,7 @@ from([1, 2, 3, 4, 5, 6])
 
 Hoạt động tương tự như `first()` nhưng nghiêm ngặt hơn `first()` ở điểm `single()` sẽ throw `Error` nếu như có **NHIỀU HƠN 1** giá trị thoả điều kiện. `single()` không nhận vào `defautlValue` và sẽ emit `undefined` nếu như không có giá trị nào thoả điều kiện khi truyền vào tham số `predicate`. Phần lớn `single()` chỉ nên sử dụng khi bạn có điều kiện `predicate` cần phải thoả mãn. Nếu dùng `single()` lên 1 `Observable` emit nhiều hơn 1 giá trị, `single()` sẽ throw `Error`.
 
-![RxJS single](assets/rxjs-single.png)
+![RxJS single](https://user-images.githubusercontent.com/29374426/235445179-0804e3bf-1618-40f3-a2d9-2682ec69383a.png)
 
 ```typescript
 from([1, 2, 3]).pipe(single()).subscribe(null, console.log, null); // error: Error -> nhiều hơn 1 giá trị được emit từ from() và single() không có điều kiện gì.
@@ -132,7 +132,7 @@ from([1, 2, 3])
 
 `take()` nhận vào 1 tham số `count` để dùng cho số lần lấy giá trị được emit từ `Observable` sau đó sẽ `complete`.
 
-![RxJS take](assets/rxjs-take.png)
+![RxJS take](https://user-images.githubusercontent.com/29374426/235445224-c5566c9a-7892-4521-b042-5966a0b779b3.png)
 
 ```typescript
 from([1, 2, 3, 4])
@@ -156,7 +156,7 @@ Như các bạn cũng đã nhận ra là không có gì ngăn cản chúng ta tr
 
 `takeLast()` hoạt động giống như `take()` nhưng ngược lại với `take()` là `takeLast()` sẽ lấy `n` giá trị cuối cùng được emit từ `Observable`. Các bạn chú ý là `takeLast()` chỉ emit khi nào `Observable` gốc `complete`, nếu như `Observable` gốc là 1 _long-live_ `Observable` (ví dụ: `interval()`) thì `takeLast()` sẽ không bao giờ emit.
 
-![RxJS takeLast](assets/rxjs-takeLast.png)
+![RxJS takeLast](https://user-images.githubusercontent.com/29374426/235445251-5ea53eb0-b1f7-423e-b528-cb85556ea4c4.png)
 
 ```typescript
 from([1, 2, 3, 4])
@@ -170,7 +170,7 @@ from([1, 2, 3, 4])
 
 `takeUntil()` nhận vào 1 tham số là 1 `Observable` như là 1 `notifier` (người báo hiệu) và `takeUntil()` sẽ emit giá trị của `Observable` gốc **CHO TỚI KHI** `notifier` emit.
 
-![RxJS takeUntil](assets/rxjs-takeUntil.png)
+![RxJS takeUntil](https://user-images.githubusercontent.com/29374426/235445291-748b8d78-f01e-4da2-8fd8-ae826699c89c.png)
 
 ```typescript
 interval(1000)
