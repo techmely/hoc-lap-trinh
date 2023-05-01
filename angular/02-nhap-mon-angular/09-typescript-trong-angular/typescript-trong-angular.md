@@ -45,7 +45,7 @@ Cùng 1 đoạn code trên nhưng trong **TS** thì **TS** trước tiên sẽ _
 
 > Từ đoạn này trở xuống, mình sẽ gọi việc _tự cung cấp type_ là **infer**
 
-![TS Compilation Error](assets/ts-compilation-error.png)
+![TS Compilation Error](https://user-images.githubusercontent.com/29374426/235444381-644b3847-2e96-4e6b-bf8f-a1c52d349f98.png)
 
 > Lỗi trên là **Compilation Time Error**. Các bạn sẽ thường gặp lỗi này ở thời điểm _viết code_. Tuy nhiên, việc các bạn nhận được error ở thời điểm _viết code_ thì đó là nhờ TextEditor/IDE trợ giúp chứ trên thực tế, đoạn error trên vẫn là 1 **Compilation Time Error** nhé.
 
