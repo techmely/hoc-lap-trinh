@@ -26,6 +26,9 @@ position: 1
 
 Chào mừng các bạn đến với hướng dẫn học React-Native cho người mới bắt. Sau đây là một số chia sẻ, hướng dẫn của mình cho người mới bắt đầu tìm hiểu về React-Native. Qua đó nhằm giúp các bạn có cách nhìn tổng quát hơn và dễ dàng tìm hiểu vấn đề khi mới chập chững bước chân vào lập trình với React-Native.
 
+![Hướng dẫn học React-Native cho người mới bắt đầu](https://github.com/techmely/hoc-lap-trinh/assets/29374426/e7366619-4023-4c5f-b76e-862cd973f435)
+
+
 ## Mục tiêu hướng dẫn
 
 - Hiểu được các thành phần cơ bản của React-Native.
