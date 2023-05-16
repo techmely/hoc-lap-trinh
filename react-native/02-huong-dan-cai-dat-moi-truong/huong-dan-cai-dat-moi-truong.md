@@ -100,7 +100,9 @@ Chú ý version phiên bản glog (0.3.5) mà bạn đang sử dụng.
 ## 5. Các thành phần cơ bản của dự án
 
 Cấu trúc thư mục mà bạn nhìn thấy có thể sẽ như dưới đây (tùy version react-native hiện tại của bạn). Hình dưới đây không bao gồm một vài file bị ẩn thuộc cấu hình của react-native<br>
-![](images/first-project.jpg)
+
+![Các thành phần cơ bản của dự án react native](https://github.com/techmely/hoc-lap-trinh/assets/29374426/3c428a2d-d2f8-4eb6-ba1f-5779ed0c0262)
+
 
 - **Thư mục Android**: chứa toàn bộ source build ứng dụng Android. Chúng ta có thể mở thư mục Android bằng Android studio và chạy ứng dụng thay vì sử dụng dòng lệnh `react-native run-android` nhưng có thể ứng dụng sẽ không build mã javascript được và sẽ xuất hiện màn hình trắng trên điện thoại android.
 
