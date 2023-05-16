@@ -20,7 +20,8 @@ position: 14
 ## Inject component cha đến component con
 
 Angular application là một component tree có dạng như sau.
-![components tree](assets/components-tree.jpg)
+
+![components tree](https://github.com/techmely/hoc-lap-trinh/assets/29374426/b3bceed9-6cbd-4683-a608-79c0fbe8735b)
 
 Do Angular support DI đến tận level của từng Component, nên chúng ta hoàn toàn có thể inject parent component vào child component như ví dụ sau.
 
