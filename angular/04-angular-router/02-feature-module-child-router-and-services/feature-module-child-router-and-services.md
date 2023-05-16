@@ -82,7 +82,7 @@ export class AppModule {}
 
 Bây giờ chúng ta có thể vào app với path `article` để xem Article List.
 
-![App Feature Route](assets/day28-router-1.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/804dc221-508b-4f20-823c-487304e67af1)
 
 ## Route config redirect
 
@@ -270,11 +270,11 @@ So sánh giữa hai giải pháp:
 
 Sử dụng `paramMap` Observable:
 
-![paramMap Observable](assets/day28-router-5.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/4fcb3792-a7c7-40ab-be88-e7037bd07454)
 
 Sử dụng `paramMap` snapshot:
 
-![paramMap snapshot](assets/day28-router-6.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/ae668395-a27c-49c7-b60c-771a713aa238)
 
 Full code:
 
