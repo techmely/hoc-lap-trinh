@@ -47,7 +47,7 @@ Source code: [validators.ts](https://github.com/angular/angular/blob/10.0.x/pack
 
 ## Validate Forms
 
-Đối với form Sign In như đã đề cập từ [Day 33][day33], giả sử theo dự án yêu cầu:
+Đối với form Sign In như đã đề cập ở bài trước, giả sử theo dự án yêu cầu:
 
 - Username không được bỏ trống, có độ dài từ 6 đến 32 ký tự, chỉ chứa ký tự alphabet.
 - Password không được bỏ trống, có độ dài từ 6 đến 32 ký tự, chỉ chưa các ký tự alphabet, digit, và phải chứa ít nhất một ký tự đặc biệt trong list: `!@#$%^&*`.
@@ -101,7 +101,7 @@ Với yêu cầu trên chúng ta sẽ làm thế nào để hiển thị cho ng�
 </div>
 ```
 
-![Sign In](assets/day33-sign-in-form.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/b631f2c3-b364-42a0-ab2e-8795a70e16fa)
 
 ### Username input
 
@@ -128,7 +128,7 @@ export class SignInComponent {
 
 Chỉ với việc thêm vào một số directives có sẵn, chúng ta đã có kết quả rất khả quan. Các bạn hãy để ý phần html bị thay đổi khi typing như sau:
 
-![Sign In form state](assets/day34-sign-in-form-1.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/c7b73521-95dc-40e0-812a-034698aacfdc)
 
 Nếu chúng ta muốn hiển thị message báo lỗi tùy thuộc vào từng loại lỗi thì sao? Điều này hoàn toàn có thể giải quyết bằng cách lấy ra instance của `ngModel`, sau đó bạn có thể truy cập vào property `errors` như sau:
 
@@ -148,7 +148,7 @@ Nếu chúng ta muốn hiển thị message báo lỗi tùy thuộc vào từng 
 <pre>{{ username.errors | json }}</pre>
 ```
 
-![Sign In form errors](assets/day34-sign-in-form-2.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/7afa9638-7782-462d-b963-934fa0598137)
 
 Giờ đây chúng ta có thể sử dụng `NgIf` để hiển thị được lỗi tương ứng:
 
@@ -211,7 +211,7 @@ Nếu bạn sử dụng Angular Material như ở trên, nó sẽ check một c�
 
 Giờ đây bạn sẽ có thể có những validation giúp UX được nâng cao hơn trước đây.
 
-![Sign In form errors](assets/day34-sign-in-form-3.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/533b8e22-7ed5-44e6-8569-ca5075191f22)
 
 ### Password input
 
@@ -256,5 +256,4 @@ Trong bài học này chúng ta hiểu hơn về Angular Forms, cụ thể ở �
 
 ## Code sample
 
-- https://github.com/tieppt/100-doc-angular/tree/day34
 - https://stackblitz.com/edit/100-days-of-angular-day-34?file=src%2Fapp%2Fsign-in%2Fsign-in.component.html
