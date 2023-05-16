@@ -94,7 +94,7 @@ Trên đây chỉ là 1 ví dụ trong vô vàn ví dụ vì sao Nested Subscrip
 
 `switchMap()` là một trong những HOOs được dùng nhiều nhất trong **RxJS** cũng như trong ứng dụng **Angular**. `switchMap()` sẽ nhận vào một `projectFunction` mà sẽ nhận vào giá trị được emit từ `Outer Observable` và sẽ phải trả về 1 `Observable` (`Inner Observable`) mới. Giá trị cuối cùng của `Outer Observable` khi dùng với `switchMap()` sẽ là giá trị mà `Inner Observable` emit. Vì đây là HOO đầu tiên nên mình sẽ cố giải thích kĩ càng và đầy đủ hơn. Các bạn hình dung case sau:
 
-![RxJS switchMap](assets/rxjs-switchMap.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/ec86b60d-8097-42c7-93a6-e6372d43bc46)
 
 ```ts
 fromEvent(document, "click").pipe(
@@ -140,7 +140,7 @@ Một lưu ý nữa, khi làm việc với Http Client trong Angular chẳng h�
 
 `mergeMap()` là HOO phổ biến thứ hai sau `switchMap()`. `mergeMap()` cũng nhận vào 1 `projectFunction` mà sẽ nhận giá trị được emit từ `Outer Observable` và sẽ phải trả về 1 `Inner Observable`. Sau đó, `mergeMap()` sẽ `subscribe` `Inner Observable` này. `Outer Observable` + `mergeMap()` cuối cùng sẽ emit giá trị mà `Inner Observable` emit.
 
-![RxJS mergeMap](assets/rxjs-mergeMap.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/f0729b9a-4a95-4af4-8f41-f7c95115b456)
 
 Khác với `switchMap()`, `mergeMap()` sẽ không `unsubscribe` `Inner Observable` cũ nếu như có `Inner Observable` mới. Nói đúng hơn, `mergeMap()` sẽ giữ nhiều `Subscription`. Vì tính chất này, `mergeMap()` thích hợp khi bạn có nghiệp vụ mà không cần/được dừng `Inner Observable` nếu như `Outer Observable` có emit giá trị mới (ví dụ những nghiệp vụ liên quan đến **Write vào Database**, `switchMap()` sẽ thích hợp với **Read**).
 
@@ -172,7 +172,7 @@ Nếu bạn set `concurrent = 1` chúng ta sẽ có cách hoạt động tương
 
 Giống với `mergeMap()` và `switchMap()`, `concatMap()` cũng nhận vào 1 `projectFunction` và `projectFunction` này cũng sẽ phải trả về 1 `Inner Observable`. Khác với `mergeMap()` và `switchMap()`, `concatMap()` sẽ `subscribe` vào `Inner Observable` và sẽ **CHỜ** cho đến khi `Inner Observable` này complete thì mới `subscribe` vào `Inner Observable` tiếp theo (nếu như có `Inner Observable` tiếp theo). Chúng ta sẽ tiếp tục phân tích lại ví dụ ở trên nhé:
 
-![RxJS concatMap](assets/rxjs-concatMap.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d5f821f8-9742-48a1-8280-9054aaefd3b7)
 
 ```ts
 fromEvent(document, "click").pipe(
@@ -218,7 +218,7 @@ Lúc này, vì bản chất **eager** của `Promise`, khi được invoke là s
 
 `exhaustMap()`, cũng như 3 HOOs trên, nhận vào 1 `projectFunction` và `projectFunction` này cũng sẽ phải trả về 1 `Inner Observable`. `exhaustMap()` sẽ `subscribe` vào `Inner Observable` này và trong khi `Inner Observable` đang emit (chưa complete) giá trị của nó mà có 1 `Inner Observable` mới (do `Outer Observable` emit giá trị mới, nhớ nha các bạn 👌) thì `Inner Observable` mới này sẽ bị **BỎ QUA** hoàn toàn khi `Inner Observable` cũ chưa complete.
 
-![RxJS exhaustMap](assets/rxjs-exhaustMap.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/a6738437-f57c-4568-94a8-39bdea8e0aa4)
 
 Cách hoạt động khá khá giống với `throttle` mà chúng ta đã tìm hiểu qua. Để thấy rõ được cách hoạt động của `exhaustMap()`, chúng ta xem qua ví dụ sau:
 
@@ -284,7 +284,7 @@ fromEvent(document, "click").pipe(concatMapTo(interval(1000).pipe(take(10))));
 - `predicateFunction`: `predicateFunction` này sẽ được invoke cho mỗi giá trị mà `Source Observable` emit.
   Với tham số `predicateFunction`, `partition()` sẽ **chia** `Source Observable` thành 2 `Destination Observables`: 1 `Observable` với giá trị thoả điều kiện của `predicateFunction`, `Observable` còn lại chứa giá trị không thoả điều kiện của `predicateFunction`.
 
-![RxJS partition](assets/rxjs-partition.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/92e41bc3-f850-40db-895c-28e775b76820)
 
 ```ts
 const [even$, odd$] = partition(interval(1000), (x) => x % 2 === 1);
@@ -345,7 +345,7 @@ interval(1000)
 
 `delay()` khá là dễ hiểu, chỉ là delay giá trị emit của 1 `Observable` nào đó dựa vào tham số truyền vào. Nếu như tham số truyền vào là `Number`, thì `delay()` sẽ chạy 1 timer với khoảng thời gian là tham số, sau đó sẽ emit giá trị của `Observable`. Nếu như tham số truyền vào là `Date`, thì `delay()` sẽ **hoãn** giá trị emit tới khi thời gian hiện tại bằng với `Date` được truyền vào.
 
-![RxJS delay](assets/rxjs-delay.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/7eefbe9d-4b05-43b8-8874-9334de3eac12)
 
 ```ts
 fromEvent(document, "click").pipe(delay(1000)).subscribe(console.log);
@@ -360,7 +360,7 @@ fromEvent(document, "click").pipe(delay(1000)).subscribe(console.log);
 
 `delayWhen()` tính chất hoạt động giống như `delay()` nhưng thay vì truyền vào khoảng thời gian `Number` hoặc ngày `Date`, thì chúng ta truyền vào 1 function mà trả về 1 `Observable`. `delayWhen()` sẽ **hoãn** emit giá trị của `Source Observable` cho đến khi `Observable` truyền vào emit.
 
-![RxJS delayWhen](assets/rxjs-delayWhen.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/1a154f8c-c665-4ff2-ace4-08443fb2a28f)
 
 ```ts
 fromEvent(document, "click")
@@ -392,7 +392,7 @@ this.apiService
 
 `repeat()`, đúng như tên gọi, sẽ nhận vào tham số `count` và sẽ lặp lại `Source Observable` đúng với số `count` mà được truyền vào.
 
-![RxJS repeat](assets/rxjs-repeat.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/23c802e3-227a-4ce2-b9fe-7165046422bd)
 
 ```ts
 of("repeated data").pipe(repeat(3)).subscribe(console.log);
@@ -407,7 +407,7 @@ of("repeated data").pipe(repeat(3)).subscribe(console.log);
 
 `timeInterval()` dùng để đo khoảng thời gian giữa 2 lần emit của `Source Observable`. Ví dụ là tính thời gian giữa 2 lần click của người dùng. `timerInterval()` sẽ chạy timer ở thời điểm `Observable` được `subscribe`. Nghĩa là khi bắt đầu `subscribe` cho đến lúc có giá trị đầu tiên được emit, thì `timeInterval()` sẽ track được khoảng thời gian này.
 
-![RxJS timeInterval](assets/rxjs-timeInterval.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/e0257c9e-42c7-47e4-adba-a75c73af1df8)
 
 ```ts
 fromEvent(document, "click").pipe(timeInterval()).subscribe(console.log);
@@ -421,7 +421,7 @@ fromEvent(document, "click").pipe(timeInterval()).subscribe(console.log);
 
 `timeout()` nhận vào tham số giống như `delay()`, là 1 khoảng thời gian `Number` hoặc 1 ngày nào đó `Date`. `timeout()` sẽ throw error nếu như `Source Observable` không emit giá trị trong khoảng thời gian (nếu như tham số là `Number`) hoặc cho tới khi thời gian hiện tại bằng với ngày được truyền vào (nếu như tham số là `Date`).
 
-![RxJS timeout](assets/rxjs-timeout.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/0c0de336-42e2-4c28-a3cc-214a699badae)
 
 ```ts
 interval(2000).pipe(timeout(1000)).subscribe(console.log, console.error);
@@ -435,7 +435,7 @@ interval(2000).pipe(timeout(1000)).subscribe(console.log, console.error);
 
 `timeoutWith()` hoạt đột tương tự `timeout()` nhưng nhận thêm tham số thứ 2 là 1 `Observable`. Nếu như trường hợp `Source Observable` emit giá trị quá chậm so với `due` thì `timeoutWith()` thay vì throw error, `timeoutWith()` sẽ subscribe vào tham số `Observable` kia.
 
-![RxJS timeoutWith](assets/rxjs-timeoutWith.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/e72d0a33-2a51-4f70-9f6f-63da3d43d86e)
 
 #### `toPromise()` trong RxJS
 
