@@ -12,6 +12,14 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
 
+Form hay biểu mẫu là một thành phần khá quan trọng trong các hệ thống/công ty hiện nay. Ví dụ khi bạn mở một tài khoản ngân hàng, hay form đăng ký trường Đại học, hoặc kể cả là một số form các bạn cần phải điền khi đi làm ở một công ty mới chẳng hạn.
+
+Do đó các ứng dụng sẽ có thể có khá nhiều ứng dụng cần phải thiết lập chức năng Forms để có thể thu thập thông tin cần thiết của người dùng. Ví dụ như form **Sign in** dưới đây:
+
+![Template-driven Forms](https://github.com/techmely/hoc-lap-trinh/assets/29374426/e4768555-a582-4274-8fc8-e16e0869a07b)
+
+[From victorthemes](https://victorthemes.com/freebies/sign-form-template/)
+
 ## Giới thiệu
 
 Angular là một full-fledged framework, nó đã cung cấp sẵn hai giải pháp cho Forms là **Template-driven Forms** và **Reactive Forms** hay còn gọi làm **Model-driven Forms**.
@@ -142,7 +150,7 @@ export class AppModule {}
 
 Khi render chúng ta sẽ có giao diện như sau:
 
-![day33-sign-in-form](assets/day33-sign-in-form.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/b864eca3-f172-461b-b6ed-cf91b0fd8fa4)
 
 ## Tích hợp Angular Forms
 
@@ -224,7 +232,7 @@ Một thông báo khá rõ ràng, chúng ta cần phải gắn thêm `name` attr
 
 Giờ đây control của chúng ta đã được register, và mỗi khi user typing vào ô input đó thì value của form cũng sẽ update theo.
 
-![day33-sign-in-form](assets/day33-sign-in-form-2.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/30fb0f1a-8ab2-43df-a949-dae90e4de172)
 
 Thực hiện tương tự cho các control khác, chúng ta sẽ có một form hoàn chỉnh như sau:
 
@@ -265,7 +273,7 @@ Thực hiện tương tự cho các control khác, chúng ta sẽ có một form
 </form>
 ```
 
-![day33-sign-in-form](assets/day33-sign-in-form-3.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/ff997e21-68c9-4dcc-8379-c1436a6c5009)
 
 ### Event Submit vs NgSubmit
 
@@ -409,9 +417,9 @@ Nếu chúng ta thay đổi thành two-way binding, thì những gì có ở for
 </form>
 ```
 
-![day33-sign-in-form](assets/day33-sign-in-form.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/e68724d6-ad35-4977-b2ae-6bbd296d28b8)
 
-![day33-sign-in-form](assets/day33-sign-in-form-5.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/7ac18439-3085-4473-a19e-d96eaaef01b0)
 
 ## Tổng kết
 
