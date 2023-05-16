@@ -366,9 +366,7 @@ export class SignInComponent implements OnInit {
 </form>
 ```
 
-Khi render, những gì có trong model sẽ được binding vào control, nhưng control thay đổi giá trị thì không thay đổi ngược lại model, vì chúng ta mới chỉ binding một chiều:
-
-![day33-sign-in-form](assets/day33-sign-in-form-4.png)
+Khi render, những gì có trong model sẽ được binding vào control, nhưng control thay đổi giá trị thì không thay đổi ngược lại model, vì chúng ta mới chỉ binding một chiều
 
 Nếu chúng ta thay đổi thành two-way binding, thì những gì có ở form sẽ được update tương ứng lại model và ngược lại:
 
