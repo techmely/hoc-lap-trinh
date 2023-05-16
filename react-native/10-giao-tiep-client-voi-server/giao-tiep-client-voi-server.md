@@ -23,8 +23,11 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
+
 ## Giao tiếp Client vs Server
-###  RESTful API.
+
+### RESTful API.
+
 ![](images/restful.jpg)
 (nguồn internet)
 
@@ -34,55 +37,52 @@ Phần Demo này được trình bày khá rõ ràng và chi tiết trong ví d�
 
 ![](images/restful-demo.jpg)
 
-
 - File Thiết kế RestFull tổng quan: app/libs/RESTClient.js
 
 ```javascript
-import { getBaseURL } from '../configs/config';
+import { getBaseURL } from "../configs/config";
 
 let networkError = {
-    error_code: -1,
-    message: 'Network error',
-    data: {}
+  error_code: -1,
+  message: "Network error",
+  data: {},
 };
 
 export class RESTFulAPI {
+  //Định nghĩa một api lấy language từ server.
+  // Public api có sẵn tại https://api.ice5.skyx.app/get_languages
 
-    //Định nghĩa một api lấy language từ server.
-    // Public api có sẵn tại https://api.ice5.skyx.app/get_languages
-    
-    getLanguage() {
-        let api = getBaseURL() + "get_languages";
-        return this.fetchData(api);
-    }
+  getLanguage() {
+    let api = getBaseURL() + "get_languages";
+    return this.fetchData(api);
+  }
 
-    //Định nghĩa một hàm bất đồng bộ hỗ trợ các phương thức, GET, POST, PUT, DELETE (mặc định là GET)
-    async fetchData(api, method = 'GET', body) {
-        let headers = {
-            Accept: 'application/json',
-            'Content-Type': 'application/json',
-        };
-        try {
-            let response = await fetch(api, {
-                method: method,
-                headers: headers,
-                body: JSON.stringify(body)
-            });
-            let responseJson = await response.json();
-            return responseJson;
-        } catch (error) {
-            return networkError;
-        }
+  //Định nghĩa một hàm bất đồng bộ hỗ trợ các phương thức, GET, POST, PUT, DELETE (mặc định là GET)
+  async fetchData(api, method = "GET", body) {
+    let headers = {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    };
+    try {
+      let response = await fetch(api, {
+        method: method,
+        headers: headers,
+        body: JSON.stringify(body),
+      });
+      let responseJson = await response.json();
+      return responseJson;
+    } catch (error) {
+      return networkError;
     }
+  }
 }
 
 export default RESTClient = new RESTFulAPI();
-
 ```
 
 Ở đây mình định nghĩa 1 lớp để quản lý việc trao đổi, giao tiếp giữa client và server. Hàm fetchData() là một hàm bất đồng bộ hỗ trợ gọi các phương thức RESTful.
 
-Và đây là cách chúng ta gọi hàm fetchData() và định nghĩa rõ ràng 1 api truy cập để lấy danh sách ngôn ngữ. Lưu ý: Thay vì việc mình đặt trực tiếp link <https://api.ice5.skyx.app/get_languages> thì mình lại gọi hàm getBaseURL() là để sau này có thay api, thì mình không phải đi thay nhiều chỗ, chỉ cần vào config và thay đổi là hoàn tất. 
+Và đây là cách chúng ta gọi hàm fetchData() và định nghĩa rõ ràng 1 api truy cập để lấy danh sách ngôn ngữ. Lưu ý: Thay vì việc mình đặt trực tiếp link <https://api.ice5.skyx.app/get_languages> thì mình lại gọi hàm getBaseURL() là để sau này có thay api, thì mình không phải đi thay nhiều chỗ, chỉ cần vào config và thay đổi là hoàn tất.
 
 ```javascript
 getLanguage() {
@@ -90,6 +90,7 @@ getLanguage() {
     return this.fetchData(api);
 }
 ```
+
 Ví dụ gọi fetchData() với phương thức POST
 
 ```
@@ -101,7 +102,6 @@ return this.fetchData(api, 'POST', body);
 ```
 
 - Cách sử dụng RESTClient
-
 
 ```javascript
 import RESTClient from '../../../libs/RESTClient';
@@ -127,7 +127,4 @@ getLanguagesFromServer() {
 
 ```
 
-Lưu ý: Phương thức getLanguagesFromServer() nên gọi trong componentDidMount() hoặc các sự kiện sau khi constructor() hoàn tất để trách những lỗi có nguy cơ tiềm ẩn ví dụ như api nhanh quá, contrucstor chạy chưa xong và nó đi setState() thì app của bạn nó làm việc không đúng.
-
-
-
+Lưu ý: Phương thức `getLanguagesFromServer()` nên gọi trong `componentDidMount()` hoặc các sự kiện sau khi constructor() hoàn tất để trách những lỗi có nguy cơ tiềm ẩn ví dụ như api nhanh quá, `constructor` chạy chưa xong và nó đi `setState()` thì app của bạn nó làm việc không đúng.
