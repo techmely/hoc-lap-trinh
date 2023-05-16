@@ -21,7 +21,7 @@ category:
   name: "React Native"
   slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 9
+position: 1
 ---
 
 ## Chuyển đổi giữa các màn hình

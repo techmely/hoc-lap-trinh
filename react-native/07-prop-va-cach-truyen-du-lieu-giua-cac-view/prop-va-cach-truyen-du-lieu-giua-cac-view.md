@@ -21,7 +21,7 @@ category:
   name: "React Native"
   slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 7
+position: 1
 ---
 
 ## Prop và cách truyền dữ liệu giữa các View

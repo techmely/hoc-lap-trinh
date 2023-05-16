@@ -21,7 +21,7 @@ category:
   name: "React Native"
   slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 6
+position: 1
 ---
 
 Dưới đây là code demo những component cơ bản thường sử dụng.

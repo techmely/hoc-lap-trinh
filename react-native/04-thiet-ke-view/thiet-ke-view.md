@@ -21,7 +21,7 @@ category:
   name: "React Native"
   slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 4
+position: 1
 ---
 
 Sau đây là một đoạn code Demo về Style của ứng dụng React-Native.
