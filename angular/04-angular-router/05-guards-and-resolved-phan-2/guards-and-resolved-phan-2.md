@@ -186,7 +186,7 @@ export class CanLeaveEditGuard implements CanDeactivate<ArticleEditComponent> {
 }
 ```
 
-![CanDeactivate Guard](assets/day31-router-01.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/69ba2cf6-7bc5-48de-a0aa-4c2e4e0b8f58)
 
 Để tăng tính reuse của guard, chúng ta có thể sử dụng implement interface như sau.
 
@@ -304,7 +304,7 @@ export class ArticleEditComponent implements OnInit, CheckDeactivate {
 
 Full code: https://stackblitz.com/edit/angular-100-days-of-code-day-31-02?file=src%2Fapp%2Farticle%2Farticle-edit%2Farticle-edit.component.ts
 
-![CanDeactivate with ConfirmDialog](assets/day31-router-02.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/113399e7-343f-4995-bce6-2672d098f0e7)
 
 ### CanLoad
 
@@ -377,7 +377,7 @@ export class CanLoadAdminGuard implements CanLoad {
 }
 ```
 
-![CanLoad Guard](assets/day31-router-03.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/19b5adfd-4de0-40db-bb2e-a1dde2933b1b)
 
 ## Lời kết
 
