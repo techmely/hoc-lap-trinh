@@ -38,7 +38,8 @@ Overview từ https://angular.io/guide/reactive-forms#overview-of-reactive-forms
 
 Ví dụ như form **Sign in** chúng ta đã quen thuộc trong những ngày qua, làm thế nào để chúng ta tạo ra được một form như thế?
 
-![Forms](assets/sign-form-template.jpg)
+![Sign In Reactive Forms Component](https://github.com/techmely/hoc-lap-trinh/assets/29374426/fbb9a39e-e723-4168-a00b-e8af3048f049)
+
 [From victorthemes](https://victorthemes.com/freebies/sign-form-template/)
 
 Chúng ta sẽ tạo mới một component để tiến hành bài học:
@@ -90,7 +91,7 @@ Component của chúng ta sẽ có template như form từ những ngày đã qu
 
 Sau khi khởi chạy ứng dụng với lệnh `ng serve` bạn có thể visit trang web tại địa chỉ http://localhost:4200/sign-in-rf.
 
-![day35-sign-in-form](assets/day35-sign-in-form.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/6e363bc6-0bc0-4cd3-9227-e1bdf8bb8b2f)
 
 ## Integrate Angular Forms
 
@@ -176,7 +177,7 @@ export class SignInRfComponent implements OnInit {
 </form>
 ```
 
-![day35-sign-in-form Reactive Forms](assets/day35-sign-in-form-01.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/00eaf0f5-5732-4833-94ef-466e9d758bfb)
 
 Như vậy, chỉ với một vài bước đơn giản, các bạn đã có thể có được form ưng ý.
 
@@ -254,5 +255,4 @@ Trong bài này chúng ta đã tìm hiểu một số concept cơ bản về Ang
 
 ## Code sample
 
-- https://github.com/tieppt/100-doc-angular/tree/day35
 - https://stackblitz.com/edit/100-days-of-angular-day-35
