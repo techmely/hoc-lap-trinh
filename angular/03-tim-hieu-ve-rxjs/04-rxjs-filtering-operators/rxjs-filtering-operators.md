@@ -188,7 +188,8 @@ interval(1000)
 
 `takeWhile()` hoạt động tương tự `takeUntil()` nhưng thay vì nhận vào 1 `notifier` thì `takeWhile()` nhận vào 1 `predicate`. Nhiều người sẽ sử dụng `takeWhile()` và `takeUntil()` thay đổi qua lại nhưng `takeWhile()` hoạt động rất khác với `takeUntil()`. Các bạn xem qua 2 bài post trên group về vấn đề này nhé: [post 1](https://www.facebook.com/groups/AngularVietnam/permalink/816969675468552/) và [post 2](https://www.facebook.com/groups/AngularVietnam/permalink/845798295919023/)
 
-![RxJS takeWhile](assets/rxjs-takeWhile.png)
+![RxJS takeWhile](https://github.com/techmely/hoc-lap-trinh/assets/29374426/52288fac-90a1-486d-ab54-8e0a022d7b67)
+
 
 ```typescript
 interval(1000)
@@ -204,7 +205,8 @@ interval(1000)
 
 `skip()` hoạt động tương tự như `take()` nhưng mang tính chất ngược lại so với `take()`. Như `take()` là mình sẽ emit `n` giá trị ban đầu, còn `skip()` là mình sẽ **bỏ qua** `n` giá trị ban đầu.
 
-![RxJS skip](assets/rxjs-skip.png)
+![RxJS skip](https://github.com/techmely/hoc-lap-trinh/assets/29374426/93fa1414-29ec-4397-ba04-d0d13f3b300b)
+
 
 ```typescript
 from([1, 2, 3, 4])
@@ -218,7 +220,7 @@ from([1, 2, 3, 4])
 
 `skipUntil()` hoạt động tương tự `takeUntil()` và mang tính chất giống với `skip()`.
 
-![RxJS skipUntil](assets/rxjs-skipUntil.png)
+![RxJS skipUntil](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d3997c4f-2f71-4d10-97b6-090ea58f985d)
 
 ```typescript
 interval(1000)
@@ -232,7 +234,7 @@ interval(1000)
 
 `skipWhile()` hoạt động tương tự `takeWhile()` và mang tính chất giống với `skip()`
 
-![RxJS skipWhile](assets/rxjs-skipWhile.png)
+![RxJS skipWhile](https://github.com/techmely/hoc-lap-trinh/assets/29374426/3fad0bf7-0352-4e96-844c-ec53ebb9eb26)
 
 ```typescript
 interval(1000)
@@ -315,7 +317,7 @@ Chúng ta còn 8 `operators` nữa. Tuy nhiên, 8 `operators` này đi theo cặ
 
 > `throttle` hoạt động giống nhu `throttleTime` nhưng thay vì truyền vào `duration` thì `throttle` nhận vào 1 `Observable` tượng trưng cho `durationSelector`. Khi `durationSelector` này emit (hoặc complete) thì `timer` sẽ ngưng, và `throttle` sẽ chờ giá trị tiếp theo của `Observable` gốc và quá trình này được lặp lại.
 
-![RxJS throttleTime](assets/rxjs-throttleTime.png)
+![RxJS throttleTime](https://github.com/techmely/hoc-lap-trinh/assets/29374426/61c28441-da7a-4a26-9fce-9ec8034810f1)
 
 ```typescript
 fromEvent(document, "mousemove")
@@ -336,7 +338,7 @@ fromEvent(document, "mousemove")
 
 > `debounce()` hoạt động giống như `debounceTime()` nhưng thay vì truyền vào `dueTime` thì `debounce` nhận vào 1 `Observable` tượng trưng cho `durationSelector`. `timer` của `debounce` sẽ hoạt động dựa trên `durationSelector` này thay vì `dueTime`
 
-![RxJS debounceTime](assets/rxjs-debounceTime.png)
+![RxJS debounceTime](https://github.com/techmely/hoc-lap-trinh/assets/29374426/275730b0-e142-452e-a6a9-3b839fb1af83)
 
 ```typescript
 this.filterControl.valueChanges.pipe(debounceTime(500)).subscribe(console.log); // output: type "abcd" rồi dừng 500ms -> 'abcd'
@@ -351,7 +353,7 @@ Vì cách hoạt động như trên, `debounceTime()` được dùng phổ biế
 
 `auditTime()` nhận vào 1 tham số `duration` có đơn vị là milliseconds. `auditTime()` hoạt động tương tự `throttleTime()` với `{trailing: true}`. Nghĩa là sau khi `timer` chạy và chạy xong `duration`, `auditTime()` sẽ emit giá trị gần nhất mà `Observable` gốc emit.
 
-![RxJS auditTime](assets/rxjs-auditTime.png)
+![RxJS auditTime](https://github.com/techmely/hoc-lap-trinh/assets/29374426/de000a1d-fa39-4b28-b34c-73293b86dbed)
 
 ```typescript
 fromEvent(document, "click").pipe(auditTime(1000)).subscribe(console.log); // output: click - wait 1s -> MouseEvent {} -click  wait 1s (trong 1s, click 10 times) -> MouseEvent {} -> click wait 1s -> MouseEvent {}
@@ -364,7 +366,7 @@ fromEvent(document, "click").pipe(auditTime(1000)).subscribe(console.log); // ou
 
 `sampleTime()` nhận vào 1 tham số là `period` có đơn vị là millisecond. Khi `Observable` gốc được subscribe, `timer` của `sampleTime()` sẽ chạy ngay lập tức và cứ sau mỗi `period`, `sampleTime()` sẽ emit giá trị gần nhất của `Observable` gốc.
 
-![RxJS sampleTime](assets/rxjs-sampleTime.png)
+![RxJS sampleTime](https://github.com/techmely/hoc-lap-trinh/assets/29374426/1c947bf7-68a1-4110-b1a8-048cf8695403)
 
 ```typescript
 fromEvent(document, "click").pipe(sampleTime(1000)).subscribe(console.log); // click - wait 1s -> MouseEvent {}
@@ -372,9 +374,7 @@ fromEvent(document, "click").pipe(sampleTime(1000)).subscribe(console.log); // c
 
 Cả 4 `operators` này có phần hoạt động khá giống nhau ngoại trừ `debounceTime` là hơi khác biệt. Mình có 1 diagram để mô tả sự khác biệt của 4 loại `operators` này
 
-![RxJS difference](assets/rxjs-debounce-audit-sample-throttle.png)
-
-_credit: [https://dev.to/kosich/debounce-vs-throttle-vs-audit-vs-sample-difference-you-should-know-1f21](https://dev.to/kosich/debounce-vs-throttle-vs-audit-vs-sample-difference-you-should-know-1f21)_
+![RxJS difference](https://github.com/techmely/hoc-lap-trinh/assets/29374426/759f3cf9-25e8-4e6d-92d2-efff32d5fce0)
 
 ## Lời kết
 
