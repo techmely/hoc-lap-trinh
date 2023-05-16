@@ -14,7 +14,7 @@ position: 6
 
 Trong ngày đầu tiên tìm hiểu RxJS chúng ta được biết rằng, mỗi Observable có thể gửi về các message cho `Next`, `Error`, `Complete`. Và nếu như có Error được phát sinh thì Observable sẽ dừng lại. Vậy làm thế nào để chúng ta có thể catch được Error đó?
 
-![Values over time](assets/rxjs-streams.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/3e9965bf-b46a-42a5-a737-4a29b1438eb5)
 
 Trong ngày hôm nay chúng ta sẽ cùng tìm hiểu một số operators để xử lý lỗi và một số khác để làm việc với các loại điều kiện (Error Handling and Conditional Operators).
 
@@ -85,7 +85,7 @@ forkJoin([
  */
 ```
 
-![RxJS catchError](assets/rxjs-catchError.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/54dffbfb-883a-4c97-bd57-8d3aa6dc0ae1)
 
 Nếu bạn return về Observable trước đó (source Observable), chúng ta có thể tiến hành retry. Nhưng hãy thật cẩn thận vì có thể sinh ra infinite loop.
 Nếu bạn muốn retry kèm theo giới hạn về số lần, chúng ta có thể kết hợp với `take`:
@@ -142,7 +142,7 @@ of(1, 2, 3, 4, 5)
  */
 ```
 
-![RxJS retry](assets/rxjs-retry.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/88983079-53d2-4e62-9a74-c082ab9afd9d)
 
 > Lưu ý, cách hoạt động của `retry` operator khác với catch kèm theo kỹ thuật retry ở trên.
 
@@ -218,7 +218,7 @@ click$
   .subscribe(observer);
 ```
 
-![RxJS throwIfEmpty](assets/rxjs-throwIfEmpty.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/59973626-6841-4d91-9384-23bf97ebc06f)
 
 ### every trong RxJS
 
@@ -241,7 +241,7 @@ of(1, 2, 3, 4, 5, 6)
  */
 ```
 
-![RxJS every](assets/rxjs-every.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/1ca7d8ba-11a0-4fef-af74-f8ec7d071d8e)
 
 Các method của Array trong JS, có cả `every` và `some`, nếu các bạn muốn có một operator giống some ở trong RxJS thì có thể dùng `first` kèm theo predicate function. Giống như trong phần [Router của Angular](https://github.com/angular/angular/blob/10.0.x/packages/router/src/operators/check_guards.ts#L74-L76)
 
