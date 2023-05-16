@@ -7,7 +7,7 @@ keywords:
     "giới thiệu react native",
     "khoá học react native",
     "giới thiệu react native",
-    "giới thiệu jreact native cơ bản",
+    "giới thiệu react native cơ bản",
     "react native la gi",
     "tong quan ve react native",
     "gioi thieu ve ngon ngu lap trinh react native",

@@ -7,7 +7,7 @@ keywords:
     "giới thiệu react native",
     "khoá học react native",
     "giới thiệu react native",
-    "giới thiệu jreact native cơ bản",
+    "giới thiệu react native cơ bản",
     "react native la gi",
     "tong quan ve react native",
     "gioi thieu ve ngon ngu lap trinh react native",
@@ -97,25 +97,17 @@ cd node_modules/react-native/third-party/glog-0.3.5/ && ../../scripts/ios-config
 
 Chú ý version phiên bản glog (0.3.5) mà bạn đang sử dụng.
 
-## 5. Các thành phần cơ bản của dự án
+## Các thành phần cơ bản của dự án
 
 Cấu trúc thư mục mà bạn nhìn thấy có thể sẽ như dưới đây (tùy version react-native hiện tại của bạn). Hình dưới đây không bao gồm một vài file bị ẩn thuộc cấu hình của react-native<br>
 
 ![Các thành phần cơ bản của dự án react native](https://github.com/techmely/hoc-lap-trinh/assets/29374426/3c428a2d-d2f8-4eb6-ba1f-5779ed0c0262)
 
-
 - **Thư mục Android**: chứa toàn bộ source build ứng dụng Android. Chúng ta có thể mở thư mục Android bằng Android studio và chạy ứng dụng thay vì sử dụng dòng lệnh `react-native run-android` nhưng có thể ứng dụng sẽ không build mã javascript được và sẽ xuất hiện màn hình trắng trên điện thoại android.
-
 - **Thư mục IOS**: chứa toàn bộ source build ứng dụng IOS. Chúng ta có thể mở file ProjectName.xcodeproj bằng Xcode để run ứng dụng IOS thay vì sử dụng dòng lệnh `react-native run-ios`. Lần đầu có thể chạy hơi lâu nhưng những lần tiếp theo sẽ nhanh hơn việc build bằng dòng lệnh.
-
 - **Thư mục node_modules**: chứa toàn bộ các package (thư viện) cần để chạy một ứng dụng react-native.
-
 - **File package.js**: file quản lý các package nodejs đi kèm với dự án. Nếu bạn tải các dự án demo về cần dử dụng dòng lệnh `npm install` để tải toàn bộ thư viện yêu cầu của dự án về.
-
 - **File package-lock.js** file được general sau khi chạy cài đặt `npm install`
-
 - **File index.js**: file đầu tiên được binding khi chạy ứng dụng. File này sẽ đăng ký một component, component này sẽ được load lên đầu tiên khi chạy, mặc định ứng dụng sẽ đăng ký component trong App.js
-
 - **File app.json**: file config tên ứng dụng và tên hiển thị.
-
 - **File App.js** là một component mặc định có sử dụng một số Component khác như Text, View...
