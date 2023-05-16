@@ -205,7 +205,8 @@ const Styles = StyleSheet.create({
 
 Sau khi chạy Demo ta được UI như sau (run example thì click vào component)
 
-![](images/demo_component.jpg)
+![Các component thường sử dụng](https://github.com/techmely/hoc-lap-trinh/assets/29374426/4e8ae1ff-1a4e-46a8-b0bf-40701d73e1b1)
+
 
 ### View
 
