@@ -28,14 +28,13 @@ position: 1
 
 ### RESTful API.
 
-![](images/restful.jpg)
-(nguồn internet)
+![RESTful API.](https://github.com/techmely/hoc-lap-trinh/assets/29374426/7292bacd-2485-49e0-ac16-565667acfdd8)
 
 Nếu bạn không biết RESTful API là gì thì có thể đọc thêm bài viết này (<https://viblo.asia/p/thiet-ke-restful-api-GrLZD98Vlk0>) để hiểu rõ hơn về RESTful API. Đây là một trong những chuẩn giao tiếp phổ biến giữa client và server.
 
 Phần Demo này được trình bày khá rõ ràng và chi tiết trong ví dụ Example (app/modules/screens/RestFul/RestFul.js). Bạn nên chạy ví dụ trước để thấy cách hoạt động của nó. Demo bao gồm việc gọi một public api từ <https://api.ice5.skyx.app/get_languages> (GET) và hiển thị kết quả như sau:
 
-![](images/restful-demo.jpg)
+![Giao tiếp Client vs Server react native](https://github.com/techmely/hoc-lap-trinh/assets/29374426/271b6c2e-a957-4357-bec0-b13cf4ce77cd)
 
 - File Thiết kế RestFull tổng quan: app/libs/RESTClient.js
 
