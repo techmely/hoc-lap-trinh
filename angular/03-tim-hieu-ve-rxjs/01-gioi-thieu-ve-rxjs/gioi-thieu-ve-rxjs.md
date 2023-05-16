@@ -37,7 +37,8 @@ Observable tỏa sáng không chỉ bởi vì nó có thể handle nhiều value
 
 Observable có thể coi là một Array của các value theo thời gian:
 
-![Values over time](assets/rxjs-streams.gif)
+![Values over time](https://github.com/techmely/hoc-lap-trinh/assets/29374426/f306ac60-4cb7-45d9-a72c-afd6410aa8b4)
+
 
 Hiện tại Observable chưa chính thức tồn tại trong JS, nhưng bạn có thể sử dụng RxJS để có thể có những thành phần chính như `Observable`, `Observer`, `Subject`, etc. Và một loạt các `operators` đi kèm để xử lý stream được dễ dàng hơn.
 
