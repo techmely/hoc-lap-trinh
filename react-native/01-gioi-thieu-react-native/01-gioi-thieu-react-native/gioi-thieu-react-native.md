@@ -15,8 +15,8 @@ keywords:
     "code react native la gi",
   ]
 chapter:
-  name: "Giới thiệu khoá học React Native"
-  slug: "chuong-01-gioi-thieu-khoa-hoc-react-native"
+  name: "Giới thiệu react native"
+  slug: "chuong-01-gioi-thieu-react-native"
 category:
   name: "React Native"
   slug: "react-native"
@@ -49,7 +49,6 @@ Chào mừng các bạn đến với hướng dẫn học React-Native cho ngư�
   - Viết hàm thực thi các tác vụ cơ bản
   - Mảng: (duyệt mảng lấy các phần tử)
 
-- Nếu biết về css thì đó cũng là một điểm lợi thế. Bạn có thể tìm hiểu thêm tại đây <https://freetuts.net/css-la-gi-hoc-css-nhu-the-nao-327.html>
 - Hiện tại hệ điều hành Windows chỉ build được ứng dụng Android.
 - Hệ điều hành IOS có thể build được cả Android và IOS.
 - Phiên bản IOS thấp nhất mà react-native có thể hỗ trợ là IOS 8.0

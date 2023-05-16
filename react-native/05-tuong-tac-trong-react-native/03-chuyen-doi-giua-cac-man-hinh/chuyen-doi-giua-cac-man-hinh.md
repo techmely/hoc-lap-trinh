@@ -15,13 +15,13 @@ keywords:
     "code react native la gi",
   ]
 chapter:
-  name: "Chuyển đổi giữa các màn hình"
-  slug: "chuong-09-chuyen-doi-giua-cac-man-hinh"
+  name: "Tương tác trong react native"
+  slug: "chuong-05-tuong-tac-trong-react-native"
 category:
   name: "React Native"
   slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 1
+position: 3
 ---
 
 ## Chuyển đổi giữa các màn hình

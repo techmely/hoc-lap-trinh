@@ -16,7 +16,7 @@ keywords:
   ]
 chapter:
   name: "Các component thường sử dụng"
-  slug: "chuong-06-cac-component-thuong-su-dung"
+  slug: "chuong-04-cac-component-thuong-su-dung"
 category:
   name: "React Native"
   slug: "react-native"

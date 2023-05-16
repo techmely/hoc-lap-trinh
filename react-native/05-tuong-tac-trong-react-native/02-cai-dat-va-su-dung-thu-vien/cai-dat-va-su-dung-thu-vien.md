@@ -15,13 +15,13 @@ keywords:
     "code react native la gi",
   ]
 chapter:
-  name: "Cài đặt và sử dụng thư viện"
-  slug: "chuong-08-cai-dat-va-su-dung-thu-vien"
+  name: "Tương tác trong react native"
+  slug: "chuong-05-tuong-tac-trong-react-native"
 category:
   name: "React Native"
   slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 1
+position: 2
 ---
 
 ## Cài đặt thư viện

@@ -15,8 +15,8 @@ keywords:
     "code react native la gi",
   ]
 chapter:
-  name: "Component trong React Native"
-  slug: "chuong-03-component-trong-react-native"
+  name: "Component trong react native"
+  slug: "chuong-02-component-trong-react-native"
 category:
   name: "React Native"
   slug: "react-native"

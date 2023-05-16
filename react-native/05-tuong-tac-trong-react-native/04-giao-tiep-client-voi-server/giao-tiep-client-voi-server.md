@@ -1,9 +1,9 @@
 ---
-title: "Giao tiếp Client với Server"
+title: "Giao tiếp Client với Server trong React Native"
 description: ""
 keywords:
   [
-    "gioi thieu react native",
+    "Giao tiếp Client với Server",
     "giới thiệu react native",
     "khoá học react native",
     "giới thiệu react native",
@@ -15,13 +15,13 @@ keywords:
     "code react native la gi",
   ]
 chapter:
-  name: "Giao tiếp Client với Server"
-  slug: "chuong-10-giao-tiep-client-voi-server"
+  name: "Tương tác trong react native"
+  slug: "chuong-05-tuong-tac-trong-react-native"
 category:
   name: "React Native"
   slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 1
+position: 4
 ---
 
 ## RESTful API là gì
@@ -30,7 +30,7 @@ position: 1
 
 Nếu bạn không biết RESTful API là gì thì có thể đọc thêm bài viết này (<https://viblo.asia/p/thiet-ke-restful-api-GrLZD98Vlk0>) để hiểu rõ hơn về RESTful API. Đây là một trong những chuẩn giao tiếp phổ biến giữa client và server.
 
-Phần Demo này được trình bày khá rõ ràng và chi tiết trong ví dụ Example (app/modules/screens/RestFul/RestFul.js). Bạn nên chạy ví dụ trước để thấy cách hoạt động của nó. Demo bao gồm việc gọi một public api từ <https://api.ice5.skyx.app/get_languages> (GET) và hiển thị kết quả như sau:
+Phần Demo này được trình bày khá rõ ràng và chi tiết trong ví dụ. Bạn nên chạy ví dụ trước để thấy cách hoạt động của nó. Demo bao gồm việc gọi một public api từ <https://api.ice5.skyx.app/get_languages> (GET) và hiển thị kết quả như sau:
 
 ![Giao tiếp Client vs Server react native](https://github.com/techmely/hoc-lap-trinh/assets/29374426/271b6c2e-a957-4357-bec0-b13cf4ce77cd)
 

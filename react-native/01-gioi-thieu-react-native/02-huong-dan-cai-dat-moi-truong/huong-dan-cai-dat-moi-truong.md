@@ -15,19 +15,23 @@ keywords:
     "code react native la gi",
   ]
 chapter:
-  name: "Hướng dẫn cài đặt môi trường"
-  slug: "chuong-02-huong-dan-cai-dat-moi-truong"
+  name: "Giới thiệu react native"
+  slug: "chuong-01-gioi-thieu-react-native"
 category:
   name: "React Native"
   slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 1
+position: 2
 ---
 
 ## Hướng dẫn cài đặt môi trường react-native trên hệ điều hành Windows
 
 - **Bước 1**: Cài đặt Chocolatey từ <https://chocolatey.org> (Chocolatey là trình quản lý các gói thư viện của Windows)
-- **Bước 2**: Cài đặt Nodejs Java và Python 2 thông qua Chocolatey sử dụng dòng lệnh sau (dùng cmd để chạy lệnh này): `choco install -y nodejs.install python2 jdk8`
+- **Bước 2**: Cài đặt Nodejs Java và Python 2 thông qua Chocolatey sử dụng dòng lệnh sau (dùng cmd để chạy lệnh này):
+
+```bash
+choco install -y nodejs.install python2 jdk8
+```
 
 - **Bước 3**: Cài đặt Android studio
 - **Bước 4**: Cài đặt SDK: Nên cài SDK Platform 23 vì mặc định react-native hiện tại sử dụng Android SDK Platform 23 để build ứng dụng
@@ -36,29 +40,33 @@ Lưu ý: Trên hệ điều hành windows chỉ có thể build ứng dụng tr�
 
 ## Hướng dẫn cài đặt môi trường react-native trên hệ điều hành MAC OS
 
-- **Bước 1**: Cài đặt Brew: Brew là trình quản lý các gói thứ viện, MACOS không tích hợp sẵn và bạn phải sử dụng terminal để cài đặt brew bằng cách chạy dòng lệnh sau. <br>
-  `{{/usr/bin/ruby -e "$(curl –fsSL https://raw.githubusercontent.com/ Homebrew/install/master/install)"}}`
-- **Bước 2**: Cài đặt Nodejs:<br>
+- **Bước 1**: Cài đặt Brew: Brew là trình quản lý các gói thứ viện, MACOS không tích hợp sẵn và bạn phải sử dụng terminal để cài đặt brew bằng cách chạy dòng lệnh sau.
+
+```bash
+/usr/bin/ruby -e "$(curl –fsSL https://raw.githubusercontent.com/ Homebrew/install/master/install)"
+```
+
+- **Bước 2**: Cài đặt Nodejs:
   `brew install node`
-- **Bước 3**: Cài đặt Watchman:<br>
+- **Bước 3**: Cài đặt Watchman:
   `brew install watchman`
-- **Bước 4**: Cài đặt react-native:<br>
+- **Bước 4**: Cài đặt react-native:
   `npm install -g react-native-cli`
 - **Bước 5**: Cài đặt Xcode: truy cập App Store trên MACOS để cài đặt Xcode.
 - **Bước 6** (option): Nếu bạn xây dựng ứng dụng android sử dụng hệ điều hành MACOS thì bạn cần cài đặt thêm các gói như JDK, Android Studio, Android SDK. (xem thêm phần cài đặt cho Windonws để hiểu rõ hơn.)
 
 ## Các IDE khuyên dùng
 
-- Code: Hiện tại mình sử dụng Visual Studio Code các bạn có thể download về và cài đặt tại <https://code.visualstudio.com/> <br> Các bạn cũng có thể sử dụng bất kỳ IDE nào các bạn thích như Sublime Text Atom, Vim Editer...
+- Code: Hiện tại mình sử dụng Visual Studio Code các bạn có thể download về và cài đặt tại <https://code.visualstudio.com/> Các bạn cũng có thể sử dụng bất kỳ IDE nào các bạn thích như Sublime Text Atom, Vim Editer...
 - Build ứng dụng:
 - IOS: sử dụng Xcode (search trên store apple nhé)
 - Android: sử dụng Android studio <https://developer.android.com/studio/>
 
-P/s: Nếu sử dụng MAC thì nên dùng Xcode để chạy ứng dụng. Bởi vì một số lý do như: Run các lần sau nhanh hơn, xem log debug mà không cần bật chức năng Debug JS Remotely và quan trọng là làm quen với một số chức năng của Xcode để lúc xảy ra lỗi fix lỗi nhanh hơn. <br> Với Android thì có một vài trở ngại khi dùng Android studio như việc run mà không dùng code react-native mới nhất, chức năng host reloading cũng khó hoạt động.
+P/s: Nếu sử dụng MAC thì nên dùng Xcode để chạy ứng dụng. Bởi vì một số lý do như: Run các lần sau nhanh hơn, xem log debug mà không cần bật chức năng Debug JS Remotely và quan trọng là làm quen với một số chức năng của Xcode để lúc xảy ra lỗi fix lỗi nhanh hơn. Với Android thì có một vài trở ngại khi dùng Android studio như việc run mà không dùng code react-native mới nhất, chức năng host reloading cũng khó hoạt động.
 
 ## Khởi tạo dự án đầu tiên
 
-- **Bước 1**: Khởi tạo dự án: mở Terminal (cmd) sau đó gõ lệnh này vào (cd vào thư mục bạn muốn tạo dự án trước)<br>
+- **Bước 1**: Khởi tạo dự án: mở Terminal (cmd) sau đó gõ lệnh này vào (cd vào thư mục bạn muốn tạo dự án trước)
   `react-native init ProjectName`
 - **Bước 2**: Truy cập vào dự án vừa tạo.
   `cd ProjectName`
@@ -66,7 +74,7 @@ P/s: Nếu sử dụng MAC thì nên dùng Xcode để chạy ứng dụng. Bở
   - IOS: `react-native run-ios`
   - Android: `react-native run-android`
 
-Khi chạy lệnh này hệ điều hành sẽ tạo một server local để build code react của bạn. Kèm theo đó là chạy các lệnh để build ứng dụng.<br>Bạn cũng có thể mở file /ios/ProjectName.xcodeproj bằng Xcode để khởi chạy ứng dụng, hoặc mở nguyên thư mục android bằng Android studio để khởi chạy ứng dụng.
+Khi chạy lệnh này hệ điều hành sẽ tạo một server local để build code react của bạn. Kèm theo đó là chạy các lệnh để build ứng dụng.Bạn cũng có thể mở file /ios/ProjectName.xcodeproj bằng Xcode để khởi chạy ứng dụng, hoặc mở nguyên thư mục android bằng Android studio để khởi chạy ứng dụng.
 
 - **Hiển thị Menu điều khiển**:
 
@@ -99,7 +107,7 @@ Chú ý version phiên bản glog (0.3.5) mà bạn đang sử dụng.
 
 ## Các thành phần cơ bản của dự án
 
-Cấu trúc thư mục mà bạn nhìn thấy có thể sẽ như dưới đây (tùy version react-native hiện tại của bạn). Hình dưới đây không bao gồm một vài file bị ẩn thuộc cấu hình của react-native<br>
+Cấu trúc thư mục mà bạn nhìn thấy có thể sẽ như dưới đây (tùy version react-native hiện tại của bạn). Hình dưới đây không bao gồm một vài file bị ẩn thuộc cấu hình của react-native
 
 ![Các thành phần cơ bản của dự án react native](https://github.com/techmely/hoc-lap-trinh/assets/29374426/3c428a2d-d2f8-4eb6-ba1f-5779ed0c0262)
 

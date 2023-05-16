@@ -15,8 +15,8 @@ keywords:
     "code react native la gi",
   ]
 chapter:
-  name: "Thiết kế View"
-  slug: "chuong-04-thiet-ke-view"
+  name: "Làm quen với react native"
+  slug: "chuong-03-lam-quen-voi-react-native"
 category:
   name: "React Native"
   slug: "react-native"

@@ -15,13 +15,13 @@ keywords:
     "code react native la gi",
   ]
 chapter:
-  name: "Kỹ thuật Debug cơ bản"
-  slug: "chuong-05-ky-thuat-debug-co-ban"
+  name: "Làm quen với react native"
+  slug: "chuong-03-lam-quen-voi-react-native"
 category:
   name: "React Native"
   slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 1
+position: 2
 ---
 
 Xây dựng ứng dụng React-Native khác với ứng dụng native là bạn không thể đặt break point rồi chạy và chờ chương trình nhảy vào vị trí mà bạn đợi và xem trạng thái hay biến lúc đó bằng bao nhiêu đang như thế nào. Thay vì vậy chương trình React-Native cho phép bạn in giá trị tại thời điểm đó và xuất ra màn hình console.

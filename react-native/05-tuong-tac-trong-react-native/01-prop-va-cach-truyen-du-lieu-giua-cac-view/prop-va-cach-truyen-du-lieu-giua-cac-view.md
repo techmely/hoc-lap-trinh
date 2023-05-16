@@ -15,8 +15,8 @@ keywords:
     "code react native la gi",
   ]
 chapter:
-  name: "Prop và cách truyền dữ liệu giữa các view"
-  slug: "chuong-06-prop-va-cach-truyen-du-lieu-giua-cac-view"
+  name: "Tương tác trong react native"
+  slug: "chuong-05-tuong-tac-trong-react-native"
 category:
   name: "React Native"
   slug: "react-native"
