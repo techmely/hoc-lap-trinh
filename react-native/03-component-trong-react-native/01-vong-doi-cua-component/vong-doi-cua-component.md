@@ -26,8 +26,7 @@ position: 1
 
 ## Vòng đời của component
 
-![](images/life-circle.png)
-<br><em>(Nguồn:: internet)</em>
+![Vòng đời của component react native](https://github.com/techmely/hoc-lap-trinh/assets/29374426/158ab286-e781-4bcb-87e5-22af5b7aa696)
 
 **Các hàm được gọi trong vòng đời của Component**
 
