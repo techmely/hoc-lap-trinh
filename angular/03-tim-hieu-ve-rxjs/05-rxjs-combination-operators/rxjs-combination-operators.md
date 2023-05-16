@@ -30,7 +30,7 @@ Nếu bạn nào đã dùng quen `Promise` qua rồi thì `forkJoin()` sẽ là 
 
 `forkJoin()` nhận vào tham số là 1 list các `Observables` theo dạng `Array` hoặc `Dictionary (Object)` (children). Khi các children `Observables` **complete** hết thì `forkJoin()` sẽ emit giá trị của các children `Observables` theo dạng `Array` hoặc `Dictionary` (tuỳ vào tham số truyền vào) rồi sau đó sẽ **complete**.
 
-![RxJS forkJoin](assets/rxjs-forkJoin.png)
+![RxJS forkJoin](https://github.com/techmely/hoc-lap-trinh/assets/29374426/057c155c-d6f7-4aba-9e5c-7aebd3f53b70)
 
 ```ts
 forkJoin([of(1), of("hello"), of({ foo: "bar" })]).subscribe(observer);
@@ -99,7 +99,7 @@ forkJoin(
 
 > Thay vì truyền vào `Array<Observable>` cho `combineLatest()` như sau: `combineLatest([obs1, obs2])`, bạn cũng có thể truyền vào mà ko cần `[]` như: `combineLatest(obs1, obs2)`. Cả 2 cách đều cho ra kết quả như nhau, tuy nhiên, **RxJS** khuyên dùng cách 1 hơn vì nó nhất quán với `forkJoin()` hơn và cũng dễ dự đoán được kết quả hơn, vì kết quả của `combineLatest()` là 1 `Array`. Vì vậy, mình chỉ đề cập đến cách dùng `combineLatest([obs1, obs2])`
 
-![RxJS combineLatest](assets/rxjs-combineLatest.png)
+![RxJS combineLatest](https://github.com/techmely/hoc-lap-trinh/assets/29374426/1a4b946c-55fc-438e-a992-617d4d605301)
 
 ```ts
 combineLatest([
@@ -306,7 +306,7 @@ zip(documentEvent("mousedown"), documentEvent("mouseup")).subscribe((e) =>
 
 `concat()` sẽ hoạt động tương tự cho **LẦN LƯỢT** từng children `Observables` cho đến khi không còn `Observable` nào thì `concat()` sẽ complete.
 
-![RxJS concat](assets/rxjs-concat.png)
+![RxJS concat](https://github.com/techmely/hoc-lap-trinh/assets/29374426/e6e6569a-58f5-41e6-ac13-66b1f99c1537)
 
 ```ts
 concat(of(4, 5, 6).pipe(delay(1000)), of(1, 2, 3)).subscribe(observer);
@@ -345,7 +345,7 @@ concat(fiveSecondTimer.pipe(repeat(3))).subscribe(observer);
 - throw error nếu 1 trong children `Observables` throw error
 - complete khi và chỉ khi tất cả children `Observables` complete.
 
-![RxJS merge](assets/rxjs-merge.png)
+![RxJS merge](https://github.com/techmely/hoc-lap-trinh/assets/29374426/044b11d4-f506-49e3-8df3-270cd35e1d78)
 
 ```ts
 merge(of(4, 5, 6).pipe(delay(1000)), of(1, 2, 3)).subscribe(observer);
@@ -471,7 +471,7 @@ Tất cả các operators trên đây đều là `static function`. Các operato
 
 `withLatestFrom()` nhận vào tham số là 1 `Observable`. `withLatestFrom()` sẽ gộp giá trị emit của **Outer Observable** với giá trị gần nhất của tham số `Observable` thành 1 `Array` rồi emit `Array` này.
 
-![RxJS withLatestFrom](assets/rxjs-withLatestFrom.png)
+![RxJS withLatestFrom](https://github.com/techmely/hoc-lap-trinh/assets/29374426/b162a03e-2647-4959-986f-6d97d8e9395d)
 
 ```ts
 fromEvent(document, "click")
@@ -500,7 +500,7 @@ this.apiService.getSomething().pipe(withLatestFrom(this.currentLoggedInUser$));
 
 `startWith()` là 1 operator rất dễ hiểu. `startWith()` nhận vào 1 list các tham số. `startWith()` sẽ làm cho cả `Observable` emit giá trị của `startWith()` trước rồi mới emit đến giá trị của **Outer Observable**. `startWith()` sẽ emit giá trị ngay lặp tức mà không phụ thuộc vào việc **Outer Observable** có emit hay là chưa.
 
-![RxJS startWith](assets/rxjs-startWith.png)
+![RxJS startWith](https://github.com/techmely/hoc-lap-trinh/assets/29374426/147540b7-b77e-450a-89b7-f87bf2390c92)
 
 ```ts
 of("world").pipe(starWith("Hello")).subscribe(observer);
@@ -530,7 +530,7 @@ this.books$ = this.apiService.getBooks().pipe(startWith([]));
 
 `endWith()` cũng nhận vào 1 list các tham số như `startWith()` nhưng cách hoạt động thì ngược lại với `startWith()`. Một điểm khác biệt lớn là `endWith()` chỉ emit giá trị của `endWith()` khi **Outer Observable** complete mà thôi.
 
-![RxJS endWith](assets/rxjs-endWith.png)
+![RxJS endWith](https://github.com/techmely/hoc-lap-trinh/assets/29374426/aa74eb94-b476-4a05-b40c-33cf08c7d486)
 
 ```ts
 of("hi", "how are you?", "sorry, I have to go now")
@@ -549,7 +549,7 @@ of("hi", "how are you?", "sorry, I have to go now")
 
 `pairwise()` là 1 operator rất thú vị và rất kén nghiệp vụ. `pairwise()` sẽ gộp giá trị emit gần nhất và giá trị đang được emit của **Outer Observable** thành 1 `Array` (1 cặp giá trị) và emit `Array` này.
 
-![RxJS pairwise](assets/rxjs-pairwise.png)
+![RxJS pairwise](https://github.com/techmely/hoc-lap-trinh/assets/29374426/189ffa1f-82d2-4bae-87f5-5dac578787f2)
 
 ```ts
 from([1, 2, 3, 4, 5])
