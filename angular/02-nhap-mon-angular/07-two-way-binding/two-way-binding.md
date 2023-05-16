@@ -177,7 +177,7 @@ Chỉ với việc sử dụng suffix `change` cho property `checked` chúng ta 
 <app-toggle [(checked)]="checked"></app-toggle>
 ```
 
-![Toggle](assets/100doc-day9.gif)
+![Toggle](https://github.com/techmely/hoc-lap-trinh/assets/29374426/8275610a-f3a2-43ad-b777-1aa43882fa2e)
 
 ## Lời kết
 
