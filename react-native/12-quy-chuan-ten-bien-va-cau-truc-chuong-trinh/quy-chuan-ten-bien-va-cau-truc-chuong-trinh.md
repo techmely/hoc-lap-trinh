@@ -7,7 +7,7 @@ keywords:
     "giới thiệu react native",
     "khoá học react native",
     "giới thiệu react native",
-    "giới thiệu jreact native cơ bản",
+    "giới thiệu react native cơ bản",
     "react native la gi",
     "tong quan ve react native",
     "gioi thieu ve ngon ngu lap trinh react native",
@@ -21,7 +21,7 @@ category:
   name: "React Native"
   slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 1
+position: 12
 ---
 
 Khi bạn tìm hiểu được kha khá các vấn đề về React-Native và code được một vài chương trình đơn giản thì cũng là lúc chúng ta nên xem lại các quy chuẩn thiết kế, cũng như quy chuẩn về tên biến để:
@@ -34,7 +34,7 @@ Khi bạn tìm hiểu được kha khá các vấn đề về React-Native và c
 
 Mình xin dưa ra một số quy chuẩn cơ bản như sau:
 
-### Tên biến và hàm:
+## Tên biến và hàm
 
 - **Một vài quy chuẩn tên biến mà mình cần tuân thủ như**:
 
@@ -66,11 +66,9 @@ Mình xin dưa ra một số quy chuẩn cơ bản như sau:
   - onPressNegativeAction(){}
   - ....
 
-### Cấu trúc chương trình:
+## Cấu trúc chương trình
 
 Sau những dự án và tìm hiểu trên mạng. Mình có đưa ra mô hình cấu trúc thư mục dự án như sau
-
-!(images/project-structure.jpg)
 
 Toàn bộ source code của chương trình sẽ được đặt trong thư mục app:
 
@@ -87,11 +85,6 @@ Toàn bộ source code của chương trình sẽ được đặt trong thư m�
   - .....
 - **models** là thư mục chứa các model do mình định nghĩa, có thể là định nghĩa các đối tượng hoặc các loại của đối tượng
 - **modules** là thư mục chứa các module do mình định nghĩa hoặc tùy biến lại. Trong đó bao gồm:
-
   - **screens** - module chứa toàn bộ xử lý màn hình của ứng dụng
   - **views** - module chứa toàn bộ view đã được custom.
   - Và một số module mình muốn chỉnh sửa từ thư viện, thì có thể thêm vào đây để tùy biến.
-
-  ### Đến đây là kết thúc bài hướng dẫn của mình rồi. Hy vọng bài hướng dẫn sẽ giúp bạn có được những cái nhìn tổng quan về React-Native để xây dựng một ứng dụng cho riêng mình.
-
-  ### P/S: Nếu có thời gian mình sẽ viết tiếp về cách xây dựng 1 ứng dụng đọc báo hoàn chỉnh trên Android và iOS. Cho Star để mình lấy động lực nhé.

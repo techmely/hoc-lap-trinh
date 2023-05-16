@@ -21,10 +21,10 @@ category:
   name: "React Native"
   slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 1
+position: 7
 ---
 
-## Prop và cách truyền dữ liệu giữa các View (Screen)
+## Prop và cách truyền dữ liệu giữa các View
 
 Tạo file App.js như sau
 
@@ -188,7 +188,7 @@ const Styles = StyleSheet.create({
 });
 ```
 
-Trong Example mình đã gộp style lại và đưa nó ra 1 file riêng là styles.js để dễ quản lý (demo trên có sử dụng hình ảnh nên bạn phải copy hình ảnh trong example - Example/app/assets/images).
+Trong Example mình đã gộp style lại và đưa nó ra 1 file riêng là `styles.js` để dễ quản lý
 
 Ở ví dụ trên ta demo việc truyền dữ liệu giữa 2 component thông qua props
 
@@ -247,5 +247,4 @@ onPressItem() {
 Một vài lưu ý khi sử dụng props
 
 - Không thay đổi dữ liệu trong prop ở bên nhận.
-- Nên chia mỗi thành phần riêng biệt ra mỗi component riêng và giao tiếp với component chính thông qua props để giảm thiểu việc phải vẽ lại nguyên toàn bộ, nhất là những component có chứa các timmer (setInterval(), setTimeOut()...).
-- ...
+- Nên chia mỗi thành phần riêng biệt ra mỗi component riêng và giao tiếp với component chính thông qua props để giảm thiểu việc phải vẽ lại nguyên toàn bộ, nhất là những component có chứa các `timmer` (`setInterval()`, `setTimeOut()`...).

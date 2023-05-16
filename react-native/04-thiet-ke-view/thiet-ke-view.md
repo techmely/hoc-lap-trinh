@@ -1,13 +1,13 @@
 ---
 title: "Thiết kế View"
-description: "Sau đây là một đoạn code Demo về Style của ứng dụng React-Native. Code có sẵn trong Example (Example/app/modules/screens/Home/StyleDemo)"
+description: "Sau đây là một đoạn code Demo về Style của ứng dụng React-Native. Code có sẵn trong Example"
 keywords:
   [
     "gioi thieu react native",
     "giới thiệu react native",
     "khoá học react native",
     "giới thiệu react native",
-    "giới thiệu jreact native cơ bản",
+    "giới thiệu react native cơ bản",
     "react native la gi",
     "tong quan ve react native",
     "gioi thieu ve ngon ngu lap trinh react native",
@@ -21,10 +21,10 @@ category:
   name: "React Native"
   slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 1
+position: 4
 ---
 
-Sau đây là một đoạn code Demo về Style của ứng dụng React-Native. Code có sẵn trong Example (Example/app/modules/screens/Home/StyleDemo)
+Sau đây là một đoạn code Demo về Style của ứng dụng React-Native.
 
 ```javascript
 export class StyleDemo extends React.Component {
@@ -58,7 +58,9 @@ Giống như một ứng dụng web cơ bản, React-Native sử dụng một s�
 
 Trong ví dụ thư mục Home tôi đã chia phần Style qua một file khác để dễ quản lý (Từ các ví dụ sau trở đi, tôi sẽ chia phần style này sang 1 file khác để dễ quản lý). Bạn có thể vào đó, thử thay đổi, xóa sửa để biết được thuộc tính nào dùng để làm gì nhé. Làm nhiều phần này thì sẽ có kinh nghiệm thiết kế đẹp thôi.
 
+<content-warning>
 Một vài lưu ý:
 
 - Bạn nên biết thuộc tính nào dùng để làm gì, sử dụng tối ưu để hiệu quả nhất (Có thể copy code của ai đó nhưng nên hiểu dòng style nào làm việc gì).
 - Không nên quá rườm rà code ngắn nhưng đạt được yêu cầu là tốt nhất.
+- </content-warning>

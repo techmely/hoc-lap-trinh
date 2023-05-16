@@ -7,7 +7,7 @@ keywords:
     "giới thiệu react native",
     "khoá học react native",
     "giới thiệu react native",
-    "giới thiệu jreact native cơ bản",
+    "giới thiệu react native cơ bản",
     "react native la gi",
     "tong quan ve react native",
     "gioi thieu ve ngon ngu lap trinh react native",
@@ -21,20 +21,22 @@ category:
   name: "React Native"
   slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 1
+position: 9
 ---
 
 ## Chuyển đổi giữa các màn hình
 
 Một ứng dụng bạn phát triển không thể chỉ có một màn hình. Vì vậy bạn phải biết cách chuyển đổi qua lại giữa các màn hình. Hiện tại mình sử dụng thư viện react-navigation (v.2.18.1) để chuyển đổi giữa các màn hình. Các bạn có thể tìm hiểu thêm về thư viện này tại (<https://reactnavigation.org>)
 
-- Cài đặt thư viện:
-  Vào dự án bạn tạo và chạy dòng lệnh sau để cài đặt thư viện
-  `npm install --save react-navigation`
+**Cài đặt thư viện**
 
-- Sử dụng thư viện:
+Vào dự án bạn tạo và chạy dòng lệnh sau để cài đặt thư viện
 
-**- Xây dựng cấu trúc ứng dụng**: Để bạn hiểu rõ hơn về phần demo sau bạn vui lòng xem lại file index.js trong Example (Example/app/index.js). Dưới đây là phần tạo cấu trúc sườn của ứng dụng dựa vào StackNavigator của thư viện react-navigation.
+`npm install --save react-navigation`
+
+**Sử dụng thư viện**
+
+Xây dựng cấu trúc ứng dụng: Dưới đây là phần tạo cấu trúc sườn của ứng dụng dựa vào StackNavigator của thư viện react-navigation.
 
 ```javascript
 import React, { Component } from "react";
@@ -83,7 +85,9 @@ const styles = StyleSheet.create({
 });
 ```
 
-Như bạn thấy ở trên ta khai báo 1 ứng dụng có 4 màn hình HOME, STYLES, COMPONENT, PROPS. Mặc định màn hình nào ở trên cùng sẽ được xuất hiện đầu tiên. <br>Nội dung mỗi màn hình có dạng:
+Như bạn thấy ở trên ta khai báo 1 ứng dụng có 4 màn hình HOME, STYLES, COMPONENT, PROPS. Mặc định màn hình nào ở trên cùng sẽ được xuất hiện đầu tiên.
+
+Nội dung mỗi màn hình có dạng:
 
 ```js
 HOME: {
@@ -91,7 +95,9 @@ HOME: {
 }
 ```
 
-Trong đó Screens.Home là class được import từ module screens.<br>Lưu ý dòng lệnh:
+Trong đó Screens.Home là class được import từ module screens.
+
+Lưu ý dòng lệnh:
 
 ```js
 import * as Screens from "./modules/screens";
@@ -99,7 +105,7 @@ import * as Screens from "./modules/screens";
 
 Dòng lệnh này thực hiện import toàn bộ những class được xuất ra thông qua file index.js. Vì vậy nếu bạn thêm màn hình mới lưu ý vào file index.js để xuất thêm class bạn vừa tạo.
 
-**- Chuyển đổi màn hình**: có 2 cách chuyển màn hình:
+Chuyển đổi màn hình: có 2 cách chuyển màn hình:
 
 - Chuyển đổi và xóa toàn bộ màn hình trước đó:
 
@@ -116,17 +122,19 @@ params: {} - Đây là phần để bạn truyền dữ liệu qua màn hình k�
 
 - Chuyển đổi và giữ lại màn hình trước để quay lại
 
-  ```
-  // chuyển qua màn hình PROPS đã khai báo trong App StackNavigator
-  this.props.navigation.navigate("PROPS");
-  //or
-  this.props.navigation.navigate("PROPS", {});
-  ```
+```js
+// chuyển qua màn hình PROPS đã khai báo trong App StackNavigator
+this.props.navigation.navigate("PROPS");
+//or
+this.props.navigation.navigate("PROPS", {});
+```
 
-  {} - Đây cũng là cách để bạn truyền một đối tượng qua cho màn hình kế tiếp.<br>Mặc định nếu bạn hiển thị Status bar thì sẽ có phím quay về, nhưng nếu cần thiết có thể quay về bằng cách gọi hàm sau đây:
-  `this.props.navigation.goBack();`
+`{}` - Đây cũng là cách để bạn truyền một đối tượng qua cho màn hình kế tiếp.
 
-  Hiển thị Status bar:
+Mặc định nếu bạn hiển thị Status bar thì sẽ có phím quay về, nhưng nếu cần thiết có thể quay về bằng cách gọi hàm sau đây:
+`this.props.navigation.goBack();`
+
+Hiển thị Status bar:
 
 ```js
 static navigationOptions = ({ navigation }) => {

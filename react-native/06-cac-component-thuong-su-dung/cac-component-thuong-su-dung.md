@@ -1,13 +1,13 @@
 ---
 title: "Các component thường sử dụng"
-description: "Dưới đây là code demo những component cơ bản thường sử dụng. Bạn có thể code lại, copy hoặc chạy demo từ example (demo có sử dụng hình ảnh nên bạn phải copy hình ảnh trong example - Example/app/assets/images)."
+description: "Dưới đây là code demo những component cơ bản thường sử dụng. Bạn có thể code lại, copy hoặc chạy demo từ example (demo có sử dụng hình ảnh nên bạn phải copy hình ảnh trong example"
 keywords:
   [
     "gioi thieu react native",
     "giới thiệu react native",
     "khoá học react native",
     "giới thiệu react native",
-    "giới thiệu jreact native cơ bản",
+    "giới thiệu react native cơ bản",
     "react native la gi",
     "tong quan ve react native",
     "gioi thieu ve ngon ngu lap trinh react native",
@@ -21,10 +21,10 @@ category:
   name: "React Native"
   slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 1
+position: 6
 ---
 
-Dưới đây là code demo những component cơ bản thường sử dụng. Bạn có thể code lại, copy hoặc chạy demo từ example (demo có sử dụng hình ảnh nên bạn phải copy hình ảnh trong example - Example/app/assets/images).
+Dưới đây là code demo những component cơ bản thường sử dụng.
 
 ```javascript
 import React from "react";
@@ -203,12 +203,11 @@ const Styles = StyleSheet.create({
 });
 ```
 
-Sau khi chạy Demo ta được UI như sau (run example thì click vào component)
+Sau khi chạy Demo ta được UI như sau
 
 ![Các component thường sử dụng](https://github.com/techmely/hoc-lap-trinh/assets/29374426/4e8ae1ff-1a4e-46a8-b0bf-40701d73e1b1)
 
-
-### View
+## View trong React Native
 
 Là một component cũng thường xuyên được sử dụng. Thường được sử dụng với mục đích chia các view con theo hàng dọc hoặc hàng ngang dựa vào thuộc tính flexDirection trong style là 'column/row' (dọc / ngang), hoặc sử dụng để chứa nhiều view con hoặc khi cần in ra màn hình một view không hiển thị gì hết ví dụ như trong cấu trúc toán tử:
 
@@ -220,7 +219,7 @@ Là một component cũng thường xuyên được sử dụng. Thường đư�
 
 flex: 1 ở style sẽ giúp kéo view rộng hết khung chứa có thể.
 
-### Text
+## Text trong React Native
 
 Dùng để hiển thị 1 message lên màn hình. Có thể sử dụng text cố định hoặc in nội dung của một biến lên màn hình
 
@@ -229,17 +228,17 @@ Dùng để hiển thị 1 message lên màn hình. Có thể sử dụng text c
 <Text>{variable_here}<Text>
 ```
 
-### Image
+## Image trong React Native
 
 Dùng để hiển thị hình ảnh lên màn hình. Có 3 cách hiển thị:
 
-- Hiển thị ảnh Local:
+**Hiển thị ảnh Local**
 
 ```js
 <Image source={require("/react-native/img/favicon.png")} />
 ```
 
-- Hiển thị ảnh từ url:
+**Hiển thị ảnh từ url**
 
 ```js
 <Image
@@ -250,7 +249,7 @@ Dùng để hiển thị hình ảnh lên màn hình. Có 3 cách hiển thị:
 />
 ```
 
-- Hiển thị ảnh base 64:
+**Hiển thị ảnh base 64**
 
 ```js
 <Image
@@ -263,14 +262,13 @@ Dùng để hiển thị hình ảnh lên màn hình. Có 3 cách hiển thị:
 
 Resize Mode quen thuộc:
 
-- cover: (mặc định) Hình ảnh sẽ giữ nguyên tỷ lệ. Ảnh sẽ lớn hơn hoặc bằng khung chứa.
-- contain: Hình ảnh vẫn giữ nguyên tỷ lệ. Ảnh sẽ nhỏ hơn hoặc bằng khung chứa
-- center: Căn giữa hình ảnh theo 2 chiều. Lấy phần ở giữa, gần giống với cover.
+- `cover`: (mặc định) Hình ảnh sẽ giữ nguyên tỷ lệ. Ảnh sẽ lớn hơn hoặc bằng khung chứa.
+- `contain`: Hình ảnh vẫn giữ nguyên tỷ lệ. Ảnh sẽ nhỏ hơn hoặc bằng khung chứa
+- `center`: Căn giữa hình ảnh theo 2 chiều. Lấy phần ở giữa, gần giống với cover.
+- `repeat`: Lặp lại hình ảnh để che hết phần kích thước ô chứa.
+- `stretch`: Thay đổi tỷ lệ hình ảnh để kéo dãn bằng với ô chứa.
 
-- repeat: Lặp lại hình ảnh để che hết phần kích thước ô chứa.
-- stretch: Thay đổi tỷ lệ hình ảnh để kéo dãn bằng với ô chứa.
-
-### Button
+## Button trong React Native
 
 Cách sử dụng một Button
 
@@ -289,9 +287,12 @@ onPressButtonDemo(){
 ```
 
 Thông thường mình ít khi sử dụng Button vì lý do custom style nó không hoạt động đúng với cả Android và IOS vì vậy nên mình thường sử dụng TouchableOpacity hơn.
-Nhưng lưu ý cách sử dụng sự kiện onPress `onPress={() => this.onPressButtonDemo()}` Vui lòng viết theo cấu trúc này để giảm thiểu lỗi hoặc là phải binding hàm trong contrucstor trước lúc sử dụng. Sự kiện onPress chỉ có một số component hỗ trợ, Text thì không hỗ trợ nên nếu muốn sử dụng onPress cho Text thì đọc phần TouchableOpacity phía dưới nhé.
 
-### TouchableOpacity
+Nhưng lưu ý cách sử dụng sự kiện onPress `onPress={() => this.onPressButtonDemo()}` Vui lòng viết theo cấu trúc này để giảm thiểu lỗi hoặc là phải binding hàm trong contrucstor trước lúc sử dụng.
+
+Sự kiện `onPress` chỉ có một số component hỗ trợ, Text thì không hỗ trợ nên nếu muốn sử dụng `onPress` cho Text thì đọc phần `TouchableOpacity` phía dưới nhé.
+
+### TouchableOpacity trong React Native
 
 Thông thường mình thay thế việc sử dụng Button bằng TouchableOpacity để việc định dạng style giống nhau cho cả android và ios, TouchableOpacity có thể chứa bất kỳ view con nào, và nhớ lưu ý cách dùng sự kiện onPress giống như Button nhé.
 
@@ -304,9 +305,11 @@ Thông thường mình thay thế việc sử dụng Button bằng TouchableOpac
 </TouchableOpacity>
 ```
 
-### Flatlist
+### Flatlist trong React Native
 
-Đây là Component thường được sử dụng để hiển thị 1 danh sách lên màn hình. <br>Cách dùng:
+Đây là Component thường được sử dụng để hiển thị 1 danh sách lên màn hình.
+
+Cách dùng:
 
 ```javascript
 <FlatList
@@ -332,9 +335,9 @@ renderItem(item) {
 
 Một vài lưu ý khi sử dụng Flatlist:
 
-- Khi một thành phần data (ví dụ data[0] = ...) của bạn thay đổi thường thì không vẽ lại UI cho nên bạn sẽ cần thêm một thuộc tính là `extraData={this.state}`. Lúc này mỗi lần state thay đổi thì danh sách lại được vẽ lại.
-
-- Có thể sử dụng Flatlist để làm như GridView trong android dựa vào thuộc tính numColumns={colum} (colum là số cột). Nhưng bạn sẽ cần phải tính toán width, height của mỗi colum để hiển thị đẹp nhất (Không có sẵn như fill_parent trong android).
+- Khi một thành phần data (ví dụ `data[0] = ...`) của bạn thay đổi thường thì không vẽ lại UI cho nên bạn sẽ cần thêm một thuộc tính là `extraData={this.state}`. Lúc này mỗi lần state thay đổi thì danh sách lại được vẽ lại.
+- Có thể sử dụng **Flatlist** để làm như GridView trong android dựa vào thuộc tính numColumns={colum} (colum là số cột). Nhưng bạn sẽ cần phải tính toán width, height của mỗi colum để hiển thị đẹp nhất (Không có sẵn như fill_parent trong android).
 
 Các component ở trên mình chỉ mang tính chất giới thiệu để các bạn tìm hiểu. Để hiểu rõ hơn cũng như tìm hiểu thêm về các thuộc tính của mỗi component thì vui lòng đọc riêng tài liệu của các Component nhé.
+
 Mỗi component sẽ có nhiều thuộc tính khác để hỗ trợ bạn làm UI tốt và mượt nhất có thể.

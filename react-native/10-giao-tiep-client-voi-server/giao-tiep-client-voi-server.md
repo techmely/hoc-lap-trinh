@@ -21,12 +21,10 @@ category:
   name: "React Native"
   slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 1
+position: 10
 ---
 
-## Giao tiếp Client vs Server
-
-### RESTful API
+## RESTful API là gì
 
 ![RESTful API.](https://github.com/techmely/hoc-lap-trinh/assets/29374426/7292bacd-2485-49e0-ac16-565667acfdd8)
 
@@ -92,7 +90,7 @@ getLanguage() {
 
 Ví dụ gọi fetchData() với phương thức POST
 
-```
+```js
 let api = getBaseURL() + "get_languages";
 let body = {...}
 return this.fetchData(api, 'POST', body);

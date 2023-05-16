@@ -24,7 +24,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
 
-## Hướng dẫn cài đặt môi trường react-native trên hệ điều hành Windows.
+## Hướng dẫn cài đặt môi trường react-native trên hệ điều hành Windows
 
 - **Bước 1**: Cài đặt Chocolatey từ <https://chocolatey.org> (Chocolatey là trình quản lý các gói thư viện của Windows)
 - **Bước 2**: Cài đặt Nodejs Java và Python 2 thông qua Chocolatey sử dụng dòng lệnh sau (dùng cmd để chạy lệnh này): `choco install -y nodejs.install python2 jdk8`
