@@ -16,7 +16,7 @@ position: 8
 
 Trong quá trình phát triển một ứng dụng web, chúng ta chắc hẳn đã phải trải qua làm việc với Form không ít thì nhiều. Khi làm việc với form, ta sẽ gặp phải trường hợp một form control với logic rất đơn giản nhưng chỉ khác duy nhất dữ liệu nguồn (data source). Ví dụ, khi làm việc với các select control, chúng ta sẽ phải lặp đi lặp lại việc gọi data source select đó, khi control đó được sử dụng lại ở nhiều nơi khác nhau, việc lặp lại code là không thể tránh khỏi.
 
-![SelectExample](assets/day-047-select-example.jpg)
+![Composition form datasource with Directive](https://github.com/techmely/hoc-lap-trinh/assets/29374426/fefb03fc-7811-4e21-8c1b-00ce64a2b5ac)
 
 Từ đó, tác giả bài viết đã khám phá ra một cách làm có thể giảm thiểu việc lặp lại code khi thực hiện các select control này. Bằng việc kết hợp sử dụng Directive và Inject Token, chúng ta có thể triển khai ý tưởng của tác giả, và thành quả cuối cùng use-case của ý tưởng đc thể hiện như sau:
 
@@ -45,7 +45,7 @@ Qua đoạn code mẫu bên trên, ta có thể thấy, với mỗi data source 
 
 Ý tưởng của tác giả được thể hiện thông qua hình vẽ bên dưới.
 
-![ConceptDiagram](assets/day-047-concept-diagram.jpg)
+![Concepts](https://github.com/techmely/hoc-lap-trinh/assets/29374426/3fbc729f-26db-46e7-a598-51bc644a448d)
 
 Để đảm bảo các datasource directive có thể sử dụng với select control ta cần chuẩn hóa tất cả về cùng một format, ở đây, các implemented directive sẽ đều được implement thông qua một interface để chuẩn hóa.
 
