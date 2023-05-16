@@ -40,7 +40,7 @@ export class ArticleDetailComponent implements OnInit {
 
 Lúc này bạn sẽ nhìn thấy chúng ta có implement loading indicator để báo cho người dùng biết chúng ta đang đi lấy dữ liệu về.
 
-![Routing with loading](assets/day32-router-01.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/4b2e4e11-6bda-4b9e-a7f2-1beaf035a0bd)
 
 Full demo: https://stackblitz.com/edit/angular-100-days-of-code-day-32-01
 
@@ -121,7 +121,7 @@ export class ArticleDetailComponent implements OnInit {
 
 Bây giờ chúng ta chạy thử sẽ thấy, thay vì hiển thị loading ở component, chúng ta đã lấy về data trước khi thực hiện activate component, do đó sau khi navigate, resolver phải resolved rồi chúng ta mới có thể thấy component được render ra. Vì thế nên chúng ta sẽ không thấy loading indicator đâu nữa.
 
-![Routing with resolver](assets/day32-router-02.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/5e36fb09-817f-4fa9-8806-6a9ca956a111)
 
 Full demo: https://stackblitz.com/edit/angular-100-days-of-code-day-32-02?file=src%2Fapp%2Farticle-resolver.service.ts
 
