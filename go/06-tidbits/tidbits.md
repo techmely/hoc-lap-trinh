@@ -1,5 +1,5 @@
 ---
-title: "Tidbits"
+title: "Tidbits trong Go"
 description: "Trong chương này, chúng ta sẽ bàn về những tính năng đặc biệt của Go."
 keywords:
   [
@@ -15,8 +15,8 @@ keywords:
     "code go la gi",
   ]
 chapter:
-  name: "Tidbits"
-  slug: "chuong-06-tidbits"
+  name: "Tidbits trong Go"
+  slug: "chuong-06-tidbits-trong-go"
 category:
   name: "Go"
   slug: "go"
@@ -102,7 +102,7 @@ func main() {
 
 Lưu ý: Go có hàm `panic` và `recover`. `panic` tương đương với phát sinh một ngoại lệ (throw an exception) trong khi `recover` tương đương với `catch`; chúng gần như không được sử dụng.
 
-## Defer
+## Defer trong Go
 
 
 Mặc dù Go có một bộ gom rác tự động (GC), một số tài nguyên cần được giải phóng một cách tường minh. Ví dụ, chúng ta cần phải `Close()` tập tin sau khi hoàn thành công việc. Lệnh này phải sử dụng rất thận trọng. Với ví dụ này, chúng ta đang viết một hàm, và rất dễ quên `Close` đối tượng mà chúng ta đã khai báo ở 10 dòng trước đó. Trong trường hợp khác, một hàm có thể có nhiều điểm kết thúc. Giải pháp của Go là từ khóa `defer`:

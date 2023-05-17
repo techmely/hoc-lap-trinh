@@ -1,5 +1,5 @@
 ---
-title: "Đồng thời"
+title: "Lập trình tính toán đồng thời trong Go"
 description: "Go được mô tả là một ngôn ngữ hỗ trợ lập trình tính toán đồng thời. Nó có một cú pháp đơn giản để hỗ trợ điều này. Go sử dụng hai cơ chế sau để thực hiện tính toán đồng thời: goroutines và channels."
 keywords:
   [
@@ -15,8 +15,8 @@ keywords:
     "code go la gi",
   ]
 chapter:
-  name: "Đồng thời"
-  slug: "chuong-07-dong-thoi"
+  name: "Lập trình tính toán đồng thời trong Go"
+  slug: "chuong-07-lap-trinh-tinh-toan-dong-thoi-trong-go" 
 category:
   name: "Go"
   slug: "go"
@@ -27,7 +27,7 @@ position: 1
 
 Go được mô tả là một ngôn ngữ hỗ trợ lập trình tính toán đồng thời. Nó có một cú pháp đơn giản để hỗ trợ điều này. Go sử dụng hai cơ chế sau để thực hiện tính toán đồng thời: goroutines và channels.
 
-## Goroutines
+## Goroutines trong Go
 
 Goroutine (Tiến trình Go) gần tương tự như luồng (thread), nhưng nó được kiểm soát thực thi bởi Go, chứ không phải hệ điều hành. Đoạn mã sau chạy một goroutine có thể thực thi đồng thời với các đoạn mã khác. Hãy xem ví dụ đơn giản sau:
 
@@ -65,7 +65,7 @@ Hơn nữa, sự phức tạp của cơ chế ánh xạ và lập lịch sẽ đ
 
 Quay trở lại ví dụ trên, bạn sẽ thấy chúng ta có hàm `Sleep` trong một vài mili giây. Bởi vì tiến trình chính kết thúc trước khi goroutine có cơ hội thực thi (hàm main không đợi cho đến khi tất cả các Goroutine kết thúc).
 
-## Đồng bộ hóa
+## Đồng bộ hóa trong Go
 
 Tạo một goroutine khá bình thường, chính vì chúng cần ít tài nguyên nên ta có thể tạo ra nhiều tiến trình như vậy, tuy nhiên các đoạn mã đồng thời cần liên lạc và có thể phối hợp với nhau. Để giải quyết vấn đề này, Go cung cấp `channels`. Trước khi tiếp cận `channels`, tôi thấy hiểu một chút về lý thuyết lập trình đồng thời là rất quan trọng.
 
@@ -164,7 +164,7 @@ Hơn nữa, một phần của lập trình đồng thời không phải là tru
 
 Trên đây là tất cả các thứ có thể làm được mà không cần `channels`. Với trường hợp đơn giản, tôi nghĩ bạn **nên dùng** các thành phần cơ bản như `sync.Mutex` và `sync.RWMutex`, nhưng trong phần kế tiếp, `channels` sẽ làm cho lập trình đồng thời trong sáng hơn và ít lỗi.
 
-## Channels
+## Channels trong Go
 
 Thách thức với lập trình đồng thời xuất phát từ chia sẻ dữ liệu. Nếu các goroutine không chia sẻ dữ liệu, bạn không cần phải lo lắng về việc đồng bộ hóa chúng. Đó không phải là một lựa chọn cho tất cả các hệ thống. Trong thực tế, nhiều hệ thống được xây dựng với mục tiêu ngay từ đầu là: có thể chia sẻ dữ liệu giữa các thành phần với nhau. Một bộ nhớ cache hoặc một cơ sở dữ liệu, là những ví dụ tốt về điều này. Điều này đang trở thành một thực tế ngày càng phổ biến.
 
@@ -306,7 +306,7 @@ for {
 ```
 Bạn có thể thấy nó tăng dần cho đến khi nó đầy, lúc này nếu dữ liệu được gửi đến đầu channel, thì sẽ không tiếp tục được.
 
-### Select
+### Select trong Go
 
 Ngay cả với buffered channel, sẽ đến một thời điểm mà chúng ta cần phải bắt đầu không nhận được dữ liệu. Chúng ta không thể để bộ nhớ tăng vô hạn và hy vọng woker sẽ giải quyết nó. Đối với việc này, chúng ta sử dụng `select`.
 
@@ -336,7 +336,7 @@ Chúng ta đang đẩy 20 tin nhắn mỗi giây, nhưng worker chỉ có thể 
 
 Thật khó để đưa ra một ví dụ đơn giản thể hiện cách xử lý này vì nó là một tính năng khá tiên tiến. Các phần tiếp theo có thể giúp minh họa cho select.
 
-### Timeout
+### Timeout trong Go
 
 Chúng ta xử lý các tin nhắn được lưu tạm thời cũng tương tự như cách không xử lý chúng. Một tùy chọn khác phổ biến là để thời gian chờ. Chúng ta có thể không nhận dữ liệu trong một khoảng thời gian, nhưng không phải mãi mãi. Việc này rất dễ làm trong Go. Phải thừa nhận rằng, cú pháp có thể hơi khó hiểu, nhưng nó là một tính năng rất hữu ích.
 

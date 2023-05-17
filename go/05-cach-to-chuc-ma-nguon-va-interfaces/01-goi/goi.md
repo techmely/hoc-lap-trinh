@@ -136,7 +136,7 @@ func LoadItem(id int) *shopping.Item {
 
 Bây giờ khi bạn thử chạy mã, bạn sẽ nhận được thông báo lỗi *import cycle not allowed*. Chúng ta giải quyết vấn đề này bằng cách tạo ra một gói mới chứa các cấu trúc được chia sẻ giữa các gói với nhau. Cấu trúc thư mục sẽ là:
 
-```
+```bash
 $GOPATH/src
   - shopping
     pricecheck.go
@@ -166,7 +166,7 @@ func LoadItem(id int) *models.Item {
 
 Bạn sẽ thường xuyên thấy sự chia sẻ các cấu trúc như thế này giống như gói `model`, do đó, bạn nên có một thư mục khác đặt tên là `utilities` hoặc thứ gì đó tương tự. Nguyên tắc quan trọng khi viết các gói chia sẻ này là chúng sẽ không import bất cứ một gói nào từ `shopping` hoặc các gói con của nó. Chúng ta sẽ xem xét cách interface được dùng để giảm thiểu các loại phụ thuộc này.
 
-### Visibility
+### Visibility trong Go
 
 (Người dịch: nên hiểu là khả năng một thành phần nào đó của gói có thể được truy cập từ gói khác, do tiếng Việt không có từ tương đương nên không dịch)
 

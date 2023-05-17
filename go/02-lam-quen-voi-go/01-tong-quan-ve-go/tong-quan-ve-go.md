@@ -27,7 +27,7 @@ position: 1
 
 Go là ngôn ngữ biên dịch, liên kết tĩnh, có cú pháp giống C và kèm theo một trình tự động dọn dẹp bộ nhớ (garbage collection - GC). Điều đó nghĩa là gì?
 
-## Biên dịch
+## Biên dịch trong Go
 
 Biên dịch là quá trình chuyển đổi mã nguồn sang một dạng ngôn ngữ ở mức thấp hơn hoặc dạng hợp ngữ (assembly) (trong trường hợp của Go), hoặc một dạng ngôn ngữ trung gian khác (như Java hoặc C#).
 
@@ -110,7 +110,7 @@ Lệnh này sẽ sinh ra một file thực thi có tên `main` và bạn có th�
 
 Trong khi lập trình, bạn có thể sử dụng `go run` hoặc `go build`. Khi triển khai sản phẩm, tất nhiên, bạn chỉ biên dịch ra file nhị phân bằng lệnh `go build` và thực thi nó.
 
-### Main
+### Main trong Go
 
 Hi vọng rằng, đoạn mã vừa rồi dễ hiểu. Chúng ta đã tạo một hàm và in ra một xâu bằng hàm có sẵn `println`. `go run` liệu có biết vị trí để bắt đầu thực thi hay không, vì chúng ta chỉ có một file duy nhất? Không. Trong Go, điểm bắt đầu của chương trình (the entry point) là một hàm có tên `main` bên trong gói (package) `main`.
 
@@ -118,7 +118,7 @@ Chúng ta sẽ nói thêm về các gói trong các chương kế tiếp. Bây g
 
 Nếu bạn muốn, bạn có thể thay đổi mã và tên của gói. Khi chạy lệnh `go run` và bạn sẽ nhận được một thông báo lỗi. Sau đó, đổi tên gói trở lại thành `main` nhưng vẫn giữ nguyên tên hàm. Bạn sẽ nhận một thông báo lỗi khác. Thử các thay đổi trên nhưng sử dụng lệnh `go build`. Chú ý rằng khi mã nguồn được biên dịch, không có một entry point nào. Điều này rất cần thiết khi biên dịch các thư viện.
 
-## Imports
+## Imports trong Go
 
 Go có một lượng lớn các hàm có sẵn, giống như `println`, có thể dùng mà không cần tham chiếu. Chúng ta không thể làm gì nhiều hơn nếu không sử dụng các thư viện chuẩn của Go và các thư viện bên ngoài. Trong Go, từ khóa `import` được dùng để xác định một gói mà đoạn mã bên trong file có tham chiếu tới.
 
