@@ -22,7 +22,8 @@ position: 7
 
 ## Dependency Injection (DI)
 
-![Dependency Injection](https://1.bp.blogspot.com/-FYPUWhwwCbM/Xf7C4MxUsgI/AAAAAAAAAQo/RCI3w2QmRokvmt9TuK05qxBfbuWW-LKfQCLcBGAsYHQ/s640/Design-Patterns-Explained-%25E2%2580%2593-Dependency-Injection-with-Code-Examples-881x440.png)
+![Dependency Injection](https://github.com/techmely/hoc-lap-trinh/assets/29374426/3bbde695-58c3-472a-a717-201536a42ab3)
+
 
 ### DI là gì
 
@@ -46,9 +47,9 @@ Việc module gắn với interface nào sẽ được confic trong code hoặc 
 
 ### Có 3 dạng DI
 
-- Constructor Injection: Các dependency sẽ được container tiêm vào một lớp thông quan phương thức khởi tạo của lớp đó.
-- Setter Injection: Các dependency sẽ được truyền vào một lớp thông qua các hàm setter.
-- Interface Injection: Lớp cần tiêm sẽ thực thi một interface. Interface nay chứa một hàm tên inject. Container sẽ tiêm dependency vào một lớp thông qua việc gọi hàm inject của interface đó.
+- `Constructor Injection`: Các dependency sẽ được container tiêm vào một lớp thông quan phương thức khởi tạo của lớp đó.
+- `Setter Injection`: Các dependency sẽ được truyền vào một lớp thông qua các hàm setter.
+- `Interface Injection`: Lớp cần tiêm sẽ thực thi một interface. Interface nay chứa một hàm tên inject. Container sẽ tiêm dependency vào một lớp thông qua việc gọi hàm inject của interface đó.
 
 DI thường áp dụng với những dự án lớp vì đảm bảo code dễ bảo trì, dễ thay đổi, hầu hết các framework nổi tiếng như laravel, spring, struts 2, asp.net .v.v đều hỗ
 trợ hoặc tích hợp sẵn DI.

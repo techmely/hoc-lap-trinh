@@ -19,7 +19,7 @@ category:
 position: 1
 ---
 
-![Spring Framework](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/spring.jpg)
+![Spring Framework](https://github.com/techmely/hoc-lap-trinh/assets/29374426/3dcb73b2-1b7b-4dbe-9a76-7e90480f1fa5)
 
 ## Spring là gì?
 
@@ -35,7 +35,9 @@ Spring Framework được xây dựng dựa trên 2 nguyên tắc design chính 
 ## Vì sao nên học Spring?
 
 Đầu tiên, chúng ta cùng nhau xem biểu đồ so sánh mức độ phổ biến của các framework cho Java:
-![Framework java chart](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/bieu%20do%20framework%20java.png)
+
+![Framework java chart](https://github.com/techmely/hoc-lap-trinh/assets/29374426/788c1b67-e98e-46fd-9e2e-19fe1aa45eae)
+
 
 Chắc hẳn xem xong các bạn cũng thấy được sự chênh lệch khá rõ rệt giữa Spring với những thằng còn lại.
 

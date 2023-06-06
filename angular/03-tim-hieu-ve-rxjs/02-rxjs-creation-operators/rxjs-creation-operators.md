@@ -1,7 +1,7 @@
 ---
-title: "RxJS Creation Operators"
-description: "Hôm nay, chúng ta sẽ tìm về các `Operators` dùng để khởi tạo `Observable` mà **RxJS** cung cấp nhé."
-keywords: []
+title: "RxJS Creation Operators trong RxJS"
+description: "Hôm nay, chúng ta sẽ tìm về các Operators dùng để khởi tạo Observable mà RxJS cung cấp nhé."
+keywords: ["RxJS Creation Operators", "RxJS Creation Operators trong Angular"]
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"

@@ -6,6 +6,8 @@ keywords:
     "khoá học angular",
     "Truyền dữ liệu giữa các component",
     "truyen du lieu giua cac component angular",
+    "@input decorator trong angular",
+    "Constructor và ngOnInit trong angular",
   ]
 chapter:
   name: "Nhập môn Angular"

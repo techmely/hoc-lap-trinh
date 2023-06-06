@@ -4,7 +4,7 @@ description: "Thông thường, trong một trang HTML khi có một sự kiện
 Vậy với những Component mà chúng ta tự định nghĩa thì có cách nào bắn ra các event mà chúng ta mong muốn hay không (component event). Câu trả lời cho vấn đề này chính là EventEmitter và @Output decorator."
 keywords:
   [
-    "Event trong component", "event trong component cua angular"
+    "Event trong component", "event trong component cua angular", "Khởi tạo components"
   ]
 chapter:
   name: "Nhập môn Angular"
@@ -16,7 +16,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 6
 ---
 
-## Khởi tạo components
+## Khởi tạo components trong angular
 
 Đầu tiên chúng ta sẽ cần khởi tạo một số component để minh họa như: Author List Component, Author Detail Component:
 Các bạn chạy lệnh sau để tạo:
@@ -120,7 +120,4 @@ export class AuthorListComponent implements OnInit {
 
 ## Lời kết
 
-Như vậy trong bài này, chúng ta sẽ phải tìm hiểu cách để khai báo custom event cho một component, từ đó giúp parent component có thể listen được những event cần thiêt từ child component.
-Ngoài những gì trong report trên, chúng ta có thể tìm hiểu thêm về việc tạo alias cho property và outputs array trong bài sau:
-
-- https://www.tiepphan.com/thu-nghiem-voi-angular-2-component-event-voi-eventemitter-output/
+Như vậy trong bài này, chúng ta sẽ phải tìm hiểu cách để khai báo custom event cho một component, từ đó giúp parent component có thể listen được những event cần thiết từ child component.

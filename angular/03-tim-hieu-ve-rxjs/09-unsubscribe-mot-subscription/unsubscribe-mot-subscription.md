@@ -1,7 +1,12 @@
 ---
-title: "Unsubscribe Một Subscription"
+title: "Unsubscribe một Subscription trong RxJS"
 description: "Trong các trường hợp trên, nếu bạn dùng event binding thì không cần unsubscribe, vì Angular đã tự làm việc đó cho bạn. Trường hợp bạn từ subscribe thì bạn phải tìm một cách nào đó để unsubscribe, tránh trường hợp có thể bị memory leak."
-keywords: []
+keywords:
+  [
+    "Unsubscribe một Subscription trong RxJS",
+    "Angular EventEmitter",
+    "Subject Trong một Component",
+  ]
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
@@ -18,7 +23,7 @@ Như các bạn cũng biết, `Angular EventEmitter` (mình sẽ gọi ngắn g�
 
 Trong các trường hợp trên, nếu bạn dùng event binding thì không cần unsubscribe, vì Angular đã tự làm việc đó cho bạn. Trường hợp bạn từ subscribe thì bạn phải tìm một cách nào đó để unsubscribe, tránh trường hợp có thể bị memory leak.
 
-## Subject Trong Một Component
+## Subject Trong một Component
 
 Giả sử bạn có một component, và bên trong đó bạn khởi tạo một instance của một Subject như ví dụ sau:
 

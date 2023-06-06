@@ -18,9 +18,7 @@ category:
 position: 1
 ---
 
-# Giới Thiệu Website
-
-![Website](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/website.jpg)
+![Giới Thiệu Website](https://github.com/techmely/hoc-lap-trinh/assets/29374426/3e4238b1-4481-47c7-90d4-67909e22804e)
 
 ### Website là gì?
 
@@ -31,8 +29,6 @@ hàng ngày chúng ta "on phây" bằng việc truy cập “https://www.faceboo
 [Youtube](https://www.youtube.com) thì URL là “https://www.youtube.com”.
 
 ### Phân loại
-
-![Phân Loại Website](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/phan-loai-web.jpg)
 
 Website được chia làm 2 loại:
 

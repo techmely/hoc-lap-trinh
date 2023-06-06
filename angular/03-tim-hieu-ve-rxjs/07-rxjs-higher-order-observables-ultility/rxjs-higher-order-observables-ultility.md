@@ -1,7 +1,13 @@
 ---
-title: "RxJS Higher Order Observables and Utility Operators"
+title: "RxJS Higher Order Observables và Utility Operators trong RxJS"
 description: "Ngày hôm nay, chúng ta sẽ cùng nhau tìm hiểu 2 (trong 3) loại **Operators** cuối cùng là: **RxJS Higher Order Observables** và **Utility Operators** nhé."
-keywords: []
+keywords:
+  [
+    "RxJS Higher Order Observables trong Angular",
+    " Utility Operators trong Angular",
+    "Nguồn gốc của các HOOs",
+    "Tại sao lại cần HOOs?",
+  ]
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
@@ -73,9 +79,7 @@ Tại sao điều này không tốt? Để hiểu được chúng ta cần phả
 2. Sau 500ms (`debounceTime()`), `valueChanges` emit giá trị `abc` và chúng ta `subscribe` vào `valueChanges` với `observer`: `query => {...}`
 3. Từ `query`, chúng ta ngay lặp tức gọi `apiService.filterData(query)` và đây cũng là 1 `Observable`, nên chúng ta `subscribe`.
 4. Sau 1 khoảng thời gian ngẫu nhiên (vì là API request mà, hên xui 😅), chúng ta có `data` và bắt đầu hiển thị lên template.
-
-Mọi thứ đều đẹp như mơ, cho đến khi có thêm các bước như sau.
-
+   Mọi thứ đều đẹp như mơ, cho đến khi có thêm các bước như sau.
 5. Người dùng xoá `abc` đi và type vào `xyz`. Mọi thứ diễn ra dưới 500ms và người dùng dừng lại ở `xyz`.
    6-7. Như bước 2 và 3, chúng ta có `query` với giá trị là `xyz` và sẽ gọi `apiService.filterData(query)`. (tạm gọi đây là {1})
 6. Sau 1 khoảng thời gian **KHÁ LÂU**, người dùng lại tiếp tục đổi `query` từ `xyz` thành `abcxyz`.
@@ -90,7 +94,7 @@ Trên đây chỉ là 1 ví dụ trong vô vàn ví dụ vì sao Nested Subscrip
 
 `switchMap()` là một trong những HOOs được dùng nhiều nhất trong **RxJS** cũng như trong ứng dụng **Angular**. `switchMap()` sẽ nhận vào một `projectFunction` mà sẽ nhận vào giá trị được emit từ `Outer Observable` và sẽ phải trả về 1 `Observable` (`Inner Observable`) mới. Giá trị cuối cùng của `Outer Observable` khi dùng với `switchMap()` sẽ là giá trị mà `Inner Observable` emit. Vì đây là HOO đầu tiên nên mình sẽ cố giải thích kĩ càng và đầy đủ hơn. Các bạn hình dung case sau:
 
-![RxJS switchMap](assets/rxjs-switchMap.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/ec86b60d-8097-42c7-93a6-e6372d43bc46)
 
 ```ts
 fromEvent(document, "click").pipe(
@@ -136,7 +140,7 @@ Một lưu ý nữa, khi làm việc với Http Client trong Angular chẳng h�
 
 `mergeMap()` là HOO phổ biến thứ hai sau `switchMap()`. `mergeMap()` cũng nhận vào 1 `projectFunction` mà sẽ nhận giá trị được emit từ `Outer Observable` và sẽ phải trả về 1 `Inner Observable`. Sau đó, `mergeMap()` sẽ `subscribe` `Inner Observable` này. `Outer Observable` + `mergeMap()` cuối cùng sẽ emit giá trị mà `Inner Observable` emit.
 
-![RxJS mergeMap](assets/rxjs-mergeMap.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/f0729b9a-4a95-4af4-8f41-f7c95115b456)
 
 Khác với `switchMap()`, `mergeMap()` sẽ không `unsubscribe` `Inner Observable` cũ nếu như có `Inner Observable` mới. Nói đúng hơn, `mergeMap()` sẽ giữ nhiều `Subscription`. Vì tính chất này, `mergeMap()` thích hợp khi bạn có nghiệp vụ mà không cần/được dừng `Inner Observable` nếu như `Outer Observable` có emit giá trị mới (ví dụ những nghiệp vụ liên quan đến **Write vào Database**, `switchMap()` sẽ thích hợp với **Read**).
 
@@ -168,7 +172,7 @@ Nếu bạn set `concurrent = 1` chúng ta sẽ có cách hoạt động tương
 
 Giống với `mergeMap()` và `switchMap()`, `concatMap()` cũng nhận vào 1 `projectFunction` và `projectFunction` này cũng sẽ phải trả về 1 `Inner Observable`. Khác với `mergeMap()` và `switchMap()`, `concatMap()` sẽ `subscribe` vào `Inner Observable` và sẽ **CHỜ** cho đến khi `Inner Observable` này complete thì mới `subscribe` vào `Inner Observable` tiếp theo (nếu như có `Inner Observable` tiếp theo). Chúng ta sẽ tiếp tục phân tích lại ví dụ ở trên nhé:
 
-![RxJS concatMap](assets/rxjs-concatMap.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d5f821f8-9742-48a1-8280-9054aaefd3b7)
 
 ```ts
 fromEvent(document, "click").pipe(
@@ -208,13 +212,13 @@ fromEvent(document, "click").pipe(
 
 Lúc này, vì bản chất **eager** của `Promise`, khi được invoke là sẽ gửi request ngay lặp tức, nghĩa là `axios(...)` kia đã gửi request tại thời điểm `map()` mất rồi cho nên `concatAll()` ở đây để thực thi theo thứ tự thì hoàn toàn vô nghĩa, và nhiều trường hợp sẽ bị **Racing Condition** ngay.
 
-#### exhaustMap() trong RxJS
+#### `exhaustMap()` trong RxJS
 
 `exhaustMap<T, R, O extends ObservableInput<any>>(project: (value: T, index: number) => O, resultSelector?: (outerValue: T, innerValue: ObservedValueOf<O>, outerIndex: number, innerIndex: number) => R): OperatorFunction<T, ObservedValueOf<O> | R>`
 
 `exhaustMap()`, cũng như 3 HOOs trên, nhận vào 1 `projectFunction` và `projectFunction` này cũng sẽ phải trả về 1 `Inner Observable`. `exhaustMap()` sẽ `subscribe` vào `Inner Observable` này và trong khi `Inner Observable` đang emit (chưa complete) giá trị của nó mà có 1 `Inner Observable` mới (do `Outer Observable` emit giá trị mới, nhớ nha các bạn 👌) thì `Inner Observable` mới này sẽ bị **BỎ QUA** hoàn toàn khi `Inner Observable` cũ chưa complete.
 
-![RxJS exhaustMap](assets/rxjs-exhaustMap.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/a6738437-f57c-4568-94a8-39bdea8e0aa4)
 
 Cách hoạt động khá khá giống với `throttle` mà chúng ta đã tìm hiểu qua. Để thấy rõ được cách hoạt động của `exhaustMap()`, chúng ta xem qua ví dụ sau:
 
@@ -258,7 +262,7 @@ concat(
 
 Các bạn có thể thấy là khi `exhaustMap()` đang chạy `Inner Observable` của `second timer` mà `last timer` emit, thì `exhaustMap()` bỏ qua hoàn toàn `Inner Observable` của `last timer` và mọi nghiệp vụ dừng lại sau khi `Inner Observable` của `second timer` complete. Đây là tính chất của `exhaustMap()`, là 1 trong những **Rate Limiting HOO** hiếm hoi 😎
 
-#### switch/concat/mergeMapTo() trong RxJS
+#### `switch/concat/mergeMapTo()` trong RxJS
 
 3 HOOs này đều có cách HOO `*mapTo()` tương ứng. Cách thức hoạt động giống với HOO nguyên bản. Tuy nhiên, thay vì nhận vào `projectFunction` thì các bạn truyền hẳn vào `Inner Observable` luôn. Nếu các bạn có các nghiệp vụ cần dùng đến cái HOOs này mà không quan tâm giá trị của `Outer Observable`, thì cứ dùng các HOO `*mapTo()` này.
 
@@ -270,7 +274,7 @@ fromEvent(document, "click").pipe(mergeMapTo(interval(1000).pipe(take(10))));
 fromEvent(document, "click").pipe(concatMapTo(interval(1000).pipe(take(10))));
 ```
 
-#### partition() trong RxJS
+#### `partition()` trong RxJS
 
 `partition<T>(source: any, predicate: (value: T, index: number) => boolean, thisArg?: any): [Observable<T>, Observable<T>]`
 
@@ -280,7 +284,7 @@ fromEvent(document, "click").pipe(concatMapTo(interval(1000).pipe(take(10))));
 - `predicateFunction`: `predicateFunction` này sẽ được invoke cho mỗi giá trị mà `Source Observable` emit.
   Với tham số `predicateFunction`, `partition()` sẽ **chia** `Source Observable` thành 2 `Destination Observables`: 1 `Observable` với giá trị thoả điều kiện của `predicateFunction`, `Observable` còn lại chứa giá trị không thoả điều kiện của `predicateFunction`.
 
-![RxJS partition](assets/rxjs-partition.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/92e41bc3-f850-40db-895c-28e775b76820)
 
 ```ts
 const [even$, odd$] = partition(interval(1000), (x) => x % 2 === 1);
@@ -304,7 +308,7 @@ Trên đây là những HOOs thường dùng nhất trong **RxJS**. Ngoài ra, *
 
 Đúng với tên gọi, đây là những operators cung cấp 1 số tiện ích cho chúng ta mà đôi khi rất hiệu quả.
 
-#### tap() trong RxJS
+#### `tap()` trong RxJS
 
 `tap<T>(nextOrObserver?: NextObserver<T> | ErrorObserver<T> | CompletionObserver<T> | ((x: T) => void), error?: (e: any) => void, complete?: () => void): MonoTypeOperatorFunction<T>`
 
@@ -341,7 +345,7 @@ interval(1000)
 
 `delay()` khá là dễ hiểu, chỉ là delay giá trị emit của 1 `Observable` nào đó dựa vào tham số truyền vào. Nếu như tham số truyền vào là `Number`, thì `delay()` sẽ chạy 1 timer với khoảng thời gian là tham số, sau đó sẽ emit giá trị của `Observable`. Nếu như tham số truyền vào là `Date`, thì `delay()` sẽ **hoãn** giá trị emit tới khi thời gian hiện tại bằng với `Date` được truyền vào.
 
-![RxJS delay](assets/rxjs-delay.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/7eefbe9d-4b05-43b8-8874-9334de3eac12)
 
 ```ts
 fromEvent(document, "click").pipe(delay(1000)).subscribe(console.log);
@@ -356,7 +360,7 @@ fromEvent(document, "click").pipe(delay(1000)).subscribe(console.log);
 
 `delayWhen()` tính chất hoạt động giống như `delay()` nhưng thay vì truyền vào khoảng thời gian `Number` hoặc ngày `Date`, thì chúng ta truyền vào 1 function mà trả về 1 `Observable`. `delayWhen()` sẽ **hoãn** emit giá trị của `Source Observable` cho đến khi `Observable` truyền vào emit.
 
-![RxJS delayWhen](assets/rxjs-delayWhen.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/1a154f8c-c665-4ff2-ace4-08443fb2a28f)
 
 ```ts
 fromEvent(document, "click")
@@ -382,13 +386,13 @@ this.apiService
   .subscribe();
 ```
 
-#### repeat() trong RxJS
+#### `repeat()` trong RxJS
 
 `repeat<T>(count: number = -1): MonoTypeOperatorFunction<T>`
 
 `repeat()`, đúng như tên gọi, sẽ nhận vào tham số `count` và sẽ lặp lại `Source Observable` đúng với số `count` mà được truyền vào.
 
-![RxJS repeat](assets/rxjs-repeat.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/23c802e3-227a-4ce2-b9fe-7165046422bd)
 
 ```ts
 of("repeated data").pipe(repeat(3)).subscribe(console.log);
@@ -397,13 +401,13 @@ of("repeated data").pipe(repeat(3)).subscribe(console.log);
 // 'repeated data'
 ```
 
-#### timeInterval() trong RxJS
+#### `timeInterval()` trong RxJS
 
 `timeInterval<T>(scheduler: SchedulerLike = async): OperatorFunction<T, TimeInterval<T>>`
 
 `timeInterval()` dùng để đo khoảng thời gian giữa 2 lần emit của `Source Observable`. Ví dụ là tính thời gian giữa 2 lần click của người dùng. `timerInterval()` sẽ chạy timer ở thời điểm `Observable` được `subscribe`. Nghĩa là khi bắt đầu `subscribe` cho đến lúc có giá trị đầu tiên được emit, thì `timeInterval()` sẽ track được khoảng thời gian này.
 
-![RxJS timeInterval](assets/rxjs-timeInterval.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/e0257c9e-42c7-47e4-adba-a75c73af1df8)
 
 ```ts
 fromEvent(document, "click").pipe(timeInterval()).subscribe(console.log);
@@ -417,7 +421,7 @@ fromEvent(document, "click").pipe(timeInterval()).subscribe(console.log);
 
 `timeout()` nhận vào tham số giống như `delay()`, là 1 khoảng thời gian `Number` hoặc 1 ngày nào đó `Date`. `timeout()` sẽ throw error nếu như `Source Observable` không emit giá trị trong khoảng thời gian (nếu như tham số là `Number`) hoặc cho tới khi thời gian hiện tại bằng với ngày được truyền vào (nếu như tham số là `Date`).
 
-![RxJS timeout](assets/rxjs-timeout.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/0c0de336-42e2-4c28-a3cc-214a699badae)
 
 ```ts
 interval(2000).pipe(timeout(1000)).subscribe(console.log, console.error);
@@ -425,15 +429,15 @@ interval(2000).pipe(timeout(1000)).subscribe(console.log, console.error);
 // Error { name: "TimeoutError" }
 ```
 
-#### timeoutWith() trong RxJS
+#### `timeoutWith()` trong RxJS
 
 `timeoutWith<T, R>(due: number | Date, withObservable: any, scheduler: SchedulerLike = async): OperatorFunction<T, T | R>`
 
 `timeoutWith()` hoạt đột tương tự `timeout()` nhưng nhận thêm tham số thứ 2 là 1 `Observable`. Nếu như trường hợp `Source Observable` emit giá trị quá chậm so với `due` thì `timeoutWith()` thay vì throw error, `timeoutWith()` sẽ subscribe vào tham số `Observable` kia.
 
-![RxJS timeoutWith](assets/rxjs-timeoutWith.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/e72d0a33-2a51-4f70-9f6f-63da3d43d86e)
 
-#### toPromise() trong RxJS
+#### `toPromise()` trong RxJS
 
 À ha, mình đặt cái này cuối cùng là có ý đồ 😅. Nhìn tên hàm các bạn cũng đoán được hàm này làm gì rồi phải không? Đây không phải là 1 operator nhưng được **RxJS** liệt kê vào **Utility Operator**. `toPromise()` là 1 instance method trên class `Observable` dùng để chuyển đổi 1 `Observable` thành `Promise`🤦‍. Tuy nhiên, `toPromise()` sẽ bị `deprecated` vào **RxJS v7** sắp tới, các bạn nào dùng thì cẩn thận nhé.
 

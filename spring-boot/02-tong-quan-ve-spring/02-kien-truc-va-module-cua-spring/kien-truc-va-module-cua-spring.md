@@ -22,7 +22,7 @@ position: 2
 
 ## Kiến trúc và module của Spring
 
-![kien truc Spring](https://github.com/techmely/hoc-lap-trinh/blob/e72dcc6a6a85dcd1a701deac442986ca56906c8a/spring-boot/images/spring-architecture.jpg)
+![Kiến trúc spring](https://github.com/techmely/hoc-lap-trinh/assets/29374426/0fb746c7-cbe6-4ad7-860c-c4956b52a3ea)
 
 Kiến trúc Spring được tổ chức theo kiểu module. Mặc dù khá là nhiều nhưng bạn chỉ cần quan tâm đến những gì bạn cần dùng đến và mình sẽ giới thiệu chi tiết ở phần dưới.
 

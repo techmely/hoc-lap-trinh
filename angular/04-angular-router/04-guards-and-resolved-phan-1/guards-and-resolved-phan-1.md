@@ -14,7 +14,7 @@ position: 4
 
 ## Angular Router Navigation Cycle
 
-![Angular Router Navigation Cycle](assets/router-navigation-cycle.png)
+![Angular Router Navigation Cycle](https://github.com/techmely/hoc-lap-trinh/assets/29374426/814df817-1bea-4224-92c1-96ad7aec3588)
 
 Angular Router bao gồm 5 operations cơ bản.
 
@@ -93,7 +93,7 @@ Navigation được thực hiện (thông thường) qua việc thay đổi URL 
 
 Ví dụ với ứng dụng demo của chúng ta, https://stackblitz.com/edit/angular-100-days-of-code-day-30, navigation phát sinh khi navigate từ trang Article List `/article` vào trang Article Detail `/article/:slug`.
 
-![Demo navigation](assets/day30-router-01.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/64acd790-648b-4480-af96-3eb049f21dd8)
 
 Sau bước này Angular Router sẽ emit event **NavigationStart**.
 
@@ -145,7 +145,7 @@ Tiếp theo đó Router sẽ update URL trên thanh địa chỉ của browser, 
 
 Từ đây, Router lại tiếp tục observe, nếu có một yêu cầu nào đó để thay đổi URL thông qua các cách đã liệt kê ở trên, nó sẽ thực hiện tiếp một chu trình nữa.
 
-![Navigation Logs](assets/day30-router-03.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/4cfd45b2-3004-4495-8e58-75bf6ecdd889)
 
 ## Route Guards
 
@@ -244,7 +244,7 @@ const routes: Routes = [
 
 Giờ đây bạn có thể vào bất cứ bài nào cũng sẽ có thể navigate được vào tiếp page edit.
 
-![App Navigation without guards](assets/day30-router-02.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/f21373d3-e34a-48b2-838f-97fef8c518d5)
 
 Giờ đây bạn có thể tạo một service, sau đó kiểm tra các quyền để có thể cho phép người dùng có được di chuyển vào hay không.
 
@@ -342,7 +342,7 @@ export class CanEditArticleGuard implements CanActivate {
 
 Thành quả có được là chúng ta không thể vào page edit của `bai-viet-2`, vì author không phải là user đang đăng nhập.
 
-![Apply Guard](assets/day30-router-04.gif)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/5ea894ab-b55f-4039-8b9c-fc8a8e48597f)
 
 Tương tự như `CanActivate`, chúng ta có cách hoạt động của `CanActivateChild`, nhưng được apply cho các children của một route.
 
