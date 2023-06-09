@@ -17,7 +17,7 @@ position: 6
 Qua các bài trước, các bạn cũng biết cách tạo những components cha con cũng như cách tương tác giữa chúng rồi.
 Vậy có 1 trường hợp thế này. Ta có component A là cha của component B như sau:
 
-![ParentComponent](assets/day-38-dynamic-component-01.png)
+![Dynamic Component trong Angular](https://github.com/techmely/hoc-lap-trinh/assets/29374426/f8ac5da4-d976-4bc0-bd7e-6a248d18927d)
 
 Trong nhiều trường hợp, chúng ta muốn thay đổi trong lúc runtime, ở vị trí đó không phải chỉ fix cứng 1 component B như vậy. Có lúc sẽ là component B, có lúc sẽ là component C tùy logic của ứng dụng.
 Hay ở tình huống khác, chúng ta muốn người dùng phải làm gì đó ở component A thì mới load component B lên. Nếu code bình thường, component B luôn được fix cứng trong template là con của A.

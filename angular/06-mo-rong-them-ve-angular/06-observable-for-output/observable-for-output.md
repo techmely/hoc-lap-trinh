@@ -44,7 +44,7 @@ Angular Compiler sẽ parse template thành Abstract Syntax Tree (AST) để có
 
 Source code [của phần này][output_interpreter] có một path check nếu như event đang đc bind là `SubscribeObservable` thì sẽ subscribe vào source.
 
-![Day 44](assets/day44-angularoutput.jpeg)
+![Event Binding Syntax](https://github.com/techmely/hoc-lap-trinh/assets/29374426/30c615b4-8b90-4165-8fd4-bc9012e91d57)
 
 Điều này có nghĩa là gì? Là `Event Binding syntax ()` sẽ tự động subscribe vào source `Observable` nếu event là 1 `Observable/Subject`
 

@@ -39,7 +39,8 @@ Spring container sử dụng DI để quản lý các thành phần, đối tư�
 
 Để tạo đối tượng, cấu hình, lắp rắp chúng, Spring Container sẽ đọc thông tin từ các file xml và thực thi chúng.
 
-![spring-ioc](https://images.viblo.asia/e8537ffa-e5a5-4b78-9aa5-be2ad0ac236e.jpg)
+![Spring IoC](https://github.com/techmely/hoc-lap-trinh/assets/29374426/a0a2b744-45ce-44c4-8f39-4a7529379647)
+
 
 ## Các kiểu IoC Container
 

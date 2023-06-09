@@ -1,7 +1,12 @@
 ---
-title: "RxJS Transformation Operators"
-description: "Trong bài trước chúng ta đã biết về một số **Creation Operators**, chúng là những operators có thể call như call một function thông thường. Trong bài này, chúng ta sẽ bắt đầu đi vào tìm hiểu **Pipeable Operators**, thay vì được call độc lập thì nó sẽ được call ở trong `pipe()` method của một Observable instance."
-keywords: []
+title: "RxJS Transformation Operators trong RxJS"
+description: "Trong bài trước chúng ta đã biết về một số Creation Operators, chúng là những operators có thể call như call một function thông thường. Trong bài này, chúng ta sẽ bắt đầu đi vào tìm hiểu **Pipeable Operators**, thay vì được call độc lập thì nó sẽ được call ở trong `pipe()` method của một Observable instance."
+keywords:
+  [
+    "RxJS Transformation Operators",
+    "Pipeable Operators trong angular",
+    "map trong RxJS",
+  ]
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
@@ -164,7 +169,8 @@ source.pipe(map((user) => user.id)).subscribe(observer);
 
 Cách dùng map này _khá giống_ cách dùng map của array ở trên phải không???
 
-![RxJS map](assets/rxjs-map.png)
+![RxJS map là gì](https://user-images.githubusercontent.com/29374426/235444583-46a8bb55-532d-4e9d-9080-aef08a3fa0e2.png)
+
 
 ### pluck trong RxJS
 
@@ -178,7 +184,7 @@ import { pluck } from "rxjs/operators";
 source.pipe(pluck("id")).subscribe(observer);
 ```
 
-![RxJS pluck](assets/rxjs-pluck.png)
+![RxJS pluck](https://user-images.githubusercontent.com/29374426/235444620-6ca1e03e-4f18-472a-b38d-81758baf2e33.png)
 
 ### mapTo trong RxJS
 
@@ -208,7 +214,7 @@ hover$.subscribe(observer);
 
 Giờ đây chúng ta đã có một stream `hover$` để biết được khi nào chúng ta in/out ở một element.
 
-![RxJS mapTo](assets/rxjs-mapTo.png)
+![RxJS mapTo](https://user-images.githubusercontent.com/29374426/235444662-4a4f4dd6-f1b0-4b64-95f6-4662da2a3df8.png)
 
 ### scan trong RxJS
 
@@ -259,7 +265,7 @@ const users$ = new Observable<User>((observer) => {
 users$.pipe(scan((acc, curr) => acc + curr.postCount, 0)).subscribe(observer);
 ```
 
-![RxJS scan](assets/rxjs-scan.png)
+![RxJS scan](https://user-images.githubusercontent.com/29374426/235444736-946e5d87-86e9-4a7d-ac7a-f0b6d0a28e62.png)
 
 ### reduce trong RxJS
 
@@ -271,7 +277,7 @@ Operator này khá giống `scan` là nó sẽ reduce value overtime, nhưng nó
 users$.pipe(reduce((acc, curr) => acc + curr.postCount, 0)).subscribe(observer);
 ```
 
-![RxJS reduce](assets/rxjs-reduce.png)
+![RxJS reduce](https://user-images.githubusercontent.com/29374426/235444776-f47d6694-811e-4346-b66e-4284ad7e8e27.png)
 
 ### toArray trong RxJS
 
@@ -311,7 +317,7 @@ const subscribe = buffer$.subscribe((val) =>
 "Buffered Values: "[(2, 3, 4, 5, 6)];
 ```
 
-![RxJS buffer](assets/rxjs-buffer.png)
+![RxJS buffer](https://user-images.githubusercontent.com/29374426/235444847-ade31f71-5b4b-4c9d-88a2-0020e968a1f3.png)
 
 ### bufferTime trong RxJS
 
@@ -339,7 +345,7 @@ const bufferTimeSub = bufferTime.subscribe(
 ...
 ```
 
-![RxJS bufferTime](assets/rxjs-bufferTime.png)
+![RxJS bufferTime](https://user-images.githubusercontent.com/29374426/235444887-65cc1a41-6ce1-440f-9ed5-935ba27ce566.png)
 
 ## Lời kết
 

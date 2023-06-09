@@ -274,7 +274,7 @@ console.log(myComputer.operatingSystem); // undefined
 
 Trong trường hợp `myComputer.operatingSystem`, JavaScript hiểu là bạn đang muốn truy cập vào thuộc tính `operatingSystem` mà trong object `myComputer` lại không có thuộc tính nào như vậy.
 
-## Khởi tạo thuộc tính runtime cho object
+### Khởi tạo thuộc tính runtime cho object
 
 Không chỉ dừng lại ở việc truy cập thuộc tính runtime, bạn cũng có thể dùng toán tử `[]` để khởi tạo object trong JavaScript như sau:
 
@@ -340,7 +340,7 @@ console.log(myComputer.graphicCard); // NVIDIA
 
 ## Giới hạn về tên thuộc tính của object trong JS
 
-Như bạn đã biết, bạn không được phép sử dụng **từ khóa và từ dữ trữ** để đặt tên biến trong JavaScript, ví dụ như: "var", "const", "let", "for", "while",...
+Như bạn đã biết, bạn không được phép sử dụng **từ khóa và từ dữ trữ** để đặt tên biến trong JavaScript, ví dụ như: `var`, `const`, `let`, `for`, `while`,...
 
 Nhưng với thuộc tính trong object khác, bạn không bị giới hạn này:
 

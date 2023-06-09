@@ -198,7 +198,8 @@ function sayHello() {
 // Sử dụng cùng 1 hàm cho 2 objects
 user1.sayHi = sayHello;
 user2.sayHi = sayHello;
-user1.sayHi(); // Alex (this tương ứng với user1)user2.sayHi(); // John (this tương ứng với user2)
+user1.sayHi(); // Alex (this tương ứng với user1)
+user2.sayHi(); // John (this tương ứng với user2)
 ```
 
 Bạn thấy rằng, tùy thuộc vào đối tượng gọi hàm là `user1` hay `user2` mà giá trị của `this` được xác định tương ứng.

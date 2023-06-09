@@ -1,7 +1,7 @@
 ---
-title: "RxJS Subject and Multicasting"
+title: "RxJS Subject và Multicasting trong RxJS"
 description: "Trong ngày đầu tiên tìm hiểu về RxJS chúng ta đã được giới thiệu đến **Observable**, và cũng đã nhắc đến một số kiểu dữ liệu vệ tinh như **Subject**. Vậy **Subject** có chức năng gì trong hệ sinh thái RxJS? Hôm nay chúng ta sẽ cùng tìm hiểu."
-keywords: []
+keywords: ["RxJS Subject trong RxJS", "Multicasting trong RxJS"]
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
@@ -88,7 +88,7 @@ Câu hỏi đặt ra là có cách nào để bất cứ khi nào có một obse
 
 Hãy xem xét lại một chút về RxJS, nó có apply một design pattern có tên là [Observer Pattern](https://en.wikipedia.org/wiki/Observer_pattern).
 
-![Observer Pattern](assets/observer-pattern.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/a38c08cf-7d49-467d-b286-0a358f626be7)
 
 Bây giờ thay vì subscribe riêng lẻ như ở các ví dụ trên, chúng ta hãy thêm một hybrid observer như sau:
 
@@ -811,7 +811,7 @@ setTimeout(() => {
 }, 6000);
 ```
 
-![RxJS multicast](assets/rxjs-multicast.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/5d1231ac-8709-4166-b19d-c35e442bc2c3)
 
 ### publish
 
@@ -859,7 +859,7 @@ setTimeout(() => {
 }, 5000);
 ```
 
-![RxJS publish](assets/rxjs-publish.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/8f621166-72d3-443e-99cc-624ba7cf46c5)
 
 Ngoài ra, giống như Subject có các biến thể thì publish cũng có các biến thể tương ứng với một số loại Subject.
 
@@ -909,7 +909,7 @@ setTimeout(() => {
 }, 5000);
 ```
 
-![RxJS share](assets/rxjs-share.png)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/ccd4eeba-3025-41c1-8f78-9d5f40de0551)
 
 ### shareReplay
 

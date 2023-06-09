@@ -240,7 +240,7 @@ console.log(c, typeof c); // 1.23 number
 
 ## Sai số với number trong JavaScript
 
-Trong JavaScript, số thông thường được biểu diễn dưới dạng số thực dấu phẩy động theo chuẩn **IEEE-754**. Định dạng này sử dụng **64 bit** để lưu trữ một số, trong đó:
+Trong JavaScript, số thông thường được biểu diễn dưới dạng số thực dấu phẩy động theo chuẩn [IEEE-754](https://vi.wikipedia.org/wiki/S%E1%BB%91_th%E1%BB%B1c_d%E1%BA%A5u_ph%E1%BA%A9y_%C4%91%E1%BB%99ng#IEEE_754:_chu%E1%BA%A9n_d%E1%BA%A5u_ph%E1%BA%A9y_%C4%91%E1%BB%99ng_trong_m%C3%A1y_t%C3%ADnh_ng%C3%A0y_nay). Định dạng này sử dụng **64 bit** để lưu trữ một số, trong đó:
 
 - **52 bit** dùng để lưu trữ các chữ số phần nguyên.
 - **11 bit** để lưu trữ phần thập phân.
@@ -537,8 +537,3 @@ function readNumber() {
 let n = readNumber();
 console.log(n);
 ```
-
-Tham khảo:
-
-- [Numbers](https://javascript.info/number)
-- [Số thực dấu phẩy động IEEE-7554](https://vi.wikipedia.org/wiki/S%E1%BB%91_th%E1%BB%B1c_d%E1%BA%A5u_ph%E1%BA%A9y_%C4%91%E1%BB%99ng#IEEE_754:_chu%E1%BA%A9n_d%E1%BA%A5u_ph%E1%BA%A9y_%C4%91%E1%BB%99ng_trong_m%C3%A1y_t%C3%ADnh_ng%C3%A0y_nay)

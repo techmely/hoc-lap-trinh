@@ -171,7 +171,7 @@ Kết quả thì như ở dưới, mình show trên UI phần error để các b
 - Password: Nếu ko có kí tự đặc biệt hoặc dưới 6 kí tự sẽ báo lỗi.
 - Nút Sign in chỉ đc enable nếu form valid.
 
-![Reactive Forms 2](assets/day36-01.gif)
+![Reactive Forms 2](https://github.com/techmely/hoc-lap-trinh/assets/29374426/f09da0ef-c784-4c7d-824f-50b4b0a9ad59)
 
 ### Your first custom validator
 
@@ -194,7 +194,7 @@ this.signInForm = this.fb.group({
 
 Bây giờ khi điền dủ 6 dấu cách thì input đã pass validators!
 
-![Reactive Forms 2](assets/day36-02.gif)
+![Reactive Forms 2](https://github.com/techmely/hoc-lap-trinh/assets/29374426/cab458b4-3bdc-4ac6-995b-2c26ebf5d444)
 
 Để xử lý trường hợp trên mà ko dùng thêm tới `Validators.pattern(/^[a-z]{6,32}$/i)`, mình sẽ viết một custom validator có tên là `NoWhitespaceValidator`.
 
@@ -239,7 +239,7 @@ this.signInForm = this.fb.group({
 
 Test thử thì thấy hoạt động khá mượt mà như ý muốn. Vậy là đã xong custom validator đầu tiên rồi đấy 😂
 
-![Reactive Forms 2](assets/day36-03.gif)
+![Reactive Forms 2](https://github.com/techmely/hoc-lap-trinh/assets/29374426/a80d19bd-7015-4302-87e9-2ab1063268cb)
 
 Mình có dùng `NoWhitespaceValidator` trong dự án [Angular Jira Clone][no-white-space]
 

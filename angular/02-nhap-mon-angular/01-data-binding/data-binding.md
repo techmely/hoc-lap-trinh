@@ -1,7 +1,14 @@
 ---
 title: "Data Binding"
 description: "Trong Angular chúng ta đã được Angular làm nhiệm vụ đồng bộ những dữ liệu bị ràng buộc lại với nhau, chúng ta chỉ cần update data/state cần thiết. Vậy có những dạng data binding nào?"
-keywords: []
+keywords:
+  [
+    "Data Binding",
+    "Data Binding là gì",
+    "Property binding trong angular là gì",
+    "Event binding trong angular là gì",
+    "Two-way binding trong angular là gì",
+  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"

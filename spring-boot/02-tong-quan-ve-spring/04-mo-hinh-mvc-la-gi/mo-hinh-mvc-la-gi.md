@@ -32,7 +32,8 @@ MVC chia ứng dụng phần mềm ra thành 3 phần có tương tác với nha
 **View:** là nơi nhận dữ liệu từ model, database và sắp xếp chúng chính xác nhờ yêu cầu từ controller và truyền về client. View sẽ xử lý hiễn thị trên ứng dụng.
 
 **Controller:** Đóng vai trò trung gian giữa Model và View, nó có nhiệm vụ nhận yêu cầu từ client sau đó xử lý request, load model và gửi data qua view tương ứng với nhau rồi trả kết quả về cho client.
-![Mô hình MVC](https://cuongteam.com/wp-content/uploads/2020/08/mvc-khai-niem.png)
+
+![Mô hình MVC](https://github.com/techmely/hoc-lap-trinh/assets/29374426/4f3a0d22-eebe-49bd-bc32-9df03fe8ae6b)
 
 ### Luồng đi trong mô hình MVC.
 

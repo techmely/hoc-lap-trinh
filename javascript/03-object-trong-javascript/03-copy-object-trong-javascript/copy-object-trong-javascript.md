@@ -46,7 +46,7 @@ Sau đây là một số cách để copy object thành hai đối tượng đ�
 
 ## Copy object sử dụng vòng lặp `for...in`
 
-Các đơn giản nhất để copy object trong JavaScript là sử dụng vòng lặp `for...in` để duyệt tất cả các thuộc tính của object. Rồi lấy giá trị ứng với từng thuộc tính để gán cho object mới.
+Cách đơn giản nhất để copy object trong JavaScript là sử dụng vòng lặp `for...in` để duyệt tất cả các thuộc tính của object. Rồi lấy giá trị ứng với từng thuộc tính để gán cho object mới.
 
 Ví dụ copy object bằng `for...in`:
 
@@ -133,7 +133,7 @@ let p2 = {};
 Object.assign(p2, p1);
 ```
 
-**Tại sao gọi là copy nông?**
+## Tại sao gọi là copy nông?
 
 Tương tự như **so sánh nông**, **copy nông** chỉ thực hiện sao chép trên một cấp độ. Nếu giá trị của thuộc tính trong object **cũng là một object** thì object copy sẽ không hoàn toàn độc lập với object nguồn.
 
@@ -165,10 +165,9 @@ Vì vậy, khi thay đổi ở `point2` thì `point1` cũng thay đổi theo.
 let p1 = { x: 1, y: 2 };
 let p2 = { ...p1 };
 ```
+## Sử dụng Spread
 
 Cú pháp spread `(...)` có nhiều điều để nói và được áp dụng ở nhiều trường hợp nên mình sẽ trình bày ở bài viết sau.
-
-##
 
 Khi object bao gồm nhiều đối tượng lồng nhau, bạn cần copy sâu (deep copy) để có thể tạo ra đối tượng độc lập.
 

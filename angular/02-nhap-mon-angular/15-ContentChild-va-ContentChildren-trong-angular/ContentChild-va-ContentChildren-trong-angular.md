@@ -1,7 +1,13 @@
 ---
-title: "ContentChild & ContentChildren"
+title: "ContentChild & ContentChildren trong Angular"
 description: "Trong những bài học trước chúng ta đã tìm hiểu khác nhiều thứ liên quan đến Content Projection. Đối với view, chúng ta có thể query các phần tử trên view với ViewChild hay ViewChildren, vậy đối với content, chúng ta có thể query nó được không? Angular cũng cung cấp cho chúng ta các APIs: `ContentChild` và `ContentChildren` để có thể tương tác được với content truyền vào."
-keywords: []
+keywords:
+  [
+    "ContentChild trong Angular",
+    "ContentChildren trong Angular",
+    "Query single directive/component trong Angular",
+    "Listen to changes event trong Angular",
+  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -12,9 +18,9 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 15
 ---
 
-## Query single directive/component
+## Query single directive/component trong Angular
 
-Giả sử chúng ta sẽ sử dụng Tab Component đã được tạo từ Day 16, bây giờ chúng ta có một component Couter để đếm xem liệu chúng ta có bao nhiêu component đã được khởi tạo như sau:
+Giả sử chúng ta sẽ sử dụng Tab Component đã được tạo từ Day 16, bây giờ chúng ta có một component `Counter` để đếm xem liệu chúng ta có bao nhiêu component đã được khởi tạo như sau:
 
 ```html
 <app-bs-tab-group>
@@ -193,9 +199,7 @@ export class TabPanelComponent {
 
 Chỉ cần có thế là chúng ta đã có thể query được tất cả theo yêu cầu.
 
-> Lưu ý: `ContentChildren` does not retrieve elements or directives that are in other components' templates, since a component's template is always a black box to its ancestors.
-
-## Listen to changes event
+## Listen to changes event trong Angular
 
 `ContentChildren` sẽ được init trước khi lifecycle `ngAfterContentInit` được call, đây cũng là thời điểm mà bạn có thể bắt đầu thực hiện các thao tác với nó. Ví dụ chúng ta có thể listen vào `changes` event để update selected tab như sau:
 
@@ -226,7 +230,7 @@ export class TabGroupComponent implements OnInit, AfterContentInit {
 }
 ```
 
-## Content và View
+## Content và View trong Angular
 
 Bây giờ bạn khá băn khoăn, đâu là view đâu là content, vì có quá nhiều thứ gây confuse ở đây.
 Câu trả lời cho bạn đây:

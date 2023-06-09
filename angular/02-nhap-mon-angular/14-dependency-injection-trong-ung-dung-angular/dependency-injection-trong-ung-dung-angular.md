@@ -1,7 +1,12 @@
 ---
 title: "Dependency Injection trong Ứng Dụng Angular"
 description: "Trong bài 13 chúng ta đã tìm hiểu và thấy rằng Dependency Injection được sử dụng trong ứng dụng Angular để tạo ra các Service, và các Service này được inject vào các class (ví dụ: component, directive, service) khác thông qua constructor injection. Vậy ngoài để tạo ra Service thì nó còn có thể sử dụng ở những đâu nữa."
-keywords: []
+keywords:
+  [
+    "Inject component cha đến component con",
+    "Dependency Injection trong Ứng Dụng Angular",
+    "Provide một tab group khác có cùng APIs",
+  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -15,7 +20,8 @@ position: 14
 ## Inject component cha đến component con
 
 Angular application là một component tree có dạng như sau.
-![components tree](assets/components-tree.jpg)
+
+![components tree](https://github.com/techmely/hoc-lap-trinh/assets/29374426/b3bceed9-6cbd-4683-a608-79c0fbe8735b)
 
 Do Angular support DI đến tận level của từng Component, nên chúng ta hoàn toàn có thể inject parent component vào child component như ví dụ sau.
 

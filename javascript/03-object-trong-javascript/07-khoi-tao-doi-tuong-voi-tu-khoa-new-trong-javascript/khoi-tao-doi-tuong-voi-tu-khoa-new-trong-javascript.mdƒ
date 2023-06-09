@@ -85,7 +85,7 @@ Bây giờ, nếu bạn muốn tạo ra các **point** khác, bạn chỉ cần 
 
 **Mục đích chính của hàm khởi tạo** là để dễ dàng **tái sử dụng code**.
 
-[Arrow function](/bai-viet/javascript/arrow-function-la-gi-arrow-function-trong-js/) không có `this` nên không được dùng làm hàm khởi tạo.
+[Arrow function](/bai-viet/javascript/arrow-function-trong-javascript) không có `this` nên không được dùng làm hàm khởi tạo.
 
 </content-warning>
 
@@ -101,7 +101,7 @@ let root = new Point();
 console.log(root.x, root.y); // 0
 ```
 
-> Tuy nhiên, mình khuyên bạn nên sử dụng cách gọi hàm khởi tạo với cặp dấu ng`()`, vì nó chuẩn hơn và **đúng với cú pháp gọi hàm**.
+> Tuy nhiên, mình khuyên bạn nên sử dụng cách gọi hàm khởi tạo với cặp dấu ngoặc đơn `()`, vì nó chuẩn hơn và **đúng với cú pháp gọi hàm**.
 
 Bạn có thể khai báo, đồng thời khởi tạo object ngay với cú pháp `new function(){...}` như sau:
 

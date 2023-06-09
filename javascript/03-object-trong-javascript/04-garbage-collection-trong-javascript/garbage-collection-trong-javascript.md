@@ -25,13 +25,13 @@ Quản lý bộ nhớ trong JavaScript được thực hiện tự động và t
 
 Điều gì sẽ xảy ra nếu một vùng nhớ không còn sử dụng? JavaScript engine sẽ làm gì để phát hiện và giải phóng vùng nhớ đó?
 
-## Khả năng tiếp cận
+## Khả năng truy cập
 
-Ý tưởng chính của việc quản lý bộ nhớ trong JavaScript là **khả năng tiếp cận**.
+Ý tưởng chính của việc quản lý bộ nhớ trong JavaScript là **khả năng truy cập**.
 
 Những giá trị _"có thể tiếp tận"_ là những giá trị được lưu trong bộ nhớ theo một cách nào đó, để có thể truy cập và sử dụng.
 
-► JavaScript có một số giá trị là luôn luôn "có thể tiếp cận", nên chắc chắn không bao giờ bị xóa, ví dụ:
+► JavaScript có một số giá trị là luôn luôn "có thể truy cập", nên chắc chắn không bao giờ bị xóa, ví dụ:
 
 - Hàm đang thực thi, các biến cục bộ và tham số của hàm.
 - Các hàm được gọi từ trong hàm khác, các biến cục bộ và tham số của hàm đó.
@@ -40,7 +40,7 @@ Những giá trị _"có thể tiếp tận"_ là những giá trị được l�
 
 Các giá trị này được gọi là **root** (gốc).
 
-► Các giá trị khác được gọi là "có thể tiếp cận" nếu chúng được truy cập từ **root** qua tham chiếu (địa chỉ) hoặc chuỗi các tham chiếu.
+► Các giá trị khác được gọi là "có thể truy cập" nếu chúng được truy cập từ **root** qua tham chiếu (địa chỉ) hoặc chuỗi các tham chiếu.
 
 > Luôn có một tiến trình chạy ngầm trong JavaScript engine gọi là [garbage collector](<https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)>) hay **trình thu gom rác**. Garbage collector theo dõi toàn bộ object và xóa đi các object không thể truy cập.
 
@@ -68,7 +68,7 @@ user = null;
 
 ![Garbage collection](https://user-images.githubusercontent.com/29374426/157900325-3d61de6c-9676-4c0c-892f-395f7b94f284.png)
 
-Lúc này, John là "không thể tiếp cận". Không có cách nào để truy cập đến John vì không có tham chiếu đến nó. Do đó, **Garbage collector** sẽ xóa John khỏi bộ nhớ.
+Lúc này, John là "không thể truy cập". Không có cách nào để truy cập đến John vì không có tham chiếu đến nó. Do đó, **Garbage collector** sẽ xóa John khỏi bộ nhớ.
 
 ## Hai tham chiếu đến object
 
@@ -88,10 +88,9 @@ Lúc này, tồn tại hai tham chiếu đến John. Và nếu giá trị của 
 
 ```js
 user = null;
-s;
 ```
 
-Tham chiếu từ `user` đến John bị mất, nhưng vẫn còn tham chiếu từ `admin` đến John. Nói cách khác, John vẫn "có thể tiếp cận" được. Nên vùng nhớ của John không bị xóa.
+Tham chiếu từ `user` đến John bị mất, nhưng vẫn còn tham chiếu từ `admin` đến John. Nói cách khác, John vẫn "có thể truy cập" được. Nên vùng nhớ của John không bị xóa.
 
 Chi khi nào giá trị của `admin` cũng bị ghi đè thì vùng nhớ của John mới bị xóa.
 

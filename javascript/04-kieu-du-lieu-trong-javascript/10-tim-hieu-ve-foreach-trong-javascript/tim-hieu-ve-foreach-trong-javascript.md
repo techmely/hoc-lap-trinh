@@ -533,8 +533,8 @@ let arrays = [[1, 2, 3], [4, 5], [6]];
 Đáp án
 
 ```js
-var arrays = [[1, 2, 3], [4, 5], [6]];
-var newArray = arrays.reduce(function (a, b) {
+const arrays = [[1, 2, 3], [4, 5], [6]];
+const newArray = arrays.reduce(function (a, b) {
   return a.concat(b);
 });
 console.log(newArray);
@@ -544,11 +544,11 @@ console.log(newArray);
 ► Sử dụng [vòng lặp for, while](/bai-tap/javascript/vong-lap-trong-javascript) thông thường.
 
 ```js
-var arrays = [[1, 2, 3], [4, 5], [6]];
-var newArray = [];
-for (var i = 0; i < arrays.length; i++) {
-  var subArray = arrays[i];
-  for (var j = 0; j < subArray.length; j++) newArray.push(subArray[j]);
+const arrays = [[1, 2, 3], [4, 5], [6]];
+const newArray = [];
+for (let i = 0; i < arrays.length; i++) {
+  const subArray = arrays[i];
+  for (let j = 0; j < subArray.length; j++) newArray.push(subArray[j]);
 }
 console.log(newArray);
 // => [1, 2, 3, 4, 5, 6]
@@ -578,7 +578,7 @@ Xem đáp án:
 
 ```js
 function every(array, action) {
-  for (var i = 0; i < array.length; i++) if (!action(array[i])) return false;
+  for (let i = 0; i < array.length; i++) if (!action(array[i])) return false;
   return true;
 }
 
@@ -592,7 +592,7 @@ console.log(every([NaN, NaN, 4], isNaN));
 
 ```js
 function some(array, action) {
-  for (var i = 0; i < array.length; i++) if (action(array[i])) return true;
+  for (let i = 0; i < array.length; i++) if (action(array[i])) return true;
   return false;
 }
 

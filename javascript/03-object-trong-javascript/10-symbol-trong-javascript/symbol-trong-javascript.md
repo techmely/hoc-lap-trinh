@@ -33,7 +33,7 @@ Bài viết này, mình sẽ đi tìm lời giải cho những câu hỏi trên.
 
 ## Symbol là gì?
 
-Symbol là một kiểu dữ liệu dạng [primative data](https://developer.mozilla.org/en-US/docs/Glossary/Primitive). Để tạo mới một Symbol, bạn có thể dùng hàm `Symbol()`, ví dụ:
+Symbol là một kiểu dữ liệu dạng [primitive data](https://developer.mozilla.org/en-US/docs/Glossary/Primitive). Để tạo mới một Symbol, bạn có thể dùng hàm `Symbol()`, ví dụ:
 
 ```js
 let myId = Symbol();
@@ -56,7 +56,7 @@ Cơ bản về Symbol là vậy. Tiếp theo, mình sẽ tìm hiểu về một 
 
 ## Một số đặc điểm của Symbol trong JavaScript
 
-###
+### Symbol luôn khác nhau
 
 Nghĩa là dù bạn có tạo ra bao nhiêu Symbol với cùng description thì chúng vẫn khác nhau:
 
@@ -200,7 +200,7 @@ console.log(arr);
 
 #### Ví dụ khi không dùng Symbol
 
-Giả sử mình định nghĩa một module như là một object, với một key dạng string là "id". Trường "id" sẽ được sử dụng với mục đích nào đó bên trong module.
+Giả sử mình định nghĩa một module như là một object, với một key dạng string là `id`. Trường `id` sẽ được sử dụng với mục đích nào đó bên trong module.
 
 ```js
 // lib.js
@@ -214,7 +214,7 @@ let module = {
 export default module;
 ```
 
-Khi một người khác sử dụng module của mình, do không biết nên người đó lại tiếp tục sử dụng thuộc tính với key là "id". Dẫn đến giá trị của "id" bị thay đổi.
+Khi một người khác sử dụng module của mình, do không biết nên người đó lại tiếp tục sử dụng thuộc tính với key là `id`. Dẫn đến giá trị của `id` bị thay đổi.
 
 Cuối cùng, các logic khác cũng bị thay đổi theo. Và đây là điều mà mình không mong muốn.
 

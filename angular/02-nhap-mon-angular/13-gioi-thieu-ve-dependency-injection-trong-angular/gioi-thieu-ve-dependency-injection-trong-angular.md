@@ -1,7 +1,7 @@
 ---
 title: "Giới thiệu Dependency Injection trong Angular"
 description: "Dependency Injection (DI) là một pattern rất quan trọng trong lập trình, có thể bạn đã nghe qua những Spring Framework của Java hay ASP.NET có support DI, vậy với Frontend application thì có thật sự cần thiết? Hiện nay có rất nhiều Frontend Framework có support DI, Angular sử dụng rất nhiều và nó có riêng một DI framework được thiết kế để đáp ứng được yêu cầu về mặt như kiến trúc hệ thống của Angular."
-keywords: []
+keywords: ["Dependency Injection trong Angular", "Dependency Injection là gì"]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
@@ -12,7 +12,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 13
 ---
 
-## Dependency Injection là gi?
+## Dependency Injection là gì?
 
 Dependency Injection (DI) là một pattern rất quan trọng trong lập trình, có thể bạn đã nghe qua những Spring Framework của Java hay ASP.NET có support DI, vậy với Frontend application thì có thật sự cần thiết?
 
