@@ -66,29 +66,32 @@ Khi hành động bắt đầu, rồi khi nó kết thúc, hàm callback sẽ đ
 
 Ví dụ dưới đây sẽ thực hiện một **GET** [request](/bai-viet/javascript/network-requests). Thông thường, việc này sẽ tốn thời gian (ít hay nhiều tuỳ thuộc vào tốc độ mạng):
 
-    function doAsync(url, onSuccess, onError) {
-      const xhr = new XMLHttpRequest();
-      xhr.open("GET", url);
-      xhr.onload = () => onSuccess(xhr.responseText);
-      xhr.onerror = () => onError(xhr.statusText);
-      xhr.send();
-    }
-    // Usage:
-    doAsync(
-      "https://something.com",
-      (value) => {
-        // 'value' is corresponding with 'xhr.responseText'
-      },
-      (error) => {
-        // 'error' is corresponding with 'xhr.statusText'
-      }
-    );
+```js
+function doAsync(url, onSuccess, onError) {
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET", url);
+  xhr.onload = () => onSuccess(xhr.responseText);
+  xhr.onerror = () => onError(xhr.statusText);
+  xhr.send();
+}
+// Usage:
+doAsync(
+  "https://something.com",
+  (value) => {
+    // 'value' is corresponding with 'xhr.responseText'
+  },
+  (error) => {
+    // 'error' is corresponding with 'xhr.statusText'
+  }
+);
+```
 
 Ở đây, hàm **doAsync** là một hàm bất đồng bộ với 2 hàm callback là: **onSuccess** và **onError**. Khi request trên thành công thì hàm _onSuccess_ sẽ được gọi, ngược lại hàm _onError_ sẽ được gọi. Khá dễ hiểu và dễ triển khai phải không?
 
 Tuy nhiên, thử tưởng tượng bạn phải thực hiện 2 request liên tiếp, với request thứ 2 chỉ thực hiện khi request thứ nhất thực hiện xong:
 
-    // Usage:
+```js
+// Usage:
     doAsync(
       "https://something.com",
       (value) => {
@@ -108,6 +111,7 @@ Tuy nhiên, thử tưởng tượng bạn phải thực hiện 2 request liên t
         // 'error' is corresponding with 'xhr.statusText' (1)
       }
     );
+```
 
 Bắt đầu phức tạp rồi nhỉ? Và nếu bạn phải thực hiện thêm vài request khác nữa thì kết quả chắc chắn sẽ còn kinh khủng hơn rất nhiều. Trường hợp này gọi là **Callback Hell**.
 
@@ -134,7 +138,8 @@ Ban đầu, Promise có state là _pending_ và kết quả _value_ là **undefi
 
 Khi sử dụng Promise, ví dụ phía trên sẽ trở thành:
 
-    function doAsync(url) {
+```js
+function doAsync(url) {
       return new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest();
         xhr.open("GET", url);
@@ -152,10 +157,12 @@ Khi sử dụng Promise, ví dụ phía trên sẽ trở thành:
       .catch((error) => {
         // 'error' is corresponding with 'xhr.statusText'
       });
+```
 
 Và khi bạn muốn thực hiện 2 request liên tiếp:
 
-    // Usage:
+```js
+ // Usage:
     doAsync("https://something.com")
       .then((value) => {
         /*
@@ -176,6 +183,7 @@ Và khi bạn muốn thực hiện 2 request liên tiếp:
          * from either 'https://something.com' or 'https://other.com'
          */
       });
+```
 
 Rõ ràng, cấu trúc chương trình đã trở nên rõ ràng hơn. Không còn hiện tượng nhiều mức lồng nhau như khi sử dụng callback nữa rồi.
 
@@ -185,7 +193,8 @@ Rõ ràng, cấu trúc chương trình đã trở nên rõ ràng hơn. Không c�
 
 Với ví dụ sử dụng Promise bên trên, mình có thể áp dụng async/await như sau:
 
-    function doAsync(url) {
+```js
+function doAsync(url) {
       return new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest();
         xhr.open("GET", url);
@@ -211,6 +220,7 @@ Với ví dụ sử dụng Promise bên trên, mình có thể áp dụng async/
     }
 
     run();
+```
 
 Nếu xử lý theo cách này thì dù bạn có thực hiện thêm nhiều request nữa, cấu trúc chương trình vẫn rất rõ ràng và mạch lạc phải không?
 

@@ -372,7 +372,7 @@ setTimeout(async () => {
 
 **Chú ý**: hàm **setTimeout** trên chỉ là ví dụ để thể hiện việc delay khi load module.
 
-<content-warning/>
+</content-warning>
 
 Với cách **dynamic import** này, **import** sẽ trả về một Promise. Do đó, bạn có thể sử dụng kết hợp với **async/await** như trên.
 
