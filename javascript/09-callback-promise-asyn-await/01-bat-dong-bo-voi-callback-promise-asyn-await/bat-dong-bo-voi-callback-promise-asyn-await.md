@@ -36,7 +36,7 @@ Giả sử bạn có một nhiệm vụ bao gồm 2 công việc tốn thời gi
 
 Đối với xử lý đồng bộ, bạn sẽ thực hiện công việc A; đợi A hoàn thành xong thì sẽ thực hiện B; rồi lại đợi B hoàn thành thì nhiệm vụ cuối cùng mới coi như xong.
 
-![Xử lý đồng bộ trong javascript](/static/fc69c8a6719116f9ab449f4bb3f8e162/7f4de/xu-ly-dong-bo-completejavascript.com_.png "Xử lý đồng bộ trong javascript")
+![Xử lý đồng bộ trong javascript](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d7456362-6307-40c4-96a3-4994a20f8b46)
 
 Nghĩa là thời gian để hoàn thành nhiệm vụ là tổng của thời gian hoàn thành A và B. Hơn nữa, trong khoảng thời gian này bạn sẽ không thể thực hiện thêm 1 hành động nào khác (như bắt các [sự kiện](/bai-viet/javascript/mot-so-event-javascript) với chuột và bàn phím của người dùng...). Điều này rõ ràng làm giảm hiệu năng và trải nghiệm người dùng đối với chương trình.
 
@@ -44,7 +44,7 @@ Nghĩa là thời gian để hoàn thành nhiệm vụ là tổng của thời g
 
 Để khắc phục tình trạng này, các ngôn ngữ lập trình như C/C++, Java,... sẽ sử dụng **cơ chế đa luồng (multi-thread)**. Nghĩa là mỗi công việc tốn thời gian sẽ được thực hiện trên một thread riêng biệt mà không can thiệp vào thread chính. Bạn vẫn có thể thực hiện các công việc tốn thời gian mà vẫn có thể bắt các sự kiện ở thread chính.
 
-![Xử lý đa luồng trong c/c++, java](/static/d2822f22bab3f127b149e6165e72d07f/fdd90/xu-ly-da-luong-completejavascript.com_.png "Xử lý đa luồng trong c/c++, java")
+![Xử lý đa luồng trong javascript](https://github.com/techmely/hoc-lap-trinh/assets/29374426/0ab4cb1a-c44f-4783-b6bd-103379700c10)
 
 Với ví dụ trên, thời gian để hoàn thành nhiệm vụ sẽ chỉ bằng thời gian hoàn thành của A hoặc B. Cái nào thực hiện xong trước sẽ đợi cái còn lại hoàn thành thì nhiệm vụ sẽ kết thúc.
 
@@ -52,7 +52,7 @@ Với ví dụ trên, thời gian để hoàn thành nhiệm vụ sẽ chỉ b�
 
 Tuy nhiên, JavaScript lại là một câu chuyện khác. Hai nền tảng quan trọng với JavaScript (trình duyệt và Nodejs đều là **single-thread**. Chính vì vậy, bạn không thể xử lý đa luồng với JavaScript được mà phải sử dụng cơ chế **xử lý bất đồng bộ**.
 
-![Xử lý bất đồng bộ trong javascript](/static/35e739394f3d9c8b76b1b371075a93cc/de25e/xu-ly-bat-dong-bo-don-luong-completejavascript.com_.png "Xử lý bất đồng bộ trong javascript")
+![Xử lý bất đồng bộ](https://github.com/techmely/hoc-lap-trinh/assets/29374426/c3ff2162-1b22-437c-aac5-0fe15004ef7a)
 
 Với cách xử lý bất đồng bộ, khi A bắt đầu thực hiện, chương trình tiếp tục thực hiện B mà không đợi A kết thúc. Việc mà bạn cần làm ở đây là cung cấp một phương thức để chương trình thực hiện khi A hoặc B kết thúc.
 
