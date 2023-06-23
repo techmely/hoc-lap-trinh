@@ -122,9 +122,11 @@ Bắt đầu phức tạp rồi nhỉ? Và nếu bạn phải thực hiện thê
 
 Cú pháp cơ bản của **Promise** là:
 
-    let promise = new Promise(function (resolve, reject) {
-      // Code here
-    });
+```js
+let promise = new Promise(function (resolve, reject) {
+  // Code here
+});
+```
 
 Trong đó, hàm được truyền vào **new Promise** gọi là **executor**.
 
