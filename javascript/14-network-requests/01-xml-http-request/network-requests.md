@@ -63,7 +63,7 @@ Thông thường, vì lý do an toàn nên server sẽ chặn các request từ 
 Ví dụ sau gửi phương thức request dạng GET đến [https://httpbin.org/get](https://httpbin.org/get):
 
 ```js
-var req = new XMLHttpRequest();
+const req = new XMLHttpRequest();
 req.open("GET", "https://httpbin.org/get", false);
 req.send(null);
 console.log(req.status);
@@ -124,13 +124,13 @@ req.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 Ví dụ sau gửi phương thức request dạng POST:
 
 ```js
-var req = new XMLHttpRequest();
+const req = new XMLHttpRequest();
 req.open("POST", "https://httpbin.org/post", false);
 req.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
 
-var jsonBody = {
-  name: "Lam Pham",
-  url: "completejavascript.com",
+const jsonBody = {
+  name: "Thaycacac",
+  url: "kungfutech.edu.vn",
 };
 req.send(jsonBody);
 
@@ -179,7 +179,7 @@ Do đó, chỉ nên sử dụng request đồng bộ với những yêu cầu c�
 Như mình đã nói ở trên, để cấu hình request là bất đồng bộ, bạn chỉ cần truyền vào **true** ở thuộc tính thứ 3 của phương thức **open**. Ngoài ra, bạn cần phải [đăng ký sự kiện](/bai-viet/javascript/mot-so-event-javascript) **load** và truyền vào hàm callback - hàm này được thực hiện khi có thông tin phản hồi từ server.
 
 ```js
-var req = new XMLHttpRequest();
+const req = new XMLHttpRequest();
 req.open("GET", "https://httpbin.org/get", true);
 req.addEventListener("load", function () {
   console.log(req.status);
@@ -215,7 +215,7 @@ Kết quả cho thấy, dòng lệnh **console.log('Sent')** được thực hi�
 Ngoài ra, bạn có thể đăng ký sự kiện **error** để xử lý trường hợp request bị lỗi:
 
 ```js
-var req = new XMLHttpRequest();
+const req = new XMLHttpRequest();
 req.open("GET", "https://httpbin.org/get", true);
 req.addEventListener("load", function () {
   console.log(req.status);
