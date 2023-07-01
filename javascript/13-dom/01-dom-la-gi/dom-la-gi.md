@@ -37,7 +37,7 @@ Hãy xem xét một ví dụ đơn giản sau:
     <p>Hello, I am Marijn and this is my home page.</p>
     <p>
       I also wrote a book! Read it
-      <a href="http://eloquentjavascript.net">here</a>.
+      <a href="https://kungfutech.edu.vn">here</a>.
     </p>
   </body>
 </html>
