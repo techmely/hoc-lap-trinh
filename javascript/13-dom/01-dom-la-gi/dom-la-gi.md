@@ -61,14 +61,13 @@ Mỗi DOM node sẽ có thuộc tính _nodeType_ - là một số nguyên - đ�
 
 Ví dụ trên được biểu diễn dạng cây:
 
-![Cơ bản về DOM JavaScript 2](/static/5226983d9e40bacfef6528123117edb9/09261/Co-ban-ve-DOM-JavaScript-2-completejavascript.com_.png "Cơ bản về DOM JavaScript 2 ")
+![Cơ bản về DOM JavaScript](https://github.com/techmely/hoc-lap-trinh/assets/29374426/b5f0707e-c5df-4434-a134-0b5450ff9d7f)
 
 ## Liên kết giữa các DOM node trong cây
 
 Mỗi DOM node luôn chứa rất nhiều liên kết đến các DOM node khác.
 
-
-![Cơ bản về DOM JavaScript](https://github.com/techmely/hoc-lap-trinh/assets/29374426/b5f0707e-c5df-4434-a134-0b5450ff9d7f)
+![Liên kết giữa các DOM node trong cây](https://github.com/techmely/hoc-lap-trinh/assets/29374426/b8f49857-87dd-478b-8a26-222e546b9d0d)
 
 ### [Node.parentNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode)
 
