@@ -45,7 +45,7 @@ Hãy xem xét một ví dụ đơn giản sau:
 
 Đây là cấu trúc đơn giản của một trang web.
 
-![Cơ bản về DOM JavaScript 1 ](/static/cd58ce377a07064c9a0d8d912f6f68cb/2bbac/Co-ban-ve-DOM-JavaScript-1-completejavascript.com_.png "Cơ bản về DOM JavaScript 1 ")
+![Cơ bản về DOM JavaScript 1 ](https://github.com/techmely/hoc-lap-trinh/assets/29374426/dea710de-8050-4b6b-ae32-45be7bab6560)
 
 Ở đây, mỗi hình vuông cùng với nội dung bên trong nó chính là DOM.
 
@@ -67,7 +67,8 @@ Ví dụ trên được biểu diễn dạng cây:
 
 Mỗi DOM node luôn chứa rất nhiều liên kết đến các DOM node khác.
 
-![Cơ bản về DOM JavaScript](/static/ac6f0844db7cb0f3c6b352a47055820f/55493/Co-ban-ve-DOM-JavaScript-3-completejavascript.com_.png "Cơ bản về DOM JavaScript ")
+
+![Cơ bản về DOM JavaScript](https://github.com/techmely/hoc-lap-trinh/assets/29374426/b5f0707e-c5df-4434-a134-0b5450ff9d7f)
 
 ### [Node.parentNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode)
 
