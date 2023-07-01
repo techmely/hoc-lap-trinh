@@ -160,8 +160,6 @@ Trả về node đầu tiên thoả mãn _selectors_. Trong đó, _selectors_ l�
 
 Trả về danh sách các node thoả mãn _selectors_, theo thứ tự sử dụng thuật toán DFS.
 
-![Perfect practice makes perfect - Complete JavaScript - completejavascript.com](/static/bb6b968cfe13d231995307e6efd5045a/7c811/only-perfect-practice-makes-perfect-completejavascript.com_.png "Perfect practice makes perfect - Complete JavaScript - completejavascript.com")
-
 ## Ví dụ sử dụng DOM trong JavaScript
 
 "Cách học tốt nhất là học từ thực hành". Sau đây là một số bài tập thực hành sử dụng DOM và các phương thức trên mà mình đã thực hiện (phần đề bài ở trang mà mình đã tham khảo, xem phía dưới).
