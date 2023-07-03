@@ -56,7 +56,9 @@ Xem hướng dẫn đóng góp ở đây 👇
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/techmely)
 
+## Star History
 
+[![Star History Chart](https://api.star-history.com/svg?repos=techmely/hoc-lap-trinh&type=Date)](https://star-history.com/#techmely/hoc-lap-trinh&Date)
 
 ## License
 
