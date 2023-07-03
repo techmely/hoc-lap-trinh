@@ -109,7 +109,7 @@ obj.getMessage();
 
 ### 2.Application Context
 
-Để sử dụng Spring Bean ta cần khai báo thư viện spring-context sau:
+Để sử dụng Spring Context ta cần khai báo thư viện spring-context sau:
 
 ```xml
 <dependency>
