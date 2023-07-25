@@ -26,7 +26,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---
 
-![Thymeleaf](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/expression%20thymeleaf.png)
+![thymeleaf](https://github.com/techmely/hoc-lap-trinh/assets/29374426/5a614a07-a8c1-4bd5-b750-e6759fd207f5)
 
 Trong template `Thymeleaf`, để lấy các thông tin trong **Model**. bạn sẽ sử dụng `Thymeleaf Standard Expression`.
 Ở bài này chúng ta sẽ đề cập đến 4 loại `Expression` sau:
