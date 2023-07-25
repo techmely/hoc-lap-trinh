@@ -27,37 +27,37 @@ Sau khi học được 1 chút kiến thức cơ bản của Spring thì bài n�
 **_Bước 1_**
 Chọn **File** -> **New** -> **Project**
 
-![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-1.png)
+![form-hello-1](https://github.com/techmely/hoc-lap-trinh/assets/29374426/53753b4b-9f65-4f3c-a876-1cd05ccb715a)
 
 **_Bước 2_**
 Chọn mục **Spring Initializr** -> Đặt **tên project** và điền các mục như dưới đây (nếu **jdk** của bạn là **1.8** hoặc bản cũ hơn thì chọn **Java: 8**) -> **Next**
 
-![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-2.png)
+![form-hello-2](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d0e5abdc-7143-42b8-a789-122ca749748c)
 
 **_Bước 3_**
 Ở mục **Web** chọn **Spring Web** và ở **Template Engines** chọn **Thymeleaf** (bạn chưa biết cái này thì cứ hiểu nó công cụ hỗ trợ generate dữ liệu ra trang HTML) -> cuối cùng chọn **Finish**
 
-![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-3.png)
+![form-hello-3](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d4d80536-1b6d-417d-858a-e2309c8e95ad)
 
 **_Bước 4_**
 Sau khi tạo xong cấu trúc project sẽ như này:
 
-![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-4.png)
+![form-hello-4](https://github.com/techmely/hoc-lap-trinh/assets/29374426/bc1e591d-9dbd-4503-bd7c-995d30452ac7)
 
 **_Bước 5_**
 Bây giờ đến bước tạo các file để viết chương trình, bạn _click chuột phải_ vào package chứa class main của project, ở đây chính là package: `com.example.hellospring` -> tiếp theo chọn **New** -> **Java Class**
 
-![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-5.png)
+![form-hello-5](https://github.com/techmely/hoc-lap-trinh/assets/29374426/a7ecc722-d019-4133-a732-65fda8688720)
 
 **_Bước 6_**
 Ở đây, bạn đặt tên là **WebController** với mục đích nó sẽ là class xử lý các `request` từ browser gửi đến
 
-![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-6.png)
+![form-hello-6](https://github.com/techmely/hoc-lap-trinh/assets/29374426/21c43d37-4e3e-4bb1-96bd-824dde5853d4)
 
 **_Bước 7_**
 Tiếp đến, bạn tạo thêm 2 file html: `index.html` và `hello.html`. Mình sẽ vứt 2 file này ở `resouces/template` (quy ước chung)
 
-![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-7.png)
+![form-hello-7](https://github.com/techmely/hoc-lap-trinh/assets/29374426/0d7612c0-c11a-4b01-8ab6-10af3b71b74b)
 
 _File pom.xml_
 
@@ -220,6 +220,6 @@ public class HelloSpringApplication {
 
 Sau khi chạy xong thì chương trình đang ở đường dẫn `http://localhost:8080/` rồi.
 
-![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-8.png)
+![form-hello-8](https://github.com/techmely/hoc-lap-trinh/assets/29374426/13f21c49-b565-4e45-b7a3-ed2a0c75535a)
 
-![form-hello](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/form-hello-9.png)
+![form-hello-9](https://github.com/techmely/hoc-lap-trinh/assets/29374426/7e689fb6-8f08-4968-b133-33bbbebe8250)
