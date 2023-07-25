@@ -33,11 +33,15 @@ dòng chữ:Hello World!
 Bước1:Truy cập vào:https://start.spring io
 
 Tạo ứng dụng spring boot với thông số sau
-![tao ung dung](../../images/taoungdung.png)
+
+![taoungdung](https://github.com/techmely/hoc-lap-trinh/assets/29374426/0b487096-79cc-4773-b031-7d6bfbf9d821)
+
 Bước2:Mở IntellJ Idea.
 
 Mở project vừa tạo và tổ chức lại thư mục dự án như sau:
-![to chuc thu muc](../../images/to%20chuc%20thu%20muc.png)
+
+![to chuc thu muc](https://github.com/techmely/hoc-lap-trinh/assets/29374426/29fef1cc-6097-42c9-ae22-0f297104adb5)
+
 Bước3:Cài đặt GreetingController
 
 ```java
