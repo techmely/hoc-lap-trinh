@@ -26,7 +26,7 @@ position: 3
 
 ## Converter trong Spring
 
-![Thymeleaf](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/spring-converter.png)
+![spring-converter](https://github.com/techmely/hoc-lap-trinh/assets/29374426/66706972-3bc3-41d9-869a-bd9c5184291e)
 
 ### Spring Converter là gì?
 
