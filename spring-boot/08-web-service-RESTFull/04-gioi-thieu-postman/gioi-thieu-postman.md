@@ -51,7 +51,7 @@ Những lợi ích khi sử dụng Postman:
 
 #### Giao diện POSTMAN
 
-![giao dien postmen](../../images/giaodien-post-man.png)
+![giaodien-post-man](https://github.com/techmely/hoc-lap-trinh/assets/29374426/e199b218-96bb-49c5-9fca-f47da06ccff1)
 
 Việc sử dụng Postman rất đơn giản. Bạn chỉ cần chọn method, điền URL, thêm các thông tin cho body, header trong những trường hợp cần thiết, rồi nhấn SEND. Việc của bạn là đợi và Postman sẽ cho bạn kết quả trả về nó có hình thù như thế nào.
 
