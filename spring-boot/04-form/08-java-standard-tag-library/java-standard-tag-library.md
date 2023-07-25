@@ -24,7 +24,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 8
 ---
 
-![JSTL](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/jstl.jpg)
+![jstl](https://github.com/techmely/hoc-lap-trinh/assets/29374426/55145b25-44d7-41ff-8e8b-90108d7a6f59)
 
 ## JSTL là gì?
 
@@ -53,7 +53,8 @@ Nhóm `Core Tags` là các thẻ **JSTL** được sử dụng phổ biến nh�
 ```
 
 Bảng dưới đây là các thẻ có trong `Core Tags`, các bạn có thể đọc để hiểu rõ hơn nhé:
-![core tag](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/core-tag.png)
+
+![core-tag](https://github.com/techmely/hoc-lap-trinh/assets/29374426/ad0f4546-8d71-45db-b18b-bf1263417311)
 
 ### Formatting Tags
 
@@ -64,4 +65,5 @@ Nhóm `Formatting Tags` trong **JSTL** được sử dụng để định dạng
 ```
 
 Dưới đây là các thẻ trong nhóm `Formatting Tags`:
-![formatting tag](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/formatting-tags.png)
+
+![formatting-tags](https://github.com/techmely/hoc-lap-trinh/assets/29374426/65eb34a5-3335-44ba-a15c-767d278f330d)
