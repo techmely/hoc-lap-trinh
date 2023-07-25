@@ -166,4 +166,4 @@ public String loopExample(Model model) {
 
 **_Kết quả:_**
 
-![Vong lap Thymeleaf](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/vong-lap-thymeleaf.png)
+![vong-lap-thymeleaf](https://github.com/techmely/hoc-lap-trinh/assets/29374426/db9c0fad-a492-42cb-b19e-bd4675479dcf)
