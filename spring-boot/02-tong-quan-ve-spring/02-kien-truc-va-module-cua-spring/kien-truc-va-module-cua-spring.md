@@ -35,7 +35,8 @@ Kiến trúc Spring được tổ chức theo kiểu module. Mặc dù khá là 
 ## Các module của Spring Framework
 
 Spring Framework bao gồm nhiều tính năng được tổ chức thành khoảng 20 module. Nó được chia như sau:
-![module Spring](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/spring-overview.png)
+
+![spring-overview](https://github.com/techmely/hoc-lap-trinh/assets/29374426/5966b40c-beb2-4876-a187-17663637aba2)
 
 ## Test
 
