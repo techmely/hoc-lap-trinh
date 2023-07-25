@@ -29,7 +29,8 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
 
-![Thymeleaf](https://github.com/techmely/hoc-lap-trinh/blob/spring-boots/spring-boot/images/thymeleaf.png)
+
+![Thymeleaf](https://github.com/techmely/hoc-lap-trinh/assets/29374426/b11aaeb5-f5ac-46a8-89e9-00a9d499dad6)
 
 ## Thymeleaf là gì?
 
