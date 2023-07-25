@@ -37,4 +37,5 @@ OAuth xác định bốn vai trò:
 - **Máy khách** - ứng dụng (người dùng đang sử dụng) yêu cầu quyền truy cập vào dữ liệu người dùng trên máy chủ tài nguyên.
 - **Máy chủ tài nguyên** - lưu trữ dữ liệu của người dùng và các dịch vụ http có thể trả lại dữ liệu người dùng cho các máy khách đã được xác thực.
 - **Máy chủ ủy quyền** - chịu trách nhiệm xác thực danh tính của người dùng và cung cấp mã thông báo ủy quyền. Mã thông báo này được máy chủ tài nguyên chấp nhận và xác thực danh tính của bạn.
-  ![oauth2](../../images/Oauth2-Flow.png)
+
+![Oauth2-Flow](https://github.com/techmely/hoc-lap-trinh/assets/29374426/3c5f0fed-b48d-4bae-bd6d-caa154d16e08)
