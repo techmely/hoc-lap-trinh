@@ -22,7 +22,7 @@ image: https://user-images.githubusercontent.com/29374426/156868174-f4ad2395-1e3
 position: 18
 ---
 
-Ngoài [function declaration](/bai-viet/khoa-hoc-javascript/ham-trong-javascript) và [function expression](/bai-viet/khoa-hoc-javascript/function-expression-trong-javascript/), JavaScript còn có **arrow function**. Trong bài viết này, mình sẽ trình bày về arrow function là gì và cách sử dụng arrow function cơ bản.
+Ngoài [function declaration](/bai-viet/javascript/ham-trong-javascript) và [function expression](/bai-viet/javascript/function-expression-trong-javascript/), JavaScript còn có **arrow function**. Trong bài viết này, mình sẽ trình bày về arrow function là gì và cách sử dụng arrow function cơ bản.
 
 ## Arrow function trong Javascript là gì?
 
@@ -194,4 +194,4 @@ for (let i = 1; i <= 10; i++) {
 Trong đó:
 
 - Hàm `isNaN(number)` dùng để kiểm tra giá trị của biến `number` xem có phải là `NaN` hay không. Nói cách khác, nếu `isNaN(number)` trả về `false` thì giá trị của `number` là số.
-- [Vòng lặp for](/bai-viet/khoa-hoc-javascript/cau-truc-lap-trong-javascript/) dùng để duyệt các số từ 1 đến 10.
+- [Vòng lặp for](/bai-viet/javascript/cau-truc-lap-trong-javascript/) dùng để duyệt các số từ 1 đến 10.

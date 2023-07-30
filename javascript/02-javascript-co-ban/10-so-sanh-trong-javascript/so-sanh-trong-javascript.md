@@ -24,7 +24,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 10
 ---
 
-Qua bài viết trước, bạn đã biết [toán tử là gì](/bai-viet/khoa-hoc-javascript/toan-tu-trong-javascript/), cũng như các loại toán tử trong JavaScript giúp cho việc tính toán. Tiếp theo, mình sẽ tìm hiểu về **toán tử so sánh** trong JavaScript.
+Qua bài viết trước, bạn đã biết [toán tử là gì](/bai-viet/javascript/toan-tu-trong-javascript/), cũng như các loại toán tử trong JavaScript giúp cho việc tính toán. Tiếp theo, mình sẽ tìm hiểu về **toán tử so sánh** trong JavaScript.
 
 Cụ thể, bài viết này tập trung vào tìm hiểu toán tử so sánh là gì, các loại toán tử so sánh trong JS, kết quả của phép so sánh và một số trường hợp đặc biệt (dễ nhầm lẫn) khi so sánh.
 
@@ -64,7 +64,7 @@ a !== b; // so sánh khác nghiêm ngặt
 
 ## Kết quả của phép so sánh
 
-Kết quả của phép so sánh luôn là một giá trị kiểu [boolean](/cac-kieu-du-lieu-trong-javascript/).
+Kết quả của phép so sánh luôn là một giá trị kiểu [boolean](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript/).
 
 - `true`: đúng, chính xác
 - `false`: sai, không chính xác
@@ -117,10 +117,10 @@ Trong ví dụ so sánh `"A" < "Z"` kết quả là `true`. Quá trình so sánh
 
 Trong ví dụ so sánh `"Small" < "Smart"` kết quả là `true`. Quá trình so sánh lặp lại nhiều lần.
 
-1.  Kí tự đầu tiên `S` là giống nhau
-2.  Kí tự thứ hai `m` cũng giống nhau
-3.  Kí tự thứ ba `a` cũng giống nhau
-4.  Kí tự thứ tư `l` nhỏ hơn `r`. Suy ra, string `"Small"` nhỏ hơn string `"Smart"`.
+1. Kí tự đầu tiên `S` là giống nhau
+2. Kí tự thứ hai `m` cũng giống nhau
+3. Kí tự thứ ba `a` cũng giống nhau
+4. Kí tự thứ tư `l` nhỏ hơn `r`. Suy ra, string `"Small"` nhỏ hơn string `"Smart"`.
 
 Trong ví dụ so sánh `"Big" < "BigBang"` kết quả là `true`. Quá trình so sánh cùng lặp lại nhiều lần. Ba kí tự đầu tiên là `"Big"` đều giống nhau. Lúc này, string `"Big"` kết thúc. Trong khi, string `"BigBang"` còn thêm các kí tự `"Bang"` (độ dài string lớn hơn). Suy ra, string `"Big"` nhỏ hơn string `"BigBang"`.
 
@@ -341,13 +341,13 @@ console.log(null >= -1); // true
 
 Giải thích:
 
-1.  Hiển nhiên số `15` lớn hơn số `9`.
-2.  Đây là so sánh hai string. Quy trình là so sánh kí tự lần lượt từ trái sang phải. Thành phần `"no"` giống nhau. Suy ra `"none"` lớn hơn `"no"` vì `"none"` nhiều kí tự hơn.
-3.  Đây cũng là so sánh hai string. Kí tự đầu tiên `"3"` lớn hơn kí tự `"2"` nên suy ra `"3"` lớn hơn `"24"`.
-4.  Đây là so sánh hai kiểu dữ liệu khác nhau. Do đó, string `"3"` sẽ chuyển thành số `3`. Hiển nhiên số `3` nhỏ hơn số `24`.
-5.  Hai giá trị `null` và `undefined` chỉ bằng nhau khi sử dụng toán tử `==`. Còn lại sẽ khác nhau và khác các giá trị khác. Nên kết quả là `false`.
-6.  Giải thích tương tự như (5).
-7.  Giải thích tương tự như (5).
-8.  Giải thích tương tự như (5).
-9.  Giải thích tương tự như (5).
+1. Hiển nhiên số `15` lớn hơn số `9`.
+2. Đây là so sánh hai string. Quy trình là so sánh kí tự lần lượt từ trái sang phải. Thành phần `"no"` giống nhau. Suy ra `"none"` lớn hơn `"no"` vì `"none"` nhiều kí tự hơn.
+3. Đây cũng là so sánh hai string. Kí tự đầu tiên `"3"` lớn hơn kí tự `"2"` nên suy ra `"3"` lớn hơn `"24"`.
+4. Đây là so sánh hai kiểu dữ liệu khác nhau. Do đó, string `"3"` sẽ chuyển thành số `3`. Hiển nhiên số `3` nhỏ hơn số `24`.
+5. Hai giá trị `null` và `undefined` chỉ bằng nhau khi sử dụng toán tử `==`. Còn lại sẽ khác nhau và khác các giá trị khác. Nên kết quả là `false`.
+6. Giải thích tương tự như (5).
+7. Giải thích tương tự như (5).
+8. Giải thích tương tự như (5).
+9. Giải thích tương tự như (5).
 10. Khi sử dụng toán tử `>` giữa `null` và một số, giá trị `null` sẽ chuyển thành dạng số và bằng số `0`. Mà hiển nhiên, số `0` sẽ lớn hơn số `-1`. Vì vậy, đáp án là `true`.

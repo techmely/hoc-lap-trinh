@@ -21,7 +21,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 14
 ---
 
-Trong bài viết về [cấu trúc rẽ nhánh trong JavaScript](/bai-viet/khoa-hoc-javascript/cau-truc-re-nhanh-trong-javascript/), mình đã tìm hiểu về câu lệnh `if` và toán tử `?`. Ngoài ra, mình cũng có thể sử dụng **lệnh switch case** làm cấu trúc rẽ nhánh thay thế cho câu lệnh `if`.
+Trong bài viết về [cấu trúc rẽ nhánh trong JavaScript](/bai-viet/javascript/cau-truc-re-nhanh-trong-javascript/), mình đã tìm hiểu về câu lệnh `if` và toán tử `?`. Ngoài ra, mình cũng có thể sử dụng **lệnh switch case** làm cấu trúc rẽ nhánh thay thế cho câu lệnh `if`.
 
 Sau đây, mình cùng tìm hiểu về cách sử dụng câu lệnh switch - case trong JavaScript và khi nào thì nên sử dụng cấu trúc rẽ nhánh switch - case.
 
@@ -122,7 +122,7 @@ switch (x) {
 
 <content-info>
 
-`switch` và `case` đều có thể chứa biểu thức - không chỉ là [biến](/bai-viet/khoa-hoc-javascript/bien-trong-javascript/) hay [hằng](/bai-viet/khoa-hoc-javascript/hang-trong-javascript/).
+`switch` và `case` đều có thể chứa biểu thức - không chỉ là [biến](/bai-viet/javascript/bien-trong-javascript/) hay [hằng](/bai-viet/javascript/hang-trong-javascript/).
 
 </content-info>
 

@@ -365,4 +365,4 @@ Tham khảo:
 
 - [Function binding](https://javascript.info/bind)
 - [Decorator, forwarding của hàm trong JS](/bai-viet/javascript/decorator-forwarding-cua-ham-trong-javascript)
-- [Phân biệt call, apply và bind trong JavaScript](/phan-biet-call-apply-va-bind-trong-javascript/)
+- [Phân biệt call, apply và bind trong JavaScript](/bai-viet/javascript/phan-biet-call-apply-va-bind-trong-javascript/)

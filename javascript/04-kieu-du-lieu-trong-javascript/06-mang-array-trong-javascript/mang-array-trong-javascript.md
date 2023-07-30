@@ -506,11 +506,11 @@ Giải thích:
 
 Hãy viết code thực hiện các bước sau:
 
-1.  Tạo mảng `letters` với hai phần tử "a" và "b".
-2.  Thêm phần tử "c" vào cuối mảng.
-3.  Thay đổi giá trị của phần tử ở giữa thành "d".
-4.  Lấy ra và trả về giá trị phần tử đầu tiên của mảng.
-5.  Thêm hai số 1, 2 vào đầu mảng.
+1. ạo mảng `letters` với hai phần tử "a" và "b".
+2. hêm phần tử "c" vào cuối mảng.
+3. hay đổi giá trị của phần tử ở giữa thành "d".
+4. ấy ra và trả về giá trị phần tử đầu tiên của mảng.
+5. hêm hai số 1, 2 vào đầu mảng.
 
 Xem đáp án
 
@@ -569,9 +569,9 @@ Vì vậy, giá trị của [`this`](/bai-viet/javascript/object-la-gi-object-tr
 
 Viết hàm `sumInput` thực hiện các yêu cầu sau:
 
-1.  Sử dụng hàm [`prompt`](/ham-tuong-tac-nguoi-dung-alert-confirm-prompt/) để yêu cầu người dùng nhập vào các số và lưu vào một mảng.
-2.  Dừng hỏi người dùng khi giá trị nhập vào không phải là số bình thường.
-3.  Tính và in ra tổng các số người dùng nhập.
+1. Sử dụng hàm [`prompt`](/bai-viet/javascript/ham-tuong-tac-voi-nguoi-dung-alert-confirm-prompt) để yêu cầu người dùng nhập vào các số và lưu vào một mảng.
+2. Dừng hỏi người dùng khi giá trị nhập vào không phải là số bình thường.
+3. Tính và in ra tổng các số người dùng nhập.
 
 Xem đáp án
 

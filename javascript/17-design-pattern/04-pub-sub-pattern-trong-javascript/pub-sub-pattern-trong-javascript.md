@@ -54,7 +54,7 @@ let Events = (() => {
 })();
 ```
 
-Trước tiên, bạn thấy rằng cách triển khai pattern này sử dụng [Revealing Module Pattern](/js-pattern-2-module-pattern/), với 3 [function](/bai-viet/javascript/ham-trong-javascript) được public là: **on**, **off** và **emit**.
+Trước tiên, bạn thấy rằng cách triển khai pattern này sử dụng [Revealing Module Pattern](/bai-viet/javascript/module-pattern-trong-javascript/), với 3 [function](/bai-viet/javascript/ham-trong-javascript) được public là: **on**, **off** và **emit**.
 
 ### Đăng ký sự kiện với hàm on
 

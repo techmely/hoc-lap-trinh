@@ -24,7 +24,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 5
 ---
 
-Tương tự như [biến](/bai-viet/khoa-hoc-javascript/bien-trong-javascript/), hằng cũng là một thành phần quan trọng trong lập trình JavaScript. Sau đây, mình sẽ tìm hiểu xem hằng là gì, cách khai báo hằng trong JavaScript, cách đặt tên hằng. Đồng thời, mình so sánh sự khác nhau giữa hằng và biến trong JavaScript.
+Tương tự như [biến](/bai-viet/javascript/bien-trong-javascript/), hằng cũng là một thành phần quan trọng trong lập trình JavaScript. Sau đây, mình sẽ tìm hiểu xem hằng là gì, cách khai báo hằng trong JavaScript, cách đặt tên hằng. Đồng thời, mình so sánh sự khác nhau giữa hằng và biến trong JavaScript.
 
 ## Hằng trong Javascript là gì?
 
@@ -265,7 +265,7 @@ const if = true; // Sai vì dùng từ khóa
 ### Bài 2: Khai báo và in ra giá trị của hằng
 
 1.  Khai báo hai hằng **COLOR_ORANGE** và **COLOR_YELLOW** lần lượt là mã màu cam và màu vàng.
-2.  In ra giá trị của hai hằng số trên ra [console.log](/bai-viet/khoa-hoc-javascript/dev-tools-la-gi/).
+2.  In ra giá trị của hai hằng số trên ra [console.log](/bai-viet/javascript/dev-tools-la-gi/).
 3.  Khai báo biến **currentColor** với giá trị bằng **COLOR_ORANGE**.
 4.  In ra console giá trị của biến **currentColor** (kết quả phải là giá trị của hằng **COLOR_ORANGE**).
 

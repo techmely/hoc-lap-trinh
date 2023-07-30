@@ -431,7 +431,7 @@ console.log("age" in user); // false
 
 ## Cách duyệt tất cả các thuộc tính của object
 
-Để duyệt tất cả các thuộc tính của object, bạn có thể sử dụng vòng lặp `for...in` - khác với vòng lặp `for(;;)` đã tìm hiểu ở bài [vòng lặp trong JavaScript](/bai-viet/javascript/bai-viet/javascript/vong-lap-trong-javascript).
+Để duyệt tất cả các thuộc tính của object, bạn có thể sử dụng vòng lặp `for...in` - khác với vòng lặp `for(;;)` đã tìm hiểu ở bài [vòng lặp trong JavaScript](/bai-viet/javascript/vong-lap-trong-javascript).
 
 ```js
 let myComputer = {

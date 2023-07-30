@@ -56,7 +56,7 @@ Sau đây là sơ đồ khối mô tả sự hoạt động của cấu trúc r�
 
 ![cau-truc-switch-case-trong-java](https://user-images.githubusercontent.com/29374426/125040317-b383c780-e0c1-11eb-8dbc-98bfa0af2509.png)
 
-Switch sẽ kiểm tra giá trị của **biến** (nằm trong ngoặc đơn sau switch kia), và so sánh biến với từng giá trị khác nhau, lần lượt từ trên xuống dưới, mỗi giá trị cần so sánh gọi là một case. Ở đoạn code trên, các giá trị để so sánh với **biến** là **giá trị 1**, **giá trị 2**. Khi một trường hợp đúng (`true`), khối lệnh ở trong `case` đó sẽ được thực thi. Câu lệnh `break` để thoát ra khỏi cấu trúc switch bạn có thể xem thêm ở bài [từ khóa break và continue](/bai-viet//bai-viet/java/tu-khoa-break-va-continue).
+Switch sẽ kiểm tra giá trị của **biến** (nằm trong ngoặc đơn sau switch kia), và so sánh biến với từng giá trị khác nhau, lần lượt từ trên xuống dưới, mỗi giá trị cần so sánh gọi là một case. Ở đoạn code trên, các giá trị để so sánh với **biến** là **giá trị 1**, **giá trị 2**. Khi một trường hợp đúng (`true`), khối lệnh ở trong `case` đó sẽ được thực thi. Câu lệnh `break` để thoát ra khỏi cấu trúc switch bạn có thể xem thêm ở bài [từ khóa break và continue](/bai-viet/java/tu-khoa-break-va-continue).
 
 <content-example />
 

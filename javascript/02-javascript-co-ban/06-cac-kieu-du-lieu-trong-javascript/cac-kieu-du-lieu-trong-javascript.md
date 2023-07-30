@@ -24,7 +24,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 6
 ---
 
-Trong hai bài viết về [biến](/bai-viet/khoa-hoc-javascript/bien-trong-javascript) và [hằng](/bai-viet/khoa-hoc-javascript/hang-trong-javascript) trong JavaScript, mình có đề cập đến việc **gán giá trị** cho biến và hằng. Ở đó, mỗi giá trị đều có một kiểu dữ liệu nhất định. Vậy bạn có biết kiểu dữ liệu là gì và các kiểu dữ liệu trong JavaScript là gì không?
+Trong hai bài viết về [biến](/bai-viet/javascript/bien-trong-javascript) và [hằng](/bai-viet/javascript/hang-trong-javascript) trong JavaScript, mình có đề cập đến việc **gán giá trị** cho biến và hằng. Ở đó, mỗi giá trị đều có một kiểu dữ liệu nhất định. Vậy bạn có biết kiểu dữ liệu là gì và các kiểu dữ liệu trong JavaScript là gì không?
 
 Sau đây mình sẽ cùng tìm hiểu về các kiểu dữ liệu cơ bản trong JavaScript. Còn về chi tiết của từng kiểu dữ liệu thì mình sẽ giới thiệu ở các bài tiếp theo.
 

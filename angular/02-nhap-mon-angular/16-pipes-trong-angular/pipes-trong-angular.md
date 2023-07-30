@@ -108,7 +108,7 @@ Angular cung cấp sẵn khá nhiều pipes để có thể sử dụng được
 | [`UpperCasePipe`](https://angular.io/api/common/UpperCasePipe) | Convert text sang chữ hoa.                                                 |
 | [`LowerCasePipe`](https://angular.io/api/common/LowerCasePipe) | Convert text sang chữ thường.                                              |
 | [`CurrencyPipe`](https://angular.io/api/common/CurrencyPipe)   | Hiển thị giá trị tiền tệ.                                                  |
-| [`DecimalPipe`](/https://angular.io/api/common/DecimalPipe)    | Hiển thị số thập phân                                                      |
+| [`DecimalPipe`](https://angular.io/api/common/DecimalPipe)    | Hiển thị số thập phân                                                      |
 | [`PercentPipe`](https://angular.io/api/common/PercentPipe)     | Hiển thị phần trăm %                                                       |
 | [`JsonPipe`](https://angular.io/api/common/JsonPipe)           | Hiển thị json                                                              |
 | [`AsyncPipe`](https://angular.io/api/common/AsyncPipe)         | Hiển thị value của observable và tự động unsubscribe khi view được destroy |

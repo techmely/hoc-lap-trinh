@@ -125,4 +125,4 @@ btnRm.addEventListener("click", () => {
 
 Trên đây, mình đã giới thiệu với các bạn cách chuyển HTML Template sang DOM Node, đồng thời thay đổi nội dung của template ứng với data - lưu trong JavaScript. Hy vọng với phương pháp này, bạn có thể áp dụng template cho các project của mình. Bài viết sau, mình sẽ giới thiệu với các bạn một thư viện rất hay - chuyên dùng để render HTML template.
 
-Hẹn gặp lại bạn ở [bài viết tiếp theo](/mustache-template-voi-jquery/), thân ái!
+Hẹn gặp lại bạn ở bài viết tiếp theo, thân ái!

@@ -120,7 +120,7 @@ Có 2 giải pháp cho vấn đề trên.
 
 Rõ ràng, bây giờ chỉ cần xem log là biết mỗi giá trị tương ứng với biến nào rồi phải không? Cách này khá ổn, tuy nhiên vẫn hơi mất công.
 
-- **Giải pháp 2**: Đóng gói các biến thành object và sử dụng cú pháp khai báo rút gọn của [ES6](/tag/es6/)
+- **Giải pháp 2**: Đóng gói các biến thành object và sử dụng cú pháp khai báo rút gọn của ES6
 
   const foo = { name: "Alex", age: "26", gender: "male" };
   const bar = { name: "Jenifer", age: "18", gender: "female" };
@@ -154,7 +154,7 @@ Kết quả:
 
 ## Sử dụng console.time và console.timeEnd
 
-Trong 2 bài viết là: [Triển khai Stack trong JavaScript với Array, Object hay Map](/trien-khai-stack-trong-javascript-voi-array-object-hay-map/) và [Triển khai Queue trong JavaScript](/trien-khai-queue-trong-javascript/), mình có sử dụng [performance.now()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/now) để tính toán thời gian thực hiện.
+Trong 2 bài viết là: Triển khai Stack trong JavaScript với Array, Object hay Map và Triển khai Queue trong JavaScript, mình có sử dụng [performance.now()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/now) để tính toán thời gian thực hiện.
 
 Trong đó, cách sử dụng của mình như sau:
 
