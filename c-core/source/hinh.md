@@ -2,7 +2,7 @@
 
 ## Example 1
 
-```
+```bash
 *
 * *
 * * *
@@ -29,7 +29,7 @@ int main() {
 
 ## Example 2
 
-```
+```bash
 1
 1 2
 1 2 3
@@ -55,7 +55,7 @@ int main() {
 
 ## Example 3
 
-```
+```bash
 A
 B B
 C C C
@@ -83,7 +83,7 @@ int main() {
 
 ## Example 4
 
-```
+```bash
 * * * * *
 * * * *
 * * *
@@ -109,7 +109,7 @@ int main() {
 
 ## Example 5
 
-```
+```bash
 1 2 3 4 5
 1 2 3 4
 1 2 3
@@ -136,7 +136,7 @@ int main() {
 
 ## Example 6
 
-```
+```bash
         *
       * * *
     * * * * *
@@ -166,7 +166,7 @@ int main() {
 
 ## Example 6
 
-```
+```bash
         1
         1
       2 3 2
@@ -206,7 +206,7 @@ int main() {
 
 ## Example 7
 
-```
+```bash
 * * * * * * * * *
   * * * * * * *
     * * * * *
@@ -235,7 +235,7 @@ int main() {
 
 ## Example 8
 
-```
+```bash
            1
          1   1
        1   2   1
@@ -269,7 +269,7 @@ int main() {
 
 ## Example 9
 
-```
+```bash
 1
 2 3
 4 5 6
@@ -295,7 +295,7 @@ int main() {
 
 ## Example 10
 
-```
+```bash
 * * * * * * * * *
 * *           * *
 *   *       *   *
@@ -329,7 +329,7 @@ int main()
 
 ## Example 11
 
-```
+```bash
     *****
    *   *
   *   *
@@ -365,7 +365,7 @@ int main()
 
 ## Example 11
 
-```
+```bash
     *
    ***
   *****
@@ -423,7 +423,7 @@ int main()
 
 ## Example 12
 
-```
+```bash
 input n: 5
              *
           *  *  *
@@ -479,7 +479,7 @@ int main()
 
 ## Example 13
 
-```
+```bash
  *  *  *  *  *  *  *  *  *  *
  *  *  *  *        *  *  *  *
  *  *  *              *  *  *
@@ -535,7 +535,7 @@ int main()
 
 ## Example 14
 
-```
+```bash
 Enter the number of columns5
     *****
    ****
@@ -588,7 +588,7 @@ int main(void)
 
 ## Example 15
 
-```
+```bash
 Enter the odd number only 5
        +
        +
@@ -630,7 +630,7 @@ int main(void)
 
 ## Example 16
 
-```
+```bash
               1
            1  2  1
         1  2  3  2  1
@@ -673,7 +673,7 @@ int main()
 
 ## Example 17
 
-```
+```bash
 Enter the number of rows5
 1 2 3 4 5 4 3 2 1
   1 2 3 4 3 2 1
@@ -687,20 +687,20 @@ Enter the number of rows5
 #include <stdlib.h>
 int main() {
 
-	int i,j,rows,space=0;
-  	printf("Enter the number of rows");
-	scanf("%d",&rows);//taking numer of rows from user
+ int i,j,rows,space=0;
+   printf("Enter the number of rows");
+ scanf("%d",&rows);//taking numer of rows from user
 
-	for(i=rows; i>=1; i--){
+ for(i=rows; i>=1; i--){
             //outer for loop
         for(j=1; j<=space; j++)
-        	printf("  ");
-         	for(j=1; j<=i; j++)
-        		printf("%d ",j);
+         printf("  ");
+          for(j=1; j<=i; j++)
+          printf("%d ",j);
 
-         		for(j=i-1; j>=1; j--)
-        			printf("%d ",j);
-	printf("\n");
+           for(j=i-1; j>=1; j--)
+           printf("%d ",j);
+ printf("\n");
     space++;
     }
     getch();
@@ -710,7 +710,7 @@ int main() {
 
 ## Example 18
 
-```
+```bash
 *
 **
 * *
@@ -743,7 +743,7 @@ int main()
 
 ## Example 19
 
-```
+```bash
 Enter the number of rows: 5
     *  *           *  *
  *  *  *  *     *  *  *  *

@@ -249,46 +249,46 @@ Nhập vào số nguyên dương n và n số nguyên. Tìm số xuất hiện n
 int main() {
   system("cls");
   //INPUT - @STUDENT:ADD YOUR CODE FOR INPUT HERE:
-  	int n;
-  	int arr[1000], b[1000] = {0}, c[1000] = {0}; //Khoi tao 3 mang so nguyen
-  	int i;
-  	scanf("%d", &n); //Nhap so phan tu cua mang arr
-  	for(i = 0; i < n;i++)
-  	{
-  		scanf("%d", &arr[i]);	// Nhap n phan tu mang so nguyen arr
+   int n;
+   int arr[1000], b[1000] = {0}, c[1000] = {0}; //Khoi tao 3 mang so nguyen
+   int i;
+   scanf("%d", &n); //Nhap so phan tu cua mang arr
+   for(i = 0; i < n;i++)
+   {
+    scanf("%d", &arr[i]); // Nhap n phan tu mang so nguyen arr
   }
   for(i = 0; i < n;i++)
   {
-  	if(arr[i] > 0) //Mang so nguyen b[] ghi lai so lan xuat hien cua
-  		b[arr[i]]++;  //cac phan tu lon hon 0 trong day arr
-  	if(arr[i] < 0) //Mang so nguyen c[] ghi lai so lan xuat hien cua
-  		c[-arr[i]]++; //cac phan tu nho hon 0 trong day arr
+   if(arr[i] > 0) //Mang so nguyen b[] ghi lai so lan xuat hien cua
+    b[arr[i]]++;  //cac phan tu lon hon 0 trong day arr
+   if(arr[i] < 0) //Mang so nguyen c[] ghi lai so lan xuat hien cua
+    c[-arr[i]]++; //cac phan tu nho hon 0 trong day arr
   }
   int max = 0;
   for(i = 0; i <n ;i++)
   {
-  	if(arr[i] > 0)
-  	{
-  		if(b[arr[i]] > max)
-  			max = b[arr[i]];
-  	}
-  	else
-  	{
-  		if(c[-arr[i]] > max)
-  			max = c[-arr[i]];
-  	}
+   if(arr[i] > 0)
+   {
+    if(b[arr[i]] > max)
+     max = b[arr[i]];
+   }
+   else
+   {
+    if(c[-arr[i]] > max)
+     max = c[-arr[i]];
+   }
   }// Vong lap tra ra so lan xuat hien nhieu nhat cua mot phan tu trong arr
   // Fixed Do not edit anything here.
   printf("\nOUTPUT:\n");
   //@STUDENT: WRITE YOUR OUTPUT HERE:
-  	for(i = 0; i <1000 ;i++)
+   for(i = 0; i <1000 ;i++)
   {
-  	if(b[i] == max)
-  	{
-  		printf("%d", i);
-  	}
-  	if(c[i] == max)
-  		printf("%d", -i);
+   if(b[i] == max)
+   {
+    printf("%d", i);
+   }
+   if(c[i] == max)
+    printf("%d", -i);
   } //In ra phan tu co lan xuat hien nhieu nhat trong day
 
   //--FIXED PART - DO NOT EDIT ANY THINGS HERE
@@ -314,20 +314,20 @@ Với x và n là số nguyên nhập từ bàn phím
 int main() {
   system("cls");
   //INPUT - @STUDENT:ADD YOUR CODE FOR INPUT HERE:
-  	int x,n;
-  	scanf("%d%d", &x, &n); //Nhap vao hai so nguyen x va n
-  	double sum = 0; //Khoi tao gia tri cua tong bang khong
-  	int i;
-  	for(i = 0;i <= n;i++)
-  	{
-  		sum+= 1 / (pow(x,i));	//pow(x,i) la ham tinh luy thua bac i cua x
-	}
+   int x,n;
+   scanf("%d%d", &x, &n); //Nhap vao hai so nguyen x va n
+   double sum = 0; //Khoi tao gia tri cua tong bang khong
+   int i;
+   for(i = 0;i <= n;i++)
+   {
+    sum+= 1 / (pow(x,i)); //pow(x,i) la ham tinh luy thua bac i cua x
+ }
 
 
   // Fixed Do not edit anything here.
   printf("\nOUTPUT:\n");
   //@STUDENT: WRITE YOUR OUTPUT HERE:
-  	printf("%.2lf\n", sum);
+   printf("%.2lf\n", sum);
 
 
   //--FIXED PART - DO NOT EDIT ANY THINGS HERE
@@ -347,29 +347,29 @@ int main() {
 int main() {
   system("cls");
   //INPUT - @STUDENT:ADD YOUR CODE FOR INPUT HERE:
-  	char str[100];
-  	scanf("%[^\n]", str);
-  	int i,j;
-  	bool all_al = false;
-  	while(all_al == false) // lap de xoa ki tu khong phai chu cai
-  	{
-  		all_al = true;
-  		for(i = 0; i < strlen(str);i++)
-  		{
-  			if(!isalpha(str[i])) // kiem tra xem str[i] co phai la chu cai khong
-			{
-				for(j = i; j < strlen(str) ; j++)	// xoa str[i] neu str[i] khong phai chu cai
-				{
-					str[j] = str[ j + 1];
-				}
-			}
-		}
-		for( i = 0; i < strlen(str);i++)	// kiem tra trong str co ki tu nao khong phai chu cai khong
-		{
-			if(!isalpha(str[i]))
-				all_al = false;
-		}
-	}
+   char str[100];
+   scanf("%[^\n]", str);
+   int i,j;
+   bool all_al = false;
+   while(all_al == false) // lap de xoa ki tu khong phai chu cai
+   {
+    all_al = true;
+    for(i = 0; i < strlen(str);i++)
+    {
+     if(!isalpha(str[i])) // kiem tra xem str[i] co phai la chu cai khong
+   {
+    for(j = i; j < strlen(str) ; j++) // xoa str[i] neu str[i] khong phai chu cai
+    {
+     str[j] = str[ j + 1];
+    }
+   }
+  }
+  for( i = 0; i < strlen(str);i++) // kiem tra trong str co ki tu nao khong phai chu cai khong
+  {
+   if(!isalpha(str[i]))
+    all_al = false;
+  }
+ }
 
 
 
@@ -380,7 +380,7 @@ int main() {
   // Fixed Do not edit anything here.
   printf("\nOUTPUT:\n");
   //@STUDENT: WRITE YOUR OUTPUT HERE:
-  	printf("%s\n", str);
+   printf("%s\n", str);
 
 
   //--FIXED PART - DO NOT EDIT ANY THINGS HERE
@@ -397,39 +397,39 @@ int main() {
 #include <ctype.h>
 #include <stdbool.h>
 
-bool isPrime(int n)	// ham kiem tra so nguyen to
+bool isPrime(int n) // ham kiem tra so nguyen to
 {
-	if( n < 2)
-		return false;
-	int i;
-	for(i = 2; i <= sqrt(n);i++)
-	{
-		if(n % i == 0)
-			return false;
-	}
-	return true;
+ if( n < 2)
+  return false;
+ int i;
+ for(i = 2; i <= sqrt(n);i++)
+ {
+  if(n % i == 0)
+   return false;
+ }
+ return true;
 }
 
 int main() {
   system("cls");
   //INPUT - @STUDENT:ADD YOUR CODE FOR INPUT HERE:
-  	int count = 4;
-  	int n;
-  	scanf("%d", &n);
-  	int i = 1;
+   int count = 4;
+   int n;
+   scanf("%d", &n);
+   int i = 1;
 
   // Fixed Do not edit anything here.
   printf("\nOUTPUT:\n");
   //@STUDENT: WRITE YOUR OUTPUT HERE:
-	while(count > 0)	// in ra 4 so nguyen to lon hon n
-	{
-		if(isPrime(n + i))
-		{
-			printf("%d\n", n + i);
-			count--;
-		}
-		i++;
-	}
+ while(count > 0) // in ra 4 so nguyen to lon hon n
+ {
+  if(isPrime(n + i))
+  {
+   printf("%d\n", n + i);
+   count--;
+  }
+  i++;
+ }
 
   //--FIXED PART - DO NOT EDIT ANY THINGS HERE
   system ("pause");
@@ -495,8 +495,8 @@ int main()
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
- 
- 
+
+
 int main()
 {
     // system("cls");
@@ -507,7 +507,7 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
- 
+
     // Fixed Do not edit anything here.
     printf("OUTPUT:\n");
     //@STUDENT: WRITE YOUR OUTPUT HERE:
@@ -523,7 +523,7 @@ int main()
             }
         }
     }
- 
+
     for (i = 0; i < 5; i++)
     {
         if (arr[i] % 2 == 0)
@@ -554,7 +554,7 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
- 
+
     for (i = 0; i < n - 1; i++)
     {
         for (j = i + 1; j < n; j++)
@@ -565,7 +565,7 @@ int main()
                 {
                     arr[k] = arr[k + 1];
                 }
- 
+
                 n--;
                 j--;
             }
@@ -608,7 +608,7 @@ int main()
     for (i = 0; i < strlen(s); i++)
     {
         j = 0;
- 
+
         while (s[i] != ' ' && s[i] != '\0')
         {
             tmp[count][j] = s[i];
@@ -619,13 +619,13 @@ int main()
         if (tmp[count][0] == 'h' && tmp[count][j - 1] == 'g')
             count++;
     }
- 
+
     // Fixed Do not edit anything here.
     printf("\nOUTPUT:\n");
     //@STUDENT: WRITE YOUR OUTPUT HERE:
- 
+
     printf("%d", count);
- 
+
     //--FIXED PART - DO NOT EDIT ANY THINGS HERE
     printf("\n");
     system("pause");
@@ -642,7 +642,7 @@ int main()
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-int main()	,
+int main() ,
 {
     system("cls");
     // INPUT - @STUDENT:ADD YOUR CODE FOR INPUT HERE:
@@ -753,7 +753,7 @@ int main()
     // Fixed Do not edit anything here.
     printf("OUTPUT:\n");
     //@STUDENT: WRITE YOUR OUTPUT HERE:
- 
+
     for (i = 0; i < strlen(s); i++)
     {
         if (s[i] != ' ' && tmp < 3)
@@ -801,16 +801,16 @@ int main()
     // INPUT - @STUDENT:ADD YOUR CODE FOR INPUT HERE:
     int n;
     scanf("%d", &n);
- 
+
     // Fixed Do not edit anything here.
     printf("OUTPUT:\n");
     //@STUDENT: WRITE YOUR OUTPUT HERE:
- 
+
     if (checkprime(n))
     {
         printf("0x%X", n);
     }
- 
+
     else
     {
         printf("%d is not a prime number", n);
