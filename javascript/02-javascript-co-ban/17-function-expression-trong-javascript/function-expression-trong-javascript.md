@@ -21,7 +21,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 17
 ---
 
-Trong bài viết trước, mình đã tìm hiểu về [hàm trong JavaScript](/bai-viet/khoa-hoc-javascript/ham-trong-javascript/). Cách khai báo hàm đó gọi là "function declaration". Bài viết này mình sẽ tìm hiểu về một khái niệm khác gọi là "function expression" hay dịch ra là "biểu thức hàm".
+Trong bài viết trước, mình đã tìm hiểu về [hàm trong JavaScript](/bai-viet/javascript/ham-trong-javascript/). Cách khai báo hàm đó gọi là "function declaration". Bài viết này mình sẽ tìm hiểu về một khái niệm khác gọi là "function expression" hay dịch ra là "biểu thức hàm".
 
 ![Function expression trong Javascript](https://user-images.githubusercontent.com/29374426/156868290-e6abc925-ed69-4862-901d-beb7c7f29a24.png)
 
@@ -126,7 +126,7 @@ function handleNo() {
 ask("Bạn muốn tiếp tục thực hiện chương trình không?", handleYes, handleNo);
 ```
 
-Trong ví dụ trên, [hàm confirm](/bai-viet/khoa-hoc-javascript/ham-tuong-tac-voi-nguoi-dung-alert-confirm-prompt/) bật ra một hộp thoại hỏi người dùng "Bạn muốn tiếp tục thực hiện chương trình không?".
+Trong ví dụ trên, [hàm confirm](/bai-viet/javascript/ham-tuong-tac-voi-nguoi-dung-alert-confirm-prompt/) bật ra một hộp thoại hỏi người dùng "Bạn muốn tiếp tục thực hiện chương trình không?".
 
 Nếu người dùng chọn **OK** thì giá trị của `answer` là `true`. Khi đó, hàm `handleYes` được gọi. Ngược lại, khi `answer` là `false` thì hàm `handleNo` được gọi.
 
@@ -181,7 +181,7 @@ function sayHello() {
 }
 ```
 
-**Function expression**: là hàm được định nghĩa với một biểu thức, sử dụng [toán tử gán](/bai-viet/khoa-hoc-javascript/toan-tu-trong-javascript/) `=`.
+**Function expression**: là hàm được định nghĩa với một biểu thức, sử dụng [toán tử gán](/bai-viet/javascript/toan-tu-trong-javascript/) `=`.
 
     let sayHello = function () {
       console.log("Hello!");
@@ -213,7 +213,7 @@ let sayHello = function () {
 
 **► Phạm vi của function declaration và function expression:**
 
-Khi sử dụng [strict mode](/bai-viet/khoa-hoc-javascript/strict-mode-trong-javascript/), function declaration có phạm vi trong **block**. Bạn có thể gọi hàm ở bất kỳ đâu trong block đó, nhưng không sử dụng được ở bên ngoài.
+Khi sử dụng [strict mode](/bai-viet/javascript/strict-mode-trong-javascript/), function declaration có phạm vi trong **block**. Bạn có thể gọi hàm ở bất kỳ đâu trong block đó, nhưng không sử dụng được ở bên ngoài.
 
 Ví dụ sau bị lỗi cú pháp:
 

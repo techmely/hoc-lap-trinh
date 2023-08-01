@@ -28,7 +28,7 @@ Hàm giúp chương trình trở nên rõ ràng, dễ hiểu bằng cách gộp 
 
 Ngoài ra, một hàm tốt (độc lập và thực hiện một chức năng nhất định) có thể tái sử dụng trong nhiều dự án khác nhau. Điều này giúp nâng cao hiệu suất công việc của lập trình viên.
 
-> 💡 Trong bài viết về [tương tác người dùng với: alert, confirm và prompt](/bai-viet/khoa-hoc-javascript/ham-tuong-tac-voi-nguoi-dung-alert-confirm-prompt) bạn đã biết về các hàm có sẵn như: `alert()`, `confirm()` và `prompt()`.
+> 💡 Trong bài viết về [tương tác người dùng với: alert, confirm và prompt](/bai-viet/javascript/ham-tuong-tac-voi-nguoi-dung-alert-confirm-prompt) bạn đã biết về các hàm có sẵn như: `alert()`, `confirm()` và `prompt()`.
 
 Sau đây, mình sẽ giới thiệu những thành phần cơ bản của hàm trong JavaScript. Qua đó, bạn sẽ hiểu hàm là gì, cách xây dựng hàm và ứng dụng hàm vào các dự án.
 
@@ -78,7 +78,7 @@ Bạn có thể thấy rằng, hàm giúp tránh lặp lại code. Giả sử b�
 
 ## Biến cục bộ trong hàm
 
-Một [biến](/bai-viet/khoa-hoc-javascript/bien-trong-javascript) được khai báo bên trong hàm, chỉ sử dụng được bên trong thân hàm đó. Biến này gọi là **biến cục bộ** (hay **biến địa phương**).
+Một [biến](/bai-viet/javascript/bien-trong-javascript) được khai báo bên trong hàm, chỉ sử dụng được bên trong thân hàm đó. Biến này gọi là **biến cục bộ** (hay **biến địa phương**).
 
 Ví dụ về biến cục bộ trong JavaScript:
 
@@ -157,7 +157,7 @@ sayHello("Hello!"); // Hello!
 sayHello("Hi!"); // Hi!
 ```
 
-Khi hàm `sayHello` được gọi, giá trị [string](/bai-viet/khoa-hoc-javascript/cac-kieu-du-lieu-trong-javascript/) được sao chép (copy) vào biến cục bộ `message`. Trong thân hàm sẽ sử dụng biến cục bộ đó.
+Khi hàm `sayHello` được gọi, giá trị [string](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript/) được sao chép (copy) vào biến cục bộ `message`. Trong thân hàm sẽ sử dụng biến cục bộ đó.
 
 <content-info>
 
@@ -204,7 +204,7 @@ function sayHello(message, site) {
 sayHello("Hello"); // Hello from undefined
 ```
 
-Trong trường hợp này, bạn có thể định nghĩa "giá trị mặc định" cho tham số bằng cách sử dụng [toán tử](/bai-viet/khoa-hoc-javascript/toan-tu-trong-javascript) gán `=` như sau:
+Trong trường hợp này, bạn có thể định nghĩa "giá trị mặc định" cho tham số bằng cách sử dụng [toán tử](/bai-viet/javascript/toan-tu-trong-javascript) gán `=` như sau:
 
 ```js
 function sayHello(message, site = "kungfutech.edu.vn") {

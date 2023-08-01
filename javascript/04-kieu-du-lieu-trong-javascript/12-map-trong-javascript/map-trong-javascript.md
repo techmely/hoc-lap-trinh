@@ -27,7 +27,6 @@ position: 12
 
 ![Map trong Javascript](https://user-images.githubusercontent.com/29374426/168243549-4803ac2f-e047-4230-8cad-6a059f529826.png)
 
-
 **Map trong JavaScript** là một loại object cho phép lưu trữ dữ liệu theo kiểu **key-value**.
 
 Nghe qua thì Map có vẻ giống với [object](/bai-viet/javascript/object-la-gi-object-trong-javascript) bình thường. Nhưng không phải tự nhiên mà người ta **tạo thêm kiểu dữ liệu Map**.
@@ -211,7 +210,7 @@ map7.set(NaN, 6);
 // Map(5) {"a" => 4, "b" => 2, [1] => 3, [1] => 5, NaN => 6}
 ```
 
-Khi sử dụng [toán tử so sánh](/toan-tu-so-sanh-trong-javascript/) bằng nghiêm ngặt `===` thì `[1] === [1]` là `false`. Vì vậy, Map trên tồn tại 2 cặp phần tử với key là `[1]` với value lần lượt là `3` và `5`.
+Khi sử dụng [toán tử so sánh](/bai-viet/javascript/toan-tu-trong-javascript/) bằng nghiêm ngặt `===` thì `[1] === [1]` là `false`. Vì vậy, Map trên tồn tại 2 cặp phần tử với key là `[1]` với value lần lượt là `3` và `5`.
 
 Ngoài ra, phương thức `set` còn trả về chính đối tượng Map. Nên mình có thể áp dụng kỹ thuật Method Chaining ở đây, sẽ giúp cho code trở nên ngắn gọn hơn.
 

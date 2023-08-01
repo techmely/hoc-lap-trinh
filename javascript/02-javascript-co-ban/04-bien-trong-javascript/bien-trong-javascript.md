@@ -240,7 +240,7 @@ message = "hello";
 console.log(message); // hello
 ```
 
-Tuy nhiên, nếu bạn sử dụng chế độ code nghiêm ngặt [`"use strict"`](/bai-viet/khoa-hoc-javascript/use-strict-trong-js/) thì bạn sẽ bị lỗi.
+Tuy nhiên, nếu bạn sử dụng chế độ code nghiêm ngặt [`"use strict"`](/bai-viet/javascript/use-strict-trong-js/) thì bạn sẽ bị lỗi.
 
 ```js
 "use strict";

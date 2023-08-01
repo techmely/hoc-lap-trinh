@@ -105,7 +105,7 @@ Lúc này, request mới được cấu hình. Để gửi request này đến s
 Kết quả trả về có nhiều thuộc tính, nhưng quan trọng nhất là 2 thuộc tính:
 
 - **status**: chính là status-code. Kết quả trả về là 200, chứng tỏ request thành công.
-- **responseText**: là nội dung phản hồi từ server. Trong trường hợp này, kết quả trả về là một chuỗi [JSON](/tim-hieu-ve-json-trong-javascript/).
+- **responseText**: là nội dung phản hồi từ server. Trong trường hợp này, kết quả trả về là một chuỗi [JSON](/bai-viet/javascript/json-trong-javascript/).
 
 Ngoài ra, nhiều trường hợp bạn phải chèn thêm header cho request thì server mới chấp nhận. Để làm được việc này, bạn có thể sử dụng phương thức [setRequestHeader](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/setRequestHeader) đơn giản như sau:
 

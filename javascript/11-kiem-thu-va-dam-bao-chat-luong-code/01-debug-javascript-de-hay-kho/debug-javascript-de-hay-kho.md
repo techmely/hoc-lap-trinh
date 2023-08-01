@@ -67,7 +67,7 @@ delete Object.prototype;
 // Uncaught TypeError: Cannot delete property 'prototype' of function Object() { [native code] }
 ```
 
-Qua hai ví dụ trên, ta thấy rằng: khi sử dụng 'use strict', bạn sẽ không thể sử dụng [biến](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript) mà không cần khai báo, không thể gán giá trị cho thuộc tính read-only, không thể delete thuộc tính [prototype](/cac-khia-canh-lap-trinh-huong-doi-tuong-trong-javascript/) của đối tượng [object](/bai-viet/javascript/object-la-gi-object-trong-javascript). Và còn nhiều cái **KHÔNG** nữa. Vì vậy, mình quyết định sẽ viết một bài chi tiết hơn về strict mode sau.
+Qua hai ví dụ trên, ta thấy rằng: khi sử dụng 'use strict', bạn sẽ không thể sử dụng [biến](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript/) mà không cần khai báo, không thể gán giá trị cho thuộc tính read-only, không thể delete thuộc tính prototype của đối tượng [object](/bai-viet/javascript/object-la-gi-object-trong-javascript/). Và còn nhiều cái **KHÔNG** nữa. Vì vậy, mình quyết định sẽ viết một bài chi tiết hơn về strict mode sau.
 
 Như vậy, việc sử dụng strict mode trong lập trình JavaScript sẽ làm giảm thiểu đáng kể những lỗi không mong muốn.
 

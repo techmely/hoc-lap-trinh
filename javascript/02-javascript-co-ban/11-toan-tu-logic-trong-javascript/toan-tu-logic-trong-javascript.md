@@ -31,9 +31,9 @@ Vì vậy, bài viết này sẽ tập trung vào tìm hiểu về ba toán tử
 
 ## Toán tử logic là gì?
 
-**Toán tử logic** là [toán tử](/bai-viet/khoa-hoc-javascript/toan-tu-trong-javascript/) kết nối hai hay nhiều biểu thức, dùng để kiểm tra mối quan hệ logic giữa các biểu thức. Kết quả cuối cùng phụ thuộc vào giá trị của từng biểu thức và loại toán tử logic.
+**Toán tử logic** là [toán tử](/bai-viet/javascript/toan-tu-trong-javascript/) kết nối hai hay nhiều biểu thức, dùng để kiểm tra mối quan hệ logic giữa các biểu thức. Kết quả cuối cùng phụ thuộc vào giá trị của từng biểu thức và loại toán tử logic.
 
-Theo định nghĩa thông thường, toán tử logic chỉ áp dụng cho [kiểu dữ liệu boolean](/bai-viet/khoa-hoc-javascript/cac-kieu-du-lieu-trong-javascript/) và kết quả trả về cũng là giá trị **boolean**.
+Theo định nghĩa thông thường, toán tử logic chỉ áp dụng cho [kiểu dữ liệu boolean](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript/) và kết quả trả về cũng là giá trị **boolean**.
 
 Nhưng với JavaScript thì khác, toán tử logic áp dụng cho **bất kỳ kiểu dữ liệu nào** và kết quả trả về cũng là **bất kỳ kiểu dữ liệu nào**. Để làm được điều này, các toán hạng tham gia đều được chuyển về kiểu dữ liệu boolean để kiểm tra tính logic.
 
@@ -130,7 +130,7 @@ console.log("" || 0 || null); // null (không có giá trị truthy, trả về 
 
 #### Ứng dụng của toán tử OR trong JavaScript là gì?
 
-##### Toán tử OR được dùng nhiều với câu lệnh `if`.
+##### Toán tử OR được dùng nhiều với câu lệnh `if`
 
 Nếu bạn chưa biết câu lệnh `if` là gì, thì đơn giản câu lệnh `if` dùng để kiểm tra điều kiện, nếu **đúng** sẽ thực hiện một hành động (mình sẽ có bài viết chi tiết về `if` sau).
 
@@ -167,7 +167,7 @@ Vì `hour` bằng `20` nên `hour < 9` là `false` và `hour > 17` là `true`. N
 
 Do đó, câu lệnh `console.log("Ngoài giờ làm việc")` được thực hiện.
 
-##### Toán tử OR được dùng để lấy ra giá trị **truthy** đầu tiên trong các giá trị.
+##### Toán tử OR được dùng để lấy ra giá trị **truthy** đầu tiên trong các giá trị
 
 Ví dụ bài toán hiển thị tên người dùng trên trang web, biết thông tin người dùng có hai trường liên quan đến tên là `fullName` và `nickName`.
 
@@ -252,7 +252,7 @@ console.log(10 && "a"); // "a" (không có giá trị falsy, trả về giá tr�
 
 #### Ứng dụng của toán tử AND trong JavaScript là gì?
 
-##### Toán tử AND được dùng nhiều với câu lệnh `if`.
+##### Toán tử AND được dùng nhiều với câu lệnh `if`
 
 Tương tự như toán tử OR ở trên, toán tử AND cũng hay dùng với câu lệnh `if`
 
@@ -349,7 +349,7 @@ Hay nói gắn gọn lại là: "phủ định của phủ định thành khẳn
 
 ### Thứ tự ưu tiên của các toán tử logic
 
-Nếu so sánh với các toán tử đã học như [toán tử số học](/bai-viet/khoa-hoc-javascript/toan-tu-trong-javascript/) và [toán tử so sánh](/bai-viet/khoa-hoc-javascript/so-sanh-trong-javascript/) thì toán tử logic trong JavaScript có độ ưu tiên thấp hơn.
+Nếu so sánh với các toán tử đã học như [toán tử số học](/bai-viet/javascript/toan-tu-trong-javascript/) và [toán tử so sánh](/bai-viet/javascript/so-sanh-trong-javascript/) thì toán tử logic trong JavaScript có độ ưu tiên thấp hơn.
 
 Nếu so sánh thứ tự ưu tiên của các toán tử logic trong JavaScript với nhau thì toán tử NOT (`!`) có độ ưu tiên cao nhất. Xếp thứ hai là toán tử AND (`&&`). Và cuối cùng là toán tử OR (`||`).
 
@@ -414,10 +414,10 @@ console.log(!!"hello" && "apple" < "appLE"); // false (7)
 
 **Giải thích:**
 
-1.  Toán tử OR: Giá trị **truthy** đầu tiên là `"0"` (string khác rỗng).
-2.  Toán tử OR: Không có giá trị **truthy** nào nên đáp án là giá trị của toán hạng cuối cùng `NaN`.
-3.  Toán tử AND: Giá trị **falsy** đầu tiên là `""`.
-4.  Toán tử AND: Giá trị **falsy** đầu tiên là false.
-5.  Toán tử so sánh có độ ưu tiên cao hơn nên thực hiện trước. Mà `3 > "0"` trả về `true` vì đây là so sánh khác kiểu dữ liệu. String `"0"` chuyển về dạng số thành số `0`. Tiếp theo, `null == 1` trả về `false` vì `null` chỉ bằng `undefined` và khác tất cả các giá trị còn lại. Nên biểu thức ban đầu tương đương với `true && false`. Vì vậy, kết quả là `false`.
-6.  Tương tự, toán tử so sánh thực hiện trước. Đầu tiên `null == undefined` trả về `true`. Thứ hai `0 === "0"` trả về `false` vì đây là so sánh bằng "nghiêm ngặt", mà hai toán hạng khác kiểu dữ liệu. Nên biểu thức ban đầu tương đương với `true || false`. Vì vậy, kết quả là `true`.
-7.  Toán tử so sánh thực hiện trước. Do đó `"apple" < "appLE"` thực hiện trước. Đây là so sánh string nên sẽ so sánh từng kí tự một. Thành phần `"app"` là giống nhau, mà `"l"` lớn hơn `"L"` (theo bảng mã Unicode). Nên `"apple" < "appLE"` trả về false. Tiếp theo, toán tử NOT có độ ưu tiên cao hơn AND, nên `!!"hello"` thực hiện trước. Mà `!!"hello"` trả về `true`. Nên biểu thức ban đầu tương đương với `true && false`. Vì vậy, kết quả là `false`.
+1. án tử OR: Giá trị **truthy** đầu tiên là `"0"` (string khác rỗng).
+2. án tử OR: Không có giá trị **truthy** nào nên đáp án là giá trị của toán hạng cuối cùng `NaN`.
+3. án tử AND: Giá trị **falsy** đầu tiên là `""`.
+4. án tử AND: Giá trị **falsy** đầu tiên là false.
+5. án tử so sánh có độ ưu tiên cao hơn nên thực hiện trước. Mà `3 > "0"` trả về `true` vì đây là so sánh khác kiểu dữ liệu. String `"0"` chuyển về dạng số thành số `0`. Tiếp theo, `null == 1` trả về `false` vì `null` chỉ bằng `undefined` và khác tất cả các giá trị còn lại. Nên biểu thức ban đầu tương đương với `true && false`. Vì vậy, kết quả là `false`.
+6. ơng tự, toán tử so sánh thực hiện trước. Đầu tiên `null == undefined` trả về `true`. Thứ hai `0 === "0"` trả về `false` vì đây là so sánh bằng "nghiêm ngặt", mà hai toán hạng khác kiểu dữ liệu. Nên biểu thức ban đầu tương đương với `true || false`. Vì vậy, kết quả là `true`.
+7. án tử so sánh thực hiện trước. Do đó `"apple" < "appLE"` thực hiện trước. Đây là so sánh string nên sẽ so sánh từng kí tự một. Thành phần `"app"` là giống nhau, mà `"l"` lớn hơn `"L"` (theo bảng mã Unicode). Nên `"apple" < "appLE"` trả về false. Tiếp theo, toán tử NOT có độ ưu tiên cao hơn AND, nên `!!"hello"` thực hiện trước. Mà `!!"hello"` trả về `true`. Nên biểu thức ban đầu tương đương với `true && false`. Vì vậy, kết quả là `false`.

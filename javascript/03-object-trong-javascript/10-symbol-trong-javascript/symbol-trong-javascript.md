@@ -154,7 +154,7 @@ console.log(obj);
 // => {Symbol(id): "abc123"}
 ```
 
-Tuy nhiên, thuộc tính với Symbol sẽ là **non-enumerable**. Do đó, bạn không thể dùng [`for...in`](/bai-viet/javascript/bai-viet/javascript/vong-lap-trong-javascript) để duyệt nó.
+Tuy nhiên, thuộc tính với Symbol sẽ là **non-enumerable**. Do đó, bạn không thể dùng **[`for...in`](/bai-viet/javascript/vong-lap-trong-javascript/)** để duyệt nó.
 
 ```js
 const id = Symbol("id");

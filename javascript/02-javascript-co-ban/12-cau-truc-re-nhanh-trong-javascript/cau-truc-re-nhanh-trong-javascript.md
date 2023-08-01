@@ -67,7 +67,7 @@ if (x % 2 === 0) {
   </div>
 </div>
 
-💡 Theo mình, dù khối code sau câu lệnh `if` là một hay nhiều câu lệnh thì bạn cũng nên dùng cặp dấu `{}` để code dễ đọc hơn. Ngoài ra, mình cũng nhắc lại quy luật [chuyển đổi kiểu dữ liệu](/bai-viet/khoa-hoc-javascript/chuyen-doi-kieu-du-lieu-trong-javascript/) sang boolean như sau:
+💡 Theo mình, dù khối code sau câu lệnh `if` là một hay nhiều câu lệnh thì bạn cũng nên dùng cặp dấu `{}` để code dễ đọc hơn. Ngoài ra, mình cũng nhắc lại quy luật [chuyển đổi kiểu dữ liệu](/bai-viet/javascript/chuyen-doi-kieu-du-lieu-trong-javascript/) sang boolean như sau:
 
 - Những giá trị "empty" như: số `0`, string rỗng `""`, `null`, `undefined` và `NaN` sẽ trở thành `false`.
 - Những giá trị còn lại sẽ trở thành `true`.
@@ -292,7 +292,7 @@ Toán tử `?` thường chỉ dùng để gán giá trị cho một biến dự
 
 ### Bài 1
 
-Sử dụng [hàm `prompt`](/ham-tuong-tac-nguoi-dung-alert-confirm-prompt/), hiển thị nội dung yêu cầu người dùng nhập vào một số nguyên dương chẵn.
+Sử dụng [hàm `prompt`](/bai-viet/javascript/ham-tuong-tac-voi-nguoi-dung-alert-confirm-prompt), hiển thị nội dung yêu cầu người dùng nhập vào một số nguyên dương chẵn.
 
 Nếu người dùng nhập vào đúng số chẵn thì hiển thị **Bạn đã nhập đúng!**. Ngược lại, hiển thị **Bạn đã nhập sai!**.
 

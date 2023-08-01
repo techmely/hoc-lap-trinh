@@ -26,7 +26,6 @@ Trong JavaScript, để duyệt [array](/bai-viet/javascript/mang-array-trong-ja
 
 ![Tìm hiểu về forEach trong Javascript](https://user-images.githubusercontent.com/29374426/168243187-23ec7564-4b55-402b-8663-06ebc2d677f6.png)
 
-
 ## Đặt bài toán
 
 Cho một mảng `numbers= [1, 2, 3, 4, 5, 6,7, 8, 9, 10]`. Hãy tính tổng các số trong mảng và hiển thị ra **console**.
@@ -541,7 +540,7 @@ console.log(newArray);
 // => [1, 2, 3, 4, 5, 6]
 ```
 
-► Sử dụng [vòng lặp for, while](/bai-tap/javascript/vong-lap-trong-javascript) thông thường.
+► Sử dụng vòng lặp for, while thông thường.
 
 ```js
 const arrays = [[1, 2, 3], [4, 5], [6]];

@@ -24,7 +24,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 8
 ---
 
-Trong bài viết về [chương trình JavaScript đầu tiên](/bai-viet/khoa-hoc-javascript/chuong-trinh-javascript-dau-tien/), mình có đề cập đến việc hiển thị hộp thoại với hàm `alert`. Đây là một trong ba hàm giúp tương tác người dùng mà mình sẽ tìm hiểu kỹ hơn trong bài viết này.
+Trong bài viết về [chương trình JavaScript đầu tiên](/bai-viet/javascript/chuong-trinh-javascript-dau-tien/), mình có đề cập đến việc hiển thị hộp thoại với hàm `alert`. Đây là một trong ba hàm giúp tương tác người dùng mà mình sẽ tìm hiểu kỹ hơn trong bài viết này.
 
 ## Tương tác người dùng với hàm `alert`
 
@@ -82,7 +82,7 @@ Tương tự như hàm `alert`, hộp thoại với hàm `confirm` cũng là d�
 
 ## Tương tác người dùng với hàm `prompt`
 
-Hàm `prompt` cũng lại tương tự như hàm `confirm` và hàm `alert` nhưng cho phép người dùng nhập vào [string](/bai-viet/khoa-hoc-javascript/cac-kieu-du-lieu-trong-javascript).
+Hàm `prompt` cũng lại tương tự như hàm `confirm` và hàm `alert` nhưng cho phép người dùng nhập vào [string](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript).
 
 Cú pháp:
 

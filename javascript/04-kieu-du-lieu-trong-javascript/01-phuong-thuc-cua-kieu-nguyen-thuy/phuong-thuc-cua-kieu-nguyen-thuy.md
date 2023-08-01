@@ -39,9 +39,9 @@ Nghe có vẻ vô lý nhưng đúng là như vậy. Trước khi đi vào chi ti
 
 - Là tập hợp của các cặp **key-value**.
 - Có thể khởi tạo object bằng cặp dấu `{}`, ví dụ `{ x: 1, y: 2 }`.
-- Một số loại object đặc biệt trong JavaScript như: [`function`](/bai-viet/javascript/ham-trong-javascript/), `Date`, [`Set`](/bai-viet/javascript/set-trong-javascript), [`Map`](/map-trong-javascript),...
+- Một số loại object đặc biệt trong JavaScript như: [`function`](/bai-viet/javascript/ham-trong-javascript/), `Date`, [`Set`](/bai-viet/javascript/set-trong-javascript), [`Map`](/bai-viet/javascript/map-trong-javascript/),...
 
-Điều đặc biệt nhất của object là bạn có thể **lưu hàm thành một thuộc tính** trong object. Hàm đó gọi là **[phương thức](/phuong-thuc-trong-javascript/)** của object, ví dụ:
+Điều đặc biệt nhất của object là bạn có thể **lưu hàm thành một thuộc tính** trong object. Hàm đó gọi là **[phương thức](/bai-viet/javascript/phuong-thuc-trong-javascript/)** của object, ví dụ:
 
 ```js
 let p = {

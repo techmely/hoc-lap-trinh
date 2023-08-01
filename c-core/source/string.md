@@ -1,6 +1,6 @@
 # Tổng hợp code C về String
 
-## Đếm số kí tự số trong xâu nhập từ bàn phím.
+## Đếm số kí tự số trong xâu nhập từ bàn phím
 
 ```c
 #include <stdio.h>
@@ -8,11 +8,11 @@
 #include <string.h>
 int demktso(char s[])
 {
-	int i,dem=0;
-	for (i=0;i<strlen(s);i++)
+ int i,dem=0;
+ for (i=0;i<strlen(s);i++)
         if ( s[i]>='0' && s[i]<='9' )
-			dem++;
-	return dem;
+   dem++;
+ return dem;
 }
 void main()
 {
@@ -32,11 +32,11 @@ void main()
 #include <string.h>
 int demkthoa(char s[])
 {
-	int i,dem=0;
-	for (i=0;i<strlen(s);i++)
+ int i,dem=0;
+ for (i=0;i<strlen(s);i++)
         if ( s[i]>='A' && s[i]<='Z' )
-			dem++;
-	return dem;
+   dem++;
+ return dem;
 }
 void main()
 {
@@ -47,7 +47,7 @@ void main()
 }
 ```
 
-## Đếm số kí tự thường trong xâu nhập từ bàn phím.
+## Đếm số kí tự thường trong xâu nhập từ bàn phím
 
 ```c
 #include <stdio.h>
@@ -55,11 +55,11 @@ void main()
 #include <string.h>
 int demktthuong(char s[])
 {
-	int i,dem=0;
-	for (i=0;i<strlen(s);i++)
+ int i,dem=0;
+ for (i=0;i<strlen(s);i++)
         if ( s[i]>='a' && s[i]<='z' )
-			dem++;
-	return dem;
+   dem++;
+ return dem;
 }
 void main()
 {
@@ -70,7 +70,7 @@ void main()
 }
 ```
 
-## Đếm các số tự nhiên trong xâu nhập từ bàn phím. Các kí tự số gần nhau ghép thành 1 số tự nhiên.
+## Đếm các số tự nhiên trong xâu nhập từ bàn phím. Các kí tự số gần nhau ghép thành 1 số tự nhiên
 
 Ví dụ: a123bc4d56ef cho ra đáp án là : 3
 
@@ -134,7 +134,7 @@ void main()
 }
 ```
 
-## Nhập vào 1 chuỗi và xuất chuỗi đó ra theo chiều ngược lại:
+## Nhập vào 1 chuỗi và xuất chuỗi đó ra theo chiều ngược lại
 
 Ví dụ: Nhập vào `tran van thoa` xuất ra `aoht nav nart`
 
@@ -155,7 +155,7 @@ int main()
 
 ```
 
-## Nhập vào 1 chuỗi và xuất chuỗi đó ra theo chiều ngược lại:
+## Nhập vào 1 chuỗi và xuất chuỗi đó ra theo chiều ngược lại
 
 Ví dụ: Nhập vào `tran van thoa` xuất ra `thoa van tran`
 
@@ -188,7 +188,7 @@ int main()
 
 ```
 
-## Nhập vào họ và tên tách ra họ, tên;
+## Nhập vào họ và tên tách ra họ, tên
 
 Ví dụ Nhập vào `tran van thoa` xuất ra `tran thoa`
 
@@ -225,7 +225,7 @@ int main()
 }
 ```
 
-## Nhập vào họ và tên xuất ra họ, tên đệm, tên mỗi từ 1 dòng;
+## Nhập vào họ và tên xuất ra họ, tên đệm, tên mỗi từ 1 dòng
 
 VD Nhập vào `tran van thoa` xuất ra
 `tran van thoa`
@@ -326,7 +326,7 @@ int main()
 
 ```
 
-## Nhập vào 1 chuỗi sau đó nhập vào váo 1 từ và kiểm tra xem từ đó có xuất hiện trong chuỗi trên hay không, nếu có thì xuất hiện bao nhiêu lần.
+## Nhập vào 1 chuỗi sau đó nhập vào váo 1 từ và kiểm tra xem từ đó có xuất hiện trong chuỗi trên hay không, nếu có thì xuất hiện bao nhiêu lần
 
 Ví dụ Nhập vào `tran van thoa`. Nhập kí tự t --> có 2 lần
 
