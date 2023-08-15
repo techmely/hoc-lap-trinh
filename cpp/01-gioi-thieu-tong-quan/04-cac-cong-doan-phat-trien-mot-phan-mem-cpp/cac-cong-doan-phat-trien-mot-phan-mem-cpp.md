@@ -190,8 +190,6 @@ Trong công đoạn này, bạn hoặc ai đó chạy chương trình mà bạn 
 với nhiều giá trị khác nhau được đưa vào nhằm chắc chắn rằng chương trình
 hoạt động như ý muốn.
 
----
-
 Ở bài sau, chúng ta sẽ nói về IDE (môi trường tích hợp phát triển).
 
 Hẹn gặp lại các bạn.

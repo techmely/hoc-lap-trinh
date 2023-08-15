@@ -34,16 +34,20 @@ Trước khi nói về cấu trúc rẽ nhánh chúng ta cùng tìm hiểu một
 
 Ví dụ :
 
-    bool bl ;           // khởi tạo biến Boolean.
-    bool b1 = false;   // khởi tạo theo phương thức sao chép.
-    bool b2(true);    //  khởi tạo theo phương thức mặc định.
+```cpp
+bool bl ;           // khởi tạo biến Boolean.
+bool b1 = false;   // khởi tạo theo phương thức sao chép.
+bool b2(true);    //  khởi tạo theo phương thức mặc định.
+```
 
 - Toán tử logic **NOT(!)** có thể làm thay đổi ngược lại giá trị của biến kiểu Boolean.
 
 Ví dụ :
 
-    bool bl1 = !true; // Lúc này biến bl1 không nhận giá trị true mà nhận giá trị ngược lại của true. Tức là nhận giá trị false
-    bool bl2(!false); // Điều tương tự xảy ra với biến bl2. Lúc này bl2 có giá trị true
+```cpp
+bool bl1 = !true; // Lúc này biến bl1 không nhận giá trị true mà nhận giá trị ngược lại của true. Tức là nhận giá trị false
+bool bl2(!false); // Điều tương tự xảy ra với biến bl2. Lúc này bl2 có giá trị true
+```
 
 - Chúng ta sẽ cùng thử làm một ví dụ sau
 
@@ -73,10 +77,10 @@ Tất nhiên là được. Khi ra sử dụng `boolalpha` trong thư viện `std
 
 **Kết quả :**
 
-    1
-    0
-    false
-    true
+1
+0
+false
+true
 
 ---
 
