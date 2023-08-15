@@ -30,10 +30,10 @@ các bạn sẽ được học trong khóa học này. Đó là ngôn ngữ lậ
 
 Cùng lướt qua những gì các bạn sẽ được học trong chủ đề này:
 
-  - C++ là gì?
-  - Tóm tắt lịch sử hình thành của ngôn ngữ C++.
-  - Một số đặc trưng của ngôn ngữ C++.
-  - Lý do chọn ngôn ngữ C++.
+- C++ là gì?
+- Tóm tắt lịch sử hình thành của ngôn ngữ C++.
+- Một số đặc trưng của ngôn ngữ C++.
+- Lý do chọn ngôn ngữ C++.
 
 ## Lịch sử hình thành C++
 
@@ -55,29 +55,29 @@ C++ là một phiên bản mở rộng của ngôn ngữ lập trình C.
 
 ## Một số đặc trưng của ngôn ngữ C++
 
-  - C++ là một ngôn ngữ lập trinh bậc trung.
-    Nó có nghĩa là bạn có thể sử dụng C++ để phát triển những ứng dụng bậc cao,
-    và cả những chương trình bậc thấp hoạt động tốt trên phần cứng.
+- C++ là một ngôn ngữ lập trinh bậc trung.
+  Nó có nghĩa là bạn có thể sử dụng C++ để phát triển những ứng dụng bậc cao,
+  và cả những chương trình bậc thấp hoạt động tốt trên phần cứng.
 
-  - C++ là một ngôn ngữ lập trình hướng đối tượng.
+- C++ là một ngôn ngữ lập trình hướng đối tượng.
 
-    Khác với ngôn ngữ lập trình C - một ngôn ngữ lập trình hướng thủ tục,
-    chương trình được tổ chức theo thuật ngữ "chức năng", một chức năng gồm có
-    những hành động mà bạn muốn làm. C++ được thiết kế với một cách tiếp cận
-    hoàn toàn mới được gọi là lập trình hướng đối tượng,
-    nơi mà chúng ta sử dụng những đối tượng, các lớp và sử dụng các khái niệm
-    như: thừa kế, đa hình, tính đóng gói, tính trừu tượng...
+  Khác với ngôn ngữ lập trình C - một ngôn ngữ lập trình hướng thủ tục,
+  chương trình được tổ chức theo thuật ngữ "chức năng", một chức năng gồm có
+  những hành động mà bạn muốn làm. C++ được thiết kế với một cách tiếp cận
+  hoàn toàn mới được gọi là lập trình hướng đối tượng,
+  nơi mà chúng ta sử dụng những đối tượng, các lớp và sử dụng các khái niệm
+  như: thừa kế, đa hình, tính đóng gói, tính trừu tượng...
 
-    Những khái niệm này khá phức tạp, nên nếu bạn chưa hiểu về chúng,
-    đừng lo lắng, chúng ta sẽ lần lượt làm rõ từng khái niệm trong mỗi bài học
-    khác nhau.
+  Những khái niệm này khá phức tạp, nên nếu bạn chưa hiểu về chúng,
+  đừng lo lắng, chúng ta sẽ lần lượt làm rõ từng khái niệm trong mỗi bài học
+  khác nhau.
 
-  - C++ là một ngôn ngữ lập trình hướng cấu trúc giống ngôn ngữ C,
+- C++ là một ngôn ngữ lập trình hướng cấu trúc giống ngôn ngữ C,
 
-    Nó có nghĩa là chúng ta có thể tổ chức chương trình trên khái niệm function.
+  Nó có nghĩa là chúng ta có thể tổ chức chương trình trên khái niệm function.
 
-  - C++ có thể chạy trên nhiều nền tảng khác nhau như Windows, Mac OS,
-    một số biến thể của UNIX...
+- C++ có thể chạy trên nhiều nền tảng khác nhau như Windows, Mac OS,
+  một số biến thể của UNIX...
 
 ## Lý do chọn ngôn ngữ lập trình C++
 
@@ -89,24 +89,24 @@ chúng ta cần biết C++ có thể làm được những gì.
 [Theo Adam Helps](https://www.quora.com/What-can-someone-do-using-C++),
 ngôn ngữ lập trình C++ có thể được dùng để làm những công việc sau:
 
-  - C++ được thiết kế để viết những hệ thống lớn, thậm chí C++ được dùng để tạo
+- C++ được thiết kế để viết những hệ thống lớn, thậm chí C++ được dùng để tạo
   nên hệ điều hành máy tính (Linux, Mac OS X, Windows...).
 
-  - C++ được dùng để tạo nên các game lớn của hãng Blizzard
+- C++ được dùng để tạo nên các game lớn của hãng Blizzard
   (World of Warcraft, Diablo series, StarCraft series...).
   Gần như toàn bộ các game bom tấn trên thị trường hiện nay cũng dùng C++
   để phát triển. Một số công cụ sử dụng trong việc lập trình game
   có sử dụng C++ như Unreal engine, Cocos2d-x framework,...
   Các ông lớn trong ngành công nghiệp game như Valve, CryTek cũng sử dụng C++.
 
-  - Các thể loại game chơi trên Playstation, XBox, ... được tạo ra từ C++.
+- Các thể loại game chơi trên Playstation, XBox, ... được tạo ra từ C++.
   Có thể thấy C++ là ngôn ngữ có truyền thống lâu đời trong ngành công nghiệp
   phát triển game.
 
-  - Các sản phẩm phần mềm nổi tiếng khác được phát triển bằng C++
+- Các sản phẩm phần mềm nổi tiếng khác được phát triển bằng C++
   như MS Office, Photoshop, Maya / 3ds, Auto CAD...
 
-  - C++ có thể được sử dụng ở phía Web server vì C++ có thể đáp ứng
+- C++ có thể được sử dụng ở phía Web server vì C++ có thể đáp ứng
   được yêu cầu về tốc độ xử lý, khả năng phản hồi nhanh.
 
 Tuy rằng bên cạnh C++ còn có những ngôn ngữ lập trình khác như C#, Java,...

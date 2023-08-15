@@ -46,13 +46,13 @@ một phần mềm lớn.
 
 Các bước phát triển một phần mềm
 
-  - Xác định vấn đề cần giải quyết.
-  - Thiết kế giải pháp (chọn nền tảng phát triển, chọn ngôn ngữ, chọn công cụ,
-    xác định thuật toán cho chương trình...).
-  - Viết chương trình thực hiện theo giải pháp đã đề ra.
-  - Biên dịch chương trình (chuyển đổi mã lập trình về mã máy).
-  - Liên kết các file đã được biên dịch.
-  - Chạy chương trình, kiểm tra và sửa lỗi cho chương trình.
+- Xác định vấn đề cần giải quyết.
+- Thiết kế giải pháp (chọn nền tảng phát triển, chọn ngôn ngữ, chọn công cụ,
+  xác định thuật toán cho chương trình...).
+- Viết chương trình thực hiện theo giải pháp đã đề ra.
+- Biên dịch chương trình (chuyển đổi mã lập trình về mã máy).
+- Liên kết các file đã được biên dịch.
+- Chạy chương trình, kiểm tra và sửa lỗi cho chương trình.
 
 Đối với một số lập trình viên chuyên nghiệp (hoặc do vấn đề cần giải quyết
 quá đơn giản), người ta có thể thực hiện nhanh bước 1, 2 và bắt tay vào viết
@@ -65,53 +65,53 @@ chương trình phần mềm (hay cụ thể là chương trình C++).
 ## Bước 1: Xác định vấn đề cần giải quyết
 
 Công đoạn này quyết định phần lớn đến việc chương trình của bạn được thực hiện
- một cách khó khăn hay dễ dàng. Nhưng trên lý thuyết, nó khá đơn giản.
+một cách khó khăn hay dễ dàng. Nhưng trên lý thuyết, nó khá đơn giản.
 Tất cả những gì bạn cần là một ý tưởng có thể dễ dàng xác định.
 
 Để dễ hiểu hơn, chúng ta cùng đặt một câu hỏi: Bạn đang gặp phải vấn đề gì?
 
 Mình xin đưa ra một số tình huống cụ thể:
 
-  - Mình muốn có một chương trình cho phép nhập vào năm sinh,
-    sau đó tính ra số tuổi hiện tại của bạn. (Hình 0.3.1)
-  - Mình muốn viết một chương trình tìm ra đường đi ngắn nhất
-    để đi từ nhà đến trường. (Hình 0.3.2)
-  - Mình cần một chương trình giúp mình hoàn tất đống sổ sách
-    một cách nhanh chóng hơn. (Hình 0.3.3)
+- Mình muốn có một chương trình cho phép nhập vào năm sinh,
+  sau đó tính ra số tuổi hiện tại của bạn. (Hình 0.3.1)
+- Mình muốn viết một chương trình tìm ra đường đi ngắn nhất
+  để đi từ nhà đến trường. (Hình 0.3.2)
+- Mình cần một chương trình giúp mình hoàn tất đống sổ sách
+  một cách nhanh chóng hơn. (Hình 0.3.3)
 
 Trên đây là ba trường hợp ngẫu nhiên mình nghĩ đến vì mình cần dùng nó trong
 cuộc sống. Vì mình cần máy tính giúp mình giải quyết những thứ tương tự
 như trên, nên mình đã xác định vấn đề của riêng mình.
 Cùng xem thử mình đã xác định được nó bằng cách nào.
 
-  - Trường hợp 1: Mình muốn có một chương trình cho phép nhập vào năm sinh, sau
-    đó tính ra số tuổi hiện tại của bạn. (Hình 0.3.1)
+- Trường hợp 1: Mình muốn có một chương trình cho phép nhập vào năm sinh, sau
+  đó tính ra số tuổi hiện tại của bạn. (Hình 0.3.1)
 
-    Có lẽ đây là một vấn đề quá đơn giản so với một số người, nhưng trước khi
-    làm cho máy tính hiểu được vấn đề, bản thân chúng ta phải hiểu được vấn đề
-    trước.
+  Có lẽ đây là một vấn đề quá đơn giản so với một số người, nhưng trước khi
+  làm cho máy tính hiểu được vấn đề, bản thân chúng ta phải hiểu được vấn đề
+  trước.
 
-    Mình đã tự đặt câu hỏi với bản thân là:
-    "Hiện tại, mình đang cần biết điều gì?".
+  Mình đã tự đặt câu hỏi với bản thân là:
+  "Hiện tại, mình đang cần biết điều gì?".
 
-    Sau đó mình tự trả lời với bản thân là:
-    "Mình muốn biết năm nay mình bao nhiêu tuổi".
+  Sau đó mình tự trả lời với bản thân là:
+  "Mình muốn biết năm nay mình bao nhiêu tuổi".
 
-  - Trường hợp 2: Mình muốn viết một chương trình tìm ra đường đi ngắn nhất để
-    đi từ nhà đến trường. (Hình 0.3.2)
+- Trường hợp 2: Mình muốn viết một chương trình tìm ra đường đi ngắn nhất để
+  đi từ nhà đến trường. (Hình 0.3.2)
 
-    Câu hỏi mình tự đặt ra: "Làm thế nào để tiết kiệm xăng bây giờ?"
+  Câu hỏi mình tự đặt ra: "Làm thế nào để tiết kiệm xăng bây giờ?"
 
-    Tự trả lời luôn: "Để tìm coi đường nào ngắn nhất để đi tới trường mới được".
+  Tự trả lời luôn: "Để tìm coi đường nào ngắn nhất để đi tới trường mới được".
 
-  - Trường hợp 3: Mình cần một chương trình giúp mình hoàn tất đống sổ sách
-    một cách nhanh chóng hơn. (Hình 0.3.3)
+- Trường hợp 3: Mình cần một chương trình giúp mình hoàn tất đống sổ sách
+  một cách nhanh chóng hơn. (Hình 0.3.3)
 
-    Câu hỏi: "Với cái đống sổ sách này, làm sao mình có thể dành thời gian
-    đi chơi với gấu được?"
+  Câu hỏi: "Với cái đống sổ sách này, làm sao mình có thể dành thời gian
+  đi chơi với gấu được?"
 
-    Trả lời: "Phải tìm cách để quản lý nó thôi, tiện thể đưa cho máy tính
-    làm luôn cho khỏe".
+  Trả lời: "Phải tìm cách để quản lý nó thôi, tiện thể đưa cho máy tính
+  làm luôn cho khỏe".
 
 Có thể trong cuộc sống các bạn gặp phải những vấn đề không giống với mình đưa ra
 ở trên. Có thể đó là một bài toán khó, một trường hợp khó giải quyết, và bạn cần
@@ -132,9 +132,9 @@ họ ngồi xuống và bắt đầu code những gì họ đang tưởng tượ
 
 Điển hình, một giải pháp tốt thường có những đặc điểm sau:
 
-  - Nó có tính minh bạch, rõ ràng.
-  - Nó có thể sử dụng lại và dễ thay đổi trong tương lai.
-  - Tính hiệu quả.
+- Nó có tính minh bạch, rõ ràng.
+- Nó có thể sử dụng lại và dễ thay đổi trong tương lai.
+- Tính hiệu quả.
 
 Thực hiện tốt công đoạn này, bạn sẽ giảm được tối đa khả năng phát sinh lỗi
 trong chương trình (sẽ tiết kiệm được khối thời gian cho việc sửa lỗi).
@@ -146,8 +146,8 @@ từng tình huống cụ thể.
 
 Để viết được chương trình, bạn cần biết:
 
-  - Ngôn ngữ lập trình bạn đang sử dụng. (Hình 0.3.5)
-  - IDE (môi trường phát triển ứng dụng). (Hình 0.3.6)
+- Ngôn ngữ lập trình bạn đang sử dụng. (Hình 0.3.5)
+- IDE (môi trường phát triển ứng dụng). (Hình 0.3.6)
 
 Bạn hoàn toàn có thể viết chương trình trên một số công cụ soản thảo văn bản như
 Notepad, Notepad++, Sublime Text,... Nhưng trong khóa học này, mình khuyên
