@@ -87,7 +87,7 @@ Và thứ giúp lập trình viên thực hiện quá trình biên dịch mã m�
 
 Đây là mô tả đơn giản về quá trình biên dịch:
 
-![0-1-CompiledExecutable](https://github.com/daynhauhoc/cppcoban/assets/88678933/68c987ea-82f0-4e0c-a045-ba5136bef70b)
+![Ngôn ngữ lập trình bậc cao](https://github.com/techmely/hoc-lap-trinh/assets/29374426/c1ffbe24-623a-4f4b-a253-66cc4cc915e1)
 
 Một **_Interpreter_** (trình thông dịch) là một chương trình chuyển đổi
 trực tiếp ngôn ngữ lập trình bậc cao về mã máy không thông qua
@@ -97,7 +97,7 @@ liên tục khi chương trình đang chạy.
 
 Đây là mô tả về quá trình thông dịch:
 
-![0-1-Interpreted](https://github.com/daynhauhoc/cppcoban/assets/88678933/78d67e1c-c15c-43dd-b5b6-1d8b3548155e)
+![Đây là mô tả về quá trình thông dịch](https://github.com/techmely/hoc-lap-trinh/assets/29374426/62f38ce6-dd8b-41ae-9a7c-d0747a346ebe)
 
 Thông thường, một chương trình C/C++ cần được biên dịch mới chạy được
 trên phần cứng máy tính. Một số ngôn ngữ lập trình khác có thể sử dụng
