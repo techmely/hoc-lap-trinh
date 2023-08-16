@@ -28,7 +28,8 @@ Chào mừng các bạn đến với bài học tiếp theo trong khóa học l�
 
 Trong bài trước, [Viết chương trình C++ đầu tiên](1-cpp-co-ban/1-0-viet-chuong-trinh-dau-tien.md), chúng ta đã cùng nhau tạo 1 project có tên **HelloWorld**. Các bạn lưu ý rằng khi làm việc với Visual studio 2015 thì chúng ta làm việc trên 1 project chứ không làm việc với file mã nguồn đơn lẻ. Project **HelloWorld** hiện tại chỉ có một file có tên là **main.cpp**. Kết quả khi thực thi project này (bằng cách nhấn phím F5 để Debug) thì chúng ta được như hình bên dưới:
 
-![1-1-0](https://github.com/daynhauhoc/cppcoban/assets/88678933/041b94cb-b73b-4794-90a9-1b66283d4365)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/20c45994-6472-4fde-9637-df1093b4dc56)
+
 
 Kết quả là một dòng chữ **Hello World** xuất hiện trên console.
 
@@ -36,11 +37,13 @@ Khi các bạn Debug trên Visual studio 2015, có thể Visual studio sẽ down
 
 Đưa chuột vào phần DEBUG trên Menu bar -> chọn Options and Settings...
 
-![1-1-1](https://github.com/daynhauhoc/cppcoban/assets/88678933/8dcac668-3834-4a91-9383-609340a166c6)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/c6182d1f-3f6a-4082-b3be-5d9fbb72ef52)
+
 
 Chọn Symbols và bỏ dấu tick trong Symbol file (.pdb) locations đi
 
-![1-1-2](https://github.com/daynhauhoc/cppcoban/assets/88678933/fb2fde36-b0e4-4cb0-bfc9-508802a8857e)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d0629aae-9337-4484-8604-ba05792fd329)
+
 
 Bây giờ chúng ta nhìn lại mã nguồn trong file main.cpp và mình sẽ phân tích chức năng của từng dòng code.
 
@@ -67,7 +70,8 @@ Như đã nói ở bài trước, **main là một hàm mà đi sau nó là mộ
 
 Với những bạn lần đầu viết code C++, các bạn có thể bỏ sót dòng này. Cùng xem thử Visual studio sẽ làm gì khi bạn không viết ra dòng int main() bằng cách đổi tên **main** thành một tên bất kỳ.
 
-![1-1-3](https://github.com/daynhauhoc/cppcoban/assets/88678933/087f2274-8dfc-47a2-895e-f00ad9cb9263)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/dd6836de-102a-4ed4-8706-7fb45c934899)
+
 
 Visual studio thông báo một lỗi nghiêm trọng LNK1561, và nó còn đưa thêm hướng dẫn để lập trình viên có thể tự sửa lỗi có nghĩa là điểm khởi đầu cần được định nghĩa.
 
@@ -82,7 +86,8 @@ Chúng ta quay lại với đoạn mã nguồn có thể chạy được như l�
 
 Đây không phải là một dòng lệnh. Đây là một dòng comment, mục đích của comment trong code là để ghi chú lại những gì mình đang làm. Việc ghi chú này cần được thực hiện thường xuyên đối với những người mới học lập trình. Ghi chú giúp bạn ít bị rối và khó hiểu khi nhìn lại những đoạn code cũ
 
-![1-1-4](https://github.com/daynhauhoc/cppcoban/assets/88678933/55287efd-297d-4697-931d-df47ef09c005)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/6ef68098-56d3-4d07-8f41-d8e4c6c6ded6)
+
 
 và những người làm việc cùng nhóm với bạn cũng sẽ hiểu được bạn đang muốn làm gì.
 
@@ -119,7 +124,8 @@ return 0;
 
 Là giá trị trả về của hàm main. Hàm main của chúng ta có từ khóa **int** đứng trước, có nghĩa là kiểu trả về của hàm main sẽ là một giá trị có kiểu **int** (integer - số nguyên). Giá trị trả về này do lập trình viên tự quy định. Kết quả hàm main sẽ hiển thị trong cửa sổ **Output** bên trong IDE sau khi bạn tắt chương trình HelloWorld đang chạy đi.
 
-![1-1-5](https://github.com/daynhauhoc/cppcoban/assets/88678933/2b700a52-6566-49ce-9c04-2ae57220ad83)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/2c2cadaa-871b-472b-84eb-98e01189d3cd)
+
 
 Thông thường, dòng này sẽ đặt cuối cùng trong phạm vi cặp ngoặc nhọn { } phía sau hàm main. Các bạn có thể thay bằng một con số bất kì sao cho bạn có thể hiểu được rằng, khi chương trình kết thúc, nếu **Output** xuất hiện con số mà bạn đã chọn, điều đó có nghĩa chương trình của bạn hoạt động một cách bình thường.
 
@@ -218,7 +224,8 @@ int main()
 Các bạn lưu ý là không nên include cả đống thư viện chưa cần dùng đến nhé. Cần dùng lệnh gì đã được định nghĩa sẵn mới cần include vào. Tất nhiên khi thêm nhiều thư viện vào chương trình thì IDE sẽ không báo lỗi, nhưng chương trình của chúng ta sau khi build ra sẽ nặng hơn. Nếu các bạn sử dụng những lệnh được định nghĩa trong thư viện mà không include nó vào thì IDE sẽ báo lỗi ngay.
 Ví dụ mình bỏ dòng `#include <iostream>` đi, IDE sẽ báo lỗi như hình bên dưới:
 
-![1-1-6](https://github.com/daynhauhoc/cppcoban/assets/88678933/1efd366d-fce5-4d41-b7a9-790096e458ad)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/b66e0c04-ca77-4cfa-b9bd-95bfd49212d2)
+
 
 Như các bạn thấy, cả lệnh **cout**, **system("")**, và **endl** đều được định nghĩa bên trong thư viện **iostream** nên khi xóa thư viện đó đi, chương trình gạch chân màu đỏ các từ đó, đồng thời thông báo lỗi trong cửa sổ **Output**.
 
