@@ -32,7 +32,8 @@ _Viết chương trình tính tổng giá trị hai số nguyên._
 
 Mình tin rằng tất cả chúng ta ai cũng viết được một chương trình như thế này:
 
-![1-5-0](https://github.com/daynhauhoc/cppcoban/assets/88678933/ed5a9b1c-be35-4b7b-9a3c-bee91770d1e8)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/6e3e3c1c-5467-4a1d-a4a9-f08fecfa4f6b)
+
 
 Các bạn có thể bắt gặp một cách khai báo biến hơi lạ.
 
@@ -50,7 +51,8 @@ cout << number1 << " + " << number2 << " = " << number1 + number2 << endl;
 
 Để các bạn khỏi bị rối khi nhìn thấy dòng lệnh **cout** phức tạp, các bạn theo dõi hình bên dưới để rõ hơn:
 
-![1-5-1](https://github.com/daynhauhoc/cppcoban/assets/88678933/74bcdf23-4b53-44ef-bf3a-96ca09e5f9ff)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/e0dd754e-1964-4d08-876a-b41a9433b0ed)
+
 
 Sau khi chạy chương trình, chúng ta đã có được kết quả phép tính cộng ở trên màn hình. Bây giờ mình đặt ra trường hợp, mình muốn tính tổng của hai số nguyên có giá trị khác. Các bạn sẽ làm gì để giúp mình giải quyết vấn đề này? Có phải các bạn đang nghĩ tới việc tắt chương trình đang chạy đi, vào file **main.cpp**, thay hai số 4 và 5 thành hai con số khác, biên dịch và chạy lại chương trình một lần nữa?
 
@@ -83,33 +85,39 @@ Các bạn lưu ý là tên biến phải được khai báo trước khi sử d
 
 Ngược lại với đối tượng **cout** (**cout** đưa dữ liệu vào file **stdout** để xuất giá trị ra thiết bị xuất chuẩn), đối tượng **cin** lấy dữ liệu từ đối tượng file **stdin** để đẩy vào vùng nhớ của biến (variable).
 
-![1-5-2](https://github.com/daynhauhoc/cppcoban/assets/88678933/10ad0bf2-7167-4439-84ed-8c1dfbd016e2)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/f7225cf5-4405-4625-89ed-8f6ab36e6560)
+
 
 Khi biên dịch chương trình, nếu compiler bắt gặp dòng lệnh có sử dụng đối tượng **cin**, chương trình sẽ dừng lại để đợi người dùng nhập dữ liệu từ bàn phím (đến khi người dùng nhấn phím Enter), sau đó, dữ liệu vừa được nhập sẽ chuyển vào file **stdin**, đối tượng **cin** sẽ lấy giá trị đầu tiên **phù hợp với kiểu dữ liệu** để đưa vào biến thông qua toán tử **>>**.
 
 Các bạn cùng mình chạy thử đoạn chương trình bên dưới để xem kết quả thực tế:
 
-![1-5-3](https://github.com/daynhauhoc/cppcoban/assets/88678933/5b20bd29-35de-4351-bded-e78ca34d5b8d)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/cbec5339-9acc-4fb8-8108-593021d4b84b)
+
 
 Chúng ta chạy thử chương trình trên, đầu tiên chúng ta thấy:
 
-![1-5-4](https://github.com/daynhauhoc/cppcoban/assets/88678933/5eea35b7-8e67-4975-b4d5-6bdcdebd6d1d)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/cd38f9bf-4b3c-42c7-bacf-a637398d60ed)
+
 
 Sau khi chương trình thực thi dòng lệnh có sử dụng đối tượng **cout** đầu tiên, chương trình bắt gặp dòng lệnh có sử dụng đối tượng **cin**, ngay lúc này, chương trình dừng lại và đợi bạn nhập giá trị vào từ bàn phím.
 
-![1-5-5](https://github.com/daynhauhoc/cppcoban/assets/88678933/390c9ff2-7bcb-44cf-ab27-f9e95b595f6f)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/00b3e445-017f-463b-bec4-bfd55c3889fe)
+
 
 Tiếp theo mình thử nhập vào giá trị **123**, giá trị này cũng nằm trong giới hạn của kiểu số nguyên (**int**) nên hoàn toàn phù hợp với biến **value**. Ngay sau khi mình nhấn phím Enter, biến **value** nhận giá trị **123** và in ra trên màn hình.
 
 Bây giờ, khi chúng ta muốn thay đổi giá trị khác cho biến **value**, chúng ta không cần phải gán lại giá trị mới trong mã nguồn nữa, chúng ta chỉ cần chạy lại chương trình và nhập giá trị mới từ bàn phím.
 
-![1-5-6](https://github.com/daynhauhoc/cppcoban/assets/88678933/08decd51-65f7-4ab8-b20c-1c7579badcf8)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/fd23bb1f-44b0-44d0-9ee2-3cbb47b474b1)
+
 
 Mình vừa cố tình nhập một lúc 5 giá trị, mỗi giá trị cách nhau bởi một kí tự khoảng trắng. Và kết quả cho chúng ta thấy chỉ có giá trị đầu tiên mà chúng ta đưa vào được đẩy vào bên trong biến **value**.
 
 Mình sẽ thử nhập một giá trị khác kiểu dữ liệu so với kiểu dữ liệu mà biến **value** được khai báo để xem kết quả:
 
-![1-5-7](https://github.com/daynhauhoc/cppcoban/assets/88678933/fca0584c-3664-43a0-bae2-b156edc712f1)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/35b626de-c0db-41b1-865a-511f1ceee36d)
+
 
 Giá trị được nhập từ bàn phím là **3.14** là một giá trị thuộc kiểu số thực, nhưng kiểu dữ liệu chúng ta khai báo biến **value** là **int**, nên biến **value** chỉ chứa được phần nguyên của giá trị nhập vào, phần thập phân đã bị loại bỏ.
 
