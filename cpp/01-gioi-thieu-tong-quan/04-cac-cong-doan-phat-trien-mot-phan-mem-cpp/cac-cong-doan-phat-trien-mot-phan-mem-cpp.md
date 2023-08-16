@@ -1,5 +1,5 @@
 ---
-title: "Giới thiệu về ngôn ngữ lập trình"
+title: "Các công đoạn phát triển một phần mềm với C++"
 description: "Chào mừng đến với loạt bài hướng dẫn sử dụng ngôn ngữ lập trình C++! Loạt bài hướng dẫn này được thiết kế cho những người chưa hoặc biết một ít lập trình."
 keywords:
   [
@@ -24,10 +24,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---
 
-Ở bài trước, chúng ta đã cùng nhau tìm hiểu C++ là gì, nó được dùng cho mục đích
-gì... Các bạn xem đến bài này nghĩa là các bạn đã xác định được phần nào hướng
-đi trong tương lai, hi vọng các bạn có thể theo đuổi đến cùng với
-lựa chọn của mình.
+Ở bài trước, chúng ta đã cùng nhau tìm hiểu C++ là gì, nó được dùng cho mục đích gì... Các bạn xem đến bài này nghĩa là các bạn đã xác định được phần nào hướng đi trong tương lai, hi vọng các bạn có thể theo đuổi đến cùng với lựa chọn của mình.
 
 Trong bài học này, chúng ta thảo luận về các bước để phát triển ra một chương
 trình C++ trước khi các bạn bắt đầu với chương trình đầu tiên của mình.
@@ -42,7 +39,7 @@ Viết một chương trình là một công đoạn nhỏ trong quá trình s�
 cũng được thực hiện thông qua những công đoạn tương tự như phát triển
 một phần mềm lớn.
 
-![Hình 0.3.0](http://www.learncpp.com/images/CppTutorial/Section0/Development.png "hình vẽ miêu tả các công đoạn phát triển một chương trình")
+![Các công đoạn phát triển một phần mềm với C++](https://github.com/techmely/hoc-lap-trinh/assets/29374426/6042d3a1-7c9b-4ff2-9721-88db7f4d3579)
 
 Các bước phát triển một phần mềm
 
