@@ -40,7 +40,8 @@ Cấu trúc của một chương trình C++ cơ bản: + Hàm main: (bắt buộ
 
 Chúng ta đã biết hàm main là thứ quan trọng nhất cần phải có của một chương trình C++. Chúng ta hoàn toàn có thể khai báo hàm main xong và chạy chương trình ngay mà không bị báo lỗi.
 
-![1-2-0](https://github.com/daynhauhoc/cppcoban/assets/88678933/0866e34d-5191-494a-8211-fa41c9a8a5df)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/1d34c80e-1d1f-4a8c-a357-a4c72a201faa)
+
 
 Như các bạn thấy, chương trình vẫn được build thành file .exe và hoàn toàn có thể chạy được (Các bạn nhấn thử phím F5). Nhưng khi cửa sổ console vừa hiện lên thì chương trình đóng lại ngay lập tức. Vì bạn không yêu cầu máy tính thực hiện công việc gì cả. Một chương trình máy tính được tạo ra để không làm gì cả thì thật là vô ích.
 
@@ -62,17 +63,20 @@ system("pause");
 
 Chỉ cần một dòng lệnh bị bỏ sót dấu chấm phẩy, IDE sẽ thông báo với người lập trình lỗi về cú pháp.
 
-![1-2-1](https://github.com/daynhauhoc/cppcoban/assets/88678933/956d2407-ce3b-4095-a717-ff04b72e2935)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/9dff2a9e-68e6-43b6-b565-f1430c75533c)
+
 
 Thông báo lỗi này có nghĩa bạn viết thiếu dấu chấm phẩy ";" ở trước dòng thứ 6 trong chương trình.
 
-![1-2-2](https://github.com/daynhauhoc/cppcoban/assets/88678933/931e8168-0498-4bcd-a99a-82ee16335e84)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/1cc35deb-783d-4907-a891-a6dcf4738acf)
+
 
 Sau khi thêm dấu chấm phẩy vào dòng lệnh trước đó, chương trình được build bình thường.
 
 Một điều cần lưu ý nữa là: **Tại một thời điểm, chương trình chỉ có thể thực hiện được 1 dòng lệnh. Các dòng lệnh được thực hiện tuần tự từ trên xuống dưới.**
 
-![1-2-3](https://github.com/daynhauhoc/cppcoban/assets/88678933/feed4b79-5b03-416c-a1e1-fd3f532722db)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/a03dda35-7d3f-48ca-9183-3ddb5c99f2be)
+
 
 Như kết quả trong hình, ta có dòng chữ **"Statement 1"** được in ra trước dòng **"Statement 2"** và **"Statement 3"** vì dòng lệnh dùng để in ra **"Statement 1"** nằm phía trên các lệnh còn lại.
 
@@ -104,7 +108,8 @@ Dễ thấy nhất là khối lệnh đóng vai trò **thân của hàm main**. 
 
 Chúng ta cùng xem kết quả đoạn chương trình trên:
 
-![1-2-4](https://github.com/daynhauhoc/cppcoban/assets/88678933/3ce4d67a-5087-4066-92a8-e58983dd043a)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d3ae430f-e6c0-4be0-98f6-d874ed56b1a1)
+
 
 Chúng ta thấy giá trị của biến variable bên trong khối lệnh con hoàn toàn khác so với giá trị của biến variable bên ngoài. (**Các bạn sẽ hiểu được biến là gì qua những bài học tiếp theo**)
 
@@ -126,7 +131,8 @@ Những từ khóa đã được định nghĩa và luôn sẵn sàng để sử
 
 Dưới đây là bảng các từ khóa phổ biến dùng trong ngôn ngữ C++ 11
 
-![1-2-keyword](https://github.com/daynhauhoc/cppcoban/assets/88678933/6af86e23-3ed3-4816-b88e-cf20ca38de59)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/36e2b4cc-3ced-46fe-a4fa-c5aa1dab4c8e)
+
 
 Các bạn sẽ được cùng mình sử dụng những từ khóa thông dụng trong quá trình học và làm bài tập của khóa học này.
 
