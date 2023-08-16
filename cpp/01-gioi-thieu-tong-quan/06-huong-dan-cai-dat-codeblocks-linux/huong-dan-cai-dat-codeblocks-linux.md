@@ -77,16 +77,17 @@ sudo apt-get install codeblocks g++
 > **Chú ý** đối với các bạn sử dụng Gnome thì nó chỉ là **Software Center**
 > thôi nhé.
 
-![0-6-codeblock-001](https://github.com/daynhauhoc/cppcoban/assets/88678933/ae5bd526-5a47-446f-bddd-972ff3e96507)
+![Qua Ubuntu Software Center](https://github.com/techmely/hoc-lap-trinh/assets/29374426/eb8ae7c0-338d-49ae-9999-0e385e1ba9cb)
 
 Bấm vào ô tìm kiếm ở phía trên và điền từ khóa "**Code::block**",
 sẽ hiện ngay kết quả, chọn nó:
 
-![0-6-codeblock-002](https://github.com/daynhauhoc/cppcoban/assets/88678933/7cda566a-7647-47cd-aae4-871c23ae9706)
+![Hướng dẫn cài đặt codeblocks linux](https://github.com/techmely/hoc-lap-trinh/assets/29374426/852d8dec-c611-424a-9e9c-86ec2d7e9860)
 
 Bấm vào **Install** để cài đặt:
 
-![0-6-codeblock-003](https://github.com/daynhauhoc/cppcoban/assets/88678933/dd984a28-5414-49dc-a521-7f8cd60e4181)
+
+![Hướng dẫn cài đặt codeblocks linux](https://github.com/techmely/hoc-lap-trinh/assets/29374426/28c9e6a6-40c4-40e9-a074-f02c30414e4b)
 
 Trong lần đầu khởi động nó sẽ hiện lên bảng chọn Compiler và tất nhiên ta sẽ
 chọn **GNU GCC Compiler**, vì nó có sẵn mà:
