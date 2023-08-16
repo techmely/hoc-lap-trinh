@@ -1,5 +1,5 @@
 ---
-title: "Giới thiệu về ngôn ngữ lập trình"
+title: "Toán tử quan hệ logic trong c++"
 description: "Chào mừng đến với loạt bài hướng dẫn sử dụng ngôn ngữ lập trình C++! Loạt bài hướng dẫn này được thiết kế cho những người chưa hoặc biết một ít lập trình."
 keywords:
   [

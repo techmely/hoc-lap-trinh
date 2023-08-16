@@ -1,5 +1,5 @@
 ---
-title: "Giới thiệu về ngôn ngữ lập trình"
+title: "Cấu trúc của một chương trình c++ cơ bản"
 description: "Chào mừng đến với loạt bài hướng dẫn sử dụng ngôn ngữ lập trình C++! Loạt bài hướng dẫn này được thiết kế cho những người chưa hoặc biết một ít lập trình."
 keywords:
   [
@@ -30,7 +30,6 @@ Trong bài trước, [Viết chương trình C++ đầu tiên](1-cpp-co-ban/1-0-
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/20c45994-6472-4fde-9637-df1093b4dc56)
 
-
 Kết quả là một dòng chữ **Hello World** xuất hiện trên console.
 
 Khi các bạn Debug trên Visual studio 2015, có thể Visual studio sẽ download một số file PDB về làm tốn thời gian. Các bạn có thể tắt việc tự động download các file đó bằng cách làm theo các bước sau:
@@ -39,11 +38,9 @@ Khi các bạn Debug trên Visual studio 2015, có thể Visual studio sẽ down
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/c6182d1f-3f6a-4082-b3be-5d9fbb72ef52)
 
-
 Chọn Symbols và bỏ dấu tick trong Symbol file (.pdb) locations đi
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d0629aae-9337-4484-8604-ba05792fd329)
-
 
 Bây giờ chúng ta nhìn lại mã nguồn trong file main.cpp và mình sẽ phân tích chức năng của từng dòng code.
 
@@ -60,7 +57,7 @@ return 0;
 
 ```
 
-- **Dòng 6**:
+Dòng 6
 
 ```cpp
 int main()
@@ -71,7 +68,6 @@ Như đã nói ở bài trước, **main là một hàm mà đi sau nó là mộ
 Với những bạn lần đầu viết code C++, các bạn có thể bỏ sót dòng này. Cùng xem thử Visual studio sẽ làm gì khi bạn không viết ra dòng int main() bằng cách đổi tên **main** thành một tên bất kỳ.
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/dd6836de-102a-4ed4-8706-7fb45c934899)
-
 
 Visual studio thông báo một lỗi nghiêm trọng LNK1561, và nó còn đưa thêm hướng dẫn để lập trình viên có thể tự sửa lỗi có nghĩa là điểm khởi đầu cần được định nghĩa.
 
@@ -87,7 +83,6 @@ Chúng ta quay lại với đoạn mã nguồn có thể chạy được như l�
 Đây không phải là một dòng lệnh. Đây là một dòng comment, mục đích của comment trong code là để ghi chú lại những gì mình đang làm. Việc ghi chú này cần được thực hiện thường xuyên đối với những người mới học lập trình. Ghi chú giúp bạn ít bị rối và khó hiểu khi nhìn lại những đoạn code cũ
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/6ef68098-56d3-4d07-8f41-d8e4c6c6ded6)
-
 
 và những người làm việc cùng nhóm với bạn cũng sẽ hiểu được bạn đang muốn làm gì.
 
@@ -125,7 +120,6 @@ return 0;
 Là giá trị trả về của hàm main. Hàm main của chúng ta có từ khóa **int** đứng trước, có nghĩa là kiểu trả về của hàm main sẽ là một giá trị có kiểu **int** (integer - số nguyên). Giá trị trả về này do lập trình viên tự quy định. Kết quả hàm main sẽ hiển thị trong cửa sổ **Output** bên trong IDE sau khi bạn tắt chương trình HelloWorld đang chạy đi.
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/2c2cadaa-871b-472b-84eb-98e01189d3cd)
-
 
 Thông thường, dòng này sẽ đặt cuối cùng trong phạm vi cặp ngoặc nhọn { } phía sau hàm main. Các bạn có thể thay bằng một con số bất kì sao cho bạn có thể hiểu được rằng, khi chương trình kết thúc, nếu **Output** xuất hiện con số mà bạn đã chọn, điều đó có nghĩa chương trình của bạn hoạt động một cách bình thường.
 
@@ -226,7 +220,6 @@ Ví dụ mình bỏ dòng `#include <iostream>` đi, IDE sẽ báo lỗi như h�
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/b66e0c04-ca77-4cfa-b9bd-95bfd49212d2)
 
-
 Như các bạn thấy, cả lệnh **cout**, **system("")**, và **endl** đều được định nghĩa bên trong thư viện **iostream** nên khi xóa thư viện đó đi, chương trình gạch chân màu đỏ các từ đó, đồng thời thông báo lỗi trong cửa sổ **Output**.
 
 ### Tổng kết
@@ -234,25 +227,17 @@ Như các bạn thấy, cả lệnh **cout**, **system("")**, và **endl** đề
 Trong bài học hôm nay, chúng ta đã biết thêm một số điểm đáng chú ý khi làm việc với chương trình C++:
 
 - Một dòng comment sẽ đứng sau 2 dấu gạch chéo //.
-
 - Một đoạn comment sẽ nằm giữa cặp /_ và _/.
-
 - Một dòng lệnh phải được kết thúc bằng dấu chấm phẩy **";"**
-
 - Cấu trúc của một chương trình C++ cơ bản:
-
-  - Hàm main: (bắt buộc phải có)
-
-    - Kiểu trả về của hàm main (int).
-    - Tên của hàm main (cũng là main luôn).
-    - Thân của hàm main (cặp dấu ngoặc nhọn { và }).
-    - Giá trị trả về của hàm main (return 0; //hoặc giá trị bao nhiêu cũng đc).
-
-  - Những dòng lệnh bên trong thân hàm main. (Có thể có hoặc không)
-
-  - Những dòng comment. (Có thể có hoặc không)
-
-  - Tích hợp thư viện và không gian tên. (Phụ thuộc vào các lệnh mà bạn sử dụng).
+- Hàm main: (bắt buộc phải có)
+  - Kiểu trả về của hàm main (int).
+  - Tên của hàm main (cũng là main luôn).
+  - Thân của hàm main (cặp dấu ngoặc nhọn { và }).
+  - Giá trị trả về của hàm main (return 0; //hoặc giá trị bao nhiêu cũng đc).
+- Những dòng lệnh bên trong thân hàm main. (Có thể có hoặc không)
+- Những dòng comment. (Có thể có hoặc không)
+- Tích hợp thư viện và không gian tên. (Phụ thuộc vào các lệnh mà bạn sử dụng).
 
 ### Bài tập cơ bản
 

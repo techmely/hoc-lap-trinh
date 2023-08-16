@@ -1,5 +1,5 @@
 ---
-title: "Giới thiệu về ngôn ngữ lập trình"
+title: "Lệnh và khối lệnh trong c++"
 description: "Chào mừng đến với loạt bài hướng dẫn sử dụng ngôn ngữ lập trình C++! Loạt bài hướng dẫn này được thiết kế cho những người chưa hoặc biết một ít lập trình."
 keywords:
   [
@@ -42,7 +42,6 @@ Chúng ta đã biết hàm main là thứ quan trọng nhất cần phải có c
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/1d34c80e-1d1f-4a8c-a357-a4c72a201faa)
 
-
 Như các bạn thấy, chương trình vẫn được build thành file .exe và hoàn toàn có thể chạy được (Các bạn nhấn thử phím F5). Nhưng khi cửa sổ console vừa hiện lên thì chương trình đóng lại ngay lập tức. Vì bạn không yêu cầu máy tính thực hiện công việc gì cả. Một chương trình máy tính được tạo ra để không làm gì cả thì thật là vô ích.
 
 Để giải quyết vấn đề mà chúng ta đặt ra trên máy tính, chúng ta cần ra lệnh cho máy tính thực hiện các công việc cụ thể. Chúng ta ra lệnh cho máy tính bằng các lệnh trong ngôn ngữ lập trình. Để máy tính thực hiện công việc và cho ra kết quả, nó cần nhận lệnh từ người lập trình. Vì thế, yếu tố quan trọng chỉ đứng sau hàm **main** chính là **những câu lệnh**.
@@ -65,18 +64,15 @@ Chỉ cần một dòng lệnh bị bỏ sót dấu chấm phẩy, IDE sẽ thô
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/9dff2a9e-68e6-43b6-b565-f1430c75533c)
 
-
 Thông báo lỗi này có nghĩa bạn viết thiếu dấu chấm phẩy ";" ở trước dòng thứ 6 trong chương trình.
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/1cc35deb-783d-4907-a891-a6dcf4738acf)
-
 
 Sau khi thêm dấu chấm phẩy vào dòng lệnh trước đó, chương trình được build bình thường.
 
 Một điều cần lưu ý nữa là: **Tại một thời điểm, chương trình chỉ có thể thực hiện được 1 dòng lệnh. Các dòng lệnh được thực hiện tuần tự từ trên xuống dưới.**
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/a03dda35-7d3f-48ca-9183-3ddb5c99f2be)
-
 
 Như kết quả trong hình, ta có dòng chữ **"Statement 1"** được in ra trước dòng **"Statement 2"** và **"Statement 3"** vì dòng lệnh dùng để in ra **"Statement 1"** nằm phía trên các lệnh còn lại.
 
@@ -110,7 +106,6 @@ Chúng ta cùng xem kết quả đoạn chương trình trên:
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d3ae430f-e6c0-4be0-98f6-d874ed56b1a1)
 
-
 Chúng ta thấy giá trị của biến variable bên trong khối lệnh con hoàn toàn khác so với giá trị của biến variable bên ngoài. (**Các bạn sẽ hiểu được biến là gì qua những bài học tiếp theo**)
 
 ### Từ khóa trong C++
@@ -132,7 +127,6 @@ Những từ khóa đã được định nghĩa và luôn sẵn sàng để sử
 Dưới đây là bảng các từ khóa phổ biến dùng trong ngôn ngữ C++ 11
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/36e2b4cc-3ced-46fe-a4fa-c5aa1dab4c8e)
-
 
 Các bạn sẽ được cùng mình sử dụng những từ khóa thông dụng trong quá trình học và làm bài tập của khóa học này.
 

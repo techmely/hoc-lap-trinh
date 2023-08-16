@@ -1,5 +1,5 @@
 ---
-title: "Giới thiệu về ngôn ngữ lập trình"
+title: "Hướng dẫn cài đặt CodeBlock trên Linux"
 description: "Chào mừng đến với loạt bài hướng dẫn sử dụng ngôn ngữ lập trình C++! Loạt bài hướng dẫn này được thiết kế cho những người chưa hoặc biết một ít lập trình."
 keywords:
   [
@@ -86,15 +86,12 @@ sẽ hiện ngay kết quả, chọn nó:
 
 Bấm vào **Install** để cài đặt:
 
-
 ![Hướng dẫn cài đặt codeblocks linux](https://github.com/techmely/hoc-lap-trinh/assets/29374426/28c9e6a6-40c4-40e9-a074-f02c30414e4b)
 
 Trong lần đầu khởi động nó sẽ hiện lên bảng chọn Compiler và tất nhiên ta sẽ
 chọn **GNU GCC Compiler**, vì nó có sẵn mà:
 
-
 ![Hướng dẫn cài đặt codeblocks linux](https://github.com/techmely/hoc-lap-trinh/assets/29374426/2151a77e-21da-4b22-9140-5fa23ed2897c)
-
 
 Cùng viết thử một chương trình hello world rồi cùng xem nó hoạt động không nào
 (bấm vào nút bánh răng màu vàng):
@@ -110,7 +107,6 @@ int main()
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/6818425a-8096-4d90-826f-f1ae7df5cc40)
 
-
 Oops! Nó đang báo lỗi với thông báo rằng: `g++ not found` - rất dễ hiểu vì
 trong bộ GNU không phải các ngôn ngữ nào cũng cài sẵn (chỉ C mới có sẵn thôi),
 ta phải cài trình dịch C++ cho GNU (cách cài tương tự như trên):
@@ -121,12 +117,10 @@ Xong bây giờ ta quay lại build thử xem nào:
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/fedca0b5-dff7-4d2c-9f43-0773ad017f0e)
 
-
 Và bây giờ mọi thứ đã hoạt động tốt, bây giờ cùng run (nút play màu xanh)
 xem chuyện gì sẽ xảy ra nhé:
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/85a5a5fd-206a-47c6-8628-126f29532bec)
-
 
 Hoạt động tốt rồi :)
 

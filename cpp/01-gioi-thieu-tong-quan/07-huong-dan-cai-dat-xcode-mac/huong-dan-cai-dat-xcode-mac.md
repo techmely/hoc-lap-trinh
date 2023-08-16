@@ -1,5 +1,5 @@
 ---
-title: "Giới thiệu về ngôn ngữ lập trình"
+title: "Hướng dẫn cài đặt XCode trên macOS"
 description: "Chào mừng đến với loạt bài hướng dẫn sử dụng ngôn ngữ lập trình C++! Loạt bài hướng dẫn này được thiết kế cho những người chưa hoặc biết một ít lập trình."
 keywords:
   [
@@ -62,11 +62,9 @@ Chọn biểu tượng **Keyboard**
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/796cd1e2-783d-4bc7-8e0b-e26361783ff6)
 
-
 Ở đây, chọn Tab **Shortcuts** ở phía trên và chọn mục **Spotlight** bên trái.
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/fb98e467-ded9-4329-b4f6-35090d0ea63d)
-
 
 Dòng **Show Spotlight Search** có chỉ dẫn mặc định là nhấn tổ hợp
 <kbd>Cmd</kbd> + <kbd>Space</kbd> để mở **Spotlight**, nếu ở máy bạn khác
@@ -82,17 +80,14 @@ Bây giờ hãy **search** trên Spotlight phần mềm **App Store**.
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/41a282d5-bdf6-4277-b216-342177ced399)
 
-
 Ở góc trên bên phải có khung tìm kiếm, hãy nhập **"Xcode"** và nhấn <kbd>Enter
 </kbd>.
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/da321573-e3e0-4f2d-a07a-320787dea17a)
 
-
 Chọn vào phần mềm **Xcode** có biểu tượng như dưới
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/2ae31014-c3f2-4783-a6ee-25dee3f9d3a4)
-
 
 Nhấn vào <kbd>Install</kbd> (hay <kbd>Download</kbd>). Ở máy mình do đã cài
 nên hiện chữ
@@ -100,12 +95,10 @@ Update.
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/db5f55ab-3833-4d43-b684-2d2320ec49b2)
 
-
 Rồi, bây giờ chỉ đơn giản là chờ thôi. Nếu muốn xem tiến trình download có thể
 vào **Launchpad** (search trên Spotlight ngay nếu bạn không tìm được)
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/ed0863aa-daa1-4304-83de-b0e1afa92bfe)
-
 
 **Launchpad** là nơi chứa danh sách **shortcut các ứng dụng** có trên máy bạn,
 giúp bạn mở nhanh hơn!
@@ -116,23 +109,19 @@ project**.
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d5c4a0f6-25dd-477d-96b9-62026a8e5d95)
 
-
 Chọn mục **Appliance** dưới dòng OS X, rồi chọn **Command Line Tool** và <kbd>
 Next</kbd>.
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/81d15962-25b5-4935-86aa-0d4bbd9401d7)
-
 
 **Đặt tên** cho Project. Ví dụ của mình là "Hello-World". Nhớ ở mục
 **Language** chọn **C++**. Nhấn <kbd>Enter</kbd> (hay <kbd>Next</kbd>).
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/3f198101-3f26-4bde-a764-0b261c8cd424)
 
-
 Chọn thư mục nơi bạn muốn lưu trữ project. Nhấn <kbd>Create</kbd>!
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/6d26d57e-4e7d-4d6b-9371-efd80b2c3ee2)
-
 
 Tada, vậy là ta **đã tạo được một project lập trình C++**. Apple rất tốt bụng
 khi đã viết cho chúng ta một chương trình chạy được ngay trong file
@@ -141,13 +130,11 @@ góc trên bên trái) để chạy chương trình.
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/1ec200cd-c6e5-47ba-a44e-65bf2669c080)
 
-
 Ở phía dưới là kết quả chúng ta chạy ra, in ra dòng chữ **"Hello, World!"**.
 Nếu máy bạn không hiện thấy hãy bấm **Tab thứ 2** ở góc trên từ phải sang để
 mở khung kết quả chay.
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/6e42b014-bcbe-4eae-b255-0484a395f955)
-
 
 Vậy là chúng ta đã biết cách **cài đặt và tạo Project C++ trên Mac OS X bằng
 Xcode**. Trong những bài hướng dẫn tiếp theo, nếu bạn quên cách tạo một
@@ -204,7 +191,6 @@ Sau đó, để chạy chương trình ta dùng cú pháp: `./{tên chương tr�
 ví dụ ở đây là: `./hello`
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/49c68855-5b83-4bc3-8ec1-3db7eb8d9821)
-
 
 **Vậy là chương trình của ta đã chạy thành công!**
 Nếu bạn không chạy được như mình, **đừng quá lo lắng,** **Terminal** hầu hết

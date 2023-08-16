@@ -1,5 +1,5 @@
 ---
-title: "Giới thiệu về ngôn ngữ lập trình"
+title: "Cấu trúc switch trong c++"
 description: "Chào mừng đến với loạt bài hướng dẫn sử dụng ngôn ngữ lập trình C++! Loạt bài hướng dẫn này được thiết kế cho những người chưa hoặc biết một ít lập trình."
 keywords:
   [
@@ -33,51 +33,54 @@ Chúng ta thử cùng xem ví dụ sau :
 Nhập vào một số nguyên. Sau đó kiểm tra số đó có bằng 1 trong các số từ 0 tới 3 hay không ?
 Nếu có thì in ra màn hình số đó là số nào ?
 
-    	#include<iostream>
-    		using namespace std;
-    		int main()
-    		{
-    	int n;
-    	cout << " Nhap vao n : " << endl;
-    	cin >> n;
-    	if(n==0)
-    	{
-    	cout << " n la so  0"<< endl;
-    	}
-    	else
-    	{
-    		if(n==1)
-    			{
-    		cout << " n la so  1"<< endl;
-    			}
-    		else
-    		   {
-    			if(n==2)
-    				{
-    			cout << " n la so  2"<< endl;
-    				}
-    				else
-    				    {
-    					if(n==3)
-    						{
-    							cout << " n la so  3"<< endl;
-    				    		}
-    					else
-    						{
-    							cout << " n khong thuoc khoang 0 -3 " << endl;
-    						}
-    				    }
-    		    }
-    	}
-    		return 0;
-    	}
+```cpp
+#include<iostream>
+using namespace std;
+int main()
+{
+int n;
+cout << " Nhap vao n : " << endl;
+cin >> n;
+if(n==0)
+{
+cout << " n la so  0"<< endl;
+}
+else
+{
+	if(n==1)
+		{
+	cout << " n la so  1"<< endl;
+		}
+	else
+	   {
+		if(n==2)
+			{
+		cout << " n la so  2"<< endl;
+			}
+			else
+			    {
+				if(n==3)
+					{
+						cout << " n la so  3"<< endl;
+			    		}
+				else
+					{
+						cout << " n khong thuoc khoang 0 -3 " << endl;
+					}
+			    }
+	    }
+}
+	return 0;
+}
+```
 
 ---
 
 Chúng ta có thể thấy việc sử dụng if else ìf trong trường hợp này gây phức tạp cho bài toán và gây khó đọc.
 Chúng ta sẽ sử dụng cấu trúc switch case như sau :
 
-    	#include<iostream>
+```cpp
+#include<iostream>
 
     	using namespace std;
 
@@ -118,8 +121,7 @@ break;
 }
 return 0;
 }
-
----
+```
 
 Cùng đi phân tích kỹ hơn về cấu trúc của switch case
 
