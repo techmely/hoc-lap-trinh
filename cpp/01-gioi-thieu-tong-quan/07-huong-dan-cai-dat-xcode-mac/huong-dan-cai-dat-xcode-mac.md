@@ -56,15 +56,17 @@ cho những nhà phát triển lập trình trên hệ điều hành **Mac OS X*
 Ở góc trên bên trái màn hình, nhấn vào biểu tượng **Apple -> System
 Preferences...**
 
-<img width="254" alt="xcode-001" src="https://github.com/daynhauhoc/cppcoban/assets/88678933/1d37b490-07bf-42ff-b72e-8952d27e1669">
+![Hướng dẫn cài đặt Xcode mac](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d06fa4a8-9041-4d8a-aae1-5c618e2c9cd4)
 
 Chọn biểu tượng **Keyboard**
 
-<img width="218" alt="xcode-002" src="https://github.com/daynhauhoc/cppcoban/assets/88678933/66f0e0e4-eea5-4be4-a5ea-870508d55a1c">
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/796cd1e2-783d-4bc7-8e0b-e26361783ff6)
+
 
 Ở đây, chọn Tab **Shortcuts** ở phía trên và chọn mục **Spotlight** bên trái.
 
-<img width="635" alt="xcode-003" src="https://github.com/daynhauhoc/cppcoban/assets/88678933/a85fec3e-c16a-4d3d-a575-0fe995960bed">
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/fb98e467-ded9-4329-b4f6-35090d0ea63d)
+
 
 Dòng **Show Spotlight Search** có chỉ dẫn mặc định là nhấn tổ hợp
 <kbd>Cmd</kbd> + <kbd>Space</kbd> để mở **Spotlight**, nếu ở máy bạn khác
@@ -78,27 +80,32 @@ Spotlight thường xuyên để thao tác tìm kiếm nhanh hơn trên máy c�
 giờ!
 Bây giờ hãy **search** trên Spotlight phần mềm **App Store**.
 
-<img width="707" alt="xcode-004" src="https://github.com/daynhauhoc/cppcoban/assets/88678933/9861fa7a-ad2c-4198-adac-3f2eb5a191ca">
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/41a282d5-bdf6-4277-b216-342177ced399)
+
 
 Ở góc trên bên phải có khung tìm kiếm, hãy nhập **"Xcode"** và nhấn <kbd>Enter
 </kbd>.
 
-<img width="231" alt="xcode-005" src="https://github.com/daynhauhoc/cppcoban/assets/88678933/df37c126-0e8d-4d4c-9a29-5653e2ffcd96">
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/da321573-e3e0-4f2d-a07a-320787dea17a)
+
 
 Chọn vào phần mềm **Xcode** có biểu tượng như dưới
 
-<img width="284" alt="xcode-006" src="https://github.com/daynhauhoc/cppcoban/assets/88678933/46655816-4819-46f2-864c-f7fa603ca918">
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/2ae31014-c3f2-4783-a6ee-25dee3f9d3a4)
+
 
 Nhấn vào <kbd>Install</kbd> (hay <kbd>Download</kbd>). Ở máy mình do đã cài
 nên hiện chữ
 Update.
 
-<img width="230" alt="xcode-007" src="https://github.com/daynhauhoc/cppcoban/assets/88678933/dbeb1ed0-7405-4213-bc12-24e4270710e7">
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/db5f55ab-3833-4d43-b684-2d2320ec49b2)
+
 
 Rồi, bây giờ chỉ đơn giản là chờ thôi. Nếu muốn xem tiến trình download có thể
 vào **Launchpad** (search trên Spotlight ngay nếu bạn không tìm được)
 
-<img width="1280" alt="xcode-008" src="https://github.com/daynhauhoc/cppcoban/assets/88678933/c530cde4-680d-4afc-9376-7eed799c2c3f">
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/ed0863aa-daa1-4304-83de-b0e1afa92bfe)
+
 
 **Launchpad** là nơi chứa danh sách **shortcut các ứng dụng** có trên máy bạn,
 giúp bạn mở nhanh hơn!
@@ -107,34 +114,40 @@ một chương trình C++ đầu tiên nào.
 Đây là giao diện khi bắt đầu mở **Xcode**. Hãy chọn **Create a new Xcode
 project**.
 
-<img width="804" alt="xcode-009" src="https://github.com/daynhauhoc/cppcoban/assets/88678933/d11362c0-d76b-4d0c-ae4f-f6b705a5f8e3">
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d5c4a0f6-25dd-477d-96b9-62026a8e5d95)
+
 
 Chọn mục **Appliance** dưới dòng OS X, rồi chọn **Command Line Tool** và <kbd>
 Next</kbd>.
 
-<img width="734" alt="xcode-010" src="https://github.com/daynhauhoc/cppcoban/assets/88678933/f762aeae-7ccd-44b5-8c04-4c3d32ce70c6">
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/81d15962-25b5-4935-86aa-0d4bbd9401d7)
+
 
 **Đặt tên** cho Project. Ví dụ của mình là "Hello-World". Nhớ ở mục
 **Language** chọn **C++**. Nhấn <kbd>Enter</kbd> (hay <kbd>Next</kbd>).
 
-<img width="730" alt="xcode-011" src="https://github.com/daynhauhoc/cppcoban/assets/88678933/af4d6349-8f90-40cd-b1dd-53a405d8c5bf">
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/3f198101-3f26-4bde-a764-0b261c8cd424)
+
 
 Chọn thư mục nơi bạn muốn lưu trữ project. Nhấn <kbd>Create</kbd>!
 
-<img width="713" alt="xcode-012" src="https://github.com/daynhauhoc/cppcoban/assets/88678933/bdaa5bca-3790-4869-afad-eb721c26a352">
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/6d26d57e-4e7d-4d6b-9371-efd80b2c3ee2)
+
 
 Tada, vậy là ta **đã tạo được một project lập trình C++**. Apple rất tốt bụng
 khi đã viết cho chúng ta một chương trình chạy được ngay trong file
 **main.cpp** sau khi **Create Project**. Bấm nút **Run** (nút hình tam giác
 góc trên bên trái) để chạy chương trình.
 
-<img width="823" alt="xcode-013" src="https://github.com/daynhauhoc/cppcoban/assets/88678933/f403aeae-d0f0-4f0f-994b-4ef48e6f8fc7">
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/1ec200cd-c6e5-47ba-a44e-65bf2669c080)
+
 
 Ở phía dưới là kết quả chúng ta chạy ra, in ra dòng chữ **"Hello, World!"**.
 Nếu máy bạn không hiện thấy hãy bấm **Tab thứ 2** ở góc trên từ phải sang để
 mở khung kết quả chay.
 
-<img width="1023" alt="xcode-014" src="https://github.com/daynhauhoc/cppcoban/assets/88678933/53faa30a-2616-4db4-8048-7f3b77adbb37">
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/6e42b014-bcbe-4eae-b255-0484a395f955)
+
 
 Vậy là chúng ta đã biết cách **cài đặt và tạo Project C++ trên Mac OS X bằng
 Xcode**. Trong những bài hướng dẫn tiếp theo, nếu bạn quên cách tạo một
@@ -190,7 +203,8 @@ Sau đó, để chạy chương trình ta dùng cú pháp: `./{tên chương tr�
 
 ví dụ ở đây là: `./hello`
 
-<img width="561" alt="xcode-015" src="https://github.com/daynhauhoc/cppcoban/assets/88678933/2a35a2de-fe5c-4996-8da9-ee1aeaeb5e00">
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/49c68855-5b83-4bc3-8ec1-3db7eb8d9821)
+
 
 **Vậy là chương trình của ta đã chạy thành công!**
 Nếu bạn không chạy được như mình, **đừng quá lo lắng,** **Terminal** hầu hết
