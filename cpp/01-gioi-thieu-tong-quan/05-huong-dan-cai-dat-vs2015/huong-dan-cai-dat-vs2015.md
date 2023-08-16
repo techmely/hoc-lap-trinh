@@ -30,8 +30,7 @@ Trong chủ đề này, chúng ta sẽ cùng nhau cài đặt IDE Visual studio 
 ## Giới thiệu sơ lược về Visual Studio
 
 Đầu tiên, chúng ta sẽ
-[ghé thăm trang chủ của Visual Studio do
-ông trùm Microsoft nắm quyền](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx).
+[ghé thăm trang chủ của Visual Studio do ông trùm Microsoft nắm quyền](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx).
 
 > Thông tin thêm Xamarin đã được microsoft mua lại và phát hành miễn phí
 > cho người dùng. Hiện tại thì với Vs có thể phát triển được nhiều nền tảng
@@ -75,9 +74,6 @@ sau đây:
 
 Nếu bạn muốn trải nghiệm với Visual Studio Enterprise 2015 thì sẽ phải bỏ ra
 một khoản chi phí để mua bản quyền nhé.
-
-// Link ảnh về chi phí cho VS
-(Hình 0.5.1)
 
 # Tải bản cài đặt của Visual studio Community 2015
 
