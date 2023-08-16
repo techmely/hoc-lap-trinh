@@ -92,7 +92,9 @@ Bấm vào **Install** để cài đặt:
 Trong lần đầu khởi động nó sẽ hiện lên bảng chọn Compiler và tất nhiên ta sẽ
 chọn **GNU GCC Compiler**, vì nó có sẵn mà:
 
-![0-6-codeblock-004](https://github.com/daynhauhoc/cppcoban/assets/88678933/8e59dd31-fb90-4bfe-a0a9-69aeb1e6dac2)
+
+![Hướng dẫn cài đặt codeblocks linux](https://github.com/techmely/hoc-lap-trinh/assets/29374426/2151a77e-21da-4b22-9140-5fa23ed2897c)
+
 
 Cùng viết thử một chương trình hello world rồi cùng xem nó hoạt động không nào
 (bấm vào nút bánh răng màu vàng):
@@ -106,22 +108,25 @@ int main()
 }
 ```
 
-![0-6-codeblock-005](https://github.com/daynhauhoc/cppcoban/assets/88678933/02de6f54-85c3-4f2c-bb12-48fed7b70b1f)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/6818425a-8096-4d90-826f-f1ae7df5cc40)
+
 
 Oops! Nó đang báo lỗi với thông báo rằng: `g++ not found` - rất dễ hiểu vì
 trong bộ GNU không phải các ngôn ngữ nào cũng cài sẵn (chỉ C mới có sẵn thôi),
 ta phải cài trình dịch C++ cho GNU (cách cài tương tự như trên):
 
-![0-6-codeblock-006](https://github.com/daynhauhoc/cppcoban/assets/88678933/30cb4c84-f4fa-4c7a-a319-7b9aafa48ce3)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/ba75eae6-fc8f-4225-91f8-ffa09b9280bf)
 
 Xong bây giờ ta quay lại build thử xem nào:
 
-![0-6-codeblock-007](https://github.com/daynhauhoc/cppcoban/assets/88678933/ebdf1e3a-310d-415a-99d8-e2c9bc9e26d7)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/fedca0b5-dff7-4d2c-9f43-0773ad017f0e)
+
 
 Và bây giờ mọi thứ đã hoạt động tốt, bây giờ cùng run (nút play màu xanh)
 xem chuyện gì sẽ xảy ra nhé:
 
-![0-6-codeblock-008](https://github.com/daynhauhoc/cppcoban/assets/88678933/4c3f96b8-7268-4263-9584-b672dbc9ecc1)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/85a5a5fd-206a-47c6-8628-126f29532bec)
+
 
 Hoạt động tốt rồi :)
 
