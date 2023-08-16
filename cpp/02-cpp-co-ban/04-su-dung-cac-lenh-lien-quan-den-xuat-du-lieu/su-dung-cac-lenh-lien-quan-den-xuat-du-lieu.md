@@ -30,15 +30,18 @@ Trong bài học này, chúng ta cùng nhau học cách sử dụng một số *
 
 Trước khi bắt đầu, chúng ta tạo một project C++ mới có tên là Bai1.3 (các bạn nhớ chọn thư mục lưu sao cho phù hợp)
 
-![1-3-0](https://github.com/daynhauhoc/cppcoban/assets/88678933/af8f54b9-d749-4610-8615-f905eaac8db7)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/fa3c8258-e72d-4586-a6ba-e8e06336a3b3)
+
 
 Sau đó tạo file **main.cpp** và viết sẵn cấu trúc cơ bản một chương trình C++ trong file main.cpp
 
-![1-3-1](https://github.com/daynhauhoc/cppcoban/assets/88678933/e2e4daa7-c1c1-4425-b832-d38ea0034ae3)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/1d0845c8-fe43-451d-bb72-dfbfe536e91d)
+
 
 Nhấn tổ hợp phím **Ctrl + Shift + B** để thực hiện quá trình build project (làm thế để đảm bảo mọi thứ hoạt động bình thường trước khi bắt đầu viết code)
 
-![1-3-2](https://github.com/daynhauhoc/cppcoban/assets/88678933/86022c1b-3415-4a9b-a006-30163f1bd05c)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/998be749-4dff-4c9d-a77f-f4a69ae10dff)
+
 
 Mình bắt đầu với một ví dụ đơn giản, đó là in tên của mình ra màn hình console. Để làm được điều này, chúng ta sử dụng lệnh **cout** và chúng ta từng dùng trong project **HelloWorld**.
 
@@ -46,47 +49,55 @@ Mình bắt đầu với một ví dụ đơn giản, đó là in tên của mì
 
 Vì thế, muốn sử dụng lệnh **cout** chúng ta cần include thư viện **iostream** vào trước (sử dụng luôn dòng **using namespace std** nhé).
 
-![1-3-3](https://github.com/daynhauhoc/cppcoban/assets/88678933/c0c05945-2387-466d-8e43-553245751b40)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/7f0ef321-e0c4-49fb-afcd-54f1858fc701)
+
 
 Để đưa một chuỗi kí tự lên màn hình, chúng ta cần đặt chuỗi kí tự đó giữa cặp dấu ngoặc kép **"** và **"**
 
-![1-3-4](https://github.com/daynhauhoc/cppcoban/assets/88678933/2594d590-9ee8-4131-b45e-8e02d752e496)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/a2bb1bb8-1b41-4738-b015-b05224b6482e)
+
 
 Có một toán tử đi kèm với lệnh **cout** là **<<**. Về mặt cú pháp, chúng ta đặt toán tử **<<** giữa lệnh **cout** và cái mà chúng ta muốn đưa lên màn hình (có thể là một chuỗi kí tự, một con số, một biến số...)
 
 Chạy thử chương trình bằng cách nhấn phím **F5**
 
-![1-3-5](https://github.com/daynhauhoc/cppcoban/assets/88678933/0682a7a5-fa28-441c-82f5-2d49898870d4)
+
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/111dde5e-e5d4-470d-914d-403aea7d1833)
+
 
 Nhìn vào kết quả chương trình, chúng ta thấy rất khó đọc vì lệnh `system("pause")` cũng in ra một dòng chữ và nó đứng liền kề với dòng chữ chúng ta muốn in ra. Để giải quyết vấn đề này, chúng ta cần làm cách nào đó để tách dòng chữ mà lệnh `system("pause")` in ra xuống 1 dòng khác. C++ đã hỗ trợ cho chúng ta một đối tượng khác cũng thuộc thư viện **iostream**, đó là **endl**.
 
 Các bạn sử dụng **endl** như trong hình bên dưới.
 
-![1-3-6](https://github.com/daynhauhoc/cppcoban/assets/88678933/5210c25e-640a-4a52-bca8-6fb0e77de366)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/5d0f3d57-e44a-4112-ab6c-cb636b3747f2)
+
 
 Nhìn vào kết quả, chúng ta thấy đã có sự khác biệt so với ban đầu.
 
 Chúng ta còn có thể nối nhiều đoạn kí tự để in ra màn hình cùng lúc chỉ với 1 lần sử dụng lệnh **cout** bằng cách sử dụng nhiều lần toán tử **<<**
 
-![1-3-7](https://github.com/daynhauhoc/cppcoban/assets/88678933/5396c713-577f-45f4-a0b5-130245c38baf)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/612acfa0-baca-4e0d-9d74-10b0d705ab24)
+
 
 Dòng dữ liệu chúng ta in ra vẫn chưa được đẹp mắt lắm. Hai câu "Hello friend!" và "Nice to meet you!" được truyền lần lượt theo thứ tự vào đối tượng file **stdout** thông qua lệnh **cout**, nhưng khi sử dụng nhiều lần toán tử **<<**, nó không tự động sinh ra khoảng trắng giữa các chuỗi riêng biệt, mà nó cứ nối vào nhau cho đến khi đến giới hạn số kí tự cho phép trên 1 dòng của **console** thì mới xuống dòng.
 
 Vì thế, chúng ta cần điều chỉnh lại một chút. (Thêm 1 kí tự trắng sau câu đầu tiên)
 
-![1-3-8](https://github.com/daynhauhoc/cppcoban/assets/88678933/acfcbc6d-8852-4b43-ab2e-aafa7383a3de)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/36116f2f-09ed-4427-958b-d0151d18a505)
+
 
 Hai câu chúng ta in ra giờ đã rõ đẹp hơn phải không nào?
 
 Qua ví dụ trên, chắc các bạn cũng phần nào hình dung được cách thức hoạt động của lệnh **cout**.
 
-![1-3-cout](https://github.com/daynhauhoc/cppcoban/assets/88678933/75c65880-e1b4-43d1-849f-782453e36155)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/7368f326-6283-470f-8d9c-c1e99feb52c2)
 
-(Nguồn: http://www.c4learn.com)
+
 
 Ngoài việc sử dụng đối tượng **cout** để in các chuỗi kí tự lên màn hình, bạn còn có thể in những con số cụ thể.
 
-![1-3-9](https://github.com/daynhauhoc/cppcoban/assets/88678933/e4a1c468-620c-4a90-afa5-7a1fe463159a)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/df087ce3-4656-4a65-92a4-6a6217dbe018)
+
 
 Mình vừa thêm dòng bên dưới vào chương trình.
 
@@ -96,7 +107,8 @@ cout << "I'm " << 24 << " years old." << endl;
 
 Chúng ta cùng xem dòng này hoạt động như thế nào.
 
-![1-3-10](https://github.com/daynhauhoc/cppcoban/assets/88678933/278c6f51-a5b8-4866-aa47-976e1c021399)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/8070b045-bb0e-49e7-a4eb-36bcd6cabcdc)
+
 
 Khi bạn muốn in một giá trị lên màn hình, bạn có thể làm nhiều cách khác nhau. Bạn có thể đưa số đó vào trong cặp dấu ngoặc kép để biến nó thành chuỗi kí tự.
 
@@ -121,32 +133,37 @@ Cả 3 cách trên đều cho ra kết quả giống nhau.
 
 Trong ngôn ngữ lập trình C++, có một số kí tự trên bàn phím chúng ta không thể đưa trực tiếp vào cặp dấu ngoặc kép để in ra màn hình trong lệnh **cout** được. Chúng ta cần định dạng chúng lại một chút. Sau đây là bảng một số kí tự đặc biệt và cách để in chúng ra màn hình:
 
-![1-3-11](https://github.com/daynhauhoc/cppcoban/assets/88678933/4e949eb5-6c76-43a8-9c1f-5a8e2e21d7f5)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/bed862ea-c3b0-4c78-967b-2ab15e051f03)
+
 
 (Nguồn: https://msdn.microsoft.com)
 
 Chúng ta cùng thử dùng một vài kí tự trong bảng trên và xem kết quả.
 Đầu tiên là sử dụng kí tự xuống dòng:
 
-![1-3-12](https://github.com/daynhauhoc/cppcoban/assets/88678933/e7adad84-c303-40a2-b59e-1b67930e9626)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/78c3e782-f1cd-4a48-b3f4-bae6a34a571b)
+
 
 Như các bạn thấy, không còn sử dụng đối tượng **endl** nữa nhưng chuỗi kí tự trên vẫn được tách thành 2 dòng bằng cách sử dụng kí tự new line **"\n"**.
 
 Tiếp theo, chúng ta thêm kí tự **Tab** và đầu chuỗi kí tự muốn in ra:
 
-![1-3-13](https://github.com/daynhauhoc/cppcoban/assets/88678933/f9ff5b72-3ca4-44f5-8b73-ad5a89e02afc)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/7785c77e-cb17-4088-ba2a-34e5b8962508)
+
 
 Ta thấy dòng đầu tiên đã được đẩy vào 1 Tab so với dòng thứ 2. Các bạn có thể thử lần lượt các kí tự đặc biệt trên nếu có thời gian. Tuy nhiên, cần lưu ý rằng kí tự new line "\n" và đối tượng **endl** đều đóng vai trò là kí tự xuống dòng nhưng nó hoàn toàn khác nhau, mình sẽ giải thích vấn đề này sau.
 
 Ngoài ra, các bạn còn có thể sử dụng đối tượng **cout** để in ra kết quả của một biểu thức toán học:
 
-![1-3-14](https://github.com/daynhauhoc/cppcoban/assets/88678933/99eb938e-32ea-43f9-bb73-c0d2f0d47141)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/0b7b12c0-4e30-4292-922a-d8c905618a75)
+
 
 Trong câu lệnh trên, biểu thức **12 + 2 \* 3** được tính ra kết quả, kết quả biểu thức này được chương trình coi như một giá trị số, và nó hoàn toàn có thể đưa vào đối tượng file **stdout** bằng đối tượng **cout**.
 
 Ngoài tính toán và cho ra kết quả số nguyên, một chương trình C++ còn có thể tính toán các biểu thức và in ra giá trị là số âm, số thực...
 
-![1-3-15](https://github.com/daynhauhoc/cppcoban/assets/88678933/de3d8a8d-15fa-4753-b2f9-5b0ed35f8f6b)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/36b640b5-025c-49fe-b26d-bba3c6aff767)
+
 
 - Chương trình C++ không thể in ra giá trị là một phân số (trừ khi chúng ta tự định nghĩa lại), vì thế, ở biểu thức cuối cùng, máy tính không in ra được giá trị là **5/10** mà nó chỉ có thể in ra giá trị 0 (tại sao lại không phải là 0.5?), chúng ta sẽ tìm hiểu vấn đề này trong bài học [Biến - cách khai báo và sử dụng biến](/1-cpp-co-ban/1-5-bien-cach-khai-bao-va-su-dung-bien.md).
 
@@ -168,7 +185,8 @@ Trong bài này, chúng ta chỉ làm quen với một số hàm đơn giản th
 
 Cách sử dụng:
 
-![1-3-16](https://github.com/daynhauhoc/cppcoban/assets/88678933/b60fca36-3212-4dce-a992-defc27c20c27)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/57deca74-c03a-4d68-9020-1ad1df74c9d4)
+
 
 Cùng nhìn vào hình trên để xem cú pháp sử dụng và đánh giá kết quả.
 
@@ -180,7 +198,8 @@ Trong hình trên, mình định dạng độ rộng của các số được đ
 
 Nếu các bạn muốn định dạng khoảng trắng phía sau, chỉ cần đổi giá trị trong hàm **setw** thành số âm như hình bên dưới:
 
-![1-3-17](https://github.com/daynhauhoc/cppcoban/assets/88678933/e341eda0-20c0-4a8a-866c-a1968ba7a766)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/565974f2-9909-41b7-9e08-e085bac1d1f7)
+
 
 ### setprecision(int n)
 
@@ -188,7 +207,8 @@ Cũng tương tự như hàm **setw**, hàm **setprecision** cũng nhận vào m
 
 Cách sử dụng:
 
-![1-3-18](https://github.com/daynhauhoc/cppcoban/assets/88678933/fb5918a8-692a-43cb-9b6a-a24f2d28e02d)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d0648f3f-5f13-402f-87ab-4d320ed909cc)
+
 
 - Đảm bảo rằng thư viện **iomanip** đã được include vào chương trình.
 
