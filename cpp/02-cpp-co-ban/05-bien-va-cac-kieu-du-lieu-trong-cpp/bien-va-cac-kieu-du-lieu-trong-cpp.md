@@ -30,11 +30,13 @@ Trong bài học hôm nay, chúng ta sẽ tìm hiểu cơ bản về việc lưu
 
 Như thường lệ, việc đầu tiên chúng ta làm là tạo một project C++ mới (Mình đặt tên project là Bai1.4 để tiện theo dõi, còn các bạn thích đặt tên project là gì cũng được).
 
-![1-4-0](https://github.com/daynhauhoc/cppcoban/assets/88678933/05836047-4915-4ff5-83ee-541793fae8c4)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/7ede1487-dcb3-4a82-be93-8c8d47312e1c)
+
 
 Sau khi Visual studio thiết lập cấu hình cho project, ta tạo file main.cpp và viết một số dòng lệnh tạo nên cấu trúc cơ bản của chương trình C++.
 
-![1-4-1](https://github.com/daynhauhoc/cppcoban/assets/88678933/e2b43e49-9c55-421c-a4a4-4680d5dbd10d)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/eaad743a-e931-4b7b-86bc-7a4c712c1ea6)
+
 
 Sau đó nhấn tổ hợp phím **Ctrl + Shift + B** để thực hiện quá trình biên dịch file main.cpp thành file main.obj, và tạo thành file execute. Việc build chương trình trong giai đoạn đầu này nhằm đảm bảo mọi thứ hoạt động ổn định, và tiết kiệm thời gian cho những lần build sau.
 
@@ -44,11 +46,13 @@ Khi thực hiện build project, Visual studio cung cấp cho chúng ta hai lự
 
 Để chọn cấu hình build ứng dụng, các bạn vào **BUILD** trên thanh Menu Bar, chọn **Configuration Manager**.
 
-![1-4-2](https://github.com/daynhauhoc/cppcoban/assets/88678933/4f257f1f-865a-4d88-8da6-2bbdd768bea1)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/82b55799-f249-444c-8df6-1d8ebe3b4067)
+
 
 Cửa sổ chọn cấu hình xuất hiện như bên dưới:
 
-![1-4-3](https://github.com/daynhauhoc/cppcoban/assets/88678933/1a12927d-61bc-4ed5-a675-c0d9c8dbe1e8)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/ee0afa0d-04ba-446b-ba5b-bb6533328565)
+
 
 Hai lựa chọn này khác nhau như thế nào? Có thể hiểu build chương trình dưới cấu hình **Debug** thì sản phẩm của chúng chưa được hoàn thiện, cần thời gian để tìm lỗi, sửa lỗi... Và một khi bạn cho rằng sản phẩm của mình đã được viết hoàn tất, bạn chuyển sang cấu hình **Release** để build sản phẩm. Sản phẩm sau khi **Release** thường sẽ có dung lượng nhẹ hơn khi **Debug**, vì khi trong chế độ **Debug**, Visual studio sẽ tích hợp một số thư viện nhằm phục vụ cho quá trình tìm kiếm và sửa lỗi. Đây chỉ là phần ngoài lề của bài học, bây giờ chúng ta quay lại với nội dung chính.
 
@@ -93,16 +97,18 @@ string myName = "Minh Vu"; // (3) Biến này chứa được một dãy các k�
 Với 3 cách khai báo trên, chúng ta sẽ có 3 vùng nhớ nằm ở 3 vị trí khác nhau trên RAM của bạn.
 
 Với cách khai báo 1:
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/44b94caa-b369-4e71-8881-eccb66b65829)
 
-![1-4-4](https://github.com/daynhauhoc/cppcoban/assets/88678933/63332f96-ec7e-4ff7-b5d8-7198138cbcf5)
 
 Với cách khai báo 2:
 
-![1-4-5](https://github.com/daynhauhoc/cppcoban/assets/88678933/3e5074eb-eb4f-4881-9918-59401a00fa02)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/2851c684-a0f0-4043-accf-6bdc413e5d1c)
+
 
 Với cách khai báo 3:
 
-![1-4-6](https://github.com/daynhauhoc/cppcoban/assets/88678933/a132147b-a597-4a93-856d-7ce05d547365)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/0f850f9a-3c8c-4ffe-9c40-675ec8c1c6ce)
+
 
 Sau đây là cú pháp cơ bản để chúng ta khai báo 1 biến:
 
@@ -120,7 +126,8 @@ Sau khi viết xong đề của bài toán thì mình đã nghĩ ra giải pháp
 
 Đây là chương trình do mình viết, mình khuyên các bạn nên tự nghĩ cách viết trước khi tham khảo chương trình của mình.
 
-![1-4-7](https://github.com/daynhauhoc/cppcoban/assets/88678933/450c15f8-4270-4641-b240-58c0c6104874)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/97f849f2-6300-4ca9-bcc6-7443ded32fd7)
+
 
 Hi vọng chương trình của bạn các viết cũng cho kết quả đúng như mong đợi.
 
@@ -130,11 +137,13 @@ Bây giờ có một vấn đề phát sinh, đàn bò của mình sau một nă
 
 Chương trình của mình sẽ được viết lại như sau:
 
-![1-4-8](https://github.com/daynhauhoc/cppcoban/assets/88678933/430b08e1-e0c2-4efb-8410-7d2458577bc3)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/c47a970b-108c-4159-829a-ee7ffb053d8d)
+
 
 Ở đoạn code trên, dòng `number_of_cows = number_of_cows + 10;` có nghĩa là:
 
-![1-4-9](https://github.com/daynhauhoc/cppcoban/assets/88678933/9d7fe3c6-0992-4483-ad19-7f709b79578b)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/3b17a961-1e7a-445e-bcdb-8990b3426b37)
+
 
 Chúng ta dùng toán tử **"="** để đưa một giá trị vào trong biến number_of_cows, giá trị mà chúng ta đưa vào sẽ bằng giá trị của biến `number_of_cows` hiện tại (đang là 30) cộng thêm 10. Sau khi thực hiện dòng lệnh này, giá trị mới trong biến `number_of_cows` sẽ là 40.
 
@@ -146,7 +155,8 @@ Kiểu dữ liệu là một thành phần bắt buộc phải có khi muốn kh
 
 Dưới đây là bảng mô tả một số kiểu dữ liệu cơ bản:
 
-![1-4-10](https://github.com/daynhauhoc/cppcoban/assets/88678933/7ed16a5b-9eef-44ae-a65a-5cdf50d01434)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d23cbdb6-c1db-497d-bfe0-6badb2bfd938)
+
 
 Trong cột Category, người ta chia các kiểu dữ liệu cơ bản thành 4 loại:
 
@@ -159,7 +169,8 @@ Kích thước vùng nhớ của các kiểu dữ liệu này được tính b�
 
 Để xem kích thước vùng nhớ sẽ được cấp phát cho biến trong chương trình. Chúng ta sử dụng toán tử **sizeof(<kiểu dữ liệu>)** như sau:
 
-![1-4-11](https://github.com/daynhauhoc/cppcoban/assets/88678933/932f303c-e6c3-428c-bf1b-5373b4427edb)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/4b2a2c12-5baf-4c1e-bbbc-abb984e509f1)
+
 
 Theo kết quả của chương trình, kiểu dữ liệu số nguyên **int** có kích cỡ 4 **bytes**, đó là do IDE Visual studio 2015 định nghĩa kiểu **int** như vậy. Mỗi compiler sẽ có một chuẩn kiểu dữ liệu riêng, nên các bạn không cần lo lắng về sự khác biệt giữa kích bảng dữ liệu ở trên với kết quả thực tế.
 
@@ -167,7 +178,8 @@ Các bạn hiện tại chỉ cần hiểu với những kiểu dữ liệu có 
 
 Dưới đây là bảng giới hạn giá trị cho từng kiểu dữ liệu mà chúng ta thường xuyên sử dụng trong Visual studio:
 
-![1-4-12](https://github.com/daynhauhoc/cppcoban/assets/88678933/5871fffc-2216-40ac-abc5-648e387cd986)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/ce68e70b-701f-4e4b-8db8-c895b59a3faa)
+
 
 Các bạn không cần nhớ chính xác những giới hạn trên, chỉ cần ước chừng phạm vi của mỗi kiểu dữ liệu để chọn kiểu dữ liệu phù hợp cho biến là được.
 
@@ -203,7 +215,7 @@ int current_score;
 
 ### Bài tập cơ bản
 
-![1-4-13](https://github.com/daynhauhoc/cppcoban/assets/88678933/f87f38dc-2525-4494-883c-506c93df3bac)
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/065a40cf-d395-4377-ac78-fb9b8eda40df)
 
 1. Chạy thử đoạn chương trình trên và xem kết quả.
    Giải thích tại sao chương trình cho kết quả như vậy!
