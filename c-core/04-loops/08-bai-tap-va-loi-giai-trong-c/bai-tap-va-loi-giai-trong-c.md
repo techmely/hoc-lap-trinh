@@ -56,7 +56,7 @@ Qua phân tích bên trên chúng ta có thể nhận thấy chương trình nà
 
 Code hoàn chỉnh:
 
-```c
+```cpp
  1    #include <stdio.h>
  2    #include <math.h>
  3
@@ -89,24 +89,24 @@ Code hoàn chỉnh:
 
 Kết quả khi chạy chương trình:
 
-```c
+```cpp
 Enter n: 1
 n is not a prime number.
 ```
 
-```c
+```cpp
 Enter n: 11
 n a prime number.
 ```
 
-```c
+```cpp
 Enter n: 12
 n is not a prime number.
 ```
 
 **`return`** - đây là từ khoá dùng để kết thúc một hàm xử lý, khi gặp từ khoá **`return`** thì chương trình sẽ không chạy tiếp các dòng mã bên dưới từ **`return`** nữa. Trong ví dụ trên, khi nhập `n < 2` thì chương trình sẽ chạy vào câu lệnh **`if`** (line 11) và thực hiện lệnh `return 0;` (line 13) - lúc này **chương trình sẽ kết thúc** và những dòng mã từ line 15 → line 27 sẽ **không** được thực hiện.
 
-**`break`** - tại sao lại dùng **`break`** tại đây? Vì trong khoảng từ `2 → sqrt(n)` có thể có rất nhiều ước của `n`, chúng ra chỉ cần tìm thấy 1 ước đầu tiên là kết luận được `n is not a prime number` mà không cần chạy hết vòng lặp (dư thừa không cần thiết). Bạn có thể đọc lại về **`break`** [tại đây](http://localhost:7985/bai-viet/c/cau-lenh-break-trong-c).
+**`break`** - tại sao lại dùng **`break`** tại đây? Vì trong khoảng từ `2 → sqrt(n)` có thể có rất nhiều ước của `n`, chúng ra chỉ cần tìm thấy 1 ước đầu tiên là kết luận được `n is not a prime number` mà không cần chạy hết vòng lặp (dư thừa không cần thiết). Bạn có thể đọc lại về **`break`** [tại đây](/bai-viet/c/cau-lenh-break-trong-c).
 
 ## Bài tập tự luyện tập
 
@@ -116,7 +116,7 @@ n is not a prime number.
 
 Template:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -136,7 +136,7 @@ Màn hình kết quả chương trình:
 
 Test case 1
 
-```c
+```cpp
 Enter the number: 10
 
 OUTPUT:
@@ -150,7 +150,7 @@ The number of occurrences of even number is 6
 
 Template:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -170,7 +170,7 @@ Màn hình kết quả chương trình:
 
 Test case 1
 
-```c
+```cpp
 Enter the number: 10
 
 OUTPUT:
@@ -184,7 +184,7 @@ result is 30
 
 Template:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -204,7 +204,7 @@ Màn hình kết quả chương trình:
 
 Test case 1
 
-```c
+```cpp
 Enter the number: 12345
 
 OUTPUT:

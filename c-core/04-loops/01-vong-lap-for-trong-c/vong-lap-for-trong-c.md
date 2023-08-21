@@ -17,7 +17,7 @@ Vòng lặp **`for`** được sử dụng để duyệt qua các phần tử tr
 
 ## Cấu trúc vòng lặp for trong C
 
-```c
+```cpp
 for (khởi tạo giá trị biến lặp; điều kiện lặp; cập nhật biến lặp) {
 
    // statements inside the body of loop
@@ -26,7 +26,7 @@ for (khởi tạo giá trị biến lặp; điều kiện lặp; cập nhật bi
 
 Ví dụ:
 
-```c
+```cpp
 for (int i = 0; i <= 10; i++) {
 
    // statements inside the body of loop
@@ -54,7 +54,7 @@ Ví dụ 1:
 
 > In ra các số từ 1 đến 10.
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -69,7 +69,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 1
 2
 3
@@ -96,7 +96,7 @@ Ví dụ 2:
 
 > In ra các số chẵn từ 1 đến 10.
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -113,7 +113,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 2
 4
 6
@@ -124,7 +124,7 @@ End loop!
 
 Chúng ta còn có một cách khác là sửa lại vòng lặp như sau:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -141,7 +141,7 @@ Ví dụ 3:
 
 > Tính tổng các số từ 1 đến 10.
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -158,7 +158,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 sum = 55
 End loop!
 ```

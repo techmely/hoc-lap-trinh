@@ -17,7 +17,7 @@ Câu lệnh **`goto`** là một câu lệnh nhảy đôi khi cũng được g�
 
 ## Cú pháp câu lệnh goto trong C
 
-```c
+```cpp
 Syntax1       |    Syntax2
 ------------------------------
 goto label;   |    label:
@@ -37,7 +37,7 @@ Ví dụ 1:
 
 > Kiểm tra một số là số chẵn hay số lẻ.
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -66,7 +66,7 @@ int main() {
 
 Kết quả chương trình:
 
-```c
+```cpp
 Enter n: 44
 44 is even.
 ```
@@ -75,7 +75,7 @@ Ví dụ 2:
 
 > Chương trình tính tổng và trung bình của các số dương. Nếu người dùng nhập số âm, tổng và trung bình được hiển thị.
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -102,7 +102,7 @@ int main() {
 
 Kết quả chương trình:
 
-```c
+```cpp
 Enter a number: 4
 Enter a number: 6
 Enter a number: 6
@@ -118,7 +118,7 @@ Ví dụ:
 
 > In ra các số từ `1` đến `10`.
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -136,7 +136,7 @@ int main() {
 
 Kết quả chương trình:
 
-```c
+```cpp
 1
 2
 3

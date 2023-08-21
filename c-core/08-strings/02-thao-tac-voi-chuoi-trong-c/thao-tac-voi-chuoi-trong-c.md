@@ -34,7 +34,7 @@ Một số hàm xử lí chuỗi thường được sử dụng
 
 > Lưu ý: trước khi dùng các hàm xử lí chuỗi trên thì hãy khai báo thư viện chuỗi bằng syntax:
 
-```c
+```cpp
 #include <string.h>
 ```
 
@@ -44,7 +44,7 @@ Các hàm `gets()` và `puts()` là hai hàm chuỗi để lấy đầu vào chu
 
 Ví dụ:
 
-```c
+```cpp
 #include<stdio.h>
 
 int main()
@@ -60,7 +60,7 @@ int main()
 
 Kết quả:
 
-```c
+```cpp
 Enter name: Hello Anest
 Name: Hello Anest
 ```

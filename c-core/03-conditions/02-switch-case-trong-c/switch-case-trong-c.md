@@ -21,7 +21,7 @@ Lệnh `switch-case` cũng gần tương tự như `if-else` mà chúng ta đã 
 
 Dưới đây là cú pháp của lệnh `switch-case`
 
-```c
+```cpp
 switch (expression) {
     case constant1:
         // statements 1
@@ -57,7 +57,7 @@ Dưới đây là sơ đồ khối mô tả hoạt động của lệnh `switch-
 
 Ví dụ minh họa:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -97,21 +97,21 @@ int main() {
 
 Và đây là kết quả sau khi chạy chương trình:
 
-```c
+```cpp
 Enter the day: 6
 Friday
 ```
 
 Nếu nhập một giá trị không có trong các case, case `default` sẽ được chạy:
 
-```c
+```cpp
 Enter the day: 12
 Only enter 2 -> 8.
 ```
 
 Cùng xem thêm một ví dụ khác sử dụng kiểu `char`
 
-```c
+```cpp
 #include <stdio.h>
 
 int main () {
@@ -145,7 +145,7 @@ int main () {
 
 Kết quả:
 
-```c
+```cpp
 Enter grade: B
 Well done.
 Your grade is B

@@ -23,7 +23,7 @@ Cú pháp để khai báo 1 hàm như sau:
 
 Ví dụ một hàm do người dùng định nghĩa:
 
-```c
+```cpp
 int sum() {
     //
     return sum;
@@ -38,7 +38,7 @@ int sum() {
 
 Ví dụ một hàm hệ thống:
 
-```c
+```cpp
 double sqrt(double x) {
     //
     return result;
@@ -51,7 +51,7 @@ double sqrt(double x) {
 
 Cùng xem lại cách sử dụng hàm `sqrt()`:
 
-```c
+```cpp
 #include <stdio.h>
 #include <math.h>
 
@@ -69,6 +69,6 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 result = 3.00
 ```

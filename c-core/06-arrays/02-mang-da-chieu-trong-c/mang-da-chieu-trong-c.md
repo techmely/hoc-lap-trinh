@@ -21,7 +21,7 @@ Trong lập trình C, chúng ta có thể tạo một mảng mảng. Mảng này
 
 Ví dụ:
 
-```c
+```cpp
 int num[4][3]
 ```
 
@@ -37,7 +37,7 @@ Tương tự, bạn có thể khai báo một mảng ba chiều.
 
 Ví dụ:
 
-```c
+```cpp
 int num[4][2][3]
 ```
 
@@ -49,7 +49,7 @@ chúng ta có thể khởi tạo mảng đa chiều bằng một trong các các
 
 Ví dụ khởi tạo mảng hai chiều:
 
-```c
+```cpp
 int num[3][2] = {{1, 3}, {-5, 4}, {17, 35}};
 
 int num[][2] = {{1, 3}, {-5, 4}, {17, 35}};
@@ -57,7 +57,7 @@ int num[][2] = {{1, 3}, {-5, 4}, {17, 35}};
 
 ví dụ khởi tạo mảng ba chiều:
 
-```c
+```cpp
 int num[2][3][4] = {
     {{1, 2, 3, 4}, {-5, 6, -9, 18}, {43, 21, 22, 23}},
     {{1, 4, -5, 6}, {-6, 8, 9, -11}, {0, 1, 2, 3}}
@@ -70,7 +70,7 @@ int num[2][3][4] = {
 
 Ví dụ nhập vào một matrix có 3 hàng và 4 cột và hiển thị ra matrix đó:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -103,7 +103,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 Enter matrix[1][1]: 1
 Enter matrix[1][2]: 3
 Enter matrix[1][3]: 2
@@ -125,7 +125,7 @@ Display matrix:
 
 Tương tự ta có ví dụ về nhập và hiển thị mảng ba chiều:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -160,7 +160,7 @@ int main() {
 
 kết quả:
 
-```c
+```cpp
 Enter num[0][0][0]: -2
 Enter num[0][0][1]: 0
 Enter num[0][1][0]: 1

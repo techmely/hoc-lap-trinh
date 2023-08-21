@@ -42,7 +42,7 @@ Hàm này sẽ trả về **giá trị tuyệt đối** của một số, trong 
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 #include <math.h>
 
@@ -57,7 +57,7 @@ int main() {
 
 Kết quả chương trình:
 
-```c
+```cpp
 a = 5
 ```
 
@@ -67,7 +67,7 @@ Hàm này sẽ **trả về giá trị dạng số nguyên** nếu như ta đưa
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 #include <math.h>
 
@@ -85,7 +85,7 @@ int main() {
 
 Kết quả chương trình:
 
-```c
+```cpp
 a = 6, b = 6
 ```
 
@@ -95,7 +95,7 @@ Trái ngược với hàm `ceil`, hàm `floor` sẽ luôn làm tròn giá trị 
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 #include <math.h>
 
@@ -113,7 +113,7 @@ int main() {
 
 Kết quả chương trình:
 
-```c
+```cpp
 a = 5, b = 5
 ```
 
@@ -125,7 +125,7 @@ Hàm này cho phép tính **lũy thừa** một số. Chúng ta phải chỉ ra 
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 #include <math.h>
 
@@ -142,7 +142,7 @@ int main() {
 
 Kết quả chương trình:
 
-```c
+```cpp
 c = 64
 ```
 
@@ -152,7 +152,7 @@ Hàm này sẽ tính **căn bậc 2** của một số được truyền vào. G
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 #include <math.h>
 
@@ -170,7 +170,7 @@ int main() {
 
 Kết quả chương trình:
 
-```c
+```cpp
 a = 3, b = 3.872983
 ```
 
@@ -180,7 +180,7 @@ Hàm này sẽ tính **exponential**, hay còn gọi là **lũy thừa cơ số 
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 #include <math.h>
 
@@ -196,6 +196,6 @@ int main() {
 
 Kết quả chương trình:
 
-```c
+```cpp
 a = 148.413159
 ```

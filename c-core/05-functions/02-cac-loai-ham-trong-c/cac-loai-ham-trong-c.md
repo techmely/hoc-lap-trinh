@@ -54,7 +54,7 @@ Ví dụ: Tính giá trị tuyệt đối của một số nguyên nhập từ b
 Để tính toán được giá trị tuyệt đối của một số chúng ta có thể sử dụng hàm thư viện `fabs()`. Để sử dụng
 nó chúng ta cần import thư viện `math.h` ở phần đầu file code.
 
-```C
+```cpp
 #include <stdio.h>
 #include <math.h>
 
@@ -73,7 +73,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 Enter a number: -7
 Absolute value = 7
 ```
@@ -89,7 +89,7 @@ Ví dụ: Tính tổng hai số nguyên có giá trị được nhập từ bàn
 
 Khác với những bài tập và ví dụ trước, với bài toán này chúng ta sẽ sử dụng hàm `addition()` để tính toán:
 
-```C
+```cpp
 #include <stdio.h>
 
 int addition(int a, int b); // Nguyên mẫu hàm (Function prototype)
@@ -118,7 +118,7 @@ int addition(int a, int b){ // Định nghĩa hàm (Function definition)
 
 Kết quả:
 
-```c
+```cpp
 Enter x: 3
 Enter y: 4
 x + y = 7
@@ -132,7 +132,7 @@ x + y = 7
 
 Syntax of function prototype:
 
-```C
+```cpp
 returnType functionName(dataType1 argument1, dataType2 argument2, ...);
 ```
 
@@ -148,7 +148,7 @@ Với ví dụ ở trên ta có thể phân tích hàm `addition()`:
 
 Syntax of function call:
 
-```C
+```cpp
 functionName(argument1, argument2, ...);
 ```
 
@@ -160,7 +160,7 @@ Trong ví dụ trên ta gọi hàm `addition(x, y);` bên trong hàm `main()`.
 
 Syntax of function definition:
 
-```C
+```cpp
 returnType functionName(dataType1 argument1, dataType2 argument2, ...){
     // body of the function
 }
@@ -188,13 +188,13 @@ Trong ví dụ trên giá trị của biến kết quả trong hàm `addition()`
 
 Syntax of return statement:
 
-```C
+```cpp
 return (expression);
 ```
 
 Ví dụ:
 
-```C
+```cpp
 return a;
 return a+b;
 ```

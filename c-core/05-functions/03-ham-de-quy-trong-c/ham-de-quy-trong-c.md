@@ -21,7 +21,7 @@ Một hàm gọi lại chính nó bên trong body code được gọi là hàm �
 
 ### Cấu trúc của hàm đệ quy
 
-```c
+```cpp
 void recurse() {
     ... .. ...
     recurse();  // gọi lại chính nó bên trong nó
@@ -49,7 +49,7 @@ Ví dụ:
 
 Sử dụng công thức toán học.
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -65,11 +65,11 @@ int main() {
 }
 ```
 
-### Giải  2
+### Giải 2
 
 Sử dụng vòng lặp `for`.
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -89,7 +89,7 @@ int main() {
 
 Sử dụng vòng lặp `while`.
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -113,7 +113,7 @@ int main() {
 
 Sử dụng hàm đệ quy.
 
-```c
+```cpp
 #include <stdio.h>
 
 int sum(int);

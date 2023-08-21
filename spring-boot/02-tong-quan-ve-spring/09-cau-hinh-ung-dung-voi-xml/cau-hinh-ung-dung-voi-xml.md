@@ -168,7 +168,7 @@ Với khai báo này, trong Spring MVC có thể đánh dấu các thành phần
 Khi bạn yêu cần một action, ứng dụng Spring phải truy tìm phương thức ánh xạ tới action đó thông qua @RequestMapping hoặc @PostMapping hoặc @GetMapping.
 Như vậy cần phải biết phương thức của lớpn nào được ánh xạ để thực hiện yêu cầu với khai báo:
 
-```ssh
+```bash
 context:component-scan base-package="codelean.controller"/>
 ```
 

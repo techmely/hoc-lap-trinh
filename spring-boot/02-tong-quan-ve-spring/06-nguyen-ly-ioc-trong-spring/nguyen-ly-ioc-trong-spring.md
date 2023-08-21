@@ -41,7 +41,6 @@ Spring container sử dụng DI để quản lý các thành phần, đối tư�
 
 ![Spring IoC](https://github.com/techmely/hoc-lap-trinh/assets/29374426/a0a2b744-45ce-44c4-8f39-4a7529379647)
 
-
 ## Các kiểu IoC Container
 
 ### 1.Bean Factory
@@ -196,7 +195,7 @@ public static void main(String[] args) {
 
 Kết quả:
 
-```ssh
+```bash
 url: jdbc:mysql://localhost/database_name
 username/password: root/admin1234
 ```

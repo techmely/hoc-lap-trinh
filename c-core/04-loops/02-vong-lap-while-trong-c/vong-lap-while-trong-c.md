@@ -19,7 +19,7 @@ Nên sử dụng vòng lặp **`while`** khi bạn không biết rõ số lượ
 
 ## Cấu trúc của vòng lặp while
 
-```c
+```cpp
 while (testExpression) {
 
     // statements inside the body of the loop
@@ -28,7 +28,7 @@ while (testExpression) {
 
 Ví dụ:
 
-```c
+```cpp
 int i = 0;
 
 while (i < 10) {
@@ -56,7 +56,7 @@ Ví dụ 1:
 
 > In ra các số từ `1` đến `5`.
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -72,7 +72,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 1
 2
 3
@@ -113,7 +113,7 @@ Phân tích bài toán:
 
 Solution code:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -135,7 +135,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 Enter n: 694
 sum = 19
 ```

@@ -17,7 +17,7 @@ Vòng lặp lồng nhau có nghĩa là một câu lệnh vòng lặp nằm bên 
 
 ## Cấu trúc lặp for lồng nhau nhau trong C
 
-```c
+```cpp
 for (initialization; condition; increment) {
 
     for (initialization; condition; increment) {
@@ -31,7 +31,7 @@ for (initialization; condition; increment) {
 
 ## Cấu trúc lặp while lồng nhau nhau trong C
 
-```c
+```cpp
 while (condition) {
 
     while (condition) {
@@ -45,7 +45,7 @@ while (condition) {
 
 ## Cấu trúc do-while lồng nhau trong C
 
-```c
+```cpp
 do {
 
     do {
@@ -61,7 +61,7 @@ _**Lưu ý**: Không có quy tắc nào rằng là một vòng lặp phải đư
 
 Ví dụ:
 
-```c
+```cpp
 do {
 
    while (condition) {

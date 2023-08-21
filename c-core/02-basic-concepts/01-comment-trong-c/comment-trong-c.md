@@ -23,7 +23,7 @@ Bất kỳ văn bản nào nằm giữa `//` đến cuối dòng đều bị C b
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -35,7 +35,7 @@ int main() {
 
 Ví dụ này sử dụng một comment ở cuối dòng code:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -52,7 +52,7 @@ Mọi văn bản giữa `/*` và `*/` sẽ bị C bỏ qua.
 
 Ví dụ này sử dụng một comment nhiều dòng (một khối comment) để giải thích đoạn code:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {

@@ -21,17 +21,17 @@ Trong bài này chúng ta sẽ tìm hiểu về cách làm việc với mảng:
 - Thay đổi giá trị phần tử của mảng
 - Nhập xuất phần tử mảng
 
-## Khai  mảng trong C
+## Khai mảng trong C
 
 #### Syntax:
 
-```c
+```cpp
 dataType arrayName[arraySize]
 ```
 
 Ví dụ:
 
-```c
+```cpp
 int number[10]
 ```
 
@@ -50,17 +50,17 @@ Giả sử chúng ta đã khai báo một mảng `number` như trên. Phần t�
 - Mảng có 0 là chỉ mục đầu tiên, không phải 1. Trong ví dụ này, `number[0]` là phần tử đầu tiên.
 - Nếu kích thước của một mảng là `n`, thì để truy cập phần tử cuối cùng, `n-1` chỉ mục được sử dụng. Trong ví dụ này, `number[4]` là phần tử cuối cùng
 
-## Khởi tạo một mảng trong 
+## Khởi tạo một mảng trong
 
 ### Chúng ta có thể khởi tạo mảng trong quá trình khai báo.
 
-```c
+```cpp
 int number[5] = {10, 15, 13, 31, 56};
 ```
 
 ### Hoặc chúng ta cũng có thể khởi tạo mảng theo cách này
 
-```c
+```cpp
 int number[] = {10, 15, 13, 31, 56};
 ```
 
@@ -77,7 +77,7 @@ Lúc này ta có các giá trị được lưu vào các biến
 
 ## Thay đổi giá trị của mảng trong C
 
-```c
+```cpp
 int number[5] = {10, 15, 13, 31, 56};
 
 // thay đổi giá trị phần tử đầu tiên thành -10
@@ -95,7 +95,7 @@ Tương tự để in ra các phần tử trong mảng chúng ta sử dụng vò
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -118,7 +118,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 Enter 5 integer numbers: 1
 4
 3

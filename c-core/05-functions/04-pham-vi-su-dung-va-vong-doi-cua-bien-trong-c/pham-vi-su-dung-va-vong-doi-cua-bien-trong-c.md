@@ -34,7 +34,7 @@ Các biến được khai báo bên trong một khối là biến tự động h
 
 Ví dụ
 
-```c
+```cpp
 #include <stdio.h>
 
 int main(void) {
@@ -57,7 +57,7 @@ Các biến được khai báo bên ngoài tất cả các hàm được gọi l
 
 ví dụ
 
-```c
+```cpp
 #include <stdio.h>
 void display();
 
@@ -79,7 +79,7 @@ void display()
 
 Kết quả
 
-```c
+```cpp
 a = 6
 ```
 
@@ -91,7 +91,7 @@ Từ khóa `register` dùng để khai báo các biến thanh ghi. Các biến t
 
 Ví dụ
 
-```c
+```cpp
 {
     register int a;
 }
@@ -103,7 +103,7 @@ Một biến tĩnh được khai báo bằng cách sử dụng từ khóa `stati
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 void display();
 
@@ -122,7 +122,7 @@ void display()
 
 Kết quả
 
-```c
+```cpp
 6 11
 ```
 

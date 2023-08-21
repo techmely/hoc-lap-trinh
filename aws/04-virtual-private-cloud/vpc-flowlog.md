@@ -8,7 +8,7 @@ keywords:
     "VPC FLow logs la gi",
     "giới thiệu VPC FLow logs",
     "tìm hiểu về VPC FLow logs",
-    "tìm hiểu về VPC FLow logs trong aws"
+    "tìm hiểu về VPC FLow logs trong aws",
   ]
 author:
   fullname: Phan Văn Đức
@@ -38,6 +38,6 @@ position: 22
 
 ![VPC Flow Logs](https://user-images.githubusercontent.com/29729545/147268701-1e638881-bee6-4e67-a529-0708c689e879.png)
 
-```ssh
+```bash
 2 123456789010 eni-1235b8ca123456789 172.31.16.139 172.31.16.21 20641 22 6 20 4249 1418530010 1418530070 ACCEPT OK
 ```

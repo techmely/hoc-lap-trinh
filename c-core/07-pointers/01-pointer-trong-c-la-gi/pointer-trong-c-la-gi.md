@@ -27,7 +27,7 @@ và trong bài học ngày hôm nay chúng ta sẽ cùng tìm hiểu về:
 
 Đây là cách chúng ta dùng để khai báo con trỏ
 
-```c
+```cpp
 int* p;
 ```
 
@@ -35,14 +35,14 @@ tại đây ta đã khai báo một con trỏ tên là `p` và có kiểu dữ l
 
 Hoặc ta có thể khai báo theo cách sau
 
-```c
+```cpp
 int *p1;
 int * p2;
 ```
 
 Chú ý ta có trường hợp sau:
 
-```c
+```cpp
 int* p1, p2;
 ```
 
@@ -52,7 +52,7 @@ Dòng lệnh trên có nghĩa là chúng ta khai báo một con trỏ `p1` kiể
 
 Ví dụ:
 
-```c
+```cpp
 int* pc, c;
 c = 10;
 pc = &c;
@@ -66,7 +66,7 @@ Như đã nói ở trên, tại đây chúng ta đang khai báo con trỏ `pc` v
 
 Để nhận giá trị từ địa chỉ được con trỏ trỏ vào ta sử dụng `*`, Ví dụ:
 
-```c
+```cpp
 int* pc, c;
 c = 10;
 pc = &c;
@@ -81,7 +81,7 @@ printf("%d", *pc);   // Output: 5
 
 Ví dụ 1:
 
-```c
+```cpp
 int* pc, c;
 c = 10;
 pc = &c;
@@ -94,7 +94,7 @@ Tại ví dụ này chúng ta đã dùng con trỏ `pc` để trỏ tới địa
 
 Ví dụ 2:
 
-```c
+```cpp
 int* pa, a, b;
 a = 2;
 b = -3;
@@ -114,7 +114,7 @@ sau đó con trỏ `pa` sẽ trỏ vào địa chỉ của biến `b`, tương t
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 int main()
 {
@@ -141,7 +141,7 @@ int main()
 
 Kết quả:
 
-```c
+```cpp
 Address of c: 000000000062FE14
 Value of c: 18
 
@@ -157,25 +157,25 @@ Value of c: -2
 
 Giải thích về cách hoạt động của con trỏ
 
-```c
+```cpp
 int* pc, c;
 ```
 
 Tại đây chúng ta đang khai báo một con trỏ `pc` và một biến `c` thuộc kiểu dữ liệu `int`
 
-```c
+```cpp
 c = 18;
 ```
 
 Giá trị `18` đang được lưu trữ trong bộ nhớ của `c`.
 
-```c
+```cpp
 pc = &c;
 ```
 
 Con trỏ `pc` sẽ trỏ đến địa chỉ bộ nhớ của biến `c`
 
-```c
+```cpp
 c = 10;
 ```
 
@@ -183,7 +183,7 @@ Giá trị `10` được lưu trữ trong bộ nhớ của `c`.
 
 Trong khi đó con trỏ `pc` đang được trỏ đến địa chỉ bộ nhớ của biến sẽ nên lúc này `*pc` sẽ có giá trị là `10`
 
-```c
+```cpp
 *pc = -2;
 ```
 

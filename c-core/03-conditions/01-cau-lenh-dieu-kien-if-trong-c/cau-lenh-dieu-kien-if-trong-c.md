@@ -21,7 +21,7 @@ Mệnh đề `if-else` trong C được sử dụng để kiểm tra một **bi�
 
 Trước khi tìm hiểu luôn về `if-else` thì chúng ta cần tìm hiểu và ghi nhớ một số toán tử tiếp theo vì những toán tử này được dùng rất nhiều trong **condition** ở mệnh đề `if`.
 
-_Bạn có thể xem lại bài viết về toán tử [tại đây](http://localhost:7985/bai-viet/c/cac-loai-toan-tu-trong-c)._
+_Bạn có thể xem lại bài viết về toán tử [tại đây](/bai-viet/c/cac-loai-toan-tu-trong-c)._
 
 ## Toán tử quan hệ trong C
 
@@ -55,7 +55,7 @@ Một biểu thức chứa toán tử logic trả về `0` hoặc `1` tùy thu�
 - Nếu điều kiện trả về `true` thì các câu lệnh bên trong phần thân của `if` sẽ được thực thi.
 - Nếu điều kiện trả về `false` thì các câu lệnh bên trong phần thân của `if` sẽ được bỏ qua.
 
-```c
+```cpp
 if (condition) {
     // khối lệnh này được thực thi nếu condition = true
 }
@@ -65,7 +65,7 @@ if (condition) {
 
 Đây là một ví dụ:
 
-```c
+```cpp
 // Program to display a number if it is negative
 
 #include <stdio.h>
@@ -88,7 +88,7 @@ int main() {
 
 Kết quả khi bạn nhập một số âm:
 
-```c
+```cpp
 Enter an integer: -5
 You entered -5.
 Done.
@@ -96,7 +96,7 @@ Done.
 
 Kết quả khi bạn nhập một số dương:
 
-```c
+```cpp
 Enter an integer: 5
 Done.
 ```
@@ -106,7 +106,7 @@ Done.
 - Nếu điều kiện trả về `true` thì các câu lệnh bên trong phần thân của `if` được thực thi và các câu lệnh bên trong phần thân của `else` bị bỏ qua.
 - Nếu điều kiện trả về `false` thì các câu lệnh bên trong phần thân của `if` bị bỏ qua và các câu lệnh trong `else` được thực thi.
 
-```c
+```cpp
 if (condition) {
     // khối lệnh này được thực thi nếu condition = true
 } else {
@@ -116,7 +116,7 @@ if (condition) {
 
 Đây là một ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -138,14 +138,14 @@ int main() {
 
 Kết quả khi bạn nhập số tuổi thỏa mãn điều kiện lớn hơn hoặc bằng 18:
 
-```c
+```cpp
 Enter your age: 22
 You are eligible for voting.
 ```
 
 Kết quả khi bạn nhập số tuổi không thỏa mãn điều kiện lớn hơn hoặc bằng 18:
 
-```c
+```cpp
 Enter your age: 14
 You are not eligible for voting.
 ```
@@ -153,7 +153,7 @@ You are not eligible for voting.
 **Chú ý:**  
 _Nếu chỉ có một câu lệnh xuất hiện trong thân `if` hoặc `else` thì bạn không cần phải sử dụng cặp dấu `{ }`. Ví dụ, chương trình trên có thể được viết lại như sau:_
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -176,7 +176,7 @@ Câu lệnh `else if` rất hữu ích khi bạn cần kiểm tra nhiều điề
 
 Cú pháp của `if-else if-else`:
 
-```c
+```cpp
 if (condition1) {
     // khối lệnh này được thực thi nếu condition1 = true
 } else if (condition2) {
@@ -189,7 +189,7 @@ if (condition1) {
 
 Và đây là một ví dụ minh họa:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -214,7 +214,7 @@ int main() {
 
 Và sau đây là kết quả:
 
-```c
+```cpp
 Input the value of var1: 9
 Input the value of var2: 8
 
@@ -227,7 +227,7 @@ Khi một câu lệnh `if` hoặc `if-else` xuất hiện bên trong phần thâ
 
 Cú pháp:
 
-```c
+```cpp
 if (condition 1) {
 
     // if-else bên trong mệnh đề if
@@ -245,7 +245,7 @@ if (condition 1) {
 
 Cùng xem ví dụ sau:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -274,7 +274,7 @@ int main() {
 
 Và đây là kết quả:
 
-```c
+```cpp
 Input the value of var1: 5
 Input the value of var2: 2
 
@@ -288,7 +288,7 @@ Trong câu lệnh `if` hoặc `else if` chúng ta cũng có thể dùng `Logical
 
 Hãy xem qua ví dụ sau:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -314,12 +314,12 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 Input the value of grade: 7.5
 Well done.
 ```
 
-```c
+```cpp
 Input the value of grade: -1
 Invalid grade.
 ```

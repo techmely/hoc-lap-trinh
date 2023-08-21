@@ -19,7 +19,7 @@ Về cơ bản các câu lệnh **`break`** thường được sử dụng trong
 
 ## Cú pháp câu lệnh break trong C
 
-```c
+```cpp
 break;
 ```
 
@@ -59,7 +59,7 @@ Ví dụ:
 
 > Chương trình tính tổng tối đa 10 số. Nếu nhập vào một số âm, vòng lặp chấm dứt và tính tổng các số được nhập vào trước đó.
 
-```c
+```cpp
 # include <stdio.h>
 
 int main() {
@@ -85,7 +85,7 @@ int main() {
 
 Kết quả chương trình:
 
-```c
+```cpp
 Enter a n1: 4
 Enter a n2: 5
 Enter a n3: 8
@@ -104,7 +104,7 @@ Ví dụ:
 
 > In ra hình chữ nhật
 
-```c
+```cpp
 # include <stdio.h>
 
 int main() {
@@ -120,7 +120,7 @@ int main() {
 
 Kết quả chương trình:
 
-```c
+```cpp
 * * * * * *
 * * * * * *
 * * * * * *
@@ -130,7 +130,7 @@ Chúng ta có thể thấy vòng **`for i`** (**`for`** bên ngoài) sẽ chạy
 
 Bây giờ chúng ta muốn vòng **`for j`** chỉ chạy 3 lần để **In ra hình vuông**, chúng ta sẽ kiểm tra điều kiện cho **`j`** và **`break`** như sau:
 
-```c
+```cpp
 # include <stdio.h>
 
 int main() {
@@ -150,7 +150,7 @@ int main() {
 
 Kết quả chương trình:
 
-```c
+```cpp
 * * *
 * * *
 * * *
@@ -162,7 +162,7 @@ Bạn có thể thấy vòng **`for i`** vẫn chạy 3 lần, **`break`** chỉ
 
 Hãy xem xét vòng lặp vô hạn dưới đây:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -180,7 +180,7 @@ _Lưu ý : Không chạy chương trình trên vì đây là một vòng lặp v
 
 Trong chương trình trên, điều kiện trong vòng lặp là `1` - có nghĩa là luôn luôn đúng. Vì vậy, vòng lặp thực hiện vô số lần hay còn gọi là vòng lặp vô hạn. Chúng ta có thể sửa lỗi này bằng cách sử dụng câu lệnh **`break`** như sau:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -200,7 +200,7 @@ int main() {
 
 Kết quả chương trình:
 
-```c
+```cpp
 0
 1
 2

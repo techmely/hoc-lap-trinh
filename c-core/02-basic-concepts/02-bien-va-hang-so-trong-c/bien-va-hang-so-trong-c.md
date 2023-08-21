@@ -79,7 +79,7 @@ hoặc chúng ta có thể vừa khai báo vừa gán luôn giá trị cho biế
 
 Đối với kiểu số nguyên thì không có có gì đặc biệt, các bạn hãy xem qua ví dụ sau:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -95,7 +95,7 @@ int main() {
 
 Đối với kiểu số thập phân (`float` và `double`) cần lưu ý khi khai báo và gán giá trị cho biết, trong lập trình chúng ta sẽ sử dụng dấu chấm `.` thay vì dấu phẩy `,` - chúng ta hay dùng cụm từ `dấu chấm động` để nói đến các số thập phân.
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -109,7 +109,7 @@ int main() {
 
 Đối với kiểu ký tự, giá trị cần được đặt trong cặp dấu **nháy đơn** `' '` để chương trình hiểu được đó là một ký tự.
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -120,7 +120,7 @@ int main() {
 
 Nếu kiểu ký tự bạn cố tình khai báo nhiều hơn 1 ký tự trong `' '`, biến sẽ chỉ nhận 1 ký tự cuối cùng.
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -132,7 +132,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 C
 ```
 
@@ -149,7 +149,7 @@ Nếu bạn muốn khởi tạo một biến có giá trị **không thể thay 
 
 Ví dụ với bộ tiền xử lý `#define`:
 
-```c
+```cpp
 #include <stdio.h>
 
 #define PI 3.14
@@ -162,7 +162,7 @@ int main() {
 
 Ví dụ với từ khóa `const`:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -191,7 +191,7 @@ Các biến được khai báo ở bên ngoài tất cả các khối code của
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 
 int n = 7;   // global variable
@@ -204,7 +204,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 7
 ```
 
@@ -216,7 +216,7 @@ Thân hay body của một hàm được xác định nằm trong cặp dấu ng
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -234,7 +234,7 @@ Nếu chúng ta sử dụng cùng một tên biến `global variable` và `local
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 
 int a = 5;    // global variable
@@ -249,6 +249,6 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 1
 ```

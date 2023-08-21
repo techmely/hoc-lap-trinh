@@ -19,7 +19,7 @@ Khi câu lệnh **`continue`** được thực thi trong vòng lặp, mã bên t
 
 ## Cú pháp câu lệnh continue trong C
 
-```c
+```cpp
 continue;
 ```
 
@@ -49,7 +49,7 @@ Ví dụ 1:
 
 > In ra các số từ `1` đến `10` trừ số `5` (không in ra số `5`). Kết quả đầu ra như sau: 1 2 3 4 6 7 8 9 10
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -72,7 +72,7 @@ Các bạn có thể thấy khi `i = 5` câu lệnh **`continue`** sẽ được
 
 Kết quả chương trình:
 
-```c
+```cpp
 1 2 3 4 6 7 8 9 10
 ```
 
@@ -80,7 +80,7 @@ Ví dụ 2:
 
 > Tính tổng tối đa 5 số. Nếu người dùng nhập số âm thì bỏ qua (không cộng số âm vào tổng).
 
-```c
+```cpp
 # include <stdio.h>
 
 int main() {
@@ -107,7 +107,7 @@ Khi nhập `n < 0` câu lệnh **`continue`** sẽ được thực thi, lúc nà
 
 Kết quả chương trình:
 
-```c
+```cpp
 Enter a n1: 1
 Enter a n2: 2
 Enter a n3: -3

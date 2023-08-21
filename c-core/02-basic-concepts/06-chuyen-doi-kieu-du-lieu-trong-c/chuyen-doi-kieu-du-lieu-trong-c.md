@@ -34,7 +34,7 @@ Ví dụ: Chuyển kiểu dữ liệu `int` _(2bytes)_ sang kiểu `float` _(4by
 
 Ví dụ 1:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -49,14 +49,14 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 a = 10
 b = 10.000000
 ```
 
 Ví dụ 2:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -67,7 +67,7 @@ int main() {
 
 Ở ví dụ 2, số `5` bên phải được nhận diện là `int`, nên khi viết `float b = 5;` cũng là ép kiểu `int` sang `float`. Để viết đúng giá trị bên phải là kiểu số thập phân, chúng ta cần viết thêm dấu chấm động vào như sau:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -84,7 +84,7 @@ Chữ `f` cuối cùng để phân biệt đây là giá trị thập phân củ
 
 - **Chuyển đổi giá trị sang một kiểu dữ liệu có miền giá trị nhỏ hơn sẽ gây ra kết quả không mong muốn.**
 
-  ```c
+  ```cpp
   #include <stdio.h>
 
   int main() {
@@ -98,13 +98,13 @@ Chữ `f` cuối cùng để phân biệt đây là giá trị thập phân củ
 
   Vì `int` chỉ lưu trữ được `+- 2,147,483,647` trong khi `n = 5,000,000,000` vượt quá ngưỡng lưu trữ của `int`, vì vậy khi chạy chúng ta sẽ nhận được kết quả sai không mong muốn như sau:
 
-  ```c
+  ```cpp
   c = 705032704
   ```
 
 - **Đối với kiểu số chấm động (floating point), chuyển đổi giá trị về kiểu dữ liệu nhỏ hơn có thể gây mất độ chính xác.**
 
-  ```c
+  ```cpp
   #include <stdio.h>
 
   int main() {
@@ -117,13 +117,13 @@ Chữ `f` cuối cùng để phân biệt đây là giá trị thập phân củ
 
   Vì kiểu `float` chỉ đủ để lưu trữ 6 đến 7 chữ số thập phân sau dấu phẩy, vì vậy phần thập phân dài hơn của `double` sẽ bị mất, kết quả sẽ mất đi độ chính xác như sau:
 
-  ```c
+  ```cpp
   c = 0.123457
   ```
 
 - **Chuyển đổi một giá trị từ số chấm động sang số nguyên sẽ làm mất đi phần thập thân.**
 
-  ```c
+  ```cpp
   #include <stdio.h>
 
   int main() {
@@ -136,7 +136,7 @@ Chữ `f` cuối cùng để phân biệt đây là giá trị thập phân củ
 
   Vì `int` không thế chứa được dấu chấm động vì vậy phần thập phân sẽ bị mất đi như sau:
 
-  ```c
+  ```cpp
   c = 2
   ```
 
@@ -148,7 +148,7 @@ Chữ `f` cuối cùng để phân biệt đây là giá trị thập phân củ
 
 Chúng ta cùng xem ví dụ sau:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -161,7 +161,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 result = 2.000000
 ```
 
@@ -173,7 +173,7 @@ Vì sao lại không ra kết quả mong muốn?
 
 Làm thế nào chúng ta có thể nói với chương trình rằng chúng ta muốn có kết quả trả về là số thập phân? Hãy xem lại ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -186,7 +186,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 result = 2.500000
 ```
 
@@ -194,7 +194,7 @@ result = 2.500000
 
 Ngoài ra **casting** còn có thể viết lại như sau:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {

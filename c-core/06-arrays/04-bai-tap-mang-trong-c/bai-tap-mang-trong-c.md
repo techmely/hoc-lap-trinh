@@ -21,7 +21,7 @@ Các bài tập sẽ có template code, các bạn sao chép về và thực hi�
 
 Template:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -39,7 +39,7 @@ int main() {
 
 Màn hình kết quả chương trình:
 
-```c
+```cpp
 Enter the 10 elements of array: 3 5 6 1 13 54 34 8 22 11
 
 OUTPUT:
@@ -54,7 +54,7 @@ Sorted array: 1, 3, 5, 6, 8, 11 , 13, 22, 34, 54
 
 Template:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -72,7 +72,7 @@ int main() {
 
 Màn hình kết quả chương trình:
 
-```c
+```cpp
 Eter the number of elements of the array: 10
 Enter the 10 elements of array: 3 5 6 1 13 54 34 8 22 11
 
@@ -88,7 +88,7 @@ Sorted array: 1, 3, 5, 6, 8, 11 , 13, 22, 34, 54
 
 Template:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -108,7 +108,7 @@ Màn hình kết quả chương trình:
 
 Test case 1
 
-```c
+```cpp
 Enter value you want to search: 8
 
 OUTPUT:
@@ -119,7 +119,7 @@ Found 8 at index 5 in array
 
 Test case 2
 
-```c
+```cpp
 Enter value you want to search: 5
 
 OUTPUT:

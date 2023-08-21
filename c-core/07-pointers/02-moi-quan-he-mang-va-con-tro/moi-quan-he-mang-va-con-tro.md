@@ -15,11 +15,11 @@ position: 2
 
 Trong bài học này, chúng ta sẽ tìm hiểu về mối quan hệ giữa mảng và con trỏ trong lập trình C. Ta cũng sẽ học cách truy cập các phần tử mảng bằng cách sử dụng con trỏ.
 
-## Mối quan hệ giữa mảng và con 
+## Mối quan hệ giữa mảng và con
 
 Mảng là một khối dữ liệu tuần tự, khi chúng ta in ra địa chỉ các phần tử của mảng như chương trình sau:
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
    int num[5];
@@ -37,7 +37,7 @@ int main() {
 
 kết quả
 
-```c
+```cpp
 &x[0] = 000000000062FE00
 &x[1] = 000000000062FE04
 &x[2] = 000000000062FE08
@@ -62,7 +62,7 @@ Tương tự,
 
 Ví dụ 1:
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 
@@ -86,7 +86,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 Enter 5 numbers: 1
 -2
 4
@@ -97,7 +97,7 @@ Sum = 10
 
 Ví dụ 2:
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
 
@@ -117,7 +117,7 @@ int main() {
 
 Kết quả
 
-```c
+```cpp
 *pn = 4
 *(pn+1) = 5
 *(pn-1) = 3

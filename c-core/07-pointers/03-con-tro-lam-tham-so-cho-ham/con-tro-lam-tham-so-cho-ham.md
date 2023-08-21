@@ -18,11 +18,11 @@ Trong bài này, chúng ta sẽ học cách chuyển địa chỉ và con trỏ 
 - Truyền địa chỉ đến hàm
 - Truyền con trỏ đến hàm
 
-## Truyền địa chỉ vào hàm trong 
+## Truyền địa chỉ vào hàm trong
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 void swap(int *n1, int *n2);
 
@@ -48,20 +48,20 @@ void swap(int* n1, int* n2)
 
 kết quả:
 
-```c
+```cpp
 num1 = 2
 num2 = 1
 ```
 
 địa chỉ của `num1` và `num2` được truyền vào hàm `swap()` bằng cách sử dụng cú pháp:
 
-```c
+```cpp
 swap( &num1, &num2);
 ```
 
 con trỏ n1 và n2 sẽ nhận hai tham số này trong khai báo hàm:
 
-```c
+```cpp
 void swap(int *n1, int *n2);
 ```
 
@@ -73,7 +73,7 @@ Bên trong hàm `swap()`, `*n1` và `*n2` hoán đổi. Kể từ đây,`num1` v
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 
 void add(int* p1, int *p2) {
@@ -97,14 +97,14 @@ int main()
 
 Kêt quả:
 
-```c
+```cpp
 7
 9
 ```
 
 Trong chương trình này, con trỏ `pa` nhận địa chỉ của biến `a`, con trỏ `pb` nhận giá trị của biến `b`
 
-```c
+```cpp
 int* pa, a = 5;
 int* pb, b = 6;
 pa = &a;

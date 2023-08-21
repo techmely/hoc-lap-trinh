@@ -28,7 +28,7 @@ Chuỗi là một mảng các kí tự được kết thúc bằng kí tự **_n
 
 Ví dụ
 
-```c
+```cpp
 char c[] = "Hello Anest";
 ```
 
@@ -41,7 +41,7 @@ Khi trình biên dịch gặp một chuỗi các ký tự được đặt trong 
 
 Đây là cách ta khai báo một chuỗi gồm 10 kí tự:
 
-```c
+```cpp
 char str[10];
 ```
 
@@ -49,7 +49,7 @@ char str[10];
 
 Ta có thể khởi ta một chuỗi bằng một trong các cách sau:
 
-```c
+```cpp
 char c[] = "abcde";
 
 char c[50] = "abcde";
@@ -65,7 +65,7 @@ char c[6] = {'a', 'b', 'c', 'd', 'e', '\0'};
 
 Hoặc cũng có thể khởi tạo như sau
 
-```c
+```cpp
 char c[5] = "abcde";
 ```
 
@@ -77,7 +77,7 @@ Chuỗi không hỗ trợ cho toán tử gán `=` nên ta phải dùng hàm `str
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 #include <string.h>
 
@@ -92,13 +92,13 @@ int main()
 
 Kết quả:
 
-```c
+```cpp
 Hello Anest
 ```
 
 > Lưu ý: khi sử dụng hàm `strcpy()` hãy khai báo thư viên `<string.h>`
 
-## Đọc chuỗi từ người dùng 
+## Đọc chuỗi từ người dùng
 
 ### Chúng ta có thể sử dụng hàm `scanf()` để đọc một chuỗi.
 
@@ -106,7 +106,7 @@ Hàm `scanf()` giúp ta đọc chuỗi ký tự cho đến khi nó gặp **kho�
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 int main()
 {
@@ -120,7 +120,7 @@ int main()
 
 kết quả:
 
-```c
+```cpp
 Enter name: Anest Academy
 Your name is Anest.
 ```
@@ -133,7 +133,7 @@ Vậy làm thế nào để đọc một dòng văn bản?
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 int main()
 {
@@ -148,14 +148,14 @@ int main()
 
 Kết quả:
 
-```c
+```cpp
 Enter name: Anest Academy
 Name: Anest Academy
 ```
 
 Tại chương trình trên ta đã sử dụng hàm `fgets()` để đọc một chuỗi văn bản từ người dùng và hàm `puts()` để hiển thị văn bản đó
 
-```c
+```cpp
 fgets(name, sizeof(name), stdin);
 //code
 puts(name);
@@ -169,7 +169,7 @@ Các chuỗi có thể được truyền cho một hàm theo cách tương tự 
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 void displayString(char str[]);
 
@@ -190,22 +190,22 @@ void displayString(char str[])
 
 Kết quả:
 
-```c
+```cpp
 Enter string: Anest Academy
 String Output: Anest Academy
 ```
 
 Tại đây chúng ta truyền một chuỗi `name` vào hàm `displayString()`
 
-```c
+```cpp
 displayString(name);
 ```
 
-## Chuỗi và con 
+## Chuỗi và con
 
 Ví dụ
 
-```c
+```cpp
 #include <stdio.h>
 
 int main(void) {
@@ -227,7 +227,7 @@ int main(void) {
 
 Kết quả:
 
-```c
+```cpp
 Ana
 Ana
 ```

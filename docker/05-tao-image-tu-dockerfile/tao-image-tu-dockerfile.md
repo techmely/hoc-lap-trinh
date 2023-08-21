@@ -104,7 +104,7 @@ CMD ["apache2-foreground"]
 
 `FROM` chỉ định rằng image build này sẽ base trên image gốc nào
 
-```ssh
+```bash
 FROM centos:centos7
 ```
 

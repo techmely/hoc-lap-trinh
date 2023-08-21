@@ -10,7 +10,7 @@
 * * * * *
 ```
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
    int i, j, rows;
@@ -37,7 +37,7 @@ int main() {
 1 2 3 4 5
 ```
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
    int i, j, rows;
@@ -63,7 +63,7 @@ D D D D
 E E E E E
 ```
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
    int i, j;
@@ -91,7 +91,7 @@ int main() {
 *
 ```
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
    int i, j, rows;
@@ -117,7 +117,7 @@ int main() {
 1
 ```
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
    int i, j, rows;
@@ -144,7 +144,7 @@ int main() {
 * * * * * * * * *
 ```
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
    int i, space, rows, k = 0;
@@ -175,7 +175,7 @@ int main() {
 5 6 7 8 9 8 7 6 5
 ```
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
    int i, space, rows, k = 0, count = 0, count1 = 0;
@@ -214,7 +214,7 @@ int main() {
         *
 ```
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
    int rows, i, j, space;
@@ -244,7 +244,7 @@ int main() {
  1  5   10   10  5   1
 ```
 
-```c
+```cpp
 //Pascal's Triangle
 #include <stdio.h>
 int main() {
@@ -276,7 +276,7 @@ int main() {
 7 8 9 10
 ```
 
-```c
+```cpp
 #include <stdio.h>
 int main() {
    int rows, i, j, number = 1;
@@ -307,7 +307,7 @@ int main() {
 * * * * * * * * *
 ```
 
-```c
+```cpp
 #include <stdio.h>
 int main()
 {
@@ -337,7 +337,7 @@ int main()
 *****
 ```
 
-```c
+```cpp
 #include <stdio.h>
 int main()
 {
@@ -376,7 +376,7 @@ int main()
 ***   ***
 ```
 
-```c
+```cpp
 #include <stdio.h>
 
 int main()
@@ -436,7 +436,7 @@ input n: 5
              *
 ```
 
-```c
+```cpp
 #include <stdio.h>
 
 int main()
@@ -491,7 +491,7 @@ int main()
  *  *  *  *  *  *  *  *  *  *
 ```
 
-```c
+```cpp
 #include <stdio.h>
 
 int main()
@@ -548,7 +548,7 @@ Enter the number of columns5
     *****
 ```
 
-```c
+```cpp
 #include <stdio.h>
 
 int main(void)
@@ -597,7 +597,7 @@ Enter the odd number only 5
        +
 ```
 
-```c
+```cpp
 #include <stdio.h>
 
 int main(void)
@@ -639,7 +639,7 @@ int main(void)
 
 ```
 
-```c
+```cpp
 #include <stdio.h>
 #include <math.h>
 
@@ -682,7 +682,7 @@ Enter the number of rows5
         1
 ```
 
-```c
+```cpp
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
@@ -721,7 +721,7 @@ int main() {
 ********
 ```
 
-```c
+```cpp
 #include <stdio.h>
 int main()
 {
@@ -754,7 +754,7 @@ Enter the number of rows: 5
              *
 ```
 
-```c
+```cpp
 #include <stdio.h>
 
 int main()
@@ -813,7 +813,7 @@ int main()
 
 <img width="128" alt="Screen Shot 2022-07-17 at 10 50 59" src="https://user-images.githubusercontent.com/29374426/179383124-93eacd81-b028-4b21-ab8f-537a84fe5fbd.png">
 
-```c
+```cpp
 #include <stdio.h>
 int main()
 {
@@ -839,7 +839,7 @@ int main()
 
 <img width="203" alt="Screen Shot 2022-07-17 at 10 50 39" src="https://user-images.githubusercontent.com/29374426/179383109-6e2bc6e9-bc32-493f-8d3a-d47523e40f6e.png">
 
-```c
+```cpp
 #include <stdio.h>
 int main()
 {

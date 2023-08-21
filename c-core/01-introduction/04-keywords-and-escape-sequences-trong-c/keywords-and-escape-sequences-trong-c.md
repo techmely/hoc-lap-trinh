@@ -52,7 +52,7 @@ Ví dụ: dòng mới (enter), tab, dấu hỏi... Chúng ta cũng đã nói qua
 
 Ví dụ muốn in ra dấu `\` trong hàm `printf()`:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {

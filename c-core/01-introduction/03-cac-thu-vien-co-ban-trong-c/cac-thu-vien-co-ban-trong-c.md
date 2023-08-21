@@ -21,7 +21,7 @@ Như ở ví dụ trước (Program Structure) khi muốn sử dụng hàm `prin
 
 _Thực tế, `stdio.h` là một file code, các file code được lưu với đuôi `.h` trong C được xem là những file thư viện._
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {

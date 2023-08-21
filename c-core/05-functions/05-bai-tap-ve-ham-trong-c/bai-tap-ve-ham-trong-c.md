@@ -23,7 +23,7 @@ _Hint: trước tiên chúng ta sẽ chuyển đổi một số nhị phân sang
 
 Template:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -41,7 +41,7 @@ int main() {
 
 Màn hình kết quả chương trình:
 
-```c
+```cpp
 Enter n: 101
 
 OUTPUT:
@@ -54,7 +54,7 @@ OUTPUT:
 
 Template:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -72,7 +72,7 @@ int main() {
 
 Màn hình kết quả chương trình:
 
-```c
+```cpp
 Enter a: 7
 Enter b: 20
 
@@ -88,7 +88,7 @@ _Giải thích: 14341 là palindrome-number do viết ngược lại vẫn là 1
 
 Template:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -106,7 +106,7 @@ int main() {
 
 Màn hình kết quả chương trình **Test case 1**:
 
-```c
+```cpp
 Enter x : 14341
 
 OUTPUT:
@@ -115,7 +115,7 @@ true
 
 Màn hình kết quả chương trình **Test case 2**:
 
-```c
+```cpp
 Enter x : 123
 
 OUTPUT:

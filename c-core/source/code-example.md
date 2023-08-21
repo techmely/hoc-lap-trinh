@@ -4,7 +4,7 @@
 
 <img width="751" alt="Screen Shot 2022-07-17 at 01 42 59" src="https://user-images.githubusercontent.com/29374426/179368107-7a322147-f799-4b9a-809a-e1cf4e1ea1ca.png">
 
-```c
+```cpp
 #include <stdio.h>
   char str[5][80], tmp[80];#include <stdlib.h>
 #include <string.h>
@@ -53,7 +53,7 @@ int main()
 
 <img width="762" alt="Screen Shot 2022-07-17 at 01 43 21" src="https://user-images.githubusercontent.com/29374426/179368118-66aa0e64-2609-4fc4-bdb4-7913a75c6a0d.png">
 
-```c
+```cpp
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -85,7 +85,7 @@ int main()
 
 **Đảo ngược số**
 
-```c
+```cpp
 //đảo ngược số
 
 #include <stdio.h>
@@ -113,7 +113,7 @@ int main()
 }
 ```
 
-```c
+```cpp
 // armstrong
 
 #include <stdio.h>
@@ -169,7 +169,7 @@ int main()
 
 <img width="807" alt="Screen Shot 2022-07-17 at 01 54 47" src="https://user-images.githubusercontent.com/29374426/179368427-23cc765f-3e42-4b4d-88ea-7d9ce1a7e64a.png">
 
-```c
+```cpp
 #include <stdio.h>
 int main()
 {
@@ -238,7 +238,7 @@ int main() {
 
 Nhập vào số nguyên dương n và n số nguyên. Tìm số xuất hiện nhiều nhất
 
-```c
+```cpp
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -303,7 +303,7 @@ int main() {
 Tính tổng sum = 1/x + 1/x^2 + 1/x^3 +... + 1/x^n
 Với x và n là số nguyên nhập từ bàn phím
 
-```c
+```cpp
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -442,7 +442,7 @@ int main() {
 
 <img width="735" alt="Screen Shot 2022-07-17 at 10 17 27" src="https://user-images.githubusercontent.com/29374426/179382380-6c959254-4619-4781-94d3-d93002b240c8.png">
 
-```c
+```cpp
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -490,7 +490,7 @@ int main()
 
 <img width="774" alt="Screen Shot 2022-07-17 at 10 21 01" src="https://user-images.githubusercontent.com/29374426/179382390-7611ddc3-fc17-42b0-88e5-326fd542f61a.png">
 
-```c
+```cpp
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -539,7 +539,7 @@ int main()
 
 <img width="765" alt="Screen Shot 2022-07-17 at 10 21 32" src="https://user-images.githubusercontent.com/29374426/179382400-dad6f566-8476-4eee-8a5f-c39e9c2931cf.png">
 
-```c
+```cpp
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -594,7 +594,7 @@ int main()
 
 <img width="754" alt="Screen Shot 2022-07-17 at 10 26 47" src="https://user-images.githubusercontent.com/29374426/179382522-110268c1-4331-47c5-85c4-f79516be8ab2.png">
 
-```c
+```cpp
 #include <stdio.h>
 #include <string.h>
 int main()
@@ -637,7 +637,7 @@ int main()
 
 <img width="752" alt="Screen Shot 2022-07-17 at 10 26 28" src="https://user-images.githubusercontent.com/29374426/179382513-92c3875a-110b-4abb-96b4-aaa3f1d67697.png">
 
-```c
+```cpp
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -699,7 +699,7 @@ int main() ,
 
 <img width="685" alt="Screen Shot 2022-07-17 at 10 26 06" src="https://user-images.githubusercontent.com/29374426/179382502-08dca9df-db8a-4cf0-90d5-4a608f60ae12.png">
 
-```c
+```cpp
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -738,7 +738,7 @@ int main()
 
 <img width="792" alt="Screen Shot 2022-07-17 at 10 25 31" src="https://user-images.githubusercontent.com/29374426/179382495-1a796d0a-23b0-4f2a-837c-63e15769e099.png">
 
-```c
+```cpp
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -779,7 +779,7 @@ int main()
 
 <img width="787" alt="Screen Shot 2022-07-17 at 10 25 10" src="https://user-images.githubusercontent.com/29374426/179382477-ebc96ec3-4b2b-49f9-bc46-b30b1ffdd408.png">
 
-```c
+```cpp
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

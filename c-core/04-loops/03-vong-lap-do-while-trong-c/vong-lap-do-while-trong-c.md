@@ -21,7 +21,7 @@ Sử dụng **`do-while`** khi bạn không biết rõ số lượng vòng lặp
 
 ## Cấu trúc của vòng lặp do-while
 
-```c
+```cpp
 do {
 
    // statements inside the body of the loop
@@ -30,7 +30,7 @@ do {
 
 Ví dụ:
 
-```c
+```cpp
 int n = 1234;
 
 do {
@@ -58,7 +58,7 @@ Ví dụ:
 
 > Tính tổng các số nguyên dương cho đến khi nhập vào một số bằng `0` hoặc một số âm thì dừng lại (không cộng số âm này vào tổng).
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -81,7 +81,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 Enter a number: 5
 Enter a number: 4
 Enter a number: 6

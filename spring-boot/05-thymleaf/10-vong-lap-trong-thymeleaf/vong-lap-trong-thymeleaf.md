@@ -71,21 +71,21 @@ Ví dụ đơn giản với vòng lặp `th:each`:
 
 **_Kết quả:_**
 
-```HTML
-<!DOCTYPE HTML>
+```html
+<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Loop</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>th:each</h1>
     <ul>
-            <li>thaycacac</li>
-            <li>tony hoang</li>
-            <li>Harry Tran</li>
+      <li>thaycacac</li>
+      <li>tony hoang</li>
+      <li>Harry Tran</li>
     </ul>
-</body>
+  </body>
 </html>
 ```
 

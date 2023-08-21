@@ -21,7 +21,7 @@ Trong bài này chúng ta sẽ cùng nhau tìm hiểu về những loại toán 
 
 Hãy xem qua ví dụ sau:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -36,7 +36,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 result = 8
 ```
 
@@ -55,7 +55,7 @@ Các phép tính toán trên được gọi là **toán tử số học (Arithme
 
 ### Ví dụ về phép nhân `*`
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -70,13 +70,13 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 result = 15
 ```
 
 ### Ví dụ phép chia lấy dư `%`
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -91,7 +91,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 result = 2
 ```
 
@@ -111,7 +111,7 @@ Vì vậy các bạn cần phải chú ý phần lưu ý bên trên -> `tạo đ
 
 ### Ví dụ phép chia hết (không có số dư)
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -127,13 +127,13 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 result = 2
 ```
 
 ### Ví dụ phép chia có số dư
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -149,13 +149,13 @@ int main() {
 
 Ở ví dụ này bạn **KHÔNG** thay đổi kiểu dữ liệu cho biến `result` là `float` mà vẫn giữ là `int`, kết quả của bạn sẽ được làm tròn mất đi phần thập phân sau dấu phẩy - kết quả nhận được sẽ bị sai như sau:
 
-```c
+```cpp
 result = 2
 ```
 
 Chúng ta sẽ sửa lại như sau:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -171,7 +171,7 @@ int main() {
 
 **NHƯNG** khi làm đúng với ví dụ, chúng ta lại nhận được một kết quả vẫn không chính xác như sau:
 
-```c
+```cpp
 result = 2.000000
 ```
 
@@ -179,13 +179,13 @@ result = 2.000000
 
 Các bạn hãy chuyển sang đọc tiếp riêng một bài viết về vấn đề này tại đây Type Conversion
 
-## Tăng giá trị và giảm giá trị trong 
+## Tăng giá trị và giảm giá trị trong
 
 ### Incrementing (Phương pháp tăng giá trị)
 
 Trong qua trình học lập trình C, bạn sẽ thấy rằng - bạn sẽ phải thường xuyên tăng giá trị một biến số lên 1. Và ta làm như sau:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -199,7 +199,7 @@ Chúng ta lấy `index + 1`, và sau đó giá trị của `index` sẽ được
 
 Và họ đã tạo ra một cách viết rút gọn gọi là **increment**. Đoạn mã sau cũng biểu thị điều tương tự với đoạn mã ta vừa thấy ở trên:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -217,7 +217,7 @@ int main() {
 
 Nếu như ta viết nó đầy đủ:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -229,7 +229,7 @@ int main() {
 
 Thì đây là dạng rút gọn:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -249,7 +249,7 @@ Toán tử **Increment** và **Decrement** được chia làm 2 loại tuỳ và
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -264,7 +264,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 i = 10
 j = 10
 ```
@@ -275,7 +275,7 @@ j = 10
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -290,7 +290,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 i = 10
 j = 9
 ```
@@ -310,7 +310,7 @@ Toán tử gán được sử dụng để gán giá trị cho một biến. To�
 
 Ví dụ nếu bạn muốn tăng giá trị của một biến lên 2 - chúng ta sẽ lấy biến đó cộng với 2 sau đó gán lại luôn giá trị vừa cộng được cho biến đó:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -322,7 +322,7 @@ int main() {
 
 Với những phép toán cơ bản khác cũng hoạt động y như vậy, đây là một chương trình làm ví dụ :
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {

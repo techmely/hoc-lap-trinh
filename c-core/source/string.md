@@ -2,7 +2,7 @@
 
 ## Đếm số kí tự số trong xâu nhập từ bàn phím
 
-```c
+```cpp
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
@@ -26,7 +26,7 @@ void main()
 
 ## Đếm số kí tự hoa trong xâu nhập từ bàn phím
 
-```c
+```cpp
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
@@ -49,7 +49,7 @@ void main()
 
 ## Đếm số kí tự thường trong xâu nhập từ bàn phím
 
-```c
+```cpp
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
@@ -74,7 +74,7 @@ void main()
 
 Ví dụ: a123bc4d56ef cho ra đáp án là : 3
 
-```c
+```cpp
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>
@@ -101,7 +101,7 @@ void main()
 
 ## Tính độ dài của một chuỗi C
 
-```c
+```cpp
 #include <stdio.h> int main() {
     char s[] = "Chương trinh đang chạy";
     int i;
@@ -113,7 +113,7 @@ void main()
 
 ## nối hai chuỗi trong C
 
-```c
+```cpp
 #include <stdio.h> int main() {
   char s1[100] = "Lập trình ", s2[] = "c cơ bản";
   int length, j;
@@ -138,7 +138,7 @@ void main()
 
 Ví dụ: Nhập vào `tran van thoa` xuất ra `aoht nav nart`
 
-```c
+```cpp
 #include <conio.h> #include <stdio.h> #include <string.h>  //thư viện chuỗi
 
 int main()
@@ -159,7 +159,7 @@ int main()
 
 Ví dụ: Nhập vào `tran van thoa` xuất ra `thoa van tran`
 
-```c
+```cpp
 #include <stdio.h> #include <conio.h> #include <string.h>
 
 int main()
@@ -192,7 +192,7 @@ int main()
 
 Ví dụ Nhập vào `tran van thoa` xuất ra `tran thoa`
 
-```c
+```cpp
 #include <conio.h>
 #include <stdio.h>
 #include <string.h>
@@ -230,7 +230,7 @@ int main()
 VD Nhập vào `tran van thoa` xuất ra
 `tran van thoa`
 
-```c
+```cpp
 #include <conio.h> #include <stdio.h> #include <string.h>
 
 int main()
@@ -256,7 +256,7 @@ int main()
 
 Ví dụ: 123 đọc là một trăm hai mươi ba
 
-```c
+```cpp
 #include <conio.h>
 #include <stdio.h>
 #include <string.h>
@@ -330,7 +330,7 @@ int main()
 
 Ví dụ Nhập vào `tran van thoa`. Nhập kí tự t --> có 2 lần
 
-```c
+```cpp
 #include <stdio.h>
 #include <conio.h>
 #include <string.h>

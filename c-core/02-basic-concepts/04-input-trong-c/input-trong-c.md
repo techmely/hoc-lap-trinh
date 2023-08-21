@@ -23,7 +23,7 @@ Trong ngôn ngữ lập trình C, hàm `scanf()` được sử dụng để đ�
 
 Chúng ta cùng xem qua ví dụ sau:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -51,7 +51,7 @@ Trong hàm `scanf()` có 2 phần chính:
 
 Kết quả khi chạy chương trình:
 
-```c
+```cpp
 Enter n: _
 ```
 
@@ -59,7 +59,7 @@ Lúc này các bạn sẽ thấy chương trình không kết thúc như những
 
 Và đây là kết quả khi chúng ta nhập vào một số, ví dụ nhập n = 5:
 
-```c
+```cpp
 Enter n: 5
 5
 ```
@@ -70,7 +70,7 @@ Chúng ta cũng có thể nhập nhiều giá trị một lúc cho nhanh bằng 
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -85,7 +85,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 Enter a b c: 1 2 3
 a = 1
 b = 2
@@ -94,7 +94,7 @@ c = 3
 
 Bạn cũng có thể nhập mỗi giá trị cách nhau bằng một dấu phẩy `,` như sau:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -109,7 +109,7 @@ int main() {
 
 Kết quả:
 
-```c
+```cpp
 Enter a b c: 1, 2, 3
 a = 1
 b = 2

@@ -21,7 +21,7 @@ Các bài tập sẽ có template code, các bạn sao chép về và thực hi�
 
 Template:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -41,7 +41,7 @@ Màn hình kết quả chương trình:
 
 Test case 1
 
-```c
+```cpp
 Enter string: Hello Anest
 Enter character: e
 
@@ -56,7 +56,7 @@ Frequency of e is 2
 
 Template:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -76,7 +76,7 @@ Màn hình kết quả chương trình:
 
 Test case 1
 
-```c
+```cpp
 1. Convert to binary
 2. Convert to octal
 3. Convert to hexa
@@ -92,7 +92,7 @@ Binary is 11011011100101011
 
 Test case 2
 
-```c
+```cpp
 1. Convert to binary
 2. Convert to octal
 3. Convert to hexa
@@ -106,7 +106,7 @@ Octal is 25150
 
 Test case 3
 
-```c
+```cpp
 1. Convert to binary
 2. Convert to octal
 3. Convert to hexa

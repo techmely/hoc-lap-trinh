@@ -23,7 +23,7 @@ Hôm nay chúng ta sẽ cùng tìm hiểu kỹ hơn về hàm `printf()`.
 
 In ra một chuỗi rất đơn giản trong C, bạn chỉ cần truyền chuỗi văn bản vào hàm `printf()` như ví dụ sau:
 
-```c
+```cpp
 #include <stdio.h>
 
 int main() {
@@ -36,7 +36,7 @@ _Lưu ý: chuỗi văn bản cần phải được nằm trong cặp dấu nháy
 
 Kết quả:
 
-```c
+```cpp
 I am student.
 ```
 
@@ -65,7 +65,7 @@ Chúng ta đã chỉ ra vị trí cần hiển thị một biến, nhưng chúng
 
 Hãy xem ví dụ sau:
 
-```c
+```cpp
 #include<stdio.h>
 
 int main() {
@@ -77,13 +77,13 @@ int main() {
 
 Kết quả nhận được:
 
-```c
+```cpp
 I am 22 year old.
 ```
 
 Chúng ta cũng xem tiếp một ví dụ khác:
 
-```c
+```cpp
 #include<stdio.h>
 
 int main() {
@@ -97,7 +97,7 @@ int main() {
 
 Kết quả nhận được:
 
-```c
+```cpp
 I am 25 year old.
 ```
 
@@ -107,7 +107,7 @@ I am 25 year old.
 
 Nếu chúng ta thực hiện in ra giá trị một số thập phân, bạn sẽ thấy như sau:
 
-```c
+```cpp
 #include<stdio.h>
 
 int main() {
@@ -120,7 +120,7 @@ int main() {
 
 Kết quả nhận được:
 
-```c
+```cpp
 a = 2.500000
 ```
 
@@ -128,7 +128,7 @@ Vì `a` là một số thập phân nên khi hiển thị ra kết quả, chươ
 
 Vậy chúng ta sẽ làm như thế nào? Hãy xem qua ví dụ sau:
 
-```c
+```cpp
 #include<stdio.h>
 
 int main() {
@@ -142,7 +142,7 @@ int main() {
 
 Kết quả nhận được:
 
-```c
+```cpp
 a = 2.50
 a = 2.500
 ```
@@ -155,7 +155,7 @@ Chúng ta cũng có thể viết số lượng hiển thị mong muốn ở trư
 
 Ví dụ:
 
-```c
+```cpp
 #include<stdio.h>
 
 int main() {
@@ -172,7 +172,7 @@ int main() {
 
 Kết quả nhận được:
 
-```c
+```cpp
     2.50    3.75    5.66
 ```
 

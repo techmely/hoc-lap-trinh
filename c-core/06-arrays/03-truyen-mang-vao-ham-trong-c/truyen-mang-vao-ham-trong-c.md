@@ -27,7 +27,7 @@ Trong lập trình C, ta có thể chuyển toàn bộ mảng cho các hàm. Tr�
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 
 void display(int num1, int num2);
@@ -48,21 +48,21 @@ void display(int num1, int num2) {
 
 Kết quả:
 
-```c
+```cpp
 1
 3
 ```
 
 > tại đây chúng ta đã truyền tham số vào trong hàm `display` giống như cách chúng ta truyền các biến cho hàm
 
-```c
+```cpp
 //chuyền vào phần tử thứ nhất và phần tử thứ 3 vào hàm display()
 display(num[0], num[2]);
 ```
 
 > Chúng ta có thể thấy điều này trong định nghĩa hàm `display()`, trong đó các tham số của hàm là các biến riêng lẻ:
 
-```c
+```cpp
 void display(int num1, int num2);
 ```
 
@@ -70,7 +70,7 @@ void display(int num1, int num2);
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 
 float sum(float num[]);
@@ -97,19 +97,19 @@ float sum(float num[]) {
 
 Kết quả:
 
-```c
+```cpp
 Result = 122.70
 ```
 
 > Để truyền toàn bộ mảng cho một hàm, ta chỉ truyền tên của mảng vào hàm (chỉ truyền `num` chứ không truyền `num[]`).
 
-```c
+```cpp
 result = sum(num);
 ```
 
 > Tuy nhiên, hãy lưu ý việc sử dụng `[]` trong khai báo hàm vì điều này đồng nghĩa việc ta đang thông báo cho trình biên dịch là ta đang truyền mảng một chiều cho hàm.
 
-```c
+```cpp
 
 float sum(float num[]) {
     //code
@@ -122,7 +122,7 @@ float sum(float num[]) {
 
 Ví dụ:
 
-```c
+```cpp
 #include <stdio.h>
 void display(int num[][2]);
 
@@ -153,7 +153,7 @@ void display(int num[][2]) {
 
 Kêt quả
 
-```c
+```cpp
 Enter 4 numbers:
 1 5 4 6
 4 numbers you entered:
@@ -165,7 +165,7 @@ Enter 4 numbers:
 
 > Khi truyền mảng hai chiều, không bắt buộc phải chỉ định số hàng trong mảng. Tuy nhiên, số lượng cột phải luôn được chỉ định.
 
-```c
+```cpp
 void display(int num[][2]);
 
 ```
