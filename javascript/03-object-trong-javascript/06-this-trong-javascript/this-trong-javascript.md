@@ -1,6 +1,6 @@
 ---
 title: "This trong Javascript"
-description: "Trong bài viết này, mình sẽ bạn sẽ tìm hiểu về giá trị this trong JavaScript và hiểu nó rõ ràng trong các ngữ cảnh khác nhau."F
+description: "Trong bài viết này, mình sẽ bạn sẽ tìm hiểu về giá trị this trong JavaScript và hiểu nó rõ ràng trong các ngữ cảnh khác nhau."
 chapter:
   name: "Object trong Javascript"
   slug: "chuong-03-object-trong-javascript"

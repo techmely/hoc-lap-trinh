@@ -1,6 +1,6 @@
 ---
 title: "ES6 template string trong Javascript"
-description: "ES6 Template String tạm gọi là một cú pháp, cho phép bạn viết biểu thức ngay bên trong string."F
+description: "ES6 Template String tạm gọi là một cú pháp, cho phép bạn viết biểu thức ngay bên trong string."
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"

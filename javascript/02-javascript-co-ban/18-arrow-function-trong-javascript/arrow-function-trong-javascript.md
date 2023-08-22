@@ -1,6 +1,6 @@
 ---
 title: "Arrow function trong JavaScript"
-description: "Function expression trong JavaScript"F
+description: "Function expression trong JavaScript"
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"
