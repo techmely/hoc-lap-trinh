@@ -1,8 +1,6 @@
 ---
 title: "Thao tác với chuối trong C"
 description: "Thao tác với chuối trong C"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Strings"
   slug: "chuong-08-strings"

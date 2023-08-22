@@ -1,8 +1,6 @@
 ---
 title: "Bài tập mảng trong C"
 description: "Bài tập mảng trong C"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Mảng"
   slug: "chuong-06-array"

@@ -1,16 +1,6 @@
 ---
 title: "Cú pháp cơ bản của class trong Javascript"
 description: "Các cú pháp cơ bản và hay sử dụng trong Javascript."
-keywords: [
-"Cú pháp cơ bản của class trong Javascript",
-"Cách dùng cú pháp cơ bản của class trong Javascript",
-"Tổng hợp các cú pháp cơ bản của class trong Javascript",
-"Cách tạo class trong Javascript",
-"Class trong Javascript ES6",
-"them class trong javascript",
-"cu phap co ban cua class trong javascript dùng làm gì",
-"Cú pháp cơ bản của class trong Javascript là gì" 
-]
 chapter:
   name: "ES6 Class"
   slug: "chuong-08-es6-class"

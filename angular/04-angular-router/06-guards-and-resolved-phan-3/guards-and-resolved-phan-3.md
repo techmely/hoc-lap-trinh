@@ -1,7 +1,6 @@
 ---
 title: "Guards and Resolvers Phần 3"
 description: "Trong những ngày trước chúng ta đã tìm hiểu về Route Guards, chúng ta đã đi qua khá nhiều case cụ thể để học cách sử dụng những Guards cơ bản này. Trong bài này chúng ta sẽ tìm hiểu tiếp một phần nữa là Route Resolvers, chúng là gì, và cách dùng như thế nào, các câu hỏi trên sẽ lần lượt được giải quyết trong những phần sắp tới."
-keywords: []
 chapter:
   name: "Angular Router"
   slug: "chuong-04-angular-router"

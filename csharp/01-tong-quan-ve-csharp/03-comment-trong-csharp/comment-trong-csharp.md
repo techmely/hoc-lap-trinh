@@ -1,11 +1,6 @@
 ---
 title: "Chú thích (comment) trong C#"
 description: "Trong bài này mình sẽ giới thiệu chú thích trong lập trình để làm gì và các cách chú thích trong C#."
-keywords: [
-	"chú thích trong C#",
-	"comment trong C#",
-	"chu thich trong C#"
-]
 chapter:
   name: "Tổng quan về C#"
   slug: "chuong-01-tong-quan-ve-csharp"

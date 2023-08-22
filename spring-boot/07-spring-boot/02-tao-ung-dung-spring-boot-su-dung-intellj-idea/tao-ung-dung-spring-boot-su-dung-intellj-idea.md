@@ -1,18 +1,6 @@
 ---
 title: "Tạo ứng dụng Spring Boot sử dụng IntellJ Idea"
 description: "Tạo ứng dụng Spring Boot sử dụng IntellJ Idea"
-keywords:
-  [
-    "spring boot la gi",
-    "java spring boot",
-    "web application voi spring boot",
-    "java spring boot intellij idea",
-    "tao ung dung voi spring boot",
-    "java spring boot application",
-    "web application voi spring boot",
-    "java spring boot",
-    "Tạo ứng dụng Spring Boot sử dụng IntellJ Idea",
-  ]
 chapter:
   name: "Spring boots"
   slug: "chuong-07-spring-boots"

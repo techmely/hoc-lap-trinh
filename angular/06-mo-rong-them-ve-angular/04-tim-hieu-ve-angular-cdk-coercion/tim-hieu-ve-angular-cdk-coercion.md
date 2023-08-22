@@ -1,7 +1,6 @@
 ---
 title: "Angular CDK Coercion"
 description: "Sau hai tutorial với Jira clone, hôm nay chúng ta sẽ đổi gió tìm hiểu thêm một chút về Angular CDK Coercion, một bộ API rất hữu dụng nhưng rất tiếc chưa có documentation chi tiết 🤣"
-keywords: []
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"

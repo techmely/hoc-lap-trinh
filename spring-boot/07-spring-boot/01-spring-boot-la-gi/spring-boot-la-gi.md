@@ -1,17 +1,6 @@
 ---
 title: "Spring Boot là gì?"
 description: "Spring Boot chính là một Java framework siêu to và khổng lồ và có nhiều khả năng hữu ích vì nó có thể giúp lập trình viên giải quyết rất nhiều vấn đề."
-keywords:
-  [
-    "spring boot la gi",
-    "java spring boot",
-    "tìm hiểu spring boot là gì",
-    "tự học spring boot",
-    "java spring boot là gì?",
-    "khoá học java spring boot",
-    "cách tự học java spring boot",
-    "khoá học spring boot miễn phí",
-  ]
 chapter:
   name: "Spring boots"
   slug: "chuong-07-spring-boots"

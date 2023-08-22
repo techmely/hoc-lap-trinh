@@ -1,11 +1,6 @@
 ---
 title: "Giới thiệu PrivateLink và ClassicLink"
 description: "AWS PrivateLink là một các kết nối an toàn giữa VPCs, AWS Serives, hay On-premises network của bạn. Kết nối này không đi qua internet, nó sẽ nằm trong network của AWS."
-keywords: [
-  "PrivateLink trong AWS",
-  "PrivateLink là gì",
-  "PrivateLink la gi"
-]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -24,7 +19,7 @@ position: 24
 
 **Option I: để cho service đó được public**
 
-Lựa chọn này sẽ để service của bạn có thể truy cập từ Internet. Tuy nhiên sẽ không đảm bảo an toàn và khó có thể quản lý truy cập. 
+Lựa chọn này sẽ để service của bạn có thể truy cập từ Internet. Tuy nhiên sẽ không đảm bảo an toàn và khó có thể quản lý truy cập.
 
 ![PrivateLink](https://user-images.githubusercontent.com/29729545/147399102-cb227613-1e19-448a-a263-e42a09de6015.png)
 

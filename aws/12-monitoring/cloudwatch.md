@@ -1,22 +1,6 @@
 ---
 title: "Giới thiệu CloudWatch"
 description: "AWS CloudWatch là một dịch vụ giúp giám sát, tổng hợp, phân tích dữ liệu, nguồn tài nguyên chạy trên AWS. Dịch vụ này giúp cung cấp thông tin thực tiễn một cách realtime, cho phép giám sát các vùng nhớ của ứng dụng"
-keywords:
-  [
-    "CloudWatch la gi",
-    "CloudWatch là gì",
-    "CloudWatch trong aws",
-    "CloudWatch Metrics trong AWS",
-    "Log trong CloudWatch",
-    "CloudWatch Log la gi",
-    "CloudWatch Log là gì",
-    "CloudWatch Agent la gi",
-    "CloudWatch Agent là gì",
-    "CloudWatch Alarms la gi",
-    "CloudWatch Alarms là gì",
-    "CloudWatch Logs metric filter la gi",
-    "CloudWatch Logs metric filter là gì",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

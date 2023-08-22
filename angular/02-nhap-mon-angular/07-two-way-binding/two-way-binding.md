@@ -1,12 +1,6 @@
 ---
 title: "Two-way binding trong angular"
 description: "Trong các ngày trước chúng ta đã tìm hiểu về Two-way binding ở trong Angular. Ngoài ra chúng ta cũng đã biết cách để truyền @Input và @Output cho component. Vậy có cách nào để chúng ta tự tạo Custom Two-way binding hay không? Câu trả lời chính là từ cặp input-ouput ngModel và ngModelChange."
-keywords:
-  [
-    "Two-way binding trong angular",
-    "Two-way binding trong angular là gì",
-    "Two-way binding trong angular la gi",
-  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"

@@ -1,13 +1,6 @@
 ---
 title: "Cấu trúc if-else trong angular"
 description: "Trong Angular để thêm, xóa, thay đổi structure (structure HTML chẳng hạn) ở trên view của component chúng ta sẽ dùng Structure Directive."
-keywords:
-  [
-    "Cấu trúc if-else trong Angular",
-    "Angular template syntax",
-    "cau truc if else trong angular",
-    "cau truc if-else trong angular",
-  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"

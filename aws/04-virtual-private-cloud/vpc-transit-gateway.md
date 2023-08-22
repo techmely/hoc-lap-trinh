@@ -1,14 +1,6 @@
 ---
 title: "Giới thiệu Transit Gateway"
 description: "Transit Gateway giống như một trung tâm chuyển tiếp các gói tin dùng trong kết nối VPCs với On-premises network thông qua một central hub."
-keywords:
-  [
-    "Transit Gateway trong AWS",
-    "Transit Gateway là gì",
-    "Transit Gateway la gi",
-    "Site-to-Site VPN ECMP là gì",
-    "Site-to-Site VPN ECMP la gi",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

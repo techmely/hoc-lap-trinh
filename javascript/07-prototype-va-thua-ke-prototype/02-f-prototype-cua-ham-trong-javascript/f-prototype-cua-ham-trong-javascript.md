@@ -1,18 +1,6 @@
 ---
 title: "FPrototype của hàm trong JavaScript"
 description: "FPrototype là khái niệm cốt lõi trong JavaScript và là cơ chế quan trọng trong việc thực thi mô hình OOP trong JavaScript. Là cơ chế mà các object trong javascript kế thừa các tính năng từ một object khác."
-keywords: [
-"FPrototype của hàm trong JavaScript",
-"f prototype trong javascript",
-"fprototype trong javascript la gi",
-"fprototype javascript",
-"prototype nghia la gi trong javascript",
-"vi du ve prototype trogn javascript",
-"cách sử dụng prototype trong javascript",
-"prototype trong javascript dung de lam gi",
-"prototype trong javascript va cach su dung",
-"prototype design trong javascript"
-]
 chapter:
   name: "Prototype và thừa kế prototype"
   slug: "chuong-07-prototype-va-thua-ke-prototype"

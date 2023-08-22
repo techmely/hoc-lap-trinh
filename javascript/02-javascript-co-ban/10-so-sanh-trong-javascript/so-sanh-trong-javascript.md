@@ -1,19 +1,6 @@
 ---
 title: "So sánh trong Javascript"
 description: "So sánh trong Javascript"
-keywords: ["khoá học javascript",
-"So sánh trong Javascript",
-"toan tu so sanh trong java",
-"so sanh chuoi trong javascript",
-"so sanh null trong javascript",
-"so sanh thoi gian trong javascript",
-"so sanh bien trong javascript",
-"so sanh chuoi trong javascript",
-"phép so sánh trong javascript",
-"so sanh trong javascript la gi",
-"so sánh trong js",
-"toán tử so sánh trong javascript"
-]
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"

@@ -1,7 +1,6 @@
 ---
 title: "Feature Modules, Child Routes and Services"
 description: "Tiếp tục với Angular Router từ hôm trước, hôm nay chúng ta sẽ tìm hiểu những thành phần tiếp theo như Feature Module, Child Routes và một số Services hay sử dụng."
-keywords: []
 chapter:
   name: "Angular Router"
   slug: "chuong-04-angular-router"

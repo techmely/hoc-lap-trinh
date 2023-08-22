@@ -1,19 +1,6 @@
 ---
 title: "Chuyển đổi giữa các màn hình"
-description: "Một ứng dụng bạn phát triển không thể chỉ có một màn hình. Vì vậy bạn phải biết cách chuyển đổi qua lại giữa các màn hình. Hiện tại mình sử dụng thư viện react-navigation (v.2.18.1) để chuyển đổi giữa các màn hình. Các bạn có thể tìm hiểu thêm về thư viện này tại (<https://reactnavigation.org>)"
-keywords:
-  [
-    "gioi thieu react native",
-    "giới thiệu react native",
-    "khoá học react native",
-    "giới thiệu react native",
-    "giới thiệu react native cơ bản",
-    "react native la gi",
-    "tong quan ve react native",
-    "gioi thieu ve ngon ngu lap trinh react native",
-    "tom tat react native",
-    "code react native la gi",
-  ]
+description: "Một ứng dụng bạn phát triển không thể chỉ có một màn hình. Vì vậy bạn phải biết cách chuyển đổi qua lại giữa các màn hình. Hiện tại mình sử dụng thư viện react-navigation (v.2.18.1) để chuyển đổi giữa các màn hình. Các bạn có thể tìm hiểu thêm về thư viện này tại (<https://reactnavigation.org>)"ƒ
 chapter:
   name: "Tương tác trong react native"
   slug: "chuong-05-tuong-tac-trong-react-native"

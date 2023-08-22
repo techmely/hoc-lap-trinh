@@ -1,19 +1,6 @@
 ---
 title: "Giới thiệu NAT trong AWS"
 description: "NAT là gì? NAT (Network Address Translation) kà một kỹ thuật cho phép chuyển đổi từ một địa chỉ IP này thành một địa chỉ IP khác."
-keywords:
-  [
-    "NAT trong aws",
-    "NAT là gì",
-    "NAT la gi",
-    "NAT instance la gi",
-    "NAT getway la gi",
-    "NAT instance là gì",
-    "NAT getway là gì",
-    "Giới thiệu NAT trong AWS",
-    "tìm hiểu về NAT trong AWS",
-    "giới thiệu NAT trong AWS"
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -30,7 +17,7 @@ position: 19
 
 ## Network Address Translation (NAT) trong AWS
 
-Như ở phần trước chúng ta tìm hiểu cách sử dùng Bastion hosts để truy cập vào EC2 instances nằm trong private subnet. Ở bài học này chúng ta sẽ tìm hiểu làm thế nào để EC2 instances trong private subnet connect ra ngoài internet. 
+Như ở phần trước chúng ta tìm hiểu cách sử dùng Bastion hosts để truy cập vào EC2 instances nằm trong private subnet. Ở bài học này chúng ta sẽ tìm hiểu làm thế nào để EC2 instances trong private subnet connect ra ngoài internet.
 
 ![NAT la gi](https://user-images.githubusercontent.com/29729545/146040993-981308a2-2164-4fba-9bce-035e723d737b.png)
 
@@ -38,7 +25,7 @@ Khi các resources trong private subnet muốn request ra bên ngoài internet(V
 
 ### NAT instance là gì
 
-NAT instance giống như một nhà vận chuyển request giữa Internet và EC2 instances trong private subnet. 
+NAT instance giống như một nhà vận chuyển request giữa Internet và EC2 instances trong private subnet.
 
 ![NAT instance](https://user-images.githubusercontent.com/29729545/146041464-e911b8ef-2b5c-4e31-8570-8e53740987e8.png)
 

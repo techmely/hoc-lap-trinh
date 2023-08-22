@@ -1,8 +1,6 @@
 ---
 title: "Câu lệnh break trong C"
 description: "Câu lệnh break trong C"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Vòng lặp"
   slug: "chuong-04-loops"

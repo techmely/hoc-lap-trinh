@@ -1,7 +1,6 @@
 ---
 title: "RxJS Combination Operators trong RxJS"
 description: "Tiếp tục cuộc hành trình tìm hiểu về các `operators` của **RxJS** nhé. Lần này, chúng ta sẽ tìm hiểu về 1 loại `operators` rất quan trọng khi làm việc với **Angular** vì những `operators` này sẽ cho phép các bạn kết hợp nhiều `Observable` lại với nhau. Những `operators` này gọi là **Combination Operators**."
-keywords: ["RxJS Combination Operators"]
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"

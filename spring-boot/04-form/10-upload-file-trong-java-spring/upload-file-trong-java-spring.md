@@ -1,15 +1,6 @@
 ---
 title: "Upload file trong Spring Boot"
 description: "Upload file trong Spring Boot."
-keywords:
-  [
-    "khóa học Spring cơ bản",
-    "Upload file trong Spring Boot",
-    "Upload file spring boots",
-    "cach Upload file spring boots",
-    "lam the nao Upload file spring boots",
-    "gioi han upload file spring boots",
-  ]
 chapter:
   name: "form"
   slug: "chuong-04-form"

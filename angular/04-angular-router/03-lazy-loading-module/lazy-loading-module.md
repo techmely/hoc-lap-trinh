@@ -1,7 +1,6 @@
 ---
 title: "Lazy Loading Modules"
 description: "Tiếp tục với Angular Router, các bạn đã biết cách tách phần routing ra thành feature tương ứng. Từ đó code của chúng ta đã hoạt động khá riêng biệt, nếu bạn cần reuse module nào thì có thể copy nguyên phần code đó sang app Angular khác và import vào `AppModule` là được. Vẫn tiếp tục là ứng dụng hiển thị danh sách các bài viết hôm trước. Nhưng bây giờ mình sẽ có thêm một phần nữa để quản lý bài viết nằm ở đường dẫn `/admin`. Phần code này sẽ được đặt trong `AdminModule`."
-keywords: []
 chapter:
   name: "Angular Router"
   slug: "chuong-04-angular-router"

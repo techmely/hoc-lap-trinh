@@ -1,8 +1,6 @@
 ---
 title: "Mối quan hệ mảng và con trỏ"
 description: "Mối quan hệ mảng và con trỏ"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Con trỏ"
   slug: "chuong-07-pointer"

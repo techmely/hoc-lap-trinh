@@ -1,21 +1,6 @@
 ---
 title: "Phương thức trong Javascript"
 description: "Trong bài này sẽ tìm hiểu về phương thức của object, thao tác với thuộc tính và phương thức của object trong javascript."
-keywords: [
-"đối tượng trong javascript",
-"object trong javascript",
-"cac phuong thuc trong javascript",
-"cac phuong thuc mang trong javascript",
-"Thuộc tính và phương thức trong js",
-"phuong thuc trong javascript",
-"Phương thức trong Javascript",
-"Phương thức là gì trong Javascript",
-"Cách sử dụng phương thức trong javascript",
-"phương thức của một đối tượng trong JavaScript",
-"phương thức xử lý số trong JavaScript",
-"Các phương thức của đối tượng trong JavaScript",
-"Các phương thức mảng trong JavaScript"
-]
 chapter:
   name: "Object trong Javascript"
   slug: "chuong-03-object-trong-javascript"

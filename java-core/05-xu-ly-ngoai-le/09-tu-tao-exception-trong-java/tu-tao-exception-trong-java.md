@@ -1,7 +1,6 @@
 ---
 title: "Tự tạo exception trong java"
 description: "Tự tạo exception (Custom Exception) là ngoại lệ do bạn tự định nghĩa hay bạn tự tạo riêng cho mình, custom Exception trong Java được sử dụng để tùy biến ngoại lệ theo yêu cầu của người dùng"
-keywords: ["custom exception trong java", "Tự tạo exception trong java"]
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"

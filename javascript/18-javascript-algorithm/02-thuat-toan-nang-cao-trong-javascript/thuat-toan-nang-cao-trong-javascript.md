@@ -1,19 +1,6 @@
 ---
 title: "Thuật toán nâng cao trong Javascript"
 description: "Thuật toán giúp cho lập trình viên rèn luyện tư duy.Ngoài ra, khi thuật toán tốt thì chương trình viết ra sẽ chạy nhanh hơn, hoặc trông sẽ sáng sủa, dễ hiểu và dễ bảo trì hơn."
-keywords: [
-"Thuật toán nâng cao trong Javascript",
-"bai tap thuat toan javascript",
-"thuat toan javascript",
-"luyen thuat toan javascript",
-"hoc thuat toan nâng cao",
-"luyen giai thuat javascript",
-"code javascript nâng cao",
-"Bài tập thuật toán JavaScript",
-"Thuật toán JavaScript",
-"Tìm hiểu độ phức tạp thuật toán thông qua JavaScript",
-"Algorithm trong Javascript"
-]
 chapter:
   name: "Thuật toán với Javascript"
   slug: "chuong-18-javascript-algorithm"

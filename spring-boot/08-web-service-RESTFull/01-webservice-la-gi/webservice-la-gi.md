@@ -1,17 +1,6 @@
 ---
 title: "Webservice là gì"
 description: "Là một công cụ cho phép chúng ta thao tác với API, phổ biến nhất là REST."
-keywords:
-  [
-    "Webservice là gì",
-    "Webservice dung de lam gi",
-    "loi ich cua Webservice",
-    "tac dung cua Webservice",
-    "spring boot la gi",
-    "call api",
-    "trien khai du an spring boot",
-    "cach trien khai du an spring boot",
-  ]
 chapter:
   name: "Web Service RESTFull"
   slug: "chuong-08-web-service-RESTFull"

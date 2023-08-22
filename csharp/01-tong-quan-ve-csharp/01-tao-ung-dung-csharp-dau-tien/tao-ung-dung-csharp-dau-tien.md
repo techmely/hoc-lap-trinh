@@ -1,14 +1,6 @@
 ---
 title: "Tạo chương trình C# đầu tiên"
 description: "Trong bài này mình sẽ giới thiệu cách cài đặt môi trường để các bạn có thể lập trình với C# và hướng dẫn tạo một chương trình C# đơn giản."
-keywords: [
-	"chương trình C# đầu tiên",
-	"chuong trinh C# đau tien",
-	"chương trình C# đơn giản",
-	"chuong trinh C# đon gian",
-	"cài đặt môi trường phát triển C#",
-	"cai dat moi truong phat trien C#"
-]
 chapter:
   name: "Tổng quan về C#"
   slug: "chuong-01-tong-quan-ve-csharp"

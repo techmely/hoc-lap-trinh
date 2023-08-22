@@ -1,16 +1,6 @@
 ---
 title: "Deployment ứng dụng Spring boot trên server"
 description: "Deployment ứng dụng Spring boot trên server"
-keywords:
-  [
-    "Deployment ứng dụng Spring boot trên server",
-    "deploy spring boot",
-    "tomcat server",
-    "spring boot la gi",
-    "Deploy Spring Boot len Tomcat",
-    " trien khai du an spring boot",
-    "cach trien khai du an spring boot",
-  ]
 chapter:
   name: "Spring boots"
   slug: "chuong-07-spring-boots"

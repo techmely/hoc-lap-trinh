@@ -1,10 +1,6 @@
 ---
 title: "Kiểu dữ liệu của biến"
 description: "Trong bài này mình sẽ giới thiệu kiểu dữ liệu của biến và phân loại chúng như thế nào."
-keywords: [
-"kiểu dữ liệu của biến",
-"kieu du lieu cua bien"
-]
 chapter:
   name: "Tổng quan về C#"
   slug: "chuong-01-tong-quan-ve-csharp"

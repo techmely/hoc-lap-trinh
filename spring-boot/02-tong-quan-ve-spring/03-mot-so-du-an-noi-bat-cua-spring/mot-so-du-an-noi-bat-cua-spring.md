@@ -1,15 +1,6 @@
 ---
 title: "Một số dự án nổi bật của Spring"
 description: "Dưới đây là một số dự án nổi bật của Spring Framework"
-keywords:
-  [
-    "dự án nổi bật của Spring Framework",
-    "projects của Spring framework",
-    "dự án con của Spring",
-    "Spring framework cơ bản",
-    "tổng quan spring framework",
-    "tim hieu spring framework",
-  ]
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-02-tong-quan-ve-spring"

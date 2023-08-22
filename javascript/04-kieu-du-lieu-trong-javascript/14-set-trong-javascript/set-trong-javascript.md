@@ -1,19 +1,6 @@
 ---
 title: "Set trong Javascript"
 description: "Set là một bổ sung hữu ích cho bộ công cụ JavaScript của bạn, đặc biệt để làm việc với các giá trị trùng lặp trong dữ liệu."
-keywords: [
-"Set trong Javascript",
-"Set trong Javascript là gì",
-"Set trong Javascript cách sử dụng",
-"New Set(array javascript)",
-"get set trong javascript",
-"map và set trong javascript",
-"settimeout trong javascript",
-"settimeout trong javascript la gi",
-"setattribute trong javascript",
-"dùng settimeout trong javascript",
-"setcookie trong javascript"
-]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
@@ -27,7 +14,6 @@ position: 14
 Mình đã tìm hiểu về [Map](/bai-viet/javascript/map-trong-javascript) trong JavaScript rồi. Bài viết này mình tiếp tục tìm hiểu về một loại **object đặc biệt** nữa. Đó là Set trong Javascript
 
 ![Set trong Javascript](https://user-images.githubusercontent.com/29374426/168243792-6464321c-f082-4646-bac9-4edf0441231b.png)
-
 
 ## Set trong JavaScript là gì?
 

@@ -1,7 +1,6 @@
 ---
 title: "Tạo ứng dụng Spring Boot sử dụng start.spring.io"
 description: "Tạo ứng dụng Spring Boot sử dụng start.spring.io"
-keywords: []
 chapter:
   name: "Spring boots"
   slug: "chuong-07-spring-boots"

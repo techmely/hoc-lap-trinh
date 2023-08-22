@@ -1,7 +1,6 @@
 ---
 title: "RxJS Filtering Operators trong RxJS"
 description: "Hôm nay chúng ta sẽ tiếp tục tìm hiểu về thêm về RxJS Operators, điển hình là **Filtering Operators**. Đúng với tên gọi của chúng, các `operators` này được dùng để lược/lọc các giá trị được `emit` từ `Observable` gốc, giống như bạn lược/lọc qua phần tử của 1 `Array` vậy."
-keywords: ["RxJS Filtering Operators trong Angular", "filter() trong RxJS"]
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
@@ -190,7 +189,6 @@ interval(1000)
 
 ![RxJS takeWhile](https://github.com/techmely/hoc-lap-trinh/assets/29374426/52288fac-90a1-486d-ab54-8e0a022d7b67)
 
-
 ```typescript
 interval(1000)
   .pipe(takeWhile((x) => x < 6))
@@ -206,7 +204,6 @@ interval(1000)
 `skip()` hoạt động tương tự như `take()` nhưng mang tính chất ngược lại so với `take()`. Như `take()` là mình sẽ emit `n` giá trị ban đầu, còn `skip()` là mình sẽ **bỏ qua** `n` giá trị ban đầu.
 
 ![RxJS skip](https://github.com/techmely/hoc-lap-trinh/assets/29374426/93fa1414-29ec-4397-ba04-d0d13f3b300b)
-
 
 ```typescript
 from([1, 2, 3, 4])

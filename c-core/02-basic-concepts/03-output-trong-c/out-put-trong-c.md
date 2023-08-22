@@ -1,8 +1,6 @@
 ---
 title: "Output trong C"
 description: "Output trong C"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Nhập môn C"
   slug: "chuong-02-basic-concepts"

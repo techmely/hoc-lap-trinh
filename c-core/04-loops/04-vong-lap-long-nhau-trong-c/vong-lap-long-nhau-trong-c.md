@@ -1,8 +1,6 @@
 ---
 title: "Vòng lặp lồng nhau trong C"
 description: "Vòng lặp lồng nhau trong C"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Vòng lặp"
   slug: "chuong-04-loops"

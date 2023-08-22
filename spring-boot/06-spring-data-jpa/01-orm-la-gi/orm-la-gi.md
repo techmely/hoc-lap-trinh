@@ -1,7 +1,6 @@
 ---
 title: "ORM là gì"
 description: "ORM là gì"
-keywords: []
 chapter:
   name: "Spring data JPA"
   slug: "chuong-06-spring-data-jpa"

@@ -1,19 +1,6 @@
 ---
 title: "Thiết kế View"
 description: "Sau đây là một đoạn code Demo về Style của ứng dụng React-Native. Code có sẵn trong Example"
-keywords:
-  [
-    "gioi thieu react native",
-    "giới thiệu react native",
-    "khoá học react native",
-    "giới thiệu react native",
-    "giới thiệu react native cơ bản",
-    "react native la gi",
-    "tong quan ve react native",
-    "gioi thieu ve ngon ngu lap trinh react native",
-    "tom tat react native",
-    "code react native la gi",
-  ]
 chapter:
   name: "Làm quen với react native"
   slug: "chuong-03-lam-quen-voi-react-native"

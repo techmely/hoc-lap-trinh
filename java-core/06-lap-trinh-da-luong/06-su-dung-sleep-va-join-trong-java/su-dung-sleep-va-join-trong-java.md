@@ -1,15 +1,6 @@
 ---
 title: "Sử dụng sleep() và join() trong Java"
 description: "Thread.sleep() được sử dụng để tạm ngưng quá trình của thread hiện tại với một khoảng thời gian được chỉ định. Phương thức join() được sử dụng để đảm bảo cho quá trình thực thi của Thread đang chạy không bị gián đoạn bởi các Thread khác"
-keywords:
-  [
-    "method sleep() trong java",
-    "method join() trong java",
-    "thread sleep trong java",
-    "thread join trong java",
-    "sleep() trong Thread",
-    "join() trong Thread",
-  ]
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"

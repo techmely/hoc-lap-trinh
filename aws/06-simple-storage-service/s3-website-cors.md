@@ -1,19 +1,6 @@
 ---
 title: "Giới thiệu S3 Hosting, CORS"
 description: "S3 hosting cho phép bạn có thể tạo 1 public website từ source code html, css, javascript của bạn. Bạn không cần config web server, dns... tất cả Amazon S3 đã làm cho bạn, việc cần làm là đẩy source code của bạn lên bucket."
-keywords:
-  [
-    "S3 hosting la gi",
-    "S3 hosting trong aws",
-    "S3 CORS la gi",
-    "S3 CORS trong aws",
-    "Hosting website trên S3",
-    "Deploy code lên S3",
-    "Hosting website tren S3",
-    "Deploy code len S3",
-    "S3 website là gì",
-    "S3 website la gi",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

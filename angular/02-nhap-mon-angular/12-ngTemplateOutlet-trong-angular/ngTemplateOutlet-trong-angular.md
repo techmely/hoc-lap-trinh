@@ -1,14 +1,6 @@
 ---
 title: "ngTemplateOutlet trong Angular"
 description: "ng-template, ngTemplateOutlet và ng-container trong Angular"
-keywords:
-  [
-    "ngTemplateOutlet trong Angular",
-    "ng-template trong Angular",
-    "Khi nào thì nên dùng ng-template",
-    "ngTemplateOutlet trong Angular",
-    "ng-container trong Angular",
-  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"

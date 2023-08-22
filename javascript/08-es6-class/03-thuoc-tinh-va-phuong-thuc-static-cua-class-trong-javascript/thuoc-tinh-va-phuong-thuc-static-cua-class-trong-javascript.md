@@ -1,18 +1,6 @@
 ---
 title: "Thuộc tính và phương thức static của class trong Javascript"
 description: "Static là một từ khóa giúp ta khai báo những phương thức tĩnh hoặc thuộc tính tĩnh trong các class của javascript. Khi được khai báo static thì phương thức / thuộc tính đó có thể được gọi đến mà không cần phải sử dụng từ khóa new để khởi tạo đối tượng."
-keywords: [
-"Thuộc tính và phương thức static của class trong Javascript",
-"class trong Javascript",
-"phương thức static của class trong Javascript",
-"phương thức static của class trong Javascript là gì",
-"phương thức static của class trong Javascript dùng làm gì",
-"static trong Javascript",
-"static trong Javascript là gì",
-"static trong Javascript dùng làm gì",
-"cách sử dụng static trong Javascript",
-"ví dụ về static trong Javascript"
-]
 chapter:
   name: "ES6 Class"
   slug: "chuong-08-es6-class"

@@ -1,18 +1,6 @@
 ---
 title: "Định danh và quy tắc định danh trong java"
 description: "Trong ngôn ngữ lập trình, định danh được sử dụng với mục đích nhận biết, phân biệt. Trong Java, một định danh có thể là tên một class, tên một phương thức, tên một biến"
-keywords:
-  [
-    "định danh trong java bị lỗi",
-    "định danh trong java developer",
-    "định danh trong java download",
-    "định danh trong java ebook",
-    "định danh trong java eclipse",
-    "định danh trong java example",
-    "định danh trong java extension",
-    "định danh trong java",
-    "dinh danh trong java",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

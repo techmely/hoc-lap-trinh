@@ -1,17 +1,6 @@
 ---
 title: "OAuth2 Simplified"
 description: "Hãy tìm hiểu cách xây dựng máy chủ ủy quyền để xác thực danh tính của bạn nhằm cung cấp access_token , bạn có thể sử dụng máy chủ này để yêu cầu dữ liệu từ máy chủ tài nguyên .."
-keywords:
-  [
-    "OAuth2 Simplified là gì",
-    "OAuth2 Simplified dung de lam gi",
-    "loi ich cua OAuth2 Simplified",
-    "tac dung cua OAuth2 Simplified",
-    "OAuth2 Simplified",
-    "vi du OAuth2 Simplified",
-    "trien khai OAuth2 Simplified",
-    "cach trien khai du an spring boot voi OAuth2 Simplified",
-  ]
 chapter:
   name: "Spring security"
   slug: "chuong-09-Spring-security"

@@ -1,18 +1,6 @@
 ---
 title: "Tìm hiểu về iterable trong Javascript"
 description: "Iterable là khả năng cho phép các đối tượng trong Javascript sử dụng các kỹ thuật xử lý dữ liệu như for of loop."
-keywords: [
-"Iterable trong Javascript",
-"Iterable trong Javascript là gì",
-"iterable trong Javascript dùng để làm gì",
-"iterable Javascript",
-"iterator object la gi trong javascript",
-"cách sử dụng Iterable trong Javascript",
-"Iterable trong Javascript hoạt động như thế nào",
-"Iterable javascript",
-"Iterable javascript là gì",
-"iterable trong js"
-]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
@@ -26,7 +14,6 @@ position: 11
 **Iterable trong JavaScript** là một khái niệm liên quan đến array. Một object gọi là **iterable** nếu object đó sử dụng được với [vòng lặp `for...of`](/bai-viet/javascript/mang-array-trong-javascript).
 
 ![Tìm hiểu về iterable trong Javascript](https://user-images.githubusercontent.com/29374426/168243321-75764d51-b0a0-46f4-8bf6-0f24980c1c99.png)
-
 
 Dĩ nhiên, array là iterable. Ngoài ra, JavaScript còn có nhiều kiểu object khác cũng **iterable**, ví dụ: [Set](/bai-viet/javascript/set-trong-javascript), [Map](/bai-viet/javascript/map-trong-javascript), String,...
 

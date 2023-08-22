@@ -1,7 +1,6 @@
 ---
 title: "Ứng dụng dependency injection để lấy data từ trong ActivatedRoute"
 description: "Chào các bạn, trong bài viết này, mình xin chia sẻ một cách giúp giảm thiểu code trùng lặp khi lấy dữ liệu từ trong `ActivatedRoute` service bằng cách ứng dụng dependency injection."
-keywords: []
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"

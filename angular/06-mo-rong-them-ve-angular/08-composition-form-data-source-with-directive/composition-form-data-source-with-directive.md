@@ -1,7 +1,6 @@
 ---
 title: "Composition form datasource with Directive"
 description: "Trong quá trình phát triển một ứng dụng web, chúng ta chắc hẳn đã phải trải qua làm việc với Form không ít thì nhiều. Khi làm việc với form, ta sẽ gặp phải trường hợp một form control với logic rất đơn giản nhưng chỉ khác duy nhất dữ liệu nguồn (data source). Ví dụ, khi làm việc với các select control, chúng ta sẽ phải lặp đi lặp lại việc gọi data source select đó, khi control đó được sử dụng lại ở nhiều nơi khác nhau, việc lặp lại code là không thể tránh khỏi."
-keywords: []
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"

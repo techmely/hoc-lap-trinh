@@ -1,7 +1,6 @@
 ---
 title: "Câu lệnh điều kiện th:if, th:switch. th:case trong Thymeleaf"
 description: "Câu lệnh điều kiện th:if, th:switch. th:case trong Thymeleaf"
-keywords: []
 chapter:
   name: "Thymeleaf"
   slug: "chuong-05-thymeleaf"

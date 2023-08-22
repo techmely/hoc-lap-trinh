@@ -1,16 +1,6 @@
 ---
 title: "Constructor pattern trong JavaScript"
 description: "Trong JavaScript, hầu như mọi thứ đều là một object và chúng ta thường quan tâm đến việc khởi tạo đối tượng với Object Constructor."
-keywords: [
-"Constructor pattern trong JavaScript",
-"observer pattern trong javascript",
-"factory pattern trong javascript",
-"module pattern trong javascript",
-"Constructor pattern là gì trong JavaScript",
-"cách sử dụng Constructor pattern trong JavaScript",
-"Tìm hiểu Constructor pattern trong JavaScript",
-"Ví dụ Constructor pattern trong JavaScript"
-]
 chapter:
   name: "Design pattern"
   slug: "chuong-17-design-pattern"

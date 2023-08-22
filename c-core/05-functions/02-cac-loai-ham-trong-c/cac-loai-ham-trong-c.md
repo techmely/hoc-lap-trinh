@@ -1,8 +1,6 @@
 ---
 title: "Các loại hàm trong C"
 description: "Các loại hàm trong C"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Hàm"
   slug: "chuong-05-functions"

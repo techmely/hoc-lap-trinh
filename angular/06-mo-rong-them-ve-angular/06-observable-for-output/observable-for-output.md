@@ -1,7 +1,6 @@
 ---
 title: "Observable for @Output"
 description: "Hôm nay mình có gợi ý cho 1 Angular dev về cách dùng Observable cho Output. Mình nghĩ cái này cũng có 1 số các bạn Angular dev mới không biết vì trong documentations không đề cập tới. Mình sẽ đi vào code ngay lập tức và sẽ giải thích ở dưới"
-keywords: []
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"

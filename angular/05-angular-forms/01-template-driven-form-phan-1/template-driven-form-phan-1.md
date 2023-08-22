@@ -1,7 +1,6 @@
 ---
 title: "Template-driven Forms Trong Angular Phần 1"
 description: "Form hay biểu mẫu là một thành phần khá quan trọng trong các hệ thống/công ty hiện nay. Ví dụ khi bạn mở một tài khoản ngân hàng, hay form đăng ký trường Đại học, hoặc kể cả là một số form các bạn cần phải điền khi đi làm ở một công ty mới chẳng hạn. Do đó các ứng dụng sẽ có thể có khá nhiều ứng dụng cần phải thiết lập chức năng Forms để có thể thu thập thông tin cần thiết của người dùng."
-keywords: []
 chapter:
   name: "Angular Forms"
   slug: "chuong-05-angular-forms"

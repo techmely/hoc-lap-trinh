@@ -1,15 +1,6 @@
 ---
 title: "Các loại Load Balancer trong AWS"
 description: "Application Load Balancer là giải pháp này hoạt động ở tầng ừng dụng (layer 7), phù hợp nhất để cân bằng lưu lượng HTTP và HTTPS. Gateway Load Balancer cho phép bạn triển khai, mở rộng, quản lý các ứng dụng 3th party network (Firewall...)"
-keywords:
-  [
-    "Các loại Load Balancer",
-    "Application Load Balancer trong aws",
-    "Network Load Balancer trong aws",
-    "Getway Load Balancer trong aws",
-    "Load Balancer trong aws",
-    "Sticky Session trong load balancer"
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -39,8 +30,8 @@ position: 10
 - Load balancing đến nhiều HTTP ứng dụng qua nhiều machine
 - Hỗ trợ redirect HTTP/HTTPs
 - Hỗ trợ route đến nhiều target group
-  - VD: sample/users và sample/pots sẽ gọi đến 2 target group khác nhau 
-  
+  - VD: sample/users và sample/pots sẽ gọi đến 2 target group khác nhau
+
 ![ALB route](https://user-images.githubusercontent.com/29729545/163432577-faca8832-ac36-441c-8a62-2821101c2a29.png)
 
 - ALB rất phù hợp với ứng dụng micro service

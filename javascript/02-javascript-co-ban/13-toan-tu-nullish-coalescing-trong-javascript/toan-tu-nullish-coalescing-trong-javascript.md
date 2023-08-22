@@ -1,15 +1,6 @@
 ---
 title: "Toán tử ?? trong JavaScript"
 description: "Toán tử ?? trong JavaScript"
-keywords: ["khoá học javascript",
-"Toán tử ?? trong JavaScript",
-"Toán tử ??",
-"cach su dung toan tu ?? trong javascript",
-"Cách sử dụng toán tử Nullish Coalescing",
-"toán tử js",
-"Nullish Coalescing",
-"Nullish Coalescing la gi"
-]
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"

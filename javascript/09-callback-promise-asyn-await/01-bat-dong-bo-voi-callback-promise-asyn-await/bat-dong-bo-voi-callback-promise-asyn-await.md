@@ -1,19 +1,6 @@
 ---
 title: "Xử lý bất đồng bộ với callback, promise, async/await"
 description: "Xử lý bất đồng bộ là cơ chế xử lý không thể thiếu trong JavaScript. Cùng xem cách triển khai nó với callback, promise và async/await trong javascript."
-keywords: [
-"Xử lý bất đồng bộ với callback, promise, async/await",
-"Xử lý bất đồng bộ với callback, promise, async/await như thế nào",
-"bất đồng bộ trong javascript",
-"callback trong javascript",
-"promise trong javascript",
-"async/await trong javascript",
-"callback trong javascript là gì",
-"promise trong javascript là gì",
-"async/await trong javascript là gì",
-"Xử lí bất đồng bộ trong javascript",
-"thế nào là bất đồng bộ trong javascript"
-]
 chapter:
   name: "Callback, Promise, async/await"
   slug: "chuong-09-callback-promise-asyn-await"
@@ -37,7 +24,6 @@ Giả sử bạn có một nhiệm vụ bao gồm 2 công việc tốn thời gi
 Đối với xử lý đồng bộ, bạn sẽ thực hiện công việc A; đợi A hoàn thành xong thì sẽ thực hiện B; rồi lại đợi B hoàn thành thì nhiệm vụ cuối cùng mới coi như xong.
 
 ![Xử lý đồng bộ trong javascript](https://github.com/techmely/hoc-lap-trinh/assets/29374426/5c04d42e-aaa1-4fb4-b884-4d365f31040f)
-
 
 Nghĩa là thời gian để hoàn thành nhiệm vụ là tổng của thời gian hoàn thành A và B. Hơn nữa, trong khoảng thời gian này bạn sẽ không thể thực hiện thêm 1 hành động nào khác (như bắt các [sự kiện](/bai-viet/javascript/mot-so-event-javascript) với chuột và bàn phím của người dùng...). Điều này rõ ràng làm giảm hiệu năng và trải nghiệm người dùng đối với chương trình.
 
@@ -93,25 +79,25 @@ Tuy nhiên, thử tưởng tượng bạn phải thực hiện 2 request liên t
 
 ```js
 // Usage:
-    doAsync(
-      "https://something.com",
-      (value) => {
-        // 'value' is corresponding with 'xhr.responseText' (1)
+doAsync(
+  "https://something.com",
+  (value) => {
+    // 'value' is corresponding with 'xhr.responseText' (1)
 
-        doAsync(
-          "https://other.com",
-          (value) => {
-            // 'value' is corresponding with 'xhr.responseText' (2)
-          },
-          (error) => {
-            // 'error' is corresponding with 'xhr.statusText' (2)
-          }
-        );
+    doAsync(
+      "https://other.com",
+      (value) => {
+        // 'value' is corresponding with 'xhr.responseText' (2)
       },
       (error) => {
-        // 'error' is corresponding with 'xhr.statusText' (1)
+        // 'error' is corresponding with 'xhr.statusText' (2)
       }
     );
+  },
+  (error) => {
+    // 'error' is corresponding with 'xhr.statusText' (1)
+  }
+);
 ```
 
 Bắt đầu phức tạp rồi nhỉ? Và nếu bạn phải thực hiện thêm vài request khác nữa thì kết quả chắc chắn sẽ còn kinh khủng hơn rất nhiều. Trường hợp này gọi là **Callback Hell**.
@@ -143,49 +129,49 @@ Khi sử dụng Promise, ví dụ phía trên sẽ trở thành:
 
 ```js
 function doAsync(url) {
-      return new Promise((resolve, reject) => {
-        const xhr = new XMLHttpRequest();
-        xhr.open("GET", url);
-        xhr.onload = () => resolve(xhr.responseText);
-        xhr.onerror = () => reject(xhr.statusText);
-        xhr.send();
-      });
-    }
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", url);
+    xhr.onload = () => resolve(xhr.responseText);
+    xhr.onerror = () => reject(xhr.statusText);
+    xhr.send();
+  });
+}
 
-    // Usage:
-    doAsync("https://something.com")
-      .then((value) => {
-        // 'value' is corresponding with 'xhr.responseText'
-      })
-      .catch((error) => {
-        // 'error' is corresponding with 'xhr.statusText'
-      });
+// Usage:
+doAsync("https://something.com")
+  .then((value) => {
+    // 'value' is corresponding with 'xhr.responseText'
+  })
+  .catch((error) => {
+    // 'error' is corresponding with 'xhr.statusText'
+  });
 ```
 
 Và khi bạn muốn thực hiện 2 request liên tiếp:
 
 ```js
- // Usage:
-    doAsync("https://something.com")
-      .then((value) => {
-        /*
-         * 'value' is corresponding with 'xhr.responseText'
-         * from 'https://something.com'
-         */
-        return doAsync("https://other.com");
-      })
-      .then((value) => {
-        /*
-         * 'value' is corresponding with 'xhr.responseText'
-         * from 'https://other.com'
-         */
-      })
-      .catch((error) => {
-        /*
-         * 'error' is corresponding with 'xhr.statusText'
-         * from either 'https://something.com' or 'https://other.com'
-         */
-      });
+// Usage:
+doAsync("https://something.com")
+  .then((value) => {
+    /*
+     * 'value' is corresponding with 'xhr.responseText'
+     * from 'https://something.com'
+     */
+    return doAsync("https://other.com");
+  })
+  .then((value) => {
+    /*
+     * 'value' is corresponding with 'xhr.responseText'
+     * from 'https://other.com'
+     */
+  })
+  .catch((error) => {
+    /*
+     * 'error' is corresponding with 'xhr.statusText'
+     * from either 'https://something.com' or 'https://other.com'
+     */
+  });
 ```
 
 Rõ ràng, cấu trúc chương trình đã trở nên rõ ràng hơn. Không còn hiện tượng nhiều mức lồng nhau như khi sử dụng callback nữa rồi.
@@ -198,31 +184,31 @@ Với ví dụ sử dụng Promise bên trên, mình có thể áp dụng async/
 
 ```js
 function doAsync(url) {
-      return new Promise((resolve, reject) => {
-        const xhr = new XMLHttpRequest();
-        xhr.open("GET", url);
-        xhr.onload = () => resolve(xhr.responseText);
-        xhr.onerror = () => reject(xhr.statusText);
-        xhr.send();
-      });
-    }
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", url);
+    xhr.onload = () => resolve(xhr.responseText);
+    xhr.onerror = () => reject(xhr.statusText);
+    xhr.send();
+  });
+}
 
-    // Usage:
-    async function run() {
-      let responseText1, responseText2;
+// Usage:
+async function run() {
+  let responseText1, responseText2;
 
-      try {
-        responseText1 = await doAsync("https://something.com");
-        responseText2 = await doAsync("https://other.com");
-      } catch (error) {
-        /*
-         * 'error' is corresponding with 'xhr.statusText'
-         * from either 'https://something.com' or 'https://other.com'
-         */
-      }
-    }
+  try {
+    responseText1 = await doAsync("https://something.com");
+    responseText2 = await doAsync("https://other.com");
+  } catch (error) {
+    /*
+     * 'error' is corresponding with 'xhr.statusText'
+     * from either 'https://something.com' or 'https://other.com'
+     */
+  }
+}
 
-    run();
+run();
 ```
 
 Nếu xử lý theo cách này thì dù bạn có thực hiện thêm nhiều request nữa, cấu trúc chương trình vẫn rất rõ ràng và mạch lạc phải không?

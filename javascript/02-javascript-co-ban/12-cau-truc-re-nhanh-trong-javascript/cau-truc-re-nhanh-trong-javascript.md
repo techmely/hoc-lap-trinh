@@ -1,15 +1,6 @@
 ---
 title: "Cấu trúc rẽ nhánh trong Javascript"
 description: "Cấu trúc rẽ nhánh trong Javascript"
-keywords: ["khoá học javascript",
-"Cấu trúc rẽ nhánh trong Javascript",
-"Cấu trúc rẽ nhánh",
-"Câu lệnh rẽ nhánh không điều kiện",
-"cau truc re nhanh trong javascript là gì",
-"cú pháp câu lệnh rẽ nhánh",
-"cấu trúc rẽ nhánh trong javascript cơ bản",
-"cach su dung cau truc re nhanh trong javascript"
-]
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"

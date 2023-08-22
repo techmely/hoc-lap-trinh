@@ -1,19 +1,6 @@
 ---
 title: "Khai báo biến trong Go"
 description: "Go không phải là ngôn ngữ hướng đối tượng như C++, Java, Ruby hay C#. Thay vào đó, Go sử dụng cấu trúc và tổ hợp (composition) để thực hiện các tính năng tương tự. Bài viết giới thiệu cách khai báo và khởi tạo biến cấu trúc, cách thêm phương thức vào cấu trúc và ưu điểm của việc sử dụng con trỏ trong Go."
-keywords:
-  [
-    "Go",
-    "Ngôn ngữ Go",
-    "Khai báo biến Go",
-    "Cấu trúc trong Go",
-    "Tổ hợp trong Go",
-    "Con trỏ Go",
-    "Hướng đối tượng trong Go",
-    "Phương thức trong Go",
-    "Tính kế thừa trong Go",
-    "Tính đa hình trong Go",
-  ]
 chapter:
   name: "Cấu trúc trong Go"
   slug: "chuong-03-cau-truc-trong-go"

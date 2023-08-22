@@ -1,15 +1,6 @@
 ---
 title: "Typescript trong Angular"
 description: "Bài viết cung cấp đầy đủ thông tin về TypeScript từ cách cài đặt và sử dụng đến các tính năng của TypeScript như Static Types, Interface, Type và Default Types"
-keywords:
-  [
-    "Typescript trong Angular",
-    "TypeScript là gì",
-    "Default Types trong angular",
-    "Class trong typescript",
-    "Interface trong typescript",
-    "Type trong typescript",
-  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"

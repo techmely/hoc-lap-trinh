@@ -1,8 +1,6 @@
 ---
 title: "Câu lệnh điều kiện if trong C"
 description: "Câu lệnh điều kiện if trong C"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Câu điều kiện"
   slug: "chuong-03-conditions"

@@ -1,17 +1,6 @@
 ---
 title: "Các components trong VPC"
 description: "ENI đại diện như 1 card mạng ảo (virtual network card). Route tables chứa những rules giúp định tuyến network traffic. Internet Getway giúp traffic trong VPC có thể giao tiếp ra ngoài internet"
-keywords:
-  [
-    "Elastic Network Intefaces trong AWS",
-    "Internet Getway là gì",
-    "Internet Getway trong AWS",
-    "Route table là gì",
-    "Route table trong AWS",
-    "Egress-only IGW trong AWS",
-    "Các components trong VPC",
-    "Các components trong VPC aws"
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -54,8 +43,8 @@ _Route tables_ chứa những rules giúp định tuyến network traffic
 
 - Mỗi VPC chỉ có thể attached tới 1 IGW và ngược lại
 - Nếu 1 subnet được liên kết với route table và routed đến 1 IGW thì đó là _public subnet_
-- Ngược lại, nếu 1 subnet được liên kết trong route table và không routed đến IGW thì đó là _private subnet_ 
-![VPC](https://user-images.githubusercontent.com/29729545/166088006-6c5d114a-63e7-4a0b-9398-919f19b0204e.png)
+- Ngược lại, nếu 1 subnet được liên kết trong route table và không routed đến IGW thì đó là _private subnet_
+  ![VPC](https://user-images.githubusercontent.com/29729545/166088006-6c5d114a-63e7-4a0b-9398-919f19b0204e.png)
 
 ### Egress-only IGW trong AWS
 

@@ -1,18 +1,6 @@
 ---
 title: "Kết nối Data Center tới AWS"
 description: "AWS hỗ trợ bạn có thể kết nối một cách bảo mật giữa môi trường AWS tới các Data Center tại chỗ (chẳng hạn như data center của công ty bạn). Những dịch vụ đó bao gồm. Nếu bạn muốn setup Direct Connect tới một hoặc nhiều VPC ở các Region khác nhau (chung account), thì cần dùng đến Direct Connect Gateway. Mặc định khi chúng ta launch 1 EC2 instance trong VPC thì không thể giao tiếp được Network của bạn (remote network). Để có thể access vào remote network chúng ta cần tạo một Site-to-Site VPN Connection."
-keywords:
-  [
-    "Direct Connect trong AWS",
-    "Direct Connect là gì",
-    "Direct Connect la gi",
-    "Site to Site VPN trong AWS",
-    "AWS Site to Site là gì",
-    "AWS Site to Site la gi",
-    "Direct Connect Gateway trong AWS",
-    "AWS Direct Connect Gateway là gì",
-    "AWS Direct Connect Gateway la gi",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

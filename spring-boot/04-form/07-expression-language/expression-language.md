@@ -2,16 +2,6 @@
 title: "Expression Language."
 description: "EL là sự rút ngắn tuyệt vời trong việc viết code, làm việc với các thuộc tính đặt trong các phạm vi (như
 page, request, session và application)"
-keywords:
-  [
-    "spring expression language la gi",
-    "spring expression language dung lam gi",
-    "cach du dung spring expression language",
-    "kien truc spring boot",
-    "expression language trong spring boot",
-    "rut ngan code trong spring boots",
-    "expression language trong spring boot là gì"
-  ]
 chapter:
   name: "Form"
   slug: "chuong-04-form"

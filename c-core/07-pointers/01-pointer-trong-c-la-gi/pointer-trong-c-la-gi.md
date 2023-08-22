@@ -1,8 +1,6 @@
 ---
 title: "Pointer trong C là gì"
 description: "Pointer trong C là gì"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Con trỏ"
   slug: "chuong-07-pointer"

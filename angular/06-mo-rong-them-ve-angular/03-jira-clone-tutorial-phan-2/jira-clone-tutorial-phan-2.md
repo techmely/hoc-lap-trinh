@@ -1,7 +1,6 @@
 ---
 title: "Jira Clone Tutorial 02"
 description: "Phần thứ hai của series sẽ nói về việc dựng layout của ứng dụng với flexbox và TailwindCSS."
-keywords: []
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"

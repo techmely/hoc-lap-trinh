@@ -1,15 +1,6 @@
 ---
 title: "Giới thiệu Glue"
-description: "AWS Glue là gì. AWS Glue là dịch vụ tích hợp dữ liệu server-less, giúp người dùng dễ dàng tìm kiếm, chuẩn bị và tổng hợp dữ liệu cho hoạt động phân tích, máy học và phát triển ứng dụng. "
-keywords:
-  [
-    "AWS Glue la gi",
-    "AWS Glue là gì",
-    "Glue trong AWS",
-    "AWS Glue Data Catalog la gi",
-    "AWS Glue Data Catalog là gì",
-    "Glue Data Catalog trong AWS",
-  ]
+description: "AWS Glue là gì. AWS Glue là dịch vụ tích hợp dữ liệu server-less, giúp người dùng dễ dàng tìm kiếm, chuẩn bị và tổng hợp dữ liệu cho hoạt động phân tích, máy học và phát triển ứng dụng."
 author:
   fullname: Phan Văn Đức
   username: ducpv

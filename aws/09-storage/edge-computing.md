@@ -1,15 +1,6 @@
 ---
 title: "Giới thiệu Edge Computing"
 description: "Edge computing là quá trình phân tích, xử lý dữ liệu khi chúng được tạo ở một Edge location (không giống Edge location trong Cloudfront). Một egde location có thể là bất kỳ đâu, có thể là một trang trại, hay một chiếc tàu thủy..."
-keywords:
-  [
-    "Edge computing là gì",
-    "Edge computing la gi",
-    "AWS OpsHub là gì",
-    "AWS OpsHub la gi",
-    "Snow Family trong AWS",
-    "Migrate dữ liệu trong AWS"
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

@@ -1,20 +1,6 @@
 ---
 title: "Cấu trúc một chương trình Java"
 description: "Ngôn ngữ lập trình Java được thiết kế với các đặc tính xoay quanh đặc trưng hướng đối tượng. Bài này chúng ta cùng nhau tìm hiểu xem cấu trúc của một chương trình java"
-keywords:
-  [
-    "cấu trúc 1 chương trình java",
-    "cấu trúc chương trình java",
-    "cấu trúc của 1 chương trình java",
-    "cấu trúc của một chương trình",
-    "cấu trúc của một chương trình java",
-    "cấu trúc một chương trình java",
-    "cấu trúc một chương trình java bị lỗi",
-    "cấu trúc một chương trình java desktop",
-    "cấu trúc một chương trình java developer",
-    "cấu trúc một chương trình java eclipse",
-    "cấu trúc một chương trình java example",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

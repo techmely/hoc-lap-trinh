@@ -1,19 +1,6 @@
 ---
 title: "Object là gì? Object trong Javascript"
 description: "Trong JavaScript, một object là một thực thể độc lập, với thuộc tính và kiểu. Khái niệm của objects trong JavaScript có thể được hiểu như những đối tượng thực tế trong đời thực."
-keywords: [
-"đối tượng trong javascript",
-"object trong javascript",
-"mang object trong javascript",
-"kieu du lieu object trong javascript",
-"object js",
-"object trong javascript là gì",
-"xử lý object trong javascript",
-"so sánh object trong javascript",
-"kiểu object trong javascript",
-"kiểm tra object trong javascript",
-"đối tượng trong javascript là gì"
-]
 chapter:
   name: "Object trong Javascript"
   slug: "chuong-03-object-trong-javascript"

@@ -1,10 +1,6 @@
 ---
 title: "Toán tử trong C#"
 description: "Trong bài này mình sẽ giới thiệu toán tử trong C# là gì và các loại toán tử trong C#."
-keywords: [
-"Toán tử trong C#",
-"Toan tu trong C#"
-]
 chapter:
   name: "Tổng quan về C#"
   slug: "chuong-01-tong-quan-ve-csharp"

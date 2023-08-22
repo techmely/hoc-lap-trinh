@@ -1,13 +1,6 @@
 ---
 title: "ContentChild & ContentChildren trong Angular"
 description: "Trong những bài học trước chúng ta đã tìm hiểu khác nhiều thứ liên quan đến Content Projection. Đối với view, chúng ta có thể query các phần tử trên view với ViewChild hay ViewChildren, vậy đối với content, chúng ta có thể query nó được không? Angular cũng cung cấp cho chúng ta các APIs: `ContentChild` và `ContentChildren` để có thể tương tác được với content truyền vào."
-keywords:
-  [
-    "ContentChild trong Angular",
-    "ContentChildren trong Angular",
-    "Query single directive/component trong Angular",
-    "Listen to changes event trong Angular",
-  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"

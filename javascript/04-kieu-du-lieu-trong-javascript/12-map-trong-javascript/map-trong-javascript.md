@@ -1,20 +1,6 @@
 ---
 title: "Map trong Javascript"
 description: "Javascript map là một hàm dành cho đối tượng mảng trong javascript, hàm này có công dụng tương tự như vòng lăp forEach. Cú pháp chung của hàm map()."
-keywords: [
-"Map trong Javascript",
-"map trong javascript là gì",
-"hàm map trong javascript",
-"cách sử dụng hàm map trong javascript",
-"cách sử dụng hàm map trong js",
-"new map trong javascript",
-"hashmap trong javascript",
-"map object trong javascript",
-"map key value javascript",
-"map() javascript",
-"Map Object trong JavaScript",
-"Map key, value JavaScript"
-]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"

@@ -1,16 +1,6 @@
 ---
 title: "Giới thiệu Amazon RDS"
 description: "Relational Database Service là dịch vụ quản lý Database sử dụng SQL"
-keywords:
-  [
-    "AWS RDS là gì",
-    "RDS trong AWS",
-    "Postgres trong AWS",
-    "MySQL trong AWS",
-    "MariaDB trong AWS",
-    "Microsoft SQL Server trong AWS",
-    "Aurora trong AWS",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

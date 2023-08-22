@@ -1,7 +1,6 @@
 ---
 title: "Jira Clone Tutorial 01"
 description: "Đây là ứng dụng mô phỏng lại ứng dụng Jira của Atlassian được mình viết bằng Angular trong thời gian rảnh. Mục tiêu là để kiểm chứng lại khả năng của bản thân, và cũng là nguồn tư liệu để viết bài cho series khóa học Angular từ cơ bản đến nâng cao :)"
-keywords: []
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"

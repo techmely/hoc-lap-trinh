@@ -1,17 +1,6 @@
 ---
 title: "Function binding trong Javascript"
 description: "Tìm hiểu cách sử dụng hàm bind trong Javascript, phân tích cách khắc phục đối tượng this trong hàm closure bằng cách sử dụng hàm bind trong Javascript."
-keywords: [
-"Function binding trong Javascript",
-"Function binding trong Javascript là gì",
-"Function binding trong Javascript dùng làm gì",
-"function binding trong javascript",
-"bind javascript",
-"Bind trong JavaScript",
-"Bind trong JavaScript để làm gì",
-"hàm bind javascript",
-"function binding trong javascript là gì"
-]
 chapter:
   name: "Kiến thức nâng cao về hàm"
   slug: "chuong-05-kien-thuc-nang-cao-ve-ham"

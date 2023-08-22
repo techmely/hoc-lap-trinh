@@ -1,18 +1,6 @@
 ---
 title: "Copy Object trong Javascript"
 description: "Trong bài này, bạn sẽ học cách sao chép các đối tượng trong JavaScript. Bạn sẽ học được một số cách để copy object sau bài học này."
-keywords: [
-"đối tượng trong javascript",
-"object trong javascript",
-"Copy Object trong Javascript",
-"copy object trong javascript dùng để làm gì",
-"copy object trong javascript là",
-"object trong js",
-"tạo object trong javascript",
-"sao chép đối tượng trong javascript",
-"cách sao chép đối tượng trong javascript",
-"cách sao chép đối tượng trong javascript hay"
-]
 chapter:
   name: "Object trong Javascript"
   slug: "chuong-03-object-trong-javascript"
@@ -165,6 +153,7 @@ Vì vậy, khi thay đổi ở `point2` thì `point1` cũng thay đổi theo.
 let p1 = { x: 1, y: 2 };
 let p2 = { ...p1 };
 ```
+
 ## Sử dụng Spread
 
 Cú pháp spread `(...)` có nhiều điều để nói và được áp dụng ở nhiều trường hợp nên mình sẽ trình bày ở bài viết sau.

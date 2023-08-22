@@ -1,8 +1,6 @@
 ---
 title: "Chuyển đổi kiểu dữ liệu trong C"
 description: "Chuyển đổi kiểu dữ liệu trong C"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Nhập môn C"
   slug: "chuong-02-basic-concepts"

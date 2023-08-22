@@ -1,17 +1,6 @@
 ---
 title: "Chương trình Java đầu tiên"
 description: "Trong bài học này chúng ta sẽ viết một chương trình in ra màn hình dòng chữ Hello World - bài học nhập môn của hầu hết các ngôn ngữ lập trình trong ngôn ngữ Java."
-keywords:
-  [
-    "chương trình java đầu tiên",
-    "chương trình java đầu tiên fpt",
-    "chương trình java đầu tiên java",
-    "chương trình java đầu tiên là gì",
-    "chương trình java đầu tiên như thế nào",
-    "ứng dụng đầu tiên java fpt",
-    "ứng dụng đầu tiên java gì",
-    "ứng dụng đầu tiên java học",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

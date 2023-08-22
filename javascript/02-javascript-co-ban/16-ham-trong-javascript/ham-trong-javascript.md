@@ -1,17 +1,6 @@
 ---
 title: "Tất tần tật về hàm trong Javascript"
 description: "Tất tần tật về hàm trong Javascript"
-keywords: ["khoá học javascript",
-"Tất tần tật về hàm trong Javascript",
-"hàm trong javascript",
-"tat ca cac ham trong javascript",
-"cac loai function trong javascript",
-"cach goi ham trong javascript",
-"Tất cả các hàm trong JavaScript",
-"ham trong javascript là gì",
-"các hàm có sẵn trong javascript",
-"hàm trong js"
-]
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"

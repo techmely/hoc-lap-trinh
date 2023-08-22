@@ -1,17 +1,6 @@
 ---
 title: "Giới thiệu về VPC"
 description: "VPC (Virtual Private Cloud) giúp bạn tạo ra một môi trường riêng biệt, nơi mà bạn có thể triển khai hệ thống trong một hệ thống mạng ảo riêng mà bạn định nghĩa."
-keywords:
-  [
-    "VPC là gì",
-    "VPC la gi",
-    "VPC trong aws",
-    "cidr trong aws",
-    "subnet trong aws",
-    "private ip trong aws",
-    "public ip trong aws",
-    "elastic ip trong aws",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

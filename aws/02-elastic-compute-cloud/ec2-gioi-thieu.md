@@ -1,16 +1,6 @@
 ---
 title: "Giới thiệu về EC2"
 description: "Amazon EC2 là dịch vụ web cung cấp năng lực điện toán bảo mật và có kích cỡ linh hoạt trên đám mây. Dịch vụ này được thiết kế để giúp các nhà phát triển dễ sử dụng điện toán đám mây ở quy mô web hơn."
-keywords:
-  [
-    "Amazon EC2 là gì",
-    "aws ec2 là gì",
-    "ec2 instance là gì",
-    "ec2 là gì",
-    "ec2 la gi",
-    "ec2 instance la gi",
-    "Giới thiệu Security Group"
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

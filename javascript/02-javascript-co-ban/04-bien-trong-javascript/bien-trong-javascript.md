@@ -1,19 +1,6 @@
 ---
 title: "Tìm hiểu biến trong JavaScript"
 description: "Tìm hiểu về biến trong JavaScript"
-keywords:
-  [
-    "khoá học javascript",
-    "bien trong javascript",
-    "cac kieu du lieu trong javascript",
-    "khai bao bien",
-    "quy tac dat ten bien trong javascript",
-    "Lấy giá trị của biến trong JavaScript",
-    "khai bao bien trong javascript",
-    "Kiểu dữ liệu trong JavaScript",
-    "so sanh bien trong javascript",
-    "Lấy giá trị của biến trong JavaScript",
-  ]
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"

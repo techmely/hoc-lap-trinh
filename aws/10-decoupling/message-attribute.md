@@ -1,21 +1,6 @@
 ---
 title: "Những thuộc tính của SQS Queue"
 description: "Amazon Simple Queue Service (SQS) là một dịch vụ hàng đợi (queue) lưu trữ message nhanh chóng, đáng tin cậy, có khả năng mở rộng và quản lý một cách đầy đủ. Với SQS, bạn có thể gửi, nhận và lưu trữ message giữa các thành phần trong một phần mềm."
-keywords:
-  [
-    "SQS Message Visibility Timeout là gì",
-    "SQS Message Visibility Timeout la gi",
-    "SQS Dead Letter Queue là gì",
-    "SQS Dead Letter Queue la gi",
-    "SQS Delay Queue là gì",
-    "SQS Delay Queue la gi",
-    "SQS Long Polling là gì",
-    "SQS Long Polling la gi",
-    "SQS Request-Response Pattern là gì",
-    "SQS Request-Response Pattern la gi",
-    "SQS FIFO Queue là gì",
-    "SQS FIFO Queue la gi",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

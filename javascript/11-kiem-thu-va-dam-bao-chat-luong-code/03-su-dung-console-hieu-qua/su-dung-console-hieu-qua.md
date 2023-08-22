@@ -1,16 +1,6 @@
 ---
 title: "Thủ thuật sử dụng console.log hiệu quả"
 description: "log để debug, kiểm tra lỗi là việc thường xuyên đối với hầu hết các lập trình viên JavaScript. Tuy nhiên, không phải ai cũng thực sự biết cách tối ưu cách sử dụng. Cùng tìm hiểu!"
-keywords: [
-"Thủ thuật sử dụng console.log hiệu quả",
-"sử dụng console.log hiệu quả trong javascript",
-"console.log hiệu quả trong javascript",
-"console.log trong javascript",
-"cách dùng console.log hiệu quả trong javascript",
-"tối ưu sử dụng console.log hiệu quả trong javascript",
-"console.log trong javascript",
-"console.log trong javascript là gì"
-]
 chapter:
   name: "Kiểm thử và đảm bảo chất lượng code"
   slug: "chuong-11-kiem-thu-va-dam-bao-chat-luong-code"

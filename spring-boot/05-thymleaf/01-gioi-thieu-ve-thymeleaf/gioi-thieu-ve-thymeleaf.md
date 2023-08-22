@@ -3,22 +3,6 @@ title: "Giới thiệu về Thymeleaf"
 description: "Thymeleaf một một thư viện mở và được coi là một Java Template Engine,
 được dùng để xử lý và tạo ra HTML, XML, JavaScript, CSS, text, Raw, nó có thể
 làm việc với cả môi trường web và non-web"
-keywords:
-  [
-    "khóa học Spring cơ bản",
-    "Giới thiệu thymeleaf",
-    "Thymeleaf là gì",
-    "hướng dẫn thymeleaf",
-    "thymeleaf cơ bản",
-    "Ưu điểm của thymeleaf",
-    "Nhược điểm của thymeleaf",
-    "phân loại template thymeleaf",
-    "xml template trong thymeleaf",
-    "html template trong thymeleaf",
-    "javascript template trong thymeleaf",
-    "css template trong thymeleaf",
-    "raw template trong thymeleaf"
-  ]
 chapter:
   name: "Thymeleaf"
   slug: "chuong-05-thymeleaf"
@@ -28,7 +12,6 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
-
 
 ![Thymeleaf](https://github.com/techmely/hoc-lap-trinh/assets/29374426/b11aaeb5-f5ac-46a8-89e9-00a9d499dad6)
 

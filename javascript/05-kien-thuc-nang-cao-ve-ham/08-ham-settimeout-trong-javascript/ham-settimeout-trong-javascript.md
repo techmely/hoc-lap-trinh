@@ -1,17 +1,6 @@
 ---
 title: "Hàm setTimeout trong Javascript"
 description: "Hàm setTimeout() dùng để thiết lập một khoảng thời gian nào đó sẽ thực hiện một nhiệm vụ nào đó."
-keywords: [
-"setTimeout trong js",
-"Hàm setTimeout trong Javascript",
-"Hàm setTimeout trong Javascript là gì",
-"Hàm setTimeout trong Javascript để làm gì",
-"Hàm setTimeout trong Javascript có tác dụng gì",
-"setTimeout trong javascript",
-"setTimeout trong javascript dùng để làm gì",
-"setInterval trong Javascript",
-"cách sử dụng hàm setTimeout trong Javascript"
-]
 chapter:
   name: "Kiến thức nâng cao về hàm"
   slug: "chuong-05-kien-thuc-nang-cao-ve-ham"

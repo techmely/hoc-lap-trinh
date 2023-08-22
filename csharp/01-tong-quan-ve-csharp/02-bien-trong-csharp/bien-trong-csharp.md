@@ -1,7 +1,6 @@
 ---
 title: "Tìm hiểu về biến trong C#"
 description: "Trong bài này mình sẽ giới thiệu định nghĩa của biến trong C#, cách hoạt động của biến và cách thao tác với biến và cuối cùng là quy tắc đặt tên biến"
-keywords: ["biến trong C#", "bien trong C#", ""]
 chapter:
   name: "Tổng quan về C#"
   slug: "chuong-01-tong-quan-ve-csharp"

@@ -1,11 +1,6 @@
 ---
 title: "Bảo mật trong VPC"
 description: "Amazon cung cấp 2 features để bảo mật(network security) và theo dõi(monitoring). NACL giống như 1 firewall để control traffic vào/ra subnet"
-keywords: [
-  "NACL là gì",
-  "NACL trong AWS",
-  "Bảo mật trong VPC"
-]
 author:
   fullname: Phan Văn Đức
   username: ducpv

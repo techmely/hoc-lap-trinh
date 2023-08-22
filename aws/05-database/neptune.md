@@ -1,15 +1,6 @@
 ---
 title: "Giới thiệu Neptune"
 description: "Amazon Neptune là dịch vụ cơ sở dữ liệu đồ thị được quản lý hoàn toàn, có tốc độ cao, đáng tin cậy giúp bạn dễ dàng xây dựng và chạy các ứng dụng."
-keywords:
-  [
-    "AWS Neptune la gi",
-    "AWS Neptune là gì",
-    "Neptune trong AWS",
-    "Graph database là gì",
-    "Graph database la gi",
-    "Graph database trong AWS",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -25,6 +16,7 @@ position: 26
 ---
 
 ## Neptune trong AWS
+
 - Neptune là dịch vụ Graph database trong AWS
 - Được sử dụng trong bài toán dữ liệu có mối quan hệ phức tạp như Social Networking
 - High available cross 3 AZ, có thể có 15 read replicas

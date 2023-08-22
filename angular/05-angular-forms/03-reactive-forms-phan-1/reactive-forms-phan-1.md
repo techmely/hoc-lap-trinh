@@ -1,7 +1,6 @@
 ---
 title: "Reactive Forms Trong Angular Phần 1"
 description: "Ngoài cách tạo form như đã học, Angular còn cung cấp cho chúng ta một dạng form khác khá mạnh mẽ đó là Reactive Forms hay Model-driven Forms. Vậy dạng form này có gì khác biệt so với Template-driven Forms đã học, nó có thể tạo các form phức tạp được hay không? Trong những ngày tới đây chúng ta sẽ cùng tìm hiểu để trả lời câu hỏi đó."
-keywords: []
 chapter:
   name: "Angular Forms"
   slug: "chuong-05-angular-forms"

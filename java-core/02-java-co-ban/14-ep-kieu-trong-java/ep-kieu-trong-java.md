@@ -1,19 +1,6 @@
 ---
 title: "Ép kiểu trong Java"
 description: "Ép kiểu trong java là việc gán giá trị của một biến có kiểu dữ liệu này tới biến khác có kiểu dữ liệu khác"
-keywords:
-  [
-    "cách ép kiểu trong java",
-    "ép kiểu char sang int trong java",
-    "ép kiểu class trong java",
-    "ép kiểu dữ liệu trong java",
-    "ép kiểu int sang float trong java",
-    "ép kiểu int sang string trong java",
-    "ép kiểu int trong java",
-    "ép kiểu java",
-    "ép kiểu object trong java",
-    "ép kiểu string trong java",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

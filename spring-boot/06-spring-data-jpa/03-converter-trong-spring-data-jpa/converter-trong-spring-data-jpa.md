@@ -1,19 +1,6 @@
 ---
 title: "Converter trong Spring"
 description: "Trong template thymeleaf, để lấy các thông tin trong Model. bạn sẽ sử dụng Thymeleaf Standard Expression"
-keywords:
-  [
-    "khóa học Spring cơ bản",
-    "Converter trong Spring",
-    "Convert Spring là gì",
-    "Spring Data JPA là gì",
-    "Hướng dẫn converter trong Spring",
-    "sử dụng converter trong Spring",
-    "cách khởi tạo converter trong Spring",
-    "chuyển đổi kiểu dữ liệu với converter",
-    "hướng dẫn Spring cơ bản và nâng cao",
-    "Spring Data JPA cơ bản",
-  ]
 chapter:
   name: "Spring data JPA"
   slug: "chuong-06-spring-data-jpa"

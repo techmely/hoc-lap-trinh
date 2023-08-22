@@ -1,14 +1,6 @@
 ---
 title: "Singleton pattern trong JavaScript"
 description: "Singleton hữu dụng khi sử dụng để quản lý các nguồn tài nguyên bị giới hạn hoặc theo dõi toàn bộ trạng thái của hệ thống."
-keywords: [
-"Singleton pattern trong JavaScript",
-"Singleton pattern là gì trong JavaScript",
-"Triển khai singleton pattern trên Javacript",
-"Tìm hiểu design pattern và Singleton trong JavaScript",
-"Singleton class JavaScript",
-"singleton pattern trong javascript là gì"
-]
 chapter:
   name: "Design pattern"
   slug: "chuong-17-design-pattern"

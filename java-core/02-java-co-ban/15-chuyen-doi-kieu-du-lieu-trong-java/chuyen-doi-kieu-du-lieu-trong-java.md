@@ -1,21 +1,6 @@
 ---
 title: "Chuyển đổi kiểu dữ liệu trong Java"
 description: "Ngoài việc ép kiểu trong java thì chuyển đối kiểu dữ liệu từ kiểu số ngày sang kiểu số khác như từ int sang string, từ string sang int, từ string sang double, từ double sang string, từ string sang date, từ date sang string cũng được java hỗ trợ "
-keywords:
-  [
-    "chuyển đổi kiểu dữ liệu trong java",
-    "kiểu dữ liệu trong java",
-    "chuyển string sang int java",
-    "kiểu boolean trong java",
-    "kiểu double trong java",
-    "cac kieu du lieu trong java",
-    "kieu du lieu java",
-    "kiểu int trong java",
-    "chuyển kiểu string sang int trong java",
-    "chuyển tự char sang int trong java",
-    "chuyển từ string sang double trong java",
-    "convert trong java",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

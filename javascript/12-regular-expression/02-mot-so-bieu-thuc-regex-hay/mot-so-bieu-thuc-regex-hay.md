@@ -1,21 +1,6 @@
 ---
 title: "Một số biểu thức regex hay"
 description: "Một số biểu thức regex hay trong javascript. Cùng tìm hiểu ngay."
-keywords: [
-"Một số biểu thức regex hay trong javascript",
-"regex loai bo ky tu dac biet trong javascript",
-"chuỗi các kí tự abc trong javascript",
-"regex chi nhap so trong javascript",
-"bieu thuc chinh quy javascript trong javascript",
-"Kí tự đặc biệt trong regex trong javascript",
-"Ví dụ regex trong javascript",
-"Regex số nguyên dương trong javascript",
-"mot so bieu thuc regex hay trong javascript",
-"mot so bieu thuc regex hay nhat trong javascript",
-"Kiểm tra string là số thập phân trong javascript",
-"các regex thường gặp trong javascript",
-"regex thuong gap trong javascript",
-]
 chapter:
   name: "Regular expression"
   slug: "chuong-12-regular-expression"

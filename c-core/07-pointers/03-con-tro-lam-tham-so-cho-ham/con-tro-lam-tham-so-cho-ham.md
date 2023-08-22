@@ -1,8 +1,6 @@
 ---
 title: "Con trỏ làm tham số cho hàm"
 description: "Con trỏ làm tham số cho hàm"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Con trỏ"
   slug: "chuong-07-pointer"

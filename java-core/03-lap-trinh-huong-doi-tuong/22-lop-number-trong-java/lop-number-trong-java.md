@@ -1,17 +1,6 @@
 ---
 title: "Lớp Number trong Java"
 description: "Lớp Number là một lớp bao trong java. Cung cấp nhiều method giúp thao tác nhanh với số, ngoài ra một object Number chỉ chứa duy nhất một giá trị number."
-keywords:
-  [
-    "lớp number trong java bị lỗi",
-    "lớp number trong java cơ bản",
-    "lớp number trong java developer",
-    "lớp number trong java example",
-    "lớp number trong java fpt",
-    "lớp number trong java free",
-    "lớp number trong java full crack",
-    "lớp number trong java java",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

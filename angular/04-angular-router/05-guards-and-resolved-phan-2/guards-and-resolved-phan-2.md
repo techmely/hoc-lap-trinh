@@ -1,7 +1,6 @@
 ---
 title: "Guards and Resolvers Phần 2"
 description: "Trong ngày hôm nay chúng ta sẽ tiếp tục với các guard như CanDeactivate và CanLoad."
-keywords: []
 chapter:
   name: "Angular Router"
   slug: "chuong-04-angular-router"

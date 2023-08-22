@@ -1,13 +1,6 @@
 ---
 title: "Dev Tools là gì? Code javascript tại sao cần console.log"
 description: "Dev Tools là gì? Code javascript tại sao cần console.log"
-keywords: [
-"dev tool la gi",
-"Dev Tool là gì",
-"Làm sao để tắt Developer Tool",
-"Dev Tools",
-"dev tools là gì dùng để làm gì"
-]
 chapter:
   name: "Giới thiệu Javascript"
   slug: "chuong-01-gioi-thieu-javascript"

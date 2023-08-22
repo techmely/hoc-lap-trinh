@@ -1,7 +1,6 @@
 ---
 title: "Deployment ứng dụng Spring trên server"
 description: "Deployment ứng dụng Spring trên server"
-keywords: []
 chapter:
   name: "Spring data JPA"
   slug: "chuong-06-spring-data-jpa"

@@ -1,8 +1,6 @@
 ---
 title: "Switch case trong C"
 description: "Switch case trong C"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Câu điều kiện"
   slug: "chuong-03-conditions"

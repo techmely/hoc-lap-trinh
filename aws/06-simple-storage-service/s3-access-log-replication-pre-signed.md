@@ -1,24 +1,6 @@
 ---
 title: "Giới thiệu S3 Access Logs, Replication và Pre-signed"
 description: "S3 Access Logs giúp bạn có thể lưu lại thông tin request đến S3 buckets. Dữ liệu này có thể dùng để phân tích bằng những dịch vụ phân tích như Amazon Athena...S3 Replication là tính năng sao chép các object giữa các vùng lưu trữ."
-keywords:
-  [
-    "S3 Access Logs la gi",
-    "S3 Access Logs là gì",
-    "S3 Access Logs trong aws",
-    "S3 Replication la gi",
-    "S3 Replication là gì",
-    "S3 Replication trong aws",
-    "S3 Pre-signed la gi",
-    "S3 Pre-signed là gì",
-    "S3 Pre-signed trong aws",
-    "S3 Cross Region Replication la gi",
-    "S3 Cross Region Replication là gì",
-    "S3 Cross Region Replication trong aws",
-    "S3 Same Region Replication la gi",
-    "S3 Same Region Replication là gì",
-    "S3 Same Region Replication trong aws",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

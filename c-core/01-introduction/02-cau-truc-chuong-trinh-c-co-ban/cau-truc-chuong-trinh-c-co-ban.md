@@ -1,8 +1,6 @@
 ---
 title: "Cấu trúc chương trình C cơ bản"
 description: "Cấu trúc chương trình C cơ bản"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Giới thiệu"
   slug: "chuong-01-introduction"

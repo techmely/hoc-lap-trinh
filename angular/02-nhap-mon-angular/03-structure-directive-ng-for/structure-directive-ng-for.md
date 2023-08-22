@@ -1,14 +1,6 @@
 ---
 title: "Cấu trúc NgFor trong angular"
 description: "Chủ đề 'Cấu trúc NgFor trong Angular' là một trong những chủ đề được quan tâm trong cộng đồng lập trình Angular. Trong bài viết này, chúng tôi sẽ cung cấp cho bạn một hướng dẫn chi tiết về cách sử dụng Cấu trúc NgFor để lặp lại dữ liệu trong Angular. Bài viết bao gồm các ví dụ minh họa cụ thể, giải thích chi tiết về cú pháp và các tính năng của Cấu trúc NgFor. Nếu bạn mới bắt đầu với Angular hoặc muốn củng cố kiến thức của mình về lặp lại dữ liệu trong Angular, bài viết này sẽ là một tài liệu hữu ích và cung cấp cho bạn những kiến thức cần thiết để tối ưu hóa ứng dụng của mình. Hãy đọc bài viết này để biết thêm thông tin chi tiết về Cấu trúc NgFor trong Angular"
-keywords:
-  [
-    "Cấu trúc NgFor trong Angular",
-    "Cấu trúc NgFor trong Angular là gi",
-    "Angular for loop",
-    "Angular NgFor directive",
-    "cau truc ngfor trong angular la gi",
-  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"

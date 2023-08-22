@@ -1,18 +1,6 @@
 ---
 title: "Các phương thức với prototype trong JavaScript"
 description: "Tất cả các object trong javascript đều có một prototype, và các object này kế thừa các thuộc tính (properties) cũng như phương thức (methods) từ prototype của mình."
-keywords: [
-"Prototype trong JavaScript",
-"Prototype trong JavaScript là gì",
-"Prototype trong JavaScript dùng để làm gì",
-"Cách sử dụng Prototype trong JavaScript",
-"khi nào cần Prototype trong JavaScript",
-"vi du ve prototype trong javascript",
-"Sự kế thừa trong javascript",
-"kế thừa và prototype trong javascript",
-"Các phương thức với prototype trong JavaScript là gì",
-"Cách hoạt động của các phương thức prototype"
-]
 chapter:
   name: "Prototype và thừa kế prototype"
   slug: "chuong-07-prototype-va-thua-ke-prototype"

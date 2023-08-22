@@ -1,19 +1,6 @@
 ---
 title: "Toán tử tăng giảm trong c++"
 description: "Chào mừng đến với loạt bài hướng dẫn sử dụng ngôn ngữ lập trình C++! Loạt bài hướng dẫn này được thiết kế cho những người chưa hoặc biết một ít lập trình."
-keywords:
-  [
-    "gioi thieu C++",
-    "giới thiệu C++",
-    "khoá học C++",
-    "giới thiệu C++",
-    "giới thiệu C++ cơ bản",
-    "C++ la gi",
-    "tong quan ve C++",
-    "gioi thieu ve ngon ngu lap trinh C++",
-    "tom tat C++",
-    "code C++ la gi",
-  ]
 chapter:
   name: "Làm quen với ngôn ngữ C++"
   slug: "chuong-01-ngon-ngu-cpp-co-ban"

@@ -1,19 +1,6 @@
 ---
 title: "Spring data repository"
 description: "Spring Data là một module của Spring Framework. Mục đích của Spring Data JPA là giảm thiểu việc thực hiện quá nhiều bước để có thể implement được JPA."
-keywords:
-  [
-    "Spring data repository",
-    "spring data jpa repository",
-    "vi du spring data jpa repository",
-    "spring data repository la gi",
-    "spring data repository co tac dung gi",
-    "cau truy xuat spring data repository",
-    "Repository Spring Boot là gì",
-    "Spring Data JPA là gì",
-    "repository trong spring boots",
-    "repository trong spring boots co tac dung gi",
-  ]
 chapter:
   name: "Spring data JPA"
   slug: "chuong-06-spring-data-jpa"

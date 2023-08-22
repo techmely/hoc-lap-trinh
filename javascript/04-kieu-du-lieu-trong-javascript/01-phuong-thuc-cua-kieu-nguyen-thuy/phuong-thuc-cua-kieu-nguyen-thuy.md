@@ -1,17 +1,6 @@
 ---
 title: "Các phương thức của kiểu dữ liệu nguyên thủy trong Javascript"
 description: "JavaScript cho phép bạn sử dụng kiểu nguyên thủy giống như object. Nghĩa là bạn có thể gọi các phương thức của kiểu nguyên thủy giống như gọi với object."
-keywords: [
-  "Các phương thức của kiểu dữ liệu nguyên thủy trong Javascript",
-  "cac kieu du lieu trong javascript",
-  "kieu du lieu nguyen thuy trong javascript",
-  "lay kieu du lieu trong javascript",
-  "cau nao khong phai la kieu du lieu nguyen thuy cua javascript",
-  "Các kiểu dữ liệu trong JavaScript",
-  "Ép kiểu dữ liệu trong Javascript",
-  "Lấy kiểu dữ liệu trong JavaScript",
-  "Kiểu dữ liệu nguyên thủy trong Javascript"
-]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
@@ -141,13 +130,13 @@ console.log(typeof num); // number
 
 <content-warning>
 
- Không gọi được phương thức ứng với kiểu `null` và `undefined`.
+Không gọi được phương thức ứng với kiểu `null` và `undefined`.
 
  </content-warning>
 
 <content-example>
 
-  Gọi phương thức của `null` và `undefined` đều bị lỗi như sau:
+Gọi phương thức của `null` và `undefined` đều bị lỗi như sau:
 
 </content-example>
 

@@ -1,21 +1,6 @@
 ---
 title: "Standard Expression trong Thymeleaf"
 description: "Trong template thymeleaf, để lấy các thông tin trong Model. bạn sẽ sử dụng Thymeleaf Standard Expression"
-keywords:
-  [
-    "khóa học Spring cơ bản",
-    "Giới thiệu thymeleaf",
-    "Thymeleaf là gì",
-    "hướng dẫn thymeleaf",
-    "thymeleaf cơ bản",
-    "expression trong thymeleaf",
-    "standard expression trong thymeleaf là gì",
-    "sử dụng standard expression trong thymeleaf",
-    "variable expression trong thymeleaf",
-    "message expression trong thymeleaf",
-    "url expression trong thymeleaf",
-    "các loại standard expression trong thymeleaf",
-  ]
 chapter:
   name: "Thymeleaf"
   slug: "chuong-05-thymeleaf"

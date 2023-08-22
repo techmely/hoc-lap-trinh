@@ -1,19 +1,6 @@
 ---
 title: "Giới thiệu Angular"
 description: "JAngular là một javascript framework do google phát triển để xây dựng các Single Page Application (SPA) bằng JavaScript , HTML và TypeScript"
-keywords:
-  [
-    "gioi thieu angular",
-    "giới thiệu angular",
-    "khoá học angular",
-    "giới thiệu angular",
-    "giới thiệu angular cơ bản",
-    "angular la gi",
-    "tong quan ve angular",
-    "gioi thieu ve ngon ngu lap trinh angular",
-    "tom tat angular",
-    "code angular la gi",
-  ]
 chapter:
   name: "Làm quen với Angular"
   slug: "chuong-01-lam-quen-voi-angular"

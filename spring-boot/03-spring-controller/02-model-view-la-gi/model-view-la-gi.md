@@ -1,17 +1,6 @@
 ---
 title: "Model and View là gì"
 description: "Là sự kết hợp của 2 khía cạnh truyền dữ liệu và view."
-keywords:
-  [
-    "Model and View",
-    "post la gi",
-    "get la gi",
-    "get va post trong spring boot",
-    "get data la gi",
-    "put va post khac nhau nhu the nao",
-    "du ieu truyen di bang phuong thuc get",
-    "du ieu truyen di bang phuong thuc post",
-  ]
 chapter:
   name: "Spring controller"
   slug: "chuong-03-spring-controller"

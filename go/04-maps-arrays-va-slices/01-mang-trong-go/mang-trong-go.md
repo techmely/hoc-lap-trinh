@@ -1,19 +1,6 @@
 ---
 title: "Mảng trong Go"
 description: "Bài viết tóm tắt về khái niệm mảng động trong Go, một ngôn ngữ lập trình. Trong Go, mảng được khai báo với kích thước cố định từ đầu và không thể thay đổi. Bài viết giới thiệu cách khai báo, truy cập và khởi tạo mảng. Ngoài ra, bài viết cũng đề cập đến sự hạn chế của mảng và giới thiệu đến khái niệm slices - một cách linh hoạt hơn để lưu trữ dữ liệu."
-keywords:
-  [
-    "mảng động Go",
-    "khai báo mảng Go",
-    "truy cập mảng Go",
-    "khởi tạo mảng Go",
-    "slices Go",
-    "lập trình Go",
-    "ngôn ngữ Go",
-    "học Go",
-    "mảng và slices",
-    "lưu trữ dữ liệu trong Go",
-  ]
 chapter:
   name: "Maps, Arrays và Slices"
   slug: "chuong-04-maps-arrays-va-slices"

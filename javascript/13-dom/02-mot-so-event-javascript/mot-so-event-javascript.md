@@ -1,19 +1,6 @@
 ---
 title: "Một số event trong Javascript"
 description: "Event là sự tương tác của JavaScript với HMTL được xử lý thông qua các sự kiện xảy ra khi người sử dụng hoặc trình duyệt thao tác một trang."
-keywords: [
-"Một số event trong Javascript",
-"event target javascript",
-"event target trong javascript",
-"event trong javascript",
-"all event javascript",
-"dom event javascript",
-"dom event trong javascript",
-"bat su kien enter trong javascript",
-"mot so event javascript là gì",
-"mot so event javascript trong javascript",
-"DOM Event trong JavaScript"
-]
 chapter:
   name: "DOM"
   slug: "chuong-13-dom"

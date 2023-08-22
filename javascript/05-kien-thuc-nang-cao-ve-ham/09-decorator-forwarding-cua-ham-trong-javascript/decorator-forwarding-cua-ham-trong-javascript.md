@@ -1,18 +1,6 @@
 ---
 title: "Decorator, forwarding của hàm Javascript"
 description: "JavaScript giúp bạn xử lý hàm rất linh động. Bạn có thể truyền hàm vào hàm khác qua tham số hoặc sử dụng hàm như object. Và sau đây, mình sẽ giới thiệu về kỹ thuật decorator và forwarding hàm trong JavaScript."
-keywords: [
-"decorator forwarding cua ham javascript là gì",
-"decorator forwarding cua ham javascript của hàm",
-"forwarding của hàm Javascript",
-"forwarding của hàm Javascript là gì",
-"forwarding của hàm Javascript để làm gì",
-"Decorator của hàm Javascript",
-"Decorator của hàm Javascript là gì",
-"Decorator của hàm Javascript để làm gì",
-"Cách sử dụng Decorator của hàm Javascript",
-"Cách sử dụng forwarding của hàm Javascript"
-]
 chapter:
   name: "Kiến thức nâng cao về hàm"
   slug: "chuong-05-kien-thuc-nang-cao-ve-ham"

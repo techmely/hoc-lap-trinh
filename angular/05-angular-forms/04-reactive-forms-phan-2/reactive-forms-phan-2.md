@@ -1,7 +1,6 @@
 ---
 title: "Reactive Forms Trong Angular Phần 2"
 description: "Trong bài trước, chúng ta đã tìm hiểu về Reactive Forms trong Angular. Trong bài này chúng ta sẽ nói thêm về validate input của Reactive Forms."
-keywords: []
 chapter:
   name: "Angular Forms"
   slug: "chuong-05-angular-forms"

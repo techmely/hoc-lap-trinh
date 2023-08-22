@@ -1,7 +1,6 @@
 ---
 title: "DisabledControlDirective to disable Reactive Form control"
 description: ""
-keywords: []
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"

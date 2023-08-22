@@ -1,7 +1,6 @@
 ---
 title: "Async Validator trong Angular Form"
 description: "Trong bài trước, chúng ta đã tìm hiểu về validate reactive forms trong Angular, cũng như viết một custom validator đơn giản để check xem input có dấu cách hay ko. Trong bài này sẽ nói thêm về Async Validator trong Angular."
-keywords: []
 chapter:
   name: "Angular Forms"
   slug: "chuong-05-angular-forms"

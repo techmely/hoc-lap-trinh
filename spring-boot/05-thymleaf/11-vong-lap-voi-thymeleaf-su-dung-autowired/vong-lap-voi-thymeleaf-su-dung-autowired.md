@@ -1,7 +1,6 @@
 ---
 title: "Vòng lặp với thymeleaf sử dụng Autowired"
 description: "Vòng lặp với thymeleaf sử dụng Autowired"
-keywords: []
 chapter:
   name: "Thymeleaf"
   slug: "chuong-05-thymeleaf"

@@ -1,19 +1,6 @@
 ---
 title: "Con trỏ và giá trị trong Go"
 description: "Bài viết này tóm tắt về sử dụng con trỏ và giá trị trong Go. Nó giải thích các tình huống khi nào nên sử dụng giá trị và khi nào thì sử dụng con trỏ. Nếu không chắc chắn, sử dụng con trỏ để thay đổi dữ liệu. Bài viết cũng đề cập đến việc truyền giá trị cho hàm và chi phí sao chép cấu trúc. Cuối cùng, nó giới thiệu cấu trúc, tạo receiver cho hàm và kiểu dữ liệu con trỏ trong Go."
-keywords:
-  [
-    "con trỏ",
-    "giá trị",
-    "Go",
-    "sử dụng con trỏ",
-    "sử dụng giá trị",
-    "hàm trong Go",
-    "cấu trúc Go",
-    "receiver",
-    "kiểu dữ liệu con trỏ",
-    "truyền giá trị",
-  ]
 chapter:
   name: "Cấu trúc trong Go"
   slug: "chuong-03-cau-truc-trong-go"

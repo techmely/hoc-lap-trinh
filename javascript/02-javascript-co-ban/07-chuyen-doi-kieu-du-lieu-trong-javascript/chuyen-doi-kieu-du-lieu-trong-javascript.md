@@ -1,19 +1,6 @@
 ---
 title: "Chuyển đổi kiểu dữ liệu trong Javascript"
 description: "Chuyển đổi kiểu dữ liệu trong Javascript"
-keywords: 
-  [
-    "khoá học javascript",
-    "Chuyển đổi kiểu dữ liệu trong Javascript",
-    "chuyen doi kieu du lieu trong javascript",
-    "chuyen tu string sang int trong javascript",
-    "cac kieu du lieu trong javascript",
-    "javascript chuyen so thanh chu",
-    "kiem tra kieu du lieu nhap vao trong javascript",
-    "cach doi kieu du lieu javascript",
-    "kieu number trong javascript",
-    "Đổi kiểu dữ liệu trong Javascript",
-  ]
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"

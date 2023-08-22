@@ -1,20 +1,6 @@
 ---
 title: "Giới thiệu Redshift"
 description: "Amazon Redshift là dịch vụ lưu trữ dữ liệu quy mô hàng petabyte nhanh và mạnh mẽ."
-keywords:
-  [
-    "Redshift la gi",
-    "Redshift là gì",
-    "Redshift Redshift Spectrum la gi",
-    "Redshift Redshift Spectrum là gì",
-    "Redshift trong aws",
-    "Redshift architecture",
-    "Cluster trong Redshift",
-    "Node trong Redshift",
-    "Leader node trong Redshift",
-    "Slice node trong Redshift",
-    "Redshift - Snapshot & DR (Disaster recovery)",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

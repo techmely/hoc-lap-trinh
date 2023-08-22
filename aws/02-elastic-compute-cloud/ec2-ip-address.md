@@ -1,8 +1,6 @@
 ---
 title: "Địa chỉ IP trong EC2"
 description: "Mỗi EC2 cần được cung cấp địa chỉ IP để được định danh trên AWS và trên môi trường internet. Chúng ta sẽ làm quen với 3 loại IP (public/private/elastic)"
-keywords:
-  ["Private IP trong EC2", "Public IP trong EC2", "Elastic IP trong EC2"]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -16,6 +14,7 @@ chapter:
 image: https://user-images.githubusercontent.com/29729545/162227832-5b45cf1f-be45-4461-985c-3bdae5478519.png
 position: 5
 ---
+
 ![Địa chỉ IP trong EC2](https://user-images.githubusercontent.com/29729545/162227832-5b45cf1f-be45-4461-985c-3bdae5478519.png)
 
 Mỗi EC2 cần được cung cấp địa chỉ IP để được định danh trên AWS và trên môi trường internet. Chúng ta sẽ làm quen với 3 loại IP (public/private/elastic), mỗi loại IP có tác dụng khác nhau trên AWS cũng như trên internet.

@@ -1,7 +1,6 @@
 ---
 title: "Template-driven Forms Trong Angular Phần 2"
 description: "Vậy trong trường hợp người dùng nhập các thông tin đó không chính xác thì sao? Chúng ta có cần kiểm tra tính đúng đắn của dữ liệu được nhập hay không? Câu trả lời cho vấn đề trên chính là việc validate data. Ví dụ, người nhân viên ngân hàng khi nhận được form mở tài khoản của một người dùng, người tiếp viên đó sẽ phải kiểm tra những thông tin như tên, ngày tháng năm sinh có chính xác như thông tin được in trên hộ chiếu (hoặc các giấy tờ tương tự) hay không."
-keywords: []
 chapter:
   name: "Angular Forms"
   slug: "chuong-05-angular-forms"

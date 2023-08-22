@@ -1,14 +1,6 @@
 ---
 title: "ES6 template string trong Javascript"
-description: "ES6 Template String tạm gọi là một cú pháp, cho phép bạn viết biểu thức ngay bên trong string."
-keywords: ["template string trong javascript",
-"ES6 template string trong Javascript",
-"string template javascript",
-"ES6 trong javascript",
-"template javascript",
-"template string trong es6 javascript",
-"template literals trong es6 javascript"
-]
+description: "ES6 Template String tạm gọi là một cú pháp, cho phép bạn viết biểu thức ngay bên trong string."F
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
@@ -22,7 +14,6 @@ position: 4
 Có thể bạn thừa biết, phiên bản ES6 của JavaScript đã giới thiệu rất nhiều những [tính năng hay hấp dẫn](https://webapplog.com/es6/) của ngôn ngữ lập trình này. Một trong số đó là **Template literals** hay **Template String**. Nếu vậy thì sử dụng ES6 Template String có gì hay hơn so với string thông thường? Sau đây, mình và bạn sẽ cùng nhau tìm hiểu.
 
 ![ES6 template string trong Javascript](https://user-images.githubusercontent.com/29374426/168242173-f4c90841-cb1f-4f3f-b978-286dbc7fbd1e.png)
-
 
 ## ES6 Template String là gì?
 

@@ -1,19 +1,6 @@
 ---
 title: "Sắp xếp mảng trong Javascript"
 description: "Bạn có thể tự do sắp xếp phần tử trong mảng JavaScript theo thứ tự tăng dần, giảm dần hoặc là theo một điều kiện tuỳ ý. Hãy tìm hiểu cách sắp xếp phần tử trong mảng JavaScript bằng phương thức sort() thông qua bài học này nhé."
-keywords: [
-"Sắp xếp mảng trong Javascript",
-"sap xep mang tang dan trong javascript",
-"sap xep mang giam dan trong javascript",
-"thuat toan sap xep trong javascript",
-"sap xep mang object trong javascript",
-"Sắp xếp mảng đối tượng trong JavaScript",
-"Sort array object JavaScript",
-"cach su dung ham sap xep trong javascript",
-"sap xep mang trong javascript là gì",
-"sap xep mang trong javascript nhu the nao",
-"sap xep mang trong javascript nhanh"
-]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
@@ -27,7 +14,6 @@ position: 8
 Bài viết sau đây tập trung tìm hiểu về **phương thức sắp xếp mảng trong JavaScript**. Và cách triển khai một số **thuật toán sắp xếp mảng cơ bản**.
 
 ![Sắp xếp mảng trong Javascript](https://user-images.githubusercontent.com/29374426/168242982-85255f57-649f-4ce2-9d8f-b18e7000d66d.png)
-
 
 Nói về sắp xếp mảng thì đây là một vấn đề vô cùng phổ biến trong các chương trình. Nhiều ứng dụng (từ điển, danh bạ, quản lý tài khoản,...) thường có chức năng sắp xếp theo thứ tự từ điển (a-z). Việc sắp xếp giúp người quản lý và người dùng dễ dàng tìm kiếm nội dung hơn.
 

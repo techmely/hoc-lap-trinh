@@ -1,19 +1,6 @@
 ---
 title: "Đối tượng Date trong Javascript"
 description: "Date là một đối tượng được tính hợp sẵn (built-in object) chuyên dùng để xử lý ngày giờ, thời gian trong JavaScript"
-keywords: [
-"Đối tượng Date trong Javascript",
-"format date javascript",
-"cong tru ngay thang trong javascript",
-"lay thu trong javascript",
-"dinh dang dd mm yyyy trong javascript",
-"nhap ngay thang nam trong javascript",
-"date trong javascript",
-"Cộng trừ ngày tháng trong JavaScript",
-"Lấy thứ trong JavaScript",
-"Lấy ngày trong tuần trong JavaScript",
-"Nhập ngày tháng năm trong JavaScript"
-]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
@@ -27,7 +14,6 @@ position: 18
 Date trong JavaScript là một [đối tượng sẵn có](/bai-viet/javascript/object-la-gi-object-trong-javascript) giúp bạn lưu trữ **date (ngày, tháng, năm)**, **time (giờ, phút, giây)** và quản lý date/time.
 
 ![Đối tượng Date trong Javascript](https://user-images.githubusercontent.com/29374426/168244363-d816a9cf-84ff-4f0e-ad13-a96200f22b93.png)
-
 
 Ví dụ, bạn có thể sử dụng `Date` để lưu thời gian tạo và chỉnh sửa dữ liệu, đo lường thời gian hay hiển thị thời gian hiện tại.
 

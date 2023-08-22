@@ -1,17 +1,6 @@
 ---
 title: "Tagged template ES6 trong Javascript"
 description: "Tagged template ES6 cho phép bạn xử lý template string với một hàm."
-keywords: ["tagged template literals trong js",
-"Tagged template ES6 trong Javascript là gì",
-"Tagged template ES6 trong Javascript dùng để làm gì",
-"Tagged template ES6 trong Javascript có tác dụng",
-"tagged template ES6 Javascript",
-"Cách sử dụng tagged template ES6 trong Javascript",
-"Tagged template javascript",
-"Tagged template là gì trong javascript",
-"Tagged template dùng để làm gì trong javascript",
-"cách sử dụng Tagged template trong javascript"
-]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"

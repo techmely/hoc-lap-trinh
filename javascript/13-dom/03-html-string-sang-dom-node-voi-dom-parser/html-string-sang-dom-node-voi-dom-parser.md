@@ -1,18 +1,6 @@
 ---
 title: "HTML String sang DOM Node với DOMParser"
 description: "Bài này mình sẽ hướng dẫn mọi người cách chuyển từ HTML String sang DOM Node với DOMParser"
-keywords: [
-"HTML String sang DOM Node với DOMParser",
-"html dom parser",
-"nodejs domparser",
-"domparser script tag",
-"javascript parse html from url",
-"domparser react",
-"chrome html parser",
-"domparser online",
-"javascript html parser",
-"html string sang dom node voi domparser trong javascript"
-]
 chapter:
   name: "DOM"
   slug: "chuong-13-dom"

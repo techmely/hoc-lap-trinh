@@ -1,14 +1,6 @@
 ---
 title: "Lệnh và khối lệnh trong Java"
 description: "Lệnh hay câu lệnh là tập hợp các từ khóa, tập ký tự trong java và được kết thúc bởi dấu chấm phẩy"
-keywords:
-  [
-    "câu lệnh java cơ bản",
-    "câu lệnh trong java",
-    "câu lệnh và khối lệnh",
-    "lệnh và câu lệnh java bị lỗi",
-    "lệnh và câu lệnh java fpt",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

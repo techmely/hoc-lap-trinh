@@ -1,18 +1,6 @@
 ---
 title: "Giới thiệu CloudWatch Events"
 description: "CloudWatch Events cung cấp các event để mô tả những thay đổi resource trên AWS. Bằng cách sử dụng những rules, bạn có thể định nghĩa những target mà khi một event được gọi tới. EventBridge là giải pháp thay thế cho CloudWatch Events"
-keywords:
-  [
-    "CloudWatch la gi",
-    "CloudWatch là gì",
-    "CloudWatch trong aws",
-    "AWS CloudWatch Events la gi",
-    "AWS CloudWatch Events là gì",
-    "AWS EventBridge la gi",
-    "AWS EventBridge là gì",
-    "EventBridge Schema Registry la gi",
-    "EventBridge Schema Registry là gì"
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

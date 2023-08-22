@@ -1,20 +1,6 @@
 ---
 title: "Spring Form là gì?"
 description: "Spring MVC cung cấp thư viện thẻ giúp việc buộc dữ liệu từ bean vào các điều khiển trở nên dễ dàng hơn. Ưu điểm của Spring form.."
-keywords:
-  [
-    "spring form la gi",
-    "cach su dung spring form mvc taglib",
-    "spring boot form la gi",
-    "spring form date",
-    "spring form date la gi",
-    "cach su dung spring form date",
-    "spring mvc form trong spring boot",
-    "submit form trong spring boot",
-    "spring boot form validation trong spring boot",
-    "spring form checkbox trong spring boot",
-    "ModelAttribute trong Spring Boot",
-  ]
 chapter:
   name: "Form"
   slug: "chuong-04-form"

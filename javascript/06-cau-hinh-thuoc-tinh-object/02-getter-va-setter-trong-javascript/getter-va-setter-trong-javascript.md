@@ -1,18 +1,6 @@
 ---
 title: "Getter và setter trong JavaScript"
 description: "Getters và Setters là các hàm hoặc phương thức được sử dụng để lấy và đặt các giá trị của các biến. Khái niệm getters và setters rất phổ biến trong lập trình."
-keywords: [
-"Getter và setter trong JavaScript",
-"Getter và setter trong JavaScript dùng để làm gì",
-"getter setter javascript",
-"Hàm Set trong JavaScript",
-"Hàm Get trong JavaScript",
-"Getter và setter là gì trong javascript",
-"Getter và setter cách sử dụng",
-"khai báo getter và setter",
-"getter trong javascript",
-"setter trong javascript"
-]
 chapter:
   name: "Cấu hình thuộc tính object"
   slug: "chuong-06-cau-hinh-thuoc-tinh-object"

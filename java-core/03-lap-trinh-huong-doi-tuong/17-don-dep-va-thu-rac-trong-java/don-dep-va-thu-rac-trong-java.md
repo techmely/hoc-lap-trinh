@@ -1,20 +1,6 @@
 ---
 title: "Dọn dẹp và thu rác trong Java"
 description: "Bài này chúng ta sẽ tìm hiểu về dọn dẹp, kết thúc và thu rác, tự học lập trình java, chia sẻ kiến thức về java"
-keywords:
-  [
-    "bước đầu học lập trình java",
-    "các bước học lập trình java",
-    "cách học lập trình java hiệu quả",
-    "có nên học lập trình java",
-    "công cụ học lập trình java",
-    "dọn dẹp trong java fpt",
-    "dọn dẹp và thu rác trong java cơ bản",
-    "dọn dẹp và thu rác trong java dùng để làm gì",
-    "thu rác trong java bị lỗi",
-    "thu rác trong java code",
-    "thu rác trong java fpt",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

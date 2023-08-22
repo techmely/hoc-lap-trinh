@@ -1,7 +1,6 @@
 ---
 title: "Dynamic Component trong Angular"
 description: "Việc load động 1 component khác trong lúc runtime được thực hiện như thế nào? Điều đó dẫn ta đến bài hôm nay, **Dynamic Component** sẽ là câu trả lời phù hợp để làm việc này."
-keywords: []
 chapter:
   name: "Angular Forms"
   slug: "chuong-05-angular-forms"

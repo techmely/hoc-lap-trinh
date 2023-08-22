@@ -1,23 +1,6 @@
 ---
 title: "Package trong Java"
 description: "Package (gói) trong java là một nhóm các class, interface và các package khác. Trong java chúng ta sử dụng package để tổ chức cấu trúc dự án hợp lý"
-keywords:
-  [
-    "class package trong java",
-    "cách import package trong java",
-    "cách tạo package trong java",
-    "cách tổ chức package trong java",
-    "cách đặt tên package trong java",
-    "huong dan tao package trong java",
-    "import package trong java",
-    "khi nào dùng package trong java",
-    "lenh package trong java",
-    "làm việc với package trong java",
-    "lấy dữ liệu từ package trong java",
-    "lớp package trong java",
-    "package trong java",
-    "package trong java example",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

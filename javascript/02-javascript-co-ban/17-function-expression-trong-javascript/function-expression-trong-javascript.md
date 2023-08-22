@@ -1,16 +1,6 @@
 ---
 title: "Function expression trong JavaScript"
 description: "Function expression trong JavaScript"
-keywords: [
-"khoá học javascript",
-"Function expression trong JavaScript",
-"function expression vs function declaration",
-"expression function javascript",
-"Expression JavaScript",
-"Declaration function JavaScript",
-"Function expression trong JavaScript là gì",
-"Cách sử dụng Function expression trong JavaScript"
-]
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"
@@ -24,7 +14,6 @@ position: 17
 Trong bài viết trước, mình đã tìm hiểu về [hàm trong JavaScript](/bai-viet/javascript/ham-trong-javascript/). Cách khai báo hàm đó gọi là "function declaration". Bài viết này mình sẽ tìm hiểu về một khái niệm khác gọi là "function expression" hay dịch ra là "biểu thức hàm".
 
 ![Function expression trong Javascript](https://user-images.githubusercontent.com/29374426/156868290-e6abc925-ed69-4862-901d-beb7c7f29a24.png)
-
 
 ## Function expression trong Javascript là gì?
 
@@ -157,7 +146,7 @@ ask(
   },
   function () {
     console.log("Bạn đã chọn No!");
-  },
+  }
 );
 ```
 

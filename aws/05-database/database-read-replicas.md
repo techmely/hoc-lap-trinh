@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu Read Replicas"
 description: "Read replicas giúp bạn scaling việc read. Read replicas cho phép bạn tạo 1 hoặc nhiều bản copies của DB instance trong chung region hoặc khác region"
-keywords:
-  [
-    "RDS Read replicas la gi",
-    "RDS Read Replicas là gì",
-    "RDS multi AZ la gi",
-    "RDS Multi AZ là gì",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -43,7 +36,7 @@ Read replicas giúp bạn scaling việc read. Read replicas cho phép bạn t�
 
 ### RDS Multi AZ là gì (Disaster Recovery)
 
-![RDS Multi AZ là gì](https://user-images.githubusercontent.com/29729545/166091087-d38b26ae-322b-4743-8cd3-00b53198479e.png) 
+![RDS Multi AZ là gì](https://user-images.githubusercontent.com/29729545/166091087-d38b26ae-322b-4743-8cd3-00b53198479e.png)
 
 RDS Multi AZ cung cấp khả năng sẵn sàng cho DB của bạn trong 1 Region. Dữ liệu sẽ được **SYNC replicated** tới các standby insatnce ở AZ khác
 

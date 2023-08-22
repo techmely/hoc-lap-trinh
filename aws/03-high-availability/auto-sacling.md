@@ -1,14 +1,6 @@
 ---
 title: "Auto Scaling Group trong AWS"
 description: "AWS Auto Scaling Group là tính năng tự động mở rộng để đảm bảo rằng các phiên bản Amazon EC2 đủ để chạy các ứng dụng của bạn. Bạn có thể tạo một nhóm AWS Auto Scaling trong các phiên bản EC2."
-keywords: [
-  "AWS ha là gì",
-  "ASG là gì",
-  "ASG la gi", 
-  "Scheduled actions trong ASG",
-  "Scaling policies trong ASG", 
-  "Tự động Scale trong AWS"
-]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -25,7 +17,7 @@ position: 23
 
 ## Auto Scaling Group (ASG) là gì
 
-AWS Auto Scaling Group là tính năng tự động mở rộng để đảm bảo rằng các phiên bản Amazon EC2 đủ để chạy các ứng dụng của bạn. Bạn có thể tạo một nhóm AWS Auto Scaling trong các phiên bản EC2. 
+AWS Auto Scaling Group là tính năng tự động mở rộng để đảm bảo rằng các phiên bản Amazon EC2 đủ để chạy các ứng dụng của bạn. Bạn có thể tạo một nhóm AWS Auto Scaling trong các phiên bản EC2.
 
 ![AWS Auto Scaling Group](https://user-images.githubusercontent.com/29729545/163433393-63707570-9252-4b50-b24a-d7a29f8ef48f.png)
 

@@ -1,7 +1,6 @@
 ---
 title: "Tạo form đăng ký trong java spring"
 description: "Tạo form đăng ký trong java spring"
-keywords: []
 chapter:
   name: "Form"
   slug: "chuong-04-form"

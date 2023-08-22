@@ -1,8 +1,6 @@
 ---
 title: "Phạm vi sử dụng và vòng đời của biến trong C"
 description: "Phạm vi sử dụng và vòng đời của biến trong C"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Hàm"
   slug: "chuong-05-functions"

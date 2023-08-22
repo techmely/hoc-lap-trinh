@@ -1,15 +1,6 @@
 ---
 title: "Biến và khai báo biến trong Go"
 description: "Go được xây dựng như một ngôn ngữ lập trình hệ thống (ví dụ, hệ điều hành, trình điều khiển thiết bị) và do đó nó hướng tới các lập trình viên quen với C và C++. Theo nhóm phát triển Go, không phải người phát triển hệ thống mà là các nhà phát triển ứng dụng sẽ trở thành những người sử dụng Go chủ yếu. Tại sao? Tôi không thể nói thay cho các nhà phát triển hệ thống, nhưng đối với những người xây dựng trang web, dịch vụ, các ứng dụng máy tính để bàn, các nhu cầu mới xuất hiện cho một lớp của các hệ thống mà đứng ở giữa các ứng dụng hệ thống cấp thấp và ứng dụng cấp cao hơn."
-keywords:
-  [
-    "biến",
-    "khai báo biến",
-    "biến trong Go",
-    "biến trong go",
-    "Khai báo biến trong go",
-    "khai bao bien trong go",
-  ]
 chapter:
   name: "Làm quen với Go"
   slug: "chuong-02-lam-quen-voi-go"

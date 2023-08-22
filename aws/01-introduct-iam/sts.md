@@ -1,15 +1,6 @@
 ---
 title: "Security Token  là gì"
 description: "AWS Security Token Service (STS) là web service cho phép người dùng gửi request tạm thời và cấp quyền một cách giới hạn cho IAM user"
-keywords:
-  [
-    "iam trong aws",
-    "iam trong aws cli",
-    "aws iam là gì",
-    "aws iam la gi",
-    "aws sts là gì",
-    "aws sts la gi",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

@@ -1,17 +1,6 @@
 ---
 title: "Cấu trúc lặp trong Javascript"
 description: "Cấu trúc lặp trong Javascript"
-keywords: [
-  "khoá học javascript",
-"Cấu trúc lặp trong Javascript",
-"vong lap for trong javascript",
-"vong lap foreach trong javascript",
-"vong lap while trong javascript",
-"cu phap vong lap",
-"Vòng lặp trong Java",
-"cach su dung cau truc lap trong javascript",
-"Cách sử dụng cấu trúc lặp"
-]
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"

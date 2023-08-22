@@ -1,7 +1,6 @@
 ---
 title: "Lớp Boolean trong Java"
 description: "Lớp Boolean là một Wrapper class của kiểu dữ liệu nguyên thuỷ boolean. Một object Boolean lưu trữ duy nhất một giá trị boolean"
-keywords: []
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

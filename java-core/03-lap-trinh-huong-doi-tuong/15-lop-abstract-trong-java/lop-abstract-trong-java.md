@@ -1,20 +1,6 @@
 ---
 title: "Lớp abstract trong java"
 description: "Một lớp cơ sở trừu tượng là một lớp chỉ được dùng làm cơ sở cho các lớp khác, ta không thể tạo ra thể hiện của lớp này, bởi vì nó được dùng để định nghĩa một giao diện chung cho các lớp khác"
-keywords:
-  [
-    "abstract class trong java",
-    "abstract class trong java code",
-    "abstract class trong java fpt",
-    "abstract class trong java free",
-    "abstract class trong java là gì",
-    "abstract trong java",
-    "abstract trong java là gì",
-    "lớp abstract trong java",
-    "lớp abstract trong java cơ bản",
-    "lớp abstract trong java fpt",
-    "lớp abstract trong java nghĩa là gì",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

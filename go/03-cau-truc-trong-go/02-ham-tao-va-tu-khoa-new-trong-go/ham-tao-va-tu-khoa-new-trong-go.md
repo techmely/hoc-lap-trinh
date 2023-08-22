@@ -1,19 +1,6 @@
 ---
 title: "Hàm tạo và từ khoá new trong Go"
 description: "Hàm tạo (Constructors) trong Go giới thiệu cách sử dụng hàm tạo trong Go thay vì sử dụng cấu trúc hàm tạo như trong các ngôn ngữ khác. Bài viết đề cập đến việc tạo ra một hàm trả về một biến với cấu trúc đã được định nghĩa trước, tương tự như một factory. Nó cung cấp ví dụ về cách tạo hàm tạo và sử dụng từ khóa new để cấp phát bộ nhớ cho một kiểu dữ liệu"
-keywords:
-  [
-    "Hàm tạo trong Go",
-    "Constructors Go",
-    "Cấu trúc hàm tạo Go",
-    "Factory trong Go",
-    "Từ khóa New trong Go",
-    "Sử dụng từ khóa New Go",
-    "Hàm dựng sẵn New Go",
-    "Cấp phát bộ nhớ trong Go",
-    "Lập trình Go",
-    "Ngôn ngữ lập trình Go",
-  ]
 chapter:
   name: "Cấu trúc trong Go"
   slug: "chuong-03-cau-truc-trong-go"

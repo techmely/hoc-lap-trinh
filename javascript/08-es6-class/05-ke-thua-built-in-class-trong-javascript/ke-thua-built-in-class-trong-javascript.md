@@ -1,18 +1,6 @@
 ---
 title: "Kế thừa built-in class trong Javascript"
 description: "Built-in class là các class được định nghĩa bởi JavaScript. Ví dụ kế thừa class Array."
-keywords: [
-"Kế thừa built-in class trong Javascript",
-"Kế thừa built-in class trong Javascript là gì",
-"Kế thừa built-in class trong Javascript có ý nghĩa như thế nào",
-"ke thua trong javascript",
-"super trong javascript",
-"ghi de trong javascript",
-"Kế thừa trong Javascript",
-"ke thua built in class trong javascript là gì",
-"built in class trong javascript là gì",
-"built in trong js"
-]
 chapter:
   name: "ES6 Class"
   slug: "chuong-08-es6-class"

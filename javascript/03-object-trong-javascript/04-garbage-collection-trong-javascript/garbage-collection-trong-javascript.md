@@ -1,16 +1,6 @@
 ---
 title: "Garbage collection trong Javascript"
 description: "Điều gì sẽ xảy ra nếu một vùng nhớ không còn sử dụng? JavaScript engine sẽ làm gì để phát hiện và giải phóng vùng nhớ đó? Bài viết này sẽ giải thích khái nhiệm về Garbage Collection (theo dõi toàn bộ object và xóa đi các object không thể truy cập)."
-keywords: [
-"đối tượng trong javascript",
-"object trong javascript",
-"garbage collection trong javascript là gì",
-"xóa các object không thể truy cập trong javascript",
-"garbage collection in javascript",
-"garbage collection trong javascript dung de lam gi",
-"thu gom rac garbage collection là gì",
-"garbage collection trong javascript"
-]
 chapter:
   name: "Object trong Javascript"
   slug: "chuong-03-object-trong-javascript"
@@ -56,7 +46,6 @@ let user = {
 ```
 
 ![Ví dụ đơn giản về Garbage collection](https://user-images.githubusercontent.com/29374426/157900250-a849f473-cab8-4e57-b815-b46a1360a8c3.png)
-
 
 Trong hình trên, kí hiệu mũi tên biểu thị tham chiếu. Biến toàn cục `user` có tham chiếu đến object `{ name: "John"}` (sau đây mình sẽ gọi là "John" cho ngắn gọn). Thuộc tính `name` của John có giá trị là kiểu nguyên thủy nên được vẽ bên trong object.
 

@@ -1,13 +1,6 @@
 ---
 title: "Content Projection trong Angular"
 description: "Có những khi trong quá trình phát triển ứng dụng với Angular chúng ta có thể sẽ gặp một số dạng component giống nhau về phần layout chẳng hạn, điểm khác biệt chỉ là một số label, content bên trong nó. Lúc này rất dễ để các bạn có thể tạo một component có nhận vào các Input, và render dựa vào các Input đó."
-keywords:
-  [
-    "Content Projection trong Angular",
-    "Sử dụng multiple ng-content được không?",
-    "ng-content và selector trong angular",
-    "ng-content và ngProjectAs trong angular",
-  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"

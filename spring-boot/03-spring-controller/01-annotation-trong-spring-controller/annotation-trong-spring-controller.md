@@ -1,19 +1,6 @@
 ---
 title: "Srping Controller"
 description: "Controller trong ứng dụng Spring Boot là nơi tiếp nhận request và trả về response cho client. Có thể hiểu controller chính là lớp trung gian giữa server của bạn và bên ngoài."
-keywords:
-  [
-    "học spring framework",
-    "spring framework",
-    "spring cơ bản",
-    "lộ trình spring",
-    "controller trong spring",
-    "controller là gì",
-    "@Request Mapping",
-    "Mapping trong controller spring",
-    "@Controller",
-    "@RestController",
-  ]
 chapter:
   name: "Spring Controller"
   slug: "chuong-03-spring-controller"

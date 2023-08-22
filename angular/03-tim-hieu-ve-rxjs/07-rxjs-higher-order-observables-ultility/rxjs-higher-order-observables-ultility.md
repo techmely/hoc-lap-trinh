@@ -1,13 +1,6 @@
 ---
 title: "RxJS Higher Order Observables và Utility Operators trong RxJS"
 description: "Ngày hôm nay, chúng ta sẽ cùng nhau tìm hiểu 2 (trong 3) loại **Operators** cuối cùng là: **RxJS Higher Order Observables** và **Utility Operators** nhé."
-keywords:
-  [
-    "RxJS Higher Order Observables trong Angular",
-    " Utility Operators trong Angular",
-    "Nguồn gốc của các HOOs",
-    "Tại sao lại cần HOOs?",
-  ]
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"

@@ -1,7 +1,6 @@
 ---
 title: "RxJS Subject và Multicasting trong RxJS"
 description: "Trong ngày đầu tiên tìm hiểu về RxJS chúng ta đã được giới thiệu đến **Observable**, và cũng đã nhắc đến một số kiểu dữ liệu vệ tinh như **Subject**. Vậy **Subject** có chức năng gì trong hệ sinh thái RxJS? Hôm nay chúng ta sẽ cùng tìm hiểu."
-keywords: ["RxJS Subject trong RxJS", "Multicasting trong RxJS"]
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"

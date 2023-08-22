@@ -1,19 +1,6 @@
 ---
 title: "Khai báo hàm trong Go"
 description: "Một hàm có thể trả về một hoặc nhiều giá trị, và bài viết đưa ra ba ví dụ cụ thể: một hàm không có giá trị trả về, một hàm trả về một giá trị và một hàm trả về hai giá trị. Để sử dụng giá trị trả về của một hàm, ta có thể gán nó cho các biến và kiểm tra tính tồn tại của giá trị trả về"
-keywords:
-  [
-    "Khai báo hàm",
-    "Hàm trong Go",
-    "Hàm không trả về",
-    "Hàm trả về giá trị",
-    "Hàm trả về nhiều giá trị",
-    "Sử dụng hàm trong Go",
-    "Gán giá trị trả về",
-    "Giá trị tồn tại",
-    "Blank identifier",
-    "Cú pháp dạng ngắn",
-  ]
 chapter:
   name: "Làm quen với Go"
   slug: "chuong-02-lam-quen-voi-go"

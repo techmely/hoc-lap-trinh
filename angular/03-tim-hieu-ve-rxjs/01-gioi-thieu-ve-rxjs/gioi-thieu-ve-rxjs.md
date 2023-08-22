@@ -1,16 +1,6 @@
 ---
 title: "Giới thiệu Reactive Programming, RxJS và Observable"
 description: "Khi bạn tìm hiểu về Angular, bạn sẽ thấy rằng nó có phụ thuộc vào một library là RxJS. Có khá nhiều concept trong Angular sử dụng đến RxJS như là Forms, HttpClient, hay như là QueryList, EventEmitter, etc. Đây vừa là một điểm mạnh, cũng vừa là điểm yếu của Angular. Vì RxJS xử lý asynchronous rất mạnh, nhưng bù lại bạn sẽ phải học thêm một số các concept khác xoay quanh stream. Thinking in streams."
-keywords:
-  [
-    "Giới thiệu Reactive Programming",
-    "RxJS và Observable",
-    "Observable trong Angular",
-    "Subscription trong Angular",
-    "Operators trong Angular",
-    "Subject trong Angular",
-    "Schedulers trong Angular",
-  ]
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
@@ -38,7 +28,6 @@ Observable tỏa sáng không chỉ bởi vì nó có thể handle nhiều value
 Observable có thể coi là một Array của các value theo thời gian:
 
 ![Values over time](https://github.com/techmely/hoc-lap-trinh/assets/29374426/f306ac60-4cb7-45d9-a72c-afd6410aa8b4)
-
 
 Hiện tại Observable chưa chính thức tồn tại trong JS, nhưng bạn có thể sử dụng RxJS để có thể có những thành phần chính như `Observable`, `Observer`, `Subject`, etc. Và một loạt các `operators` đi kèm để xử lý stream được dễ dàng hơn.
 

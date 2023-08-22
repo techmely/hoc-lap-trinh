@@ -1,12 +1,6 @@
 ---
 title: "RxJS Transformation Operators trong RxJS"
 description: "Trong bài trước chúng ta đã biết về một số Creation Operators, chúng là những operators có thể call như call một function thông thường. Trong bài này, chúng ta sẽ bắt đầu đi vào tìm hiểu **Pipeable Operators**, thay vì được call độc lập thì nó sẽ được call ở trong `pipe()` method của một Observable instance."
-keywords:
-  [
-    "RxJS Transformation Operators",
-    "Pipeable Operators trong angular",
-    "map trong RxJS",
-  ]
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
@@ -170,7 +164,6 @@ source.pipe(map((user) => user.id)).subscribe(observer);
 Cách dùng map này _khá giống_ cách dùng map của array ở trên phải không???
 
 ![RxJS map là gì](https://user-images.githubusercontent.com/29374426/235444583-46a8bb55-532d-4e9d-9080-aef08a3fa0e2.png)
-
 
 ### pluck trong RxJS
 

@@ -1,16 +1,6 @@
 ---
 title: "Kiến trúc và module của Spring"
 description: "Kiến trúc Spring được tổ chức theo kiểu module. Mặc dù khá là nhiều nhưng bạn chỉ cần quan tâm đến những gì bạn cần dùng đến và mình sẽ giới thiệu chi tiết ở phần dưới."
-keywords:
-  [
-    "giới thiệu spring",
-    "spring framework",
-    "spring cơ bản",
-    "lộ trình spring",
-    "kiến trúc của spring",
-    "module của spring",
-    "Dependency Injection và Inversion of Control",
-  ]
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-02-tong-quan-ve-spring"

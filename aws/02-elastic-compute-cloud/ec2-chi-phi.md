@@ -1,23 +1,6 @@
 ---
 title: "Chi phí sử dụng EC2"
 description: "Tùy theo cấu hình EC2 mình chọn, AWS sẽ tính tiền dựa trên những lựa chọn của mình. Khi bạn chạy những ứng dụng lâu bền, AWS cung cấp reserved instance. Bạn có thể trả trước tiền (1 phần, hoặc trả tất), hoặc commit sử dụng lâu dài. Khi đó AWS sẽ discount giá"
-keywords:
-  [
-    "Chi phí EC2",
-    "Chi phi EC2",
-    "Giá EC2",
-    "gia ec2",
-    "On-demand trong AWS là gì",
-    "On-demand trong AWS la gi",
-    "On-demand instance là gì",
-    "On-demand instance la gi",
-    "Spot instances là gì",
-    "Reserved instances là gì",
-    "Dedicated hosts là gì",
-    "Spot instances la gi",
-    "Reserved instances la gi",
-    "Dedicated hosts la gi",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -33,6 +16,7 @@ position: 4
 ---
 
 ## Cách tính tiền dịch vụ EC2
+
 ![Chi phí EC2](https://user-images.githubusercontent.com/29729545/162227316-62f67100-d142-4a64-9c78-8f15b94143ac.png)
 **AWS cung cấp 4 option để trả phí với EC2**
 

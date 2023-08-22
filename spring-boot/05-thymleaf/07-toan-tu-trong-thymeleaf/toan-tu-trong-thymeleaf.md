@@ -1,7 +1,6 @@
 ---
 title: "Toán tử trong thymeleaf"
 description: "Toán tử trong thymeleaf"
-keywords: []
 chapter:
   name: "Thymeleaf"
   slug: "chuong-05-thymeleaf"

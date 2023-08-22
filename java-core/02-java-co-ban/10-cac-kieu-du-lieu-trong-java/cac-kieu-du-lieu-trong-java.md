@@ -1,24 +1,6 @@
 ---
 title: "Các kiểu dữ liệu trong java"
 description: "Java có 2 loại kiểu dữ liệu là kiểu dữ liệu nguyên thủy và kiểu dữ liệu tham chiếu, trong đó có 8 kiểu dữ liệu nguyên thủy (Primitive Data type) đó là: boolean, byte, char, short, int, long, float, double."
-keywords:
-  [
-    "các kiểu dữ liệu trong java",
-    "kiểu dữ liệu java",
-    "kieu du lieu trong java",
-    "kiểu boolean trong java",
-    "kiểu double trong java",
-    "cac kieu du lieu trong java",
-    "kieu du lieu java",
-    "kiểu int trong java",
-    "chuyển kiểu dữ liệu trong java",
-    "kiểu int trong java",
-    "tu hoc java",
-    "tự học java",
-    "học java",
-    "java cơ bản",
-    "học java cơ bản",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

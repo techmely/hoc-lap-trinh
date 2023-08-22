@@ -1,13 +1,6 @@
 ---
 title: "Khám phá Angular App"
 description: "Ở trong AppModule, chúng ta đã thấy được một trong những thành phần quan trọng nhất của các ứng dụng Angular đó là các Component, ở đây là AppComponent, nó được import từ file app.component.ts Với mỗi một ứng dụng Angular, một component sẽ định nghĩa ra một view tương ứng."
-keywords:
-  [
-    "Khám phá Angular App",
-    "angular app là gì",
-    "kham pha angular app",
-    "khoá học angular",
-  ]
 chapter:
   name: "Làm quen với Angular"
   slug: "chuong-01-lam-quen-voi-angular"

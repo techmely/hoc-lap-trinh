@@ -1,8 +1,6 @@
 ---
 title: "Hàm đệ quy trong C"
 description: "Hàm đệ quy trong C"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Hàm"
   slug: "chuong-05-functions"

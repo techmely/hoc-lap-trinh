@@ -1,17 +1,6 @@
 ---
 title: "Destructuring assignment trong Javascript"
 description: "Destructuring Assignment là một cú pháp cho phép tách dữ liệu được lưu trữ bên trong (nested) Objects hoặc Arrays (tổng quát hơn là các iterable values) và gán chúng cho các biến riêng biệt."
-keywords: [
-"Destructuring assignment trong Javascript",
-"destructuring trong es6 javascript",
-"destructuring trong es6 javascript la gi",
-"destructuring trong es6 javascript cach su dung",
-"destructuring assignment trong javascript",
-"spread trong javascript",
-"Destructuring array trong javascipt",
-"Destructuring array javascript là gì",
-"Destructuring array javascript cách sử dụng"
-]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"

@@ -1,16 +1,6 @@
 ---
 title: "Native Prototype trong JavaScript"
 description: " Native prototype là các hàm khởi tạo sẵn có khác cũng sử dụng thuộc tính prototype "
-keywords: [
-"Native Prototype trong JavaScript",
-"Native Prototype trong JavaScript là gì",
-"Native Prototype trong JavaScript dùng để làm gì",
-"Cách sử dụng Native Prototype trong JavaScript",
-"khi nào cần Native Prototype trong JavaScript",
-"vi du ve prototype trong javascript",
-"Sự kế thừa trong javascript",
-"kế thừa và prototype trong javascript"
-]
 chapter:
   name: "Prototype và thừa kế prototype"
   slug: "chuong-07-prototype-va-thua-ke-prototype"

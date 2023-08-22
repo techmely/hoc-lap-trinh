@@ -1,7 +1,6 @@
 ---
 title: "Một số kỹ thuật TypeScript Nâng Cao"
 description: "Hệ thống types của **TypeScript** thực sự rất mạnh mẽ và phức tạp, không thể truyền đạt được hết qua 1 vài bài viết. Các bạn phải thực hành, luyện tập, và nghiên cứu rất nhiều thì mới có thể nắm vững được **TS** nhé."
-keywords: []
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"

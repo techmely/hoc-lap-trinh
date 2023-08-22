@@ -1,17 +1,6 @@
 ---
 title: "Arrow function trong JavaScript"
-description: "Function expression trong JavaScript"
-keywords: [
-"khoá học javascript",
-"Arrow function trong JavaScript",
-"arrow function javascript",
-"hàm mũi tên",
-"arrow function là gì",
-"arrow function trong javascript dùng để làm gì",
-"arrow function và function",
-"cách sử dụng arrow function",
-"arrow function trong js"
-]
+description: "Function expression trong JavaScript"F
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"
@@ -56,7 +45,7 @@ Hàm `sum` nhận vào hai tham số là `a` và `b`. Sau đó, hàm này tính 
 Nếu arrow function có một tham số thì bạn có thể bỏ qua cặp dấu `()`, ví dụ:
 
 ```js
-let square = n => n * n;
+let square = (n) => n * n;
 ```
 
 Trường hợp, arrow function không có tham số nào, thì bạn nên viết cặp dấu `()`:
@@ -94,7 +83,7 @@ function ask(question, handleYes, handleNo) {
 ask(
   "Bạn muốn tiếp tục thực hiện chương trình không?",
   () => console.log("Bạn đã chọn Yes!"),
-  () => console.log("Bạn đã chọn No!"),
+  () => console.log("Bạn đã chọn No!")
 );
 ```
 
@@ -165,7 +154,7 @@ Xem đáp án
 
 ```js
 // Hàm kiểm tra số nguyên tố
-const isPrime = number => {
+const isPrime = (number) => {
   if (isNaN(number)) return false;
 
   if (number < 2) return false;

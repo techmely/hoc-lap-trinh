@@ -2,19 +2,6 @@
 title: "Placement Group trong EC2"
 description: "Placement group xác định cách các instance được đặt trên phần cứng cơ bản. Đây là cách để chúng ta yêu cầu cầu phần cứng được đặt ở đâu. Chúng ta sẽ cùng tìm hiểu các loại placement group.
 "
-keywords:
-  [
-    "Placement group là gì",
-    "Clustered Placement group là gì",
-    "Spread Placement group là gì",
-    "Partition Placement group là gì",
-    "Placement group là gì",
-    "Placement group la gi",
-    "Clustered Placement group la gi",
-    "Spread Placement group la gi",
-    "Partition Placement group la gi",
-    "Placement group la gi",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -54,6 +41,6 @@ Placement group xác định cách các instance được đặt trên phần c�
 
 Đây là kiểu kết hợp giữa Spread và Clusted
 
-**Phân biệt bằng hình vẽ dưới đây:** 
+**Phân biệt bằng hình vẽ dưới đây:**
 
 ![Placement group](https://user-images.githubusercontent.com/29729545/162229203-a79a5752-25cf-41d8-a72d-abfa92d74e02.png)

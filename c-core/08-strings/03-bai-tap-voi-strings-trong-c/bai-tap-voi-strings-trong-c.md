@@ -1,8 +1,6 @@
 ---
 title: "Bài tập thao tác với chuỗi trong C"
 description: "Bài tập thao tác với chuỗi trong C"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Strings"
   slug: "chuong-08-strings"

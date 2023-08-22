@@ -1,19 +1,6 @@
 ---
 title: "Chuyển đổi Object về kiểu dữ liệu nguyên thủy trong Javascript"
 description: "Trong bài viết chuyển đổi kiểu dữ liệu, mình đã giới thiệu về cách chuyển đổi các kiểu dữ liệu nguyên thủy sang number và string.Nhưng nếu toán hạng không phải kiểu dữ liệu nguyên thủy mà là object thì sao? Hay làm sao để chuyển đổi object về kiểu dữ liệu nguyên thủy? Sau đây là những kiến thức cơ bản bạn cần biết."
-keywords: [
-"đối tượng trong javascript",
-"object trong javascript",
-"Chuyển đổi Object về kiểu dữ liệu nguyên thủy trong Javascript",
-"chuyen doi kieu du lieu trong javascript",
-"cac kieu du lieu trong javascript",
-"cac cach ep sang kieu string trong javascript",
-"chuyển đổi kiếu dữ liệu trong javascript",
-"Kiểm tra kiểu dữ liệu trong JavaScript",
-"Các kiểu dữ liệu trong JavaScript",
-"Kiểu dữ liệu nguyên thủy trong javascript",
-"chuyen doi kieu du kieu nguyen thu trong javascript"
-]
 chapter:
   name: "Object trong Javascript"
   slug: "chuong-03-object-trong-javascript"

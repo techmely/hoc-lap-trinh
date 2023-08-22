@@ -2,10 +2,6 @@
 title: "Event trong component"
 description: "Thông thường, trong một trang HTML khi có một sự kiện nào đó phát sinh ở một thẻ HTML (ví dụ sự kiện click của thẻ button, submit của form, etc) thì chúng ta sẽ có thể listen ở đâu đó trong code JavaScript.
 Vậy với những Component mà chúng ta tự định nghĩa thì có cách nào bắn ra các event mà chúng ta mong muốn hay không (component event). Câu trả lời cho vấn đề này chính là EventEmitter và @Output decorator."
-keywords:
-  [
-    "Event trong component", "event trong component cua angular", "Khởi tạo components"
-  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"

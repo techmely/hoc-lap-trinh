@@ -1,14 +1,6 @@
 ---
 title: "Docker là gì?"
 description: "Bài đầu tiên chúng ta sẽ cùng nhau tìm hiểu xem docker là gì gì nhé."
-keywords:
-  [
-    "docker là gì",
-    "container docker là gì",
-    "docker la gi",
-    "tìm hiểu docker là gì",
-    "tim hieu docker la gi",
-  ]
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"

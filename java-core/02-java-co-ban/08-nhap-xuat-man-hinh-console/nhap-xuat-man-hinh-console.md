@@ -1,22 +1,6 @@
 ---
 title: "Nhập xuất màn hình console trong Java"
 description: "Đối với những người mới bắt đầu học Java cơ bản, thì việc sử dụng nhập xuất trong màn hình console thông qua Scanner, Buffered Reader hay console là điều tất yếu để giải các bài tập"
-keywords:
-  [
-    "console trong java",
-    "cách nhập dữ liệu từ bàn phím trong java",
-    "câu lệnh nhập xuất trong java",
-    "hàm nhập xuất trong java",
-    "khai báo nhập xuất trong java",
-    "lệnh nhập xuất trong java",
-    "lỗi nhập xuất trong java",
-    "nhập dữ liệu từ bàn phím trong java",
-    "nhập và xuất mảng trong java",
-    "nhập xuất chuỗi trong java",
-    "nhập xuất console trong java code",
-    "nhập xuất console trong java fpt",
-    "nhập xuất dữ liệu trong java",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

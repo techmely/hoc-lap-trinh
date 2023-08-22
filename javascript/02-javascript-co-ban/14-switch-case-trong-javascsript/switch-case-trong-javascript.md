@@ -1,16 +1,6 @@
 ---
 title: "Switch case trong Javascript"
 description: "Switch case trong Javascript"
-keywords: [
-"khoá học javascript",
-"Switch case trong Javascript",
-"Switch case trong Javascript cach su dung",
-"lenh switch case trong javascript",
-"lệnh switch case trong javascript",
-"switch case trong js",
-"câu lệnh switch case",
-"switch case cơ bản trong javascript"
-]
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"

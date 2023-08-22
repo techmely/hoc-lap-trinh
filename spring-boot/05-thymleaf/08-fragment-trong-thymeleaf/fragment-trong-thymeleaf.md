@@ -1,7 +1,6 @@
 ---
 title: "Fragment trong Thymeleaf"
 description: "Fragment trong Thymeleaf"
-keywords: []
 chapter:
   name: "Thymeleaf"
   slug: "chuong-05-thymeleaf"

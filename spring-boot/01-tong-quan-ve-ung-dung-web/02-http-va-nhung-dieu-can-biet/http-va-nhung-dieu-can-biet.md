@@ -1,17 +1,6 @@
 ---
 title: "HTTP và những điều cần biết"
 description: "HTTP là tên viết tắt của cụm từ HyperText Transfer Protocol, dịch theo tiếng Việt là giao thức truyền tải siêu văn bản. HTTP được dùng trong www (world wide web) với mục đích tạo nên nền tảng kết nối giữa client và server."
-keywords:
-  [
-    [Http],
-    [Http là gi],
-    [Http request],
-    [Http reposnse],
-    [Http status code],
-    [Lỗi 500],
-    [Lỗi 404],
-    [Khía cạnh cơ bản của http],
-  ]
 chapter:
   name: "Tổng quan về ứng dụng web"
   slug: "chuong-01-tong-quan-ve-ung-dung-web"

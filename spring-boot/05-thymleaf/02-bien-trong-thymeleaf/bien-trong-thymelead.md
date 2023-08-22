@@ -1,7 +1,6 @@
 ---
 title: "Biến trong Thymeleaf"
 description: "Biến trong Thymeleaf"
-keywords: []
 chapter:
   name: "Thymeleaf"
   slug: "chuong-05-thymeleaf"

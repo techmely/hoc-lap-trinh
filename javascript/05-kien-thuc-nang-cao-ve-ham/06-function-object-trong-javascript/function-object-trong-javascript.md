@@ -1,17 +1,6 @@
 ---
 title: "Function trong Javascript"
 description: "Function hay còn gọi là hàm, là tập hợp một đoạn code dùng để xử lý một nhiệm vụ nào đó. Code bên trong function không được biên dịch cho tới khi được gọi đến."
-keywords: [
-"goi function trong javascript",
-"function trong javascript dung de lam gi",
-"bai tap ve ham trong javascript",
-"cach goi ham javascript trong html",
-"arrow function trong javascript",
-"Gọi function trong JavaScript",
-"Function trong JavaScript dùng để làm gì",
-"function javascript la gi",
-"Cách sử dụng function trong javascript"
-]
 chapter:
   name: "Kiến thức nâng cao về hàm"
   slug: "chuong-05-kien-thuc-nang-cao-ve-ham"

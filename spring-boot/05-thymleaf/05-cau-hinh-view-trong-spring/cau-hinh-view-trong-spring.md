@@ -1,18 +1,6 @@
 ---
 title: "Cấu hình view trong Spring."
 description: "Thông thường trong ứng dụng Spring bạn thường chỉ cần sử dụng duy nhất một công nghệ cho tầng View, nó có thể là Thymeleaf, JSP."
-keywords:
-  [
-    "Cấu hình view trong Spring.",
-    "Cach Cấu hình view trong Spring.",
-    "làm thế nào cấu hình view trong spring",
-    "lam the nao cau hinh view trong Spring",
-    "Cấu hình view trong Spring co tac dung gi",
-    "Cấu hình view trong Spring nhu the nao",
-    "view trong spring",
-    "view trong spring la gi",
-    "view trong spring là ",
-  ]
 chapter:
   name: "Thymeleaf"
   slug: "chuong-05-thymeleaf"

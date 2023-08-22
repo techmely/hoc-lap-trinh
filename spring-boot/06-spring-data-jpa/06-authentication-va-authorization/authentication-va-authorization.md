@@ -1,7 +1,6 @@
 ---
 title: "Authentication và Authorization"
 description: "Authentication và Authorization"
-keywords: []
 chapter:
   name: "Spring data JPA"
   slug: "chuong-06-spring-data-jpa"

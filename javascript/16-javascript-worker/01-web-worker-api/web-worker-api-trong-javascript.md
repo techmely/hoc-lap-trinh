@@ -1,16 +1,6 @@
 ---
 title: "Javascript Web worker api là gì"
 description: "Web Workers là một API JavaScript, cho phép bạn chạy các script trong một thread riêng biệt từ một trang chính."
-keywords: [
-"Javascript Web worker api là gì",
-"Cơ bản về Web Workers trong javascript",
-"Javascript Web worker là gì",
-"Web Workers là gì trong javascript ",
-"Web worker và service worker trong javascript",
-"Simple web worker trong javascript",
-"Thành phần của WebWorker trong javascript",
-"HTML Web Workers API trong javascript"
-]
 chapter:
   name: "Javascript worker"
   slug: "chuong-16-javascript-worker"

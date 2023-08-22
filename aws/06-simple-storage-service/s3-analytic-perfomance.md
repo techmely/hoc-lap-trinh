@@ -1,12 +1,6 @@
 ---
 title: "Giới thiệu S3 Analytics, Performance"
 description: "Storage Class Analysis giúp bạn phân tích lượng truy cập, dung lượng lưu trữ... trong một khoảng thời gian nhất định. Từ đó giúp người dùng xác định được khi nào nên chuyển đổi Objects từ Standard => Standard_IA"
-keywords:
-  [
-    "S3 Performance trong AWS",
-    "S3 Analytics là gì",
-    "S3 Optimizing performance trong AWS"
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -23,7 +17,7 @@ position: 59
 
 ## S3 Analytics là gì - Storage Class Analysis
 
-Storage Class Analysis giúp bạn phân tích lượng truy cập, dung lượng lưu trữ... trong một khoảng thời gian nhất định. Từ đó giúp người dùng xác định được khi nào nên chuyển đổi Objects từ Standard => Standard_IA 
+Storage Class Analysis giúp bạn phân tích lượng truy cập, dung lượng lưu trữ... trong một khoảng thời gian nhất định. Từ đó giúp người dùng xác định được khi nào nên chuyển đổi Objects từ Standard => Standard_IA
 
 ![S3 Analytics - Storage Class Analysis](https://d2908q01vomqb2.cloudfront.net/b6692ea5df920cad691c20319a6fffd7a4a766b8/2017/06/28/visualize_s3_quicksight_2.gif)
 

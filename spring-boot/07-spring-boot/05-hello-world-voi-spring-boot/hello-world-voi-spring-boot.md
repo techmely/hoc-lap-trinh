@@ -1,18 +1,6 @@
 ---
 title: "Hello World với Spring Boot"
 description: "Hello World với Spring Boot"
-keywords:
-  [
-    "spring boot la gi",
-    "java spring boot",
-    "web application voi spring boot",
-    "java spring boot intellij idea",
-    "tao ung dung voi spring boot",
-    "java spring boot application",
-    "web application voi spring boot",
-    "java spring boot",
-    "web application voi spring boot",
-  ]
 chapter:
   name: "Spring boots"
   slug: "chuong-07-spring-boots"

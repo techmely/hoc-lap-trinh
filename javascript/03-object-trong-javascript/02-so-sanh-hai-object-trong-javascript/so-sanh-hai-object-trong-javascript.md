@@ -1,16 +1,6 @@
 ---
 title: "So sánh hai object trong Javascript"
-description: "Hướng dẫn cách so sánh object trong JavaScript. Bạn sẽ học được các cách so sánh 2 object trong JavaScript sau bài học này."
-keywords: [
-"đối tượng trong javascript",
-"object trong javascript",
-"So sánh hai object trong Javascript",
-"So sánh 2 object trong JavaScript",
-"Cách so sánh 2 object trong JavaScript",
-"so sánh 2 object trong javascript dùng để",
-"so sánh 2 object trong javascript hay",
-"so sánh 2 object trong javascript là gì"
-]
+description: "Hướng dẫn cách so sánh object trong JavaScript. Bạn sẽ học được các cách so sánh 2 object trong JavaScript sau bài học này."F
 chapter:
   name: "Object trong Javascript"
   slug: "chuong-03-object-trong-javascript"

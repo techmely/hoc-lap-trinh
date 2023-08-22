@@ -1,14 +1,6 @@
 ---
 title: "Mô hình MVC là gì?"
 description: "MVC là viết tắt của cụm từ “Model-View-Controller“ - một mô hình kiến trúc phần mềm được tạo ra với mục đích quản lí và xây dựng dự án phần mềm có hệ thống hơn."
-keywords:
-  [
-    "Mô hình MVC",
-    "Mô hình MVC là gì spring boot",
-    "Mô hình MVC để làm gì trong spring",
-    "cách sử dụng mô dình MVC trong spring",
-    "mo hinh mvc co tac dung nhuw the nao trong spring",
-  ]
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-02-tong-quan-ve-spring"

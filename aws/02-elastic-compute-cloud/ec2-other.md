@@ -1,13 +1,6 @@
 ---
 title: "EC2 Mở rộng"
 description: "EC2 Hibernate một EC2 instance khi được launch bạn có thể stop/terminate nó đi. Nitro là Platform cho thế hệ sau của EC2 instances"
-keywords:
-  [
-    "EC2 Hibernate là gì",
-    "EC2 Hibernate trong aws",
-    "EC2 Nitro là gì",
-    "EC2 Nitro trong aws",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -29,7 +22,7 @@ Một EC2 instance khi được launch bạn có thể stop/terminate nó đi
 - Stop: OS sẽ shutdown process, khi stop instance AWS sẽ không tính phí instance đó mà sẽ tính phí EBS hay EIP liên quan đến instance đó.
 - Terminate: xóa instance và giải phóng tài nguyên
 
-Chúng ta sẽ cùng tìm hiểu trạng thái Hibernate của instance 
+Chúng ta sẽ cùng tìm hiểu trạng thái Hibernate của instance
 
 ![Hibernate instance](https://user-images.githubusercontent.com/29729545/162228525-fd30478a-c651-4810-9393-7a008dd5a14c.png)
 

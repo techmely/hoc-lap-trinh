@@ -1,18 +1,6 @@
 ---
 title: "Lớp Character trong Java"
 description: "Bài này chúng ta sẽ tìm hiểu về Một số lớp cơ bản của Java, tự học lập trình java, chia sẻ kiến thức về java"
-keywords:
-  [
-    "character trong java",
-    "lớp character java là gì",
-    "lớp character trong java",
-    "lớp character trong java java",
-    "lớp charactor java cơ bản",
-    "lớp charactor trong java 8",
-    "lớp charactor trong java code",
-    "lớp charactor trong java cơ bản",
-    "lớp charactor trong java fpt",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

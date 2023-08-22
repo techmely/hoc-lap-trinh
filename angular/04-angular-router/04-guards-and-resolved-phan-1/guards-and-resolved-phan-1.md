@@ -1,7 +1,6 @@
 ---
 title: "Guards and Resolvers Phần 1"
 description: "Đối với các ứng dụng Single Page Apps (SPAs) được viết bằng Angular (hoặc có thể là React, Vue, etc), do chúng ta đã tải hết resouces cần thiết về và chỉ call đến DataSources để lấy về data và render Component/View tương ứng mà không cần phải reload lại pages. Do đó nhiệm vụ kiểm tra tính hợp lệ khi người dùng muốn render một/một vài component sẽ bao gồm cả phần frontend."
-keywords: []
 chapter:
   name: "Angular Router"
   slug: "chuong-04-angular-router"

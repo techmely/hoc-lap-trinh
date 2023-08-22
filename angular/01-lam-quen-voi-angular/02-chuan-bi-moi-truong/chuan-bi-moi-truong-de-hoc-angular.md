@@ -1,19 +1,6 @@
 ---
 title: "Chuẩn bị môi trường"
 description: "Chuẩn bị môi trường để có thể bắt đầu học angular"
-keywords:
-  [
-    "gioi thieu angular",
-    "giới thiệu angular",
-    "khoá học angular",
-    "giới thiệu angular",
-    "giới thiệu angular cơ bản",
-    "angular la gi",
-    "tong quan ve angular",
-    "Chuẩn bị môi trường",
-    "Chuẩn bị môi trường angular",
-    "chuan bi moi truong angular",
-  ]
 chapter:
   name: "Làm quen với Angular"
   slug: "chuong-01-lam-quen-voi-angular"

@@ -1,16 +1,6 @@
 ---
 title: "Template Variable và ViewChild/ViewChildren trong Angular"
 description: "Nếu bạn cần trỏ tới một phần tử (HTMLElement/component/directive) ở trong template và thao tác trực tiếp lên nó thì sao. Có cách nào để chúng ta tạo ra một `variable` ở trong template và sử dụng nó không? Câu hỏi trên sẽ được trả lời trong bài học này."
-keywords:
-  [
-    "Template Variable và ViewChild/ViewChildren trong Angular",
-    "Các phần tử cha tương tác với phần tử con thông qua biến cục bộ",
-    "template variable trong angular",
-    "ViewChild trong angular",
-    "ViewChildren trong angular",
-    "ViewChild trong angular là gì",
-    "ViewChildren trong angular là gì",
-  ]
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"

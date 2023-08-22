@@ -1,19 +1,6 @@
 ---
 title: "Hàm tương tác với người dùng alert, confirm, prompt"
 description: "Hàm tương tác với người dùng alert, confirm, prompt"
-keywords: 
-  [
-    "khoá học javascript",
-    "tương tác với người dùng trong javascript",
-    "Hàm tương tác với người dùng",
-    "alert, confirm, prompt",
-    "alert trong js",
-    "tao thong bao trong javascript",
-    "alert javascript",
-    "Popup thông báo",
-    "Tạo thông báo",
-    "tương tác với người dùng"
-  ]
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"
@@ -76,7 +63,6 @@ alert(result);
 Kết quả:
 
 ![Hàm confirm trong javascript](https://user-images.githubusercontent.com/29374426/156864965-375492e0-fd28-4365-8613-dc1a30bda979.png)
-
 
 Tương tự như hàm `alert`, hộp thoại với hàm `confirm` cũng là dạng "modal window".
 

@@ -1,7 +1,6 @@
 ---
 title: "JavaScript Widget và Embedded Script"
 description: "Tìm hiểu về khái niệm, cách xây dựng và triển khai một JavaScript Widget và Embedded Script"
-keywords: []
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"

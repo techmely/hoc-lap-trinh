@@ -1,19 +1,6 @@
 ---
 title: "Giao tiếp Client với Server trong React Native"
-description: ""
-keywords:
-  [
-    "Giao tiếp Client với Server",
-    "giới thiệu react native",
-    "khoá học react native",
-    "giới thiệu react native",
-    "giới thiệu react native cơ bản",
-    "react native la gi",
-    "tong quan ve react native",
-    "gioi thieu ve ngon ngu lap trinh react native",
-    "tom tat react native",
-    "code react native la gi",
-  ]
+description: "Giao tiếp Client với Server trong React Native"
 chapter:
   name: "Tương tác trong react native"
   slug: "chuong-05-tuong-tac-trong-react-native"

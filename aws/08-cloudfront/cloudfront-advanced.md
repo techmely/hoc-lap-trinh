@@ -1,21 +1,6 @@
 ---
 title: "CloudFront nâng cao"
 description: "Cloudfront Egde locations được nằm khắp nơi trên toàn cầu, chi phí data của mỗi Egde location là khác nhau. Bạn có thể giảm thiểu chi phí sử dụng Cloudfront bằng cách giảm số lượng edge location."
-keywords:
-  [
-    "Chi phí CloudFront",
-    "Cloudfront chi phí",
-    "Cloudfront chi phi",
-    "Giá cloudfront",
-    "Gia cloudfront",
-    "Price classes trong cloudfront",
-    "Cloudfront price classes là gì",
-    "Cloudfront price classes la gi",
-    "Cloudfront multiple origin là gì",
-    "Cloudfront multiple origin la gi",
-    "Cloudfront Origin Groups là gì",
-    "Cloudfront Origin Groups la gi",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -48,13 +33,13 @@ Bạn có thể giảm thiểu chi phí sử dụng Cloudfront bằng cách gi�
 
 ## CloudFront Multiple Origin là gì
 
-Bạn có thể route tới những origin khác nhau dựa vào path hoặc content type: 
+Bạn có thể route tới những origin khác nhau dựa vào path hoặc content type:
 
 ![CloudFront - Multiple Origin](https://user-images.githubusercontent.com/29729545/153046606-e7540a73-3072-4ed0-bc48-053dac372277.png)
 
 ## CloudFront Origin Groups là gì
 
-Origin Groups bao gồm **một primary và một secondary origin**, nhằm tăng cường tính sẵn sàng và khả năng phục hồi khi có sự cố ở 1 origin. Nếu primary origin có vấn đề, secondary origin sẽ được sử dụng 
+Origin Groups bao gồm **một primary và một secondary origin**, nhằm tăng cường tính sẵn sàng và khả năng phục hồi khi có sự cố ở 1 origin. Nếu primary origin có vấn đề, secondary origin sẽ được sử dụng
 
 ![CloudFront - Origin Groups](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/images/origingroups-overview.png)
 

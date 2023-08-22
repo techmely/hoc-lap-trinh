@@ -1,19 +1,6 @@
 ---
 title: "Cài đặt và sử dụng thư viện"
-description: ""
-keywords:
-  [
-    "gioi thieu react native",
-    "giới thiệu react native",
-    "khoá học react native",
-    "giới thiệu react native",
-    "giới thiệu react native cơ bản",
-    "react native la gi",
-    "tong quan ve react native",
-    "gioi thieu ve ngon ngu lap trinh react native",
-    "tom tat react native",
-    "code react native la gi",
-  ]
+description: "Cài đặt và sử dụng thư viện"
 chapter:
   name: "Tương tác trong react native"
   slug: "chuong-05-tuong-tac-trong-react-native"

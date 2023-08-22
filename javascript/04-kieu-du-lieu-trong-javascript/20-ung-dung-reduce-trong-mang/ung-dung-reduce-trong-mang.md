@@ -1,17 +1,6 @@
 ---
 title: "Ứng dụng reduce trong mảng"
 description: "JavaScript Reduce là một phương thức có sẵn của array, được sử dụng để gọi một hàm lên các phần tử của mảng (từ trái sang phải) với một biến tích lũy. Kết quả trả về là một giá trị duy nhất, ứng với biến tích lũy."
-keywords: ["Ứng dụng reduce trong mảng",
-"reduce trong javascript",
-"reduce javascript",
-"reduce in es6 javascript",
-"ham reduce trong javascript",
-"ham reduce trong javascript la gi",
-"ham reduce trong javascript co tac dung gi",
-"cach su dung ham reduce trong javascript",
-"cach su dung reduce trong javascript",
-"Reduce anonystick trong javascript"
-]
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
@@ -25,7 +14,6 @@ position: 20
 Trước khi bắt đầu, mình muốn bạn hiểu tại sao mình lại viết về phương thức Reduce trong JavaScript mà không phải là một phương thức nào khác.
 
 ![Ứng dụng reduce trong mảng](https://user-images.githubusercontent.com/29374426/168244791-cd8329c4-6a81-4801-b7ae-0846859d3912.png)
-
 
 Bởi lẽ, reduce trong JS là một trong 3 phương thức quan trọng và thường **sử dụng trong lập trình hàm** - đó là [`arr.map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [`arr.filter()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) và [`arr.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
 
@@ -313,37 +301,37 @@ Và khi thực thi hàm callback với mỗi phần tử của mảng `posts` th
 
 ```js
 // giá trị tích lũy đầu tiên là object rỗng
-  acc = {};
+acc = {};
 
-  // phần tử hiện tại đang xét
-  cur = { postID: "id1", title: "title1" };
-  postID = cur.postID = "id1";
+// phần tử hiện tại đang xét
+cur = { postID: "id1", title: "title1" };
+postID = cur.postID = "id1";
 
-  // tạo object mới bằng cách sử dụng cú pháp spread (...)
-  // để ghép object acc hiện tại và thuộc tính mới [postID]: cur
-  acc = {...acc, [postID]: cur } = {
-  'id1': { postID: 'id1', title: 'title1' }
-  }
+// tạo object mới bằng cách sử dụng cú pháp spread (...)
+// để ghép object acc hiện tại và thuộc tính mới [postID]: cur
+acc = { ...acc, [postID]: cur } = {
+  id1: { postID: "id1", title: "title1" },
+};
 ```
 
 - Với lần thứ 2:
 
 ```js
 // giá trị tích lũy hiện tại sau lần thứ nhất
-  acc = {
-  'id1': { postID: 'id1', title: 'title1' }
-  };
+acc = {
+  id1: { postID: "id1", title: "title1" },
+};
 
-  // phần tử đang xét
-  cur = { postID: "id2", title: "title2" };
-  postID = cur.postID = "id2";
+// phần tử đang xét
+cur = { postID: "id2", title: "title2" };
+postID = cur.postID = "id2";
 
-  // tạo object mới bằng cách sử dụng cú pháp spread (...)
-  // để ghép object acc hiện tại và thuộc tính mới [postID]: cur
-  acc = {...acc, [postID]: cur } = {
-  'id1': { postID: 'id1', title: 'title1' },
-  'id2': { postID: 'id2', title: 'title2' }
-  }
+// tạo object mới bằng cách sử dụng cú pháp spread (...)
+// để ghép object acc hiện tại và thuộc tính mới [postID]: cur
+acc = { ...acc, [postID]: cur } = {
+  id1: { postID: "id1", title: "title1" },
+  id2: { postID: "id2", title: "title2" },
+};
 ```
 
 Cứ như vậy cho đến hết thì mình thu được kết quả như mong muốn là giá trị trả về của reduce.

@@ -1,19 +1,6 @@
 ---
 title: "JavaServer Pages Standard Tag Library (JSTL)"
 description: "JavaServer Pages Standard Tag Library (JSTL) là một tập hợp các thẻ JSP hữu ích, mà gói các tính năng lõi phổ biến tới các ứng dụng JSP."
-keywords:
-  [
-    "khóa học Spring cơ bản",
-    "jstl là gì",
-    "khái niệm jstl",
-    "thư viện jstl",
-    "JavaServer Pages Standard Tag Library là gì",
-    "jstl viết tắt",
-    "core tag là gì",
-    "formatting tag là gì",
-    "phân loại jstl tag",
-    "custom tag trong jstl",
-  ]
 chapter:
   name: "Form"
   slug: "chuong-04-form"

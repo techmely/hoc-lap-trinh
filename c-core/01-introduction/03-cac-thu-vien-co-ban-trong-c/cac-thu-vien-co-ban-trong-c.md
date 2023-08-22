@@ -1,8 +1,6 @@
 ---
 title: "Các thư viện cơ bản trong C"
 description: "Các thư viện cơ bản trong C"
-keywords:
-  ["học lập trình c", "khoá học lập trình c", "Khoá học lập trình c căn bản"]
 chapter:
   name: "Giới thiệu"
   slug: "chuong-01-introduction"

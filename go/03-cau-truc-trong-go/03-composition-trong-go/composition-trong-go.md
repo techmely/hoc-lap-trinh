@@ -1,19 +1,6 @@
 ---
 title: "Composition trong Go"
 description: "Bài viết đề cập đến tổ hợp (composition) trong Go và so sánh với kế thừa (inheritance) trong các ngôn ngữ khác. Ngoài ra, nó cũng giới thiệu về khái niệm overloading trong Go và sự khác biệt giữa con trỏ và giá trị"
-keywords:
-  [
-    "Khai báo hàm Go",
-    "Cấu trúc Saiyan Go",
-    "Tổ hợp trong Go",
-    "Kế thừa và tổ hợp trong Go",
-    "Overloading trong Go",
-    "Con trỏ và giá trị trong Go",
-    "Hàm Go",
-    "Tính kế thừa trong Go",
-    "Định nghĩa hàm Go",
-    "Tính đa hình trong Go",
-  ]
 chapter:
   name: "Cấu trúc trong Go"
   slug: "chuong-03-cau-truc-trong-go"
