@@ -1,6 +1,6 @@
 ---
-title: "Tổng hợp các câu hỏi java"cac cau hoi java",
-  ]
+title: "Tổng hợp các câu hỏi java"
+description: "Tổng hợp các câu hỏi java"
 chapter:
   name: "Tài nguyên"
   slug: "chuong-07-tai-nguyen"
