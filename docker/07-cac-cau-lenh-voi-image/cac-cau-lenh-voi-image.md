@@ -48,7 +48,7 @@ docker image ls [OPTIONS]
 
 Khi chạy một trong hai command trên sẽ hiển thị list các image có trong Docker host.
 
-```s
+```ssh
 REPOSITORY       TAG        IMAGE ID            CREATED             SIZE
 huytm/httpd      1.0        aea3873b1da1        7 minutes ago       458MB
 huytm/httpd      2.0        aea3873b1da1        7 minutes ago       458MB
