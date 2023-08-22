@@ -1,16 +1,6 @@
 ---
 title: "Package trong Go"
 description: "Bài viết này giới thiệu về cách xây dựng và quản lý gói trong ngôn ngữ lập trình Go. Các từ khoá chuẩn SEO có thể là: Go packages, workspace, import, cyclical imports, visibility, Go get, dependency management."
-keywords:
-  [
-    "Go packages",
-	  "workspace",
-	  "import",
-	  "cyclical imports",
-	  "visibility",
-	  "Go get",
-	  "dependency management"
-  ]
 chapter:
   name: "Cách tổ chức mã nguồn và Interfaces"
   slug: "chuong-05-cach-to-chuc-ma-nguon-va-interfaces"

@@ -1,19 +1,6 @@
 ---
 title: "Giới thiệu Amazon SQS - Standard Queues"
 description: "Amazon Simple Queue Service (SQS) là một dịch vụ hàng đợi (queue) lưu trữ message nhanh chóng, đáng tin cậy, có khả năng mở rộng và quản lý một cách đầy đủ. Với SQS, bạn có thể gửi, nhận và lưu trữ message giữa các thành phần trong một phần mềm."
-keywords:
-  [
-    "Amazon SQS là gì",
-    "AWS SQS la gi",
-    "SQS trong AWS",
-    "AWS Standard SQS là gì",
-    "AWS Standard SQS la gi",
-    "Producing message trong SQS",
-    "Consuming message trong SQS",
-    "Multiple consuming message trong SQS",
-    "SQS - auto scaling group",
-    "Bảo mật trong SQS",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

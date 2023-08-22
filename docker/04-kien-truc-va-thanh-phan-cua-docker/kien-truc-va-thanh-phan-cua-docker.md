@@ -1,18 +1,6 @@
 ---
 title: "Kiến trúc và thành phần của docker"
 description: "Bài này chúng ta cùng nhau tìm hiểu về kiến trúc và thành phần sâu bên trong của docker xem chúng hoạt động như thế nào nhé."
-keywords:
-  [
-    "docker",
-    "kiến trúc docker",
-    "kien truc docker",
-    "thành phần docker",
-    "thanh phan docker",
-    "kiến trúc và thành phần của docker",
-    "kien truc va thanh phan cua docker",
-    "hoạt động của docker",
-    "hoat dong cua docker",
-  ]
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"

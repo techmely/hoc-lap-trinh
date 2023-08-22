@@ -1,19 +1,6 @@
 ---
 title: "Các toán tử trong Javascript"
 description: "Toán tử trong Javascript"
-keywords:
-  [
-    "khoá học javascript",
-    "toán tử trong Javascript",
-    "toán tử Javascript",
-    "tinh toan trong javascript",
-    "toan tu so sanh",
-    "Phép chia trong JavaScript",
-    "Các toán tử trong Javascript",
-    "các toán tử trong javascript cơ bản",
-    "các toán tử trong javascript dùng để làm gì",
-    "cach su dung toan tu trong javascript",
-  ]
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"

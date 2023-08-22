@@ -1,17 +1,6 @@
 ---
 title: "Vòng đời của Thread trong Java"
 description: "Chúng ta sẽ cùng tìm hiểu vòng đời của một thread, các trạng thái mà nó trải qua trước khi chết đi"
-keywords:
-  [
-    "thread trong Java",
-    "huong dan thread trong java",
-    "lập trình thread trong java",
-    "multi thread trong java",
-    "sử dụng thread trong java",
-    "vòng đời của thread",
-    "vong doi cua thread",
-    "vòng đời của thread trong java",
-  ]
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"

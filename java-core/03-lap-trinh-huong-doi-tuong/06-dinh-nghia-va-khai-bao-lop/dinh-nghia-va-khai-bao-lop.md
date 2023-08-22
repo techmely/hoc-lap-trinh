@@ -1,19 +1,6 @@
 ---
 title: "Định nghĩa và khai báo lớp"
 description: "Lớp là khái niệm trọng tâm của lập trình hướng đối tượng, java là ngôn ngữ lập trình hướng đối tượng, một chương trình java gồm một tập các đối tượng, các đối tượng này phối hợp với nhau để tạo thành một ứng dụng hoàn chỉnh."
-keywords:
-  [
-    "biến lớp trong java",
-    "class là gì trong java",
-    "class trong java là gì",
-    "code lớp trong java",
-    "các lớp trong java",
-    "cách khai báo lớp",
-    "cách viết lớp trong java",
-    "khai báo lớp",
-    "khởi tạo lớp trong java cơ bản",
-    "khởi tạo lớp trong java fpt",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

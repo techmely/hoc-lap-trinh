@@ -1,15 +1,6 @@
 ---
 title: "Cấu hình ứng dụng với xml"
-description: ""
-keywords:
-  [
-    "cấu hình spring project với xml",
-    "cấu hình xml trong spring",
-    "cấu hình bằng xml",
-    "file xml trong spring",
-    "spring cơ bản",
-    "học spring boot",
-  ]
+description: "Cấu hình ứng dụng với xml"
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-02-tong-quan-ve-spring"

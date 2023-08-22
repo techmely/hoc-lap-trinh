@@ -1,16 +1,6 @@
 ---
 title: "HashTable trong Java"
 description: "Hashtable là một mảng của list, mỗi list được biết đến như một bucket vùng chứa) các phần tử, vị trí của một bucket được xác định bằng việc gọi phương thức hashcode"
-keywords:
-  [
-    "HashTable trong Java",
-    "Tạo một HashTable trong Java",
-    "Tạo HashMap từ các Map khác",
-    "Chèn các phần tử vào HashMap",
-    "Lấy các phần tử trong HashMap",
-    "Xóa phần tử hỏi HashTable",
-    "Một số hàm của HashMap",
-  ]
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
@@ -524,10 +514,10 @@ class Main {
 
 ## Một số hàm của HashMap
 
-| Hàm | Mô tả |
-| --- | --- |
-| `clear()` | Xóa tất cả các mục khỏi `map` |
-| `containsKey()` | Kiểm tra xem map có chứa `key` được chỉ định hay không và trả về giá trị `boolean` |
+| Hàm               | Mô tả                                                                              |
+| ----------------- | ---------------------------------------------------------------------------------- |
+| `clear()`         | Xóa tất cả các mục khỏi `map`                                                      |
+| `containsKey()`   | Kiểm tra xem map có chứa `key` được chỉ định hay không và trả về giá trị `boolean` |
 | `containsValue()` | Kiểm tra xem map có chứa value được chỉ định hay không và trả về giá trị `boolean` |
-| `size()` | Trả về kích cỡ của map |
-| `isEmpty()` | Kiểm tra xem map có trống không và trả về giá trị `boolean` |
+| `size()`          | Trả về kích cỡ của map                                                             |
+| `isEmpty()`       | Kiểm tra xem map có trống không và trả về giá trị `boolean`                        |

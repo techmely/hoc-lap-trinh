@@ -1,21 +1,6 @@
 ---
 title: "Giới thiệu Cognito"
 description: "Amazon Cognito là dịch vụ của Amazon Web Services cung cấp xác thực, ủy quyền và quản lý người dùng cho các ứng dụng web và di động của bạn. Người dùng có thể đăng nhập trực tiếp bằng tên người dùng và mật khẩu hoặc thông qua bên thứ ba như Facebook, Amazon, Google hoặc Apple."
-keywords:
-  [
-    "Cognito la gi",
-    "Cognito là gì",
-    "Cognito trong aws",
-    "Cognito User Pools la gi",
-    "Cognito User Pools là gì",
-    "Cognito User Pools trong aws",
-    "Cognito Identity Pools la gi",
-    "Cognito Identity Pools là gì",
-    "Cognito Identity Pools trong aws",
-    "Cognito Sync la gi",
-    "Cognito Sync là gì",
-    "Cognito Sync trong aws",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

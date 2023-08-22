@@ -1,21 +1,6 @@
 ---
 title: "IDE là gì?"
 description: "Bài này chúng ta đề cập tới vấn đề IDE là gì?"
-keywords:
-  [
-    "khoa hoc javascript",
-    "khoá học javascript cơ bản",
-    "khoá học javascript co ban",
-    "khoá học javascript cực hay",
-    "Khóa học Javascript miễn phí",
-    "Học JavaScript",
-    "Lộ trình học JavaScript",
-    "Khóa học Javascript Free",
-    "học javascript từ cơ bản đến nâng cao",
-    "học code javascript",
-    "học javascript cơ bản đến nâng cao",
-    "hoc javascript",
-  ]
 chapter:
   name: "Giới thiệu Javascript"
   slug: "chuong-01-gioi-thieu-javascript"

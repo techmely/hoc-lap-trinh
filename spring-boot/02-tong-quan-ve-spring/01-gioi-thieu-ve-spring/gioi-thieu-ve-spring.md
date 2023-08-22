@@ -1,15 +1,6 @@
 ---
 title: "Giới Thiệu Về Spring"
 description: "Spring Framework là một framework mã nguồn mở được viết bằng Java, được phát triển, chia sẻ và có cộng đồng người dùng rất lớn. Nó được xem như là một giải pháp kiến trúc tốt nhất của Java EE hiện nay."
-keywords:
-  [
-    "giới thiệu spring",
-    "spring framework",
-    "spring cơ bản",
-    "những điều cần biết về spring",
-    "vì sao nên học spring",
-    "lộ trình spring",
-  ]
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-02-tong-quan-ve-spring"
@@ -37,7 +28,6 @@ Spring Framework được xây dựng dựa trên 2 nguyên tắc design chính 
 Đầu tiên, chúng ta cùng nhau xem biểu đồ so sánh mức độ phổ biến của các framework cho Java:
 
 ![Framework java chart](https://github.com/techmely/hoc-lap-trinh/assets/29374426/788c1b67-e98e-46fd-9e2e-19fe1aa45eae)
-
 
 Chắc hẳn xem xong các bạn cũng thấy được sự chênh lệch khá rõ rệt giữa Spring với những thằng còn lại.
 

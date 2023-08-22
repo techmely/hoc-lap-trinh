@@ -1,18 +1,6 @@
 ---
 title: "Cloudfront là gì"
 description: "Amazon CloudFront là một dạng CDN giúp tăng tốc độ tải một trang web tĩnh hoặc động đến với user của bạn. CloudFront phân phối content của bạn trên khắp mạng internet trên thế thế giới thông qua các data center được gọi là Egde location."
-keywords:
-  [
-    "Cloudfront la gi",
-    "Cloudfront là gì",
-    "Cloudfront hoạt động như thế nào",
-    "Cloudfront hoat dong nhu the nao",
-    "Cloudfront geo restriction là gì",
-    "Cloudfront giới hạn địa lý",
-    "Cloudfront hoạt động",
-    "Cloudfront hoat dong",
-    "Giới thiệu Cloudfront Origins"
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -44,10 +32,11 @@ Amazon CloudFront là một dạng Content Delivery Network(CDN) giúp tăng t�
   - Tăng cường bảo mật với Cloudfront **Origin Access Identity(OAI)**
   - Cloudfront có thể sử dụng như một ingress (dùng để upload file lên S3 bucket)
 - Custom origin (HTTP)
+
   - Application Load Balancer
   - EC2 instance
-  - S3 website 
-  
+  - S3 website
+
   ![Cloudfront-S3 as an origin](https://user-images.githubusercontent.com/29729545/152686502-58ce75ad-3018-4eac-842a-bb039aea1c66.png)
 
 ## Cloudfront - Giới hạn địa lý (geo restriction)

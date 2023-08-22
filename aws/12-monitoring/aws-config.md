@@ -1,17 +1,6 @@
 ---
 title: "Gới thiệu AWS Config"
 description: "AWS config là full managed service, cung cấp thông tin history cấu hình, báo notify thì có thay đổi về configuration để đảm bảo security và governance."
-keywords:
-  [
-    "AWS Config la gi",
-    "AWS Config là gì",
-    "Config trong aws",
-    "CloudTrail Events la gi",
-    "CloudTrail Events là gì",
-    "CloudTrail Events trong aws",
-    "CloudTrail Insight Events la gi",
-    "CloudTrail Insight Events là gì",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

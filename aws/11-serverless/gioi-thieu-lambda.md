@@ -1,19 +1,6 @@
 ---
 title: "Giới thiệu Lambda"
 description: "AWS Lambda là một dịch vụ tính toán nơi mà bạn có thể upload code của mình lên, và AWS Lambda sẽ giúp bạn chạy đoạn code đó bằng việc sử dụng các tài nguyên sẵn có của AWS. Sau khi bạn upload code, và bạn tạo ra một Lambda function, AWS sẽ cung cấp và quản lý các server mà bạn sử dụng để chạy code."
-keywords:
-  [
-    "Lambda la gi",
-    "Lambda là gì",
-    "Lambda trong aws",
-    "Lợi ích của Lambda",
-    "Giới hạn cua Lambda",
-    "Giới hạn của Lambda",
-    "Lambda@Edge là gì",
-    "Lambda@Edge la gi",
-    "Lambda Edge là gì",
-    "Lambda Edge la gi",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

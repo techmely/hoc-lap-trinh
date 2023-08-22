@@ -1,26 +1,6 @@
 ---
 title: "Các hàm toán học trong Java"
 description: "Java có một lớp gọi là lớp Math cung cấp các hàm về toán học như lấy giá trị tuyệt đối Math.abs, làm tròn lên Math.ceil, làm tròn xuống Math.floor, tìm số nhỏ nhất Math.min, tìm số lớn nhất Math.max, lấy một số ngẫu nhiên Math.random... bài này chúng ta sẽ cùng tìm hiểu về các hàm toán học"
-keywords:
-  [
-    "math ceil trong java",
-    "bieu thuc toan hoc trong java",
-    "math round trong java",
-    "ham logarit co so 2 trong java",
-    "ham floor trong java",
-    "sqrt trong java",
-    "binh phuong trong java",
-    "math.round trong java",
-    "math.ceil trong java",
-    "Biểu thức toán học trong Java",
-    "Trong Java",
-    "Hàm logarit cơ số 2 trong Java",
-    "Hàm floor trong Java",
-    "hàm math.pow trong java",
-    "hàm math.random trong java",
-    "hàm math.round trong java",
-    "thư viện toán học trong java",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
@@ -260,24 +240,24 @@ double goc = Math.toDegrees(Math.PI/2); //90
 double goc = Math.toRadians(45); //0.7853981633974483
 ```
 
-| Tên phương thức | Mô tả ý nghĩa | Kiểu tham số | Kiểu trả về |
-| --- | --- | --- | --- |
-| sin(arg) | tính sin của arg | arg là một biểu thức kiểu double thể hiện một cung theo radians | double |
-| cos(arg) | tính cos của arg | arg là một biểu thức kiểu double thể hiện một cung theo radians | double |
-| tan(arg) | tính tang của arg | arg là một biểu thức kiểu double thể hiện một cung theo radians | double |
-| asin(arg) | tính sin-1 (arcsin) | arg arg là một biểu thức kiểu double thể hiện một cung theo radians | double trong hệ radians |
-| acos(arg) | tính cos-1 (arccosin) của arg | arg là một biểu thức kiểu double thể hiện một cung theo radians | double trong hệ radians |
-| atan(arg) | tính tan-1 (arctang) của arg | arg là một biểu thức kiểu double thể hiện một cung theo radians | double trong hệ radians |
-| atan2 (arg1,arg2) | tính tan-1 (arctang) của arg1/arg2 | arg1,arg2 là các biểu thức kiểu double thể hiện một cung theo radians | double trong hệ radians |
-| abs(arg) | tính trị tuyệt đối của arg | arg là một biểu thức kiểu int, long, float, hoặc double | The same type as the argument |
-| max (arg1,arg2) | Nhận về giá trị lớn trong hai tham số | arg1, arg2 là một biểu thức kiểu int, long, float, hoặc double | Nhận về kiểu cùng kiểu với tham số |
-| min (arg1,arg2) | Nhận về giá trị nhỏ trong hai tham số | arg1, arg2 lµ mét biùu thøc kiùu int, long, float, hoÆc double | Nhận về kiểu cùng kiùu với tham số |
-| ceil(arg) | Nhận về giá trị nguyên nhỏ hơn hoặc bằng arg | arg là biểu thức kiểu float hoặc double | double |
-| floor(arg) | Nhận về giá trị nguyên lớn hơn hoặc bằng arg | arg là biểu thức kiểu float hoặc double | double |
-| round(arg) | Trả về giá trị nguyên gần arg nhất, giá trị này chính là giá trị của arg sau khi đã làm tròn | arg là biểu thức kiểu float hoặc double | Nhận về kiểu int nếu arg kiêu float, nhận về kiùu long nếu arg kiểu double |
-| rint(arg) | Giống như round(arg) | arg là biểu thức kiểu double | double |
-| sqrt(arg) | tính căn bậc hai của arg | arg là biểu thức kiểu double double |
-| pow (arg1,arg2) | tính arg1arg2 | Cả arg1 và arg2 là các biểu thức kiểu double | double |
-| exp(arg) | tính earg | arg là biểu thức kiểu double | double |
-| log(arg) | tính logarithmớ số e của arg | arg là biểu thức kiểu double | double |
-| random() | Nhận về một số giả ngẫu nhiên nằm trong khoản [0, 1) | Không có tham số | double |
+| Tên phương thức   | Mô tả ý nghĩa                                                                                | Kiểu tham số                                                          | Kiểu trả về                                                                |
+| ----------------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| sin(arg)          | tính sin của arg                                                                             | arg là một biểu thức kiểu double thể hiện một cung theo radians       | double                                                                     |
+| cos(arg)          | tính cos của arg                                                                             | arg là một biểu thức kiểu double thể hiện một cung theo radians       | double                                                                     |
+| tan(arg)          | tính tang của arg                                                                            | arg là một biểu thức kiểu double thể hiện một cung theo radians       | double                                                                     |
+| asin(arg)         | tính sin-1 (arcsin)                                                                          | arg arg là một biểu thức kiểu double thể hiện một cung theo radians   | double trong hệ radians                                                    |
+| acos(arg)         | tính cos-1 (arccosin) của arg                                                                | arg là một biểu thức kiểu double thể hiện một cung theo radians       | double trong hệ radians                                                    |
+| atan(arg)         | tính tan-1 (arctang) của arg                                                                 | arg là một biểu thức kiểu double thể hiện một cung theo radians       | double trong hệ radians                                                    |
+| atan2 (arg1,arg2) | tính tan-1 (arctang) của arg1/arg2                                                           | arg1,arg2 là các biểu thức kiểu double thể hiện một cung theo radians | double trong hệ radians                                                    |
+| abs(arg)          | tính trị tuyệt đối của arg                                                                   | arg là một biểu thức kiểu int, long, float, hoặc double               | The same type as the argument                                              |
+| max (arg1,arg2)   | Nhận về giá trị lớn trong hai tham số                                                        | arg1, arg2 là một biểu thức kiểu int, long, float, hoặc double        | Nhận về kiểu cùng kiểu với tham số                                         |
+| min (arg1,arg2)   | Nhận về giá trị nhỏ trong hai tham số                                                        | arg1, arg2 lµ mét biùu thøc kiùu int, long, float, hoÆc double        | Nhận về kiểu cùng kiùu với tham số                                         |
+| ceil(arg)         | Nhận về giá trị nguyên nhỏ hơn hoặc bằng arg                                                 | arg là biểu thức kiểu float hoặc double                               | double                                                                     |
+| floor(arg)        | Nhận về giá trị nguyên lớn hơn hoặc bằng arg                                                 | arg là biểu thức kiểu float hoặc double                               | double                                                                     |
+| round(arg)        | Trả về giá trị nguyên gần arg nhất, giá trị này chính là giá trị của arg sau khi đã làm tròn | arg là biểu thức kiểu float hoặc double                               | Nhận về kiểu int nếu arg kiêu float, nhận về kiùu long nếu arg kiểu double |
+| rint(arg)         | Giống như round(arg)                                                                         | arg là biểu thức kiểu double                                          | double                                                                     |
+| sqrt(arg)         | tính căn bậc hai của arg                                                                     | arg là biểu thức kiểu double double                                   |
+| pow (arg1,arg2)   | tính arg1arg2                                                                                | Cả arg1 và arg2 là các biểu thức kiểu double                          | double                                                                     |
+| exp(arg)          | tính earg                                                                                    | arg là biểu thức kiểu double                                          | double                                                                     |
+| log(arg)          | tính logarithmớ số e của arg                                                                 | arg là biểu thức kiểu double                                          | double                                                                     |
+| random()          | Nhận về một số giả ngẫu nhiên nằm trong khoản [0, 1)                                         | Không có tham số                                                      | double                                                                     |

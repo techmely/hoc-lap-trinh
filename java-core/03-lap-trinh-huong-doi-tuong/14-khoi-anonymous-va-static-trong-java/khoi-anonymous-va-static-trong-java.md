@@ -1,18 +1,6 @@
 ---
 title: "Khối Anonymous và Static trong Java"
 description: "Trong java ta có thể đặt một khối lệnh không thuộc một phương thức nào, nghĩa là khối này không thuộc bất cứ phương thức nào kể cả hàm tạo, khi đó khối lệnh này được gọi là khối vô danh"
-keywords:
-  [
-    "khối anonymous java class",
-    "khối anonymous java cơ bản",
-    "khối anonymous java fpt",
-    "khối anonymous và static trong java code",
-    "khối static java block",
-    "khối static java class",
-    "khối static java cơ bản",
-    "khối static java fpt",
-    "khối static java gì",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

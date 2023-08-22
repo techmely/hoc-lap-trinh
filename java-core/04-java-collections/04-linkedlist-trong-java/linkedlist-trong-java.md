@@ -1,14 +1,6 @@
 ---
 title: "LinkedList trong java"
 description: "LinkedList là một cấu trúc dữ liệu tuyến tính. Các phần tử trong LinkedList không được lưu trữ liền kề nhau giống như arrays. Mỗi phần tử trong LinkedList liên kết với nhau bằng một con trỏ, nghĩa là mỗi phần tử sẽ tham chiếu đến địa chỉ của phần tử tiếp theo."
-keywords:
-  [
-    "linkedlist trong java",
-    "ví dụ về linkedlist trong java",
-    "danh sách liên kết trong java",
-    "danh sách liên kết đơn trong java",
-    "linked list trong java",
-  ]
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"

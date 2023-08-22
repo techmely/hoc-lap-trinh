@@ -1,22 +1,6 @@
 ---
 title: "Cách xử lý lỗi và sử dụng defer trong Go"
 description: "Bài viết này giới thiệu về cách xử lý lỗi trong Go bằng việc sử dụng giá trị trả về của hàm, không sử dụng ngoại lệ. Nó cũng đề cập đến việc sử dụng kiểu lỗi tùy chỉnh, defer để giải phóng tài nguyên, go fmt để định dạng mã nguồn, lệnh If có khởi tạo, empty interface và chuyển đổi kiểu dữ liệu, xâu và mảng byte, kiểu dữ liệu hàm."
-keywords:
-  [
-    "Xử lý lỗi",
-    "Go",
-    "giá trị trả về",
-    "ngoại lệ",
-    "kiểu lỗi tùy chỉnh",
-    "defer",
-    "go fmt",
-    "lệnh If có khởi tạo",
-    "empty interface",
-    "chuyển đổi kiểu dữ liệu",
-    "xâu",
-    "mảng byte",
-    "kiểu dữ liệu hàm",
-  ]
 chapter:
   name: "Xử lý lỗi và đồng bộ trong Go"
   slug: "chuong-06-xu-ly-loi-va-dong-bo"

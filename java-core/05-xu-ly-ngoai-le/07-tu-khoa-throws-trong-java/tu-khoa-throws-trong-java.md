@@ -1,17 +1,6 @@
 ---
 title: "Từ khóa thows trong Java"
 description: "Từ khóa throws trong java được sử dụng để khai báo một ngoại lệ, nó thể hiện thông tin cho lập trình viên rằng có thể xảy ra một ngoại lệ, vì vậy nó là tốt hơn cho các lập trình viên để cung cấp các mã xử lý ngoại lệ để duy trì luồng bình thường của chương trình."
-keywords:
-  [
-    "ham throws trong java",
-	"so sánh throw và throws trong java",
-	"su dung throws trong java",
-	"throw throws trong java",
-	"throw trong java là gi",
-	"throw vs throws trong java",
-	"throw và throws trong java",
-	"throws trong java",
-  ]
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"

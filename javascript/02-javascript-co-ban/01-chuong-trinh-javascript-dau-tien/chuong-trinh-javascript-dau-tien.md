@@ -1,20 +1,6 @@
 ---
 title: "Chương trình Javascript đầu tiên"
 description: "Chương trình Javascript đầu tiên trong javascript, chúng ta cùng tìm hiểu nhé"
-keywords:
-  [
-    "javascript",
-    "Chương trình Javascript đầu tiên",
-    "khoá học javascript",
-    "giới thiệu javascript",
-    "Javascript là gì",
-    "html css javascript co ban",
-    "cach su dung javascript",
-    "code javascript bang gi",
-    "Tạo chương trình javascript đơn giản",
-    "chương trình javascript cho người mới bắt đầu",
-    "hoc javascript"
-  ]
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"
@@ -71,7 +57,7 @@ Bạn tạo mới một tệp `html` đặt tên là `index.html`, có nội dun
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Học lập trình Javascript </title>
+    <title>Học lập trình Javascript</title>
   </head>
   <body>
     <h2>Xin chào độc giả kungfutech</h2>
@@ -79,8 +65,9 @@ Bạn tạo mới một tệp `html` đặt tên là `index.html`, có nội dun
   </body>
   <script type="text/javascript">
     document.getElementById("content").innerHTML = "Học lập trình Javascript ";
-  </script> </html
->;
+  </script>
+</html>
+;
 ```
 
 Bạn lưu lại và mở tệp lên bằng trình duyệt. Đây là kết quả thu được
@@ -101,8 +88,9 @@ Chúng ta sẽ tách mã JS ra khỏi HTML, và chỉ nhúng đường dẫn tr�
     <h2>Xin chào độc giả kungfutech</h2>
     <span id="content"></span>
   </body>
-  <script src="src/index.js"></script> </html
->;
+  <script src="src/index.js"></script>
+</html>
+;
 ```
 
 Còn nội dung tệp `index.js` như sau:

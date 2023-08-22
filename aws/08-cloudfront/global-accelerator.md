@@ -1,18 +1,6 @@
 ---
 title: "AWS Global Accelerator là gì"
 description: "AWS Global Accelerator là dịch vụ cải thiện hiệu suất của ứng dụng của bạn bằng cách tận dụng mạng nội bộ toàn cầu của AWS."
-keywords:
-  [
-    "Unicast IP là gì",
-    "Unicast IP la gi",
-    "Anycast IP là gì",
-    "Anycast IP la gi",
-    "AWS Global Accelerator là gì",
-    "AWS Global Accelerator la gi",
-    "Phân biệt AWS Global Accelerator và Cloudfront",
-    "AWS Global Accelerator với Cloudfront",
-    "AWS Global Accelerator vs Cloudfront",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

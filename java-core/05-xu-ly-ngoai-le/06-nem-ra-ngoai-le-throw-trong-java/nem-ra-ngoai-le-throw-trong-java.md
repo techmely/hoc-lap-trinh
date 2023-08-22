@@ -1,14 +1,6 @@
 ---
 title: "Ném ra ngoại lệ throw trong Java"
 description: "Từ khóa throw trong Java được sử dụng để ném ra một exception tường minh, chúng ta có thể ném hoặc Checked Exception hoặc Unchecked Exception trong Java bởi từ khóa throw"
-keywords:
-  [
-    "cách sử dụng try catch trong java",
-    "cấu trúc try catch trong java",
-    "lệnh try catch trong java",
-    "try catch throw trong java",
-    "try catch trong java",
-  ]
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"

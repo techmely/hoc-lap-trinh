@@ -1,19 +1,6 @@
 ---
 title: "Lập trình hướng đối tượng (OOP) là gì?"
 description: "Lập trình hướng đối tượng (Object Oriented Programming – OOP) là một trong những kỹ thuật lập trình rất quan trọng và sử dụng nhiều hiện nay. Hầu hết các ngôn ngữ lập trình hiện nay như Java, PHP, .NET, Ruby, Python… đều hỗ trợ OOP"
-keywords:
-  [
-    "4 tính chất của oop java",
-    "4 tính chất oop java",
-    "4 tính chất oop trong java",
-    "interface lập trình hướng đối tượng là gì",
-    "lập trình hướng đối tượng",
-    "lập trình hướng đối tượng (oop) là gì",
-    "lập trình hướng đối tượng class",
-    "lập trình hướng đối tượng java là gì",
-    "lập trình hướng đối tượng là gì",
-    "lập trình hướng đối tượng là gì ebook",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

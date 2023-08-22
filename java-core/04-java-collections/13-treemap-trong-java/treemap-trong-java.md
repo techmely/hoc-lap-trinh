@@ -1,16 +1,6 @@
 ---
 title: "TreeMap trong Java"
 description: "Lớp TreeMap trong java là một lớp kế thừa lớp AbstractMap và triển khai của NavigableMap Interface (NavigableMap kế thừa SortedMap, SortedMap kế thừa Map interface). Trong Collections Framework nên nó sẽ có một vài đặc điểm và phương thức tương đồng với Map và SortedMap và NavigableMap. TreeMap được sử dụng để lưu trữ các phần tử dưới dạng key/value. Key và value là kiểu dữ liệu bất kỳ, và bạn có thể try cập các giá trị của HasMap bằng một key cụ thể."
-keywords:
-  [
-    "TreeMap trong Java",
-    "Tạo một TreeMap trong Java",
-    "Chèn các phần tử vào TreeMap",
-    "Duyệt qua các phần tử trong TreeMap",
-    "Xóa các phần tử khỏi TreeMap",
-    "Thay thế các phần tử trong TreeMap",
-    "Một số hàm của TreeMap",
-  ]
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
@@ -561,10 +551,10 @@ class Main {
 
 ## Một số hàm của TreeMap
 
-| Hàm | Mô tả |
-| --- | --- |
-| `clone()` | Tạo một bản sao của TreeMap |
-| `containsKey()` | Tìm kiếm key được chỉ định trong TreeMap và trả về kết quả boolean |
+| Hàm               | Mô tả                                                                |
+| ----------------- | -------------------------------------------------------------------- |
+| `clone()`         | Tạo một bản sao của TreeMap                                          |
+| `containsKey()`   | Tìm kiếm key được chỉ định trong TreeMap và trả về kết quả boolean   |
 | `containsValue()` | Tìm kiếm value được chỉ định trong TreeMap và trả về kết quả boolean |
-| `size()` | Trả về kích thước của TreeMap |
-| `clear()` | Xóa tất cả các mục khỏi TreeMap |
+| `size()`          | Trả về kích thước của TreeMap                                        |
+| `clear()`         | Xóa tất cả các mục khỏi TreeMap                                      |

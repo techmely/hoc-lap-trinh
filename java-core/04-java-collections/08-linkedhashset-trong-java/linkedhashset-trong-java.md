@@ -1,18 +1,6 @@
 ---
 title: "LinkedHashSet trong Java"
 description: "LinkedHashSet chỉ chứa các phần tử duy nhất, không chấp nhận 2 phần tử trùng nhau,linkedHashSet đảm bảo thứ tự được thêm vào, ngoài ra nó sử dụng đối tượng LinkedHashMap nội bộ để lưu trữ và xử lý các phần tử của nó..."
-keywords:
-  [
-    "LinkedHashSet trong java",
-    "Tập hợp LinkedHashSet trong Java",
-    "Tập hợp LinkedHashSet trong Java là gì",
-    "Khởi tạo LinkedHashSet trong Java",
-    "Duyệt qua các phần tử trong LinkedHashSet",
-    "Xóa một phần tử trong LinkedHashSet",
-    "Xóa tất cả các phần tử trong LinkedHashSet",
-    "Thêm tất cả các phần tử từ một tập hợp LinkedHashSet khác",
-    "Kiểm tra một phần tử đã tồn tại trong LinkedHashSet chưa",
-  ]
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
@@ -395,13 +383,13 @@ class Main {
 
 ## Một số hàm khác của LinkedHashset
 
-| Hàm | Mô tả |
-| --- | --- |
-| `clone()` | Tạo một bản sao của LinkedHashSet |
+| Hàm          | Mô tả                                                                      |
+| ------------ | -------------------------------------------------------------------------- |
+| `clone()`    | Tạo một bản sao của LinkedHashSet                                          |
 | `contains()` | Tìm kiếm phần tử đã chỉ định trong LinkedHashSet và trả về kết quả boolean |
-| `isEmpty()` | Kiểm tra xem LinkedHashSet có trống không |
-| `size()` | Trả về kích thước của LinkedHashSet |
-| `clear()` | Loại bỏ tất cả các phần tử khỏi LinkedHashSet |
+| `isEmpty()`  | Kiểm tra xem LinkedHashSet có trống không                                  |
+| `size()`     | Trả về kích thước của LinkedHashSet                                        |
+| `clear()`    | Loại bỏ tất cả các phần tử khỏi LinkedHashSet                              |
 
 ## So sánh LinkedHashset và Hashset
 

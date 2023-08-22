@@ -1,21 +1,6 @@
 ---
 title: "Cơ hội nghề nghiệp với Java"
 description: "Bài này chúng ta sẽ tìm hiểu về cơ hội nghề nghiệp với Java"
-keywords:
-  [
-    "học java",
-    "tự học java",
-    "tự học lập trình java",
-    "tu hoc lap trinh java",
-    "học java fpt",
-    "học java thaycacac",
-    "học lập trình ngôn ngữ java",
-    "hoc lap trinh ngon ngu java",
-    "tự học lập trình với java",
-    "tự học lập trình java",
-    "học java ra làm gì",
-    "hoc java lam gi",
-  ]
 chapter:
   name: "Giới thiệu Java"
   slug: "chuong-01-gioi-thieu-java"

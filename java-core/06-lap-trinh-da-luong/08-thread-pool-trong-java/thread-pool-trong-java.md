@@ -1,15 +1,6 @@
 ---
 title: "Thread Pool trong Java"
 description: " ThreadPool ra đời để giới hạn số lượng Thread được chạy bên trong ứng dụng chúng ta cùng một thời điểm."
-keywords:
-  [
-    "Thread Pool",
-    "thread pool executor",
-    "threadpool",
-    "thread",
-    "thread pool trong java",
-    "thread pool là gì",
-  ]
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"

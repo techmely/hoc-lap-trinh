@@ -1,18 +1,6 @@
 ---
 title: "Giới thiệu AWS Snow Family"
 description: "AWS Snow Family là tập hợp những thiết bị vật lý giúp cho việc migrate dữ liệu từ bên ngoài vào AWS hoặc ngược lại, từ AWS ra bên ngoài. Giải pháp migrate dữ liệu này không phụ thuộc vào các yếu tố của network (tốc độ, băng thông)."
-keywords:
-  [
-    "AWS Snow Family là gì",
-    "AWS Snow Family la gi",
-    "Snowball Edge là gì",
-    "Snowball Edge la gi",
-    "Snowcone là gì",
-    "Snowcone la gi",
-    "Snow Family trong AWS",
-    "Migrate dữ liệu trong AWS",
-    "AWS migrate data",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -47,7 +35,7 @@ Như các bạn có thể thấy để upload một khối dữ liệu có size 
 
 **Vậy AWS Snow Family là gì ?**
 
-AWS Snow Family là tập hợp những thiết bị vật lý giúp cho việc thu thập và phân tích dữ liệu; hay migrate dữ liệu từ bên ngoài vào AWS hoặc ngược lại, từ AWS ra bên ngoài. Giải pháp migrate dữ liệu này không phụ thuộc vào các yếu tố của network (tốc độ, băng thông). Nếu dữ liệu của bạn cần nhiều hơn 1 tuần để có thể tranfer qua internet, hãy nghĩ đến những thiết bị Snowball. 
+AWS Snow Family là tập hợp những thiết bị vật lý giúp cho việc thu thập và phân tích dữ liệu; hay migrate dữ liệu từ bên ngoài vào AWS hoặc ngược lại, từ AWS ra bên ngoài. Giải pháp migrate dữ liệu này không phụ thuộc vào các yếu tố của network (tốc độ, băng thông). Nếu dữ liệu của bạn cần nhiều hơn 1 tuần để có thể tranfer qua internet, hãy nghĩ đến những thiết bị Snowball.
 
 ![AWS Snow Family là gì](https://user-images.githubusercontent.com/29729545/153702726-8c021c92-5402-490f-8036-5ba008edf4d5.png)
 

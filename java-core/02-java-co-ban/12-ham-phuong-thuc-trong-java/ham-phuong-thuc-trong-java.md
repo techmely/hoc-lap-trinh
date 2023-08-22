@@ -1,28 +1,6 @@
 ---
 title: "Hàm - Phương thức trong Java"
 description: "Hàm hay phương thức (method) trong Java là khối lệnh thực hiện các chức năng, các hành vi xử lý của lớp lên vùng dữ liệu."
-keywords:
-  [
-    "ham trong java",
-    "hàm trong java",
-    "phuong thuc trong java",
-    "phương thức trong java",
-    "biến static và hàm static trong java",
-    "bài tập về hàm trong java",
-    "các hàm cơ bản trong java",
-    "các phương thức của string trong java",
-    "các phương thức trong java",
-    "cách dùng phương thức trong java",
-    "cách gọi hàm trong hàm main java",
-    "cách sử dụng hàm boolean trong java",
-    "cách tạo hàm trong java",
-    "cách viết hàm main trong java",
-    "ghi đè phương thức trong java",
-    "gọi phương thức trong java",
-    "hàm và phương thức trong java",
-    "khai báo phương thức trong java",
-    "khởi tạo phương thức trong java",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

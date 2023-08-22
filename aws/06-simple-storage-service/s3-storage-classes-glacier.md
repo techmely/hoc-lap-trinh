@@ -1,24 +1,6 @@
 ---
 title: "Giới thiệu S3 Storage Classes, Glacier"
 description: "Amazon S3 cung cấp một loạt các lớp lưu trữ mà bạn có thể lựa chọn dựa trên các yêu cầu về quyền truy cập dữ liệu, khả năng phục hồi và chi phí tương ứng với khối lượng công việc. Các lớp lưu trữ S3 được xây dựng nhằm mục đích cung cấp khả năng lưu trữ với chi phí thấp nhất cho các kiểu truy cập khác nhau. Lớp lưu trữ S3 lý tưởng cho hầu hết mọi trường hợp sử dụng, bao gồm cả những trường hợp có nhu cầu hiệu năng cao, yêu cầu lưu trữ dữ liệu, kiểu truy cập không xác định hoặc hay thay đổi, hoặc dùng để lưu trữ."
-keywords:
-  [
-    "S3 Storage Classes la gi",
-    "S3 Storage Classes là gì",
-    "S3 Storage Classes trong aws",
-    "S3 Glacier la gi",
-    "S3 Glacier là gì",
-    "S3 Glacier trong aws",
-    "S3 Standard-IA la gi",
-    "S3 Standard-IA là gì",
-    "S3 Standard-IA trong aws",
-    "S3 One Zone-IA la gi",
-    "S3 One Zone-IA là gì",
-    "S3 One Zone-IA trong aws",
-    "S3 Intelligent-Tiering la gi",
-    "S3 Intelligent-Tiering là gì",
-    "S3 Intelligent-Tiering trong aws",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

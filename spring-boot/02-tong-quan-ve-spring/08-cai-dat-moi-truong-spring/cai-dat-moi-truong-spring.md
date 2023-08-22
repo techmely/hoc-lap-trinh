@@ -1,21 +1,6 @@
 ---
 title: "Cài đặt môi trường Spring"
 description: "Trong bài này, mình sẽ hướng dẫn các bạn nên cài những gì để chạy một ứng dụng Spring."
-keywords:
-  [
-    "cài đặt môi trường Spring",
-    "khóa học Spring cơ bản",
-    "hướng dẫn cài đặt môi trường spring là gì",
-    "cách cài đặt spring",
-    "cài đặt spring",
-    "cài đặt môi trường Spring 2022",
-    "cài đặt môi trường Spring boot",
-    "cài đặt tomcat",
-    "cài đặt glassfish",
-    "cài đặt jdk",
-    "cài đặt IntellJ",
-    "cài đặt Eclipse",
-  ]
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-02-tong-quan-ve-spring"

@@ -1,18 +1,6 @@
 ---
 title: "Cấu trúc lặp while và do-while"
 description: "Vòng lặp while được sử dụng để thực thi nhiều lần một đoạn chương trình, khi một điều kiện vẫn còn đúng. Vòng lặp while thường được sử dụng khi số lần lặp không được xác định trước"
-keywords:
-  [
-    "bài tập vòng lặp while trong java",
-    "câu lệnh while trong java",
-    "hàm while trong java",
-    "lệnh while trong java",
-    "vòng lặp for và while trong java",
-    "vòng lặp while java",
-    "vòng lặp while trong java",
-    "vòng lặp while trong java cơ bản",
-    "vòng lặp while trong java example",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

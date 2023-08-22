@@ -1,19 +1,6 @@
 ---
 title: "Từ khóa super trong Java"
 description: "Từ khóa super trong java là một biến tham chiếu được sử dụng để tham chiếu trực tiếp đến đối tượng của lớp cha gần nhất."
-keywords:
-  [
-    "câu lệnh super trong java",
-    "hàm super trong java",
-    "lệnh super trong java",
-    "super class trong java",
-    "super trong java",
-    "super trong java bị lỗi",
-    "super trong java eclipse",
-    "super trong java example",
-    "super trong java fpt",
-    "super trong java là gì",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

@@ -1,15 +1,6 @@
 ---
 title: "Độ ưu tiên Thread trong Java"
 description: "Mỗi thread có một mức ưu tiên (priority), đại diện bởi một số từ 1 đến 10. Trong hầu hết các trường hợp, trình lên lịch của thread được sắp xếp theo thứ tự ưu tiên của chúng (được gọi là lập kế hoạch ưu tiên)"
-keywords:
-  [
-    "độ ưu tiên thread trong java",
-    "độ ưu tien thread",
-    "do uu tien thread",
-    "ví dụ độ ưu tiên thread trong java",
-    "hàm setPriority trong java",
-    "hàm getPriority trong java",
-  ]
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"

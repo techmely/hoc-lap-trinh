@@ -1,17 +1,6 @@
 ---
 title: "Cài đặt Docker"
 description: "Hướng dẫn cài đặt docker trên windows và trên CentOS"
-keywords:
-  [
-    "cài đặt docker",
-    "cai dat docker",
-    "hướng dẫn cài đặt docker",
-    "huong dan cai dat docker",
-    "cài docker trên windows",
-    "cai dat docker tren windows",
-    "cài đặt docker trên CentOS",
-    "cai dat docker tren CentOS",
-  ]
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"

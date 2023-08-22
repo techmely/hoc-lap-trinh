@@ -1,19 +1,6 @@
 ---
 title: "Enum trong Java"
 description: "Enum là một từ khóa trong Java, là một kiểu dữ liệu đặc biệt được sử dụng để đại diện cho hằng số cố định. Một enum có thể chứa các trường, phương thức và constructor. Bởi vì các giá trị của `Enum` là các hằng số, nên tên của các trường kiểu enum thường là các chữ cái hoa"
-keywords:
-  [
-    "Enum trong Java",
-    "Khai báo Enum trong Java",
-    "Duyệt các phần tử trong enum",
-    "So sánh các phần tử enum trong java",
-    "Enum sử dụng trong switch case",
-    "class enum trong java",
-    "cách sử dụng enum trong java",
-    "enum constructor trong java",
-    "enum là gì",
-    "enum là gì java",
-  ]
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"

@@ -1,16 +1,6 @@
 ---
 title: "EnumMap trong Java"
 description: "EnumMap là một Map implementation được thiết kế để làm việc với kiểu dữ liệu Enum trong Java. Trong bài viết này chúng ta sẽ cùng nhau tìm hiểu về nó, cũng như một số trường hợp sử dụng cơ bản, và khi nào thì nên sử dụng EnumMap"
-keywords:
-  [
-    "EnumMap trong Java",
-    "Tạo một EnumMap trong Java",
-    "Chèn các phần tử vào EnumMap",
-    "Truy cập các phần tử EnumMap",
-    "Xóa các phần tử khỏi EnumMap",
-    "Thay thế các phần tử EnumMap",
-    "Các hàm trong EnumMap",
-  ]
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
@@ -295,13 +285,13 @@ sizes.replaceAll((key, oldValue) -> oldValue + 3);
 
 ## Các hàm trong EnumMap
 
-| Hàm | Mô tả |
-| --- | --- |
-| `clone()` | Tạo một bản sao của EnumMap |
-| `containsKey()` | Tìm kiếm key được chỉ định trong EnumMap và trả về kết quả boolean |
+| Hàm               | Mô tả                                                                |
+| ----------------- | -------------------------------------------------------------------- |
+| `clone()`         | Tạo một bản sao của EnumMap                                          |
+| `containsKey()`   | Tìm kiếm key được chỉ định trong EnumMap và trả về kết quả boolean   |
 | `containsValue()` | Tìm kiếm value được chỉ định trong EnumMap và trả về kết quả boolean |
-| `size()` | Trả về kích thước của EnumMap |
-| `clear()` | Xóa tất cả các mục từ EnumMap |
+| `size()`          | Trả về kích thước của EnumMap                                        |
+| `clear()`         | Xóa tất cả các mục từ EnumMap                                        |
 
 ## So sánh Enumset với EnumMap
 

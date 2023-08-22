@@ -1,18 +1,6 @@
 ---
 title: "Lớp StringBuffer trong Java"
 description: "Trong java, lớp StringBuffer được sử dụng để tạo chuỗi có thể thay đổi (mutable). Lớp StringBuffer trong java tương tự như lớp String ngoại trừ nó có thể thay đổi."
-keywords:
-  [
-    "lớp stringbuffer trong java bị lỗi",
-    "lớp stringbuffer trong java code",
-    "lớp stringbuffer trong java cơ bản",
-    "lớp stringbuffer trong java dịch",
-    "lớp stringbuffer trong java edition",
-    "lớp stringbuffer trong java fpt",
-    "lớp stringbuffer trong java free",
-    "lớp stringbuffer trong java game",
-    "lớp stringbuffer trong java là gì",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

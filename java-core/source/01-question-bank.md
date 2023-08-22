@@ -1,12 +1,5 @@
 ---
-title: "Tổng hợp các câu hỏi java"
-description: ""
-keywords:
-  [
-    "Tổng hợp các câu hỏi java",
-    "các câu hỏi java",
-    "Tong hop cac cau hoi java",
-    "cac cau hoi java",
+title: "Tổng hợp các câu hỏi java"cac cau hoi java",
   ]
 chapter:
   name: "Tài nguyên"

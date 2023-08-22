@@ -1,19 +1,6 @@
 ---
 title: "Constructor trong Java"
 description: "constructor trong java là một phương thức của lớp nhưng khá đặc biệt và thường được sử dụng để khởi tạo các đối tượng"
-keywords:
-  [
-    "class constructor trong java",
-    "constructor function trong javascript",
-    "constructor method trong java",
-    "constructor trong java",
-    "constructor trong java fpt",
-    "constructor trong java là gì",
-    "constructor trong java online",
-    "constructor trong java pdf",
-    "khối khởi tạo trong java cơ bản",
-    "khối khởi tạo trong java fpt",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
@@ -180,10 +167,10 @@ class Student {
 
 ## Sự khác nhau giữa constructor và phương thức trong java
 
-| Constructor | Phương thức |
-| --- | --- |
-| Constructor được sử dụng để khởi tạo trạng thái của một đối tượng. | Phương thức được sử dụng để thể hiện hành động của một đối tượng. |
-| Constructor không có kiểu trả về. | Phương thức có kiểu trả về. |
-| Constructor được gọi ngầm. | Phương thức được gọi tường minh. |
-| Trình biên dịch Java tạo ra constructor mặc định nếu bạn không có constructor nào. | Phương thức không được tạo ra bởi trình biên dịch Java. |
-| Tên của constructor phải giống tên lớp. | Tên phương thức có thể giống hoặc khác tên lớp. |
+| Constructor                                                                        | Phương thức                                                       |
+| ---------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| Constructor được sử dụng để khởi tạo trạng thái của một đối tượng.                 | Phương thức được sử dụng để thể hiện hành động của một đối tượng. |
+| Constructor không có kiểu trả về.                                                  | Phương thức có kiểu trả về.                                       |
+| Constructor được gọi ngầm.                                                         | Phương thức được gọi tường minh.                                  |
+| Trình biên dịch Java tạo ra constructor mặc định nếu bạn không có constructor nào. | Phương thức không được tạo ra bởi trình biên dịch Java.           |
+| Tên của constructor phải giống tên lớp.                                            | Tên phương thức có thể giống hoặc khác tên lớp.                   |

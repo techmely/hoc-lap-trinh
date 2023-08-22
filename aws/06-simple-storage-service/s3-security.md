@@ -1,21 +1,6 @@
 ---
 title: "Bảo mật trong S3"
 description: "S3 security là quản lý quyền truy cập dữ liệu trong Amazon S3. S3 là dịch vụ lưu trữ đối tượng duy nhất cho phép bạn chặn quyền truy cập công cộng vào tất cả đối tượng trong bộ chứa hoặc ở cấp tài khoản bằng tính năng Chặn quyền truy cập công cộng S3."
-keywords:
-  [
-    "S3 Security la gi",
-    "S3 Security trong aws",
-    "Bảo mật trong Amazon S3",
-    "Bao mat trong Amazon S3",
-    "Chặn truy cập S3",
-    "Quản lý truy cập S3",
-    "Cấp quyền truy cập trong S3",
-    "Chan truy cap S3",
-    "Quan ly truy cap S3",
-    "Cap quyen truy cap trong S3",
-    "S3 Bucket Policies trong AWS",
-    "Bảo mật người dùng trong S3"
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

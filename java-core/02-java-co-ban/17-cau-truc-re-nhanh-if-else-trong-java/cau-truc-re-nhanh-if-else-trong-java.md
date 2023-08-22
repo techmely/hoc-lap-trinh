@@ -1,22 +1,6 @@
 ---
 title: "Cấu trúc rẽ nhánh if else trong java"
 description: "Mệnh đề if-else trong java được sử dụng để kiểm tra giá trị dạng boolean của điều kiện, mệnh đề này trả về giá trị đúng hoặc sai để điều kiện cho phép ta điều khiển luồng thực hiện của chương trình"
-keywords:
-  [
-    "if",
-    "else",
-    "java",
-    "bài tập if else trong java",
-    "câu lệnh if else trong java",
-    "câu lệnh if then else trong java",
-    "if else if trong java",
-    "if else rút gọn java",
-    "if else trong java",
-    "if else java",
-    "java co ban",
-    "java nâng cao",
-    "hoc java co ban",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

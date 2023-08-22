@@ -1,19 +1,6 @@
 ---
 title: "Tạo Thread trong Java"
 description: "Trong Java, có hai cách để bạn tạo một thread là thừa kế từ lớp Thread và implement từ Interface Runnable nhưng mỗi cách lại có những mục đích và lợi ích khác nhau"
-keywords:
-  [
-    "bài tập thread trong java",
-    "dừng thread trong java",
-    "thread là gì trong java",
-    "thread trong java",
-    "tạo thread trong java",
-    "tạo thread trong java block",
-    "Tạo Thread trong Java",
-    "tao thread trong java",
-    "tạo thread bằng cách thừa kế từ lớp Thread",
-    "tạo thread bằng cách implement từ Interface Runnable",
-  ]
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"

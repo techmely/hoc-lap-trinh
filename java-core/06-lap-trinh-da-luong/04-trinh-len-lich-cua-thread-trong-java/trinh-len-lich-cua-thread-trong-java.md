@@ -1,13 +1,6 @@
 ---
 title: "Trình lên lịch của Thread trong Java"
 description: "Trình lên lịch của Thread (Thread scheduler) trong java là một phần của JVM có nhiệm vụ quyết định thread nào nên được chạy."
-keywords:
-  [
-    "Trình lên lịch của Thread",
-    "Thread scheduler trong java",
-    "cách hoạt động của trình lên lịch của thread",
-    "cách hoạt động của Thread scheduler",
-  ]
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"

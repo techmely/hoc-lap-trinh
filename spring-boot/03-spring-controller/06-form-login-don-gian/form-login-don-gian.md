@@ -1,13 +1,6 @@
 ---
 title: "Form login đơn giản"
 description: "Sau khi học được 1 chút kiến thức cơ bản của Spring thì bài này chúng ta hãy cùng nhau tạo 1 chương trình đơn giản nhé."
-keywords:
-  [
-    "Form hello đơn giản",
-    "khóa học Spring cơ bản",
-    "tạo form hello",
-    "tạo chương trình Spring đơn giản",
-  ]
 chapter:
   name: "Spring controller"
   slug: "chuong-03-spring-controller"

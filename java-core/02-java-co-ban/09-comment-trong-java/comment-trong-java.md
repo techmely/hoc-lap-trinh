@@ -1,16 +1,6 @@
 ---
 title: "Comment trong Java"
 description: "Tất cả các ngôn ngữ lập trình đều hỗ trợ comment (đoạn bình luận chỉ để hiển thị, cung câp thêm thông tin sẽ bị trình biên dịch bỏ qua) và trong Java cũng vậy, bài này chúng ta sẽ cùng nhau tìm hiểu comment trong java"
-keywords:
-  [
-    "comment nhiều dòng trong java",
-    "comment trong java",
-    "comment trong java eclipse",
-    "comment trong java example",
-    "comment trong java explorer",
-    "comment trong java extension",
-    "comment một dòng trong java",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

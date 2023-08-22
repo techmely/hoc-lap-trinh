@@ -1,23 +1,6 @@
 ---
 title: "Sắp xếp trong Java"
 description: "Nội dung bài viết bao gồm sắp xếp mảng (Array), Sắp xếp danh sách (List), Sắp xếp tập hợp (Set), Sắp xếp Map, Sắp xếp Map theo Key,Sắp xếp Map theo Value"
-keywords:
-  [
-    "Sắp xếp trong Java",
-    "sắp xếp mảng trong java",
-    "sắp xếp array trong java",
-    "sắp xếp list trong java",
-    "sắp xếp set trong java",
-    "Sắp xếp Map trong Java",
-    "Comparable trong java",
-    "Implement Comparator trong java",
-    "Sắp xếp đảo ngược",
-    "bài toán sắp xếp trong java",
-    "bài tập về sắp xếp trong java",
-    "hàm sắp xếp arraylist trong java",
-    "hàm sắp xếp mảng trong java",
-    "hàm sắp xếp trong java",
-  ]
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"

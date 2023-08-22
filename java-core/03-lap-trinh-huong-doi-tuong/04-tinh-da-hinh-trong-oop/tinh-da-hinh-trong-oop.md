@@ -1,22 +1,6 @@
 ---
 title: "Tính đa hình trong OOP"
 description: "Bài này chúng ta sẽ tìm hiểu về Từ khóa final, tự học lập trình java, chia sẻ kiến thức về java"
-keywords:
-  [
-    "bài học java",
-    "bắt đầu học java",
-    "cách tính đa hình trong java",
-    "tính đa hình của java",
-    "tính đa hình hướng đối tượng java",
-    "tính đa hình java",
-    "tính đa hình java fpt",
-    "tính đa hình java hay",
-    "tính đa hình java mới",
-    "tính đa hình java mới nhất",
-    "tính đa hình oop",
-    "tính đa hình oop app",
-    "tính đa hình oop hay",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

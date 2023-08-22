@@ -1,20 +1,6 @@
 ---
 title: "Từ khóa final trong Java"
 description: "Từ khoá final trong java có nhiều nghĩa khác nhau, nghĩa của nó tuỳ thuộc vào ngữ cảnh cụ thể, nhưng nói chung nó muốn nói cái này không thể thay đổi được"
-keywords:
-  [
-    "biến final trong java",
-    "final java là gì",
-    "final trong java",
-    "final trong java là gì",
-    "từ khóa final trong java",
-    "từ khóa final trong java bị lỗi",
-    "Biến final trong Java",
-    "Phương thức final trong Java",
-    "Lớp final trong Java",
-    "Biến static final trống trong Java",
-    "Đối số final trong Java",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

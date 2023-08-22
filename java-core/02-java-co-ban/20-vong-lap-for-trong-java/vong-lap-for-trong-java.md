@@ -1,19 +1,6 @@
 ---
 title: "Vòng lặp for trong java"
 description: "Vòng lặp for trong java thường được sử dụng trong trường hợp biết trước số lần lặp, trong bài này chúng ta sẽ cùng nhau tìm hiểu về vòng lặp for trong Java nhé"
-keywords:
-  [
-    "bài tập vòng lặp for trong java",
-    "câu lệnh for trong java",
-    "hàm for trong java",
-    "lệnh for trong java",
-    "vòng lặp for cải tiến trong java",
-    "vòng lặp for each",
-    "vòng lặp for each trong java",
-    "vòng lặp for java",
-    "vòng lặp for trong java",
-    "vòng lặp for trong java developer",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

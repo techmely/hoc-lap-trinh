@@ -1,16 +1,6 @@
 ---
 title: "LinkedHashMap trong Java"
 description: "LinkedHashMap trong Java là một lớp triển khai interface (giao diện) Map trong Java, LinkedHashMap cho phép chúng ta gán value (giá trị) cho một key (khóa)"
-keywords:
-  [
-    "LinkedHashMap trong Java",
-    "Tạo một LinkedHashMap trong Java",
-    "Tạo LinkedHashMap từ các Map khác",
-    "Chèn các phần tử vào LinkedHashMap",
-    "Truy cập các phần tử LinkedHashMap",
-    "Xóa các phần tử khỏi LinkedHashMap",
-    "Các hàm khác của LinkedHashMap",
-  ]
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
@@ -269,13 +259,13 @@ class Main {
 
 ## Các hàm khác của LinkedHashMap
 
-| Hàm | Sự miêu tả |
-| --- | --- |
-| `clear()` | xóa tất cả các mục khỏi map |
-| `containsKey()` | kiểm tra xem map có chứa key được chỉ định hay không và trả về giá trị boolean |
+| Hàm               | Sự miêu tả                                                                       |
+| ----------------- | -------------------------------------------------------------------------------- |
+| `clear()`         | xóa tất cả các mục khỏi map                                                      |
+| `containsKey()`   | kiểm tra xem map có chứa key được chỉ định hay không và trả về giá trị boolean   |
 | `containsValue()` | kiểm tra xem map có chứa value được chỉ định hay không và trả về giá trị boolean |
-| `size() ` | trả về kích thước của map |
-| `isEmpty()` | kiểm tra xem map có trống không và trả về giá trị boolean |
+| `size() `         | trả về kích thước của map                                                        |
+| `isEmpty()`       | kiểm tra xem map có trống không và trả về giá trị boolean                        |
 
 ## So sánh LinkedHashMap với HashMap
 

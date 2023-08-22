@@ -1,17 +1,6 @@
 ---
 title: "Giới thiệu ngôn ngữ lập trình Java"
 description: "Bài này sẽ cung cấp cho các bạn về khái niệm, kiến thức cơ bản liên quan đến việc lập trình ứng dụng bằng ngôn ngữ Java như: lịch sử phát triển của java, các đặc điểm của java, khái niệm máy ảo, cấu trúc của một chương trình đơn giản viết bằng Java cũng như cách xây dựng, dịch và thực thi một chương trình Java"
-keywords:
-  [
-    "giới thiệu ngôn ngữ lập trình java",
-    "giới thiệu ngôn ngữ java",
-    "java là gì",
-    "lập trình java là gì",
-    "tìm hiểu ngôn ngữ java",
-    "tim hieu ngon ngu java",
-    "tự học java",
-    "tu hoc java",
-  ]
 chapter:
   name: "Giới thiệu Java"
   slug: "chuong-01-gioi-thieu-java"

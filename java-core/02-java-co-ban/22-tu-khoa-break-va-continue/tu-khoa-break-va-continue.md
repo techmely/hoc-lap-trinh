@@ -1,18 +1,6 @@
 ---
 title: "Từ khóa break và continue"
 description: "Lệnh break sẽ chấm dứt quá trình lặp mà không thực hiện nốt phân còn lại của cấu trúc lặp, continue sẽ ngưng thực thi phần còn lại của thân vòng lặp và chuyển điều khiển về điểm bắt đầu của vòng lặp"
-keywords:
-  [
-    "break continue java",
-    "break và continue trong java",
-    "break và continue trong java bị lỗi",
-    "break và continue trong java code",
-    "break và continue trong java edition",
-    "break và continue trong java example",
-    "break và continue trong java fpt",
-    "break và continue trong java free",
-    "break và continue trong java gì",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

@@ -1,15 +1,6 @@
 ---
 title: "Docker Container"
 description: "Bài tiếp theo chúng ta sẽ tìm hiểu về docker container nhé"
-keywords:
-  [
-    "docker container",
-    "container trong docker",
-    "container docker",
-    "docker",
-    "tìm hiểu docker container",
-    "tim hieu docker container",
-  ]
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"

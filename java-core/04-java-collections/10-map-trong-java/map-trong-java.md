@@ -1,15 +1,6 @@
 ---
 title: "Map trong Java"
 description: "map được sử dụng để lưu trữ và truy xuất dữ liệu theo cặp khóa (key) và giá trị (value), mỗi cặp key và value được gọi là entry."
-keywords:
-  [
-    "map trong java",
-    "map collection trong java",
-    "map interface trong java",
-    "Sử dụng Map trong Java",
-    "Các hàm của Map trong Java",
-    "ví dụ map trong java",
-  ]
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"

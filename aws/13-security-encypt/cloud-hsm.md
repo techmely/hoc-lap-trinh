@@ -1,20 +1,6 @@
 ---
 title: "Giới thiệu CloudHSM, Shield và WAF"
 description: "AWS CloudHSM là một module bảo mật phần cứng dựa trên đám mây (HSM) cho phép bạn dễ dàng tạo và sử dụng các khóa mã hóa của riêng bạn trên AWS."
-keywords:
-  [
-    "AWS CloudHSM la gi",
-    "AWS CloudHSM là gì",
-    "CloudHSM trong aws",
-    "AWS Shield la gi",
-    "AWS Shield là gì",
-    "Shield trong aws",
-    "DDoS la gi",
-    "Tấn công DDoS là gì",
-    "AWS WAF la gi",
-    "AWS WAF là gì",
-    "WAF trong aws",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

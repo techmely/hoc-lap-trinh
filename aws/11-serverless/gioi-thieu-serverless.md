@@ -1,12 +1,6 @@
 ---
 title: "Giới thiệu Serverless"
 description: "Serverless là môi trường, nền tảng thực thi ứng dụng và dịch vụ mà không phải quan tâm đến máy chủ. Ứng dụng serverless không cần phải quan tâm việc phân bổ, quản lý tài nguyên của hệ điều hành, và bỏ qua các vấn đề về nâng cấp và bảo mật. Với khái niệm là chỉ cần tập trung phát triển sản phẩm, việc còn lại về vận hành sẽ để nền tảng này đảm nhiệm."
-keywords:
-  [
-    "Serverless là gì",
-    "Serverless la gi",
-    "Serverless trong AWS"
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

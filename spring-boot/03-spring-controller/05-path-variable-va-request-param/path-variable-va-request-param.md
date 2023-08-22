@@ -1,19 +1,6 @@
 ---
 title: "Request Parameter và Path Variable"
 description: "Là hai annotation được sử dụng để truy cập dữ liệu từ các request. Chúng được sử dụng vào những mục đích trong những trường hợp khác nhau."
-keywords:
-  [
-    "requestparam va pathvariable trong spring boot",
-    "requestparam spring boot",
-    "pathvariable spring boot",
-    "requestparam object spring boot",
-    "pathvariable spring boot la gi",
-    "requestparam spring boot la gi",
-    "get all request parameters in spring boot",
-    "khac nhau giua pathvariable vs requestparameter trong spring boot",
-    "Cach lay du lieu tu URL trong spring boot",
-    "cach su dung requestparam va pathvariable",
-  ]
 chapter:
   name: "Spring controller"
   slug: "chuong-03-spring-controller"

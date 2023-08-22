@@ -1,16 +1,6 @@
 ---
 title: "Các câu lệnh với Container"
 description: "Bài này chúng ta sẽ tìm hiểu những câu lệnh container trong docker nhé."
-keywords:
-  [
-    "docker",
-    "docker container",
-    "container docker",
-    "các câu lệnh với container",
-    "cac cau lenh voi container",
-    "docker container command",
-    "docker command",
-  ]
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"

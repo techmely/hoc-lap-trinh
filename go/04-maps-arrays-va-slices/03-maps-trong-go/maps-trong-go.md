@@ -1,19 +1,6 @@
 ---
 title: "Maps trong Go"
 description: "Bài viết tập trung vào Maps trong Go và cách sử dụng chúng. Maps được xem như hashtables hoặc dictionaries trong các ngôn ngữ khác, cho phép xác định và thao tác giá trị thông qua các khóa. Bài viết giới thiệu cách khai báo, khởi tạo, lấy và xóa giá trị từ một map trong Go."
-keywords:
-  [
-    "Maps Go",
-    "hashtables Go",
-    "dictionaries Go",
-    "khai báo map Go",
-    "thao tác map Go",
-    "xóa giá trị map Go",
-    "duyệt map Go",
-    "truyền con trỏ Go",
-    "truyền giá trị Go",
-    "lưu trữ dữ liệu Go",
-  ]
 chapter:
   name: "Maps, Arrays và Slices"
   slug: "chuong-04-maps-arrays-va-slices"

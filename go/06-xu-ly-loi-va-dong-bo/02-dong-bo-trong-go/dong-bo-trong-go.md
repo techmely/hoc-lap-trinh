@@ -1,18 +1,6 @@
 ---
 title: "Lập trình tính toán đồng thời trong Go"
 description: "Bài viết tóm tắt về tính toán đồng thời trong Go bằng cách sử dụng goroutines và channels. Goroutines là các tiến trình trong Go và có thể thực thi đồng thời với các tiến trình khác. Channels được sử dụng để đồng bộ hóa và phối hợp các tiến trình"
-keywords:
-  [
-    "tính toán đồng thời",
-    "Go",
-    "goroutines",
-    "channels",
-    "đồng bộ hóa",
-    "lập trình đồng thời",
-    "mutex",
-    "RWMutex",
-    "đa luồng M:N",
-  ]
 chapter:
   name: "Xử lý lỗi và đồng bộ trong Go"
   slug: "chuong-06-xu-ly-loi-va-dong-bo"

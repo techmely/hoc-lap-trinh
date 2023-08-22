@@ -1,14 +1,6 @@
 ---
 title: "Giới Thiệu Website"
 description: "Website là trang thông tin có thể chứa văn bản, hình ảnh, âm thanh, video… Chúng ta truy cập 1 trang web thông qua địa chỉ của nó, được gọi là URL."
-keywords:
-  [
-    "giới thiệu website",
-    "website là gì",
-    "web tĩnh là gì",
-    "web động là gì",
-    "phân loại website",
-  ]
 chapter:
   name: "Tổng quan về ứng dụng web"
   slug: "chuong-01-tong-quan-ve-ung-dung-web"

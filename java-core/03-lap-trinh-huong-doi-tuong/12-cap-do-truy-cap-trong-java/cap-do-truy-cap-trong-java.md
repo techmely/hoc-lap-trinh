@@ -1,24 +1,6 @@
 ---
 title: "Cấp độ truy cập trong Java"
 description: "Bài này chúng ta sẽ tìm hiểu về Điều khiển việc truy cập đến các thành viên của một lớp, tự học lập trình java, chia sẻ kiến thức về java"
-keywords:
-  [
-    "access modifier java là gì",
-    "access modifier là gì",
-    "access modifier trong java",
-    "bien public trong java",
-    "biến private trong java",
-    "cách sử dụng hàm private trong java",
-    "hàm private trong java",
-    "hàm public trong java",
-    "khai báo private trong java",
-    "lệnh private trong java",
-    "private class trong java",
-    "private final trong java",
-    "private protected public trong java",
-    "private và public trong java",
-    "public là gì trong java",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
@@ -46,12 +28,12 @@ Ngoài ra, còn có nhiều Non-access Modifier như static, abstract, synchroni
 
 Bảng dưới đây mô tả khả năng truy cập của các Access Modifier trong java:
 
-| Từ khoá | Truy cập trong chính lớp đó | Truy cập trong lớp con cùng gói | Truy cập trong lớp con khác gói | Truy cập trong lớp khác cùng gói | Truy cập trong lớp khác khác gói |
-| --: | --: | --: | --: | --: | --- |
-| private | X | - | - | - | - |
-| protected | X | X | X | X | - |
-| public | X | X | X | X | X |
-| default | X | X | - | X | - |
+|   Từ khoá | Truy cập trong chính lớp đó | Truy cập trong lớp con cùng gói | Truy cập trong lớp con khác gói | Truy cập trong lớp khác cùng gói | Truy cập trong lớp khác khác gói |
+| --------: | --------------------------: | ------------------------------: | ------------------------------: | -------------------------------: | -------------------------------- |
+|   private |                           X |                               - |                               - |                                - | -                                |
+| protected |                           X |                               X |                               X |                                X | -                                |
+|    public |                           X |                               X |                               X |                                X | X                                |
+|   default |                           X |                               X |                               - |                                X | -                                |
 
 Trong bảng trên thì X thể hiện cho sự truy cập hợp lệ còn – thể hiện không thể truy cập vào thành phần này.
 

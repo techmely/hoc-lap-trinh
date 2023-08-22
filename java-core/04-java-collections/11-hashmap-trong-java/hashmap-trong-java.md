@@ -1,20 +1,6 @@
 ---
 title: "HashMap trong Java"
 description: "HashMap trong Java là một bảng băm dựa trên việc thực hiện Java's Map interface. Map là một tập hợp các cặp key-value, nó ánh xạ các key tới các value"
-keywords:
-  [
-    "HashMap trong Java",
-    "cách sử dụng hashmap trong java",
-    "duyet hashmap trong java",
-    "duyệt hashmap trong java",
-    "hashmap là gì",
-    "hashmap trong java",
-    "HashMap trong Java là gì",
-    "Chèn các phần tử vào HashMap",
-    "Duyệt qua các phần tử trong HashMap",
-    "Loại bỏ các phần tử trong HashMap",
-    "Các hàm của HashMap",
-  ]
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
@@ -539,10 +525,10 @@ Trong chương trình trên, lưu ý rằng chúng ta đã import gói `java.uti
 
 ## Các hàm khác của HashMap
 
-| Hàm | Mô tả |
-| --- | --- |
-| `clear()` | Xóa tất cả các mục khỏi map |
-| `containsKey()` | Kiểm tra xem map có chứa key được chỉ định hay không và trả về giá trị `boolean` |
+| Hàm               | Mô tả                                                                                |
+| ----------------- | ------------------------------------------------------------------------------------ |
+| `clear()`         | Xóa tất cả các mục khỏi map                                                          |
+| `containsKey()`   | Kiểm tra xem map có chứa key được chỉ định hay không và trả về giá trị `boolean`     |
 | `containsValue()` | Kiểm tra xem map có chứa `value` được chỉ định hay không và trả về giá trị `boolean` |
-| `size()` | Trả về kích cỡ của map |
-| `isEmpty()` | Kiểm tra xem map có trống không và trả về giá trị `boolean` |
+| `size()`          | Trả về kích cỡ của map                                                               |
+| `isEmpty()`       | Kiểm tra xem map có trống không và trả về giá trị `boolean`                          |

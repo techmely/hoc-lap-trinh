@@ -1,21 +1,6 @@
 ---
 title: "Tính thừa kế trong OOP"
 description: "Tính kế thừa trong lập trình hướng đối tượng cho phép xây dựng một lớp mới dựa trên các định nghĩa của lớp đã có"
-keywords:
-  [
-    "class trong lập trình hướng đối tượng",
-    "thừa kế java",
-    "thừa kế trong java",
-    "tính kế thừa java",
-    "tính kế thừa trong lập trình hướng đối tượng",
-    "tính kế thừa trong oop",
-    "tính kế thừa và đa hình trong java",
-    "tính thừa kế trong java",
-    "tính thừa kế trong oop java",
-    "tính thừa kế trong oop java là gì",
-    "lập trình hướng đối tượng",
-    "tính chất lập trình hướng đối tượng",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

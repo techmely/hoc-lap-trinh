@@ -1,12 +1,6 @@
 ---
 title: "API Gateway Sercurity là gì"
 description: "API Gateway đóng vai trò là cửa trước cho các ứng dụng để truy cập dữ liệu, logic nghiệp vụ hoặc chức năng từ các dịch vụ backend của bạn"
-keywords:
-  [
-    "IAM Permissions trong API Gateway",
-    "Cognito User Pools là gì",
-    "API Gateway trong aws"
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

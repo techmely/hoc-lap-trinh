@@ -1,17 +1,6 @@
 ---
 title: "Giới thiệu KMS"
 description: "Key Management Service (KMS) là dịch vụ dùng để quản lý key. KMS giúp bạn dễ dàng encrypt/decrypt dữ liệu trên AWS resources."
-keywords:
-  [
-    "AWS KMS la gi",
-    "AWS KMS là gì",
-    "KMS trong aws",
-    "Symmetric trong KMS",
-    "KMS Symmetric la gi",
-    "KMS Symmetric là gì",
-    "KMS Asymmetric la gi",
-    "KMS Asymmetric là gì",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

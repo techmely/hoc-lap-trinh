@@ -1,26 +1,6 @@
 ---
 title: "Biến và phạm vi biến trong Java"
 description: "Trong java, biến là tên của vùng nhớ được lưu trong bộ nhớ stack. Có 3 kiểu biến trong java, bao gồm biến cục bộ (hay còn gọi là biến local), biến toàn cục (biến instance) và biến tĩnh(biến static)."
-keywords:
-  [
-    "biến boolean trong java",
-    "biến byte trong java",
-    "biến char trong java",
-    "biến class trong java",
-    "biến cục bộ trong java",
-    "biến double trong java",
-    "biến dữ liệu trong java",
-    "biến final trong java",
-    "biến float trong java",
-    "biến global trong java",
-    "biến instance trong java",
-    "biến instance trong java là gì",
-    "biến java",
-    "biến và phạm vi biến trong java",
-    "biến và phạm vi biến trong java bị lỗi",
-    "biến và phạm vi biến trong java code",
-    "biến và phạm vi biến trong java cơ bản",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

@@ -1,17 +1,6 @@
 ---
 title: "Enumset trong Java"
 description: "Class EnumSet của collections framework trong Java triển khai tập hợp các phần tử của một enum đơn. Trước khi bạn tìm hiểu về EnumSet, hãy chắc chắn rằng bạn đã biết về Enums trong Java"
-keywords:
-  [
-    "Enumset trong Java",
-    "Tạo Enumset trong Java",
-    "enum",
-    "Enumset",
-    "Chèn các phần tử vào Enumset trong Java",
-    "Truy cập các phần tử của Enumset",
-    "Xóa bỏ các phần tử khỏi Enumset",
-    "Một số hàm trong Enumset",
-  ]
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
@@ -331,10 +320,10 @@ class Main {
 
 ## Một số hàm trong Enumset
 
-| Hàm | Mô tả |
-| --- | --- |
-| `copyOf()` | Tạo một bản sao của `EnumSet` |
+| Hàm          | Mô tả                                                                    |
+| ------------ | ------------------------------------------------------------------------ |
+| `copyOf()`   | Tạo một bản sao của `EnumSet`                                            |
 | `contains()` | Tìm kiếm phần tử đã chỉ định trong `EnumSet` và trả về kết quả `boolean` |
-| `isEmpty()` | Kiểm tra xem `EnumSet` có trống hay không |
-| `size()` | Trả về kích thước của `EnumSet` |
-| `clear()` | Loại bỏ tất cả các phần tử khỏi `EnumSet` |
+| `isEmpty()`  | Kiểm tra xem `EnumSet` có trống hay không                                |
+| `size()`     | Trả về kích thước của `EnumSet`                                          |
+| `clear()`    | Loại bỏ tất cả các phần tử khỏi `EnumSet`                                |

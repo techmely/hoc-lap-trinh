@@ -1,17 +1,6 @@
 ---
 title: "Exception handling với overriding method"
 description: "Bài này chúng ta sẽ tìm hiểu về xử lý exception với overriding phương thức trong Java"
-keywords:
-  [
-    "Exception handling với overriding phương thức trong Java",
-    "tự học java",
-    "tự học lập trình java",
-    "tu hoc lap trinh java",
-    "catch exception in filter java",
-    "các exception trong java",
-    "exception handling in file java",
-    "exception handling với overriding phương thức trong java biểu",
-  ]
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"

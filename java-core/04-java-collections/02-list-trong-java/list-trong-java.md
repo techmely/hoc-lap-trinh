@@ -1,22 +1,6 @@
 ---
 title: "List trong Java"
 description: "ist trong java là một interface trong java, nó chứa các phương thức để chèn và xóa các phần tử dựa trên chỉ số index."
-keywords:
-  [
-    "arraylist trong java",
-    "arraylist va list trong java",
-    "arraylist và list trong java",
-    "bài tập về linked list trong java",
-    "code list trong java",
-    "collection list trong java",
-    "contains list trong java",
-    "các loại list trong java",
-    "cách tạo linked list trong java",
-    "doubly linked list trong java",
-    "duyệt list trong java",
-    "get phần tử trong list java",
-    "hàm list trong java",
-  ]
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
@@ -58,18 +42,18 @@ List<String> list2 = new LinkedList<>();
 
 Ngoài những hàm mà nó được kế thừa từ [Collection](/bai-viet/java/cac-collection-trong-java), List còn bổ sung thêm những hàm như:
 
-| Method | Mô tả |
-| --- | --- |
-| Object get(int index) | Cho lại phần tử được xác định bởi index. |
-| Object set(int index, Object elem) | Thay thế phần tử được xác định bởi index bằng elem |
-| void add(int index, Object elem) | Chèn elem vào sau phần tử được xác định bởi index. |
-| Object remove(int index) | Bỏ đi phần tử được xác định bởi index |
-| boolean addAll(int index, Collection c) | Chèn các phần tử của tập hợp c vào vị trí được xác định bởi index |
-| int indexOf(Object elem) | Cho biết vị trí lần xuất hiện đầu tiên của phần tử trong danh sách |
-| int lastIndexOf(Object elem) | Cho biết vị trí lần xuất hiện cuối cùng của elem trong danh sách. |
-| List subList(int fromIndex, int toIndex) | Lấy ra một danh sách con từ vị trí fromIndex đến toIndex |
-| ListIterator listIterator() | Cho lại các phần tử liên tiếp bắt đầu từ phần tử đầu tiên. |
-| ListIterator listIterator(int index) | Cho lại các phần tử liên tiếp bắt đầu từ phần tử được xác định bởi. Trong đó `ListIterator` là interface mở rộng giao diện `Iterator` đã có trong `java.lang.` |
+| Method                                   | Mô tả                                                                                                                                                          |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Object get(int index)                    | Cho lại phần tử được xác định bởi index.                                                                                                                       |
+| Object set(int index, Object elem)       | Thay thế phần tử được xác định bởi index bằng elem                                                                                                             |
+| void add(int index, Object elem)         | Chèn elem vào sau phần tử được xác định bởi index.                                                                                                             |
+| Object remove(int index)                 | Bỏ đi phần tử được xác định bởi index                                                                                                                          |
+| boolean addAll(int index, Collection c)  | Chèn các phần tử của tập hợp c vào vị trí được xác định bởi index                                                                                              |
+| int indexOf(Object elem)                 | Cho biết vị trí lần xuất hiện đầu tiên của phần tử trong danh sách                                                                                             |
+| int lastIndexOf(Object elem)             | Cho biết vị trí lần xuất hiện cuối cùng của elem trong danh sách.                                                                                              |
+| List subList(int fromIndex, int toIndex) | Lấy ra một danh sách con từ vị trí fromIndex đến toIndex                                                                                                       |
+| ListIterator listIterator()              | Cho lại các phần tử liên tiếp bắt đầu từ phần tử đầu tiên.                                                                                                     |
+| ListIterator listIterator(int index)     | Cho lại các phần tử liên tiếp bắt đầu từ phần tử được xác định bởi. Trong đó `ListIterator` là interface mở rộng giao diện `Iterator` đã có trong `java.lang.` |
 
 ## Ví dụ về List trong java
 
@@ -148,12 +132,12 @@ public class ListExample1 {
 
 `ListIterator` là một interface được sử dụng để duyệt các phần tử của List trong java. Các phương thức của interface ListIterator trong java
 
-| Method | Mô tả |
-| --- | --- |
-| boolean hasNext() | Phương thức này trả về true nếu list interator có tồn tại phần tử kế tiếp phần tử hiện tại. |
-| Object next() | Phương thức này trả về phần tử kế tiếp trong danh sách và vị trí con trỏ tăng lên 1. |
-| boolean hasPrevious() | Phương pháp này trả về true nếu list interator có tồn tại phần tử kế sau phần tử hiện tại. |
-| Object previous() | Phương thức này trả về phần tử kế sau trong danh sách và vị trí con trỏ giảm đi 1 |
+| Method                | Mô tả                                                                                       |
+| --------------------- | ------------------------------------------------------------------------------------------- |
+| boolean hasNext()     | Phương thức này trả về true nếu list interator có tồn tại phần tử kế tiếp phần tử hiện tại. |
+| Object next()         | Phương thức này trả về phần tử kế tiếp trong danh sách và vị trí con trỏ tăng lên 1.        |
+| boolean hasPrevious() | Phương pháp này trả về true nếu list interator có tồn tại phần tử kế sau phần tử hiện tại.  |
+| Object previous()     | Phương thức này trả về phần tử kế sau trong danh sách và vị trí con trỏ giảm đi 1           |
 
 <div class="example">Hãy xem ví dụ đơn giả về việc duyệt các phần tử của List trong java bằng cách sử dụng ListIterator</div>
 

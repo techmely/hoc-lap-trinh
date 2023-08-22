@@ -1,19 +1,6 @@
 ---
 title: "Giới thiệu Javascript"
 description: "Javascript (thường hay viết tắt là JS) là ngôn ngữ lập trình kịch bản (scripting language) cho client-side, sau này còn cho cả server-side (Nodejs). Bài này chúng ta sẽ cùng nhau tìm hiểu về javascript"
-keywords:
-  [
-    "gioi thieu javascript",
-    "giới thiệu javascript",
-    "khoá học javascript",
-    "giới thiệu javascript",
-    "giới thiệu javascript cơ bản",
-    "javascript la gi",
-    "tong quan ve javascript",
-    "gioi thieu ve ngon ngu lap trinh javascript",
-    "tom tat javascript",
-    "code javascript la gi",
-  ]
 chapter:
   name: "Giới thiệu Javascript"
   slug: "chuong-01-gioi-thieu-javascript"

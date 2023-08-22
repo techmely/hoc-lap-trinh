@@ -1,19 +1,6 @@
 ---
 title: "Kỹ thuật Debug cơ bản"
 description: "Xây dựng ứng dụng React-Native khác với ứng dụng native là bạn không thể đặt break point rồi chạy và chờ chương trình nhảy vào vị trí mà bạn đợi và xem trạng thái hay biến lúc đó bằng bao nhiêu đang như thế nào."
-keywords:
-  [
-    "gioi thieu react native",
-    "giới thiệu react native",
-    "khoá học react native",
-    "giới thiệu react native",
-    "giới thiệu jreact native cơ bản",
-    "react native la gi",
-    "tong quan ve react native",
-    "gioi thieu ve ngon ngu lap trinh react native",
-    "tom tat react native",
-    "code react native la gi",
-  ]
 chapter:
   name: "Làm quen với react native"
   slug: "chuong-03-lam-quen-voi-react-native"

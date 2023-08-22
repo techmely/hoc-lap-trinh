@@ -1,13 +1,6 @@
 ---
 title: "Thread Group trong Java"
 description: "Java cung cấp một cách thuận tiện để nhóm nhiều thread trong một đối tượng duy nhất. Bằng cách đó, chúng ta có thể suspend, resume hoặc ` interrupt một nhóm các thread bằng việc gọi một phương thức duy nhất."
-keywords:
-  [
-    "thread group trong java code",
-    "thread group",
-    "Thread Group trong Java",
-    "thread group là gì",
-  ]
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"

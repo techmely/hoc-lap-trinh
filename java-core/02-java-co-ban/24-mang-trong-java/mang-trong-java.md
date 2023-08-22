@@ -1,23 +1,6 @@
 ---
 title: "Mảng trong java"
 description: "Java cung cấp cho chúng ta rất nhiều cấu trúc dữ liệu, trong đó array là một cấu trúc cho phép lưu trữ một tập hợp các dữ liệu cùng loại, tuần tự và có số lượng xác định."
-keywords:
-  [
-    "array trong java",
-    "array trong java example",
-    "array trong java fpt",
-    "array trong java là gì",
-    "bai tap mảng trong java",
-    "biến mảng trong java",
-    "bài tập mảng 1 chiều trong java",
-    "bài tập mảng 2 chiều trong java",
-    "bài tập mảng trong java",
-    "bài tập nhập mảng trong java",
-    "bài tập về mảng 1 chiều trong java",
-    "bài tập về mảng 2 chiều trong java",
-    "bài tập về mảng một chiều trong java",
-    "bài tập về mảng trong java",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

@@ -1,18 +1,6 @@
 ---
 title: "Storage trong docker"
 description: "Ở bài này mình sẽ giới thiệu một thành phần vô cùng quan trọng trong kiến trúc của Docker, đó chính là Storage trong Docker"
-keywords:
-  [
-    "Storage trong docker",
-    "lưu trữ trong docker",
-    "luu tru trong docker",
-    "storage docker",
-    "docker storage",
-    "hoạt động storage docker",
-    "hoat dong storage docker",
-    "cách hoạt động storage docker",
-    "cach hoat dong storage docker",
-  ]
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"

@@ -1,19 +1,6 @@
 ---
 title: "Cấu trúc code trong Javascript"
 description: "Bài này chúng ta sẽ cùng nhau tìm hiểu về câu lệnh và comment trong Javascript"
-keywords:
-  [
-    "cấu trúc code trong javascript",
-    "comment trong javascript",
-    "câu lệnh trong javascript",
-    "khoá học javascript cơ bản",
-    "cau truc javascript",
-    "Cấu trúc JavaScript",
-    "comment trong javascript",
-    "câu lệnh Javascript",
-    "cac cau lenh trong javascript",
-    "Cú pháp JavaScript"
-  ]
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"
@@ -86,9 +73,7 @@ console.log("World");
 Nguyên nhân là do trình thông dịch **tự động thêm dấu chấm phẩy** dựa trên kí tự xuống dòng. Tuy nhiên, vẫn có nhiều trường hợp xuống dòng nhưng JavaScript vẫn hiểu đó là một câu lệnh, ví dụ:
 
 ```js
-console.log(1 +
-1 +
-1);
+console.log(1 + 1 + 1);
 ```
 
 Ba dòng trên vẫn chỉ là một câu lệnh. Và kết quả thu được là: **3**.
@@ -105,7 +90,7 @@ Ví dụ một đoạn code chạy đúng:
 
 ```js
 console.log("Hello world");
-[1, 2].forEach(value => console.log(value));
+[1, 2].forEach((value) => console.log(value));
 ```
 
 Có thể bạn chưa hiểu về câu lệnh thứ hai (các bài viết sau bạn sẽ biết) - kết quả hiển thị là:

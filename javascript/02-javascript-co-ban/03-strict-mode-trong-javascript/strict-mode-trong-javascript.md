@@ -1,19 +1,6 @@
 ---
 title: "Strict Mode trong JavaScript"
 description: "Strict Mode là một tính năng rất hay ho được thêm trong phiên bản EMAScript 2015. Đây là một khái niệm mới, hãy cùng mình tìm hiểu nhé."
-keywords:
-  [
-    "strict mode trong javascript",
-    "strict mode trong javascript là gì",
-    "strict mode là gì",
-    "có nên sử dụng strict mode không",
-    "tại sao nên sử dụng strict mode",
-    "khoá học javascript cơ bản",
-    "javascript strict mode",
-    "strict mode la gi",
-    "Tìm hiểu về Strict Mode",
-    "Use strict trong JS"
-  ]
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"

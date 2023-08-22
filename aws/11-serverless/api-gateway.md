@@ -1,18 +1,6 @@
 ---
 title: "Giới thiệu API Gateway"
 description: "API Gateway đóng vai trò là cửa trước cho các ứng dụng để truy cập dữ liệu, logic nghiệp vụ hoặc chức năng từ các dịch vụ backend của bạn"
-keywords:
-  [
-    "API Gateway la gi",
-    "API Gateway là gì",
-    "API Gateway trong aws",
-    "API Gateway Throttling la gi",
-    "API Gateway Throttling là gì",
-    "API Gateway Throttling trong aws",
-    "API Gateway Endpoint Types la gi",
-    "API Gateway Endpoint Types là gì",
-    "API Gateway Endpoint Types trong aws",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

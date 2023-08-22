@@ -1,14 +1,6 @@
 ---
 title: "Annotation @ModelAttribute"
 description: "@ModelAttribute là một trong những annotation quan trọng nhất trong Spring MVC."
-keywords:
-  [
-    "khóa học Spring cơ bản",
-    "annotation @modelAttribute",
-    "annotation @modelAttribute là gì",
-    "annotation @modelAttribute ý nghĩa",
-    "annotation @modelAttribute cách dùng",
-  ]
 chapter:
   name: "Form"
   slug: "chuong-04-form"

@@ -1,22 +1,6 @@
 ---
 title: "Mảng đa chiều trong java"
 description: "Lệnh break sẽ chấm dứt quá trình lặp mà không thực hiện nốt phân còn lại của cấu trúc lặp, continue sẽ ngưng thực thi phần còn lại của thân vòng lặp và chuyển điều khiển về điểm bắt đầu của vòng lặp"
-keywords:
-  [
-    "bài tập mảng 2 chiều trong java",
-    "bài tập về mảng 2 chiều trong java",
-    "các bài toán về mảng 2 chiều trong java",
-    "cách khai báo mảng 2 chiều trong java",
-    "cách sử dụng mảng 2 chiều trong java",
-    "duyệt mảng 2 chiều trong javascript",
-    "khai báo mảng 2 chiều trong java",
-    "mảng 2 chiều java",
-    "mảng 2 chiều string trong java",
-    "mảng 2 chiều trong java",
-    "mảng 2 chiều trong java eclipse",
-    "mảng 2 chiều trong java edition",
-    "mảng 2 chiều trong java example",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

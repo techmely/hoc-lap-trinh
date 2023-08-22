@@ -1,17 +1,6 @@
 ---
 title: "HashSet trong Java"
 description: "Các điểm quan trọng về lớp HashSet trong java là HashSet chỉ chứa các phần tử duy nhất, không chấp nhận 2 phần tử trùng nhau, HashSet lưu trữ các phần tử bằng cách sử dụng một cơ chế được gọi là hashing (băm) và không đảm bảo thứ tự được thêm vào, ngoài ra HashSet cho phép chứa phần tử NULL"
-keywords:
-  [
-    "hashset trong java",
-    "Tập hợp hashset trong Java",
-    "Thêm một phần tử vào hashset",
-    "Duyệt qua các phần tử trong hashset",
-    "Xóa một phần tử trong Shashsetet",
-    "Xóa tất cả các phần tử trong hashset",
-    "Thêm tất cả các phần tử từ một tập hợp hashset khác",
-    "Kiểm tra một phần tử đã tồn tại trong hashset chưa",
-  ]
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
@@ -378,10 +367,10 @@ class Main {
 
 ## Một số hàm khác của Hashset
 
-| Hàm | Mô tả |
-| --- | --- |
-| `clone()` | Tạo một bản sao của HashSet |
+| Hàm          | Mô tả                                                                |
+| ------------ | -------------------------------------------------------------------- |
+| `clone()`    | Tạo một bản sao của HashSet                                          |
 | `contains()` | Tìm kiếm phần tử đã chỉ định trong HashSet và trả về kết quả boolean |
-| `isEmpty()` | Kiểm tra xem HashSet có trống không |
-| `size()` | Trả về kích thước của HashSet |
-| `clear()` | Loại bỏ tất cả các phần tử khỏi HashSet |
+| `isEmpty()`  | Kiểm tra xem HashSet có trống không                                  |
+| `size()`     | Trả về kích thước của HashSet                                        |
+| `clear()`    | Loại bỏ tất cả các phần tử khỏi HashSet                              |

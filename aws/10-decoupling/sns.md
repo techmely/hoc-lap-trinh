@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu SNS"
 description: "Amazon SNS là một dịch vụ cho phép bạn gửi tin nhắn (SMS), thông báo (notification) số lượng lớn tới các thiết bị đầu cuối hay các client thông qua một topic. Các thiết bị đầu cuối (hay client) có thể là một web server (HTTP/S), email, Amazon SQS hay AWS Lambda."
-keywords:
-  [
-    "Amazon SNS là gì",
-    "AWS SNS la gi",
-    "Endpoint trong SNS",
-    "Endpoint SNS"
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

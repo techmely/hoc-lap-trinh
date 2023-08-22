@@ -1,21 +1,6 @@
 ---
 title: "Tính trừu tượng trong OOP"
 description: "Trong lập trình hướng đối tượng, tính trừu tượng nghĩa là chọn ra các thuộc tính, phương thức của đối tượng cần cho việc giải quyết bài toán đang lập trình"
-keywords:
-  [
-    "abstraction trong java",
-    "lớp trừu tượng trong java",
-    "phương thức trừu tượng trong java",
-    "trừu tượng trong java",
-    "trừu tượng trong oop",
-    "tính trừu tượng",
-    "tính trừu tượng java",
-    "tính trừu tượng oop",
-    "tính trừu tượng oop nghĩa là gì",
-    "tính trừu tượng oop pdf",
-    "tính trừu tượng trong java",
-    "tính trừu tượng trong java fpt",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

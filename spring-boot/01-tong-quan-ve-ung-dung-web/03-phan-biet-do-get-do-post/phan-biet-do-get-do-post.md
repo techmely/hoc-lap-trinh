@@ -1,17 +1,6 @@
 ---
 title: "Phân biệt giữa Get và Post"
 description: "GET và POST là hai kỹ thuật phổ biến để gửi dữ liệu đến server và browser cần chúng để giao tiếp với server. Hai phương thức này khác biệt ở chỗ phương thức GET thêm dữ liệu được mã hóa vào URI trong khi trong với phương thức POST, dữ liệu được nối vào phần body chứ không phải URI."
-keywords:
-  [
-    "Phân biệt giữa Get và Post",
-    "post la gi",
-    "get la gi",
-    "get va post trong springboot",
-    "get data la gi",
-    "put va post khac nhau nhu the nao",
-    "du ieu truyen di bang phuong thuc get",
-    "du ieu truyen di bang phuong thuc post",
-  ]
 chapter:
   name: "Tổng quan về ứng dụng web"
   slug: "chuong-01-tong-quan-ve-ung-dung-web"

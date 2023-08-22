@@ -1,18 +1,6 @@
 ---
 title: "Các câu lệnh với image"
 description: "Hướng dẫn tạo image từ docker file"
-keywords:
-  [
-    "docker",
-    "docker image",
-    "image docker",
-    "các câu lệnh với image trong docker",
-    "cac cau lenh voi image",
-    "câu lệnh với image docker",
-    "cau lenh voi image docker image",
-    "các câu lệnh với image",
-    "cac cau lenh voi image",
-  ]
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"

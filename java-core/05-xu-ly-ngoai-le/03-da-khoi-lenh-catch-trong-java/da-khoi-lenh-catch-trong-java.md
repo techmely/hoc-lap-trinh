@@ -1,17 +1,6 @@
 ---
 title: "Đa khối lệnh catch trong Java"
 description: "Nếu bạn phải thực hiện các tác vụ khác nhau mà ở đó có thể xảy ra các ngoại lệ khác nhau, hãy sử dụng đa khối lệnh catch trong java, bài này chúng ta cùng nhau tìm hiểu về đa khối lệnh catch trong java"
-keywords:
-  [
-    "cách dùng try catch trong java",
-    "cách sử dụng try catch trong java",
-    "cấu trúc try catch trong java",
-    "hàm try catch trong java",
-    "lệnh try catch trong java",
-    "sử dụng try catch trong java",
-    "try catch trong java",
-    "đa khối lệnh try catch trong java 8",
-  ]
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"

@@ -1,17 +1,6 @@
 ---
 title: "Set trong Java"
 description: "Set Interface là một loại Interface Collection, khác với List, các phần tử trong List có thể giống nhau, còn đối với Set, các phần tử trong Set là duy nhất (nghĩa là giá trị của các phần tử này không được giống nhau)"
-keywords:
-  [
-    "set trong java",
-    "Tập hợp Set trong Java",
-    "Thêm một phần tử vào Set",
-    "Duyệt qua các phần tử trong Set",
-    "Xóa một phần tử trong Set",
-    "Xóa tất cả các phần tử trong Set",
-    "Thêm tất cả các phần tử từ một tập hợp Set khác",
-    "Kiểm tra một phần tử đã tồn tại trong Set chưa",
-  ]
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"

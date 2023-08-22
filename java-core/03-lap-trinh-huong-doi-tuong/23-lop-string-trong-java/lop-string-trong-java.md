@@ -1,17 +1,6 @@
 ---
 title: "Lớp String trong Java"
 description: "Bài này chúng ta sẽ tìm hiểu về Lớp StringTokenizer, tự học lập trình java, chia sẻ kiến thức về java"
-keywords:
-  [
-    "class string java",
-    "hàm string trong java",
-    "lớp chuỗi trong java",
-    "lớp string trong java",
-    "lớp string trong java là",
-    "public class trong java",
-    "string class trong java fpt",
-    "string class trong java free",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

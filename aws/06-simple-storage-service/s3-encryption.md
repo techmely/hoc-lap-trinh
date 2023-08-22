@@ -1,19 +1,6 @@
 ---
 title: "Mã hóa dữ liệu trong S3"
 description: "Để tránh việc lưu trữ dữ liệu dưới dạng thô, Amazon S3 cung cấp phương thức mã hóa dữ liệu. Trong S3 có 2 cách chính để mã hóa"
-keywords:
-  [
-    "S3 Encryption la gi",
-    "S3 Encryption trong aws",
-    "S3 Encryption la gi",
-    "Mã hóa trong Amazon S3",
-    "Ma hoa trong Amazon S3",
-    "SSE-S3 trong AWS",
-    "Client Side Encryption trong AWS",
-    "SSE-C trong AWS",
-    "SSE-KMS trong AWS",
-    ""
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

@@ -1,21 +1,6 @@
 ---
 title: "String (chuỗi) trong Java"
 description: "String trong java là một object immutable, nghĩa là bạn khônng thể thay đổi giá trị của String khi nó đã được khởi tạo."
-keywords:
-  [
-    "biến string trong java",
-    "chuyen doi string sang int trong java",
-    "chuyen int thanh string trong java",
-    "chuyển int sang string trong java",
-    "chuyển kiểu date sang string trong java",
-    "chuyển string sang date trong java",
-    "chuyển string thành date trong java",
-    "chuyển string thành int trong java",
-    "chuyển từ double sang string trong java",
-    "chuỗi string trong java",
-    "code string trong java",
-    "compare string trong java",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

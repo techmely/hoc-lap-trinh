@@ -1,28 +1,6 @@
 ---
 title: "Các toán tử trong Java"
 description: "Toán tử trong java là một ký hiệu được sử dụng để thực hiện một phép tính hoặc chức năng nào đó. Bài này chúng ta sẽ cùng nhau tìm hiểu về một số phép toán kiểu dữ liệu nguyên thủy nhé"
-keywords:
-  [
-    "toán tử trong java",
-    "toan tu trong java",
-    "toán tử tăng giảm",
-    "toan tu trong java",
-    "toán tử java",
-    "các toán tử bit trong java",
-    "các toán tử trong java",
-    "cách nạp chồng toán tử trong java",
-    "hàm toán tử trong java",
-    "thứ tự ưu tiên toán tử trong java",
-    "toán tử 2 ngôi trong java",
-    "toán tử 3 ngôi trong java",
-    "toán tử and trong java",
-    "toán tử bit trong java",
-    "toán tử bình phương trong java",
-    "toán tử chia hết trong java",
-    "toán tử chia lấy dư trong java",
-    "toán tử gán trong java",
-    "phép chia trong java",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

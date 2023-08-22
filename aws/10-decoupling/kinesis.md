@@ -1,19 +1,6 @@
 ---
 title: "Giới thiệu Kinesis"
 description: "Amazon Kinesis là dịch vụ giúp bạn xây dựng được một ứng dụng có khả năng phân tích và xử lý luồng dữ liệu (stream data) theo thời gian thực (realtime). Amazon Kinesis có khả năng thu nhận, lưu trữ đến hàng terabytes dữ liệu trong một giờ."
-keywords:
-  [
-    "Amazon Kinesis là gì",
-    "AWS Kinesis la gi",
-    "Kiến trúc Amazon Kinesis",
-    "Streaming data trong Kinesis",
-    "Kinesis Data Streams là gì",
-    "Kinesis Data Streams la gi",
-    "Kinesis Data Firehorse là gì",
-    "Kinesis Data Firehorse la gi",
-    "Kinesis Data Analytics là gì",
-    "Kinesis Data Analytics la gi",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv
@@ -69,13 +56,13 @@ Hiện tại có 4 components về Kinesis bao gồm:
 - Kinesis Firehose là dịch vụ serverless, automatic scaling
 - **Near Real Time**
 
-| Kinesis Data Streams | Kinesis Data Firehorse |
-| --- | --- |
-| Streaming service | Load streaming data đến S3/Redshift/ES/3rd party |
-| Quản lý thủ công | Quản lý tự động (fully managed) |
-| Real time | Near real time |
-| Quản lý scaling (tăng, giảm shard) | Automatic scaling |
-| Data storage từ 1-365 ngày | Không có data storage |
+| Kinesis Data Streams               | Kinesis Data Firehorse                           |
+| ---------------------------------- | ------------------------------------------------ |
+| Streaming service                  | Load streaming data đến S3/Redshift/ES/3rd party |
+| Quản lý thủ công                   | Quản lý tự động (fully managed)                  |
+| Real time                          | Near real time                                   |
+| Quản lý scaling (tăng, giảm shard) | Automatic scaling                                |
+| Data storage từ 1-365 ngày         | Không có data storage                            |
 
 ## Kinesis Data Analytics là gì
 

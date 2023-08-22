@@ -1,20 +1,6 @@
 ---
 title: "Đa luồng trong Java"
-description: ""
-keywords:
-  [
-    "code đa luồng trong java",
-    "lập trình thread trong java",
-    "lập trình đa luồng trong java",
-    "sử dụng thread trong java",
-    "đa luồng trong java",
-    "tiến trình là gì",
-    "luồng là gì",
-    "process là gì",
-    "thread là gì",
-    "Đa luồng trong java là gì",
-    "hệ điều hành đơn nhiệm, hệ điều hành đa nhiệm",
-  ]
+description: "Đa luồng trong Java"
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"

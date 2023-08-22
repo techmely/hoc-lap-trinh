@@ -1,19 +1,6 @@
 ---
 title: "Tìm hiểu hằng trong JavaScript"
 description: "Tìm hiểu về hằng trong JavaScript"
-keywords:
-  [
-    "khoá học javascript",
-    "tìm hiểu hằng trong JavaScript",
-    "khai bao hang so trong javascript",
-    "hằng số trong JavaScript",
-    "hằng số trong javascript cơ bản",
-    "hằng số trong javascript dùng để làm gì",
-    "hằng số trong javascript gồm",
-    "Khai báo hằng số trong Javascript",
-    "hang javascript code",
-    "hang so la gi",
-  ]
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"

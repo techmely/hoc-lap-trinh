@@ -1,18 +1,6 @@
 ---
 title: "Form trong Spring sử dụng Maven."
 description: "Form trong Spring sử dụng Maven."
-keywords:
-  [
-    "Form trong Spring sử dụng Maven",
-    "spring form la gi",
-    "cach su dung spring form mvc taglib",
-    "spring boot form la gi",
-    "spring form date",
-    "spring form date la gi",
-    "cach su dung spring form date",
-    "spring mvc form trong spring boot",
-    "submit form trong spring boot",
-  ]
 chapter:
   name: "Form"
   slug: "chuong-04-form"
@@ -22,6 +10,7 @@ category:
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---
+
 ## Xử lý Form trong Spring MVC
 
 Các công nghệ sử dụng trong bài viết này

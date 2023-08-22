@@ -1,22 +1,6 @@
 ---
 title: "Từ khóa static trong Java"
 description: "Bài này chúng ta sẽ tìm hiểu về Thuộc tính tĩnh (static variable), tự học lập trình java, chia sẻ kiến thức về java"
-keywords:
-  [
-    "biến static trong java",
-    "biến static và final trong java",
-    "biến static và hàm static trong java",
-    "class static trong java",
-    "code static trong java",
-    "câu lệnh static trong java",
-    "final static trong java",
-    "hàm static trong java",
-    "khi nào dùng static trong java",
-    "khối static trong java",
-    "từ khóa static trong java",
-    "từ khóa static trong java code",
-    "từ khóa static trong java fpt",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

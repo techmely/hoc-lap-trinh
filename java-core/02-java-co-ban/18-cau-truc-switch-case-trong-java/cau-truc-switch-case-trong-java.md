@@ -1,20 +1,6 @@
 ---
 title: "Cấu trúc switch case trong Java"
 description: "Trong bài viết này mình sẽ chia sẻ cho bạn một cấu trúc lệnh rẽ nhánh cơ bản và hay sử dụng đó là cấu trúc switch case trong Java."
-keywords:
-  [
-    "cách dùng switch case",
-    "cách dùng switch case trong java",
-    "cách sử dụng switch case trong java",
-    "câu lệnh switch case trong java",
-    "cấu trúc switch case trong java",
-    "hàm switch case trong java",
-    "lệnh switch case trong java",
-    "switch case trong java",
-    "switch case trong java bị lỗi",
-    "switch case trong java example",
-    "switch case trong java fpt",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
@@ -169,6 +155,7 @@ public class Thaycacac {
 </div>
 
 <content-info><ul>
+
 <li> <b>Biến</b> phải là một biểu thức có kiểu char, byte, short, int nhưng không thể là kiểu long, nếu <b>Biến</b> có kiểu khác với các kiểu liệt kê ở trên thì java sẽ đưa ra một thông báo lỗi.</li>
 <li>Nếu case không có break thì nó sẽ thực hiện đến hết, khi không còn khối nào thì thôi.</li>
 

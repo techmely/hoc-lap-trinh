@@ -1,15 +1,6 @@
 ---
 title: "Dependency Injection (DI)"
 description: "Dependency injection là một kĩ thuật trong đó một object (hoặc một static method) cung cấp các dependencies của một object khác. Một dependency là một object mà có thể sử dụng (một service). Tuy nhiên định nghĩa trên vẫn khá là khó hiểu, vậy nên hãy cùng tìm hiểu để hiểu rõ hơn về nó nào."
-keywords:
-  [
-    "dependency injection trong spring",
-    "Dependency Injection",
-    "Dependency Injection là gì",
-    "Dependency Injection Spring Boot",
-    "cach dung dependency injection trong spring",
-    "dependency injection trong spring de lam gi",
-  ]
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-02-tong-quan-ve-spring"
@@ -23,7 +14,6 @@ position: 7
 ## Dependency Injection (DI)
 
 ![Dependency Injection](https://github.com/techmely/hoc-lap-trinh/assets/29374426/3bbde695-58c3-472a-a717-201536a42ab3)
-
 
 ### DI là gì
 

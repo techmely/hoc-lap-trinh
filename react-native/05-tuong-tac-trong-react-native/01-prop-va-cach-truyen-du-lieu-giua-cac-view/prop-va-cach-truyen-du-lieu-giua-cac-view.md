@@ -1,19 +1,6 @@
 ---
 title: "Prop và cách truyền dữ liệu giữa các view"
-description: ""
-keywords:
-  [
-    "gioi thieu react native",
-    "giới thiệu react native",
-    "khoá học react native",
-    "giới thiệu react native",
-    "giới thiệu jreact native cơ bản",
-    "react native la gi",
-    "tong quan ve react native",
-    "gioi thieu ve ngon ngu lap trinh react native",
-    "tom tat react native",
-    "code react native la gi",
-  ]
+description: "Prop và cách truyền dữ liệu giữa các view"
 chapter:
   name: "Tương tác trong react native"
   slug: "chuong-05-tuong-tac-trong-react-native"

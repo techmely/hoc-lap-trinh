@@ -1,17 +1,6 @@
 ---
 title: "Giới thiệu CloudFront Signed URL/Signed Cookies"
 description: "CloudFront Signed URL/Signed Cookies là gì? Trên thực tế có nhiều nội dung của website của bạn chỉ giới hạn cho những người dùng nhất định (người dùng đã trả phí). Chúng ta có thể dùng Cloudfront Signed URL/Cookie để dễ dàng quản lý truy cập đến nội dung của riêng mình."
-keywords:
-  [
-    "Cloudfront Signed URL la gi",
-    "Cloudfront Signed URL là gì",
-    "Cloudfront Signed Cookies la gi",
-    "Cloudfront Signed Cookies là gì",
-    "Cloudfront Signed URL hoạt động như thế nào",
-    "Cloudfront Signed URL hoat dong nhu the nao",
-    "Cloudfront Signed Cookies hoạt động như thế nào",
-    "Cloudfront Signed Cookies hoat dong nhu the nao",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

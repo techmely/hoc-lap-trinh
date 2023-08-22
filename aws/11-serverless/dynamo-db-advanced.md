@@ -1,21 +1,6 @@
 ---
 title: "DynamoDB nâng cao"
 description: "Amazon DynamoDB Accelerator (DAX) là bộ nhớ đệm trong bộ nhớ, có khả năng sử dụng cao, được quản lý toàn phần dành cho Amazon DynamoDB. DAX cải thiện hiệu năng lên tới 10 lần—từ mili giây xuống micro giây—ngay cả khi có hàng triệu yêu cầu mỗi giây."
-keywords:
-  [
-    "DynamoDB Accelerator (DAX) la gi",
-    "DynamoDB Accelerator (DAX) là gì",
-    "Accelerator (DAX) trong DynamoDB",
-    "DynamoDB Streams la gi",
-    "DynamoDB Streams là gì",
-    "Streams trong DynamoDB",
-    "DynamoDB Global Tables la gi",
-    "DynamoDB Global Tables là gì",
-    "Global Tables trong DynamoDB",
-    "DynamoDB Tive To Live la gi",
-    "DynamoDB Tive To Live là gì",
-    "Tive To Live trong DynamoDB",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

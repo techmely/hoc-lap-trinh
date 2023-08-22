@@ -1,22 +1,6 @@
 ---
 title: "Amazon FSx là gì"
 description: "Amazon FSx là dịch vụ cho phép bạn có thể launch hệ thống files với hiệu suất cao. FSx được xây dựng trên công nghệ máy tính, network, phần cứng mới nhất hiện nay đem lại hiệu suất cao."
-keywords:
-  [
-    "AWS FSx là gì",
-    "AWS FSx la gi",
-    "Giới thiệu Amazon FSx",
-    "FSx trong AWS",
-    "FSx File System Deployment Options",
-    "AWS FSx Lustre là gì",
-    "AWS FSx Lustre la gi",
-    "AWS FSx Window File Server là gì",
-    "AWS FSx Window File Server la gi",
-    "AWS FSx Scratch File System là gì",
-    "AWS FSx Scratch File System la gi",
-    "AWS FSx Persistent File System là gì",
-    "AWS FSx Persistent File System la gi",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

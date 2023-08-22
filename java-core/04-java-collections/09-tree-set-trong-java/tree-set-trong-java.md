@@ -1,18 +1,6 @@
 ---
 title: "TreeSet trong Java"
 description: "Lớp TreeSet trong Java cài đặt (implement) Set Interface, nó sử dụng một cây (tree) cho lưu giữ các phần tử. TreeSet kế thừa lớp (extends) AbstractSet và cài đặt (implement) NavigableSet Interface. Các đối tượng của lớp TreeSet được lưu trữ theo thứ tự tăng dần"
-keywords:
-  [
-    "TreeSet trong Java",
-    "Khởi tạo TreeSet trong Java",
-    "Tập hợp TreeSet trong Java là gì",
-    "Chèn các phần tử vào TreeSet",
-    "Duyệt qua các phần tử trong TreeSet",
-    "Xóa các phần tử trong TreeSet",
-    "Sự khác biệt của các set",
-    "Các phương thức khác của TreeSet",
-    "So sánh TreeSet và HashSet",
-  ]
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"

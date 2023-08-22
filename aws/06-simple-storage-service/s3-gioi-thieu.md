@@ -1,21 +1,6 @@
 ---
 title: "Giới thiệu về S3"
 description: "Amazon S3 (Amazon Simple Storage Service) là dịch vụ lưu trữ dữ liệu đơn giản của Amazon cung cấp."
-keywords:
-  [
-    "S3 la gi",
-    "AWS S3 là gì",
-    "S3 trong aws",
-    "S3 Buckets trong aws",
-    "Buckets trong s3",
-    "S3 Buckets là gì",
-    "S3 Buckets la gi",
-    "Objects trong s3",
-    "S3 Objects là gì",
-    "S3 Objects la gi",
-    "S3 versioning là gì",
-    "S3 versioning la gi",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

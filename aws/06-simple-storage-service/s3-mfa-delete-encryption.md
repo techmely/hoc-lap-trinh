@@ -1,18 +1,6 @@
 ---
 title: "Giới thiệu S3 MFA Delete, Default Encryption"
 description: "MFA (Multi factor authentication) bắt buộc người dùng phải sử dụng một đoạn code được gen ra trên thiết bị xác thực 2 lớp(thường là điện thoại) trước khi thực hiện các operations quan trọng trên S3. Điều này nhằm mục đích bảo mật những resource quan trọng có trên S3, Amazon S3 muốn chắc chắn rằng chỉ có owner của Bucket mới có quyền để xóa một version hoặc thay đổi version của nó."
-keywords:
-  [
-    "S3 MFA Delete la gi",
-    "S3 MFA Delete trong aws",
-    "S3 Default Encryption la gi",
-    "S3 Default Encryption trong aws",
-    "S3 MFA Delete trên S3",
-    "S3 Default Encryption tren S3",
-    "Hosting website tren S3",
-    "S3 MFA Delete là gì",
-    "S3 Default Encryption là gì",
-  ]
 author:
   fullname: Phan Văn Đức
   username: ducpv

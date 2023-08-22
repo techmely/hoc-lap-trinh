@@ -1,17 +1,6 @@
 ---
 title: "Khối finally trong Java"
 description: "Khi một ngoại lệ xuất hiện, phương thức đang được thực thi có thể bị dừng mà không được hoàn thành. Nếu điều này xảy ra, thì các đoạn mã phía sau (ví dụ như đoạn mã có chức năng thu hồi tài nguyên, như các lệnh đóng tập viết ở cuối phương thức) sẽ không bao giờ được gọi. Java cung cấp khối finally để giải quyết việc này"
-keywords:
-  [
-    "học java",
-    "tự học java",
-    "error vs exception trong java",
-    "exception handling trong java",
-    "exception trong java",
-    "finally trong java",
-    "khối finally trong Java",
-    "khoi finally trong Java",
-  ]
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"

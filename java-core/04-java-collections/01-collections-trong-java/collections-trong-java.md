@@ -1,18 +1,6 @@
 ---
 title: "Collections trong Java"
 description: "Bài này chúng ta sẽ tìm hiểu về Các lớp tập hợp, tự học lập trình java, chia sẻ kiến thức về java"
-keywords:
-  [
-    "bài tập collection trong java",
-    "bài tập về collection trong java",
-    "cau truc collection trong java",
-    "collection framework trong java",
-    "collection framework trong java là gì",
-    "collection java",
-    "collection là gì java",
-    "collection sort trong java",
-    "collection trong java",
-  ]
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
@@ -39,16 +27,16 @@ Gói `java.util` cung cấp tập các lớp cài đặt các giao diện lõi �
 
 Giao diện (interface) Collection là cơ sở để phát triển, mở rộng thành các giao diện khác như `Set`, `List`, `SortedSet` và `Map` và giao diện cơ sở để mở rộng thành `SortedMap`. Các giao diện lõi của cấu trúc Collection được mô tả trong bảng sau:
 
-| interface | Mô tả |
-| --- | --- |
-| Collection | interface cơ sở định nghĩa tất cả các phép toán cơ bản cho các lớp cần duy trì thực hiện và cài đặt chúng |
-| Set | là một collection không thể chứa 2 giá trị trùng lặp. Set được sử dụng để biểu diễn các bộ, chẳng hạn như bộ tú lu khơ, thời khóa biểu của học sinh, các tiến trình đang chạy trên máy tính... |
-| SortedSet | Mở rộng Set để cài đặt cấu trúc tập hợp được sắp, trong đó không có phần tử được lặp và chúng được sắp xếp theo thứ tự |
-| List | là một collection có thứ tự (đôi khi còn được gọi là một chuỗi). List có thể chứa các phần tử trùng lặp. Thường có quyền kiểm soát chính xác vị trí các phần tử được chèn vào và có thể truy cập chúng bằng chỉ số (vị trí của chúng). |
-| Map | interface cơ sở định nghĩa các phép toán để các lớp sử dụng và cài đặt các ánh xạ từ khoá sang các giá trị |
-| SortedMap | Mở rộng của Map để cài đặt các ánh xạ khoá theo thứ tự |
-| Queue | là một collection được sử dụng để chứa nhiều phần tử trước khi xử lý. Bên cạnh các thao tác cơ bản của collection, Queue cung cấp các thao tác bổ sung như chèn, lấy ra và kiểm tra. Queue có thể được sử dụng như là FIFO (first-in, first-out - vào trước, ra trước) |
-| Deque | là một collection được sử dụng để chứa nhiều phần tử trước khi xử lý. Ngoài các thao tác cơ bản của collection, một Deque cung cấp các thao tác bổ sung như chèn, lấy ra và kiểm tra. Deques có thể được sử dụng như là FIFO (first-in, first-out - vào trước, ra trước) và LIFO (last-in, first-out - vào sau, ra trước). Trong một Deque, tất cả các phần tử mới có thể được chèn vào, lấy ra và lấy ra ở cả hai đầu. |
+| interface  | Mô tả                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Collection | interface cơ sở định nghĩa tất cả các phép toán cơ bản cho các lớp cần duy trì thực hiện và cài đặt chúng                                                                                                                                                                                                                                                                                                               |
+| Set        | là một collection không thể chứa 2 giá trị trùng lặp. Set được sử dụng để biểu diễn các bộ, chẳng hạn như bộ tú lu khơ, thời khóa biểu của học sinh, các tiến trình đang chạy trên máy tính...                                                                                                                                                                                                                          |
+| SortedSet  | Mở rộng Set để cài đặt cấu trúc tập hợp được sắp, trong đó không có phần tử được lặp và chúng được sắp xếp theo thứ tự                                                                                                                                                                                                                                                                                                  |
+| List       | là một collection có thứ tự (đôi khi còn được gọi là một chuỗi). List có thể chứa các phần tử trùng lặp. Thường có quyền kiểm soát chính xác vị trí các phần tử được chèn vào và có thể truy cập chúng bằng chỉ số (vị trí của chúng).                                                                                                                                                                                  |
+| Map        | interface cơ sở định nghĩa các phép toán để các lớp sử dụng và cài đặt các ánh xạ từ khoá sang các giá trị                                                                                                                                                                                                                                                                                                              |
+| SortedMap  | Mở rộng của Map để cài đặt các ánh xạ khoá theo thứ tự                                                                                                                                                                                                                                                                                                                                                                  |
+| Queue      | là một collection được sử dụng để chứa nhiều phần tử trước khi xử lý. Bên cạnh các thao tác cơ bản của collection, Queue cung cấp các thao tác bổ sung như chèn, lấy ra và kiểm tra. Queue có thể được sử dụng như là FIFO (first-in, first-out - vào trước, ra trước)                                                                                                                                                  |
+| Deque      | là một collection được sử dụng để chứa nhiều phần tử trước khi xử lý. Ngoài các thao tác cơ bản của collection, một Deque cung cấp các thao tác bổ sung như chèn, lấy ra và kiểm tra. Deques có thể được sử dụng như là FIFO (first-in, first-out - vào trước, ra trước) và LIFO (last-in, first-out - vào sau, ra trước). Trong một Deque, tất cả các phần tử mới có thể được chèn vào, lấy ra và lấy ra ở cả hai đầu. |
 
 ## Phần thuật toán trong collections
 

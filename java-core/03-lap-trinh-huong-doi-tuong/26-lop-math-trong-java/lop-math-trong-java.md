@@ -1,19 +1,6 @@
 ---
 title: "Lớp Math trong Java"
 description: "Bài này chúng ta sẽ tìm hiểu về Lớp math của Java, tự học lập trình java, chia sẻ kiến thức về java"
-keywords:
-  [
-    "hàm math trong java",
-    "lớp math trong java",
-    "lớp math trong java cơ bản",
-    "lớp math trong java data",
-    "lớp math trong java developer",
-    "lớp math trong java ebook",
-    "lớp math trong java fpt",
-    "lớp math trong java free",
-    "lớp math trong java là gì ai làm gì",
-    "lớp math trong java là gì ai thế nào",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

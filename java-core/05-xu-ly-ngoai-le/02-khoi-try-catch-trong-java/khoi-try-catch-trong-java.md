@@ -1,18 +1,6 @@
 ---
 title: "Khối try-catch trong Java"
 description: "Khối try trong Java được sử dụng để bao quanh code mà có thể ném một Exception, nó phải được sử dụng bên trong phương thức, khối try phải được theo sau bởi hoặc khối catch hoặc khối finally"
-keywords:
-  [
-    "cách sử dụng try catch trong java",
-	  "câu lệnh try catch trong java",
-	  "cấu trúc try catch trong java",
-	  "hàm try catch trong java",
-	  "hướng dẫn sử dụng try catch trong java",
-	  "lệnh try catch trong java",
-	  "su dung try catch trong java",
-	  "sử dụng try catch trong java",
-	  "try catch finally trong java",
-  ]
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"

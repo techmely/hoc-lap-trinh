@@ -1,19 +1,6 @@
 ---
 title: "Interfaces trong Go"
 description: "Bài viết giới thiệu về interfaces trong Go, là kiểu dữ liệu chỉ chứa chữ kí mô tả cho hàm. Nó giúp tách biệt phần mã implementation của hàm và phần gọi hàm ra các đối tượng riêng biệt. Bài viết trình bày cách khai báo, sử dụng và kết hợp interfaces trong Go. Ngoài ra, nó cũng đề cập đến mục đích và lợi ích của việc sử dụng interfaces."
-keywords:
-  [
-    "Interfaces Go",
-    "kiểu dữ liệu hàm Go",
-    "tách biệt implementation Go",
-    "khai báo interface Go",
-    "sử dụng interface Go",
-    "kết hợp interface Go",
-    "lợi ích sử dụng interface",
-    "đối tượng Go",
-    "lập trình Go",
-    "golang",
-  ]
 chapter:
   name: "Cách tổ chức mã nguồn và Interfaces"
   slug: "chuong-05-cach-to-chuc-ma-nguon-va-interfaces"

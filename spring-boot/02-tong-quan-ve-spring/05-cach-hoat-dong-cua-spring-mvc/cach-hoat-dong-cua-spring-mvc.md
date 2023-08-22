@@ -1,16 +1,6 @@
 ---
 title: "Cách hoạt động của Spring MVC"
 description: "Ở bài này thì mình sẽ chia sẻ cách thức hoạt động của Spring MVC, từ đó các bạn sẽ hiểu được luồng đi của nó."
-keywords:
-  [
-    "giới thiệu spring",
-    "spring framework",
-    "spring cơ bản",
-    "lộ trình spring",
-    "cách họat động của spring mvc",
-    "nguyên lý hoạt động của spring mvc",
-    "luồng Spring mvc",
-  ]
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-02-tong-quan-ve-spring"

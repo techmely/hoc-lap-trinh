@@ -1,17 +1,6 @@
 ---
 title: "Bộ ký tự trong Java"
 description: "Ngôn ngữ dùng để giao tiếp .Mọi ngôn ngữ lập trình đều được xây dựng từ một bộ ký tự nào đó. Ngôn ngữ Java cũng vậy, và bài này chúng ta cùng tìm hiểu xem bộ ký tự trong Java nhé"
-keywords:
-  [
-    "bộ ký tự trong java 8",
-    "bộ ký tự trong java",
-    "bộ ký tự trong java cách dùng",
-    "bộ ký tự trong java cách làm",
-    "bộ ký tự trong java developer",
-    "bộ ký tự trong java doc",
-    "bộ ký tự trong java",
-    "bộ ký tự trong java example",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

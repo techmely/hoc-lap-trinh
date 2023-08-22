@@ -1,19 +1,6 @@
 ---
 title: "Các component thường sử dụng"
 description: "Dưới đây là code demo những component cơ bản thường sử dụng. Bạn có thể code lại, copy hoặc chạy demo từ example (demo có sử dụng hình ảnh nên bạn phải copy hình ảnh trong example"
-keywords:
-  [
-    "gioi thieu react native",
-    "giới thiệu react native",
-    "khoá học react native",
-    "giới thiệu react native",
-    "giới thiệu react native cơ bản",
-    "react native la gi",
-    "tong quan ve react native",
-    "gioi thieu ve ngon ngu lap trinh react native",
-    "tom tat react native",
-    "code react native la gi",
-  ]
 chapter:
   name: "Các component thường sử dụng"
   slug: "chuong-04-cac-component-thuong-su-dung"

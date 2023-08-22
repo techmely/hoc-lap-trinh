@@ -1,17 +1,6 @@
 ---
 title: "Tạo image từ dockerfile"
 description: "Hướng dẫn tạo image từ docker file"
-keywords:
-  [
-    "docker",
-    "docker image",
-    "image docker",
-    "tạo image từ docker file",
-    "tạo image trong docker",
-    "tao image trong docker",
-    "tao image tu docker file",
-    "tạo image docker file",
-  ]
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"

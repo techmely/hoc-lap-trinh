@@ -1,21 +1,6 @@
 ---
 title: "Từ khóa this trong Java"
 description: "Từ khóa this trong java là một biến tham chiếu được sử dụng để tham chiếu tới đối tượng của lớp hiện tại. Biến this là một biến ẩn tồn tại trong tất cả các lớp trong ngông ngữ java"
-keywords:
-  [
-    "biến this trong java",
-    "con trỏ this trong java",
-    "hàm this trong java",
-    "this trong java là gì",
-    "this. trong java",
-    "từ khóa this",
-    "từ khóa this trong java",
-    "từ khóa this trong java bị lỗi",
-    "từ khóa this trong java code",
-    "từ khóa this trong java có nghĩa là gì",
-    "từ khóa this trong java developer",
-    "từ khóa this trong java development",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"

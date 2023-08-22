@@ -1,19 +1,6 @@
 ---
 title: "Xử lý ngoại lệ (Exception) trong Java"
 description: "Exception là một tình trạng bất thường. Một exception (ngoại lệ) trong Java là một vấn đề xảy ra trong quá trình thực hiện của chương trình mà phá vỡ luồng chuẩn của chương trình."
-keywords:
-  [
-    "bai tap ve exception trong java",
-    "chained exception trong java",
-    "checked exception trong java",
-    "checked và unchecked exception trong java",
-    "các exception trong java",
-    "các loại exception trong java",
-    "dinh nghia exception trong java",
-    "error vs exception trong java",
-    "exception handling trong java",
-    "exception trong java",
-  ]
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"
@@ -93,16 +80,16 @@ Erros không thường được đặt bẫy bởi các chương trình Java. Er
 
 ## Các kiểu ngoại lệ phổ biến
 
-| Phương thức | Miêu tả |
-| --- | --- |
-| IOException | Trả về một message cụ thể về exception đã xảy ra. Message này được khởi tạo bởi phương thức contructor của Throwable |
-| SQLException | Ngoại lệ liên quan đến cú pháp SQL |
-| DataAccessException | Ngoại lệ liên quan đến việc truy cập CSDL |
-| ClassNotFoundException | Bị ném khi JVM không thể tìm thấy một lớp mà nó cần, do lỗi dòng lệnh, sự cố đường dẫn hoặc tệp, class bị thiếu... |
-| InstantiationException | Ngoại lệ khi cố gắng tạo đối tượng của một abstract class hoặc interface |
-| NullPointerException | Ngoại lệ bị ném ra khi cố gắng truy cập một đối tượng có biến tham chiếu có giá trị hiện tại là null |
-| ArrayIndexOutOfBound | Ngoại lệ khi cố gắng truy cập một phần tử vượt quá độ dài của mảng |
-| IllegalArgumentException | Ngoại lệ bị ném ra khi một phương thức nhận được một đối số được định dạng khác với phương thức mong đợi. |
-| IllegalStateException | Ngoại lệ bị ném ra khi trạng thái của môi trường không phù hợp với hoạt động cố gắng thực hiện, ví dụ: Sử dụng Scanner đã bị đóng. |
-| NumberFormatException | Ngoại lệ bị ném khi một phương thức chuyển đổi một Chuỗi thành số nhưng không thể chuyển đổi. |
-| ArithmeticException | Lỗi số học, chẳng hạn như chia cho 0. |
+| Phương thức              | Miêu tả                                                                                                                            |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| IOException              | Trả về một message cụ thể về exception đã xảy ra. Message này được khởi tạo bởi phương thức contructor của Throwable               |
+| SQLException             | Ngoại lệ liên quan đến cú pháp SQL                                                                                                 |
+| DataAccessException      | Ngoại lệ liên quan đến việc truy cập CSDL                                                                                          |
+| ClassNotFoundException   | Bị ném khi JVM không thể tìm thấy một lớp mà nó cần, do lỗi dòng lệnh, sự cố đường dẫn hoặc tệp, class bị thiếu...                 |
+| InstantiationException   | Ngoại lệ khi cố gắng tạo đối tượng của một abstract class hoặc interface                                                           |
+| NullPointerException     | Ngoại lệ bị ném ra khi cố gắng truy cập một đối tượng có biến tham chiếu có giá trị hiện tại là null                               |
+| ArrayIndexOutOfBound     | Ngoại lệ khi cố gắng truy cập một phần tử vượt quá độ dài của mảng                                                                 |
+| IllegalArgumentException | Ngoại lệ bị ném ra khi một phương thức nhận được một đối số được định dạng khác với phương thức mong đợi.                          |
+| IllegalStateException    | Ngoại lệ bị ném ra khi trạng thái của môi trường không phù hợp với hoạt động cố gắng thực hiện, ví dụ: Sử dụng Scanner đã bị đóng. |
+| NumberFormatException    | Ngoại lệ bị ném khi một phương thức chuyển đổi một Chuỗi thành số nhưng không thể chuyển đổi.                                      |
+| ArithmeticException      | Lỗi số học, chẳng hạn như chia cho 0.                                                                                              |

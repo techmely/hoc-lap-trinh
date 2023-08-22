@@ -1,15 +1,6 @@
 ---
 title: "Luồng Daemon (Daemon Thread) trong Java"
 description: "Java chia thread làm 2 loại một loại thông thường và Daemon Thread, chúng chỉ khác nhau ở cách thức ngừng hoạt động. Trong một chương trình các luồng thông thường và luồng Daemon chạy song song với nhau. Khi tất cả các luồng thông thường kết thúc, mọi luồng Daemon cũng sẽ bị kết thúc theo bất kể nó đang làm việc gì"
-keywords:
-  [
-    "Luồng Daemon",
-    "ví dụ Luồng Daemon",
-    "ví dụ Daemon Thread",
-    "Daemon Thread",
-    "Luồng Daemon là gì",
-    "Daemon Thread là gì",
-  ]
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"

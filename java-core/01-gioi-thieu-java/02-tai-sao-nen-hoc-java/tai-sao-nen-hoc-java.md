@@ -1,17 +1,6 @@
 ---
 title: "Tại sao nên học Java?"
 description: "Java là một ngôn ngữ lập trình phổ biến. Điều này được chứng minh thực tế trong suốt 20 năm qua. Ngày nay cơ hội việc làm cho các lập trình viên Java luôn không ngừng rộng mở, bài này chúng ta sẽ cùng nhau tìm hiểu xem tại sao lại nên học Java nhé."
-keywords:
-  [
-    "tại sao nên học java",
-    "tai sao nen hoc java",
-    "có nên học java",
-    "co nen hoc java",
-    "học java cho người mới bắt đầu",
-    "hoc java cho nguoi môi bat dau",
-    "tự học java",
-    "tu hoc java",
-  ]
 chapter:
   name: "Giới thiệu Java"
   slug: "chuong-01-gioi-thieu-java"

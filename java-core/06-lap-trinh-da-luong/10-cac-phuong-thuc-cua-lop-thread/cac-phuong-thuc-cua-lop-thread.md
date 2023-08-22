@@ -1,22 +1,6 @@
 ---
 title: "Các phương thức của lớp Thread trong Java"
 description: "Tổng hợp các hàm của lớp Thread như suspend, resume, stop, destroy, isAlive, yeild, getName, currentThread"
-keywords:
-  [
-    "Hàm suspend() của lớp Thread",
-    "Hàm resume() của lớp Thread",
-    "Hàm stop() của lớp Thread",
-    "Hàm destroy() của lớp Thread",
-    "Hàm isAlive() của lớp Thread",
-    "Hàm yeild() của lớp Thread",
-    "Hàm getName() của lớp Thread",
-    "Hàm setName(String name) của lớp Thread",
-    "Hàm getId() của lớp Thread",
-    "Hàm getState() của lớp Thread",
-    "Hàm currentThread() của lớp Thread",
-    "Hàm getPriority() của lớp Thread",
-    "Hàm setPriority(int) của lớp Thread",
-  ]
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"

@@ -1,17 +1,6 @@
 ---
 title: "Toán tử 3 ngôi trong Java"
 description: "Toán tử ba ngôi là một toán tử dùng để đánh giá một biểu thức có giá trị boolean và sẽ gán giá trị dựa vào kết quả."
-keywords:
-  [
-    "toán tử 3 ngôi",
-    "toán tử 3 ngôi java",
-    "toán tử 3 ngôi java book",
-    "toán tử 3 ngôi java bị lỗi",
-    "toán tử 3 ngôi java cơ bản",
-    "toán tử ba ngôi",
-    "toán tử ba ngôi java",
-    "toán tử ba ngôi java fpt",
-  ]
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"

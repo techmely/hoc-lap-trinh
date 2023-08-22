@@ -1,21 +1,6 @@
 ---
 title: "Chi tiết phương thức trong Java"
 description: "Một phương thức là một tập hợp các khối lệnh (code) để thi hành một chức năng nào đó. Bài này chúng ta cùng nhau tìm hiểu kỹ hơn về các thành phần có trong một phương thức trong Java nhé."
-keywords:
-  [
-    "các phương thức của string trong java",
-    "các phương thức trong java",
-    "cách dùng phương thức trong java",
-    "ghi đè phương thức trong java",
-    "gọi phương thức trong java",
-    "hàm và phương thức trong java",
-    "khai báo phương thức trong java",
-    "khởi tạo phương thức trong java",
-    "kế thừa phương thức trong java",
-    "nạp chồng phương thức trong java",
-    "phương thức abstract trong java",
-    "phương thức final trong java",
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
@@ -32,17 +17,17 @@ Một phương thức là một tập hợp các khối lệnh (code) để thi 
 
 ## Các thành phần trong phương thức
 
-| Thành phần | Mô tả |
-| --- | :-- |
-| Access Specifier (hay Access Modifier) | mô tả mức độ truy cập đến phương thức |
-| static | đây là phương thức lớp |
-| abstract | đây là phương thức không có cài đặt |
-| final | phương thức này không thể ghi đè |
-| native | phương thức này được viết trong một ngôn ngữ khác |
-| synchronized | đây là phương thức đồng bộ |
-| returnType | giá trị trả về của phương thức |
-| MethodName | tên của phương thức |
-| throws exception | khai báo các ngoại lệ có thể được nem ra từ phương thức |
+| Thành phần                             | Mô tả                                                   |
+| -------------------------------------- | :------------------------------------------------------ |
+| Access Specifier (hay Access Modifier) | mô tả mức độ truy cập đến phương thức                   |
+| static                                 | đây là phương thức lớp                                  |
+| abstract                               | đây là phương thức không có cài đặt                     |
+| final                                  | phương thức này không thể ghi đè                        |
+| native                                 | phương thức này được viết trong một ngôn ngữ khác       |
+| synchronized                           | đây là phương thức đồng bộ                              |
+| returnType                             | giá trị trả về của phương thức                          |
+| MethodName                             | tên của phương thức                                     |
+| throws exception                       | khai báo các ngoại lệ có thể được nem ra từ phương thức |
 
 _Trong đó:_
 

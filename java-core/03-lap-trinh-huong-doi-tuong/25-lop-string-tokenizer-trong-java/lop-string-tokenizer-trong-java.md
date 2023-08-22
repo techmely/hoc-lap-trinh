@@ -1,12 +1,6 @@
 ---
 title: "Lớp StringTokenizer trong Java"
 description: "Bài này chúng ta sẽ tìm hiểu về Lớp StringTokenizer, một lớp StringTokenizer có thể sử dụng để tách một chuỗi thành các phần tử (token) nhỏ hơn"
-keywords:
-  [
-    Lớp StringTokenizer trong Java,
-    StringTokenizer trong Java,
-    StringTokenizer là gì,
-  ]
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
@@ -23,10 +17,10 @@ Một lớp **StringTokenizer** có thể sử dụng để tách một chuỗi 
 
 ## Khởi tạo một lớp StringTokenizer
 
-| Phương thức xây dựng | Ý nghĩa |
-| --- | --- |
-| StringTokenizer(String) | Tạo ra một đối tượng StringTokenizer mới dựa trên chuỗi được chỉ định. |
-| StringTokenizer(String, String) | Tạo ra một đối tượng StringTokenizer mới dựa trên (String, String) chuỗi được chỉ định và một tập các dấu phân cách. |
+| Phương thức xây dựng                     | Ý nghĩa                                                                                                                                                                            |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| StringTokenizer(String)                  | Tạo ra một đối tượng StringTokenizer mới dựa trên chuỗi được chỉ định.                                                                                                             |
+| StringTokenizer(String, String)          | Tạo ra một đối tượng StringTokenizer mới dựa trên (String, String) chuỗi được chỉ định và một tập các dấu phân cách.                                                               |
 | StringTokenizer(String, String, boolean) | Tạo ra một đối tượng StringTokenizer dựa trên chuỗi được chỉ định, một tập các dấu phân cách, và một cờ hiệu cho biết nếu các dấu phân cách sẽ được trả về như cáctoken hay không. |
 
 Các phương thức khởi tạo ở trên được minh họa trong các ví dụ sau:
@@ -47,14 +41,14 @@ Câu lệnh thứ 3, StringTokenizer của `st3` sử dụng dấu phẩy như m
 
 Lớp StringTokenizer cài đặt [interface](/bai-viet/java/interface-trong-java) Enumeration. Vì thế, nó bao gồm các phương thức `hasMoreElements()` và` nextElement()`. Các phương thức có thể sử dụng của lớp **StringTokenizer** được tóm tắt trong bảng sau:
 
-| Phương thức | Mục đích |
-| --- | --- |
-| countTokens() | Trả về số các token còn lại. |
+| Phương thức       | Mục đích                                                                                         |
+| ----------------- | ------------------------------------------------------------------------------------------------ |
+| countTokens()     | Trả về số các token còn lại.                                                                     |
 | hasMoreElements() | Trả về True nếu còn có token đang được đánh dấu trong chuỗi. Nó thì giống hệt như hasMoreTokens. |
-| hasMoreTokens() | Trả về True nếu còn có token đang được đánh dấu trong chuỗi. Nó giống hệt như hasMoreElements. |
-| nextElement() | Trả về token kế tiếp trong chuỗi. Nó thì giống như nextToken. |
-| nextToken() | Trả về Token kế tiếp trong chuỗi. Nó thì giống như nextElement. |
-| nextToken(String) | Thay đổi bộ dấu phân cách bằng chuỗi được chỉ định, và sau đó trả về token kế tiếp trong chuỗi. |
+| hasMoreTokens()   | Trả về True nếu còn có token đang được đánh dấu trong chuỗi. Nó giống hệt như hasMoreElements.   |
+| nextElement()     | Trả về token kế tiếp trong chuỗi. Nó thì giống như nextToken.                                    |
+| nextToken()       | Trả về Token kế tiếp trong chuỗi. Nó thì giống như nextElement.                                  |
+| nextToken(String) | Thay đổi bộ dấu phân cách bằng chuỗi được chỉ định, và sau đó trả về token kế tiếp trong chuỗi.  |
 
 Hãy xem xét chương trình đã cho ở bên dưới. Trong ví dụ này, hai đối tượng StringTokenizer đã được tạo ra. Đầu tiên, “st1” được sử dụng để phân tách một biểu thức toán học. Thứ hai, “st2” phân tách một dòng của các trường được phân cách bởi dấu phẩy. Cả hai tokenizer, phương thức `hasMoreTokens()` và `nextToken()` được sử dụng đế duyệt qua tập các token, và hiển thị các token.
 

@@ -1,16 +1,6 @@
 ---
 title: "Nguyên lý IOC trong Spring"
 description: "IOC là một trong những khái niệm cốt lõi của Spring Framework"
-keywords:
-  [
-    "lập trình Spring cơ bản",
-    "srping cơ bản",
-    "ioc trong spring",
-    "ioc là gì",
-    "nguyên lý ioc",
-    "hoc Spring co ban",
-    "IOC Container",
-  ]
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-02-tong-quan-ve-spring"
