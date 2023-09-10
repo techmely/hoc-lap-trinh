@@ -13,7 +13,7 @@ position: 1
 
 Comments có thể được sử dụng để giải thích một đoạn code trong C và để làm cho nó dễ đọc - dễ hiểu hơn. Nó cũng có thể được sử dụng để tạm dừng việc thực thi khi kiểm tra một đoạn code thay thế.
 
-## Comment một d trong C
+## Comment một dòng trong C
 
 Comments một dòng bắt đầu bằng hai dấu gạch chéo `//`.
 

@@ -48,7 +48,7 @@ Khi tạo 1 EC2 instance sẽ giống như bạn đang quản lý 1 máy tính s
 **Connect EC2 from git bash**
 
 ```bash
-  ssh -i “ec2-key-pair-name.pem” ec2-user@ec2-public-ip-address
+ssh -i “ec2-key-pair-name.pem” ec2-user@ec2-public-ip-address
 ```
 
 **Copy file from local to EC2**

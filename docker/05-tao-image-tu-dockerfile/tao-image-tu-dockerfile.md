@@ -248,7 +248,7 @@ docker build -t huytm/centos7-httpd .
 
 Đây là toàn bộ log của quá trình build
 
-```ssh
+```bash
 Sending build context to Docker daemon  4.096kB
 Step 1/12 : FROM centos:centos7
  ---> 1e1148e4cc2c
@@ -528,7 +528,7 @@ Successfully tagged huytm/centos7-httpd:latest
 docker images
 ```
 
-```ssh
+```bash
 REPOSITORY            TAG                 IMAGE ID            CREATED             SIZE
 huytm/centos7-httpd   latest              97ba637ff1df        4 minutes ago       457MB
 centos                centos7             1e1148e4cc2c        2 months ago        202MB
