@@ -14,9 +14,9 @@ position: 1
 
 ## Spring là gì?
 
-<content-info>
+::alert{type="infor"}
 Spring Framework là một framework mã nguồn mở được viết bằng Java, được phát triển, chia sẻ và có cộng đồng người dùng rất lớn.
-</content-info>  
+::  
 Nó được xem như là một giải pháp kiến trúc tốt nhất của Java EE hiện nay.
 
 _Ngoài ra, Spring là một framework mãnh mẽ và phổ biến nhất hiện nay dành cho doanh nghiệp. Nó giúp rút ngắn thời gian lập trình và test, giảm sự rườm rà và tăng sự stable cho code._

@@ -24,11 +24,11 @@ Bug là lỗi của chương trình. Nhìn chung, chúng ta có 2 loại bug: l�
 
 Nếu như bug là lỗi thì debug hay debugging chính là quá trình tìm ra bug.
 
-<content-info>
+::alert{type="infor"}
 
 Debugging khó gấp 2 lần việc bạn viết ra code. Nếu viết code thông minh quá mức, bạn sẽ không đủ thông minh để debug nó - Brian Kernighan và P.J. Plauger, The Elements of Programming Style.
 
-</content-info>
+::
 
 ## Strict mode trong JavaScript
 

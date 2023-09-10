@@ -26,11 +26,11 @@ Nói một cách đầy đủ, Map trong JavaScript là một **cấu trúc dữ
 - Object chỉ cho phép sử dụng [String](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript) hay [Symbol](/bai-viet/javascript/symbol-trong-javascript) làm key.
 - Map cho phép mọi kiểu dữ liệu (String, Number, Boolean, NaN, Object,...) có thể làm key.
 
-<content-warning>
+::alert{type="warning"}
 
 để tránh hiểu lầm, mỗi khi mình dùng từ **object** thì bạn hiểu đó là **object thông thường** mà từ trước đến giờ bạn vẫn sử dụng, không phải **Map**.
 
-</content-warning>
+::
 
 ```js
 const map1 = new Map();

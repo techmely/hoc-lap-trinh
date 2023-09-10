@@ -106,11 +106,11 @@ localforage
   });
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý**: nếu bạn sử dụng _setItem()_ lại một lần nữa với key đã tồn tại thì giá trị của nó sẽ bị ghi đè.
 
-</content-warning>
+::
 
 ### getItem()
 
@@ -147,11 +147,11 @@ localforage
   });
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý:** nếu bạn sử dụng _getItem()_ với key chưa tồn tại thì promise vẫn trả về trường hợp thành công, nhưng lúc này giá trị của value là **null**.
 
-</content-warning>
+::
 
 ```js
 localforage
@@ -202,11 +202,11 @@ localforage
   });
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý**: nếu bạn _removeItem()_ với key không tồn tại, thì phương thức này vẫn coi như thành công.
 
-</content-warning>
+::
 
 ```js
 localforage
@@ -243,11 +243,11 @@ localforage
   });
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý:** khi sử dụng phương thức này đồng nghĩa với toàn bộ dữ liệu trong database sẽ bị xoá. Vì vậy, bạn cần phải cẩn trọng khi sử dụng phương thức này.
 
-</content-warning>
+::
 
 ### Một số API khác
 

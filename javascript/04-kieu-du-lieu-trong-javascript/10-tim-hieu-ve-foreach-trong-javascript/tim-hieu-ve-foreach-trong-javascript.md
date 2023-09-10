@@ -242,11 +242,11 @@ console.log("ret=", ret);
 // ret= 1
 ```
 
-<content-info>
+::alert{type="infor"}
 
 vòng lặp `for...in` chỉ nên dùng với **array**, không nên sử dụng với đối tượng `array-like`.
 
-</content-info>
+::
 
 ### Từ khóa break trong forEach
 

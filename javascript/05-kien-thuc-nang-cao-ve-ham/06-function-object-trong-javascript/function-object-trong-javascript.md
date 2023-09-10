@@ -150,11 +150,11 @@ function sayHi() {
     // Hàm sayHi được gọi với số lần là: 2
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý:** việc thêm thuộc tính vào hàm **không định nghĩa thêm biến local** trong phạm vi hàm. Nói cách khác, `sayHi.counter` khác với `let counter`.
 
-</content-warning>
+::
 
 Việc thêm thuộc tính vào hàm đôi khi có thể thay thế được [**closure**](/bai-viet/javascript/closure-trong-javascript/).
 

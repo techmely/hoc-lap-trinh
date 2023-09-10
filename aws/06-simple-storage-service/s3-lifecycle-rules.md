@@ -43,9 +43,10 @@ Dùng để configure Objects sẽ hết hạn (xóa đi) sau một thời gian 
 - Xóa đi những version cũ của object (nếu enable versioning)
 - Xóa những multi-part uploads ở trạng thái in-complete (chưa hoàn thành)
 
-<content-info>
+::alert{type="infor"}
+
 <ul>
 <li>Rules có thể tạo cho một prefix cụ thể (VD: s3://my-bucket/images/*)</li>
   <li>Rules cũng có thể tạo cho một Object tag cụ thể (VD: Object có tag là Name:Family)</li>
 </ul>
-</content-info>
+::

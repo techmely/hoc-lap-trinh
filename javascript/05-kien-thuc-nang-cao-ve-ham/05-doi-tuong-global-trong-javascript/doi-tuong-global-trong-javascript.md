@@ -23,11 +23,11 @@ Bài viết này giúp bạn tìm hiểu về đối tượng global trong JavaS
 
 Gần đây, đối tượng `globalThis` mới được thêm vào JavaScript. Đây là tên chuẩn được dùng cho đối tượng global ở tất cả các môi trường và tất cả các trình duyệt khác nhau.
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý:** trong bài viết này, mình chủ yếu dùng `window` khi nói về đối tượng global trong JavaScript.
 
-</content-warning>
+::
 
 Vì mình giả sử rằng, bạn đang đọc và thử nghiệm code ngay trên [Dev Tool](/bai-viet/javascript/dev-tools-la-gi/) của trình duyệt. Nếu bạn chạy code trên môi trường khác thì có thể thay thế `window` bằng `globalThis`.
 

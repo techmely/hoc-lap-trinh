@@ -13,13 +13,13 @@ position: 1
 
 ## Tạo ứng dụng C# đầu tiên với Visual Studio
 
- <content-info>
- Để tập trung vào các khía cạnh cốt lõi của C#, sẽ thực hành trên các ứng dụng loại C# Console (.NET Core) (loại ứng dụng dòng lệnh không sử dụng giao diện đồ họa GUI). Sau đó sẽ nâng cao dần với các loại ứng dụng như ASP.NET, WPF ...
- </content-info>
+::alert{type="infor"}
+Để tập trung vào các khía cạnh cốt lõi của C#, sẽ thực hành trên các ứng dụng loại C# Console (.NET Core) (loại ứng dụng dòng lệnh không sử dụng giao diện đồ họa GUI). Sau đó sẽ nâng cao dần với các loại ứng dụng như ASP.NET, WPF ...
+::
 
- <content-info>
- IDE (môi trường viết, biên dịch, debug) để phát triển ứng dụng C# bạn có thể chọn là Visual Studio hoặc Visual Studio Code (Đối với các bạn mới học lập trình, nên ưu tiên sử dụng Visual Studio).
- </content-info>
+::alert{type="infor"}
+IDE (môi trường viết, biên dịch, debug) để phát triển ứng dụng C# bạn có thể chọn là Visual Studio hoặc Visual Studio Code (Đối với các bạn mới học lập trình, nên ưu tiên sử dụng Visual Studio).
+::
 
 ## Cài đặt môi trường phát triển C
 
@@ -36,7 +36,7 @@ Microsoft cung cấp các công cụ phát triển sau cho lập trình C#:
 
 ![image](https://user-images.githubusercontent.com/50008521/182108009-cf7f27e1-4fa2-4943-b7f6-20746089bcca.png)
 
-<content-info>Đối với các bạn mới làm quen với C# chưa sử dụng đến nhiều chức năng phức tạp của visual studio thì các bạn nên chọn bản Community vì nó nhỏ gọn và miễn phí</content-info>
+::alert{type="infor"}Đối với các bạn mới làm quen với C# chưa sử dụng đến nhiều chức năng phức tạp của visual studio thì các bạn nên chọn bản Community vì nó nhỏ gọn và miễn phí::
 
 **Bước 2:** Mở file tải về lên và nhấn "Continue", trình cài đặt sẽ cài đặt file về máy tính bạn.
 

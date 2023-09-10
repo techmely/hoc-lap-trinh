@@ -13,9 +13,9 @@ position: 2
 
 ## Định nghĩa về biến trong C#
 
-<content-info>
+::alert{type="infor"}
 Tương tự với biến trong toán học, biến trong ngôn ngữ lập trình là một giá trị dữ liệu có thể thay đổi được. Biến là tên gọi tham chiếu đến một vùng nhớ nào đó trong bộ nhớ.
-</content-info>
+::
 
 ### Tại sao phải sử dụng biến?
 
@@ -130,6 +130,6 @@ Dưới đây là danh sách các từ khóa trong C#:
 
 ![Danh sách từ khóa trong C#](https://user-images.githubusercontent.com/50008521/183381973-fda2b2d9-3a74-48e1-a732-b6e02a2fbdba.jpg)
 
-<content-info>
+::alert{type="infor"}
 Biến trong C# thường được đặt tên bằng quy tắc (camel case) tức là viết thường từ đầu tiên và viết hoa chữ cái đầu tiên của những từ tiếp theo.
-</content-info>
+::

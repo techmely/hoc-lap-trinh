@@ -187,11 +187,11 @@ Việc sử dụng vòng lặp nhìn chung là **chạy nhanh và tiết kiệm 
 
 Ngược lại, cách sử dụng hàm đệ quy lại giúp code trở nên **ngắn gọn và rõ ràng hơn** sử dụng vòng lặp.
 
-<content-info>
+::alert{type="infor"}
 
 Đối với một số bài toán **có thể giải bằng hai cách** mà **không quá quan trọng thời gian và không gian bộ nhớ** thì mình sẽ ưu tiên sử dụng **hàm đệ quy** trong JavaScript.
 
-</content-info>
+::
 
 ## Tổng kết
 

@@ -81,12 +81,13 @@ function run() {
 run();
 ```
 
-<content-info>
+::alert{type="infor"}
+
 <ul>
   <li>Để thiết lập chế độ nghiêm ngặt, bạn có thể sử dụng chỉ thị "use strict" ở đầu tệp.</li>
   <li>Nếu bạn chỉ muốn áp dụng chế độ nghiêm ngặt cho một hàm cụ thể, bạn đặt nó ở đầu thân hàm.</li>
 </ul>
-</content-info>
+::
 
 ### this trong gọi phương thức
 

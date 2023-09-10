@@ -30,12 +30,13 @@ VPC Peering không có tính bắc cầu (Transitive Peering)
 
 Khi VPC-B và VPC-C được peering với VPC-A, chúng không thể bắc cầu qua nhau mà cần phải tạo thêm 1 VPC peering mới giữa B và C
 
-<content-info>
+::alert{type="infor"}
+
   <ul>
     <li>Khi tạo VPC peering bạn cần confirm request</li>
     <li>Cần chỉnh sửa lại Router để có thể connect đến instance giữa các VPC</li>
   </ul>
-</content-info>
+::
 
 ## VPC Endpoints (AWS PrivateLink) trong AWS
 

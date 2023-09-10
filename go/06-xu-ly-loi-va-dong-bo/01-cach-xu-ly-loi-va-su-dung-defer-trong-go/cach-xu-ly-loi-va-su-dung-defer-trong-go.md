@@ -238,9 +238,9 @@ func process(adder Add) int {
 }
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 Chúng ta đã nhìn vào nhiều khía cạnh khác nhau của một chương trình Go. Đáng chú ý nhất là chúng ta hiểu cách xử lý lỗi và làm thế nào để giải phóng tài nguyên, ví dụ như các kết nối hoặc các file đang mở. Nhiều người không thích cách tiếp cận của Go trong khi xử lý lỗi. Nó giống như một bước lùi. Trong một số trường hợp, tôi đồng ý với ý kiến đó. Tuy nhiên, tôi cũng thấy rằng cách làm của Go khiến cho mã nguồn rất dễ theo dõi. `defer` là một cách tiếp cận khác nhưng hiệu quả khi quản lý tài nguyên. Sự thật là nó không phải chỉ để dùng khi quản lý tài nguyên. Bạn có thể dùng `defer` cho bất cứ mục đích nào khác, ví dụ như ghi log khi kết thúc hàm.
 
 Chắc chắn là chúng ta không xem hết tất cả các tính năng đặc biệt của Go trong chương này. Nhưng bạn có thể thấy đủ với những ghì bạn đã được học.
-</content-warning>
+::

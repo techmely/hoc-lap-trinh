@@ -192,11 +192,12 @@ public class OverloadingOrder {
   </div>
 </div>
 
-<content-info>
+::alert{type="infor"}
+
   <ul>
     <li>Nếu java không tìm thấy một hàm nạp chồng thích hợp thì nó sẽ đưa ra một thông báo lỗi</li>
     <li>Ta không thể sử dụng giá trị trả về của hàm để phân biệt sự khác nhau giữa 2 phương thức nạp chồng</li>
     <li>Không nên quá lạm dụng các phương thức nạp chồng vì trình biên dịch phải mất thời gian phán đoán để tìm ra hàm thích hợp, điều này đôi khi còn dẫn đến sai sót</li>
     <li>Khi gọi các hàm nạp chồng ta nên có lệnh chuyển kiểu tường minh để trình biên dịch tìm ra hàm phù hợp một cách nhanh nhất</li>
   <ul>
-</content-info>
+::

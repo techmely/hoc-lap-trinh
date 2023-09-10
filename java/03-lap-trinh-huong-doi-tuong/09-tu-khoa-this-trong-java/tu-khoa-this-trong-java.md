@@ -93,9 +93,9 @@ public class HocSinh {
   </div>
 </div>
 
-<content-info>
-  Nếu biến cục bộ và biến toàn cục có tên khác nhau thì không cần sử dụng từ khóa this.
-</content-info>
+::alert{type="infor"}
+Nếu biến cục bộ và biến toàn cục có tên khác nhau thì không cần sử dụng từ khóa this.
+::
 
 ## Sử dụng this() gọi constructor của lớp hiện tại.
 
@@ -187,9 +187,9 @@ public class HocSinh3 {
   </div>
 </div>
 
-<content-info>
+::alert{type="infor"}
 this() phải được khai báo dòng lệnh đầu tiên trong Constructor.
-</content-info>
+::
 
 ### Gọi phương thức của lớp hiện tại
 

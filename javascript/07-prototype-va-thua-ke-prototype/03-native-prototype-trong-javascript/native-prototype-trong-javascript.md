@@ -58,11 +58,11 @@ Ví dụ, khi tạo mảng `[1, 2, 3]` thì JavaScript sẽ gọi hàm khởi t�
 
 Nhờ đó mà bạn có thể sử dụng các phương thức với mảng như `forEach`, `map`, `filter`,...
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý:** các kiểu dữ liệu sẵn có trong JavaScript đều có `Object.prototype` ở **top của chuỗi prototype**. Nói cách khác, tất cả các **kiểu dữ liệu tham chiếu** đều kế thừa từ object
 
-</content-warning>
+::
 
 Ví dụ:
 
@@ -100,11 +100,11 @@ Rõ ràng, kiểu dữ liệu nguyên thủy **không phải object**. Nhưng kh
 
 Phương thức của các **đối tượng tạm** trên cũng nằm trong prototype, cụ thể là: `String.prototype`, `Number.prototype` và `Boolean.prototype`.
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý:** hai kiểu dữ liệu `null` và `undefined` không có **wrapper object**. Do đó, hai kiểu dữ liệu này không có phương thức nào đi cùng.
 
-</content-warning>
+::
 
 ## Thay đổi native prototypes
 
@@ -124,11 +124,11 @@ Cách này đúng nhưng không phải là một ý tưởng tốt. Bởi vì pr
 
 Nếu hai thư viện cùng thêm phương thức `String.prototype.show` thì một trong hai sẽ bị ghi đè, dẫn đến xung đột code.
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý:** chỉ có một trường hợp bạn nên thêm phương thức vào native prototypes, đó là **polyfilling**.
 
-</content-warning>
+::
 
 Polyfilling nghĩa là bạn thêm một phương thức vào kiểu dữ liệu sẵn có trong JavaScript. Phương thức này tồn tại trong **mô tả của ngôn ngữ JavaScript** nhưng lại chưa được hỗ trợ ở một JavaScript engine hoặc một phiên bản trình duyệt cũ, ví dụ:
 
@@ -179,11 +179,11 @@ obj.__proto__ = Array.prototype;
 console.log(obj.join(",")); // Hello,world!
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý:** cách làm như trên không chính xác nếu object đã kế thừa prototype từ một object khác. Thực tế là chỉ kế thừa được **một object tại một thời điểm**.
 
-</content-warning>
+::
 
 ## Tổng kết
 

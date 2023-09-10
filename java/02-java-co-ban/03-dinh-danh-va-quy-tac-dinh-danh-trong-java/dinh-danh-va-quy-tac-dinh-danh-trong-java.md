@@ -46,7 +46,7 @@ Trong java tên được đặt theo quy tắc sau:
 - Không chứa dấu cách, các kí tự toán học như +, -, \*,/, %..
 - Không trùng với một định danh khác trong cùng một phạm vi
 
-<content-info><ul>
+::alert{type="infor"}<ul>
 
   <li>
   Tên nên đặt sao cho có thể mô tả được đối tượng trong thực tế
@@ -54,7 +54,7 @@ Trong java tên được đặt theo quy tắc sau:
   <li>Java có phân biệt chữ hoa chữ thường</li>
   <li>Trong java ta có thể đặt tên với độ dài tuỳ ý</li>
   <li>Ta có thể sử dụng các kí tự tiếng việt để đặt tên</li>
-<ul></content-info>
+<ul>::
 
 ## Quy ước về đặt tên trong java
 

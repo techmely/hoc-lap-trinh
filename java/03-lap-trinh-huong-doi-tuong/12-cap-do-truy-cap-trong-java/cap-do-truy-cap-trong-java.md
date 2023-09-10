@@ -61,12 +61,13 @@ class Beta {
 }
 ```
 
-<content-info>
+::alert{type="infor"}
+
 <ul>
   <li>Một lớp không thể là private hoặc protected, ngoại trừ lớp lồng nhau.</li>
   <li>Nếu bạn tạo bất kỳ constructor là private trong lớp, bạn sẽ không thể tạo instance của class bên ngoài nó.</li>
 </ul>
-</content-info>
+::
 
 ## Phạm vi truy cập default
 

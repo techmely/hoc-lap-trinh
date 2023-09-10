@@ -199,11 +199,11 @@ Trong ví dụ trên `mul.bind(null, 2)` tạo ra hàm mới `double` với giá
 
 Cách này gọi **partial function**.
 
-<content-warning>
+::alert{type="warning"}
 
 hàm `double` không sử dụng `this`. Tuy nhiên, hàm `bind` lại yêu cầu `this`. Vì vậy, tham số đầu tiên mình để `null`.
 
-</content-warning>
+::
 
 Tương tự, mình có thể tạo ra hàm nhân ba `triple` như sau:
 

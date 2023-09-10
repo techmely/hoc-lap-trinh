@@ -64,11 +64,11 @@ Một nghịch lý khi tạo ra JavaScript là:
 
 Những "wrapper object" ứng với các kiểu dữ liệu nguyên thủy là: `Number`, `String`, `BigInt`, `Boolean`, `Symbol`. Những đối tượng này cung cấp các phương thức khác nhau để bạn làm việc với kiểu nguyên thủy.
 
-<content-warning>
+::alert{type="warning"}
 
 Kiểu dữ liệu `null` và `undefined` không có "wrapper object
 
-</content-warning>
+::
 
 Ví dụ một phương thức của string là [`str.toUpperCase()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase). Phương thức này trả về giá trị string với **các kí tự đều viết hoa**.
 
@@ -128,11 +128,11 @@ console.log(num); // 123
 console.log(typeof num); // number
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 Không gọi được phương thức ứng với kiểu `null` và `undefined`.
 
- </content-warning>
+::
 
 <content-example>
 

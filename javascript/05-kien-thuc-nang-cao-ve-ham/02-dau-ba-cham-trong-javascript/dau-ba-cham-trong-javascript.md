@@ -77,11 +77,11 @@ function showName(firstName, lastName, ...titles) {
 showName("Julius", "Caesar", "Consul", "Imperator");
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 cú pháp dấu ba chấm trong JavaScript để lấy các tham số còn lại của hàm phải đặt ở **cuối danh sách các tham số**
 
-</content-warning>
+::
 
 Ví dụ sau sử dụng cú pháp dấu ba chấm ở giữa nên bị lỗi:
 

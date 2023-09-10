@@ -77,14 +77,14 @@ console.log(language); // undefined
 
 Kiểu dữ liệu **undefined** có nghĩa là **giá trị chưa được gán**.
 
-<content-info>
+::alert{type="infor"}
 
 📝 Khác nhau cơ bản giữa **undefined** và **null**:
 
 - Kiểu dữ liệu **null** là kiểu dữ liệu **được gán** cho biến, thường được hiểu là **không biết** (không có).
 - Trong khi đó, kiểu dữ liệu **undefined** là giá trị mặc định của biến sau khi khai báo mà **không gán giá trị** cho biến.
 
-</content-info>
+::
 
 Ví dụ khai báo biến mà không gán giá trị:
 
@@ -198,11 +198,11 @@ console.log(`You are learning ${language}`); // You are learning JavaScript
 console.log(`1 + 2 = ${1 + 2}`); // 1 + 2 = 3
 ```
 
-<content-info>
+::alert{type="infor"}
 
 String trong JavaScript có thể chỉ gồm 1 kí tự `"a"`, nhiều kí tự `"abc"` hoặc không kí tự nào `""` (empty string).
 
-</content-info>
+::
 
 ### Kiểu dữ liệu symbol
 

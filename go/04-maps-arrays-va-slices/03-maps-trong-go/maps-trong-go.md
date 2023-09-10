@@ -97,10 +97,10 @@ Nhiều lập trình viên nghĩ rằng truyền `b` cho hàm hoặc lấy `b` l
 
 Khi bạn thấy sự khác nhau là khi bạn sửa giá trị của một slice hoặc map. Ở điểm này, logic cũng giống như ở chương 2. Vì vậy, quyết định về việc có nên xác định một mảng của các con trỏ so với một mảng các giá trị chính là cách bạn sử dụng các giá trị, không phải là cách bạn sử dụng array hoặc map.
 
-<content-warning>
+::alert{type="warning"}
 
 Arrays và maps trong Go hoạt động giống như các ngôn ngữ khác. Nếu bạn quen với các mảng dữ liệu động, thì sẽ có một chút thay đổi nhỏ, nhưng `append` sẽ giải quyết các vấn đề khó chịu này. Nếu chúng ta xem xét tới slice, ta sẽ thấy đó là sự mở rộng của mảng.
 
 Có một số khía cạnh mà chúng ta đã không đề cập đến nó, nhưng bạn cũng gần như không động đến chúng bao giờ. Và nếu bạn tiếp cận chúng, hy vọng rằng chúng ta sẽ mô tả nó ở đây để cho bạn biết điều gì đang xảy ra.
 
-</content-warning>
+::

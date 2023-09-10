@@ -55,11 +55,11 @@ greet("Dev");
 
 Để hiểu hơn về phạm vi của biến, sau đây mình sẽ tìm hiểu về khái niệm "khối code" hay tiếng anh là **code block**.
 
-<content-warning>
+::alert{type="warning"}
 
 📝 **Chú ý:** các ví dụ sau đây chỉ áp dụng cho cách khai báo biến với `let/const`. Cách khai báo biến với `var` đã lỗi thời và `var` có logic riêng.
 
-</content-warning>
+::
 
 ## Code block là gì?
 

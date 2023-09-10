@@ -30,10 +30,10 @@ S3 access logs format:
 
 ![S3 Access Logs](https://user-images.githubusercontent.com/29729545/150820622-f7eebb9c-aa28-45b7-9d80-a343b31fb451.png)
 
-<content-warning>
+::alert{type="warning"}
 Log bucket KHÔNG được là monitored bucket
 Điều này sẽ tạo một vòng lặp vô tận.
-</content-warning>
+::
 
 ![S3 Access Logs loop](https://user-images.githubusercontent.com/29729545/150823145-ec002c49-da51-43de-aaed-d3547f1cfd65.png)
 
@@ -49,13 +49,14 @@ S3 Replication là tính năng sao chép các object giữa các vùng lưu tr�
 - Việc copy là asynchronous
 - Cần cung cấp IAM permission cần thiết tới S3
 
-<content-info>
+::alert{type="infor"}
+
   <ul>
     <li>Sau khi enable replica, bạn chỉ có thể copy những Object mới, còn objects cũ trước đó sẽ không được copy</li>
     <li>Copy không thể có tính "chaining". Có nghĩa nếu Bucket A copy sang Bucket B, Bucket B copy sang Bucket C. Thì khi tạo Object D sẽ không được copy sang Bucket C</li>
     <li>Có thể sử dụng "Replicate delete markers" để có thể xóa bản copy từ source => destination</li>
   </ul>
-</content-info>
+::
 
 ## S3 Pre-signed trong AWS
 

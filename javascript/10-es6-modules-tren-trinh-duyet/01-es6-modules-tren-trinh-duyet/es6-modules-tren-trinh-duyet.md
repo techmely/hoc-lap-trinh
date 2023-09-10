@@ -227,11 +227,11 @@ console.log(myModule.add(1, 2)); // 3
 console.log(new myModule.Utils().print("hi")); // hi
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý**: Trong trường hợp này, module export và import luôn luôn là một object.
 
-</content-warning>
+::
 
 ### Export, import default
 
@@ -359,11 +359,11 @@ setTimeout(async () => {
 }, 2000);
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý**: hàm **setTimeout** trên chỉ là ví dụ để thể hiện việc delay khi load module.
 
-</content-warning>
+::
 
 Với cách **dynamic import** này, **import** sẽ trả về một Promise. Do đó, bạn có thể sử dụng kết hợp với **async/await** như trên.
 

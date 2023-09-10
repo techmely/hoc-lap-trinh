@@ -275,11 +275,11 @@ let firstName = obj.firstName;
 let lastName = obj.lastName;
 ```
 
-<content-info>
+::alert{type="infor"}
 
 trong trường hợp object **thiếu thuộc tính** mà bạn muốn lấy ra giá trị thì giá trị đó là **undefined**.
 
-</content-info>
+::
 
 ```js
 let { firstName, lastName } = { firstName: "David" };

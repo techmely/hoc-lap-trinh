@@ -22,11 +22,11 @@ Ví dụ, chúng ta có thể biểu diễn cùng một ngày theo những đị
 
 Mặc định, **Spring** sẽ sử dụng định dạng ngày của địa phương hiện tại (_current locale_). Chẳng hạn, định dạng của Hoa Kỳ sẽ là `MM/dd/yyyy`. Trong trường hợp chúng ta muốn thay đổi định dạng của ngày khi liên kết một trường string với một đối tượng **LocalDate** thì chúng ta cần viết một **converter** để chuyển đổi từ `string` sang ngày.
 
-<content-warning>
+::alert{type="warning"}
 
 **_Lưu ý_**: Lớp `java.time.LocalDate` là một lớp mới được bổ sung cho **Java 8**, thay thế cho lớp `java.util.Date`. Chúng ta nên sử dụng bộ **API** mới về ngày tháng và thời gian, thay vì sử dụng các lớp **Date** và **Calendar** như cũ.
 
-</content-warning>
+::
 
 Để tạo một **Converter**, chúng ta viết một lớp **Java** triển khai interface `org.springframework.core.convert.converter.Converter`. Đây là một interface generic:
 

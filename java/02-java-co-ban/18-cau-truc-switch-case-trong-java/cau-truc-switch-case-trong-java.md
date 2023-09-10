@@ -154,9 +154,9 @@ public class Thaycacac {
   </div>
 </div>
 
-<content-info><ul>
+::alert{type="infor"}<ul>
 
 <li> <b>Biến</b> phải là một biểu thức có kiểu char, byte, short, int nhưng không thể là kiểu long, nếu <b>Biến</b> có kiểu khác với các kiểu liệt kê ở trên thì java sẽ đưa ra một thông báo lỗi.</li>
 <li>Nếu case không có break thì nó sẽ thực hiện đến hết, khi không còn khối nào thì thôi.</li>
 
-  </ul></content-info>
+  </ul>::

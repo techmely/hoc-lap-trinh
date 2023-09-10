@@ -145,13 +145,13 @@ public class WebController {
 Đầu tiên, mình đánh dấu `@Controller` trên class Webcontroller để cho Spring biết đây là nơi tiếp đón các request.
 Mình viết 2 hàm cho việc xử lý request có method Get và Post.
 
-<content-info>
+::alert{type="infor"}
 Ở `hàm index()`, nó sẽ đón nhận _request tới địa chỉ "/" và có phương thức Get_ (đánh dấu Annotation @GetMapping). Hàm này thì chỉ có nhiệm vụ trả về `1 String "index"`, đây chính là tên của trang html `index.html` mà mình đã tạo trước đó, mục đích là mình muốn nó chuyển đến trang này.
-</content-info>
+::
 
-<content-info>
+::alert{type="infor"}
 Hàm `hello()` thì về ý nghĩa thì cũng tương tự hàm index() chỉ khác là nó xử lý _request có method POST_. Còn về nhiệm vụ, cụ thể nó sẽ nhận tham số chứa dữ liệu input (chính là trường Your name) của form bên trang `index.html`, rồi nhét vào thằng 1 object Model -> chuyển dữ liệu sang trang `hello.html` để làm việc, generate data đó.
-</content-info>
+::
 
 _index.html_
 

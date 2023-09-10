@@ -73,9 +73,9 @@ public class SimpleConstructor {
   </div>
 </div>
 
-<content-info>
-  Nếu không có constructor trong một lớp, trình biên dịch sẽ tự động tạo một constructor mặc định trong lớp đó.
-</content-info>
+::alert{type="infor"}
+Nếu không có constructor trong một lớp, trình biên dịch sẽ tự động tạo một constructor mặc định trong lớp đó.
+::
 
 ## Constructor có tham số trong java
 

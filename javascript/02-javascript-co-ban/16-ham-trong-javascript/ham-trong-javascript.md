@@ -148,11 +148,11 @@ sayHello("Hi!"); // Hi!
 
 Khi hàm `sayHello` được gọi, giá trị [string](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript/) được sao chép (copy) vào biến cục bộ `message`. Trong thân hàm sẽ sử dụng biến cục bộ đó.
 
-<content-info>
+::alert{type="infor"}
 
 khi truyền tham số vào hàm (ngoại trừ object là kiểu dữ liệu tham chiếu), hàm trong JavaScript luôn thực hiện sao chép dữ liệu mà không làm thay đổi giá trị biến bên ngoài.
 
-</content-info>
+::
 
 Ví dụ:
 
@@ -278,11 +278,11 @@ let r = sum(1, 2);
 console.log(r); // undefined
 ```
 
-<content-info>
+::alert{type="infor"}
 
 không được xuống dòng ngay sau `return`. Vì JavaScript sẽ hiểu là bạn không `return` giá trị nào cả.
 
-</content-info>
+::
 
 Ví dụ:
 

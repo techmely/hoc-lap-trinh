@@ -214,12 +214,13 @@ class Main {
   </div>
 </div>
 
-<content-info>
+::alert{type="infor"}
+
 <ul>
   <li>Hàm hasNext() trả về true nếu có một phần tử tiếp theo trong ArrayList.</li>
   <li>Hàm next() trả về phần tử tiếp theo trong ArrayList.</li>
 </ul>
-</content-info>
+::
 
 ### Thay đổi phần tử trong ArrayList
 

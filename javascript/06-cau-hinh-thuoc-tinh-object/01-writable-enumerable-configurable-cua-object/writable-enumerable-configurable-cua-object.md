@@ -91,11 +91,11 @@ console.log(JSON.stringify(descriptor, null, 2));
      */
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 Đối với cách tạo object thông thường thì các cờ `writable`, `enumerable`, `configurable` có giá trị mặc định là `true`.
 
-</content-warning>
+::
 
 Trên đây là kiến thức chung về các cờ. Tiếp theo mình sẽ xem xét ý nghĩa của từng cờ.
 
@@ -117,13 +117,13 @@ user.name = "Anna";
 
 Rõ ràng là mình không thể thay đổi giá trị của thuộc tính `name` khi `writable=false`.
 
-<content-warning>
+::alert{type="warning"}
 
 Lỗi trên chỉ được in ra khi sử dụng code ở [strict mode](/bai-viet/javascript/strict-mode-trong-javascript).
 
 Đối với chế độ thông thường thì sẽ không có dòng lỗi trên, dù cho việc thay đổi giá trị của thuộc tính `name` vẫn không được phép.
 
-</content-warning>
+::
 
 Tiếp theo là ví dụ tạo thuộc tính bằng phương thức `defineProperty`:
 

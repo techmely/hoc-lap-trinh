@@ -31,18 +31,18 @@ Website được chia làm 2 loại:
 
 là loại website cơ bản mà người dùng hầu như không thể tương tác với web và chỉ được code bằng ngôn ngữ HTML (hoặc có thể thêm CSS, Javascript để tạo hiệu ứng).
 
-<content-info>
+::alert{type="infor"}
 Mình thường gọi loại web này nôm na là read-only, chỉ việc user truy cập web chỉ để đọc mà không tương tác được.
-</content-info><br/><br/>
+::<br/><br/>
 
 #### Web động:
 
 là website mà nội dung có khả năng thay đổi có thể dựa theo yêu cầu client, thời gian hoặc ngữ cảnh.
-<content-info>
+::alert{type="infor"}
 Chúng ta có thể tương tác qua lại với trang web, kiểu như: 2 người nói chuyện, 1 người hỏi và 1 người trả lời (cái này hay còn gọi phía thuật ngữ chuyên ngành là <b>mô hình Client - Server</b>)
-</content-info>
+::
 
 Nội dung của web này được lấy từ cơ sở dữ liệu (database) hoặc hệ thống quản lý nội dung (CMS). Và để tạo được 1 trang website động, chúng ta thường sử dụng ngôn ngữ phía server như: Java, Servlet, JSP, Python, C#,..
-<content-info>
+::alert{type="infor"}
 Chúng ta tương tác với website động bằng việc gửi 1 request -> server, server nhận -> xử lý request lấy những thông tin mà người dùng yêu cầu -> gửi lại tới user.
-</content-info>
+::

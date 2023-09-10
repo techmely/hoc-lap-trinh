@@ -196,11 +196,11 @@ Với hàm `setInterval`, hàm truyền vào được giải phóng khỏi bộ 
 
 Giả sử hàm truyền vào `setInterval` tham chiếu đến biến bên ngoài. Vì hàm này luôn tồn tại cho đến khi gọi `clearInterval`, nên biến được tham chiếu đến cũng sẽ **không được giải phóng**.
 
-<content-info>
+::alert{type="infor"}
 
 Khi không thực sự cần thiết, hãy gọi hàm `clearInterval` để giải phóng bộ nhớ.
 
-</content-info>
+::
 
 ## Hàm setTimeout với thời gian delay bằng 0
 
@@ -218,11 +218,11 @@ console.log("Hello");
 
 Trong ví dụ trên, câu lệnh `console.log("Hello")` được thực hiện trước. Và ngay sau khi câu lệnh này thực hiện xong thì câu lệnh `console.log("World")` được thực hiện.
 
-<content-warning>
+::alert{type="warning"}
 
 thời gian delay trên trình duyệt không hoàn toàn bằng `0`.
 
-</content-warning>
+::
 
 Đối với cách gọi hàm `setTimeout` lồng nhau, sau 5 lần gọi hàm, thời gian delay sẽ được set bằng 4ms, ví dụ:
 

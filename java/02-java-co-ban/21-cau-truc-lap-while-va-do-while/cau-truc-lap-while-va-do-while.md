@@ -58,7 +58,8 @@ public class Thaycacac {
   </div>
 </div>
 
-<content-info>
+::alert{type="infor"}
+
   <ul>
     <li>Biểu thức bên trong cặp ngoặc tròn phải là một biểu thức logic (biểu thức trả về giá trị true hoặc false)</li>
     <li>Biểu thức điều kiện phải nằm trong cặp ngoặc tròn</li>
@@ -66,7 +67,7 @@ public class Thaycacac {
     <li>Bên trong thân của vòng lặp while ta nên có lệnh làm thay đổi giá trị của biểu thức logic, nếu không chúng ta sẽ rơi vào vòng lặp vô hạn.</li>
     <li>Câu lệnh trong thân cấu trúc while có thể không được thực hiện lần nào (do biểu thức lôgic ban đầu có giá trị false )</li>
   </ul>
-</content-info>
+::
 
 ## Vòng lặp do - while
 
@@ -115,7 +116,8 @@ public class Thaycacac {
   </div>
 </div>
 
-<content-info>
+::alert{type="infor"}
+
   <ul>
     <li>Biểu thức bên trong cặp ngoặc tròn phải là một biểu thức logic (biểu thức trả về giá trị true hoặc false)</li>
     <li>Biểu thức điều kiện phải nằm trong cặp ngoặc tròn</li>
@@ -123,4 +125,4 @@ public class Thaycacac {
     <li>Bên trong thân của vòng lặp do-while ta nên có lệnh làm thay đổi giá trị của biểu thức logic, nếu không chúng ta sẽ rơi vào vòng lặp vô hạn.</li>
     <li>Câu lệnh trong thân cấu trúc do-while được thực hiện ít nhất một lần</li>
   </ul>
-</content-info>
+::

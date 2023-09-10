@@ -48,10 +48,11 @@ Hiện tại IPv4 vẫn phổ biến nhất<br/> IPv6 ra đời mới hơn IPv4 
 - EIP: là 1 IPv4 và có thể attach vào 1 EC2 instance
 - Mặc định mỗi account chỉ có thể tạo 5 EIP, có thể request AWS để tạo được nhiều hơn
 
-<content-info>
+::alert{type="infor"}
 Cố gắng hạn chế sử dụng EIP
+
 <ul>
   <li>Thay vì vậy có thể sử dụng DNS name kết hợp với Route 53</li>
   <li>Hoặc sử dụng 1 Load Balancer</li>
 <ul>
-</content-info>
+::

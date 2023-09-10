@@ -162,7 +162,7 @@ let 2you = 'passtion'; // bắt đầu bằng số
 let null = 'oh no';    // sử dụng từ khoá "null"
 ```
 
-<content-info>
+::alert{type="infor"}
 📝 Một số **chú ý** khi đặt tên biến:
 
 <ul>
@@ -170,7 +170,7 @@ let null = 'oh no';    // sử dụng từ khoá "null"
 <li>Bạn có thể sử dụng những chữ cái không phải chữ cái Latinh để đặt tên biến. Nhưng điều này là không nên. Bạn nên sử dụng chữ cái Latinh (a-z) để đặt tên biến.</li>
 <li>Tốt nhất là đặt theo chuẩn tiếng Anh để mọi người trên thế giới có thể hiểu code của bạn.</li>
 </ul>
-</content-info>
+::
 
 ## Chuẩn hóa cách đặt tên biến
 

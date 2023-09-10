@@ -119,11 +119,11 @@ Một số trường hợp phổ biến:
 console.log((1234567890).toString(36)); // kf12oi
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 cách viết dùng hai dấu chấm `..` như trên **không phải lỗi chính tả**. Nếu bạn muốn gọi [phương thức của number](/bai-viet/javascript/phuong-thuc-cua-kieu-nguyen-thuy), ví dụ `toString()`, bạn cần phải dùng **hai dấu chấm**
 
-</content-warning>
+::
 
 Nếu bạn dùng **một dấu chấm** thì sẽ có lỗi cú pháp:
 
@@ -143,11 +143,11 @@ Nói cách khác, cách viết hai dấu chấm `..` tương đương với các
 console.log((1234567890).toString(36)); // kf12oi
 ```
 
-<content-info>
+::alert{type="infor"}
 
 Để code rõ ràng và an toàn hơn, bạn nên sử dụng `()`
 
-</content-info>
+::
 
 ## Làm tròn number trong JavaScript
 
@@ -332,7 +332,7 @@ let num = +prompt("Nhập vào một số:", "");
 console.log(isFinite(num));
 ```
 
-<content-info>
+::alert{type="infor"}
 
 **String rỗng hoặc string toàn dấu cách** chuyển sang dạng số thành số `0`.
 
@@ -343,7 +343,7 @@ console.log(isFinite(num));
 
 Trong hầu hết các trường hợp, phương thức `Object.is` tương đương với so sánh bằng nghiêm ngặt `===`.
 
-</content-info>
+::
 
 ## Hàm `parseInt` và hàm `parseFloat`
 
@@ -390,11 +390,11 @@ console.log(parseInt("$100")); // NaN
 console.log(parseFloat("$100")); // NaN
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 hàm `parseInt(value, radix)` có tham số thứ hai `radix` biểu diễn hệ cơ số (từ `2` đến `36`)
 
-</content-warning>
+::
 
 Ví dụ tách lấy số nguyên ở các hệ cơ số khác nhau:
 

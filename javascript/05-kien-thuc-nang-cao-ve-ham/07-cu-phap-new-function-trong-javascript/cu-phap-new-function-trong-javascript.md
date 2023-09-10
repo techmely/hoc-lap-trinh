@@ -115,11 +115,11 @@ Cụ thể là chương trình nén sẽ **xóa bỏ dấu cách**, **ghi chú c
 
 Nếu hàm tạo bởi `new Function` muốn đọc giá trị của biến `userName` thì sẽ sinh ra lỗi, vì không tìm thấy biến `userName` nữa.
 
-<content-info>
+::alert{type="infor"}
 
 Để đọc giá trị của biến bên ngoài với cú pháp `new Function`, bạn hãy truyền giá trị của biến đó vào hàm thông qua tham số.
 
-</content-info>
+::
 
 ## Tổng kết
 
