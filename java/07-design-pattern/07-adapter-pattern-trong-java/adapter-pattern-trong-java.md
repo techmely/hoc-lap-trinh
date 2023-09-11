@@ -21,6 +21,8 @@ position: 7
 
 ## Adapter Pattern UML Diagram
 
+![Adapter Pattern UML Diagram](https://github.com/techmely/hoc-lap-trinh/assets/29374426/fd6297b5-be8c-4739-85fc-ed24505a87b9)
+
 **UML Diagram** của Adapter Pattern cho thấy mối quan hệ giữa các thành phần chính:
 
 - **Client**: Đối tượng sử dụng interface `Target`.
