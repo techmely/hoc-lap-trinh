@@ -19,6 +19,8 @@ position: 10
 
 ## Bridge Pattern UML Diagram
 
+![Bridge Pattern UML Diagram](https://github.com/techmely/hoc-lap-trinh/assets/29374426/9db8f51f-c12d-4b0c-85a3-646d9c369633)
+
 Dưới đây là sơ đồ UML của **Bridge Pattern**:
 
 ```scss
@@ -47,6 +49,8 @@ Dưới đây là sơ đồ UML của **Bridge Pattern**:
 ## Ví dụ về Bridge Pattern
 
 Giả sử bạn cần xử lý việc ghi log của tin nhắn, và bạn muốn có khả năng lựa chọn giữa việc ghi log ra màn hình hoặc ghi log vào tệp tin, đồng thời bạn cũng muốn lựa chọn giữa việc log dưới dạng văn bản thô hoặc văn bản đã mã hóa.
+
+![Ví dụ về Bridge Pattern](https://github.com/techmely/hoc-lap-trinh/assets/29374426/e8c601db-fa4c-4a59-a5fb-e1a5d7e7d92b)
 
 ### Các Lớp
 
