@@ -1,5 +1,5 @@
 ---
-title: "Singleton Pattern trong Java là gì?"
+title: "Singleton Pattern trong Java"
 description: "Singleton Pattern là một mẫu thiết kế tạo dựng (Creation Pattern) quan trọng trong lập trình phần mềm. Nó được sử dụng để đảm bảo rằng chỉ có một thể hiện duy nhất của một lớp (class) tồn tại trong môi trường chạy của Java, đảm bảo tính duy nhất và toàn vẹn của đối tượng."
 chapter:
   name: "Design Pattern"

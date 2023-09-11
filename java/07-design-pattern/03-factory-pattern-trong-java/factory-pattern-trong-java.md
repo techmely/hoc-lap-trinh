@@ -1,5 +1,5 @@
 ---
-title: "Factory Pattern trong Java là gì?"
+title: "Factory Pattern trong Java"
 description: "Factory Pattern, hoặc còn được gọi là Factory Method Pattern, là một trong những mẫu thiết kế quan trọng trong lập trình phần mềm. Factory Pattern rất phổ biến trong JDK (Java Development Kit) và các framework như Spring và Struts"
 chapter:
   name: "Design Pattern"
@@ -129,11 +129,9 @@ public class TestFactory {
 }
 ```
 
-Kết quả:
-
-```bash
+<content-result>
 Factory PC Config::RAM= 2 GB, HDD=500 GB, CPU=2.4 GHz
 Factory Server Config::RAM= 16 GB, HDD=1 TB, CPU=2.9 GHz
-```
+</content-result>
 
 **Factory Pattern** giúp tạo đối tượng một cách linh hoạt, bảo toàn tính nhất quán trong dự án và giúp code dễ dàng mở rộng.
