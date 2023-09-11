@@ -1,6 +1,6 @@
 ---
 title: "Facade Pattern trong Java"
-description: "Facade Pattern được sử dụng để làm cho việc giao tiếp với hệ thống trở nên dễ dàng hơn đối với các ứng dụng client. "
+description: "Facade Pattern được sử dụng để làm cho việc giao tiếp với hệ thống trở nên dễ dàng hơn đối với các ứng dụng client"
 chapter:
   name: "Design Pattern"
   slug: "chuong-07-design-pattern"
@@ -11,7 +11,7 @@ image: https://user-images.githubusercontent.com/29374426/146175674-fa7e09f7-4e4
 position: 8
 ---
 
-**Facade Pattern** là một mẫu cấu trúc (Structural Pattern) trong lập trình Java.
+**Facade Pattern** là một mẫu [design pattern](/bai-viet/java/design-pattern-la-gi-design-pattern-trong-java) trong lập trình Java.
 
 ## Facade Pattern là gì
 

@@ -13,7 +13,7 @@ position: 7
 
 ## Adapter Pattern là gì
 
-**Adapter Pattern** là một mẫu cấu trúc (Structural Pattern) trong lập trình.
+**Adapter Pattern** là một mẫu [design pattern](/bai-viet/java/design-pattern-la-gi-design-pattern-trong-java) trong lập trình.
 
 **Mục đích** của Adapter Pattern là cho phép các interface không liên quan tới nhau có thể làm việc cùng nhau. Điều này thường xảy ra khi bạn muốn sử dụng một lớp đã tồn tại mà không phù hợp với giao diện (interface) của bạn. Đối tượng giúp kết nối các interface này gọi là Adapter.
 
