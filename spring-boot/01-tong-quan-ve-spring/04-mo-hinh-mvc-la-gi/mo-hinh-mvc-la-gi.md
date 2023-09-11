@@ -11,48 +11,52 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---
 
-## Mô hình MVC
+Mô hình MVC (Model-View-Controller) là một mô hình kiến trúc phần mềm giúp quản lý và xây dựng các dự án phần mềm một cách có hệ thống hơn. Hãy cùng tìm hiểu về mô hình này một cách dễ hiểu.
 
-### Khái niệm.
+![Mô hình MVC là gì](https://github.com/techmely/hoc-lap-trinh/assets/29374426/ccf4b629-2efb-48e7-ac73-30ef550bb7cb)
 
-MVC là một mô hình kiến trúc phần mềm được tạo ra với mục đích quản lí và xây dựng dự án phần mềm có hệ thống hơn, nói cụ thể thì nó là một mẫu thiết kế nhằm chia tách phần giao diện và phần code của ứng dụng để dễ dàng quản lí, bảo trì và phát triển. MVC được áp dụng trên hầu hết các ngôn ngữ lập trình hướng đối tượng hiện nay như C++, C#, Java, PHP,...
+## Định Nghĩa
 
-MVC chia ứng dụng phần mềm ra thành 3 phần có tương tác với nhau:
+MVC là viết tắt của ba thành phần chính trong kiến trúc này:
 
-**Model:** thường là các class chứa thông tin đối tượng (dữ liệu), tương tác truy xuất database. Model sẽ đóng gói dữ liệu của ứng dụng và logic nghiệp vụ.
+1. **Model:** Đại diện cho dữ liệu và logic của ứng dụng. Model thường chứa thông tin về các đối tượng và thực hiện các thao tác liên quan đến dữ liệu như truy xuất cơ sở dữ liệu.
 
-**View:** là nơi nhận dữ liệu từ model, database và sắp xếp chúng chính xác nhờ yêu cầu từ controller và truyền về client. View sẽ xử lý hiễn thị trên ứng dụng.
+2. **View:** Là phần hiển thị dữ liệu cho người dùng. View có nhiệm vụ nhận dữ liệu từ Model và hiển thị chúng theo cách thích hợp. Điều này bao gồm việc tạo giao diện người dùng và hiển thị dữ liệu trên đó.
 
-**Controller:** Đóng vai trò trung gian giữa Model và View, nó có nhiệm vụ nhận yêu cầu từ client sau đó xử lý request, load model và gửi data qua view tương ứng với nhau rồi trả kết quả về cho client.
+3. **Controller:** Là thành phần trung gian giữa Model và View. Controller nhận yêu cầu từ người dùng thông qua giao diện (View), sau đó xử lý yêu cầu, tương tác với Model để truy xuất hoặc cập nhật dữ liệu, và sau đó trả kết quả về cho View để hiển thị cho người dùng.
 
 ![Mô hình MVC](https://github.com/techmely/hoc-lap-trinh/assets/29374426/4f3a0d22-eebe-49bd-bc32-9df03fe8ae6b)
 
-### Luồng đi trong mô hình MVC.
+## Luồng Công Việc trong Mô hình MVC
 
-Bạn có thể hình dung, khi một yêu cầu từ máy client gửi tới server, Controller sẽ thực hiện nhiệm vụ của mình đó là tiếp nhận và xử lý yêu cầu. Trong trường hợp cần thiết, nó có thể liên hệ Model – bộ phận làm việc với database để hỗ trợ.
-Khi xử lý xong yêu cầu, kết quả sẽ được trả về View. Tại View sẽ tạo mã HTML thành giao diện và trả về hiển thị trên trình duyệt.
-Ưu & nhược điểm của MVC?
-Ưu điểm của mô hình MVC
-Nhẹ, tiết kiệm băng thông: MVC không sử dụng viewstate nên khá tiết kiệm diện tích băng thông. Khi sử dụng, người dùng có thể sử dụng ứng dụng trên web cần tương tác gửi và nhận dữ liệu một cách liên tục. Do đó, việc giảm băng thông giúp cho website hoạt động tốt và ổn định hơn.
+Hãy tưởng tượng một luồng công việc cơ bản trong mô hình MVC khi người dùng tương tác với ứng dụng:
 
-### Ưu - nhược điểm của mô hình MVC.
+1. Người dùng gửi yêu cầu từ máy client tới máy chủ.
 
-#### Ưu điểm của mô hình MVC.
+2. Controller nhận yêu cầu và xử lý nó. Trong trường hợp cần, Controller có thể tương tác với Model để truy xuất hoặc cập nhật dữ liệu.
 
-- Kiểm tra dễ dàng: Với MVC, bạn có thể dễ dàng kiểm tra, rà soát lỗi phần mềm trước khi tới tay người tiêu dùng, đảm bảo chất lượng và độ uy tín cao hơn.
-- Chức năng control: Trên các nền website thì ngôn ngữ lập trình như CSS, HTML, Javascript có một vai trò vô cùng quan trọng. Việc sử dụng mô hình MVC sẽ giúp bạn có một bộ control ưu việt trên nền tảng các ngôn ngữ hiện đại với nhiều hình thức khác nhau.
-- View và size: View sẽ là nơi lưu trữ các dữ liệu. Càng nhiều yêu cầu được thực hiện thì kích thước càng tệp càng lớn. Khi đó, đường truyền mạng cũng giảm tốc độ load. Việc sử dụng mô hình MVC sẽ giúp bạn tiết kiệm được diện tích băng thông một cách tối ưu.
-- Chức năng Soc (Separation of Concern): Chức năng này cho phép bạn phân tách rõ ràng các phần như Model, giao diện, data, nghiệp vụ.
-- Tính kết hợp: Việc tích hợp ở mô hình MVC cho phép bạn thoải mái viết code trên nền tảng website. Khi đó, server của bạn sẽ được giảm tải khá nhiều.
-- Đơn giản: Đây là một mô hình với kết cấu tương đối đơn giản. Dù bạn không có quá nhiều chuyên môn cũng có thể sử dụng được.
+3. Controller sau đó chuẩn bị dữ liệu cần thiết và chuyển chúng đến View.
 
-#### Nhược điểm của mô hình MVC
+4. View nhận dữ liệu từ Controller và hiển thị nó theo cách thích hợp trên giao diện người dùng.
 
-- Theo chia sẻ của đơn vị chuyên phát triển phần mềm (Outsource .NET Development Company – Groovetechnology.com) MVC thường được sử dụng vào những dự án lớn. Do đó, với các dự án nhỏ, mô hình MVC có thể gây cồng kềnh, tốn thời gian trong quá trình phát triển cũng như thời gian trung chuyển dữ liệu.
+5. Kết quả cuối cùng được trả về cho người dùng qua máy client.
 
-### Ứng dụng của mô hình MVC.
+## Ưu và Nhược Điểm của Mô hình MVC
 
-MVC đang là mô hình được ứng dụng rất nhiều trong lập trình.
-Hệ thống MVC phát triển tốt sẽ cho phép phát triển front–end, back–end cùng trên hệ thống mà không có sự can thiệp, chia sẻ, chỉnh sửa các tập tin trong khi một hoặc hai bên vẫn đang làm việc.
+### Ưu Điểm của Mô hình MVC:
 
-Việc sử dụng mô hình tương đối đơn giản. Chỉ cần hiểu rõ quy trình vận hành, nắm được các chức năng của từng bộ phận thì việc triển khai mô hình MVC tương đối dễ dàng.
+- **Kiểm tra Dễ Dàng:** Với MVC, bạn có thể kiểm tra và rà soát lỗi phần mềm trước khi đưa ra người dùng, đảm bảo chất lượng và độ tin cậy cao hơn.
+
+- **Chức Năng Kiểm Soát:** Mô hình MVC cho phép bạn có quyền kiểm soát tốt hơn đối với các yếu tố quan trọng như giao diện, dữ liệu và logic ứng dụng.
+
+- **Tích hợp dễ dàng:** Mô hình này cho phép tích hợp ứng dụng dễ dàng trên nền tảng web và giảm tải máy chủ.
+
+- **Phân Tách Các Trách Nhiệm:** MVC phân tách rõ ràng các phần khác nhau của ứng dụng như Model, View và Controller, giúp dễ dàng quản lý và bảo trì mã nguồn.
+
+### Nhược Điểm của Mô hình MVC:
+
+- Mô hình này thường được ưa chuộng trong các dự án lớn, có thể gây cồng kềnh và tốn thời gian đối với các dự án nhỏ hơn.
+
+## Ứng Dụng của Mô hình MVC
+
+Mô hình MVC đã được ứng dụng rộng rãi trong lập trình phần mềm. Nó cho phép phát triển giao diện người dùng (front-end) và logic ứng dụng (back-end) độc lập mà không cần can thiệp, chia sẻ, hoặc chỉnh sửa các tập tin trong khi một hoặc hai bên vẫn đang làm việc. Mô hình MVC cung cấp tính kết hợp và quản lý mã nguồn dễ dàng, giúp ứng dụng phát triển một cách hiệu quả và bảo trì dễ dàng.

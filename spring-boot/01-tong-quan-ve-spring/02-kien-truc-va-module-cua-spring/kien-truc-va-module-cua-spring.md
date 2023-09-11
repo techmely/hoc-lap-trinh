@@ -1,5 +1,5 @@
 ---
-title: "Kiến trúc và module của Spring"
+title: "Khám phá Kiến trúc và Module của Spring"
 description: "Kiến trúc Spring được tổ chức theo kiểu module. Mặc dù khá là nhiều nhưng bạn chỉ cần quan tâm đến những gì bạn cần dùng đến và mình sẽ giới thiệu chi tiết ở phần dưới."
 chapter:
   name: "Tổng quan về Spring"
@@ -10,66 +10,68 @@ category:
 position: 2
 ---
 
-## Kiến trúc và module của Spring
+![Kiến trúc Spring](https://github.com/techmely/hoc-lap-trinh/assets/29374426/0fb746c7-cbe6-4ad7-860c-c4956b52a3ea)
 
-![Kiến trúc spring](https://github.com/techmely/hoc-lap-trinh/assets/29374426/0fb746c7-cbe6-4ad7-860c-c4956b52a3ea)
+## Giới Thiệu về Kiến trúc và Module của Spring
 
-Kiến trúc Spring được tổ chức theo kiểu module. Mặc dù khá là nhiều nhưng bạn chỉ cần quan tâm đến những gì bạn cần dùng đến và mình sẽ giới thiệu chi tiết ở phần dưới.
+Spring Framework, một công cụ mạnh mẽ cho lập trình Java, được tổ chức theo kiểu module để mang đến tính linh hoạt và dễ quản lý cho các dự án phức tạp. Dưới đây, chúng tôi sẽ giới thiệu một số khía cạnh quan trọng của kiến trúc và các module quan trọng của Spring.
 
 ## Dependency Injection và Inversion of Control
 
-- **Dependency Injection (DI)** là một design pattern để loại bỏ sự phụ thuộc lẫn nhau giữa những đoạn code (ví dụ: các hàm các class,..), vì vậy nó giúp rễ ràng quản lý, mở rộng code và test ứng dụng.
+**Dependency Injection (DI)** là một design pattern quan trọng trong Spring Framework, giúp loại bỏ sự phụ thuộc lẫn nhau giữa các thành phần của ứng dụng. Điều này làm cho việc quản lý, mở rộng mã nguồn và kiểm tra ứng dụng trở nên dễ dàng hơn.
 
-- **Inversion of Control (IoC)** Container có trách nhiệm khởi tạo, configure, gắn kết các đối tượng. Có hai kiểu của IoC containers là **BeanFactory** và **ApplicationContext**.
+**Inversion of Control (IoC)** Container trong Spring chịu trách nhiệm khởi tạo, cấu hình và kết nối các đối tượng. Spring cung cấp hai loại IoC containers: **BeanFactory** và **ApplicationContext**, giúp quản lý các đối tượng của bạn một cách thông minh.
 
-## Các module của Spring Framework
+## Các Module Quan Trọng của Spring Framework
 
-Spring Framework bao gồm nhiều tính năng được tổ chức thành khoảng 20 module. Nó được chia như sau:
+Spring Framework được chia thành khoảng 20 module, được tổ chức hợp lý để phục vụ các mục tiêu cụ thể. Dưới đây là một số module quan trọng:
 
-![spring-overview](https://github.com/techmely/hoc-lap-trinh/assets/29374426/5966b40c-beb2-4876-a187-17663637aba2)
+### 1. Core Container
 
-## Test
+**Core Container** bao gồm các module: **spring-core**, **spring-beans**, **spring-context**, và **spring-expression** (Spring Expression Language).
 
-hỗ trợ việc kiểm tra các thành phần Spring với JUnit hoặc TestNG khuôn khổ.
+- **spring-core** và **spring-beans** cung cấp các phần cơ bản của framework, bao gồm **IoC** và **Dependency Injection**. `Spring Bean` được coi như linh hồn của ứng dụng Spring.
 
-### Core Container
+- **spring-context** hỗ trợ đa ngôn ngữ (internationalization) và tích hợp các tính năng Java EE như EJB và JMX.
 
-**Core Container** bao gồm các module: **spring-core** , **spring-beans**, **spring-context**, và **spring-expression** (<b>Spring Expression Language</b>).
+- **spring-expression** cung cấp hỗ trợ cho việc đặt và lấy giá trị, toán tử logic và truy cập các tập hợp dữ liệu.
 
-- **spring-core** và **spring-beans** cung cấp những phần cơ bản của framework, bao gồm **IoC** và **Dependency Injection** `Spring Bean` là center của `Spring Core`
-  và được coi như là linh hồn của `Spring Application`.
-- **spring-context** hỗ trợ đa ngôn ngữ (internationalization), các tính năng Java EE như EJB, JMX.
-- **spring-expression** được mở rộng từ `Expression Language` trong **JSP**. Nó cung cấp hỗ trợ việc `setting/getting` giá trị, các method cải tiến cho phép truy cập collections, index, các toán tử logic v.v.
-
-### Data Access/Integration
+### 2. Data Access/Integration
 
 **Data Access/Integration** bao gồm các module JDBC, ORM, OXM, JMS và Transaction.
 
-- **Module spring-jdbc** cung cấp một lớp JDBC-abstraction để loại bỏ những code tẻ nhạt cả JDBC và phân tích những mã lỗi cụ thể của database-vendor.
-- **Module spring-orm** cung cấp lớp tích hợp với các orm API phổ biến như JPA, JDO và Hibernate.
+- **spring-jdbc** giúp giảm thiểu mã JDBC và hỗ trợ nhiều cơ sở dữ liệu.
 
-* **Module spring-oxm** cung cấp lớp abstraction hỗ trợ triển khai Object/XML mapping như AXB, Castor, XMLBeans, JiBX and XStream.
+- **spring-orm** tích hợp với các orm API phổ biến như JPA, JDO và Hibernate.
 
-- **Module spring-jms** chứa các tính năng tạo và sử dụng các message. Từ Spring Framework 4.1, nó được tích hợp với **spring-messaging**.
-- **Module spring-transaction** hỗ trợ quản lý giao dịch theo chương trình và khai báo cho các lớp mà thực hiện các giao diện đặc biệt và cho tất cả các POJO của bạn.
+- **spring-oxm** hỗ trợ Object/XML mapping với nhiều công cụ như AXB, Castor, XMLBeans và nhiều công cụ khác.
 
-#### _Web_
+- **spring-jms** cung cấp khả năng tạo và sử dụng các message và tích hợp với **spring-messaging**.
 
-Hay còn được gọi là `Spring MVC` để hỗ trợ việc tạo ứng dụng Web, bao gồm: **spring-web** , **spring-webmvc**, **spring-websocket** và **springwebmvc-portlet**.
+- **spring-transaction** hỗ trợ quản lý giao dịch cho các POJO và các lớp đặc biệt.
 
-- **Module spring-web** cung cấp tính năng tích hợp web theo định hướng cơ bản như chức năng tập tin tải lên nhiều phần dữ liệu và khởi tạo các **container
-  IoC** sử dụng nghe servlet và một bối cảnh ứng dụng web theo định hướng.
-- **Module spring-webmvc** bao gồm việc triển khai _Model-View-Controller (MVC)_ của Spring cho các ứng dụng web.
-- **Module spring-websocket** cung cấp hỗ trợ cho WebSocket-based, giao tiếp hai chiều giữa client và server trong các ứng dụng web.
-- **Module springwebmvc-portlet** cung cấp việc triển khai MVC được sử dụng trong môi trường portlet và ánh xạ chức năng của **module Web-Servlet**.
+### 3. Web
 
-### AOP, Aspects, Instrumentation và Messaging
+Spring cung cấp **Spring MVC** để xây dựng ứng dụng web. Module bao gồm: **spring-web**, **spring-webmvc**, **spring-websocket** và **springwebmvc-portlet**.
 
-Những module này hỗ trợ cài đặt lập trình hướng khía cạnh (Aspect Oriented Programming), hỗ trợ tích hợp với AspectJ.
+- **spring-web** hỗ trợ tích hợp web, chức năng tải tệp và khởi tạo **IoC container** sử dụng servlet.
 
-- **Module AOP** cung cấp một thực hiện lập trình hướng khía cạnh cho phép bạn xác định phương pháp-chặn và pointcuts để sạch tách mã thực hiện chức
-  năng đó nên được tách ra.
-- **Module Aspects** cung cấp tích hợp với AspectJ, mà lại là một khuôn khổ AOP mạnh mẽ và trưởng thành.
-- **Module Instrumentation** cung cấp thiết bị đo đạc lớp hỗ trợ và triển khai lớp bộ nạp được sử dụng trong các máy chủ ứng dụng nhất định.
-- **Module Messaging** cung cấp hỗ trợ cho STOMP như **WebSocket** sub-protocol để sử dụng trong các ứng dụng. Nó cũng hỗ trợ một mô hình lập trình chú thích
-  cho việc định tuyến và xử lý tin nhắn STOMP từ các máy khách **WebSocket**.
+- **spring-webmvc** triển khai Model-View-Controller (MVC) cho ứng dụng web.
+
+- **spring-websocket** hỗ trợ WebSocket-based, giao tiếp hai chiều giữa client và server trong các ứng dụng web.
+
+- **springwebmvc-portlet** dành cho môi trường portlet và ánh xạ chức năng của **module Web-Servlet**.
+
+### 4. AOP, Aspects, Instrumentation và Messaging
+
+Những module này hỗ trợ lập trình hướng khía cạnh (Aspect Oriented Programming) và tích hợp với AspectJ.
+
+- **Module AOP** cung cấp lập trình hướng khía cạnh, cho phép tách rời mã và các chức năng của ứng dụng.
+
+- **Module Aspects** tích hợp với AspectJ, một khuôn khổ AOP mạnh mẽ.
+
+- **Module Instrumentation** hỗ trợ đo đạc và triển khai lớp bộ nạp.
+
+- **Module Messaging** hỗ trợ STOMP và WebSocket, cung cấp mô hình lập trình chú thích cho định tuyến và xử lý tin nhắn STOMP.
+
+Spring Framework mang đến sự linh hoạt và tính mạnh mẽ cho lập trình Java, giúp bạn xây dựng ứng dụng hiệu quả và dễ bảo trì. Hãy khám phá các module này để tận dụng toàn bộ tiềm năng của Spring và trở thành một lập trình viên Java xuất sắc!
