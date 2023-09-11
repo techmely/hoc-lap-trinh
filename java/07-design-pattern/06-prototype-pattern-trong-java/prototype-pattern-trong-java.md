@@ -34,7 +34,6 @@ Trong **Prototype Pattern**, có hai trường hợp chính:
 
 ![Prototype Pattern UML Diagram](https://github.com/techmely/hoc-lap-trinh/assets/29374426/8052e2eb-c4d6-40b1-a03c-3279cd31af55)
 
-
 ## Ví dụ về Prototype Pattern
 
 Dưới đây là một ví dụ về **Prototype Pattern** sử dụng một lớp `User` có thể sao chép đối tượng theo hai cách: sao chép nông và sao chép sâu.
