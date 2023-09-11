@@ -33,11 +33,24 @@ Một số ví dụ về **Abstract Factory Pattern** trong JDK (Java Developmen
 
 ## Abstract Factory Pattern UML Diagram
 
+Cũng giống như [Factory Pattern](/bai-viet/java/factory-pattern-trong-java), chúng ta sẽ sử dụng các super class, sub-class
+
+![Abstract Factory Pattern UML Diagram](https://github.com/techmely/hoc-lap-trinh/assets/29374426/be47b0a0-884b-44dd-aae0-e41532035360)
+
 **Abstract Factory Pattern** sử dụng các lớp cha và lớp con, tương tự như **Factory Pattern**. Tuy nhiên, khác biệt quan trọng nằm ở việc có nhiều lớp Factory (ConcreteFactory_1, ConcreteFactory_2) cùng triển khai một Interface trừu tượng (AbstractFactory). Mỗi lớp Factory này sẽ trả về các đối tượng khác nhau.
 
 ## Ví dụ
 
 Giả sử chúng ta có một class cha là `Computer` và hai class con là `Server` và `PC`. Chúng ta muốn tạo các đối tượng `Server` hoặc `PC` dựa trên dữ liệu đầu vào.
+
+`ComputerAbstractFactory` là một interface cung cấp phương thức trả về đối tượng Computer.
+
+`ServerFactory` và `PCFactory` sẽ cài đặt các phương thức của ComputerAbstractFactory.
+
+`ComputerFactory` sẽ sử dụng `ComputerAbstractFactory` để tạo đối tượng Computer. (Trường hợp `ComputerAbstractFactory` là `ServerFactory` thì sẽ trả về đối tượng `Server`, trường hợp `ComputerAbstractFactory` là `PCFactory` thì sẽ trả về đối tượng PC)
+
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/524ed915-bd7f-4c6b-b356-2c820853b341)
+
 
 ### Các Lớp
 
