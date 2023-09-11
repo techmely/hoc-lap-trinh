@@ -38,7 +38,11 @@ Bên dưới là một sơ đồ UML của **Facade Pattern**:
 +----------------+        +------------------+
 ```
 
+![Facade Pattern UML Diagram](https://github.com/techmely/hoc-lap-trinh/assets/29374426/e7179b15-94d1-4f04-966a-ff8600d4a74d)
+
 ## Ví dụ về Facade Pattern
+
+![Ví dụ về Facade Pattern](https://github.com/techmely/hoc-lap-trinh/assets/29374426/31a38767-cc86-4776-821d-4411ee06d2b7)
 
 Giả sử bạn có một hệ thống cũ gồm các lớp **Address**, **PhoneNumber**, và **Name**, và bạn muốn quản lý thông tin này thông qua một lớp **PersonFacade**.
 
