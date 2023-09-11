@@ -19,6 +19,9 @@ Design Pattern (Mẫu Thiết Kế) là một giải pháp lặp lại cho các 
 
 Design Pattern được sử dụng rộng rãi trong phát triển phần mềm và thường được tích hợp trong các framework và thư viện. Nếu bạn đã làm việc với các framework trước đây, có thể bạn đã sử dụng Design Pattern mà không nhận ra.
 
+![Design Pattern là gì?](https://github.com/techmely/hoc-lap-trinh/assets/29374426/0155b266-f18b-46aa-820e-27d7af123a8e)
+
+
 ## Lợi ích của Design Pattern
 
 Sử dụng Design Pattern mang lại nhiều lợi ích:
