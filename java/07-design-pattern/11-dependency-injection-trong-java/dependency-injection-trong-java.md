@@ -11,124 +11,90 @@ image: https://user-images.githubusercontent.com/29374426/146175674-fa7e09f7-4e4
 position: 11
 ---
 
-**Bridge Pattern** là một mẫu cấu trúc (Structural Pattern) trong lập trình Java.
+**Dependency Injection (DI)** là một kỹ thuật và một mô hình thiết kế trong lập trình phần mềm. Nó giúp quản lý và giảm bớt sự phụ thuộc giữa các thành phần của ứng dụng, làm cho ứng dụng dễ dàng mở rộng, bảo trì và thay đổi.
 
-## Bridge Pattern là gì
+Để hiểu định nghĩa trên, mình có ví dụ sau:
 
-**Bridge Pattern** được sử dụng khi bạn muốn tách biệt sự phân cấp trong một thành phần giao diện (interface) và sự phân cấp trong việc thực hiện nó. Nó giúp bạn loại bỏ sự phụ thuộc giữa các lớp giao diện và các lớp cụ thể.
+- Mình có 1 ứng dụng gọi tới object của class `MySQLDAO`(class `MySQLDAO` chuyên thực hiện truy vấn với cơ sở dữ liệu MySQL của ứng dụng)
+- Bây giờ bạn muốn truy vấn tới cơ sở dữ liệu `postgre`. Bạn phải xóa khai báo `MySQLDAO` trong ứng dụng và thay bằng `PostgreDAO`, sau đó muốn dùng lại MySQLDAO bạn lại làm ngược lại… rõ ràng code sẽ phải sửa lại và test nhiều lần.
+- Giải pháp dùng if-else kiểm tra điều kiện sẽ dùng đối tượng `DAO` nào… nhưng sau đấy có thêm một `DAO` khác ví dụ như `MSSQLDAO` chẳng hạn… phức tạp hơn nhiều phải không.
 
-## Bridge Pattern UML Diagram
+(Thường thì ít khi 1 ứng dụng dùng nhiều loại cơ sở dữ liệu khác nhau nhưng sẽ có trường hợp sử dụng nhiều database, mình để thành nhiều loại cơ sở dữ liệu khác nhau cho dễ hình dung)
 
-Dưới đây là sơ đồ UML của **Bridge Pattern**:
+Dependency Inject chính là để giải quyết cho trường hợp như thế này.
 
-```scss
-+---------------------+         +------------------+
-|      Abstraction    |         |   Implementor   |
-+---------------------+         +------------------+
-| + operation()       |         | + implement()   |
-|                     |         |                  |
-|                     |         |                  |
-|    +---------------+|         |    +-----------+ |
-|    |               ||         |    |           | |
-|    |               ||         |    |           | |
-|    |               ||         |    |           | |
-+----|------------   ||         +----|-----------| |
-     |               ||              |           | |
-     +---------------+|              +-----------+ |
-                      |                            |
-                      +----------------------------+
-                           AbstractionRefined
-```
+Trong ví dụ trên ta tạo 1 interface `AbstractDAO` và cho các class DAO kia thừa kế `AbstractDAO`. Bây giờ trong các class sử dụng DAO ta khai báo `AbstractDAO`, tùy theo điều kiện tương ứng `AbstractDAO` có thể là MySQLDAO hoặc `PostgreDAO`.
 
-- **Abstraction**: Đây là một lớp trừu tượng chứa một đối tượng của **Implementor** và định nghĩa các phương thức giao diện (interface) mà các lớp con của nó phải triển khai. **Abstraction** cung cấp một cách tiếp cận thông qua các phương thức của nó để giao tiếp với **Implementor**.
-- **Implementor**: Đây là một giao diện (interface) hoặc lớp trừu tượng mà các lớp cụ thể triển khai. Nó định nghĩa các phương thức mà **Abstraction** sử dụng để thực hiện các hoạt động cụ thể.
-- **AbstractionRefined**: Đây là các lớp con của **Abstraction** và được sử dụng để triển khai các chi tiết cụ thể của phương thức được định nghĩa trong **Abstraction**.
+Việc thay thế `AbstractDAO` bằng `MySQLDAO/PostgreDAO` được gọi là injection.
 
-## Ví dụ về Bridge Pattern
+### Ví dụ về Dependency Injection
 
-Giả sử bạn cần xử lý việc ghi log của tin nhắn, và bạn muốn có khả năng lựa chọn giữa việc ghi log ra màn hình hoặc ghi log vào tệp tin, đồng thời bạn cũng muốn lựa chọn giữa việc log dưới dạng văn bản thô hoặc văn bản đã mã hóa.
-
-### Các Lớp
+1. Đầu tiên, bạn tạo một giao diện (interface) gọi là `DAO`:
 
 ```java
-public interface MessageLogger {
-  public void log(String msg);
-}
-
-public class ConsoleLogger implements MessageLogger {
-  @Override
-  public void log(String msg) {
-    System.out.println(msg);
-  }
-}
-
-public class FileLogger implements MessageLogger {
-  @Override
-  public void log(String msg) {
-    // Ghi tin nhắn ra file log.txt
-    // ...
-  }
-}
-
-public abstract class Message {
-  MessageLogger messageLogger;
-
-  public Message() {}
-
-  public Message(MessageLogger messageLogger) {
-    this.messageLogger = messageLogger;
-  }
-
-  public abstract void log(String msg);
-}
-
-public class TextMessage extends Message {
-  public TextMessage() {}
-
-  public TextMessage(MessageLogger messageLogger) {
-    super(messageLogger);
-  }
-
-  @Override
-  public void log(String msg) {
-    this.messageLogger.log(msg);
-  }
-}
-
-public class EncryptedMessage extends Message {
-  public EncryptedMessage() {}
-
-  public EncryptedMessage(MessageLogger messageLogger) {
-    super(messageLogger);
-  }
-
-  @Override
-  public void log(String msg) {
-    // Mã hóa tin nhắn và sau đó ghi log
-    // ...
-  }
+public interface DAO {
+    void saveData();
 }
 ```
 
-### Sử dụng Bridge Pattern
+2. Sau đó, bạn tạo hai lớp cụ thể `MySQLDAO` và `PostgreSQLDAO` để thực hiện giao diện này:
+
+```java
+public class MySQLDAO implements DAO {
+    @Override
+    public void saveData() {
+        System.out.println("Data saved using MySQL.");
+    }
+}
+
+public class PostgreSQLDAO implements DAO {
+    @Override
+    public void saveData() {
+        System.out.println("Data saved using PostgreSQL.");
+    }
+}
+```
+
+3. Bây giờ, bạn tạo một lớp `Service`:
+
+```java
+public class Service {
+    private DAO dao;
+
+    // Constructor Injection
+    public Service(DAO dao) {
+        this.dao = dao;
+    }
+
+    public void performSave() {
+        dao.saveData();
+    }
+}
+```
+
+Lúc này, bạn đã áp dụng Dependency Injection thông qua việc truyền đối tượng `DAO` vào qua constructor của `Service`.
+
+4. Cuối cùng, bạn có thể sử dụng ứng dụng của mình như sau:
 
 ```java
 public class MainApp {
-  public static void main(String[] args) {
-    // Chọn log kiểu hiển thị ra màn hình
-    MessageLogger messageLogger = new ConsoleLogger();
+    public static void main(String[] args) {
+        DAO mysqlDao = new MySQLDAO();
+        Service mysqlService = new Service(mysqlDao);
+        mysqlService.performSave();
 
-    // Chọn cách thức hiển thị kiểu mã hóa
-    Message message1 = new EncryptedMessage(messageLogger);
-
-    // Chọn cách thức hiển thị kiểu văn bản thô
-    Message message2 = new TextMessage(messageLogger);
-
-    // Thực thi phương thức log
-    message1.log("stackjava.com");
-    message2.log("stackjava.com");
-  }
+        DAO postgresDao = new PostgreSQLDAO();
+        Service postgresService = new Service(postgresDao);
+        postgresService.performSave();
+    }
 }
 ```
 
-**Bridge Pattern** cho phép bạn tách biệt việc ghi log (loggers) và kiểu log (plaintext hoặc encrypted) một cách linh hoạt mà không phải thay đổi mã nguồn của các lớp tin nhắn (Messages) hay các lớp ghi log (Loggers).
+Kết quả sẽ là:
+
+<content-result>
+Data saved using MySQL.
+Data saved using PostgreSQL.
+</content-result>
+
+Bằng cách này, bạn có thể thay đổi `DAO` mà `Service` sử dụng chỉ bằng cách thay đổi constructor mà không cần sửa mã nguồn của `Service`. Điều này làm cho ứng dụng dễ mở rộng và bảo trì hơn.
