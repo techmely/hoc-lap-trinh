@@ -13,6 +13,8 @@ position: 11
 
 **Dependency Injection (DI)** là một kỹ thuật và một mô hình thiết kế trong lập trình phần mềm. Nó giúp quản lý và giảm bớt sự phụ thuộc giữa các thành phần của ứng dụng, làm cho ứng dụng dễ dàng mở rộng, bảo trì và thay đổi.
 
+## Dependency Injection là gì
+
 Để hiểu định nghĩa trên, mình có ví dụ sau:
 
 - Mình có 1 ứng dụng gọi tới object của class `MySQLDAO`(class `MySQLDAO` chuyên thực hiện truy vấn với cơ sở dữ liệu MySQL của ứng dụng)
@@ -26,6 +28,8 @@ Dependency Inject chính là để giải quyết cho trường hợp như thế
 Trong ví dụ trên ta tạo 1 interface `AbstractDAO` và cho các class DAO kia thừa kế `AbstractDAO`. Bây giờ trong các class sử dụng DAO ta khai báo `AbstractDAO`, tùy theo điều kiện tương ứng `AbstractDAO` có thể là MySQLDAO hoặc `PostgreDAO`.
 
 Việc thay thế `AbstractDAO` bằng `MySQLDAO/PostgreDAO` được gọi là injection.
+
+![Dependency Injection là gì](https://github.com/techmely/hoc-lap-trinh/assets/29374426/1042c183-71f5-4e7b-b71b-ec2ebedcfffc)
 
 ### Ví dụ về Dependency Injection
 
