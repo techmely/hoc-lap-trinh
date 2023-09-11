@@ -31,7 +31,7 @@ Ví dụ, một số class và method trong JDK sử dụng **Factory Pattern**:
 
 ## UML Diagram của Factory Pattern
 
-![UML Diagram của Factory Pattern](https://i.imgur.com/NgDus3U.png)
+![UML Diagram của Factory Pattern](https://github.com/techmely/hoc-lap-trinh/assets/29374426/bd9af382-4097-48cd-9115-e1cc7357fbdb)
 
 - `Creator`: Interface khai báo factory method để tạo ra đối tượng cha (super class).
 
@@ -42,6 +42,8 @@ Ví dụ, một số class và method trong JDK sử dụng **Factory Pattern**:
 - `SubClass_1`, `SubClass_2`: Các class con (sub-class) tạo ra từ factory method.
 
 ## Ví dụ Về Factory Pattern
+
+![Ví dụ Về Factory Pattern](https://github.com/techmely/hoc-lap-trinh/assets/29374426/f45e4b5c-c295-4c33-8958-af306234004b)
 
 Giả sử chúng ta có một class cha là `Computer` và hai class con là `Server` và `PC`. Chúng ta muốn tạo ra các đối tượng `Server` hoặc `PC` dựa trên dữ liệu đầu vào.
 

@@ -24,6 +24,17 @@ position: 2
 
 Các class trong **Java core** như `java.lang.Runtime` và `java.awt.Desktop` đều là ví dụ điển hình của **Singleton Pattern**, bởi vì chúng đảm bảo rằng luôn chỉ có một thể hiện của chúng tồn tại.
 
+## Singleton Pattern UML Diagram
+
+Một Singleton Pattern thường là 1 class (Class Singleton) có các đặc điểm:
+
+- Hàm khởi tạo private để ngăn cản việc tạo thể hiện của class từ các class khác
+- Biến private static của class, nó là thể hiện duy nhất của class.
+- Method public static để trả về thể hiện của class.
+
+![Singleton Pattern UML Diagram](https://github.com/techmely/hoc-lap-trinh/assets/29374426/b9223257-a50f-48fd-b8b5-a76f4a025635)
+
+
 ## Cách Tạo Một Singleton Pattern
 
 Có nhiều cách để tạo một **Singleton Pattern** trong Java, nhưng dưới đây là một số cách phổ biến:
