@@ -21,6 +21,8 @@ Ví dụ: Nếu bạn có một thư mục chứa tệp tin và thư mục con, 
 
 ## Composite Pattern UML Diagram
 
+![Composite Pattern UML Diagram](https://github.com/techmely/hoc-lap-trinh/assets/29374426/e6a94794-f3fe-4338-a3e8-231117056fca)
+
 Dưới đây là sơ đồ UML của **Composite Pattern**:
 
 ```scss
@@ -47,6 +49,8 @@ Dưới đây là sơ đồ UML của **Composite Pattern**:
 ## Ví dụ về Composite Pattern
 
 Giả sử bạn quản lý một dự án phần mềm và dự án này được chia thành nhiều công việc (Tasks) con. Bạn muốn tính tổng thời gian cần thiết cho dự án dựa trên thời gian của từng công việc và cả dự án.
+
+![Ví dụ về Composite Pattern](https://github.com/techmely/hoc-lap-trinh/assets/29374426/e0a22f68-61f4-4c62-8726-869b7e620756)
 
 ### Các Lớp
 
