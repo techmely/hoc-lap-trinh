@@ -26,8 +26,14 @@ Ví dụ, trong Java, bạn có thể sử dụng **Prototype Pattern** bằng c
 
 Trong **Prototype Pattern**, có hai trường hợp chính:
 
-- **Shallow copy (Sao chép nông)**: Các đối tượng con bên trong chỉ được tham chiếu, tức là cả đối tượng gốc và bản sao đều trỏ đến cùng một đối tượng con. Điều này có nghĩa là nếu bạn thay đổi đối tượng con ở một nơi, nó sẽ thay đổi cả ở nơi còn lại.
-- **Deep copy (Sao chép sâu)**: Các đối tượng con bên trong được sao chép hoàn toàn, tức là cả đối tượng gốc và bản sao đều có các đối tượng con riêng biệt.
+**Trường hợp 1: Shallow copy (Sao chép nông)**: Các đối tượng con bên trong chỉ được tham chiếu, tức là cả đối tượng gốc và bản sao đều trỏ đến cùng một đối tượng con. Điều này có nghĩa là nếu bạn thay đổi đối tượng con ở một nơi, nó sẽ thay đổi cả ở nơi còn lại.
+
+![Prototype Pattern UML Diagram](https://github.com/techmely/hoc-lap-trinh/assets/29374426/9e1bf1ab-0e37-4bb0-a79d-e6f4e2428f5e)
+
+**Trường hợp 2: Deep copy (Sao chép sâu)**: Các đối tượng con bên trong được sao chép hoàn toàn, tức là cả đối tượng gốc và bản sao đều có các đối tượng con riêng biệt.
+
+![Prototype Pattern UML Diagram](https://github.com/techmely/hoc-lap-trinh/assets/29374426/8052e2eb-c4d6-40b1-a03c-3279cd31af55)
+
 
 ## Ví dụ về Prototype Pattern
 
