@@ -13,7 +13,7 @@ position: 2
 
 **Singleton Pattern** là một **mẫu thiết kế tạo dựng (Creation Pattern)** quan trọng trong lập trình phần mềm. Nó được sử dụng để đảm bảo rằng chỉ có một thể hiện duy nhất của một lớp (class) tồn tại trong môi trường chạy của Java, đảm bảo tính duy nhất và toàn vẹn của đối tượng.
 
-## Singleton Pattern Là Gì?
+## Singleton Pattern là gì?
 
 **Singleton Pattern** được áp dụng khi bạn muốn đảm bảo rằng một lớp sẽ chỉ có một thể hiện duy nhất và cung cấp một điểm truy cập global để lấy ra được thể hiện đó. Điều này hữu ích trong nhiều tình huống, bao gồm:
 
@@ -33,7 +33,6 @@ Một Singleton Pattern thường là 1 class (Class Singleton) có các đặc 
 - Method public static để trả về thể hiện của class.
 
 ![Singleton Pattern UML Diagram](https://github.com/techmely/hoc-lap-trinh/assets/29374426/b9223257-a50f-48fd-b8b5-a76f4a025635)
-
 
 ## Cách Tạo Một Singleton Pattern
 

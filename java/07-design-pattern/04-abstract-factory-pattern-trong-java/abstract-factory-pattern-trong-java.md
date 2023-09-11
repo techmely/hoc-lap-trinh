@@ -1,6 +1,6 @@
 ---
 title: "Abstract Factory Pattern trong Java"
-description: "FAbstract Factory Pattern, còn gọi là Factory of Factories, là một mẫu thiết kế tạo dựng (Creation Pattern). Nó tương tự như Factory Pattern, nhưng cung cấp một mức trừu tượng hơn để tạo ra các đối tượng liên quan đến nhau."
+description: "Abstract Factory Pattern, còn gọi là Factory of Factories, là một mẫu thiết kế tạo dựng (Creation Pattern). Nó tương tự như Factory Pattern, nhưng cung cấp một mức trừu tượng hơn để tạo ra các đối tượng liên quan đến nhau."
 chapter:
   name: "Design Pattern"
   slug: "chuong-07-design-pattern"
@@ -13,7 +13,7 @@ position: 4
 
 **Abstract Factory Pattern**, còn gọi là **Factory of Factories**, là một mẫu thiết kế tạo dựng (Creation Pattern). Nó tương tự như **Factory Pattern**, nhưng cung cấp một mức trừu tượng hơn để tạo ra các đối tượng liên quan đến nhau.
 
-## Abstract Factory Pattern
+## Abstract Factory Pattern là gì?
 
 Nếu bạn đã quen thuộc với **Factory Pattern**, bạn biết rằng nó chỉ sử dụng một lớp Factory duy nhất để tạo ra các đối tượng con (sub-class) dựa trên đầu vào (thường sử dụng if-else hoặc switch để xác định lớp con nào sẽ được trả về).
 
@@ -39,7 +39,7 @@ Cũng giống như [Factory Pattern](/bai-viet/java/factory-pattern-trong-java),
 
 **Abstract Factory Pattern** sử dụng các lớp cha và lớp con, tương tự như **Factory Pattern**. Tuy nhiên, khác biệt quan trọng nằm ở việc có nhiều lớp Factory (ConcreteFactory_1, ConcreteFactory_2) cùng triển khai một Interface trừu tượng (AbstractFactory). Mỗi lớp Factory này sẽ trả về các đối tượng khác nhau.
 
-## Ví dụ
+## Ví dụ về Abstract Factory
 
 Giả sử chúng ta có một class cha là `Computer` và hai class con là `Server` và `PC`. Chúng ta muốn tạo các đối tượng `Server` hoặc `PC` dựa trên dữ liệu đầu vào.
 
@@ -50,7 +50,6 @@ Giả sử chúng ta có một class cha là `Computer` và hai class con là `S
 `ComputerFactory` sẽ sử dụng `ComputerAbstractFactory` để tạo đối tượng Computer. (Trường hợp `ComputerAbstractFactory` là `ServerFactory` thì sẽ trả về đối tượng `Server`, trường hợp `ComputerAbstractFactory` là `PCFactory` thì sẽ trả về đối tượng PC)
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/524ed915-bd7f-4c6b-b356-2c820853b341)
-
 
 ### Các Lớp
 

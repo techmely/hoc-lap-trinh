@@ -21,7 +21,6 @@ Design Pattern được sử dụng rộng rãi trong phát triển phần mềm
 
 ![Design Pattern là gì?](https://github.com/techmely/hoc-lap-trinh/assets/29374426/0155b266-f18b-46aa-820e-27d7af123a8e)
 
-
 ## Lợi ích của Design Pattern
 
 Sử dụng Design Pattern mang lại nhiều lợi ích:
