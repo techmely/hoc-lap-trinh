@@ -1,5 +1,5 @@
 ---
-title: "Giới Thiệu Về Spring"
+title: "Giới thiệu về Spring"
 description: "Spring Framework là một framework mã nguồn mở được viết bằng Java, được phát triển, chia sẻ và có cộng đồng người dùng rất lớn. Nó được xem như là một giải pháp kiến trúc tốt nhất của Java EE hiện nay."
 chapter:
   name: "Tổng quan về Spring"
