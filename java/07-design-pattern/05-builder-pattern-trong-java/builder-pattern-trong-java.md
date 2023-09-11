@@ -32,6 +32,9 @@ Một số ví dụ về việc sử dụng **Builder Pattern** trong JDK (Java 
 
 ## Builder Pattern UML Diagram
 
+![Builder Pattern UML Diagram](https://github.com/techmely/hoc-lap-trinh/assets/29374426/54337bb9-ab4d-4cad-98da-bda397a7f7d9)
+
+
 **Builder Pattern** sử dụng các lớp sau:
 
 - **Product**: Đối tượng cần được xây dựng (có nhiều thuộc tính).
