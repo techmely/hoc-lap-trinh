@@ -70,10 +70,12 @@ class Main {
 }
 ```
 
-<content-result>
-  <code>TreeSet: [2, 4, 6]</code><br/>
-  <code>New TreeSet: [1, 2, 4, 6]</code>
-</content-result>
+::Result
+
+<code>TreeSet: [2, 4, 6]</code><br/>
+<code>New TreeSet: [1, 2, 4, 6]</code>
+
+::
 
 ## Duyệt qua các phần tử trong TreeSet
 
@@ -103,10 +105,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>TreeSet: [2, 5, 6]</code><br/>
     <code>TreeSet using Iterator: 2, 5, 6,</code>
-</content-result>
+
+::
 
 ## Xóa các phần tử trong TreeSet
 
@@ -135,11 +139,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>TreeSet: [2, 5, 6]</code><br/>
     <code>Is 5 removed? true</code><br/>
     <code>Are all elements removed? true</code>
-</content-result>
+
+::
 
 ## Phương pháp điều hướng trong TreeSet
 
@@ -170,11 +176,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>TreeSet: [2, 5, 6]</code><br/>
     <code>First Number: 2</code><br/>
     <code>Last Number: 6</code>
-</content-result>
+
+::
 
 - `higher(element)` - Trả về phần tử thấp nhất trong số các phần tử lớn hơn giá trị được chỉ định element.
 - `lower(element)` – Trả về phần tử lớn nhất trong số các phần tử nhỏ hơn giá trị được chỉ định element.
@@ -209,13 +217,15 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>TreeSet: [2, 4, 5, 6]</code><br/>
     <code>Using higher: 5</code><br/>
     <code>Using lower: 2</code><br/>
     <code>Using ceiling: 4</code><br/>
     <code>Using floor: 2</code>
-</content-result>
+
+::
 
 - `pollFirst()` – trả về và xóa phần tử đầu tiên khỏi tập hợp
 - `pollLast()` – trả về và xóa phần tử cuối cùng khỏi tập hợp
@@ -243,12 +253,14 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>TreeSet: [2, 4, 5, 6]</code><br/>
     <code>Removed First Element: 2</code><br/>
     <code>Removed Last Element: 6</code><br/>
     <code>New TreeSet: [4, 5]</code>
-</content-result>
+
+::
 
 - `headSet(phần tử, booleanValue)` - trả về tất cả các yếu tố của một bộ cây trước khi quy định thành phần (được chuyển như một đối số). Tham số booleanValue là tùy chọn. Giá trị mặc định của nó là `false`. Nếu `true` được thông qua dưới dạng booleanValue, phương thức trả về tất cả các phần tử trước phần tử được chỉ định bao gồm phần tử được chỉ định.
 
@@ -273,11 +285,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>TreeSet: [2, 4, 5, 6]</code><br/>
     <code>Using headSet without boolean value: [2, 4]</code><br/>
     <code>Using headSet with boolean value: [2, 4, 5]</code>
-</content-result>
+
+::
 
 - `tailSet(phần tử, booleanValue)` - phương thức `tailSet()` trả về tất cả các yếu tố của một bộ cây sau khi quy định thành phần (được truyền dưới dạng tham số) bao gồm thành phần. Tham số `booleanValue` là tùy chọn. Giá trị mặc định của nó là `true`. Nếu `false` được thông qua dưới dạng `booleanValue`, phương thức trả về tất cả các phần tử sau thành phần mà không bao gồm các thành phần.
 
@@ -302,11 +316,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>TreeSet: [2, 4, 5, 6]</code><br/>
     <code>Using tailSet without boolean value: [4, 5, 6]</code><br/>
     <code>Using tailSet with boolean value: [5, 6]</code>
-</content-result>
+
+::
 
 - `subSet(e1, bv1, e2, bv2)` - phương thức `subSet()` trả về tất cả các yếu tố giữa e1 và e2 kể cả e1. Các bv1 và bv2là các tham số tùy chọn. Giá trị mặc định của bv1 là `true`, và giá trị mặc định của bv2 là `false`. Nếu `false` được truyền vào bv1, phương thức trả về tất cả các phần tử giữa e1 và e2 mà không bao gồm e1. Nếu `true` được truyền vào là bv2, phương thức trả về tất cả các phần tử giữa e1 và e2, kể cả e1.
 
@@ -331,11 +347,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>TreeSet: [2, 4, 5, 6]</code><br/>
     <code>Using subSet without boolean value: [4, 5]</code><br/>
     <code>Using subSet with boolean value: [5, 6]</code>
-</content-result>
+
+::
 
 ## Hoạt động của Set
 
@@ -369,11 +387,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>TreeSet1: [2, 4]</code><br/>
     <code>TreeSet2: [1, 2, 3]</code><br/>
     <code>Union is: [1, 2, 3, 4]</code>
-</content-result>
+
+::
 
 ### Giao điểm của Set
 
@@ -402,11 +422,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>TreeSet1: [2, 4]</code><br/>
     <code>TreeSet2: [1, 2, 3]</code><br/>
     <code>Intersection is: [2]</code>
-</content-result>
+
+::
 
 ### Sự khác biệt của các set
 
@@ -436,11 +458,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>TreeSet1: [2, 4]</code><br/>
     <code>TreeSet2: [1, 2, 3, 4]</code><br/>
     <code>Difference is: [1, 3]</code>
-</content-result>
+
+::
 
 ### Tập hợp con của một Tập hợp
 
@@ -470,11 +494,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>TreeSet1: [1, 2, 3, 4]</code><br/>
     <code>TreeSet2: [2, 3]</code><br/>
     <code>Is TreeSet2 subset of TreeSet1? True</code>
-</content-result>
+
+::
 
 ## Các phương thức khác của TreeSet
 

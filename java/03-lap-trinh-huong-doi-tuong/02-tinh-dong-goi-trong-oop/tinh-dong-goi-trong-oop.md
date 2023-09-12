@@ -86,6 +86,8 @@ public class TestPerson {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Tên: Thaycacac, CMND: 123456</code>
-</content-result>
+
+::

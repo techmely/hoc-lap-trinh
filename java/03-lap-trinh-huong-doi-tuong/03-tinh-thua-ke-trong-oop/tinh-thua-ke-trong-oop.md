@@ -55,7 +55,8 @@ public class A extends B {
   <div class="window-body">
     <code>Hàm khởi tạo lớp cha</code><br/>
     <code>Hàm khởi tạo lớp con</code><br/>
-</content-result>
+
+::
 
 <div class="example">Đây là cách gọi tường minh</div>
 
@@ -80,10 +81,12 @@ public class A extends B {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Hàm khởi tạo lớp cha</code><br/>
     <code>Hàm khởi tạo lớp con</code><br/>
-</content-result>
+
+::
 
 <div class="example">Một ví dụ khác</div>
 
@@ -113,8 +116,10 @@ public class A extends B {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Hàm khởi tạo lớp cha</code><br/>
     <code>Hàm khởi tạo lớp con</code><br/>
     <code>Hàm khởi tạo lớp con</code>
-</content-result>
+
+::

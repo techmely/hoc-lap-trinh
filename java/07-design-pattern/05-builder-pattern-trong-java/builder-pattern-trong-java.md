@@ -34,7 +34,6 @@ Một số ví dụ về việc sử dụng **Builder Pattern** trong JDK (Java 
 
 ![Builder Pattern UML Diagram](https://github.com/techmely/hoc-lap-trinh/assets/29374426/54337bb9-ab4d-4cad-98da-bda397a7f7d9)
 
-
 **Builder Pattern** sử dụng các lớp sau:
 
 - **Product**: Đối tượng cần được xây dựng (có nhiều thuộc tính).
@@ -127,8 +126,10 @@ public class DemoBuilderPattern {
 }
 ```
 
-<content-result>
+::Result
+
 Computer [HDD=500 GB, RAM=2 GB, isGraphicsCardEnabled=true, isBluetoothEnabled=true]
-</content-result>
+
+::
 
 Như bạn có thể thấy, **Builder Pattern** cho phép xây dựng đối tượng `Computer` một cách dễ dàng và linh hoạt. Nếu bạn muốn thêm thuộc tính hoặc thay đổi các thuộc tính tùy chọn, bạn chỉ cần gọi các phương thức setter tương ứng và sau đó gọi phương thức `build()` để có được đối tượng cuối cùng.

@@ -66,10 +66,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedHashMap1: {Two=2, Four=4}</code><br/>
     <code>LinkedHashMap2: {Two=2, Four=4, Three=3}</code>
-</content-result>
+
+::
 
 ## Chèn các phần tử vào LinkedHashMap
 
@@ -105,11 +107,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Original LinkedHashMap: {Two=2, Four=4}</code><br/>
     <code>Updated LinkedHashMap: {Two=2, Four=4, Six=6}</code><br/>
     <code>New LinkedHashMap: {One=1, Two=2, Four=4, Six=6}</code>
-</content-result>
+
+::
 
 ## Truy cập các phần tử LinkedHashMap
 
@@ -141,12 +145,14 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedHashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Key/Value mappings: [One=1, Two=2, Three=3]</code><br/>
     <code>Keys: [One, Two, Three]</code><br/>
     <code>Values: [1, 2, 3]</code>
-</content-result>
+
+::
 
 - `get()` - Trả về value liên kết với key được chỉ định. Nếu không tìm thấy key, nó sẽ trả về null.
 - `getOrDefault()` - Trả về value liên quan đến key được chỉ định. Nếu không tìm thấy key, nó sẽ trả về value mặc định đã chỉ định.
@@ -174,11 +180,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedHashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Returned Number: 3</code><br/>
     <code>Returned Number: 5</code>
-</content-result>
+
+::
 
 ## Xóa các phần tử khỏi LinkedHashMap
 
@@ -210,12 +218,14 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedHashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Removed value: 2</code><br/>
     <code>Is the entry {Three=3} removed? True</code><br/>
     <code>Updated LinkedHashMap: {One=1}</code>
-</content-result>
+
+::
 
 ## Các hàm khác của LinkedHashMap
 

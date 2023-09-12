@@ -61,9 +61,11 @@ String strname = "Java Language";
 boolean flag = strname.startsWith("Java");
 ```
 
-<content-result>
+::Result
+
     <code>true</code>
-  </content-result>
+
+::
 
 - `boolean endsWith(String s)`: Phương thức này trả về một giá trị kiểu logic (boolean), phụ thuộc vào chuỗi kết thúc bằng một chuỗi con nào đó không
 
@@ -72,9 +74,11 @@ String strname = "Java Language";
 boolean flag = strname.endsWith("Java");
 ```
 
-<content-result>
+::Result
+
     <code>false</code>
-  </content-result>
+
+::
 
 - `String copyValueOf()`: Phương thức này trả về một chuỗi được rút ra từ một mảng ký tự được truyền như một đối số. Phương thức này cũng lấy hai tham số nguyên. Tham số đầu tiên chỉ định vị trí từ nơi các ký tự phải được rút ra, và tham số thứ hai chỉ định số ký tự được rút ra từ mảng
 
@@ -134,9 +138,11 @@ String name1 = "Java", name2 = "JAVA";
 boolean flag = name1.equals(name2);
 ```
 
-<content-result>
+::Result
+
     <code>false</code>
-</content-result>
+
+::
 
 - `valueOf()`: Được nạp chồng để cho phép chuyển một giá trị thành xâu
 

@@ -43,12 +43,14 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Giá trị 3</code><br/>
     <code>Giá trị 5</code><br/>
     <code>Giá trị 7</code><br/>
     <code>Giá trị 9</code>
-</content-result>
+
+::
 
 ::alert{type="infor"}
 
@@ -96,11 +98,13 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Giá trị 3</code><br/>
     <code>Giá trị 6</code><br/>
     <code>Giá trị 9</code>
-</content-result>
+
+::
 
 ::alert{type="infor"}
 

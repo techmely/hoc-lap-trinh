@@ -47,11 +47,13 @@ public class SortedArrayExample {
 }
 ```
 
-<content-result>
+::Result
+
     <code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code><br/>
     <code>[5, 1, 2, 3, 4, 6, 7, 9, 8]</code><br/>
     <code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code><br/>
-</content-result>
+
+::
 
 ## Sắp xếp danh sách (List) trong Java
 
@@ -75,9 +77,11 @@ public class SortedListExample {
 }
 ```
 
-<content-result>
+::Result
+
     <code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
-</content-result>
+
+::
 
 ## Sắp xếp tập hợp (Set) trong Java
 
@@ -113,9 +117,11 @@ public class SortedSetExample {
 }
 ```
 
-<content-result>
+::Result
+
     <code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
-</content-result>
+
+::
 
 ## Sắp xếp Map trong Java
 
@@ -173,10 +179,12 @@ public class SortedMapExample {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}</code><br/>
     <code>Sorted map: {11=One, 22=Two, 33=Three, 44=Four, 55=Five</code>
-</content-result>
+
+::
 
 Trong ví dụ trên, tôi đã tạo một bộ so sánh (`Comparator`) để có thể so sánh các phần tử của `Map` theo `Key`.
 
@@ -230,10 +238,12 @@ public class SortedMapExample2 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}</code><br/>
     <code>Sorted map: {55=Five, 44=Four, 11=One, 33=Three, 22=Two}</code>
-</content-result>
+
+::
 
 ## Một số cách khác sắp xếp Map trong Java
 
@@ -280,11 +290,13 @@ public class SortedMapExample3 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}</code><br/>
     <code>Sorted map by key: {11=One, 22=Two, 33=Three, 44=Four, 55=Five}</code><br/>
     <code>Sorted map by value: {55=Five, 44=Four, 11=One, 33=Three, 22=Two}</code>
-</content-result>
+
+::
 
 ## Sắp xếp các đối tượng bất kỳ
 
@@ -374,13 +386,15 @@ public class SortedObjectExample1 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Student [id=5, name=Five, age=22]</code><br/>
     <code>Student [id=4, name=Four, age=19]</code><br/>
     <code>Student [id=1, name=One, age=22]</code><br/>
     <code>Student [id=3, name=Three, age=20]</code><br/>
     <code>Student [id=2, name=Two, age=18]</code>
-</content-result>
+
+::
 
 <div class="example">sử dụng Arrays.sort()</div>
 
@@ -406,13 +420,15 @@ public class SortedObjectExample2 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Student [id=5, name=Five, age=22]</code><br/>
     <code>Student [id=4, name=Four, age=19]</code><br/>
     <code>Student [id=1, name=One, age=22]</code><br/>
     <code>Student [id=3, name=Three, age=20]</code><br/>
     <code>Student [id=2, name=Two, age=18]</code>
-</content-result>
+
+::
 
 ### Implement Comparator và override phương thức compare(T obj1, T obj2)
 
@@ -672,10 +688,12 @@ public class SortedObjectExample7 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Student [id=2, name=Two, age=18]</code><br/>
     <code>Student [id=3, name=Three, age=20]</code><br/>
     <code>Student [id=1, name=One, age=22]</code><br/>
     <code>Student [id=4, name=Four, age=19]</code><br/>
     <code>Student [id=5, name=Five, age=22]</code>
-</content-result>
+
+::

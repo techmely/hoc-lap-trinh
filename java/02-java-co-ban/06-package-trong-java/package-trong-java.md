@@ -82,10 +82,11 @@ public class Main {
 }
 ```
 
-<content-result>
+::Result
 ví dụ trong package 1
-ví dụ trong package 2
-</content-result>
+
+ví dụ trong package 2ß
+::
 
 ## Sub package trong java là gì
 
@@ -151,7 +152,8 @@ public class Main {
 }
 ```
 
-<content-result>
+::Result
 ví dụ 1
+
 ví dụ 2
-</content-result>
+::

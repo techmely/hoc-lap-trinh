@@ -47,9 +47,11 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>EnumSet: [SMALL, MEDIUM, LARGE, EXTRALARGE]</code>
-</content-result>
+
+::
 
 Lưu ý câu lệnh
 
@@ -83,9 +85,11 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Empty EnumSet : []</code>
-</content-result>
+
+::
 
 Ở đây, chúng ta đã tạo ra một `enum` trống có tên là `Size`. Lưu ý chúng ta chỉ có thể chèn các phần tử của kiểu enum `Size` trong chương trình trên. Bởi vì chúng ta đã tạo ra `EnumSet` trống bằng cách sử dụng `enum Size`.
 
@@ -112,9 +116,11 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>EnumSet: [MEDIUM, LARGE, EXTRALARGE]</code>
-</content-result>
+
+::
 
 ### Sử dụng hàm of()
 
@@ -141,10 +147,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>EnumSet1: [MEDIUM]</code><br/>
     <code>EnumSet2: [SMALL, LARGE]</code>
-</content-result>
+
+::
 
 ## Chèn các phần tử vào Enumset trong Java
 
@@ -179,10 +187,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>EnumSet using add(): [MEDIUM]</code><br/>
     <code>EnumSet using addAll(): [SMALL, MEDIUM, LARGE, EXTRALARGE]</code>
-</content-result>
+
+::
 
 Trong ví dụ trên, chúng ta đã sử dụng hàm `addAll()` để chèn tất cả các phần tử của `EnumSet Size1` đến `EnumSet Size2`. Ta cũng có thể chèn các phần tử từ các collection khác như `ArrayList`, Link`edList,... để một `EnumSet`bằng cách sử dụng hàm`addAll()`. Tuy nhiên, tất cả các `collection`nên thuộc cùng loại`enum`.
 
@@ -216,9 +226,11 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>EnumSet: SMALL, MEDIUM, LARGE, EXTRALARGE,</code>
-</content-result>
+
+::
 
 Lưu ý:
 
@@ -256,11 +268,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>EnumSet: [SMALL, MEDIUM, LARGE, EXTRALARGE]</code><br/>
     <code>Is MEDIUM removed? true</code><br/>
     <code>Are all elements removed? true</code>
-</content-result>
+
+::
 
 ## Một số hàm trong Enumset
 

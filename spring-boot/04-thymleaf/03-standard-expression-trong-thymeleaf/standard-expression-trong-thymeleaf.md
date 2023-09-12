@@ -36,7 +36,9 @@ model.addAttribute("techMely", "kenh day lap trinh hap dan");
 ```
 
 Kết quả sẽ in ra:
-<content-result>Techmely la: kenh day lap trinh hap dan </content-result>
+::Result
+Techmely la: kenh day lap trinh hap dan
+::
 Đoạn expression trên tương đương với:
 
 ```java
@@ -87,7 +89,9 @@ Thì cách lấy nó ra nhanh nhất là:
 ```
 
 Đoạn text tiếng việt _"Xin chào các bạn!"_ bên trong thẻ **p** sẽ bị thay thế bởi `Thymeleaf` khi render `#{home.welcome}`.
-<content-result> Hello, how's it going!</content-result>
+::Result
+Hello, how's it going!
+::
 
 ### `@{...}` - Lấy đường dẫn URL (URL Expression)
 

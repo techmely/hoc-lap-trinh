@@ -88,9 +88,11 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Dog, Cat, Horse]</code><br/>
-</content-result>
+
+::
 
 ## Thêm phần tử từ LinkedList này sang LinkedList khác
 
@@ -118,10 +120,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Mammals: [Dog, Cat, Horse]</code><br/>
     <code>Animals: [Crocodile, Dog, Cat, Horse]</code><br/>
-</content-result>
+
+::
 
 Ngoài ra, chúng ta cũng có thể sử dụng hàm `listsIterator()` để thêm các phần tử vào LinkedList. Để sử dụng nó, chúng ta phải nhập vào gói `java.util.ListIterator`. Ví dụ:
 
@@ -143,9 +147,11 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Dog, Cat]</code><br/>
-</content-result>
+
+::
 
 ## Truy cập tới các phần tử trong LinkedList
 
@@ -171,10 +177,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Dog, Horse, Cat]</code><br/>
     <code>Element at index 1: Horse</code><br/>
-</content-result>
+
+::
 
 Ngoài cách này ra, để lặp lại các phần tử của LinkedList, chúng ta có thể sử dụng hàm `iterator()`. Chúng ta phải nhập gói `java.util.Iterator` để sử dụng hàm này. Ví dụ:
 
@@ -203,9 +211,11 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: Dog, Cat, Horse,</code><br/>
-</content-result>
+
+::
 
 Ở đây:
 
@@ -247,10 +257,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: Dog, Horse, Cat,</code><br/>
     <code>Reverse LinkedList: Cat, Horse, Dog,</code><br/>
-</content-result>
+
+::
 
 Ở đây:
 
@@ -284,10 +296,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Dog, Horse, Cat]</code><br/>
     <code>Dog is in LinkedList.</code><br/>
-</content-result>
+
+::
 
 ## Tìm kiếm vị trí phần tử trong LinkedList
 
@@ -319,11 +333,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Dog, Horse, Cat, Dog]</code><br/>
     <code>First Occurrence of Dog: 0</code><br/>
     <code>Last Occurrence of Dog: 3</code><br/>
-</content-result>
+
+::
 
 ## Thay đổi các phần tử trong LinkedList
 
@@ -377,10 +393,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Dog, Cat, Horse]</code><br/>
     <code>New LinkedList: [Cow, Cat, Horse]</code><br/>
-</content-result>
+
+::
 
 ## Xóa các phần tử khỏi LinkedList
 
@@ -409,11 +427,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList : [Dog, Horse, Cat, Zebra]</code><br/>
     <code>Removed Element: Horse</code><br/>
     <code>New LinkedList: [Dog, Cat, Zebra]</code><br/>
-</content-result>
+
+::
 
 Chúng ta cũng có thể xóa các phần tử khỏi LinkedList bằng hàm `listsIterator()`. Ví dụ:
 
@@ -442,10 +462,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Dog, Cat, Horse]</code><br/>
     <code>New LinkedList: [Cat, Horse]</code><br/>
-</content-result>
+
+::
 
 Ngoài ra, để xóa tất cả các phần tử khỏi LinkedList, chúng ta có thể sử dụng hàm `clear()`. Ví dụ:
 
@@ -469,10 +491,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Dog, Cat, Horse]</code><br/>
     <code>New LinkedList: []</code><br/>
-</content-result>
+
+::
 
 Lưu ý: Chúng ta cũng có thể sử dụng hàm `removeAll()`để loại bỏ tất cả các phần tử. Tuy nhiên, hàm `clear()` được cho là hiệu quả hơn hàm `removeAll()`.
 
@@ -504,10 +528,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [2, 3, 4, 5]</code><br/>
     <code>New LinkedList: [4, 5]</code><br/>
-</content-result>
+
+::
 
 Lưu ý: `(Integer i)->i<4` là một biểu thức lambda. Để tìm hiểu về biểu thức lambda, hãy truy cập Biểu thức Lambda của Java .
 
@@ -541,10 +567,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Cat, Dog, Cow]</code><br/>
     <code>New LinkedList: [Cat, Dog, Cow, Zebra]</code><br/>
-</content-result>
+
+::
 
 - Hàm `getFirst()` – trả về phần tử đầu tiên
 - Hàm `getLast()` – trả về phần tử cuối cùng
@@ -576,11 +604,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Dog, Horse, Cat]</code><br/>
     <code>First Element: Dog</code><br/>
     <code>Last Element: Cat</code><br/>
-</content-result>
+
+::
 
 - Hàm `removeFirst()` – loại bỏ phần tử đầu tiên
 - Hàm `removeLast()` – loại bỏ phần tử cuối cùng
@@ -614,12 +644,14 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Dog, Horse, Cat]</code><br/>
     <code>Removed Element: Dog</code><br/>
     <code>Removed Element: Cat</code><br/>
     <code>New LinkedList: [Horse]</code><br/>
-</content-result>
+
+::
 
 - Hàm `peek()` trả về phần tử đầu tiên (đầu) của LinkedList. Ví dụ:
 
@@ -645,11 +677,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Dog, Horse, Cat]</code><br/>
     <code>Element Accessed: Dog</code><br/>
     <code>New LinkedList: [Dog, Horse, Cat]</code><br/>
-</content-result>
+
+::
 
 - Hàm `poll()` trả về và loại bỏ phần tử đầu tiên trong LinkedList. Ví dụ:
 
@@ -675,11 +709,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Dog, Horse, Cat]</code><br/>
     <code>Removed Element: Dog</code><br/>
     <code>New LinkedList: [Horse, Cat]</code><br/>
-</content-result>
+
+::
 
 - Hàm `offer()` bổ sung thêm các phần tử cụ thể ở phần cuối của LinkedList. Ví dụ:
 
@@ -703,10 +739,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Dog, Horse]</code><br/>
     <code>New LinkedList: [Dog, Horse, Cat]</code><br/>
-</content-result>
+
+::
 
 ## Lặp qua các phần tử của LinkedList
 
@@ -734,11 +772,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Cow, Cat, Dog]</code><br/>
     <code>Accessing linked list elements:</code><br/>
     <code>Cow, Cat, Dog,</code><br/>
-</content-result>
+
+::
 
 Chúng ta cũng có thể dụng vòng lặp `for` để lặp qua các phần tử của một LinkedList
 
@@ -764,11 +804,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Cow, Cat, Dog]</code><br/>
     <code>Accessing linked list elements:</code><br/>
     <code>Cow, Cat, Dog,</code><br/>
-</content-result>
+
+::
 
 Chúng ta có thể sử dụng hàm `iterator()` để truy cập các phần tử của LinkedList. Để sử dụng hàm này, chúng ta phải nhập gói `java.util.Iterator`.
 
@@ -796,8 +838,10 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedList: [Cow, Cat, Dog]</code><br/>
     <code>LinkedList using the iterator() method:</code><br/>
     <code>Cow, Cat, Dog,</code><br/>
-</content-result>
+
+::

@@ -57,11 +57,13 @@ public class TestFinallyBlock {
 }
 ```
 
-<content-result>
+::Result
+
     <code>5</code><br/>
     <code>finally block is always executed</code><br/>
     <code>rest of the code...</code>
-</content-result>
+
+::
 
 <div class="example">sử dụng khối lệnh finally nơi ngoại lệ xảy ra nhưng không xử lý.</div>
 
@@ -81,10 +83,12 @@ public class TestFinallyBlock1 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>finally block is always executed</code><br/>
     <code>Exception in thread "main" java.lang.ArithmeticException: / by zero</code><br/>
-</content-result>
+
+::
 
 <div class="example">sử dụng khối lệnh finally nơi ngoại lệ xảy ra và được xử lý.</div>
 
@@ -104,11 +108,13 @@ public class TestFinallyBlock2 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>java.lang.ArithmeticException: / by zero</code><br/>
     <code>finally block is always executed</code><br/>
     <code>rest of the code...</code>
-</content-result>
+
+::
 
 <div class="example">Sử dụng khối lệnh finally trong trường hợp trong khối try có lệnh return.</div>
 
@@ -131,7 +137,9 @@ public class TestFinallyBlock3 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>25 is odd number</code><br/>
     <code>finally block is always executed</code>
+
 </div>

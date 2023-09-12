@@ -47,10 +47,12 @@ public class TestMultipleCatchBlock {
 }
 ```
 
-<content-result>
+::Result
+
     <code>task1 is completed</code><br/>
     <code>rest of the code...</code>
-</content-result>
+
+::
 
 ```java
 public class TestMultipleCatchBlock1 {
@@ -71,8 +73,10 @@ public class TestMultipleCatchBlock1 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Compile-time error</code>
-</content-result>
+
+::
 
 Chương trình trên bị lỗi tại compile-time là vì khi có ngoại lệ xảy ra thì các khối lệnh catch (ArithmeticException e) và catch (ArrayIndexOutOfBoundsException e) không bao giờ được thực thi, do khối catch (Exception e) đã bắt tất cả các ngoại lệ rồi.

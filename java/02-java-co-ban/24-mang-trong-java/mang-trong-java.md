@@ -61,10 +61,12 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>1 2 3 4 5 6 7 8 9 10</code>
-</content-result>
- 
+
+::
+
 </div>
 
 ![mang-trong-java](https://user-images.githubusercontent.com/29374426/127758202-bce42e1f-86eb-4557-aaf3-a6afa24bbe29.png)
@@ -99,9 +101,11 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>6</code>
-</content-result>
+
+::
 
 ::alert{type="infor"}
 Nếu index vượt ra khoảng chưá của mảng thì chúng ta sẽ bị ném một ngoại lệ. Khoảng hợp lệ 0 đến n – 1( n số lượng phần tử của mảng).
@@ -154,9 +158,11 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>2 3 4 5 6 7 8 9 10 11 </code>
-</content-result>
+
+::
 
 Chúng ta thấy hàm `increment()` đã thay đổi các giá trị trong mảng. Vì vậy ở hàm main truy xuất được mảng đã được update bởi `increment()`.
 
@@ -190,9 +196,11 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>-4 0 2 3 5 9 </code>
-</content-result>
+
+::
 
 ## Bài tập thực hành
 

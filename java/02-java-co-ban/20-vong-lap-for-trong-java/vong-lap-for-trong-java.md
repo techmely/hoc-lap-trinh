@@ -100,12 +100,14 @@ public class CommaOperator {
 }
 ```
 
-<content-result>
+::Result
+
     <code>i= 1 j= 11</code><br/>
     <code>i= 2 j= 4</code><br/>
     <code>i= 3 j= 6</code><br/>
     <code>i= 4 j= 8</code>
-</content-result>
+
+::
 
 ## Vòng lặp for cải tiến
 
@@ -136,13 +138,15 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>1</code><br/>
     <code>2</code><br/>
     <code>3</code><br/>
     <code>4</code><br/>
     <code>5</code>
-</content-result>
+
+::
 
 ## Vòng lặp for gán nhãn
 
@@ -171,9 +175,11 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>1 1</code><br/>
     <code>1 2</code><br/>
     <code>1 3</code><br/>
     <code>2 1</code>
-</content-result>
+
+::

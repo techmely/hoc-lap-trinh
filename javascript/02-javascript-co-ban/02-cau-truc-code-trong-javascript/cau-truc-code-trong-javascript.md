@@ -39,10 +39,12 @@ console.log("Hello");
 console.log("World");
 ```
 
-<content-result>
+::Result
+
     <code>Hello</code><br/>
     <code>World</code><br/>
-</content-result>
+
+::
 
 ## Dấu chấm phẩy trong JavaScript
 
@@ -53,10 +55,12 @@ console.log("Hello");
 console.log("World");
 ```
 
-<content-result>
+::Result
+
     <code>Hello</code><br/>
     <code>World</code><br/>
-</content-result>
+
+::
 
 Nguyên nhân là do trình thông dịch **tự động thêm dấu chấm phẩy** dựa trên kí tự xuống dòng. Tuy nhiên, vẫn có nhiều trường hợp xuống dòng nhưng JavaScript vẫn hiểu đó là một câu lệnh, ví dụ:
 
@@ -83,12 +87,13 @@ console.log("Hello world");
 
 Có thể bạn chưa hiểu về câu lệnh thứ hai (các bài viết sau bạn sẽ biết) - kết quả hiển thị là:
 
-<content-result>
+::Result
+
     <code>Hello world</code><br/>
     <code>1</code><br/>
     <code>2</code><br/>
 
-</content-result>
+::
 
 **Nhưng nếu bạn bỏ qua dấu chấm phẩy thì sao?**
 
@@ -105,7 +110,8 @@ console.log("Hello world")
   <div class="window-body">
     <code>Hello world</code><br/>
     <code>Uncaught TypeError: Cannot read properties of undefined (reading '2')</code><br/>
-</content-result>
+
+::
 
 Kì lạ phải không? 🤔
 

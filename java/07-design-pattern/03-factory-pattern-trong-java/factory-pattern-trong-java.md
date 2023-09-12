@@ -127,9 +127,11 @@ public class TestFactory {
 }
 ```
 
-<content-result>
+::Result
+
 Factory PC Config::RAM= 2 GB, HDD=500 GB, CPU=2.4 GHz
 Factory Server Config::RAM= 16 GB, HDD=1 TB, CPU=2.9 GHz
-</content-result>
+
+::
 
 **Factory Pattern** giúp tạo đối tượng một cách linh hoạt, bảo toàn tính nhất quán trong dự án và giúp code dễ dàng mở rộng.

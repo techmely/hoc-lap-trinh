@@ -52,7 +52,8 @@ public class Student {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Khối vô danh thứ 1 </code> <br/>
     <code>Khối vô danh thứ 2</code> <br/>
     <code>Khối vô danh thứ 3</code> <br/>
@@ -61,7 +62,8 @@ public class Student {
     <code>Khối vô danh thứ 2</code> <br/>
     <code>Khối vô danh thứ 3</code> <br/>
     <code>Đây là hàm tạo</code>
-</content-result>
+
+::
 
 ## Khối tĩnh (static) trong Java
 
@@ -106,7 +108,8 @@ public class Student {
 
 ```
 
-<content-result>
+::Result
+
     <code>Đây là khối static</code><br/>
     <code>Khối này chỉ được gọi 1 lần khi thể hiện đầu tiên của lớp được tạo ra</code><br/>
     <code>Khối vô danh thứ 1 </code><br/>
@@ -117,6 +120,7 @@ public class Student {
     <code>Khối vô danh thứ 2</code><br/>
     <code>Khối vô danh thứ 3</code><br/>
     <code>Đây là hàm tạo</code>
-</content-result>
+
+::
 
 Nhìn vào kết quả ra ta thấy khối khởi đầu tĩnh chỉ được java gọi thực hiện 1 lần khi đối tượng đầu tiên của lớp này được tạo, còn khối vô danh được gọi mỗi khi một đối tượng mới được tạo ra

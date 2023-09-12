@@ -46,9 +46,11 @@ public class TestThrow1 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Exception in thread "main" java.lang.ArithmeticException: not valid</code><br/>
-</content-result>
+
+::
 
 <div class="example">throw ra ngoại lệ nhưng có xử lý</div>
 
@@ -72,7 +74,9 @@ public class TestThrow2 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>not valid</code><br/>
     <code>rest of the code...</code>
-</content-result>
+
+::

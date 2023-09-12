@@ -37,7 +37,8 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>x = 2</code><br/>
     <code>x after ++ = 3</code><br/>
     <code>x = 3</code><br/>
@@ -45,7 +46,8 @@ public class Thaycacac {
     <code>x after ++ = 5</code><br/>
     <code>x = 5</code><br/>
     <code>Done!</code>
-</content-result>
+
+::
 
 ## Từ khóa continue trong Java
 
@@ -74,7 +76,8 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>x = 2</code><br/>
     <code>x after ++ = 3</code><br/>
     <code>x = 3</code><br/>
@@ -84,4 +87,5 @@ public class Thaycacac {
     <code>x = 6</code><br/>
     <code>x after ++ = 7</code><br/>
     <code>Done!</code>
-</content-result>
+
+::

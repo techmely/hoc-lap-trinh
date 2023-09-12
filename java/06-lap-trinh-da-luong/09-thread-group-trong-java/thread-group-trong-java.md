@@ -46,7 +46,8 @@ public class ThreadGroupDemo implements Runnable {
 }
 ```
 
-<content-result>
+::Result
+
     <code>two</code><br/>
     <code>Thread Group Name: Parent ThreadGroup</code><br/>
     <code>java.lang.ThreadGroup[name=Parent ThreadGroup,maxpri=10]</code><br/>
@@ -54,7 +55,8 @@ public class ThreadGroupDemo implements Runnable {
         <code>Thread[three,5,Parent ThreadGroup]</code><br/>
     <code>three</code><br/>
     <code>one</code><br/>
-</content-result>
+
+::
 
 ## Các hàm trong Thread Group
 

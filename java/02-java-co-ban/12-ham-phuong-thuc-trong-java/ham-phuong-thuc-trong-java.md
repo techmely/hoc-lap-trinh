@@ -120,10 +120,12 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Sau khi hoán đổi: a = 3 b= 5</code><br/>
     <code>Trước khi hoán đổi: a = 5 b= 3</code>
-</content-result>
+
+::
 
 ::alert{type="infor"}
 

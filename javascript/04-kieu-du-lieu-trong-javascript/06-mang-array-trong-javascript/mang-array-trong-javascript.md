@@ -255,13 +255,13 @@ for (let i = 0; i < letters.length; i++) {
 }
 ```
 
-<content-result>
+::Result
 
 <p>a</p>
 <p>b</p>
 <p>c</p>
 
-</content-result>
+::
 
 Nếu không quan tâm đến chỉ số, bạn có thể dùng vòng lặp `for...of` cho ngắn gọn hơn:
 

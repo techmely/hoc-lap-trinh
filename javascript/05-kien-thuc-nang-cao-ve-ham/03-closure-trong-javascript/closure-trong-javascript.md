@@ -275,11 +275,11 @@ Hỏi kết quả khi gọi `sayHi()` là "Alex" hay "Anna"?
 
 Xem đáp án
 
-<content-result>
+::Result
 
 Anna
 
-</content-result>
+::
 
 Biến `name` là biến toàn cục. Khi hàm `sayHi` được gọi, giá trị của `name` là giá trị mới nhất.
 
@@ -309,11 +309,11 @@ Hỏi kết quả của `worker()` là "Alex" hay "Anna"?
 
 Xem đáp án
 
-<content-result>
+::Result
 
 Alex
 
-</content-result>
+::
 
 Nested function bên trong hàm `makeWorker` truy cập tới biến ngoài hàm là `name = "Alex"`.
 
@@ -343,11 +343,11 @@ Kết quả sau khi gọi `sayHi()` là gì?
 
 Xem đáp án
 
-<content-result>
+::Result
 
 Uncaught ReferenceError: sayHi is not defined
 
-</content-result>
+::
 
 Hàm `sayHi` được khai báo trong `if`, nên chỉ được nhìn thấy trong block code của `if`.
 
@@ -394,11 +394,11 @@ Kết quả `(*)` là gì?
 
 Xem đáp án
 
-<content-result>
+::Result
 
 Uncaught ReferenceError: Cannot access 'x' before initialization
 
-</content-result>
+::
 
 Vì trong hàm có `let x = 2`, nghĩa là biến `x` có tồn tại trong phạm vi của hàm `func`. Nhưng bạn không thể truy cập đến biến `x` trước câu lệnh `let x`.
 

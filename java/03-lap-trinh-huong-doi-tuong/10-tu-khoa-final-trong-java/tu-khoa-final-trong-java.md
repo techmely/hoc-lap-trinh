@@ -46,7 +46,8 @@ public class Thaycacac {
   </div>
   <div class="window-body">
     <code>Compile Time Error Exception in thread "main" java.lang.Error: Unresolved compilation problem: The final field Thaycacac.PI cannot be assigned</code>
-</content-result>
+
+::
 
 ::alert{type="infor"}
 
@@ -87,7 +88,8 @@ public class SH extends Bike {
   </div>
   <div class="window-body">
     <code>Exception in thread "main" java.lang.VerifyError: class vn.viettuts.keywords.SH overrides final method run.()</code>
-</content-result>
+
+::
 
 ## Lớp final trong Java
 
@@ -116,7 +118,8 @@ public class SH1 extends Bike {
   </div>
   <div class="window-body">
     <code>Compile Time Error</code>
-</content-result>
+
+::
 
 _Chú ý:_ do một lớp là final (tức không thể kế thừa )do vậy ta không thể nào ghi đè các phương thức của lớp này, do vậy đừng cố gắng cho một phương thức của lớp final là final
 
@@ -157,6 +160,8 @@ public class A {
 
 Chương trình sẽ in ra lỗi
 
-<content-result>
+::Result
+
     <code>"A.java": variable i might already have been assigned to at line 5, column 9</code>
-</content-result>
+
+::

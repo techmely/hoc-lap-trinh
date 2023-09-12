@@ -96,7 +96,8 @@ public class MapExample {
 }
 ```
 
-<content-result>
+::Result
+
     <code>1 = Basic java</code><br/>
     <code>2 = OOP</code><br/>
     <code>3 = Collection</code><br/>
@@ -104,4 +105,5 @@ public class MapExample {
     <code>1 = Basic java</code><br/>
     <code>2 = OOP</code><br/>
     <code>3 = Collection</code>
-</content-result>
+
+::

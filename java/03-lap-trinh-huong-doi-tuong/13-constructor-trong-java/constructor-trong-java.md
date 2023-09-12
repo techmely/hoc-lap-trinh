@@ -52,18 +52,21 @@ public class SimpleConstructor {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Đang tạo student</code><br/>
-  <code>Đang tạo student</code><br/>
-  <code>Đang tạo student</code><br/>
-  <code>Đang tạo student</code><br/>
-  <code>Đang tạo student</code><br/>
-  <code>Đang tạo student</code><br/>
-  <code>Đang tạo student</code><br/>
-  <code>Đang tạo student</code><br/>
-  <code>Đang tạo student</code><br/>
-  <code>Đang tạo student</code>
-</content-result>
+
+<code>Đang tạo student</code><br/>
+<code>Đang tạo student</code><br/>
+<code>Đang tạo student</code><br/>
+<code>Đang tạo student</code><br/>
+<code>Đang tạo student</code><br/>
+<code>Đang tạo student</code><br/>
+<code>Đang tạo student</code><br/>
+<code>Đang tạo student</code><br/>
+<code>Đang tạo student</code>
+
+::
 
 ::alert{type="infor"}
 Nếu không có constructor trong một lớp, trình biên dịch sẽ tự động tạo một constructor mặc định trong lớp đó.
@@ -97,10 +100,12 @@ public class Student {
 }
 ```
 
-<content-result>
+::Result
+
     <code>1 Thaycacac</code><br/>
     <code>2 HoaPN</code>
-</content-result>
+
+::
 
 ## Constructor Overloading trong java
 
@@ -136,10 +141,12 @@ class Student {
 }
 ```
 
-<content-result>
+::Result
+
     <code>1 Thaycacac 0</code><br/>
     <code>2 HoaPN 25</code>
-</content-result>
+
+::
 
 ## Sự khác nhau giữa constructor và phương thức trong java
 

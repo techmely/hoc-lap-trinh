@@ -216,7 +216,7 @@ function handleMessage(event) {
 
 Kết quả:
 
-<content-result>
+::Result
 
 [Main] Init Web Worker
 [Main] Before Transfering:
@@ -232,7 +232,7 @@ Kết quả:
 [Worker] Length of Array Buffer 1: 1000
 [Worker] Length of Array Buffer 2: 100000
 
-</content-result>
+::
 
 **Chú ý:**
 

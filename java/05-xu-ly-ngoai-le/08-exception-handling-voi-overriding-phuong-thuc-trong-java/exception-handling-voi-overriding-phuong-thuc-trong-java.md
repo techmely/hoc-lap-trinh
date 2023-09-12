@@ -32,9 +32,11 @@ class TestExceptionChild extends Parent{
 }
 ```
 
-<content-result>
+::Result
+
     <code>Compile Time Error</code>
-</content-result>
+
+::
 
 Nếu phương thức của lớp cha không khai báo một exception thì phương thức ghi đè của lớp con không thể khai báo `Checked Exception` nhưng có thể khai báo `Unchecked Exception`.
 
@@ -55,9 +57,11 @@ class TestExceptionChild1 extends Parent{
 }
 ```
 
-<content-result>
+::Result
+
     <code>child</code>
-</content-result>
+
+::
 
 ## Nếu phương thức lớp cha khai báo một exception
 
@@ -83,9 +87,11 @@ class TestExceptionChild2 extends Parent{
 }
 ```
 
-<content-result>
+::Result
+
     <code>Compile Time Error</code>
-</content-result>
+
+::
 
 <div class="example">trường hợp phương thức ghi đè của lớp con khai báo cùng exception đó</div>
 
@@ -107,9 +113,11 @@ class TestExceptionChild3 extends Parent{
 }
 ```
 
-<content-result>
+::Result
+
     <code>child</code>
-</content-result>
+
+::
 
 <div class="example">trường hợp phương thức ghi đè của lớp con khai báo exception của lớp con</div>
 
@@ -131,9 +139,11 @@ class TestExceptionChild4 extends Parent{
 }
 ```
 
-<content-result>
+::Result
+
     <code>child</code>
-</content-result>
+
+::
 
 <div class="example">trường hợp phương thức ghi đè của lớp con không khai báo exception nào</div>
 
@@ -155,6 +165,8 @@ class TestExceptionChild5 extends Parent{
 }
 ```
 
-<content-result>
+::Result
+
     <code>child</code>
-</content-result>
+
+::

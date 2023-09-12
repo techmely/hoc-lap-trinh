@@ -82,12 +82,14 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>1</code><br/>
     <code>3</code><br/>
     <code>4</code><br/>
     <code>6</code>
-</content-result>
+
+::
 
 ::alert{type="infor"}Nếu toán tử tăng trước, tăng sau (giảm trước, giảm sau) đứng một mình (không nằm trong biểu thức) thì chúng hoạt động như nhau, chúng chỉ khác nhau khi chúng nằm trong biểu thức::
 
@@ -157,7 +159,8 @@ public class Thaycacac {
 
 ```
 
-<content-result>
+::Result
+
     <code>Hiển thị các số...</code><br/>
     <code>i = 37</code><br/>
     <code>j = 42</code><br/>
@@ -184,7 +187,8 @@ public class Thaycacac {
     <code>Kiểm tra không bằng...</code><br/>
     <code>i! = j = true</code><br/>
     <code>k! = j = false</code>
-</content-result>
+
+::
 
 ## Phép toán logic
 

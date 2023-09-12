@@ -82,7 +82,8 @@ public static void main(String[] args) {
 }
 ```
 
-<content-result>
+::Result
+
     <code>10</code></br>
     <code>9</code></br>
     <code>8</code></br>
@@ -94,7 +95,8 @@ public static void main(String[] args) {
     <code>2</code></br>
     <code>1</code></br>
     <code>Hết giờ</code></br>
-</content-result>
+
+::
 
 ## Tạo Thread bằng cách implement từ Interface Runnable
 
@@ -134,7 +136,8 @@ public static void main(String[] args) {
 }
 ```
 
-<content-result>
+::Result
+
     <code>10</code></br>
     <code>9</code></br>
     <code>8</code></br>
@@ -146,7 +149,8 @@ public static void main(String[] args) {
     <code>2</code></br>
     <code>1</code></br>
     <code>Hết giờ</code></br>
-</content-result>
+
+::
 
 ## Lấy ra Thread hiện tại
 

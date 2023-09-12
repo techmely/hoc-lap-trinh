@@ -44,9 +44,11 @@ public class XeDap extends Xe {
 }
 ```
 
-<content-result>
+::Result
+
     <code>100</code>
-</content-result>
+
+::
 
 <div class="example">Nếu chúng ta sử dụng super thì sẽ in ra được tốc độ của lớp cha</div>
 
@@ -70,9 +72,11 @@ public class XeDap extends Xe {
 }
 ```
 
-<content-result>
+::Result
+
     <code>50</code>
-</content-result>
+
+::
 
 ## Sử dụng super() để gọi contructor của lớp cha
 
@@ -97,10 +101,12 @@ class XeDap extends Xe {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Xe được tạo</code><br/>
     <code>Xe đạp được tạo</code><br/>
-</content-result>
+
+::
 
 ::alert{type="infor"}
 super() được tự động thêm vào mỗi Constructor của class bởi trình biên dịch.
@@ -133,10 +139,12 @@ public class XeDap extends Xe {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Xe được tạo</code><br/>
     <code>10</code>
-</content-result>
+
+::
 
 ## Super được sử dụng để gọi phương thức của lớp cha
 
@@ -166,7 +174,9 @@ public class HocSinh extends Nguoi {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Xin chao Thaycacac</code><br/>
     <code>Xin chao</code>
-</content-result>
+
+::

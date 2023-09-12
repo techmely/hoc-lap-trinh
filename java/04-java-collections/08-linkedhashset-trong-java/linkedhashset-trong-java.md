@@ -73,10 +73,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>ArrayList: [2, 4]</code><br/>
     <code>LinkedHashSet: [2, 4]</code>
-</content-result>
+
+::
 
 ## Chèn các phần tử vào LinkedHashset
 
@@ -106,10 +108,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedHashSet: [2, 4, 6]</code><br/>
     <code>New LinkedHashSet: [2, 4, 6, 5]</code>
-</content-result>
+
+::
 
 ## Duyệt qua các phần tử trong LinkedHashSet
 
@@ -141,10 +145,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedHashSet: [2, 5, 6]</code><br/>
     <code>LinkedHashSet using Iterator: 2, 5, 6,</code>
-</content-result>
+
+::
 
 Lưu ý:
 
@@ -177,11 +183,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedHashSet: [2, 5, 6]</code><br/>
     <code>Is 5 removed? true</code><br/>
     <code>Are all elements removed? true</code>
-</content-result>
+
+::
 
 ## Lấy phần hợp của các set
 
@@ -209,11 +217,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedHashSet1: [2, 4]</code><br/>
     <code>LinkedHashSet2: [1, 3]</code><br/>
     <code>Union is: [1, 3, 2, 4]</code>
-</content-result>
+
+::
 
 ## Lấy phần giao của các set
 
@@ -241,11 +251,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedHashSet1: [2, 3]</code><br/>
     <code>LinkedHashSet2: [2, 4]</code><br/>
     <code>Intersection is: [2]</code>
-</content-result>
+
+::
 
 ## Tìm hiệu của hai set
 
@@ -275,11 +287,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedHashSet1: [2, 3, 5]</code><br/>
     <code>LinkedHashSet2: [1, 3, 5]</code><br/>
     <code>Difference: [2]</code>
-</content-result>
+
+::
 
 ## Kiểm tra có phải là tập con hay không
 
@@ -309,11 +323,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>LinkedHashSet1: [1, 2, 3, 4]</code><br/>
     <code>LinkedHashSet2: [2, 3]</code><br/>
     <code>Is LinkedHashSet2 is a subset of LinkedHashSet1? true</code>
-</content-result>
+
+::
 
 ## Một số hàm khác của LinkedHashset
 

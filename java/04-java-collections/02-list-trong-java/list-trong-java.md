@@ -81,13 +81,15 @@ public class ListExample {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Phan tu co index = 2 la: C++</code><br/>
     <code>Java</code><br/>
     <code>Python</code><br/>
     <code>C++</code><br/>
     <code>PHP</code>
-</content-result>
+
+::
 
 <div class="example">Sử dụng Arrays.asList()</div>
 
@@ -109,12 +111,14 @@ public class ListExample1 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Java</code><br/>
     <code>C++</code><br/>
     <code>PHP</code><br/>
     <code>Python</code>
-</content-result>
+
+::
 
 ## List Iterator trong java
 
@@ -156,7 +160,8 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Phan tu co index = 2 la: C++</code><br/>
     <code>Duyet cac phan tu tu dau den cuoi:</code><br/>
     <code>Java</code><br/>
@@ -168,4 +173,5 @@ public class Thaycacac {
     <code>C++</code><br/>
     <code>Python</code><br/>
     <code>Java</code><br/>
-</content-result>
+
+::

@@ -47,8 +47,10 @@ Trước khi bạn bắt đầu viết chương trình, hãy tìm hiểu một c
 
 Khi chúng ta chạy chương trình trên, kết quả sẽ là:
 
-<content-result>
+::Result
+
 Hello world
-</content-result>
+
+::
 
 Đây là thông điệp "Hello world" được in ra màn hình, và nó thể hiện sự thành công của chương trình đầu tiên của bạn trong Java - một bước quan trọng trên hành trình học lập trình. Chúc mừng bạn đã hoàn thành bài học này!

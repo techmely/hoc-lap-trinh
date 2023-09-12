@@ -205,14 +205,14 @@ rabbit.__proto__.sayHi(); // (4)
 
 Xem đáp án
 
-<content-result>
+::Result
 
 (1) - Rabbit
 (2) - undefined
 (3) - undefined
 (4) - undefined
 
-</content-result>
+::
 
 Câu lệnh `(1)` thì `this=rabbit`, bởi vì `rabbit` là object đứng trước `.`, nên đáp án đúng như trên.
 

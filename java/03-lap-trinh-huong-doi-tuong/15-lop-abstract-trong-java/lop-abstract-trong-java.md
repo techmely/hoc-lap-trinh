@@ -50,9 +50,11 @@ class Honda4 extends Bike{
 }
 ```
 
-<content-result>
+::Result
+
     <code>running...</code>
-  </content-result>
+
+::
 
 ::alert{type="infor"}
 
@@ -98,6 +100,8 @@ class Main{
 }
 ```
 
-<content-result>
+::Result
+
     <code>Ve hinh tron</code>
-  </content-result>
+
+::

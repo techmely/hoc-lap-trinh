@@ -35,13 +35,15 @@ class StringBuffer {
 }
 ```
 
-<content-result>
+::Result
+
     <code>0</code><br/>
     <code>12</code><br/>
     <code>16</code><br/>
     <code>20</code><br/>
     <code>28</code>
-</content-result>
+
+::
 
 `length()` và `capacity()` của StringBuffer là hai phương thức hoàn toàn khác nhau. Phương thức `length()` đề cập đến số các ký tự mà đối tượng thực chứa, trong khi `capacity()` trả về tổng dung lượng của một đối tượng (mặc định là 16) và số ký tự trong đối tượng **StringBuffer**.
 
@@ -103,9 +105,11 @@ StringBuffer str = new StringBuffer("Java sion");
 str.insert(1,’b’);
 ```
 
-<content-result>
+::Result
+
     <code>Biến "str" chứa chuỗi "Jbava sion"</code>
-</content-result>
+
+::
 
 - `char charAt()`: Phương thức này trả về một giá trị ký tự trong đối tượng StringBuffer tại vị trí được chỉ định.
 
@@ -121,9 +125,11 @@ StringBuffer name = new StringBuffer("Jawa");
 name.setCharAt(2,’v’);
 ```
 
-<content-result>
+::Result
+
     <code>Biến "name" chứa "Java".</code>
-</content-result>
+
+::
 
 - `void setLength()`: Phương thức này thiết lập chiều dài của đối tượng StringBuffer. Nếu chiều dài được chỉ định nhỏ hơn chiều dài dữ liệu hiện tại của nó, thì các ký tự thừa sẽ bị cắt bớt. Nếu chiểu dài chỉ định nhiều hơn chiều dài dữ liệu thì các ký tự null được thêm vào phần cuối của StringBuffer
 
@@ -145,9 +151,11 @@ char ch[] = new char[10];
 str.getChars(3,6,ch,0);
 ```
 
-<content-result>
+::Result
+
     <code>Bây giờ biến "ch" chứa "par"</code>
-</content-result>
+
+::
 
 - `void reverse()`: Phương thức này đảo ngược nội dung của một đối tượng StringBuffer, và trả về một đối tượng StringBuffer khác.
 
@@ -156,6 +164,8 @@ StringBuffer str = new StringBuffer("devil");
 StringBuffer strrev = str.reverse();
 ```
 
-<content-result>
+::Result
+
     <code>Biến "strrev" chứa "lived".</code>
-</content-result>
+
+::

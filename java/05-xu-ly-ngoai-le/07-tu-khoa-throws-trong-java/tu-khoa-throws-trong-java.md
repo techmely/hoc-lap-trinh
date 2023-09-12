@@ -60,10 +60,12 @@ public class TestThrows1 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>ngoai le duoc xu ly</code><br/>
     <code>luong binh thuong...</code><br/>
-</content-result>
+
+::
 
 **Trường hợp xử lý ngoại lệ với try/catch**
 
@@ -92,10 +94,12 @@ public class TestThrows2 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Ngoai le duoc xu ly</code><br/>
     <code>Luong binh thuong...</code><br/>
-</content-result>
+
+::
 
 **Khai báo throws ngoại lệ**
 
@@ -119,10 +123,12 @@ public class TestThrows2 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Thiet bi dang hoat dong tot</code><br/>
     <code>Luong binh thuong...</code><br/>
-</content-result>
+
+::
 
  <div class="example">Trong trường hợp bạn khai báo throws ngoại lệ, nếu ngoại lệ xảy ra, một ngoại lệ sẽ được ném ra tại runtime vì throws nên không xử lý ngoại đó.</div>
 
@@ -144,6 +150,8 @@ public class TestThrows2 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Exception in thread "main" java.io.IOException: Thiet bi</code>
-</content-result>
+
+::

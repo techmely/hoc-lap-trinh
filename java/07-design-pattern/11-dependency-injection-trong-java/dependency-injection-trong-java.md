@@ -177,19 +177,23 @@ public class MainApp {
 }
 ```
 
-<content-result>
+::Result
+
 Postgre insert
 Postgre update
 Postgre delete
-</content-result>
+
+::
 
 Sửa giá trị database trong file config.properties bằng 1 và chạy lại
 
-<content-result>
+::Result
+
 MySQL insert
 MySQL update
 MySQL delete
-</content-result>
+
+::
 
 Bây giờ nếu bạn có thêm 1 loại database khác cần sử dụng thì chỉ cần tạo DAO cho nó, implements `AbstractDAO` và sửa lại `FactoryDAO` là được.
 

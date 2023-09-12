@@ -103,10 +103,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>HashSet: [2, 4, 6]</code><br/>
     <code>New HashSet: [2, 4, 5, 6]</code>
-</content-result>
+
+::
 
 ## Duyệt qua các phần tử trong Hashset
 
@@ -136,10 +138,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>HashSet: [2, 5, 6]</code><br/>
     <code>HashSet using Iterator: 2, 5, 6,</code>
-</content-result>
+
+::
 
 ## Xóa các phần tử trong Hashset
 
@@ -167,11 +171,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>HashSet: [2, 5, 6]</code><br/>
     <code>Is 5 removed? true</code><br/>
     <code>Are all elements removed? true</code><br/>
-</content-result>
+
+::
 
 ## Lấy phần hợp trong HashSet
 
@@ -199,11 +205,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>HashSet1: [2, 4]</code><br/>
     <code>HashSet2: [1, 3]</code><br/>
     <code>Union is: [1, 2, 3, 4]</code><br/>
-</content-result>
+
+::
 
 ## Lấy phần giao trong HashSet
 
@@ -231,11 +239,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>HashSet1: [2, 3]</code><br/>
     <code>HashSet2: [2, 4]</code><br/>
     <code>Intersection is: [2]</code>
-</content-result>
+
+::
 
 ## Tính hiệu của các set
 
@@ -265,11 +275,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>HashSet1: [2, 3, 5]</code><br/>
     <code>HashSet2: [1, 3, 5]</code><br/>
     <code>Difference: [2]</code>
-</content-result>
+
+::
 
 ## Kiểm tra có phải tập con hay không trong HashSet
 
@@ -299,11 +311,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>HashSet1: [1, 2, 3, 4]</code><br/>
     <code>HashSet2: [2, 3]</code><br/>
     <code>Is HashSet2 is a subset of HashSet1? true</code>
-</content-result>
+
+::
 
 ## Một số hàm khác của Hashset
 

@@ -72,10 +72,12 @@ public class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>hello</code><br/>
     <code>hello thaycacac</code>
-</content-result>
+
+::
 
 Sao nói rằng object string không thể thay đổi sau khi nó đã được khởi tạo thì đáng lẽ chúng ra phải nhận output là **hello** chứ nhỉ!
 

@@ -45,10 +45,12 @@ public class HocSinh {
 }
 ```
 
-<content-result>
+::Result
+
     <code>0 null</code><br/>
     <code>0 null </code>
-</content-result>
+
+::
 
 Ở ví dụ này, tên của tham số của [constructor](/bai-viet/java/phuong-thuc-khoi-tao) `HocSinh()` trùng với tên của biến toàn cục đó là lý do tại sao cần phải sử dụng từ khóa this để phân biệt biến cục bộ và biến toàn cục. Từ khóa this sẽ giúp chúng ta giải quyết vấn đề này.
 
@@ -76,10 +78,12 @@ public class HocSinh {
 }
 ```
 
-<content-result>
+::Result
+
     <code>111 Viet</code><br/>
     <code>222 Nam</code>
-</content-result>
+
+::
 
 ::alert{type="infor"}
 Nếu biến cục bộ và biến toàn cục có tên khác nhau thì không cần sử dụng từ khóa this.
@@ -118,11 +122,13 @@ public class HocSinh2 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>gọi Constructor mặc định</code><br/>
     <code>111 Viet</code><br/>
     <code>222 Nam</code>
-</content-result>
+
+::
 
 `this()` được dùng để sự dụng lại [constructor](/bai-viet/java/phuong-thuc-khoi-tao) trong [constructor](/bai-viet/java/phuong-thuc-khoi-tao) khác. Nó sẽ thừa kế các thuộc tính của [constructor](/bai-viet/java/phuong-thuc-khoi-tao) được gọi.
 
@@ -156,10 +162,12 @@ public class HocSinh3 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>111 Viet</code><br/>
     <code>222 Nam</code>
-</content-result>
+
+::
 
 ::alert{type="infor"}
 this() phải được khai báo dòng lệnh đầu tiên trong Constructor.
@@ -194,10 +202,12 @@ public class HocSinh4 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Xin chao Thaycacac</code><br/>
     <code>Hello Thaycacac</code>
-</content-result>
+
+::
 
 ## Sử dụng từ khóa this như một tham số của phương thức
 
@@ -221,9 +231,11 @@ public class HocSinh5 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Hello Thaycacac</code>
-</content-result>
+
+::
 
 Chúng ta cũng có thể truyền từ khóa `this` trong [constructor](/bai-viet/java/phuong-thuc-khoi-tao).Việc này rất hữu ích nếu chúng ta phải sử dụng một đối tượng trong nhiều lớp.
 
@@ -256,9 +268,11 @@ class A4 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>10</code>
-</content-result>
+
+::
 
 ## Sử dụng từ khóa this để trả về instance của lớp hiện tại
 
@@ -281,6 +295,8 @@ class Test1 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Hello Thaycacac</code>
-</content-result>
+
+::

@@ -67,10 +67,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>EnumMap1: {SMALL=28, MEDIUM=32}</code><br/>
     <code>EnumMap2: {SMALL=28, MEDIUM=32, LARGE=36}</code><br/>
-</content-result>
+
+::
 
 Ở ví dụ trên, chúng ta đã sử dụng hàm `putAll()` để chèn tất cả các phần tử của EnumMap `sizes1` đến một EnumMap của `sizes2`.
 
@@ -112,12 +114,14 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
     <code>Key/Value mappings: [SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40]</code><br/>
     <code>Keys: [SMALL, MEDIUM, LARGE, EXTRALARGE]</code><br/>
     <code>Values: [28, 32, 36, 40]</code>
-</content-result>
+
+::
 
 - Hàm `get()` trả về `value` liên kết với key chỉ định. Nó trả về `null` nếu không tìm thấy `key` được chỉ định
 
@@ -146,10 +150,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
     <code>Value of MEDIUM: 32</code>
-</content-result>
+
+::
 
 ## Xóa các phần tử khỏi EnumMap
 
@@ -186,12 +192,14 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
     <code>Removed Value: 32</code><br/>
     <code>Is the entry {SMALL=28} removed? True</code><br/>
     <code>Updated EnumMap: {LARGE=36, EXTRALARGE=40}</code>
-</content-result>
+
+::
 
 ## Thay thế các phần tử EnumMap
 
@@ -229,11 +237,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
     <code>EnumMap using replace(): {SMALL=28, MEDIUM=30, LARGE=34, EXTRALARGE=40}</code><br/>
     <code>EnumMap using replaceAll(): {SMALL=31, MEDIUM=33, LARGE=37, EXTRALARGE=43}</code>
-</content-result>
+
+::
 
 Trong chương trình trên, chú ý câu lệnh:
 

@@ -47,10 +47,12 @@ if (x % 2 === 0) {
 }
 ```
 
-<content-result>
+::Result
+
     <code>x is an even number</code>
     <code>done!</code>
-</content-result>
+
+::
 
 💡 Theo mình, dù khối code sau câu lệnh `if` là một hay nhiều câu lệnh thì bạn cũng nên dùng cặp dấu `{}` để code dễ đọc hơn. Ngoài ra, mình cũng nhắc lại quy luật [chuyển đổi kiểu dữ liệu](/bai-viet/javascript/chuyen-doi-kieu-du-lieu-trong-javascript/) sang boolean như sau:
 

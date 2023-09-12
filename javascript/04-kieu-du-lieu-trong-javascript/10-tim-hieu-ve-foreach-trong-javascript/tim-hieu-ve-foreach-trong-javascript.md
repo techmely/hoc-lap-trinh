@@ -118,13 +118,13 @@ function printContentArray(array) {
 printContentArray([1, 3, 5]);
 ```
 
-<content-result>
+::Result
 
 <p>1</p>
 <p>3</p>
 <p>5</p>
 
-</content-result>
+::
 
 ### Ví dụ sử dụng `thisArg`
 

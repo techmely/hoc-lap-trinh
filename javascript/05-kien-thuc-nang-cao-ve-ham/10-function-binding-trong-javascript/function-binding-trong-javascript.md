@@ -290,11 +290,11 @@ let user = {
 user.g();
 ```
 
-<content-result>
+::Result
 
 null
 
-</content-result>
+::
 
 Phương thức `user.g` được gán bằng `f.bind(null)`. Nghĩa là giá trị của `this` trong hàm `f` luôn là `null`.
 
@@ -314,9 +314,11 @@ f(); // (*)
 
 Kết quả `(*)` là gì?
 
-<content-result>
+::Result
+
 Alex
-</content-result>
+
+::
 
 Khi gọi `f.bind(context)`, kết quả trả về là một đối tượng đặc biệt. Đối tượng này ghi nhớ giá trị của `this=context` tại thời điểm bind và không thể bị thay đổi.
 
@@ -344,9 +346,11 @@ console.log(bound.test); // (*)
 
 Kết quả `(*)` là gì?
 
-<content-result>
+::Result
+
 undefined
-</content-result>
+
+::
 
 Bởi vì kết quả của `bind` là một đối tượng khác. Và đối tượng này không chứa thuộc tính `test`.
 

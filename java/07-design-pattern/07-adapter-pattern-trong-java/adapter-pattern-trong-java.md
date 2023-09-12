@@ -76,11 +76,13 @@ public class Client {
 }
 ```
 
-<content-result>
+::Result
+
 sdflkqweqweq is phone number: false
 123 is phone number: false
 01234342342 is phone number: true
-</content-result>
+
+::
 
 Trong ví dụ này:
 

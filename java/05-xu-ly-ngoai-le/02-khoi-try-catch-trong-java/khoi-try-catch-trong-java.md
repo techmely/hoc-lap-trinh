@@ -85,9 +85,11 @@ public class TestTryCatch1 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Exception in thread "main" java.lang.ArithmeticException: / by zero  at vn.tpv.exception1.TestTryCatch1.main(TestTryCatch1.java:5)</code>
-</content-result>
+
+::
 
 Trong ví dụ trên, phần còn lại của code không được thực thi (dòng chữ "rest of the code..." không được in ra màn hình). Tất cả các lệnh không được thực thi sau khi xảy ra ngoại lệ. Khi giải quyết xử lý ngoại lệ
 
@@ -104,9 +106,11 @@ public class TestTryCatch2 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>java.lang.ArithmeticException:</code>
     <code>by zero rest of the code...</code>
-</content-result>
+
+::
 
 Trong ví dụ này, phần còn lại của code được thực thi nghĩa là dòng chữ "rest of the code..." được in ra màn hình.

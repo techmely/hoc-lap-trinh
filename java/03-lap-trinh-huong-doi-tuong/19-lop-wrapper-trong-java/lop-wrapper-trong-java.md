@@ -48,9 +48,11 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>2 2 2</code>
-  </content-result>
+
+::
 
 <div class="example">
   chuyển kiểu Wrapper thành kiểu dữ liểu nguyên thủy
@@ -69,9 +71,11 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>9 9 9</code>
-  </content-result>
+
+::
 
 ## Các đặc điểm của lớp Wrapper trong Java
 

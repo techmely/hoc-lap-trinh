@@ -31,7 +31,7 @@ function sayHello(count) {
 sayHello(5);
 ```
 
-<content-result>
+::Result
 
 <p>Hello world!</p>
 <p>Hello world!</p>
@@ -39,7 +39,7 @@ sayHello(5);
 <p>Hello world!</p>
 <p>Hello world!</p>
 
-</content-result>
+::
 
 Đây chỉ là ví dụ minh họa về **hàm đệ quy trong JavaScript**. Thực tế, bạn có thể sử dụng [vòng lặp `for`](/bai-viet/javascript/vong-lap-trong-javascript) để giải quyết bài toán trên:
 
@@ -103,7 +103,7 @@ sayHello();
 
 Kết quả là **Hello world!** được in ra khoảng hơn `10000` lần thì bị lỗi **tràn stack**, cụ thể: **Uncaught RangeError: Maximum call stack size exceeded**.
 
-<content-result>
+::Result
 
 Hello world!
 Hello world!
@@ -112,7 +112,7 @@ Hello world!
 
 Uncaught RangeError: Maximum call stack size exceeded
 
-</content-result>
+::
 
 > **Chú ý:** con số `10000` trên chỉ là tương đối, phụ thuộc vào từng [JavaScript Engine](/bai-viet/javascript/gioi-thieu-javascript)
 
@@ -360,14 +360,14 @@ Viết hàm `printList(singleLinkedList)` để in ra các phần tử của lis
 
 Kết quả hiển thị trên console là:
 
-<content-result>
+::Result
 
 <p>1</p>
 <p>2</p>
 <p>3</p>
 <p>4</p>
 
-</content-result>
+::
 
 Xem đáp án
 
@@ -422,14 +422,14 @@ Viết hàm `printReverseList(singleLinkedList)` để in ra các phần tử c�
 
 Kết quả hiển thị trên console là:
 
-<content-result>
+::Result
 
 <p>4</p>
 <p>3</p>
 <p>2</p>
 <p>1</p>
 
-</content-result>
+::
 
 Xem đáp án
 

@@ -67,10 +67,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>HashMap1: {Four=4, Two=2}</code><br/>
     <code>HashMap2: {Two=2, Three=3, Four=4}</code>
-</content-result>
+
+::
 
 ## Chèn các phần tử vào HashMap
 
@@ -105,10 +107,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>HashMap of even numbers: {Six=6, Four=4, Two=2}</code><br/>
     <code>HashMap of numbers: {Six=6, One=1, Four=4, Two=2}</code>
-</content-result>
+
+::
 
 ## Lấy các phần tử trong HashMap
 
@@ -140,12 +144,14 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Key/Value mappings: [One=1, Two=2, Three=3]</code><br/>
     <code>Keys: [One, Two, Three]</code><br/>
     <code>Values: [1, 2, 3]</code>
-</content-result>
+
+::
 
 - `get()`- Trả về value liên kết với `key` được chỉ định. Trả về `null` nếu không tìm thấy key.
 - `getOrDefault()`- Trả về `value` liên kết với key được chỉ định. Trả về `value` mặc định đã chỉ định nếu không tìm thấy `key`.
@@ -173,11 +179,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Returned Number: 3</code><br/>
     <code>Returned Number: 5</code>
-</content-result>
+
+::
 
 ## Xóa phần tử hỏi HashTable
 
@@ -209,12 +217,14 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Removed value: 2</code><br/>
     <code>Is the entry Three removed? True</code><br/>
     <code>Updated HashMap: {One=1}</code>
-</content-result>
+
+::
 
 ## Thay thế các phần tử trong HashTable
 
@@ -246,11 +256,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Original HashMap: {Second=2, Third=3, First=1}</code><br/>
     <code>HashMap using replace: {Second=22, Third=33, First=1}</code><br/>
     <code>HashMap using replaceAll: {Second=24, Third=35, First=3}</code><br/>
-</content-result>
+
+::
 
 Trong chương trình trên chú ý câu lệnh:
 
@@ -293,12 +305,14 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Original HashMap: {Second=2, First=1}</code><br/>
     <code>HashMap using compute(): {Second=3, First=3}</code><br/>
     <code>HashMap using computeIfAbsent(): {Second=3 First=3, Three=5}</code><br/>
     <code>HashMap using computeIfPresent(): {Second=6, First=3, three=5}</code>
-</content-result>
+
+::
 
 Trong ví dụ trên, chúng ta đã tính toán lại các `value` của map bằng hàm `compute()`. Ở đây, chúng ta đã sử dụng các biểu thức lambda làm đối số hàm để tính toán lại các `value`
 
@@ -322,10 +336,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Original HashMap: {Second=2, First=1}</code><br/>
     <code>New HashMap: {Second=2, First=5}</code>
-</content-result>
+
+::
 
 Trong ví dụ trên, hàm `merge()` này có 3 tham số: `key` , `newValue` và biểu thức lambda (biểu thức này tính value hợp nhất mới).
 
@@ -375,12 +391,14 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Entries: One=1, Two=2, Three=3</code><br/>
     <code>Keys: One, Two, Three,</code><br/>
     <code>Values: 1, 2, ,3,</code>
-</content-result>
+
+::
 
 Trong chương trình trên, lưu ý rằng chúng ta đã import gói `java.util.Map.Entry`. Ở đây, `Map.Entry` là `class` trong của Map interface. Class trong này trả về một view (các phần tử) của map.
 
@@ -429,12 +447,14 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Entries: One=1, Two=2, Three=3</code><br/>
     <code>Keys: One, Two, Three,</code><br/>
     <code>Values: 1, 2, 3,</code>
-</content-result>
+
+::
 
 ## Một số hàm của HashMap
 

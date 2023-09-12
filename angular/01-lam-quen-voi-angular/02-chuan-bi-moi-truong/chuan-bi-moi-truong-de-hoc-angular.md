@@ -52,9 +52,11 @@ Sau khi cài đặt thành công các bạn có thể verify bằng lệnh:
 </ul>
 ::
 
-<content-result>
+::Result
+
     <code>File C:\Users\< username >\AppData\Roaming\npm\ng.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.</code><br/>
-</content-result>
+
+::
 
 Thì các bạn cần phải `enable policy` để chạy được command. Để enable các bạn mở `Powershell as Administrator` và chạy lệnh này `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine` hoặc mở link ở thông báo lỗi để tìm hiểu thêm.
 

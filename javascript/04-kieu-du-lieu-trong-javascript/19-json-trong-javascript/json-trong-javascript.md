@@ -128,7 +128,7 @@ let meetup = {
 console.log(JSON.stringify(meetup));
 ```
 
-<content-result>
+::Result
 
 <code>
 {
@@ -137,7 +137,7 @@ console.log(JSON.stringify(meetup));
 }
 </code>
 
-</content-result>
+::
 
 Tuy nhiên, `JSON.stringify` không hỗ trợ nếu object có **tham chiếu vòng tròn**, ví dụ:
 

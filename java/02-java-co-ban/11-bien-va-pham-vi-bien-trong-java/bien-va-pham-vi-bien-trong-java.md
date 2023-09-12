@@ -75,9 +75,11 @@ public class Bien {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Giá trị của n là: 10</code>
-</content-result>
+
+::
 
 ```java
 public class Bien {
@@ -94,9 +96,11 @@ public class Bien {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Exception in thread "main" java.lang.Error: Unresolved compilation problem: The local variable n may not have been initialized</code>
-</content-result>
+
+::
 
 ### Biến biến instance (biến toàn cục) trong java
 
@@ -139,10 +143,12 @@ public class SinhVien {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Ten  : Thaycacac</code><br/>
     <code>Tuoi : 21</code>
-</content-result>
+
+::
 
 ### Biến static trong java
 
@@ -172,7 +178,9 @@ public class Sinhvien {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Ten  : Thaycacac</code><br/>
     <code>Tuoi : 21</code>
-</content-result>
+
+::

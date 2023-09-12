@@ -125,7 +125,7 @@ while (true) {
 }
 ```
 
-<content-result>
+::Result
 
 <p>H</p>
 <p>e</p>
@@ -133,7 +133,7 @@ while (true) {
 <p>l</p>
 <p>o</p>
 
-</content-result>
+::
 
 Trên đây là cách hoạt động của iterable trong JavaScript.
 

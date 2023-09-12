@@ -70,9 +70,11 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
-</content-result>
+
+::
 
 Hoặc ta cũng có thể thêm nhiều phần tử vào một `ArrayList` bằng cách sử dụng các chỉ số
 
@@ -91,9 +93,11 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
-</content-result>
+
+::
 
 ### Thêm tất cả các phần tử từ ArrayList này sang ArrayList khác
 
@@ -120,10 +124,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Mammals: [Dog, Cat, Horse]</code><br/>
     <code>Animals: [Crocodile, Dog, Cat, Horse]</code><br/>
-</content-result>
+
+::
 
 ### Truy cập tới các phần tử trong ArrayList
 
@@ -147,10 +153,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>ArrayList: [Dog, Horse, Cat]</code><br/>
     <code>Element at index 0: Dog</code><br/>
-</content-result>
+
+::
 
 Để truy cập các phần tử của ArrayList một cách tuần tự, chúng ta sử dụng hàm `iterator()`. Chúng ta phải nhập gói `java.util.Iterator` để sử dụng hàm này
 
@@ -178,9 +186,11 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>ArrayList: Dog, Cat, Horse, Zebra,</code><br/>
-</content-result>
+
+::
 
 ::alert{type="infor"}
 
@@ -212,10 +222,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>Modified ArrayList: [Dog, Cat, Zebra]</code><br/>
-</content-result>
+
+::
 
 ### Xóa phần tử trong ArrayList
 
@@ -240,11 +252,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Initial ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>Final ArrayList: [Dog, Cat]</code><br/>
     <code>Removed Element: Horse</code><br/>
-</content-result>
+
+::
 
 Ngoài ra, nếu bạn muốn loại bỏ tất cả các phần tử khỏi ArrayList, chúng ta sử dụng hàm `removeAll()`
 
@@ -266,10 +280,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Initial ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>Final ArrayList: []</code><br/>
-</content-result>
+
+::
 
 Thêm một hàm nữa là hàm `clear()` để loại bỏ tất cả các phần tử khỏi ArrayList.
 
@@ -291,10 +307,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Initial ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>Final ArrayList: []</code><br/>
-</content-result>
+
+::
 
 ### Lặp qua các phần tử trong ArrayList
 
@@ -321,10 +339,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>ArrayList: [Cow, Cat, Dog]</code><br/>
     <code>Accessing individual elements: Cow, Cat, Dog,</code><br/>
-</content-result>
+
+::
 
 Cách thứ hai là chúng ta có thể sử dụng forEach để lặp qua các phần tử của ArrayList
 
@@ -349,10 +369,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>ArrayList: [Cow, Cat, Dog]</code><br/>
     <code>Accessing individual elements: Cow, Cat, Dog,</code><br/>
-</content-result>
+
+::
 
 ### Kiểm tra độ dài của ArrayList
 
@@ -375,10 +397,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>ArrayList: [Dog, Horse, Cat]</code><br/>
     <code>Size: 3</code><br/>
-</content-result>
+
+::
 
 ### Sắp xếp các phần tử của một ArrayList
 
@@ -404,10 +428,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Unsorted ArrayList: [Horse, Zebra, Dog, Cat]</code><br/>
     <code>Sorted ArrayList: [Cat, Dog, Horse, Zebra]</code><br/>
-</content-result>
+
+::
 
 ### Cách chuyển một ArrayList thành một mảng Array trong Java
 
@@ -436,10 +462,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>Array: Dog, Cat, Horse,</code><br/>
-</content-result>
+
+::
 
 ### Chuyển mảng thành ArrayList trong Java
 
@@ -466,10 +494,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Array: Dog, Cat, Horse</code><br/>
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
-</content-result>
+
+::
 
 ### Chuyển ArrayList thành String trong Java
 
@@ -493,10 +523,12 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>String: [Dog, Cat, Horse]</code><br/>
-</content-result>
+
+::
 
 ### Một số hàm trong ArrayList
 

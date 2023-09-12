@@ -106,9 +106,11 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Bạn đủ tuổi để đăng ký</code>
-</content-result>
+
+::
 
 ### Dạng if..else if..else
 
@@ -146,9 +148,11 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Sinh viên có thể tham gia</code>
-</content-result>
+
+::
 
 ### Một số ví dụ cấu trúc rẽ nhánh if else
 

@@ -70,9 +70,11 @@ switch (x) {
 // Equal
 ```
 
-<content-result>
+::Result
+
     <code>Equal</code>
-</content-result>
+
+::
 
 Giải thích:
 

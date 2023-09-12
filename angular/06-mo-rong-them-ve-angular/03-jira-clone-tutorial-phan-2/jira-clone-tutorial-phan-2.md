@@ -153,8 +153,11 @@ Sau khi xong các component nhỏ, mình bắt đầu config layout cho project 
   ></app-navigation>
   <div id="content">
     <router-outlet></router-outlet>
-</content-result>
-<svg-definitions></svg-definitions>
+
+    ::
+    <svg-definitions></svg-definitions>
+  </div>
+</div>
 ```
 
 Và bắt đầu config route cho `ProjectModule`. Xong xuôi rồi đấy!

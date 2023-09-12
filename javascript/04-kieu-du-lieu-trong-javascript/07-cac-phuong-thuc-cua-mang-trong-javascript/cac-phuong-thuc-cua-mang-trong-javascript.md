@@ -221,13 +221,13 @@ Ví dụ:
 });
 ```
 
-<content-result>
+::Result
 
 item a at index 0 in array a,b,c
 item b at index 1 in array a,b,c
 item c at index 2 in array a,b,c
 
-</content-result>
+::
 
 Để hiểu hơn về `forEach`, bạn có thể đọc thêm bài viết: [JavaScript forEach là cái quái gì?](/bai-viet/javascript/tim-hieu-ve-foreach-trong-javascript)
 

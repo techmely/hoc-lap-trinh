@@ -50,13 +50,14 @@ sessionScope.age:Ş{sessionScope.age}
 </li>
 ```
 
-<content-result>
-name                        : codeleanvn, 
-age                           :1,
-sessionScope.name : codeleanvn,
-sessionScope.age    :
+::Result
 
-</content-result>
+name : codeleanvn,
+age :1,
+sessionScope.name : codeleanvn,
+sessionScope.age :
+
+::
 
 ### Ưu điểm
 
@@ -93,7 +94,9 @@ View
 <li>name:${student.name}, mark: ${student.mark }</li>
 ```
 
-<content-result>
-name: techmely, 
+::Result
+
+name: techmely,
 mark: 10.0
-</content-result>
+
+::

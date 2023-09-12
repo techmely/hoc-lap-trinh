@@ -34,7 +34,9 @@ This is danger content
 This is example content
 ::
 
-<content-result>This is result content</content-result>
+::Result
+This is result content
+::
 ```
 
 <img width="1666" alt="Kết quả" src="https://user-images.githubusercontent.com/29374426/175781031-a63f0e31-72c8-476f-b380-f666550c85c1.png">

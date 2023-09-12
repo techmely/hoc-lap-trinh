@@ -43,10 +43,12 @@ public class NhapXuat {
 
 ```
 
-<content-result>
+::Result
+
     <code>Nhập tên của bạn:<b>thaycacac</b></code><br/>
     <code>Tên của bạn là: <b>thaycacac</b></code>
-</content-result>
+
+::
 
 ### Đọc số trong màn hình console
 
@@ -75,12 +77,14 @@ public class NhapXuat {
 
 ```
 
-<content-result>
+::Result
+
     <code>Nhập tuổi của bạn: <b>18</b></code><br/>
     <code>Tuổi của bạn là: <b>18</b></code><br/>
     <code>Nhập chiều cao của bạn: <b>18.22</b></code><br/>
     <code>Chiều cao của bạn là: <b>18.22</b></code>
-</content-result>
+
+::
 
 ## Sử dụng Buffered Reader Class
 
@@ -104,10 +108,12 @@ class Thaycacac
 }
 ```
 
-<content-result>
+::Result
+
     <code>Nhập tên của bạn: <b>thaycacac</b></code><br/>
     <code>Tên của bạn là: <b>thaycacac</b></code>
-</content-result>
+
+::
 
 ### Đọc số trong màn hình console
 
@@ -131,12 +137,14 @@ public static void main(String[] args) throws IOException {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Nhập tuổi của bạn: <b>18</b></code><br/>
     <code>Tuổi của bạn là: <b>18</b></code><br/>
     <code>Nhập chiều cao của bạn: <b>18.22</b></code><br/>
     <code>Chiều cao của bạn là: <b>18.22</b></code>
-</content-result>
+
+::
 
 ## Sử dụng console class
 
@@ -160,7 +168,9 @@ class ReadPassword {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Nhập mật khẩu: <b>@myPassword</b></code><br/>
     <code>Mật khẩu của bạn là: <b>@myPassword</b></code>
-</content-result>
+
+::

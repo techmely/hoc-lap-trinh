@@ -119,7 +119,8 @@ public class SingleThreadExecutorExample {
 
 Trong chương trình trên, tôi đã tạo ra `ThreadPool` sử dụng phương thức `newSingleThreadExecutor()` vì vậy kích thước của `ThreadPool` là `1`, nên nó sẽ bắt đầu thực thi chương trình trên với 1 task và các task khác sẽ ở trạng thái đợi (waiting), ngay khi một task hoàn thành, một task khác từ hàng đợi sẽ được chọn và thực thi. Ta có kết quả của chương trình trên như sau:
 
-<content-result>
+::Result
+
     <code>pool-1-thread-1 Starting. Task = 1<code></br>
     <code>pool-1-thread-1 Finished.<code></br>
     <code>pool-1-thread-1 Starting. Task = 2<code></br>
@@ -141,7 +142,8 @@ Trong chương trình trên, tôi đã tạo ra `ThreadPool` sử dụng phươn
     <code>pool-1-thread-1 Starting. Task = 10<code></br>
     <code>pool-1-thread-1 Finished.<code></br>
     <code>Finished all threads<code></br>
-</content-result>
+
+::
 
 <div class="example">sử dụng newFixedThreadPool()</div>
 
@@ -175,7 +177,8 @@ public class FixedThreadPoolExample {
 
 Trong chương trình trên, tôi đã tạo ra `ThreadPool` có kích thước cố định là 5. Sau đó, tôi đã tạo 10 task (công việc) vào `ThreadPool`, vì kích thước `ThreadPool` là 5, nên nó sẽ bắt đầu thực thi chương trình trên vói 5 task và các task khác sẽ ở trạng thái đợi (waiting), ngay khi một task hoàn thành, một task khác từ hàng đợi sẽ được chọn và thực thi. Ta có kết quả của chương trình trên như sau:
 
-<content-result>
+::Result
+
     <code>pool-1-thread-3 Starting. Task = 3</code><br/>
     <code>pool-1-thread-2 Starting. Task = 2</code><br/>
     <code>pool-1-thread-1 Starting. Task = 1</code><br/>
@@ -197,7 +200,8 @@ Trong chương trình trên, tôi đã tạo ra `ThreadPool` có kích thước 
     <code>pool-1-thread-1 Finished.</code><br/>
     <code>pool-1-thread-4 Finished.</code><br/>
     <code>Finished all threads</code><br/>
-</content-result>
+
+::
 
 <div class="example">sử dụng newCachedThreadPool()</div>
 
@@ -229,7 +233,8 @@ public class CachedThreadPoolExample {
 
 Trong chương trình trên, tôi đã tạo ra `ThreadPool` sử dụng phương thức `newCachedThreadPool()` vì vậy kích thước của `ThreadPool` là gần như không giới hạn (`Integer.MAX_VALUE`), nên nó sẽ bắt đầu thực thi chương trình trên với 1 task và các task khác sẽ ở không phải đợi. Nếu có `Thread` rảnh thì nó sẽ nhận task và thực thi. Nếu không có `Thread` rãnh thì nó sẽ tạo một `Thread` mới và thực thi. Ta có kết quả của chương trình trên như sau:
 
-<content-result>
+::Result
+
     <code>pool-1-thread-1 Starting. Task = 1</code><br/>
     <code>pool-1-thread-2 Starting. Task = 2</code><br/>
     <code>pool-1-thread-3 Starting. Task = 3</code><br/>
@@ -251,7 +256,8 @@ Trong chương trình trên, tôi đã tạo ra `ThreadPool` sử dụng phươn
     <code>pool-1-thread-4 Finished.</code><br/>
     <code>pool-1-thread-5 Finished.</code><br/>
     <code>Finished all threads</code><br/>
-</content-result>
+
+::
 
 <div class="example">sử dụng newScheduledThreadPool()</div>
 
@@ -302,7 +308,8 @@ Các thread này được lên kế hoạch thực thi bằng phương thức `s
 
 Ta có kết quả của chương trình trên như sau:
 
-<content-result>
+::Result
+
     <code>pool-1-thread-1 Starting. Task = 1</code><br/>
     <code>pool-1-thread-2 Starting. Task = 2</code><br/>
     <code>pool-1-thread-1 Finished.</code><br/>
@@ -322,7 +329,8 @@ Ta có kết quả của chương trình trên như sau:
     <code>pool-1-thread-2 Finished.</code><br/>
     <code>pool-1-thread-1 Finished.</code><br/>
     <code>Finished all threads</code><br/>
-</content-result>
+
+::
 
 ## Custom Thread Pool Executor
 
@@ -581,7 +589,8 @@ Trong chương trình trên, tôi đã tạo ra `ThreadPool` sử dụng `Thread
 
 Hãy xem kết quả thực thi chương trình trên như sau:
 
-<content-result>
+::Result
+
     <code>GPCoder-ThreadPool-0 Starting. Task = cmd1</code><br/>
     <code>GPCoder-ThreadPool-1 Starting. Task = cmd2</code><br/>
     <code>GPCoder-ThreadPool-2 Starting. Task = cmd5</code><br/>
@@ -610,7 +619,8 @@ Hãy xem kết quả thực thi chương trình trên như sau:
     <code>[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
     <code>[monitor] [0/2] Active: 0, Completed: 6, Task: 6, isShutdown: true, isTerminated: true</code><br/>
     <code>[monitor] [0/2] Active: 0, Completed: 6, Task: 6, isShutdown: true, isTerminated: true</code><br/>
-</content-result>
+
+::
 
 ## Một vài lưu ý về sử dụng ExecutorService
 

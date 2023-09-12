@@ -69,9 +69,11 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Đây là số 2</code>
-  </content-result>
+
+::
 
 ## Dạng đủ
 
@@ -130,13 +132,15 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Đây là số 2</code><br/>
     <code>Đây là số 3</code><br/>
     <code>Đây là số 4</code><br/>
     <code>Đây là số 5</code><br/>
     <code>Chạy vào khối default</code><br/>
-</content-result>
+
+::
 
 ::alert{type="infor"}<ul>
 

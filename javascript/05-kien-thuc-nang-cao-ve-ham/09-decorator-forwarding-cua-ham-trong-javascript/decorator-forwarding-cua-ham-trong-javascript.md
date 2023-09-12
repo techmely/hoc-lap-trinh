@@ -55,7 +55,7 @@ console.log(slow(2)); // cache lại kết quả của slow(2) rồi trả về 
 console.log("Gọi lại: " + slow(2)); // kết quả của slow(1) được lấy từ cache
 ```
 
-<content-result>
+::Result
 
 <code>Đã được gọi với 1</code>
 <code>1</code>
@@ -64,7 +64,7 @@ console.log("Gọi lại: " + slow(2)); // kết quả của slow(1) được l�
 <code>2</code>
 <code>Gọi lại: 2</code>
 
-</content-result>
+::
 
 Trong ví dụ trên, hàm `cachingDecorator` được gọi là **decorator** - một hàm đặc biệt, nhận tham số đầu vào là một hàm khác và bổ sung thêm các tính năng.
 

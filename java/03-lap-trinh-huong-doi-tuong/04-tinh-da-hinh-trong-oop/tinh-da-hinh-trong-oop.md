@@ -67,9 +67,11 @@ public class Bike extends Car {
 }
 ```
 
-<content-result>
+::Result
+
     <code>chạy với tốc độ 30km/h</code>
-</content-result>
+
+::
 
 <div class="example">Một ví dụ khác về tính đa hình</div>
 
@@ -111,11 +113,13 @@ class Main {
 }
 ```
 
-<content-result>
+::Result
+
     <code>vẽ hình chữ nhật...</code><br/>
     <code>vẽ hình tròn...</code><br/>
     <code>vẽ hình tam giác...</code>
-</content-result>
+
+::
 
 Tuy nhiên khi chúng ta truy cập thuộc tính của lớp con thì sẽ không bị ghi đè, mà nó sẽ truy cập thuộc tính của lớp cha.
 
@@ -134,9 +138,11 @@ public static void main(String args[]){
 }
 ```
 
-<content-result>
+::Result
+
     <code>90</code>
-</content-result>
+
+::
 
 ## Đa hình thời gian biên dịch
 
@@ -159,10 +165,12 @@ public class OverloadingOrder {
 }
 ```
 
-<content-result>
+::Result
+
     <code>String: String first, int: 11</code></br>
     <code>int: 99, String: Int first</code>
-</content-result>
+
+::
 
 ::alert{type="infor"}
 

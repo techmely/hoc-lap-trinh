@@ -340,13 +340,13 @@ console.log("sau vòng lặp");
 
 Xem đáp án
 
-<content-result>
+::Result
 
 <code>trước vòng lặp</code>
 <code>sau vòng lặp</code>
 <code>100000000</code>
 
-</content-result>
+::
 
 Nghĩa là hàm với `setTimeout` được gọi ngay sau vòng lặp.
 

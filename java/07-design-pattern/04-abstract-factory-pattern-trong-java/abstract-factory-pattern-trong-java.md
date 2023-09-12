@@ -196,9 +196,11 @@ public class TestDesignPatterns {
 }
 ```
 
-<content-result>
+::Result
+
 AbstractFactory PC Config::RAM= 2 GB, HDD=500 GB, CPU=2.4 GHz
 AbstractFactory Server Config::RAM= 16 GB, HDD=1 TB, CPU=2.9 GHz
-</content-result>
+
+::
 
 Bây giờ, nếu chúng ta muốn thêm một lớp con khác, ví dụ như `Laptop`, chúng ta chỉ cần tạo lớp `Laptop` và `LaptopFactory` tương ứng mà không cần sửa đổi code hiện tại.

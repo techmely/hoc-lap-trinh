@@ -125,9 +125,11 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Honda</code>
-</content-result>
+
+::
 
 ### Thay đổi một phần tử mảng trong Java
 
@@ -147,9 +149,11 @@ public class TruyCapArray2 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Phần tử đầu tiên: Morning</code>
-</content-result>
+
+::
 
 ### Lấy về số phần tử hiện tại của mảng trong java
 
@@ -168,9 +172,11 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Độ dài của mảng cars là: 4</code>
-</content-result>
+
+::
 
 ### Duyệt các phần tử của mảng trong Java
 
@@ -187,12 +193,14 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Honda</code><br/>
     <code>BMW</code><br/>
     <code>Ford</code><br/>
     <code>Mazda</code>
-</content-result>
+
+::
 
 **Sử dụng foreach:** so với vòng lặp `for` thì vòng lặp `foreach` dễ viết hơn, nó không yêu cầu bộ đếm (sử dụng thuộc tính length) và nó dễ đọc hơn.
 
@@ -207,12 +215,14 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Honda</code><br/>
     <code>BMW</code><br/>
     <code>Ford</code><br/>
     <code>Mazda</code>
-</content-result>
+
+::
 
 ## Sắp xếp mảng trong Java
 
@@ -234,13 +244,15 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Mảng cars sau khi được sắp xếp:</code><br/>
     <code>BMW</code><br/>
     <code>Ford</code><br/>
     <code>Honda</code><br/>
     <code>Mazda</code>
-</content-result>
+
+::
 
 ### Truyền mảng vào phương thức trong java
 
@@ -264,9 +276,11 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>3</code><br/>
-</content-result>
+
+::
 
 ### Sao chép một mảng trong java
 
@@ -285,9 +299,11 @@ public class Thaycacac {
 }
 ```
 
-<content-result>
+::Result
+
     <code>caffein</code><br/>
-</content-result>
+
+::
 
 ## Mảng nhiều chiều
 
@@ -355,8 +371,10 @@ public class TestArray3 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>1 2 3</code><br/>
     <code>2 4 5</code><br/>
     <code>4 4 5</code>
-</content-result>
+
+::

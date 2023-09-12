@@ -70,9 +70,11 @@ public class EnumExample {
 }
 ```
 
-<content-result>
+::Result
+
     <code>MONDAY</code>
-</content-result>
+
+::
 
 <div class="example">enum định nghĩa bên ngoài một lớp</div>
 
@@ -89,9 +91,11 @@ public class EnumExample {
 }
 ```
 
-<content-result>
+::Result
+
     <code>MONDAY</code>
-</content-result>
+
+::
 
 ## Duyệt các phần tử trong enum
 
@@ -112,7 +116,8 @@ public class EnumExample {
 }
 ```
 
-<content-result>
+::Result
+
     <code>MONDAY</code><br/>
     <code>TUESDAY</code><br/>
     <code>WEDNESDAY</code><br/>
@@ -120,7 +125,8 @@ public class EnumExample {
     <code>FRIDAY</code><br/>
     <code>SATURDAY</code><br/>
     <code>SUNDAY</code>
-</content-result>
+
+::
 
 ## Khởi tạo giá trị đặc biệt cho hằng số enum
 
@@ -167,7 +173,8 @@ public class EnumExample3 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>MONDAY = 2</code><br/>
     <code>TUESDAY = 3</code><br/>
     <code>WEDNESDAY = 4</code><br/>
@@ -176,7 +183,8 @@ public class EnumExample3 {
     <code>SATURDAY = 7</code><br/>
     <code>SUNDAY = 1</code><br/>
     <code>value 3 is TUESDAY</code><br/>
-</content-result>
+
+::
 
 ## So sánh các phần tử enum trong Java
 
@@ -208,10 +216,12 @@ public class EnumExample {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Today is holiday</code><br/>
     <code>Today is holiday</code>
-</content-result>
+
+::
 
 ## Enum sử dụng trong switch case
 
@@ -241,9 +251,11 @@ public class EnumExample {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Today is holiday</code>
-</content-result>
+
+::
 
 ## Ghi đè phương thức trong Enum
 
@@ -278,7 +290,9 @@ public class EnumExample3 {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Today is holiday</code><br/>
     <code>Today is holiday</code>
-</content-result>
+
+::

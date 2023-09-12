@@ -43,9 +43,11 @@ public class ThreadSleep {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Output: leep time in ms = 2001</code>
-</content-result>
+
+::
 
 Kết quả trên mình đã chạy nhiều lần mới được, để chúng ta thấy rằng không phải cứ `sleep(2000)` là nó chờ đúng `2000ms` đâu nhé.
 
@@ -83,7 +85,8 @@ class ThreadSleep {
     <code>Main thread:1030</code></br>
     <code>Child thread start</code></br>
     <code>Child thread:1000</code></br>
-</content-result>
+
+::
 
 ## Thread join() là gì?
 
@@ -134,7 +137,8 @@ class MyThread implements Runnable {
     <code>Kết thúc thread:th3</code></br>
     <code>Kết thúc thread:th1</code></br>
     <code>Kết thúc thread:th2</code></br>
-</content-result>
+
+::
 
 <div class="example">Khi sử dụng hàm Join</div>
 
@@ -195,7 +199,8 @@ class MyThread implements Runnable {
     <code>Kết thúc thread:th2</code></br>
     <code>Bắt đầu thread: th3</code></br>
     <code>Kết thúc thread:th3</code></br>
-</content-result>
+
+::
 
 Khi so sánh với chương trình cài đặt không sử dụng hàm `Join`, `thread2, thread3`, chưa khởi chạy ngay được gọi bằng lệnh `th2.start()`, `th3.start()` , `thead2` và `thread3` đã đợi cho đến khi `thread1` thực thi xong mới khởi chạy. Tương tự khi `thread2` chạy thì thread3 vẫn phải đợi cho đến khi `thread2` thực thi xong. Do đó mà kết quả in ra màn hình theo đúng thứ tự `th1>th2>th3` mà chúng đã được khởi chạy.
 
@@ -257,7 +262,8 @@ class TestJoinMethod1 extends Thread {
     <code>4</code></br>
     <code>5</code></br>
     <code>5</code>
-</content-result>
+
+::
 
 Như bạn thấy trong ví dụ trên, khi `t1` hoàn thành nhiệm vụ của nó thì `t2` và `t3` bắt đầu thực thi.
 
@@ -314,6 +320,7 @@ class TestJoinMethod2 extends Thread {
     <code>4</code></br>
     <code>5</code></br>
     <code>5</code>
-</content-result>
+
+::
 
 Trong ví dụ trên, khi `t1` hoàn thành nhiệm vụ của nó cho 1500 mili giây (3 lần) thì t2 và t3 bắt đầu thực thi.

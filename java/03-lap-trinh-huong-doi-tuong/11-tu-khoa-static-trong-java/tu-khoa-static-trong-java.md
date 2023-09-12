@@ -65,10 +65,12 @@ public class Student {
 }
 ```
 
-<content-result>
+::Result
+
     <code>05740 - Hoa - FPT</code><br/>
     <code>05439 - Huyen - FPT</code>
-</content-result>
+
+::
 
 ::alert{type="infor"}
 Ta không thể sử dụng hàm tạo để khởi đầu các thuộc tính tĩnh, bởi vì hàm tạo không phải là phương thức tĩnh
@@ -114,10 +116,12 @@ public class Student {
 }
 ```
 
-<content-result>
+::Result
+
     <code>05740 - Hoa - Bưu Chính Viễn Thông</code><br/>
     <code>05439 - Huyen - Bưu Chính Viễn Thông</code>
-</content-result>
+
+::
 
 ## Khối static trong Java
 
@@ -138,7 +142,9 @@ public class Student {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Khối static: hello !</code><br/>
     <code>Main: hello !</code>
-</content-result>
+
+::

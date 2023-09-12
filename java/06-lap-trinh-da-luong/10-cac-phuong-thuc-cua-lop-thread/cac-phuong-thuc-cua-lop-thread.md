@@ -98,7 +98,8 @@ class RunnableDemo implements Runnable {
 }
 ```
 
-<content-result>
+::Result
+
     <code>Creating Thread-1</code><br/>
     <code>Starting Thread-1</code><br/>
     <code>Creating Thread-2</code><br/>
@@ -133,7 +134,8 @@ class RunnableDemo implements Runnable {
     <code>Thread Thread-1 exiting.</code><br/>
     <code>Thread Thread-2 exiting.</code><br/>
     <code>Main thread exiting.</code><br/>
-</content-result>
+
+::
 
 ## Hàm destroy() của lớp Thread
 
