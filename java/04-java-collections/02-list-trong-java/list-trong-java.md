@@ -81,19 +81,13 @@ public class ListExample {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Phan tu co index = 2 la: C++</code><br/>
     <code>Java</code><br/>
     <code>Python</code><br/>
     <code>C++</code><br/>
     <code>PHP</code>
-  </div>
-</div>
+</content-result>
 
 <div class="example">Sử dụng Arrays.asList()</div>
 
@@ -115,18 +109,12 @@ public class ListExample1 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Java</code><br/>
     <code>C++</code><br/>
     <code>PHP</code><br/>
     <code>Python</code>
-  </div>
-</div>
+</content-result>
 
 ## List Iterator trong java
 
@@ -168,12 +156,7 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Phan tu co index = 2 la: C++</code><br/>
     <code>Duyet cac phan tu tu dau den cuoi:</code><br/>
     <code>Java</code><br/>
@@ -185,5 +168,4 @@ public class Thaycacac {
     <code>C++</code><br/>
     <code>Python</code><br/>
     <code>Java</code><br/>
-  </div>
-</div>
+</content-result>

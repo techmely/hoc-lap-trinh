@@ -27,8 +27,6 @@ try {
 }
 ```
 
-<content-example />
-
 ```java
 public class TestMultipleCatchBlock {
 
@@ -49,18 +47,10 @@ public class TestMultipleCatchBlock {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>task1 is completed</code><br/>
     <code>rest of the code...</code>
-  </div>
-</div>
-
-<content-example />
+</content-result>
 
 ```java
 public class TestMultipleCatchBlock1 {
@@ -81,14 +71,8 @@ public class TestMultipleCatchBlock1 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Compile-time error</code>
-  </div>
-</div>
+</content-result>
 
 Chương trình trên bị lỗi tại compile-time là vì khi có ngoại lệ xảy ra thì các khối lệnh catch (ArithmeticException e) và catch (ArrayIndexOutOfBoundsException e) không bao giờ được thực thi, do khối catch (Exception e) đã bắt tất cả các ngoại lệ rồi.

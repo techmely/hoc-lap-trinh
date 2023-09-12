@@ -31,7 +31,7 @@ Thẻ **<th:block>** là một thẻ ảo trong Thymeleaf, nó không tương �
 ```
 
 Ví dụ đơn giản với vòng lặp th:each
-<content-example>
+
 CONTROLLER
 </content-example>
 

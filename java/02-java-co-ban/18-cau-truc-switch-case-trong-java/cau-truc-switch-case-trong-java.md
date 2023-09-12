@@ -44,8 +44,6 @@ Sau đây là sơ đồ khối mô tả sự hoạt động của cấu trúc r�
 
 Switch sẽ kiểm tra giá trị của **biến** (nằm trong ngoặc đơn sau switch kia), và so sánh biến với từng giá trị khác nhau, lần lượt từ trên xuống dưới, mỗi giá trị cần so sánh gọi là một case. Ở đoạn code trên, các giá trị để so sánh với **biến** là **giá trị 1**, **giá trị 2**. Khi một trường hợp đúng (`true`), khối lệnh ở trong `case` đó sẽ được thực thi. Câu lệnh `break` để thoát ra khỏi cấu trúc switch bạn có thể xem thêm ở bài [từ khóa break và continue](/bai-viet/java/tu-khoa-break-va-continue).
 
-<content-example />
-
 ```java
 public class Thaycacac {
   public static void main(String[] args) {
@@ -71,15 +69,9 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Đây là số 2</code>
-    </div>
-</div>
+  </content-result>
 
 ## Dạng đủ
 
@@ -116,8 +108,6 @@ Sau đây là sơ đồ khối mô tả sự hoạt động của cấu trúc sw
 
 Nếu tất cả các trường hợp đều sai (tức là các giá trị ở `case` không bằng với **biến**), thì khối lệnh ở trong `default` sẽ được thực thi.
 
-<content-example />
-
 ```java
 public class Thaycacac {
   public static void main(String[] args) {
@@ -140,19 +130,13 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Đây là số 2</code><br/>
     <code>Đây là số 3</code><br/>
     <code>Đây là số 4</code><br/>
     <code>Đây là số 5</code><br/>
     <code>Chạy vào khối default</code><br/>
-  </div>
-</div>
+</content-result>
 
 ::alert{type="infor"}<ul>
 

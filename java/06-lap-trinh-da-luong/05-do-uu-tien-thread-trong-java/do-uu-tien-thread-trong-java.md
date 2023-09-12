@@ -31,8 +31,6 @@ Java có định nghĩa sẵn 3 mức ưu tiên chuẩn như sau:
 
 ## Ví dụ sử dụng độ ưu tiên Thread trong Java
 
-<content-example />
-
 ```java
 class TestMultiPriority1 extends Thread {
     public void run() {
@@ -53,18 +51,12 @@ class TestMultiPriority1 extends Thread {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Đang chạy luồng:Thread-1</code><br/>
     <code>Đang chạy luồng:Thread-0</code><br/>
     <code>Độ ưu tiên là:1</code><br/>
     <code>Độ ưu tiên là:10</code>
-  </div>
-</div>
+</content-result>
 
 <div class="example">một ví dụ khác</div>
 
@@ -110,12 +102,7 @@ public class ThreadInfoExample {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>ID luồng 1: 10</code><br/>
     <code>ID luồng 2: 11</code><br/>
     <code>ID luồng 3: 12</code><br/>
@@ -134,5 +121,4 @@ public class ThreadInfoExample {
     <code>Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
     <code>Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
     <code>Luồng: Luồng 1 có độ ưu tiên là 1</code>
-  </div>
-</div>
+</content-result>

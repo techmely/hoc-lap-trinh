@@ -29,8 +29,6 @@ Một `EnumSet` chỉ lưu trữ các giá trị `enum` của một `enum` cụ 
 
 Hàm `allof()` tạo ra một `EnumSet` có chứa tất cả các giá trị của enum kiểu `Size` đã chỉ định.
 
-<content-example />
-
 ```java
 import java.util.EnumSet;
 
@@ -49,15 +47,9 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>EnumSet: [SMALL, MEDIUM, LARGE, EXTRALARGE]</code>
-  </div>
-</div>
+</content-result>
 
 Lưu ý câu lệnh
 
@@ -70,8 +62,6 @@ EnumSet<Size> sizes = EnumSet.allOf(Size.class);
 ### Sử dụng noneOf(Size)
 
 Hàm `noneOf()` tạo ra một `EnumSet` trống.
-
-<content-example />
 
 ```java
 import java.util.EnumSet;
@@ -93,23 +83,15 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Empty EnumSet : []</code>
-  </div>
-</div>
+</content-result>
 
 Ở đây, chúng ta đã tạo ra một `enum` trống có tên là `Size`. Lưu ý chúng ta chỉ có thể chèn các phần tử của kiểu enum `Size` trong chương trình trên. Bởi vì chúng ta đã tạo ra `EnumSet` trống bằng cách sử dụng `enum Size`.
 
 ### Sử dụng hàm range(e1, e2)
 
 Hàm `range()` tạo ra một EnumSet chứa tất cả các giá trị của một `enum` giữa 2 giá trị `e1` và `e2` bao gồm cả hai giá trị này.
-
-<content-example />
 
 ```java
 import java.util.EnumSet;
@@ -130,21 +112,13 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>EnumSet: [MEDIUM, LARGE, EXTRALARGE]</code>
-  </div>
-</div>
+</content-result>
 
 ### Sử dụng hàm of()
 
 Hàm `of()` tạo ra một EnumSet có chứa các phần tử đã chỉ định.
-
-<content-example />
 
 ```java
 import java.util.EnumSet;
@@ -167,23 +141,15 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>EnumSet1: [MEDIUM]</code><br/>
     <code>EnumSet2: [SMALL, LARGE]</code>
-  </div>
-</div>
+</content-result>
 
 ## Chèn các phần tử vào Enumset trong Java
 
 - `add()` – chèn các giá trị enum được chỉ định vào `EnumSet`
 - `addAll()` chèn tất cả các phần tử của `collection` đã chỉ định vào `set`
-
-<content-example />
 
 ```java
 import java.util.EnumSet;
@@ -213,24 +179,16 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>EnumSet using add(): [MEDIUM]</code><br/>
     <code>EnumSet using addAll(): [SMALL, MEDIUM, LARGE, EXTRALARGE]</code>
-  </div>
-</div>
+</content-result>
 
 Trong ví dụ trên, chúng ta đã sử dụng hàm `addAll()` để chèn tất cả các phần tử của `EnumSet Size1` đến `EnumSet Size2`. Ta cũng có thể chèn các phần tử từ các collection khác như `ArrayList`, Link`edList,... để một `EnumSet`bằng cách sử dụng hàm`addAll()`. Tuy nhiên, tất cả các `collection`nên thuộc cùng loại`enum`.
 
 ## Truy cập các phần tử của Enumset
 
 Để truy cập các phần tử của `EnumSet`, chúng ta có thể sử dụng hàm `iterator()`. Để sử dụng hàm này, chúng ta phải `import` gói `java.util.Iterator`.
-
-<content-example />
 
 ```java
 import java.util.EnumSet;
@@ -258,15 +216,9 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>EnumSet: SMALL, MEDIUM, LARGE, EXTRALARGE,</code>
-  </div>
-</div>
+</content-result>
 
 Lưu ý:
 
@@ -277,8 +229,6 @@ Lưu ý:
 
 - `remove()` – xóa phần tử đã chỉ định khỏi `EnumSet`
 - `removeAll()` – loại bỏ tất cả các phần tử khỏi `EnumSet`
-
-<content-example />
 
 ```java
 import java.util.EnumSet;
@@ -306,17 +256,11 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>EnumSet: [SMALL, MEDIUM, LARGE, EXTRALARGE]</code><br/>
     <code>Is MEDIUM removed? true</code><br/>
     <code>Are all elements removed? true</code>
-  </div>
-</div>
+</content-result>
 
 ## Một số hàm trong Enumset
 

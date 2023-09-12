@@ -25,8 +25,6 @@ Một lớp **StringTokenizer** có thể sử dụng để tách một chuỗi 
 
 Các phương thức khởi tạo ở trên được minh họa trong các ví dụ sau:
 
-<content-example />
-
 ```java
 StringTokenizer st1 = new StringTokenizer("A Stream of words"A Stream of words);
 StringTokenizer st2 = new StringTokenizer("4*3/2-1+4", "+-*/", true);
@@ -51,8 +49,6 @@ Lớp StringTokenizer cài đặt [interface](/bai-viet/java/interface-trong-jav
 | nextToken(String) | Thay đổi bộ dấu phân cách bằng chuỗi được chỉ định, và sau đó trả về token kế tiếp trong chuỗi.  |
 
 Hãy xem xét chương trình đã cho ở bên dưới. Trong ví dụ này, hai đối tượng StringTokenizer đã được tạo ra. Đầu tiên, “st1” được sử dụng để phân tách một biểu thức toán học. Thứ hai, “st2” phân tách một dòng của các trường được phân cách bởi dấu phẩy. Cả hai tokenizer, phương thức `hasMoreTokens()` và `nextToken()` được sử dụng đế duyệt qua tập các token, và hiển thị các token.
-
-<content-example />
 
 ```java
 import java.util.*;

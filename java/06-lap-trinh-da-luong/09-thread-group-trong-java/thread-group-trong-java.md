@@ -22,8 +22,6 @@ Chỉ có 2 [constructor](/bai-viet/java/constructor-trong-java) để khởi t�
 - `ThreadGroup(String name)` - tạo một nhóm thread có tên.
 - `ThreadGroup(ThreadGroup parent, String name)` - tạo một nhóm `thread` với một nhóm cha và tên.
 
-<content-example />
-
 ```java
 // ThreadGroupDemo.java
 public class ThreadGroupDemo implements Runnable {
@@ -48,12 +46,7 @@ public class ThreadGroupDemo implements Runnable {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>two</code><br/>
     <code>Thread Group Name: Parent ThreadGroup</code><br/>
     <code>java.lang.ThreadGroup[name=Parent ThreadGroup,maxpri=10]</code><br/>
@@ -61,16 +54,13 @@ public class ThreadGroupDemo implements Runnable {
         <code>Thread[three,5,Parent ThreadGroup]</code><br/>
     <code>three</code><br/>
     <code>one</code><br/>
-  </div>
-</div>
+</content-result>
 
 ## Các hàm trong Thread Group
 
 Có nhiều phương thức trong lớp `ThreadGroup`. Một danh sách các phương thức quan trọng được đưa ra dưới đây.
 
 |Method| Description| |`int activeCount()`| Trả về số no. của các thread đang chạy trong nhóm hiện tại.| |`int activeGroupCount()`| Trả về số no. của nhóm active trong nhóm thread này.| |`void destroy()`| Phá hủy nhóm thread này và tất cả các nhóm con của nó.| |`String getName()` |Trả về tên của nhóm này.| |`ThreadGroup getParent()`| Trả lại nhóm cha của nhóm này.| |`void interrupt()` |Ngắt tất cả các thread của nhóm này.| |`void list()`| In thông tin của nhóm này tới console tiêu chuẩn.|
-
-<content-example />
 
 ```java
 ThreadGroup tg1 = new ThreadGroup("Group A");

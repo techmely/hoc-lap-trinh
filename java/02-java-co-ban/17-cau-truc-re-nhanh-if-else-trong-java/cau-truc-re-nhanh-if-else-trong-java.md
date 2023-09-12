@@ -57,8 +57,6 @@ Sự hoạt động của cấu trúc if thiếu được mô ta qua sơ đồ s
 
 ![Cấu trúc rẽ nhánh dạng khuyết trong java](https://user-images.githubusercontent.com/29374426/125040208-92bb7200-e0c1-11eb-9781-bc65864c5b23.png)
 
-<content-example />
-
 ```java
 public class Thaycacac {
   public static void main(String []args) {
@@ -96,8 +94,6 @@ Sự hoạt động của cấu trúc `if-else` thiếu được mô ta qua sơ 
 
 ![Cấu trúc rẽ nhánh dạng đủ trong java](https://user-images.githubusercontent.com/29374426/125040287-a7980580-e0c1-11eb-89cf-97da184f33cf.png)
 
-<content-example />
-
 ```java
 public class Thaycacac {
   public static void main(String []args) {
@@ -110,15 +106,9 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Bạn đủ tuổi để đăng ký</code>
-  </div>
-</div>
+</content-result>
 
 ### Dạng if..else if..else
 
@@ -142,8 +132,6 @@ if (điều kiện 1) {
 }
 ```
 
-<content-example />
-
 ```java
 public class Thaycacac {
   public static void main(String []args) {
@@ -158,15 +146,9 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Sinh viên có thể tham gia</code>
-  </div>
-</div>
+</content-result>
 
 ### Một số ví dụ cấu trúc rẽ nhánh if else
 

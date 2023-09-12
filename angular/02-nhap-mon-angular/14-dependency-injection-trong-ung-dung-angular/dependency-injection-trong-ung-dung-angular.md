@@ -90,8 +90,7 @@ Và đây là phần UI cho **tab-group.component.html**:
     (click)="selectItem(idx)"
   >
     {{tab.title}}
-  </div>
-</div>
+</content-result>
 
 <div class="tab-body">
   <ng-container *ngFor="let tab of tabPanelList; index as idx">

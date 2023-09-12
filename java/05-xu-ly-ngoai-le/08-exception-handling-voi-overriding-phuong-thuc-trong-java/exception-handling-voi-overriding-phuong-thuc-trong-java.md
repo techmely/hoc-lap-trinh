@@ -15,8 +15,6 @@ position: 8
 
 Nếu phương thức của lớp cha không khai báo một exception thì phương thức ghi đè của lớp con không thể khai báo `Checked Exception`
 
-<content-example />
-
 ```java
 import java.io.*;
 class Parent{
@@ -34,19 +32,11 @@ class TestExceptionChild extends Parent{
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Compile Time Error</code>
-  </div>
-</div>
+</content-result>
 
 Nếu phương thức của lớp cha không khai báo một exception thì phương thức ghi đè của lớp con không thể khai báo `Checked Exception` nhưng có thể khai báo `Unchecked Exception`.
-
-<content-example />
 
 ```java
 import java.io.*;
@@ -65,15 +55,9 @@ class TestExceptionChild1 extends Parent{
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>child</code>
-  </div>
-</div>
+</content-result>
 
 ## Nếu phương thức lớp cha khai báo một exception
 
@@ -99,15 +83,9 @@ class TestExceptionChild2 extends Parent{
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Compile Time Error</code>
-  </div>
-</div>
+</content-result>
 
 <div class="example">trường hợp phương thức ghi đè của lớp con khai báo cùng exception đó</div>
 
@@ -129,15 +107,9 @@ class TestExceptionChild3 extends Parent{
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>child</code>
-  </div>
-</div>
+</content-result>
 
 <div class="example">trường hợp phương thức ghi đè của lớp con khai báo exception của lớp con</div>
 
@@ -159,15 +131,9 @@ class TestExceptionChild4 extends Parent{
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>child</code>
-  </div>
-</div>
+</content-result>
 
 <div class="example">trường hợp phương thức ghi đè của lớp con không khai báo exception nào</div>
 
@@ -189,12 +155,6 @@ class TestExceptionChild5 extends Parent{
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>child</code>
-  </div>
-</div>
+</content-result>

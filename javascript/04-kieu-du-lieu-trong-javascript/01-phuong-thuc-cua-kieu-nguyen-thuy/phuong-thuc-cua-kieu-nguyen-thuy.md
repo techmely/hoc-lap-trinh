@@ -134,8 +134,6 @@ Không gọi được phương thức ứng với kiểu `null` và `undefined`.
 
 ::
 
-<content-example>
-
 Gọi phương thức của `null` và `undefined` đều bị lỗi như sau:
 
 </content-example>

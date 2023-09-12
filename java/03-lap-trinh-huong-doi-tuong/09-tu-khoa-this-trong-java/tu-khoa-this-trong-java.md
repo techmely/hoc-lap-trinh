@@ -45,16 +45,10 @@ public class HocSinh {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>0 null</code><br/>
     <code>0 null </code>
-  </div>
-</div>
+</content-result>
 
 Ở ví dụ này, tên của tham số của [constructor](/bai-viet/java/phuong-thuc-khoi-tao) `HocSinh()` trùng với tên của biến toàn cục đó là lý do tại sao cần phải sử dụng từ khóa this để phân biệt biến cục bộ và biến toàn cục. Từ khóa this sẽ giúp chúng ta giải quyết vấn đề này.
 
@@ -82,16 +76,10 @@ public class HocSinh {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>111 Viet</code><br/>
     <code>222 Nam</code>
-  </div>
-</div>
+</content-result>
 
 ::alert{type="infor"}
 Nếu biến cục bộ và biến toàn cục có tên khác nhau thì không cần sử dụng từ khóa this.
@@ -100,8 +88,6 @@ Nếu biến cục bộ và biến toàn cục có tên khác nhau thì không c
 ## Sử dụng this() gọi constructor của lớp hiện tại.
 
 Phương thức `this()` có thể được sử dụng để gọi [constructor](/bai-viet/java/phuong-thuc-khoi-tao) của lớp hiện tại. Cách sử dụng này sẽ hữu dụng hơn nếu bạn có nhiều [constructor](/bai-viet/java/phuong-thuc-khoi-tao) trong một lớp và bạn muốn sử dụng lại.
-
-<content-example />
 
 ```java
 public class HocSinh2 {
@@ -132,17 +118,11 @@ public class HocSinh2 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>gọi Constructor mặc định</code><br/>
     <code>111 Viet</code><br/>
     <code>222 Nam</code>
-  </div>
-</div>
+</content-result>
 
 `this()` được dùng để sự dụng lại [constructor](/bai-viet/java/phuong-thuc-khoi-tao) trong [constructor](/bai-viet/java/phuong-thuc-khoi-tao) khác. Nó sẽ thừa kế các thuộc tính của [constructor](/bai-viet/java/phuong-thuc-khoi-tao) được gọi.
 
@@ -176,16 +156,10 @@ public class HocSinh3 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>111 Viet</code><br/>
     <code>222 Nam</code>
-  </div>
-</div>
+</content-result>
 
 ::alert{type="infor"}
 this() phải được khai báo dòng lệnh đầu tiên trong Constructor.
@@ -196,8 +170,6 @@ this() phải được khai báo dòng lệnh đầu tiên trong Constructor.
 Bạn có thể sử dụng từ khóa `this` để gọi phương thức của lớp hiện tại. Nếu bạn không sử dụng từ khóa `this`, trình biên dịch sẽ tự động thêm từ khóa `this` cho việc gọi phương thức.
 
 ![image](https://user-images.githubusercontent.com/29374426/131204535-5cb697f9-425d-4019-af0f-e84ca1542234.png)
-
-<content-example />
 
 ```java
 public class HocSinh4 {
@@ -222,16 +194,10 @@ public class HocSinh4 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Xin chao Thaycacac</code><br/>
     <code>Hello Thaycacac</code>
-  </div>
-</div>
+</content-result>
 
 ## Sử dụng từ khóa this như một tham số của phương thức
 
@@ -255,15 +221,9 @@ public class HocSinh5 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Hello Thaycacac</code>
-  </div>
-</div>
+</content-result>
 
 Chúng ta cũng có thể truyền từ khóa `this` trong [constructor](/bai-viet/java/phuong-thuc-khoi-tao).Việc này rất hữu ích nếu chúng ta phải sử dụng một đối tượng trong nhiều lớp.
 
@@ -296,15 +256,9 @@ class A4 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>10</code>
-  </div>
-</div>
+</content-result>
 
 ## Sử dụng từ khóa this để trả về instance của lớp hiện tại
 
@@ -327,12 +281,6 @@ class Test1 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Hello Thaycacac</code>
-  </div>
-</div>
+</content-result>

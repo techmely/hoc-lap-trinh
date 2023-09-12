@@ -104,8 +104,6 @@ Tên_mảng[Vị_trí_của_phần tử]
 
 ::alert{type="infor"}Phần tử đầu tiên của mảng có chỉ số là 0::
 
-<content-example />
-
 ```java
 int a[] = new int [3]; // Khai báo và tạo ra mảng gồm 3 phần tử
 ```
@@ -127,21 +125,13 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Honda</code>
-  </div>
-</div>
+</content-result>
 
 ### Thay đổi một phần tử mảng trong Java
 
 Để thay đổi giá trị của một phần tử cụ thể, hãy gán lại giá trị dựa vào vị trí của phần tử trong mảng
-
-<content-example />
 
 ```java
 public class TruyCapArray2 {
@@ -157,15 +147,9 @@ public class TruyCapArray2 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Phần tử đầu tiên: Morning</code>
-  </div>
-</div>
+</content-result>
 
 ### Lấy về số phần tử hiện tại của mảng trong java
 
@@ -174,8 +158,6 @@ Mảng trong Java là một đối tượng, do vậy nó cũng có các thuộc
 ```java
 Tên_mảng.length
 ```
-
-<content-example />
 
 ```java
 public class Thaycacac {
@@ -186,15 +168,9 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Độ dài của mảng cars là: 4</code>
-  </div>
-</div>
+</content-result>
 
 ### Duyệt các phần tử của mảng trong Java
 
@@ -211,18 +187,12 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Honda</code><br/>
     <code>BMW</code><br/>
     <code>Ford</code><br/>
     <code>Mazda</code>
-  </div>
-</div>
+</content-result>
 
 **Sử dụng foreach:** so với vòng lặp `for` thì vòng lặp `foreach` dễ viết hơn, nó không yêu cầu bộ đếm (sử dụng thuộc tính length) và nó dễ đọc hơn.
 
@@ -237,18 +207,12 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Honda</code><br/>
     <code>BMW</code><br/>
     <code>Ford</code><br/>
     <code>Mazda</code>
-  </div>
-</div>
+</content-result>
 
 ## Sắp xếp mảng trong Java
 
@@ -270,19 +234,13 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Mảng cars sau khi được sắp xếp:</code><br/>
     <code>BMW</code><br/>
     <code>Ford</code><br/>
     <code>Honda</code><br/>
     <code>Mazda</code>
-  </div>
-</div>
+</content-result>
 
 ### Truyền mảng vào phương thức trong java
 
@@ -306,15 +264,9 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>3</code><br/>
-  </div>
-</div>
+</content-result>
 
 ### Sao chép một mảng trong java
 
@@ -333,15 +285,9 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>caffein</code><br/>
-  </div>
-</div>
+</content-result>
 
 ## Mảng nhiều chiều
 
@@ -359,8 +305,6 @@ Trong đó:
 
 - [KDL](/bai-viet/java/cac-kieu-du-lieu-trong-java) gồm: kiểu nguyên thủy, kiểu đối tượng… nó xác định kiểu dữ liệu của từng phần tử của mảng.
 - sp1, sp2, …, sptN lần lượt là số phần tử trên chiều thứ 1, 2, .., N
-
-<content-example />
 
 ```java
 // Khai báo một con trỏ của mảng 2 chiều
@@ -411,14 +355,8 @@ public class TestArray3 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>1 2 3</code><br/>
     <code>2 4 5</code><br/>
     <code>4 4 5</code>
-  </div>
-</div>
+</content-result>

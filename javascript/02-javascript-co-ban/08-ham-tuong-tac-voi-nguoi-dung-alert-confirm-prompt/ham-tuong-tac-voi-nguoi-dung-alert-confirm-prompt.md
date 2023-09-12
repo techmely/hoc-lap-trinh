@@ -23,8 +23,6 @@ Cú pháp:
 alert(message);
 ```
 
-<content-example />
-
 ```js
 alert("Say hello from kungfutech.edu.vn");
 ```

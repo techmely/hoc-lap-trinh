@@ -39,8 +39,6 @@ Trong ví dụ trên, chúng ta đã tạo ra một `EnumMap` có tên là `size
 - `put()` – chèn cặp `key/value` được chỉ định (mục nhập) vào `EnumMap`
 - `putAll()` – chèn tất cả các mục của map được chỉ định vào `map` này
 
-<content-example />
-
 ```java
 import java.util.EnumMap;
 
@@ -69,16 +67,10 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>EnumMap1: {SMALL=28, MEDIUM=32}</code><br/>
     <code>EnumMap2: {SMALL=28, MEDIUM=32, LARGE=36}</code><br/>
-  </div>
-</div>
+</content-result>
 
 Ở ví dụ trên, chúng ta đã sử dụng hàm `putAll()` để chèn tất cả các phần tử của EnumMap `sizes1` đến một EnumMap của `sizes2`.
 
@@ -89,8 +81,6 @@ Nó cũng có thể chèn các phần tử từ các map khác như `HashMap`, `
 - `entrySet()` – trả về một tập hợp tất cả các cặp key / value (mục nhập) của EnumMap
 - `keySet()` – trả về một tập hợp tất cả các key của EnumMap
 - `values()` – trả về một tập hợp tất cả các value của EnumMap
-
-<content-example />
 
 ```java
 import java.util.EnumMap;
@@ -122,22 +112,14 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
     <code>Key/Value mappings: [SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40]</code><br/>
     <code>Keys: [SMALL, MEDIUM, LARGE, EXTRALARGE]</code><br/>
     <code>Values: [28, 32, 36, 40]</code>
-  </div>
-</div>
+</content-result>
 
 - Hàm `get()` trả về `value` liên kết với key chỉ định. Nó trả về `null` nếu không tìm thấy `key` được chỉ định
-
-<content-example />
 
 ```java
 import java.util.EnumMap;
@@ -164,23 +146,15 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
     <code>Value of MEDIUM: 32</code>
-  </div>
-</div>
+</content-result>
 
 ## Xóa các phần tử khỏi EnumMap
 
 - `remove(key)` – trả về và xóa mục nhập được liên kết với key được chỉ định khỏi `map`
 - `remove(key, value)` – chỉ xóa mục nhập khỏi `maps` nếu key được chỉ định liên kết với `value` đã chỉ định và trả về giá trị `boolean`
-
-<content-example />
 
 ```java
 import java.util.EnumMap;
@@ -212,26 +186,18 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
     <code>Removed Value: 32</code><br/>
     <code>Is the entry {SMALL=28} removed? True</code><br/>
     <code>Updated EnumMap: {LARGE=36, EXTRALARGE=40}</code>
-  </div>
-</div>
+</content-result>
 
 ## Thay thế các phần tử EnumMap
 
 - `replace(key, value)` – thay thế `value` liên kết với `key` chỉ định bằng `value` mới
 - `replace(key, old, new)` – thay thế cũ `value` bằng va`lue mới nếu `value`cũ đã được liên kết với`key` chỉ định
 - `replaceAll(function)` – thay thế từng `value` của `map` bằng kết quả của chức năng được chỉ định
-
-<content-example />
 
 ```java
 import java.util.EnumMap;
@@ -263,17 +229,11 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
     <code>EnumMap using replace(): {SMALL=28, MEDIUM=30, LARGE=34, EXTRALARGE=40}</code><br/>
     <code>EnumMap using replaceAll(): {SMALL=31, MEDIUM=33, LARGE=37, EXTRALARGE=43}</code>
-  </div>
-</div>
+</content-result>
 
 Trong chương trình trên, chú ý câu lệnh:
 

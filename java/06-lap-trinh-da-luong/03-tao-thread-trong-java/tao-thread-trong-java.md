@@ -82,12 +82,7 @@ public static void main(String[] args) {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>10</code></br>
     <code>9</code></br>
     <code>8</code></br>
@@ -99,8 +94,7 @@ public static void main(String[] args) {
     <code>2</code></br>
     <code>1</code></br>
     <code>Hết giờ</code></br>
-  </div>
-</div>
+</content-result>
 
 ## Tạo Thread bằng cách implement từ Interface Runnable
 
@@ -140,12 +134,7 @@ public static void main(String[] args) {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>10</code></br>
     <code>9</code></br>
     <code>8</code></br>
@@ -157,8 +146,7 @@ public static void main(String[] args) {
     <code>2</code></br>
     <code>1</code></br>
     <code>Hết giờ</code></br>
-  </div>
-</div>
+</content-result>
 
 ## Lấy ra Thread hiện tại
 

@@ -15,8 +15,6 @@ Java cung cấp cho chúng ta rất nhiều cấu trúc dữ liệu, trong đó 
 
 Cứ tưởng tượng nếu chúng ta cần sử dụng đến 100 biến `int` để lưu trữ data, thì chỉ với việc khai báo chúng ta đã ngốn hết 100 dòng code. Java cung cấp cho chúng ta rất nhiều cấu trúc dữ liệu, trong đó array là một cấu trúc cho phép lưu trữ một tập hợp các dữ liệu cùng loại, tuần tự và có số lượng xác định.
 
-<content-example />
-
 ```java
 int[] arr = new int[100];
 ```
@@ -63,15 +61,9 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>1 2 3 4 5 6 7 8 9 10</code>
-  </div>
-</div>
+</content-result>
  
 </div>
 
@@ -107,15 +99,9 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>6</code>
-  </div>
-</div>
+</content-result>
 
 ::alert{type="infor"}
 Nếu index vượt ra khoảng chưá của mảng thì chúng ta sẽ bị ném một ngoại lệ. Khoảng hợp lệ 0 đến n – 1( n số lượng phần tử của mảng).
@@ -168,15 +154,9 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>2 3 4 5 6 7 8 9 10 11 </code>
-  </div>
-</div>
+</content-result>
 
 Chúng ta thấy hàm `increment()` đã thay đổi các giá trị trong mảng. Vì vậy ở hàm main truy xuất được mảng đã được update bởi `increment()`.
 
@@ -210,15 +190,9 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>-4 0 2 3 5 9 </code>
-  </div>
-</div>
+</content-result>
 
 ## Bài tập thực hành
 

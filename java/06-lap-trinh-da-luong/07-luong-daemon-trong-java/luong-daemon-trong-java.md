@@ -68,12 +68,7 @@ public class NonDaemonThreadTest {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Processing working thread</code></br>
     <code>Processing working thread</code></br>
     <code>Processing working thread</code></br>
@@ -84,8 +79,7 @@ public class NonDaemonThreadTest {
     <code>Processing working thread</code></br>
     <code>Processing working thread</code></br>
     <code>Processing working thread</code>
-  </div>
-</div>
+</content-result>
 
 Như bạn thấy luồng `Non-Daemon Thread` chạy song song với `MainThread`. Khi MainThread kết thúc thì luồng `Non-Daemon Thread` vẫn còn tiếp tục xử lý cho đến khi hoàn thành.
 
@@ -109,12 +103,7 @@ public class DaemonThreadTest {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Processing working thread</code></br>
     <code>Processing working thread</code></br>
     <code>Processing working thread</code></br>
@@ -122,7 +111,6 @@ public class DaemonThreadTest {
     <code>Processing working thread</code></br>
     <code>Processing working thread</code></br>
     <code>>><< Finishing main program</code></br>
-  </div>
-</div>
+</content-result>
 
 Như bạn thấy `DaemonThread` chạy song song với `MainThread`. Khi `MainThread` kết thúc thì tất cả `DaemonThread` cũng kết thúc.

@@ -86,12 +86,6 @@ public class TestPerson {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Tên: Thaycacac, CMND: 123456</code>
-  </div>
-</div>
+</content-result>

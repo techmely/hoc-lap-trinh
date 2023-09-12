@@ -54,8 +54,7 @@ Ví dụ như bạn có một component có chứa biến một biển tên là 
   <div class="card-footer">
     You have selected
     <span class="badge badge-primary">{{ counter }}</span> items.
-  </div>
-</div>
+</content-result>
 ```
 
 Và đây là cách chúng ta có thể viết lại bằng cách dùng `ng-template` và `ngTemplateOutlet`.
@@ -73,8 +72,7 @@ Và đây là cách chúng ta có thể viết lại bằng cách dùng `ng-temp
   <div class="card-footer">
     You have selected
     <ng-container [ngTemplateOutlet]="counterTmpl"></ng-container>.
-  </div>
-</div>
+</content-result>
 
 <ng-template #counterTmpl>
   <span class="badge badge-primary">{{ counter }}</span> items

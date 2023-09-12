@@ -47,12 +47,6 @@ class TestCustomException1 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Output:Exception occured: InvalidAgeException:not valid rest of the code...</code>
-  </div>
-</div>
+</content-result>

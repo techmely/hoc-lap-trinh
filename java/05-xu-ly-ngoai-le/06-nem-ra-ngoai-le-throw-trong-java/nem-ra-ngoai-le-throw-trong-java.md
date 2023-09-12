@@ -46,15 +46,9 @@ public class TestThrow1 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Exception in thread "main" java.lang.ArithmeticException: not valid</code><br/>
-  </div>
-</div>
+</content-result>
 
 <div class="example">throw ra ngoại lệ nhưng có xử lý</div>
 
@@ -78,13 +72,7 @@ public class TestThrow2 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>not valid</code><br/>
     <code>rest of the code...</code>
-  </div>
-</div>
+</content-result>

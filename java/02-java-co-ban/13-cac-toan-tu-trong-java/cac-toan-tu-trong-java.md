@@ -34,8 +34,6 @@ Phép gán được thực hiện bằng toán tử `=`, nó có nghĩa là **h�
   </ul>
 ::
 
-<content-example />
-
 ```java
 int a = 10;
 int b = c = 10;// cả b và c đều có giá trị 10
@@ -68,8 +66,6 @@ Java cũng có phép toán tăng, giảm, ta có thể mô tả tóm tắt qua c
 
 Qua đây chúng ta cũng hiểu được sự khác nhau của a++ (a--) và ++a (--a)
 
-<content-example />
-
 ```java
 public class Thaycacac {
   public static void main(String[] args) {
@@ -86,18 +82,12 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>1</code><br/>
     <code>3</code><br/>
     <code>4</code><br/>
     <code>6</code>
-  </div>
-</div>
+</content-result>
 
 ::alert{type="infor"}Nếu toán tử tăng trước, tăng sau (giảm trước, giảm sau) đứng một mình (không nằm trong biểu thức) thì chúng hoạt động như nhau, chúng chỉ khác nhau khi chúng nằm trong biểu thức::
 
@@ -167,12 +157,7 @@ public class Thaycacac {
 
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Hiển thị các số...</code><br/>
     <code>i = 37</code><br/>
     <code>j = 42</code><br/>
@@ -199,8 +184,7 @@ public class Thaycacac {
     <code>Kiểm tra không bằng...</code><br/>
     <code>i! = j = true</code><br/>
     <code>k! = j = false</code>
-  </div>
-</div>
+</content-result>
 
 ## Phép toán logic
 

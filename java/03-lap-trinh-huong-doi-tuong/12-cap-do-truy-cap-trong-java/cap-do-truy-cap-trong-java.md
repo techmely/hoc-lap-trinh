@@ -41,8 +41,6 @@ Trong bảng trên thì X thể hiện cho sự truy cập hợp lệ còn – t
 
 Các thành phần private chỉ có thể sử dụng bên trong lớp, ta không thể truy cập các thành phần private từ bên ngoài lớp này.
 
-<content-example />
-
 ```java
 class Alpha {
   private int bienPrivate;
@@ -73,8 +71,6 @@ class Beta {
 
 Nếu bạn không khai báo modifier nào, thì nó chính là trường hợp mặc định. Default Access Modifier là chỉ được phép truy cập trong cùng package.
 
-<content-example />
-
 ```java
 // Lưu file với tên Alpha.java
 package thaycacac.package1;
@@ -104,8 +100,6 @@ Trong ví dụ trên, phạm vi truy cập của lớp Alpha và phương thức
 
 Protected access modifier được truy cập bên trong package và bên ngoài package nhưng phải kế thừa.
 
-<content-example />
-
 ```java
 // Lưu file với tên Alpha.java
 package thaycacac.package1;
@@ -132,8 +126,6 @@ class Beta extends Alpha {
 ## Phạm vi truy cập public
 
 Các thành viên public có thể truy cập từ bất cứ đâu. Để
-
-<content-example />
 
 ````java
 public class Alpha {

@@ -57,8 +57,6 @@ Kết quả của phép so sánh luôn là một giá trị kiểu [boolean](/ba
 - `true`: đúng, chính xác
 - `false`: sai, không chính xác
 
-<content-example />
-
 ```js
 console.log(5 > 6); // false (sai)
 console.log(5 < 6); // true (đúng)
@@ -253,8 +251,6 @@ Trong các phép so sánh (1) và (2), `undefined` chuyển thành `NaN` nên ch
 ## Thứ tự ưu tiên của các toán tử so sánh
 
 Các toán tử so sánh có **thứ tự ưu tiên giống nhau**. Khi trong biểu thức có nhiều toán tử so sánh, thứ tự thực hiện là **từ trái sang phải**.
-
-<content-example />
 
 ```js
 console.log(3 > 2 > 1); // false

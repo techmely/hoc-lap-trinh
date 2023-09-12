@@ -22,8 +22,6 @@ Toán tử Nullish Coalescing là toán tử hai ngôi `a ?? b`, với định n
 - Nếu `a` khác `null` và `undefined` thì kết quả của `a ?? b` là `a`.
 - Ngược lạị, nếu `a` bằng `null` hoặc `undefined` thì kết quả của `a ?? b` là `b`.
 
-<content-example />
-
 ```js
 result = a ?? b;
 ```

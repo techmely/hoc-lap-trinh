@@ -67,15 +67,9 @@ public class Bike extends Car {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>chạy với tốc độ 30km/h</code>
-  </div>
-</div>
+</content-result>
 
 <div class="example">Một ví dụ khác về tính đa hình</div>
 
@@ -117,21 +111,13 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>vẽ hình chữ nhật...</code><br/>
     <code>vẽ hình tròn...</code><br/>
     <code>vẽ hình tam giác...</code>
-  </div>
-</div>
+</content-result>
 
 Tuy nhiên khi chúng ta truy cập thuộc tính của lớp con thì sẽ không bị ghi đè, mà nó sẽ truy cập thuộc tính của lớp cha.
-
-<content-example />
 
 ```java
 class Bike{
@@ -148,21 +134,13 @@ public static void main(String args[]){
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>90</code>
-  </div>
-</div>
+</content-result>
 
 ## Đa hình thời gian biên dịch
 
 Đa hình thời gian biên dịch sử dụng phương thức nạp chồng. Do sử dụng chung một cái tên cho nhiều phương thức, nên ta phải cho java biết cần phải gọi phương thức nào để thực hiện, java dựa vào sự khác nhau về số lượng đối cũng như kiểu dữ liệu của các đối này để phân biệt các phương thức trùng tên đó..
-
-<content-example />
 
 ```java
 public class OverloadingOrder {
@@ -181,16 +159,10 @@ public class OverloadingOrder {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>String: String first, int: 11</code></br>
     <code>int: 99, String: Int first</code>
-  </div>
-</div>
+</content-result>
 
 ::alert{type="infor"}
 

@@ -52,8 +52,6 @@ Trước khi chúng ta tìm hiểu về cách gọi hàm thì chúng ta tìm hi�
 
 Như ví dụ tìm `tongHaiSo()` của chúng ta, nhiệm vụ của nó là tính tổng của 2 số nguyên **a, b** nhập vào thì kết quả sẽ ra một số nguyên. Tức là kiểu trả về (returnType) là một số nguyên (int) và kết quả của `return` cũng là một số nguyên (int). Chúng ta sẽ dùng biến có kiểu dữ liệu tương ứng để nhận kết quả trả về từ hàm.
 
-<content-example />
-
 ```java
 public class Thaycacac {
 
@@ -71,8 +69,6 @@ public class Thaycacac {
 ### Hàm không trả về kết quả
 
 Đối với loại hàm này chúng ta chỉ cần gọi để sử dụng.
-
-<content-example />
 
 ```java
 public static void printHello() {
@@ -106,8 +102,6 @@ Khi bạn gọi đến một hàm đã được định và nó có danh sách c
 
 ## Truyền tham số theo giá trị (Passing Parameters by Value)
 
-<content-example />
-
 ```java
 public class Thaycacac {
 
@@ -126,16 +120,10 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Sau khi hoán đổi: a = 3 b= 5</code><br/>
     <code>Trước khi hoán đổi: a = 5 b= 3</code>
-  </div>
-</div>
+</content-result>
 
 ::alert{type="infor"}
 

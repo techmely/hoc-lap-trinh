@@ -29,8 +29,6 @@ Trong đó:
 - **Câu lệnh khi biểu thức trả về true**: Giá trị trả về nếu Biểu thức logic nhận giá `true`.
 - **Câu lệnh khi biếu thức trả về false**: Giá trị trả về nếu Biểu thức logic nhận giá `false`.
 
-<content-example />
-
 ```java
 String result = isTroiMua() === true ? System.out.println("Tôi sẽ nghỉ học") : System.out.println("Tôi sẽ đi học");
 ```

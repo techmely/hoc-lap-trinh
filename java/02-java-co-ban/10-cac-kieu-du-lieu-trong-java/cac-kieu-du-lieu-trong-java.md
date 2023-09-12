@@ -124,8 +124,6 @@ char myLetter = 'D';
 - Trong java kiểu boolean không thể chuyển thành kiểu nguyên và ngược lại.
 - Giá trị mặc định của kiểu `boolean` là `false`.
 
-<content-example />
-
 ```java
 boolean myBool = true;
 ```

@@ -100,18 +100,12 @@ public class CommaOperator {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>i= 1 j= 11</code><br/>
     <code>i= 2 j= 4</code><br/>
     <code>i= 3 j= 6</code><br/>
     <code>i= 4 j= 8</code>
-  </div>
-</div>
+</content-result>
 
 ## Vòng lặp for cải tiến
 
@@ -131,8 +125,6 @@ for (<Kiểu tập hợp> var : <Tập hợp>) {
 - **Tập hợp**: là danh sách tập hợp có thể là mảng thông thường, ArrayList, LinkedList, HashSet, ...
 - **Khối lệnh lặp lại** là câu lệnh mà ta cần phải thực hiện lặp đi lặp lại.
 
-<content-example />
-
 ```java
 public class Thaycacac {
   public static void main(String[] args){
@@ -144,19 +136,13 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>1</code><br/>
     <code>2</code><br/>
     <code>3</code><br/>
     <code>4</code><br/>
     <code>5</code>
-  </div>
-</div>
+</content-result>
 
 ## Vòng lặp for gán nhãn
 
@@ -169,8 +155,6 @@ Cú pháp:
   <Khối lệnh lặp lại>
 }
 ```
-
-<content-example />
 
 ```java
 public class Thaycacac {
@@ -187,15 +171,9 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>1 1</code><br/>
     <code>1 2</code><br/>
     <code>1 3</code><br/>
     <code>2 1</code>
-  </div>
-</div>
+</content-result>

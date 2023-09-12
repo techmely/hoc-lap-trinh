@@ -70,15 +70,9 @@ switch (x) {
 // Equal
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Equal</code>
-  </div>
-</div>
+</content-result>
 
 Giải thích:
 

@@ -24,8 +24,6 @@ Từ khoá final trong java có nhiều nghĩa khác nhau, nghĩa của nó tu�
 
 Nếu bạn tạo bất cứ biến nào là `final`, bạn không thể thay đổi giá trị của biến này (nó sẽ là hằng số). Giả sử có một biến final là `PI`. Bạn cố ý thay đổi giá trị của biến này nhưng nó không bị thay đổi, bởi vì biến final một khi được gán giá trị thì không bao giờ thay đổi được.
 
-<content-example />
-
 ```java
 public class Thaycacac {
     final int PI = 3.14159265; // biến final là hằng số và không thể thay đổi
@@ -48,8 +46,7 @@ public class Thaycacac {
   </div>
   <div class="window-body">
     <code>Compile Time Error Exception in thread "main" java.lang.Error: Unresolved compilation problem: The final field Thaycacac.PI cannot be assigned</code>
-  </div>
-</div>
+</content-result>
 
 ::alert{type="infor"}
 
@@ -63,8 +60,6 @@ public class Thaycacac {
 ## Phương thức final trong Java
 
 Một phương thức bình thường có thể bị ghi đè ở lớp con, đôi khi ta không muốn lớp con bị ghi đè ở lớp con vì lý do gì đó, mục đích chủ yếu của các phương thức final là tránh ghi đè, tuy nhiên ta thấy rằng các phương thức private sẽ tự động là final vì chúng không thể thấy được trong lớp con nên chúng không thể bị ghi đè, nên cho dù bạn có cho một phương thức private là final thì bạn cũng chả thấy thay đổi nào.
-
-<content-example />
 
 ```java
 class Bike {
@@ -92,14 +87,11 @@ public class SH extends Bike {
   </div>
   <div class="window-body">
     <code>Exception in thread "main" java.lang.VerifyError: class vn.viettuts.keywords.SH overrides final method run.()</code>
-  </div>
-</div>
+</content-result>
 
 ## Lớp final trong Java
 
 Nếu bạn không muốn người khác kế thừa từ lớp của bạn, thì bạn hãy dùng từ khoá final để ngăn cản bất cứ ai muốn kế thừa từ lớp này.
-
-<content-example />
 
 ```java
 final class Bike {
@@ -124,16 +116,13 @@ public class SH1 extends Bike {
   </div>
   <div class="window-body">
     <code>Compile Time Error</code>
-  </div>
-</div>
+</content-result>
 
 _Chú ý:_ do một lớp là final (tức không thể kế thừa )do vậy ta không thể nào ghi đè các phương thức của lớp này, do vậy đừng cố gắng cho một phương thức của lớp final là final
 
 ## Biến static final trống trong Java
 
 Một biến static final mà không được khởi tạo tại thời điểm khai báo thì đó là biến static final trống. Nó chỉ có thể được khởi tạo trong khối static.
-
-<content-example />
 
 ```java
 public class A {
@@ -168,12 +157,6 @@ public class A {
 
 Chương trình sẽ in ra lỗi
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>"A.java": variable i might already have been assigned to at line 5, column 9</code>
-  </div>
-</div>
+</content-result>

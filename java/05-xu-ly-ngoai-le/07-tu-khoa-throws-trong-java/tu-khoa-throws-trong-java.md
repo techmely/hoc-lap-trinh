@@ -32,8 +32,6 @@ Chỉ những ngoại lệ checked nên được khai báo bởi vì **ngoại l
 
 ## Ví dụ về từ khóa throws trong java
 
-<content-example />
-
 ```java
 import java.io.IOException;
 
@@ -62,16 +60,10 @@ public class TestThrows1 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>ngoai le duoc xu ly</code><br/>
     <code>luong binh thuong...</code><br/>
-  </div>
-</div>
+</content-result>
 
 **Trường hợp xử lý ngoại lệ với try/catch**
 
@@ -100,16 +92,10 @@ public class TestThrows2 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Ngoai le duoc xu ly</code><br/>
     <code>Luong binh thuong...</code><br/>
-  </div>
-</div>
+</content-result>
 
 **Khai báo throws ngoại lệ**
 
@@ -133,16 +119,10 @@ public class TestThrows2 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Thiet bi dang hoat dong tot</code><br/>
     <code>Luong binh thuong...</code><br/>
-  </div>
-</div>
+</content-result>
 
  <div class="example">Trong trường hợp bạn khai báo throws ngoại lệ, nếu ngoại lệ xảy ra, một ngoại lệ sẽ được ném ra tại runtime vì throws nên không xử lý ngoại đó.</div>
 
@@ -164,12 +144,6 @@ public class TestThrows2 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Exception in thread "main" java.io.IOException: Thiet bi</code>
-  </div>
-</div>
+</content-result>

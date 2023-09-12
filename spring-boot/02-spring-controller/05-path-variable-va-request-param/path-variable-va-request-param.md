@@ -20,7 +20,7 @@ Cả **Request Parameter** và **Path Variable** đều sử dụng để gửi 
 ### 1. Request Parameter
 
 **Request Parameter** có dữ liệu theo cặp (key = value) được phân tách bằng dấu &.
-<content-example>Ví dụ:
+Ví dụ:
 URL sau mang một request parameter là name với giá trị là techmely
 http://localhost:8080/techmely?name=techmely
 
@@ -53,7 +53,7 @@ Một số thuộc tính của annotation :
 ### 2. Path Variable
 
 Với @PathVariable không cần key truyền trên URL chỉ cần value.
-<content-example>
+
 Ví dụ: URL sau mang giá trị là hoclaptrinh được gán trên URL
 http://localhost:8080/techmely/hoclaptrinh
 

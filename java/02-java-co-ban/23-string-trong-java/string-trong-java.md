@@ -61,8 +61,6 @@ Với đoạn code trên thì chúng ta sẽ được 2 object riêng biệt kh�
 
 Như đã đề cập ở trên `object immutable` thì chúng ta sẽ không thể thay đổi khi nó đã được khỏi tạo. Chúng ta cùng xem ví dụ sau:
 
-<content-example />
-
 ```java
 public class Main {
   public static void main(String[] args) {
@@ -74,16 +72,10 @@ public class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>hello</code><br/>
     <code>hello thaycacac</code>
-  </div>
-</div>
+</content-result>
 
 Sao nói rằng object string không thể thay đổi sau khi nó đã được khởi tạo thì đáng lẽ chúng ra phải nhận output là **hello** chứ nhỉ!
 

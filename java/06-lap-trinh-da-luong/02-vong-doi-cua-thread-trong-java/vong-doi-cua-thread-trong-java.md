@@ -58,8 +58,6 @@ Tổng quan là vậy, còn chi tiết từng trạng thái thì chúng ta sẽ 
 
 ## Ví dụ vòng đời của Thread trong Java
 
-<content-example />
-
 ```java
 class thread implements Runnable {
     public void run() {
@@ -121,12 +119,7 @@ class Test implements Runnable {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>State of thread1 after creating it – NEW</code><br/>
     <code>State of thread1 after calling .start() method on it – RUNNABLE</code><br/>
     <code>State of thread2 after creating it – NEW</code><br/>
@@ -134,5 +127,4 @@ class Test implements Runnable {
     <code>State of thread2 after calling .sleep() method on it – TIMED_WAITING</code><br/>
     <code>State of thread1 while it called join() method on thread2 -WAITING</code><br/>
     <code>State of thread2 when it has finished it’s execution – TERMINATED</code><br/>
-  </div>
-</div>
+</content-result>

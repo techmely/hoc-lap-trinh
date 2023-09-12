@@ -47,8 +47,6 @@ Chú ý phần `new LinkedHashMap<>(8, 0.6)`, tham số đầu tiên là `capaci
 
 Sau đây là cách chúng ta có thể tạo một `LinkedHashMap` có chứa tất cả các phần tử của các map khác.
 
-<content-example />
-
 ```java
 import java.util.LinkedHashMap;
 
@@ -68,24 +66,16 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>LinkedHashMap1: {Two=2, Four=4}</code><br/>
     <code>LinkedHashMap2: {Two=2, Four=4, Three=3}</code>
-  </div>
-</div>
+</content-result>
 
 ## Chèn các phần tử vào LinkedHashMap
 
 - `put()` – chèn key/ value được chỉ định vào map
 - `putAll()` – chèn tất cả các mục từ map được chỉ định vào map này
 - `putIfAbsent()` – chèn `key/value` được chỉ định vào map nếu key được chỉ định không có trong map
-
-<content-example />
 
 ```java
 import java.util.LinkedHashMap;
@@ -115,25 +105,17 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Original LinkedHashMap: {Two=2, Four=4}</code><br/>
     <code>Updated LinkedHashMap: {Two=2, Four=4, Six=6}</code><br/>
     <code>New LinkedHashMap: {One=1, Two=2, Four=4, Six=6}</code>
-  </div>
-</div>
+</content-result>
 
 ## Truy cập các phần tử LinkedHashMap
 
 - `entrySet()` – trả về một tập hợp tất cả key/ value của map
 - `keySet()` – trả về một tập hợp tất cả các key của map
 - `values()` – trả về một tập hợp tất cả các value của map
-
-<content-example />
 
 ```java
 import java.util.LinkedHashMap;
@@ -159,23 +141,15 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>LinkedHashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Key/Value mappings: [One=1, Two=2, Three=3]</code><br/>
     <code>Keys: [One, Two, Three]</code><br/>
     <code>Values: [1, 2, 3]</code>
-  </div>
-</div>
+</content-result>
 
 - `get()` - Trả về value liên kết với key được chỉ định. Nếu không tìm thấy key, nó sẽ trả về null.
 - `getOrDefault()` - Trả về value liên quan đến key được chỉ định. Nếu không tìm thấy key, nó sẽ trả về value mặc định đã chỉ định.
-
-<content-example />
 
 ```java
 import java.util.LinkedHashMap;
@@ -200,24 +174,16 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>LinkedHashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Returned Number: 3</code><br/>
     <code>Returned Number: 5</code>
-  </div>
-</div>
+</content-result>
 
 ## Xóa các phần tử khỏi LinkedHashMap
 
 - `remove(key)` – trả về và xóa mục liên quan đến key chỉ định từ map
 - `remove(key, value)` – chỉ xóa mục khỏi map nếu key được chỉ định liên kết với `value` được chỉ định và trả về giá trị `boolean`
-
-<content-example />
 
 ```java
 import java.util.LinkedHashMap;
@@ -244,18 +210,12 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>LinkedHashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Removed value: 2</code><br/>
     <code>Is the entry {Three=3} removed? True</code><br/>
     <code>Updated LinkedHashMap: {One=1}</code>
-  </div>
-</div>
+</content-result>
 
 ## Các hàm khác của LinkedHashMap
 

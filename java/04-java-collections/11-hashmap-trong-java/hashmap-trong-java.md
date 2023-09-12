@@ -49,8 +49,6 @@ Lưu ý về đoạn code `new HashMap<>(8, 0.6)`. Ở đây, tham số đầu t
 
 Sau đây là cách chúng ta có thể tạo một hashmap chứa tất cả các phần tử của các map khác.
 
-<content-example />
-
 ```java
 import java.util.HashMap;
 
@@ -70,24 +68,16 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>HashMap1: {Four=4, Two=2}</code><br/>
     <code>HashMap2: {Two=2, Three=3, Four=4}</code>
-  </div>
-</div>
+</content-result>
 
 ## Chèn các phần tử vào HashMap trong Java
 
 - `put()` – chèn cặp `key/value` được chỉ định vào map
 - `putAll()` – chèn tất cả các mục từ map được chỉ định vào map hiện tại
 - `putIfAbsent()` – chèn cặp `key/value` được chỉ định vào map nếu `key` được chỉ định không có trong map
-
-<content-example />
 
 ```java
 import java.util.HashMap;
@@ -116,24 +106,16 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>HashMap of even numbers: {Six=6, Four=4, Two=2}</code><br/>
     <code>HashMap of numbers: {Six=6, One=1, Four=4, Two=2}</code>
-  </div>
-</div>
+</content-result>
 
 ## Duyệt qua các phần tử trong HashMap
 
 - `entrySet()` – trả về một tập hợp gồm tất cả cặp `key/value` của map
 - `keySet()` – trả về một tập hợp gồm tất cả các `key` của map
 - `values()` – trả về một tập hợp gồm tất cả các `value` của map
-
-<content-example />
 
 ```java
 import java.util.HashMap;
@@ -159,23 +141,15 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Key/Value mappings: [One=1, Two=2, Three=3]</code><br/>
     <code>Keys: [One, Two, Three]</code><br/>
     <code>Values: [1, 2, 3]</code>
-  </div>
-</div>
+</content-result>
 
 - `get()`- Trả về `value` liên kết với key được chỉ định. Trả về `null` nếu không tìm thấy key.
 - `getOrDefault()`- Trả về value liên kết với key được chỉ định. Trả về `value` mặc định đã chỉ định nếu không tìm thấy `key`.
-
-<content-example />
 
 ```java
 import java.util.HashMap;
@@ -200,24 +174,16 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Returned Number: 3</code><br/>
     <code>Returned Number: 5</code>
-  </div>
-</div>
+</content-result>
 
 ## Loại bỏ các phần tử trong HashMap
 
 - `remove(key)` – trả về và xóa mục liên kết với key được chỉ định khỏi map
 - `remove(key, value)` – chỉ xóa mục khỏi map nếu key được chỉ định liên kết với `value` đã chỉ định và trả về giá trị `boolean`
-
-<content-example />
 
 ```java
 import java.util.HashMap;
@@ -244,26 +210,18 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Removed value: 2</code><br/>
     <code>Is the entry Three removed? True</code><br/>
     <code>Updated HashMap: {One=1}</code>
-  </div>
-</div>
+</content-result>
 
 ## Thay thế các phần tử trong HashMap
 
 - `replace(key, value)` – thay thế `value` liên kết với Key được chỉ định bằng một `value` mới
 - `replace(key, old, new)` – thay thế `value old` bằng `value new` nếu `value old` đã liên kết với `Key` được chỉ định
 - `replaceAll(function)` – thay thế từng `value` của map bằng kết quả của hàm được chỉ định
-
-<content-example />
 
 ```java
 import java.util.HashMap;
@@ -289,17 +247,11 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Original HashMap: {Second=2, Third=3, First=1}</code><br/>
     <code>HashMap using replace: {Second=22, Third=33, First=1}</code><br/>
     <code>HashMap using replaceAll: {Second=24, Third=35, First=3}</code>
-  </div>
-</div>
+</content-result>
 
 Trong chương trình trên chú ý câu lệnh
 
@@ -314,8 +266,6 @@ numbers.replaceAll((key, oldValue) -> oldValue + 2);
 - `compute()` - Tính toán một value mới bằng cách sử dụng hàm được chỉ định. Sau đó, nó liên kết `value` được tính toán với `key` được chỉ định.
 - `computeIfAbsent()` - Nếu key được chỉ định không được liên kết với bất kỳ `value` nào, hàm này sẽ tính toán một `value` mới bằng cách sử dụng hàm được chỉ định. Sau đó, nó liên kết `value` mới với `key`.
 - `computeIfPresent()` - Nếu key được chỉ định đã được liên kết với bất kỳ `value` nào, hàm này sẽ tính toán một `value` mới bằng cách sử dụng hàm được chỉ định. Sau đó, nó liên kết `value` mới với `key`.
-
-<content-example />
 
 ```java
 import java.util.HashMap;
@@ -344,18 +294,12 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Original HashMap: {Second=2, First=1}</code><br/>
     <code>HashMap using compute(): {Second=3, First=3}</code><br/>
     <code>HashMap using computeIfAbsent(): {Second=3 First=3, Three=5}</code><br/>
     <code>HashMap using computeIfPresent(): {Second=6, First=3, three=5}</code>
-  </div>
-</div>
+</content-result>
 
 Trong ví dụ trên, chúng ta đã tính toán lại các value của map bằng hàm `compute()`.
 
@@ -364,8 +308,6 @@ Trong ví dụ trên, chúng ta đã tính toán lại các value của map bằ
 - `merge()` - liên kết value được chỉ định với để key được chỉ định nếu `key` đó chưa được liên kết với `value` nào.
 
 Tuy nhiên, nếu key được chỉ định đã được liên kết với một `value`, nó sẽ hợp nhất `value` được chỉ định mới với `value` cũ hiện có. Ví dụ:
-
-<content-example />
 
 ```java
 import java.util.HashMap;
@@ -385,16 +327,10 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Original HashMap: {Second=2, First=1}</code><br/>
     <code>New HashMap: {Second=2, First=5}</code>
-  </div>
-</div>
+</content-result>
 
 Trong ví dụ trên, hàm `merge()` này có 3 tham số: `key` , `newValue` và biểu thức lambda (biểu thức này tính value hợp nhất mới).
 
@@ -446,18 +382,12 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Entries: One=1, Two=2, Three=3</code><br/>
     <code>Keys: One, Two, Three,</code><br/>
     <code>Values: 1, 2, ,3,</code>
-  </div>
-</div>
+</content-result>
 
 Trong chương trình trên, lưu ý rằng chúng ta đã import gói `java.util.Map.Entry`. Ở đây, `Map.Entry` là `class` trong của Map interface. Class trong này trả về một view (các phần tử) của map.
 
@@ -508,18 +438,12 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Entries: One=1, Two=2, Three=3</code><br/>
     <code>Keys: One, Two, Three,</code><br/>
     <code>Values: 1, 2, 3,</code>
-  </div>
-</div>
+</content-result>
 
 Trong chương trình trên, lưu ý rằng chúng ta đã import gói `java.util.Map.Entry`. Ở đây, `Map.Entry` là `class` trong của Map `interface`. Class trong này trả về một view (các phần tử) của map.
 

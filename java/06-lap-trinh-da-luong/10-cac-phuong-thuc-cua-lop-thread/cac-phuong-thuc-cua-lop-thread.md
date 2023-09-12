@@ -98,12 +98,7 @@ class RunnableDemo implements Runnable {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Creating Thread-1</code><br/>
     <code>Starting Thread-1</code><br/>
     <code>Creating Thread-2</code><br/>
@@ -138,8 +133,7 @@ class RunnableDemo implements Runnable {
     <code>Thread Thread-1 exiting.</code><br/>
     <code>Thread Thread-2 exiting.</code><br/>
     <code>Main thread exiting.</code><br/>
-  </div>
-</div>
+</content-result>
 
 ## Hàm destroy() của lớp Thread
 

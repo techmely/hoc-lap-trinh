@@ -27,8 +27,6 @@ Nếu bạn muốn một lớp chứa một phương thức cụ thể nhưng b�
 
 Phương thức trừu tượng được sử dụng từ khóa `abstract` để khai báo, và một phương thức abstract không có thân. Phương thức abstract sẽ không có định nghĩa, được theo sau bởi dấu chấm phảy, không có cặp dấu ngoặc nhọn.
 
-<content-example />
-
 ```java
 // Khai báo phương thwucs với từ khóa abstract và không có thân phương thức
 abstract void printStatus();
@@ -52,15 +50,9 @@ class Honda4 extends Bike{
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>running...</code>
-    </div>
-</div>
+  </content-result>
 
 ::alert{type="infor"}
 
@@ -106,12 +98,6 @@ class Main{
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Ve hinh tron</code>
-    </div>
-</div>
+  </content-result>

@@ -57,17 +57,11 @@ public class TestFinallyBlock {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>5</code><br/>
     <code>finally block is always executed</code><br/>
     <code>rest of the code...</code>
-  </div>
-</div>
+</content-result>
 
 <div class="example">sử dụng khối lệnh finally nơi ngoại lệ xảy ra nhưng không xử lý.</div>
 
@@ -87,16 +81,10 @@ public class TestFinallyBlock1 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>finally block is always executed</code><br/>
     <code>Exception in thread "main" java.lang.ArithmeticException: / by zero</code><br/>
-  </div>
-</div>
+</content-result>
 
 <div class="example">sử dụng khối lệnh finally nơi ngoại lệ xảy ra và được xử lý.</div>
 
@@ -116,17 +104,11 @@ public class TestFinallyBlock2 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>java.lang.ArithmeticException: / by zero</code><br/>
     <code>finally block is always executed</code><br/>
     <code>rest of the code...</code>
-  </div>
-</div>
+</content-result>
 
 <div class="example">Sử dụng khối lệnh finally trong trường hợp trong khối try có lệnh return.</div>
 
@@ -149,12 +131,7 @@ public class TestFinallyBlock3 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>25 is odd number</code><br/>
     <code>finally block is always executed</code>
 </div>

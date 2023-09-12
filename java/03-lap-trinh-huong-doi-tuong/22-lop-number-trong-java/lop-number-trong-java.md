@@ -28,16 +28,12 @@ Trong các lớp này đều xác định hai giá trị:
 
 là các giới hạn của các số trong kiểu đó.
 
-<content-example />
-
 ```java
 byte minByte = Byte.MIN_VALUE; // -128
 int maxInt  = Integer.MAX_VALUE; // 2147483647
 ```
 
 Trong mỗi lớp bao có hàm `typeValue()` để chuyển các giá trị của các đối tượng nguyên thủy về giá trị số.
-
-<content-example />
 
 ```java
 byte byteValue()
@@ -49,8 +45,6 @@ double doubleValue()
 ```
 
 Trong mỗi lớp bao còn có hàm static `parseType(String s)` để chuyển các giá trị được biểu diễn dưới dạng xâu về các giá trị số.
-
-<content-example />
 
 ```java
 byte value1  = Byte.parseByte(“16”);

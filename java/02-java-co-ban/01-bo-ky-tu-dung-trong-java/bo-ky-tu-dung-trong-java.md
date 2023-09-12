@@ -11,16 +11,43 @@ image: https://user-images.githubusercontent.com/29374426/126277395-a24c6713-0e4
 position: 1
 ---
 
-Mọi ngôn ngữ nói chung, ngôn ngữ lập trình nói riêng đều phải xây dựng trên một tập hợp chữ cái (hay còn gọi là bảng chữ cái), các kí tự được nhóm lại theo một cách nào đó để tạo thành các từ, các từ lại được nhóm lại thành các câu (trong ngôn ngữ lập trình gọi là câu lệnh), một chương trình máy tính tính là một tập các câu lệnh được bố trí theo một trật tự mà người viết ra chúng sắp đặt.
+Ngôn ngữ lập trình Java, giống như hầu hết các ngôn ngữ lập trình khác, sử dụng một bộ ký tự đặc biệt để tạo nên mã nguồn và các định danh trong chương trình. Trong bài viết này, chúng ta sẽ tìm hiểu về bộ ký tự trong Java và cách chúng ta có thể sử dụng chúng để viết mã nguồn Java hiệu quả.
 
-![bo-ky-tu-dung-trong-java](https://user-images.githubusercontent.com/29374426/126277395-a24c6713-0e4d-4d7d-9e56-9002ddb4c73a.png)
+![Bộ ký tự trong Java](https://user-images.githubusercontent.com/29374426/126277395-a24c6713-0e4d-4d7d-9e56-9002ddb4c73a.png)
 
-Ngôn ngữ java được được xây dựng trên bảng chữ cái unicode, do vậy ta có thể dùng các kí tự unicode để đặt tên cho các định danh. Cụ thể là
+## Bảng Chữ Cái Unicode
 
-- 26 chữ cái hoa : A B C .. Z
-- 26 chữ cái thường : a b c .. z
-- 10 chữ số : 0 1 2 .. 9
-- Các ký hiệu toán học : + - \* / = ( )
-- Ký tự gạch nối : \_
-- Các ký tự khác : . , : ; [ ] {} ! \ & % # $ ...
-- Dấu cách (space) dùng để tách các từ.
+Java được xây dựng trên bảng chữ cái Unicode, một hệ thống mã hóa quốc tế bao gồm hầu hết các ngôn ngữ và biểu tượng trên thế giới. Điều này cho phép ngôn ngữ Java hỗ trợ nhiều ngôn ngữ và ký tự đặc biệt.
+
+Bảng chữ cái Unicode trong Java bao gồm:
+
+### Chữ cái hoa và chữ cái thường
+
+- **Chữ cái hoa**: A, B, C, ..., Z
+- **Chữ cái thường**: a, b, c, ..., z
+
+### Chữ số
+
+- **Chữ số**: 0, 1, 2, ..., 9
+
+### Ký hiệu toán học
+
+- **Ký hiệu toán học**: +, -, \*, /, =, (, )
+
+### Ký tự đặc biệt
+
+- **Ký tự gạch nối**: \_
+
+Java cho phép sử dụng các ký tự này để đặt tên cho biến, lớp, phương thức và các định danh khác trong chương trình.
+
+### Các ký tự khác
+
+Ngoài ra, bạn có thể sử dụng một loạt các ký tự đặc biệt khác nhau như dấu chấm (.), dấu phẩy (,), dấu hai chấm (:), dấu chấm phẩy (;), dấu ngoặc vuông ([]), dấu ngoặc nhọn ({}) và nhiều ký tự đặc biệt khác như dấu chấm than (!), dấu và (&), dấu phần trăm (%), dấu thăng (#), dấu đô la ($) và nhiều ký tự khác nữa.
+
+### Dấu cách
+
+Dấu cách (space) được sử dụng để phân tách các từ trong mã nguồn Java. Điều này giúp mã nguồn trở nên dễ đọc và dễ hiểu hơn.
+
+::alert{type="infor"}
+Bộ ký tự trong Java rất đa dạng và mạnh mẽ, cho phép bạn tạo ra mã nguồn đa dạng và chuyên nghiệp. Tuy nhiên, việc đặt tên đúng và tuân thủ các quy tắc là rất quan trọng để giúp mã của bạn dễ đọc và dễ bảo trì. Hiểu rõ về bộ ký tự này là một phần quan trọng trong việc trở thành một lập trình viên Java thành thạo.
+::

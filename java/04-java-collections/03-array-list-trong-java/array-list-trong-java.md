@@ -33,8 +33,6 @@ ArrayList<Type> arrayList= new ArrayList<>();
 
 Trong đó `Type` là kiểu dữ liệu của `ArrayList` mà ta muốn tạo
 
-<content-example />
-
 ```java
 // create Integer type arraylist
 ArrayList<Integer> arrayList = new ArrayList<>();
@@ -72,15 +70,9 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
-  </div>
-</div>
+</content-result>
 
 Hoặc ta cũng có thể thêm nhiều phần tử vào một `ArrayList` bằng cách sử dụng các chỉ số
 
@@ -99,15 +91,9 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
-  </div>
-</div>
+</content-result>
 
 ### Thêm tất cả các phần tử từ ArrayList này sang ArrayList khác
 
@@ -134,16 +120,10 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Mammals: [Dog, Cat, Horse]</code><br/>
     <code>Animals: [Crocodile, Dog, Cat, Horse]</code><br/>
-  </div>
-</div>
+</content-result>
 
 ### Truy cập tới các phần tử trong ArrayList
 
@@ -167,16 +147,10 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>ArrayList: [Dog, Horse, Cat]</code><br/>
     <code>Element at index 0: Dog</code><br/>
-  </div>
-</div>
+</content-result>
 
 Để truy cập các phần tử của ArrayList một cách tuần tự, chúng ta sử dụng hàm `iterator()`. Chúng ta phải nhập gói `java.util.Iterator` để sử dụng hàm này
 
@@ -204,15 +178,9 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>ArrayList: Dog, Cat, Horse, Zebra,</code><br/>
-  </div>
-</div>
+</content-result>
 
 ::alert{type="infor"}
 
@@ -244,16 +212,10 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>Modified ArrayList: [Dog, Cat, Zebra]</code><br/>
-  </div>
-</div>
+</content-result>
 
 ### Xóa phần tử trong ArrayList
 
@@ -278,17 +240,11 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Initial ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>Final ArrayList: [Dog, Cat]</code><br/>
     <code>Removed Element: Horse</code><br/>
-  </div>
-</div>
+</content-result>
 
 Ngoài ra, nếu bạn muốn loại bỏ tất cả các phần tử khỏi ArrayList, chúng ta sử dụng hàm `removeAll()`
 
@@ -310,16 +266,10 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Initial ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>Final ArrayList: []</code><br/>
-  </div>
-</div>
+</content-result>
 
 Thêm một hàm nữa là hàm `clear()` để loại bỏ tất cả các phần tử khỏi ArrayList.
 
@@ -341,16 +291,10 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Initial ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>Final ArrayList: []</code><br/>
-  </div>
-</div>
+</content-result>
 
 ### Lặp qua các phần tử trong ArrayList
 
@@ -377,16 +321,10 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>ArrayList: [Cow, Cat, Dog]</code><br/>
     <code>Accessing individual elements: Cow, Cat, Dog,</code><br/>
-  </div>
-</div>
+</content-result>
 
 Cách thứ hai là chúng ta có thể sử dụng forEach để lặp qua các phần tử của ArrayList
 
@@ -411,16 +349,10 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>ArrayList: [Cow, Cat, Dog]</code><br/>
     <code>Accessing individual elements: Cow, Cat, Dog,</code><br/>
-  </div>
-</div>
+</content-result>
 
 ### Kiểm tra độ dài của ArrayList
 
@@ -443,16 +375,10 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>ArrayList: [Dog, Horse, Cat]</code><br/>
     <code>Size: 3</code><br/>
-  </div>
-</div>
+</content-result>
 
 ### Sắp xếp các phần tử của một ArrayList
 
@@ -478,16 +404,10 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Unsorted ArrayList: [Horse, Zebra, Dog, Cat]</code><br/>
     <code>Sorted ArrayList: [Cat, Dog, Horse, Zebra]</code><br/>
-  </div>
-</div>
+</content-result>
 
 ### Cách chuyển một ArrayList thành một mảng Array trong Java
 
@@ -516,16 +436,10 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>Array: Dog, Cat, Horse,</code><br/>
-  </div>
-</div>
+</content-result>
 
 ### Chuyển mảng thành ArrayList trong Java
 
@@ -552,16 +466,10 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Array: Dog, Cat, Horse</code><br/>
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
-  </div>
-</div>
+</content-result>
 
 ### Chuyển ArrayList thành String trong Java
 
@@ -585,16 +493,10 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>String: [Dog, Cat, Horse]</code><br/>
-  </div>
-</div>
+</content-result>
 
 ### Một số hàm trong ArrayList
 

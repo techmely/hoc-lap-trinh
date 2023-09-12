@@ -70,8 +70,6 @@ Khi triển khai interface:
 
 Nếu một lớp triển khai (implements) nhiều interface, hoặc một Interface kế thừa từ nhiều Interface khác thì đó là đa kế thừa.
 
-<content-example />
-
 ```java
 interface Printable {
     void print();
@@ -130,8 +128,6 @@ class A3 implements Showable{
 
 Một Interface mà không có thành viên nào thì được gọi là Marker Interface. Ví dụ: `Serializable`, `Cloneable`, `Remote`, … Chúng được sử dụng để cung cấp một số thông tin thiết yếu tới JVM để mà JVM có thể thực hiện một số hoạt động hữu ích.
 
-<content-example />
-
 ```java
 public interface Serializable {
 }
@@ -140,8 +136,6 @@ public interface Serializable {
 ## Interface lồng nhau trong Java
 
 Một Interface có thể có Interface khác, đó là lồng Interface.
-
-<content-example />
 
 ```java
 interface printable{

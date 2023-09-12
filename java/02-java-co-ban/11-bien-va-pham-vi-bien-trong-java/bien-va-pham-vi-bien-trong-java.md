@@ -75,15 +75,9 @@ public class Bien {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Giá trị của n là: 10</code>
-  </div>
-</div>
+</content-result>
 
 ```java
 public class Bien {
@@ -100,15 +94,9 @@ public class Bien {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Exception in thread "main" java.lang.Error: Unresolved compilation problem: The local variable n may not have been initialized</code>
-  </div>
-</div>
+</content-result>
 
 ### Biến biến instance (biến toàn cục) trong java
 
@@ -119,8 +107,6 @@ public class Bien {
 - Biến instance có giá trị mặc định phụ thuộc vào kiểu dữ liệu của nó.
 - Bên trong class mà bạn khai báo biến instance, bạn có thể gọi nó trực tiếp bằng tên khi sử dụng ở khắp nới bên trong class đó.
 - Bạn được phép sử dụng `access modifier` khi khai báo biến instance, mặc định là `default`.
-
-<content-example />
 
 ```java
 public class SinhVien {
@@ -153,16 +139,10 @@ public class SinhVien {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Ten  : Thaycacac</code><br/>
     <code>Tuoi : 21</code>
-  </div>
-</div>
+</content-result>
 
 ### Biến static trong java
 
@@ -173,8 +153,6 @@ public class SinhVien {
 - Giá trị mặc định của biến static phụ thuộc vào kiểu dữ liệu bạn khai báo tương tự biến instance.
 - Biến static được truy cập thông qua tên của class chứa nó, với cú pháp: `TenClass.tenBien`.
 - Trong class, các phương thức sử dụng biến static bằng cách gọi tên của nó khi phương thức đó cũng được khai báo với từ khóa `static`.
-
-<content-example />
 
 ```java
 public class Sinhvien {
@@ -194,13 +172,7 @@ public class Sinhvien {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Ten  : Thaycacac</code><br/>
     <code>Tuoi : 21</code>
-  </div>
-</div>
+</content-result>

@@ -44,15 +44,9 @@ public class XeDap extends Xe {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>100</code>
-  </div>
-</div>
+</content-result>
 
 <div class="example">Nếu chúng ta sử dụng super thì sẽ in ra được tốc độ của lớp cha</div>
 
@@ -76,15 +70,9 @@ public class XeDap extends Xe {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>50</code>
-  </div>
-</div>
+</content-result>
 
 ## Sử dụng super() để gọi contructor của lớp cha
 
@@ -109,16 +97,10 @@ class XeDap extends Xe {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Xe được tạo</code><br/>
     <code>Xe đạp được tạo</code><br/>
-  </div>
-</div>
+</content-result>
 
 ::alert{type="infor"}
 super() được tự động thêm vào mỗi Constructor của class bởi trình biên dịch.
@@ -151,16 +133,10 @@ public class XeDap extends Xe {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Xe được tạo</code><br/>
     <code>10</code>
-  </div>
-</div>
+</content-result>
 
 ## Super được sử dụng để gọi phương thức của lớp cha
 
@@ -190,13 +166,7 @@ public class HocSinh extends Nguoi {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Xin chao Thaycacac</code><br/>
     <code>Xin chao</code>
-  </div>
-</div>
+</content-result>

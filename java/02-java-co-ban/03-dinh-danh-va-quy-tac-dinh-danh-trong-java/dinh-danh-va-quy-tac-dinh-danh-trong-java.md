@@ -13,7 +13,7 @@ position: 3
 
 Trong ngôn ngữ lập trình, định danh được sử dụng với mục đích nhận biết, phân biệt. Trong Java, một định danh có thể là tên một `class` (sẽ tìm hiểu ở các bài sau), tên một phương thức, tên một biến...
 
-![dinh-danh-va-quy-tac-dinh-danh-trong-java](https://user-images.githubusercontent.com/29374426/126279862-b529dc33-71d9-4346-afb0-9a33a01cbb63.png)
+![Định danh và quy tắc định danh trong java](https://user-images.githubusercontent.com/29374426/126279862-b529dc33-71d9-4346-afb0-9a33a01cbb63.png)
 
 ## Định danh là gì và ví dụ
 
@@ -46,15 +46,14 @@ Trong java tên được đặt theo quy tắc sau:
 - Không chứa dấu cách, các kí tự toán học như +, -, \*,/, %..
 - Không trùng với một định danh khác trong cùng một phạm vi
 
-::alert{type="infor"}<ul>
+::alert{type="infor"}
 
-  <li>
-  Tên nên đặt sao cho có thể mô tả được đối tượng trong thực tế
-  </li>
-  <li>Java có phân biệt chữ hoa chữ thường</li>
-  <li>Trong java ta có thể đặt tên với độ dài tuỳ ý</li>
-  <li>Ta có thể sử dụng các kí tự tiếng việt để đặt tên</li>
-<ul>::
+- Tên nên đặt sao cho có thể mô tả được đối tượng trong thực tế
+- Java có phân biệt chữ hoa chữ thường
+- Trong java ta có thể đặt tên với độ dài tuỳ ý
+- Ta có thể sử dụng các kí tự tiếng việt để đặt tên
+
+::
 
 ## Quy ước về đặt tên trong java
 
@@ -63,5 +62,5 @@ Ta nên đặt tên biến, hằng, lớp, phương thức sao cho nghĩa của 
 Sau đây là quy ước đặt tên trong java (chú ý đây chỉ là quy ước nên không bắt buộc phải tuân theo quy ước này):
 
 - Đối với biến và phương thức thì tên bao giờ cũng bắt đầu bằng ký tự thường, nếu tên có nhiều từ thì ghép lại thì: ghép tất cả các từ thành một, ghi từ đầu tiên chữ thường, viết hoa kí tự đầu tiên của mỗi từ theo sau trong tên, ví dụ `area`, `radius`, `readInteger`, …
-- Đối với tên lớp, giao diện ta viết hoa các kí tự đầu tiên của mỗi từ trong tên, ví dụ lớp WhileTest, Circle
-- Tên hằng bao giờ cũng viết hoa, nếu tên gồm nhiều từ thì chúng được nối với hau bởi kí tự ghạch dưới ‘\_’, ví dụ `PI`, `MAX_VALUE`
+- Đối với tên lớp, giao diện ta viết hoa các kí tự đầu tiên của mỗi từ trong tên, ví dụ lớp `WhileTest`, `Circle`
+- Tên hằng bao giờ cũng viết hoa, nếu tên gồm nhiều từ thì chúng được nối với hau bởi kí tự gạch dưới ‘\_’, ví dụ `PI`, `MAX_VALUE`

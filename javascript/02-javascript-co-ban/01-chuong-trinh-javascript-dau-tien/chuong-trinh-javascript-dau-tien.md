@@ -21,15 +21,9 @@ Tùy thuộc vào trình duyệt bạn đang sử dụng, bạn có thể nhấn
 
 Sau đó, bạn chọn tab **console** rồi gõ lệnh sau: `console.log("JavaScript Helloworld")`. Tiếp theo, bạn nhấn **Enter** (để viết nhiều dòng code, bạn nhấn tổ hợp **Shift Enter**).
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>JavaScript Helloworld</code><br/>
-  </div>
-</div>
+</content-result>
 
 ### Console.log là gì?
 

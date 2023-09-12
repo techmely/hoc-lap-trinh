@@ -55,8 +55,7 @@ public class A extends B {
   <div class="window-body">
     <code>Hàm khởi tạo lớp cha</code><br/>
     <code>Hàm khởi tạo lớp con</code><br/>
-  </div>
-</div>
+</content-result>
 
 <div class="example">Đây là cách gọi tường minh</div>
 
@@ -81,16 +80,10 @@ public class A extends B {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Hàm khởi tạo lớp cha</code><br/>
     <code>Hàm khởi tạo lớp con</code><br/>
-  </div>
-</div>
+</content-result>
 
 <div class="example">Một ví dụ khác</div>
 
@@ -120,14 +113,8 @@ public class A extends B {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Hàm khởi tạo lớp cha</code><br/>
     <code>Hàm khởi tạo lớp con</code><br/>
     <code>Hàm khởi tạo lớp con</code>
-  </div>
-</div>
+</content-result>

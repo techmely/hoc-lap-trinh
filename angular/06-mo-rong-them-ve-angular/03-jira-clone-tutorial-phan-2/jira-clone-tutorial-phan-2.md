@@ -153,8 +153,7 @@ Sau khi xong các component nhỏ, mình bắt đầu config layout cho project 
   ></app-navigation>
   <div id="content">
     <router-outlet></router-outlet>
-  </div>
-</div>
+</content-result>
 <svg-definitions></svg-definitions>
 ```
 

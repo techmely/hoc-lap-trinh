@@ -15,7 +15,7 @@ Mỗi ngôn ngữ lập trình có một tập các **từ khoá**, người l�
 
 Dưới đây là danh sách từ khóa trong Java:
 
-![tu-khoa-cua-java](https://user-images.githubusercontent.com/29374426/126283476-8f3179e8-3481-478c-8b1a-14dd8724b333.png)
+![Từ khóa của Java](https://user-images.githubusercontent.com/29374426/126283476-8f3179e8-3481-478c-8b1a-14dd8724b333.png)
 
 | Từ khóa      | Mô tả                                                            |
 | :----------- | :--------------------------------------------------------------- |
@@ -34,7 +34,7 @@ Dưới đây là danh sách từ khóa trong Java:
 | do được      | dùng trong vòng lặp điều kiện sau                                |
 | double       | kiểu dữ liệu số thực                                             |
 | else         | khả năng lựa chọn thứ hai trong câu lệnh if                      |
-| extends      | chỉ rằng một lớp đựơc kế thừa từ một lớp khác                    |
+| extends      | chỉ rằng một lớp được kế thừa từ một lớp khác                    |
 | false        | Gía trị logic                                                    |
 | final        | Dùng để khai báo hằng số, phương thức không thể ghi đè, hoặc lớp |
 | không        | thể kế thừa                                                      |

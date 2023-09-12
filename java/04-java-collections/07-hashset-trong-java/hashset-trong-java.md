@@ -54,8 +54,6 @@ public class HashSet<E> extends AbstractSet<E>
 - `HashSet()`: khởi tạo một danh sách mảng trống.
 - `HashSet(Collection c)`: khởi tạo một danh sách với các phần tử của collection c.
 
-<content-example />
-
 ```java
 HashSet<Integer> numbers = new HashSet<>(8, 0.75);
 ```
@@ -66,8 +64,6 @@ HashSet<Integer> numbers = new HashSet<>(8, 0.75);
 - `loadFactor` – Hệ số tải của HashSet này là 0,6. Điều này có nghĩ là, khi nào HashSet của chúng ta được lấp đầy 60%, các phần tử được chuyển sang hash table mới có kích thước gấp đôi hash table ban đầu.
 
 Cách thứ 2, có thể tạo hash table mà không cần xác định công suất và hệ số tải của nó.
-
-<content-example />
 
 ```java
 HashSet<Integer> numbers1 = new HashSet<>();
@@ -83,8 +79,6 @@ Theo mặc định:
 
 - `add()` – chèn phần tử được chỉ định vào set
 - `addAll()` – chèn tất cả các phần tử của collection đã chỉ định vào `set`
-
-<content-example />
 
 ```java
 import java.util.HashSet;
@@ -109,22 +103,14 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>HashSet: [2, 4, 6]</code><br/>
     <code>New HashSet: [2, 4, 5, 6]</code>
-  </div>
-</div>
+</content-result>
 
 ## Duyệt qua các phần tử trong Hashset
 
 Để truy cập các phần tử của Hashset, chúng ta có thể sử dụng hàm `iterator()`. Để sử dụng hàm này, chúng ta phải import gói `java.util.Iterator`.
-
-<content-example />
 
 ```java
 import java.util.HashSet;
@@ -150,23 +136,15 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>HashSet: [2, 5, 6]</code><br/>
     <code>HashSet using Iterator: 2, 5, 6,</code>
-  </div>
-</div>
+</content-result>
 
 ## Xóa các phần tử trong Hashset
 
 - `remove()` – xóa phần tử đã chỉ định khỏi set
 - `removeAll()` – loại bỏ tất cả các phần tử khỏi set
-
-<content-example />
 
 ```java
 import java.util.HashSet;
@@ -189,23 +167,15 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>HashSet: [2, 5, 6]</code><br/>
     <code>Is 5 removed? true</code><br/>
     <code>Are all elements removed? true</code><br/>
-  </div>
-</div>
+</content-result>
 
 ## Lấy phần hợp trong HashSet
 
 Để lấy phần hợp của 2 set, chúng ta có thể sử dụng hàm `addAll()`.
-
-<content-example />
 
 ```java
 import java.util.HashSet;
@@ -229,23 +199,15 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>HashSet1: [2, 4]</code><br/>
     <code>HashSet2: [1, 3]</code><br/>
     <code>Union is: [1, 2, 3, 4]</code><br/>
-  </div>
-</div>
+</content-result>
 
 ## Lấy phần giao trong HashSet
 
 Để lấy phần giao của 2 set, chúng ta có thể sử dụng hàm `retainAll()`.
-
-<content-example />
 
 ```java
 import java.util.HashSet;
@@ -269,23 +231,15 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>HashSet1: [2, 3]</code><br/>
     <code>HashSet2: [2, 4]</code><br/>
     <code>Intersection is: [2]</code>
-  </div>
-</div>
+</content-result>
 
 ## Tính hiệu của các set
 
 Để tính hiệu hai set, chúng ta có thể sử dụng hàm `removeAll()`.
-
-<content-example />
 
 ```java
 import java.util.HashSet;
@@ -311,23 +265,15 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>HashSet1: [2, 3, 5]</code><br/>
     <code>HashSet2: [1, 3, 5]</code><br/>
     <code>Difference: [2]</code>
-  </div>
-</div>
+</content-result>
 
 ## Kiểm tra có phải tập con hay không trong HashSet
 
 Để kiểm tra xem một set có phải là tập con của set khác hay không, chúng ta có thể sử dụng hàm `containsAll()`.
-
-<content-example />
 
 ```java
 import java.util.HashSet;
@@ -353,17 +299,11 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>HashSet1: [1, 2, 3, 4]</code><br/>
     <code>HashSet2: [2, 3]</code><br/>
     <code>Is HashSet2 is a subset of HashSet1? true</code>
-  </div>
-</div>
+</content-result>
 
 ## Một số hàm khác của Hashset
 

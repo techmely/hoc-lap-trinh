@@ -22,8 +22,6 @@ Trong lập trình ta sẽ gặp một số trường hợp là ban đầu ta kh
 
 Việc ép kiểu thường được diễn ra một cách tự động trong trường hợp biểu thức gồm nhiều toán hạng có kiểu dữ liệu khác nhau. Điều này đôi khi làm cho bạn khá ngạc nhiên vì nhận được một kết quả không theo ý muốn.
 
-<content-example />
-
 ```java
 int two=2, three=3;
 float result= 1.5 + three/two;

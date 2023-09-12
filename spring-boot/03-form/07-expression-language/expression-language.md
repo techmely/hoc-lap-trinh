@@ -24,8 +24,6 @@ Là một ngôn ngữ biểu đạt. Nó rất mạnh mẽ trong hoạt động 
 
 Ở đây expr chỉ định chính biểu thức. Các toán tử phổ biến nhất trong JSP EL là . và [] . Hai toán tử này cho phép bạn truy cập các thuộc tính khác nhau của Java Beans và các đối tượng JSP tích hợp sẵn.
 
-<content-example>
-
 - ${salary _ 2}: nhân đôi giá trị của thuộc tính salary và trả về giá trị của biểu thức salary _ 2
 - ${param.salary}: trả về giá trị của tham số salary
 - ${employee.salary}: trả về giá trị của thuộc tính salary thuộc đối tượng employee
@@ -33,7 +31,6 @@ Là một ngôn ngữ biểu đạt. Nó rất mạnh mẽ trong hoạt động 
 
 </content-example>
 
-<content-example>
 Một ví dụ khác thao tác với controller
 </content-example>
 
@@ -75,7 +72,7 @@ Nếu thuộc tính là một bean thì EL cho phép truy xuất các thuộc t�
 
 Với cú pháp này trả về giá trị của thuộc tính propery của thuộc tính bean. Có nghĩa là trả về giá trị của phương thức bean.getProperty()
 
-<content-example></content-example>
+</content-example>
 
 `${customer.name}` trả về `customer.getName()`
 

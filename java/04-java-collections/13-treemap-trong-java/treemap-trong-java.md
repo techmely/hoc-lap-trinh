@@ -43,8 +43,6 @@ Trong đoạn code trên, chúng ta đã tạo ra một TreeMap tên là numbers
 - `putAll()` – chèn tất cả các mục từ map được chỉ định vào map này
 - `putIfAbsent()` – chèn cặp `key/value` được chỉ định vào map nếu key được chỉ định không có trong map
 
-<content-example />
-
 ```java
 import java.util.TreeMap;
 
@@ -72,24 +70,16 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>TreeMap of even numbers: {Four=4, Six=6, Two=2}</code><br/>
     <code>TreeMap of numbers: {Four=4, One=1, Six=6, Two=2}</code>
-  </div>
-</div>
+</content-result>
 
 ## Lấy các phần tử trong TreeMap
 
 - `entrySet()` – trả về tập hợp gồm tất cả cặp `key/value` (mục nhập) của treemap
 - `keySet()` – trả về tập hợp gồm tất cả các key của `TreeMap`
 - `values()` – trả về một tập hợp gồm tất cả các map của `TreeMap`
-
-<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -115,23 +105,15 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>TreeMap: {One=1, Three=3, Two=2}</code><br/>
     <code>Key/Value mappings: [One=1, Three=3, Two=2]</code><br/>
     <code>Keys: [One, Three, Two]</code><br/>
     <code>Values: [1, 3, 2]</code>
-  </div>
-</div>
+</content-result>
 
 - `get()` - Trả về value liên kết với key được chỉ định. Trả về null nếu không tìm thấy key.
 - `getOrDefault()` - Trả về value liên kết vớikey được chỉ định. Trả về value mặc định đã chỉ định nếu không tìm thấy key.
-
-<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -156,24 +138,16 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>TreeMap: {One=1, Three=3, Two=2}</code><br/>
     <code>Using get(): 3</code><br/>
     <code>Using getOrDefault(): 5</code>
-  </div>
-</div>
+</content-result>
 
 ## Xóa các phần tử khỏi TreeMap
 
 - `remove(key)` – trả về và xóa mục nhập được liên kết với key đã chỉ định khỏi TreeMap
 - `remove(key, value)` – chỉ xóa mục nhập khỏi map nếu key được chỉ định liên kết với value được chỉ định và trả về giá trị boolean
-
-<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -200,26 +174,18 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>TreeMap: {One=1, Three=3, Two=2}</code><br/>
     <code>Removed value = 2</code><br/>
     <code>Is the entry {Three=3} removed? True</code><br/>
     <code>Updated TreeMap: {One=1}</code>
-  </div>
-</div>
+</content-result>
 
 ## Thay thế các phần tử trong TreeMap
 
 - `replace(key, value)` – thay thế value liên kết với key được chỉ định với value mới
 - `replace(key, old, new)` – chỉ thay thế value cũ bằng value mới nếu value cũ được liên kết với key đã chỉ định
 - `replaceAll(function)` – thay thế từng value của map bằng kết quả của một chức năng đã được chỉ định
-
-<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -245,17 +211,11 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Original TreeMap: {First=1, Second=2, Third=3}</code><br/>
     <code>TreeMap using replace(): {First=1, Second=22, Third=33}</code><br/>
     <code>TreeMap using replaceAll(): {First=3, Second=24, Third=35}</code>
-  </div>
-</div>
+</content-result>
 
 Trong chương trình trên, chú ý câu lệnh:
 
@@ -271,8 +231,6 @@ numbers.replaceAll((key, oldValue) -> oldValue + 2);
 - `firstEntry()` – trả về cặp key / value trong key đầu tiên của map
 - `lastKey()` – trả về key cuối cùng của map
 - `lastEntry()` – trả về cặp key / value trong key cuối cùng của map
-
-<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -303,19 +261,13 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>TreeMap: {First=1, Second=2, Third=3}</code><br/>
     <code>First Key: First</code><br/>
     <code>Last Key: Third</code><br/>
     <code>First Entry: First=1</code><br/>
     <code>Last Entry: Third=3</code>
-  </div>
-</div>
+</content-result>
 
 - `elevKey()` – Trả về key thấp nhất trong số các key lớn hơn key đã chỉ định.
 - `elevEntry()` – Trả về một mục được liên kết với key thấp nhất trong số tất cả các key lớn hơn key được chỉ định.
@@ -325,8 +277,6 @@ class Main {
 - `CeilingEntry()` – Trả về một mục được liên kết với key thấp nhất trong số các key lớn hơn key được chỉ định. Nếu đó là một mục được liên kết với key thông qua một đối số có trong map, nó trả về mục được liên kết với key đó.
 - `floorKey()` – Trả về key lớn nhất trong số các key nhỏ hơn key đã chỉ định. Nếu key được truyền dưới dạng đối số thì nó trả về key đó.
 - `floorEntry()` – Trả về mục được liên kết với key lớn nhất trong số các key nhỏ hơn key được chỉ định. Nếu key được truyền dưới dạng đối số có mặt, nó sẽ trả về key đó.
-
-<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -360,12 +310,7 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>TreeMap: {First=1, Fourth=6, Second=5, Third=4}</code><br/>
     <code>Using higherKey(): Second</code><br/>
     <code>Using higherEntry(): Second=5</code><br/>
@@ -378,13 +323,10 @@ class Main {
     <br/>
     <code>Using floorkey(): Fourth</code><br/>
     <code>Using floorEntry(): Fourth=6</code>
-  </div>
-</div>
+</content-result>
 
 - `pollFirstEntry()` – trả về và xóa mục nhập được liên kết với key đầu tiên của map
 - `pollLastEntry()` – trả về và xóa mục nhập được liên kết với key cuối cùng của map
-
-<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -410,22 +352,14 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>TreeMap: {First=1, Second=2, Third=3}</code><br/>
     <code>Using pollFirstEntry(): First=1</code><br/>
     <code>Using pollLastEntry(): Third=3</code><br/>
     <code>Updated TreeMap: {Second=2}</code><br/>
-  </div>
-</div>
+</content-result>
 
 - `headMap(key, booleanValue)`: hàm `headMap()` trả về tất cả các cặp `key / value` của một treemap đứng trước key được chỉ định (được thông qua như là một đối số). Tham số `booleanValue` là tùy chọn. Giá trị mặc định của nó là `false`. Nếu `true` được thông qua như một `booleanValue`, hàm này cũng sẽ bao gồm cặp `key/value` của key được truyền dưới dạng đối số.
-
-<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -451,23 +385,15 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>TreeMap: {First=1, Fourth=4, Second=2, Third=3}</code><br/>
     <br/>
     <code>Using headMap() Method:</code><br/>
     <code>Without boolean value: {First=1}</code><br/>
     <code>With boolean value: {First=1, Fourth=4}</code><br/>
-  </div>
-</div>
+</content-result>
 
 - `tailMap(key, booleanValue)`: hàm `tailMap()` trả về tất cả các cặp `key/value` của một treemap bắt đầu từ key được chỉ định (được thông qua như là một đối số). `booleanValue` là một tham số tùy chọn. Giá trị mặc định của nó là `true`. Nếu `false` được thông qua như một `booleanValue`, hàm sẽ không bao gồm cặp `key/value` của key được chỉ định.
-
-<content-example />
 
 ```java
 import java.util.TreeMap;
@@ -493,23 +419,15 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>TreeMap: {First=1, Fourth=4, Second=2, Third=3}</code><br/>
     <br/>
     <code>Using tailMap() Method:</code><br/>
     <code>Without boolean value: {Second=2, Third=3}</code><br/>
     <code>With boolean value: {Third=3}</code>
-  </div>
-</div>
+</content-result>
 
 - `subMap (k1, bV1, k2, bV2)`: hàm `subMap()` trả về tất cả các mục có liên quan với các key trong khoảng k1 và k2 bao gồm cả mục của k1. bV1 và bV2 là các tham số `boolean` tùy chọn. Giá trị mặc định của bV1 là true và giá trị mặc định của bV2 là false. Nếu false được thông qua như bv1, hàm này sẽ trả về tất cả các mục được liên kết với các key trong khoảng k1 và k2 không bao gồm mục của k1. Nếu true được thông qua như bV2, hàm này sẽ trả về tất cả các mục được liên kết với các key trong khoảng k1 và k2 bao gồm cả mục của k2.
-
-<content-example />
 
 ```java
 class Main {
@@ -533,21 +451,13 @@ class Main {
 }
 ```
 
-<content-example />
-
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>TreeMap: {First=1, Fourth=2, Second=2, Third=3}</code><br/>
     <br/>
     <code>Using subMap() Method:</code><br/>
     <code>Without boolean value: {Fourth=4, Second=2}</code><br/>
     <code>With boolean value: {Second=2, Third=3}</code>
-  </div>
-</div>
+</content-result>
 
 ## Một số hàm của TreeMap
 

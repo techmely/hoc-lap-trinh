@@ -290,8 +290,7 @@ Và mình render cả 2 list lên màn hình
       <h4>Adult user list</h4>
       <div *ngFor="let user of users | isAdult">{{ user.name }}</div>
     </div>
-  </div>
-</div>
+</content-result>
 ```
 
 Như các bạn thấy list những người trưởng thành hiện không có user `Tuan Anh` dc render, chứng tỏ pipe đã hoạt động như ý mình muốn

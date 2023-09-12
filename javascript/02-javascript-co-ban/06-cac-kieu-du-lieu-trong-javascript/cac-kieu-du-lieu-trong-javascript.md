@@ -173,8 +173,6 @@ Có ba cách để biểu diễn string trong JavaScript:
 - Dùng dấu nháy kép (`"`)
 - Dùng dấu "backtick" (`` ` ``)
 
-<content-example />
-
 ```js
 const msg1 = "Đây là string dùng dấu nháy đơn";
 const msg2 = "Đây là string dùng dấu nháy kép";

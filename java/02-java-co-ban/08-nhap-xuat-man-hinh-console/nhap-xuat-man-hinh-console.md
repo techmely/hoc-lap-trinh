@@ -13,7 +13,7 @@ position: 8
 
 Đối với những người mới bắt đầu học Java cơ bản, thì việc sử dụng nhập xuất trong màn hình `console` là điều tất yếu để giải các bài tập. Trong java chúng ta có nhiều cách khác nhau để đọc dữ từ màn hình console, chúng ta sẽ đi qua từng cách ở phần sau.
 
-![nhap-xuat-man-hinh-console](https://user-images.githubusercontent.com/29374426/128108517-2d46376d-f9e2-4075-b311-1e06ff63ffc5.png)
+![Nhập xuất màn hình console trong Java](https://user-images.githubusercontent.com/29374426/128108517-2d46376d-f9e2-4075-b311-1e06ff63ffc5.png)
 
 ## Sử dụng Scanner class
 
@@ -22,8 +22,6 @@ position: 8
 ### Đọc chuỗi từ màn hình console
 
 Để đọc một chuỗi trong Scanner chúng ta sử dụng method `readLine()`.
-
-<content-example />
 
 ```java
 import java.util.Scanner;
@@ -45,22 +43,14 @@ public class NhapXuat {
 
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Nhập tên của bạn:<b>thaycacac</b></code><br/>
     <code>Tên của bạn là: <b>thaycacac</b></code>
-  </div>
-</div>
+</content-result>
 
 ### Đọc số trong màn hình console
 
 Để nhập xuất kiểu số, chúng ta sử dụng `nextInt()` để đọc số Integer, `nextDouble()` để đọc số Double, `nextFloat()` để đọc số float etc.
-
-<content-example />
 
 ```java
 import java.util.Scanner;
@@ -85,26 +75,18 @@ public class NhapXuat {
 
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Nhập tuổi của bạn: <b>18</b></code><br/>
     <code>Tuổi của bạn là: <b>18</b></code><br/>
     <code>Nhập chiều cao của bạn: <b>18.22</b></code><br/>
     <code>Chiều cao của bạn là: <b>18.22</b></code>
-  </div>
-</div>
+</content-result>
 
 ## Sử dụng Buffered Reader Class
 
 ### Đọc chuỗi từ màn hình console
 
 Sử dụng `readLine()` để đọc một chuỗi từ màn hình console
-
-<content-example />
 
 ```java
 import java.io.BufferedReader;
@@ -122,22 +104,14 @@ class Thaycacac
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Nhập tên của bạn: <b>thaycacac</b></code><br/>
     <code>Tên của bạn là: <b>thaycacac</b></code>
-  </div>
-</div>
+</content-result>
 
 ### Đọc số trong màn hình console
 
 Để đọc số trong màn hình console chúng ta sử dụng `readLine()` kết hợp với `Double.parse()` hoặc `Integer.parse()` để đọc kiểu dữ liệu tương ứng.
-
-<content-example />
 
 ```java
 import java.io.BufferedReader;
@@ -157,24 +131,16 @@ public static void main(String[] args) throws IOException {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Nhập tuổi của bạn: <b>18</b></code><br/>
     <code>Tuổi của bạn là: <b>18</b></code><br/>
     <code>Nhập chiều cao của bạn: <b>18.22</b></code><br/>
     <code>Chiều cao của bạn là: <b>18.22</b></code>
-  </div>
-</div>
+</content-result>
 
 ## Sử dụng console class
 
 Sử dụng Console class cũng là một trong những cách thường dùng, đặc biệt nó có thể dùng để đọc password thứ mà không hiện thị lên màn hình console mà chỉ đọc ngầm bên dưới.
-
-<content-example />
 
 ```java
 import java.io.Console;
@@ -194,13 +160,7 @@ class ReadPassword {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
+<content-result>
     <code>Nhập mật khẩu: <b>@myPassword</b></code><br/>
     <code>Mật khẩu của bạn là: <b>@myPassword</b></code>
-  </div>
-</div>
+</content-result>
