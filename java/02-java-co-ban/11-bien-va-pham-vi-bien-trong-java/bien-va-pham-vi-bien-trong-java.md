@@ -16,7 +16,7 @@ Trong java, biến là một liên kết tới một vị trí trên bộ nhớ 
 - Giá trị trên bộ nhớ mà biến liên kết tới chính là giá trị của biến.
 - Kiểu dữ liệu của biến cũng chính là kiểu dữ liệu lưu trên bộ nhớ đó.
 
-![bien-va-pham-vi-bien-trong-java](https://user-images.githubusercontent.com/29374426/126464912-683c218b-737b-4076-abaa-6b6e406b8121.png)
+![Biến và phạm vi biến trong Java](https://user-images.githubusercontent.com/29374426/126464912-683c218b-737b-4076-abaa-6b6e406b8121.png)
 
 ## Khai báo biến
 
@@ -34,31 +34,31 @@ _Trong đó:_
 
 ::alert{type="infor"}
 
-<p>Nếu cần khai báo nhiều biến có cùng một kiểu dữ liệu ta có thể đặt các khai báo các biến trên một dòng, các biến này được phân cách nhau bởi dấu phảy. Java sẽ xử lý các biến không được khởi đầu giá trị như sau:</p>
-  <ul>
-    <li>Giá trị 0 cho kiểu dữ liệu số</li>
-    <li>false cho kiểu logic</li>
-    <li>Kí tự null (mã 0) cho kí tự</li>
-    <li>Giá trị null cho kiểu đối tượng</li>
-    <li>Đối với các biến cục bộ thì biến không được khới gán giá trị mặc định, tuy nhiên Java sẽ báo lỗi nếu ta sử dụng một biến chưa được nhận giá trị</li>
-  </ul>
+Nếu cần khai báo nhiều biến có cùng một kiểu dữ liệu ta có thể đặt các khai báo các biến trên một dòng, các biến này được phân cách nhau bởi dấu phảy. Java sẽ xử lý các biến không được khởi đầu giá trị như sau:</p>
+
+- Giá trị 0 cho kiểu dữ liệu số
+- false cho kiểu logic
+- Kí tự null (mã 0) cho kí tự
+- Giá trị null cho kiểu đối tượng
+- Đối với các biến cục bộ thì biến không được gán giá trị mặc định, tuy nhiên Java sẽ báo lỗi nếu ta sử dụng một biến chưa được nhận giá trị
+
 ::
 
-## Phạm vi Biến
+## Phạm vi Biến trong Java
 
 Mỗi biến được khai báo ra có một phạm vi hoạt động, phạm vi của biến là nơi mà biến có thể được truy cập, điều này xác định cả tính thấy được và thời gian sống của biến
 
-![bien-va-pham-vi-bien-trong-java](https://user-images.githubusercontent.com/29374426/124429210-caf84300-dd97-11eb-8136-6282d64bb1ad.png)
+![Phạm vi Biến trong Java](https://user-images.githubusercontent.com/29374426/124429210-caf84300-dd97-11eb-8136-6282d64bb1ad.png)
 
 ### Biến local trong java
 
-- Biến cục bộ được khai báo trong các phương thức, hàm `contructor` hoặc trong các block.
-- Biến cục bộ được tạo bên trong các phương thức, `contructor`, block và sẽ bị phá hủy khi kết thúc các phương thức, `contructor` và block.
+- Biến cục bộ được khai báo trong các phương thức, hàm `constructor` hoặc trong các block.
+- Biến cục bộ được tạo bên trong các phương thức, `constructor`, block và sẽ bị phá hủy khi kết thúc các phương thức, `constructor` và block.
 - Các biến cục bộ sẽ nằm trên vùng bộ nhớ stack của bộ nhớ.
 - Bạn cần khởi tạo giá trị mặc định cho biến cục bộ trước khi có thể sử dụng.
 - Không được sử dụng `access modifier` khi khai báo biến cục bộ.
 
-<div class="example">Khởi tạo biến local:</div>
+#### Ví dụ khởi tạo biến local
 
 ```java
 public class Bien {
@@ -77,7 +77,7 @@ public class Bien {
 
 ::result
 
-    <code>Giá trị của n là: 10</code>
+Giá trị của n là: 10
 
 ::
 
@@ -97,9 +97,7 @@ public class Bien {
 ```
 
 ::result
-
-    <code>Exception in thread "main" java.lang.Error: Unresolved compilation problem: The local variable n may not have been initialized</code>
-
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: The local variable n may not have been initialized
 ::
 
 ### Biến biến instance (biến toàn cục) trong java
@@ -144,10 +142,8 @@ public class SinhVien {
 ```
 
 ::result
-
-    <code>Ten  : Thaycacac</code><br/>
-    <code>Tuoi : 21</code>
-
+Ten : Thaycacac<br/>
+Tuoi : 21
 ::
 
 ### Biến static trong java
@@ -179,8 +175,6 @@ public class Sinhvien {
 ```
 
 ::result
-
-    <code>Ten  : Thaycacac</code><br/>
-    <code>Tuoi : 21</code>
-
+Ten : Thaycacac<br/>
+Tuoi : 21
 ::
