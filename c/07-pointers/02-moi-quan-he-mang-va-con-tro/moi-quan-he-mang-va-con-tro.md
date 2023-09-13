@@ -33,7 +33,7 @@ int main() {
 }
 ```
 
-kết quả
+Kết quả
 
 ```cpp
 &x[0] = 000000000062FE00
@@ -44,17 +44,17 @@ kết quả
 Address of array num: 000000000062FE00
 ```
 
-vì kích thước của `int` là `4 byte` nên địa chỉ của hai phần tử mảng liên tiếp cũng chênh nhau `4 byte`
+Cì kích thước của `int` là `4 byte` nên địa chỉ của hai phần tử mảng liên tiếp cũng chênh nhau `4 byte`.
 
 > địa chỉ của `&num[0]` và `num` là giống nhau vì `num` trỏ đến phần tử đầu tiên của mảng
 
-từ ví dụ trên rõ ràng `&num[0]` là tương đương với `num`. Và, `num[0]` tương đương với `*num`.
+Từ ví dụ trên rõ ràng `&num[0]` là tương đương với `num`. Và, `num[0]` tương đương với `*num`.
 
 Tương tự,
 
-- `&num[1]` tương đương với `num+1` và `num[1]` tương đương với `*(num+1)`.
-- `&num[2]` tương đương với `num+2` và `num[2]` tương đương với `*(num+2)`.
-- Về cơ bản, `&num[i]` tương đương với `num+i` và `num[i]` tương đương với `*(num+i)`.
+- `&num[1]` tương đương với `num+1` và `num[1]` tương đương với `*(num+1)`
+- `&num[2]` tương đương với `num+2` và `num[2]` tương đương với `*(num+2)`
+- Về cơ bản, `&num[i]` tương đương với `num+i` và `num[i]` tương đương với `*(num+i)`
 
 ## Một số ví dụ để hiểu rõ hơn về con trỏ và mảng
 
@@ -121,6 +121,6 @@ Kết quả
 *(pn-1) = 3
 ```
 
-Trong ví dụ này `&num[3]` là địa chỉ của phần tử thứ tư, được gán cho con trỏ `pn`, do đó giá trị của `*pn` lúc này sẽ là `4`
+Trong ví dụ này `&num[3]` là địa chỉ của phần tử thứ tư, được gán cho con trỏ `pn`, do đó giá trị của `*pn` lúc này sẽ là `4`.
 
-Và tương tự `pn+1` sẽ trỏ vào phần tử thứ năm, `*pn+1` lúc này sẽ mang giá trị là `5`, còn `*pn-1` sẽ mang giá trị là `3`
+Và tương tự `pn+1` sẽ trỏ vào phần tử thứ năm, `*pn+1` lúc này sẽ mang giá trị là `5`, còn `*pn-1` sẽ mang giá trị là `3`.

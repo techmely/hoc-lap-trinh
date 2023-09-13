@@ -175,7 +175,7 @@ result = 2.000000
 
 **VÌ SAO LẠI NHƯ VẬY?**
 
-Các bạn hãy chuyển sang đọc tiếp riêng một bài viết về vấn đề này tại đây Type Conversion
+Các bạn hãy chuyển sang đọc tiếp riêng một bài viết về vấn đề này tại đây [Type Conversion](/bai-viet/c/chuyen-doi-kieu-du-lieu-trong-c)
 
 ## Tăng giá trị và giảm giá trị trong
 
@@ -318,7 +318,7 @@ int main() {
 }
 ```
 
-Với những phép toán cơ bản khác cũng hoạt động y như vậy, đây là một chương trình làm ví dụ :
+Với những phép toán cơ bản khác cũng hoạt động y như vậy, đây là một chương trình làm ví dụ:
 
 ```cpp
 #include <stdio.h>

@@ -1,6 +1,6 @@
 ---
 title: "Câu lệnh điều kiện if trong C"
-description: "Câu lệnh điều kiện 'if' là một phần quan trọng không thể thiếu trong việc xây dựng các chương trình máy tính. Nó cho phép bạn kiểm tra điều kiện và thực hiện các hành động khác nhau dựa trên kết quả của điều kiện đó. Hãy khám phá chi tiết về cách sử dụng câu lệnh "if" để kiểm soát luồng của chương trình và tạo ra các ứng dụng mạnh mẽ trong ngôn ngữ lập trình C. Đọc ngay nào!"
+description: "Câu lệnh điều kiện 'if' là một phần quan trọng không thể thiếu trong việc xây dựng các chương trình máy tính. Nó cho phép bạn kiểm tra điều kiện và thực hiện các hành động khác nhau dựa trên kết quả của điều kiện đó. Hãy khám phá chi tiết về cách sử dụng câu lệnh 'if' để kiểm soát luồng của chương trình và tạo ra các ứng dụng mạnh mẽ trong ngôn ngữ lập trình C. Đọc ngay nào!"
 chapter:
   name: "Câu điều kiện"
   slug: "chuong-03-conditions"

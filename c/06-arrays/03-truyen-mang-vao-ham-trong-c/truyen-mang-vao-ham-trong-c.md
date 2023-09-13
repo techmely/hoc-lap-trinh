@@ -11,9 +11,9 @@ image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982
 position: 3
 ---
 
-Trong bài học này, chúng ta sẽ học cách chuyển mảng (cả mảng một chiều và nhiều chiều) cho một hàm trong lập trình C
+Trong bài học này, chúng ta sẽ học cách chuyển mảng (cả mảng một chiều và nhiều chiều) cho một hàm trong lập trình C.
 
-chúng ta sẽ có những phương pháp hay dùng như sau
+Chúng ta sẽ có những phương pháp hay dùng như sau:
 
 - Pass Individual Array Elements
 - Pass Arrays to Functions
@@ -51,7 +51,7 @@ Kết quả:
 3
 ```
 
-> tại đây chúng ta đã truyền tham số vào trong hàm `display` giống như cách chúng ta truyền các biến cho hàm
+> Tại đây chúng ta đã truyền tham số vào trong hàm `display` giống như cách chúng ta truyền các biến cho hàm.
 
 ```cpp
 //chuyền vào phần tử thứ nhất và phần tử thứ 3 vào hàm display()
@@ -116,7 +116,7 @@ float sum(float num[]) {
 
 ## Pass Multidimensional Arrays to a Function
 
-Để truyền mảng nhiều chiều cho một hàm, ta chỉ truyền tên của mảng vào hàm (tương tự như mảng một chiều).
+Để truyền mảng đa chiều cho một hàm, ta chỉ truyền tên của mảng vào hàm (tương tự như mảng một chiều).
 
 Ví dụ:
 
@@ -149,7 +149,7 @@ void display(int num[][2]) {
 }
 ```
 
-Kêt quả
+Kết quả:
 
 ```cpp
 Enter 4 numbers:

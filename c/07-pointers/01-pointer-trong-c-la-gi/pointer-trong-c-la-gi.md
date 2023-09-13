@@ -13,25 +13,25 @@ position: 1
 
 Pointer (biến con trỏ) là các biến đặc biệt được sử dụng để lưu trữ địa chỉ hơn là giá trị.
 
-và trong bài học ngày hôm nay chúng ta sẽ cùng tìm hiểu về:
+Và trong bài học ngày hôm nay chúng ta sẽ cùng tìm hiểu về:
 
-- Cú pháp con trỏ
-- Gán địa chỉ vào một con trỏ
-- Lấy giá trị của địa chỉ được con trỏ trỏ vào
-- Thay đổi giá trị được trỏ bởi con trỏ
-- Cách con trỏ hoạt động
+- Cú pháp con trỏ.
+- Gán địa chỉ vào một con trỏ.
+- Lấy giá trị của địa chỉ được con trỏ trỏ vào.
+- Thay đổi giá trị được trỏ bởi con trỏ.
+- Cách con trỏ hoạt động.
 
 ## Cú pháp con trỏ trong C
 
-Đây là cách chúng ta dùng để khai báo con trỏ
+Đây là cách chúng ta dùng để khai báo con trỏ:
 
 ```cpp
 int* p;
 ```
 
-tại đây ta đã khai báo một con trỏ tên là `p` và có kiểu dữ liệu là `int`
+Tại đây ta đã khai báo một con trỏ tên là `p` và có kiểu dữ liệu là `int`.
 
-Hoặc ta có thể khai báo theo cách sau
+Hoặc ta có thể khai báo theo cách sau:
 
 ```cpp
 int *p1;
@@ -71,9 +71,9 @@ pc = &c;
 printf("%d", *pc);   // Output: 5
 ```
 
-địa chỉ của `c` được trỏ bởi con trỏ `pc`: `pc = &c` . Để lấy giá trị được lưu trữ trong địa chỉ đó chúng ta sử dụng `*pc`
+Địa chỉ của `c` được trỏ bởi con trỏ `pc`: `pc = &c` . Để lấy giá trị được lưu trữ trong địa chỉ đó chúng ta sử dụng `*pc`.
 
-> `pc` là một con trỏ trỏ tới một địa chỉ, còn `*pc` là cú pháp để lấy giá trị được lưu trữ trong địa chỉ mà con trỏ `pc` trỏ vào nên chúng ta không được code như `*pc = &c`
+> `pc` là một con trỏ trỏ tới một địa chỉ, còn `*pc` là cú pháp để lấy giá trị được lưu trữ trong địa chỉ mà con trỏ `pc` trỏ vào nên chúng ta không được code như `*pc = &c`.
 
 ## Thay đổi giá trị của con trỏ
 
@@ -88,7 +88,7 @@ printf("%d", c);    // Output: 2
 printf("%d", *pc);  // Ouptut: 2
 ```
 
-Tại ví dụ này chúng ta đã dùng con trỏ `pc` để trỏ tới địa chỉ của `c` thì khi ta thay đổi biến `c = 2` đồng nghĩa với việc `*pc` cũng được thay đổi giá trị thành `2`
+Tại ví dụ này chúng ta đã dùng con trỏ `pc` để trỏ tới địa chỉ của `c` thì khi ta thay đổi biến `c = 2` đồng nghĩa với việc `*pc` cũng được thay đổi giá trị thành `2`.
 
 Ví dụ 2:
 
@@ -106,7 +106,7 @@ printf("%d", *pa); // Ouptut: -3
 Ở ví dụ này con trỏ `pa` sẽ trỏ vào địa chỉ của biến `a`
 mà giá trị của biến `a` lúc này là 2 nên giá trị của `*pa` cũng là 2.
 
-sau đó con trỏ `pa` sẽ trỏ vào địa chỉ của biến `b`, tương tự `*pa` lúc này mang giá trị là -3 do `b = -3`
+Sau đó con trỏ `pa` sẽ trỏ vào địa chỉ của biến `b`, tương tự `*pa` lúc này mang giá trị là -3 do `b = -3`.
 
 ## Cách làm việc của con trỏ
 
@@ -153,13 +153,13 @@ Address of c: 000000000062FE14
 Value of c: -2
 ```
 
-Giải thích về cách hoạt động của con trỏ
+Giải thích về cách hoạt động của con trỏ.
 
 ```cpp
 int* pc, c;
 ```
 
-Tại đây chúng ta đang khai báo một con trỏ `pc` và một biến `c` thuộc kiểu dữ liệu `int`
+Tại đây chúng ta đang khai báo một con trỏ `pc` và một biến `c` thuộc kiểu dữ liệu `int`.
 
 ```cpp
 c = 18;
@@ -171,7 +171,7 @@ Giá trị `18` đang được lưu trữ trong bộ nhớ của `c`.
 pc = &c;
 ```
 
-Con trỏ `pc` sẽ trỏ đến địa chỉ bộ nhớ của biến `c`
+Con trỏ `pc` sẽ trỏ đến địa chỉ bộ nhớ của biến `c`.
 
 ```cpp
 c = 10;
@@ -179,10 +179,10 @@ c = 10;
 
 Giá trị `10` được lưu trữ trong bộ nhớ của `c`.
 
-Trong khi đó con trỏ `pc` đang được trỏ đến địa chỉ bộ nhớ của biến sẽ nên lúc này `*pc` sẽ có giá trị là `10`
+Trong khi đó con trỏ `pc` đang được trỏ đến địa chỉ bộ nhớ của biến sẽ nên lúc này `*pc` sẽ có giá trị là `10`.
 
 ```cpp
 *pc = -2;
 ```
 
-Ta thay đổi giá trị được lưu trữ tại bộ nhớ mà con trỏ `pc` trỏ vào nên giá trị của biến `c` thay đổi, lúc này giá trị được lưu trự tại biến `c` là `-2`
+Ta thay đổi giá trị được lưu trữ tại bộ nhớ mà con trỏ `pc` trỏ vào nên giá trị của biến `c` thay đổi, lúc này giá trị được lưu trự tại biến `c` là `-2`.

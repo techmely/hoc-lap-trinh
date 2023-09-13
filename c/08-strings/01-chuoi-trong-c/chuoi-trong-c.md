@@ -22,9 +22,9 @@ Trong bài học này, chúng ta sẽ tìm hiểu về chuỗi trong lập trìn
 
 ## Chuỗi trong C là gì
 
-Chuỗi là một mảng các kí tự được kết thúc bằng kí tự **_null_** `\0`
+Chuỗi là một mảng các kí tự được kết thúc bằng kí tự **_null_** `\0`.
 
-Ví dụ
+Ví dụ:
 
 ```cpp
 char c[] = "Hello Anest";
@@ -71,7 +71,7 @@ Lúc này, ta đang cố gán 6 ký tự (ký tự cuối cùng là `\0`) cho m�
 
 ## Gán giá trị vào chuỗi trong C
 
-Chuỗi không hỗ trợ cho toán tử gán `=` nên ta phải dùng hàm `strcpy()` để sao chép chuỗi
+Chuỗi không hỗ trợ cho toán tử gán `=` nên ta phải dùng hàm `strcpy()` để sao chép chuỗi.
 
 Ví dụ:
 
@@ -116,14 +116,14 @@ int main()
 }
 ```
 
-kết quả:
+Kết quả:
 
 ```cpp
 Enter name: Anest Academy
 Your name is Anest.
 ```
 
-Mặc dù `Anest Academy` đã được nhập tại chương trình trên nhưng chỉ `Anest` được lưu trữ tại string `name`, đó là vì có một khoảng trắng đằng sau `Anest`
+Mặc dù `Anest Academy` đã được nhập tại chương trình trên nhưng chỉ `Anest` được lưu trữ tại string `name`, đó là vì có một khoảng trắng đằng sau `Anest`.
 
 Vậy làm thế nào để đọc một dòng văn bản?
 
@@ -151,7 +151,7 @@ Enter name: Anest Academy
 Name: Anest Academy
 ```
 
-Tại chương trình trên ta đã sử dụng hàm `fgets()` để đọc một chuỗi văn bản từ người dùng và hàm `puts()` để hiển thị văn bản đó
+Tại chương trình trên ta đã sử dụng hàm `fgets()` để đọc một chuỗi văn bản từ người dùng và hàm `puts()` để hiển thị văn bản đó.
 
 ```cpp
 fgets(name, sizeof(name), stdin);
@@ -159,7 +159,7 @@ fgets(name, sizeof(name), stdin);
 puts(name);
 ```
 
-`sizeof(name)` sẽ mang giá trị là 30, do đó chúng ta có thể đọc được một chuỗi tối đa 30 kí tự
+`sizeof(name)` sẽ mang giá trị là 30, do đó chúng ta có thể đọc được một chuỗi tối đa 30 kí tự.
 
 ## Truyền chuỗi vào hàm trong C
 
@@ -193,7 +193,7 @@ Enter string: Anest Academy
 String Output: Anest Academy
 ```
 
-Tại đây chúng ta truyền một chuỗi `name` vào hàm `displayString()`
+Tại đây chúng ta truyền một chuỗi `name` vào hàm `displayString()`.
 
 ```cpp
 displayString(name);
@@ -201,7 +201,7 @@ displayString(name);
 
 ## Chuỗi và con
 
-Ví dụ
+Ví dụ:
 
 ```cpp
 #include <stdio.h>

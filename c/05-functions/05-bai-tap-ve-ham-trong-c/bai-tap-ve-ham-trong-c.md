@@ -15,7 +15,7 @@ Các bài tập sẽ có template code, các bạn sao chép về và thực hi�
 
 ## Bài 1
 
-> **Nhập một số dạng nhị phân `n` từ bàn phím, chuyển đổi `n` thành dạng bát phân**
+> **Nhập một số dạng nhị phân `n` từ bàn phím, chuyển đổi `n` thành dạng bát phân.**
 
 _Hint: trước tiên chúng ta sẽ chuyển đổi một số nhị phân sang thập phân. Sau đó, số thập phân được chuyển đổi thành bát phân._
 
@@ -48,7 +48,7 @@ OUTPUT:
 
 ## Bài 2
 
-> **Nhập hai số `a` và `b`, hiển thị các số nguyên tố nằm trong khoảng `a` và `b`**
+> **Nhập hai số `a` và `b`, hiển thị các số nguyên tố nằm trong khoảng `a` và `b`.**
 
 Template:
 
@@ -80,9 +80,9 @@ OUTPUT:
 
 ## Bài 3
 
-> **Nhập một số nguyên `x` kiểm tra xem số đó có là _palindrome-number_ hay không, nếu có hiển thị `true` không thì hiển thị `false`**
+> **Nhập một số nguyên `x` kiểm tra xem số đó có là _palindrome-number_ hay không, nếu có hiển thị `true` không thì hiển thị `false`.**
 
-_Giải thích: 14341 là palindrome-number do viết ngược lại vẫn là 14341, còn 123 không phải palindrome-number do viết ngược lại là 321_
+_Giải thích: 14341 là palindrome-number do viết ngược lại vẫn là 14341, còn 123 không phải palindrome-number do viết ngược lại là 321._
 
 Template:
 

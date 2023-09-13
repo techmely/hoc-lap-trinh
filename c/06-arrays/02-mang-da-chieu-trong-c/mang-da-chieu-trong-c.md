@@ -11,11 +11,11 @@ image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982
 position: 2
 ---
 
-Trong bài học này, chúng ta sẽ học cách làm việc với mảng đa chiều
+Trong bài học này, chúng ta sẽ học cách làm việc với mảng đa chiều.
 
 ## Mảng đa chiều trong C
 
-Trong lập trình C, chúng ta có thể tạo một mảng mảng. Mảng này được gọi là mảng nhiều chiều.
+Trong lập trình C, chúng ta có thể tạo một mảng mảng. Mảng này được gọi là mảng đa chiều.
 
 Ví dụ:
 
@@ -39,11 +39,11 @@ Ví dụ:
 int num[4][2][3]
 ```
 
-Và mảng `num` này có thể chứa `4` _ `2` _ `3` = `24` phần tử
+Và mảng `num` này có thể chứa `4` _ `2` _ `3` = `24` phần tử.
 
 ## Khởi tạo một mảng đa chiều trong C
 
-chúng ta có thể khởi tạo mảng đa chiều bằng một trong các cách sau
+Chúng ta có thể khởi tạo mảng đa chiều bằng một trong các cách sau.
 
 Ví dụ khởi tạo mảng hai chiều:
 
@@ -53,7 +53,7 @@ int num[3][2] = {{1, 3}, {-5, 4}, {17, 35}};
 int num[][2] = {{1, 3}, {-5, 4}, {17, 35}};
 ```
 
-ví dụ khởi tạo mảng ba chiều:
+Ví dụ khởi tạo mảng ba chiều:
 
 ```cpp
 int num[2][3][4] = {
@@ -64,7 +64,7 @@ int num[2][3][4] = {
 
 ## Nhập và xuất phần tử trong mảng
 
-để nhập vào, lưu trữ và hiển thị giá trị các phần tử của mảng hai chiều chúng ta sẽ sử dụng **`nested loop`**
+Để nhập vào, lưu trữ và hiển thị giá trị các phần tử của mảng hai chiều chúng ta sẽ sử dụng **`nested loop`**.
 
 Ví dụ nhập vào một matrix có 3 hàng và 4 cột và hiển thị ra matrix đó:
 
@@ -156,7 +156,7 @@ int main() {
 }
 ```
 
-kết quả:
+Kết quả:
 
 ```cpp
 Enter num[0][0][0]: -2

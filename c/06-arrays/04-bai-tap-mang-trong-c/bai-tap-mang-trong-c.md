@@ -82,7 +82,7 @@ Sorted array: 1, 3, 5, 6, 8, 11 , 13, 22, 34, 54
 
 ## Bài 3
 
-> Tạo ngẫu nhiên giá trị số nguyên dương từ **_1_** đến **_100_** cho mảng có **_mười phần tử_**, nhập giá trị cần tìm và tìm giá trị đó trong mảng, hiển thị vị trí của giá trị cần tìm trong mảng bằng phương pháp **_Binary Search_**
+> Tạo ngẫu nhiên giá trị số nguyên dương từ **_1_** đến **_100_** cho mảng có **_mười phần tử_**, nhập giá trị cần tìm và tìm giá trị đó trong mảng, hiển thị vị trí của giá trị cần tìm trong mảng bằng phương pháp **_Binary Search_**. 
 
 Template:
 

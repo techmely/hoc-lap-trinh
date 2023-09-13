@@ -1,6 +1,6 @@
 ---
 title: "Biến và hằng số trong C"
-description: "Biến và hằng số đóng vai trò quan trọng trong mọi chương trình C. Biến là những "kho chứa" dữ liệu có thể thay đổi trong quá trình thực thi, trong khi hằng số là các giá trị không thay đổi. Chúng tạo nên cơ sở của mọi logic và tính toán trong lập trình."
+description: "Biến và hằng số đóng vai trò quan trọng trong mọi chương trình C. Biến là những kho chứa dữ liệu có thể thay đổi trong quá trình thực thi, trong khi hằng số là các giá trị không thay đổi. Chúng tạo nên cơ sở của mọi logic và tính toán trong lập trình."
 chapter:
   name: "Nhập môn C"
   slug: "chuong-02-basic-concepts"
@@ -52,7 +52,7 @@ Trong ngôn ngữ C, mỗi biến có một tên gọi, nhưng không phải mu�
 - Chúng ta chỉ có thể đặt tên nó bằng những chữ cái viết thường hay viết hoa và những con số.
 - Tên của biến phải bắt đầu bằng một chữ cái. Chúng ta không được sử dụng khoảng trắng `(space)`, thay vào đó chúng ta có thể sử dụng kí tự `_` `(underscore)`- đó là kí tự duy nhất không thuộc dạng chữ cái hay số được phép sử dụng.
 - Bạn cũng không được phép sử dụng chữ cái mang dấu trọng âm. (ví dụ é è ê...).
-- Tên biến không được trùng với những từ khoá trong C
+- Tên biến không được trùng với những từ khoá trong C.
 - Và một điều hết sức quan trọng mà bạn cần phải nắm đó là trong ngôn ngữ C có sự khác nhau giữa chữ thường và chữ in hoa: `chieu_rong`, `CHIEU_RONG` và `CHieu_RoNg` là tên của 3 biến khác nhau trong ngôn ngữ C.
 
 ### Vậy đặt tên biến như thế nào cho đúng?
@@ -140,8 +140,8 @@ C
 
 Nếu bạn muốn khởi tạo một biến có giá trị **không thể thay đổi**, bạn có thể sử dụng 2 cách sau:
 
-- Sử dụng bộ tiền xử lý `#define`
-- Sử dụng từ khóa `const`
+- Sử dụng bộ tiền xử lý `#define`.
+- Sử dụng từ khóa `const`.
 
 Điều này sẽ tạo ra một **hằng số**.
 

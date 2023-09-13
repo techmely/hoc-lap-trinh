@@ -38,7 +38,7 @@ Kết quả:
 I am student.
 ```
 
-Nếu bạn cần phải sử dụng các ký tự không thể gõ hoặc có ý nghĩa đặc biệt Escape Sequences
+Nếu bạn cần phải sử dụng các ký tự không thể gõ hoặc có ý nghĩa đặc biệt Escape Sequences.
 
 ## Hiển thị giá trị biến trong output
 

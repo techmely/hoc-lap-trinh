@@ -109,7 +109,7 @@ Phân tích bài toán:
 - Vậy điều kiện dừng là gì? Đề bài không thấy nói đến?
   - Bạn có nhận thấy mỗi lần chia hết cho `10` thì `n` sẽ giảm dần giá trị, và cuối cùng khi `n < 10` hay là `n` chỉ còn 1 chữ số thì `n / 10 = 0`. Vì vậy chúng ta sẽ có điều kiện dừng ở đây là `n > 0`.
 
-Solution code:
+Coding solution:
 
 ```cpp
 #include <stdio.h>

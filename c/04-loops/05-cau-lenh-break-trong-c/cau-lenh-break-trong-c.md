@@ -100,7 +100,7 @@ Chúng ta cũng có thể sử dụng lệnh **`break`** trong khi làm việc v
 
 Ví dụ:
 
-> In ra hình chữ nhật
+> In ra hình chữ nhật.
 
 ```cpp
 # include <stdio.h>

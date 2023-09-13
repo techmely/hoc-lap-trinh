@@ -46,17 +46,17 @@ Giả sử chúng ta đã khai báo một mảng `number` như trên. Phần t�
 #### Take note:
 
 - Mảng có 0 là chỉ mục đầu tiên, không phải 1. Trong ví dụ này, `number[0]` là phần tử đầu tiên.
-- Nếu kích thước của một mảng là `n`, thì để truy cập phần tử cuối cùng, `n-1` chỉ mục được sử dụng. Trong ví dụ này, `number[4]` là phần tử cuối cùng
+- Nếu kích thước của một mảng là `n`, thì để truy cập phần tử cuối cùng, `n-1` chỉ mục được sử dụng. Trong ví dụ này, `number[4]` là phần tử cuối cùng.
 
 ## Khởi tạo một mảng trong
 
-### Chúng ta có thể khởi tạo mảng trong quá trình khai báo.
+Chúng ta có thể khởi tạo mảng trong quá trình khai báo.
 
 ```cpp
 int number[5] = {10, 15, 13, 31, 56};
 ```
 
-### Hoặc chúng ta cũng có thể khởi tạo mảng theo cách này
+Hoặc chúng ta cũng có thể khởi tạo mảng theo cách này:
 
 ```cpp
 int number[] = {10, 15, 13, 31, 56};
@@ -64,7 +64,7 @@ int number[] = {10, 15, 13, 31, 56};
 
 Ở đây, chúng ta chưa khai báo kích thước. Tuy nhiên, trình biên dịch biết kích thước của nó là 5 vì chúng ta đang khởi tạo nó với 5 phần tử.
 
-Lúc này ta có các giá trị được lưu vào các biến
+Lúc này ta có các giá trị được lưu vào các biến:
 | Phần tử | Giá trị |
 | :-----: | -------- |
 | `number[0]` | `10` |
@@ -87,9 +87,9 @@ mark[3] = 6;
 
 ## Nhập và xuất các phần tử trong mảng
 
-Để nhập giá trị cho các phần tử trong mảng chúng ta sử dụng vòng lặp `for` để duyệt mảng và gán giá trị lần lượt cho các phần tử hoặc chỉ định ra phần tử nhập giá trị trực tiếp `scanf("%d", &number[2]);`
+Để nhập giá trị cho các phần tử trong mảng chúng ta sử dụng vòng lặp `for` để duyệt mảng và gán giá trị lần lượt cho các phần tử hoặc chỉ định ra phần tử nhập giá trị trực tiếp `scanf("%d", &number[2]);`.
 
-Tương tự để in ra các phần tử trong mảng chúng ta sử dụng vòng lặp `for` để duyệt mảng và in lần lượt các phần tử hoặc chỉ định ra phần tử in `printf("%d", number[2]);`
+Tương tự để in ra các phần tử trong mảng chúng ta sử dụng vòng lặp `for` để duyệt mảng và in lần lượt các phần tử hoặc chỉ định ra phần tử in `printf("%d", number[2]);`.
 
 Ví dụ:
 

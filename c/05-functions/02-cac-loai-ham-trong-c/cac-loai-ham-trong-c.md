@@ -25,11 +25,11 @@ Trong bài viết này, chúng ta sẽ cùng đi tìm hiểu chi tiết về 2 l
 
 Ví dụ:
 
-- Hàm `Printf()` là một hàm dùng để hiển thị đầu ra được định dạng ra màn hình. Hàm này
+- Hàm `printf()` là một hàm dùng để hiển thị đầu ra được định dạng ra màn hình. Hàm này
   được định nghĩa trong thư viện `stdio.h`, để sử dụng hàm chúng ta cần import thư viện
   với câu lệnh: `#include<stdio.h>`
-- Hàm `Sqrt()` là một hàm dùng để tính căn bậc hai của một số. Hàm này được định nghĩa trong
-  thư viện `math.h` và để sử dụng được hàm này chúng ta cần import thư viện với câu lệnh:`#include<math.h>`
+- Hàm `sqrt()` là một hàm dùng để tính căn bậc hai của một số. Hàm này được định nghĩa trong
+  thư viện `math.h` và để sử dụng được hàm này chúng ta cần import thư viện với câu lệnh:`#include <math.h>`
 
 <h3>Advantages of Using C library functions:</h3>
 
@@ -199,7 +199,7 @@ return a+b;
 
 > Kiểu dữ liệu được trả về từ hàm và kiểu dữ liệu trả về được chỉ định trong nguyên mẫu hàm (hoặc định nghĩa hàm) phải khớp nhau.
 
-Chúng ta có thể xem lại cú pháp khởi tạo một hàm tại đây [Structure of a function](<https://github.com/AnestAcademy/Course-C-Fundamentals/blob/master/5.%20Functions%20(coming%20soon)/1.%20Structure%20of%20a%20function.md>).
+<!-- Chúng ta có thể xem lại cú pháp khởi tạo một hàm tại đây [Structure of a function](<https://github.com/AnestAcademy/Course-C-Fundamentals/blob/master/5.%20Functions%20(coming%20soon)/1.%20Structure%20of%20a%20function.md>). (comment because git link is error)-->
 
 <h3>6. How user-defined function works?</h3>
 

@@ -19,7 +19,7 @@ Chúng ta cần phải thường xuyên thao tác các chuỗi tùy theo nhu c�
 
 Để giải quyết vấn đề này, C hỗ trợ một số lượng lớn các hàm xử lý chuỗi trong thư viện `string.h`.
 
-Một số hàm xử lí chuỗi thường được sử dụng
+Một số hàm xử lí chuỗi thường được sử dụng:
 
 |    Hàm     | Mục đích                           |
 | :--------: | ---------------------------------- |
@@ -38,7 +38,7 @@ Một số hàm xử lí chuỗi thường được sử dụng
 
 ### gets(), puts()
 
-Các hàm `gets()` và `puts()` là hai hàm chuỗi để lấy đầu vào chuỗi từ người dùng và hiển thị chuỗi đó
+Các hàm `gets()` và `puts()` là hai hàm chuỗi để lấy đầu vào chuỗi từ người dùng và hiển thị chuỗi đó.
 
 Ví dụ:
 
