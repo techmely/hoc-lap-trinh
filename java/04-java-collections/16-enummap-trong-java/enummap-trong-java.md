@@ -69,8 +69,8 @@ class Main {
 
 ::result
 
-EnumMap1: {SMALL=28, MEDIUM=32}</code><br/>
-EnumMap2: {SMALL=28, MEDIUM=32, LARGE=36}</code><br/>
+EnumMap1: {SMALL=28, MEDIUM=32}<br/>
+EnumMap2: {SMALL=28, MEDIUM=32, LARGE=36}<br/>
 
 ::
 
@@ -116,10 +116,10 @@ class Main {
 
 ::result
 
-EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
-Key/Value mappings: [SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40]</code><br/>
-Keys: [SMALL, MEDIUM, LARGE, EXTRALARGE]</code><br/>
-Values: [28, 32, 36, 40]</code>
+EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}<br/>
+Key/Value mappings: [SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40]<br/>
+Keys: [SMALL, MEDIUM, LARGE, EXTRALARGE]<br/>
+Values: [28, 32, 36, 40]
 
 ::
 
@@ -152,8 +152,8 @@ class Main {
 
 ::result
 
-EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
-Value of MEDIUM: 32</code>
+EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}<br/>
+Value of MEDIUM: 32
 
 ::
 
@@ -194,10 +194,10 @@ class Main {
 
 ::result
 
-EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
-Removed Value: 32</code><br/>
-Is the entry {SMALL=28} removed? True</code><br/>
-Updated EnumMap: {LARGE=36, EXTRALARGE=40}</code>
+EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}<br/>
+Removed Value: 32<br/>
+Is the entry {SMALL=28} removed? True<br/>
+Updated EnumMap: {LARGE=36, EXTRALARGE=40}
 
 ::
 
@@ -239,9 +239,9 @@ class Main {
 
 ::result
 
-EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
-EnumMap using replace(): {SMALL=28, MEDIUM=30, LARGE=34, EXTRALARGE=40}</code><br/>
-EnumMap using replaceAll(): {SMALL=31, MEDIUM=33, LARGE=37, EXTRALARGE=43}</code>
+EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}<br/>
+EnumMap using replace(): {SMALL=28, MEDIUM=30, LARGE=34, EXTRALARGE=40}<br/>
+EnumMap using replaceAll(): {SMALL=31, MEDIUM=33, LARGE=37, EXTRALARGE=43}
 
 ::
 

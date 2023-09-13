@@ -80,9 +80,9 @@ class Thaycacac {
 
 ::result
 
-arr[0][0] = 1</code><br/>
-arr[0][1] = 2</code><br/>
-arr[1][0] = 3</code><br/>
-arr[1][1] = 4</code>
+arr[0][0] = 1<br/>
+arr[0][1] = 2<br/>
+arr[1][0] = 3<br/>
+arr[1][1] = 4
 
 ::

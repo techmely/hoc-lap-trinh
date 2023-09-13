@@ -130,12 +130,10 @@ console.log(JSON.stringify(meetup));
 
 ::result
 
-<code>
-{
+`{
   "title":"Conference",
   "room":{"number":23,"participants":["alex","ann"]},
-}
-</code>
+}`
 
 ::
 

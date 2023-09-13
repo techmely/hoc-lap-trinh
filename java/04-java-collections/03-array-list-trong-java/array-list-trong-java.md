@@ -72,7 +72,7 @@ class Main {
 
 ::result
 
-ArrayList: [Dog, Cat, Horse]</code><br/>
+ArrayList: [Dog, Cat, Horse]<br/>
 
 ::
 
@@ -95,7 +95,7 @@ class Main {
 
 ::result
 
-ArrayList: [Dog, Cat, Horse]</code><br/>
+ArrayList: [Dog, Cat, Horse]<br/>
 
 ::
 
@@ -126,8 +126,8 @@ class Main {
 
 ::result
 
-Mammals: [Dog, Cat, Horse]</code><br/>
-Animals: [Crocodile, Dog, Cat, Horse]</code><br/>
+Mammals: [Dog, Cat, Horse]<br/>
+Animals: [Crocodile, Dog, Cat, Horse]<br/>
 
 ::
 
@@ -155,8 +155,8 @@ class Main {
 
 ::result
 
-ArrayList: [Dog, Horse, Cat]</code><br/>
-Element at index 0: Dog</code><br/>
+ArrayList: [Dog, Horse, Cat]<br/>
+Element at index 0: Dog<br/>
 
 ::
 
@@ -188,7 +188,7 @@ class Main {
 
 ::result
 
-ArrayList: Dog, Cat, Horse, Zebra,</code><br/>
+ArrayList: Dog, Cat, Horse, Zebra,<br/>
 
 ::
 
@@ -224,8 +224,8 @@ class Main {
 
 ::result
 
-ArrayList: [Dog, Cat, Horse]</code><br/>
-Modified ArrayList: [Dog, Cat, Zebra]</code><br/>
+ArrayList: [Dog, Cat, Horse]<br/>
+Modified ArrayList: [Dog, Cat, Zebra]<br/>
 
 ::
 
@@ -254,9 +254,9 @@ class Main {
 
 ::result
 
-Initial ArrayList: [Dog, Cat, Horse]</code><br/>
-Final ArrayList: [Dog, Cat]</code><br/>
-Removed Element: Horse</code><br/>
+Initial ArrayList: [Dog, Cat, Horse]<br/>
+Final ArrayList: [Dog, Cat]<br/>
+Removed Element: Horse<br/>
 
 ::
 
@@ -282,8 +282,8 @@ class Main {
 
 ::result
 
-Initial ArrayList: [Dog, Cat, Horse]</code><br/>
-Final ArrayList: []</code><br/>
+Initial ArrayList: [Dog, Cat, Horse]<br/>
+Final ArrayList: []<br/>
 
 ::
 
@@ -309,8 +309,8 @@ class Main {
 
 ::result
 
-Initial ArrayList: [Dog, Cat, Horse]</code><br/>
-Final ArrayList: []</code><br/>
+Initial ArrayList: [Dog, Cat, Horse]<br/>
+Final ArrayList: []<br/>
 
 ::
 
@@ -341,8 +341,8 @@ class Main {
 
 ::result
 
-ArrayList: [Cow, Cat, Dog]</code><br/>
-Accessing individual elements: Cow, Cat, Dog,</code><br/>
+ArrayList: [Cow, Cat, Dog]<br/>
+Accessing individual elements: Cow, Cat, Dog,<br/>
 
 ::
 
@@ -371,8 +371,8 @@ class Main {
 
 ::result
 
-ArrayList: [Cow, Cat, Dog]</code><br/>
-Accessing individual elements: Cow, Cat, Dog,</code><br/>
+ArrayList: [Cow, Cat, Dog]<br/>
+Accessing individual elements: Cow, Cat, Dog,<br/>
 
 ::
 
@@ -399,8 +399,8 @@ class Main {
 
 ::result
 
-ArrayList: [Dog, Horse, Cat]</code><br/>
-Size: 3</code><br/>
+ArrayList: [Dog, Horse, Cat]<br/>
+Size: 3<br/>
 
 ::
 
@@ -430,8 +430,8 @@ class Main {
 
 ::result
 
-Unsorted ArrayList: [Horse, Zebra, Dog, Cat]</code><br/>
-Sorted ArrayList: [Cat, Dog, Horse, Zebra]</code><br/>
+Unsorted ArrayList: [Horse, Zebra, Dog, Cat]<br/>
+Sorted ArrayList: [Cat, Dog, Horse, Zebra]<br/>
 
 ::
 
@@ -464,8 +464,8 @@ class Main {
 
 ::result
 
-ArrayList: [Dog, Cat, Horse]</code><br/>
-Array: Dog, Cat, Horse,</code><br/>
+ArrayList: [Dog, Cat, Horse]<br/>
+Array: Dog, Cat, Horse,<br/>
 
 ::
 
@@ -496,8 +496,8 @@ class Main {
 
 ::result
 
-Array: Dog, Cat, Horse</code><br/>
-ArrayList: [Dog, Cat, Horse]</code><br/>
+Array: Dog, Cat, Horse<br/>
+ArrayList: [Dog, Cat, Horse]<br/>
 
 ::
 
@@ -525,8 +525,8 @@ class Main {
 
 ::result
 
-ArrayList: [Dog, Cat, Horse]</code><br/>
-String: [Dog, Cat, Horse]</code><br/>
+ArrayList: [Dog, Cat, Horse]<br/>
+String: [Dog, Cat, Horse]<br/>
 
 ::
 

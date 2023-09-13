@@ -69,8 +69,8 @@ class Main {
 
 ::result
 
-HashMap1: {Four=4, Two=2}</code><br/>
-HashMap2: {Two=2, Three=3, Four=4}</code>
+HashMap1: {Four=4, Two=2}<br/>
+HashMap2: {Two=2, Three=3, Four=4}
 
 ::
 
@@ -109,8 +109,8 @@ class Main {
 
 ::result
 
-HashMap of even numbers: {Six=6, Four=4, Two=2}</code><br/>
-HashMap of numbers: {Six=6, One=1, Four=4, Two=2}</code>
+HashMap of even numbers: {Six=6, Four=4, Two=2}<br/>
+HashMap of numbers: {Six=6, One=1, Four=4, Two=2}
 
 ::
 
@@ -146,10 +146,10 @@ class Main {
 
 ::result
 
-HashMap: {One=1, Two=2, Three=3}</code><br/>
-Key/Value mappings: [One=1, Two=2, Three=3]</code><br/>
-Keys: [One, Two, Three]</code><br/>
-Values: [1, 2, 3]</code>
+HashMap: {One=1, Two=2, Three=3}<br/>
+Key/Value mappings: [One=1, Two=2, Three=3]<br/>
+Keys: [One, Two, Three]<br/>
+Values: [1, 2, 3]
 
 ::
 
@@ -181,9 +181,9 @@ class Main {
 
 ::result
 
-HashMap: {One=1, Two=2, Three=3}</code><br/>
-Returned Number: 3</code><br/>
-Returned Number: 5</code>
+HashMap: {One=1, Two=2, Three=3}<br/>
+Returned Number: 3<br/>
+Returned Number: 5
 
 ::
 
@@ -219,10 +219,10 @@ class Main {
 
 ::result
 
-HashMap: {One=1, Two=2, Three=3}</code><br/>
-Removed value: 2</code><br/>
-Is the entry Three removed? True</code><br/>
-Updated HashMap: {One=1}</code>
+HashMap: {One=1, Two=2, Three=3}<br/>
+Removed value: 2<br/>
+Is the entry Three removed? True<br/>
+Updated HashMap: {One=1}
 
 ::
 
@@ -258,9 +258,9 @@ class Main {
 
 ::result
 
-Original HashMap: {Second=2, Third=3, First=1}</code><br/>
-HashMap using replace: {Second=22, Third=33, First=1}</code><br/>
-HashMap using replaceAll: {Second=24, Third=35, First=3}</code><br/>
+Original HashMap: {Second=2, Third=3, First=1}<br/>
+HashMap using replace: {Second=22, Third=33, First=1}<br/>
+HashMap using replaceAll: {Second=24, Third=35, First=3}<br/>
 
 ::
 
@@ -307,10 +307,10 @@ class Main {
 
 ::result
 
-Original HashMap: {Second=2, First=1}</code><br/>
-HashMap using compute(): {Second=3, First=3}</code><br/>
-HashMap using computeIfAbsent(): {Second=3 First=3, Three=5}</code><br/>
-HashMap using computeIfPresent(): {Second=6, First=3, three=5}</code>
+Original HashMap: {Second=2, First=1}<br/>
+HashMap using compute(): {Second=3, First=3}<br/>
+HashMap using computeIfAbsent(): {Second=3 First=3, Three=5}<br/>
+HashMap using computeIfPresent(): {Second=6, First=3, three=5}
 
 ::
 
@@ -338,8 +338,8 @@ class Main {
 
 ::result
 
-Original HashMap: {Second=2, First=1}</code><br/>
-New HashMap: {Second=2, First=5}</code>
+Original HashMap: {Second=2, First=1}<br/>
+New HashMap: {Second=2, First=5}
 
 ::
 
@@ -393,10 +393,10 @@ class Main {
 
 ::result
 
-HashMap: {One=1, Two=2, Three=3}</code><br/>
-Entries: One=1, Two=2, Three=3</code><br/>
-Keys: One, Two, Three,</code><br/>
-Values: 1, 2, ,3,</code>
+HashMap: {One=1, Two=2, Three=3}<br/>
+Entries: One=1, Two=2, Three=3<br/>
+Keys: One, Two, Three,<br/>
+Values: 1, 2, ,3,
 
 ::
 
@@ -449,10 +449,10 @@ class Main {
 
 ::result
 
-HashMap: {One=1, Two=2, Three=3}</code><br/>
-Entries: One=1, Two=2, Three=3</code><br/>
-Keys: One, Two, Three,</code><br/>
-Values: 1, 2, 3,</code>
+HashMap: {One=1, Two=2, Three=3}<br/>
+Entries: One=1, Two=2, Three=3<br/>
+Keys: One, Two, Three,<br/>
+Values: 1, 2, 3,
 
 ::
 

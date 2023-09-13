@@ -48,13 +48,13 @@ public class ThreadGroupDemo implements Runnable {
 
 ::result
 
-two</code><br/>
-Thread Group Name: Parent ThreadGroup</code><br/>
-java.lang.ThreadGroup[name=Parent ThreadGroup,maxpri=10]</code><br/>
-Thread[one,5,Parent ThreadGroup]</code><br/>
-Thread[three,5,Parent ThreadGroup]</code><br/>
-three</code><br/>
-one</code><br/>
+two<br/>
+Thread Group Name: Parent ThreadGroup<br/>
+java.lang.ThreadGroup[name=Parent ThreadGroup,maxpri=10]<br/>
+Thread[one,5,Parent ThreadGroup]<br/>
+Thread[three,5,Parent ThreadGroup]<br/>
+three<br/>
+one<br/>
 
 ::
 

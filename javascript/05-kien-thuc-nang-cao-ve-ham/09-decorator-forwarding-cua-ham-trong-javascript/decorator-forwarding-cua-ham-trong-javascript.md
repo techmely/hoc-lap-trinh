@@ -57,12 +57,12 @@ console.log("Gọi lại: " + slow(2)); // kết quả của slow(1) được l�
 
 ::result
 
-<code>Đã được gọi với 1</code>
-<code>1</code>
-<code>Gọi lại: 1</code>
-<code>Đã được gọi với 2</code>
-<code>2</code>
-<code>Gọi lại: 2</code>
+Đã được gọi với 1</br>
+1</br>
+Gọi lại: 1</br>
+Đã được gọi với 2</br>
+2</br>
+Gọi lại: 2</br>
 
 ::
 
@@ -213,9 +213,9 @@ Nhưng với trường hợp bạn cần ghi nhớ hai tham số `(min, max)` th
 
 Có nhiều cách để giải quyết vấn đề này:
 
-1.  Triển khai (hoặc dùng thư viện) kiểu dữ liệu **map-like** hỗ trợ nhiều key.
-2.  Sử dụng **Map lồng nhau**: ví dụ sử dụng `cache.set(min, value)` trong đó `value` ứng với cặp `(max, result)`. Để lấy kết quả, bạn chỉ cần dùng `cache.get(min).get(max)`.
-3.  Ghép các giá trị thành một: ví dụ bạn dùng một string `min,max` để biểu diễn cho cặp giá trị `(min,max)`. Và để linh động hơn, bạn có thể cho phép cung cấp hàm `hash` vào hàm decorator làm nhiệm vụ **chuyển đổi nhiều giá trị thành một giá trị**.
+1. Triển khai (hoặc dùng thư viện) kiểu dữ liệu **map-like** hỗ trợ nhiều key.
+2. Sử dụng **Map lồng nhau**: ví dụ sử dụng `cache.set(min, value)` trong đó `value` ứng với cặp `(max, result)`. Để lấy kết quả, bạn chỉ cầ dùng `cache.get(min).get(max)`.
+3. Ghép các giá trị thành một: ví dụ bạn dùng một string `min,max` để biểu diễn cho cặp giá trị `(min,max)`. Và để linh động hơn, bạn có thể cho phép cung cấp hàm `hash` vào hàm decorator làm nhiệm vụ **chuyển đổi nhiều giá trị thành một giá trị**.
 
 Ví dụ cách sử dụng hàm `hash` như sau:
 

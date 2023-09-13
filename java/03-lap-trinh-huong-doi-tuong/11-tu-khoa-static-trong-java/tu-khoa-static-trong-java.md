@@ -67,8 +67,8 @@ public class Student {
 
 ::result
 
-05740 - Hoa - FPT</code><br/>
-05439 - Huyen - FPT</code>
+05740 - Hoa - FPT<br/>
+05439 - Huyen - FPT
 
 ::
 
@@ -118,8 +118,8 @@ public class Student {
 
 ::result
 
-05740 - Hoa - Bưu Chính Viễn Thông</code><br/>
-05439 - Huyen - Bưu Chính Viễn Thông</code>
+05740 - Hoa - Bưu Chính Viễn Thông<br/>
+05439 - Huyen - Bưu Chính Viễn Thông
 
 ::
 
@@ -144,7 +144,7 @@ public class Student {
 
 ::result
 
-Khối static: hello !</code><br/>
-Main: hello !</code>
+Khối static: hello !<br/>
+Main: hello !
 
 ::

@@ -98,12 +98,12 @@ public class MapExample {
 
 ::result
 
-1 = Basic java</code><br/>
-2 = OOP</code><br/>
-3 = Collection</code><br/>
----</code><br/>
-1 = Basic java</code><br/>
-2 = OOP</code><br/>
-3 = Collection</code>
+1 = Basic java<br/>
+2 = OOP<br/>
+3 = Collection<br/>
+---<br/>
+1 = Basic java<br/>
+2 = OOP<br/>
+3 = Collection
 
 ::

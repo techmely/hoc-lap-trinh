@@ -40,7 +40,7 @@ public class Thaycacac {
 ```
 
 ::result
-Compile Time Error Exception in thread "main" java.lang.Error: Unresolved compilation problem: The final field Thaycacac.PI cannot be assigned</code>
+Compile Time Error Exception in thread "main" java.lang.Error: Unresolved compilation problem: The final field Thaycacac.PI cannot be assigned
 ::
 
 ::alert{type="infor"}
@@ -142,6 +142,6 @@ Chương trình sẽ in ra lỗi
 
 ::result
 
-"A.java": variable i might already have been assigned to at line 5, column 9</code>
+"A.java": variable i might already have been assigned to at line 5, column 9
 
 ::

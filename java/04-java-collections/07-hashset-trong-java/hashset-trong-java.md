@@ -105,8 +105,8 @@ class Main {
 
 ::result
 
-HashSet: [2, 4, 6]</code><br/>
-New HashSet: [2, 4, 5, 6]</code>
+HashSet: [2, 4, 6]<br/>
+New HashSet: [2, 4, 5, 6]
 
 ::
 
@@ -140,8 +140,8 @@ class Main {
 
 ::result
 
-HashSet: [2, 5, 6]</code><br/>
-HashSet using Iterator: 2, 5, 6,</code>
+HashSet: [2, 5, 6]<br/>
+HashSet using Iterator: 2, 5, 6,
 
 ::
 
@@ -173,9 +173,9 @@ class Main {
 
 ::result
 
-HashSet: [2, 5, 6]</code><br/>
-Is 5 removed? true</code><br/>
-Are all elements removed? true</code><br/>
+HashSet: [2, 5, 6]<br/>
+Is 5 removed? true<br/>
+Are all elements removed? true<br/>
 
 ::
 
@@ -207,9 +207,9 @@ class Main {
 
 ::result
 
-HashSet1: [2, 4]</code><br/>
-HashSet2: [1, 3]</code><br/>
-Union is: [1, 2, 3, 4]</code><br/>
+HashSet1: [2, 4]<br/>
+HashSet2: [1, 3]<br/>
+Union is: [1, 2, 3, 4]<br/>
 
 ::
 
@@ -241,9 +241,9 @@ class Main {
 
 ::result
 
-HashSet1: [2, 3]</code><br/>
-HashSet2: [2, 4]</code><br/>
-Intersection is: [2]</code>
+HashSet1: [2, 3]<br/>
+HashSet2: [2, 4]<br/>
+Intersection is: [2]
 
 ::
 
@@ -277,9 +277,9 @@ class Main {
 
 ::result
 
-HashSet1: [2, 3, 5]</code><br/>
-HashSet2: [1, 3, 5]</code><br/>
-Difference: [2]</code>
+HashSet1: [2, 3, 5]<br/>
+HashSet2: [1, 3, 5]<br/>
+Difference: [2]
 
 ::
 
@@ -313,9 +313,9 @@ class Main {
 
 ::result
 
-HashSet1: [1, 2, 3, 4]</code><br/>
-HashSet2: [2, 3]</code><br/>
-Is HashSet2 is a subset of HashSet1? true</code>
+HashSet1: [1, 2, 3, 4]<br/>
+HashSet2: [2, 3]<br/>
+Is HashSet2 is a subset of HashSet1? true
 
 ::
 

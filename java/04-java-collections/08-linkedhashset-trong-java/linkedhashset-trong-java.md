@@ -75,8 +75,8 @@ class Main {
 
 ::result
 
-ArrayList: [2, 4]</code><br/>
-LinkedHashSet: [2, 4]</code>
+ArrayList: [2, 4]<br/>
+LinkedHashSet: [2, 4]
 
 ::
 
@@ -110,8 +110,8 @@ class Main {
 
 ::result
 
-LinkedHashSet: [2, 4, 6]</code><br/>
-New LinkedHashSet: [2, 4, 6, 5]</code>
+LinkedHashSet: [2, 4, 6]<br/>
+New LinkedHashSet: [2, 4, 6, 5]
 
 ::
 
@@ -147,8 +147,8 @@ class Main {
 
 ::result
 
-LinkedHashSet: [2, 5, 6]</code><br/>
-LinkedHashSet using Iterator: 2, 5, 6,</code>
+LinkedHashSet: [2, 5, 6]<br/>
+LinkedHashSet using Iterator: 2, 5, 6,
 
 ::
 
@@ -185,9 +185,9 @@ class Main {
 
 ::result
 
-LinkedHashSet: [2, 5, 6]</code><br/>
-Is 5 removed? true</code><br/>
-Are all elements removed? true</code>
+LinkedHashSet: [2, 5, 6]<br/>
+Is 5 removed? true<br/>
+Are all elements removed? true
 
 ::
 
@@ -219,9 +219,9 @@ class Main {
 
 ::result
 
-LinkedHashSet1: [2, 4]</code><br/>
-LinkedHashSet2: [1, 3]</code><br/>
-Union is: [1, 3, 2, 4]</code>
+LinkedHashSet1: [2, 4]<br/>
+LinkedHashSet2: [1, 3]<br/>
+Union is: [1, 3, 2, 4]
 
 ::
 
@@ -253,9 +253,9 @@ class Main {
 
 ::result
 
-LinkedHashSet1: [2, 3]</code><br/>
-LinkedHashSet2: [2, 4]</code><br/>
-Intersection is: [2]</code>
+LinkedHashSet1: [2, 3]<br/>
+LinkedHashSet2: [2, 4]<br/>
+Intersection is: [2]
 
 ::
 
@@ -289,9 +289,9 @@ class Main {
 
 ::result
 
-LinkedHashSet1: [2, 3, 5]</code><br/>
-LinkedHashSet2: [1, 3, 5]</code><br/>
-Difference: [2]</code>
+LinkedHashSet1: [2, 3, 5]<br/>
+LinkedHashSet2: [1, 3, 5]<br/>
+Difference: [2]
 
 ::
 
@@ -325,9 +325,9 @@ class Main {
 
 ::result
 
-LinkedHashSet1: [1, 2, 3, 4]</code><br/>
-LinkedHashSet2: [2, 3]</code><br/>
-Is LinkedHashSet2 is a subset of LinkedHashSet1? true</code>
+LinkedHashSet1: [1, 2, 3, 4]<br/>
+LinkedHashSet2: [2, 3]<br/>
+Is LinkedHashSet2 is a subset of LinkedHashSet1? true
 
 ::
 

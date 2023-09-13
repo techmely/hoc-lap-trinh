@@ -54,17 +54,17 @@ public class SimpleConstructor {
 
 ::result
 
-Đang tạo student</code><br/>
+Đang tạo student<br/>
 
-<code>Đang tạo student</code><br/>
-<code>Đang tạo student</code><br/>
-<code>Đang tạo student</code><br/>
-<code>Đang tạo student</code><br/>
-<code>Đang tạo student</code><br/>
-<code>Đang tạo student</code><br/>
-<code>Đang tạo student</code><br/>
-<code>Đang tạo student</code><br/>
-<code>Đang tạo student</code>
+Đang tạo student<br/>
+Đang tạo student<br/>
+Đang tạo student<br/>
+Đang tạo student<br/>
+Đang tạo student<br/>
+Đang tạo student<br/>
+Đang tạo student<br/>
+Đang tạo student<br/>
+Đang tạo student
 
 ::
 
@@ -102,8 +102,8 @@ public class Student {
 
 ::result
 
-1 Thaycacac</code><br/>
-2 HoaPN</code>
+1 Thaycacac<br/>
+2 HoaPN
 
 ::
 
@@ -143,8 +143,8 @@ class Student {
 
 ::result
 
-1 Thaycacac 0</code><br/>
-2 HoaPN 25</code>
+1 Thaycacac 0<br/>
+2 HoaPN 25
 
 ::
 

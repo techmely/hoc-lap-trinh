@@ -62,7 +62,7 @@ class Thaycacac {
 
 ::result
 
-display... successfully garbage collected</code><br/>
-show... successfully garbage collected</code>
+display... successfully garbage collected<br/>
+show... successfully garbage collected
 
 ::

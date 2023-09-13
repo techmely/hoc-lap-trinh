@@ -342,9 +342,9 @@ Xem đáp án
 
 ::result
 
-<code>trước vòng lặp</code>
-<code>sau vòng lặp</code>
-<code>100000000</code>
+trước vòng lặp</br>
+sau vòng lặp</br>
+100000000
 
 ::
 

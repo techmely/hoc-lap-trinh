@@ -43,18 +43,15 @@ Sau khi cài đặt thành công các bạn có thể verify bằng lệnh:
 Ở thời điểm hiện tại Angular CLI đang là version 9.
 
 ::alert{type="infor"}
-📝 Lưu ý
 
-<ul>
-<li>Một số bạn sử dụng Windows có thể phải cài đặt thêm Python hoặc windows-build-tools để có thể sử dụng SCSS ở trong project sắp tới.</li>
-<li>Nếu các bạn không thể chạy `ng version` vì nó báo `'ng' is not recognized as an internal or external command.` thì các bạn cần phải thêm npm global vào PATH.</li>
-<li>Một số bạn sử dụng PowerShell có thể bị báo lỗi.</li>
-</ul>
-::
+- Một số bạn sử dụng Windows có thể phải cài đặt thêm Python hoặc windows-build-tools để có thể sử dụng SCSS ở trong project sắp tới.
+- Nếu các bạn không thể chạy `ng version` vì nó báo `'ng' is not recognized as an internal or external command.` thì các bạn cần phải thêm npm global vào PATH.
+- Một số bạn sử dụng PowerShell có thể bị báo lỗi.
+  ::
 
 ::result
 
-File C:\Users\< username >\AppData\Roaming\npm\ng.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.</code><br/>
+File C:\Users\< username >\AppData\Roaming\npm\ng.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
 
 ::
 

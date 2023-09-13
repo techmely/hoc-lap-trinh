@@ -72,8 +72,8 @@ class Main {
 
 ::result
 
-<code>TreeSet: [2, 4, 6]</code><br/>
-<code>New TreeSet: [1, 2, 4, 6]</code>
+TreeSet: [2, 4, 6]<br/>
+New TreeSet: [1, 2, 4, 6]
 
 ::
 
@@ -107,8 +107,8 @@ class Main {
 
 ::result
 
-TreeSet: [2, 5, 6]</code><br/>
-TreeSet using Iterator: 2, 5, 6,</code>
+TreeSet: [2, 5, 6]<br/>
+TreeSet using Iterator: 2, 5, 6,
 
 ::
 
@@ -141,9 +141,9 @@ class Main {
 
 ::result
 
-TreeSet: [2, 5, 6]</code><br/>
-Is 5 removed? true</code><br/>
-Are all elements removed? true</code>
+TreeSet: [2, 5, 6]<br/>
+Is 5 removed? true<br/>
+Are all elements removed? true
 
 ::
 
@@ -178,9 +178,9 @@ class Main {
 
 ::result
 
-TreeSet: [2, 5, 6]</code><br/>
-First Number: 2</code><br/>
-Last Number: 6</code>
+TreeSet: [2, 5, 6]<br/>
+First Number: 2<br/>
+Last Number: 6
 
 ::
 
@@ -219,11 +219,11 @@ class Main {
 
 ::result
 
-TreeSet: [2, 4, 5, 6]</code><br/>
-Using higher: 5</code><br/>
-Using lower: 2</code><br/>
-Using ceiling: 4</code><br/>
-Using floor: 2</code>
+TreeSet: [2, 4, 5, 6]<br/>
+Using higher: 5<br/>
+Using lower: 2<br/>
+Using ceiling: 4<br/>
+Using floor: 2
 
 ::
 
@@ -255,10 +255,10 @@ class Main {
 
 ::result
 
-TreeSet: [2, 4, 5, 6]</code><br/>
-Removed First Element: 2</code><br/>
-Removed Last Element: 6</code><br/>
-New TreeSet: [4, 5]</code>
+TreeSet: [2, 4, 5, 6]<br/>
+Removed First Element: 2<br/>
+Removed Last Element: 6<br/>
+New TreeSet: [4, 5]
 
 ::
 
@@ -287,9 +287,9 @@ class Main {
 
 ::result
 
-TreeSet: [2, 4, 5, 6]</code><br/>
-Using headSet without boolean value: [2, 4]</code><br/>
-Using headSet with boolean value: [2, 4, 5]</code>
+TreeSet: [2, 4, 5, 6]<br/>
+Using headSet without boolean value: [2, 4]<br/>
+Using headSet with boolean value: [2, 4, 5]
 
 ::
 
@@ -318,9 +318,9 @@ class Main {
 
 ::result
 
-TreeSet: [2, 4, 5, 6]</code><br/>
-Using tailSet without boolean value: [4, 5, 6]</code><br/>
-Using tailSet with boolean value: [5, 6]</code>
+TreeSet: [2, 4, 5, 6]<br/>
+Using tailSet without boolean value: [4, 5, 6]<br/>
+Using tailSet with boolean value: [5, 6]
 
 ::
 
@@ -349,9 +349,9 @@ class Main {
 
 ::result
 
-TreeSet: [2, 4, 5, 6]</code><br/>
-Using subSet without boolean value: [4, 5]</code><br/>
-Using subSet with boolean value: [5, 6]</code>
+TreeSet: [2, 4, 5, 6]<br/>
+Using subSet without boolean value: [4, 5]<br/>
+Using subSet with boolean value: [5, 6]
 
 ::
 
@@ -389,9 +389,9 @@ class Main {
 
 ::result
 
-TreeSet1: [2, 4]</code><br/>
-TreeSet2: [1, 2, 3]</code><br/>
-Union is: [1, 2, 3, 4]</code>
+TreeSet1: [2, 4]<br/>
+TreeSet2: [1, 2, 3]<br/>
+Union is: [1, 2, 3, 4]
 
 ::
 
@@ -424,9 +424,9 @@ class Main {
 
 ::result
 
-TreeSet1: [2, 4]</code><br/>
-TreeSet2: [1, 2, 3]</code><br/>
-Intersection is: [2]</code>
+TreeSet1: [2, 4]<br/>
+TreeSet2: [1, 2, 3]<br/>
+Intersection is: [2]
 
 ::
 
@@ -460,9 +460,9 @@ class Main {
 
 ::result
 
-TreeSet1: [2, 4]</code><br/>
-TreeSet2: [1, 2, 3, 4]</code><br/>
-Difference is: [1, 3]</code>
+TreeSet1: [2, 4]<br/>
+TreeSet2: [1, 2, 3, 4]<br/>
+Difference is: [1, 3]
 
 ::
 
@@ -496,9 +496,9 @@ class Main {
 
 ::result
 
-TreeSet1: [1, 2, 3, 4]</code><br/>
-TreeSet2: [2, 3]</code><br/>
-Is TreeSet2 subset of TreeSet1? True</code>
+TreeSet1: [1, 2, 3, 4]<br/>
+TreeSet2: [2, 3]<br/>
+Is TreeSet2 subset of TreeSet1? True
 
 ::
 
