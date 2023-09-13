@@ -100,7 +100,7 @@ public class CommaOperator {
 }
 ```
 
-::Result
+::result
 
     <code>i= 1 j= 11</code><br/>
     <code>i= 2 j= 4</code><br/>
@@ -138,7 +138,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>1</code><br/>
     <code>2</code><br/>
@@ -175,7 +175,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>1 1</code><br/>
     <code>1 2</code><br/>

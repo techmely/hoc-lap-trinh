@@ -73,7 +73,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>ArrayList: [2, 4]</code><br/>
     <code>LinkedHashSet: [2, 4]</code>
@@ -108,7 +108,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedHashSet: [2, 4, 6]</code><br/>
     <code>New LinkedHashSet: [2, 4, 6, 5]</code>
@@ -145,7 +145,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedHashSet: [2, 5, 6]</code><br/>
     <code>LinkedHashSet using Iterator: 2, 5, 6,</code>
@@ -183,7 +183,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedHashSet: [2, 5, 6]</code><br/>
     <code>Is 5 removed? true</code><br/>
@@ -217,7 +217,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedHashSet1: [2, 4]</code><br/>
     <code>LinkedHashSet2: [1, 3]</code><br/>
@@ -251,7 +251,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedHashSet1: [2, 3]</code><br/>
     <code>LinkedHashSet2: [2, 4]</code><br/>
@@ -287,7 +287,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedHashSet1: [2, 3, 5]</code><br/>
     <code>LinkedHashSet2: [1, 3, 5]</code><br/>
@@ -323,7 +323,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedHashSet1: [1, 2, 3, 4]</code><br/>
     <code>LinkedHashSet2: [2, 3]</code><br/>

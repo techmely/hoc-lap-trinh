@@ -55,7 +55,7 @@ console.log(slow(2)); // cache lại kết quả của slow(2) rồi trả về 
 console.log("Gọi lại: " + slow(2)); // kết quả của slow(1) được lấy từ cache
 ```
 
-::Result
+::result
 
 <code>Đã được gọi với 1</code>
 <code>1</code>

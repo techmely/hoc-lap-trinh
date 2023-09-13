@@ -78,7 +78,7 @@ class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>arr[0][0] = 1</code><br/>
     <code>arr[0][1] = 2</code><br/>

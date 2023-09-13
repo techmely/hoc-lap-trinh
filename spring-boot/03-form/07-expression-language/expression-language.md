@@ -50,7 +50,7 @@ sessionScope.age:Ş{sessionScope.age}
 </li>
 ```
 
-::Result
+::result
 
 name : codeleanvn,
 age :1,
@@ -94,7 +94,7 @@ View
 <li>name:${student.name}, mark: ${student.mark }</li>
 ```
 
-::Result
+::result
 
 name: techmely,
 mark: 10.0

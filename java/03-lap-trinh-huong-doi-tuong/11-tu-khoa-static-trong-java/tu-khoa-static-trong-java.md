@@ -65,7 +65,7 @@ public class Student {
 }
 ```
 
-::Result
+::result
 
     <code>05740 - Hoa - FPT</code><br/>
     <code>05439 - Huyen - FPT</code>
@@ -116,7 +116,7 @@ public class Student {
 }
 ```
 
-::Result
+::result
 
     <code>05740 - Hoa - Bưu Chính Viễn Thông</code><br/>
     <code>05439 - Huyen - Bưu Chính Viễn Thông</code>
@@ -142,7 +142,7 @@ public class Student {
 }
 ```
 
-::Result
+::result
 
     <code>Khối static: hello !</code><br/>
     <code>Main: hello !</code>

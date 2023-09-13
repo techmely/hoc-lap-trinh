@@ -106,7 +106,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>Bạn đủ tuổi để đăng ký</code>
 
@@ -148,7 +148,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>Sinh viên có thể tham gia</code>
 

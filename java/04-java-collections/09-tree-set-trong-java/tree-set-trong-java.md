@@ -70,7 +70,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
 <code>TreeSet: [2, 4, 6]</code><br/>
 <code>New TreeSet: [1, 2, 4, 6]</code>
@@ -105,7 +105,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeSet: [2, 5, 6]</code><br/>
     <code>TreeSet using Iterator: 2, 5, 6,</code>
@@ -139,7 +139,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeSet: [2, 5, 6]</code><br/>
     <code>Is 5 removed? true</code><br/>
@@ -176,7 +176,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeSet: [2, 5, 6]</code><br/>
     <code>First Number: 2</code><br/>
@@ -217,7 +217,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeSet: [2, 4, 5, 6]</code><br/>
     <code>Using higher: 5</code><br/>
@@ -253,7 +253,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeSet: [2, 4, 5, 6]</code><br/>
     <code>Removed First Element: 2</code><br/>
@@ -285,7 +285,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeSet: [2, 4, 5, 6]</code><br/>
     <code>Using headSet without boolean value: [2, 4]</code><br/>
@@ -316,7 +316,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeSet: [2, 4, 5, 6]</code><br/>
     <code>Using tailSet without boolean value: [4, 5, 6]</code><br/>
@@ -347,7 +347,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeSet: [2, 4, 5, 6]</code><br/>
     <code>Using subSet without boolean value: [4, 5]</code><br/>
@@ -387,7 +387,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeSet1: [2, 4]</code><br/>
     <code>TreeSet2: [1, 2, 3]</code><br/>
@@ -422,7 +422,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeSet1: [2, 4]</code><br/>
     <code>TreeSet2: [1, 2, 3]</code><br/>
@@ -458,7 +458,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeSet1: [2, 4]</code><br/>
     <code>TreeSet2: [1, 2, 3, 4]</code><br/>
@@ -494,7 +494,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeSet1: [1, 2, 3, 4]</code><br/>
     <code>TreeSet2: [2, 3]</code><br/>

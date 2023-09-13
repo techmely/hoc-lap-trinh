@@ -31,7 +31,7 @@ function sayHello(count) {
 sayHello(5);
 ```
 
-::Result
+::result
 
 <p>Hello world!</p>
 <p>Hello world!</p>
@@ -103,7 +103,7 @@ sayHello();
 
 Kết quả là **Hello world!** được in ra khoảng hơn `10000` lần thì bị lỗi **tràn stack**, cụ thể: **Uncaught RangeError: Maximum call stack size exceeded**.
 
-::Result
+::result
 
 Hello world!
 Hello world!
@@ -360,7 +360,7 @@ Viết hàm `printList(singleLinkedList)` để in ra các phần tử của lis
 
 Kết quả hiển thị trên console là:
 
-::Result
+::result
 
 <p>1</p>
 <p>2</p>
@@ -422,7 +422,7 @@ Viết hàm `printReverseList(singleLinkedList)` để in ra các phần tử c�
 
 Kết quả hiển thị trên console là:
 
-::Result
+::result
 
 <p>4</p>
 <p>3</p>

@@ -290,7 +290,7 @@ let user = {
 user.g();
 ```
 
-::Result
+::result
 
 null
 
@@ -314,7 +314,7 @@ f(); // (*)
 
 Kết quả `(*)` là gì?
 
-::Result
+::result
 
 Alex
 
@@ -346,7 +346,7 @@ console.log(bound.test); // (*)
 
 Kết quả `(*)` là gì?
 
-::Result
+::result
 
 undefined
 

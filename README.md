@@ -34,7 +34,7 @@ This is danger content
 This is example content
 ::
 
-::Result
+::result
 This is result content
 ::
 ```

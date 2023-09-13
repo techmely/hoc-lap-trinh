@@ -22,7 +22,7 @@ Java có 2 loại kiểu dữ liệu:
 
 Có 8 kiểu dữ liệu nguyên thủy (Primitive Data type) đó là: boolean, byte, char, short, int, long, float, double.
 
-![cac-kieu-du-lieu-trong-java](https://user-images.githubusercontent.com/29374426/123082975-cc497780-d449-11eb-8315-b4e53f2257fe.png)
+![Các kiểu dữ liệu trong java](https://user-images.githubusercontent.com/29374426/123082975-cc497780-d449-11eb-8315-b4e53f2257fe.png)
 
 Dưới đây là các thông số chi tiết
 
@@ -56,12 +56,12 @@ long y = 100;
 
 ::alert{type="infor"}
 
-<p>Nếu hai toán hạng kiểu long thì kết quả là kiểu long. Một trong hai toán hạng không phải kiểu long sẽ được chuyển thành kiểu long trước khi thực hiện phép toán.</p>
-  <ul>
-    <li>Nếu hai toán hạng đầu không phải kiểu long thì phép tính sẽ thực hiện với kiểu int.</li>
-    <li>Các toán hạng kiểu byte hay short sẽ được chuyển sang kiểu int trước khi thực hiện phép toán.</li>
-    <li>Trong java không thể chuyển biến kiểu int và kiểu boolean như trong ngôn ngữ C/C++.</li>
-  </ul>
+Nếu hai toán hạng kiểu long thì kết quả là kiểu long. Một trong hai toán hạng không phải kiểu long sẽ được chuyển thành kiểu long trước khi thực hiện phép toán.</p>
+
+- Nếu hai toán hạng đầu không phải kiểu long thì phép tính sẽ thực hiện với kiểu int.
+- Các toán hạng kiểu byte hay short sẽ được chuyển sang kiểu int trước khi thực hiện phép toán.
+- Trong java không thể chuyển biến kiểu int và kiểu boolean như trong ngôn ngữ C/C++.
+
 ::
 
 Ví dụ:
@@ -98,13 +98,12 @@ double y = 1.56E6;
 
 ::alert{type="infor"}
 
-<p>Một số lưu ý đối với các phép toán trên số dấu chấm động</p>
-  <ul>
-    <li>Nếu mỗi toán hạng đều có kiểu dấn chấm động thì phép toán chuyển thành phép toán dấu chấm động.</li>
-    <li>Nếu có một toán hạng là double thì các toán hạng còn lại sẽ được chuyển thành kiểu double trước khi thực hiện phép toán.</li>
-    <li>Biến kiểu float và double có thể ép chuyển sang kiểu dữ liệu khác trừ kiểu boolean.</li>
-  </ul>
-::
+Một số lưu ý đối với các phép toán trên số dấu chấm động
+
+- Nếu mỗi toán hạng đều có kiểu dấn chấm động thì phép toán chuyển thành phép toán dấu chấm động.
+- Nếu có một toán hạng là double thì các toán hạng còn lại sẽ được chuyển thành kiểu double trước khi thực hiện phép toán.
+- Biến kiểu float và double có thể ép chuyển sang kiểu dữ liệu khác trừ kiểu boolean.
+  ::
 
 ## Kiểu ký tự (char) trong Java
 
@@ -112,7 +111,7 @@ Kiểu ký tự trong ngôn ngữ lập trình java có kích thước là 2 byt
 
 Giá trị mặc định cho một biến kiểu `char` là `null`.
 
-<div class="example">kiểu dữ liệu kí tự</div>
+### Ví dụ kiểu dữ liệu kí tự
 
 ```java
 char myLetter = 'D';
@@ -140,4 +139,4 @@ Trong Java có 3 kiểu dữ liệu tham chiếu
 
 Đặc điểm của các biến kiểu tham chiếu là nó chứa địa chỉ của đối tượng mà nó trỏ đến.
 
-Vùng nhớ của biến tham chiếu được cấp phát ở vùng nhớ stack còn vùng nhớ của đối tượng được cấp phát ở vùng nhớ heap. Việc truy xất vào vùng nhớ heap chậm hơn truy xất vào vùng nhớ stack tuy nhiên java có cơ chế cho phép truy cập vào vùng nhớ heap với tốc độ xấp xỉ bằng tốc độ truy cập vào vùng nhớ stack.
+Vùng nhớ của biến tham chiếu được cấp phát ở vùng nhớ stack còn vùng nhớ của đối tượng được cấp phát ở vùng nhớ heap. Việc truy xất vào vùng nhớ heap `chậm` hơn truy xất vào vùng nhớ stack tuy nhiên java có cơ chế cho phép truy cập vào vùng nhớ heap với tốc độ xấp xỉ bằng tốc độ truy cập vào vùng nhớ stack.

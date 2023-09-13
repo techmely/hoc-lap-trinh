@@ -72,7 +72,7 @@ public class Main {
 }
 ```
 
-::Result
+::result
 
     <code>hello</code><br/>
     <code>hello thaycacac</code>

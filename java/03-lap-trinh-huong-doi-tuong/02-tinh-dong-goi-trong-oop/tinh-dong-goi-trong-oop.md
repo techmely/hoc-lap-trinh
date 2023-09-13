@@ -86,7 +86,7 @@ public class TestPerson {
 }
 ```
 
-::Result
+::result
 
     <code>Tên: Thaycacac, CMND: 123456</code>
 

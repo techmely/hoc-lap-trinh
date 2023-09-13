@@ -70,7 +70,7 @@ public class EnumExample {
 }
 ```
 
-::Result
+::result
 
     <code>MONDAY</code>
 
@@ -91,7 +91,7 @@ public class EnumExample {
 }
 ```
 
-::Result
+::result
 
     <code>MONDAY</code>
 
@@ -116,7 +116,7 @@ public class EnumExample {
 }
 ```
 
-::Result
+::result
 
     <code>MONDAY</code><br/>
     <code>TUESDAY</code><br/>
@@ -173,7 +173,7 @@ public class EnumExample3 {
 }
 ```
 
-::Result
+::result
 
     <code>MONDAY = 2</code><br/>
     <code>TUESDAY = 3</code><br/>
@@ -216,7 +216,7 @@ public class EnumExample {
 }
 ```
 
-::Result
+::result
 
     <code>Today is holiday</code><br/>
     <code>Today is holiday</code>
@@ -251,7 +251,7 @@ public class EnumExample {
 }
 ```
 
-::Result
+::result
 
     <code>Today is holiday</code>
 
@@ -290,7 +290,7 @@ public class EnumExample3 {
 }
 ```
 
-::Result
+::result
 
     <code>Today is holiday</code><br/>
     <code>Today is holiday</code>

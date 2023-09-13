@@ -119,7 +119,7 @@ class Test implements Runnable {
 }
 ```
 
-::Result
+::result
 
     <code>State of thread1 after creating it – NEW</code><br/>
     <code>State of thread1 after calling .start() method on it – RUNNABLE</code><br/>

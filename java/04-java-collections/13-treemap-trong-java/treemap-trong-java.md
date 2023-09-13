@@ -70,7 +70,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeMap of even numbers: {Four=4, Six=6, Two=2}</code><br/>
     <code>TreeMap of numbers: {Four=4, One=1, Six=6, Two=2}</code>
@@ -107,7 +107,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeMap: {One=1, Three=3, Two=2}</code><br/>
     <code>Key/Value mappings: [One=1, Three=3, Two=2]</code><br/>
@@ -142,7 +142,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeMap: {One=1, Three=3, Two=2}</code><br/>
     <code>Using get(): 3</code><br/>
@@ -180,7 +180,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeMap: {One=1, Three=3, Two=2}</code><br/>
     <code>Removed value = 2</code><br/>
@@ -219,7 +219,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>Original TreeMap: {First=1, Second=2, Third=3}</code><br/>
     <code>TreeMap using replace(): {First=1, Second=22, Third=33}</code><br/>
@@ -271,7 +271,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeMap: {First=1, Second=2, Third=3}</code><br/>
     <code>First Key: First</code><br/>
@@ -322,7 +322,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeMap: {First=1, Fourth=6, Second=5, Third=4}</code><br/>
     <code>Using higherKey(): Second</code><br/>
@@ -366,7 +366,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeMap: {First=1, Second=2, Third=3}</code><br/>
     <code>Using pollFirstEntry(): First=1</code><br/>
@@ -401,7 +401,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeMap: {First=1, Fourth=4, Second=2, Third=3}</code><br/>
     <br/>
@@ -437,7 +437,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeMap: {First=1, Fourth=4, Second=2, Third=3}</code><br/>
     <br/>
@@ -471,7 +471,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>TreeMap: {First=1, Fourth=2, Second=2, Third=3}</code><br/>
     <br/>

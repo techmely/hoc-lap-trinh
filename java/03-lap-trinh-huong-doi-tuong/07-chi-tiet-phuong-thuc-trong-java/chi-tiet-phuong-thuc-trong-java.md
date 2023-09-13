@@ -98,7 +98,7 @@ public class TestPassByValue {
 
 Ta sẽ nhận được kết quả ra như sau:
 
-::Result
+::result
 
     <code>Gia tri của t truoc khi gọi ham = 10</code><br/>
     <code>Gia tri của t bên trong ham sau khi tang len 1 la 11 Gia tri của t truoc khi gọi ham = 10</code>

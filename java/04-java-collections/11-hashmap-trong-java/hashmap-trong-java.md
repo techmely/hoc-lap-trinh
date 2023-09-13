@@ -68,7 +68,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>HashMap1: {Four=4, Two=2}</code><br/>
     <code>HashMap2: {Two=2, Three=3, Four=4}</code>
@@ -108,7 +108,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>HashMap of even numbers: {Six=6, Four=4, Two=2}</code><br/>
     <code>HashMap of numbers: {Six=6, One=1, Four=4, Two=2}</code>
@@ -145,7 +145,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Key/Value mappings: [One=1, Two=2, Three=3]</code><br/>
@@ -180,7 +180,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Returned Number: 3</code><br/>
@@ -218,7 +218,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Removed value: 2</code><br/>
@@ -257,7 +257,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>Original HashMap: {Second=2, Third=3, First=1}</code><br/>
     <code>HashMap using replace: {Second=22, Third=33, First=1}</code><br/>
@@ -306,7 +306,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>Original HashMap: {Second=2, First=1}</code><br/>
     <code>HashMap using compute(): {Second=3, First=3}</code><br/>
@@ -341,7 +341,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>Original HashMap: {Second=2, First=1}</code><br/>
     <code>New HashMap: {Second=2, First=5}</code>
@@ -398,7 +398,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Entries: One=1, Two=2, Three=3</code><br/>
@@ -456,7 +456,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Entries: One=1, Two=2, Three=3</code><br/>

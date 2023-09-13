@@ -75,7 +75,7 @@ public class Bien {
 }
 ```
 
-::Result
+::result
 
     <code>Giá trị của n là: 10</code>
 
@@ -96,7 +96,7 @@ public class Bien {
 }
 ```
 
-::Result
+::result
 
     <code>Exception in thread "main" java.lang.Error: Unresolved compilation problem: The local variable n may not have been initialized</code>
 
@@ -143,7 +143,7 @@ public class SinhVien {
 }
 ```
 
-::Result
+::result
 
     <code>Ten  : Thaycacac</code><br/>
     <code>Tuoi : 21</code>
@@ -178,7 +178,7 @@ public class Sinhvien {
 }
 ```
 
-::Result
+::result
 
     <code>Ten  : Thaycacac</code><br/>
     <code>Tuoi : 21</code>

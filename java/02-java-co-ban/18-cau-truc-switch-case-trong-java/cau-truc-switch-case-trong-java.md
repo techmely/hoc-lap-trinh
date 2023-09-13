@@ -69,7 +69,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>Đây là số 2</code>
 
@@ -132,7 +132,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>Đây là số 2</code><br/>
     <code>Đây là số 3</code><br/>

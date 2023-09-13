@@ -118,7 +118,7 @@ function printContentArray(array) {
 printContentArray([1, 3, 5]);
 ```
 
-::Result
+::result
 
 <p>1</p>
 <p>3</p>

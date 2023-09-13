@@ -52,7 +52,7 @@ public class Student {
 }
 ```
 
-::Result
+::result
 
     <code>Khối vô danh thứ 1 </code> <br/>
     <code>Khối vô danh thứ 2</code> <br/>
@@ -108,7 +108,7 @@ public class Student {
 
 ```
 
-::Result
+::result
 
     <code>Đây là khối static</code><br/>
     <code>Khối này chỉ được gọi 1 lần khi thể hiện đầu tiên của lớp được tạo ra</code><br/>

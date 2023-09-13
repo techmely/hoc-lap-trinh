@@ -177,7 +177,7 @@ public class MainApp {
 }
 ```
 
-::Result
+::result
 
 Postgre insert
 Postgre update
@@ -187,7 +187,7 @@ Postgre delete
 
 Sửa giá trị database trong file config.properties bằng 1 và chạy lại
 
-::Result
+::result
 
 MySQL insert
 MySQL update

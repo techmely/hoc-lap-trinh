@@ -48,7 +48,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>2 2 2</code>
 
@@ -71,7 +71,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>9 9 9</code>
 

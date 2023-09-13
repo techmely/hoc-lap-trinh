@@ -60,7 +60,7 @@ public class TestThrows1 {
 }
 ```
 
-::Result
+::result
 
     <code>ngoai le duoc xu ly</code><br/>
     <code>luong binh thuong...</code><br/>
@@ -94,7 +94,7 @@ public class TestThrows2 {
 }
 ```
 
-::Result
+::result
 
     <code>Ngoai le duoc xu ly</code><br/>
     <code>Luong binh thuong...</code><br/>
@@ -123,7 +123,7 @@ public class TestThrows2 {
 }
 ```
 
-::Result
+::result
 
     <code>Thiet bi dang hoat dong tot</code><br/>
     <code>Luong binh thuong...</code><br/>
@@ -150,7 +150,7 @@ public class TestThrows2 {
 }
 ```
 
-::Result
+::result
 
     <code>Exception in thread "main" java.io.IOException: Thiet bi</code>
 

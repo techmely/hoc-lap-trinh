@@ -221,7 +221,7 @@ Ví dụ:
 });
 ```
 
-::Result
+::result
 
 item a at index 0 in array a,b,c
 item b at index 1 in array a,b,c

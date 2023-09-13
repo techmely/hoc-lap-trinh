@@ -39,7 +39,7 @@ console.log("Hello");
 console.log("World");
 ```
 
-::Result
+::result
 
     <code>Hello</code><br/>
     <code>World</code><br/>
@@ -55,7 +55,7 @@ console.log("Hello");
 console.log("World");
 ```
 
-::Result
+::result
 
     <code>Hello</code><br/>
     <code>World</code><br/>
@@ -87,7 +87,7 @@ console.log("Hello world");
 
 Có thể bạn chưa hiểu về câu lệnh thứ hai (các bài viết sau bạn sẽ biết) - kết quả hiển thị là:
 
-::Result
+::result
 
     <code>Hello world</code><br/>
     <code>1</code><br/>

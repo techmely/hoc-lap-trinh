@@ -61,7 +61,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>1 2 3 4 5 6 7 8 9 10</code>
 
@@ -101,7 +101,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>6</code>
 
@@ -158,7 +158,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>2 3 4 5 6 7 8 9 10 11 </code>
 
@@ -196,7 +196,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>-4 0 2 3 5 9 </code>
 

@@ -50,7 +50,7 @@ class Honda4 extends Bike{
 }
 ```
 
-::Result
+::result
 
     <code>running...</code>
 
@@ -100,7 +100,7 @@ class Main{
 }
 ```
 
-::Result
+::result
 
     <code>Ve hinh tron</code>
 

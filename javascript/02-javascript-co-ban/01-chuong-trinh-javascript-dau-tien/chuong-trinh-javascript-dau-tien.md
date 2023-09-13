@@ -21,7 +21,7 @@ Tùy thuộc vào trình duyệt bạn đang sử dụng, bạn có thể nhấn
 
 Sau đó, bạn chọn tab **console** rồi gõ lệnh sau: `console.log("JavaScript Helloworld")`. Tiếp theo, bạn nhấn **Enter** (để viết nhiều dòng code, bạn nhấn tổ hợp **Shift Enter**).
 
-::Result
+::result
 
     <code>JavaScript Helloworld</code><br/>
 

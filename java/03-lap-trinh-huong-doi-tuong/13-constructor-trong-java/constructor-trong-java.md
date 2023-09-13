@@ -52,7 +52,7 @@ public class SimpleConstructor {
 }
 ```
 
-::Result
+::result
 
     <code>Đang tạo student</code><br/>
 
@@ -100,7 +100,7 @@ public class Student {
 }
 ```
 
-::Result
+::result
 
     <code>1 Thaycacac</code><br/>
     <code>2 HoaPN</code>
@@ -141,7 +141,7 @@ class Student {
 }
 ```
 
-::Result
+::result
 
     <code>1 Thaycacac 0</code><br/>
     <code>2 HoaPN 25</code>

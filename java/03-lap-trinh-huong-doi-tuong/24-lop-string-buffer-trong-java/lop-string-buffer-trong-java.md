@@ -35,7 +35,7 @@ class StringBuffer {
 }
 ```
 
-::Result
+::result
 
     <code>0</code><br/>
     <code>12</code><br/>
@@ -105,7 +105,7 @@ StringBuffer str = new StringBuffer("Java sion");
 str.insert(1,’b’);
 ```
 
-::Result
+::result
 
     <code>Biến "str" chứa chuỗi "Jbava sion"</code>
 
@@ -125,7 +125,7 @@ StringBuffer name = new StringBuffer("Jawa");
 name.setCharAt(2,’v’);
 ```
 
-::Result
+::result
 
     <code>Biến "name" chứa "Java".</code>
 
@@ -151,7 +151,7 @@ char ch[] = new char[10];
 str.getChars(3,6,ch,0);
 ```
 
-::Result
+::result
 
     <code>Bây giờ biến "ch" chứa "par"</code>
 
@@ -164,7 +164,7 @@ StringBuffer str = new StringBuffer("devil");
 StringBuffer strrev = str.reverse();
 ```
 
-::Result
+::result
 
     <code>Biến "strrev" chứa "lived".</code>
 

@@ -66,7 +66,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedHashMap1: {Two=2, Four=4}</code><br/>
     <code>LinkedHashMap2: {Two=2, Four=4, Three=3}</code>
@@ -107,7 +107,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>Original LinkedHashMap: {Two=2, Four=4}</code><br/>
     <code>Updated LinkedHashMap: {Two=2, Four=4, Six=6}</code><br/>
@@ -145,7 +145,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedHashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Key/Value mappings: [One=1, Two=2, Three=3]</code><br/>
@@ -180,7 +180,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedHashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Returned Number: 3</code><br/>
@@ -218,7 +218,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedHashMap: {One=1, Two=2, Three=3}</code><br/>
     <code>Removed value: 2</code><br/>

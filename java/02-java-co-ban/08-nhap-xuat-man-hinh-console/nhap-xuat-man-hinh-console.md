@@ -11,25 +11,21 @@ image: https://user-images.githubusercontent.com/29374426/128108517-2d46376d-f9e
 position: 8
 ---
 
-Đối với những người mới bắt đầu học Java cơ bản, thì việc sử dụng nhập xuất trong màn hình `console` là điều tất yếu để giải các bài tập. Trong java chúng ta có nhiều cách khác nhau để đọc dữ từ màn hình console, chúng ta sẽ đi qua từng cách ở phần sau.
+Đối với những người mới bắt đầu học Java cơ bản, việc sử dụng nhập xuất trong màn hình console là điều tất yếu để giải các bài tập và tương tác với người dùng. Trong Java, chúng ta có nhiều cách khác nhau để đọc và hiển thị dữ liệu trên màn hình console. Trong bài viết này, chúng ta sẽ tìm hiểu về cách sử dụng các lớp Scanner, BufferedReader và Console để thực hiện các thao tác nhập xuất cơ bản.
 
 ![Nhập xuất màn hình console trong Java](https://user-images.githubusercontent.com/29374426/128108517-2d46376d-f9e2-4075-b311-1e06ff63ffc5.png)
 
-## Sử dụng Scanner class
+## Sử dụng lớp Scanner
 
-Đây có lẽ là cách mà mọi người thường hay dùng nhất. `Scanner` cung cấp nhiều chức năng hơn và chúng có thể phân loại từng kiểu dữ liệu mà người dùng nhập vào như kiểu số nguyên, số thực, chuỗi,...
+Lớp Scanner cung cấp nhiều chức năng cho việc đọc dữ liệu từ màn hình console và có thể phân loại dữ liệu theo các kiểu khác nhau như số nguyên, số thực, chuỗi, và nhiều loại khác.
 
 ### Đọc chuỗi từ màn hình console
 
-Để đọc một chuỗi trong Scanner chúng ta sử dụng method `readLine()`.
+Để đọc một chuỗi từ màn hình console, chúng ta sử dụng phương thức `nextLine()` của lớp Scanner như sau:
 
 ```java
 import java.util.Scanner;
 
-/**
- *
- * @author Thaycacac <kungfutech.edu.vn>
- */
 public class NhapXuat {
 
     public static void main(String[] args) {
@@ -40,137 +36,143 @@ public class NhapXuat {
     }
 
 }
-
 ```
 
-::Result
+::result
+Nhập tên của bạn: John
 
-    <code>Nhập tên của bạn:<b>thaycacac</b></code><br/>
-    <code>Tên của bạn là: <b>thaycacac</b></code>
-
+Tên của bạn là: John
 ::
 
-### Đọc số trong màn hình console
+### Đọc số từ màn hình console
 
-Để nhập xuất kiểu số, chúng ta sử dụng `nextInt()` để đọc số Integer, `nextDouble()` để đọc số Double, `nextFloat()` để đọc số float etc.
+Để đọc các kiểu dữ liệu số từ màn hình console, chúng ta sử dụng các phương thức như `nextInt()` để đọc số nguyên, `nextDouble()` để đọc số thực, `nextFloat()` để đọc số thực dấu phẩy động, vv. Dưới đây là một ví dụ:
 
 ```java
 import java.util.Scanner;
 
-/**
- *
- * @author Thaycacac <kungfutech.edu.vn>
- */
 public class NhapXuat {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập tuổi của bạn: ");
-        int name = scanner.nextInt();
-        System.out.println("Tuổi của bạn là: " + name);
+        int age = scanner.nextInt();
+        System.out.println("Tuổi của bạn là: " + age);
         System.out.print("Nhập chiều cao của bạn: ");
         double height = scanner.nextDouble();
         System.out.println("Chiều cao của bạn là: " + height);
     }
 
 }
-
 ```
 
-::Result
+::result
+Nhập tuổi của bạn: 25
 
-    <code>Nhập tuổi của bạn: <b>18</b></code><br/>
-    <code>Tuổi của bạn là: <b>18</b></code><br/>
-    <code>Nhập chiều cao của bạn: <b>18.22</b></code><br/>
-    <code>Chiều cao của bạn là: <b>18.22</b></code>
+Tuổi của bạn là: 25
 
+Nhập chiều cao của bạn: 175.5
+
+Chiều cao của bạn là: 175.5
 ::
 
-## Sử dụng Buffered Reader Class
+## Sử dụng lớp BufferedReader
+
+Lớp BufferedReader cũng cho phép đọc dữ liệu từ màn hình console, nhưng nó cung cấp kiểm soát linh hoạt hơn đối với việc xử lý lỗi và ngoại lệ.
 
 ### Đọc chuỗi từ màn hình console
 
-Sử dụng `readLine()` để đọc một chuỗi từ màn hình console
+Để đọc một chuỗi từ màn hình console bằng lớp BufferedReader, chúng ta sử dụng phương thức `readLine()` như sau:
 
 ```java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-class Thaycacac
-{
-  public static void main(String[] args) throws IOException {
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    System.out.print("Nhập tên của bạn: ");
-    String name = reader.readLine();
-    System.out.println("Tên của bạn là: " + name);
-  }
+public class NhapXuat {
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("Nhập tên của bạn: ");
+        String name = reader.readLine();
+        System.out.println("Tên của bạn là: " + name);
+    }
+
 }
 ```
 
-::Result
+::result
+Nhập tên của bạn: Alice
 
-    <code>Nhập tên của bạn: <b>thaycacac</b></code><br/>
-    <code>Tên của bạn là: <b>thaycacac</b></code>
-
+Tên của bạn là: Alice
 ::
 
-### Đọc số trong màn hình console
+### Đọc số từ màn hình console
 
-Để đọc số trong màn hình console chúng ta sử dụng `readLine()` kết hợp với `Double.parse()` hoặc `Integer.parse()` để đọc kiểu dữ liệu tương ứng.
+Để đọc các kiểu dữ liệu số từ màn hình console bằng lớp BufferedReader, chúng ta đọc chuỗi và sau đó chuyển đổi nó thành kiểu số tương ứng bằng cách sử dụng `Integer.parseInt()` hoặc `Double.parseDouble()`. Dưới đây là ví dụ:
 
 ```java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-class Thaycacac {
-public static void main(String[] args) throws IOException {
-  BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-  System.out.print("Nhập tuổi của bạn: ");
-  int age = Integer.parseInt(reader.readLine());
-  System.out.println("Tuổi của bạn là: " + age);
-  System.out.print("Nhập chiều cao của bạn: ");
-  double height = Double.parseDouble(reader.readLine());
-  System.out.println("Chiều cao của bạn là: " + height);
-  }
+public class NhapXuat {
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("Nhập tuổi của bạn: ");
+        int age = Integer.parseInt(reader.readLine());
+        System.out.println("Tuổi của bạn là: " + age);
+        System.out.print("Nhập chiều cao của bạn: ");
+        double height = Double.parseDouble(reader.readLine());
+        System.out.println("Chiều cao của bạn là: " + height);
+    }
+
 }
 ```
 
-::Result
+::result
+Nhập tuổi của bạn: 30
 
-    <code>Nhập tuổi của bạn: <b>18</b></code><br/>
-    <code>Tuổi của bạn là: <b>18</b></code><br/>
-    <code>Nhập chiều cao của bạn: <b>18.22</b></code><br/>
-    <code>Chiều cao của bạn là: <b>18.22</b></code>
+Tuổi của bạn là: 30
 
+Nhập chiều cao của bạn: 175.5
+
+Chiều cao của bạn là: 175.5
 ::
 
-## Sử dụng console class
+## Sử dụng lớp Console
 
-Sử dụng Console class cũng là một trong những cách thường dùng, đặc biệt nó có thể dùng để đọc password thứ mà không hiện thị lên màn hình console mà chỉ đọc ngầm bên dưới.
+Lớp Console cung cấp một số tính năng tiện ích cho việc nhập xuất từ màn hình console và cho phép ẩn mật khẩu khi nhập.
 
 ```java
 import java.io.Console;
 
-class ReadPassword {
-  public static void main(String args[]) {
-    Console con = System.console();
-    if (con == null) {
-      System.out.print("Console không sẵn sàng");
-      return;
+public class NhapXuat {
+
+    public static void main(String[] args) {
+        Console console = System.console();
+        if (console == null) {
+            System.out.print("Console không sẵn sàng");
+            return;
+        }
+        System.out.println("Nhập mật khẩu: ");
+        char[] passwordChars = console.readPassword();
+        String password = String.valueOf(passwordChars);
+        System.out.println("Mật khẩu của bạn là: " + password);
     }
-    System.out.println("Nhập mật khẩu: ");
-    char[] ch = con.readPassword();
-    String pass = String.valueOf(ch);
-    System.out.println("Mật khẩu của bạn là: " + pass);
-  }
+
 }
 ```
 
-::Result
+::result
+Nhập mật khẩu:
 
-    <code>Nhập mật khẩu: <b>@myPassword</b></code><br/>
-    <code>Mật khẩu của bạn là: <b>@myPassword</b></code>
+Mật khẩu của bạn là: mySecretPassword
+::
 
+Lớp Console có thể được sử dụng để ẩn mật khẩu khi nhập, giúp bảo vệ thông tin mật khẩu của người dùng.
+
+::alert{type="infor"}
+Trong Java, bạn có thể sử dụng lớp Scanner, BufferedReader và Console để thực hiện các thao tác nhập xuất từ màn hình console. Sự lựa chọn giữa các lớp này phụ thuộc vào yêu cầu cụ thể của ứng dụng và cách bạn muốn xử lý dữ liệu nhập từ người dùng. Chúc bạn thành công trong việc sử dụng các phương thức này để tương tác với người dùng trong ứng dụng Java của bạn!
 ::

@@ -45,7 +45,7 @@ public class HocSinh {
 }
 ```
 
-::Result
+::result
 
     <code>0 null</code><br/>
     <code>0 null </code>
@@ -78,7 +78,7 @@ public class HocSinh {
 }
 ```
 
-::Result
+::result
 
     <code>111 Viet</code><br/>
     <code>222 Nam</code>
@@ -122,7 +122,7 @@ public class HocSinh2 {
 }
 ```
 
-::Result
+::result
 
     <code>gọi Constructor mặc định</code><br/>
     <code>111 Viet</code><br/>
@@ -162,7 +162,7 @@ public class HocSinh3 {
 }
 ```
 
-::Result
+::result
 
     <code>111 Viet</code><br/>
     <code>222 Nam</code>
@@ -202,7 +202,7 @@ public class HocSinh4 {
 }
 ```
 
-::Result
+::result
 
     <code>Xin chao Thaycacac</code><br/>
     <code>Hello Thaycacac</code>
@@ -231,7 +231,7 @@ public class HocSinh5 {
 }
 ```
 
-::Result
+::result
 
     <code>Hello Thaycacac</code>
 
@@ -268,7 +268,7 @@ class A4 {
 }
 ```
 
-::Result
+::result
 
     <code>10</code>
 
@@ -295,7 +295,7 @@ class Test1 {
 }
 ```
 
-::Result
+::result
 
     <code>Hello Thaycacac</code>
 

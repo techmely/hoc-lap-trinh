@@ -128,7 +128,7 @@ let meetup = {
 console.log(JSON.stringify(meetup));
 ```
 
-::Result
+::result
 
 <code>
 {

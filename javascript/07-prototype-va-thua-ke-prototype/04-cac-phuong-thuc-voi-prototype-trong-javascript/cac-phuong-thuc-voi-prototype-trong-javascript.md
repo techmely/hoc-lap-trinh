@@ -205,7 +205,7 @@ rabbit.__proto__.sayHi(); // (4)
 
 Xem đáp án
 
-::Result
+::result
 
 (1) - Rabbit
 (2) - undefined

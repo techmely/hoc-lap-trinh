@@ -126,7 +126,7 @@ public class DemoBuilderPattern {
 }
 ```
 
-::Result
+::result
 
 Computer [HDD=500 GB, RAM=2 GB, isGraphicsCardEnabled=true, isBluetoothEnabled=true]
 

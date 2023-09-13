@@ -36,7 +36,7 @@ model.addAttribute("techMely", "kenh day lap trinh hap dan");
 ```
 
 Kết quả sẽ in ra:
-::Result
+::result
 Techmely la: kenh day lap trinh hap dan
 ::
 Đoạn expression trên tương đương với:
@@ -89,7 +89,7 @@ Thì cách lấy nó ra nhanh nhất là:
 ```
 
 Đoạn text tiếng việt _"Xin chào các bạn!"_ bên trong thẻ **p** sẽ bị thay thế bởi `Thymeleaf` khi render `#{home.welcome}`.
-::Result
+::result
 Hello, how's it going!
 ::
 

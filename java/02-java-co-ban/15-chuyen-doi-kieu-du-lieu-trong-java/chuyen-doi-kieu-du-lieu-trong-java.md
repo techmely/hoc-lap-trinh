@@ -134,7 +134,7 @@ public class StringToDateExample {
 }
 ```
 
-::Result
+::result
 
     <code>17/07/2017 Mon Jul 17 00:00:00 ICT 2017</code>
 
@@ -154,7 +154,7 @@ public class ToanTuCong {
 }
 ```
 
-::Result
+::result
 
     <code>100.0</code>
 

@@ -60,7 +60,7 @@ class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>display... successfully garbage collected</code><br/>
     <code>show... successfully garbage collected</code>

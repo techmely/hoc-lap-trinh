@@ -70,7 +70,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
 
@@ -93,7 +93,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
 
@@ -124,7 +124,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>Mammals: [Dog, Cat, Horse]</code><br/>
     <code>Animals: [Crocodile, Dog, Cat, Horse]</code><br/>
@@ -153,7 +153,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>ArrayList: [Dog, Horse, Cat]</code><br/>
     <code>Element at index 0: Dog</code><br/>
@@ -186,7 +186,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>ArrayList: Dog, Cat, Horse, Zebra,</code><br/>
 
@@ -222,7 +222,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>Modified ArrayList: [Dog, Cat, Zebra]</code><br/>
@@ -252,7 +252,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>Initial ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>Final ArrayList: [Dog, Cat]</code><br/>
@@ -280,7 +280,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>Initial ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>Final ArrayList: []</code><br/>
@@ -307,7 +307,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>Initial ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>Final ArrayList: []</code><br/>
@@ -339,7 +339,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>ArrayList: [Cow, Cat, Dog]</code><br/>
     <code>Accessing individual elements: Cow, Cat, Dog,</code><br/>
@@ -369,7 +369,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>ArrayList: [Cow, Cat, Dog]</code><br/>
     <code>Accessing individual elements: Cow, Cat, Dog,</code><br/>
@@ -397,7 +397,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>ArrayList: [Dog, Horse, Cat]</code><br/>
     <code>Size: 3</code><br/>
@@ -428,7 +428,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>Unsorted ArrayList: [Horse, Zebra, Dog, Cat]</code><br/>
     <code>Sorted ArrayList: [Cat, Dog, Horse, Zebra]</code><br/>
@@ -462,7 +462,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>Array: Dog, Cat, Horse,</code><br/>
@@ -494,7 +494,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>Array: Dog, Cat, Horse</code><br/>
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
@@ -523,7 +523,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>ArrayList: [Dog, Cat, Horse]</code><br/>
     <code>String: [Dog, Cat, Horse]</code><br/>

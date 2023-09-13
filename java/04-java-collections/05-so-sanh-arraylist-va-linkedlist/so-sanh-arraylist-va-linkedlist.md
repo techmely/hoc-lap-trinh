@@ -60,7 +60,7 @@ public class ArraylistAndLinkedListExample {
 }
 ```
 
-::Result
+::result
 
     <code>arraylist: [Java, C++, PHP, Python]</code><br/>
     <code>linkedlist: [Hiberante, Struts2, Spring, Mybatis]</code><br/>

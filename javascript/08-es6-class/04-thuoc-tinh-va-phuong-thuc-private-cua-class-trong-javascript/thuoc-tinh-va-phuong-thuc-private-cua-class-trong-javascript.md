@@ -193,7 +193,7 @@ console.log(waterBottle.#volume);
 
 Trong đoạn code trên, mình đã thay đổi `_waterAmount` và `_volume` thành `#waterAmount` và `#volume`. Lúc này, các thuộc tính đã **hoàn toàn private**. Nếu bạn cố tình truy cập các thuộc tính này từ bên ngoài class thì sẽ gặp lỗi dạng như trên:
 
-::Result
+::result
 
 Private field '#volume' must be declared in an enclosing class
 

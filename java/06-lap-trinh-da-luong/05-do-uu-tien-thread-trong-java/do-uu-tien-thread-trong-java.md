@@ -51,7 +51,7 @@ class TestMultiPriority1 extends Thread {
 }
 ```
 
-::Result
+::result
 
     <code>Đang chạy luồng:Thread-1</code><br/>
     <code>Đang chạy luồng:Thread-0</code><br/>
@@ -104,7 +104,7 @@ public class ThreadInfoExample {
 }
 ```
 
-::Result
+::result
 
     <code>ID luồng 1: 10</code><br/>
     <code>ID luồng 2: 11</code><br/>

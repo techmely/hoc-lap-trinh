@@ -103,7 +103,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>HashSet: [2, 4, 6]</code><br/>
     <code>New HashSet: [2, 4, 5, 6]</code>
@@ -138,7 +138,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>HashSet: [2, 5, 6]</code><br/>
     <code>HashSet using Iterator: 2, 5, 6,</code>
@@ -171,7 +171,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>HashSet: [2, 5, 6]</code><br/>
     <code>Is 5 removed? true</code><br/>
@@ -205,7 +205,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>HashSet1: [2, 4]</code><br/>
     <code>HashSet2: [1, 3]</code><br/>
@@ -239,7 +239,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>HashSet1: [2, 3]</code><br/>
     <code>HashSet2: [2, 4]</code><br/>
@@ -275,7 +275,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>HashSet1: [2, 3, 5]</code><br/>
     <code>HashSet2: [1, 3, 5]</code><br/>
@@ -311,7 +311,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>HashSet1: [1, 2, 3, 4]</code><br/>
     <code>HashSet2: [2, 3]</code><br/>

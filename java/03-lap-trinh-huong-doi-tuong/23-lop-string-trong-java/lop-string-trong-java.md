@@ -61,7 +61,7 @@ String strname = "Java Language";
 boolean flag = strname.startsWith("Java");
 ```
 
-::Result
+::result
 
     <code>true</code>
 
@@ -74,7 +74,7 @@ String strname = "Java Language";
 boolean flag = strname.endsWith("Java");
 ```
 
-::Result
+::result
 
     <code>false</code>
 
@@ -138,7 +138,7 @@ String name1 = "Java", name2 = "JAVA";
 boolean flag = name1.equals(name2);
 ```
 
-::Result
+::result
 
     <code>false</code>
 

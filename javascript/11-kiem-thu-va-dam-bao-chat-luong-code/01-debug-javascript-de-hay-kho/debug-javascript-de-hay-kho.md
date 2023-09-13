@@ -150,7 +150,7 @@ console.log(numberToString(13, 10));
 
 Kết quả ta có log như sau:
 
-::Result
+::result
 
 sign:
 n: 13

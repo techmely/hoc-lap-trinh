@@ -44,7 +44,7 @@ public class XeDap extends Xe {
 }
 ```
 
-::Result
+::result
 
     <code>100</code>
 
@@ -72,7 +72,7 @@ public class XeDap extends Xe {
 }
 ```
 
-::Result
+::result
 
     <code>50</code>
 
@@ -101,7 +101,7 @@ class XeDap extends Xe {
 }
 ```
 
-::Result
+::result
 
     <code>Xe được tạo</code><br/>
     <code>Xe đạp được tạo</code><br/>
@@ -139,7 +139,7 @@ public class XeDap extends Xe {
 }
 ```
 
-::Result
+::result
 
     <code>Xe được tạo</code><br/>
     <code>10</code>
@@ -174,7 +174,7 @@ public class HocSinh extends Nguoi {
 }
 ```
 
-::Result
+::result
 
     <code>Xin chao Thaycacac</code><br/>
     <code>Xin chao</code>

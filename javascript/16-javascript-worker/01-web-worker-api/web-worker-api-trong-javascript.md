@@ -216,7 +216,7 @@ function handleMessage(event) {
 
 Kết quả:
 
-::Result
+::result
 
 [Main] Init Web Worker
 [Main] Before Transfering:

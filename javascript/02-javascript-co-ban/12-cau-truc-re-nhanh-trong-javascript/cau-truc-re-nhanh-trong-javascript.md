@@ -47,7 +47,7 @@ if (x % 2 === 0) {
 }
 ```
 
-::Result
+::result
 
     <code>x is an even number</code>
     <code>done!</code>

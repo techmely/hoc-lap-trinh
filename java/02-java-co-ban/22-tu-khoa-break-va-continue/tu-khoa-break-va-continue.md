@@ -37,7 +37,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>x = 2</code><br/>
     <code>x after ++ = 3</code><br/>
@@ -76,7 +76,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>x = 2</code><br/>
     <code>x after ++ = 3</code><br/>

@@ -82,7 +82,7 @@ public class Main {
 }
 ```
 
-::Result
+::result
 ví dụ trong package 1
 
 ví dụ trong package 2ß
@@ -152,7 +152,7 @@ public class Main {
 }
 ```
 
-::Result
+::result
 ví dụ 1
 
 ví dụ 2

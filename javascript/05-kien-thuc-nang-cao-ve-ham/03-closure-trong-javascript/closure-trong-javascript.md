@@ -275,7 +275,7 @@ Hỏi kết quả khi gọi `sayHi()` là "Alex" hay "Anna"?
 
 Xem đáp án
 
-::Result
+::result
 
 Anna
 
@@ -309,7 +309,7 @@ Hỏi kết quả của `worker()` là "Alex" hay "Anna"?
 
 Xem đáp án
 
-::Result
+::result
 
 Alex
 
@@ -343,7 +343,7 @@ Kết quả sau khi gọi `sayHi()` là gì?
 
 Xem đáp án
 
-::Result
+::result
 
 Uncaught ReferenceError: sayHi is not defined
 
@@ -394,7 +394,7 @@ Kết quả `(*)` là gì?
 
 Xem đáp án
 
-::Result
+::result
 
 Uncaught ReferenceError: Cannot access 'x' before initialization
 

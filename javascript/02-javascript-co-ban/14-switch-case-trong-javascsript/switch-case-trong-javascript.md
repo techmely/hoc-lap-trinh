@@ -70,7 +70,7 @@ switch (x) {
 // Equal
 ```
 
-::Result
+::result
 
     <code>Equal</code>
 

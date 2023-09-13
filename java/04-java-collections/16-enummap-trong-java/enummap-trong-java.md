@@ -67,7 +67,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>EnumMap1: {SMALL=28, MEDIUM=32}</code><br/>
     <code>EnumMap2: {SMALL=28, MEDIUM=32, LARGE=36}</code><br/>
@@ -114,7 +114,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
     <code>Key/Value mappings: [SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40]</code><br/>
@@ -150,7 +150,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
     <code>Value of MEDIUM: 32</code>
@@ -192,7 +192,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
     <code>Removed Value: 32</code><br/>
@@ -237,7 +237,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
     <code>EnumMap using replace(): {SMALL=28, MEDIUM=30, LARGE=34, EXTRALARGE=40}</code><br/>

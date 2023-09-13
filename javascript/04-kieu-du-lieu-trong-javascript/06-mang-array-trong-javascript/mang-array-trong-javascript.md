@@ -255,7 +255,7 @@ for (let i = 0; i < letters.length; i++) {
 }
 ```
 
-::Result
+::result
 
 <p>a</p>
 <p>b</p>

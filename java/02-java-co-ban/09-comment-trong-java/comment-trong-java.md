@@ -13,7 +13,7 @@ position: 9
 
 Comment trong Java là các ghi chú trong code Java bị bỏ qua bởi trình biên dịch và runtime engine. Các comment code là các nhận xét, giải thích mã nguồn, chẳng hạn như mô tả về các class, interfaces, method và fields làm cho chúng dễ đọc hơn chứ không phải là làm rối thêm.
 
-![comment-trong-java](https://user-images.githubusercontent.com/29374426/126426149-ac16a161-b637-44a5-ba1f-18892453c095.png)
+![Comment trong Java](https://user-images.githubusercontent.com/29374426/126426149-ac16a161-b637-44a5-ba1f-18892453c095.png)
 
 ## Khi nào cần comment code?
 

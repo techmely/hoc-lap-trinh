@@ -196,7 +196,7 @@ public class TestDesignPatterns {
 }
 ```
 
-::Result
+::result
 
 AbstractFactory PC Config::RAM= 2 GB, HDD=500 GB, CPU=2.4 GHz
 AbstractFactory Server Config::RAM= 16 GB, HDD=1 TB, CPU=2.9 GHz

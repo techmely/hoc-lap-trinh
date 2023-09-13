@@ -81,7 +81,7 @@ public class ListExample {
 }
 ```
 
-::Result
+::result
 
     <code>Phan tu co index = 2 la: C++</code><br/>
     <code>Java</code><br/>
@@ -111,7 +111,7 @@ public class ListExample1 {
 }
 ```
 
-::Result
+::result
 
     <code>Java</code><br/>
     <code>C++</code><br/>
@@ -160,7 +160,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>Phan tu co index = 2 la: C++</code><br/>
     <code>Duyet cac phan tu tu dau den cuoi:</code><br/>

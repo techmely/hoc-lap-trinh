@@ -82,7 +82,7 @@ public static void main(String[] args) {
 }
 ```
 
-::Result
+::result
 
     <code>10</code></br>
     <code>9</code></br>
@@ -136,7 +136,7 @@ public static void main(String[] args) {
 }
 ```
 
-::Result
+::result
 
     <code>10</code></br>
     <code>9</code></br>

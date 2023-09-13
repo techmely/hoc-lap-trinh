@@ -47,7 +47,7 @@ Trước khi bạn bắt đầu viết chương trình, hãy tìm hiểu một c
 
 Khi chúng ta chạy chương trình trên, kết quả sẽ là:
 
-::Result
+::result
 
 Hello world
 

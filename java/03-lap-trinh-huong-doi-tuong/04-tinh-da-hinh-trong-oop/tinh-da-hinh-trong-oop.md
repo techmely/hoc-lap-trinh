@@ -67,7 +67,7 @@ public class Bike extends Car {
 }
 ```
 
-::Result
+::result
 
     <code>chạy với tốc độ 30km/h</code>
 
@@ -113,7 +113,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>vẽ hình chữ nhật...</code><br/>
     <code>vẽ hình tròn...</code><br/>
@@ -138,7 +138,7 @@ public static void main(String args[]){
 }
 ```
 
-::Result
+::result
 
     <code>90</code>
 
@@ -165,7 +165,7 @@ public class OverloadingOrder {
 }
 ```
 
-::Result
+::result
 
     <code>String: String first, int: 11</code></br>
     <code>int: 99, String: Int first</code>

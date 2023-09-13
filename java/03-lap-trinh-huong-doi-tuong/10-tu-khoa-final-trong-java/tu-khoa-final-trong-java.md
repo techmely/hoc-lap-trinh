@@ -160,7 +160,7 @@ public class A {
 
 Chương trình sẽ in ra lỗi
 
-::Result
+::result
 
     <code>"A.java": variable i might already have been assigned to at line 5, column 9</code>
 

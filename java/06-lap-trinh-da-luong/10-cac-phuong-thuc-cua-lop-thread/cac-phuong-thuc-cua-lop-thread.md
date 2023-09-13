@@ -98,7 +98,7 @@ class RunnableDemo implements Runnable {
 }
 ```
 
-::Result
+::result
 
     <code>Creating Thread-1</code><br/>
     <code>Starting Thread-1</code><br/>

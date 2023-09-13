@@ -46,7 +46,7 @@ public class TestThrow1 {
 }
 ```
 
-::Result
+::result
 
     <code>Exception in thread "main" java.lang.ArithmeticException: not valid</code><br/>
 
@@ -74,7 +74,7 @@ public class TestThrow2 {
 }
 ```
 
-::Result
+::result
 
     <code>not valid</code><br/>
     <code>rest of the code...</code>

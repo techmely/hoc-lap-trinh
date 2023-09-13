@@ -340,7 +340,7 @@ console.log("sau vòng lặp");
 
 Xem đáp án
 
-::Result
+::result
 
 <code>trước vòng lặp</code>
 <code>sau vòng lặp</code>

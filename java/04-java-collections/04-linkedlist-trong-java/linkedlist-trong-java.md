@@ -88,7 +88,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Dog, Cat, Horse]</code><br/>
 
@@ -120,7 +120,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>Mammals: [Dog, Cat, Horse]</code><br/>
     <code>Animals: [Crocodile, Dog, Cat, Horse]</code><br/>
@@ -147,7 +147,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Dog, Cat]</code><br/>
 
@@ -177,7 +177,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Dog, Horse, Cat]</code><br/>
     <code>Element at index 1: Horse</code><br/>
@@ -211,7 +211,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: Dog, Cat, Horse,</code><br/>
 
@@ -257,7 +257,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: Dog, Horse, Cat,</code><br/>
     <code>Reverse LinkedList: Cat, Horse, Dog,</code><br/>
@@ -296,7 +296,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Dog, Horse, Cat]</code><br/>
     <code>Dog is in LinkedList.</code><br/>
@@ -333,7 +333,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Dog, Horse, Cat, Dog]</code><br/>
     <code>First Occurrence of Dog: 0</code><br/>
@@ -393,7 +393,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Dog, Cat, Horse]</code><br/>
     <code>New LinkedList: [Cow, Cat, Horse]</code><br/>
@@ -427,7 +427,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList : [Dog, Horse, Cat, Zebra]</code><br/>
     <code>Removed Element: Horse</code><br/>
@@ -462,7 +462,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Dog, Cat, Horse]</code><br/>
     <code>New LinkedList: [Cat, Horse]</code><br/>
@@ -491,7 +491,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Dog, Cat, Horse]</code><br/>
     <code>New LinkedList: []</code><br/>
@@ -528,7 +528,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [2, 3, 4, 5]</code><br/>
     <code>New LinkedList: [4, 5]</code><br/>
@@ -567,7 +567,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Cat, Dog, Cow]</code><br/>
     <code>New LinkedList: [Cat, Dog, Cow, Zebra]</code><br/>
@@ -604,7 +604,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Dog, Horse, Cat]</code><br/>
     <code>First Element: Dog</code><br/>
@@ -644,7 +644,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Dog, Horse, Cat]</code><br/>
     <code>Removed Element: Dog</code><br/>
@@ -677,7 +677,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Dog, Horse, Cat]</code><br/>
     <code>Element Accessed: Dog</code><br/>
@@ -709,7 +709,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Dog, Horse, Cat]</code><br/>
     <code>Removed Element: Dog</code><br/>
@@ -739,7 +739,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Dog, Horse]</code><br/>
     <code>New LinkedList: [Dog, Horse, Cat]</code><br/>
@@ -772,7 +772,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Cow, Cat, Dog]</code><br/>
     <code>Accessing linked list elements:</code><br/>
@@ -804,7 +804,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Cow, Cat, Dog]</code><br/>
     <code>Accessing linked list elements:</code><br/>
@@ -838,7 +838,7 @@ class Main {
 }
 ```
 
-::Result
+::result
 
     <code>LinkedList: [Cow, Cat, Dog]</code><br/>
     <code>LinkedList using the iterator() method:</code><br/>

@@ -46,7 +46,7 @@ public class ThreadGroupDemo implements Runnable {
 }
 ```
 
-::Result
+::result
 
     <code>two</code><br/>
     <code>Thread Group Name: Parent ThreadGroup</code><br/>

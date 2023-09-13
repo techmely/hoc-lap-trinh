@@ -125,7 +125,7 @@ while (true) {
 }
 ```
 
-::Result
+::result
 
 <p>H</p>
 <p>e</p>

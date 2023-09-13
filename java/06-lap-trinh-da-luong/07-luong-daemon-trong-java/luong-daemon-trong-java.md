@@ -68,7 +68,7 @@ public class NonDaemonThreadTest {
 }
 ```
 
-::Result
+::result
 
     <code>Processing working thread</code></br>
     <code>Processing working thread</code></br>
@@ -105,7 +105,7 @@ public class DaemonThreadTest {
 }
 ```
 
-::Result
+::result
 
     <code>Processing working thread</code></br>
     <code>Processing working thread</code></br>

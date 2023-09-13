@@ -43,7 +43,7 @@ public class ThreadSleep {
 }
 ```
 
-::Result
+::result
 
     <code>Output: leep time in ms = 2001</code>
 

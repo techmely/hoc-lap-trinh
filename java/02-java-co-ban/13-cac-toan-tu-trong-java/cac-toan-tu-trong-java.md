@@ -82,7 +82,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>1</code><br/>
     <code>3</code><br/>
@@ -159,7 +159,7 @@ public class Thaycacac {
 
 ```
 
-::Result
+::result
 
     <code>Hiển thị các số...</code><br/>
     <code>i = 37</code><br/>

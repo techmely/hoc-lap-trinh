@@ -81,7 +81,7 @@ public class A extends B {
 }
 ```
 
-::Result
+::result
 
     <code>Hàm khởi tạo lớp cha</code><br/>
     <code>Hàm khởi tạo lớp con</code><br/>
@@ -116,7 +116,7 @@ public class A extends B {
 }
 ```
 
-::Result
+::result
 
     <code>Hàm khởi tạo lớp cha</code><br/>
     <code>Hàm khởi tạo lớp con</code><br/>

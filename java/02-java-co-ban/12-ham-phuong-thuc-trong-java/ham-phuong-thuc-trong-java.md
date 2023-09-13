@@ -120,7 +120,7 @@ public class Thaycacac {
 }
 ```
 
-::Result
+::result
 
     <code>Sau khi hoán đổi: a = 3 b= 5</code><br/>
     <code>Trước khi hoán đổi: a = 5 b= 3</code>
