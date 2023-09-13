@@ -30,9 +30,7 @@ _Trong đó:_
 
 - **kieu_du_lieu**: là kiểu dữ liệu mà biến có thể lưu trữ (kiểu số, kiểu văn bản…) tương ứng với int, long, String… trong Java
 - **ten_bien** là tên của biến, tên biến là một xâu kí tự được đặt theo quy tắc đặt tên của java
-- **InitValue** là giá trị khởi tạo cho biến, đây là phần tuỳ chọn, nếu bỏ qua phần này thì giá trị ban đầu của biến được khởi tạo giá trị mặc định. Ví dụ kieu_du_lieu là `int` thì `gia_tri` phải là kiểu số nguyên và nằm trong phạm vi từ -2,147,483,648 đến 2,147,483,647
-
-::alert{type="infor"}
+- **InitValue** là giá trị khởi tạo cho biến, đây là phần tuỳ chọn, nếu bỏ qua phần này thì giá trị ban đầu của biến được khởi tạo giá trị mặc định. Ví dụ `kieu_du_lieu` là `int` thì `gia_tri` phải là kiểu số nguyên và nằm trong phạm vi từ -2,147,483,648 đến 2,147,483,647
 
 Nếu cần khai báo nhiều biến có cùng một kiểu dữ liệu ta có thể đặt các khai báo các biến trên một dòng, các biến này được phân cách nhau bởi dấu phảy. Java sẽ xử lý các biến không được khởi đầu giá trị như sau:</p>
 
@@ -41,8 +39,6 @@ Nếu cần khai báo nhiều biến có cùng một kiểu dữ liệu ta có t
 - Kí tự null (mã 0) cho kí tự
 - Giá trị null cho kiểu đối tượng
 - Đối với các biến cục bộ thì biến không được gán giá trị mặc định, tuy nhiên Java sẽ báo lỗi nếu ta sử dụng một biến chưa được nhận giá trị
-
-::
 
 ## Phạm vi Biến trong Java
 
@@ -76,9 +72,7 @@ public class Bien {
 ```
 
 ::result
-
 Giá trị của n là: 10
-
 ::
 
 ```java

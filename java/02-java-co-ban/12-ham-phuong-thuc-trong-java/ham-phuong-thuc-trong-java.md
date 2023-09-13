@@ -31,7 +31,7 @@ Trong đó:
 - **Parameter** là các tham số đầu vào của hàm (có thể có nhiều tham số với nhiều kiểu dữ liệu khác nhau)
 - **method body**: là các mã code bên trong hàm
 
-<div class="example">Viết hàm tính tổng 2 chữ số a và b</div>
+Ví dụ: Viết hàm tính tổng 2 chữ số a và b
 
 ```java
 public static int tongHaiSo(int a, int b) {
@@ -48,7 +48,7 @@ Trước khi chúng ta tìm hiểu về cách gọi hàm thì chúng ta tìm hi�
 
 ### Hàm có trả về kết quả
 
-Đối với hàm có kết quả trả về, chúng ta cần dùng từ khoá `return` để trả về kết qủa mà nó đã tính toán được. Khai báo biến có kiểu dữ kiệu tương ứng với kết quả trả về của hàm để nhận giá trị trả về.
+Đối với hàm có kết quả trả về, chúng ta cần dùng từ khoá `return` để trả về kết qủa mà nó đã tính toán được. Khai báo biến có kiểu dữ liệu tương ứng với kết quả trả về của hàm để nhận giá trị trả về.
 
 Như ví dụ tìm `tongHaiSo()` của chúng ta, nhiệm vụ của nó là tính tổng của 2 số nguyên **a, b** nhập vào thì kết quả sẽ ra một số nguyên. Tức là kiểu trả về (returnType) là một số nguyên (int) và kết quả của `return` cũng là một số nguyên (int). Chúng ta sẽ dùng biến có kiểu dữ liệu tương ứng để nhận kết quả trả về từ hàm.
 
@@ -121,28 +121,23 @@ public class Thaycacac {
 ```
 
 ::result
-
-    <code>Sau khi hoán đổi: a = 3 b= 5</code><br/>
-    <code>Trước khi hoán đổi: a = 5 b= 3</code>
-
+Sau khi hoán đổi: a = 3 b= 5<br/>
+Trước khi hoán đổi: a = 5 b= 3
 ::
 
 ::alert{type="infor"}
 
-<ul>
-    <li>Hàm hoanDoiViTri sẽ không làm ảnh hưởng đến giá trị của của các tham số truyền vào.</li>
-    <li>Trong một class nếu có 2 method cùng tên và cùng tham số đầu vào thì trình biên dịch sẽ báo lỗi</li>
-    <li>Thông thường trong một lớp các phương thức nên được khai báo dùng từ khóa public, khác với vùng dữ liệu thường là dùng tiền tố private vì mục đích an toàn.</li>
-  </ul>s
+- Hàm `hoanDoiViTri` sẽ không làm ảnh hưởng đến giá trị của của các tham số truyền vào.
+- Trong một class nếu có 2 method cùng tên và cùng tham số đầu vào thì trình biên dịch sẽ báo lỗi
+- Thông thường trong một lớp các phương thức nên được khai báo dùng từ khóa public, khác với vùng dữ liệu thường là dùng tiền tố `private` vì mục đích an toàn.
+
 ::
 
-## Method overloading
+## Method overloading trong Java
 
 Nếu 2 method có cùng tên nhưng khác tham số đầu vào thì đó gọi là method overloading.
 
-<div class="example">
-  chúng ta có 2 hàm tìm số nhỏ nhất trong 2 và 3 số
-</div>
+Ví dụ: chúng ta có 2 hàm tìm số nhỏ nhất trong 2 và 3 số
 
 ```java
 public class Thaycacac {
