@@ -46,7 +46,7 @@ Tính đa hình chủ yếu được chia thành hai loại:
 
 Đa hình lúc runtime là quá trình gọi phương thức đã được ghi đè trong thời gian thực thi chương trình. Trong quá trình này, một phương thức được ghi đè được gọi thông qua biến tham chiếu của một lớp cha.
 
-<div class="example">Chúng ta tạo hai lớp Bike và Car. Lớp Bike kế thừa lớp Car và ghi đè phương thức run() của nó. Chúng ta gọi phương thức run bởi biến tham chiếu của lớp cha. Khi nó tham chiếu tới đối tượng của lớp con và phương thức lớp con ghi đè phương thức của lớp cha, phương thức lớp con được gọi lúc runtime.</div>
+Ví dụ chúng ta tạo hai lớp Bike và Car. Lớp Bike kế thừa lớp Car và ghi đè phương thức `run()` của nó. Chúng ta gọi phương thức run bởi biến tham chiếu của lớp cha. Khi nó tham chiếu tới đối tượng của lớp con và phương thức lớp con ghi đè phương thức của lớp cha, phương thức lớp con được gọi lúc runtime.
 
 ```java
 class Car {
@@ -69,11 +69,11 @@ public class Bike extends Car {
 
 ::result
 
-    <code>chạy với tốc độ 30km/h</code>
+chạy với tốc độ 30km/h
 
 ::
 
-<div class="example">Một ví dụ khác về tính đa hình</div>
+Một ví dụ khác về tính đa hình
 
 ```java
 class Shape {
@@ -115,9 +115,9 @@ class Main {
 
 ::result
 
-    <code>vẽ hình chữ nhật...</code><br/>
-    <code>vẽ hình tròn...</code><br/>
-    <code>vẽ hình tam giác...</code>
+vẽ hình chữ nhật...<br/>
+vẽ hình tròn...<br/>
+vẽ hình tam giác...
 
 ::
 
@@ -140,7 +140,7 @@ public static void main(String args[]){
 
 ::result
 
-    <code>90</code>
+90
 
 ::
 
@@ -167,17 +167,15 @@ public class OverloadingOrder {
 
 ::result
 
-    <code>String: String first, int: 11</code></br>
-    <code>int: 99, String: Int first</code>
+String: String first, int: 11</br>
+int: 99, String: Int first
 
 ::
 
 ::alert{type="infor"}
 
-  <ul>
-    <li>Nếu java không tìm thấy một hàm nạp chồng thích hợp thì nó sẽ đưa ra một thông báo lỗi</li>
-    <li>Ta không thể sử dụng giá trị trả về của hàm để phân biệt sự khác nhau giữa 2 phương thức nạp chồng</li>
-    <li>Không nên quá lạm dụng các phương thức nạp chồng vì trình biên dịch phải mất thời gian phán đoán để tìm ra hàm thích hợp, điều này đôi khi còn dẫn đến sai sót</li>
-    <li>Khi gọi các hàm nạp chồng ta nên có lệnh chuyển kiểu tường minh để trình biên dịch tìm ra hàm phù hợp một cách nhanh nhất</li>
-  <ul>
-::
+- Nếu java không tìm thấy một hàm nạp chồng thích hợp thì nó sẽ đưa ra một thông báo lỗi
+- Ta không thể sử dụng giá trị trả về của hàm để phân biệt sự khác nhau giữa 2 phương thức nạp chồng
+- Không nên quá lạm dụng các phương thức nạp chồng vì trình biên dịch phải mất thời gian phán đoán để tìm ra hàm thích hợp, điều này đôi khi còn dẫn đến sai sót
+- Khi gọi các hàm nạp chồng ta nên có lệnh chuyển kiểu tường minh để trình biên dịch tìm ra hàm phù hợp một cách nhanh nhất
+  ::

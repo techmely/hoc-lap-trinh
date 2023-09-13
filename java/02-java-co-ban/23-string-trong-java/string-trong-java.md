@@ -24,7 +24,7 @@ Trong java chúng ta có 2 cách để tạo một chuỗi
 
 ### Tạo string bằng một chuỗi ký tự
 
-<div class="example">khởi tạo 2 chuỗi string1 và string2 với giá trị giống nhau</div>
+Ví dụ: khởi tạo 2 chuỗi string1 và string2 với giá trị giống nhau
 
 ```java
 public class Main {
@@ -74,8 +74,8 @@ public class Main {
 
 ::result
 
-    <code>hello</code><br/>
-    <code>hello thaycacac</code>
+hello<br/>
+hello thaycacac
 
 ::
 

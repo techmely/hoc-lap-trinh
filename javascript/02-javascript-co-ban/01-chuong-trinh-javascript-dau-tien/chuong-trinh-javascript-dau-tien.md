@@ -23,7 +23,7 @@ Sau đó, bạn chọn tab **console** rồi gõ lệnh sau: `console.log("JavaS
 
 ::result
 
-    <code>JavaScript Helloworld</code><br/>
+JavaScript Helloworld</code><br/>
 
 ::
 

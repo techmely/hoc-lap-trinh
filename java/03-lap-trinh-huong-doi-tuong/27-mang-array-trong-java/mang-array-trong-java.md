@@ -127,7 +127,7 @@ public class Thaycacac {
 
 ::result
 
-    <code>Honda</code>
+Honda</code>
 
 ::
 
@@ -151,7 +151,7 @@ public class TruyCapArray2 {
 
 ::result
 
-    <code>Phần tử đầu tiên: Morning</code>
+Phần tử đầu tiên: Morning</code>
 
 ::
 
@@ -174,7 +174,7 @@ public class Thaycacac {
 
 ::result
 
-    <code>Độ dài của mảng cars là: 4</code>
+Độ dài của mảng cars là: 4</code>
 
 ::
 
@@ -195,10 +195,10 @@ public class Thaycacac {
 
 ::result
 
-    <code>Honda</code><br/>
-    <code>BMW</code><br/>
-    <code>Ford</code><br/>
-    <code>Mazda</code>
+Honda</code><br/>
+BMW</code><br/>
+Ford</code><br/>
+Mazda</code>
 
 ::
 
@@ -217,10 +217,10 @@ public class Thaycacac {
 
 ::result
 
-    <code>Honda</code><br/>
-    <code>BMW</code><br/>
-    <code>Ford</code><br/>
-    <code>Mazda</code>
+Honda</code><br/>
+BMW</code><br/>
+Ford</code><br/>
+Mazda</code>
 
 ::
 
@@ -246,11 +246,11 @@ public class Thaycacac {
 
 ::result
 
-    <code>Mảng cars sau khi được sắp xếp:</code><br/>
-    <code>BMW</code><br/>
-    <code>Ford</code><br/>
-    <code>Honda</code><br/>
-    <code>Mazda</code>
+Mảng cars sau khi được sắp xếp:</code><br/>
+BMW</code><br/>
+Ford</code><br/>
+Honda</code><br/>
+Mazda</code>
 
 ::
 
@@ -278,7 +278,7 @@ public class Thaycacac {
 
 ::result
 
-    <code>3</code><br/>
+3</code><br/>
 
 ::
 
@@ -301,7 +301,7 @@ public class Thaycacac {
 
 ::result
 
-    <code>caffein</code><br/>
+caffein</code><br/>
 
 ::
 
@@ -373,8 +373,8 @@ public class TestArray3 {
 
 ::result
 
-    <code>1 2 3</code><br/>
-    <code>2 4 5</code><br/>
-    <code>4 4 5</code>
+1 2 3</code><br/>
+2 4 5</code><br/>
+4 4 5</code>
 
 ::

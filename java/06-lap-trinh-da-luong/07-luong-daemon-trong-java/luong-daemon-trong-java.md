@@ -70,16 +70,17 @@ public class NonDaemonThreadTest {
 
 ::result
 
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>>><< Finishing main program</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code>
+Processing working thread</code></br>
+Processing working thread</code></br>
+Processing working thread</code></br>
+Processing working thread</code></br>
+Processing working thread</code></br>
+Processing working thread</code></br>
+
+> > << Finishing main program</code></br>
+> > Processing working thread</code></br>
+> > Processing working thread</code></br>
+> > Processing working thread</code>
 
 ::
 
@@ -107,13 +108,14 @@ public class DaemonThreadTest {
 
 ::result
 
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>>><< Finishing main program</code></br>
+Processing working thread</code></br>
+Processing working thread</code></br>
+Processing working thread</code></br>
+Processing working thread</code></br>
+Processing working thread</code></br>
+Processing working thread</code></br>
+
+> > << Finishing main program</code></br>
 
 ::
 

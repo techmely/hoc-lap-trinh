@@ -63,7 +63,7 @@ boolean flag = strname.startsWith("Java");
 
 ::result
 
-    <code>true</code>
+true</code>
 
 ::
 
@@ -76,7 +76,7 @@ boolean flag = strname.endsWith("Java");
 
 ::result
 
-    <code>false</code>
+false</code>
 
 ::
 
@@ -140,7 +140,7 @@ boolean flag = name1.equals(name2);
 
 ::result
 
-    <code>false</code>
+false</code>
 
 ::
 

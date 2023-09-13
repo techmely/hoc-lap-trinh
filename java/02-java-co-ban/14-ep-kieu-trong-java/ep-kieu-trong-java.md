@@ -18,7 +18,7 @@ Trong lập trình ta sẽ gặp một số trường hợp là ban đầu ta kh
 - Ép kiểu không tường minh
 - Ép kiểu tường minh
 
-## Ép kiểu không tường minh
+## Ép kiểu không tường minh trong Java
 
 Việc ép kiểu thường được diễn ra một cách tự động trong trường hợp biểu thức gồm nhiều toán hạng có kiểu dữ liệu khác nhau. Điều này đôi khi làm cho bạn khá ngạc nhiên vì nhận được một kết quả không theo ý muốn.
 
@@ -39,7 +39,7 @@ Lý do mà ta viết như trên là nếu trong một phép toán có sự tham 
 
 ![quy tắc ép kiểu trong java](https://user-images.githubusercontent.com/29374426/137243394-f31122f7-8b8c-4d1b-a194-9a0a4a679c61.png)
 
-## Ép kiểu tường minh
+## Ép kiểu tường minh trong Java
 
 Để chuyển đổi kiểu một cách tường minh ta sử dụng cú pháp sau:
 
@@ -58,8 +58,7 @@ Khi gặp câu lệnh này java sẽ tính toán giá trị của biểu thức 
 
 ::alert{type="infor"}
 
-  <ul>
-    <li>Phép toán chuyển kiểu là phép toán có độ ưu tiên cao, nên (int)3.5*2(int)(3.4*2)</li>
-    <li>Cần chú ý khi chuyển một biểu thức kiểu dữ liệu có miền giá trị lớn sang một kiểu có miền giá trị nhỏ hơn. Trong trường hợp này có thể bạn sẽ bị mất thông tin.</li>
-  </ul>
+- Phép toán chuyển kiểu là phép toán có độ ưu tiên cao
+- Cần chú ý khi chuyển một biểu thức kiểu dữ liệu có miền giá trị lớn sang một kiểu có miền giá trị nhỏ hơn. Trong trường hợp này có thể bạn sẽ bị mất thông tin.
+
 ::

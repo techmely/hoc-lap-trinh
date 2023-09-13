@@ -49,6 +49,6 @@ class TestCustomException1 {
 
 ::result
 
-    <code>Output:Exception occured: InvalidAgeException:not valid rest of the code...</code>
+Output:Exception occured: InvalidAgeException:not valid rest of the code...</code>
 
 ::

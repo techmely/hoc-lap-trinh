@@ -83,11 +83,11 @@ public class ListExample {
 
 ::result
 
-    <code>Phan tu co index = 2 la: C++</code><br/>
-    <code>Java</code><br/>
-    <code>Python</code><br/>
-    <code>C++</code><br/>
-    <code>PHP</code>
+Phan tu co index = 2 la: C++</code><br/>
+Java</code><br/>
+Python</code><br/>
+C++</code><br/>
+PHP</code>
 
 ::
 
@@ -113,10 +113,10 @@ public class ListExample1 {
 
 ::result
 
-    <code>Java</code><br/>
-    <code>C++</code><br/>
-    <code>PHP</code><br/>
-    <code>Python</code>
+Java</code><br/>
+C++</code><br/>
+PHP</code><br/>
+Python</code>
 
 ::
 
@@ -162,16 +162,16 @@ public class Thaycacac {
 
 ::result
 
-    <code>Phan tu co index = 2 la: C++</code><br/>
-    <code>Duyet cac phan tu tu dau den cuoi:</code><br/>
-    <code>Java</code><br/>
-    <code>Python</code><br/>
-    <code>C++</code><br/>
-    <code>PHP</code><br/>
-    <code>Duyet cac phan tu tu cuoi ve dau:</code><br/>
-    <code>PHP</code><br/>
-    <code>C++</code><br/>
-    <code>Python</code><br/>
-    <code>Java</code><br/>
+Phan tu co index = 2 la: C++</code><br/>
+Duyet cac phan tu tu dau den cuoi:</code><br/>
+Java</code><br/>
+Python</code><br/>
+C++</code><br/>
+PHP</code><br/>
+Duyet cac phan tu tu cuoi ve dau:</code><br/>
+PHP</code><br/>
+C++</code><br/>
+Python</code><br/>
+Java</code><br/>
 
 ::

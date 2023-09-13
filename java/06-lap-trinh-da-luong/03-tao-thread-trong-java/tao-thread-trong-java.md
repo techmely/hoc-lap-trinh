@@ -84,17 +84,17 @@ public static void main(String[] args) {
 
 ::result
 
-    <code>10</code></br>
-    <code>9</code></br>
-    <code>8</code></br>
-    <code>7</code></br>
-    <code>6</code></br>
-    <code>5</code></br>
-    <code>4</code></br>
-    <code>3</code></br>
-    <code>2</code></br>
-    <code>1</code></br>
-    <code>Hết giờ</code></br>
+10</code></br>
+9</code></br>
+8</code></br>
+7</code></br>
+6</code></br>
+5</code></br>
+4</code></br>
+3</code></br>
+2</code></br>
+1</code></br>
+Hết giờ</code></br>
 
 ::
 
@@ -138,17 +138,17 @@ public static void main(String[] args) {
 
 ::result
 
-    <code>10</code></br>
-    <code>9</code></br>
-    <code>8</code></br>
-    <code>7</code></br>
-    <code>6</code></br>
-    <code>5</code></br>
-    <code>4</code></br>
-    <code>3</code></br>
-    <code>2</code></br>
-    <code>1</code></br>
-    <code>Hết giờ</code></br>
+10</code></br>
+9</code></br>
+8</code></br>
+7</code></br>
+6</code></br>
+5</code></br>
+4</code></br>
+3</code></br>
+2</code></br>
+1</code></br>
+Hết giờ</code></br>
 
 ::
 

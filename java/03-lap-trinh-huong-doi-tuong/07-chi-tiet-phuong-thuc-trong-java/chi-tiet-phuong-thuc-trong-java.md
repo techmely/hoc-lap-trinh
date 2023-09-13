@@ -100,8 +100,8 @@ Ta sẽ nhận được kết quả ra như sau:
 
 ::result
 
-    <code>Gia tri của t truoc khi gọi ham = 10</code><br/>
-    <code>Gia tri của t bên trong ham sau khi tang len 1 la 11 Gia tri của t truoc khi gọi ham = 10</code>
+Gia tri của t truoc khi gọi ham = 10</code><br/>
+Gia tri của t bên trong ham sau khi tang len 1 la 11 Gia tri của t truoc khi gọi ham = 10</code>
 
 ::
 

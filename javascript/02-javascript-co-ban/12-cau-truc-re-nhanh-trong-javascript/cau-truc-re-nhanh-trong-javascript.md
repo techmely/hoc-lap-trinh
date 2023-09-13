@@ -49,8 +49,8 @@ if (x % 2 === 0) {
 
 ::result
 
-    <code>x is an even number</code>
-    <code>done!</code>
+x is an even number</code>
+done!</code>
 
 ::
 

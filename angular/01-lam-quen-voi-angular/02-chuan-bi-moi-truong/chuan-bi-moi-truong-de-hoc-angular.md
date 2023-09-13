@@ -54,7 +54,7 @@ Sau khi cài đặt thành công các bạn có thể verify bằng lệnh:
 
 ::result
 
-    <code>File C:\Users\< username >\AppData\Roaming\npm\ng.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.</code><br/>
+File C:\Users\< username >\AppData\Roaming\npm\ng.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.</code><br/>
 
 ::
 

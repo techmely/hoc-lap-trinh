@@ -39,13 +39,13 @@ public class Thaycacac {
 
 ::result
 
-    <code>x = 2</code><br/>
-    <code>x after ++ = 3</code><br/>
-    <code>x = 3</code><br/>
-    <code>x = 4</code><br/>
-    <code>x after ++ = 5</code><br/>
-    <code>x = 5</code><br/>
-    <code>Done!</code>
+x = 2</code><br/>
+x after ++ = 3</code><br/>
+x = 3</code><br/>
+x = 4</code><br/>
+x after ++ = 5</code><br/>
+x = 5</code><br/>
+Done!</code>
 
 ::
 
@@ -78,14 +78,14 @@ public class Thaycacac {
 
 ::result
 
-    <code>x = 2</code><br/>
-    <code>x after ++ = 3</code><br/>
-    <code>x = 3</code><br/>
-    <code>x = 4</code><br/>
-    <code>x after ++ = 5</code><br/>
-    <code>x = 5</code><br/>
-    <code>x = 6</code><br/>
-    <code>x after ++ = 7</code><br/>
-    <code>Done!</code>
+x = 2</code><br/>
+x after ++ = 3</code><br/>
+x = 3</code><br/>
+x = 4</code><br/>
+x after ++ = 5</code><br/>
+x = 5</code><br/>
+x = 6</code><br/>
+x after ++ = 7</code><br/>
+Done!</code>
 
 ::

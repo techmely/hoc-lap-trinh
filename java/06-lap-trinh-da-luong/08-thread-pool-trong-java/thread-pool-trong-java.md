@@ -121,27 +121,27 @@ Trong chương trình trên, tôi đã tạo ra `ThreadPool` sử dụng phươn
 
 ::result
 
-    <code>pool-1-thread-1 Starting. Task = 1<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 2<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 3<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 4<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 5<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 6<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 7<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 8<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 9<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 10<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>Finished all threads<code></br>
+pool-1-thread-1 Starting. Task = 1<code></br>
+pool-1-thread-1 Finished.<code></br>
+pool-1-thread-1 Starting. Task = 2<code></br>
+pool-1-thread-1 Finished.<code></br>
+pool-1-thread-1 Starting. Task = 3<code></br>
+pool-1-thread-1 Finished.<code></br>
+pool-1-thread-1 Starting. Task = 4<code></br>
+pool-1-thread-1 Finished.<code></br>
+pool-1-thread-1 Starting. Task = 5<code></br>
+pool-1-thread-1 Finished.<code></br>
+pool-1-thread-1 Starting. Task = 6<code></br>
+pool-1-thread-1 Finished.<code></br>
+pool-1-thread-1 Starting. Task = 7<code></br>
+pool-1-thread-1 Finished.<code></br>
+pool-1-thread-1 Starting. Task = 8<code></br>
+pool-1-thread-1 Finished.<code></br>
+pool-1-thread-1 Starting. Task = 9<code></br>
+pool-1-thread-1 Finished.<code></br>
+pool-1-thread-1 Starting. Task = 10<code></br>
+pool-1-thread-1 Finished.<code></br>
+Finished all threads<code></br>
 
 ::
 
@@ -179,27 +179,27 @@ Trong chương trình trên, tôi đã tạo ra `ThreadPool` có kích thước 
 
 ::result
 
-    <code>pool-1-thread-3 Starting. Task = 3</code><br/>
-    <code>pool-1-thread-2 Starting. Task = 2</code><br/>
-    <code>pool-1-thread-1 Starting. Task = 1</code><br/>
-    <code>pool-1-thread-4 Starting. Task = 4</code><br/>
-    <code>pool-1-thread-5 Starting. Task = 5</code><br/>
-    <code>pool-1-thread-2 Finished.</code><br/>
-    <code>pool-1-thread-3 Finished.</code><br/>
-    <code>pool-1-thread-2 Starting. Task = 6</code><br/>
-    <code>pool-1-thread-3 Starting. Task = 7</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>pool-1-thread-5 Finished.</code><br/>
-    <code>pool-1-thread-4 Finished.</code><br/>
-    <code>pool-1-thread-5 Starting. Task = 9</code><br/>
-    <code>pool-1-thread-1 Starting. Task = 8</code><br/>
-    <code>pool-1-thread-4 Starting. Task = 10</code><br/>
-    <code>pool-1-thread-3 Finished.</code><br/>
-    <code>pool-1-thread-2 Finished.</code><br/>
-    <code>pool-1-thread-5 Finished.</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>pool-1-thread-4 Finished.</code><br/>
-    <code>Finished all threads</code><br/>
+pool-1-thread-3 Starting. Task = 3</code><br/>
+pool-1-thread-2 Starting. Task = 2</code><br/>
+pool-1-thread-1 Starting. Task = 1</code><br/>
+pool-1-thread-4 Starting. Task = 4</code><br/>
+pool-1-thread-5 Starting. Task = 5</code><br/>
+pool-1-thread-2 Finished.</code><br/>
+pool-1-thread-3 Finished.</code><br/>
+pool-1-thread-2 Starting. Task = 6</code><br/>
+pool-1-thread-3 Starting. Task = 7</code><br/>
+pool-1-thread-1 Finished.</code><br/>
+pool-1-thread-5 Finished.</code><br/>
+pool-1-thread-4 Finished.</code><br/>
+pool-1-thread-5 Starting. Task = 9</code><br/>
+pool-1-thread-1 Starting. Task = 8</code><br/>
+pool-1-thread-4 Starting. Task = 10</code><br/>
+pool-1-thread-3 Finished.</code><br/>
+pool-1-thread-2 Finished.</code><br/>
+pool-1-thread-5 Finished.</code><br/>
+pool-1-thread-1 Finished.</code><br/>
+pool-1-thread-4 Finished.</code><br/>
+Finished all threads</code><br/>
 
 ::
 
@@ -235,27 +235,27 @@ Trong chương trình trên, tôi đã tạo ra `ThreadPool` sử dụng phươn
 
 ::result
 
-    <code>pool-1-thread-1 Starting. Task = 1</code><br/>
-    <code>pool-1-thread-2 Starting. Task = 2</code><br/>
-    <code>pool-1-thread-3 Starting. Task = 3</code><br/>
-    <code>pool-1-thread-4 Starting. Task = 4</code><br/>
-    <code>pool-1-thread-5 Starting. Task = 5</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>pool-1-thread-6 Starting. Task = 6</code><br/>
-    <code>pool-1-thread-1 Starting. Task = 7</code><br/>
-    <code>pool-1-thread-2 Finished.</code><br/>
-    <code>pool-1-thread-3 Finished.</code><br/>
-    <code>pool-1-thread-3 Starting. Task = 8</code><br/>
-    <code>pool-1-thread-4 Finished.</code><br/>
-    <code>pool-1-thread-4 Starting. Task = 9</code><br/>
-    <code>pool-1-thread-5 Finished.</code><br/>
-    <code>pool-1-thread-5 Starting. Task = 10</code><br/>
-    <code>pool-1-thread-6 Finished.</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>pool-1-thread-3 Finished.</code><br/>
-    <code>pool-1-thread-4 Finished.</code><br/>
-    <code>pool-1-thread-5 Finished.</code><br/>
-    <code>Finished all threads</code><br/>
+pool-1-thread-1 Starting. Task = 1</code><br/>
+pool-1-thread-2 Starting. Task = 2</code><br/>
+pool-1-thread-3 Starting. Task = 3</code><br/>
+pool-1-thread-4 Starting. Task = 4</code><br/>
+pool-1-thread-5 Starting. Task = 5</code><br/>
+pool-1-thread-1 Finished.</code><br/>
+pool-1-thread-6 Starting. Task = 6</code><br/>
+pool-1-thread-1 Starting. Task = 7</code><br/>
+pool-1-thread-2 Finished.</code><br/>
+pool-1-thread-3 Finished.</code><br/>
+pool-1-thread-3 Starting. Task = 8</code><br/>
+pool-1-thread-4 Finished.</code><br/>
+pool-1-thread-4 Starting. Task = 9</code><br/>
+pool-1-thread-5 Finished.</code><br/>
+pool-1-thread-5 Starting. Task = 10</code><br/>
+pool-1-thread-6 Finished.</code><br/>
+pool-1-thread-1 Finished.</code><br/>
+pool-1-thread-3 Finished.</code><br/>
+pool-1-thread-4 Finished.</code><br/>
+pool-1-thread-5 Finished.</code><br/>
+Finished all threads</code><br/>
 
 ::
 
@@ -310,25 +310,25 @@ Ta có kết quả của chương trình trên như sau:
 
 ::result
 
-    <code>pool-1-thread-1 Starting. Task = 1</code><br/>
-    <code>pool-1-thread-2 Starting. Task = 2</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>pool-1-thread-2 Finished.</code><br/>
-    <code>pool-1-thread-1 Starting. Task = 3</code><br/>
-    <code>pool-1-thread-2 Starting. Task = 4</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>pool-1-thread-2 Finished.</code><br/>
-    <code>pool-1-thread-1 Starting. Task = 5</code><br/>
-    <code>pool-1-thread-2 Starting. Task = 1</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>pool-1-thread-1 Starting. Task = 2</code><br/>
-    <code>pool-1-thread-2 Finished.</code><br/>
-    <code>pool-1-thread-2 Starting. Task = 3</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>pool-1-thread-1 Starting. Task = 4</code><br/>
-    <code>pool-1-thread-2 Finished.</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>Finished all threads</code><br/>
+pool-1-thread-1 Starting. Task = 1</code><br/>
+pool-1-thread-2 Starting. Task = 2</code><br/>
+pool-1-thread-1 Finished.</code><br/>
+pool-1-thread-2 Finished.</code><br/>
+pool-1-thread-1 Starting. Task = 3</code><br/>
+pool-1-thread-2 Starting. Task = 4</code><br/>
+pool-1-thread-1 Finished.</code><br/>
+pool-1-thread-2 Finished.</code><br/>
+pool-1-thread-1 Starting. Task = 5</code><br/>
+pool-1-thread-2 Starting. Task = 1</code><br/>
+pool-1-thread-1 Finished.</code><br/>
+pool-1-thread-1 Starting. Task = 2</code><br/>
+pool-1-thread-2 Finished.</code><br/>
+pool-1-thread-2 Starting. Task = 3</code><br/>
+pool-1-thread-1 Finished.</code><br/>
+pool-1-thread-1 Starting. Task = 4</code><br/>
+pool-1-thread-2 Finished.</code><br/>
+pool-1-thread-1 Finished.</code><br/>
+Finished all threads</code><br/>
 
 ::
 
@@ -591,34 +591,34 @@ Hãy xem kết quả thực thi chương trình trên như sau:
 
 ::result
 
-    <code>GPCoder-ThreadPool-0 Starting. Task = cmd1</code><br/>
-    <code>GPCoder-ThreadPool-1 Starting. Task = cmd2</code><br/>
-    <code>GPCoder-ThreadPool-2 Starting. Task = cmd5</code><br/>
-    <code>GPCoder-ThreadPool-3 Starting. Task = cmd6</code><br/>
-    <code>Task = cmd7 is rejected</code><br/>
-    <code>Task = cmd8 is rejected</code><br/>
-    <code>Task = cmd9 is rejected</code><br/>
-    <code>Task = cmd10 is rejected</code><br/>
-    <code>[monitor] [0/2] Active: 0, Completed: 0, Task: 2, isShutdown: false, isTerminated: false</code><br/>
-    <code>[monitor] [4/2] Active: 4, Completed: 0, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>GPCoder-ThreadPool-0 Finished.</code><br/>
-    <code>GPCoder-ThreadPool-1 Finished.</code><br/>
-    <code>GPCoder-ThreadPool-0 Starting. Task = cmd3</code><br/>
-    <code>GPCoder-ThreadPool-1 Starting. Task = cmd4</code><br/>
-    <code>GPCoder-ThreadPool-2 Finished.</code><br/>
-    <code>GPCoder-ThreadPool-3 Finished.</code><br/>
-    <code>[monitor] [4/2] Active: 2, Completed: 4, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>[monitor] [4/2] Active: 2, Completed: 4, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>GPCoder-ThreadPool-0 Finished.</code><br/>
-    <code>GPCoder-ThreadPool-1 Finished.</code><br/>
-    <code>[monitor] [4/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>[monitor] [0/2] Active: 0, Completed: 6, Task: 6, isShutdown: true, isTerminated: true</code><br/>
-    <code>[monitor] [0/2] Active: 0, Completed: 6, Task: 6, isShutdown: true, isTerminated: true</code><br/>
+GPCoder-ThreadPool-0 Starting. Task = cmd1</code><br/>
+GPCoder-ThreadPool-1 Starting. Task = cmd2</code><br/>
+GPCoder-ThreadPool-2 Starting. Task = cmd5</code><br/>
+GPCoder-ThreadPool-3 Starting. Task = cmd6</code><br/>
+Task = cmd7 is rejected</code><br/>
+Task = cmd8 is rejected</code><br/>
+Task = cmd9 is rejected</code><br/>
+Task = cmd10 is rejected</code><br/>
+[monitor] [0/2] Active: 0, Completed: 0, Task: 2, isShutdown: false, isTerminated: false</code><br/>
+[monitor] [4/2] Active: 4, Completed: 0, Task: 6, isShutdown: false, isTerminated: false</code><br/>
+GPCoder-ThreadPool-0 Finished.</code><br/>
+GPCoder-ThreadPool-1 Finished.</code><br/>
+GPCoder-ThreadPool-0 Starting. Task = cmd3</code><br/>
+GPCoder-ThreadPool-1 Starting. Task = cmd4</code><br/>
+GPCoder-ThreadPool-2 Finished.</code><br/>
+GPCoder-ThreadPool-3 Finished.</code><br/>
+[monitor] [4/2] Active: 2, Completed: 4, Task: 6, isShutdown: false, isTerminated: false</code><br/>
+[monitor] [4/2] Active: 2, Completed: 4, Task: 6, isShutdown: false, isTerminated: false</code><br/>
+GPCoder-ThreadPool-0 Finished.</code><br/>
+GPCoder-ThreadPool-1 Finished.</code><br/>
+[monitor] [4/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
+[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
+[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
+[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
+[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
+[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
+[monitor] [0/2] Active: 0, Completed: 6, Task: 6, isShutdown: true, isTerminated: true</code><br/>
+[monitor] [0/2] Active: 0, Completed: 6, Task: 6, isShutdown: true, isTerminated: true</code><br/>
 
 ::
 

@@ -45,7 +45,7 @@ public class ThreadSleep {
 
 ::result
 
-    <code>Output: leep time in ms = 2001</code>
+Output: leep time in ms = 2001</code>
 
 ::
 
@@ -81,10 +81,10 @@ class ThreadSleep {
     <span class="title-popup">Tạm ngưng main thread và một thread con của main thread trong khoảng thời gian 1s</span>
   </div>
   <div class="window-body">
-    <code>Main thread start</code></br>
-    <code>Main thread:1030</code></br>
-    <code>Child thread start</code></br>
-    <code>Child thread:1000</code></br>
+Main thread start</code></br>
+Main thread:1030</code></br>
+Child thread start</code></br>
+Child thread:1000</code></br>
 
 ::
 
@@ -131,12 +131,12 @@ class MyThread implements Runnable {
     <span class="title-popup">Tạm ngưng main thread và một thread con của main thread trong khoảng thời gian 1s</span>
   </div>
   <div class="window-body">
-    <code>Bắt đầu thread: th1</code></br>
-    <code>Bắt đầu thread: th3</code></br>
-    <code>Bắt đầu thread: th2</code></br>
-    <code>Kết thúc thread:th3</code></br>
-    <code>Kết thúc thread:th1</code></br>
-    <code>Kết thúc thread:th2</code></br>
+Bắt đầu thread: th1</code></br>
+Bắt đầu thread: th3</code></br>
+Bắt đầu thread: th2</code></br>
+Kết thúc thread:th3</code></br>
+Kết thúc thread:th1</code></br>
+Kết thúc thread:th2</code></br>
 
 ::
 
@@ -193,12 +193,12 @@ class MyThread implements Runnable {
     <span class="title-popup">Tạm ngưng main thread và một thread con của main thread trong khoảng thời gian 1s</span>
   </div>
   <div class="window-body">
-    <code>Bắt đầu thread: th1</code></br>
-    <code>Kết thúc thread:th1</code></br>
-    <code>Bắt đầu thread: th2</code></br>
-    <code>Kết thúc thread:th2</code></br>
-    <code>Bắt đầu thread: th3</code></br>
-    <code>Kết thúc thread:th3</code></br>
+Bắt đầu thread: th1</code></br>
+Kết thúc thread:th1</code></br>
+Bắt đầu thread: th2</code></br>
+Kết thúc thread:th2</code></br>
+Bắt đầu thread: th3</code></br>
+Kết thúc thread:th3</code></br>
 
 ::
 
@@ -247,21 +247,21 @@ class TestJoinMethod1 extends Thread {
     <span class="title-popup">Tạm ngưng main thread và một thread con của main thread trong khoảng thời gian 1s</span>
   </div>
   <div class="window-body">
-    <code>1</code></br>
-    <code>2</code></br>
-    <code>3</code></br>
-    <code>4</code></br>
-    <code>5</code></br>
-    <code>1</code></br>
-    <code>1</code></br>
-    <code>2</code></br>
-    <code>2</code></br>
-    <code>3</code></br>
-    <code>3</code></br>
-    <code>4</code></br>
-    <code>4</code></br>
-    <code>5</code></br>
-    <code>5</code>
+1</code></br>
+2</code></br>
+3</code></br>
+4</code></br>
+5</code></br>
+1</code></br>
+1</code></br>
+2</code></br>
+2</code></br>
+3</code></br>
+3</code></br>
+4</code></br>
+4</code></br>
+5</code></br>
+5</code>
 
 ::
 
@@ -305,21 +305,21 @@ class TestJoinMethod2 extends Thread {
     <span class="title-popup">Tạm ngưng main thread và một thread con của main thread trong khoảng thời gian 1s</span>
   </div>
   <div class="window-body">
-    <code>1</code></br>
-    <code>2</code></br>
-    <code>3</code></br>
-    <code>4</code></br>
-    <code>1</code></br>
-    <code>1</code></br>
-    <code>5</code></br>
-    <code>2</code></br>
-    <code>2</code></br>
-    <code>3</code></br>
-    <code>3</code></br>
-    <code>4</code></br>
-    <code>4</code></br>
-    <code>5</code></br>
-    <code>5</code>
+1</code></br>
+2</code></br>
+3</code></br>
+4</code></br>
+1</code></br>
+1</code></br>
+5</code></br>
+2</code></br>
+2</code></br>
+3</code></br>
+3</code></br>
+4</code></br>
+4</code></br>
+5</code></br>
+5</code>
 
 ::
 

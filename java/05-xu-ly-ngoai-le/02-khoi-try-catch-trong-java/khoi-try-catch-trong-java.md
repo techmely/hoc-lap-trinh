@@ -87,7 +87,7 @@ public class TestTryCatch1 {
 
 ::result
 
-    <code>Exception in thread "main" java.lang.ArithmeticException: / by zero  at vn.tpv.exception1.TestTryCatch1.main(TestTryCatch1.java:5)</code>
+Exception in thread "main" java.lang.ArithmeticException: / by zero at vn.tpv.exception1.TestTryCatch1.main(TestTryCatch1.java:5)</code>
 
 ::
 
@@ -108,8 +108,8 @@ public class TestTryCatch2 {
 
 ::result
 
-    <code>java.lang.ArithmeticException:</code>
-    <code>by zero rest of the code...</code>
+java.lang.ArithmeticException:</code>
+by zero rest of the code...</code>
 
 ::
 

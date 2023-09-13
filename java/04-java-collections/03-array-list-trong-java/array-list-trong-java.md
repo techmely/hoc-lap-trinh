@@ -72,7 +72,7 @@ class Main {
 
 ::result
 
-    <code>ArrayList: [Dog, Cat, Horse]</code><br/>
+ArrayList: [Dog, Cat, Horse]</code><br/>
 
 ::
 
@@ -95,7 +95,7 @@ class Main {
 
 ::result
 
-    <code>ArrayList: [Dog, Cat, Horse]</code><br/>
+ArrayList: [Dog, Cat, Horse]</code><br/>
 
 ::
 
@@ -126,8 +126,8 @@ class Main {
 
 ::result
 
-    <code>Mammals: [Dog, Cat, Horse]</code><br/>
-    <code>Animals: [Crocodile, Dog, Cat, Horse]</code><br/>
+Mammals: [Dog, Cat, Horse]</code><br/>
+Animals: [Crocodile, Dog, Cat, Horse]</code><br/>
 
 ::
 
@@ -155,8 +155,8 @@ class Main {
 
 ::result
 
-    <code>ArrayList: [Dog, Horse, Cat]</code><br/>
-    <code>Element at index 0: Dog</code><br/>
+ArrayList: [Dog, Horse, Cat]</code><br/>
+Element at index 0: Dog</code><br/>
 
 ::
 
@@ -188,7 +188,7 @@ class Main {
 
 ::result
 
-    <code>ArrayList: Dog, Cat, Horse, Zebra,</code><br/>
+ArrayList: Dog, Cat, Horse, Zebra,</code><br/>
 
 ::
 
@@ -224,8 +224,8 @@ class Main {
 
 ::result
 
-    <code>ArrayList: [Dog, Cat, Horse]</code><br/>
-    <code>Modified ArrayList: [Dog, Cat, Zebra]</code><br/>
+ArrayList: [Dog, Cat, Horse]</code><br/>
+Modified ArrayList: [Dog, Cat, Zebra]</code><br/>
 
 ::
 
@@ -254,9 +254,9 @@ class Main {
 
 ::result
 
-    <code>Initial ArrayList: [Dog, Cat, Horse]</code><br/>
-    <code>Final ArrayList: [Dog, Cat]</code><br/>
-    <code>Removed Element: Horse</code><br/>
+Initial ArrayList: [Dog, Cat, Horse]</code><br/>
+Final ArrayList: [Dog, Cat]</code><br/>
+Removed Element: Horse</code><br/>
 
 ::
 
@@ -282,8 +282,8 @@ class Main {
 
 ::result
 
-    <code>Initial ArrayList: [Dog, Cat, Horse]</code><br/>
-    <code>Final ArrayList: []</code><br/>
+Initial ArrayList: [Dog, Cat, Horse]</code><br/>
+Final ArrayList: []</code><br/>
 
 ::
 
@@ -309,8 +309,8 @@ class Main {
 
 ::result
 
-    <code>Initial ArrayList: [Dog, Cat, Horse]</code><br/>
-    <code>Final ArrayList: []</code><br/>
+Initial ArrayList: [Dog, Cat, Horse]</code><br/>
+Final ArrayList: []</code><br/>
 
 ::
 
@@ -341,8 +341,8 @@ class Main {
 
 ::result
 
-    <code>ArrayList: [Cow, Cat, Dog]</code><br/>
-    <code>Accessing individual elements: Cow, Cat, Dog,</code><br/>
+ArrayList: [Cow, Cat, Dog]</code><br/>
+Accessing individual elements: Cow, Cat, Dog,</code><br/>
 
 ::
 
@@ -371,8 +371,8 @@ class Main {
 
 ::result
 
-    <code>ArrayList: [Cow, Cat, Dog]</code><br/>
-    <code>Accessing individual elements: Cow, Cat, Dog,</code><br/>
+ArrayList: [Cow, Cat, Dog]</code><br/>
+Accessing individual elements: Cow, Cat, Dog,</code><br/>
 
 ::
 
@@ -399,8 +399,8 @@ class Main {
 
 ::result
 
-    <code>ArrayList: [Dog, Horse, Cat]</code><br/>
-    <code>Size: 3</code><br/>
+ArrayList: [Dog, Horse, Cat]</code><br/>
+Size: 3</code><br/>
 
 ::
 
@@ -430,8 +430,8 @@ class Main {
 
 ::result
 
-    <code>Unsorted ArrayList: [Horse, Zebra, Dog, Cat]</code><br/>
-    <code>Sorted ArrayList: [Cat, Dog, Horse, Zebra]</code><br/>
+Unsorted ArrayList: [Horse, Zebra, Dog, Cat]</code><br/>
+Sorted ArrayList: [Cat, Dog, Horse, Zebra]</code><br/>
 
 ::
 
@@ -464,8 +464,8 @@ class Main {
 
 ::result
 
-    <code>ArrayList: [Dog, Cat, Horse]</code><br/>
-    <code>Array: Dog, Cat, Horse,</code><br/>
+ArrayList: [Dog, Cat, Horse]</code><br/>
+Array: Dog, Cat, Horse,</code><br/>
 
 ::
 
@@ -496,8 +496,8 @@ class Main {
 
 ::result
 
-    <code>Array: Dog, Cat, Horse</code><br/>
-    <code>ArrayList: [Dog, Cat, Horse]</code><br/>
+Array: Dog, Cat, Horse</code><br/>
+ArrayList: [Dog, Cat, Horse]</code><br/>
 
 ::
 
@@ -525,8 +525,8 @@ class Main {
 
 ::result
 
-    <code>ArrayList: [Dog, Cat, Horse]</code><br/>
-    <code>String: [Dog, Cat, Horse]</code><br/>
+ArrayList: [Dog, Cat, Horse]</code><br/>
+String: [Dog, Cat, Horse]</code><br/>
 
 ::
 

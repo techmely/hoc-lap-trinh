@@ -41,8 +41,8 @@ console.log("World");
 
 ::result
 
-    <code>Hello</code><br/>
-    <code>World</code><br/>
+Hello</code><br/>
+World</code><br/>
 
 ::
 
@@ -57,8 +57,8 @@ console.log("World");
 
 ::result
 
-    <code>Hello</code><br/>
-    <code>World</code><br/>
+Hello</code><br/>
+World</code><br/>
 
 ::
 
@@ -89,9 +89,9 @@ Có thể bạn chưa hiểu về câu lệnh thứ hai (các bài viết sau b�
 
 ::result
 
-    <code>Hello world</code><br/>
-    <code>1</code><br/>
-    <code>2</code><br/>
+Hello world</code><br/>
+1</code><br/>
+2</code><br/>
 
 ::
 
@@ -108,8 +108,8 @@ console.log("Hello world")
     <span class="title-popup">Bạn sẽ bị lỗi cú pháp</span>
   </div>
   <div class="window-body">
-    <code>Hello world</code><br/>
-    <code>Uncaught TypeError: Cannot read properties of undefined (reading '2')</code><br/>
+Hello world</code><br/>
+Uncaught TypeError: Cannot read properties of undefined (reading '2')</code><br/>
 
 ::
 

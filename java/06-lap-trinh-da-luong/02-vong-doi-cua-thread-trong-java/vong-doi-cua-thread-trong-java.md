@@ -121,12 +121,12 @@ class Test implements Runnable {
 
 ::result
 
-    <code>State of thread1 after creating it – NEW</code><br/>
-    <code>State of thread1 after calling .start() method on it – RUNNABLE</code><br/>
-    <code>State of thread2 after creating it – NEW</code><br/>
-    <code>State of thread2 after calling .start() method on it – RUNNABLE</code><br/>
-    <code>State of thread2 after calling .sleep() method on it – TIMED_WAITING</code><br/>
-    <code>State of thread1 while it called join() method on thread2 -WAITING</code><br/>
-    <code>State of thread2 when it has finished it’s execution – TERMINATED</code><br/>
+State of thread1 after creating it – NEW</code><br/>
+State of thread1 after calling .start() method on it – RUNNABLE</code><br/>
+State of thread2 after creating it – NEW</code><br/>
+State of thread2 after calling .start() method on it – RUNNABLE</code><br/>
+State of thread2 after calling .sleep() method on it – TIMED_WAITING</code><br/>
+State of thread1 while it called join() method on thread2 -WAITING</code><br/>
+State of thread2 when it has finished it’s execution – TERMINATED</code><br/>
 
 ::

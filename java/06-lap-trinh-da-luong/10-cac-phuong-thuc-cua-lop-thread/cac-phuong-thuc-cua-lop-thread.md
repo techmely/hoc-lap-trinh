@@ -100,40 +100,40 @@ class RunnableDemo implements Runnable {
 
 ::result
 
-    <code>Creating Thread-1</code><br/>
-    <code>Starting Thread-1</code><br/>
-    <code>Creating Thread-2</code><br/>
-    <code>Starting Thread-2</code><br/>
-    <code>Running Thread-1</code><br/>
-    <code>Thread: Thread-1, 10</code><br/>
-    <code>Running Thread-2</code><br/>
-    <code>Thread: Thread-2, 10</code><br/>
-    <code>Thread: Thread-1, 9</code><br/>
-    <code>Thread: Thread-2, 9</code><br/>
-    <code>Thread: Thread-1, 8</code><br/>
-    <code>Thread: Thread-2, 8</code><br/>
-    <code>Thread: Thread-1, 7</code><br/>
-    <code>Thread: Thread-2, 7</code><br/>
-    <code>Suspending First Thread</code><br/>
-    <code>Thread: Thread-2, 6</code><br/>
-    <code>Thread: Thread-2, 5</code><br/>
-    <code>Thread: Thread-2, 4</code><br/>
-    <code>Resuming First Thread</code><br/>
-    <code>Suspending thread Two</code><br/>
-    <code>Thread: Thread-1, 6</code><br/>
-    <code>Thread: Thread-1, 5</code><br/>
-    <code>Thread: Thread-1, 4</code><br/>
-    <code>Thread: Thread-1, 3</code><br/>
-    <code>Resuming thread Two</code><br/>
-    <code>Thread: Thread-2, 3</code><br/>
-    <code>Waiting for threads to finish.</code><br/>
-    <code>Thread: Thread-1, 2</code><br/>
-    <code>Thread: Thread-2, 2</code><br/>
-    <code>Thread: Thread-1, 1</code><br/>
-    <code>Thread: Thread-2, 1</code><br/>
-    <code>Thread Thread-1 exiting.</code><br/>
-    <code>Thread Thread-2 exiting.</code><br/>
-    <code>Main thread exiting.</code><br/>
+Creating Thread-1</code><br/>
+Starting Thread-1</code><br/>
+Creating Thread-2</code><br/>
+Starting Thread-2</code><br/>
+Running Thread-1</code><br/>
+Thread: Thread-1, 10</code><br/>
+Running Thread-2</code><br/>
+Thread: Thread-2, 10</code><br/>
+Thread: Thread-1, 9</code><br/>
+Thread: Thread-2, 9</code><br/>
+Thread: Thread-1, 8</code><br/>
+Thread: Thread-2, 8</code><br/>
+Thread: Thread-1, 7</code><br/>
+Thread: Thread-2, 7</code><br/>
+Suspending First Thread</code><br/>
+Thread: Thread-2, 6</code><br/>
+Thread: Thread-2, 5</code><br/>
+Thread: Thread-2, 4</code><br/>
+Resuming First Thread</code><br/>
+Suspending thread Two</code><br/>
+Thread: Thread-1, 6</code><br/>
+Thread: Thread-1, 5</code><br/>
+Thread: Thread-1, 4</code><br/>
+Thread: Thread-1, 3</code><br/>
+Resuming thread Two</code><br/>
+Thread: Thread-2, 3</code><br/>
+Waiting for threads to finish.</code><br/>
+Thread: Thread-1, 2</code><br/>
+Thread: Thread-2, 2</code><br/>
+Thread: Thread-1, 1</code><br/>
+Thread: Thread-2, 1</code><br/>
+Thread Thread-1 exiting.</code><br/>
+Thread Thread-2 exiting.</code><br/>
+Main thread exiting.</code><br/>
 
 ::
 

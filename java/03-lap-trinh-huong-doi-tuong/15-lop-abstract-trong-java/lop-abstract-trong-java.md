@@ -32,7 +32,7 @@ Phương thức trừu tượng được sử dụng từ khóa `abstract` để
 abstract void printStatus();
 ```
 
-<div class="example">Ví dụ dưới dây Bike là lớp trừu tượng chỉ chứa một phương thức trừu tượng là run. Trình triển khai của nó được cung cấp bởi lớp Honda.</div>
+Ví dụ dưới dây Bike là lớp trừu tượng chỉ chứa một phương thức trừu tượng là run. Trình triển khai của nó được cung cấp bởi lớp Honda.
 
 ```java
 abstract class Bike{
@@ -52,24 +52,21 @@ class Honda4 extends Bike{
 
 ::result
 
-    <code>running...</code>
+running...
 
 ::
 
 ::alert{type="infor"}
 
-<ul>
-  <li>Nếu trong lớp có phương thức trừu tượng thì lớp đó phải được khai báo là trừu tượng</li>
-  <li>Nếu một lớp kế thừa từ lớp trừu tượng thì: hoặc chúng phải ghi đè tất cả các phương thức ảo của lớp cha, hoặc lớp đó phải là lớp trừu tượng</li>
-  <li>Không thể tạo ra đối tượng của lớp trừu tượng</li>
-</ul>
+- Nếu trong lớp có phương thức trừu tượng thì lớp đó phải được khai báo là trừu tượng
+- Nếu một lớp kế thừa từ lớp trừu tượng thì: hoặc chúng phải ghi đè tất cả các phương thức ảo của lớp cha, hoặc lớp đó phải là lớp trừu tượng
+- Không thể tạo ra đối tượng của lớp trừu tượng
+
 ::
 
 ## Kế thừa lớp Abstract trong Java
 
-<div class="example">
-ví dụ dưới đây, Shape là lớp trừu tượng, ta có 2 lớp con Rectangle và lớp Circle. Hai lớp này kế thừa lớp trừu tượng Shape.
-</div>
+Ví dụ dưới đây, Shape là lớp trừu tượng, ta có 2 lớp con Rectangle và lớp Circle. Hai lớp này kế thừa lớp trừu tượng Shape.
 
 ```java
 // lớp trừu tượng shape
@@ -102,6 +99,6 @@ class Main{
 
 ::result
 
-    <code>Ve hinh tron</code>
+Ve hinh tron
 
 ::

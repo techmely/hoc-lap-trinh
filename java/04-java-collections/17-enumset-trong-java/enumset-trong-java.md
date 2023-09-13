@@ -49,7 +49,7 @@ class Main {
 
 ::result
 
-    <code>EnumSet: [SMALL, MEDIUM, LARGE, EXTRALARGE]</code>
+EnumSet: [SMALL, MEDIUM, LARGE, EXTRALARGE]</code>
 
 ::
 
@@ -87,7 +87,7 @@ class Main {
 
 ::result
 
-    <code>Empty EnumSet : []</code>
+Empty EnumSet : []</code>
 
 ::
 
@@ -118,7 +118,7 @@ class Main {
 
 ::result
 
-    <code>EnumSet: [MEDIUM, LARGE, EXTRALARGE]</code>
+EnumSet: [MEDIUM, LARGE, EXTRALARGE]</code>
 
 ::
 
@@ -149,8 +149,8 @@ class Main {
 
 ::result
 
-    <code>EnumSet1: [MEDIUM]</code><br/>
-    <code>EnumSet2: [SMALL, LARGE]</code>
+EnumSet1: [MEDIUM]</code><br/>
+EnumSet2: [SMALL, LARGE]</code>
 
 ::
 
@@ -189,8 +189,8 @@ class Main {
 
 ::result
 
-    <code>EnumSet using add(): [MEDIUM]</code><br/>
-    <code>EnumSet using addAll(): [SMALL, MEDIUM, LARGE, EXTRALARGE]</code>
+EnumSet using add(): [MEDIUM]</code><br/>
+EnumSet using addAll(): [SMALL, MEDIUM, LARGE, EXTRALARGE]</code>
 
 ::
 
@@ -228,7 +228,7 @@ class Main {
 
 ::result
 
-    <code>EnumSet: SMALL, MEDIUM, LARGE, EXTRALARGE,</code>
+EnumSet: SMALL, MEDIUM, LARGE, EXTRALARGE,</code>
 
 ::
 
@@ -270,9 +270,9 @@ class Main {
 
 ::result
 
-    <code>EnumSet: [SMALL, MEDIUM, LARGE, EXTRALARGE]</code><br/>
-    <code>Is MEDIUM removed? true</code><br/>
-    <code>Are all elements removed? true</code>
+EnumSet: [SMALL, MEDIUM, LARGE, EXTRALARGE]</code><br/>
+Is MEDIUM removed? true</code><br/>
+Are all elements removed? true</code>
 
 ::
 

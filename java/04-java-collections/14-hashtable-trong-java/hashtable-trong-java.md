@@ -69,8 +69,8 @@ class Main {
 
 ::result
 
-    <code>HashMap1: {Four=4, Two=2}</code><br/>
-    <code>HashMap2: {Two=2, Three=3, Four=4}</code>
+HashMap1: {Four=4, Two=2}</code><br/>
+HashMap2: {Two=2, Three=3, Four=4}</code>
 
 ::
 
@@ -109,8 +109,8 @@ class Main {
 
 ::result
 
-    <code>HashMap of even numbers: {Six=6, Four=4, Two=2}</code><br/>
-    <code>HashMap of numbers: {Six=6, One=1, Four=4, Two=2}</code>
+HashMap of even numbers: {Six=6, Four=4, Two=2}</code><br/>
+HashMap of numbers: {Six=6, One=1, Four=4, Two=2}</code>
 
 ::
 
@@ -146,10 +146,10 @@ class Main {
 
 ::result
 
-    <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
-    <code>Key/Value mappings: [One=1, Two=2, Three=3]</code><br/>
-    <code>Keys: [One, Two, Three]</code><br/>
-    <code>Values: [1, 2, 3]</code>
+HashMap: {One=1, Two=2, Three=3}</code><br/>
+Key/Value mappings: [One=1, Two=2, Three=3]</code><br/>
+Keys: [One, Two, Three]</code><br/>
+Values: [1, 2, 3]</code>
 
 ::
 
@@ -181,9 +181,9 @@ class Main {
 
 ::result
 
-    <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
-    <code>Returned Number: 3</code><br/>
-    <code>Returned Number: 5</code>
+HashMap: {One=1, Two=2, Three=3}</code><br/>
+Returned Number: 3</code><br/>
+Returned Number: 5</code>
 
 ::
 
@@ -219,10 +219,10 @@ class Main {
 
 ::result
 
-    <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
-    <code>Removed value: 2</code><br/>
-    <code>Is the entry Three removed? True</code><br/>
-    <code>Updated HashMap: {One=1}</code>
+HashMap: {One=1, Two=2, Three=3}</code><br/>
+Removed value: 2</code><br/>
+Is the entry Three removed? True</code><br/>
+Updated HashMap: {One=1}</code>
 
 ::
 
@@ -258,9 +258,9 @@ class Main {
 
 ::result
 
-    <code>Original HashMap: {Second=2, Third=3, First=1}</code><br/>
-    <code>HashMap using replace: {Second=22, Third=33, First=1}</code><br/>
-    <code>HashMap using replaceAll: {Second=24, Third=35, First=3}</code><br/>
+Original HashMap: {Second=2, Third=3, First=1}</code><br/>
+HashMap using replace: {Second=22, Third=33, First=1}</code><br/>
+HashMap using replaceAll: {Second=24, Third=35, First=3}</code><br/>
 
 ::
 
@@ -307,10 +307,10 @@ class Main {
 
 ::result
 
-    <code>Original HashMap: {Second=2, First=1}</code><br/>
-    <code>HashMap using compute(): {Second=3, First=3}</code><br/>
-    <code>HashMap using computeIfAbsent(): {Second=3 First=3, Three=5}</code><br/>
-    <code>HashMap using computeIfPresent(): {Second=6, First=3, three=5}</code>
+Original HashMap: {Second=2, First=1}</code><br/>
+HashMap using compute(): {Second=3, First=3}</code><br/>
+HashMap using computeIfAbsent(): {Second=3 First=3, Three=5}</code><br/>
+HashMap using computeIfPresent(): {Second=6, First=3, three=5}</code>
 
 ::
 
@@ -338,8 +338,8 @@ class Main {
 
 ::result
 
-    <code>Original HashMap: {Second=2, First=1}</code><br/>
-    <code>New HashMap: {Second=2, First=5}</code>
+Original HashMap: {Second=2, First=1}</code><br/>
+New HashMap: {Second=2, First=5}</code>
 
 ::
 
@@ -393,10 +393,10 @@ class Main {
 
 ::result
 
-    <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
-    <code>Entries: One=1, Two=2, Three=3</code><br/>
-    <code>Keys: One, Two, Three,</code><br/>
-    <code>Values: 1, 2, ,3,</code>
+HashMap: {One=1, Two=2, Three=3}</code><br/>
+Entries: One=1, Two=2, Three=3</code><br/>
+Keys: One, Two, Three,</code><br/>
+Values: 1, 2, ,3,</code>
 
 ::
 
@@ -449,10 +449,10 @@ class Main {
 
 ::result
 
-    <code>HashMap: {One=1, Two=2, Three=3}</code><br/>
-    <code>Entries: One=1, Two=2, Three=3</code><br/>
-    <code>Keys: One, Two, Three,</code><br/>
-    <code>Values: 1, 2, 3,</code>
+HashMap: {One=1, Two=2, Three=3}</code><br/>
+Entries: One=1, Two=2, Three=3</code><br/>
+Keys: One, Two, Three,</code><br/>
+Values: 1, 2, 3,</code>
 
 ::
 

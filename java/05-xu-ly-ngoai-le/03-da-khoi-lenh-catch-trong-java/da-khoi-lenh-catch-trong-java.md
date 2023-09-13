@@ -49,8 +49,8 @@ public class TestMultipleCatchBlock {
 
 ::result
 
-    <code>task1 is completed</code><br/>
-    <code>rest of the code...</code>
+task1 is completed</code><br/>
+rest of the code...</code>
 
 ::
 
@@ -75,7 +75,7 @@ public class TestMultipleCatchBlock1 {
 
 ::result
 
-    <code>Compile-time error</code>
+Compile-time error</code>
 
 ::
 

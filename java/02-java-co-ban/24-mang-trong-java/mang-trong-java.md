@@ -45,7 +45,7 @@ Cú pháp khai báo mảng trong java
 
 Một mảng sẽ có chỉ số index từ 0 đến n – 1 (n là số lượng phần tử của mảng).
 
-<div class="example">Khởi tạo mảng số nguyên 10 phần tử, có giá trị tuần tự từ 1 đến 10. Và xuất các giá trị của mảng ra màn hình console.</div>
+Ví dụ: Khởi tạo mảng số nguyên 10 phần tử, có giá trị tuần tự từ 1 đến 10. Và xuất các giá trị của mảng ra màn hình console.
 
 ```java
 public class Thaycacac {
@@ -63,11 +63,9 @@ public class Thaycacac {
 
 ::result
 
-    <code>1 2 3 4 5 6 7 8 9 10</code>
+1 2 3 4 5 6 7 8 9 10
 
 ::
-
-</div>
 
 ![mang-trong-java](https://user-images.githubusercontent.com/29374426/127758202-bce42e1f-86eb-4557-aaf3-a6afa24bbe29.png)
 
@@ -86,7 +84,7 @@ Chúng ta có 2 cách để truy xuất các phần tử của mảng
 <mảng>[vị trí phần tử trong mảng];
 ```
 
-<div class="example">truy xuất phần tử thứ 5 của mảng</div>
+Ví dụ: truy xuất phần tử thứ 5 của mảng
 
 ```java
 public class Thaycacac {
@@ -103,7 +101,7 @@ public class Thaycacac {
 
 ::result
 
-    <code>6</code>
+6
 
 ::
 
@@ -135,7 +133,7 @@ for(int item : arr) {
 
 Khi truyền mảng vào một method và xử lý trên các phần tử thì sẽ thay đổi giá trị của mảng ban đầu.
 
-<div class="example">tăng mỗi phần tử trong mảng lên mảng lên 1 và in ra màn hình console.</div>
+Ví dụ: tăng mỗi phần tử trong mảng lên mảng lên 1 và in ra màn hình console.
 
 ```java
 public class Thaycacac {
@@ -160,7 +158,7 @@ public class Thaycacac {
 
 ::result
 
-    <code>2 3 4 5 6 7 8 9 10 11 </code>
+2 3 4 5 6 7 8 9 10 11
 
 ::
 
@@ -179,7 +177,7 @@ public static void fill(int[] a. int val) // Khởi tạo mảng với giá tr�
 public static void sort(Object[] a) // Sắp xếp mảng tăng dần
 ```
 
-<div class="example">hàm sort</div>
+Ví dụ: hàm sort
 
 ```java
 import java.util.Arrays;
@@ -198,16 +196,6 @@ public class Thaycacac {
 
 ::result
 
-    <code>-4 0 2 3 5 9 </code>
+-4 0 2 3 5 9
 
 ::
-
-## Bài tập thực hành
-
-**Cho mảng số nguyên arr, gồm n phần tử. Tìm**
-
-- Xuất giá trị của tất cả các phần tử trong mảng
-- Tìm phần tử nhỏ nhất
-- Tìm phần tử lớn nhất
-- Đếm số lượng phần tử chẵn
-- Đếm số lượng phần tử lẽ

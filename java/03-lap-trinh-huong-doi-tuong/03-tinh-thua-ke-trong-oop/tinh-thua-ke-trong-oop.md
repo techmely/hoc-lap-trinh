@@ -25,7 +25,7 @@ Hình ảnh trên cho thấy khi áp dụng **tính kế thừa**, ta chỉ cầ
 
 ## Ví dụ tính kế thừa trong Java
 
-<div class="example">ví dụ dưới dây lớp A thừa kế lớp B và ở lớp con không gọi hàm tạo của lớp cha nhưng nó vẫn được chạy</div>
+Ví dụ dưới dây lớp A thừa kế lớp B và ở lớp con không gọi hàm tạo của lớp cha nhưng nó vẫn được chạy
 
 ```java
 class B {
@@ -47,18 +47,16 @@ public class A extends B {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả sẽ hiển thị thông báo lỗi</span>
-  </div>
-  <div class="window-body">
-    <code>Hàm khởi tạo lớp cha</code><br/>
-    <code>Hàm khởi tạo lớp con</code><br/>
+::result
+
+Kết quả sẽ hiển thị thông báo lỗi
+
+Hàm khởi tạo lớp cha<br/>
+Hàm khởi tạo lớp con<br/>
 
 ::
 
-<div class="example">Đây là cách gọi tường minh</div>
+Đây là cách gọi tường minh
 
 ```java
 class B {
@@ -83,12 +81,12 @@ public class A extends B {
 
 ::result
 
-    <code>Hàm khởi tạo lớp cha</code><br/>
-    <code>Hàm khởi tạo lớp con</code><br/>
+Hàm khởi tạo lớp cha<br/>
+Hàm khởi tạo lớp con<br/>
 
 ::
 
-<div class="example">Một ví dụ khác</div>
+Một ví dụ khác
 
 ```java
 class B {
@@ -118,8 +116,8 @@ public class A extends B {
 
 ::result
 
-    <code>Hàm khởi tạo lớp cha</code><br/>
-    <code>Hàm khởi tạo lớp con</code><br/>
-    <code>Hàm khởi tạo lớp con</code>
+Hàm khởi tạo lớp cha<br/>
+Hàm khởi tạo lớp con<br/>
+Hàm khởi tạo lớp con
 
 ::

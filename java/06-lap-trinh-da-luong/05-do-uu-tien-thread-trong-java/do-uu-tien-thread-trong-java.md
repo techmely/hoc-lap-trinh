@@ -53,10 +53,10 @@ class TestMultiPriority1 extends Thread {
 
 ::result
 
-    <code>Đang chạy luồng:Thread-1</code><br/>
-    <code>Đang chạy luồng:Thread-0</code><br/>
-    <code>Độ ưu tiên là:1</code><br/>
-    <code>Độ ưu tiên là:10</code>
+Đang chạy luồng:Thread-1</code><br/>
+Đang chạy luồng:Thread-0</code><br/>
+Độ ưu tiên là:1</code><br/>
+Độ ưu tiên là:10</code>
 
 ::
 
@@ -106,23 +106,23 @@ public class ThreadInfoExample {
 
 ::result
 
-    <code>ID luồng 1: 10</code><br/>
-    <code>ID luồng 2: 11</code><br/>
-    <code>ID luồng 3: 12</code><br/>
-    <code>Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
-    <code>Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
-    <code>Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
-    <code>Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
-    <code>Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
-    <code>Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
-    <code>Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
-    <code>Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
-    <code>Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
-    <code>Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
-    <code>Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
-    <code>Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
-    <code>Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
-    <code>Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
-    <code>Luồng: Luồng 1 có độ ưu tiên là 1</code>
+ID luồng 1: 10</code><br/>
+ID luồng 2: 11</code><br/>
+ID luồng 3: 12</code><br/>
+Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
+Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
+Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
+Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
+Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
+Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
+Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
+Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
+Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
+Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
+Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
+Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
+Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
+Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
+Luồng: Luồng 1 có độ ưu tiên là 1</code>
 
 ::

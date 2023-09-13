@@ -72,8 +72,8 @@ class Main {
 
 ::result
 
-    <code>TreeMap of even numbers: {Four=4, Six=6, Two=2}</code><br/>
-    <code>TreeMap of numbers: {Four=4, One=1, Six=6, Two=2}</code>
+TreeMap of even numbers: {Four=4, Six=6, Two=2}</code><br/>
+TreeMap of numbers: {Four=4, One=1, Six=6, Two=2}</code>
 
 ::
 
@@ -109,10 +109,10 @@ class Main {
 
 ::result
 
-    <code>TreeMap: {One=1, Three=3, Two=2}</code><br/>
-    <code>Key/Value mappings: [One=1, Three=3, Two=2]</code><br/>
-    <code>Keys: [One, Three, Two]</code><br/>
-    <code>Values: [1, 3, 2]</code>
+TreeMap: {One=1, Three=3, Two=2}</code><br/>
+Key/Value mappings: [One=1, Three=3, Two=2]</code><br/>
+Keys: [One, Three, Two]</code><br/>
+Values: [1, 3, 2]</code>
 
 ::
 
@@ -144,9 +144,9 @@ class Main {
 
 ::result
 
-    <code>TreeMap: {One=1, Three=3, Two=2}</code><br/>
-    <code>Using get(): 3</code><br/>
-    <code>Using getOrDefault(): 5</code>
+TreeMap: {One=1, Three=3, Two=2}</code><br/>
+Using get(): 3</code><br/>
+Using getOrDefault(): 5</code>
 
 ::
 
@@ -182,10 +182,10 @@ class Main {
 
 ::result
 
-    <code>TreeMap: {One=1, Three=3, Two=2}</code><br/>
-    <code>Removed value = 2</code><br/>
-    <code>Is the entry {Three=3} removed? True</code><br/>
-    <code>Updated TreeMap: {One=1}</code>
+TreeMap: {One=1, Three=3, Two=2}</code><br/>
+Removed value = 2</code><br/>
+Is the entry {Three=3} removed? True</code><br/>
+Updated TreeMap: {One=1}</code>
 
 ::
 
@@ -221,9 +221,9 @@ class Main {
 
 ::result
 
-    <code>Original TreeMap: {First=1, Second=2, Third=3}</code><br/>
-    <code>TreeMap using replace(): {First=1, Second=22, Third=33}</code><br/>
-    <code>TreeMap using replaceAll(): {First=3, Second=24, Third=35}</code>
+Original TreeMap: {First=1, Second=2, Third=3}</code><br/>
+TreeMap using replace(): {First=1, Second=22, Third=33}</code><br/>
+TreeMap using replaceAll(): {First=3, Second=24, Third=35}</code>
 
 ::
 
@@ -273,11 +273,11 @@ class Main {
 
 ::result
 
-    <code>TreeMap: {First=1, Second=2, Third=3}</code><br/>
-    <code>First Key: First</code><br/>
-    <code>Last Key: Third</code><br/>
-    <code>First Entry: First=1</code><br/>
-    <code>Last Entry: Third=3</code>
+TreeMap: {First=1, Second=2, Third=3}</code><br/>
+First Key: First</code><br/>
+Last Key: Third</code><br/>
+First Entry: First=1</code><br/>
+Last Entry: Third=3</code>
 
 ::
 
@@ -324,18 +324,18 @@ class Main {
 
 ::result
 
-    <code>TreeMap: {First=1, Fourth=6, Second=5, Third=4}</code><br/>
-    <code>Using higherKey(): Second</code><br/>
-    <code>Using higherEntry(): Second=5</code><br/>
-    <br/>
-    <code>Using lowerKey(): First</code><br/>
-    <code>Using lowerEntry(): First=1</code><br/>
-    <br/>
-    <code>Using ceilingKey(): Fourth</code><br/>
-    <code>Using ceilingEntry(): Fourth=6</code><br/>
-    <br/>
-    <code>Using floorkey(): Fourth</code><br/>
-    <code>Using floorEntry(): Fourth=6</code>
+TreeMap: {First=1, Fourth=6, Second=5, Third=4}</code><br/>
+Using higherKey(): Second</code><br/>
+Using higherEntry(): Second=5</code><br/>
+<br/>
+Using lowerKey(): First</code><br/>
+Using lowerEntry(): First=1</code><br/>
+<br/>
+Using ceilingKey(): Fourth</code><br/>
+Using ceilingEntry(): Fourth=6</code><br/>
+<br/>
+Using floorkey(): Fourth</code><br/>
+Using floorEntry(): Fourth=6</code>
 
 ::
 
@@ -368,10 +368,10 @@ class Main {
 
 ::result
 
-    <code>TreeMap: {First=1, Second=2, Third=3}</code><br/>
-    <code>Using pollFirstEntry(): First=1</code><br/>
-    <code>Using pollLastEntry(): Third=3</code><br/>
-    <code>Updated TreeMap: {Second=2}</code><br/>
+TreeMap: {First=1, Second=2, Third=3}</code><br/>
+Using pollFirstEntry(): First=1</code><br/>
+Using pollLastEntry(): Third=3</code><br/>
+Updated TreeMap: {Second=2}</code><br/>
 
 ::
 
@@ -403,11 +403,11 @@ class Main {
 
 ::result
 
-    <code>TreeMap: {First=1, Fourth=4, Second=2, Third=3}</code><br/>
-    <br/>
-    <code>Using headMap() Method:</code><br/>
-    <code>Without boolean value: {First=1}</code><br/>
-    <code>With boolean value: {First=1, Fourth=4}</code><br/>
+TreeMap: {First=1, Fourth=4, Second=2, Third=3}</code><br/>
+<br/>
+Using headMap() Method:</code><br/>
+Without boolean value: {First=1}</code><br/>
+With boolean value: {First=1, Fourth=4}</code><br/>
 
 ::
 
@@ -439,11 +439,11 @@ class Main {
 
 ::result
 
-    <code>TreeMap: {First=1, Fourth=4, Second=2, Third=3}</code><br/>
-    <br/>
-    <code>Using tailMap() Method:</code><br/>
-    <code>Without boolean value: {Second=2, Third=3}</code><br/>
-    <code>With boolean value: {Third=3}</code>
+TreeMap: {First=1, Fourth=4, Second=2, Third=3}</code><br/>
+<br/>
+Using tailMap() Method:</code><br/>
+Without boolean value: {Second=2, Third=3}</code><br/>
+With boolean value: {Third=3}</code>
 
 ::
 
@@ -473,11 +473,11 @@ class Main {
 
 ::result
 
-    <code>TreeMap: {First=1, Fourth=2, Second=2, Third=3}</code><br/>
-    <br/>
-    <code>Using subMap() Method:</code><br/>
-    <code>Without boolean value: {Fourth=4, Second=2}</code><br/>
-    <code>With boolean value: {Second=2, Third=3}</code>
+TreeMap: {First=1, Fourth=2, Second=2, Third=3}</code><br/>
+<br/>
+Using subMap() Method:</code><br/>
+Without boolean value: {Fourth=4, Second=2}</code><br/>
+With boolean value: {Second=2, Third=3}</code>
 
 ::
 

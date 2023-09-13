@@ -23,7 +23,7 @@ Bất cứ khi nào bạn tạo ra instance(thể hiển) của lớp con, một
 
 Từ khóa super được sử dụng để tham chiếu trực tiếp đến biến instance của lớp cha.
 
-<div class="example">Xe đạp thừa kế lớp cha, tốc độ của lớp cha là 50, tốc độ lớp con là 100, nếu không sử dụng super thì khi in tốc độ ra chúng ta sẽ được kết quả là của lớp con</div>
+Ví dụ: xe đạp thừa kế lớp cha, tốc độ của lớp cha là 50, tốc độ lớp con là 100, nếu không sử dụng super thì khi in tốc độ ra chúng ta sẽ được kết quả là của lớp con
 
 ```java
 class Xe {
@@ -46,11 +46,11 @@ public class XeDap extends Xe {
 
 ::result
 
-    <code>100</code>
+100
 
 ::
 
-<div class="example">Nếu chúng ta sử dụng super thì sẽ in ra được tốc độ của lớp cha</div>
+Ví dụ: nếu chúng ta sử dụng super thì sẽ in ra được tốc độ của lớp cha
 
 ```java
 class Xe {
@@ -74,7 +74,7 @@ public class XeDap extends Xe {
 
 ::result
 
-    <code>50</code>
+50
 
 ::
 
@@ -103,8 +103,8 @@ class XeDap extends Xe {
 
 ::result
 
-    <code>Xe được tạo</code><br/>
-    <code>Xe đạp được tạo</code><br/>
+Xe được tạo<br/>
+Xe đạp được tạo<br/>
 
 ::
 
@@ -141,8 +141,8 @@ public class XeDap extends Xe {
 
 ::result
 
-    <code>Xe được tạo</code><br/>
-    <code>10</code>
+Xe được tạo<br/>
+10
 
 ::
 
@@ -176,7 +176,7 @@ public class HocSinh extends Nguoi {
 
 ::result
 
-    <code>Xin chao Thaycacac</code><br/>
-    <code>Xin chao</code>
+Xin chao Thaycacac<br/>
+Xin chao
 
 ::

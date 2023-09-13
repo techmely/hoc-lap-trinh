@@ -84,7 +84,7 @@ Chúng ta có thể chuyển đổi **float** thành **String** trong java bằn
 
 ```java
 // Cách 1
-float i = 999.999F; // F là subfix cho số float
+float i = 999.999F; // F là sub fix cho số float
 String s = String.valueOf(i); // kết quả là s = "999.999"
 
 // Cách 2
@@ -109,7 +109,7 @@ Chúng ta có thể chuyển đổi **double** thành **String** trong java bằ
 
 ```java
 // Cách 1
-double i = 999.999D; // D là subfix cho số double
+double i = 999.999D; // D là sub fix cho số double
 String s = String.valueOf(i); // kết quả là s = "999.999"
 
 // Cách 2
@@ -136,7 +136,7 @@ public class StringToDateExample {
 
 ::result
 
-    <code>17/07/2017 Mon Jul 17 00:00:00 ICT 2017</code>
+17/07/2017 Mon Jul 17 00:00:00 ICT 2017
 
 ::
 
@@ -156,6 +156,6 @@ public class ToanTuCong {
 
 ::result
 
-    <code>100.0</code>
+100.0
 
 ::

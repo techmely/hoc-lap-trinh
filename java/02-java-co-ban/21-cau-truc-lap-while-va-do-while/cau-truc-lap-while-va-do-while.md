@@ -45,10 +45,10 @@ public class Thaycacac {
 
 ::result
 
-    <code>Giá trị 3</code><br/>
-    <code>Giá trị 5</code><br/>
-    <code>Giá trị 7</code><br/>
-    <code>Giá trị 9</code>
+Giá trị 3</code><br/>
+Giá trị 5</code><br/>
+Giá trị 7</code><br/>
+Giá trị 9</code>
 
 ::
 
@@ -100,9 +100,9 @@ public class Thaycacac {
 
 ::result
 
-    <code>Giá trị 3</code><br/>
-    <code>Giá trị 6</code><br/>
-    <code>Giá trị 9</code>
+Giá trị 3</code><br/>
+Giá trị 6</code><br/>
+Giá trị 9</code>
 
 ::
 

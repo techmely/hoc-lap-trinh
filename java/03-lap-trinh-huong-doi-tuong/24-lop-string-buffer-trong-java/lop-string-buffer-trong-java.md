@@ -37,11 +37,11 @@ class StringBuffer {
 
 ::result
 
-    <code>0</code><br/>
-    <code>12</code><br/>
-    <code>16</code><br/>
-    <code>20</code><br/>
-    <code>28</code>
+0<br/>
+12<br/>
+16<br/>
+20<br/>
+28
 
 ::
 
@@ -58,17 +58,17 @@ Trước khi dung lượng của **StringBuffer** được đặt lại, điều
 - Nếu dung lượng mới (NewCapacity) lớn hơn đối số được truyền cho phương thức `ensureCapacity()`, thì dung lượng mới bằng NewCapacity được đặt.
 - Nếu dung lượng mới nhỏ hơn đối số được truyền cho phương thức `ensureCapacity()`, thì dung lượng được đặt bằng giá trị tham số truyền vào.
 
-<div class="example">Chương trình sau minh hoạ dung lượng được tính toán và được đặt như thế nào</div>
+Chương trình sau minh hoạ dung lượng được tính toán và được đặt như thế nào
 
 ```java
 class StringBuffer {
   public static void main(String args[]) {
     StringBuffer s1 = new StringBuffer(5);
-    System.out.println("Dung	lượng	của	bộ	nhớ	đệm	= "+s1.capacity()); //chứa 5
+    System.out.println("Dung lượng của bộ nhớ đệm = "+s1.capacity()); //chứa 5
     s1.ensureCapacity(8);
-    System.out.println("Dung	lượng	của	bộ	nhớ	đệm	= "+s1.capacity()); //chứa 12
+    System.out.println("Dung lượng của bộ nhớ đệm = "+s1.capacity()); //chứa 12
     s1.ensureCapacity(30);
-    System.out.println("Dung	lượng	của	bộ	nhớ	đệm	= "+s1.capacity()); // chứa 30
+    System.out.println("Dung lượng của bộ nhớ đệm = "+s1.capacity()); // chứa 30
   }
 }
 ```
@@ -107,7 +107,7 @@ str.insert(1,’b’);
 
 ::result
 
-    <code>Biến "str" chứa chuỗi "Jbava sion"</code>
+Biến "str" chứa chuỗi "Jbava sion"
 
 ::
 
@@ -127,7 +127,7 @@ name.setCharAt(2,’v’);
 
 ::result
 
-    <code>Biến "name" chứa "Java".</code>
+Biến "name" chứa "Java".
 
 ::
 
@@ -153,7 +153,7 @@ str.getChars(3,6,ch,0);
 
 ::result
 
-    <code>Bây giờ biến "ch" chứa "par"</code>
+Bây giờ biến "ch" chứa "par"
 
 ::
 
@@ -166,6 +166,6 @@ StringBuffer strrev = str.reverse();
 
 ::result
 
-    <code>Biến "strrev" chứa "lived".</code>
+Biến "strrev" chứa "lived".
 
 ::

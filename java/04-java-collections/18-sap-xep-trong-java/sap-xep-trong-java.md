@@ -49,9 +49,9 @@ public class SortedArrayExample {
 
 ::result
 
-    <code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code><br/>
-    <code>[5, 1, 2, 3, 4, 6, 7, 9, 8]</code><br/>
-    <code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code><br/>
+[1, 2, 3, 4, 5, 6, 7, 8, 9]</code><br/>
+[5, 1, 2, 3, 4, 6, 7, 9, 8]</code><br/>
+[1, 2, 3, 4, 5, 6, 7, 8, 9]</code><br/>
 
 ::
 
@@ -79,7 +79,7 @@ public class SortedListExample {
 
 ::result
 
-    <code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
+[1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
 
 ::
 
@@ -119,7 +119,7 @@ public class SortedSetExample {
 
 ::result
 
-    <code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
+[1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
 
 ::
 
@@ -181,8 +181,8 @@ public class SortedMapExample {
 
 ::result
 
-    <code>Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}</code><br/>
-    <code>Sorted map: {11=One, 22=Two, 33=Three, 44=Four, 55=Five</code>
+Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}</code><br/>
+Sorted map: {11=One, 22=Two, 33=Three, 44=Four, 55=Five</code>
 
 ::
 
@@ -240,8 +240,8 @@ public class SortedMapExample2 {
 
 ::result
 
-    <code>Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}</code><br/>
-    <code>Sorted map: {55=Five, 44=Four, 11=One, 33=Three, 22=Two}</code>
+Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}</code><br/>
+Sorted map: {55=Five, 44=Four, 11=One, 33=Three, 22=Two}</code>
 
 ::
 
@@ -292,9 +292,9 @@ public class SortedMapExample3 {
 
 ::result
 
-    <code>Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}</code><br/>
-    <code>Sorted map by key: {11=One, 22=Two, 33=Three, 44=Four, 55=Five}</code><br/>
-    <code>Sorted map by value: {55=Five, 44=Four, 11=One, 33=Three, 22=Two}</code>
+Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}</code><br/>
+Sorted map by key: {11=One, 22=Two, 33=Three, 44=Four, 55=Five}</code><br/>
+Sorted map by value: {55=Five, 44=Four, 11=One, 33=Three, 22=Two}</code>
 
 ::
 
@@ -388,11 +388,11 @@ public class SortedObjectExample1 {
 
 ::result
 
-    <code>Student [id=5, name=Five, age=22]</code><br/>
-    <code>Student [id=4, name=Four, age=19]</code><br/>
-    <code>Student [id=1, name=One, age=22]</code><br/>
-    <code>Student [id=3, name=Three, age=20]</code><br/>
-    <code>Student [id=2, name=Two, age=18]</code>
+Student [id=5, name=Five, age=22]</code><br/>
+Student [id=4, name=Four, age=19]</code><br/>
+Student [id=1, name=One, age=22]</code><br/>
+Student [id=3, name=Three, age=20]</code><br/>
+Student [id=2, name=Two, age=18]</code>
 
 ::
 
@@ -422,11 +422,11 @@ public class SortedObjectExample2 {
 
 ::result
 
-    <code>Student [id=5, name=Five, age=22]</code><br/>
-    <code>Student [id=4, name=Four, age=19]</code><br/>
-    <code>Student [id=1, name=One, age=22]</code><br/>
-    <code>Student [id=3, name=Three, age=20]</code><br/>
-    <code>Student [id=2, name=Two, age=18]</code>
+Student [id=5, name=Five, age=22]</code><br/>
+Student [id=4, name=Four, age=19]</code><br/>
+Student [id=1, name=One, age=22]</code><br/>
+Student [id=3, name=Three, age=20]</code><br/>
+Student [id=2, name=Two, age=18]</code>
 
 ::
 
@@ -690,10 +690,10 @@ public class SortedObjectExample7 {
 
 ::result
 
-    <code>Student [id=2, name=Two, age=18]</code><br/>
-    <code>Student [id=3, name=Three, age=20]</code><br/>
-    <code>Student [id=1, name=One, age=22]</code><br/>
-    <code>Student [id=4, name=Four, age=19]</code><br/>
-    <code>Student [id=5, name=Five, age=22]</code>
+Student [id=2, name=Two, age=18]</code><br/>
+Student [id=3, name=Three, age=20]</code><br/>
+Student [id=1, name=One, age=22]</code><br/>
+Student [id=4, name=Four, age=19]</code><br/>
+Student [id=5, name=Five, age=22]</code>
 
 ::

@@ -34,7 +34,7 @@ class TestExceptionChild extends Parent{
 
 ::result
 
-    <code>Compile Time Error</code>
+Compile Time Error</code>
 
 ::
 
@@ -59,7 +59,7 @@ class TestExceptionChild1 extends Parent{
 
 ::result
 
-    <code>child</code>
+child</code>
 
 ::
 
@@ -89,7 +89,7 @@ class TestExceptionChild2 extends Parent{
 
 ::result
 
-    <code>Compile Time Error</code>
+Compile Time Error</code>
 
 ::
 
@@ -115,7 +115,7 @@ class TestExceptionChild3 extends Parent{
 
 ::result
 
-    <code>child</code>
+child</code>
 
 ::
 
@@ -141,7 +141,7 @@ class TestExceptionChild4 extends Parent{
 
 ::result
 
-    <code>child</code>
+child</code>
 
 ::
 
@@ -167,6 +167,6 @@ class TestExceptionChild5 extends Parent{
 
 ::result
 
-    <code>child</code>
+child</code>
 
 ::

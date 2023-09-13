@@ -45,7 +45,7 @@ public class Thaycacac {
     <span class="title-popup">Kết quả sẽ hiển thị thông báo lỗi</span>
   </div>
   <div class="window-body">
-    <code>Compile Time Error Exception in thread "main" java.lang.Error: Unresolved compilation problem: The final field Thaycacac.PI cannot be assigned</code>
+Compile Time Error Exception in thread "main" java.lang.Error: Unresolved compilation problem: The final field Thaycacac.PI cannot be assigned</code>
 
 ::
 
@@ -87,7 +87,7 @@ public class SH extends Bike {
     <span class="title-popup">Kết quả sẽ hiển thị thông báo lỗi</span>
   </div>
   <div class="window-body">
-    <code>Exception in thread "main" java.lang.VerifyError: class vn.viettuts.keywords.SH overrides final method run.()</code>
+Exception in thread "main" java.lang.VerifyError: class vn.viettuts.keywords.SH overrides final method run.()</code>
 
 ::
 
@@ -117,7 +117,7 @@ public class SH1 extends Bike {
     <span class="title-popup">Kết quả sẽ hiển thị thông báo lỗi</span>
   </div>
   <div class="window-body">
-    <code>Compile Time Error</code>
+Compile Time Error</code>
 
 ::
 
@@ -162,6 +162,6 @@ Chương trình sẽ in ra lỗi
 
 ::result
 
-    <code>"A.java": variable i might already have been assigned to at line 5, column 9</code>
+"A.java": variable i might already have been assigned to at line 5, column 9</code>
 
 ::

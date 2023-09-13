@@ -26,7 +26,7 @@ Từ khoá interface đã đưa khái niệm abstract đi xa thêm một bước
 - Phần khai báo cho biết một số thông tin như: tên của interface, nó có kế thừa từ một giao diện khác hay không.
 - Phần thân chứa các khai báo hằng, khai báo phương thức. Giống như một lớp ta cũng có thể thêm bổ từ public vào trước định nghĩa của interface.
 
-<div class="example">ví dụ dưới đây Printable Interface chỉ có một phương thức, trình triển khai của nó được cung cấp bởi lớp A.</div>
+Ví dụ dưới đây Printable Interface chỉ có một phương thức, trình triển khai của nó được cung cấp bởi lớp A.
 
 ```java
 interface printable {

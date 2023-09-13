@@ -69,8 +69,8 @@ class Main {
 
 ::result
 
-    <code>EnumMap1: {SMALL=28, MEDIUM=32}</code><br/>
-    <code>EnumMap2: {SMALL=28, MEDIUM=32, LARGE=36}</code><br/>
+EnumMap1: {SMALL=28, MEDIUM=32}</code><br/>
+EnumMap2: {SMALL=28, MEDIUM=32, LARGE=36}</code><br/>
 
 ::
 
@@ -116,10 +116,10 @@ class Main {
 
 ::result
 
-    <code>EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
-    <code>Key/Value mappings: [SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40]</code><br/>
-    <code>Keys: [SMALL, MEDIUM, LARGE, EXTRALARGE]</code><br/>
-    <code>Values: [28, 32, 36, 40]</code>
+EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
+Key/Value mappings: [SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40]</code><br/>
+Keys: [SMALL, MEDIUM, LARGE, EXTRALARGE]</code><br/>
+Values: [28, 32, 36, 40]</code>
 
 ::
 
@@ -152,8 +152,8 @@ class Main {
 
 ::result
 
-    <code>EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
-    <code>Value of MEDIUM: 32</code>
+EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
+Value of MEDIUM: 32</code>
 
 ::
 
@@ -194,10 +194,10 @@ class Main {
 
 ::result
 
-    <code>EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
-    <code>Removed Value: 32</code><br/>
-    <code>Is the entry {SMALL=28} removed? True</code><br/>
-    <code>Updated EnumMap: {LARGE=36, EXTRALARGE=40}</code>
+EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
+Removed Value: 32</code><br/>
+Is the entry {SMALL=28} removed? True</code><br/>
+Updated EnumMap: {LARGE=36, EXTRALARGE=40}</code>
 
 ::
 
@@ -239,9 +239,9 @@ class Main {
 
 ::result
 
-    <code>EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
-    <code>EnumMap using replace(): {SMALL=28, MEDIUM=30, LARGE=34, EXTRALARGE=40}</code><br/>
-    <code>EnumMap using replaceAll(): {SMALL=31, MEDIUM=33, LARGE=37, EXTRALARGE=43}</code>
+EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}</code><br/>
+EnumMap using replace(): {SMALL=28, MEDIUM=30, LARGE=34, EXTRALARGE=40}</code><br/>
+EnumMap using replaceAll(): {SMALL=31, MEDIUM=33, LARGE=37, EXTRALARGE=43}</code>
 
 ::
 

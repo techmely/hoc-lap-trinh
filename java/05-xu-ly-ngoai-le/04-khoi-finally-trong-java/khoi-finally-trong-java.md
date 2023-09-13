@@ -59,9 +59,9 @@ public class TestFinallyBlock {
 
 ::result
 
-    <code>5</code><br/>
-    <code>finally block is always executed</code><br/>
-    <code>rest of the code...</code>
+5</code><br/>
+finally block is always executed</code><br/>
+rest of the code...</code>
 
 ::
 
@@ -85,8 +85,8 @@ public class TestFinallyBlock1 {
 
 ::result
 
-    <code>finally block is always executed</code><br/>
-    <code>Exception in thread "main" java.lang.ArithmeticException: / by zero</code><br/>
+finally block is always executed</code><br/>
+Exception in thread "main" java.lang.ArithmeticException: / by zero</code><br/>
 
 ::
 
@@ -110,9 +110,9 @@ public class TestFinallyBlock2 {
 
 ::result
 
-    <code>java.lang.ArithmeticException: / by zero</code><br/>
-    <code>finally block is always executed</code><br/>
-    <code>rest of the code...</code>
+java.lang.ArithmeticException: / by zero</code><br/>
+finally block is always executed</code><br/>
+rest of the code...</code>
 
 ::
 
@@ -139,7 +139,7 @@ public class TestFinallyBlock3 {
 
 ::result
 
-    <code>25 is odd number</code><br/>
-    <code>finally block is always executed</code>
+25 is odd number</code><br/>
+finally block is always executed</code>
 
 </div>

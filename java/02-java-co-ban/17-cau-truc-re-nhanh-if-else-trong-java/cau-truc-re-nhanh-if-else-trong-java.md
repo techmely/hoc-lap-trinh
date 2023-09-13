@@ -13,16 +13,16 @@ position: 17
 
 Chương trình là một dãy các câu lệnh được bố trí thực hiện theo một trình tự nào đó, nhưng đôi khi ta muốn điều khiển luồng thực hiện của chương trình tuỳ thuộc vào điều kiện gì đó. Ngôn ngữ lập trình java cung cấp một số câu điều kiện cho phép ta điều khiển luồng thực hiện của chương trình, chúng được liệt kê trong bảng sau:
 
-| Kiểu lệnh  | Từ khoá                         |
-| ---------- | ------------------------------- |
-| Lặp        | while, do-while, for            |
-| Quyết định | if-else, switch-case            |
-| Xử lý lỗi  | try-catch-finally, throw        |
-| Rẽ nhánh   | break, continue, label:, return |
+| Kiểu lệnh  | Từ khoá                                |
+| ---------- | -------------------------------------- |
+| Lặp        | `while`, `do-while`, `for`             |
+| Quyết định | `if-else`, `switch-case `              |
+| Xử lý lỗi  | `try-catch-finally`, `throw`           |
+| Rẽ nhánh   | `break`, `continue`, `label`, `return` |
 
 Bài này chúng ta sẽ cùng nhau tìm hiểu về cấu trúc rẽ nhánh if else trong Java.
 
-## Hiểu về cấu trúc if-else trong Java
+## Hiểu về cấu trúc `if-else` trong Java
 
 Trong cuộc sống của chúng ta thì gặp khá nhiều trường hợp `if-else`, ví dụ như: _"Nếu hôm nay trời mưa thì tôi sẽ nghỉ học nếu không thì tôi sẽ đi học"_. Trong lập trình cũng sẽ có câu lệnh diễn đạt ý tương tự, người ta gọi là câu điều kiện if else. Với ví dụ này thì trong Java chúng ta có thể diễn đạt như sau:
 
@@ -34,11 +34,11 @@ if(hôm nay trời mưa) {
 }
 ```
 
-## Cấu trúc rẽ nhánh if else trong Java
+## Cấu trúc rẽ nhánh `if else` trong Java
 
 Trong Java có 2 cấu trúc rẽ nhánh if là **dạng khuyết** và **dạng đủ**
 
-### Cấu trúc rẽ nhánh if else dạng khuyết
+### Cấu trúc rẽ nhánh `if else` dạng khuyết
 
 Cú pháp:
 
@@ -108,7 +108,7 @@ public class Thaycacac {
 
 ::result
 
-    <code>Bạn đủ tuổi để đăng ký</code>
+Bạn đủ tuổi để đăng ký
 
 ::
 
@@ -150,13 +150,13 @@ public class Thaycacac {
 
 ::result
 
-    <code>Sinh viên có thể tham gia</code>
+Sinh viên có thể tham gia
 
 ::
 
 ### Một số ví dụ cấu trúc rẽ nhánh if else
 
-<div class="example">Kiểm tra số nhập vào là số âm hay số dương</div>
+Ví dụ "Kiểm tra số nhập vào là số âm hay số dương"
 
 ```java
   public static void checkNumber(int number) {
@@ -168,7 +168,7 @@ public class Thaycacac {
   }
 ```
 
-<div class="example">In ra số lớn hơn bởi 2 số người dùng nhập vào</div>
+Ví dụ: In ra số lớn hơn bởi 2 số người dùng nhập vào
 
 ```java
 public static void getMax(int number1, int number2) {
@@ -182,7 +182,7 @@ public static void getMax(int number1, int number2) {
 }
 ```
 
-<div class="example">Kiểm tra sẽ xem năm người dùng nhập vào có phải là năm nhuận hay không</div>
+Ví dụ: Kiểm tra sẽ xem năm người dùng nhập vào có phải là năm nhuận hay không
 
 ```java
 public static void checkLeapYear(int year) {

@@ -48,11 +48,11 @@ Trong mỗi lớp bao còn có hàm static `parseType(String s)` để chuyển 
 
 ```java
 byte value1  = Byte.parseByte(“16”);
-int value2	= Integer.parseInt(“2002”);
+int value2 = Integer.parseInt(“2002”);
 double value3 = Double.parseDouble(“3.14”);
 ```
 
-<div class="example">Viết chương trình để nhập vào một dãy số tùy ý và sắp xếp theo thứ tự tăng dần</div>
+Ví dụ: viết chương trình để nhập vào một dãy số tùy ý và sắp xếp theo thứ tự tăng dần
 
 ```java
 import java.io.*; class SapXep{

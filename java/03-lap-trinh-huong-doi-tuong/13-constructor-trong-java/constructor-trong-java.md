@@ -54,7 +54,7 @@ public class SimpleConstructor {
 
 ::result
 
-    <code>Đang tạo student</code><br/>
+Đang tạo student</code><br/>
 
 <code>Đang tạo student</code><br/>
 <code>Đang tạo student</code><br/>
@@ -102,8 +102,8 @@ public class Student {
 
 ::result
 
-    <code>1 Thaycacac</code><br/>
-    <code>2 HoaPN</code>
+1 Thaycacac</code><br/>
+2 HoaPN</code>
 
 ::
 
@@ -143,8 +143,8 @@ class Student {
 
 ::result
 
-    <code>1 Thaycacac 0</code><br/>
-    <code>2 HoaPN 25</code>
+1 Thaycacac 0</code><br/>
+2 HoaPN 25</code>
 
 ::
 

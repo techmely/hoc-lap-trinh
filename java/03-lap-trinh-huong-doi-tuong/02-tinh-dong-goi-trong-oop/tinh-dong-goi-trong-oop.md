@@ -26,7 +26,7 @@ Các dữ liệu và phương thức có liên quan với nhau được đóng g
 - Bạn có thể tạo lớp read-only hoặc write-only bằng việc cài đặt phương thức setter hoặc getter.
 - Bạn có thể kiểm soát đối với dữ liệu. Giả sử bạn muốn đặt giá trị của id chỉ lớn hơn 100 bạn có thể viết logic bên trong lớp setter.
 
-<div class="example">Ví dụ tính đóng gói trong java</div>
+Ví dụ tính đóng gói trong java
 
 Hãy xem ví dụ sau về đóng gói trong java với một lớp chỉ có một trường và các phướng thức setter và getter của nó.
 
@@ -88,6 +88,6 @@ public class TestPerson {
 
 ::result
 
-    <code>Tên: Thaycacac, CMND: 123456</code>
+Tên: Thaycacac, CMND: 123456
 
 ::

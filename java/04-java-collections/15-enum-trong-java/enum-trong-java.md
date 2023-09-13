@@ -72,7 +72,7 @@ public class EnumExample {
 
 ::result
 
-    <code>MONDAY</code>
+MONDAY</code>
 
 ::
 
@@ -93,7 +93,7 @@ public class EnumExample {
 
 ::result
 
-    <code>MONDAY</code>
+MONDAY</code>
 
 ::
 
@@ -118,13 +118,13 @@ public class EnumExample {
 
 ::result
 
-    <code>MONDAY</code><br/>
-    <code>TUESDAY</code><br/>
-    <code>WEDNESDAY</code><br/>
-    <code>THURSDAY</code><br/>
-    <code>FRIDAY</code><br/>
-    <code>SATURDAY</code><br/>
-    <code>SUNDAY</code>
+MONDAY</code><br/>
+TUESDAY</code><br/>
+WEDNESDAY</code><br/>
+THURSDAY</code><br/>
+FRIDAY</code><br/>
+SATURDAY</code><br/>
+SUNDAY</code>
 
 ::
 
@@ -175,14 +175,14 @@ public class EnumExample3 {
 
 ::result
 
-    <code>MONDAY = 2</code><br/>
-    <code>TUESDAY = 3</code><br/>
-    <code>WEDNESDAY = 4</code><br/>
-    <code>THURSDAY = 5</code><br/>
-    <code>FRIDAY = 7</code><br/>
-    <code>SATURDAY = 7</code><br/>
-    <code>SUNDAY = 1</code><br/>
-    <code>value 3 is TUESDAY</code><br/>
+MONDAY = 2</code><br/>
+TUESDAY = 3</code><br/>
+WEDNESDAY = 4</code><br/>
+THURSDAY = 5</code><br/>
+FRIDAY = 7</code><br/>
+SATURDAY = 7</code><br/>
+SUNDAY = 1</code><br/>
+value 3 is TUESDAY</code><br/>
 
 ::
 
@@ -218,8 +218,8 @@ public class EnumExample {
 
 ::result
 
-    <code>Today is holiday</code><br/>
-    <code>Today is holiday</code>
+Today is holiday</code><br/>
+Today is holiday</code>
 
 ::
 
@@ -253,7 +253,7 @@ public class EnumExample {
 
 ::result
 
-    <code>Today is holiday</code>
+Today is holiday</code>
 
 ::
 
@@ -292,7 +292,7 @@ public class EnumExample3 {
 
 ::result
 
-    <code>Today is holiday</code><br/>
-    <code>Today is holiday</code>
+Today is holiday</code><br/>
+Today is holiday</code>
 
 ::

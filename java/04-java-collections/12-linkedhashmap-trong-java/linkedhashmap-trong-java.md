@@ -68,8 +68,8 @@ class Main {
 
 ::result
 
-    <code>LinkedHashMap1: {Two=2, Four=4}</code><br/>
-    <code>LinkedHashMap2: {Two=2, Four=4, Three=3}</code>
+LinkedHashMap1: {Two=2, Four=4}</code><br/>
+LinkedHashMap2: {Two=2, Four=4, Three=3}</code>
 
 ::
 
@@ -109,9 +109,9 @@ class Main {
 
 ::result
 
-    <code>Original LinkedHashMap: {Two=2, Four=4}</code><br/>
-    <code>Updated LinkedHashMap: {Two=2, Four=4, Six=6}</code><br/>
-    <code>New LinkedHashMap: {One=1, Two=2, Four=4, Six=6}</code>
+Original LinkedHashMap: {Two=2, Four=4}</code><br/>
+Updated LinkedHashMap: {Two=2, Four=4, Six=6}</code><br/>
+New LinkedHashMap: {One=1, Two=2, Four=4, Six=6}</code>
 
 ::
 
@@ -147,10 +147,10 @@ class Main {
 
 ::result
 
-    <code>LinkedHashMap: {One=1, Two=2, Three=3}</code><br/>
-    <code>Key/Value mappings: [One=1, Two=2, Three=3]</code><br/>
-    <code>Keys: [One, Two, Three]</code><br/>
-    <code>Values: [1, 2, 3]</code>
+LinkedHashMap: {One=1, Two=2, Three=3}</code><br/>
+Key/Value mappings: [One=1, Two=2, Three=3]</code><br/>
+Keys: [One, Two, Three]</code><br/>
+Values: [1, 2, 3]</code>
 
 ::
 
@@ -182,9 +182,9 @@ class Main {
 
 ::result
 
-    <code>LinkedHashMap: {One=1, Two=2, Three=3}</code><br/>
-    <code>Returned Number: 3</code><br/>
-    <code>Returned Number: 5</code>
+LinkedHashMap: {One=1, Two=2, Three=3}</code><br/>
+Returned Number: 3</code><br/>
+Returned Number: 5</code>
 
 ::
 
@@ -220,10 +220,10 @@ class Main {
 
 ::result
 
-    <code>LinkedHashMap: {One=1, Two=2, Three=3}</code><br/>
-    <code>Removed value: 2</code><br/>
-    <code>Is the entry {Three=3} removed? True</code><br/>
-    <code>Updated LinkedHashMap: {One=1}</code>
+LinkedHashMap: {One=1, Two=2, Three=3}</code><br/>
+Removed value: 2</code><br/>
+Is the entry {Three=3} removed? True</code><br/>
+Updated LinkedHashMap: {One=1}</code>
 
 ::
 

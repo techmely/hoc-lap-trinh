@@ -72,7 +72,7 @@ switch (x) {
 
 ::result
 
-    <code>Equal</code>
+Equal</code>
 
 ::
 

@@ -19,7 +19,7 @@ Từ khóa **this** trong java là một biến tham chiếu được sử dụn
 
 Từ khóa **this** trong java có thể được dùng để tham chiếu tới biến instance của lớp hiện tại. Sẽ rất phức tạp nếu như có một biến toàn cục và biến cục bộ trùng tên thì từ khóa **this** sẽ giúp bạn giải quyết vấn đề này.
 
-<div class="example">thể hiện tham chiếu tới lớp</div>
+Ví dụ thể hiện tham chiếu tới lớp
 
 ```java
 public class HocSinh {
@@ -47,8 +47,8 @@ public class HocSinh {
 
 ::result
 
-    <code>0 null</code><br/>
-    <code>0 null </code>
+0 null<br/>
+0 null
 
 ::
 
@@ -80,8 +80,8 @@ public class HocSinh {
 
 ::result
 
-    <code>111 Viet</code><br/>
-    <code>222 Nam</code>
+111 Viet<br/>
+222 Nam
 
 ::
 
@@ -89,7 +89,7 @@ public class HocSinh {
 Nếu biến cục bộ và biến toàn cục có tên khác nhau thì không cần sử dụng từ khóa this.
 ::
 
-## Sử dụng this() gọi constructor của lớp hiện tại.
+## Sử dụng this() gọi constructor của lớp hiện tại
 
 Phương thức `this()` có thể được sử dụng để gọi [constructor](/bai-viet/java/phuong-thuc-khoi-tao) của lớp hiện tại. Cách sử dụng này sẽ hữu dụng hơn nếu bạn có nhiều [constructor](/bai-viet/java/phuong-thuc-khoi-tao) trong một lớp và bạn muốn sử dụng lại.
 
@@ -124,9 +124,9 @@ public class HocSinh2 {
 
 ::result
 
-    <code>gọi Constructor mặc định</code><br/>
-    <code>111 Viet</code><br/>
-    <code>222 Nam</code>
+gọi Constructor mặc định<br/>
+111 Viet<br/>
+222 Nam
 
 ::
 
@@ -164,8 +164,8 @@ public class HocSinh3 {
 
 ::result
 
-    <code>111 Viet</code><br/>
-    <code>222 Nam</code>
+111 Viet<br/>
+222 Nam
 
 ::
 
@@ -204,8 +204,8 @@ public class HocSinh4 {
 
 ::result
 
-    <code>Xin chao Thaycacac</code><br/>
-    <code>Hello Thaycacac</code>
+Xin chao Thaycacac<br/>
+Hello Thaycacac
 
 ::
 
@@ -233,7 +233,7 @@ public class HocSinh5 {
 
 ::result
 
-    <code>Hello Thaycacac</code>
+Hello Thaycacac
 
 ::
 
@@ -270,7 +270,7 @@ class A4 {
 
 ::result
 
-    <code>10</code>
+10
 
 ::
 
@@ -297,6 +297,6 @@ class Test1 {
 
 ::result
 
-    <code>Hello Thaycacac</code>
+Hello Thaycacac
 
 ::

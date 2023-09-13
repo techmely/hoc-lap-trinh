@@ -62,7 +62,7 @@ public class ArraylistAndLinkedListExample {
 
 ::result
 
-    <code>arraylist: [Java, C++, PHP, Python]</code><br/>
-    <code>linkedlist: [Hiberante, Struts2, Spring, Mybatis]</code><br/>
+arraylist: [Java, C++, PHP, Python]</code><br/>
+linkedlist: [Hiberante, Struts2, Spring, Mybatis]</code><br/>
 
 ::

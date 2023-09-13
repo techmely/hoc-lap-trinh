@@ -71,7 +71,7 @@ public class Thaycacac {
 
 ::result
 
-    <code>Đây là số 2</code>
+Đây là số 2</code>
 
 ::
 
@@ -134,11 +134,11 @@ public class Thaycacac {
 
 ::result
 
-    <code>Đây là số 2</code><br/>
-    <code>Đây là số 3</code><br/>
-    <code>Đây là số 4</code><br/>
-    <code>Đây là số 5</code><br/>
-    <code>Chạy vào khối default</code><br/>
+Đây là số 2</code><br/>
+Đây là số 3</code><br/>
+Đây là số 4</code><br/>
+Đây là số 5</code><br/>
+Chạy vào khối default</code><br/>
 
 ::
 

@@ -62,8 +62,8 @@ public class TestThrows1 {
 
 ::result
 
-    <code>ngoai le duoc xu ly</code><br/>
-    <code>luong binh thuong...</code><br/>
+ngoai le duoc xu ly</code><br/>
+luong binh thuong...</code><br/>
 
 ::
 
@@ -96,8 +96,8 @@ public class TestThrows2 {
 
 ::result
 
-    <code>Ngoai le duoc xu ly</code><br/>
-    <code>Luong binh thuong...</code><br/>
+Ngoai le duoc xu ly</code><br/>
+Luong binh thuong...</code><br/>
 
 ::
 
@@ -125,8 +125,8 @@ public class TestThrows2 {
 
 ::result
 
-    <code>Thiet bi dang hoat dong tot</code><br/>
-    <code>Luong binh thuong...</code><br/>
+Thiet bi dang hoat dong tot</code><br/>
+Luong binh thuong...</code><br/>
 
 ::
 
@@ -152,6 +152,6 @@ public class TestThrows2 {
 
 ::result
 
-    <code>Exception in thread "main" java.io.IOException: Thiet bi</code>
+Exception in thread "main" java.io.IOException: Thiet bi</code>
 
 ::
