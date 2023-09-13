@@ -11,7 +11,7 @@ image: https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/0e/cf95afe85a4701937198
 position: 6
 ---
 
-Từ khóa `throw` trong Java được sử dụng để ném ra một `exception` tường minh. Chúng ta có thể ném hoặc `Checked Exception` hoặc `Unchecked Exception` trong Java bởi từ khóa `throw`. Từ khóa `throw` được sử dụng chủ yếu để ném các `Custom Exceptio`n (là các exception được định nghĩa bởi lập trình viên).
+Từ khóa `throw` trong Java được sử dụng để ném ra một `exception` tường minh. Chúng ta có thể ném hoặc `Checked Exception` hoặc `Unchecked Exception` trong Java bởi từ khóa `throw`. Từ khóa `throw` được sử dụng chủ yếu để ném các `Custom Exception` (là các exception được định nghĩa bởi lập trình viên).
 
 Cú pháp từ khóa throw:
 
@@ -28,7 +28,7 @@ throw new IOException("File không tồn tại");
 
 ## Ví dụ về từ khóa throw trong java
 
-<div class="example">throw ra ngoại lệ nhưng không xử lý: Trong ví dụ này, chúng ta tạo ra phương thức validate() với tham số truyền vào là giá trị integer. Nếu tuổi dưới 18, chúng ta ném ra ngoại lệ ArithmeticException nếu không in ra một thông báo "welcome".</div>
+Ví dụ `throw` ra ngoại lệ nhưng không xử lý: Trong ví dụ này, chúng ta tạo ra phương thức `validate()` với tham số truyền vào là giá trị integer. Nếu tuổi dưới 18, chúng ta ném ra ngoại lệ `ArithmeticException` nếu không in ra một thông báo "welcome".</div>
 
 ```java
 public class TestThrow1 {
@@ -48,11 +48,11 @@ public class TestThrow1 {
 
 ::result
 
-Exception in thread "main" java.lang.ArithmeticException: not valid</code><br/>
+Exception in thread "main" java.lang.ArithmeticException: not valid<br/>
 
 ::
 
-<div class="example">throw ra ngoại lệ nhưng có xử lý</div>
+Ví dụ `throw` ra ngoại lệ nhưng có xử lý
 
 ```java
 public class TestThrow2 {
@@ -76,7 +76,7 @@ public class TestThrow2 {
 
 ::result
 
-not valid</code><br/>
-rest of the code...</code>
+not valid<br/>
+rest of the code...
 
 ::

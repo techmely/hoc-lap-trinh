@@ -35,7 +35,7 @@ Chỉ cần thêm cặp dấu nháy kép `""` là xong. Còn về hình thức t
 
 Khi thực hiện tính toán, JavaScript sẽ chuyển đổi các kiểu dữ liệu về kiểu dữ liệu number.
 
-<div class="example">phép chia giữa hai string:</div>
+Ví dụ phép chia giữa hai string:
 
 ```js
 console.log("10" / "2"); // 5

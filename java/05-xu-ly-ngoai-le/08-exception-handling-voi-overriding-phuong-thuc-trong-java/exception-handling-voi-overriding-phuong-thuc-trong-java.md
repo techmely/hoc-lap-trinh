@@ -34,7 +34,7 @@ class TestExceptionChild extends Parent{
 
 ::result
 
-Compile Time Error</code>
+Compile Time Error
 
 ::
 
@@ -59,7 +59,7 @@ class TestExceptionChild1 extends Parent{
 
 ::result
 
-child</code>
+child
 
 ::
 
@@ -67,7 +67,7 @@ child</code>
 
 Nếu phương thức lớp cha khai báo một exception thì phương thức ghi đè của lớp con có thể khai báo cùng `exception` đó, `exception` của lớp con, hoặc không khai báo `exception` nào, nhưng không thể khai báo `exception` cha.
 
-<div class="example">trường hợp phương thức ghi đè của lớp con khai báo exception cha</div>
+Ví dụ trường hợp phương thức ghi đè của lớp con khai báo exception cha
 
 ```java
 import java.io.*;
@@ -89,11 +89,11 @@ class TestExceptionChild2 extends Parent{
 
 ::result
 
-Compile Time Error</code>
+Compile Time Error
 
 ::
 
-<div class="example">trường hợp phương thức ghi đè của lớp con khai báo cùng exception đó</div>
+Ví dụ trường hợp phương thức ghi đè của lớp con khai báo cùng exception đó
 
 ```java
 import java.io.*;
@@ -115,11 +115,11 @@ class TestExceptionChild3 extends Parent{
 
 ::result
 
-child</code>
+child
 
 ::
 
-<div class="example">trường hợp phương thức ghi đè của lớp con khai báo exception của lớp con</div>
+Ví dụ trường hợp phương thức ghi đè của lớp con khai báo exception của lớp con
 
 ```java
 import java.io.*;
@@ -141,11 +141,11 @@ class TestExceptionChild4 extends Parent{
 
 ::result
 
-child</code>
+child
 
 ::
 
-<div class="example">trường hợp phương thức ghi đè của lớp con không khai báo exception nào</div>
+Ví dụ trường hợp phương thức ghi đè của lớp con không khai báo exception nào
 
 ```java
 import java.io.*;
@@ -167,6 +167,6 @@ class TestExceptionChild5 extends Parent{
 
 ::result
 
-child</code>
+child
 
 ::

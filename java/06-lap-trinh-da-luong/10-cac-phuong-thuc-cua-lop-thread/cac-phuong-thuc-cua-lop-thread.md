@@ -25,7 +25,7 @@ position: 10
 
 Luồng này sẽ kết thúc phương thức `run()` bằng cách ném ra 1 ngoại lệ ThreadDeath, điều này cũng sẽ làm luồng kết thúc 1 cách ép buộc. Nếu giả sử, trước khi gọi `stop()` mà luồng đang nắm giữa 1 đối tượng nào đó hoặc 1 tài nguyên nào đó mà luồng khác đang chờ thì có thể dẫn tới việc sảy ra deadlock.
 
-<div class="example">sử dụng hàm suspend, resume, stop</div>
+Ví dụ sử dụng hàm suspend, resume, stop
 
 ```java
 class RunnableDemo implements Runnable {
@@ -100,40 +100,40 @@ class RunnableDemo implements Runnable {
 
 ::result
 
-Creating Thread-1</code><br/>
-Starting Thread-1</code><br/>
-Creating Thread-2</code><br/>
-Starting Thread-2</code><br/>
-Running Thread-1</code><br/>
-Thread: Thread-1, 10</code><br/>
-Running Thread-2</code><br/>
-Thread: Thread-2, 10</code><br/>
-Thread: Thread-1, 9</code><br/>
-Thread: Thread-2, 9</code><br/>
-Thread: Thread-1, 8</code><br/>
-Thread: Thread-2, 8</code><br/>
-Thread: Thread-1, 7</code><br/>
-Thread: Thread-2, 7</code><br/>
-Suspending First Thread</code><br/>
-Thread: Thread-2, 6</code><br/>
-Thread: Thread-2, 5</code><br/>
-Thread: Thread-2, 4</code><br/>
-Resuming First Thread</code><br/>
-Suspending thread Two</code><br/>
-Thread: Thread-1, 6</code><br/>
-Thread: Thread-1, 5</code><br/>
-Thread: Thread-1, 4</code><br/>
-Thread: Thread-1, 3</code><br/>
-Resuming thread Two</code><br/>
-Thread: Thread-2, 3</code><br/>
-Waiting for threads to finish.</code><br/>
-Thread: Thread-1, 2</code><br/>
-Thread: Thread-2, 2</code><br/>
-Thread: Thread-1, 1</code><br/>
-Thread: Thread-2, 1</code><br/>
-Thread Thread-1 exiting.</code><br/>
-Thread Thread-2 exiting.</code><br/>
-Main thread exiting.</code><br/>
+Creating Thread-1<br/>
+Starting Thread-1<br/>
+Creating Thread-2<br/>
+Starting Thread-2<br/>
+Running Thread-1<br/>
+Thread: Thread-1, 10<br/>
+Running Thread-2<br/>
+Thread: Thread-2, 10<br/>
+Thread: Thread-1, 9<br/>
+Thread: Thread-2, 9<br/>
+Thread: Thread-1, 8<br/>
+Thread: Thread-2, 8<br/>
+Thread: Thread-1, 7<br/>
+Thread: Thread-2, 7<br/>
+Suspending First Thread<br/>
+Thread: Thread-2, 6<br/>
+Thread: Thread-2, 5<br/>
+Thread: Thread-2, 4<br/>
+Resuming First Thread<br/>
+Suspending thread Two<br/>
+Thread: Thread-1, 6<br/>
+Thread: Thread-1, 5<br/>
+Thread: Thread-1, 4<br/>
+Thread: Thread-1, 3<br/>
+Resuming thread Two<br/>
+Thread: Thread-2, 3<br/>
+Waiting for threads to finish.<br/>
+Thread: Thread-1, 2<br/>
+Thread: Thread-2, 2<br/>
+Thread: Thread-1, 1<br/>
+Thread: Thread-2, 1<br/>
+Thread Thread-1 exiting.<br/>
+Thread Thread-2 exiting.<br/>
+Main thread exiting.<br/>
 
 ::
 
@@ -148,9 +148,9 @@ Hàm này dùng để dừng hẳn luồng. So với `suspend()` thì `destroy()
 
 Phương thức này kiểm tra xem luồng còn active hay không. Phương thức sẽ trả về true nếu luồng đã được `start()` và chưa rơi vào trạng thái dead. Nếu phương thức trả về false thì luồng đang ở trạng thái _"New Thread"_ hoặc là đang ở trạng thái _"Dead"_.
 
-## Hàm yeild() của lớp Thread
+## Hàm `yield()` của lớp Thread
 
-Hệ điều hành đa nhiệm sẽ phân phối CPU cho các tiến trình, các luồng theo vòng xoay. Mỗi luồng sẽ được cấp `CPU` trong 1 khoảng thời gian nhất định, sau đó trả lại CPU cho hệ điều hành, hệ điều hành sẽ cấp CPU cho luồng khác. Các luồng sẽ nằm chờ trong hàng đợi Ready để nhận CPU theo thứ tự. Java có cung cấp cho chúng ta 1 phương thức khá đặc biệt là `yeild()`, khi gọi phương thức này luồng sẽ bị ngừng cấp CPU và nhường cho luồng tiếp theo trong hàng chờ Ready. Luồng không phải ngưng cấp CPU như suspend mà chỉ ngưng cấp trong lần nhận CPU đó mà thôi.
+Hệ điều hành đa nhiệm sẽ phân phối CPU cho các tiến trình, các luồng theo vòng xoay. Mỗi luồng sẽ được cấp `CPU` trong 1 khoảng thời gian nhất định, sau đó trả lại CPU cho hệ điều hành, hệ điều hành sẽ cấp CPU cho luồng khác. Các luồng sẽ nằm chờ trong hàng đợi Ready để nhận CPU theo thứ tự. Java có cung cấp cho chúng ta 1 phương thức khá đặc biệt là `yield()`, khi gọi phương thức này luồng sẽ bị ngừng cấp CPU và nhường cho luồng tiếp theo trong hàng chờ Ready. Luồng không phải ngưng cấp CPU như suspend mà chỉ ngưng cấp trong lần nhận CPU đó mà thôi.
 
 ## Hàm sleep(), join() của lớp Thread
 

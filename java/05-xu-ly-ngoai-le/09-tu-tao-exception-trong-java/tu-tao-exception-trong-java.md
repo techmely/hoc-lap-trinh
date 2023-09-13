@@ -13,7 +13,7 @@ position: 9
 
 Tự tạo exception (Custom Exception) là ngoại lệ do bạn tự định nghĩa hay bạn tự tạo riêng cho mình. Custom Exception trong Java được sử dụng để tùy biến ngoại lệ theo yêu cầu của người dùng. Bởi sự giúp đỡ của loại ngoại lệ này, bạn có thể có riêng kiểu và thông điệp ngoại lệ cho mình.
 
-<div class="example">Tạo một custom exception</div>
+Ví dụ tạo một `custom exception`
 
 ```java
 // File: InvalidAgeException.java
@@ -49,6 +49,6 @@ class TestCustomException1 {
 
 ::result
 
-Output:Exception occured: InvalidAgeException:not valid rest of the code...</code>
+Output:Exception occured: InvalidAgeException:not valid rest of the code...
 
 ::

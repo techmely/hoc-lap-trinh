@@ -25,7 +25,7 @@ Khi một luồng mới được tạo ra, nó được thừa hưởng đặc t
 
 Một trong các luồng Deamon quan trọng của Java đó là luồng gom rác, nghĩa là gom các tài nguyên không còn sử dụng để giải phóng bộ nhớ. Khi tất cả các luồng người dùng không còn hoạt động nữa luồng gom rác cũng bị dừng theo.
 
-<div class="example">tạo một luồng WorkingThread</div>
+Ví dụ tạo một luồng WorkingThread
 
 ```java
 package com.gpcoder.daemonthread;
@@ -51,7 +51,7 @@ public class WorkingThread implements Runnable {
 }
 ```
 
-<div class="example">chương trình Non-Daemon Thread</div>
+Ví dụ chương trình Non-Daemon Thread
 
 ```java
 package com.gpcoder.daemonthread;
@@ -86,7 +86,7 @@ Processing working thread</code></br>
 
 Như bạn thấy luồng `Non-Daemon Thread` chạy song song với `MainThread`. Khi MainThread kết thúc thì luồng `Non-Daemon Thread` vẫn còn tiếp tục xử lý cho đến khi hoàn thành.
 
-<div class="example">Chương trình Non-Daemon Thread</div>
+Ví dụ chương trình Non-Daemon Thread
 
 ```java
 package com.gpcoder.daemonthread;

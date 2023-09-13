@@ -38,14 +38,13 @@ Trong cú pháp trên thì:
 
 ::alert{type="infor"}
 
-  <ul>
-    <li>Mảng trong Java là một đối tượng</li>
-    <li>Cũng như các đối tượng khác, mảng phải được tạo ra bằng toán tử `new` như sau: Tên_mảng = new Kiểu_dữ_liệu[spt];</li>
-    <li>Khi mảng được tạo ra thì mỗi phần tử của mảng sẽ nhận một giá trị mặc định, quy tắc khởi tạo giá trị cho các phần tử của mảng cũng chính là quy tắc khởi đầu giá trị cho các thuộc tính của đối tượng, tức là mỗi phần tử của mảng sẽ nhận giá trị: (0 - đối với kiểu number, '\0' - đối với kiểu dữ liệu là ký tự, false - đối với kiểu dữ liệu boolean, null - nếu kiểu dữ liệu là một lớp nào đó)</li>
-  </ul>
+- Mảng trong Java là một đối tượng
+- Cũng như các đối tượng khác, mảng phải được tạo ra bằng toán tử `new` như sau: Tên_mảng = new Kiểu_dữ_liệu[spt];
+- Khi mảng được tạo ra thì mỗi phần tử của mảng sẽ nhận một giá trị mặc định, quy tắc khởi tạo giá trị cho các phần tử của mảng cũng chính là quy tắc khởi đầu giá trị cho các thuộc tính của đối tượng, tức là mỗi phần tử của mảng sẽ nhận giá trị: (0 - đối với kiểu number, '\0' - đối với kiểu dữ liệu là ký tự, false - đối với kiểu dữ liệu boolean, null - nếu kiểu dữ liệu là một lớp nào đó)
+
 ::
 
-<div class="example">Khai báo một mảng số nguyên gồm 100 phần tử</div>
+Ví dụ: khai báo một mảng số nguyên gồm 100 phần tử
 
 ```java
 // Cách 1
@@ -56,7 +55,7 @@ mangInt = new int[100]; // Tạo ra mảng
 int mangInt[]=new int[100];
 ```
 
-<div class="example">Giả sử ta có lớp SinhVien đã đươc định nghĩa, hãy khai báo một mảng gồm 100 đối tượng của lớp SinhVien</div>
+Ví dụ: giả sử ta có lớp SinhVien đã được định nghĩa, hãy khai báo một mảng gồm 100 đối tượng của lớp SinhVien
 
 ```java
 SinhVien arraySinhVien[] = new SinhVien[100];
@@ -71,7 +70,7 @@ arraySinhVien[1]=new SinhVien("sv02", "Nguyễn Thị Bình", "Bắc Giang");
 arraySinhVien[99]=new SinhVien("sv100", "Đào Thị Mến", "Hà Nam");
 ```
 
-<div class="example">Ngoài cách khai báo trên Java còn cho phép ta kết hợp cả khai báo và khởi gán các phần tử của mảng theo cách sau: tạo ra một mảng gồm 5 phần tử, các phần tử của mảng lần lượt được gán các giá trị là: 1, 3, 5, 7, 9</div>
+Ngoài cách khai báo trên Java còn cho phép ta kết hợp cả khai báo và khởi gán các phần tử của mảng theo cách sau: tạo ra một mảng gồm 5 phần tử, các phần tử của mảng lần lượt được gán các giá trị là: 1, 3, 5, 7, 9
 
 ```java
 // Với trường hợp là số
@@ -79,7 +78,7 @@ int[] mangInt = {1, 3, 5, 7, 9};
 
 // Với trường hợp là object
 SinhVien[] mangSinhVien = {
-  new	SinhVien("sv01",	"Nguyễn	Văn	A", "HY"),
+  new SinhVien("sv01", "Nguyễn Văn A", "HY"),
   new SinhVien("sv02", "Nguyễn Thị B", "HN"), new SinhVien("sv03", "Đỗ Thị Q", "BG"),
   null
 };
@@ -114,7 +113,7 @@ Lúc này các phần tử của mảng lần lượt được truy xuất như 
 - Phần tử thứ 2 của mảng là `a[1]`
 - Phần tử thứ 3 đồng thời là phần tử cuối cùng của mảng là `a[2]`
 
-<div class="example">Truy cập các phần tử của một mảng trong Java</div>
+Ví dụ: truy cập các phần tử của một mảng trong Java
 
 ```java
 public class Thaycacac {
@@ -127,7 +126,7 @@ public class Thaycacac {
 
 ::result
 
-Honda</code>
+Honda
 
 ::
 
@@ -151,7 +150,7 @@ public class TruyCapArray2 {
 
 ::result
 
-Phần tử đầu tiên: Morning</code>
+Phần tử đầu tiên: Morning
 
 ::
 
@@ -174,7 +173,7 @@ public class Thaycacac {
 
 ::result
 
-Độ dài của mảng cars là: 4</code>
+Độ dài của mảng cars là: 4
 
 ::
 
@@ -195,10 +194,10 @@ public class Thaycacac {
 
 ::result
 
-Honda</code><br/>
-BMW</code><br/>
-Ford</code><br/>
-Mazda</code>
+Honda<br/>
+BMW<br/>
+Ford<br/>
+Mazda
 
 ::
 
@@ -217,10 +216,10 @@ public class Thaycacac {
 
 ::result
 
-Honda</code><br/>
-BMW</code><br/>
-Ford</code><br/>
-Mazda</code>
+Honda<br/>
+BMW<br/>
+Ford<br/>
+Mazda
 
 ::
 
@@ -246,11 +245,11 @@ public class Thaycacac {
 
 ::result
 
-Mảng cars sau khi được sắp xếp:</code><br/>
-BMW</code><br/>
-Ford</code><br/>
-Honda</code><br/>
-Mazda</code>
+Mảng cars sau khi được sắp xếp:<br/>
+BMW<br/>
+Ford<br/>
+Honda<br/>
+Mazda
 
 ::
 
@@ -278,7 +277,7 @@ public class Thaycacac {
 
 ::result
 
-3</code><br/>
+3
 
 ::
 
@@ -301,7 +300,7 @@ public class Thaycacac {
 
 ::result
 
-caffein</code><br/>
+caffein<br/>
 
 ::
 
@@ -338,10 +337,10 @@ int a[][]={
 }
 ```
 
-Khai báo trên sẽ tạo ra một mảng hai chiều gồm: 3 hàng, nhưng trên mỗi hàng lại có số phần tử khác nhau, cụ thể là: trên hàng thứ nhất có 3 phần tử, hảng 2 gồm 4 phần tử và hàng thứ 3 gồm 2 phần tử.
+Khai báo trên sẽ tạo ra một mảng hai chiều gồm: 3 hàng, nhưng trên mỗi hàng lại có số phần tử khác nhau, cụ thể là: trên hàng thứ nhất có 3 phần tử, hàng thứ 2 gồm 4 phần tử và hàng thứ 3 gồm 2 phần tử.
 
 ::alert{type="infor"}
-Với khai báo trên nếu ta liệt kê các phần tử của mảng theo trình tự từ trái qua phải và từ trên xuống dưới thì các phần tử lần lượt là: <code>a[0][0], a[0][1], a[0][2], a[1][0], a[1][1], a[1][2], a[1][3], a[2][0], a[2][1]</code>
+Với khai báo trên nếu ta liệt kê các phần tử của mảng theo trình tự từ trái qua phải và từ trên xuống dưới thì các phần tử lần lượt là: `a[0][0], a[0][1], a[0][2], a[1][0], a[1][1], a[1][2], a[1][3], a[2][0], a[2][1]`
 ::
 
 ### Truy xuất đến phần tử mảng nhiều chiều
@@ -350,7 +349,7 @@ Với khai báo trên nếu ta liệt kê các phần tử của mảng theo tr�
 tên_mảng[ind1][ind2]
 ```
 
-<div class="example">khai báo và khởi tạo mảng đa chiều trong java</div>
+Ví dụ: khai báo và khởi tạo mảng đa chiều trong java
 
 ```java
 public class TestArray3 {
@@ -373,8 +372,8 @@ public class TestArray3 {
 
 ::result
 
-1 2 3</code><br/>
-2 4 5</code><br/>
-4 4 5</code>
+1 2 3<br/>
+2 4 5<br/>
+4 4 5
 
 ::

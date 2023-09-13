@@ -49,9 +49,9 @@ public class SortedArrayExample {
 
 ::result
 
-[1, 2, 3, 4, 5, 6, 7, 8, 9]</code><br/>
-[5, 1, 2, 3, 4, 6, 7, 9, 8]</code><br/>
-[1, 2, 3, 4, 5, 6, 7, 8, 9]</code><br/>
+[1, 2, 3, 4, 5, 6, 7, 8, 9]<br/>
+[5, 1, 2, 3, 4, 6, 7, 9, 8]<br/>
+[1, 2, 3, 4, 5, 6, 7, 8, 9]<br/>
 
 ::
 
@@ -79,7 +79,7 @@ public class SortedListExample {
 
 ::result
 
-[1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 ::
 
@@ -119,7 +119,7 @@ public class SortedSetExample {
 
 ::result
 
-[1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 ::
 
@@ -181,8 +181,8 @@ public class SortedMapExample {
 
 ::result
 
-Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}</code><br/>
-Sorted map: {11=One, 22=Two, 33=Three, 44=Four, 55=Five</code>
+Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}<br/>
+Sorted map: {11=One, 22=Two, 33=Three, 44=Four, 55=Five
 
 ::
 
@@ -240,8 +240,8 @@ public class SortedMapExample2 {
 
 ::result
 
-Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}</code><br/>
-Sorted map: {55=Five, 44=Four, 11=One, 33=Three, 22=Two}</code>
+Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}<br/>
+Sorted map: {55=Five, 44=Four, 11=One, 33=Three, 22=Two}
 
 ::
 
@@ -292,9 +292,9 @@ public class SortedMapExample3 {
 
 ::result
 
-Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}</code><br/>
-Sorted map by key: {11=One, 22=Two, 33=Three, 44=Four, 55=Five}</code><br/>
-Sorted map by value: {55=Five, 44=Four, 11=One, 33=Three, 22=Two}</code>
+Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}<br/>
+Sorted map by key: {11=One, 22=Two, 33=Three, 44=Four, 55=Five}<br/>
+Sorted map by value: {55=Five, 44=Four, 11=One, 33=Three, 22=Two}
 
 ::
 
@@ -361,7 +361,7 @@ Trong ví dụ trên, tôi đã implement một `interface java.lang.Comparable`
 
 Khi đã cung cấp bộ so sánh, chúng ta có thể sắp xếp một danh sách sinh viên thông qua thương thức `Collections.sort(c)` hay `Arrays.sort(arr)`.
 
-<div class="example">sử dụng Collections.sort()</div>
+Ví dụ sử dụng `Collections.sort()`
 
 ```java
 import java.util.Arrays;
@@ -388,15 +388,15 @@ public class SortedObjectExample1 {
 
 ::result
 
-Student [id=5, name=Five, age=22]</code><br/>
-Student [id=4, name=Four, age=19]</code><br/>
-Student [id=1, name=One, age=22]</code><br/>
-Student [id=3, name=Three, age=20]</code><br/>
-Student [id=2, name=Two, age=18]</code>
+Student [id=5, name=Five, age=22]<br/>
+Student [id=4, name=Four, age=19]<br/>
+Student [id=1, name=One, age=22]<br/>
+Student [id=3, name=Three, age=20]<br/>
+Student [id=2, name=Two, age=18]
 
 ::
 
-<div class="example">sử dụng Arrays.sort()</div>
+Ví dụ sử dụng `Arrays.sort()`
 
 ```java
 import java.util.Arrays;
@@ -422,11 +422,11 @@ public class SortedObjectExample2 {
 
 ::result
 
-Student [id=5, name=Five, age=22]</code><br/>
-Student [id=4, name=Four, age=19]</code><br/>
-Student [id=1, name=One, age=22]</code><br/>
-Student [id=3, name=Three, age=20]</code><br/>
-Student [id=2, name=Two, age=18]</code>
+Student [id=5, name=Five, age=22]<br/>
+Student [id=4, name=Four, age=19]<br/>
+Student [id=1, name=One, age=22]<br/>
+Student [id=3, name=Three, age=20]<br/>
+Student [id=2, name=Two, age=18]
 
 ::
 
@@ -434,7 +434,7 @@ Student [id=2, name=Two, age=18]</code>
 
 Đối với cách này không làm thay đổi lớp gốc (original class). Chúng ta có thể tạo một `class` mới, sử dụng `Anonymous function`, `inner class` hoặc sử dụng `lamda`, `implement Comparator Interface` để cài đặt bộ so sánh.
 
-<div class="example">tạo class mới cài đặt interface Comparator</div>
+Ví dụ tạo `class` mới cài đặt `interface Comparator`
 
 ```java
 import java.util.Comparator;
@@ -448,7 +448,7 @@ public class AgeComparator implements Comparator<Student> {
 }
 ```
 
-<div class="example">sử dụng Comparator với Collections.sort()</div>
+Ví dụ sử dụng `Comparator` với `Collections.sort()`
 
 ```java
 import java.util.Arrays;
@@ -495,7 +495,7 @@ public class SortedObjectExample3 {
 }
 ```
 
-<div class="example">sử dụng Comparator với Arrays.sort()</div>
+Ví dụ sử dụng Comparator với `Arrays.sort()`
 
 ```java
 import java.util.Arrays;
@@ -690,10 +690,10 @@ public class SortedObjectExample7 {
 
 ::result
 
-Student [id=2, name=Two, age=18]</code><br/>
-Student [id=3, name=Three, age=20]</code><br/>
-Student [id=1, name=One, age=22]</code><br/>
-Student [id=4, name=Four, age=19]</code><br/>
-Student [id=5, name=Five, age=22]</code>
+Student [id=2, name=Two, age=18]<br/>
+Student [id=3, name=Three, age=20]<br/>
+Student [id=1, name=One, age=22]<br/>
+Student [id=4, name=Four, age=19]<br/>
+Student [id=5, name=Five, age=22]
 
 ::

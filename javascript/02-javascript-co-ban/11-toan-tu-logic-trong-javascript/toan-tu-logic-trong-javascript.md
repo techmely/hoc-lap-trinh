@@ -133,7 +133,7 @@ if (a || b) {
 }
 ```
 
-<div class="example">kết hợp với toán tử so sánh</div>
+Ví dụ kết hợp với toán tử so sánh
 
 ```js
 const hour = 20;
@@ -248,7 +248,7 @@ if (a && b) {
 }
 ```
 
-<div class="example">kết hợp toán tử so sánh</div>
+Ví dụ kết hợp toán tử so sánh
 
 ```js
 const hour = 12;

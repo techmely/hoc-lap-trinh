@@ -49,13 +49,13 @@ Vậy thì Java đã giải quyết vấn đề trên với enum cho phép chún
 public enum Gender {
     MALE,
     FEMALE,
-    OHTER
+    OTHER
 }
 ```
 
 ## Khai báo Enum trong Java
 
-<div class="example">enum định nghĩa bên trong một lớp</div>
+`enum` định nghĩa bên trong một lớp
 
 ```java
 public class EnumExample {
@@ -72,11 +72,11 @@ public class EnumExample {
 
 ::result
 
-MONDAY</code>
+MONDAY
 
 ::
 
-<div class="example">enum định nghĩa bên ngoài một lớp</div>
+Ví dụ `enum` định nghĩa bên ngoài một lớp
 
 ```java
 enum WeekDay { // Không được khai báo access modifier (sử dụng default)
@@ -93,7 +93,7 @@ public class EnumExample {
 
 ::result
 
-MONDAY</code>
+MONDAY
 
 ::
 
@@ -118,13 +118,13 @@ public class EnumExample {
 
 ::result
 
-MONDAY</code><br/>
-TUESDAY</code><br/>
-WEDNESDAY</code><br/>
-THURSDAY</code><br/>
-FRIDAY</code><br/>
-SATURDAY</code><br/>
-SUNDAY</code>
+MONDAY<br/>
+TUESDAY<br/>
+WEDNESDAY<br/>
+THURSDAY<br/>
+FRIDAY<br/>
+SATURDAY<br/>
+SUNDAY
 
 ::
 
@@ -175,14 +175,14 @@ public class EnumExample3 {
 
 ::result
 
-MONDAY = 2</code><br/>
-TUESDAY = 3</code><br/>
-WEDNESDAY = 4</code><br/>
-THURSDAY = 5</code><br/>
-FRIDAY = 7</code><br/>
-SATURDAY = 7</code><br/>
-SUNDAY = 1</code><br/>
-value 3 is TUESDAY</code><br/>
+MONDAY = 2<br/>
+TUESDAY = 3<br/>
+WEDNESDAY = 4<br/>
+THURSDAY = 5<br/>
+FRIDAY = 7<br/>
+SATURDAY = 7<br/>
+SUNDAY = 1<br/>
+value 3 is TUESDAY<br/>
 
 ::
 
@@ -218,8 +218,8 @@ public class EnumExample {
 
 ::result
 
-Today is holiday</code><br/>
-Today is holiday</code>
+Today is holiday<br/>
+Today is holiday
 
 ::
 
@@ -253,7 +253,7 @@ public class EnumExample {
 
 ::result
 
-Today is holiday</code>
+Today is holiday
 
 ::
 
@@ -292,7 +292,7 @@ public class EnumExample3 {
 
 ::result
 
-Today is holiday</code><br/>
-Today is holiday</code>
+Today is holiday<br/>
+Today is holiday
 
 ::

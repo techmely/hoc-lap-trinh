@@ -53,14 +53,14 @@ class TestMultiPriority1 extends Thread {
 
 ::result
 
-Đang chạy luồng:Thread-1</code><br/>
-Đang chạy luồng:Thread-0</code><br/>
-Độ ưu tiên là:1</code><br/>
-Độ ưu tiên là:10</code>
+Đang chạy luồng:Thread-1<br/>
+Đang chạy luồng:Thread-0<br/>
+Độ ưu tiên là:1<br/>
+Độ ưu tiên là:10
 
 ::
 
-<div class="example">một ví dụ khác</div>
+Một ví dụ khác
 
 ```java
 // file: WorkingThread.java
@@ -106,23 +106,23 @@ public class ThreadInfoExample {
 
 ::result
 
-ID luồng 1: 10</code><br/>
-ID luồng 2: 11</code><br/>
-ID luồng 3: 12</code><br/>
-Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
-Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
-Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
-Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
-Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
-Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
-Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
-Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
-Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
-Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
-Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
-Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
-Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
-Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
-Luồng: Luồng 1 có độ ưu tiên là 1</code>
+ID luồng 1: 10<br/>
+ID luồng 2: 11<br/>
+ID luồng 3: 12<br/>
+Luồng: Luồng 2 có độ ưu tiên là 5<br/>
+Luồng: Luồng 2 có độ ưu tiên là 5<br/>
+Luồng: Luồng 2 có độ ưu tiên là 5<br/>
+Luồng: Luồng 2 có độ ưu tiên là 5<br/>
+Luồng: Luồng 2 có độ ưu tiên là 5<br/>
+Luồng: Luồng 1 có độ ưu tiên là 1<br/>
+Luồng: Luồng 3 có độ ưu tiên là 10<br/>
+Luồng: Luồng 3 có độ ưu tiên là 10<br/>
+Luồng: Luồng 3 có độ ưu tiên là 10<br/>
+Luồng: Luồng 3 có độ ưu tiên là 10<br/>
+Luồng: Luồng 3 có độ ưu tiên là 10<br/>
+Luồng: Luồng 1 có độ ưu tiên là 1<br/>
+Luồng: Luồng 1 có độ ưu tiên là 1<br/>
+Luồng: Luồng 1 có độ ưu tiên là 1<br/>
+Luồng: Luồng 1 có độ ưu tiên là 1
 
 ::

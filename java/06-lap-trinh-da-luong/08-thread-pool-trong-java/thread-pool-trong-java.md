@@ -90,7 +90,7 @@ public class WorkerThread implements Runnable {
 }
 ```
 
-<div class="example">sử dụng newSingleThreadExecutor()</div>
+Ví dụ sử dụng `newSingleThreadExecutor()`
 
 ```java
 import java.util.concurrent.ExecutorService;
@@ -121,31 +121,31 @@ Trong chương trình trên, tôi đã tạo ra `ThreadPool` sử dụng phươn
 
 ::result
 
-pool-1-thread-1 Starting. Task = 1<code></br>
-pool-1-thread-1 Finished.<code></br>
-pool-1-thread-1 Starting. Task = 2<code></br>
-pool-1-thread-1 Finished.<code></br>
-pool-1-thread-1 Starting. Task = 3<code></br>
-pool-1-thread-1 Finished.<code></br>
-pool-1-thread-1 Starting. Task = 4<code></br>
-pool-1-thread-1 Finished.<code></br>
-pool-1-thread-1 Starting. Task = 5<code></br>
-pool-1-thread-1 Finished.<code></br>
-pool-1-thread-1 Starting. Task = 6<code></br>
-pool-1-thread-1 Finished.<code></br>
-pool-1-thread-1 Starting. Task = 7<code></br>
-pool-1-thread-1 Finished.<code></br>
-pool-1-thread-1 Starting. Task = 8<code></br>
-pool-1-thread-1 Finished.<code></br>
-pool-1-thread-1 Starting. Task = 9<code></br>
-pool-1-thread-1 Finished.<code></br>
-pool-1-thread-1 Starting. Task = 10<code></br>
-pool-1-thread-1 Finished.<code></br>
-Finished all threads<code></br>
+pool-1-thread-1 Starting. Task = 1</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 2</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 3</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 4</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 5</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 6</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 7</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 8</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 9</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 10</br>
+pool-1-thread-1 Finished.</br>
+Finished all threads</br>
 
 ::
 
-<div class="example">sử dụng newFixedThreadPool()</div>
+Ví dụ sử dụng `newFixedThreadPool()`
 
 ```java
 import java.util.concurrent.ExecutorService;
@@ -179,31 +179,31 @@ Trong chương trình trên, tôi đã tạo ra `ThreadPool` có kích thước 
 
 ::result
 
-pool-1-thread-3 Starting. Task = 3</code><br/>
-pool-1-thread-2 Starting. Task = 2</code><br/>
-pool-1-thread-1 Starting. Task = 1</code><br/>
-pool-1-thread-4 Starting. Task = 4</code><br/>
-pool-1-thread-5 Starting. Task = 5</code><br/>
-pool-1-thread-2 Finished.</code><br/>
-pool-1-thread-3 Finished.</code><br/>
-pool-1-thread-2 Starting. Task = 6</code><br/>
-pool-1-thread-3 Starting. Task = 7</code><br/>
-pool-1-thread-1 Finished.</code><br/>
-pool-1-thread-5 Finished.</code><br/>
-pool-1-thread-4 Finished.</code><br/>
-pool-1-thread-5 Starting. Task = 9</code><br/>
-pool-1-thread-1 Starting. Task = 8</code><br/>
-pool-1-thread-4 Starting. Task = 10</code><br/>
-pool-1-thread-3 Finished.</code><br/>
-pool-1-thread-2 Finished.</code><br/>
-pool-1-thread-5 Finished.</code><br/>
-pool-1-thread-1 Finished.</code><br/>
-pool-1-thread-4 Finished.</code><br/>
-Finished all threads</code><br/>
+pool-1-thread-3 Starting. Task = 3<br/>
+pool-1-thread-2 Starting. Task = 2<br/>
+pool-1-thread-1 Starting. Task = 1<br/>
+pool-1-thread-4 Starting. Task = 4<br/>
+pool-1-thread-5 Starting. Task = 5<br/>
+pool-1-thread-2 Finished.<br/>
+pool-1-thread-3 Finished.<br/>
+pool-1-thread-2 Starting. Task = 6<br/>
+pool-1-thread-3 Starting. Task = 7<br/>
+pool-1-thread-1 Finished.<br/>
+pool-1-thread-5 Finished.<br/>
+pool-1-thread-4 Finished.<br/>
+pool-1-thread-5 Starting. Task = 9<br/>
+pool-1-thread-1 Starting. Task = 8<br/>
+pool-1-thread-4 Starting. Task = 10<br/>
+pool-1-thread-3 Finished.<br/>
+pool-1-thread-2 Finished.<br/>
+pool-1-thread-5 Finished.<br/>
+pool-1-thread-1 Finished.<br/>
+pool-1-thread-4 Finished.<br/>
+Finished all threads<br/>
 
 ::
 
-<div class="example">sử dụng newCachedThreadPool()</div>
+Ví dụ sử dụng `newCachedThreadPool()`
 
 ```java
 import java.util.concurrent.ExecutorService;
@@ -235,31 +235,31 @@ Trong chương trình trên, tôi đã tạo ra `ThreadPool` sử dụng phươn
 
 ::result
 
-pool-1-thread-1 Starting. Task = 1</code><br/>
-pool-1-thread-2 Starting. Task = 2</code><br/>
-pool-1-thread-3 Starting. Task = 3</code><br/>
-pool-1-thread-4 Starting. Task = 4</code><br/>
-pool-1-thread-5 Starting. Task = 5</code><br/>
-pool-1-thread-1 Finished.</code><br/>
-pool-1-thread-6 Starting. Task = 6</code><br/>
-pool-1-thread-1 Starting. Task = 7</code><br/>
-pool-1-thread-2 Finished.</code><br/>
-pool-1-thread-3 Finished.</code><br/>
-pool-1-thread-3 Starting. Task = 8</code><br/>
-pool-1-thread-4 Finished.</code><br/>
-pool-1-thread-4 Starting. Task = 9</code><br/>
-pool-1-thread-5 Finished.</code><br/>
-pool-1-thread-5 Starting. Task = 10</code><br/>
-pool-1-thread-6 Finished.</code><br/>
-pool-1-thread-1 Finished.</code><br/>
-pool-1-thread-3 Finished.</code><br/>
-pool-1-thread-4 Finished.</code><br/>
-pool-1-thread-5 Finished.</code><br/>
-Finished all threads</code><br/>
+pool-1-thread-1 Starting. Task = 1<br/>
+pool-1-thread-2 Starting. Task = 2<br/>
+pool-1-thread-3 Starting. Task = 3<br/>
+pool-1-thread-4 Starting. Task = 4<br/>
+pool-1-thread-5 Starting. Task = 5<br/>
+pool-1-thread-1 Finished.<br/>
+pool-1-thread-6 Starting. Task = 6<br/>
+pool-1-thread-1 Starting. Task = 7<br/>
+pool-1-thread-2 Finished.<br/>
+pool-1-thread-3 Finished.<br/>
+pool-1-thread-3 Starting. Task = 8<br/>
+pool-1-thread-4 Finished.<br/>
+pool-1-thread-4 Starting. Task = 9<br/>
+pool-1-thread-5 Finished.<br/>
+pool-1-thread-5 Starting. Task = 10<br/>
+pool-1-thread-6 Finished.<br/>
+pool-1-thread-1 Finished.<br/>
+pool-1-thread-3 Finished.<br/>
+pool-1-thread-4 Finished.<br/>
+pool-1-thread-5 Finished.<br/>
+Finished all threads<br/>
 
 ::
 
-<div class="example">sử dụng newScheduledThreadPool()</div>
+Ví dụ sử dụng `newScheduledThreadPool()`
 
 ```java
 import java.util.concurrent.Executors;
@@ -310,25 +310,25 @@ Ta có kết quả của chương trình trên như sau:
 
 ::result
 
-pool-1-thread-1 Starting. Task = 1</code><br/>
-pool-1-thread-2 Starting. Task = 2</code><br/>
-pool-1-thread-1 Finished.</code><br/>
-pool-1-thread-2 Finished.</code><br/>
-pool-1-thread-1 Starting. Task = 3</code><br/>
-pool-1-thread-2 Starting. Task = 4</code><br/>
-pool-1-thread-1 Finished.</code><br/>
-pool-1-thread-2 Finished.</code><br/>
-pool-1-thread-1 Starting. Task = 5</code><br/>
-pool-1-thread-2 Starting. Task = 1</code><br/>
-pool-1-thread-1 Finished.</code><br/>
-pool-1-thread-1 Starting. Task = 2</code><br/>
-pool-1-thread-2 Finished.</code><br/>
-pool-1-thread-2 Starting. Task = 3</code><br/>
-pool-1-thread-1 Finished.</code><br/>
-pool-1-thread-1 Starting. Task = 4</code><br/>
-pool-1-thread-2 Finished.</code><br/>
-pool-1-thread-1 Finished.</code><br/>
-Finished all threads</code><br/>
+pool-1-thread-1 Starting. Task = 1<br/>
+pool-1-thread-2 Starting. Task = 2<br/>
+pool-1-thread-1 Finished.<br/>
+pool-1-thread-2 Finished.<br/>
+pool-1-thread-1 Starting. Task = 3<br/>
+pool-1-thread-2 Starting. Task = 4<br/>
+pool-1-thread-1 Finished.<br/>
+pool-1-thread-2 Finished.<br/>
+pool-1-thread-1 Starting. Task = 5<br/>
+pool-1-thread-2 Starting. Task = 1<br/>
+pool-1-thread-1 Finished.<br/>
+pool-1-thread-1 Starting. Task = 2<br/>
+pool-1-thread-2 Finished.<br/>
+pool-1-thread-2 Starting. Task = 3<br/>
+pool-1-thread-1 Finished.<br/>
+pool-1-thread-1 Starting. Task = 4<br/>
+pool-1-thread-2 Finished.<br/>
+pool-1-thread-1 Finished.<br/>
+Finished all threads<br/>
 
 ::
 
@@ -591,34 +591,34 @@ Hãy xem kết quả thực thi chương trình trên như sau:
 
 ::result
 
-GPCoder-ThreadPool-0 Starting. Task = cmd1</code><br/>
-GPCoder-ThreadPool-1 Starting. Task = cmd2</code><br/>
-GPCoder-ThreadPool-2 Starting. Task = cmd5</code><br/>
-GPCoder-ThreadPool-3 Starting. Task = cmd6</code><br/>
-Task = cmd7 is rejected</code><br/>
-Task = cmd8 is rejected</code><br/>
-Task = cmd9 is rejected</code><br/>
-Task = cmd10 is rejected</code><br/>
-[monitor] [0/2] Active: 0, Completed: 0, Task: 2, isShutdown: false, isTerminated: false</code><br/>
-[monitor] [4/2] Active: 4, Completed: 0, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-GPCoder-ThreadPool-0 Finished.</code><br/>
-GPCoder-ThreadPool-1 Finished.</code><br/>
-GPCoder-ThreadPool-0 Starting. Task = cmd3</code><br/>
-GPCoder-ThreadPool-1 Starting. Task = cmd4</code><br/>
-GPCoder-ThreadPool-2 Finished.</code><br/>
-GPCoder-ThreadPool-3 Finished.</code><br/>
-[monitor] [4/2] Active: 2, Completed: 4, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-[monitor] [4/2] Active: 2, Completed: 4, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-GPCoder-ThreadPool-0 Finished.</code><br/>
-GPCoder-ThreadPool-1 Finished.</code><br/>
-[monitor] [4/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-[monitor] [0/2] Active: 0, Completed: 6, Task: 6, isShutdown: true, isTerminated: true</code><br/>
-[monitor] [0/2] Active: 0, Completed: 6, Task: 6, isShutdown: true, isTerminated: true</code><br/>
+GPCoder-ThreadPool-0 Starting. Task = cmd1<br/>
+GPCoder-ThreadPool-1 Starting. Task = cmd2<br/>
+GPCoder-ThreadPool-2 Starting. Task = cmd5<br/>
+GPCoder-ThreadPool-3 Starting. Task = cmd6<br/>
+Task = cmd7 is rejected<br/>
+Task = cmd8 is rejected<br/>
+Task = cmd9 is rejected<br/>
+Task = cmd10 is rejected<br/>
+[monitor] [0/2] Active: 0, Completed: 0, Task: 2, isShutdown: false, isTerminated: false<br/>
+[monitor] [4/2] Active: 4, Completed: 0, Task: 6, isShutdown: false, isTerminated: false<br/>
+GPCoder-ThreadPool-0 Finished.<br/>
+GPCoder-ThreadPool-1 Finished.<br/>
+GPCoder-ThreadPool-0 Starting. Task = cmd3<br/>
+GPCoder-ThreadPool-1 Starting. Task = cmd4<br/>
+GPCoder-ThreadPool-2 Finished.<br/>
+GPCoder-ThreadPool-3 Finished.<br/>
+[monitor] [4/2] Active: 2, Completed: 4, Task: 6, isShutdown: false, isTerminated: false<br/>
+[monitor] [4/2] Active: 2, Completed: 4, Task: 6, isShutdown: false, isTerminated: false<br/>
+GPCoder-ThreadPool-0 Finished.<br/>
+GPCoder-ThreadPool-1 Finished.<br/>
+[monitor] [4/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false<br/>
+[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false<br/>
+[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false<br/>
+[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false<br/>
+[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false<br/>
+[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false<br/>
+[monitor] [0/2] Active: 0, Completed: 6, Task: 6, isShutdown: true, isTerminated: true<br/>
+[monitor] [0/2] Active: 0, Completed: 6, Task: 6, isShutdown: true, isTerminated: true<br/>
 
 ::
 

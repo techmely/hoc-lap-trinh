@@ -74,7 +74,7 @@ try {
 
 ## Ví dụ sử dụng try catch trong Java
 
-<div class="example">trường hợp không có xử lý ngoại lệ</div>
+Ví dụ trường hợp không có xử lý ngoại lệ
 
 ```java
 public class TestTryCatch1 {
@@ -87,7 +87,7 @@ public class TestTryCatch1 {
 
 ::result
 
-Exception in thread "main" java.lang.ArithmeticException: / by zero at vn.tpv.exception1.TestTryCatch1.main(TestTryCatch1.java:5)</code>
+Exception in thread "main" java.lang.ArithmeticException: / by zero at vn.tpv.exception1.TestTryCatch1.main(TestTryCatch1.java:5)
 
 ::
 
@@ -108,8 +108,8 @@ public class TestTryCatch2 {
 
 ::result
 
-java.lang.ArithmeticException:</code>
-by zero rest of the code...</code>
+java.lang.ArithmeticException:
+by zero rest of the code...
 
 ::
 

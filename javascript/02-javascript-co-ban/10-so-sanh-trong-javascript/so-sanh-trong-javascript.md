@@ -28,13 +28,11 @@ Các toán tử so sánh trong JavaScript bao gồm:
 
 ::alert{type="infor"}
 
-<ul>
-<li>Toán tử so sánh bằng có hai (hoặc ba) dấu bằng.</li>
-<li>Bạn chú ý để tránh nhầm lẫn với toán tử gán - chỉ có một dấu bằng =.</li>
-</ul>
-::
+- Toán tử so sánh bằng có hai (hoặc ba) dấu bằng.
+- Bạn chú ý để tránh nhầm lẫn với toán tử gán - chỉ có một dấu bằng =.
+  ::
 
-<div class="example">các phép toán so sánh:</div>
+Ví dụ các phép toán so sánh:</div>
 
 ```js
 let a = 1;
@@ -264,7 +262,9 @@ Nhưng nếu bạn áp dụng đúng **quy tắc thứ tự ưu tiên** vào đ�
 
 Vì JavaScript sẽ thực hiện so sánh hai số đầu tiên trước, `3 > 2` là đúng nên kết quả của phép so sánh này là `true`. Khi đó, mình có thể viết lại như sau:
 
-    console.log(true > 1); // false
+```javascript
+console.log(true > 1); // false
+```
 
 Rõ ràng, đây là phép so sánh **hai kiểu dữ liệu khác nhau**. Vì vậy, `true` được chuyển thành dạng số và bằng `1`. Mà `1 > 1` là `false`.
 
