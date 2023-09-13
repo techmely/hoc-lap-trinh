@@ -129,7 +129,9 @@ Chúng ta có thể diễn giải đoạn code trên như sau :
 
 > Các bạn có thể áp dụng if else if một cách linh hoạt tùy vào từng trường hợp.
 
-**Lưu ý**: Trong khối lệnh sau if hoặc else chúng ta có thể gọi thêm các cấu trúc if else khác. Nhưng phải để ý tới điều kiện của biểu thức để tránh có lỗi không mong muốn.
+::alert{type="warning"}
+Lưu ý: Trong khối lệnh sau if hoặc else chúng ta có thể gọi thêm các cấu trúc if else khác. Nhưng phải để ý tới điều kiện của biểu thức để tránh có lỗi không mong muốn.
+::
 
 Áp dụng :
 Các bạn đã có thể làm một trò kinh điển đơn giản sử dụng với việc sử dụng if else if.

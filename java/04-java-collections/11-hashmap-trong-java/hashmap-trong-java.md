@@ -407,7 +407,9 @@ Values: 1, 2, ,3,
 
 ::
 
+::alert{type="warning"}
 Trong chương trình trên, lưu ý rằng chúng ta đã import gói `java.util.Map.Entry`. Ở đây, `Map.Entry` là `class` trong của Map interface. Class trong này trả về một view (các phần tử) của map.
+::
 
 Ví dụ sử dụng hàm `iterator()`
 

@@ -32,7 +32,7 @@ _Trong đó:_
 - **ten_bien** là tên của biến, tên biến là một xâu kí tự được đặt theo quy tắc đặt tên của java
 - **InitValue** là giá trị khởi tạo cho biến, đây là phần tuỳ chọn, nếu bỏ qua phần này thì giá trị ban đầu của biến được khởi tạo giá trị mặc định. Ví dụ `kieu_du_lieu` là `int` thì `gia_tri` phải là kiểu số nguyên và nằm trong phạm vi từ -2,147,483,648 đến 2,147,483,647
 
-Nếu cần khai báo nhiều biến có cùng một kiểu dữ liệu ta có thể đặt các khai báo các biến trên một dòng, các biến này được phân cách nhau bởi dấu phảy. Java sẽ xử lý các biến không được khởi đầu giá trị như sau:</p>
+Nếu cần khai báo nhiều biến có cùng một kiểu dữ liệu ta có thể đặt các khai báo các biến trên một dòng, các biến này được phân cách nhau bởi dấu phẩy. Java sẽ xử lý các biến không được khởi đầu giá trị như sau:</p>
 
 - Giá trị 0 cho kiểu dữ liệu số
 - false cho kiểu logic
@@ -101,7 +101,7 @@ Exception in thread "main" java.lang.Error: Unresolved compilation problem: The 
 - Biến instance được tạo khi một đối tượng được tạo bằng việc sử dụng từ khóa `new` và sẽ bị phá hủy khi đối tượng bị phá hủy.
 - Biến instance có thể được sử dụng bởi các phương thức, `constructor`, block, ... Nhưng nó phải được sử dụng thông qua một đối tượng cụ thể.
 - Biến instance có giá trị mặc định phụ thuộc vào kiểu dữ liệu của nó.
-- Bên trong class mà bạn khai báo biến instance, bạn có thể gọi nó trực tiếp bằng tên khi sử dụng ở khắp nới bên trong class đó.
+- Bên trong class mà bạn khai báo biến instance, bạn có thể gọi nó trực tiếp bằng tên khi sử dụng ở khắp nơi bên trong class đó.
 - Bạn được phép sử dụng `access modifier` khi khai báo biến instance, mặc định là `default`.
 
 ```java
@@ -113,7 +113,7 @@ public class SinhVien {
     private int tuoi;
 
     // sử dụng biến ten trong một constructor
-    public Sinhvien(String ten) {
+    public SinhVien(String ten) {
         this.ten = ten;
     }
 
@@ -128,7 +128,7 @@ public class SinhVien {
     }
 
     public static void main(String args[]) {
-        Sinhvien sv = new Sinhvien("Thaycacac");
+        SinhVien sv = new SinhVien("Thaycacac");
         sv.setTuoi(21);
         sv.showStudent();
     }
@@ -151,7 +151,7 @@ Tuoi : 21
 - Trong class, các phương thức sử dụng biến static bằng cách gọi tên của nó khi phương thức đó cũng được khai báo với từ khóa `static`.
 
 ```java
-public class Sinhvien {
+public class SinhVien {
     // biến static 'ten'
     public static String ten = "Thaycacac";
 
@@ -163,7 +163,7 @@ public class Sinhvien {
         System.out.println("Ten : " + ten);
 
         // Sử dụng biến static bằng cách gọi thông qua tên class
-        System.out.println("Ten : " + Sinhvien.tuoi);
+        System.out.println("Ten : " + SinhVien.tuoi);
     }
 }
 ```

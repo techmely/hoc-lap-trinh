@@ -31,7 +31,7 @@ Ví dụ:
 - Hàm `Sqrt()` là một hàm dùng để tính căn bậc hai của một số. Hàm này được định nghĩa trong
   thư viện `math.h` và để sử dụng được hàm này chúng ta cần import thư viện với câu lệnh:`#include<math.h>`
 
-<h3>Advantages of Using C library functions:</h3>
+### Advantages of Using C library functions
 
 1. Các hàm chức năng này "hoạt động":
 
@@ -122,7 +122,7 @@ Enter y: 4
 x + y = 7
 ```
 
-<h3>1. Function prototype</h3>
+### Function prototype
 
 - Nguyên mẫu hàm chỉ là khai báo một hàm gồm tên hàm, các tham số và kiểu trả về. Không chứa
   thân hàm.
@@ -142,7 +142,7 @@ Với ví dụ ở trên ta có thể phân tích hàm `addition()`:
 
 > Nguyên mẫu hàm là không cần thiết nếu hàm do bạn định nghĩa ở trước `main()`.
 
-<h3>2. Function call</h3>
+### Function call
 
 Syntax of function call:
 
@@ -152,7 +152,7 @@ functionName(argument1, argument2, ...);
 
 Trong ví dụ trên ta gọi hàm `addition(x, y);` bên trong hàm `main()`.
 
-<h3>3. Function definition</h3>
+### Function definition
 
 Định nghĩa hàm cho hàm một khối lệnh để hàm thực hiện chức năng cụ thể, như ví dụ ở trên hàm thực hiện chức năng tính tổng hai số và trả về kết quả.
 
@@ -166,19 +166,17 @@ returnType functionName(dataType1 argument1, dataType2 argument2, ...){
 
 > Khi hàm được gọi (function call) trình biên dịch chuyển đến hàm và bắt đầu thực thi các câu lệnh bên trong thân hàm.
 
-<h3>4. Argument & Parameters</h3>
+### Argument & Parameters
 
 - Trong lập trình đối số (argument) là cách chúng ta gọi các biến được truyền cho hàm. Ở ví dụ trên, hai biến **x** và **y** là đối số.
 - Các tham số (parameter) **a** và **b** chấp nhận đối số được truyền vào hàm, được coi là tham số chính thức của hàm.
 
-<p align="center">
-  <img src="https://github.com/AnestAcademy/Course-C-Fundamentals/blob/master/Images/c-function-argument-and-parameter.jpg">
-</p>
+<img src="https://github.com/KungfutechAcademy/Course-C-Fundamentals/blob/master/Images/c-function-argument-and-parameter.jpg">
 
 - Kiểu dữ liệu của đối số và tham số phải trùng với nhau nếu không chương trình sẽ bị lỗi.
 - Một hàm đôi khi cũng không cần truyền đối số.
 
-<h3>5. Return statement</h3>
+### Return statement
 
 Câu lệnh _return_ kết thúc thực thi của một hàm và trả về giá trị cho hàm đang được gọi.
 
@@ -199,15 +197,13 @@ return a+b;
 
 > Kiểu dữ liệu được trả về từ hàm và kiểu dữ liệu trả về được chỉ định trong nguyên mẫu hàm (hoặc định nghĩa hàm) phải khớp nhau.
 
-Chúng ta có thể xem lại cú pháp khởi tạo một hàm tại đây [Structure of a function](<https://github.com/AnestAcademy/Course-C-Fundamentals/blob/master/5.%20Functions%20(coming%20soon)/1.%20Structure%20of%20a%20function.md>).
+Chúng ta có thể xem lại cú pháp khởi tạo một hàm tại đây [Structure of a function](<https://github.com/KungfutechAcademy/Course-C-Fundamentals/blob/master/5.%20Functions%20(coming%20soon)/1.%20Structure%20of%20a%20function.md>).
 
-<h3>6. How user-defined function works?</h3>
+### How user-defined function works?
 
 Cùng xem hình ảnh mô tả cách hoạt động của hàm do người dùng định nghĩa:
 
-<p align="center">
-    <img src="https://github.com/AnestAcademy/Course-C-Fundamentals/blob/master/Images/c-function-how-user-defined-function-work.jpg">
-</p>
+<img src="https://github.com/KungfutechAcademy/Course-C-Fundamentals/blob/master/Images/c-function-how-user-defined-function-work.jpg">
 
 **_Giải thích_**:
 
@@ -215,9 +211,11 @@ Cùng xem hình ảnh mô tả cách hoạt động của hàm do người dùng
 
 - Khi kết thúc việc thực thi các dòng lệnh trong `functionName();` trình biên dịch quay trở lại `main()`.
 
-> Lưu ý: Một hàm với tên được định nghĩa phải là duy nhất.
+::alert{type="warning"}
+Lưu ý: Một hàm với tên được định nghĩa phải là duy nhất.
+::
 
-<h3>7. Advantages of user-defined function</h3>
+### Advantages of user-defined function
 
 - Chương trình sẽ dễ hiểu, dễ duy trì và gỡ lỗi hơn.
 - Code có thể tái sử dụng trong các chương trình khác.

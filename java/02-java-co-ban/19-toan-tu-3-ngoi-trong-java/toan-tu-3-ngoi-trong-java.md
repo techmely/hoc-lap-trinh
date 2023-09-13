@@ -15,7 +15,7 @@ Toán tử điều kiện là một loại toán tử đặc biệt vì nó gồ
 
 ## Toán tử 3 ngôi
 
-![toan-tu-3-ngoi-trong-java](https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png)
+![Toán tử 3 ngôi trong Java](https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png)
 
 **Cú pháp:**
 

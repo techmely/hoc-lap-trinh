@@ -79,9 +79,11 @@ npx @angular/cli@14 new ngft-email-client --create-application=false
 
 Sau khi tạo xong project, chúng ta sẽ tạo thêm 3 applications nữa: 1 shell app, và 2 remote apps (mailbox, calendar).
 
-Lưu ý: chúng ta dùng Router và scss cho cả 3 apps cho thống nhất.
+::alert{type="warning"}
+Lưu ý: chúng ta dùng `Router` và `scss` cho cả 3 apps cho thống nhất.
+::
 
-```
+```bash
 npx ng generate application shell
 
 # ? Would you like to add Angular routing? Yes

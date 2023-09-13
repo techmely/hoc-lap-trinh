@@ -50,7 +50,7 @@ Ví dụ: int[][] arr = {{1, 2}, {3, 4}};
 
 ## Cách tính số phần tử trong mảng đa chiều
 
-Tổng số phần tử được lưu trong mảng đa chiều được tính bằng tích kích thước của tửng mảng bên trong mảng đa chiều. Ví dụ
+Tổng số phần tử được lưu trong mảng đa chiều được tính bằng tích kích thước của từng mảng bên trong mảng đa chiều. Ví dụ
 
 ```java
   mang1[10][20] // kích thước là 10 * 20 = 200 phần tử

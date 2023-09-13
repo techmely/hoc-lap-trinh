@@ -106,10 +106,10 @@ public class Thaycacac {
 ::
 
 ::alert{type="infor"}
-Nếu index vượt ra khoảng chưá của mảng thì chúng ta sẽ bị ném một ngoại lệ. Khoảng hợp lệ 0 đến n – 1( n số lượng phần tử của mảng).
+Nếu `index` vượt ra khoảng chứa của mảng thì chúng ta sẽ bị ném một ngoại lệ. Khoảng hợp lệ `0` đến `n – 1` ( n số lượng phần tử của mảng).
 ::
 
-Ví dụ khi mình truy xuất arr[10] là vị trí không hợp lệ mình sẽ được kết quả sau: `Exception in thread “main” ava.lang.ArrayIndexOutOfBoundsException: 10 at Main.main(Main.java:11)`
+Ví dụ khi mình truy xuất `arr[10]` là vị trí không hợp lệ mình sẽ được kết quả sau: `Exception in thread “main” ava.lang.ArrayIndexOutOfBoundsException: 10 at Main.main(Main.java:11)`
 
 ### Truy xuất tuần tự
 
@@ -171,7 +171,7 @@ Java cung cấp cho chúng ta một số thao tác cơ bản mà chúng ta thư�
 Ví dụ:
 
 ```java
-public static int binarySeach(Object[] a, Object key) // Tìm kiếm phần tử key trong mảng, điều kiện mảng đã được sắp xếp
+public static int binarySearch(Object[] a, Object key) // Tìm kiếm phần tử key trong mảng, điều kiện mảng đã được sắp xếp
 public static boolean equals(long[] a, long[] a2) // So sánh 2 mảng, trả về true nếu bằng nhau(index, value), ngược lại false
 public static void fill(int[] a. int val) // Khởi tạo mảng với giá trị được gán sẵn val
 public static void sort(Object[] a) // Sắp xếp mảng tăng dần

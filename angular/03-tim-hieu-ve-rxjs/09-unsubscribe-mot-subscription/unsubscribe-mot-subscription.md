@@ -258,7 +258,9 @@ Như các bạn thấy thì những phần code ở trên chúng ta phải luôn
 
 Khi làm việc với Angular, bạn hoàn toàn có thể sử dụng `async pipe` cho một Observable hoặc Promise. Async pipe sẽ chịu trách nhiệm subscribe và unsubscribe Observable đó cho bạn.
 
-Lưu ý: bạn chỉ sử dụng async pipe ở ngoài template, ngoài ra bạn có thể dùng nhiều lần cho một Observable sẽ sinh ra nhiều subscription.
+::alert{type="warning"}
+Lưu ý: bạn chỉ sử dụng `async pipe` ở ngoài `template`, ngoài ra bạn có thể dùng nhiều lần cho một `Observable` sẽ sinh ra nhiều `subscription`.
+::
 
 ```html
 <div *ngIf="stream$ | async as stream">
@@ -288,7 +290,9 @@ export class ProductComponent implements OnInit, OnDestroy {
 
 Khi OnDestroy được call, chúng ta sẽ emit một tín hiệu (signal), lúc này stream có sử dụng `takeUntil` sẽ nhận được tín hiệu và ngắt stream phía trên đó.
 
+::alert{type="warning"}
 Lưu ý: luôn đặt `takeUntil` ở cuối, vì nếu bạn đặt lưng chừng thì có thể vẫn có stream phía sau nó sinh ra leak.
+::
 
 Cách làm trên vẫn lặp đi lặp lại phần tạo Subject destroyed. Lúc này chúng ta có thể có một giải pháp khác, đó là tạo một service để làm việc này. Service này sẽ có ràng buộc là có life cycle giống như component.
 

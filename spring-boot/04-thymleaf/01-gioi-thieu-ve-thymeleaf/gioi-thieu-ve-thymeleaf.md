@@ -66,9 +66,12 @@ dụng với **DTD hoặc schema**.
 cho phép sử dụng cú pháp đặc biệt cho các template
 không đánh dấu (markup). Ví dụ về các template như vậy có thể là email hoặc các
 tài liệu thông thường.
+
+::alert{type="warning"}
 Lưu ý rằng, các template **HTML hoặc XML** cũng có thể được xử lý dưới dạng
 **TEXT**, trong trường hợp này, chúng sẽ không được coi là đánh dấu (markup) và tất
 cả các thẻ, DOCTYPE, comment, v.v. sẽ được coi là văn bản thuần túy.
+::
 
 ### Javascript Template
 

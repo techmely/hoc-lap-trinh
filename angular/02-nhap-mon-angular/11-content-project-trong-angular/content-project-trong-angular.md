@@ -122,7 +122,9 @@ Và dù ở **app.component.html** chúng ta có đặt sai thứ tự thì Togg
 </app-toggle>
 ```
 
-> Lưu ý: khi sử dụng _selector_ nếu chúng ta project vào nhiều elements thỏa mãn _selector_ đó thì `ng-content select` sẽ nhận hết tất cả các elements.
+::alert{type="warning"}
+Lưu ý khi sử dụng _selector_ nếu chúng ta project vào nhiều elements thỏa mãn _selector_ đó thì `ng-content select` sẽ nhận hết tất cả các elements.
+::
 
 ### ng-content và ngProjectAs trong angular
 

@@ -123,7 +123,9 @@ Chúng ta có thể có template như sau:
 </div>
 ```
 
+::alert{type="warning"}
 Lưu ý, để có thể sử dụng các components/directives từ Angular Material các bạn cần import `NgModule` tương ứng vào `NgModule` quản lý component hiện tại. Ví dụ trong trường hợp này `SignInComponent` được quản lý bởi `AppModule` nên chúng ta có một số imports sau:
+::
 
 ```ts
 import { MatInputModule } from "@angular/material/input";
@@ -292,7 +294,9 @@ onSubmit(form: NgForm) {
 
 Lời khuyên dành cho bạn là nên dùng `ngSubmit` cho việc listen form submit.
 
-> Lưu ý rằng `ngSubmit` có thể áp dụng cho cả Reactive Forms
+::alert{type="warning"}
+Lưu ý rằng `ngSubmit` có thể áp dụng cho cả `Reactive Forms`
+::
 
 ## ngModel, [ngModel] and [(ngModel)]
 

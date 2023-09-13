@@ -498,9 +498,15 @@ New LinkedList: []<br/>
 
 ::
 
-Lưu ý: Chúng ta cũng có thể sử dụng hàm `removeAll()`để loại bỏ tất cả các phần tử. Tuy nhiên, hàm `clear()` được cho là hiệu quả hơn hàm `removeAll()`.
+::alert{type="warning"}
+Lưu ý:
 
-Chúng ta cũng có thể xóa các phần tử khỏi LinkedList nếu chúng thỏa mãn một điều kiện nhất định. Để làm điều này, chúng ta sử dụng hàm `removeIf()`. Ví dụ:
+- Chúng ta cũng có thể sử dụng hàm `removeAll()`để loại bỏ tất cả các phần tử. Tuy nhiên, hàm `clear()` được cho là hiệu quả hơn hàm `removeAll()`.
+- Chúng ta cũng có thể xóa các phần tử khỏi LinkedList nếu chúng thỏa mãn một điều kiện nhất định. Để làm điều này, chúng ta sử dụng hàm `removeIf()`.
+
+::
+
+Ví dụ:
 
 ```java
 import java.util.LinkedList;
@@ -535,7 +541,9 @@ New LinkedList: [4, 5]<br/>
 
 ::
 
-Lưu ý: `(Integer i)->i<4` là một biểu thức lambda. Để tìm hiểu về biểu thức lambda, hãy truy cập Biểu thức Lambda của Java .
+::alert{type="warning"}
+Lưu ý: `(Integer i)->i<4` là một biểu thức lambda. Để tìm hiểu về biểu thức lambda, hãy truy cập Biểu thức `Lambda` của Java .
+::
 
 ## Deque và Queue trong LinkedList
 

@@ -11,7 +11,7 @@ image: https://user-images.githubusercontent.com/29374426/125040448-de6e1b80-e0c
 position: 21
 ---
 
-## Vòng lặp while - do
+## Vòng lặp while - do trong Java
 
 Vòng lặp while được sử dụng để thực thi nhiều lần một đoạn chương trình, khi một điều kiện vẫn còn đúng. Vòng lặp while thường được sử dụng khi số lần lặp không được xác định trước (Không cố định).
 

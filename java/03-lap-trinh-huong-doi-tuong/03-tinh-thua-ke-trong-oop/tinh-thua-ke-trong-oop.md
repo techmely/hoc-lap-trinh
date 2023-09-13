@@ -15,7 +15,7 @@ position: 3
 
 Ví dụ trong lập trình nó được thể hiện thông qua việc ta có các lớp `mayAsus`, `mayAcer`, `mayLenovo` đều có các thuộc tính (attribute): `chieudai`, `chieurong` và phương thức (method): `upRam()`. Khi đó, nếu chúng ta tạo các lớp này thì chúng ta phải viết trong mỗi lớp đều có 3 phương thức trên. Hơn thế nữa, nếu bạn muốn sửa lại code trong một phương thức nào đó thì bạn phải sửa chúng cả ở 3 lớp sẽ rất tốn thời gian, và có thể dễ sai sót. Vì thế tính kế thừa sẽ được sử dụng trong trường hợp này để giải quyết vấn đề trên.
 
-## Tính kế thừa (Inheritance)
+## Tính kế thừa (Inheritance) trong Java
 
 **Tính kế thừa** cho phép xây dựng một lớp mới dựa trên các định nghĩa của lớp đã có. Có nghĩa là lớp cha có thể chia sẽ dữ liệu và phương thức cho các lớp con. Các lớp con khỏi phải định nghĩa lại, ngoài ra có thể mở rộng các thành phần kế thừa và bổ sung thêm các thành phần mới. Tái sử dụng mã nguồn 1 cách tối ưu, tận dụng được mã nguồn.
 

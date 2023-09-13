@@ -262,7 +262,6 @@ So nay khong thuoc vao khoang 0 - 10
 Lưu ý :
 
 - Chỉ có dạng if thiếu( không có else) chứ **KHÔNG TỒN TẠI** else thiếu( không có if)
-
 - Sự ưu tiên và mặt toán tử trong khi thực hiện lệnh điều kiện if else để tránh phát sinh lỗi không mong muốn.
   Một số bài tập áp dụng :
 

@@ -149,7 +149,9 @@ export class TabPanelComponent implements OnInit, OnDestroy {
 
 Vậy là bây giờ chúng ta chỉ có 2 instances được khởi tạo.
 
-> Lưu ý: với các lazy initialize như trên, mỗi lần chúng ta active một tab nó sẽ tạo lại `TemplateRef` kia một lần.
+::alert{type="warning"}
+Lưu ý: với các lazy initialize như trên, mỗi lần chúng ta active một tab nó sẽ tạo lại `TemplateRef` kia một lần.
+::
 
 ## Query multiple content with ContentChildren
 

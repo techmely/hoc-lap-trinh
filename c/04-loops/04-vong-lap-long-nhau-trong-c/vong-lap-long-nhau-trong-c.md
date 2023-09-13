@@ -55,7 +55,9 @@ do {
 } while (condition);
 ```
 
-_**Lưu ý**: Không có quy tắc nào rằng là một vòng lặp phải được lồng trong đúng loại của nó. Trong thực tế, có thể có bất kỳ loại vòng lặp nào được lồng bên trong bất kỳ loại vòng lặp nào khác và với bất kỳ cấp độ nào._
+::alert{type="warning"}
+Lưu ý: Không có quy tắc nào rằng là một vòng lặp phải được lồng trong đúng loại của nó. Trong thực tế, có thể có bất kỳ loại vòng lặp nào được lồng bên trong bất kỳ loại vòng lặp nào khác và với bất kỳ cấp độ nào.
+::
 
 Ví dụ:
 

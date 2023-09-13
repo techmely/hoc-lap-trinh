@@ -11,16 +11,16 @@ image: https://user-images.githubusercontent.com/29374426/131223902-8d3449d5-dd7
 position: 10
 ---
 
-Từ khoá final trong java có nhiều nghĩa khác nhau, nghĩa của nó tuỳ thuộc vào ngữ cảnh cụ thể, nhưng nói chung nó muốn nói **cái này không thể thay đổi được**.
+Từ khoá `final` trong java có nhiều nghĩa khác nhau, nghĩa của nó tuỳ thuộc vào ngữ cảnh cụ thể, nhưng nói chung nó muốn nói **cái này không thể thay đổi được**.
 
 - **Biến final**: bạn không thể thay đổi giá trị của biến final (nó sẽ là hằng số).
 - **Phương thức final**: bạn không thể ghi đè phương thức final.
 - **Lớp final**: bạn không thể kế thừa lớp final.
 - **Biến static final trống**: Một biến final mà không được khởi tạo tại thời điểm khai báo được gọi là biến final trống.
 
-![image](https://user-images.githubusercontent.com/29374426/131223902-8d3449d5-dd79-4043-9490-129f9ae37aaa.png)
+![Từ khóa final trong Java](https://user-images.githubusercontent.com/29374426/131223902-8d3449d5-dd79-4043-9490-129f9ae37aaa.png)
 
-## Biến final trong Java
+## Biến `final` trong Java
 
 Nếu bạn tạo bất cứ biến nào là `final`, bạn không thể thay đổi giá trị của biến này (nó sẽ là hằng số). Giả sử có một biến final là `PI`. Bạn cố ý thay đổi giá trị của biến này nhưng nó không bị thay đổi, bởi vì biến final một khi được gán giá trị thì không bao giờ thay đổi được.
 
@@ -101,7 +101,9 @@ public class SH1 extends Bike {
 Compile Time Error
 ::
 
-_Chú ý:_ do một lớp là final (tức không thể kế thừa )do vậy ta không thể nào ghi đè các phương thức của lớp này, do vậy đừng cố gắng cho một phương thức của lớp final là final
+::alert{type="warning"}
+Do một lớp là final (tức không thể kế thừa )do vậy ta không thể nào ghi đè các phương thức của lớp này, do vậy đừng cố gắng cho một phương thức của lớp final là final
+::
 
 ## Biến static final trống trong Java
 

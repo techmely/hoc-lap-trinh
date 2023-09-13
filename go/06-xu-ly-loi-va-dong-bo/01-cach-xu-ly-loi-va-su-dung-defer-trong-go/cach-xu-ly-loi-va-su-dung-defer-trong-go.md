@@ -88,7 +88,9 @@ func main() {
 }
 ```
 
+::alert{type="warning"}
 Lưu ý: Go có hàm `panic` và `recover`. `panic` tương đương với phát sinh một ngoại lệ (throw an exception) trong khi `recover` tương đương với `catch`; chúng gần như không được sử dụng.
+::
 
 ## Defer trong Go
 
@@ -167,7 +169,9 @@ func add(a interface{}, b interface{}) interface{} {
 return a.(int) + b.(int)
 ```
 
+::alert{type="warning"}
 Lưu ý là nếu kiểu dữ liệu cần chuyển đôi không tương thích với kiểu `int`, lệnh trên sẽ phát sinh lỗi.
+::
 
 Bạn cũng có thể sử dụng cách sau để kiểm tra kiểu của biến:
 

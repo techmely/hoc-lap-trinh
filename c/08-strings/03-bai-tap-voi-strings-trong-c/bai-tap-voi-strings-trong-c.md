@@ -40,7 +40,7 @@ Màn hình kết quả chương trình:
 Test case 1
 
 ```cpp
-Enter string: Hello Anest
+Enter string: Hello Kungfutech
 Enter character: e
 
 OUTPUT:

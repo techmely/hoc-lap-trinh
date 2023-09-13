@@ -184,7 +184,9 @@ mkdir build_image && cd build_image
 touch Dockerfile
 ```
 
-_Lưu ý_: Filename phải là Dockerfile và không có phần mở rộng
+::alert{type="warning"}
+Lưu ý: Filename phải là Dockerfile và không có phần mở rộng
+::
 
 **Nội dung Dockerfile như sau:**
 

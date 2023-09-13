@@ -11,7 +11,7 @@ image: https://user-images.githubusercontent.com/29374426/137243686-d91b1294-cb1
 position: 15
 ---
 
-Ngoài việc ép kiểu thì chuyển đối kiểu dữ liệu từ kiểu số ngày sang kiểu số khác (ví dụ như từ double thành int) cũng được java hỗ trợ. Bài này [KungFu Tech](https://kungfutech.edu.vn/) sẽ hướng dẫn các bạn một vài cách thông dụng để chuyển đổi qua lại giữa các kiểu dữ liệu.
+Ngoài việc ép kiểu thì chuyển đối kiểu dữ liệu từ kiểu số ngày sang kiểu số khác (ví dụ như từ double thành int) cũng được java hỗ trợ. Bài này [KungFuTech](https://kungfutech.edu.vn/) sẽ hướng dẫn các bạn một vài cách thông dụng để chuyển đổi qua lại giữa các kiểu dữ liệu.
 
 ![Chuyển đổi kiểu dữ liệu trong Java](https://user-images.githubusercontent.com/29374426/137243686-d91b1294-cb1f-4cc4-9e36-130d13a48352.png)
 

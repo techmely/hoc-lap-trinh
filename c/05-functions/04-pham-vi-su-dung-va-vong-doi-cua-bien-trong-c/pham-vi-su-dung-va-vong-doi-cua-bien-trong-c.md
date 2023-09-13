@@ -38,7 +38,7 @@ Ví dụ
 int main(void) {
 
     for (int i = 0; i < 10; ++i) {
-          printf("Hello Anest");
+          printf("Hello Kungfutech");
     }
 
     // Lỗi: i chỉ là biến cục bộ được khai báo trong vòng lặp for nên khi ra khỏi vòng lặp i không tồn tại

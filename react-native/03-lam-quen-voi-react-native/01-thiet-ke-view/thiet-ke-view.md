@@ -50,4 +50,5 @@ Một vài lưu ý:
 
 - Bạn nên biết thuộc tính nào dùng để làm gì, sử dụng tối ưu để hiệu quả nhất (Có thể copy code của ai đó nhưng nên hiểu dòng style nào làm việc gì).
 - Không nên quá rườm rà code ngắn nhưng đạt được yêu cầu là tốt nhất.
-- ::
+
+::

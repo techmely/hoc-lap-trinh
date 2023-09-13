@@ -118,9 +118,9 @@ export class AppComponent {
 }
 ```
 
-Lưu ý: Ngoài những thiết lập mặc định ở trên cho ViewChild, chúng ta còn có thể truyền vào config cho nó với các thông số chi tiết trong link sau:
-
-[https://angular.io/api/core/ViewChild](https://angular.io/api/core/ViewChild)
+::alert{type="warning"}
+Lưu ý ngoài những thiết lập mặc định ở trên cho ViewChild, chúng ta còn có thể truyền vào config cho nó với các thông số chi tiết trong link sau: [https://angular.io/api/core/ViewChild](https://angular.io/api/core/ViewChild)
+::
 
 Cú pháp để sử dụng sẽ như sau:
 

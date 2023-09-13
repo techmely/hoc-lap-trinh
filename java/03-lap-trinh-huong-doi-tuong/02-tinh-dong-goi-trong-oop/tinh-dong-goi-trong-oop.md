@@ -13,7 +13,7 @@ position: 2
 
 Tính đóng gói trong java là kỹ thuật ẩn giấu thông tin không liên quan và hiện thị ra thông liên quan. Mục đích chính của đóng gói trong java là giảm thiểu mức độ phức tạp phát triển phần mềm.
 
-### Tính đóng gói (Encapsulation)
+### Tính đóng gói (Encapsulation) trong Java
 
 Ví dụ đối với ô tô thì một số thuộc tính ở bên ngoài như xi nhan, đèn. bánh xe là những thuộc tính công khai (public) người khác xem được. nhưng đối với các thuộc tính bên trong như đồ đạc trong cốp xe thì bị giấu đi (private).
 

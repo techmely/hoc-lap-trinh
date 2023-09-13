@@ -125,9 +125,9 @@ Kết quả đây nha.
 
 ![DisabledControlDirective to disable Reactive Form control](./assets/day43-02.gif)
 
-## Chú ý
-
+::alert{type="warning"}
 Các bạn lưu ý là nếu một control bị disabled thì value của control này sẽ bị lược bỏ khi truy xuất đến `FormGroup.value`. Muốn lấy value của tất cả controls mà không phụ thuộc vào disable state thì dùng `FormGroup.getRawValue()` nhé.
+::
 
 ## Source code
 

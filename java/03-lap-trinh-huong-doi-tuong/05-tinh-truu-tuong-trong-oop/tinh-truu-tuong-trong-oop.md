@@ -32,7 +32,7 @@ Mà lại không cần quản lý thêm các thông tin:
 
 Tại vì chúng thực sự không cần thiết.
 
-![image](https://user-images.githubusercontent.com/29374426/131304738-aaf13d70-84e1-4787-b0b0-03fce36eaa2d.png)
+![Tính trừu tượng trong OOP](https://user-images.githubusercontent.com/29374426/131304738-aaf13d70-84e1-4787-b0b0-03fce36eaa2d.png)
 
 ## Ưu điểm khi sử dụng tính trừu tượng để lập trình
 

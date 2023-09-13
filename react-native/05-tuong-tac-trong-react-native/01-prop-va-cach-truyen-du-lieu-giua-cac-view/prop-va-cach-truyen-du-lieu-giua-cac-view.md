@@ -231,7 +231,10 @@ onPressItem() {
 
 ```
 
+::alert{type="warning"}
 Một vài lưu ý khi sử dụng props
 
 - Không thay đổi dữ liệu trong prop ở bên nhận.
 - Nên chia mỗi thành phần riêng biệt ra mỗi component riêng và giao tiếp với component chính thông qua props để giảm thiểu việc phải vẽ lại nguyên toàn bộ, nhất là những component có chứa các `timmer` (`setInterval()`, `setTimeOut()`...).
+
+::

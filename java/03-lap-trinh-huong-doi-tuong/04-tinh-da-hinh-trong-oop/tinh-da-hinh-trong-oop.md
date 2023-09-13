@@ -125,16 +125,16 @@ Tuy nhiên khi chúng ta truy cập thuộc tính của lớp con thì sẽ khô
 
 ```java
 class Bike{
- int speedlimit = 90;
+ int speedLimit = 90;
 }
 
 class Honda3 extends Bike {
- int speedlimit = 150;
+ int speedLimit = 150;
 }
 
 public static void main(String args[]){
   Bike obj=new Honda3();
-  System.out.println(obj.speedlimit);//90
+  System.out.println(obj.speedLimit);//90
 }
 ```
 
@@ -178,4 +178,5 @@ int: 99, String: Int first
 - Ta không thể sử dụng giá trị trả về của hàm để phân biệt sự khác nhau giữa 2 phương thức nạp chồng
 - Không nên quá lạm dụng các phương thức nạp chồng vì trình biên dịch phải mất thời gian phán đoán để tìm ra hàm thích hợp, điều này đôi khi còn dẫn đến sai sót
 - Khi gọi các hàm nạp chồng ta nên có lệnh chuyển kiểu tường minh để trình biên dịch tìm ra hàm phù hợp một cách nhanh nhất
-  ::
+
+::

@@ -13,9 +13,9 @@ position: 18
 
 Đối với trường hợp có nhiều câu điều điện cần kiểm tra ví dụ như: **"Hôm nay trời nắng thì ... trời mưa thì... trời râm thì... trời quang thì..."** thì Java cũng cung cấp cho ta một cú pháp khác để tránh phải viết nhiều lần if, đó chính là switch-case
 
-## Dạng khuyết
+## Cấu trúc switch case dạng khuyết trong Java
 
-**Cú pháp**
+### Cú pháp dạng khuyết
 
 ```java
 switch(biến) {
@@ -40,7 +40,7 @@ switch(biến) {
 
 Sau đây là sơ đồ khối mô tả sự hoạt động của cấu trúc rẽ nhánh switch dạng thiếu
 
-![cau-truc-switch-case-trong-java](https://user-images.githubusercontent.com/29374426/125040317-b383c780-e0c1-11eb-8dbc-98bfa0af2509.png)
+![Cấu trúc switch case trong Java](https://user-images.githubusercontent.com/29374426/125040317-b383c780-e0c1-11eb-8dbc-98bfa0af2509.png)
 
 Switch sẽ kiểm tra giá trị của **biến** (nằm trong ngoặc đơn sau switch kia), và so sánh biến với từng giá trị khác nhau, lần lượt từ trên xuống dưới, mỗi giá trị cần so sánh gọi là một case. Ở đoạn code trên, các giá trị để so sánh với **biến** là **giá trị 1**, **giá trị 2**. Khi một trường hợp đúng (`true`), khối lệnh ở trong `case` đó sẽ được thực thi. Câu lệnh `break` để thoát ra khỏi cấu trúc switch bạn có thể xem thêm ở bài [từ khóa break và continue](/bai-viet/java/tu-khoa-break-va-continue).
 
@@ -75,9 +75,9 @@ public class Thaycacac {
 
 ::
 
-## Dạng đủ
+## Cấu trúc switch case dạng đầy đủ trong Java
 
-**Cú pháp**
+### Cú pháp dạng đầy đủ
 
 ```java
 switch(biểu thức) {
@@ -106,7 +106,7 @@ switch(biểu thức) {
 
 Sau đây là sơ đồ khối mô tả sự hoạt động của cấu trúc switch dạng đủ
 
-![cau-truc-switch-case-trong-java](https://user-images.githubusercontent.com/29374426/125040355-bf6f8980-e0c1-11eb-9bfa-391815ff5c3c.png)
+![Cấu trúc switch case dạng đầy đủ trong Java](https://user-images.githubusercontent.com/29374426/125040355-bf6f8980-e0c1-11eb-9bfa-391815ff5c3c.png)
 
 Nếu tất cả các trường hợp đều sai (tức là các giá trị ở `case` không bằng với **biến**), thì khối lệnh ở trong `default` sẽ được thực thi.
 
@@ -142,9 +142,9 @@ Chạy vào khối default<br/>
 
 ::
 
-::alert{type="infor"}<ul>
+::alert{type="infor"}
 
-<li> <b>Biến</b> phải là một biểu thức có kiểu char, byte, short, int nhưng không thể là kiểu long, nếu <b>Biến</b> có kiểu khác với các kiểu liệt kê ở trên thì java sẽ đưa ra một thông báo lỗi.</li>
-<li>Nếu case không có break thì nó sẽ thực hiện đến hết, khi không còn khối nào thì thôi.</li>
+- _Biến_ phải là một biểu thức có kiểu char, byte, short, int nhưng không thể là kiểu long, nếu _Biến_ có kiểu khác với các kiểu liệt kê ở trên thì java sẽ đưa ra một thông báo lỗi.
+- Nếu case không có break thì nó sẽ thực hiện đến hết, khi không còn khối nào thì thôi.
 
   </ul>::

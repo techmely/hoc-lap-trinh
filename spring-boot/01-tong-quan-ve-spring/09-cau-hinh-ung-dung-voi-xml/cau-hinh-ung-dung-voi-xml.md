@@ -68,6 +68,7 @@ app_4_0.xsd"
 ```
 
 Trong khai báo này thì org.springframework.web.servlet.DispatcherServlet được sử dụng để tiếp nhận tất cả các yêu cầu có địa chỉ url (**<'url-pattern'>/ </'url-pattern'>**), nếu **<'url-pattern'>\*.jsp</'url-pattern'>** được hiểu là DispatcherServlet sẽ tiếp nhận tất cả các yêu cầu có địa chỉ url kết thúc bởi .jsp. DispatcherServlet sẽ phân giải để chuyển đến các action phù hợp với các yêu cầu dựa vào định dạng của url.
+
 Hãy lưu ý rằng, trong file cấu hình này chúng ta sử dụng dispatcher để đặt tên cho servlet (**<'servlet-name>dispatcher</'servlet-name'>**). Theo quy ước mặc định của Spring thì file cấu hình Spring sẽ có tên là “<tên servlet>-servlet.xml". Và vì vậy trong trường hợp này là dispatcher-servlet.xml.
 Nếu chúng ta đặt tên là **<'servlet-name'>my-config</'servlet-name'>** thì file cấu hình Spring MVC sẽ là "my-config-servlet.xml".
 

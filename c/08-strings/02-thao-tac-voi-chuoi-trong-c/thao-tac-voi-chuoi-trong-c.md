@@ -30,7 +30,9 @@ Một số hàm xử lí chuỗi thường được sử dụng
 | `strlwr()` | chuyển đổi chuỗi thành chữ thường  |
 | `strupr()` | chuyển đổi chuỗi thành chữ hoa     |
 
-> Lưu ý: trước khi dùng các hàm xử lí chuỗi trên thì hãy khai báo thư viện chuỗi bằng syntax:
+::alert{type="warning"}
+Lưu ý: trước khi dùng các hàm xử lí chuỗi trên thì hãy khai báo thư viện chuỗi bằng syntax:
+::
 
 ```cpp
 #include <string.h>
@@ -59,8 +61,8 @@ int main()
 Kết quả:
 
 ```cpp
-Enter name: Hello Anest
-Name: Hello Anest
+Enter name: Hello Kungfutech
+Name: Hello Kungfutech
 ```
 
 > Mặc dù hai hàm `gets()` và `puts()` là các hàm xử lí chuỗi nhưng chúng đều được khai báo trong thư viện `<stdio.h>`

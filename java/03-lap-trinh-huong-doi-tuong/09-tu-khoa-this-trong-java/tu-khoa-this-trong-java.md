@@ -13,7 +13,7 @@ position: 9
 
 Từ khóa **this** trong java là một biến tham chiếu được sử dụng để tham chiếu tới đối tượng của lớp hiện tại. Biến **this** là một biến ẩn tồn tại trong tất cả các lớp trong ngông ngữ java. Một class trong Java luôn tồn tại một biến this.
 
-![image](https://user-images.githubusercontent.com/29374426/131205481-bc00bbd6-82c5-4e1f-b53d-c28d00e98e0f.png)
+![Từ khóa this trong Java](https://user-images.githubusercontent.com/29374426/131205481-bc00bbd6-82c5-4e1f-b53d-c28d00e98e0f.png)
 
 ## Tham chiếu tới biến instance của lớp hiện tại.
 

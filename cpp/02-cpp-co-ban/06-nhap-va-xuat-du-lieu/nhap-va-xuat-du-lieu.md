@@ -60,7 +60,7 @@ Việc **Input data** như trên có thể thực hiện bằng nhiều cách kh
 
 Cú pháp sử dụng đối tượng **cin** như sau:
 
-```
+```cpp
 cin >> <tên biến>;
 ```
 

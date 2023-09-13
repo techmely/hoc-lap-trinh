@@ -66,7 +66,11 @@ export default RESTClient = new RESTFulAPI();
 
 Ở đây mình định nghĩa 1 lớp để quản lý việc trao đổi, giao tiếp giữa client và server. Hàm fetchData() là một hàm bất đồng bộ hỗ trợ gọi các phương thức RESTful.
 
-Và đây là cách chúng ta gọi hàm fetchData() và định nghĩa rõ ràng 1 api truy cập để lấy danh sách ngôn ngữ. Lưu ý: Thay vì việc mình đặt trực tiếp link <https://api.ice5.skyx.app/get_languages> thì mình lại gọi hàm getBaseURL() là để sau này có thay api, thì mình không phải đi thay nhiều chỗ, chỉ cần vào config và thay đổi là hoàn tất.
+Và đây là cách chúng ta gọi hàm fetchData() và định nghĩa rõ ràng 1 api truy cập để lấy danh sách ngôn ngữ.
+
+::alert{type="warning"}
+Lưu ý: Thay vì việc mình đặt trực tiếp link <https://api.ice5.skyx.app/get_languages> thì mình lại gọi hàm getBaseURL() là để sau này có thay api, thì mình không phải đi thay nhiều chỗ, chỉ cần vào config và thay đổi là hoàn tất.
+::
 
 ```javascript
 getLanguage() {
@@ -111,4 +115,6 @@ getLanguagesFromServer() {
 
 ```
 
+::alert{type="warning"}
 Lưu ý: Phương thức `getLanguagesFromServer()` nên gọi trong `componentDidMount()` hoặc các sự kiện sau khi constructor() hoàn tất để trách những lỗi có nguy cơ tiềm ẩn ví dụ như api nhanh quá, `constructor` chạy chưa xong và nó đi `setState()` thì app của bạn nó làm việc không đúng.
+::

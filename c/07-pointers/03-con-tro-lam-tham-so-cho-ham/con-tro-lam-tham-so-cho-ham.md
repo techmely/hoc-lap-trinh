@@ -65,7 +65,9 @@ void swap(int *n1, int *n2);
 
 Bên trong hàm `swap()`, `*n1` và `*n2` hoán đổi. Kể từ đây,`num1` và `num2` cũng được hoán đổi. vì chúng ta đã truyền vào hàm địa chỉ của `num1` chứ không phải là giá trị của `num1`
 
-> Lưu ý rằng `swap()` không trả lại bất cứ điều gì; kiểu trả về của nó là `void`.
+::alert{type="warning"}
+Lưu ý rằng `swap()` không trả lại bất cứ điều gì; kiểu trả về của nó là `void`.
+::
 
 ## Truyền con trỏ vào hàm trong C
 

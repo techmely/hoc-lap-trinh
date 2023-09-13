@@ -250,7 +250,9 @@ SomeClass = SomeDecorator(SomeClass);
 
 Như chúng ta đã tìm hiểu qua thì chúng ta có các cách provide một provider với các dạng như sau:
 
-> Lưu ý: code phía dưới đây sẽ tương tự cho `@NgModule`, `@Component`, `@Directive`.
+::alert{type="warning"}
+Lưu ý: code phía dưới đây sẽ tương tự cho `@NgModule`, `@Component`, `@Directive`.
+::
 
 - useClass:
 

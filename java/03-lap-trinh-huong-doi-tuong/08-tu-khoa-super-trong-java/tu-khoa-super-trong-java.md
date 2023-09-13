@@ -17,7 +17,7 @@ Khi một lớp được kế thừa từ lớp cha trong cả lớp cha và l�
 
 Bất cứ khi nào bạn tạo ra instance(thể hiển) của lớp con, một instance của lớp cha được tạo ra ngầm định, nghĩa là được tham chiếu bởi biến super.
 
-![image](https://user-images.githubusercontent.com/29374426/131205533-8930a7b8-1557-45d9-9d88-7d57b6306f98.png)
+![Từ khóa super trong Java](https://user-images.githubusercontent.com/29374426/131205533-8930a7b8-1557-45d9-9d88-7d57b6306f98.png)
 
 ## Super tham chiếu đến biến instance của lớp cha
 
@@ -78,7 +78,7 @@ public class XeDap extends Xe {
 
 ::
 
-## Sử dụng super() để gọi contructor của lớp cha
+## Sử dụng `super()` để gọi constructor của lớp cha
 
 Trong java, `super()` được sử dụng để gọi trực tiếp [constructor](/bai-viet/java/phuong-thuc-khoi-tao) của lớp cha.
 

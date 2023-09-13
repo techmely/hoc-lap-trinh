@@ -45,7 +45,7 @@ Sơ đồ khối diễn giải sự hoạt động của cấu trúc for sau:
 - **Bước 3:** Thực hiện <Thay đổi biến chạy>, quay lại Bước 2
 - **Bước 4:** Kết thúc vòng lặp
 
-![vong-lap-for-trong-java](https://user-images.githubusercontent.com/29374426/127631954-6589402a-aaab-4df9-b37b-ddebb90db820.png)
+![Vòng lặp for trong java](https://user-images.githubusercontent.com/29374426/127631954-6589402a-aaab-4df9-b37b-ddebb90db820.png)
 
 ::alert{type="infor"}
 
@@ -73,7 +73,7 @@ public class Thaycacac {
 }
 ```
 
-![vong-lap-for-trong-java](https://user-images.githubusercontent.com/29374426/127634450-1c6f052c-39b2-424c-9030-e3d9a5ae49a0.png)
+![Vòng lặp for trong java](https://user-images.githubusercontent.com/29374426/127634450-1c6f052c-39b2-424c-9030-e3d9a5ae49a0.png)
 
 Ví dụ: viết chương trình in ra các số lẻ trong khoảng 1 đến 10
 
@@ -108,7 +108,7 @@ public class CommaOperator {
 
 ::
 
-## Vòng lặp for cải tiến
+## Vòng lặp `for` cải tiến
 
 Vòng lặp for cải tiến được sử dụng để lặp mảng (`array`) hoặc `collection` trong java. Bạn có thể sử dụng nó dễ dàng, dễ hơn cả vòng lặp for đơn giản. Bởi vì bạn không cần phải tăng hay giảm giá trị của biến rồi kiểm tra điều kiện, bạn chỉ cần sử dụng ký hiệu hai chấm `:`
 

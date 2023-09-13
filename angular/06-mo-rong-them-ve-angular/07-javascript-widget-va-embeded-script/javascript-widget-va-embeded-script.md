@@ -330,7 +330,9 @@ customElements.define("embedded-widget", Widget);
 <embedded-widget id="Idxxx"></embedded-widget>;
 ```
 
-Lưu ý: Khi đặt tên define cho custom web component, chúng ta nên đặt tên mang theo logic và ngăn cách bằng dấu “-” do native component các HTML tag chỉ có 1 word.
+::alert{type="warning"}
+Lưu ý: Khi đặt tên `define` cho `custom web component`, chúng ta nên đặt tên mang theo logic và ngăn cách bằng dấu “-” do native component các HTML tag chỉ có 1 word.
+::
 
 ## Tổng kết
 

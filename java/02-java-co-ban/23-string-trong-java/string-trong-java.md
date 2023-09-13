@@ -13,7 +13,7 @@ position: 23
 
 String là một chuỗi các ký tự kết hợp lại. Ví dụ "thaycacac" là một chuỗi gồm 9 ký tự 't', 'h', 'a', 'y', 'c', 'a', 'c', 'a', 'c' kết hợp lại.
 
-String trong java là một **object immutable**, nghĩa là bạn khônng thể thay đổi giá trị của String khi nó đã được khởi tạo.
+String trong java là một **object immutable**, nghĩa là bạn không thể thay đổi giá trị của String khi nó đã được khởi tạo.
 
 ## Khởi tạo String trong java
 
