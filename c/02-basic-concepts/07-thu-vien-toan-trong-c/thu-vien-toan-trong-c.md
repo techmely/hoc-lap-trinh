@@ -1,6 +1,6 @@
 ---
 title: "Thư viện toán trong C"
-description: "Thư viện toán trong C"
+description: "Thư viện toán trong C tập trung vào các tài liệu và hàm thư viện toán học sẵn có trong ngôn ngữ lập trình C. Thư viện toán là một phần quan trọng của môi trường lập trình, cho phép bạn thực hiện các phép toán số học phức tạp, tính toán khoa học, và xử lý số liệu. Thư viện toán là một công cụ mạnh mẽ trong tay lập trình viên, giúp họ thực hiện các phép toán phức tạp và tính toán chính xác trong ứng dụng của họ"
 chapter:
   name: "Nhập môn C"
   slug: "chuong-02-basic-concepts"

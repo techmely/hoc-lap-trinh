@@ -1,6 +1,6 @@
 ---
 title: "Hàm đệ quy trong C"
-description: "Hàm đệ quy trong C"
+description: "Hàm đệ quy trong lập trình C là một công cụ mạnh mẽ cho phép giải quyết các bài toán phức tạp bằng cách sử dụng tính truy hồi. Trong bài viết này, chúng tôi sẽ đào sâu vào khái niệm này, giải thích cách mà hàm đệ quy hoạt động và cung cấp ví dụ cụ thể về cách sử dụng nó để giải quyết các bài toán như tính giai thừa, dãy Fibonacci và nhiều tác vụ khác."
 chapter:
   name: "Hàm"
   slug: "chuong-05-functions"

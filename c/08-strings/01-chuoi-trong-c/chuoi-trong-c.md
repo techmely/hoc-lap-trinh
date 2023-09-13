@@ -1,6 +1,6 @@
 ---
 title: "Strings trong C"
-description: "Strings trong C"
+description: "Chuỗi (Strings) là một phần quan trọng trong lập trình C, và việc hiểu cách xử lý chuỗi là một kỹ năng cần thiết cho mọi lập trình viên. Bài viết này sẽ giúp bạn khám phá sâu hơn về cách làm việc với chuỗi trong C và tận dụng sức mạnh của chúng cho các bài toán sau này."
 chapter:
   name: "Strings"
   slug: "chuong-08-strings"

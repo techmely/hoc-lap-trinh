@@ -1,6 +1,6 @@
 ---
 title: "Con trỏ làm tham số cho hàm"
-description: "Con trỏ làm tham số cho hàm"
+description: "Trong lập trình C, sử dụng con trỏ làm tham số cho hàm là một kỹ thuật mạnh mẽ giúp bạn thao tác với dữ liệu một cách linh hoạt và hiệu quả. Bài viết này sẽ hướng dẫn bạn cách sử dụng con trỏ như tham số cho các hàm, cung cấp ví dụ cụ thể và lý do tại sao nó quan trọng."
 chapter:
   name: "Con trỏ"
   slug: "chuong-07-pointer"

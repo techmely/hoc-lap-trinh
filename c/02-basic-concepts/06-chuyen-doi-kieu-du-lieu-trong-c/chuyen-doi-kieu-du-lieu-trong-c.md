@@ -1,6 +1,6 @@
 ---
 title: "Chuyển đổi kiểu dữ liệu trong C"
-description: "Chuyển đổi kiểu dữ liệu trong C"
+description: "Chuyển Đổi Kiểu Dữ Liệu trong C nhấn mạnh vào quá trình biến đổi dữ liệu từ một kiểu sang kiểu khác trong ngôn ngữ lập trình C, còn được gọi là ép kiểu (type casting). Việc này là một khía cạnh quan trọng để làm cho chương trình linh hoạt hơn và xử lý dữ liệu một cách hiệu quả."
 chapter:
   name: "Nhập môn C"
   slug: "chuong-02-basic-concepts"

@@ -1,6 +1,6 @@
 ---
 title: "Comment trong C"
-description: "Comment trong C"
+description: "Khi lập trình bằng ngôn ngữ C, Comment (bình luận) là một công cụ quan trọng để tạo sự hiểu rõ và dễ đọc hơn cho mã nguồn của bạn. Comment cho phép bạn thêm các dòng ghi chú, mô tả, và giải thích vào mã, giúp lập trình viên hiểu rõ logic và mục đích của từng phần của mã."
 chapter:
   name: "Nhập môn C"
   slug: "chuong-02-basic-concepts"

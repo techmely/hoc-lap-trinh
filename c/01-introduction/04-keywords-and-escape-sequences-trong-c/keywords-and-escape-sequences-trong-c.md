@@ -1,6 +1,6 @@
 ---
 title: "Keywords và Escape Sequences trong C"
-description: "Keywords và Escape Sequences trong C"
+description: "Bài viết này sẽ giới thiệu về Keywords và Escape Sequences trong C, cũng như quy tắc cơ bản của chúng để phục vụ cho việc sử dụng trong lập trình và sử dụng trong việc hiển thị văn bản trong Output trong ngôn ngữ C này. Hãy lưu ý những phần note của chúng mình để bạn có thể tìm hiểu và tìm sâu hơn về chúng trong các bài tiếp theo"
 chapter:
   name: "Giới thiệu"
   slug: "chuong-01-introduction"

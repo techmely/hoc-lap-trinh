@@ -1,6 +1,6 @@
 ---
 title: "Mối quan hệ mảng và con trỏ"
-description: "Mối quan hệ mảng và con trỏ"
+description: "Mảng và con trỏ là hai khái niệm quan trọng trong lập trình, và hiểu mối quan hệ giữa chúng là vô cùng quan trọng. Bài viết này sẽ giúp bạn khám phá mối liên kết sâu sắc giữa mảng và con trỏ, và làm thế nào chúng tương tác với nhau để tạo ra các ứng dụng mạnh mẽ."
 chapter:
   name: "Con trỏ"
   slug: "chuong-07-pointer"

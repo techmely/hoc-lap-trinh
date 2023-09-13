@@ -1,6 +1,6 @@
 ---
 title: "Giới thiệu mảng trong C"
-description: "Giới thiệu mảng trong C"
+description: "Mảng là một khái niệm quan trọng trong lập trình C, và việc hiểu cách sử dụng chúng là một phần thiết yếu của việc trở thành một lập trình viên thành thạo. Bài viết này sẽ giới thiệu mảng trong ngôn ngữ lập trình C một cách toàn diện."
 chapter:
   name: "Mảng"
   slug: "chuong-06-array"

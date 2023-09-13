@@ -1,6 +1,6 @@
 ---
 title: "Vòng lặp while trong C"
-description: "Vòng lặp while trong C"
+description: "Vòng lặp 'while' là một công cụ mạnh mẽ cho việc lặp lại một dãy lệnh dựa trên điều kiện. Điều này cho phép bạn xây dựng các chương trình linh hoạt và thích nghi với nhiều tình huống khác nhau. Cùng xem nào."
 chapter:
   name: "Vòng lặp"
   slug: "chuong-04-loops"

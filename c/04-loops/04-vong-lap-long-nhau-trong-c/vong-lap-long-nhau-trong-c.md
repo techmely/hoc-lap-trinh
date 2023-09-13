@@ -1,6 +1,6 @@
 ---
 title: "Vòng lặp lồng nhau trong C"
-description: "Vòng lặp lồng nhau trong C"
+description: "Khi bạn đã trang bị đủ kiến thức về vòng lặp rồi, ta có thể nâng cao chúng với bài học này. Bằng cách kết hợp và lồng nhiều vòng lặp, bạn có thể kiểm soát luồng của chương trình một cách chi tiết và hiệu quả hơn. Học cách sử dụng vòng lặp lồng nhau sao cho hợp lý để giải quyết các vấn đề phức tạp, tối ưu hóa mã nguồn, và tạo ra các ứng dụng đa năng. "
 chapter:
   name: "Vòng lặp"
   slug: "chuong-04-loops"

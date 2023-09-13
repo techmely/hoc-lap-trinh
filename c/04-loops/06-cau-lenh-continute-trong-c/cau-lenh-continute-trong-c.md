@@ -1,6 +1,6 @@
 ---
 title: "Câu lệnh continue trong C"
-description: "Câu lệnh continue trong C"
+description: "Câu lệnh 'continue' cũng là một công cụ mạnh mẽ giúp bạn kiểm soát và điều chỉnh luồng của chương trình giống như 'break' vậy. Nó cho phép bạn bỏ qua một phần của vòng lặp và tiếp tục thực hiện các lệnh tiếp theo dựa trên một điều kiện cụ thể. Cùng xem cách chúng mình sử dụng 'continue' trong lập trình C như thế nào nhé."
 chapter:
   name: "Vòng lặp"
   slug: "chuong-04-loops"

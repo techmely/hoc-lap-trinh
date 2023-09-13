@@ -1,6 +1,6 @@
 ---
 title: "Các loại toán tử trong C"
-description: "Các loại toán tử trong C"
+description: "Các loại toán tử  là một phần quan trọng trong quá trình học lập trình bằng ngôn ngữ C. Các loại toán tử cơ bản như toán tử số học (+, -, *, /), toán tử gán (=), toán tử so sánh (==, <, >), toán tử logic (&&, ||), và nhiều loại toán tử khác sẽ quyết định cách thực hiện các phép tính và thao tác trên dữ liệu."
 chapter:
   name: "Nhập môn C"
   slug: "chuong-02-basic-concepts"

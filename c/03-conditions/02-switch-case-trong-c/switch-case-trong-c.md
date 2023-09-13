@@ -1,6 +1,6 @@
 ---
 title: "Switch case trong C"
-description: "Switch case trong C"
+description: "Câu lệnh 'switch case' là một công cụ mạnh mẽ giúp bạn kiểm soát luồng của chương trình bằng cách xử lý nhiều trường hợp khác nhau. Với khả năng này, bạn có thể tạo ra các ứng dụng với độ linh hoạt, phức tạp và hiệu quả hơn. Khám phá cách sử dụng switch case để thực hiện các lựa chọn"
 chapter:
   name: "Câu điều kiện"
   slug: "chuong-03-conditions"

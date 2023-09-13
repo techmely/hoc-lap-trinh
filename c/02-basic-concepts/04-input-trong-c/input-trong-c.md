@@ -1,6 +1,6 @@
 ---
 title: "Input trong C"
-description: "Input trong C"
+description: "Hiểu cách nhận và xử lý dữ liệu đầu vào trong C là một phần quan trọng để tạo ra các ứng dụng có khả năng tương tác với người dùng và thực hiện các tính toán phức tạp. Hãy bắt đầu khám phá cách tạo các chương trình mà có thể đọc và sử dụng thông tin từ nhiều nguồn khác nhau"
 chapter:
   name: "Nhập môn C"
   slug: "chuong-02-basic-concepts"

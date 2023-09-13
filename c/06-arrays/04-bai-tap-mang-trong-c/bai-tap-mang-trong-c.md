@@ -1,6 +1,6 @@
 ---
 title: "Bài tập mảng trong C"
-description: "Bài tập mảng trong C"
+description: "Đã đến lúc thực hành thật sự rồi. Nên nhớ vừa làm vừa tìm hiểu và nghiên cứu sâu sẽ giúp bạn nắm bắt được kiến thức một cách nhanh nhất. Vậy thì cùng chúng mình bắt đầu vào thực hành nào."
 chapter:
   name: "Mảng"
   slug: "chuong-06-array"

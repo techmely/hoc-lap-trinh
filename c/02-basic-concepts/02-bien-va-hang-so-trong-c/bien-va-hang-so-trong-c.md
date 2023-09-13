@@ -1,6 +1,6 @@
 ---
 title: "Biến và hằng số trong C"
-description: "Biến và hằng số trong C"
+description: "Biến và hằng số đóng vai trò quan trọng trong mọi chương trình C. Biến là những "kho chứa" dữ liệu có thể thay đổi trong quá trình thực thi, trong khi hằng số là các giá trị không thay đổi. Chúng tạo nên cơ sở của mọi logic và tính toán trong lập trình."
 chapter:
   name: "Nhập môn C"
   slug: "chuong-02-basic-concepts"

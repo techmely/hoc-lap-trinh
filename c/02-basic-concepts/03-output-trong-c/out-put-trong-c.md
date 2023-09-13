@@ -1,6 +1,6 @@
 ---
 title: "Output trong C"
-description: "Output trong C"
+description: "Trong bài viết này, chúng ta sẽ khám phá các cách cơ bản để hiển thị dữ liệu trong C, về việc sử dụng hàm printf để in thông điệp ra màn hình. Chúng ta cũng sẽ thảo luận về định dạng chuẩn và các kỹ thuật hiển thị dữ liệu phức tạp hơn."
 chapter:
   name: "Nhập môn C"
   slug: "chuong-02-basic-concepts"
