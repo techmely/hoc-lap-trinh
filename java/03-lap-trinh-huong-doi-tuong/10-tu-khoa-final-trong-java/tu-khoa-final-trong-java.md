@@ -39,24 +39,16 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả sẽ hiển thị thông báo lỗi</span>
-  </div>
-  <div class="window-body">
+::result
 Compile Time Error Exception in thread "main" java.lang.Error: Unresolved compilation problem: The final field Thaycacac.PI cannot be assigned</code>
-
 ::
 
 ::alert{type="infor"}
 
-<ul>
-  <li>Khi đã khai báo một thuộc tính là final thì thuộc tính này la hăng, do vậy ta không thể thay đổi giá trị của nó</li>
-  <li>Khi khai báo một thuộc tính là final thì ta phải cung cấp giá trị ban đầu cho nó</li>
-  <li>Nếu một thuộc tính vừa là final vừa là static thì nó chỉ có một vùng nhớ chung duy nhất cho cả lớp</li>
-</ul>
-::
+- Khi đã khai báo một thuộc tính là final thì thuộc tính này la hăng, do vậy ta không thể thay đổi giá trị của nó
+- Khi khai báo một thuộc tính là final thì ta phải cung cấp giá trị ban đầu cho nó
+- Nếu một thuộc tính vừa là final vừa là static thì nó chỉ có một vùng nhớ chung duy nhất cho cả lớp
+  ::
 
 ## Phương thức final trong Java
 
@@ -81,14 +73,8 @@ public class SH extends Bike {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả sẽ hiển thị thông báo lỗi</span>
-  </div>
-  <div class="window-body">
-Exception in thread "main" java.lang.VerifyError: class vn.viettuts.keywords.SH overrides final method run.()</code>
-
+::result
+Exception in thread "main" java.lang.VerifyError: class vn.thaycacac.keywords.SH overrides final method run.()
 ::
 
 ## Lớp final trong Java
@@ -111,14 +97,8 @@ public class SH1 extends Bike {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả sẽ hiển thị thông báo lỗi</span>
-  </div>
-  <div class="window-body">
-Compile Time Error</code>
-
+::result
+Compile Time Error
 ::
 
 _Chú ý:_ do một lớp là final (tức không thể kế thừa )do vậy ta không thể nào ghi đè các phương thức của lớp này, do vậy đừng cố gắng cho một phương thức của lớp final là final
