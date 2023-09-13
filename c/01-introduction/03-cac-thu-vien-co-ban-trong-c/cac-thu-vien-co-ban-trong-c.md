@@ -1,6 +1,6 @@
 ---
 title: "Các thư viện cơ bản trong C"
-description: "Các thư viện cơ bản trong C"
+description: "Các thư viện trong ngôn ngữ lập trình C là các file  chứa sẵn các hàm hữu ích, giúp bạn thực hiện các tác vụ phổ biến. Hiểu rõ về các thư viện cơ bản trong C là một phần quan trọng cho quá trình học ban đầu, và khi hiểu kĩ hơn nữa, bạn có thể tiến xa trong việc Custom thư viện cho riêng mình."
 chapter:
   name: "Giới thiệu"
   slug: "chuong-01-introduction"

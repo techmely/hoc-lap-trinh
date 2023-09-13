@@ -1,6 +1,6 @@
 ---
 title: "Cấu trúc một hàm trong C"
-description: "Cấu trúc một hàm trong C"
+description: "Cùng học về cách tạo và sử dụng hàm để có thể giải quyết các bài toán cụ thể, giảm sự trùng lặp code, và tạo ra source code dễ đọc và bảo trì. Và khám phá cấu trúc cơ bản của một hàm trong ngôn ngữ C, bao gồm tên hàm, tham số, kiểu trả về và khối code bên trong nó. Bắt đầu học ngay để nắm vững cách sử dụng hàm để xây dựng các ứng dụng lập trình đa dạng và hiệu quả."
 chapter:
   name: "Hàm"
   slug: "chuong-05-functions"

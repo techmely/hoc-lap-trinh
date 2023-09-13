@@ -1,6 +1,6 @@
 ---
 title: "Pointer trong C là gì"
-description: "Pointer trong C là gì"
+description: "Pointer (Con trỏ) trong ngôn ngữ lập trình C là một khái niệm quan trọng, đóng vai trò quan trọng trong việc quản lý bộ nhớ và truy cập dữ liệu. Bài viết này sẽ giúp bạn hiểu rõ về con trỏ, từ định nghĩa đến cách sử dụng, và tại sao nó là một tính năng mạnh mẽ trong lập trình C."
 chapter:
   name: "Con trỏ"
   slug: "chuong-07-pointer"

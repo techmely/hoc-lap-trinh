@@ -1,6 +1,6 @@
 ---
-title: "Vòng lặp while trong C"
-description: "Vòng lặp while trong C"
+title: "Vòng lặp do while trong C"
+description: "Vòng lặp 'do-while' như một người anh em với vòng lặp while vậy. Chúng đều là một công cụ mạnh mẽ cho việc lặp lại một dãy lệnh dựa trên điều kiện. Nhưng do-while sẽ có điểm khác biệt gì so với while, hãy cùng tìm hiểu nó trong bài học hôm nay nào."
 chapter:
   name: "Vòng lặp"
   slug: "chuong-04-loops"

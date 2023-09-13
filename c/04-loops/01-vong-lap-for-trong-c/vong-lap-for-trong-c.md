@@ -1,6 +1,6 @@
 ---
 title: "Vòng lặp for trong C"
-description: "Vòng lặp for trong C"
+description: "Vòng lặp 'for' là một trong những cấu trúc quan trọng nhất, giúp bạn thực hiện các tác vụ lặp lại một cách hiệu quả và linh hoạt. Với khả năng kiểm soát được số lần lặp và quản lý biến điều kiện, bạn có thể xây dựng các chương trình mạnh mẽ và hiệu quả. Hãy khám phá chi tiết cách sử dụng vòng lặp for ngay nào"
 chapter:
   name: "Vòng lặp"
   slug: "chuong-04-loops"

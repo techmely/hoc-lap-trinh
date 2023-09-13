@@ -1,6 +1,6 @@
 ---
 title: "Mảng đa chiều trong C"
-description: "Mảng đa chiều trong C"
+description: "Mảng đa chiều trong ngôn ngữ lập trình C là một công cụ mạnh mẽ cho việc xử lý dữ liệu phức tạp và tạo ra các ứng dụng đa chiều đầy thách thức. Bài viết này sẽ giúp bạn hiểu sâu hơn về mảng đa chiều, cung cấp cách khai báo, truy cập và thao tác với chúng."
 chapter:
   name: "Mảng"
   slug: "chuong-06-array"

@@ -1,6 +1,6 @@
 ---
 title: "Các loại hàm trong C"
-description: "Các loại hàm trong C"
+description: "Hàm là một khái niệm rất quan trọng trong lập trình nói chung và lập trình C. Trong đó có hai kiểu hàm quan trọng: Standard Library Functions và User-Defined Functions. Trong bài viết này, chúng mình sẽ đặt tập trung vào hai loại hàm này để giúp bạn hiểu rõ về tầm quan trọng và cách sử dụng của chúng."
 chapter:
   name: "Hàm"
   slug: "chuong-05-functions"
@@ -18,7 +18,7 @@ Có hai loại hàm trong lập trình C là:
 
 Trong bài viết này, chúng ta sẽ cùng đi tìm hiểu chi tiết về 2 loại hàm này.
 
-## Các hàm trong thư viện tiêu
+## Các hàm trong thư viện tiêu chuẩn
 
 - Standard library functions (Hàm thư viện chuẩn) là những hàm có sẵn trong lập trình C.
 - Các hàm với tên và chức năng riêng biệt đã được định nghĩa trong các thư viện tiêu chuẩn.

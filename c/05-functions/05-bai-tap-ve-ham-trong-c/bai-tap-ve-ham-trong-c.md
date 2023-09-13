@@ -1,6 +1,6 @@
 ---
 title: "Bài tập về hàm trong C"
-description: "Bài tập về hàm trong C"
+description: "Một cách tuyệt vời để nâng cao kỹ năng lập trình của bạn và hiểu sâu hơn về cách sử dụng hàm trong C. Trong bài viết này, chúng mình đã tổng hợp một loạt các bài tập thực tế và thú vị liên quan đến hàm để giúp bạn rèn luyện kỹ năng lập trình. "
 chapter:
   name: "Hàm"
   slug: "chuong-05-functions"

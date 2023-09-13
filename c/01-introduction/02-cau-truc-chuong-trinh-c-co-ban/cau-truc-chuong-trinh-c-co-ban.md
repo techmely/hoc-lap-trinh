@@ -1,6 +1,6 @@
 ---
 title: "Cấu trúc chương trình C cơ bản"
-description: "Cấu trúc chương trình C cơ bản"
+description: "Việc nắm vững cấu trúc cơ bản của ngôn ngữ lập trình C là một bước quan trọng để trở thành một lập trình viên thành thạo. Trong bài viết này, chúng tôi sẽ giới thiệu và giải thích cơ bản về cấu trúc cơ bản của chương trình C"
 chapter:
   name: "Giới thiệu"
   slug: "chuong-01-introduction"

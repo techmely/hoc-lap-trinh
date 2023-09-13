@@ -1,6 +1,6 @@
 ---
 title: "Câu lệnh break trong C"
-description: "Câu lệnh break trong C"
+description: "Câu lệnh 'break' là một công cụ quan trọng để kiểm soát và điều hướng luồng chương trình. Nó cho phép bạn thoát khỏi vòng lặp hoặc chấm dừng thực hiện các câu lệnh khi một điều kiện cụ thể được đáp ứng. Hãy xem chúng mình sử dụng break như thế nào trong bài này nha."
 chapter:
   name: "Vòng lặp"
   slug: "chuong-04-loops"

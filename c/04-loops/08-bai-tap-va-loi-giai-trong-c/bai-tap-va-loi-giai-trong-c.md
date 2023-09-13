@@ -1,6 +1,6 @@
 ---
 title: "Bài tập và lời giải trong C"
-description: "Bài tập và lời giải trong C"
+description: "Cùng tổng hợp những kiến thức đã học được trong phần vừa rồi bằng cách giải các bài tập đơn giản trong phần này nào."
 chapter:
   name: "Vòng lặp"
   slug: "chuong-04-loops"

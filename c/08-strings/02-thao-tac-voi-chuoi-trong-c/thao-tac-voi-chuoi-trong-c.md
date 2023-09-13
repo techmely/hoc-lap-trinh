@@ -1,6 +1,6 @@
 ---
 title: "Thao tác với chuối trong C"
-description: "Thao tác với chuối trong C"
+description: "Một kỹ năng quan trọng giúp bạn xử lý và biến đổi văn bản một cách linh hoạt. Bài viết này sẽ hướng dẫn bạn qua các thao tác cơ bản và tinh tế để làm việc với chuỗi trong C, giúp bạn tận dụng sức mạnh của xử lý văn bản. Chúng mình sẽ giải thích cách sao chép, nối, cắt, và so sánh chuỗi. Bạn sẽ tìm hiểu về các hàm thư viện chuỗi quan trọng như strcpy, strcat, strlen, và cách sử dụng chúng một cách hiệu quả nha."
 chapter:
   name: "Strings"
   slug: "chuong-08-strings"

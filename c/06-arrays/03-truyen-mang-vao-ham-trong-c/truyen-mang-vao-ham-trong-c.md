@@ -1,6 +1,6 @@
 ---
 title: "Truyền mảng vào hàm trong C"
-description: "Truyền mảng vào hàm trong C"
+description: "Truyền mảng vào hàm trong lập trình C là một kỹ thuật quan trọng giúp bạn xử lý dữ liệu một cách linh hoạt và hiệu quả. Bài viết này sẽ hướng dẫn bạn cách truyền mảng vào hàm, khai báo hàm với tham số mảng và sử dụng mảng bên trong hàm. Chúng mình sẽ giải thích cả trường hợp truyền mảng một chiều và mảng đa chiều vào hàm. Cùng đón xem nào."
 chapter:
   name: "Mảng"
   slug: "chuong-06-array"

@@ -1,6 +1,6 @@
 ---
-title: "Câu lệnh go to trong C"
-description: "Câu lệnh go to trong C"
+title: "Câu lệnh goto trong C"
+description: "Câu lệnh 'goto' là một công cụ mạnh mẽ và đa dạng cho phép bạn kiểm soát luồng của chương trình. Mặc dù nó có thể gây ra chút trở ngại trong việc đọc code và khả năng debug không quá linh hoạt, nhưng có các tình huống đặc biệt khi sử dụng 'goto' có thể là lựa chọn hợp lý. Học cách sử dụng 'goto' một cách chín chắn và hiệu quả để xử lý các tình huống phức tạp trong lập trình C."
 chapter:
   name: "Vòng lặp"
   slug: "chuong-04-loops"
