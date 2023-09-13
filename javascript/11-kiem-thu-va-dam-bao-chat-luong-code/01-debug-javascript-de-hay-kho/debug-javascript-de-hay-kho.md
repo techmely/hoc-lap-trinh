@@ -24,11 +24,11 @@ Bug là lỗi của chương trình. Nhìn chung, chúng ta có 2 loại bug: l�
 
 Nếu như bug là lỗi thì debug hay debugging chính là quá trình tìm ra bug.
 
-<content-info>
+::alert{type="infor"}
 
 Debugging khó gấp 2 lần việc bạn viết ra code. Nếu viết code thông minh quá mức, bạn sẽ không đủ thông minh để debug nó - Brian Kernighan và P.J. Plauger, The Elements of Programming Style.
 
-</content-info>
+::
 
 ## Strict mode trong JavaScript
 
@@ -150,7 +150,7 @@ console.log(numberToString(13, 10));
 
 Kết quả ta có log như sau:
 
-<content-result>
+::result
 
 sign:
 n: 13
@@ -161,7 +161,7 @@ n 0.13
 result: 0.131.33
 ...
 
-</content-result>
+::
 
 Bạn đã thấy sự bất ổn chưa? Giá trị log thứ 3 cho thấy n /= base => 1.3. Trong khi giá trị mong đợi phải là 1. À thì ra JavaScript khác với C/C++ và Java. Nếu như trong C/C++, Java, 13/10 = 1 thì trong JavaScript 13/10=1.3. Do đó, ta phải sửa thành n = Math.floor(n/base). Chương trình sẽ hoạt động đúng.
 

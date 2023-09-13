@@ -70,15 +70,11 @@ switch (x) {
 // Equal
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Equal</code>
-  </div>
-</div>
+::result
+
+Equal
+
+::
 
 Giải thích:
 
@@ -110,11 +106,11 @@ switch (x) {
 // Don't know the answer
 ```
 
-<content-info>
+::alert{type="infor"}
 
 `switch` và `case` đều có thể chứa biểu thức - không chỉ là [biến](/bai-viet/javascript/bien-trong-javascript/) hay [hằng](/bai-viet/javascript/hang-trong-javascript/).
 
-</content-info>
+::
 
 Ví dụ lệnh switch case với biểu thức:
 

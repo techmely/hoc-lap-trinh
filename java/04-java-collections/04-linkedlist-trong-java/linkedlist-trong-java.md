@@ -88,15 +88,11 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Dog, Cat, Horse]</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: [Dog, Cat, Horse]<br/>
+
+::
 
 ## Thêm phần tử từ LinkedList này sang LinkedList khác
 
@@ -124,16 +120,12 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Mammals: [Dog, Cat, Horse]</code><br/>
-    <code>Animals: [Crocodile, Dog, Cat, Horse]</code><br/>
-  </div>
-</div>
+::result
+
+Mammals: [Dog, Cat, Horse]<br/>
+Animals: [Crocodile, Dog, Cat, Horse]<br/>
+
+::
 
 Ngoài ra, chúng ta cũng có thể sử dụng hàm `listsIterator()` để thêm các phần tử vào LinkedList. Để sử dụng nó, chúng ta phải nhập vào gói `java.util.ListIterator`. Ví dụ:
 
@@ -155,15 +147,11 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Dog, Cat]</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: [Dog, Cat]<br/>
+
+::
 
 ## Truy cập tới các phần tử trong LinkedList
 
@@ -189,16 +177,12 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Dog, Horse, Cat]</code><br/>
-    <code>Element at index 1: Horse</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: [Dog, Horse, Cat]<br/>
+Element at index 1: Horse<br/>
+
+::
 
 Ngoài cách này ra, để lặp lại các phần tử của LinkedList, chúng ta có thể sử dụng hàm `iterator()`. Chúng ta phải nhập gói `java.util.Iterator` để sử dụng hàm này. Ví dụ:
 
@@ -227,15 +211,11 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: Dog, Cat, Horse,</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: Dog, Cat, Horse,<br/>
+
+::
 
 Ở đây:
 
@@ -277,16 +257,12 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: Dog, Horse, Cat,</code><br/>
-    <code>Reverse LinkedList: Cat, Horse, Dog,</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: Dog, Horse, Cat,<br/>
+Reverse LinkedList: Cat, Horse, Dog,<br/>
+
+::
 
 Ở đây:
 
@@ -320,16 +296,12 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Dog, Horse, Cat]</code><br/>
-    <code>Dog is in LinkedList.</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: [Dog, Horse, Cat]<br/>
+Dog is in LinkedList.<br/>
+
+::
 
 ## Tìm kiếm vị trí phần tử trong LinkedList
 
@@ -361,17 +333,13 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Dog, Horse, Cat, Dog]</code><br/>
-    <code>First Occurrence of Dog: 0</code><br/>
-    <code>Last Occurrence of Dog: 3</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: [Dog, Horse, Cat, Dog]<br/>
+First Occurrence of Dog: 0<br/>
+Last Occurrence of Dog: 3<br/>
+
+::
 
 ## Thay đổi các phần tử trong LinkedList
 
@@ -425,16 +393,12 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Dog, Cat, Horse]</code><br/>
-    <code>New LinkedList: [Cow, Cat, Horse]</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: [Dog, Cat, Horse]<br/>
+New LinkedList: [Cow, Cat, Horse]<br/>
+
+::
 
 ## Xóa các phần tử khỏi LinkedList
 
@@ -463,17 +427,13 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList : [Dog, Horse, Cat, Zebra]</code><br/>
-    <code>Removed Element: Horse</code><br/>
-    <code>New LinkedList: [Dog, Cat, Zebra]</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList : [Dog, Horse, Cat, Zebra]<br/>
+Removed Element: Horse<br/>
+New LinkedList: [Dog, Cat, Zebra]<br/>
+
+::
 
 Chúng ta cũng có thể xóa các phần tử khỏi LinkedList bằng hàm `listsIterator()`. Ví dụ:
 
@@ -502,16 +462,12 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Dog, Cat, Horse]</code><br/>
-    <code>New LinkedList: [Cat, Horse]</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: [Dog, Cat, Horse]<br/>
+New LinkedList: [Cat, Horse]<br/>
+
+::
 
 Ngoài ra, để xóa tất cả các phần tử khỏi LinkedList, chúng ta có thể sử dụng hàm `clear()`. Ví dụ:
 
@@ -535,20 +491,22 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Dog, Cat, Horse]</code><br/>
-    <code>New LinkedList: []</code><br/>
-  </div>
-</div>
+::result
 
-Lưu ý: Chúng ta cũng có thể sử dụng hàm `removeAll()`để loại bỏ tất cả các phần tử. Tuy nhiên, hàm `clear()` được cho là hiệu quả hơn hàm `removeAll()`.
+LinkedList: [Dog, Cat, Horse]<br/>
+New LinkedList: []<br/>
 
-Chúng ta cũng có thể xóa các phần tử khỏi LinkedList nếu chúng thỏa mãn một điều kiện nhất định. Để làm điều này, chúng ta sử dụng hàm `removeIf()`. Ví dụ:
+::
+
+::alert{type="warning"}
+Lưu ý:
+
+- Chúng ta cũng có thể sử dụng hàm `removeAll()`để loại bỏ tất cả các phần tử. Tuy nhiên, hàm `clear()` được cho là hiệu quả hơn hàm `removeAll()`.
+- Chúng ta cũng có thể xóa các phần tử khỏi LinkedList nếu chúng thỏa mãn một điều kiện nhất định. Để làm điều này, chúng ta sử dụng hàm `removeIf()`.
+
+::
+
+Ví dụ:
 
 ```java
 import java.util.LinkedList;
@@ -576,18 +534,16 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [2, 3, 4, 5]</code><br/>
-    <code>New LinkedList: [4, 5]</code><br/>
-  </div>
-</div>
+::result
 
-Lưu ý: `(Integer i)->i<4` là một biểu thức lambda. Để tìm hiểu về biểu thức lambda, hãy truy cập Biểu thức Lambda của Java .
+LinkedList: [2, 3, 4, 5]<br/>
+New LinkedList: [4, 5]<br/>
+
+::
+
+::alert{type="warning"}
+Lưu ý: `(Integer i)->i<4` là một biểu thức lambda. Để tìm hiểu về biểu thức lambda, hãy truy cập Biểu thức `Lambda` của Java .
+::
 
 ## Deque và Queue trong LinkedList
 
@@ -619,16 +575,12 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Cat, Dog, Cow]</code><br/>
-    <code>New LinkedList: [Cat, Dog, Cow, Zebra]</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: [Cat, Dog, Cow]<br/>
+New LinkedList: [Cat, Dog, Cow, Zebra]<br/>
+
+::
 
 - Hàm `getFirst()` – trả về phần tử đầu tiên
 - Hàm `getLast()` – trả về phần tử cuối cùng
@@ -660,17 +612,13 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Dog, Horse, Cat]</code><br/>
-    <code>First Element: Dog</code><br/>
-    <code>Last Element: Cat</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: [Dog, Horse, Cat]<br/>
+First Element: Dog<br/>
+Last Element: Cat<br/>
+
+::
 
 - Hàm `removeFirst()` – loại bỏ phần tử đầu tiên
 - Hàm `removeLast()` – loại bỏ phần tử cuối cùng
@@ -704,18 +652,14 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Dog, Horse, Cat]</code><br/>
-    <code>Removed Element: Dog</code><br/>
-    <code>Removed Element: Cat</code><br/>
-    <code>New LinkedList: [Horse]</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: [Dog, Horse, Cat]<br/>
+Removed Element: Dog<br/>
+Removed Element: Cat<br/>
+New LinkedList: [Horse]<br/>
+
+::
 
 - Hàm `peek()` trả về phần tử đầu tiên (đầu) của LinkedList. Ví dụ:
 
@@ -741,17 +685,13 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Dog, Horse, Cat]</code><br/>
-    <code>Element Accessed: Dog</code><br/>
-    <code>New LinkedList: [Dog, Horse, Cat]</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: [Dog, Horse, Cat]<br/>
+Element Accessed: Dog<br/>
+New LinkedList: [Dog, Horse, Cat]<br/>
+
+::
 
 - Hàm `poll()` trả về và loại bỏ phần tử đầu tiên trong LinkedList. Ví dụ:
 
@@ -777,17 +717,13 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Dog, Horse, Cat]</code><br/>
-    <code>Removed Element: Dog</code><br/>
-    <code>New LinkedList: [Horse, Cat]</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: [Dog, Horse, Cat]<br/>
+Removed Element: Dog<br/>
+New LinkedList: [Horse, Cat]<br/>
+
+::
 
 - Hàm `offer()` bổ sung thêm các phần tử cụ thể ở phần cuối của LinkedList. Ví dụ:
 
@@ -811,16 +747,12 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Dog, Horse]</code><br/>
-    <code>New LinkedList: [Dog, Horse, Cat]</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: [Dog, Horse]<br/>
+New LinkedList: [Dog, Horse, Cat]<br/>
+
+::
 
 ## Lặp qua các phần tử của LinkedList
 
@@ -848,17 +780,13 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Cow, Cat, Dog]</code><br/>
-    <code>Accessing linked list elements:</code><br/>
-    <code>Cow, Cat, Dog,</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: [Cow, Cat, Dog]<br/>
+Accessing linked list elements:<br/>
+Cow, Cat, Dog,<br/>
+
+::
 
 Chúng ta cũng có thể dụng vòng lặp `for` để lặp qua các phần tử của một LinkedList
 
@@ -884,17 +812,13 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Cow, Cat, Dog]</code><br/>
-    <code>Accessing linked list elements:</code><br/>
-    <code>Cow, Cat, Dog,</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: [Cow, Cat, Dog]<br/>
+Accessing linked list elements:<br/>
+Cow, Cat, Dog,<br/>
+
+::
 
 Chúng ta có thể sử dụng hàm `iterator()` để truy cập các phần tử của LinkedList. Để sử dụng hàm này, chúng ta phải nhập gói `java.util.Iterator`.
 
@@ -922,14 +846,10 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedList: [Cow, Cat, Dog]</code><br/>
-    <code>LinkedList using the iterator() method:</code><br/>
-    <code>Cow, Cat, Dog,</code><br/>
-  </div>
-</div>
+::result
+
+LinkedList: [Cow, Cat, Dog]<br/>
+LinkedList using the iterator() method:<br/>
+Cow, Cat, Dog,<br/>
+
+::

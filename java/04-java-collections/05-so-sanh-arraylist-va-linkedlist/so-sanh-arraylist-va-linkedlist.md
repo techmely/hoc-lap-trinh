@@ -60,13 +60,9 @@ public class ArraylistAndLinkedListExample {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>arraylist: [Java, C++, PHP, Python]</code><br/>
-    <code>linkedlist: [Hiberante, Struts2, Spring, Mybatis]</code><br/>
-  </div>
-</div>
+::result
+
+arraylist: [Java, C++, PHP, Python]<br/>
+linkedlist: [Hiberante, Struts2, Spring, Mybatis]<br/>
+
+::

@@ -13,7 +13,7 @@ position: 2
 
 Tính đóng gói trong java là kỹ thuật ẩn giấu thông tin không liên quan và hiện thị ra thông liên quan. Mục đích chính của đóng gói trong java là giảm thiểu mức độ phức tạp phát triển phần mềm.
 
-### Tính đóng gói (Encapsulation)
+### Tính đóng gói (Encapsulation) trong Java
 
 Ví dụ đối với ô tô thì một số thuộc tính ở bên ngoài như xi nhan, đèn. bánh xe là những thuộc tính công khai (public) người khác xem được. nhưng đối với các thuộc tính bên trong như đồ đạc trong cốp xe thì bị giấu đi (private).
 
@@ -26,7 +26,7 @@ Các dữ liệu và phương thức có liên quan với nhau được đóng g
 - Bạn có thể tạo lớp read-only hoặc write-only bằng việc cài đặt phương thức setter hoặc getter.
 - Bạn có thể kiểm soát đối với dữ liệu. Giả sử bạn muốn đặt giá trị của id chỉ lớn hơn 100 bạn có thể viết logic bên trong lớp setter.
 
-<div class="example">Ví dụ tính đóng gói trong java</div>
+Ví dụ tính đóng gói trong java
 
 Hãy xem ví dụ sau về đóng gói trong java với một lớp chỉ có một trường và các phướng thức setter và getter của nó.
 
@@ -86,12 +86,8 @@ public class TestPerson {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Tên: Thaycacac, CMND: 123456</code>
-  </div>
-</div>
+::result
+
+Tên: Thaycacac, CMND: 123456
+
+::

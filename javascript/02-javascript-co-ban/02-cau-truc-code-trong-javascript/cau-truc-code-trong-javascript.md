@@ -28,8 +28,9 @@ Và trong một chương trình, bạn có thể viết nhiều câu lệnh tùy
 
 Ví dụ hiển thị dòng chữ trên bằng hai câu lệnh `console.log` khác nhau:
 
-```
-console.log("Hello");console.log("World");
+```js
+console.log("Hello");
+console.log("World");
 ```
 
 Thông thường, mình sẽ viết mỗi câu lệnh trên một dòng cho dễ nhìn hơn:
@@ -39,16 +40,12 @@ console.log("Hello");
 console.log("World");
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Hello</code><br/>
-    <code>World</code><br/>
-  </div>
-</div>
+::result
+
+Hello<br/>
+World<br/>
+
+::
 
 ## Dấu chấm phẩy trong JavaScript
 
@@ -59,16 +56,12 @@ console.log("Hello");
 console.log("World");
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Hello</code><br/>
-    <code>World</code><br/>
-  </div>
-</div>
+::result
+
+Hello<br/>
+World<br/>
+
+::
 
 Nguyên nhân là do trình thông dịch **tự động thêm dấu chấm phẩy** dựa trên kí tự xuống dòng. Tuy nhiên, vẫn có nhiều trường hợp xuống dòng nhưng JavaScript vẫn hiểu đó là một câu lệnh, ví dụ:
 
@@ -95,44 +88,34 @@ console.log("Hello world");
 
 Có thể bạn chưa hiểu về câu lệnh thứ hai (các bài viết sau bạn sẽ biết) - kết quả hiển thị là:
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Hello world</code><br/>
-    <code>1</code><br/>
-    <code>2</code><br/>
+::result
 
-  </div>
-</div>
+Hello world<br/>
+1<br/>
+2<br/>
+
+::
 
 **Nhưng nếu bạn bỏ qua dấu chấm phẩy thì sao?**
 
-```
-console.log("Hello world")
-    [1, 2].forEach((value) => console.log(value))
+```js
+console.log("Hello world")[(1, 2)].forEach((value) => console.log(value));
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Bạn sẽ bị lỗi cú pháp</span>
-  </div>
-  <div class="window-body">
-    <code>Hello world</code><br/>
-    <code>Uncaught TypeError: Cannot read properties of undefined (reading '2')</code><br/>
-  </div>
-</div>
+:result
+Bạn sẽ bị lỗi cú pháp
+Hello world<br/>
+Uncaught TypeError: Cannot read properties of undefined (reading '2')<br/>
+
+::
 
 Kì lạ phải không? 🤔
 
 Đây là một trong số những thứ gây đau đầu nhất khi lập trình JavaScript. Vì vậy, lời khuyên cho bạn là:
 
-<content-info>
-  <p>Luôn luôn sử dụng dấu chấm phẩy để kết thúc một câu lệnh.</p>
-</content-info>
+::alert{type="infor"}
+Luôn luôn sử dụng dấu chấm phẩy để kết thúc một câu lệnh.
+::
 
 ## Comment code trong JavaScript
 
@@ -176,16 +159,16 @@ Ví dụ chú thích trên nhiều dòng:
 
 Khi chạy chương trình, JavaScript engine sẽ bỏ qua thành phần chú thích này.
 
-<content-info>
-  <p>Một vài trường hợp mình viết chú thích:</p>
-  <ul>
-    <li>Việc đặt tên biến không diễn tả được hết ý nghĩa của nó (muốn đầy đủ ý nghĩa thì nó lại quá dài).</li>
-    <li>Sử một công thức đã được chứng minh (nếu không chú thích lại sẽ không biết công thức đó ở đâu ra).</li>
-    <li>Giải thích ý nghĩa của một hàm (tại sao lại phải viết hàm này...).</li>
-    <li>Tạm thời bỏ qua một vài đoạn code chưa dùng tới.</li>
-    <li>Và nhiều trường hợp khác nữa...</li>
-  </ul>
-</content-info>
+::alert{type="infor"}
+
+Một vài trường hợp mình viết chú thích:
+
+- Việc đặt tên biến không diễn tả được hết ý nghĩa của nó (muốn đầy đủ ý nghĩa thì nó lại quá dài).
+- Sử một công thức đã được chứng minh (nếu không chú thích lại sẽ không biết công thức đó ở đâu ra).
+- Giải thích ý nghĩa của một hàm (tại sao lại phải viết hàm này...).
+- Tạm thời bỏ qua một vài đoạn code chưa dùng tới.
+- Và nhiều trường hợp khác nữa...
+  ::
 
 _Có một số khái niệm mới ở đây, mình sẽ trình bày ở các bài viết sau._
 

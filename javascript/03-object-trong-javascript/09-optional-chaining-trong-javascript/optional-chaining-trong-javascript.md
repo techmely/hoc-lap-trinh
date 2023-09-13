@@ -99,11 +99,11 @@ console.log(user?.address); // undefined
 console.log(user?.address?.street); // undefined
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý:** optional chaining trong JavaScript `?.` chỉ kiểm tra điều kiện của **một giá trị** đứng trước nó.
 
-</content-warning>
+::
 
 Ví dụ đoạn code sau bị lỗi:
 
@@ -216,11 +216,11 @@ Trong ví dụ trên, `?.` dùng để kiểm tra xem `user1` và `user2` có t�
 delete user?.name; // xóa thuộc tính user.name nếu user tồn tại.
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 💡 **Chú ý:** bạn có thể dùng `?.` để **đọc và xóa** thuộc tính trong object, nhưng không thể **thay đổi giá trị** của thuộc tính.
 
-</content-warning>
+::
 
 Ví dụ:
 

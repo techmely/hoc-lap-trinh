@@ -27,7 +27,7 @@ Chuỗi là một mảng các kí tự được kết thúc bằng kí tự **_n
 Ví dụ:
 
 ```cpp
-char c[] = "Hello Anest";
+char c[] = "Hello Kungfutech";
 ```
 
 Khi trình biên dịch gặp một chuỗi các ký tự được đặt trong dấu ngoặc kép, theo mặc định, nó sẽ thêm một ký tự **_null_** vào cuối.
@@ -82,8 +82,8 @@ Ví dụ:
 int main()
 {
   char c[100];
-  //c = "Hello Anest"; //error
-  strcpy(c, "Hello Anest");
+  //c = "Hello Kungfutech"; //error
+  strcpy(c, "Hello Kungfutech");
   puts(c);
 }
 ```
@@ -91,10 +91,12 @@ int main()
 Kết quả:
 
 ```cpp
-Hello Anest
+Hello Kungfutech
 ```
 
-> Lưu ý: khi sử dụng hàm `strcpy()` hãy khai báo thư viên `<string.h>`
+::alert{type="warning"}
+Lưu ý: khi sử dụng hàm `strcpy()` hãy khai báo thư viên `<string.h>`
+::
 
 ## Đọc chuỗi từ người dùng
 
@@ -119,11 +121,11 @@ int main()
 Kết quả:
 
 ```cpp
-Enter name: Anest Academy
-Your name is Anest.
+Enter name: Kungfutech Academy
+Your name is Kungfutech.
 ```
 
-Mặc dù `Anest Academy` đã được nhập tại chương trình trên nhưng chỉ `Anest` được lưu trữ tại string `name`, đó là vì có một khoảng trắng đằng sau `Anest`.
+Mặc dù `Kungfutech Academy` đã được nhập tại chương trình trên nhưng chỉ `Kungfutech` được lưu trữ tại string `name`, đó là vì có một khoảng trắng đằng sau `Kungfutech`
 
 Vậy làm thế nào để đọc một dòng văn bản?
 
@@ -147,8 +149,8 @@ int main()
 Kết quả:
 
 ```cpp
-Enter name: Anest Academy
-Name: Anest Academy
+Enter name: Kungfutech Academy
+Name: Kungfutech Academy
 ```
 
 Tại chương trình trên ta đã sử dụng hàm `fgets()` để đọc một chuỗi văn bản từ người dùng và hàm `puts()` để hiển thị văn bản đó.
@@ -189,8 +191,8 @@ void displayString(char str[])
 Kết quả:
 
 ```cpp
-Enter string: Anest Academy
-String Output: Anest Academy
+Enter string: Kungfutech Academy
+String Output: Kungfutech Academy
 ```
 
 Tại đây chúng ta truyền một chuỗi `name` vào hàm `displayString()`.
@@ -207,7 +209,7 @@ Ví dụ:
 #include <stdio.h>
 
 int main(void) {
-  char name[] = "Anest Academy";
+  char name[] = "Kungfutech Academy";
 
   printf("%c", *name);
   printf("%c", *(name+1));

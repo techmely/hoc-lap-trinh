@@ -39,7 +39,7 @@ Cách thứ nhất là kế thừa `class Thread`:
 
 Thật đơn giản đúng không nào. Để khai báo một lớp là `Thread`, thì đơn giản chỉ kế thừa nó từ lớp cha `Thread`, chính phương thức `run()` bên trong lớp đó sẽ trở thành một Luồng xử lý bởi hệ thống khi đâu đó bên ngoài gọi đến phương thức `start()` của lớp này.
 
-<div class="example">Tạo một Thread đếm ngược 10 giây. Khi start, Thread sẽ bắt đầu in ra console giá trị 10, mỗi một giây trôi qua Thread sẽ giảm con số này đi một đơn vị và lại in ra console, đến khi giảm đến giá trị 0 Thread sẽ in “Hết giờ”.</div>
+Ví dụ tạo một Thread đếm ngược 10 giây. Khi start, Thread sẽ bắt đầu in ra console giá trị 10, mỗi một giây trôi qua Thread sẽ giảm con số này đi một đơn vị và lại in ra console, đến khi giảm đến giá trị 0 Thread sẽ in “Hết giờ”.
 
 ```java
 public class CountDownThread extends Thread {
@@ -82,25 +82,21 @@ public static void main(String[] args) {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>10</code></br>
-    <code>9</code></br>
-    <code>8</code></br>
-    <code>7</code></br>
-    <code>6</code></br>
-    <code>5</code></br>
-    <code>4</code></br>
-    <code>3</code></br>
-    <code>2</code></br>
-    <code>1</code></br>
-    <code>Hết giờ</code></br>
-  </div>
-</div>
+::result
+
+10</br>
+9</br>
+8</br>
+7</br>
+6</br>
+5</br>
+4</br>
+3</br>
+2</br>
+1</br>
+Hết giờ</br>
+
+::
 
 ## Tạo Thread bằng cách implement từ Interface Runnable
 
@@ -108,7 +104,7 @@ Nếu như cách trên kia thì bạn phải kế thừa từ lớp `Thread`, th
 
 Bạn tạo mới một lớp và `implement` lớp này với `interface` có tên `Runnable`. Trong lớp mới tạo đó, bạn `override` phương thức `run()`. Cuối cùng, ở nơi khác, khi muốn tạo ra một `Thread` từ lớp này, trước hết bạn khai báo đối tượng cho nó, rồi bạn khai báo thêm một đối tượng của `Thread` nữa và truyền đối tượng của lớp này vào hàm khởi tạo của `Thread`. Khi phương thức `start()` của lớp Thread vừa tạo được gọi đến, thì phương thức `run()` bên trong lớp dẫn xuất của `Runnable` sẽ được gọi để tạo thành một Luồng trong hệ thống.
 
-<div class="example">Chúng ta xây dựng lại ví dụ bên trên nhưng bằng cách thức 2</div>
+Bây giờ chúng ta xây dựng lại ví dụ bên trên nhưng bằng cách thức 2
 
 ```java
 public class CountDownThread implements Runnable {
@@ -140,25 +136,21 @@ public static void main(String[] args) {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>10</code></br>
-    <code>9</code></br>
-    <code>8</code></br>
-    <code>7</code></br>
-    <code>6</code></br>
-    <code>5</code></br>
-    <code>4</code></br>
-    <code>3</code></br>
-    <code>2</code></br>
-    <code>1</code></br>
-    <code>Hết giờ</code></br>
-  </div>
-</div>
+::result
+
+10</br>
+9</br>
+8</br>
+7</br>
+6</br>
+5</br>
+4</br>
+3</br>
+2</br>
+1</br>
+Hết giờ</br>
+
+::
 
 ## Lấy ra Thread hiện tại
 

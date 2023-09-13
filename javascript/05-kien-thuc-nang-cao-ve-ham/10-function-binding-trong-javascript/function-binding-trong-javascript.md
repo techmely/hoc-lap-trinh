@@ -199,11 +199,11 @@ Trong ví dụ trên `mul.bind(null, 2)` tạo ra hàm mới `double` với giá
 
 Cách này gọi **partial function**.
 
-<content-warning>
+::alert{type="warning"}
 
 hàm `double` không sử dụng `this`. Tuy nhiên, hàm `bind` lại yêu cầu `this`. Vì vậy, tham số đầu tiên mình để `null`.
 
-</content-warning>
+::
 
 Tương tự, mình có thể tạo ra hàm nhân ba `triple` như sau:
 
@@ -290,11 +290,11 @@ let user = {
 user.g();
 ```
 
-<content-result>
+::result
 
 null
 
-</content-result>
+::
 
 Phương thức `user.g` được gán bằng `f.bind(null)`. Nghĩa là giá trị của `this` trong hàm `f` luôn là `null`.
 
@@ -314,9 +314,11 @@ f(); // (*)
 
 Kết quả `(*)` là gì?
 
-<content-result>
+::result
+
 Alex
-</content-result>
+
+::
 
 Khi gọi `f.bind(context)`, kết quả trả về là một đối tượng đặc biệt. Đối tượng này ghi nhớ giá trị của `this=context` tại thời điểm bind và không thể bị thay đổi.
 
@@ -344,9 +346,11 @@ console.log(bound.test); // (*)
 
 Kết quả `(*)` là gì?
 
-<content-result>
+::result
+
 undefined
-</content-result>
+
+::
 
 Bởi vì kết quả của `bind` là một đối tượng khác. Và đối tượng này không chứa thuộc tính `test`.
 

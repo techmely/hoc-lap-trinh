@@ -93,7 +93,7 @@ Danh sách những từ khoá và những từ dự trữ:
 
 `break` `case` `catch` `class` `const` `continue` `debugger` `default` `delete` `do` `else` `enum` `export` `extends` `false` `finally` `for` `function` `if` `implements` `import` `in` `instanceof` `interface` `let` `new` `null` `package` `private` `protected` `public` `return` `static` `super` `switch` `this` `throw` `true` `try` `typeof` `var` `void` `while` `with` `yield`
 
-<div class="example">những tên hằng hợp lệ:</div>
+Ví dụ những tên hằng hợp lệ
 
 ```js
 const temp = 1000;
@@ -103,7 +103,7 @@ const I_AM_STRONG = true;
 const dientichhinhvuong = 6996;
 ```
 
-<div class="example">những tên hằng không hợp lệ:</div>
+những tên hằng không hợp lệ:
 
 ```js
 const vertex% = 50;     // sử dụng kí tự đặc biệt %
@@ -111,7 +111,7 @@ const vertex% = 50;     // sử dụng kí tự đặc biệt %
     const while = 'coding'; // sử dụng từ khoá "while"
 ```
 
-<content-info>
+::alert{type="infor"}
 📝 Một số **chú ý** khi đặt tên biến:
 
 <ul>
@@ -119,7 +119,7 @@ const vertex% = 50;     // sử dụng kí tự đặc biệt %
 <li>Bạn có thể sử dụng những chữ cái không phải chữ cái Latinh để đặt tên biến. Nhưng điều này là không nên. Bạn nên sử dụng chữ cái Latinh (a-z) để đặt tên biến.</li>
 <li>Tốt nhất là đặt theo chuẩn tiếng Anh để mọi người trên thế giới có thể hiểu code của bạn.</li>
 </ul>
-</content-info>
+::
 
 ## Chuẩn hóa cách đặt tên hằng số
 
@@ -127,7 +127,7 @@ Cũng lại tương tự như biến, bạn chỉ cần đặt tên hằng đún
 
 **Cách 1: Đối với những hằng số biết trước khi lập trình**
 
-<div class="example">Bạn cần lưu mã màu của một số màu thường dùng trong dự án:</div>
+Bạn cần lưu mã màu của một số màu thường dùng trong dự án:
 
 ```js
 const COLOR_BLACK = "#000000";
@@ -141,7 +141,7 @@ const COLOR_BLUE = "#0000FF";
 
 **Cách 2: Đối với những hằng số được sinh ra trong quá trình chạy**
 
-<div class="example">Bạn cần lưu thời gian tải trang:</div>
+Bạn cần lưu thời gian tải trang:
 
 ```js
 const timeToLoadPage = /* Xử lý một số thứ để tính ra thời gian tải trang */
@@ -251,10 +251,10 @@ const if = true; // Sai vì dùng từ khóa
 
 ### Bài 2: Khai báo và in ra giá trị của hằng
 
-1.  Khai báo hai hằng **COLOR_ORANGE** và **COLOR_YELLOW** lần lượt là mã màu cam và màu vàng.
-2.  In ra giá trị của hai hằng số trên ra [console.log](/bai-viet/javascript/dev-tools-la-gi/).
-3.  Khai báo biến **currentColor** với giá trị bằng **COLOR_ORANGE**.
-4.  In ra console giá trị của biến **currentColor** (kết quả phải là giá trị của hằng **COLOR_ORANGE**).
+1. Khai báo hai hằng **COLOR_ORANGE** và **COLOR_YELLOW** lần lượt là mã màu cam và màu vàng.
+2. In ra giá trị của hai hằng số trên ra [console.log](/bai-viet/javascript/dev-tools-la-gi/).
+3. Khai báo biến **currentColor** với giá trị bằng **COLOR_ORANGE**.
+4. In ra console giá trị của biến **currentColor** (kết quả phải là giá trị của hằng **COLOR_ORANGE**).
 
 Đáp án
 

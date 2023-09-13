@@ -67,7 +67,7 @@ let root = {
 
 Bây giờ, nếu bạn muốn tạo ra các **point** khác, bạn chỉ cần gọi `new p1(1, 2)`, `new p2(2, 3)`,... thay vì phải sử dụng cú pháp `{...}` nhiều lần (và dài dòng hơn).
 
-<content-warning>
+::alert{type="warning"}
 
 📝 **Chú ý:**
 
@@ -75,7 +75,7 @@ Bây giờ, nếu bạn muốn tạo ra các **point** khác, bạn chỉ cần 
 
 [Arrow function](/bai-viet/javascript/arrow-function-trong-javascript) không có `this` nên không được dùng làm hàm khởi tạo.
 
-</content-warning>
+::
 
 Nếu hàm khởi tạo không có tham số thì bạn có thể bỏ qua cặp dấu ngoặc đơn `()`, ví dụ:
 
@@ -146,7 +146,7 @@ console.log(root.x, root.y); // 0 0
 
 Với cách viết như này, bạn có thể khởi tạo object với `new` hoặc không có `new` thì đều cho kết quả giống nhau.
 
-<content-warning>
+::alert{type="warning"}
 
 💡 **Chú ý:**
 
@@ -154,7 +154,7 @@ Với cách viết như này, bạn có thể khởi tạo object với `new` ho
 
 Việc khởi tạo object **nên luôn luôn sử dụng từ khóa `new`** để đảm bảo code rõ ràng và dễ hiểu nhất.
 
-</content-warning>
+::
 
 ## Trả về giá trị từ hàm khởi tạo
 

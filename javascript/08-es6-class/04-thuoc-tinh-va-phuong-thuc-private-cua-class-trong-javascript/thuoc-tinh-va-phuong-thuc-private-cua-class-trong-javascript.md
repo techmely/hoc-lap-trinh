@@ -13,11 +13,11 @@ position: 4
 
 Một trong những tính chất quan trọng của lập trình hướng đối tượng là [tính đóng gói](<https://vi.wikipedia.org/wiki/%C4%90%C3%B3ng_g%C3%B3i_(l%E1%BA%ADp_tr%C3%ACnh_m%C3%A1y_t%C3%ADnh)>) - **Encapsulation**.
 
-<content-info>
+::alert{type="infor"}
 
 Hiểu đơn giản, **tính đóng gói** là khả năng **che giấu thông tin của đối tượng với môi trường bên ngoài**. Việc cho phép môi trường bên ngoài tác động lên các dữ liệu bên trong của đối tượng hoàn toàn tùy thuộc vào người lập trình.
 
-</content-info>
+::
 
 Để làm được điều này, các ngôn ngữ lập trình như C++, Java,... hỗ trợ từ khóa `private` và `protected` giúp **hạn chế phạm vi sử dụng** của các thuộc tính và phương thức trong class.
 
@@ -154,11 +154,11 @@ Vì cách sử dụng getter/setter, bạn chỉ truyền được một tham s�
 
 Để định nghĩa thuộc tính private và phương thức private trong class JavaScript, bạn chỉ cần thêm kí tự `#` trước tên thuộc tính hay phương thức.
 
-<content-info>
+::alert{type="infor"}
 
 **Chú ý:** thuộc tính private hay phương thức private **chưa support hoàn toàn** trên các trình duyệt, bạn có thể tham khảo thêm tại đây: [CanIUse - JavaScript classes: Private class fields](https://caniuse.com/mdn-javascript_classes_private_class_fields)
 
-</content-info>
+::
 
 Áp dụng cách này vào đoạn code trên ta có kết quả như sau:
 
@@ -193,11 +193,11 @@ console.log(waterBottle.#volume);
 
 Trong đoạn code trên, mình đã thay đổi `_waterAmount` và `_volume` thành `#waterAmount` và `#volume`. Lúc này, các thuộc tính đã **hoàn toàn private**. Nếu bạn cố tình truy cập các thuộc tính này từ bên ngoài class thì sẽ gặp lỗi dạng như trên:
 
-<content-result>
+::result
 
 Private field '#volume' must be declared in an enclosing class
 
-</content-result>
+::
 
 Đặc biệt, với thuộc tính private và phương thức private, bạn không thể truy cập được chúng từ class kế thừa, ví dụ:
 

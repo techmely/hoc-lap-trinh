@@ -251,7 +251,7 @@ Chuong trinh da hoan thanh
 
 Vấn đề đã được giải quyết. Chương trình chạy, `Case 1 :` đúng với điều kiện, màn hình in ra " la so 1". Tiếp theo là lệnh `break` và cấu trúc switch kết thúc tại đây. Và lệnh cout cuối được gọi vì nó nằm sau cấu trúc **switch**.
 
-## LƯU Ý
+## Lưu ý
 
 - Biểu thức truyền vào sau switch. Phải là một biếu thức được phép.
 

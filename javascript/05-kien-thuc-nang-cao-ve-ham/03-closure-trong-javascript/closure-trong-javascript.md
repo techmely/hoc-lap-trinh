@@ -55,11 +55,11 @@ greet("Dev");
 
 Để hiểu hơn về phạm vi của biến, sau đây mình sẽ tìm hiểu về khái niệm "khối code" hay tiếng anh là **code block**.
 
-<content-warning>
+::alert{type="warning"}
 
 📝 **Chú ý:** các ví dụ sau đây chỉ áp dụng cho cách khai báo biến với `let/const`. Cách khai báo biến với `var` đã lỗi thời và `var` có logic riêng.
 
-</content-warning>
+::
 
 ## Code block là gì?
 
@@ -275,11 +275,11 @@ Hỏi kết quả khi gọi `sayHi()` là "Alex" hay "Anna"?
 
 Xem đáp án
 
-<content-result>
+::result
 
 Anna
 
-</content-result>
+::
 
 Biến `name` là biến toàn cục. Khi hàm `sayHi` được gọi, giá trị của `name` là giá trị mới nhất.
 
@@ -309,11 +309,11 @@ Hỏi kết quả của `worker()` là "Alex" hay "Anna"?
 
 Xem đáp án
 
-<content-result>
+::result
 
 Alex
 
-</content-result>
+::
 
 Nested function bên trong hàm `makeWorker` truy cập tới biến ngoài hàm là `name = "Alex"`.
 
@@ -343,11 +343,11 @@ Kết quả sau khi gọi `sayHi()` là gì?
 
 Xem đáp án
 
-<content-result>
+::result
 
 Uncaught ReferenceError: sayHi is not defined
 
-</content-result>
+::
 
 Hàm `sayHi` được khai báo trong `if`, nên chỉ được nhìn thấy trong block code của `if`.
 
@@ -394,11 +394,11 @@ Kết quả `(*)` là gì?
 
 Xem đáp án
 
-<content-result>
+::result
 
 Uncaught ReferenceError: Cannot access 'x' before initialization
 
-</content-result>
+::
 
 Vì trong hàm có `let x = 2`, nghĩa là biến `x` có tồn tại trong phạm vi của hàm `func`. Nhưng bạn không thể truy cập đến biến `x` trước câu lệnh `let x`.
 

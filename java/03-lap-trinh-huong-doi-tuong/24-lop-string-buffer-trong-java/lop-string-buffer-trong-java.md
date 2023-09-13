@@ -35,19 +35,15 @@ class StringBuffer {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>0</code><br/>
-    <code>12</code><br/>
-    <code>16</code><br/>
-    <code>20</code><br/>
-    <code>28</code>
-  </div>
-</div>
+::result
+
+0<br/>
+12<br/>
+16<br/>
+20<br/>
+28
+
+::
 
 `length()` và `capacity()` của StringBuffer là hai phương thức hoàn toàn khác nhau. Phương thức `length()` đề cập đến số các ký tự mà đối tượng thực chứa, trong khi `capacity()` trả về tổng dung lượng của một đối tượng (mặc định là 16) và số ký tự trong đối tượng **StringBuffer**.
 
@@ -62,17 +58,17 @@ Trước khi dung lượng của **StringBuffer** được đặt lại, điều
 - Nếu dung lượng mới (NewCapacity) lớn hơn đối số được truyền cho phương thức `ensureCapacity()`, thì dung lượng mới bằng NewCapacity được đặt.
 - Nếu dung lượng mới nhỏ hơn đối số được truyền cho phương thức `ensureCapacity()`, thì dung lượng được đặt bằng giá trị tham số truyền vào.
 
-<div class="example">Chương trình sau minh hoạ dung lượng được tính toán và được đặt như thế nào</div>
+Chương trình sau minh hoạ dung lượng được tính toán và được đặt như thế nào
 
 ```java
 class StringBuffer {
   public static void main(String args[]) {
     StringBuffer s1 = new StringBuffer(5);
-    System.out.println("Dung	lượng	của	bộ	nhớ	đệm	= "+s1.capacity()); //chứa 5
+    System.out.println("Dung lượng của bộ nhớ đệm = "+s1.capacity()); //chứa 5
     s1.ensureCapacity(8);
-    System.out.println("Dung	lượng	của	bộ	nhớ	đệm	= "+s1.capacity()); //chứa 12
+    System.out.println("Dung lượng của bộ nhớ đệm = "+s1.capacity()); //chứa 12
     s1.ensureCapacity(30);
-    System.out.println("Dung	lượng	của	bộ	nhớ	đệm	= "+s1.capacity()); // chứa 30
+    System.out.println("Dung lượng của bộ nhớ đệm = "+s1.capacity()); // chứa 30
   }
 }
 ```
@@ -95,8 +91,6 @@ Thiết lập dung lượng của "s1" đến 30 bởi vì dung lượng truyề
 
 - `void append()`: Phương thức này nối thêm một chuỗi hoặc một mảng ký tự vào cuối cùng của đối tượng StringBuffer. Ví dụ:
 
-<content-example />
-
 ```java
 StringBuffer s1 = new StringBuffer("Good");
 s1.append("evening");
@@ -106,26 +100,18 @@ Giá trị trong s1 bây giờ là `Goodevening`.
 
 - `insert()`: Phương thức này có hai tham số. Tham số đầu tiên là vị trí chèn. Tham số thứ hai có thể là một chuỗi, một ký tự (char), một giá trị nguyên (int), hay một giá trị số thực (float) được chèn vào. Vị trí chèn sẽ lớn hơn hay bằng 0, và nhỏ hơn hay bằng chiều dài của đối tượng StringBuffer. Bất kỳ đối số nào, trừ ký tự hoặc chuỗi, được chuyển sang chuỗi và sau đó mới được chèn vào.
 
-<content-example />
-
 ```java
 StringBuffer str = new StringBuffer("Java sion");
 str.insert(1,’b’);
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Biến "str" chứa chuỗi "Jbava sion"</code>
-  </div>
-</div>
+::result
+
+Biến "str" chứa chuỗi "Jbava sion"
+
+::
 
 - `char charAt()`: Phương thức này trả về một giá trị ký tự trong đối tượng StringBuffer tại vị trí được chỉ định.
-
-<content-example />
 
 ```java
 StringBuffer str = new StringBuffer("James Gosling");
@@ -134,26 +120,18 @@ char letter = str.charAt(6); //chứa "G"
 
 - `void setCharAt(int index, char value)`: Phương thức này được sử dụng để thay thế ký tự trong một StringBuffer bằng một ký tự khác tại một vị trí được chỉ định.
 
-<content-example />
-
 ```java
 StringBuffer name = new StringBuffer("Jawa");
 name.setCharAt(2,’v’);
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Biến "name" chứa "Java".</code>
-  </div>
-</div>
+::result
+
+Biến "name" chứa "Java".
+
+::
 
 - `void setLength()`: Phương thức này thiết lập chiều dài của đối tượng StringBuffer. Nếu chiều dài được chỉ định nhỏ hơn chiều dài dữ liệu hiện tại của nó, thì các ký tự thừa sẽ bị cắt bớt. Nếu chiểu dài chỉ định nhiều hơn chiều dài dữ liệu thì các ký tự null được thêm vào phần cuối của StringBuffer
-
-<content-example />
 
 ```java
 StringBuffer str = new StringBuffer(10);
@@ -167,39 +145,27 @@ str.setLength(str.length() + 10);
 - Mảng: Mảng đích, nơi mà các ký tự được sao chép.
 - Vị trí bắt đầu trong mảng đích: Các ký tự được sao chép vào mảng đích từ vị trí này.
 
-<content-example />
-
 ```java
 StringBuffer str = new StringBuffer("Leopard");
 char ch[] = new char[10];
 str.getChars(3,6,ch,0);
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Bây giờ biến "ch" chứa "par"</code>
-  </div>
-</div>
+::result
+
+Bây giờ biến "ch" chứa "par"
+
+::
 
 - `void reverse()`: Phương thức này đảo ngược nội dung của một đối tượng StringBuffer, và trả về một đối tượng StringBuffer khác.
-
-<content-example />
 
 ```java
 StringBuffer str = new StringBuffer("devil");
 StringBuffer strrev = str.reverse();
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Biến "strrev" chứa "lived".</code>
-  </div>
-</div>
+::result
+
+Biến "strrev" chứa "lived".
+
+::

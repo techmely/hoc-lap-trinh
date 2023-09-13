@@ -32,9 +32,7 @@ Các giá trị nguyên thủy không phải là đối tượng trong Java. Đ�
 | float            | Float        |
 | double           | Double       |
 
-<div class="example">
-  chuyển kiểu dữ liệu nguyên thủy thành kiểu Wrapper
-</div>
+Ví dụ: chuyển kiểu dữ liệu nguyên thủy thành kiểu Wrapper
 
 ```java
 public class Thaycacac {
@@ -48,19 +46,13 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>2 2 2</code>
-    </div>
-</div>
+::result
 
-<div class="example">
-  chuyển kiểu Wrapper thành kiểu dữ liểu nguyên thủy
-</div>
+2 2 2
+
+::
+
+Ví dụ: chuyển kiểu Wrapper thành kiểu dữ liểu nguyên thủy
 
 ```java
 public class Thaycacac {
@@ -75,15 +67,11 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>9 9 9</code>
-    </div>
-</div>
+::result
+
+9 9 9
+
+::
 
 ## Các đặc điểm của lớp Wrapper trong Java
 
@@ -96,8 +84,8 @@ Các lớp bao (trừ lớp Character chỉ có một cách khởi tạo) đều
 ```java
 Character charObj = new Character('a');
 Boolean boolObj = new Boolean(true);
-Integer intObj	= new Integer(2002);
-Float floatObj	= new Float(3.14F);
+Integer intObj = new Integer(2002);
+Float floatObj = new Float(3.14F);
 Double doubleObj = new Double(3.14);
 ```
 
@@ -127,7 +115,7 @@ Double doubleObj= Double.valueOf("3.14");
 
 ```java
 String charStr = charObj.toString(); // "a"
-String boolStr = boolObj.toString();	// "true"
+String boolStr = boolObj.toString(); // "true"
 String intStr = intObj.toString(); // "2002"
 String doubleStr = doubleObj.toString(); // "3.14"
 ```
@@ -136,17 +124,17 @@ String doubleStr = doubleObj.toString(); // "3.14"
 
 ```java
 boolean b = boolObj.booleanValue(); // true
-int i = intObj.intValue();	// 2002
-float f = floatObj.floatValueOf();	// 3.14F
+int i = intObj.intValue(); // 2002
+float f = floatObj.floatValueOf(); // 3.14F
 double d = doubleObj.doubleValueOf(); // 3.14
-char c = charObj.charValue();	// 'a'
+char c = charObj.charValue(); // 'a'
 ```
 
 - Các lớp viết đè hàm `equals()` để thực hiện so sánh bằng nhau của các đối tượng nguyên thủy
 
 ```java
 Character charObj = new Character('a');
-boolean charTest = charObj.equals('b');	// false
+boolean charTest = charObj.equals('b'); // false
 Integer intObj1 = Integer.valueOf("2010");
 boolean intTest = intObj.equals(intObj1); // false
 ```

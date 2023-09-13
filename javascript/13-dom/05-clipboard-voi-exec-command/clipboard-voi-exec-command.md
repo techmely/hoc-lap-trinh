@@ -37,11 +37,11 @@ Nội dung phần **html**:
 
 Trong đó, thẻ _p_ với id _content-copy_ là thành phần chứa nội dung mình muốn copy; button với id _button-copy_ để kích hoạt lệnh _copy_ khi người dùng click vào.
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý**: bạn có thể copy dữ liệu từ hầu hết các phần tử như: _thẻ p, span, div, input, textarea,..._ Nhưng trong ví dụ này, mình chỉ demo với thẻ _p_.
 
-</content-warning>
+::
 
 Tiếp theo, mình dùng [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) để lưu lại [DOM node](/bai-viet/javascript/dom-la-gi) của các phần tử:
 
@@ -89,11 +89,11 @@ buttonCopyElm.addEventListener("click", () => {
 });
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý**: phần trên chỉ áp dụng cho các thẻ có text content như thẻ: _p, span, div,..._ Các thẻ không có text content như: _input, textarea,..._ sẽ được áp dụng giống như phần **cut dữ liệu vào clipboard** dưới đây.
 
-</content-warning>
+::
 
 ## Cut dữ liệu vào Clipboard
 

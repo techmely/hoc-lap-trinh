@@ -15,8 +15,6 @@ Java cung cấp cho chúng ta rất nhiều cấu trúc dữ liệu, trong đó 
 
 Cứ tưởng tượng nếu chúng ta cần sử dụng đến 100 biến `int` để lưu trữ data, thì chỉ với việc khai báo chúng ta đã ngốn hết 100 dòng code. Java cung cấp cho chúng ta rất nhiều cấu trúc dữ liệu, trong đó array là một cấu trúc cho phép lưu trữ một tập hợp các dữ liệu cùng loại, tuần tự và có số lượng xác định.
 
-<content-example />
-
 ```java
 int[] arr = new int[100];
 ```
@@ -47,7 +45,7 @@ Cú pháp khai báo mảng trong java
 
 Một mảng sẽ có chỉ số index từ 0 đến n – 1 (n là số lượng phần tử của mảng).
 
-<div class="example">Khởi tạo mảng số nguyên 10 phần tử, có giá trị tuần tự từ 1 đến 10. Và xuất các giá trị của mảng ra màn hình console.</div>
+Ví dụ: Khởi tạo mảng số nguyên 10 phần tử, có giá trị tuần tự từ 1 đến 10. Và xuất các giá trị của mảng ra màn hình console.
 
 ```java
 public class Thaycacac {
@@ -63,17 +61,11 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>1 2 3 4 5 6 7 8 9 10</code>
-  </div>
-</div>
- 
-</div>
+::result
+
+1 2 3 4 5 6 7 8 9 10
+
+::
 
 ![mang-trong-java](https://user-images.githubusercontent.com/29374426/127758202-bce42e1f-86eb-4557-aaf3-a6afa24bbe29.png)
 
@@ -92,7 +84,7 @@ Chúng ta có 2 cách để truy xuất các phần tử của mảng
 <mảng>[vị trí phần tử trong mảng];
 ```
 
-<div class="example">truy xuất phần tử thứ 5 của mảng</div>
+Ví dụ: truy xuất phần tử thứ 5 của mảng
 
 ```java
 public class Thaycacac {
@@ -107,21 +99,17 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>6</code>
-  </div>
-</div>
+::result
 
-<content-info>
-  Nếu index vượt ra khoảng chưá của mảng thì chúng ta sẽ bị ném một ngoại lệ. Khoảng hợp lệ 0 đến n – 1( n số lượng phần tử của mảng).
-</content-info>
+6
 
-Ví dụ khi mình truy xuất arr[10] là vị trí không hợp lệ mình sẽ được kết quả sau: `Exception in thread “main” ava.lang.ArrayIndexOutOfBoundsException: 10 at Main.main(Main.java:11)`
+::
+
+::alert{type="infor"}
+Nếu `index` vượt ra khoảng chứa của mảng thì chúng ta sẽ bị ném một ngoại lệ. Khoảng hợp lệ `0` đến `n – 1` ( n số lượng phần tử của mảng).
+::
+
+Ví dụ khi mình truy xuất `arr[10]` là vị trí không hợp lệ mình sẽ được kết quả sau: `Exception in thread “main” ava.lang.ArrayIndexOutOfBoundsException: 10 at Main.main(Main.java:11)`
 
 ### Truy xuất tuần tự
 
@@ -145,7 +133,7 @@ for(int item : arr) {
 
 Khi truyền mảng vào một method và xử lý trên các phần tử thì sẽ thay đổi giá trị của mảng ban đầu.
 
-<div class="example">tăng mỗi phần tử trong mảng lên mảng lên 1 và in ra màn hình console.</div>
+Ví dụ: tăng mỗi phần tử trong mảng lên mảng lên 1 và in ra màn hình console.
 
 ```java
 public class Thaycacac {
@@ -168,15 +156,11 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>2 3 4 5 6 7 8 9 10 11 </code>
-  </div>
-</div>
+::result
+
+2 3 4 5 6 7 8 9 10 11
+
+::
 
 Chúng ta thấy hàm `increment()` đã thay đổi các giá trị trong mảng. Vì vậy ở hàm main truy xuất được mảng đã được update bởi `increment()`.
 
@@ -187,13 +171,13 @@ Java cung cấp cho chúng ta một số thao tác cơ bản mà chúng ta thư�
 Ví dụ:
 
 ```java
-public static int binarySeach(Object[] a, Object key) // Tìm kiếm phần tử key trong mảng, điều kiện mảng đã được sắp xếp
+public static int binarySearch(Object[] a, Object key) // Tìm kiếm phần tử key trong mảng, điều kiện mảng đã được sắp xếp
 public static boolean equals(long[] a, long[] a2) // So sánh 2 mảng, trả về true nếu bằng nhau(index, value), ngược lại false
 public static void fill(int[] a. int val) // Khởi tạo mảng với giá trị được gán sẵn val
 public static void sort(Object[] a) // Sắp xếp mảng tăng dần
 ```
 
-<div class="example">hàm sort</div>
+Ví dụ: hàm sort
 
 ```java
 import java.util.Arrays;
@@ -210,22 +194,8 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>-4 0 2 3 5 9 </code>
-  </div>
-</div>
+::result
 
-## Bài tập thực hành
+-4 0 2 3 5 9
 
-**Cho mảng số nguyên arr, gồm n phần tử. Tìm**
-
-- Xuất giá trị của tất cả các phần tử trong mảng
-- Tìm phần tử nhỏ nhất
-- Tìm phần tử lớn nhất
-- Đếm số lượng phần tử chẵn
-- Đếm số lượng phần tử lẽ
+::

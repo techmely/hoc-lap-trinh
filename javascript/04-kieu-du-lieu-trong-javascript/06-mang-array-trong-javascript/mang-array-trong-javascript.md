@@ -255,13 +255,13 @@ for (let i = 0; i < letters.length; i++) {
 }
 ```
 
-<content-result>
+::result
 
 <p>a</p>
 <p>b</p>
 <p>c</p>
 
-</content-result>
+::
 
 Nếu không quan tâm đến chỉ số, bạn có thể dùng vòng lặp `for...of` cho ngắn gọn hơn:
 
@@ -302,11 +302,11 @@ arr[1000] = "a";
 console.log(arr.length); // 1001
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 đây chỉ là ví dụ minh họa, bạn **không nên** sử dụng array theo cách này.
 
-</content-warning>
+::
 
 Thuộc tính `length` là **writable**. Nghĩa là bạn có thể thay đổi giá trị của thuộc tính `length`.
 
@@ -327,11 +327,11 @@ console.log(letters[2]); // undefined - giá trị cũ là "c"
 
 Trong ví dụ trên, khi bạn giảm `length` rồi tăng `length` trở lại, giá trị trước đó trong mảng (`letters[2]`) không được khôi phục trở lại.
 
-<content-info>
+::alert{type="infor"}
 
 💡 Cách đơn giản nhất để xóa mảng là gán `length` bằng 0: `arr.length = 0`.
 
-</content-info>
+::
 
 Đây là một cú pháp khác để khởi tạo array trong JavaScript:
 
@@ -361,11 +361,11 @@ let arr2 = new Array(1);
 console.log(arr2); // [empty]
 ```
 
-<content-info>
+::alert{type="infor"}
 
 💡 Để tránh nhầm lẫn, bạn chỉ nên sử dụng dấu ngoặc vuông `[]` để khởi tạo mảng (trừ khi bạn có mục đích đặc biệt nào khác).
 
-</content-info>
+::
 
 ## Mảng nhiều chiều
 

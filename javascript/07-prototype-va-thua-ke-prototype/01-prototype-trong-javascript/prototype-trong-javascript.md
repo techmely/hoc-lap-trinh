@@ -209,11 +209,11 @@ Khi câu lệnh `this.isSleeping = true` xảy ra, **đối tượng đang gọi
 
 Còn đối với `animal`, do chưa gọi `animal.sleep()` nên thuộc tính `isSleeping` cũng chưa tồn tại trong `animal`. Dẫn đến kết quả là `animal.isSleeping` bằng `undefined`.
 
-<content-warning>
+::alert{type="warning"}
 
 💡 **Chú ý:** việc kế thừa prototype không ảnh hưởng tới `this`. Giá trị của `this` luôn được **xác định lúc chạy** và bằng đối tượng gọi phương thức - đối tượng đứng trước toán tử `.`.
 
-</content-warning>
+::
 
 ## Vòng lặp `for...in` khi kế thừa prototype
 

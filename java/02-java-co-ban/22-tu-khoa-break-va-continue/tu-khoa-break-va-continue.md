@@ -19,8 +19,6 @@ Lệnh `break` sẽ chấm dứt quá trình lặp mà không thực hiện nố
 
 ![Từ khóa break trong trong Java](https://user-images.githubusercontent.com/29374426/127724374-6ceef48b-e07a-462b-b9b6-08eb9c293234.png)
 
-<content-example />
-
 ```java
 public class Thaycacac {
   public static void main(String[] args) {
@@ -39,29 +37,23 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>x = 2</code><br/>
-    <code>x after ++ = 3</code><br/>
-    <code>x = 3</code><br/>
-    <code>x = 4</code><br/>
-    <code>x after ++ = 5</code><br/>
-    <code>x = 5</code><br/>
-    <code>Done!</code>
-  </div>
-</div>
+::result
+
+x = 2<br/>
+x after ++ = 3<br/>
+x = 3<br/>
+x = 4<br/>
+x after ++ = 5<br/>
+x = 5<br/>
+Done!
+
+::
 
 ## Từ khóa continue trong Java
 
 Lệnh `continue` có thể xuất hiện trong một vòng lặp, khi bắt gặp lệnh `continue` chương trình sẽ bỏ qua các dòng lệnh bên trong khối lệnh và phía dưới của `continue` và bắt đầu một bước lặp tiếp theo mới (Nếu các điều kiện vẫn đúng).
 
 ![Từ khóa continue trong Java](https://user-images.githubusercontent.com/29374426/127724876-382a6460-27c3-4bb0-9619-c734a072572e.png)
-
-<content-example />
 
 ```java
 public class Thaycacac {
@@ -84,20 +76,16 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>x = 2</code><br/>
-    <code>x after ++ = 3</code><br/>
-    <code>x = 3</code><br/>
-    <code>x = 4</code><br/>
-    <code>x after ++ = 5</code><br/>
-    <code>x = 5</code><br/>
-    <code>x = 6</code><br/>
-    <code>x after ++ = 7</code><br/>
-    <code>Done!</code>
-  </div>
-</div>
+::result
+
+x = 2<br/>
+x after ++ = 3<br/>
+x = 3<br/>
+x = 4<br/>
+x after ++ = 5<br/>
+x = 5<br/>
+x = 6<br/>
+x after ++ = 7<br/>
+Done!
+
+::

@@ -77,8 +77,6 @@ Các số mình thường viết trên đây là biểu diễn ở hệ thập p
 - Hệ bát phân sử dụng tiền tố là `0o`.
 - Hệ nhị phân sử dụng tiền tố là `0b`.
 
-<content-example>
-
 biểu diễn số ở hệ 16, 8 và 2 là:
 
 </content-example>
@@ -119,11 +117,11 @@ Một số trường hợp phổ biến:
 console.log((1234567890).toString(36)); // kf12oi
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 cách viết dùng hai dấu chấm `..` như trên **không phải lỗi chính tả**. Nếu bạn muốn gọi [phương thức của number](/bai-viet/javascript/phuong-thuc-cua-kieu-nguyen-thuy), ví dụ `toString()`, bạn cần phải dùng **hai dấu chấm**
 
-</content-warning>
+::
 
 Nếu bạn dùng **một dấu chấm** thì sẽ có lỗi cú pháp:
 
@@ -143,11 +141,11 @@ Nói cách khác, cách viết hai dấu chấm `..` tương đương với các
 console.log((1234567890).toString(36)); // kf12oi
 ```
 
-<content-info>
+::alert{type="infor"}
 
 Để code rõ ràng và an toàn hơn, bạn nên sử dụng `()`
 
-</content-info>
+::
 
 ## Làm tròn number trong JavaScript
 
@@ -170,8 +168,6 @@ Hàm này trả về **số nguyên gần nhất** (có thể làm tròn lên ho
 Hàm này trả về số nguyên bằng cách xóa bỏ đi tất cả thành phần sau dấu phẩy. Ví dụ: `3.1` trở thành `3` và `-1.1` trở thành `-1`.
 
 Trên đây là những hàm giúp **làm tròn thành số nguyên**. Vậy làm sao để **làm tròn thành số thực** với chính xác `n` chữ số sau dấu phẩy.
-
-<content-example>
 
 làm sao để làm tròn số `1.2345` thành `1.23` (2 chữ số sau dấu phẩy)?
 
@@ -332,7 +328,7 @@ let num = +prompt("Nhập vào một số:", "");
 console.log(isFinite(num));
 ```
 
-<content-info>
+::alert{type="infor"}
 
 **String rỗng hoặc string toàn dấu cách** chuyển sang dạng số thành số `0`.
 
@@ -343,7 +339,7 @@ console.log(isFinite(num));
 
 Trong hầu hết các trường hợp, phương thức `Object.is` tương đương với so sánh bằng nghiêm ngặt `===`.
 
-</content-info>
+::
 
 ## Hàm `parseInt` và hàm `parseFloat`
 
@@ -351,8 +347,6 @@ Có thể bạn đã biết hai cách để chuyển đổi string thành dạng
 
 - Sử dụng hàm `Number()`.
 - Sử dụng toán tử một ngôi `+`.
-
-<content-example/>
 
 ```js
 console.log(Number("1.23")); // 1.23
@@ -390,11 +384,11 @@ console.log(parseInt("$100")); // NaN
 console.log(parseFloat("$100")); // NaN
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 hàm `parseInt(value, radix)` có tham số thứ hai `radix` biểu diễn hệ cơ số (từ `2` đến `36`)
 
-</content-warning>
+::
 
 Ví dụ tách lấy số nguyên ở các hệ cơ số khác nhau:
 

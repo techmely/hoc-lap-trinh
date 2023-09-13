@@ -159,8 +159,12 @@ Next notifications thường được sử dụng rộng rãi, nó cực kỳ qu
 
 Error và Complete notifications có thể chỉ xảy ra duy nhất một lần trong một Observable Execution.
 
-> Lưu ý rằng, chỉ có 1 trong 2 loại tín hiệu trên được gửi đi, nếu đã complete thì không có error, nếu có error thì không có complete. (Chúng không thuộc về nhau :D). Và nếu đã gửi đi complete, hoặc error signal, thì sau đó không có dữ liệu nào được gửi đi nữa. Tức là stream đã close.
-> In an Observable Execution, zero to infinite Next notifications may be delivered. If either an Error or Complete notification is delivered, then nothing else can be delivered afterwards.
+::alert{type="warning"}
+
+- Lưu ý rằng, chỉ có 1 trong 2 loại tín hiệu trên được gửi đi, nếu đã complete thì không có error, nếu có error thì không có complete. (Chúng không thuộc về nhau :D). Và nếu đã gửi đi complete, hoặc error signal, thì sau đó không có dữ liệu nào được gửi đi nữa. Tức là stream đã close.
+- In an Observable Execution, zero to infinite Next notifications may be delivered. If either an Error or Complete notification is delivered, then nothing else can be delivered afterwards.
+
+::
 
 ### Disposing Observable Executions
 
@@ -168,8 +172,12 @@ Bởi vì quá trình thực thi Observable có thể lặp vô hạn, hoặc tr
 
 Observable có cơ chế tương ứng, cho phép chúng ta hủy việc thực thi. Đó là khi subscribe được gọi, một Observer sẽ bị gắn với một _Observable execution_ mới được tạo, sau đó nó sẽ trả về một object thuộc type Subscription. Kiểu dữ liệu này có một method `unsubscribe` khi chúng ta gọi đến, nó sẽ thực hiện cơ chế để hủy việc thực thi.
 
-> Lưu ý: nếu bạn tự tạo Observable (bằng new Observable chẳng hạn) thì bạn phải tự thiết lập cơ chế để hủy.
-> When you subscribe, you get back a Subscription, which represents the ongoing execution. Just call `unsubscribe()` to cancel the execution.
+::alert{type="warning"}
+
+- Lưu ý: nếu bạn tự tạo Observable (bằng new Observable chẳng hạn) thì bạn phải tự thiết lập cơ chế để hủy.
+- When you subscribe, you get back a Subscription, which represents the ongoing execution. Just call `unsubscribe()` to cancel the execution.
+
+::
 
 ```ts
 const subscription = observable.subscribe({
@@ -235,7 +243,9 @@ const observer = {
 observable.subscribe(observer);
 ```
 
-> Lưu ý: Nếu bạn không muốn truyền error handler function vào, hãy truyền `null`/`undefined`:
+::alert{type="warning"}
+Lưu ý nếu bạn không muốn truyền error handler function vào, hãy truyền `null`/`undefined`:
+::
 
 ```ts
 observable.subscribe(

@@ -11,22 +11,21 @@ image: https://user-images.githubusercontent.com/29374426/135853402-d20a065b-d81
 position: 16
 ---
 
-Java có một lớp gọi là lớp **Math** cung cấp các hàm về toán học như `abs`, `ceil`, `floor`,... Lớp này nằm trong gói `java.lang` (gói mặc định) do vậy bạn không cần phải thêm câu lệnh `import` ở đầu chương trình để có thể sử dụng lớp này. Các hàm này được viết là các phương thức tĩnh do vậy ta không cần phải tạo ra thể hiện của lớp _Math_.
+Java là một ngôn ngữ lập trình mạnh mẽ không chỉ trong việc xử lý dữ liệu và chuỗi, mà còn cung cấp một loạt các hàm toán học phong phú thông qua lớp **Math**. Lớp này được đặt sẵn trong gói `java.lang`, do đó bạn không cần phải thêm câu lệnh `import` để sử dụng các hàm toán học này. Hãy cùng điểm qua các hàm toán học quan trọng trong Java.
 
 ![cac-ham-toan-hoc-java](https://user-images.githubusercontent.com/29374426/135853402-d20a065b-d818-4519-a823-f73709bde64d.png)
 
 ## Các thuộc tính của lớp Math
 
-Thư viện toán học Math là thư viện cung cấp các [phương thức](/bai-viet/java/ham-phuong-thuc-la-gi) có sẵn để giải quyết các vấn đề về số học, chính vì thế mà lớp này cũng đã cung cấp cho chúng ta những thuộc tính để chúng ta sử dụng.
+Trước khi chúng ta khám phá các hàm toán học, hãy tìm hiểu về một số thuộc tính quan trọng của lớp Math:
 
-- **E**: hằng số Euler (~ 2.7) // Math.E
-- **PI**: số pi (~ 3.14). // Math.PI
+- **E**: Đây là hằng số Euler, xấp xỉ khoảng 2.7. Bạn có thể truy cập nó bằng cách sử dụng `Math.E`.
 
-<content-example />
+- **PI**: Đây là số Pi, xấp xỉ khoảng 3.14. Bạn có thể truy cập nó bằng cách sử dụng `Math.PI`.
 
 ```java
-double eu = Math.E; // ~ 2.7
-double pi = Math.PI; // ~ 3.14
+double euler = Math.E; // ~ 2.7
+double pi = Math.PI;   // ~ 3.14
 ```
 
 ## Các hàm toán học trong Java
@@ -35,229 +34,147 @@ Trong java cung cấp cho chúng ta các hàm hỗ trợ tính toán nâng cao n
 
 ### Lấy giá trị tuyệt đối của Java - Math.abs()
 
-`Math.abs()` trả về giá trị tuyệt đối của tham số truyền vào, hàm này có 4 cách nhận giá trị đầu vào như sau:
+Hàm `Math.abs()` trả về giá trị tuyệt đối của một số. Java hỗ trợ nhiều kiểu dữ liệu khác nhau, vì vậy bạn có thể sử dụng nó cho số nguyên, số thực và nhiều kiểu khác.
 
 ```java
-Math.abs(int)
-Math.abs(long)
-Math.abs(float)
-Math.abs(double)
+int x = 10;
+int y = -20;
+System.out.println(Math.abs(x - y)); // 30
+System.out.println(Math.abs(y - x)); // 30
+System.out.println(Math.abs(y));     // 20
+System.out.println(Math.abs(x));     // 10
 ```
 
-<content-example />
+### Làm tròn lên - `Math.ceil()`
+
+Hàm `Math.ceil()` trả về giá trị làm tròn lên của một số thực.
 
 ```java
-public class Main {
-  public static void main(String[] args) {
-    int x = 10;
-    int y = -20;
-    System.out.println(Math.abs(x - y)); // 30
-    System.out.println(Math.abs(y - x)); // 30
-    System.out.println(Math.abs(y)); // 20
-    System.out.println(Math.abs(x)); // 10
-  }
-}
+int i = 5;
+float f = 5.4f;
+double d = 5.224d;
+double roundedI = Math.ceil(i); // 5.0
+double roundedF = Math.ceil(f); // 6.0
+double roundedD = Math.ceil(d); // 6.0
 ```
 
-### Làm tròn lên trong Java – Math.ceil()
+### Làm tròn xuống - `Math.floor()`
 
-`Math.ceil()` trả về giá trị double là số làm tròn lên với giá trị số nguyên gần nhất
-
-<content-example />
+Hàm `Math.floor()` trả về giá trị làm tròn xuống của một số thực.
 
 ```java
-public class Main {
-  public static void main(String[] args) {
-    int i = 5;
-    float f = 5.4f;
-    double d = 5.224d;
-    double ri = Math.ceil(i); // 5.0
-    double rf = Math.ceil(f); // 6.0
-    double rd = Math.ceil(d); // 6.0
-  }
-}
+int i = 5;
+float f = 5.4f;
+double d = 5.224d;
+double roundedI = Math.floor(i); // 5.0
+double roundedF = Math.floor(f); // 5.0
+double roundedD = Math.floor(d); // 5.0
 ```
 
-### Làm tròn xuống trong Java – Math.floor()
+### Làm tròn - `Math.round()`
 
-`Math.floor()` trả về giá trị double là số làm tròn xuống với giá trị số nguyên gần nhất
-
-<content-example />
-
-```java
-public class Main {
-  public static void main(String[] args) {
-    int i = 5;
-    float f = 5.4f;
-    double d = 5.224d;
-    double ri = Math.floor(i); // 5.0
-    double rf = Math.floor(f); // 5.0
-    double rd = Math.floor(d); // 5.0
-  }
-}
-```
-
-### Làm tròn số trong java – Math.round()
-
-Ngoài ra Java còn cung cấp một hàm `Math.round()` để làm tròn số theo quy luật thông thường trong toán học. Hàm này có 2 kiểu nhận tham số đầu vào như sau:
-
-```java
-Math.round(float, float)
-Math.round(double, double)
-```
-
-<content-example />
+Hàm `Math.round()` làm tròn một số thực theo quy tắc thông thường trong toán học.
 
 ```java
 double roundedDown = Math.round(23.445); // 23
-double roundedUp   = Math.round(23.545); // 24
+double roundedUp = Math.round(23.545);   // 24
 ```
 
-### Chia 2 số nguyên và làm tròn trong Java – floorDiv()
+### Chia số nguyên và làm tròn - `Math.floorDiv()`
 
-`Math.floorDiv()` chia 1 số nguyên(int/long) với một số khác, và làm tròn xuống giá trị integer gần nhất.
+Hàm `Math.floorDiv()` chia một số nguyên cho một số khác và làm tròn kết quả xuống đến số nguyên gần nhất.
 
 ```java
-public class Main {
-  public static void main(String[] args) {
-    double result1 = Math.floorDiv(-100,9);
-    System.out.println("result: " + result1);
-    double result2 = -100 / 9;
-    System.out.println("result: " + result2);
-    double result3 = Math.floorDiv(100,9);
-    System.out.println("result: " + result3);
-    double result4 = 100 / 9;
-    System.out.println("result: " + result4);
-  }
-}
+double result1 = Math.floorDiv(-100, 9);  // -12.0
+double result2 = -100 / 9;                // -11.0
+double result3 = Math.floorDiv(100, 9);   // 11.0
+double result4 = 100 / 9;                 // 11.0
 ```
 
-### Tìm số lớn nhất của 2 số trong Java – Math.max()
+### Tìm số lớn nhất - `Math.max()`
 
-Java cung cấp cho chúng ta hàm `Math.max()` để lấy số lớn trong hai số. Hàm này có 4 kiểu nhận tham số đầu vào
+Hàm `Math.max()` trả về số lớn hơn trong hai số được cung cấp.
 
 ```java
-Math.max(int, int)
-Math.max(long, long)
-Math.max(float, float)
-Math.max(double, double)
+int maxInt = Math.max(1, 2);                // 2
+float maxFloat = Math.max(3.4f, 3.5f);      // 3.5f
+double maxDouble = Math.max(3.434d, 3.435d);// 3.435d
 ```
 
-<content-example />
+### Tìm số nhỏ nhất - `Math.min()`
+
+Hàm `Math.min()` trả về số nhỏ hơn trong hai số được cung cấp.
 
 ```java
-public class Main {
-  public static void main(String[] args) {
-    int i = Math.max(1, 2); // 2
-    float f = Math.max(3.4f, 3.5f); // 3.5f
-    float f1 = Math.max(3, 3.5f); // 3.5
-    double d = Math.max(3.434d, 3.435d); // 3.435d
-    double d1 = Math.max(3, 3.345d); // 3.345d
-    double d2 = Math.max(3.5f, 3.345d); // 3.5
-  }
-}
+int minInt = Math.min(1, 2);                // 1
+float minFloat = Math.min(3.4f, 3.5f);      // 3.4f
+double minDouble = Math.min(3.434d, 3.435d);// 3.434d
 ```
 
-### Tìm số lớn nhỏ của 2 số trong Java – Math.min()
+### Sin, Cos, Tan - `Math.sin()`, `Math.cos()`, `Math.tan()`
 
-Java cung cấp cho chúng ta hàm `Math.min()` để lấy số nhỏ trong hai số. Hàm này có 4 kiểu nhận tham số đầu vào
+Java cung cấp các hàm để tính sin, cos và tan của một góc (đơn vị radian).
 
 ```java
-Math.min(int, int)
-Math.min(long, long)
-Math.min(float, float)
-Math.min(double, double)
+double sinValue = Math.sin(Math.PI/2);   // 1.0
+double cosValue = Math.cos(Math.PI);     // -1.0
+double tanValue = Math.tan(Math.PI/4);   // 1.0
 ```
 
-<content-example />
+### Lũy thừa - `Math.pow()`
+
+Hàm `Math.pow()` tính lũy thừa của một số.
 
 ```java
-public class Main {
-  public static void main(String[] args) {
-    int i = Math.min(1, 2); // 1
-    float f = Math.min(3.4f, 3.5f); // 3.4f
-    float f1 = Math.min(3, 3.5f); // 3
-    double d = Math.min(3.434d, 3.435d); // 3.434d
-    double d1 = Math.min(3, 3.345d); // 3
-    double d2 = Math.min(3.5f, 3.345d); // 3.345d
-  }
-}
+double power = Math.pow(2, 3);  // 8.0
 ```
 
-### Lấy một số ngẫu nhiên trong Java - Math.random()
+### Căn bậc hai - `Math.sqrt()`
 
-Ta có hàm `Math.random()` sẽ trả một một float trong khoảng 0 đến 1.
+Hàm `Math.sqrt()` tính căn bậc hai của một số.
 
 ```java
-double random = Math.random();
+double squareRoot = Math.sqrt(9);  // 3.0
 ```
 
-Nếu bạn muốn random số nguyên ngẫu nhiên trong khoảng **0 đến 100** có thể kết hợp `Math.random()` với `round()`, `ceil()`, `floor()`.
+### Số ngẫu nhiên - `Math.random()`
+
+Hàm `Math.random()` trả về một số ngẫu nhiên trong khoảng từ 0 (bao gồm) đến 1 (không bao gồm).
 
 ```java
-System.out.println(Math.ceil(Math.random() * 100D));
+double randomValue = Math.random();
 ```
 
-### Một số hàm khác của lớp Math trong Java
-
-`Math.pow()` lấy lũy thừa (cơ-số, số mũ)
-
-<content-example />
+Để tạo số ngẫu nhiên trong một phạm vi cụ thể, bạn có thể kết hợp `Math.random()` với các phép toán làm tròn.
 
 ```java
-double p = Math.pow(2, 3); // 8.0
+int randomInt = (int)(Math.random() * 100); // Số nguyên ngẫu nhiên từ 0 đến 99
 ```
 
-`Math.sqrt()` khai căn
+## Tổng hợp một số phương thức và ý nghĩa
 
-<content-example />
-
-```java
-double a = Math.sqrt(9); //3
-```
-
-`Math.sin(), Math.cos()` sin và cos của góc đơn vị radian
-
-<content-example />
-
-```java
-double s = Math.sin(Math.PI/2); //1
-```
-
-`Math.toDegrees()` đổi góc radian thành độ
-
-<content-example />
-
-```java
-double goc = Math.toDegrees(Math.PI/2); //90
-```
-
-`Math.toRadians()` đổi góc đơn vị độ ra radian
-
-<content-example />
-
-```java
-double goc = Math.toRadians(45); //0.7853981633974483
-```
-
-| Tên phương thức   | Mô tả ý nghĩa                                                                                | Kiểu tham số                                                          | Kiểu trả về                                                                |
-| ----------------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| sin(arg)          | tính sin của arg                                                                             | arg là một biểu thức kiểu double thể hiện một cung theo radians       | double                                                                     |
-| cos(arg)          | tính cos của arg                                                                             | arg là một biểu thức kiểu double thể hiện một cung theo radians       | double                                                                     |
-| tan(arg)          | tính tang của arg                                                                            | arg là một biểu thức kiểu double thể hiện một cung theo radians       | double                                                                     |
-| asin(arg)         | tính sin-1 (arcsin)                                                                          | arg arg là một biểu thức kiểu double thể hiện một cung theo radians   | double trong hệ radians                                                    |
-| acos(arg)         | tính cos-1 (arccosin) của arg                                                                | arg là một biểu thức kiểu double thể hiện một cung theo radians       | double trong hệ radians                                                    |
-| atan(arg)         | tính tan-1 (arctang) của arg                                                                 | arg là một biểu thức kiểu double thể hiện một cung theo radians       | double trong hệ radians                                                    |
-| atan2 (arg1,arg2) | tính tan-1 (arctang) của arg1/arg2                                                           | arg1,arg2 là các biểu thức kiểu double thể hiện một cung theo radians | double trong hệ radians                                                    |
-| abs(arg)          | tính trị tuyệt đối của arg                                                                   | arg là một biểu thức kiểu int, long, float, hoặc double               | The same type as the argument                                              |
-| max (arg1,arg2)   | Nhận về giá trị lớn trong hai tham số                                                        | arg1, arg2 là một biểu thức kiểu int, long, float, hoặc double        | Nhận về kiểu cùng kiểu với tham số                                         |
-| min (arg1,arg2)   | Nhận về giá trị nhỏ trong hai tham số                                                        | arg1, arg2 lµ mét biùu thøc kiùu int, long, float, hoÆc double        | Nhận về kiểu cùng kiùu với tham số                                         |
-| ceil(arg)         | Nhận về giá trị nguyên nhỏ hơn hoặc bằng arg                                                 | arg là biểu thức kiểu float hoặc double                               | double                                                                     |
-| floor(arg)        | Nhận về giá trị nguyên lớn hơn hoặc bằng arg                                                 | arg là biểu thức kiểu float hoặc double                               | double                                                                     |
-| round(arg)        | Trả về giá trị nguyên gần arg nhất, giá trị này chính là giá trị của arg sau khi đã làm tròn | arg là biểu thức kiểu float hoặc double                               | Nhận về kiểu int nếu arg kiêu float, nhận về kiùu long nếu arg kiểu double |
-| rint(arg)         | Giống như round(arg)                                                                         | arg là biểu thức kiểu double                                          | double                                                                     |
+| Tên phương thức   | Mô tả ý nghĩa                                                                                | Kiểu tham số                                                          | Kiểu trả về                                                                            |
+| ----------------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| sin(arg)          | tính sin của arg                                                                             | arg là một biểu thức kiểu double thể hiện một cung theo radians       | double                                                                                 |
+| cos(arg)          | tính cos của arg                                                                             | arg là một biểu thức kiểu double thể hiện một cung theo radians       | double                                                                                 |
+| tan(arg)          | tính tang của arg                                                                            | arg là một biểu thức kiểu double thể hiện một cung theo radians       | double                                                                                 |
+| asin(arg)         | tính sin-1 (arcsin)                                                                          | arg arg là một biểu thức kiểu double thể hiện một cung theo radians   | double trong hệ radians                                                                |
+| acos(arg)         | tính cos-1 (arccosin) của arg                                                                | arg là một biểu thức kiểu double thể hiện một cung theo radians       | double trong hệ radians                                                                |
+| atan(arg)         | tính tan-1 (arctang) của arg                                                                 | arg là một biểu thức kiểu double thể hiện một cung theo radians       | double trong hệ radians                                                                |
+| atan2 (arg1,arg2) | tính tan-1 (arctang) của arg1/arg2                                                           | arg1,arg2 là các biểu thức kiểu double thể hiện một cung theo radians | double trong hệ radians                                                                |
+| abs(arg)          | tính trị tuyệt đối của arg                                                                   | arg là một biểu thức kiểu int, long, float, hoặc double               | The same type as the argument                                                          |
+| max (arg1,arg2)   | Nhận về giá trị lớn trong hai tham số                                                        | arg1, arg2 là một biểu thức kiểu int, long, float, hoặc double        | Nhận về kiểu cùng kiểu với tham số                                                     |
+| min (arg1,arg2)   | Nhận về giá trị nhỏ trong hai tham số                                                        |                                                                       | Nhận về kiểu cùng kiểu với tham số                                                     |
+| ceil(arg)         | Nhận về giá trị nguyên nhỏ hơn hoặc bằng arg                                                 | arg là biểu thức kiểu float hoặc double                               | double                                                                                 |
+| floor(arg)        | Nhận về giá trị nguyên lớn hơn hoặc bằng arg                                                 | arg là biểu thức kiểu float hoặc double                               | double                                                                                 |
+| round(arg)        | Trả về giá trị nguyên gần arg nhất, giá trị này chính là giá trị của arg sau khi đã làm tròn | arg là biểu thức kiểu float hoặc double                               | Nhận về kiểu `int` nếu `arg` kiểu `float`, nhận về kiểu `long` nếu `arg` kiểu `double` |
+| rint(arg)         | Giống như round(arg)                                                                         | arg là biểu thức kiểu double                                          | double                                                                                 |
 | sqrt(arg)         | tính căn bậc hai của arg                                                                     | arg là biểu thức kiểu double double                                   |
-| pow (arg1,arg2)   | tính arg1arg2                                                                                | Cả arg1 và arg2 là các biểu thức kiểu double                          | double                                                                     |
-| exp(arg)          | tính earg                                                                                    | arg là biểu thức kiểu double                                          | double                                                                     |
-| log(arg)          | tính logarithmớ số e của arg                                                                 | arg là biểu thức kiểu double                                          | double                                                                     |
-| random()          | Nhận về một số giả ngẫu nhiên nằm trong khoản [0, 1)                                         | Không có tham số                                                      | double                                                                     |
+| pow (arg1,arg2)   | tính arg1arg2                                                                                | Cả arg1 và arg2 là các biểu thức kiểu double                          | double                                                                                 |
+| exp(arg)          |                                                                                              | arg là biểu thức kiểu double                                          | double                                                                                 |
+| log(arg)          |                                                                                              | arg là biểu thức kiểu double                                          | double                                                                                 |
+| random()          | Nhận về một số giả ngẫu nhiên nằm trong khoản [0, 1)                                         | Không có tham số                                                      | double                                                                                 |
+
+::alert{type="infor"}
+Trong Java, lớp **Math** cung cấp một loạt các hàm toán học mạnh mẽ giúp bạn thực hiện các phép tính toán phức tạp và xử lý dữ liệu số học một cách dễ dàng. Nhớ rằng các hàm này là các phương thức tĩnh và không cần tạo đối tượng **Math** mới để sử dụng chúng.
+::

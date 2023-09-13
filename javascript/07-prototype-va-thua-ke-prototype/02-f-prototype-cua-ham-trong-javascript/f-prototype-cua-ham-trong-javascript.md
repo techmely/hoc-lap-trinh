@@ -110,11 +110,11 @@ console.log(rabbit2.name);
 
 Tính năng này đặc biệt hữu ích khi bạn **không biết hàm khởi tạo** của một object (ví dụ đối tượng được tạo ra từ thư viện bên thứ 3).
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý:** JavaScript không đảm bảo giá trị chính xác cho `constructor`. Thực chất, `constructor` là thuộc tính mặc định của mỗi hàm. Nhưng giá trị của `constructor` thì hoàn toàn có thể thay đổi được.
 
-</content-warning>
+::
 
 Ví dụ thay đổi giá trị của `prototype`:
 

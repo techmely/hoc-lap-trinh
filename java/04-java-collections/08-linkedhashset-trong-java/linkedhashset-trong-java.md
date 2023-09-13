@@ -30,8 +30,6 @@ Các điểm quan trọng về lớp LinkedHashSet trong java là:
 - `LinkedHashSet()`: khởi tạo một danh sách mảng trống.
 - `LinkedHashSet(Collection c)`: khởi tạo một danh sách với các phần tử của collection c.
 
-<content-example />
-
 ```java
 LinkedHashSet<Integer> numbers = new LinkedHashSet<>(8, 0.75);
 ```
@@ -42,8 +40,6 @@ LinkedHashSet<Integer> numbers = new LinkedHashSet<>(8, 0.75);
 - **loadFactor** – Hệ số tải của HashSet này là 0,6. Điều này có nghĩa là: khi nào hash table được lấp đầy 60%, các phần tử mới được nhập vào được chuyển sang hash table mới có kích thước gấp đôi hash table ban đầu.
 
 Có thể tạo một LinkedHashSet mà không cần xác định công suất và hệ số tải của nó.
-
-<content-example />
 
 ```java
 LinkedHashSet<Integer> numbers1 = new LinkedHashSet<>();
@@ -77,23 +73,17 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>ArrayList: [2, 4]</code><br/>
-    <code>LinkedHashSet: [2, 4]</code>
-  </div>
-</div>
+::result
+
+ArrayList: [2, 4]<br/>
+LinkedHashSet: [2, 4]
+
+::
 
 ## Chèn các phần tử vào LinkedHashset
 
 - `add()` – chèn phần tử được chỉ định vào LinkedHashSet
 - `addAll()` – chèn tất cả các phần tử của collection đã chỉ định vào LinkedHashSet
-
-<content-example />
 
 ```java
 import java.util.LinkedHashSet;
@@ -118,22 +108,16 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedHashSet: [2, 4, 6]</code><br/>
-    <code>New LinkedHashSet: [2, 4, 6, 5]</code>
-  </div>
-</div>
+::result
+
+LinkedHashSet: [2, 4, 6]<br/>
+New LinkedHashSet: [2, 4, 6, 5]
+
+::
 
 ## Duyệt qua các phần tử trong LinkedHashSet
 
 Để truy cập các phần tử của LinkedHashSet, chúng ta có thể sử dụng hàm `iterator()`. Để sử dụng hàm này, chúng ta phải import gói `java.util.Iterator`.
-
-<content-example />
 
 ```java
 import java.util.LinkedHashSet;
@@ -161,16 +145,12 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedHashSet: [2, 5, 6]</code><br/>
-    <code>LinkedHashSet using Iterator: 2, 5, 6,</code>
-  </div>
-</div>
+::result
+
+LinkedHashSet: [2, 5, 6]<br/>
+LinkedHashSet using Iterator: 2, 5, 6,
+
+::
 
 Lưu ý:
 
@@ -181,8 +161,6 @@ Lưu ý:
 
 - `remove()` – xóa phần tử đã chỉ định khỏi LinkedHashSet
 - `removeAll()` – loại bỏ tất cả các phần tử khỏi LinkedHashSet
-
-<content-example />
 
 ```java
 import java.util.LinkedHashSet;
@@ -205,23 +183,17 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedHashSet: [2, 5, 6]</code><br/>
-    <code>Is 5 removed? true</code><br/>
-    <code>Are all elements removed? true</code>
-  </div>
-</div>
+::result
+
+LinkedHashSet: [2, 5, 6]<br/>
+Is 5 removed? true<br/>
+Are all elements removed? true
+
+::
 
 ## Lấy phần hợp của các set
 
 Để Lấy phần hợp của các set, chúng ta có thể sử dụng hàm `addAll()`.
-
-<content-example />
 
 ```java
 import java.util.LinkedHashSet;
@@ -245,23 +217,17 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedHashSet1: [2, 4]</code><br/>
-    <code>LinkedHashSet2: [1, 3]</code><br/>
-    <code>Union is: [1, 3, 2, 4]</code>
-  </div>
-</div>
+::result
+
+LinkedHashSet1: [2, 4]<br/>
+LinkedHashSet2: [1, 3]<br/>
+Union is: [1, 3, 2, 4]
+
+::
 
 ## Lấy phần giao của các set
 
 Để Lấy phần giao của các set, chúng ta có thể sử dụng hàm `retainAll()`
-
-<content-example />
 
 ```java
 import java.util.LinkedHashSet;
@@ -285,23 +251,17 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedHashSet1: [2, 3]</code><br/>
-    <code>LinkedHashSet2: [2, 4]</code><br/>
-    <code>Intersection is: [2]</code>
-  </div>
-</div>
+::result
+
+LinkedHashSet1: [2, 3]<br/>
+LinkedHashSet2: [2, 4]<br/>
+Intersection is: [2]
+
+::
 
 ## Tìm hiệu của hai set
 
 Để tìm hiệu của hai set, chúng ta có thể sử dụng hàm `removeAll()`.
-
-<content-example />
 
 ```java
 import java.util.LinkedHashSet;
@@ -327,23 +287,17 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedHashSet1: [2, 3, 5]</code><br/>
-    <code>LinkedHashSet2: [1, 3, 5]</code><br/>
-    <code>Difference: [2]</code>
-  </div>
-</div>
+::result
+
+LinkedHashSet1: [2, 3, 5]<br/>
+LinkedHashSet2: [1, 3, 5]<br/>
+Difference: [2]
+
+::
 
 ## Kiểm tra có phải là tập con hay không
 
 Để kiểm tra xem một set có phải là tập con của một set khác hay không, chúng ta có thể sử dụng hàm `containsAll()`
-
-<content-example />
 
 ```java
 import java.util.LinkedHashSet;
@@ -369,17 +323,13 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>LinkedHashSet1: [1, 2, 3, 4]</code><br/>
-    <code>LinkedHashSet2: [2, 3]</code><br/>
-    <code>Is LinkedHashSet2 is a subset of LinkedHashSet1? true</code>
-  </div>
-</div>
+::result
+
+LinkedHashSet1: [1, 2, 3, 4]<br/>
+LinkedHashSet2: [2, 3]<br/>
+Is LinkedHashSet2 is a subset of LinkedHashSet1? true
+
+::
 
 ## Một số hàm khác của LinkedHashset
 

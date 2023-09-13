@@ -47,16 +47,12 @@ if (x % 2 === 0) {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>x is an even number</code>
-    <code>done!</code>
-  </div>
-</div>
+::result
+
+x is an even number</br>
+done!
+
+::
 
 💡 Theo mình, dù khối code sau câu lệnh `if` là một hay nhiều câu lệnh thì bạn cũng nên dùng cặp dấu `{}` để code dễ đọc hơn. Ngoài ra, mình cũng nhắc lại quy luật [chuyển đổi kiểu dữ liệu](/bai-viet/javascript/chuyen-doi-kieu-du-lieu-trong-javascript/) sang boolean như sau:
 
@@ -110,8 +106,6 @@ Vì `x = 3` nên x chia 2 dư 1. Do đó, `x % 2 === 0` là `false`. Vì vậy, 
 ### Nhiều mệnh đề `else if` nối tiếp
 
 Trong trường hợp, bạn cần kiểm tra nhiều điều kiện liên tiếp nhau thì có thể dùng nhiều mệnh đề `else if` nối tiếp nhau.
-
-<content-example />
 
 ```js
 const age = 24;

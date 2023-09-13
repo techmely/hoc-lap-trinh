@@ -26,14 +26,13 @@ Các toán tử so sánh trong JavaScript bao gồm:
 - Toán tử so sánh bằng "không nghiêm ngặt" `==` và toán tử so sánh bằng "nghiêm ngặt" `===`.
 - Toán tử so sánh khác "không nghiêm ngặt" `!=` và toán tử so sánh khác "nghiêm ngặt" `!==`.
 
-<content-info>
-<ul>
-<li>Toán tử so sánh bằng có hai (hoặc ba) dấu bằng.</li>
-<li>Bạn chú ý để tránh nhầm lẫn với toán tử gán - chỉ có một dấu bằng =.</li>
-</ul>
-</content-info>
+::alert{type="infor"}
 
-<div class="example">các phép toán so sánh:</div>
+- Toán tử so sánh bằng có hai (hoặc ba) dấu bằng.
+- Bạn chú ý để tránh nhầm lẫn với toán tử gán - chỉ có một dấu bằng =.
+  ::
+
+Ví dụ các phép toán so sánh:</div>
 
 ```js
 let a = 1;
@@ -55,8 +54,6 @@ Kết quả của phép so sánh luôn là một giá trị kiểu [boolean](/ba
 
 - `true`: đúng, chính xác
 - `false`: sai, không chính xác
-
-<content-example />
 
 ```js
 console.log(5 > 6); // false (sai)
@@ -111,13 +108,13 @@ Trong ví dụ so sánh `"Small" < "Smart"` kết quả là `true`. Quá trình 
 
 Trong ví dụ so sánh `"Big" < "BigBang"` kết quả là `true`. Quá trình so sánh cùng lặp lại nhiều lần. Ba kí tự đầu tiên là `"Big"` đều giống nhau. Lúc này, string `"Big"` kết thúc. Trong khi, string `"BigBang"` còn thêm các kí tự `"Bang"` (độ dài string lớn hơn). Suy ra, string `"Big"` nhỏ hơn string `"BigBang"`.
 
-<content-info>
+::alert{type="infor"}
 
 - Để so sánh hai kí tự với nhau, JavaScript so sánh giá trị của hai kí tự (dạng số) ở [bảng mã Unicode](https://vi.wikipedia.org/wiki/Unicode).
 - Trong bảng mã này, ta có thứ tự `0 < 9 < A < Z < a < z`.
 - Ngoài việc so sánh các chữ cái Latinh ra thì JavaScript còn có thể so sánh các chữ cái không phải Latinh.
 
-</content-info>
+::
 
 ## So sánh khác kiểu dữ liệu trong Javascript
 
@@ -178,11 +175,11 @@ console.log("" != 0); // false
 console.log("" !== 0); // true
 ```
 
-<content-info>
+::alert{type="infor"}
 
 💡 Để tránh mắc phải những lỗi sai ngớ ngẩn khi so sánh trong JavaScript, bạn nên sử dụng toán tử so sánh bằng "nghiêm ngặt" `===` và toán tử so sánh khác "nghiêm ngặt" `!==`.
 
-</content-info>
+::
 
 ## So sánh với `null` và `undefined`
 
@@ -241,19 +238,17 @@ Kết quả là `false` hết.
 
 Trong các phép so sánh (1) và (2), `undefined` chuyển thành `NaN` nên chắc chắn khác `0`. Trong khi phép so sánh (3), `undefined` không bằng (`==`) `0`. Vì như mình đã nói ở trên, `undefined` chỉ bằng (`==`) `null` mà thôi.
 
-<content-info>
+::alert{type="infor"}
 
 - Để tránh những tình huống "phi logic" trên, bạn chỉ nên so sánh `null` hoặc `undefined` khi sử dụng toán tử so sánh bằng "nghiêm ngặt" (`===`) hoặc toán tử so sánh khác "nghiêm ngặt" (`!==`).
 - Không nên sử dụng toán tử `>`, `<`, `>=` và `<=` với `null` và `undefined`.
 - Trường hợp một biến có thể `null` hoặc `undefined` thì bạn nên kiểm tra giá trị có bằng `null` hoặc `undefined` hay không để xử lý trước. Khi biến khác `null` và `undefined` rồi thì mới thực hiện so sánh với các toán tử `>`, `<`, `>=` và `<=` sau.
 
-</content-info>
+::
 
 ## Thứ tự ưu tiên của các toán tử so sánh
 
 Các toán tử so sánh có **thứ tự ưu tiên giống nhau**. Khi trong biểu thức có nhiều toán tử so sánh, thứ tự thực hiện là **từ trái sang phải**.
-
-<content-example />
 
 ```js
 console.log(3 > 2 > 1); // false
@@ -267,7 +262,9 @@ Nhưng nếu bạn áp dụng đúng **quy tắc thứ tự ưu tiên** vào đ�
 
 Vì JavaScript sẽ thực hiện so sánh hai số đầu tiên trước, `3 > 2` là đúng nên kết quả của phép so sánh này là `true`. Khi đó, mình có thể viết lại như sau:
 
-    console.log(true > 1); // false
+```javascript
+console.log(true > 1); // false
+```
 
 Rõ ràng, đây là phép so sánh **hai kiểu dữ liệu khác nhau**. Vì vậy, `true` được chuyển thành dạng số và bằng `1`. Mà `1 > 1` là `false`.
 

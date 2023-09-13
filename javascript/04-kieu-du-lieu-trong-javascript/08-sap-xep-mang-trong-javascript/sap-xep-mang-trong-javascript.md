@@ -17,11 +17,11 @@ Bài viết sau đây tập trung tìm hiểu về **phương thức sắp xếp
 
 Nói về sắp xếp mảng thì đây là một vấn đề vô cùng phổ biến trong các chương trình. Nhiều ứng dụng (từ điển, danh bạ, quản lý tài khoản,...) thường có chức năng sắp xếp theo thứ tự từ điển (a-z). Việc sắp xếp giúp người quản lý và người dùng dễ dàng tìm kiếm nội dung hơn.
 
-<content-info>
+::alert{type="infor"}
 
 Hiện tại có rất nhiều thuật toán sắp xếp với độ phức tạp khác nhau. Ví dụ các thuật toán sắp xếp mảng là: selection sort, insertion sort, binary insertion sort, interchange sort, bubble sort, shaker sort, quick sort, merge sort, heap sort,...
 
-</content-info>
+::
 
 Bạn không cần thiết phải viết lại lại những thuật toán sắp xếp này. Vì JavaScript hỗ trợ sẵn một [function](/bai-viet/javascript/ham-trong-javascript) để sắp xếp.
 

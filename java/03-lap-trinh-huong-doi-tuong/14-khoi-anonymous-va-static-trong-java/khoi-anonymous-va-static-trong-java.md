@@ -19,9 +19,7 @@ Thông thường ta hay sử dụng khối vô danh để khởi đầu các thu
 
 ![image](https://user-images.githubusercontent.com/29374426/131244991-bd72ce64-f07c-465c-9a2b-677bcc58ba01.png)
 
-<div class="example">
-  Ở ví dụ này ta có 3 khối vô danh, khi chạy java cho thực thi các khối vô danh này theo thứ tự từ trên xuống dưới
-</div>
+Ở ví dụ này ta có 3 khối vô danh, khi chạy java cho thực thi các khối vô danh này theo thứ tự từ trên xuống dưới
 
 ```java
 public class Student {
@@ -52,30 +50,24 @@ public class Student {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Khối vô danh thứ 1 </code> <br/>
-    <code>Khối vô danh thứ 2</code> <br/>
-    <code>Khối vô danh thứ 3</code> <br/>
-    <code>Đây là hàm tạo</code> <br/>
-    <code>Khối vô danh thứ 1 </code> <br/>
-    <code>Khối vô danh thứ 2</code> <br/>
-    <code>Khối vô danh thứ 3</code> <br/>
-    <code>Đây là hàm tạo</code>
-  </div>
-</div>
+::result
+
+Khối vô danh thứ 1 <br/>
+Khối vô danh thứ 2 <br/>
+Khối vô danh thứ 3 <br/>
+Đây là hàm tạo <br/>
+Khối vô danh thứ 1 <br/>
+Khối vô danh thứ 2 <br/>
+Khối vô danh thứ 3 <br/>
+Đây là hàm tạo
+
+::
 
 ## Khối tĩnh (static) trong Java
 
 Khối tĩnh (static) là một khối lệnh bên ngoài tất cả các phương thức, kể cả hàm tạo, trước khối lệnh này ta đặt từ khoá `static`, từ khoá này báo cho java biết đây là khối khởi đầu tĩnh, khối này chỉ được gọi 1 lần khi đối tượng đầu tiên của lớp này được tạo ra, khối khởi đầu tĩnh này cũng được java gọi tự động trước bất cứ hàm tạo nào, thông thường ta sử dụng khối khởi đầu tĩnh để khởi đầu các thuộc tính `static`
 
-<div class="example">
-  Sau đây là một ví dụ có 1 khối khởi đầu tĩnh và một khối vô danh, để bạn thấy được sự khác nhau giữa khối khởi đầu tĩnh và khối vô danh
-</div>
+Sau đây là một ví dụ có 1 khối khởi đầu tĩnh và một khối vô danh, để bạn thấy được sự khác nhau giữa khối khởi đầu tĩnh và khối vô danh
 
 ```java
 public class Student {
@@ -112,23 +104,19 @@ public class Student {
 
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Đây là khối static</code><br/>
-    <code>Khối này chỉ được gọi 1 lần khi thể hiện đầu tiên của lớp được tạo ra</code><br/>
-    <code>Khối vô danh thứ 1 </code><br/>
-    <code>Khối vô danh thứ 2</code><br/>
-    <code>Khối vô danh thứ 3</code><br/>
-    <code>Đây là hàm tạo</code><br/>
-    <code>Khối vô danh thứ 1 </code><br/>
-    <code>Khối vô danh thứ 2</code><br/>
-    <code>Khối vô danh thứ 3</code><br/>
-    <code>Đây là hàm tạo</code>
-  </div>
-</div>
+::result
+
+Đây là khối static<br/>
+Khối này chỉ được gọi 1 lần khi thể hiện đầu tiên của lớp được tạo ra<br/>
+Khối vô danh thứ 1 <br/>
+Khối vô danh thứ 2<br/>
+Khối vô danh thứ 3<br/>
+Đây là hàm tạo<br/>
+Khối vô danh thứ 1 <br/>
+Khối vô danh thứ 2<br/>
+Khối vô danh thứ 3<br/>
+Đây là hàm tạo
+
+::
 
 Nhìn vào kết quả ra ta thấy khối khởi đầu tĩnh chỉ được java gọi thực hiện 1 lần khi đối tượng đầu tiên của lớp này được tạo, còn khối vô danh được gọi mỗi khi một đối tượng mới được tạo ra

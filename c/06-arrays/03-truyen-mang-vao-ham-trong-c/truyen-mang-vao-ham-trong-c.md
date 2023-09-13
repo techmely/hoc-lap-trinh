@@ -105,7 +105,9 @@ Result = 122.70
 result = sum(num);
 ```
 
-> Tuy nhiên, hãy lưu ý việc sử dụng `[]` trong khai báo hàm vì điều này đồng nghĩa việc ta đang thông báo cho trình biên dịch là ta đang truyền mảng một chiều cho hàm.
+::alert{type="warning"}
+Tuy nhiên, hãy lưu ý việc sử dụng `[]` trong khai báo hàm vì điều này đồng nghĩa việc ta đang thông báo cho trình biên dịch là ta đang truyền mảng một chiều cho hàm.
+::
 
 ```cpp
 

@@ -39,11 +39,11 @@ goku := Saiyan{
 }
 ```
 
-<content-warning>
+::alert{type="warning"}
 
-_Lưu ý:_ Các dấu `,` trong cấu trúc bên trên là bắt buộc. Không có nó, trình biên dịch sẽ báo lỗi. Bạn sẽ đánh giá cao tính nhất quán này, đặc biệt khi bạn đã sử dụng qua một ngôn ngữ hoặc một định dạng không nhất quán.
+Lưu ý: Các dấu `,` trong cấu trúc bên trên là bắt buộc. Không có nó, trình biên dịch sẽ báo lỗi. Bạn sẽ đánh giá cao tính nhất quán này, đặc biệt khi bạn đã sử dụng qua một ngôn ngữ hoặc một định dạng không nhất quán.
 
-</content-warning>
+::
 
 Chúng ta không nhất thiết phải gán một trường nào trong các trường trên. Cả hai ví dụ sau đều là hợp lệ:
 

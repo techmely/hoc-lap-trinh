@@ -22,8 +22,6 @@ Có 2 cách để khởi tạo đối tượng Boolean
 - Boolean(boolean value): Khởi tạo một object Boolean từ giá trị boolean được cung cấp.
 - Boolean(String s): Khởi tạo object Boolean từ chuỗi được cung cấp sẵn. Nếu s = "true" thì giá trị là `true`, tất cả các trường hợp còn lại là `false`.
 
-<content-example />
-
 ```java
 Boolean b1 = new Boolean(true); // true
 Boolean b2 = new Boolean(false); // false
@@ -47,8 +45,6 @@ Boolean b2 = Boolean.FALSE; // false
 
 - `parseBoolean(String s)`: Chuyển chuỗi sang object Boolean. Ngoài giá trị "true" thì các trường hợp khác đều trả về object Boolean có giá trị false.
 
-<content-example />
-
 ```java
 Boolean b1 = Boolean.parseBoolean("0"); // false
 Boolean b2 = Boolean.parseBoolean("aaa"); // false
@@ -57,8 +53,6 @@ Boolean b4 = Boolean.parseBoolean("true"); // true
 ```
 
 - `booleanValue()`: Trả về giá trị boolean của object Boolean.
-
-<content-example />
 
 ```java
 Boolean b1 = Boolean.parseBoolean("0"); // false
@@ -73,8 +67,6 @@ System.out.println(b4.booleanValue());
 
 - `valueOf()`: Trả về object Boolean class từ giá trị boolean hoặc chuỗi s được cung cấp.
 
-<content-example />
-
 ```java
 Boolean b1 = Boolean.valueOf(false); // false
 Boolean b2 = Boolean.valueOf(true); // true
@@ -87,8 +79,6 @@ System.out.println(b4.booleanValue());
 ```
 
 - `toString()`: Chuyển giá trị boolean value của object Boolean sang chuỗi.
-
-<content-example />
 
 ```java
 Boolean b1 = Boolean.valueOf(false);

@@ -265,7 +265,9 @@ observerB: 3
 
 > Hay như sử dụng BehaviorSubject để chia sẻ thông tin user hiện tại đang đăng nhập hệ thống cho các component khác nhau trong Angular chẳng hạn.
 
-Lưu ý: BehaviorSubject yêu cầu phải có giá trị khởi tạo khi tạo ra subject.
+::alert{type="warning"}
+Lưu ý: `BehaviorSubject` yêu cầu phải có giá trị khởi tạo khi tạo ra subject.
+::
 
 ```ts
 const subject = new BehaviorSubject(0); // 0 is the initial value

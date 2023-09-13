@@ -20,7 +20,7 @@ Phát triển ứng dụng Java sẽ được khởi đầu bằng việc địn
 ```java
 package <package_name>;
 
-import <oher_package>;
+import <other_package>;
 
 public class ClassName {
   <Variables (also known as fields)>;
@@ -40,6 +40,4 @@ _Trong đó:_
 - **methods**: Phương thức hay còn gọi là hàm chứa các hành động thực thi của đối tượng. Đương nhiên nội dung của phương thức chính là các đoạn mã thực thi của chính phương thức này.
 - **constructors** : Phương thức khởi tạo (Hay hàm khởi tạo) của đối tượng. Hình dạng của đối tượng được thể hiện ra sao sẽ phụ thuộc vào phương thức này.
 
-<content-example />
-
-![cau-truc-mot-chuong-trinh-java](https://user-images.githubusercontent.com/29374426/126427809-717c3eb0-ffba-4fa5-8e52-ec12ad9b548d.png)
+![Cấu trúc một chương trình Java](https://user-images.githubusercontent.com/29374426/126427809-717c3eb0-ffba-4fa5-8e52-ec12ad9b548d.png)

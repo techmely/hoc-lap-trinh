@@ -77,11 +77,11 @@ let user = {
 user.fullName = "Lam Pham"; // Cannot set property fullName of #<Object> which has only a getter
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 lỗi trên chỉ được in ra khi chạy code ở [strict mode](/bai-viet/javascript/strict-mode-trong-javascript).
 
-</content-warning>
+::
 
 Để tránh lỗi trên, bạn cần viết thêm hàm **setter** cho `fullName` như sau:
 

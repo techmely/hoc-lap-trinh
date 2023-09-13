@@ -15,7 +15,7 @@ position: 3
 
 Ví dụ trong lập trình nó được thể hiện thông qua việc ta có các lớp `mayAsus`, `mayAcer`, `mayLenovo` đều có các thuộc tính (attribute): `chieudai`, `chieurong` và phương thức (method): `upRam()`. Khi đó, nếu chúng ta tạo các lớp này thì chúng ta phải viết trong mỗi lớp đều có 3 phương thức trên. Hơn thế nữa, nếu bạn muốn sửa lại code trong một phương thức nào đó thì bạn phải sửa chúng cả ở 3 lớp sẽ rất tốn thời gian, và có thể dễ sai sót. Vì thế tính kế thừa sẽ được sử dụng trong trường hợp này để giải quyết vấn đề trên.
 
-## Tính kế thừa (Inheritance)
+## Tính kế thừa (Inheritance) trong Java
 
 **Tính kế thừa** cho phép xây dựng một lớp mới dựa trên các định nghĩa của lớp đã có. Có nghĩa là lớp cha có thể chia sẽ dữ liệu và phương thức cho các lớp con. Các lớp con khỏi phải định nghĩa lại, ngoài ra có thể mở rộng các thành phần kế thừa và bổ sung thêm các thành phần mới. Tái sử dụng mã nguồn 1 cách tối ưu, tận dụng được mã nguồn.
 
@@ -25,7 +25,7 @@ Hình ảnh trên cho thấy khi áp dụng **tính kế thừa**, ta chỉ cầ
 
 ## Ví dụ tính kế thừa trong Java
 
-<div class="example">ví dụ dưới dây lớp A thừa kế lớp B và ở lớp con không gọi hàm tạo của lớp cha nhưng nó vẫn được chạy</div>
+Ví dụ dưới dây lớp A thừa kế lớp B và ở lớp con không gọi hàm tạo của lớp cha nhưng nó vẫn được chạy
 
 ```java
 class B {
@@ -47,18 +47,16 @@ public class A extends B {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả sẽ hiển thị thông báo lỗi</span>
-  </div>
-  <div class="window-body">
-    <code>Hàm khởi tạo lớp cha</code><br/>
-    <code>Hàm khởi tạo lớp con</code><br/>
-  </div>
-</div>
+::result
 
-<div class="example">Đây là cách gọi tường minh</div>
+Kết quả sẽ hiển thị thông báo lỗi
+
+Hàm khởi tạo lớp cha<br/>
+Hàm khởi tạo lớp con<br/>
+
+::
+
+Đây là cách gọi tường minh
 
 ```java
 class B {
@@ -81,18 +79,14 @@ public class A extends B {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Hàm khởi tạo lớp cha</code><br/>
-    <code>Hàm khởi tạo lớp con</code><br/>
-  </div>
-</div>
+::result
 
-<div class="example">Một ví dụ khác</div>
+Hàm khởi tạo lớp cha<br/>
+Hàm khởi tạo lớp con<br/>
+
+::
+
+Một ví dụ khác
 
 ```java
 class B {
@@ -120,14 +114,10 @@ public class A extends B {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Hàm khởi tạo lớp cha</code><br/>
-    <code>Hàm khởi tạo lớp con</code><br/>
-    <code>Hàm khởi tạo lớp con</code>
-  </div>
-</div>
+::result
+
+Hàm khởi tạo lớp cha<br/>
+Hàm khởi tạo lớp con<br/>
+Hàm khởi tạo lớp con
+
+::

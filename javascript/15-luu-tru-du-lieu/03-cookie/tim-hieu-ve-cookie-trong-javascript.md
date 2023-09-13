@@ -23,9 +23,9 @@ Sau đây mình sẽ cùng nhau tìm hiểu về HTTP Cookie nhé!
 
 Theo MDN, [HTTP Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies) được định nghĩa như sau:
 
-<content-info>
+::alert{type="infor"}
 HTTP Cookie (web cookie, browser cookie) là dữ liệu được gửi từ server tới trình duyệt của người dùng. Trình duyệt sẽ lưu dữ liệu cookie này và gửi lại theo mỗi HTTP request về cho cùng server đó. Về cơ bản, cookie dùng để nói cho server biết các request đến từ một trình duyệt, ví dụ để giữ lại trạng thái đăng nhập...
-</content-info>
+::
 
 Đúng vậy, HTTP là [stateless](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview#HTTP_is_stateless_but_not_sessionless). Do đó, mọi request đến server đều giống nhau. Vì vậy, server không thể phân biệt được request được gửi đến là từ một client đã thực hiện request trước đó, đã đăng nhập,... hay từ một client mới.
 
@@ -127,11 +127,11 @@ document.cookie = 'foo=bar; path="/category"';
 
 Khi đó, cookies sẽ có giá trị ở path _/category_ và các path con của nó như _/category/cookie_, _/category/session_,... mà không có ở các path khác như _/tag_,...
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý:** trên đây mình chỉ ví dụ minh hoạ cho mỗi thuộc tính, thực tế bạn có thể kết hợp chúng lại với nhau:
 
-</content-warning>
+::
 
 ```js
 document.cookie =

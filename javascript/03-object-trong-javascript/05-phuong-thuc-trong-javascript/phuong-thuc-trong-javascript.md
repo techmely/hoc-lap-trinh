@@ -35,11 +35,11 @@ Trong ví dụ trên, mình sử dụng [function expression](/bai-viet/javascri
 
 Tiếp theo, mình gọi `user.sayHello()`. Và kết quả là `Hello!` được hiển thị ra console.
 
-<content-info>
+::alert{type="infor"}
 
 📝 Một hàm là thuộc tính của object thì nó được gọi là **phương thức**.
 
-</content-info>
+::
 
 Vì vậy, `sayHello` chính là một phương thức của object `user`.
 

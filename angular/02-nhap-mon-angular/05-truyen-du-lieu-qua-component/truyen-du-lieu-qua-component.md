@@ -52,11 +52,11 @@ export class ProgressBarComponent implements OnInit {
 }
 ```
 
-Như vậy, component của chúng ta sẽ có thể nhận vào 3 properties, với property progress sẽ có thể chứa giá trị default bằng 0.
-Lưu ý rằng, @Input được gọi là một property decorator, nó sẽ gắn thêm meta data cho property ngay phía sau nó.
-Nếu bạn không khai báo decorator @Input thì sẽ không thể nhận giá trị truyền vào từ component khác, vì Angular sẽ không biết cách để binding, và do đó property của bạn chỉ là một property bình thường của class.
+Như vậy, component của chúng ta sẽ có thể nhận vào 3 `properties`, với `property progress` sẽ có thể chứa giá trị default bằng 0.
+Lưu ý rằng, `@Input` được gọi là một `property decorator`, nó sẽ gắn thêm meta data cho property ngay phía sau nó.
+Nếu bạn không khai báo decorator `@Input` thì sẽ không thể nhận giá trị truyền vào từ `component` khác, vì Angular sẽ không biết cách để binding, và do đó property của bạn chỉ là một property bình thường của class.
 
-Khi đã có component và khai báo input rồi thì làm sao để sử dụng. Các bạn cần nhớ lại property binding ở trong những buổi đầu tiên, lúc này chỉ cần dùng cú pháp vuông vuông để binding cho property các bạn muốn là được rồi.
+Khi đã có `component` và khai báo input rồi thì làm sao để sử dụng. Các bạn cần nhớ lại `property binding` ở trong những buổi đầu tiên, lúc này chỉ cần dùng cú pháp vuông vuông để `binding` cho `property` các bạn muốn là được rồi.
 
 ```html
 <app-progress-bar

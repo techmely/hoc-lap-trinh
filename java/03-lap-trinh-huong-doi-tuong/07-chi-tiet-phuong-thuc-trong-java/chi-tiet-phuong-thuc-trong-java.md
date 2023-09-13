@@ -72,7 +72,9 @@ Trong java ta có thể truyền vào phương thức một tham số có kiểu
 
 Khi bạn khai báo một tham số để truyền vào phương thức thì bạn phải cung cấp cho nó một cái tên, tên nay được sử dụng bên trong thân của phương thức để tham chiếu đến tham số được truyền vào.
 
-**Chú ý:** tên của tham số có thể trùng với tên của thuộc tính, khi đó tên của tham số sẽ “che” đi tên của phương thức, bởi vậy bên trong thân của phương thức mà có tham số có tên trùng với tên của thuộc tính, thì khi nhắc đến cái tên đó có nghĩa là nhắc đến tham số
+::alert{type="warning"}
+Tên của tham số có thể trùng với tên của thuộc tính, khi đó tên của tham số sẽ “che” đi tên của phương thức, bởi vậy bên trong thân của phương thức mà có tham số có tên trùng với tên của thuộc tính, thì khi nhắc đến cái tên đó có nghĩa là nhắc đến tham số
+::
 
 ### Truyền tham số theo trị
 
@@ -98,16 +100,12 @@ public class TestPassByValue {
 
 Ta sẽ nhận được kết quả ra như sau:
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Gia tri của t truoc khi gọi ham = 10</code><br/>
-    <code>Gia tri của t bên trong ham sau khi tang len 1 la 11 Gia tri của t truoc khi gọi ham = 10</code>
-  </div>
-</div>
+::result
+
+Gia tri của t truoc khi gọi ham = 10<br/>
+Gia tri của t bên trong ham sau khi tang len 1 la 11 Gia tri của t truoc khi gọi ham = 10
+
+::
 
 ## Thân của phương thức
 

@@ -26,7 +26,7 @@ Từ khoá interface đã đưa khái niệm abstract đi xa thêm một bước
 - Phần khai báo cho biết một số thông tin như: tên của interface, nó có kế thừa từ một giao diện khác hay không.
 - Phần thân chứa các khai báo hằng, khai báo phương thức. Giống như một lớp ta cũng có thể thêm bổ từ public vào trước định nghĩa của interface.
 
-<div class="example">ví dụ dưới đây Printable Interface chỉ có một phương thức, trình triển khai của nó được cung cấp bởi lớp A.</div>
+Ví dụ dưới đây Printable Interface chỉ có một phương thức, trình triển khai của nó được cung cấp bởi lớp A.
 
 ```java
 interface printable {
@@ -69,8 +69,6 @@ Khi triển khai interface:
 ## Đa kế thừa trong Java bởi Interface
 
 Nếu một lớp triển khai (implements) nhiều interface, hoặc một Interface kế thừa từ nhiều Interface khác thì đó là đa kế thừa.
-
-<content-example />
 
 ```java
 interface Printable {
@@ -130,8 +128,6 @@ class A3 implements Showable{
 
 Một Interface mà không có thành viên nào thì được gọi là Marker Interface. Ví dụ: `Serializable`, `Cloneable`, `Remote`, … Chúng được sử dụng để cung cấp một số thông tin thiết yếu tới JVM để mà JVM có thể thực hiện một số hoạt động hữu ích.
 
-<content-example />
-
 ```java
 public interface Serializable {
 }
@@ -140,8 +136,6 @@ public interface Serializable {
 ## Interface lồng nhau trong Java
 
 Một Interface có thể có Interface khác, đó là lồng Interface.
-
-<content-example />
 
 ```java
 interface printable{

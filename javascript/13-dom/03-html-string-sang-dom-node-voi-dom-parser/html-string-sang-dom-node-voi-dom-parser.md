@@ -115,11 +115,11 @@ btnRm.addEventListener("click", function () {
 });
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý:** Thông thường, bạn sẽ chỉ sử dụng hàm [Node.removeChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild) mà không delete. Việc này sẽ dẫn đến leak memory.
 
-</content-warning>
+::
 
 ## Kết luận
 

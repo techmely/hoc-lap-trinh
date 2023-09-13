@@ -13,13 +13,13 @@ position: 1
 
 ## Tạo ứng dụng C# đầu tiên với Visual Studio
 
- <content-info>
- Để tập trung vào các khía cạnh cốt lõi của C#, sẽ thực hành trên các ứng dụng loại C# Console (.NET Core) (loại ứng dụng dòng lệnh không sử dụng giao diện đồ họa GUI). Sau đó sẽ nâng cao dần với các loại ứng dụng như ASP.NET, WPF ...
- </content-info>
+::alert{type="infor"}
+Để tập trung vào các khía cạnh cốt lõi của C#, sẽ thực hành trên các ứng dụng loại C# Console (.NET Core) (loại ứng dụng dòng lệnh không sử dụng giao diện đồ họa GUI). Sau đó sẽ nâng cao dần với các loại ứng dụng như ASP.NET, WPF ...
+::
 
- <content-info>
- IDE (môi trường viết, biên dịch, debug) để phát triển ứng dụng C# bạn có thể chọn là Visual Studio hoặc Visual Studio Code (Đối với các bạn mới học lập trình, nên ưu tiên sử dụng Visual Studio).
- </content-info>
+::alert{type="infor"}
+IDE (môi trường viết, biên dịch, debug) để phát triển ứng dụng C# bạn có thể chọn là Visual Studio hoặc Visual Studio Code (Đối với các bạn mới học lập trình, nên ưu tiên sử dụng Visual Studio).
+::
 
 ## Cài đặt môi trường phát triển C
 
@@ -36,7 +36,7 @@ Microsoft cung cấp các công cụ phát triển sau cho lập trình C#:
 
 ![image](https://user-images.githubusercontent.com/50008521/182108009-cf7f27e1-4fa2-4943-b7f6-20746089bcca.png)
 
-<content-info>Đối với các bạn mới làm quen với C# chưa sử dụng đến nhiều chức năng phức tạp của visual studio thì các bạn nên chọn bản Community vì nó nhỏ gọn và miễn phí</content-info>
+::alert{type="infor"}Đối với các bạn mới làm quen với C# chưa sử dụng đến nhiều chức năng phức tạp của visual studio thì các bạn nên chọn bản Community vì nó nhỏ gọn và miễn phí::
 
 **Bước 2:** Mở file tải về lên và nhấn "Continue", trình cài đặt sẽ cài đặt file về máy tính bạn.
 
@@ -85,23 +85,33 @@ Sau khi tiến hành cài đặt xong Visual Studio, ta bật Visual Studio lên
 ![image](https://user-images.githubusercontent.com/50008521/182108437-ec76bbfd-f99c-48ac-89ba-a6dcc8fb2ba3.png)
 Dòng 1: là phần khai báo thư viện. C# sử dụng từ khóa **using** + tên tự viện để tiến hành khai báo.
 
-<content-result>using System;</content-result>
+::result
+using System;
+::
 
 Dòng 3: là khai báo **namespace**. **Namespace** trong C# được dùng để tổ chức quản lý code. Có thể tưởng tượng namespace như một cái hộp chứa, trong đó có thể chứa những chiếc hộp khác (namespace con) và các vật dụng (các kiểu dữ liệu như struct, class, interface).
 
-<content-result>namespace HelloWorld</content-result>
+::result
+namespace HelloWorld
+::
 
 Dòng 5: là tên **Class** . **Class** là bản mô tả những tính chất và hành vi chung của những gì tồn tại trong thực tế. "Những gì tồn tại trong thực tế" đó được gọi là các đối tượng (object) cụ thể. Từ các đối tượng cụ thể, chúng ta phân tích ra những điểm chung về thông tin và hoạt động để tạo thành **Class**.
 
-<content-result>class Program</content-result>
+::result
+class Program
+::
 
 Dòng 7: là tên hàm. Trong các dự án C# thì hàm đầu tiên được khởi chạy đó làm hàm **Main()**
 
-<content-result>static void Main(string[] args)</content-result>
+::result
+static void Main(string[] args)
+::
 
 Dòng 8: phần thân hàm. Tại đây sẽ là nội dung của hàm Main. Trong ví dụ trên chúng ta thực hiện in dòng chữ _Hello World:_. Các bạn có thể tùy chỉnh nội dung mà bạn muốn in ra bằng cách thanh đổi nội dung giữa 2 dấu đóng mở ngoặc tròn.
 
-<content-result>Console.WriteLine("Hello World!")</content-result>
+::result
+Console.WriteLine("Hello World!")
+::
 
 Nhấn tổ hợp Ctrl + F5 hoặc phím mũi tên xanh góc trên ở giữa để thực hiện chạy chương trình.
 

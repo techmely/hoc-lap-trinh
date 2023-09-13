@@ -13,7 +13,7 @@ position: 13
 
 Trong Java có cung cấp nhiều toán tử để thao tác các biến. Trong bài viết này chúng ta sẽ cùng nhau tìm hiểu về các Toán tử trong Java.
 
-## Phép gán
+## Phép gán trong Java
 
 Cú pháp:
 
@@ -23,24 +23,22 @@ Cú pháp:
 
 Phép gán được thực hiện bằng toán tử `=`, nó có nghĩa là **hãy tính toán giá trị biểu thức bên phải dấu gán, sau đó đưa giá trị đó vào ô nhớ có tên nằm ở bên trái dấu gán**
 
-![cac-toan-tu-trong-java](https://user-images.githubusercontent.com/29374426/126589001-77ef8e76-3d2d-4194-9a0f-c662485056a2.png)
+![Các toán tử trong Java](https://user-images.githubusercontent.com/29374426/126589001-77ef8e76-3d2d-4194-9a0f-c662485056a2.png)
 
-<content-info>
-<ul>
-    <li>Câu lệnh gán gồm một dấu `=`</li>
-    <li>Kiểu của biểu thức bên phải dấu gán phải tương thích với kiểu dữ liệu của biến</li>
-    <li>Trong java ta có thể thực hiện một dẫy gán.</li>
-  </ul>
-</content-info>
+::alert{type="infor"}
 
-<content-example />
+- Câu lệnh gán gồm một dấu `=`
+- Kiểu của biểu thức bên phải dấu gán phải tương thích với kiểu dữ liệu của biến
+- Trong java ta có thể thực hiện một dẫy gán.
+
+::
 
 ```java
 int a = 10;
 int b = c = 10;// cả b và c đều có giá trị 10
 ```
 
-## Toán tử toán học
+## Toán tử toán học trong Java
 
 Ngôn ngữ java cũng có các phép toán số học được sử dụng trong các biểu thức toán học như trong đại số: `+` (**phép cộng**), `-` (**phép trừ**), `*` (**phép nhân**), `/` (**phép chia**), `%` (**phép toán chia lấy phần nguyên**)
 
@@ -54,7 +52,7 @@ Ta mô tả tóm tắt các phép toán số học qua bảng tổng kết sau:
 | /         | op1/ op2   | chia op1 cho op2                       |
 | %         | op1 % op2  | Tính phần dư của phép chia op1 cho op2 |
 
-## Toán tử tăng, giảm
+## Toán tử tăng, giảm trong Java
 
 Java cũng có phép toán tăng, giảm, ta có thể mô tả tóm tắt qua các bằng sau:
 
@@ -66,8 +64,6 @@ Java cũng có phép toán tăng, giảm, ta có thể mô tả tóm tắt qua c
 | --        | --op    | Giảm op xuống1 đơn vị, giá trị của op được giảm xuống sau khi biểu thức chứa nó được tính   |
 
 Qua đây chúng ta cũng hiểu được sự khác nhau của a++ (a--) và ++a (--a)
-
-<content-example />
 
 ```java
 public class Thaycacac {
@@ -85,22 +81,18 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>1</code><br/>
-    <code>3</code><br/>
-    <code>4</code><br/>
-    <code>6</code>
-  </div>
-</div>
+::result
 
-<content-info>Nếu toán tử tăng trước, tăng sau (giảm trước, giảm sau) đứng một mình (không nằm trong biểu thức) thì chúng hoạt động như nhau, chúng chỉ khác nhau khi chúng nằm trong biểu thức</content-info>
+- 1<br/>
+- 3<br/>
+- 4<br/>
+- 6
 
-## Phép toán quan hệ
+::
+
+::alert{type="infor"}Nếu toán tử tăng trước, tăng sau (giảm trước, giảm sau) đứng một mình (không nằm trong biểu thức) thì chúng hoạt động như nhau, chúng chỉ khác nhau khi chúng nằm trong biểu thức::
+
+## Phép toán quan hệ trong Java
 
 Phép toán quan hệ bao giờ cũng cho kết quả boolean, phép toán quan hệ sẽ so sánh 2 giá trị, nó xác định mối quan hệ giữa chúng, ví dụ `!=` sẽ trả về true nếu 2 toán hạng là khác nhau.
 
@@ -166,40 +158,36 @@ public class Thaycacac {
 
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Hiển thị các số...</code><br/>
-    <code>i = 37</code><br/>
-    <code>j = 42</code><br/>
-    <code>k = 42</code><br/>
-    <code>Kiểm tra lớn hơn...</code><br/>
-    <code>i > j = false</code><br/>
-    <code>j > i = true</code><br/>
-    <code>k > j = false</code><br/>
-    <code>Kiểm tra lớn hơn hoặc bằng...</code><br/>
-    <code>i >= j = false</code><br/>
-    <code>j >= i = true</code><br/>
-    <code>k >= j = true</code><br/>
-    <code>Kiểm tra nhỏ hơn...</code><br/>
-    <code>i < j = true</code><br/>
-    <code>j < i = false</code><br/>
-    <code>k < j = false</code><br/>
-    <code>Kiểm tra nhỏ hơn hoặc bằng...</code><br/>
-    <code>i <= j = true</code><br/>
-    <code>j <= i = false</code><br/>
-    <code>k <= j = true</code><br/>
-    <code>Kiểm tra bằng...</code><br/>
-    <code>i == j = false</code><br/>
-    <code>k == j = true</code><br/>
-    <code>Kiểm tra không bằng...</code><br/>
-    <code>i! = j = true</code><br/>
-    <code>k! = j = false</code>
-  </div>
-</div>
+::result
+
+Hiển thị các số...<br/>
+i = 37<br/>
+j = 42<br/>
+k = 42<br/>
+Kiểm tra lớn hơn...<br/>
+i > j = false<br/>
+j > i = true<br/>
+k > j = false<br/>
+Kiểm tra lớn hơn hoặc bằng...<br/>
+i >= j = false<br/>
+j >= i = true<br/>
+k >= j = true<br/>
+Kiểm tra nhỏ hơn...<br/>
+i < j = true<br/>
+j < i = false<br/>
+k < j = false<br/>
+Kiểm tra nhỏ hơn hoặc bằng...<br/>
+i <= j = true<br/>
+j <= i = false<br/>
+k <= j = true<br/>
+Kiểm tra bằng...<br/>
+i == j = false<br/>
+k == j = true<br/>
+Kiểm tra không bằng...<br/>
+i! = j = true<br/>
+k! = j = false
+
+::
 
 ## Phép toán logic
 
@@ -214,15 +202,14 @@ Java hỗ trợ 6 phép toán logic được chỉ ra trong bảng sau:
 | \|        | op1 \| op2   | Hoặc op1 hoặc op2 là true, giá trị của op2 luôn luôn được tính kể cả khi op1 là true |
 | ^         | op1 ^ op2    | Nếu op1 khác op2                                                                     |
 
-<content-info>
-<ul>
-    <li>Phép toán && ( & ) chỉ nhận giá trị true khi và chỉ khi cả hai toán hạng đều là true</li>
-    <li>Phép toán || ( | ) chỉ nhận giá trị false khi và chỉ khi cả hai toán hạng là false</li>
-    <li>Phép toán ^ chỉ nhận giá trị true khi và chỉ khi hai toán hạng khác nhau</li>
-  </ul>
-</content-info>
+::alert{type="infor"}
 
-## Phép toán thao tác trên bit
+- Phép toán `&& ( & )` chỉ nhận giá trị `true` khi và chỉ khi cả hai toán hạng đều là `true`
+- Phép toán `|| ( | )` chỉ nhận giá trị `false` khi và chỉ khi cả hai toán hạng là `false`
+- Phép toán `^` chỉ nhận giá trị true khi và chỉ khi hai toán hạng khác nhau
+  ::
+
+## Phép toán thao tác trên bit trong Java
 
 ### Phép toán dịch bit
 
@@ -234,15 +221,15 @@ Java hỗ trợ 6 phép toán logic được chỉ ra trong bảng sau:
 
 Sau đây là hình minh hoạ phép toán dịch bít
 
-![cac-toan-tu-trong-java](https://user-images.githubusercontent.com/29374426/124595107-cfe9ef00-de8a-11eb-8ccf-23c93c4d8f5d.png)
+![Phép toán thao tác trên bit](https://user-images.githubusercontent.com/29374426/124595107-cfe9ef00-de8a-11eb-8ccf-23c93c4d8f5d.png)
 
 - `13>>1=6` vì `13=11012` do vậy khi dịch phải một bit ta sẽ được `1102=6`
 - `5<<1=10` vì `5=1012` do vậy khi dịch trái 1 bit ta sẽ được `10102=10`
 - `5<<2=100` vì `5=1012` do vậy khi dịch trái 2 bit ta sẽ được `101002=100`
 
-<content-info>
-  Phép toán dịch trái một bit chính là phép nhân với 2, còn dịch phải chính là phép chia cho 2
-</content-info>
+::alert{type="infor"}
+Phép toán dịch trái một bit chính là phép nhân với 2, còn dịch phải chính là phép chia cho 2
+::
 
 ### Phép toán logic trên bit
 
@@ -259,7 +246,7 @@ Ta tóm tắt các phép toán trong bảng sau:
 
 Bảng giá trị chân lý của các phép toán đái số boolean:
 
-**Phép AND**
+#### Phép `AND`
 
 | op1 | op2 | Result |
 | :-- | :-- | :----- |
@@ -268,7 +255,7 @@ Bảng giá trị chân lý của các phép toán đái số boolean:
 | 1   | 0   | 0      |
 | 1   | 1   | 1      |
 
-**Phép OR**
+#### Phép `OR`
 
 | op1 | op2 | Result |
 | :-- | :-- | :----- |
@@ -277,7 +264,7 @@ Bảng giá trị chân lý của các phép toán đái số boolean:
 | 1   | 0   | 1      |
 | 1   | 1   | 1      |
 
-**Phép XOR**
+#### Phép `XOR`
 
 | op1 | op2 | Result |
 | :-- | :-- | :----- |
@@ -286,7 +273,7 @@ Bảng giá trị chân lý của các phép toán đái số boolean:
 | 1   | 0   | 1      |
 | 1   | 1   | 0      |
 
-**Phép NOT**
+#### Phép `NOT`
 
 | op1 | Result |
 | :-- | :----- |

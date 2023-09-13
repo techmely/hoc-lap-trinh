@@ -1,6 +1,6 @@
 ---
 title: "List trong Java"
-description: "ist trong java là một interface trong java, nó chứa các phương thức để chèn và xóa các phần tử dựa trên chỉ số index."
+description: "List trong Java là một interface trong java, nó chứa các phương thức để chèn và xóa các phần tử dựa trên chỉ số index."
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
@@ -57,9 +57,7 @@ Ngoài những hàm mà nó được kế thừa từ [Collection](/bai-viet/jav
 
 ## Ví dụ về List trong java
 
-<div class="example">
 Hãy xem ví dụ đơn giản về List trong java sau
-</div>
 
 ```java
 import java.util.ArrayList;
@@ -81,21 +79,17 @@ public class ListExample {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Phan tu co index = 2 la: C++</code><br/>
-    <code>Java</code><br/>
-    <code>Python</code><br/>
-    <code>C++</code><br/>
-    <code>PHP</code>
-  </div>
-</div>
+::result
 
-<div class="example">Sử dụng Arrays.asList()</div>
+Phan tu co index = 2 la: C++<br/>
+Java<br/>
+Python<br/>
+C++<br/>
+PHP
+
+::
+
+Ví dụ sử dụng `Arrays.asList()`
 
 ```java
 import java.util.Arrays;
@@ -115,18 +109,14 @@ public class ListExample1 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Java</code><br/>
-    <code>C++</code><br/>
-    <code>PHP</code><br/>
-    <code>Python</code>
-  </div>
-</div>
+::result
+
+Java<br/>
+C++<br/>
+PHP<br/>
+Python
+
+::
 
 ## List Iterator trong java
 
@@ -139,7 +129,7 @@ public class ListExample1 {
 | boolean hasPrevious() | Phương pháp này trả về true nếu list interator có tồn tại phần tử kế sau phần tử hiện tại.  |
 | Object previous()     | Phương thức này trả về phần tử kế sau trong danh sách và vị trí con trỏ giảm đi 1           |
 
-<div class="example">Hãy xem ví dụ đơn giả về việc duyệt các phần tử của List trong java bằng cách sử dụng ListIterator</div>
+Hãy xem ví dụ đơn giả về việc duyệt các phần tử của List trong java bằng cách sử dụng ListIterator
 
 ```java
 import java.util.ArrayList;
@@ -168,22 +158,18 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Phan tu co index = 2 la: C++</code><br/>
-    <code>Duyet cac phan tu tu dau den cuoi:</code><br/>
-    <code>Java</code><br/>
-    <code>Python</code><br/>
-    <code>C++</code><br/>
-    <code>PHP</code><br/>
-    <code>Duyet cac phan tu tu cuoi ve dau:</code><br/>
-    <code>PHP</code><br/>
-    <code>C++</code><br/>
-    <code>Python</code><br/>
-    <code>Java</code><br/>
-  </div>
-</div>
+::result
+
+Phan tu co index = 2 la: C++<br/>
+Duyet cac phan tu tu dau den cuoi:<br/>
+Java<br/>
+Python<br/>
+C++<br/>
+PHP<br/>
+Duyet cac phan tu tu cuoi ve dau:<br/>
+PHP<br/>
+C++<br/>
+Python<br/>
+Java<br/>
+
+::

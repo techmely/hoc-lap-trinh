@@ -33,7 +33,7 @@ Là một ngôn ngữ lập trình trưởng thành, có rất nhiều tài nguy
 
 Các IDE mạnh mẽ có sẵn cho Java đã đóng một vai trò quan trọng trong việc đưa Java lên cấp cao nhất. Eclipse và Netbeans đã thực hiện viết mã trong Java một trải nghiệm thú vị. Ngoài việc giúp bạn trong quá trình viết mã, họ cũng cung cấp mức hỗ trợ gỡ lỗi cao cho các lập trình viên.
 
-# Khả năng bảo mật của Java rất cao
+## Khả năng bảo mật của Java rất cao
 
 Rất nhiều lập trình viên chọn Java để lập trình web vì họ thấy chương trình viết bằng Java có tính an toàn cao. Java có rất nhiều tính năng bảo mật có sẵn cần thiết cho lập trình web như: Xác thực nâng cao, mã hóa và kiểm soát mức độ truy cập.
 

@@ -49,13 +49,13 @@ Vậy thì Java đã giải quyết vấn đề trên với enum cho phép chún
 public enum Gender {
     MALE,
     FEMALE,
-    OHTER
+    OTHER
 }
 ```
 
 ## Khai báo Enum trong Java
 
-<div class="example">enum định nghĩa bên trong một lớp</div>
+`enum` định nghĩa bên trong một lớp
 
 ```java
 public class EnumExample {
@@ -70,17 +70,13 @@ public class EnumExample {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>MONDAY</code>
-  </div>
-</div>
+::result
 
-<div class="example">enum định nghĩa bên ngoài một lớp</div>
+MONDAY
+
+::
+
+Ví dụ `enum` định nghĩa bên ngoài một lớp
 
 ```java
 enum WeekDay { // Không được khai báo access modifier (sử dụng default)
@@ -95,21 +91,15 @@ public class EnumExample {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>MONDAY</code>
-  </div>
-</div>
+::result
+
+MONDAY
+
+::
 
 ## Duyệt các phần tử trong enum
 
 Chúng ta có thể duyệt trên tất cả các phần tử của Enum, thông qua method `values()`. Trình biên dịch trong java tự động thêm phương thức `values()` vào enum khi nó được biên dịch. Phương thức `values()` trả về một mảng chứa tất cả các giá trị của enum.
-
-<content-example />
 
 ```java
 public class EnumExample {
@@ -126,29 +116,23 @@ public class EnumExample {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>MONDAY</code><br/>
-    <code>TUESDAY</code><br/>
-    <code>WEDNESDAY</code><br/>
-    <code>THURSDAY</code><br/>
-    <code>FRIDAY</code><br/>
-    <code>SATURDAY</code><br/>
-    <code>SUNDAY</code>
-  </div>
-</div>
+::result
+
+MONDAY<br/>
+TUESDAY<br/>
+WEDNESDAY<br/>
+THURSDAY<br/>
+FRIDAY<br/>
+SATURDAY<br/>
+SUNDAY
+
+::
 
 ## Khởi tạo giá trị đặc biệt cho hằng số enum
 
 Các hằng số enum có giá trị ban đầu bắt đầu từ `0, 1, 2, 3, …` Nhưng chúng ta có thể khởi tạo giá trị cụ thể cho các hằng số enum bằng cách định nghĩa các trường và các `Constructor`. Như đã giới thiệu, Enum có thể có các trường, phương thức và `Constructor`.
 
 `Constructor` của enum trong java là `private`. Khi bạn không khai báo là `private` thì trình biên dịch sẽ tạo ra `constructor private` không có tham số. Các phần tử trong enum luôn là `static final`. Có thể viết một `static method` trong enum.
-
-<content-example />
 
 ```java
 public class EnumExample3 {
@@ -189,28 +173,22 @@ public class EnumExample3 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>MONDAY = 2</code><br/>
-    <code>TUESDAY = 3</code><br/>
-    <code>WEDNESDAY = 4</code><br/>
-    <code>THURSDAY = 5</code><br/>
-    <code>FRIDAY = 7</code><br/>
-    <code>SATURDAY = 7</code><br/>
-    <code>SUNDAY = 1</code><br/>
-    <code>value 3 is TUESDAY</code><br/>
-  </div>
-</div>
+::result
+
+MONDAY = 2<br/>
+TUESDAY = 3<br/>
+WEDNESDAY = 4<br/>
+THURSDAY = 5<br/>
+FRIDAY = 7<br/>
+SATURDAY = 7<br/>
+SUNDAY = 1<br/>
+value 3 is TUESDAY<br/>
+
+::
 
 ## So sánh các phần tử enum trong Java
 
 Enum là một đối tượng tham chiếu giống như class, [interface](/bai-viet/java/interface-trong-java) nhưng nó cũng có thể sử dụng toán tử `==` hoặc `equals()` để so sánh các phần tử enum.
-
-<content-example />
 
 ```java
 public class EnumExample {
@@ -238,22 +216,16 @@ public class EnumExample {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Today is holiday</code><br/>
-    <code>Today is holiday</code>
-  </div>
-</div>
+::result
+
+Today is holiday<br/>
+Today is holiday
+
+::
 
 ## Enum sử dụng trong switch case
 
 Cũng giống với các kiểu dữ liệu nguyên thủy (int,float,..) Enum có thể sử dụng như một tham số trong câu lệnh `switch case`.
-
-<content-example />
 
 ```java
 public class EnumExample {
@@ -279,21 +251,15 @@ public class EnumExample {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Today is holiday</code>
-  </div>
-</div>
+::result
+
+Today is holiday
+
+::
 
 ## Ghi đè phương thức trong Enum
 
 Do enum cũng là một kiểu dữ liệu được kết thừa từ lớp `Object`, nên chúng ta có thể ghi đè method `toString()` của lớp `Object`.
-
-<content-example />
 
 ```java
 public class EnumExample3 {
@@ -324,13 +290,9 @@ public class EnumExample3 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Today is holiday</code><br/>
-    <code>Today is holiday</code>
-  </div>
-</div>
+::result
+
+Today is holiday<br/>
+Today is holiday
+
+::

@@ -72,7 +72,9 @@ Thực tế khi sử dụng Angular, chúng ta sẽ muốn ứng dụng trở n�
 Trong dự án Angular, bạn hoàn toàn có thể hiểu type="text" lúc này cũng là một property binding, thay vì [type]="'text'" (để ý có 1 cặp nháy đơn và 1 cặp nhảy đôi), nó đang biểu diễn binding cho một hằng giá trị (literal), lúc này bạn hoàn toàn có thể bỏ qua mấy dấu vuông vuông kia đi. Nhưng trong hầu hết các trường hợp còn lại, bạn sẽ dùng dấu vuông vuông [property]="expression" để thực hiện khai báo property binding.
 Trong ví dụ ở trên chúng ta đã binding từ TS class ra ngoài template, và khi dữ liệu ở class thay đổi, Angular sẽ tự động làm nhiệm vụ update template để hiển thị tương ứng sự thay đổi đó cho chúng ta.
 
-**Lưu ý**: ngoài property binding cho các phần tử HTML, chúng ta cũng có thể áp dụng property binding cho các component.
+::alert{type="warning"}
+Ngoài `property` binding cho các phần tử HTML, chúng ta cũng có thể áp dụng `property binding` cho các component.
+::
 
 ## Event binding trong angular là gì?
 

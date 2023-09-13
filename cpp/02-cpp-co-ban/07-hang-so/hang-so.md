@@ -40,7 +40,9 @@ Việc định nghĩa một biến trong C++ như một hằng số sẽ giúp b
 
 `int const my_constant = 123;`
 
-_Lưu ý: Bạn phải khởi tạo giá trị cho biến hằng số mỗi khi định nghĩa chúng._
+::alert{type="warning"}
+Lưu ý: Bạn phải khởi tạo giá trị cho biến hằng số mỗi khi định nghĩa chúng.
+::
 
 Định nghĩa một hằng số không có giá trị khởi tạo sẽ phát sinh lỗi khi biên dịch chương trình.
 

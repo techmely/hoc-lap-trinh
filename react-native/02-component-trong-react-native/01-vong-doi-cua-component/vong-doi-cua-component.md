@@ -19,9 +19,9 @@ position: 1
 
 `constructor(props)` - Hàm khởi tạo component. Trong hàm này chúng ta thường dùng để khởi tạo state, binding các hàm con của component.
 
-<content-warning>
+::alert{type="warning"}
 Không được thay đổi state bằng phương thức `this.setState()` trong hàm này.
-</content-warning>
+::
 
 `componentWillMount()` - Hàm này sẽ bị loại bỏ ở phiên bản mới.
 

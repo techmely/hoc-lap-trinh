@@ -22,8 +22,6 @@ position: 16
 
 ![Sắp xếp trong Java](https://user-images.githubusercontent.com/29374426/146035791-17258761-e284-4388-8508-adcd4a9ed2d2.png)
 
-<content-example />
-
 ```java
 import java.util.Arrays;
 
@@ -49,23 +47,17 @@ public class SortedArrayExample {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code><br/>
-    <code>[5, 1, 2, 3, 4, 6, 7, 9, 8]</code><br/>
-    <code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code><br/>
-  </div>
-</div>
+::result
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9]<br/>
+[5, 1, 2, 3, 4, 6, 7, 9, 8]<br/>
+[1, 2, 3, 4, 5, 6, 7, 8, 9]<br/>
+
+::
 
 ## Sắp xếp danh sách (List) trong Java
 
 Để sắp xếp các phần tử của danh sách, chúng ta sử dụng lớp tiện ích `Collections.sort()`.
-
-<content-example />
 
 ```java
 import java.util.ArrayList;
@@ -85,23 +77,17 @@ public class SortedListExample {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
-  </div>
-</div>
+::result
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+::
 
 ## Sắp xếp tập hợp (Set) trong Java
 
 Chúng ta phải sử dụng `LinkedHashSet` để có thể giữ được thứ tự các phần tử trong một tập hợp.
 
 Lớp tiện ích `Collections` chỉ hỗ trợ sắp xếp các phần tử trong một `List`. Do đó, để có thể sắp xếp được một Set chúng ta cần chuyển một `Set` qua một `List`, sau đó thực hiện sắp xếp danh sách này và cuối cùng thực hiện chuyển `List` về `Set`.
-
-<content-example />
 
 ```java
 import java.util.ArrayList;
@@ -131,15 +117,11 @@ public class SortedSetExample {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>[1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
-  </div>
-</div>
+::result
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+::
 
 ## Sắp xếp Map trong Java
 
@@ -150,8 +132,6 @@ public class SortedSetExample {
 ### Sắp xếp Map theo Key
 
 Lớp tiện ích `Collections` chỉ hỗ trợ sắp xếp các phần tử trong một `List`. Do đó, để có thể sắp xếp được một Map chúng ta cần chuyển một `Map` qua một `List`, sau đó thực hiện sắp xếp danh sách này và cuối cùng thực hiện chuyển `List` về `Map`.
-
-<content-example />
 
 ```java
 import java.util.ArrayList;
@@ -199,24 +179,18 @@ public class SortedMapExample {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}</code><br/>
-    <code>Sorted map: {11=One, 22=Two, 33=Three, 44=Four, 55=Five</code>
-  </div>
-</div>
+::result
+
+Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}<br/>
+Sorted map: {11=One, 22=Two, 33=Three, 44=Four, 55=Five
+
+::
 
 Trong ví dụ trên, tôi đã tạo một bộ so sánh (`Comparator`) để có thể so sánh các phần tử của `Map` theo `Key`.
 
 ### Sắp xếp Map theo Value
 
 Tương tự như sắp xếp theo `Key`, chúng ta chỉ việc viết lại phương thức `Comparator` so sánh theo `value`:
-
-<content-example />
 
 ```java
 import java.util.ArrayList;
@@ -264,16 +238,12 @@ public class SortedMapExample2 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}</code><br/>
-    <code>Sorted map: {55=Five, 44=Four, 11=One, 33=Three, 22=Two}</code>
-  </div>
-</div>
+::result
+
+Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}<br/>
+Sorted map: {55=Five, 44=Four, 11=One, 33=Three, 22=Two}
+
+::
 
 ## Một số cách khác sắp xếp Map trong Java
 
@@ -283,8 +253,6 @@ public class SortedMapExample2 {
 - `comparingByKey(Comparator<? super K> cmp)`
 - `comparingByValue()`
 - `comparingByValue(Comparator<? super V> cmp)`
-
-<content-example />
 
 ```java
 import java.util.HashMap;
@@ -322,17 +290,13 @@ public class SortedMapExample3 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}</code><br/>
-    <code>Sorted map by key: {11=One, 22=Two, 33=Three, 44=Four, 55=Five}</code><br/>
-    <code>Sorted map by value: {55=Five, 44=Four, 11=One, 33=Three, 22=Two}</code>
-  </div>
-</div>
+::result
+
+Original map: {33=Three, 22=Two, 55=Five, 11=One, 44=Four}<br/>
+Sorted map by key: {11=One, 22=Two, 33=Three, 44=Four, 55=Five}<br/>
+Sorted map by value: {55=Five, 44=Four, 11=One, 33=Three, 22=Two}
+
+::
 
 ## Sắp xếp các đối tượng bất kỳ
 
@@ -352,8 +316,6 @@ Giá trị trả về của 2 phương thức này:
 ### Implement Comparable và override phương thức compareTo(T obj)
 
 Đối với cách này, chúng ta cần thay đổi lớp gốc (original class), tức là lớp của đối tượng so sánh phải chỉnh sửa và implement `Comparable Interface` để cài đặt bộ so sánh.
-
-<content-example />
 
 ```java
 package com.gpcoder.sorting;
@@ -399,7 +361,7 @@ Trong ví dụ trên, tôi đã implement một `interface java.lang.Comparable`
 
 Khi đã cung cấp bộ so sánh, chúng ta có thể sắp xếp một danh sách sinh viên thông qua thương thức `Collections.sort(c)` hay `Arrays.sort(arr)`.
 
-<div class="example">sử dụng Collections.sort()</div>
+Ví dụ sử dụng `Collections.sort()`
 
 ```java
 import java.util.Arrays;
@@ -424,21 +386,17 @@ public class SortedObjectExample1 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Student [id=5, name=Five, age=22]</code><br/>
-    <code>Student [id=4, name=Four, age=19]</code><br/>
-    <code>Student [id=1, name=One, age=22]</code><br/>
-    <code>Student [id=3, name=Three, age=20]</code><br/>
-    <code>Student [id=2, name=Two, age=18]</code>
-  </div>
-</div>
+::result
 
-<div class="example">sử dụng Arrays.sort()</div>
+Student [id=5, name=Five, age=22]<br/>
+Student [id=4, name=Four, age=19]<br/>
+Student [id=1, name=One, age=22]<br/>
+Student [id=3, name=Three, age=20]<br/>
+Student [id=2, name=Two, age=18]
+
+::
+
+Ví dụ sử dụng `Arrays.sort()`
 
 ```java
 import java.util.Arrays;
@@ -462,25 +420,21 @@ public class SortedObjectExample2 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Student [id=5, name=Five, age=22]</code><br/>
-    <code>Student [id=4, name=Four, age=19]</code><br/>
-    <code>Student [id=1, name=One, age=22]</code><br/>
-    <code>Student [id=3, name=Three, age=20]</code><br/>
-    <code>Student [id=2, name=Two, age=18]</code>
-  </div>
-</div>
+::result
+
+Student [id=5, name=Five, age=22]<br/>
+Student [id=4, name=Four, age=19]<br/>
+Student [id=1, name=One, age=22]<br/>
+Student [id=3, name=Three, age=20]<br/>
+Student [id=2, name=Two, age=18]
+
+::
 
 ### Implement Comparator và override phương thức compare(T obj1, T obj2)
 
 Đối với cách này không làm thay đổi lớp gốc (original class). Chúng ta có thể tạo một `class` mới, sử dụng `Anonymous function`, `inner class` hoặc sử dụng `lamda`, `implement Comparator Interface` để cài đặt bộ so sánh.
 
-<div class="example">tạo class mới cài đặt interface Comparator</div>
+Ví dụ tạo `class` mới cài đặt `interface Comparator`
 
 ```java
 import java.util.Comparator;
@@ -494,7 +448,7 @@ public class AgeComparator implements Comparator<Student> {
 }
 ```
 
-<div class="example">sử dụng Comparator với Collections.sort()</div>
+Ví dụ sử dụng `Comparator` với `Collections.sort()`
 
 ```java
 import java.util.Arrays;
@@ -541,7 +495,7 @@ public class SortedObjectExample3 {
 }
 ```
 
-<div class="example">sử dụng Comparator với Arrays.sort()</div>
+Ví dụ sử dụng Comparator với `Arrays.sort()`
 
 ```java
 import java.util.Arrays;
@@ -698,8 +652,6 @@ public class SortedObjectExample5 {
 
 Với Java 8 cung cấp một phương thức khác giúp chúng ta có thể sắp xếp đảo ngược danh sách một cách trực tiếp thông qua phương thức `comparator.reversed()`.
 
-<content-example />
-
 ```java
 import java.util.Arrays;
 import java.util.Collections;
@@ -736,16 +688,12 @@ public class SortedObjectExample7 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Student [id=2, name=Two, age=18]</code><br/>
-    <code>Student [id=3, name=Three, age=20]</code><br/>
-    <code>Student [id=1, name=One, age=22]</code><br/>
-    <code>Student [id=4, name=Four, age=19]</code><br/>
-    <code>Student [id=5, name=Five, age=22]</code>
-  </div>
-</div>
+::result
+
+Student [id=2, name=Two, age=18]<br/>
+Student [id=3, name=Three, age=20]<br/>
+Student [id=1, name=One, age=22]<br/>
+Student [id=4, name=Four, age=19]<br/>
+Student [id=5, name=Five, age=22]
+
+::

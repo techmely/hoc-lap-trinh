@@ -71,7 +71,7 @@ Interface cũng có thể được dùng trong composition. Các interface cũng
 
 Cuối cùng, interface được sử dụng để tránh tình trạng import lồng nhau. Vì interface không có implementation, chúng sẽ gần như không cần gói thư viện bên ngoài.
 
-<content-warning>
+::alert{type="warning"}
 
 Tóm lại, bạn tạo cấu trúc mã nguồn của bạn thế nào trong workspace cũng được, miễn là bạn cảm thấy thoải mái sau khi viết một vài project cỡ vừa. Điều quan trọng nhất cần nhớ là mối quan hệ chặt chẽ giữa tên của gói và cấu trúc thư mục của bạn (không chỉ trong một dự án, mà là trong toàn bộ workspace).
 
@@ -79,4 +79,4 @@ Cách mà Go phân quyền truy cập các kiểu dữ liệu khá đơn giản 
 
 Cuối cùng, nếu bạn mới biết tới interface, bạn cần thời gian để quen với nó.
 
-</content-warning>
+::

@@ -64,11 +64,11 @@ Khi `new User("Alex")` được gọi:
 
 Sau đó, bạn có thể gọi phương thức của object, ví dụ: `user.sayHi()`.
 
-<content-warning>
+::alert{type="warning"}
 
 📝 **Chú ý:** Không tồn tại **dấu phẩy** giữa các phương thức. Việc thêm vào dấu phẩy vào giữa các phương thức sẽ gây **lỗi cú pháp**.
 
-</content-warning>
+::
 
 > Bạn cần chú ý để tránh nhầm lẫn giữa việc **định nghĩa class** với việc **định nghĩa object**.
 
@@ -303,11 +303,11 @@ class User {
 new User().sayHi(); // Hello, Alex!
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý:** nhiều **trình duyệt cũ** không hỗ trợ cách định nghĩa thuộc tính trong class như trên.
 
-</content-warning>
+::
 
 Điểm khác nhau quan trọng giữa việc định nghĩa phương thức và thuộc tính trong class là:
 

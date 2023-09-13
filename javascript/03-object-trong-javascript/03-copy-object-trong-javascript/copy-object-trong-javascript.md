@@ -61,14 +61,14 @@ Ngoài cách sử dụng vòng lặp `for...in` như trên, bạn có thể dùn
 Object.assign(dest, [src1, src2, src3...]);
 ```
 
-<content-info>
+::alert{type="infor"}
 
 Trong đó:
 
 - `dest`: là object đích.
 - `[src1, src2, src3...]`: là các object nguồn.
 
-</content-info>
+::
 
 Phương thức trên sẽ copy toàn bộ các thuộc tính của các object nguồn `src1, src2,...,srcN` vào object đích `dest`. Và giá trị trả về chính là object đích `dest`.
 
@@ -143,11 +143,11 @@ Trong ví dụ trên, giá trị ứng với `metadata` là một object. Với 
 
 Vì vậy, khi thay đổi ở `point2` thì `point1` cũng thay đổi theo.
 
-<content-warning>
+::alert{type="warning"}
 
 📝 Ngoài cách trên để copy nông, bạn cũng có thể dùng cú pháp spread `(...)` như sau:
 
-</content-warning>
+::
 
 ```js
 let p1 = { x: 1, y: 2 };

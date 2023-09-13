@@ -11,7 +11,7 @@ image: https://user-images.githubusercontent.com/29374426/125040448-de6e1b80-e0c
 position: 21
 ---
 
-## Vòng lặp while - do
+## Vòng lặp while - do trong Java
 
 Vòng lặp while được sử dụng để thực thi nhiều lần một đoạn chương trình, khi một điều kiện vẫn còn đúng. Vòng lặp while thường được sử dụng khi số lần lặp không được xác định trước (Không cố định).
 
@@ -29,8 +29,6 @@ Ta có thể thấy được luồng thực hiện của chương trình thông 
 
 Trước tiên chương trình sẽ tính giá trị của biểu thức **Điều kiện lặp**, nếu giá trị của biểu thức logic là đúng thì câu lệnh trong thân của `while` sẽ được thực hiện, sau khi thực hiện xong nó tính lại giá trị của biểu thức logic, nếu giá trị đúng nó lại tiếp tục thực hiện lệnh trong thân `while` cho đến khi giá trị của biểu thức sai.
 
-<content-example />
-
 ```java
 public class Thaycacac {
   public static void main(String[] args) {
@@ -45,28 +43,24 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Giá trị 3</code><br/>
-    <code>Giá trị 5</code><br/>
-    <code>Giá trị 7</code><br/>
-    <code>Giá trị 9</code>
-  </div>
-</div>
+::result
 
-<content-info>
-  <ul>
-    <li>Biểu thức bên trong cặp ngoặc tròn phải là một biểu thức logic (biểu thức trả về giá trị true hoặc false)</li>
-    <li>Biểu thức điều kiện phải nằm trong cặp ngoặc tròn</li>
-    <li>Sau từ khoá while ta chỉ có thể đặt được duy nhất một lệnh, do vậy để có thể thực hiện nhiều tác vụ sau while ta phải bao chúng trong một khối lệnh</li>
-    <li>Bên trong thân của vòng lặp while ta nên có lệnh làm thay đổi giá trị của biểu thức logic, nếu không chúng ta sẽ rơi vào vòng lặp vô hạn.</li>
-    <li>Câu lệnh trong thân cấu trúc while có thể không được thực hiện lần nào (do biểu thức lôgic ban đầu có giá trị false )</li>
-  </ul>
-</content-info>
+Giá trị 3<br/>
+Giá trị 5<br/>
+Giá trị 7<br/>
+Giá trị 9
+
+::
+
+::alert{type="infor"}
+
+- Biểu thức bên trong cặp ngoặc tròn phải là một biểu thức logic (biểu thức trả về giá trị true hoặc false)
+- Biểu thức điều kiện phải nằm trong cặp ngoặc tròn
+- Sau từ khoá while ta chỉ có thể đặt được duy nhất một lệnh, do vậy để có thể thực hiện nhiều tác vụ sau while ta phải bao chúng trong một khối lệnh
+- Bên trong thân của vòng lặp while ta nên có lệnh làm thay đổi giá trị của biểu thức logic, nếu không chúng ta sẽ rơi vào vòng lặp vô hạn.
+- Câu lệnh trong thân cấu trúc while có thể không được thực hiện lần nào (do biểu thức lôgic ban đầu có giá trị false )
+
+::
 
 ## Vòng lặp do - while
 
@@ -103,24 +97,20 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Giá trị 3</code><br/>
-    <code>Giá trị 6</code><br/>
-    <code>Giá trị 9</code>
-  </div>
-</div>
+::result
 
-<content-info>
-  <ul>
-    <li>Biểu thức bên trong cặp ngoặc tròn phải là một biểu thức logic (biểu thức trả về giá trị true hoặc false)</li>
-    <li>Biểu thức điều kiện phải nằm trong cặp ngoặc tròn</li>
-    <li>Sau từ khoá do ta có thể đặt được nhiều lệnh</li>
-    <li>Bên trong thân của vòng lặp do-while ta nên có lệnh làm thay đổi giá trị của biểu thức logic, nếu không chúng ta sẽ rơi vào vòng lặp vô hạn.</li>
-    <li>Câu lệnh trong thân cấu trúc do-while được thực hiện ít nhất một lần</li>
-  </ul>
-</content-info>
+Giá trị 3<br/>
+Giá trị 6<br/>
+Giá trị 9
+
+::
+
+::alert{type="infor"}
+
+- Biểu thức bên trong cặp ngoặc tròn phải là một biểu thức logic (biểu thức trả về giá trị true hoặc false)
+- Biểu thức điều kiện phải nằm trong cặp ngoặc tròn
+- Sau từ khoá do ta có thể đặt được nhiều lệnh
+- Bên trong thân của vòng lặp do-while ta nên có lệnh làm thay đổi giá trị của biểu thức logic, nếu không chúng ta sẽ rơi vào vòng lặp vô hạn.
+- Câu lệnh trong thân cấu trúc do-while được thực hiện ít nhất một lần
+
+::

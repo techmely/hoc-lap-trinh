@@ -119,13 +119,13 @@ Với cách viết này, string trở nên rõ ràng và trực quan hơn rất 
 console.log(`Me\n`.length); // 3
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 Kí tự `\n` là kí tự đặc biệt. Nên string `Me\n` chỉ có độ dài bằng 3, chứ không phải bằng 4.
 
 `length` là thuộc tính chứ không phải phương thức. Vì vậy, nếu bạn gọi `"str".length()` thì sẽ bị lỗi **"str ".length is not a function**.
 
-</content-warning>
+::
 
 ## Truy cập các kí tự của string trong JavaScript
 
@@ -367,13 +367,13 @@ let str = "I am a js dev";
 console.log(str.substr(-2, 2)); // ev
 ```
 
-<content-info>
+::alert{type="infor"}
 
 💡 Trong ba phương thức trên thì phương thức `slice` có vẻ linh động hơn cả, vì nó ngắn gọn, dễ nhớ và hỗ trợ tham số âm.
 
 Phương thức `substr` thì đã bị lỗi thời.
 
-</content-info>
+::
 
 ## So sánh string trong JavaScript
 

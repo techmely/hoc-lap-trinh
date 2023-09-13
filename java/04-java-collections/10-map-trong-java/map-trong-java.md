@@ -63,8 +63,6 @@ Trong đoạn code trên, chúng ta đã tạo ra một Map tên là numbers. Ch
 - `value()` – Trả về tập hợp tất gồm cả các value có trong map.
 - `entryset()` – Trả về tập hợp gồm tất cả cặp `key/value` có trong map.
 
-<content-example />
-
 ```java
 package com.gpcoder.collection.map;
 
@@ -98,18 +96,14 @@ public class MapExample {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>1 = Basic java</code><br/>
-    <code>2 = OOP</code><br/>
-    <code>3 = Collection</code><br/>
-    <code>---</code><br/>
-    <code>1 = Basic java</code><br/>
-    <code>2 = OOP</code><br/>
-    <code>3 = Collection</code>
-  </div>
-</div>
+::result
+
+1 = Basic java<br/>
+2 = OOP<br/>
+3 = Collection<br/>
+---<br/>
+1 = Basic java<br/>
+2 = OOP<br/>
+3 = Collection
+
+::

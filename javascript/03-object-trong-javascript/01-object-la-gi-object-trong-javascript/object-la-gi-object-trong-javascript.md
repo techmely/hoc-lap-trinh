@@ -31,12 +31,12 @@ Như mình đã nói trong bài [các kiểu dữ liệu trong JavaScript](/bai-
 
 Về bản chất, object là tập hợp của các **key** và **value**. Với **key** gọi là thuộc tính, còn **value** là giá trị tương ứng của thuộc tính.
 
-<content-info>
+::alert{type="infor"}
 
 - Object có thể không chứa thuộc tính nào, được gọi là **object rỗng**.
 - Object phải là một danh từ **riêng**, không phải danh từ **chung**. Trong ví dụ trên, nếu chỉ nói **máy tính** thì đó không phải đối tượng, mà phải là **máy tính của mình**.
 
-</content-info>
+::
 
 ## Biểu diễn object trong JavaScript
 
@@ -136,11 +136,11 @@ console.log(myComputer.operating system); // ERROR -> lỗi cú pháp
 
 > 📝 Khi **key** chứa dấu cách hoặc các ký tự đặc biệt (khác `_` và `$`), bạn cần phải để **key** bên trong cặp dấu nháy kép `""` hoặc nháy đơn `''`.
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý:** Trong các ví dụ trên, mình in ra giá trị từng thuộc tính của object để minh họa. Thực tế, bạn có thể dùng [`console.log`](/bai-viet/javascript/nhap-xuat-man-hinh-console) để in ra toàn bộ object.
 
-</content-warning>
+::
 
 ```js
 let myComputer = {
@@ -241,11 +241,11 @@ console.log(myComputer[operatingSystem]); // Windows 7
 console.log(myComputer["graphic" + " " + "card"]); // NVIDIA
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý**: bạn không thể sử dụng toán tử `.` theo cách tương tự trên.
 
-</content-warning>
+::
 
 ```js
 let myComputer = {
@@ -359,11 +359,11 @@ console.log(obj[0]); // Zero
 console.log(obj["0"]); // Zero
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý:** object trong JavaScript có một thuộc tính mặc định đặc biệt là `__proto__`. Bạn không thể gán giá trị khác object cho thuộc tính này:
 
-</content-warning>
+::
 
 ```js
 let obj = {
@@ -410,11 +410,11 @@ console.log("name" in user); // true
 console.log("age" in user); // false
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý**: thành phần bên trái toán tử `in` là tên thuộc tính, thường đặt trong cặp dấu `""` hoặc `''`. Kết quả trả về là giá trị **boolean** ứng với `true` là có tồn tại, `false` là không tồn tại.
 
-</content-warning>
+::
 
 ## Cách duyệt tất cả các thuộc tính của object
 

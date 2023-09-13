@@ -108,7 +108,7 @@ console.log(+null); // 0
 console.log(+{ x: 1 }); // NaN
 ```
 
-<content-info>📝 Trong trường hợp biểu thức có **nhiều toán tử**, bạn cần phải biết thứ tự ưu tiên của từng toán tử để biết chính xác thứ tự thực hiện các phép tính.</content-info>
+::alert{type="infor"}📝 Trong trường hợp biểu thức có **nhiều toán tử**, bạn cần phải biết thứ tự ưu tiên của từng toán tử để biết chính xác thứ tự thực hiện các phép tính.::
 
 Trong toán học, chắc bạn đã nghe câu "nhân chia trước, cộng trừ sau" rồi phải không?
 
@@ -170,11 +170,11 @@ let n = 1;
 n++; // tương đương với n += 1 hay n = n + 1.n--; // tương đương với n -= 1 hay n = n - 1.
 ```
 
-<content-info>
+::alert{type="infor"}
 
 toán tử `++` và `--` chỉ dùng được với biến. Nếu bạn dùng nó trực tiếp với giá trị, kiểu như `4++` hay `--3` thì bạn sẽ bị lỗi cú pháp.
 
-</content-info>
+::
 
 Ví dụ sau lỗi cú pháp:
 
@@ -261,11 +261,11 @@ Các toán tử bitwise bao gồm:
 - Toán tử dịch phải (`>>`)
 - Toán tử dịch phải (chèn thêm số `0` ở đầu) (`>>>`)
 
-<content-info>
+::alert{type="infor"}
 
 Trong lập trình web thông thường, mình hầu như không dùng các toán tử bitwise. Bạn có thể đọc thêm bài viết [phép toán thao tác bit](https://vi.wikipedia.org/wiki/Ph%C3%A9p_to%C3%A1n_thao_t%C3%A1c_bit) để hiểu hơn về các toán này và sử dụng khi cần.
 
-</content-info>
+::
 
 ### Toán tử dấu phẩy
 

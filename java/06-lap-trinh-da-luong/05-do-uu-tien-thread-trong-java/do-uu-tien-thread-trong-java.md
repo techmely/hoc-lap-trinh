@@ -31,8 +31,6 @@ Java có định nghĩa sẵn 3 mức ưu tiên chuẩn như sau:
 
 ## Ví dụ sử dụng độ ưu tiên Thread trong Java
 
-<content-example />
-
 ```java
 class TestMultiPriority1 extends Thread {
     public void run() {
@@ -53,20 +51,16 @@ class TestMultiPriority1 extends Thread {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Đang chạy luồng:Thread-1</code><br/>
-    <code>Đang chạy luồng:Thread-0</code><br/>
-    <code>Độ ưu tiên là:1</code><br/>
-    <code>Độ ưu tiên là:10</code>
-  </div>
-</div>
+::result
 
-<div class="example">một ví dụ khác</div>
+Đang chạy luồng:Thread-1<br/>
+Đang chạy luồng:Thread-0<br/>
+Độ ưu tiên là:1<br/>
+Độ ưu tiên là:10
+
+::
+
+Một ví dụ khác
 
 ```java
 // file: WorkingThread.java
@@ -110,29 +104,25 @@ public class ThreadInfoExample {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>ID luồng 1: 10</code><br/>
-    <code>ID luồng 2: 11</code><br/>
-    <code>ID luồng 3: 12</code><br/>
-    <code>Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
-    <code>Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
-    <code>Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
-    <code>Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
-    <code>Luồng: Luồng 2 có độ ưu tiên là 5</code><br/>
-    <code>Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
-    <code>Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
-    <code>Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
-    <code>Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
-    <code>Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
-    <code>Luồng: Luồng 3 có độ ưu tiên là 10</code><br/>
-    <code>Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
-    <code>Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
-    <code>Luồng: Luồng 1 có độ ưu tiên là 1</code><br/>
-    <code>Luồng: Luồng 1 có độ ưu tiên là 1</code>
-  </div>
-</div>
+::result
+
+ID luồng 1: 10<br/>
+ID luồng 2: 11<br/>
+ID luồng 3: 12<br/>
+Luồng: Luồng 2 có độ ưu tiên là 5<br/>
+Luồng: Luồng 2 có độ ưu tiên là 5<br/>
+Luồng: Luồng 2 có độ ưu tiên là 5<br/>
+Luồng: Luồng 2 có độ ưu tiên là 5<br/>
+Luồng: Luồng 2 có độ ưu tiên là 5<br/>
+Luồng: Luồng 1 có độ ưu tiên là 1<br/>
+Luồng: Luồng 3 có độ ưu tiên là 10<br/>
+Luồng: Luồng 3 có độ ưu tiên là 10<br/>
+Luồng: Luồng 3 có độ ưu tiên là 10<br/>
+Luồng: Luồng 3 có độ ưu tiên là 10<br/>
+Luồng: Luồng 3 có độ ưu tiên là 10<br/>
+Luồng: Luồng 1 có độ ưu tiên là 1<br/>
+Luồng: Luồng 1 có độ ưu tiên là 1<br/>
+Luồng: Luồng 1 có độ ưu tiên là 1<br/>
+Luồng: Luồng 1 có độ ưu tiên là 1
+
+::

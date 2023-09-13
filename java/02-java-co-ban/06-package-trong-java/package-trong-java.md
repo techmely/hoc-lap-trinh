@@ -15,12 +15,10 @@ Package (gói) trong java là một nhóm các `class`, `interface` và các `pa
 
 Java có 2 loại package chính:
 
-- Các package tích hợp sẵn
-- Các package do chúng ta tự định nghĩa.
+- Các `package` tích hợp sẵn
+- Các `package` do chúng ta tự định nghĩa.
 
 Các package tích hợp được java xây dựng sẵn dựa trên các nhu cầu thường xuyên của các lập trình viên.
-
-<content-example />
 
 ```java
 import java.util.Scanner;
@@ -35,23 +33,21 @@ Trong đó:
 
 Sử dụng package trong java cho chúng ta rất nhiều lợi ích, có thể kể đến như: (Nếu bạn chưa từng học java thì hãy bỏ qua phần dưới và đọc phần tiếp theo)
 
-## Tái sử dụng
+## Package giúp chúng ta tái sử dụng
 
 Trong một dự án, sẽ có lúc một logic được sử dụng ở nhiều nơi, nếu mỗi chỗ như vậy bạn đều code lại logic thì việc bị lặp code sẽ ngày càng nhiều Đến khi logic đó thay đổi thì chúng ta lại phải lục lọi tất cả mọi nơi sử dụng logic đó mà sửa lại. Điều này vừa gây rủi ro và vừa khổ cực. VÌ thế, trường hợp này chúng ta nên tạo ra package chứa class implement logic đó và `import` vào những nơi cùng sử dụng. Đến lúc sửa chúng ta chỉ cần tìm đến `package` chứa class `implement` nó và sửa lại thôi.
 
-## Cấu trúc tốt
+## Sử dụng Package để có cấu trúc tốt
 
 Trong một dự án lớn, nó có thể chứa đến hàm trăm, hàng ngàn class, interface để thực thi các nhóm chức năng khác nhau. Sử dụng package để phân tầng theo nhóm chức năng và chứa các class liên quan giúp chúng ta quản lý code hiệu quả. Tên package phải nói lên được ý nghĩa của package đó.
 
-## Xung đột tên
+## Package giúp tránh xung đột tên
 
 Đôi lúc chúng ta đặt tên của 2 hoặc nhiều class cùng tên. Dùng package chúng ta có thể tránh được xung đột bằng cách chỉ định đúng đường dẫn từ package cha đến các class cùng tên
 
-![package-trong-java](https://user-images.githubusercontent.com/29374426/127757327-7ca27569-a1d9-4345-a313-3785ef68174c.png)
+![Package trong Java](https://user-images.githubusercontent.com/29374426/127757327-7ca27569-a1d9-4345-a313-3785ef68174c.png)
 
 Ở ví dụ trên chúng ta có package **com** là package lớn nhất, theo sau đó là **company**. Mình đặt 2 class đều có tên `Example` trong package company nhưng được báo lỗi là không thể có 2 class cùng tên trong company. Để giải quyết vấn đề này, mình đã tạo ra 2 package package1 và package2 để chứa 2 class Example của mình.
-
-<content-example />
 
 ```java
 // File Example.java trong package1
@@ -86,22 +82,17 @@ public class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>ví dụ trong package 1</code><br/>
-    <code>ví dụ trong package 2</code>
-  </div>
-</div>
+::result
+ví dụ trong package 1
 
-## Sub package
+ví dụ trong package 2ß
+::
 
-Trong một package có thể chứa các package khác, các package này được gọi là sub package.
+## Sub package trong java là gì
 
-<div class="example">chúng ta có TopPackage chứa SubPackage, và class Example thuộc về SubPackage.</div>
+Trong một package có thể chứa các `package` khác, các `package` này được gọi là `sub package`.
+
+Ở vi dụ dưới đây chúng ta có `TopPackage` chứa SubPackage, và class `Example` thuộc về `SubPackage`.
 
 ```java
 // File Example.java
@@ -119,8 +110,6 @@ Giả sử có 2 class **Example1**, **Example2** chứa trong package **thaycac
 
 **_Cách 1_**: import từng class vào
 
-<content-example />
-
 ```java
 import thaycacac.Example1;
 import thaycacac.Example2;
@@ -135,8 +124,6 @@ public class Main {
 ```
 
 **_Cách 1_**: Thay vì import từng class như vậy sẽ khiến code trở nên dài dòng, chúng ta sẽ sử dụng \_ với hàm ý `import` tất cả các `class`, `interface` etc chứa trong **thaycacac**
-
-<content-example />
 
 ```java
 // File Example1.java
@@ -165,13 +152,8 @@ public class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>ví dụ 1</code><br/>
-    <code>ví dụ 2</code>
-  </div>
-</div>
+::result
+ví dụ 1
+
+ví dụ 2
+::

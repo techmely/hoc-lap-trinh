@@ -43,7 +43,7 @@ Chúng ta có thể truy cập các phần tử của một mảng theo các ch�
 
 Giả sử chúng ta đã khai báo một mảng `number` như trên. Phần tử đầu tiên là `number[0]`, phần tử thứ hai là `number[1]` và như thế.
 
-#### Take note:
+#### Take note
 
 - Mảng có 0 là chỉ mục đầu tiên, không phải 1. Trong ví dụ này, `number[0]` là phần tử đầu tiên.
 - Nếu kích thước của một mảng là `n`, thì để truy cập phần tử cuối cùng, `n-1` chỉ mục được sử dụng. Trong ví dụ này, `number[4]` là phần tử cuối cùng.

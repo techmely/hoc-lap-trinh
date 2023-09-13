@@ -11,11 +11,11 @@ image: https://user-images.githubusercontent.com/29374426/126114810-e1c61816-053
 position: 4
 ---
 
-Khi một ngoại lệ xuất hiện, phương thức đang được thực thi có thể bị dừng mà không được hoàn thành. Nếu điều này xảy ra, thì các đoạn mã phía sau (ví dụ như đoạn mã có chức năng thu hồi tài nguyên, như các lệnh đóng tập viết ở cuối phương thức) sẽ không bao giờ được gọi. Java cung cấp khối finally để giải quyết việc này. Thông thường khối `finnaly` chứa các câu lệnh mang tính chất dọn dẹp như: đóng kết nối CSDL, đóng tệp tin,…
+Khi một ngoại lệ xuất hiện, phương thức đang được thực thi có thể bị dừng mà không được hoàn thành. Nếu điều này xảy ra, thì các đoạn mã phía sau (ví dụ như đoạn mã có chức năng thu hồi tài nguyên, như các lệnh đóng tập viết ở cuối phương thức) sẽ không bao giờ được gọi. Java cung cấp khối finally để giải quyết việc này. Thông thường khối `finally` chứa các câu lệnh mang tính chất dọn dẹp như: đóng kết nối CSDL, đóng tệp tin,…
 
 Khối lệnh finally trong java luôn được thực thi cho dù có ngoại lệ xảy ra hay không hoặc gặp lệnh `return` trong khối `try`.
 
-## Cấu trúc khối finnaly trong Java
+## Cấu trúc khối finally trong Java
 
 ```java
 try{
@@ -24,7 +24,7 @@ try{
 …
 } catch(Exception2 ex2){
 …
-} catch(Exceptionn exn){
+} catch(Exception exn){
 …
 } finally{
 //Mã lệnh dọn dẹp
@@ -37,9 +37,9 @@ Khối `finally` bảo đảm lúc nào cũng được thực thi, bất chấp 
 
 ![image](https://user-images.githubusercontent.com/29374426/126114810-e1c61816-0531-42a8-b493-7232c4d2fcbc.png)
 
-## Ví dụ finnaly trong Java
+## Ví dụ finally trong Java
 
-<div class="example">sử dụng khối lệnh finally nơi ngoại lệ không xảy ra.</div>
+Ví dụ sử dụng khối lệnh finally nơi ngoại lệ không xảy ra.
 
 ```java
 public class TestFinallyBlock {
@@ -57,19 +57,15 @@ public class TestFinallyBlock {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>5</code><br/>
-    <code>finally block is always executed</code><br/>
-    <code>rest of the code...</code>
-  </div>
-</div>
+::result
 
-<div class="example">sử dụng khối lệnh finally nơi ngoại lệ xảy ra nhưng không xử lý.</div>
+5<br/>
+finally block is always executed<br/>
+rest of the code...
+
+::
+
+Ví dụ sử dụng khối lệnh `finally` nơi ngoại lệ xảy ra nhưng không xử lý.
 
 ```java
 public class TestFinallyBlock1 {
@@ -87,18 +83,14 @@ public class TestFinallyBlock1 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>finally block is always executed</code><br/>
-    <code>Exception in thread "main" java.lang.ArithmeticException: / by zero</code><br/>
-  </div>
-</div>
+::result
 
-<div class="example">sử dụng khối lệnh finally nơi ngoại lệ xảy ra và được xử lý.</div>
+finally block is always executed<br/>
+Exception in thread "main" java.lang.ArithmeticException: / by zero<br/>
+
+::
+
+Ví dụ sử dụng khối lệnh finally nơi ngoại lệ xảy ra và được xử lý.
 
 ```java
 public class TestFinallyBlock2 {
@@ -116,19 +108,15 @@ public class TestFinallyBlock2 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>java.lang.ArithmeticException: / by zero</code><br/>
-    <code>finally block is always executed</code><br/>
-    <code>rest of the code...</code>
-  </div>
-</div>
+::result
 
-<div class="example">Sử dụng khối lệnh finally trong trường hợp trong khối try có lệnh return.</div>
+java.lang.ArithmeticException: / by zero<br/>
+finally block is always executed<br/>
+rest of the code...
+
+::
+
+Ví dụ sử dụng khối lệnh finally trong trường hợp trong khối try có lệnh return.
 
 ```java
 public class TestFinallyBlock3 {
@@ -149,12 +137,9 @@ public class TestFinallyBlock3 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>25 is odd number</code><br/>
-    <code>finally block is always executed</code>
+::result
+
+25 is odd number<br/>
+finally block is always executed
+
 </div>

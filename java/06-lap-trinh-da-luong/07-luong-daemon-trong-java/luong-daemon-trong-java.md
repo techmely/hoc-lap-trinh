@@ -25,7 +25,7 @@ Khi một luồng mới được tạo ra, nó được thừa hưởng đặc t
 
 Một trong các luồng Deamon quan trọng của Java đó là luồng gom rác, nghĩa là gom các tài nguyên không còn sử dụng để giải phóng bộ nhớ. Khi tất cả các luồng người dùng không còn hoạt động nữa luồng gom rác cũng bị dừng theo.
 
-<div class="example">tạo một luồng WorkingThread</div>
+Ví dụ tạo một luồng WorkingThread
 
 ```java
 package com.gpcoder.daemonthread;
@@ -51,7 +51,7 @@ public class WorkingThread implements Runnable {
 }
 ```
 
-<div class="example">chương trình Non-Daemon Thread</div>
+Ví dụ chương trình Non-Daemon Thread
 
 ```java
 package com.gpcoder.daemonthread;
@@ -68,28 +68,25 @@ public class NonDaemonThreadTest {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>>><< Finishing main program</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code>
-  </div>
-</div>
+::result
+
+Processing working thread</br>
+Processing working thread</br>
+Processing working thread</br>
+Processing working thread</br>
+Processing working thread</br>
+Processing working thread</br>
+
+> > << Finishing main program</br>
+> > Processing working thread</br>
+> > Processing working thread</br>
+> > Processing working thread
+
+::
 
 Như bạn thấy luồng `Non-Daemon Thread` chạy song song với `MainThread`. Khi MainThread kết thúc thì luồng `Non-Daemon Thread` vẫn còn tiếp tục xử lý cho đến khi hoàn thành.
 
-<div class="example">Chương trình Non-Daemon Thread</div>
+Ví dụ chương trình Non-Daemon Thread
 
 ```java
 package com.gpcoder.daemonthread;
@@ -109,20 +106,17 @@ public class DaemonThreadTest {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>Processing working thread</code></br>
-    <code>>><< Finishing main program</code></br>
-  </div>
-</div>
+::result
+
+Processing working thread</br>
+Processing working thread</br>
+Processing working thread</br>
+Processing working thread</br>
+Processing working thread</br>
+Processing working thread</br>
+
+> > << Finishing main program</br>
+
+::
 
 Như bạn thấy `DaemonThread` chạy song song với `MainThread`. Khi `MainThread` kết thúc thì tất cả `DaemonThread` cũng kết thúc.

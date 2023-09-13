@@ -90,7 +90,7 @@ public class WorkerThread implements Runnable {
 }
 ```
 
-<div class="example">sử dụng newSingleThreadExecutor()</div>
+Ví dụ sử dụng `newSingleThreadExecutor()`
 
 ```java
 import java.util.concurrent.ExecutorService;
@@ -119,37 +119,33 @@ public class SingleThreadExecutorExample {
 
 Trong chương trình trên, tôi đã tạo ra `ThreadPool` sử dụng phương thức `newSingleThreadExecutor()` vì vậy kích thước của `ThreadPool` là `1`, nên nó sẽ bắt đầu thực thi chương trình trên với 1 task và các task khác sẽ ở trạng thái đợi (waiting), ngay khi một task hoàn thành, một task khác từ hàng đợi sẽ được chọn và thực thi. Ta có kết quả của chương trình trên như sau:
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>pool-1-thread-1 Starting. Task = 1<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 2<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 3<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 4<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 5<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 6<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 7<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 8<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 9<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>pool-1-thread-1 Starting. Task = 10<code></br>
-    <code>pool-1-thread-1 Finished.<code></br>
-    <code>Finished all threads<code></br>
-  </div>
-</div>
+::result
 
-<div class="example">sử dụng newFixedThreadPool()</div>
+pool-1-thread-1 Starting. Task = 1</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 2</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 3</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 4</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 5</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 6</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 7</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 8</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 9</br>
+pool-1-thread-1 Finished.</br>
+pool-1-thread-1 Starting. Task = 10</br>
+pool-1-thread-1 Finished.</br>
+Finished all threads</br>
+
+::
+
+Ví dụ sử dụng `newFixedThreadPool()`
 
 ```java
 import java.util.concurrent.ExecutorService;
@@ -181,37 +177,33 @@ public class FixedThreadPoolExample {
 
 Trong chương trình trên, tôi đã tạo ra `ThreadPool` có kích thước cố định là 5. Sau đó, tôi đã tạo 10 task (công việc) vào `ThreadPool`, vì kích thước `ThreadPool` là 5, nên nó sẽ bắt đầu thực thi chương trình trên vói 5 task và các task khác sẽ ở trạng thái đợi (waiting), ngay khi một task hoàn thành, một task khác từ hàng đợi sẽ được chọn và thực thi. Ta có kết quả của chương trình trên như sau:
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>pool-1-thread-3 Starting. Task = 3</code><br/>
-    <code>pool-1-thread-2 Starting. Task = 2</code><br/>
-    <code>pool-1-thread-1 Starting. Task = 1</code><br/>
-    <code>pool-1-thread-4 Starting. Task = 4</code><br/>
-    <code>pool-1-thread-5 Starting. Task = 5</code><br/>
-    <code>pool-1-thread-2 Finished.</code><br/>
-    <code>pool-1-thread-3 Finished.</code><br/>
-    <code>pool-1-thread-2 Starting. Task = 6</code><br/>
-    <code>pool-1-thread-3 Starting. Task = 7</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>pool-1-thread-5 Finished.</code><br/>
-    <code>pool-1-thread-4 Finished.</code><br/>
-    <code>pool-1-thread-5 Starting. Task = 9</code><br/>
-    <code>pool-1-thread-1 Starting. Task = 8</code><br/>
-    <code>pool-1-thread-4 Starting. Task = 10</code><br/>
-    <code>pool-1-thread-3 Finished.</code><br/>
-    <code>pool-1-thread-2 Finished.</code><br/>
-    <code>pool-1-thread-5 Finished.</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>pool-1-thread-4 Finished.</code><br/>
-    <code>Finished all threads</code><br/>
-  </div>
-</div>
+::result
 
-<div class="example">sử dụng newCachedThreadPool()</div>
+pool-1-thread-3 Starting. Task = 3<br/>
+pool-1-thread-2 Starting. Task = 2<br/>
+pool-1-thread-1 Starting. Task = 1<br/>
+pool-1-thread-4 Starting. Task = 4<br/>
+pool-1-thread-5 Starting. Task = 5<br/>
+pool-1-thread-2 Finished.<br/>
+pool-1-thread-3 Finished.<br/>
+pool-1-thread-2 Starting. Task = 6<br/>
+pool-1-thread-3 Starting. Task = 7<br/>
+pool-1-thread-1 Finished.<br/>
+pool-1-thread-5 Finished.<br/>
+pool-1-thread-4 Finished.<br/>
+pool-1-thread-5 Starting. Task = 9<br/>
+pool-1-thread-1 Starting. Task = 8<br/>
+pool-1-thread-4 Starting. Task = 10<br/>
+pool-1-thread-3 Finished.<br/>
+pool-1-thread-2 Finished.<br/>
+pool-1-thread-5 Finished.<br/>
+pool-1-thread-1 Finished.<br/>
+pool-1-thread-4 Finished.<br/>
+Finished all threads<br/>
+
+::
+
+Ví dụ sử dụng `newCachedThreadPool()`
 
 ```java
 import java.util.concurrent.ExecutorService;
@@ -241,37 +233,33 @@ public class CachedThreadPoolExample {
 
 Trong chương trình trên, tôi đã tạo ra `ThreadPool` sử dụng phương thức `newCachedThreadPool()` vì vậy kích thước của `ThreadPool` là gần như không giới hạn (`Integer.MAX_VALUE`), nên nó sẽ bắt đầu thực thi chương trình trên với 1 task và các task khác sẽ ở không phải đợi. Nếu có `Thread` rảnh thì nó sẽ nhận task và thực thi. Nếu không có `Thread` rãnh thì nó sẽ tạo một `Thread` mới và thực thi. Ta có kết quả của chương trình trên như sau:
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>pool-1-thread-1 Starting. Task = 1</code><br/>
-    <code>pool-1-thread-2 Starting. Task = 2</code><br/>
-    <code>pool-1-thread-3 Starting. Task = 3</code><br/>
-    <code>pool-1-thread-4 Starting. Task = 4</code><br/>
-    <code>pool-1-thread-5 Starting. Task = 5</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>pool-1-thread-6 Starting. Task = 6</code><br/>
-    <code>pool-1-thread-1 Starting. Task = 7</code><br/>
-    <code>pool-1-thread-2 Finished.</code><br/>
-    <code>pool-1-thread-3 Finished.</code><br/>
-    <code>pool-1-thread-3 Starting. Task = 8</code><br/>
-    <code>pool-1-thread-4 Finished.</code><br/>
-    <code>pool-1-thread-4 Starting. Task = 9</code><br/>
-    <code>pool-1-thread-5 Finished.</code><br/>
-    <code>pool-1-thread-5 Starting. Task = 10</code><br/>
-    <code>pool-1-thread-6 Finished.</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>pool-1-thread-3 Finished.</code><br/>
-    <code>pool-1-thread-4 Finished.</code><br/>
-    <code>pool-1-thread-5 Finished.</code><br/>
-    <code>Finished all threads</code><br/>
-  </div>
-</div>
+::result
 
-<div class="example">sử dụng newScheduledThreadPool()</div>
+pool-1-thread-1 Starting. Task = 1<br/>
+pool-1-thread-2 Starting. Task = 2<br/>
+pool-1-thread-3 Starting. Task = 3<br/>
+pool-1-thread-4 Starting. Task = 4<br/>
+pool-1-thread-5 Starting. Task = 5<br/>
+pool-1-thread-1 Finished.<br/>
+pool-1-thread-6 Starting. Task = 6<br/>
+pool-1-thread-1 Starting. Task = 7<br/>
+pool-1-thread-2 Finished.<br/>
+pool-1-thread-3 Finished.<br/>
+pool-1-thread-3 Starting. Task = 8<br/>
+pool-1-thread-4 Finished.<br/>
+pool-1-thread-4 Starting. Task = 9<br/>
+pool-1-thread-5 Finished.<br/>
+pool-1-thread-5 Starting. Task = 10<br/>
+pool-1-thread-6 Finished.<br/>
+pool-1-thread-1 Finished.<br/>
+pool-1-thread-3 Finished.<br/>
+pool-1-thread-4 Finished.<br/>
+pool-1-thread-5 Finished.<br/>
+Finished all threads<br/>
+
+::
+
+Ví dụ sử dụng `newScheduledThreadPool()`
 
 ```java
 import java.util.concurrent.Executors;
@@ -320,33 +308,29 @@ Các thread này được lên kế hoạch thực thi bằng phương thức `s
 
 Ta có kết quả của chương trình trên như sau:
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>pool-1-thread-1 Starting. Task = 1</code><br/>
-    <code>pool-1-thread-2 Starting. Task = 2</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>pool-1-thread-2 Finished.</code><br/>
-    <code>pool-1-thread-1 Starting. Task = 3</code><br/>
-    <code>pool-1-thread-2 Starting. Task = 4</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>pool-1-thread-2 Finished.</code><br/>
-    <code>pool-1-thread-1 Starting. Task = 5</code><br/>
-    <code>pool-1-thread-2 Starting. Task = 1</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>pool-1-thread-1 Starting. Task = 2</code><br/>
-    <code>pool-1-thread-2 Finished.</code><br/>
-    <code>pool-1-thread-2 Starting. Task = 3</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>pool-1-thread-1 Starting. Task = 4</code><br/>
-    <code>pool-1-thread-2 Finished.</code><br/>
-    <code>pool-1-thread-1 Finished.</code><br/>
-    <code>Finished all threads</code><br/>
-  </div>
-</div>
+::result
+
+pool-1-thread-1 Starting. Task = 1<br/>
+pool-1-thread-2 Starting. Task = 2<br/>
+pool-1-thread-1 Finished.<br/>
+pool-1-thread-2 Finished.<br/>
+pool-1-thread-1 Starting. Task = 3<br/>
+pool-1-thread-2 Starting. Task = 4<br/>
+pool-1-thread-1 Finished.<br/>
+pool-1-thread-2 Finished.<br/>
+pool-1-thread-1 Starting. Task = 5<br/>
+pool-1-thread-2 Starting. Task = 1<br/>
+pool-1-thread-1 Finished.<br/>
+pool-1-thread-1 Starting. Task = 2<br/>
+pool-1-thread-2 Finished.<br/>
+pool-1-thread-2 Starting. Task = 3<br/>
+pool-1-thread-1 Finished.<br/>
+pool-1-thread-1 Starting. Task = 4<br/>
+pool-1-thread-2 Finished.<br/>
+pool-1-thread-1 Finished.<br/>
+Finished all threads<br/>
+
+::
 
 ## Custom Thread Pool Executor
 
@@ -373,8 +357,6 @@ Các tham số của phương thức này là:
 - `BlockingQueue workQueue`: hàng đợi được sử dụng để giữ các task trước khi chúng được thực hiện. Các lựa chọn mặc định là `SynchronousQueue` cho `multi-thread` và `LinkedBlockingQueue` cho các `single-thread`.
 - `ThreadFactory threadFactory`: factory được sử dụng khi tạo một Thread mới.
 - `RejectedExecutionHandler handler`: handler được sử dụng khi một execute bị chặn (blocked) khi vượt quá `maximumPoolSize`.
-
-<content-example />
 
 Cài đặt `RejectedExecutionHandler` để xử lý các tác vụ bị từ chối.
 
@@ -607,42 +589,38 @@ Trong chương trình trên, tôi đã tạo ra `ThreadPool` sử dụng `Thread
 
 Hãy xem kết quả thực thi chương trình trên như sau:
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>GPCoder-ThreadPool-0 Starting. Task = cmd1</code><br/>
-    <code>GPCoder-ThreadPool-1 Starting. Task = cmd2</code><br/>
-    <code>GPCoder-ThreadPool-2 Starting. Task = cmd5</code><br/>
-    <code>GPCoder-ThreadPool-3 Starting. Task = cmd6</code><br/>
-    <code>Task = cmd7 is rejected</code><br/>
-    <code>Task = cmd8 is rejected</code><br/>
-    <code>Task = cmd9 is rejected</code><br/>
-    <code>Task = cmd10 is rejected</code><br/>
-    <code>[monitor] [0/2] Active: 0, Completed: 0, Task: 2, isShutdown: false, isTerminated: false</code><br/>
-    <code>[monitor] [4/2] Active: 4, Completed: 0, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>GPCoder-ThreadPool-0 Finished.</code><br/>
-    <code>GPCoder-ThreadPool-1 Finished.</code><br/>
-    <code>GPCoder-ThreadPool-0 Starting. Task = cmd3</code><br/>
-    <code>GPCoder-ThreadPool-1 Starting. Task = cmd4</code><br/>
-    <code>GPCoder-ThreadPool-2 Finished.</code><br/>
-    <code>GPCoder-ThreadPool-3 Finished.</code><br/>
-    <code>[monitor] [4/2] Active: 2, Completed: 4, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>[monitor] [4/2] Active: 2, Completed: 4, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>GPCoder-ThreadPool-0 Finished.</code><br/>
-    <code>GPCoder-ThreadPool-1 Finished.</code><br/>
-    <code>[monitor] [4/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false</code><br/>
-    <code>[monitor] [0/2] Active: 0, Completed: 6, Task: 6, isShutdown: true, isTerminated: true</code><br/>
-    <code>[monitor] [0/2] Active: 0, Completed: 6, Task: 6, isShutdown: true, isTerminated: true</code><br/>
-  </div>
-</div>
+::result
+
+GPCoder-ThreadPool-0 Starting. Task = cmd1<br/>
+GPCoder-ThreadPool-1 Starting. Task = cmd2<br/>
+GPCoder-ThreadPool-2 Starting. Task = cmd5<br/>
+GPCoder-ThreadPool-3 Starting. Task = cmd6<br/>
+Task = cmd7 is rejected<br/>
+Task = cmd8 is rejected<br/>
+Task = cmd9 is rejected<br/>
+Task = cmd10 is rejected<br/>
+[monitor] [0/2] Active: 0, Completed: 0, Task: 2, isShutdown: false, isTerminated: false<br/>
+[monitor] [4/2] Active: 4, Completed: 0, Task: 6, isShutdown: false, isTerminated: false<br/>
+GPCoder-ThreadPool-0 Finished.<br/>
+GPCoder-ThreadPool-1 Finished.<br/>
+GPCoder-ThreadPool-0 Starting. Task = cmd3<br/>
+GPCoder-ThreadPool-1 Starting. Task = cmd4<br/>
+GPCoder-ThreadPool-2 Finished.<br/>
+GPCoder-ThreadPool-3 Finished.<br/>
+[monitor] [4/2] Active: 2, Completed: 4, Task: 6, isShutdown: false, isTerminated: false<br/>
+[monitor] [4/2] Active: 2, Completed: 4, Task: 6, isShutdown: false, isTerminated: false<br/>
+GPCoder-ThreadPool-0 Finished.<br/>
+GPCoder-ThreadPool-1 Finished.<br/>
+[monitor] [4/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false<br/>
+[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false<br/>
+[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false<br/>
+[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false<br/>
+[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false<br/>
+[monitor] [2/2] Active: 0, Completed: 6, Task: 6, isShutdown: false, isTerminated: false<br/>
+[monitor] [0/2] Active: 0, Completed: 6, Task: 6, isShutdown: true, isTerminated: true<br/>
+[monitor] [0/2] Active: 0, Completed: 6, Task: 6, isShutdown: true, isTerminated: true<br/>
+
+::
 
 ## Một vài lưu ý về sử dụng ExecutorService
 

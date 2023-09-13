@@ -30,7 +30,7 @@ Như vậy khoảng thời gian chờ thật sự sẽ phụ thuộc vào [trìn
 
 Thread sleep sẽ không làm ảnh hưởng đến `thread` hiện tại mà chỉ đơn giản là tạm ngưng thực thi một khoảng thời gian, các cơ chế đồng bộ, các kết quả tính toán sẽ không bị ảnh hưởng. Một `thread` đang ngủ có thể bị làm gián đoạn bởi các `thread` khác đang chạy, lúc này `thread` đang ngủ sẽ thức dậy và ném `InterruptedException`, cho nên chúng ta phải xử lý exception cho `sleep()`.
 
-<div class="example">Tạm ngưng main thread trong khoảng thời gian 2000ms</div>
+Tạm ngưng main thread trong khoảng thời gian 2000ms
 
 ```java
 public class ThreadSleep {
@@ -43,19 +43,15 @@ public class ThreadSleep {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Output: leep time in ms = 2001</code>
-  </div>
-</div>
+::result
+
+Output: leep time in ms = 2001
+
+::
 
 Kết quả trên mình đã chạy nhiều lần mới được, để chúng ta thấy rằng không phải cứ `sleep(2000)` là nó chờ đúng `2000ms` đâu nhé.
 
-<div class="example">Tạm ngưng main thread trong khoảng thời gian 2000ms</div>
+Tạm ngưng main thread trong khoảng thời gian 2000ms
 
 ```java
 class ThreadSleep {
@@ -79,18 +75,13 @@ class ThreadSleep {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Tạm ngưng main thread và một thread con của main thread trong khoảng thời gian 1s</span>
-  </div>
-  <div class="window-body">
-    <code>Main thread start</code></br>
-    <code>Main thread:1030</code></br>
-    <code>Child thread start</code></br>
-    <code>Child thread:1000</code></br>
-  </div>
-</div>
+::result
+Main thread start</br>
+Main thread:1030</br>
+Child thread start</br>
+Child thread:1000</br>
+
+::
 
 ## Thread join() là gì?
 
@@ -100,7 +91,7 @@ Phương thức `join()` được sử dụng để đảm bảo cho quá trình
 
 Trong một chương trình Java thường có nhiều hơn một thread, trong đó có `main thread` - có chức năng khởi tạo và kích hoạt để chạy các `thread` khác, tuy nhiên các `main threa`d không đảm bảo các `thread` thực thi và kết thúc theo đúng thứ tự mà chúng đã được khởi chạy.
 
-<div class="example">Khi không sử dụng hàm Join</div>
+Khi không sử dụng hàm Join
 
 Ở đây có 3 thread `th1, th2, th3`. Mặc dù các `thread` được khởi chạy theo thứ tự `th1>th2>th3` nhưng kết thúc thực thi của 3 thread trên không theo thứ tự `th1>th2>th3`. Ở mỗi thời điển chạy chương trình có thể nhận được các kết quả khác nhau.
 
@@ -129,22 +120,17 @@ class MyThread implements Runnable {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Tạm ngưng main thread và một thread con của main thread trong khoảng thời gian 1s</span>
-  </div>
-  <div class="window-body">
-    <code>Bắt đầu thread: th1</code></br>
-    <code>Bắt đầu thread: th3</code></br>
-    <code>Bắt đầu thread: th2</code></br>
-    <code>Kết thúc thread:th3</code></br>
-    <code>Kết thúc thread:th1</code></br>
-    <code>Kết thúc thread:th2</code></br>
-  </div>
-</div>
+::result
+Bắt đầu thread: th1</br>
+Bắt đầu thread: th3</br>
+Bắt đầu thread: th2</br>
+Kết thúc thread:th3</br>
+Kết thúc thread:th1</br>
+Kết thúc thread:th2</br>
 
-<div class="example">Khi sử dụng hàm Join</div>
+::
+
+Khi sử dụng hàm Join
 
 Câu hỏi đưa ra là làm thế nào để các thread thực thi và kết thúc theo đúng thứ tự mà chúng được khởi chạy. Câu trả lời là sử dụng hàm Join sẵn có của Java. Giả sử thứ tự của các `thread` là `thread1` chạy trước, sau đó là `thread2`, `thread3` chạy sau cùng. Chương trình cài đặt sử dụng hàm Join như sau:
 
@@ -191,20 +177,15 @@ class MyThread implements Runnable {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Tạm ngưng main thread và một thread con của main thread trong khoảng thời gian 1s</span>
-  </div>
-  <div class="window-body">
-    <code>Bắt đầu thread: th1</code></br>
-    <code>Kết thúc thread:th1</code></br>
-    <code>Bắt đầu thread: th2</code></br>
-    <code>Kết thúc thread:th2</code></br>
-    <code>Bắt đầu thread: th3</code></br>
-    <code>Kết thúc thread:th3</code></br>
-  </div>
-</div>
+::result
+Bắt đầu thread: th1</br>
+Kết thúc thread:th1</br>
+Bắt đầu thread: th2</br>
+Kết thúc thread:th2</br>
+Bắt đầu thread: th3</br>
+Kết thúc thread:th3</br>
+
+::
 
 Khi so sánh với chương trình cài đặt không sử dụng hàm `Join`, `thread2, thread3`, chưa khởi chạy ngay được gọi bằng lệnh `th2.start()`, `th3.start()` , `thead2` và `thread3` đã đợi cho đến khi `thread1` thực thi xong mới khởi chạy. Tương tự khi `thread2` chạy thì thread3 vẫn phải đợi cho đến khi `thread2` thực thi xong. Do đó mà kết quả in ra màn hình theo đúng thứ tự `th1>th2>th3` mà chúng đã được khởi chạy.
 
@@ -213,7 +194,7 @@ Khi so sánh với chương trình cài đặt không sử dụng hàm `Join`, `
 - `public void join()throws InterruptedException`
 - `public void join(long milliseconds)throws InterruptedException`
 
-<div class="example">về phương thức join()</div>
+về phương thức join()
 
 ```java
 class TestJoinMethod1 extends Thread {
@@ -245,33 +226,28 @@ class TestJoinMethod1 extends Thread {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Tạm ngưng main thread và một thread con của main thread trong khoảng thời gian 1s</span>
-  </div>
-  <div class="window-body">
-    <code>1</code></br>
-    <code>2</code></br>
-    <code>3</code></br>
-    <code>4</code></br>
-    <code>5</code></br>
-    <code>1</code></br>
-    <code>1</code></br>
-    <code>2</code></br>
-    <code>2</code></br>
-    <code>3</code></br>
-    <code>3</code></br>
-    <code>4</code></br>
-    <code>4</code></br>
-    <code>5</code></br>
-    <code>5</code>
-  </div>
-</div>
+::result
+1</br>
+2</br>
+3</br>
+4</br>
+5</br>
+1</br>
+1</br>
+2</br>
+2</br>
+3</br>
+3</br>
+4</br>
+4</br>
+5</br>
+5
+
+::
 
 Như bạn thấy trong ví dụ trên, khi `t1` hoàn thành nhiệm vụ của nó thì `t2` và `t3` bắt đầu thực thi.
 
-<div class="example">về phương thức join(long miliseconds)</div>
+về phương thức join(long miliseconds)
 
 ```java
 class TestJoinMethod2 extends Thread {
@@ -303,28 +279,23 @@ class TestJoinMethod2 extends Thread {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Tạm ngưng main thread và một thread con của main thread trong khoảng thời gian 1s</span>
-  </div>
-  <div class="window-body">
-    <code>1</code></br>
-    <code>2</code></br>
-    <code>3</code></br>
-    <code>4</code></br>
-    <code>1</code></br>
-    <code>1</code></br>
-    <code>5</code></br>
-    <code>2</code></br>
-    <code>2</code></br>
-    <code>3</code></br>
-    <code>3</code></br>
-    <code>4</code></br>
-    <code>4</code></br>
-    <code>5</code></br>
-    <code>5</code>
-  </div>
-</div>
+::result
+1</br>
+2</br>
+3</br>
+4</br>
+1</br>
+1</br>
+5</br>
+2</br>
+2</br>
+3</br>
+3</br>
+4</br>
+4</br>
+5</br>
+5
+
+::
 
 Trong ví dụ trên, khi `t1` hoàn thành nhiệm vụ của nó cho 1500 mili giây (3 lần) thì t2 và t3 bắt đầu thực thi.

@@ -13,13 +13,13 @@ position: 9
 
 Từ khóa **this** trong java là một biến tham chiếu được sử dụng để tham chiếu tới đối tượng của lớp hiện tại. Biến **this** là một biến ẩn tồn tại trong tất cả các lớp trong ngông ngữ java. Một class trong Java luôn tồn tại một biến this.
 
-![image](https://user-images.githubusercontent.com/29374426/131205481-bc00bbd6-82c5-4e1f-b53d-c28d00e98e0f.png)
+![Từ khóa this trong Java](https://user-images.githubusercontent.com/29374426/131205481-bc00bbd6-82c5-4e1f-b53d-c28d00e98e0f.png)
 
 ## Tham chiếu tới biến instance của lớp hiện tại.
 
 Từ khóa **this** trong java có thể được dùng để tham chiếu tới biến instance của lớp hiện tại. Sẽ rất phức tạp nếu như có một biến toàn cục và biến cục bộ trùng tên thì từ khóa **this** sẽ giúp bạn giải quyết vấn đề này.
 
-<div class="example">thể hiện tham chiếu tới lớp</div>
+Ví dụ thể hiện tham chiếu tới lớp
 
 ```java
 public class HocSinh {
@@ -45,16 +45,12 @@ public class HocSinh {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>0 null</code><br/>
-    <code>0 null </code>
-  </div>
-</div>
+::result
+
+0 null<br/>
+0 null
+
+::
 
 Ở ví dụ này, tên của tham số của [constructor](/bai-viet/java/phuong-thuc-khoi-tao) `HocSinh()` trùng với tên của biến toàn cục đó là lý do tại sao cần phải sử dụng từ khóa this để phân biệt biến cục bộ và biến toàn cục. Từ khóa this sẽ giúp chúng ta giải quyết vấn đề này.
 
@@ -82,26 +78,20 @@ public class HocSinh {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>111 Viet</code><br/>
-    <code>222 Nam</code>
-  </div>
-</div>
+::result
 
-<content-info>
-  Nếu biến cục bộ và biến toàn cục có tên khác nhau thì không cần sử dụng từ khóa this.
-</content-info>
+111 Viet<br/>
+222 Nam
 
-## Sử dụng this() gọi constructor của lớp hiện tại.
+::
+
+::alert{type="infor"}
+Nếu biến cục bộ và biến toàn cục có tên khác nhau thì không cần sử dụng từ khóa this.
+::
+
+## Sử dụng this() gọi constructor của lớp hiện tại
 
 Phương thức `this()` có thể được sử dụng để gọi [constructor](/bai-viet/java/phuong-thuc-khoi-tao) của lớp hiện tại. Cách sử dụng này sẽ hữu dụng hơn nếu bạn có nhiều [constructor](/bai-viet/java/phuong-thuc-khoi-tao) trong một lớp và bạn muốn sử dụng lại.
-
-<content-example />
 
 ```java
 public class HocSinh2 {
@@ -132,17 +122,13 @@ public class HocSinh2 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>gọi Constructor mặc định</code><br/>
-    <code>111 Viet</code><br/>
-    <code>222 Nam</code>
-  </div>
-</div>
+::result
+
+gọi Constructor mặc định<br/>
+111 Viet<br/>
+222 Nam
+
+::
 
 `this()` được dùng để sự dụng lại [constructor](/bai-viet/java/phuong-thuc-khoi-tao) trong [constructor](/bai-viet/java/phuong-thuc-khoi-tao) khác. Nó sẽ thừa kế các thuộc tính của [constructor](/bai-viet/java/phuong-thuc-khoi-tao) được gọi.
 
@@ -176,28 +162,22 @@ public class HocSinh3 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>111 Viet</code><br/>
-    <code>222 Nam</code>
-  </div>
-</div>
+::result
 
-<content-info>
+111 Viet<br/>
+222 Nam
+
+::
+
+::alert{type="infor"}
 this() phải được khai báo dòng lệnh đầu tiên trong Constructor.
-</content-info>
+::
 
 ### Gọi phương thức của lớp hiện tại
 
 Bạn có thể sử dụng từ khóa `this` để gọi phương thức của lớp hiện tại. Nếu bạn không sử dụng từ khóa `this`, trình biên dịch sẽ tự động thêm từ khóa `this` cho việc gọi phương thức.
 
 ![image](https://user-images.githubusercontent.com/29374426/131204535-5cb697f9-425d-4019-af0f-e84ca1542234.png)
-
-<content-example />
 
 ```java
 public class HocSinh4 {
@@ -222,16 +202,12 @@ public class HocSinh4 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Xin chao Thaycacac</code><br/>
-    <code>Hello Thaycacac</code>
-  </div>
-</div>
+::result
+
+Xin chao Thaycacac<br/>
+Hello Thaycacac
+
+::
 
 ## Sử dụng từ khóa this như một tham số của phương thức
 
@@ -255,15 +231,11 @@ public class HocSinh5 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Hello Thaycacac</code>
-  </div>
-</div>
+::result
+
+Hello Thaycacac
+
+::
 
 Chúng ta cũng có thể truyền từ khóa `this` trong [constructor](/bai-viet/java/phuong-thuc-khoi-tao).Việc này rất hữu ích nếu chúng ta phải sử dụng một đối tượng trong nhiều lớp.
 
@@ -296,15 +268,11 @@ class A4 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>10</code>
-  </div>
-</div>
+::result
+
+10
+
+::
 
 ## Sử dụng từ khóa this để trả về instance của lớp hiện tại
 
@@ -327,12 +295,8 @@ class Test1 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Hello Thaycacac</code>
-  </div>
-</div>
+::result
+
+Hello Thaycacac
+
+::

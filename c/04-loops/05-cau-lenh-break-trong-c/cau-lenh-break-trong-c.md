@@ -174,7 +174,9 @@ int main() {
 }
 ```
 
-_Lưu ý : Không chạy chương trình trên vì đây là một vòng lặp vô hạn, nó sẽ chạy mãi không dừng - bạn chỉ có thể dừng nó bằng cách tắt cửa sổ terminal đi._
+::alert{type="warning"}
+Lưu ý: Không chạy chương trình trên vì đây là một vòng lặp vô hạn, nó sẽ chạy mãi không dừng - bạn chỉ có thể dừng nó bằng cách tắt cửa sổ terminal đi.
+::
 
 Trong chương trình trên, điều kiện trong vòng lặp là `1` - có nghĩa là luôn luôn đúng. Vì vậy, vòng lặp thực hiện vô số lần hay còn gọi là vòng lặp vô hạn. Chúng ta có thể sửa lỗi này bằng cách sử dụng câu lệnh **`break`** như sau:
 

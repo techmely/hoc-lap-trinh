@@ -102,11 +102,11 @@ btnRm.addEventListener("click", () => {
 });
 ```
 
-<content-warning>
+::alert{type="warning"}
 
 **Chú ý:** Nhắc lại đối với các bạn chưa đọc bài viết trước của mình, nếu bạn chỉ sử dụng phương thức [removeChild](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser) mà không delete thì sẽ dẫn đến leak memory.
 
-</content-warning>
+::
 
 ## Kết luận
 

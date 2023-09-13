@@ -13,7 +13,7 @@ position: 23
 
 String là một chuỗi các ký tự kết hợp lại. Ví dụ "thaycacac" là một chuỗi gồm 9 ký tự 't', 'h', 'a', 'y', 'c', 'a', 'c', 'a', 'c' kết hợp lại.
 
-String trong java là một **object immutable**, nghĩa là bạn khônng thể thay đổi giá trị của String khi nó đã được khởi tạo.
+String trong java là một **object immutable**, nghĩa là bạn không thể thay đổi giá trị của String khi nó đã được khởi tạo.
 
 ## Khởi tạo String trong java
 
@@ -24,7 +24,7 @@ Trong java chúng ta có 2 cách để tạo một chuỗi
 
 ### Tạo string bằng một chuỗi ký tự
 
-<div class="example">khởi tạo 2 chuỗi string1 và string2 với giá trị giống nhau</div>
+Ví dụ: khởi tạo 2 chuỗi string1 và string2 với giá trị giống nhau
 
 ```java
 public class Main {
@@ -61,8 +61,6 @@ Với đoạn code trên thì chúng ta sẽ được 2 object riêng biệt kh�
 
 Như đã đề cập ở trên `object immutable` thì chúng ta sẽ không thể thay đổi khi nó đã được khỏi tạo. Chúng ta cùng xem ví dụ sau:
 
-<content-example />
-
 ```java
 public class Main {
   public static void main(String[] args) {
@@ -74,16 +72,12 @@ public class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>hello</code><br/>
-    <code>hello thaycacac</code>
-  </div>
-</div>
+::result
+
+hello<br/>
+hello thaycacac
+
+::
 
 Sao nói rằng object string không thể thay đổi sau khi nó đã được khởi tạo thì đáng lẽ chúng ra phải nhận output là **hello** chứ nhỉ!
 

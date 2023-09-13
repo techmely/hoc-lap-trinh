@@ -43,6 +43,6 @@ Chào mừng các bạn đến với hướng dẫn học React-Native cho ngư�
 - Các hướng dẫn dưới đây ngoại trừ phần cài đặt, đều là hướng dẫn để xây dựng ứng dụng trên IOS. Một số chức năng có thể IOS hỗ trợ nhưng Android không hỗ trợ và ngược lại, nên nếu có lỗi các bạn có thể bình luận tại đây hoặc tìm kiếm google để nâng cao khả năng giải quyết vấn đề nhé.
 - Để chạy các code mẫu, sau khi tải về vui lòng vào thư mục và chạy dòng lệnh `npm install` để tải toàn bộ thư viện cần sử dụng. Và chạy `react-native run-ios` để chạy ứng dụng trên IOS. `react-native run-android` để chạy ứng dụng trên hệ điều hành Android.
 
-<content-info>
+::alert{type="infor"}
 Sau những lần tìm hiểu và phát triển ứng dụng thì mình khuyến cáo không nên sử dụng Expo (framework của react) để phát triển ứng dụng đơn giản. Bởi vì dự án của bạn sẽ nặng lên, bạn rất khó quản lý permission và các thư viện đi kèm.
-</content-info>
+::

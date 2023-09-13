@@ -221,13 +221,13 @@ Ví dụ:
 });
 ```
 
-<content-result>
+::result
 
 item a at index 0 in array a,b,c
 item b at index 1 in array a,b,c
 item c at index 2 in array a,b,c
 
-</content-result>
+::
 
 Để hiểu hơn về `forEach`, bạn có thể đọc thêm bài viết: [JavaScript forEach là cái quái gì?](/bai-viet/javascript/tim-hieu-ve-foreach-trong-javascript)
 
@@ -392,11 +392,11 @@ console.log(arr); // (3) [1, 15, 2]
 
 Kết quả trả về là mảng `[1, 15, 2]`. Bạn có thấy điểm bất thường gì ở đây không?
 
-<content-info>
+::alert{type="infor"}
 
 💡 Mặc định các phần tử được sắp xếp theo thứ tự string.
 
-</content-info>
+::
 
 Trong ví dụ trên, các phần tử được [chuyển đổi kiểu dữ liệu](/bai-viet/javascript/chuyen-doi-kieu-du-lieu-trong-javascript) về **string** để so sánh. Mà `"1" < "2"` là `true`. Nên kết quả như trên là đúng.
 
@@ -541,11 +541,11 @@ console.log(Array.isArray(obj)); // false
 
 Hầu hết các phương thức của mảng trong JavaScript đều có tham số cuối cùng là `thisArg`.
 
-<content-info>
+::alert{type="infor"}
 
 Tham số này không bắt buộc và ít sử dụng nên mình không nói đến trong các phần trên.
 
-</content-info>
+::
 
 Cú pháp đầy đủ các phương thức với `thisArg` là:
 

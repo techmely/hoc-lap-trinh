@@ -202,13 +202,13 @@ alert(user + 1); // 29
 
 Như bạn thấy là kết quả hoàn toàn giống với cách sử dụng `Symbol.toPrimitive`.
 
-<content-info>
+::alert{type="infor"}
 
 📝 **Chú ý**: hai phương thức `toString` và `valueOf` có thể trả về bất kỳ kiểu dữ liệu nguyên thủy nào, không nhất thiết phải trả về **number** hay **string**.
 
 Chỉ cần giá trị trả về **khác object** là được.
 
-</content-info>
+::
 
 Ví dụ:
 

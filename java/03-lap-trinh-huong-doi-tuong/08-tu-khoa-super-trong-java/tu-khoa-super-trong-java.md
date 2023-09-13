@@ -17,13 +17,13 @@ Khi một lớp được kế thừa từ lớp cha trong cả lớp cha và l�
 
 Bất cứ khi nào bạn tạo ra instance(thể hiển) của lớp con, một instance của lớp cha được tạo ra ngầm định, nghĩa là được tham chiếu bởi biến super.
 
-![image](https://user-images.githubusercontent.com/29374426/131205533-8930a7b8-1557-45d9-9d88-7d57b6306f98.png)
+![Từ khóa super trong Java](https://user-images.githubusercontent.com/29374426/131205533-8930a7b8-1557-45d9-9d88-7d57b6306f98.png)
 
 ## Super tham chiếu đến biến instance của lớp cha
 
 Từ khóa super được sử dụng để tham chiếu trực tiếp đến biến instance của lớp cha.
 
-<div class="example">Xe đạp thừa kế lớp cha, tốc độ của lớp cha là 50, tốc độ lớp con là 100, nếu không sử dụng super thì khi in tốc độ ra chúng ta sẽ được kết quả là của lớp con</div>
+Ví dụ: xe đạp thừa kế lớp cha, tốc độ của lớp cha là 50, tốc độ lớp con là 100, nếu không sử dụng super thì khi in tốc độ ra chúng ta sẽ được kết quả là của lớp con
 
 ```java
 class Xe {
@@ -44,17 +44,13 @@ public class XeDap extends Xe {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>100</code>
-  </div>
-</div>
+::result
 
-<div class="example">Nếu chúng ta sử dụng super thì sẽ in ra được tốc độ của lớp cha</div>
+100
+
+::
+
+Ví dụ: nếu chúng ta sử dụng super thì sẽ in ra được tốc độ của lớp cha
 
 ```java
 class Xe {
@@ -76,17 +72,13 @@ public class XeDap extends Xe {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>50</code>
-  </div>
-</div>
+::result
 
-## Sử dụng super() để gọi contructor của lớp cha
+50
+
+::
+
+## Sử dụng `super()` để gọi constructor của lớp cha
 
 Trong java, `super()` được sử dụng để gọi trực tiếp [constructor](/bai-viet/java/phuong-thuc-khoi-tao) của lớp cha.
 
@@ -109,20 +101,16 @@ class XeDap extends Xe {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Xe được tạo</code><br/>
-    <code>Xe đạp được tạo</code><br/>
-  </div>
-</div>
+::result
 
-<content-info>
-  super() được tự động thêm vào mỗi Constructor của class bởi trình biên dịch.
-</content-info>
+Xe được tạo<br/>
+Xe đạp được tạo<br/>
+
+::
+
+::alert{type="infor"}
+super() được tự động thêm vào mỗi Constructor của class bởi trình biên dịch.
+::
 
 ![image](https://user-images.githubusercontent.com/29374426/131205555-ca114d78-97b6-4ee4-8727-55cbbeb233f9.png)
 
@@ -151,16 +139,12 @@ public class XeDap extends Xe {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Xe được tạo</code><br/>
-    <code>10</code>
-  </div>
-</div>
+::result
+
+Xe được tạo<br/>
+10
+
+::
 
 ## Super được sử dụng để gọi phương thức của lớp cha
 
@@ -190,13 +174,9 @@ public class HocSinh extends Nguoi {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Xin chao Thaycacac</code><br/>
-    <code>Xin chao</code>
-  </div>
-</div>
+::result
+
+Xin chao Thaycacac<br/>
+Xin chao
+
+::

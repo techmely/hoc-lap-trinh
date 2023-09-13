@@ -89,16 +89,16 @@ Và đây là phần UI cho **tab-group.component.html**:
     *ngFor="let tab of tabPanelList; index as idx"
     (click)="selectItem(idx)"
   >
-    {{tab.title}}
-  </div>
-</div>
+    {{tab.title}} ::
 
-<div class="tab-body">
-  <ng-container *ngFor="let tab of tabPanelList; index as idx">
-    <div *ngIf="idx === tabActiveIndex">
-      <ng-container *ngTemplateOutlet="tab.panelBody"></ng-container>
+    <div class="tab-body">
+      <ng-container *ngFor="let tab of tabPanelList; index as idx">
+        <div *ngIf="idx === tabActiveIndex">
+          <ng-container *ngTemplateOutlet="tab.panelBody"></ng-container>
+        </div>
+      </ng-container>
     </div>
-  </ng-container>
+  </div>
 </div>
 ```
 
@@ -250,7 +250,9 @@ SomeClass = SomeDecorator(SomeClass);
 
 Như chúng ta đã tìm hiểu qua thì chúng ta có các cách provide một provider với các dạng như sau:
 
-> Lưu ý: code phía dưới đây sẽ tương tự cho `@NgModule`, `@Component`, `@Directive`.
+::alert{type="warning"}
+Lưu ý: code phía dưới đây sẽ tương tự cho `@NgModule`, `@Component`, `@Directive`.
+::
 
 - useClass:
 

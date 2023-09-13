@@ -90,7 +90,7 @@ Lưu ý dòng lệnh:
 import * as Screens from "./modules/screens";
 ```
 
-Dòng lệnh này thực hiện import toàn bộ những class được xuất ra thông qua file index.js. Vì vậy nếu bạn thêm màn hình mới lưu ý vào file index.js để xuất thêm class bạn vừa tạo.
+Dòng lệnh này thực hiện import toàn bộ những class được xuất ra thông qua file `index.js`. Vì vậy nếu bạn thêm màn hình mới lưu ý vào file `index.js` để xuất thêm `class` bạn vừa tạo.
 
 Chuyển đổi màn hình: có 2 cách chuyển màn hình:
 

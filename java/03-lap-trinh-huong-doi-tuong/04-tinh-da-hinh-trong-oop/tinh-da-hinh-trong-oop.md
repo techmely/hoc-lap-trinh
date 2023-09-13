@@ -46,7 +46,7 @@ Tính đa hình chủ yếu được chia thành hai loại:
 
 Đa hình lúc runtime là quá trình gọi phương thức đã được ghi đè trong thời gian thực thi chương trình. Trong quá trình này, một phương thức được ghi đè được gọi thông qua biến tham chiếu của một lớp cha.
 
-<div class="example">Chúng ta tạo hai lớp Bike và Car. Lớp Bike kế thừa lớp Car và ghi đè phương thức run() của nó. Chúng ta gọi phương thức run bởi biến tham chiếu của lớp cha. Khi nó tham chiếu tới đối tượng của lớp con và phương thức lớp con ghi đè phương thức của lớp cha, phương thức lớp con được gọi lúc runtime.</div>
+Ví dụ chúng ta tạo hai lớp Bike và Car. Lớp Bike kế thừa lớp Car và ghi đè phương thức `run()` của nó. Chúng ta gọi phương thức run bởi biến tham chiếu của lớp cha. Khi nó tham chiếu tới đối tượng của lớp con và phương thức lớp con ghi đè phương thức của lớp cha, phương thức lớp con được gọi lúc runtime.
 
 ```java
 class Car {
@@ -67,17 +67,13 @@ public class Bike extends Car {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>chạy với tốc độ 30km/h</code>
-  </div>
-</div>
+::result
 
-<div class="example">Một ví dụ khác về tính đa hình</div>
+chạy với tốc độ 30km/h
+
+::
+
+Một ví dụ khác về tính đa hình
 
 ```java
 class Shape {
@@ -117,52 +113,40 @@ class Main {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>vẽ hình chữ nhật...</code><br/>
-    <code>vẽ hình tròn...</code><br/>
-    <code>vẽ hình tam giác...</code>
-  </div>
-</div>
+::result
+
+vẽ hình chữ nhật...<br/>
+vẽ hình tròn...<br/>
+vẽ hình tam giác...
+
+::
 
 Tuy nhiên khi chúng ta truy cập thuộc tính của lớp con thì sẽ không bị ghi đè, mà nó sẽ truy cập thuộc tính của lớp cha.
 
-<content-example />
-
 ```java
 class Bike{
- int speedlimit = 90;
+ int speedLimit = 90;
 }
 
 class Honda3 extends Bike {
- int speedlimit = 150;
+ int speedLimit = 150;
 }
 
 public static void main(String args[]){
   Bike obj=new Honda3();
-  System.out.println(obj.speedlimit);//90
+  System.out.println(obj.speedLimit);//90
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>90</code>
-  </div>
-</div>
+::result
+
+90
+
+::
 
 ## Đa hình thời gian biên dịch
 
 Đa hình thời gian biên dịch sử dụng phương thức nạp chồng. Do sử dụng chung một cái tên cho nhiều phương thức, nên ta phải cho java biết cần phải gọi phương thức nào để thực hiện, java dựa vào sự khác nhau về số lượng đối cũng như kiểu dữ liệu của các đối này để phân biệt các phương thức trùng tên đó..
-
-<content-example />
 
 ```java
 public class OverloadingOrder {
@@ -181,22 +165,18 @@ public class OverloadingOrder {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>String: String first, int: 11</code></br>
-    <code>int: 99, String: Int first</code>
-  </div>
-</div>
+::result
 
-<content-info>
-  <ul>
-    <li>Nếu java không tìm thấy một hàm nạp chồng thích hợp thì nó sẽ đưa ra một thông báo lỗi</li>
-    <li>Ta không thể sử dụng giá trị trả về của hàm để phân biệt sự khác nhau giữa 2 phương thức nạp chồng</li>
-    <li>Không nên quá lạm dụng các phương thức nạp chồng vì trình biên dịch phải mất thời gian phán đoán để tìm ra hàm thích hợp, điều này đôi khi còn dẫn đến sai sót</li>
-    <li>Khi gọi các hàm nạp chồng ta nên có lệnh chuyển kiểu tường minh để trình biên dịch tìm ra hàm phù hợp một cách nhanh nhất</li>
-  <ul>
-</content-info>
+String: String first, int: 11</br>
+int: 99, String: Int first
+
+::
+
+::alert{type="infor"}
+
+- Nếu java không tìm thấy một hàm nạp chồng thích hợp thì nó sẽ đưa ra một thông báo lỗi
+- Ta không thể sử dụng giá trị trả về của hàm để phân biệt sự khác nhau giữa 2 phương thức nạp chồng
+- Không nên quá lạm dụng các phương thức nạp chồng vì trình biên dịch phải mất thời gian phán đoán để tìm ra hàm thích hợp, điều này đôi khi còn dẫn đến sai sót
+- Khi gọi các hàm nạp chồng ta nên có lệnh chuyển kiểu tường minh để trình biên dịch tìm ra hàm phù hợp một cách nhanh nhất
+
+::

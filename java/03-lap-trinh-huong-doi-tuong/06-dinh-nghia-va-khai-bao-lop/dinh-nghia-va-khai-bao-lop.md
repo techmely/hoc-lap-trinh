@@ -29,7 +29,7 @@ Lớp các bạn hiểu đó là một khái niệm bao quát nói lên những 
 
 **Còn thế nào là đối tượng?**
 
-Đối tượng chính là một phần tử, một thành viên cụ thể nào đó trong lớp. Ví dụ như con chó ở nhà chúng ta là một đối tượng, đối tượng này thuộc vào lớp thú vì nó sẽ có những đặc điểm của lớp thú như là động vật hằng nhiệt, môi trường sông đa dạng,.... Mỗi đối tượng người ta cũng gọi là một thể hiện của lớp vì thông qua đối tượng đó chúng ta biết được những tính chất chung nhất của lớp.
+Đối tượng chính là một phần tử, một thành viên cụ thể nào đó trong lớp. Ví dụ như con chó ở nhà chúng ta là một đối tượng, đối tượng này thuộc vào lớp thú vì nó sẽ có những đặc điểm của lớp thú như là động vật hằng nhiệt, môi trường sống đa dạng,.... Mỗi đối tượng người ta cũng gọi là một thể hiện của lớp vì thông qua đối tượng đó chúng ta biết được những tính chất chung nhất của lớp.
 
 ![image](https://user-images.githubusercontent.com/29374426/130745801-ed5702c5-c481-4372-b6a3-394ad4b52e19.png)
 
@@ -58,19 +58,18 @@ _Trong đó:_
 - **extends** là từ khoá cho java biết lớp này này được kế thừa từ lớp khác
 - **implements** là từ khoá cho java biết lớp này sẽ triển khai giao diện `Interfaces`, đây là một dạng tương tự như kế thừa bội của java.
 
-<content-info>
-  <ul>
-    <li>Thuộc tính của lớp là một biến có kiểu dữ liệu bất kỳ, nó có thể lại là một biến có kiểu là chính lớp đó</li>
-    <li>Khi khai báo các thành phần của lớp (thuộc tính và phương thức) có thể dùng một trong các từ khoá private, public, protected để giứo hạn sự truy cập đến thành phần đó</li>
-    <li>Các thành phần private chỉ có thể sử dụng được ở bên trong lớp, ta không thể truy cập vào các thành phần private từ bên ngoài lớp</li>
-    <li>Các thành phần public có thể truy cập được cả bên trong lớp lẫn bên ngoài lớp.</li>
-    <li>Các thành phần protected tương tự như các thành phần private, nhưng có thể truy cập được từ bất cứ lớp con nào kế thừa từ nó.</li>
-    <li>Nếu một thành phần của lớp khi khai báo mà không sử dụng một trong 3 bổ từ protected, private, public thì sự truy cập là bạn bè, tức là thành phần này có thể truy cập được từ bất cứ lớp nào trong cùng gói với lớp đó.</li>
-    <li>Các thuộc tính nên để mức truy cập private để đảm bảo tính dấu kín và lúc đó để bên ngoài phạm vi của lớp có thể truy cập được đến thành phần private này ta phải tạo ra các phương thức phương thức get và set.</li>
-    <li>Các phương thức thường khai báo là public, để chúng có thể truy cập từ bất cứ đâu.</li>
-    <li>Trong một tệp chương trình (hay còn gọi là một đơn vị biên dịch) chỉ có một lớp được khai báo là public, và tên lớp public này phải trùng với tên của tệp kể cả chữ hoa, chữ thường</li>
-  </ul>
-</content-info>
+::alert{type="infor"}
+
+- Thuộc tính của lớp là một biến có kiểu dữ liệu bất kỳ, nó có thể lại là một biến có kiểu là chính lớp đó
+- Khi khai báo các thành phần của lớp (thuộc tính và phương thức) có thể dùng một trong các từ khoá `private`, `public`, `protected` để giúp hạn sự truy cập đến thành phần đó
+- Các thành phần `private` chỉ có thể sử dụng được ở bên trong lớp, ta không thể truy cập vào các thành phần `private` từ bên ngoài lớp
+- Các thành phần `public` có thể truy cập được cả bên trong lớp lẫn bên ngoài lớp.
+- Các thành phần `protected` tương tự như các thành phần `private`, nhưng có thể truy cập được từ bất cứ lớp con nào kế thừa từ nó.
+- Nếu một thành phần của lớp khi khai báo mà không sử dụng một trong 3 bổ từ `protected`, `private`, public thì sự truy cập là bạn bè, tức là thành phần này có thể truy cập được từ bất cứ lớp nào trong cùng gói với lớp đó.
+- Các thuộc tính nên để mức truy cập `private` để đảm bảo tính dấu kín và lúc đó để bên ngoài phạm vi của lớp có thể truy cập được đến thành phần `private` này ta phải tạo ra các phương thức phương thức get và set.
+- Các phương thức thường khai báo là `public`, để chúng có thể truy cập từ bất cứ đâu.
+- Trong một tệp chương trình (hay còn gọi là một đơn vị biên dịch) chỉ có một lớp được khai báo là `public`, và tên lớp `public` này phải trùng với tên của tệp kể cả chữ hoa, chữ thường
+  ::
 
 ## Khai báo thuộc tính
 
@@ -97,9 +96,9 @@ _Trong đó:_
 - **Type** là một kiểu dữ liệu nào đó
 - **<Tên thuộc tính>** là tên của thuộc tính
 
-<content-info>
+::alert{type="infor"}
 Ta phải phân biệt được việc khai báo như thế nào là khai báo thuộc tính, khai báo thế nào là khai báo biến thông thường? Câu trả lời là tất cả các khai báo bên trong thân của một lớp và bên ngoài tất cả các phương thức và hàm tạo thì đó là khai báo thuộc tính, khai báo ở những chỗ khác sẽ cho ta biến.
-</content-info>
+::
 
 ## Khai báo phương thức
 

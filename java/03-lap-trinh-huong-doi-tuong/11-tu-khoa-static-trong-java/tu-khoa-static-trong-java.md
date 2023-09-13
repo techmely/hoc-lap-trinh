@@ -65,20 +65,16 @@ public class Student {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>05740 - Hoa - FPT</code><br/>
-    <code>05439 - Huyen - FPT</code>
-  </div>
-</div>
+::result
 
-<content-info>
+05740 - Hoa - FPT<br/>
+05439 - Huyen - FPT
+
+::
+
+::alert{type="infor"}
 Ta không thể sử dụng hàm tạo để khởi đầu các thuộc tính tĩnh, bởi vì hàm tạo không phải là phương thức tĩnh
-</content-info>
+::
 
 ## Phương thức static trong Java
 
@@ -87,8 +83,6 @@ Một phương thức được khai báo là `static` được gọi là phươn
 - Một phương thức static thuộc lớp chứ không phải đối tượng của lớp.
 - Một phương thức static gọi mà không cần tạo một instance của một lớp.
 - Phương thức static có thể truy cập biến static và có thể thay đổi giá trị của nó.
-
-<content-example />
 
 ```java
 public class Student {
@@ -122,16 +116,12 @@ public class Student {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>05740 - Hoa - Bưu Chính Viễn Thông</code><br/>
-    <code>05439 - Huyen - Bưu Chính Viễn Thông</code>
-  </div>
-</div>
+::result
+
+05740 - Hoa - Bưu Chính Viễn Thông<br/>
+05439 - Huyen - Bưu Chính Viễn Thông
+
+::
 
 ## Khối static trong Java
 
@@ -139,8 +129,6 @@ public class Student {
 - Nó được thực thi trước phương thức main tại lúc tải lớp.
 
 [Tìm hiểu kỹ hơn về khối static trong Java](/bai-viet/java/khoi-anonymous-va-static-trong-java)
-
-<content-example />
 
 ```java
 public class Student {
@@ -154,13 +142,9 @@ public class Student {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Khối static: hello !</code><br/>
-    <code>Main: hello !</code>
-  </div>
-</div>
+::result
+
+Khối static: hello !<br/>
+Main: hello !
+
+::

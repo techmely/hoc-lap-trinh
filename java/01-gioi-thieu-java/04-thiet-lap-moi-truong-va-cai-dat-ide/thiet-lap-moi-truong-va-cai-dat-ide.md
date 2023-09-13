@@ -17,12 +17,12 @@ Tiến hành cài đặt
 
 - Kiểm tra máy tính đã cài **JDK** hay chưa, mở `cmd` và gõ `java -version`
 - Nếu thấy hiển thị như hình dưới thì máy đã cài sắn **JDK** (version 1.8 có nghĩa là **JDK 8**), bạn có thể chuyển luôn xuống bước cái IDE.
-  ![](https://github.com/AnestAcademy/Course-Java-Introduce/blob/master/Images/check-jdk.PNG)
+
+![Cài đặt JDK](https://github.com/KungfutechAcademy/Course-Java-Introduce/blob/master/Images/check-jdk.PNG)
+
 - Nếu máy chưa cài **JDK** thì tiếp tục - tải **JDK** trực tiếp [tại đây](https://drive.google.com/file/d/1YT-OeFTLAgpbBt_WGY6_sn9RQz2s1nu8/view?usp=sharing) hoặc lên trang chủ [oracle.com](https://www.oracle.com/java/technologies/javase-downloads.html) (nhớ chọn Java SE 8).
 - Tiến hành cài đặt bình thường mặc định như các phần mềm khác.
 - Cài đặt xong kiểm tra `cmd` giống trong hình là xong.
-
-<br />
 
 ## Cài đặt IDE (Integrated Development Environment)
 
@@ -37,9 +37,7 @@ Trọng phạm vi học tập, các bạn nên sử dụng Netbeans vì nó nh�
 - Các bạn truy cập trang tải Netbeans 8.2 RC [tại đây](https://netbeans.org/downloads/8.2/rc/) (vì dùng JDK 8 nên chúng ta sẽ chọn Netbeans 8.2).
 - Chọn `Platform: Windows` và `Bundles: All`
 
-<br />
-
-![](https://github.com/AnestAcademy/Course-Java-Introduce/blob/master/Images/netbeans8.2.PNG)
+![Cài đặt IDE](https://github.com/KungfutechAcademy/Course-Java-Introduce/blob/master/Images/netbeans8.2.PNG)
 
 - Tiến hành cài đặt bình thường mặc định như các phần mềm khác.
 

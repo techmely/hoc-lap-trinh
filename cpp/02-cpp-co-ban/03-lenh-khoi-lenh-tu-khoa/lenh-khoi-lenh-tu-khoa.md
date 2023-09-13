@@ -57,7 +57,9 @@ Thông báo lỗi này có nghĩa bạn viết thiếu dấu chấm phẩy ";" �
 
 Sau khi thêm dấu chấm phẩy vào dòng lệnh trước đó, chương trình được build bình thường.
 
+::alert{type="warning"}
 Một điều cần lưu ý nữa là: **Tại một thời điểm, chương trình chỉ có thể thực hiện được 1 dòng lệnh. Các dòng lệnh được thực hiện tuần tự từ trên xuống dưới.**
+::
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/a03dda35-7d3f-48ca-9183-3ddb5c99f2be)
 

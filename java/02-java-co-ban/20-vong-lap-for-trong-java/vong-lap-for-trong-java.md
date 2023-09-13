@@ -45,23 +45,23 @@ Sơ đồ khối diễn giải sự hoạt động của cấu trúc for sau:
 - **Bước 3:** Thực hiện <Thay đổi biến chạy>, quay lại Bước 2
 - **Bước 4:** Kết thúc vòng lặp
 
-![vong-lap-for-trong-java](https://user-images.githubusercontent.com/29374426/127631954-6589402a-aaab-4df9-b37b-ddebb90db820.png)
+![Vòng lặp for trong java](https://user-images.githubusercontent.com/29374426/127631954-6589402a-aaab-4df9-b37b-ddebb90db820.png)
 
-<content-info>
-  <ul>
-    <li>Nếu ta khai báo biến chạy trong Biểu thức khởi tạo vòng lặp thì sau khi kết thúc, biến chạy tự giải phóng</li>
-    <li>Thân của cấu trúc lặp for ta chỉ có thể đặt được duy nhất một lệnh, do vậy để có thể thực hiện nhiều tác vụ trong thân for ta phải bao chúng trong khối lệnh</li>
-    <li>Thân vòng lặp for có thể không được thực hiện lần nào</li>
-    <li>Các phần Khởi tạo biến chạy, Biểu thức điều kiện, Thay đổi biến chạy có thể khuyết tuy nhiên dấy phẩy dành cho nó vẫn phải có</li>
-    <li>Số lần thực hiện Khởi tạo biến chạy là 1 lần</li>
-    <li>Số lần thực hiện Biểu thức điều kiện bằng số lần lặp + 1</li>
-    <li>Số lần thực hiện Biểu thức điều kiện bằng số lần lặp</li>
-    <li>Ta có thể đặt một vài khai báo biến trong phần Khởi tạo biến chạy</li>
-    <li>Ta có thể mô tả cấu trúc while thông qua cấu trúc for như sau for(; Biểu thức boolean;) statement;</li>
-  </ul>
-</content-info>
+::alert{type="infor"}
 
-<div class="example"> in ra màn hình các số nguyên nhỏ hơn 11</div>
+- Nếu ta khai báo biến chạy trong Biểu thức khởi tạo vòng lặp thì sau khi kết thúc, biến chạy tự giải phóng
+- Thân của cấu trúc lặp for ta chỉ có thể đặt được duy nhất một lệnh, do vậy để có thể thực hiện nhiều tác vụ trong thân for ta phải bao chúng trong khối lệnh
+- Thân vòng lặp for có thể không được thực hiện lần nào
+- Các phần Khởi tạo biến chạy, Biểu thức điều kiện, Thay đổi biến chạy có thể khuyết tuy nhiên dấy phẩy dành cho nó vẫn phải có
+- Số lần thực hiện Khởi tạo biến chạy là 1 lần
+- Số lần thực hiện Biểu thức điều kiện bằng số lần lặp + 1
+- Số lần thực hiện Biểu thức điều kiện bằng số lần lặp
+- Ta có thể đặt một vài khai báo biến trong phần Khởi tạo biến chạy
+- Ta có thể mô tả cấu trúc while thông qua cấu trúc for như sau for(; Biểu thức boolean;) statement;
+
+::
+
+Ví dụ: in ra màn hình các số nguyên nhỏ hơn 11
 
 ```java
 public class Thaycacac {
@@ -73,9 +73,9 @@ public class Thaycacac {
 }
 ```
 
-![vong-lap-for-trong-java](https://user-images.githubusercontent.com/29374426/127634450-1c6f052c-39b2-424c-9030-e3d9a5ae49a0.png)
+![Vòng lặp for trong java](https://user-images.githubusercontent.com/29374426/127634450-1c6f052c-39b2-424c-9030-e3d9a5ae49a0.png)
 
-<div class="example"> viết chương trình in ra các số lẻ trong khoảng 1 đến 10</div>
+Ví dụ: viết chương trình in ra các số lẻ trong khoảng 1 đến 10
 
 ```java
 public class Thaycacac {
@@ -87,7 +87,7 @@ public class Thaycacac {
 }
 ```
 
-<div class="example"> toán tử đẫy</div>
+Ví dụ: toán tử đẫy
 
 ```java
 public class CommaOperator {
@@ -99,20 +99,16 @@ public class CommaOperator {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>i= 1 j= 11</code><br/>
-    <code>i= 2 j= 4</code><br/>
-    <code>i= 3 j= 6</code><br/>
-    <code>i= 4 j= 8</code>
-  </div>
-</div>
+::result
 
-## Vòng lặp for cải tiến
+- i= 1 j= 11<br/>
+- i= 2 j= 4<br/>
+- i= 3 j= 6<br/>
+- i= 4 j= 8
+
+::
+
+## Vòng lặp `for` cải tiến
 
 Vòng lặp for cải tiến được sử dụng để lặp mảng (`array`) hoặc `collection` trong java. Bạn có thể sử dụng nó dễ dàng, dễ hơn cả vòng lặp for đơn giản. Bởi vì bạn không cần phải tăng hay giảm giá trị của biến rồi kiểm tra điều kiện, bạn chỉ cần sử dụng ký hiệu hai chấm `:`
 
@@ -130,8 +126,6 @@ for (<Kiểu tập hợp> var : <Tập hợp>) {
 - **Tập hợp**: là danh sách tập hợp có thể là mảng thông thường, ArrayList, LinkedList, HashSet, ...
 - **Khối lệnh lặp lại** là câu lệnh mà ta cần phải thực hiện lặp đi lặp lại.
 
-<content-example />
-
 ```java
 public class Thaycacac {
   public static void main(String[] args){
@@ -143,19 +137,15 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>1</code><br/>
-    <code>2</code><br/>
-    <code>3</code><br/>
-    <code>4</code><br/>
-    <code>5</code>
-  </div>
-</div>
+::result
+
+1<br/>
+2<br/>
+3<br/>
+4<br/>
+5
+
+::
 
 ## Vòng lặp for gán nhãn
 
@@ -168,8 +158,6 @@ Cú pháp:
   <Khối lệnh lặp lại>
 }
 ```
-
-<content-example />
 
 ```java
 public class Thaycacac {
@@ -186,15 +174,11 @@ public class Thaycacac {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>1 1</code><br/>
-    <code>1 2</code><br/>
-    <code>1 3</code><br/>
-    <code>2 1</code>
-  </div>
-</div>
+::result
+
+1 1<br/>
+1 2<br/>
+1 3<br/>
+2 1
+
+::

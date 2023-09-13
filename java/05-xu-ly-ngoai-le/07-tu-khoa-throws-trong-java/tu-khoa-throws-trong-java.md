@@ -1,5 +1,5 @@
 ---
-title: "Từ khóa thows trong Java"
+title: "Từ khóa throws trong Java"
 description: "Từ khóa throws trong java được sử dụng để khai báo một ngoại lệ, nó thể hiện thông tin cho lập trình viên rằng có thể xảy ra một ngoại lệ, vì vậy nó là tốt hơn cho các lập trình viên để cung cấp các mã xử lý ngoại lệ để duy trì luồng bình thường của chương trình."
 chapter:
   name: "Xử lý ngoại lệ"
@@ -32,8 +32,6 @@ Chỉ những ngoại lệ checked nên được khai báo bởi vì **ngoại l
 
 ## Ví dụ về từ khóa throws trong java
 
-<content-example />
-
 ```java
 import java.io.IOException;
 
@@ -62,20 +60,16 @@ public class TestThrows1 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>ngoai le duoc xu ly</code><br/>
-    <code>luong binh thuong...</code><br/>
-  </div>
-</div>
+::result
+
+ngoai le duoc xu ly<br/>
+luong binh thuong...<br/>
+
+::
 
 **Trường hợp xử lý ngoại lệ với try/catch**
 
-<div class="example">Trong trường hợp bạn xử lý ngoại lệ, code sẽ được thực thi tốt cho dù ngoại lệ có xuất hiện trong chương trình hay không.</div>
+Ví dụ trong trường hợp bạn xử lý ngoại lệ, code sẽ được thực thi tốt cho dù ngoại lệ có xuất hiện trong chương trình hay không.
 
 ```java
 import java.io.IOException;
@@ -100,20 +94,16 @@ public class TestThrows2 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Ngoai le duoc xu ly</code><br/>
-    <code>Luong binh thuong...</code><br/>
-  </div>
-</div>
+::result
+
+Ngoai le duoc xu ly<br/>
+Luong binh thuong...<br/>
+
+::
 
 **Khai báo throws ngoại lệ**
 
-<div class="example">Trong trường hợp bạn khai báo throws ngoại lệ, nếu ngoại lệ không xảy ra, code sẽ được thực hiện tốt.</div>
+Trong trường hợp bạn khai báo throws ngoại lệ, nếu ngoại lệ không xảy ra, code sẽ được thực hiện tốt.
 
 ```java
 import java.io.IOException;
@@ -133,18 +123,14 @@ public class TestThrows2 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Thiet bi dang hoat dong tot</code><br/>
-    <code>Luong binh thuong...</code><br/>
-  </div>
-</div>
+::result
 
- <div class="example">Trong trường hợp bạn khai báo throws ngoại lệ, nếu ngoại lệ xảy ra, một ngoại lệ sẽ được ném ra tại runtime vì throws nên không xử lý ngoại đó.</div>
+Thiet bi dang hoat dong tot<br/>
+Luong binh thuong...<br/>
+
+::
+
+Trong trường hợp bạn khai báo throws ngoại lệ, nếu ngoại lệ xảy ra, một ngoại lệ sẽ được ném ra tại runtime vì throws nên không xử lý ngoại đó.
 
 ```java
 import java.io.IOException;
@@ -164,12 +150,8 @@ public class TestThrows2 {
 }
 ```
 
-<div class="window">
-  <div class="window-header">
-    <div class="action-buttons"></div>
-    <span class="title-popup">Kết quả</span>
-  </div>
-  <div class="window-body">
-    <code>Exception in thread "main" java.io.IOException: Thiet bi</code>
-  </div>
-</div>
+::result
+
+Exception in thread "main" java.io.IOException: Thiet bi
+
+::

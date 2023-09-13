@@ -290,6 +290,8 @@ Và mình render cả 2 list lên màn hình
       <h4>Adult user list</h4>
       <div *ngFor="let user of users | isAdult">{{ user.name }}</div>
     </div>
+
+    ::
   </div>
 </div>
 ```

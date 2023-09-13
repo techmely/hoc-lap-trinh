@@ -112,11 +112,11 @@ Sau đây là những phương thức phổ biến để truy cập vào các ph
 - Phương thức [`getSeconds()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds): trả về giây.
 - Phương thức [`getMilliseconds()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMilliseconds): trả về mili giây.
 
-<content-info>
+::alert{type="infor"}
 
 phương thức `getYear()` đã **lỗi thời** và chỉ trả về **hai chữ số** của năm. Vì vậy, bạn không nên sử dụng phương thức `getYear()`.
 
-</content-info>
+::
 
 Ngoài ra, bạn có thể lấy **ngày trong tuần** bằng phương thức [`getDay()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay) - trả về giá trị từ `0` (thứ 2) đến `6` (chủ nhật).
 
@@ -263,11 +263,11 @@ let end = Date.now();
 console.log(`${end - start} ms`); // 3 ms
 ```
 
-<content-info>
+::alert{type="infor"}
 
 các cách tính thời gian với `Date` trên có độ chính xác cao nhất là **1 ms**.
 
-</content-info>
+::
 
 Nếu bạn cần độ chính xác cao hơn thì bạn có thể dùng phương thức [`performance.now()`](https://developer.mozilla.org/en-US/docs/Web/API/Performance/now).
 

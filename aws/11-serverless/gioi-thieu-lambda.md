@@ -63,7 +63,7 @@ Bạn có thể chạy function của Lambda để thay đổi CloudFront reques
 - Sau khi CloudFront nhận response từ origin (origin response)
 - Trước khi CloudFront chuyển tiếp response tới viewer (viewer response)
 
-<content-info>Để có thể tạo mới một Lambda@Edge, bạn cần chon Region là us-east-1
-"CloudFront blueprints are available only in the US-East-1 (N. Virginia) Region (us-east-1)."</content-info>
+::alert{type="infor"}Để có thể tạo mới một Lambda@Edge, bạn cần chon Region là us-east-1
+"CloudFront blueprints are available only in the US-East-1 (N. Virginia) Region (us-east-1)."::
 
 ![Lambda@Edge là gì](https://user-images.githubusercontent.com/29729545/170851240-bb6217ad-471d-48b5-a0f0-5e939dab7b49.png)

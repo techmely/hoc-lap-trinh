@@ -90,7 +90,7 @@ Mỗi **Regions** là collection của (min 2 AZs, max 6 AZs, **thường là 3*
 
 ![Regions](https://user-images.githubusercontent.com/29729545/162230977-5b127f4a-6c28-416b-9096-4cdc99010ffa.png)
 
-<content-info>AZs bao gồm 1 hoặc nhiều center riêng biệt, mỗi center có hệ thống điện, làm mát... Chúng được kết nối với nhau và kết nối với mạng với băng thông cao và độ trễ thấp.</content-info>
+::alert{type="infor"}AZs bao gồm 1 hoặc nhiều center riêng biệt, mỗi center có hệ thống điện, làm mát... Chúng được kết nối với nhau và kết nối với mạng với băng thông cao và độ trễ thấp.::
 
 Khi lựa chọn region để sử dụng các services, nên chọn region gần với bạn để giảm độ trễ (latency).
 
@@ -103,6 +103,6 @@ Khi lựa chọn region để sử dụng các services, nên chọn region gầ
 - **SaaS**: Provider cung cấp software hoặc application. VD: Google Apps, Dropbox
 - **On-premises**: là mô hình phần mềm được cài đặt trên server của chính doanh nghiệp, giúp doanh nghiệp toàn quyền kiểm soát.
 
-<content-info>
+::alert{type="infor"}
 Tất cả model đều có điểm mạnh, yếu riêng biệt. Càng dễ dùng (convenient) thì càng ít kiểm soát (less-control). Vì vậy hãy chọn model cũng như dịch vụ phù hợp với đặc thù dự án của bạn.
-</content-info>
+::

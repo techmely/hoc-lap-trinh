@@ -95,7 +95,9 @@ Cùng xem kết quả chương trình:
 
 Chúng ta đã nhận được kết quả đúng.
 
+::alert{type="warning"}
 Có một lưu ý khi thực hiện phép chia hai số nguyên có chứa giá trị âm trong C++. Trước phiên bản C++11, compiler tự ý làm tròn lên hoặc xuống. Ví dụ **-5 / 2** sẽ được kết quả là -3 hoặc -2 tùy vào cách mà compiler làm tròn số.
+::
 
 ### Toán tử gán (assignment operator)
 
