@@ -70,13 +70,13 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 1
 2
 3
 4
 5
-```
+::
 
 Giải thích:
 
@@ -133,7 +133,7 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 Enter n: 694
 sum = 19
-```
+::

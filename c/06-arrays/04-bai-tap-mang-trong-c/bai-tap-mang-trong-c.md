@@ -37,14 +37,14 @@ int main() {
 
 Màn hình kết quả chương trình:
 
-```cpp
+::result
 Enter the 10 elements of array: 3 5 6 1 13 54 34 8 22 11
 
 OUTPUT:
 Unsorted array: 3, 5, 6, 1, 13, 54, 34, 8, 22, 11
 Sorted array: 1, 3, 5, 6, 8, 11 , 13, 22, 34, 54
 --------------------------------
-```
+::
 
 ## Bài 2
 
@@ -70,7 +70,7 @@ int main() {
 
 Màn hình kết quả chương trình:
 
-```cpp
+::result
 Eter the number of elements of the array: 10
 Enter the 10 elements of array: 3 5 6 1 13 54 34 8 22 11
 
@@ -78,7 +78,7 @@ OUTPUT:
 Unsorted array: 3, 5, 6, 1, 13, 54, 34, 8, 22, 11
 Sorted array: 1, 3, 5, 6, 8, 11 , 13, 22, 34, 54
 --------------------------------
-```
+::
 
 ## Bài 3
 
@@ -106,14 +106,14 @@ Màn hình kết quả chương trình:
 
 Test case 1
 
-```cpp
+::result
 Enter value you want to search: 8
 
 OUTPUT:
 Display array: 1, 4, 6, 2, 20, 8, 36, 22, 89, 77
 Found 8 at index 5 in array
 --------------------------------
-```
+::
 
 Test case 2
 

@@ -116,7 +116,7 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 Enter 5 integer numbers: 1
 4
 3
@@ -124,4 +124,4 @@ Enter 5 integer numbers: 1
 6
 
 Display array: 1 4 3 5 6
-```
+::

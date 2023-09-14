@@ -90,9 +90,9 @@ int main()
 
 Kết quả:
 
-```cpp
+::result
 Hello Kungfutech
-```
+::
 
 ::alert{type="warning"}
 Lưu ý: khi sử dụng hàm `strcpy()` hãy khai báo thư viên `<string.h>`
@@ -120,10 +120,10 @@ int main()
 
 Kết quả:
 
-```cpp
+::result
 Enter name: Kungfutech Academy
 Your name is Kungfutech.
-```
+::
 
 Mặc dù `Kungfutech Academy` đã được nhập tại chương trình trên nhưng chỉ `Kungfutech` được lưu trữ tại string `name`, đó là vì có một khoảng trắng đằng sau `Kungfutech`
 
@@ -148,10 +148,10 @@ int main()
 
 Kết quả:
 
-```cpp
+::result
 Enter name: Kungfutech Academy
 Name: Kungfutech Academy
-```
+::
 
 Tại chương trình trên ta đã sử dụng hàm `fgets()` để đọc một chuỗi văn bản từ người dùng và hàm `puts()` để hiển thị văn bản đó.
 
@@ -190,10 +190,10 @@ void displayString(char str[])
 
 Kết quả:
 
-```cpp
+::result
 Enter string: Kungfutech Academy
 String Output: Kungfutech Academy
-```
+::
 
 Tại đây chúng ta truyền một chuỗi `name` vào hàm `displayString()`.
 
@@ -227,7 +227,7 @@ int main(void) {
 
 Kết quả:
 
-```cpp
+::result
 Ana
 Ana
-```
+::

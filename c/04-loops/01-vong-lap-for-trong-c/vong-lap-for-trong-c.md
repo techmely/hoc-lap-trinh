@@ -67,7 +67,7 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 1
 2
 3
@@ -79,7 +79,7 @@ Kết quả:
 9
 10
 End loop!
-```
+::
 
 Giải thích:
 
@@ -111,14 +111,14 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 2
 4
 6
 8
 10
 End loop!
-```
+::
 
 Chúng ta còn có một cách khác là sửa lại vòng lặp như sau:
 
@@ -156,7 +156,7 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 sum = 55
 End loop!
-```
+::

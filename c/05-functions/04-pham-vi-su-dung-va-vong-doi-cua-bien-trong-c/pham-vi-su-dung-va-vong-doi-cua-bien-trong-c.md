@@ -77,9 +77,9 @@ void display()
 
 Kết quả:
 
-```cpp
+::result
 a = 6
-```
+::
 
 Trong ví dụ này t thấy biến `a` được khai báo ở bên ngoài tất cả các hàm nên khi hàm `main()` gọi `a` và tăng giá trị của nó lên **2**, lúc này `a = 5`, trong hàm `display()` lại tăng `a` thêm 1 nên kết quả khi in ra là `a = 6`.
 

@@ -130,9 +130,9 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 C
-```
+::
 
 > **Khi bạn khai báo mà không gán giá trị cho biến, lúc này biến sẽ chứa một giá trị không xác định.**
 
@@ -202,9 +202,9 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 7
-```
+::
 
 ### Biến cục bộ trong C
 
@@ -247,6 +247,6 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 1
-```
+::

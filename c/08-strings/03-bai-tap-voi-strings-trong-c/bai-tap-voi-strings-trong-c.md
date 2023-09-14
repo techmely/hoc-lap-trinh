@@ -39,14 +39,14 @@ Màn hình kết quả chương trình:
 
 Test case 1
 
-```cpp
+::result
 Enter string: Hello Kungfutech
 Enter character: e
 
 OUTPUT:
 Frequency of e is 2
 --------------------------------
-```
+::
 
 ## Bài 2
 
@@ -74,7 +74,7 @@ Màn hình kết quả chương trình:
 
 Test case 1
 
-```cpp
+::result
 1. Convert to binary
 2. Convert to octal
 3. Convert to hexa
@@ -84,7 +84,7 @@ Enter your choice: 1
 OUTPUT:
 Binary is 11011011100101011
 --------------------------------
-```
+::
 
 > không nên để kiểu dữ liệu của binary là `int` hay `long long` vì giá trị max của long long chỉ giới hạn tại 9,223,372,036,854,775,807.
 

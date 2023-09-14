@@ -95,17 +95,17 @@ int main() {
 
 Và đây là kết quả sau khi chạy chương trình:
 
-```cpp
+::result
 Enter the day: 6
 Friday
-```
+::
 
 Nếu nhập một giá trị không có trong các case, case `default` sẽ được chạy:
 
-```cpp
+::result
 Enter the day: 12
 Only enter 2 -> 8.
-```
+::
 
 Cùng xem thêm một ví dụ khác sử dụng kiểu `char`.
 
@@ -143,10 +143,10 @@ int main () {
 
 Kết quả:
 
-```cpp
+::result
 Enter grade: B
 Well done.
 Your grade is B
-```
+::
 
 Ở ví dụ này case `B` chúng ta không dùng `break;` - vì vậy khi chọn `B` (không có `break;` chặn lại) nó sẽ chạy xuống thực hiện code trong case `C` và in ra `Well done.`. Có nghĩa là khi chọn `B` hay `C` đều cho ra một kết quả giống nhau.

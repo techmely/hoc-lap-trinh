@@ -70,9 +70,9 @@ Các bạn có thể thấy khi `i = 5` câu lệnh **`continue`** sẽ được
 
 Kết quả chương trình:
 
-```cpp
+::result
 1 2 3 4 6 7 8 9 10
-```
+::
 
 Ví dụ 2:
 
@@ -105,7 +105,7 @@ Khi nhập `n < 0` câu lệnh **`continue`** sẽ được thực thi, lúc nà
 
 Kết quả chương trình:
 
-```cpp
+::result
 Enter a n1: 1
 Enter a n2: 2
 Enter a n3: -3
@@ -113,6 +113,6 @@ Enter a n4: 4
 Enter a n5: -5
 
 Sum = 7
-```
+::
 
 Câu lệnh **`continue`** có thể được sử dụng với bất kỳ vòng lặp nào khác cũng như **`while`** hoặc **`do-while`** theo cách tương tự như nó được sử dụng với vòng lặp **`for`** ở trên.

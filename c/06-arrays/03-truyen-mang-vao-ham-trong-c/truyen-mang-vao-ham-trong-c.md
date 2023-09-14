@@ -46,10 +46,10 @@ void display(int num1, int num2) {
 
 Kết quả:
 
-```cpp
+::result
 1
 3
-```
+::
 
 > Tại đây chúng ta đã truyền tham số vào trong hàm `display` giống như cách chúng ta truyền các biến cho hàm.
 
@@ -95,9 +95,9 @@ float sum(float num[]) {
 
 Kết quả:
 
-```cpp
+::result
 Result = 122.70
-```
+::
 
 > Để truyền toàn bộ mảng cho một hàm, ta chỉ truyền tên của mảng vào hàm (chỉ truyền `num` chứ không truyền `num[]`).
 
@@ -153,7 +153,7 @@ void display(int num[][2]) {
 
 Kết quả:
 
-```cpp
+::result
 Enter 4 numbers:
 1 5 4 6
 4 numbers you entered:
@@ -161,7 +161,7 @@ Enter 4 numbers:
 5
 4
 6
-```
+::
 
 > Khi truyền mảng hai chiều, không bắt buộc phải chỉ định số hàng trong mảng. Tuy nhiên, số lượng cột phải luôn được chỉ định.
 

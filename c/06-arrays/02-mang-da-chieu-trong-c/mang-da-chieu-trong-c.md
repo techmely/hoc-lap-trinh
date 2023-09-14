@@ -101,7 +101,7 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 Enter matrix[1][1]: 1
 Enter matrix[1][2]: 3
 Enter matrix[1][3]: 2
@@ -119,7 +119,7 @@ Display matrix:
 [1][3][2][5]
 [2][3][4][5]
 [6][1][3][4]
-```
+::
 
 Tương tự ta có ví dụ về nhập và hiển thị mảng ba chiều:
 
@@ -158,7 +158,7 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 Enter num[0][0][0]: -2
 Enter num[0][0][1]: 0
 Enter num[0][1][0]: 1
@@ -185,4 +185,4 @@ num[1][1][0] = -12
 num[1][1][1] = 21
 num[1][2][0] = 32
 num[1][2][1] = -2
-```
+::

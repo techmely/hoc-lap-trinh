@@ -55,9 +55,9 @@ int main() {
 
 Kết quả chương trình:
 
-```cpp
+::result
 a = 5
-```
+::
 
 ### Hàm ceil
 
@@ -83,9 +83,9 @@ int main() {
 
 Kết quả chương trình:
 
-```cpp
+::result
 a = 6, b = 6
-```
+::
 
 ### Hàm floor
 
@@ -111,9 +111,9 @@ int main() {
 
 Kết quả chương trình:
 
-```cpp
+::result
 a = 5, b = 5
-```
+::
 
 ### Hàm pow
 
@@ -140,9 +140,9 @@ int main() {
 
 Kết quả chương trình:
 
-```cpp
+::result
 c = 64
-```
+::
 
 ### Hàm sqrt
 
@@ -168,9 +168,9 @@ int main() {
 
 Kết quả chương trình:
 
-```cpp
+::result
 a = 3, b = 3.872983
-```
+::
 
 ### Hàm exp
 
@@ -194,6 +194,6 @@ int main() {
 
 Kết quả chương trình:
 
-```cpp
+::result
 a = 148.413159
-```
+::

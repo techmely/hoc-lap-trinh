@@ -39,12 +39,12 @@ int main() {
 
 Màn hình kết quả chương trình:
 
-```cpp
+::result
 Enter n: 101
 
 OUTPUT:
 5
-```
+::
 
 ## Bài 2
 
@@ -70,13 +70,13 @@ int main() {
 
 Màn hình kết quả chương trình:
 
-```cpp
+::result
 Enter a: 7
 Enter b: 20
 
 OUTPUT:
 11 13 17 19
-```
+::
 
 ## Bài 3
 
@@ -104,18 +104,18 @@ int main() {
 
 Màn hình kết quả chương trình **Test case 1**:
 
-```cpp
+::result
 Enter x : 14341
 
 OUTPUT:
 true
-```
+::
 
 Màn hình kết quả chương trình **Test case 2**:
 
-```cpp
+::result
 Enter x : 123
 
 OUTPUT:
 false
-```
+::

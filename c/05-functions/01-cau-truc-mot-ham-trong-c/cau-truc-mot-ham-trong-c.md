@@ -67,6 +67,6 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 result = 3.00
-```
+::

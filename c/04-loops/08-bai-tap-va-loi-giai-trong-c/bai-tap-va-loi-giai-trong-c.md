@@ -87,20 +87,20 @@ Code hoàn chỉnh:
 
 Kết quả khi chạy chương trình:
 
-```cpp
+::result
 Enter n: 1
 n is not a prime number.
-```
+::
 
-```cpp
+::result
 Enter n: 11
 n a prime number.
-```
+::
 
-```cpp
+::result
 Enter n: 12
 n is not a prime number.
-```
+::
 
 **`return`** - đây là từ khoá dùng để kết thúc một hàm xử lý, khi gặp từ khoá **`return`** thì chương trình sẽ không chạy tiếp các dòng mã bên dưới từ **`return`** nữa. Trong ví dụ trên, khi nhập `n < 2` thì chương trình sẽ chạy vào câu lệnh **`if`** (line 11) và thực hiện lệnh `return 0;` (line 13) - lúc này **chương trình sẽ kết thúc** và những dòng mã từ line 15 → line 27 sẽ **không** được thực hiện.
 
@@ -134,13 +134,13 @@ Màn hình kết quả chương trình:
 
 Test case 1
 
-```cpp
+::result
 Enter the number: 10
 
 OUTPUT:
 The number of occurrences of even number is 6
 --------------------------------
-```
+::
 
 ### Bài 2
 
@@ -168,13 +168,13 @@ Màn hình kết quả chương trình:
 
 Test case 1
 
-```cpp
+::result
 Enter the number: 10
 
 OUTPUT:
 result is 30
 --------------------------------
-```
+::
 
 ### Bài 3
 
@@ -202,11 +202,11 @@ Màn hình kết quả chương trình:
 
 Test case 1
 
-```cpp
+::result
 Enter the number: 12345
 
 OUTPUT:
 Sum of digits in 0 is 15
 
 --------------------------------
-```
+::

@@ -71,10 +71,10 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 Enter a number: -7
 Absolute value = 7
-```
+::
 
 ## Định nghĩa hàm trong C
 
@@ -116,11 +116,11 @@ int addition(int a, int b){ // Định nghĩa hàm (Function definition)
 
 Kết quả:
 
-```cpp
+::result
 Enter x: 3
 Enter y: 4
 x + y = 7
-```
+::
 
 ### Function prototype
 

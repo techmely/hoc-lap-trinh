@@ -60,9 +60,9 @@ int main()
 
 Kết quả:
 
-```cpp
+::result
 Enter name: Hello Kungfutech
 Name: Hello Kungfutech
-```
+::
 
 > Mặc dù hai hàm `gets()` và `puts()` là các hàm xử lí chuỗi nhưng chúng đều được khai báo trong thư viện `<stdio.h>`

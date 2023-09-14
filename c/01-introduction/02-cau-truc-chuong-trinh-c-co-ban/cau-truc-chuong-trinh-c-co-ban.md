@@ -26,13 +26,13 @@ int main() {
 
 Kết quả nhận được:
 
-```cpp
+::result
 Hello World!
 
 --------------------------------
 Process exited after 0.02965 seconds with return value 0
 Press any key to continue . . .
-```
+::
 
 Sau đây, chúng ta sẽ đi tìm hiểu các thành phần cơ bản bên dưới để giúp bạn bắt đầu với một chương trình C.
 

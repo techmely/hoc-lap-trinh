@@ -139,7 +139,7 @@ int main()
 
 Kết quả:
 
-```cpp
+::result
 Address of c: 000000000062FE14
 Value of c: 18
 
@@ -151,7 +151,7 @@ Content of pointer pc: 10
 
 Address of c: 000000000062FE14
 Value of c: -2
-```
+::
 
 Giải thích về cách hoạt động của con trỏ.
 

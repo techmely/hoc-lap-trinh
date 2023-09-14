@@ -83,14 +83,14 @@ int main() {
 
 Kết quả chương trình:
 
-```cpp
+::result
 Enter a n1: 4
 Enter a n2: 5
 Enter a n3: 8
 Enter a n4: -2
 
 sum = 17.00
-```
+::
 
 Chương trình này tính tổng của tối đa 10 số. Nhưng vì sao mới nhập 3 số dương và 1 số âm nó đã dừng lại và tính tổng? Đó là bởi vì nếu người dùng nhập số âm, câu lệnh **`break`** được thực thi. Điều này sẽ kết thúc vòng lặp **`for`**, tổng được tính và hiển thị.
 
@@ -118,11 +118,11 @@ int main() {
 
 Kết quả chương trình:
 
-```cpp
+::result
 * * * * * *
 * * * * * *
 * * * * * *
-```
+::
 
 Chúng ta có thể thấy vòng **`for i`** (**`for`** bên ngoài) sẽ chạy 3 lần (từ `0` → `2`). Vòng **`for j`** (**`for`** bên trong) sẽ chạy 6 lần (từ `0` → `5`).
 
@@ -148,11 +148,11 @@ int main() {
 
 Kết quả chương trình:
 
-```cpp
+::result
 * * *
 * * *
 * * *
-```
+::
 
 Bạn có thể thấy vòng **`for i`** vẫn chạy 3 lần, **`break`** chỉ kết thúc vòng **`for j`**, nơi nó được viết mã khi thoã màn câu lệnh **`if-else`**.
 
@@ -200,13 +200,13 @@ int main() {
 
 Kết quả chương trình:
 
-```cpp
+::result
 0
 1
 2
 3
 4
 5
-```
+::
 
 Ngoài ra, bạn cũng có thể thấy **`break`** được sử dụng trong các câu lệnh **`Switch`**.

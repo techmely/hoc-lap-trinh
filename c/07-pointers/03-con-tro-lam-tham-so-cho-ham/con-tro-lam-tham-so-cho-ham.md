@@ -46,10 +46,10 @@ void swap(int* n1, int* n2)
 
 Kết quả:
 
-```cpp
+::result
 num1 = 2
 num2 = 1
-```
+::
 
 Địa chỉ của `num1` và `num2` được truyền vào hàm `swap()` bằng cách sử dụng cú pháp:
 
@@ -97,10 +97,10 @@ int main()
 
 Kết quả:
 
-```cpp
+::result
 7
 9
-```
+::
 
 Trong chương trình này, con trỏ `pa` nhận địa chỉ của biến `a`, con trỏ `pb` nhận giá trị của biến `b`.
 

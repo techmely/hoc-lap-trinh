@@ -34,9 +34,9 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 result = 8
-```
+::
 
 Và đó là phép cộng.
 Và với những phép toán khác, cũng tương tự, chỉ cần thay đổi kí tự tính toán như sau:
@@ -68,9 +68,9 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 result = 15
-```
+::
 
 ### Ví dụ phép chia lấy dư `%`
 
@@ -89,9 +89,9 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 result = 2
-```
+::
 
 #### Một số lưu ý
 
@@ -125,9 +125,9 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 result = 2
-```
+::
 
 ### Ví dụ phép chia có số dư
 
@@ -147,9 +147,9 @@ int main() {
 
 Ở ví dụ này bạn **KHÔNG** thay đổi kiểu dữ liệu cho biến `result` là `float` mà vẫn giữ là `int`, kết quả của bạn sẽ được làm tròn mất đi phần thập phân sau dấu phẩy - kết quả nhận được sẽ bị sai như sau:
 
-```cpp
+::result
 result = 2
-```
+::
 
 Chúng ta sẽ sửa lại như sau:
 
@@ -169,9 +169,9 @@ int main() {
 
 **NHƯNG** khi làm đúng với ví dụ, chúng ta lại nhận được một kết quả vẫn không chính xác như sau:
 
-```cpp
+::result
 result = 2.000000
-```
+::
 
 **VÌ SAO LẠI NHƯ VẬY?**
 
@@ -262,10 +262,10 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 i = 10
 j = 10
-```
+::
 
 #### Hậu tố (Postfix)
 
@@ -288,10 +288,10 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 i = 10
 j = 9
-```
+::
 
 ## Assignment Operators
 

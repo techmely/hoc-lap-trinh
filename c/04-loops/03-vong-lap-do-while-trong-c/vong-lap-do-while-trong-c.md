@@ -79,7 +79,7 @@ int main() {
 
 Kết quả:
 
-```cpp
+::result
 Enter a number: 5
 Enter a number: 4
 Enter a number: 6
@@ -87,7 +87,7 @@ Enter a number: 2
 Enter a number: -2
 
 Sum = 17
-```
+::
 
 - Bài này nói rõ điều kiện dừng là `n > 0`, nhưng chúng ta sẽ không thể biết được người dùng sẽ nhập bao nhiêu số để tính tổng nên sẽ cần dùng vòng lặp.
 - `n` lại do người dùng nhập từ bàn phím, chúng ta sẽ không thể biết được lần đầu tiên người dùng sẽ nhập số gì? Vì vậy chúng ta sử dụng **`do-while`** để code bên trong thân vòng lặp được chạy một lần để chúng ta lấy được giá trị của `n` rồi mới kiểm tra được điều kiện.
