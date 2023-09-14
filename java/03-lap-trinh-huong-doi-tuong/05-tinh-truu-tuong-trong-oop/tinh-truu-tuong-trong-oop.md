@@ -1,5 +1,5 @@
 ---
-title: "Tính trừu tượng trong OOP"
+title: "Tính trừu tượng trong lập trình hướng đối tượng(OOP)"
 description: "Trong lập trình hướng đối tượng, tính trừu tượng nghĩa là chọn ra các thuộc tính, phương thức của đối tượng cần cho việc giải quyết bài toán đang lập trình"
 chapter:
   name: "Lập trình hướng đối tượng"

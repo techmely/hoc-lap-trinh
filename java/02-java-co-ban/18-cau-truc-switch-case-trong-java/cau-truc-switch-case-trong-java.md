@@ -138,7 +138,7 @@ public class Thaycacac {
 Đây là số 3<br/>
 Đây là số 4<br/>
 Đây là số 5<br/>
-Chạy vào khối default<br/>
+Chạy vào khối default
 
 ::
 

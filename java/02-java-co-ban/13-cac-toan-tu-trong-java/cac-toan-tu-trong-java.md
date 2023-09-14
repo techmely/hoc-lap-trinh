@@ -231,7 +231,7 @@ Sau đây là hình minh hoạ phép toán dịch bít
 Phép toán dịch trái một bit chính là phép nhân với 2, còn dịch phải chính là phép chia cho 2
 ::
 
-### Phép toán logic trên bit
+### Phép toán logic trên bit trong Java
 
 Các phép toán thao tác bit cho phép ta thao tác trên từng bit riêng lẻ trong một kiểu dữ liệu thích hợp, các phép toán thao tác bit thực hiện đại số boolean trên các bit tương ứng của 2 toán hạng để tạo ra kết quả.
 
@@ -246,7 +246,7 @@ Ta tóm tắt các phép toán trong bảng sau:
 
 Bảng giá trị chân lý của các phép toán đái số boolean:
 
-#### Phép `AND`
+#### Phép `AND` trong Java
 
 | op1 | op2 | Result |
 | :-- | :-- | :----- |
@@ -255,7 +255,7 @@ Bảng giá trị chân lý của các phép toán đái số boolean:
 | 1   | 0   | 0      |
 | 1   | 1   | 1      |
 
-#### Phép `OR`
+#### Phép `OR` trong Java
 
 | op1 | op2 | Result |
 | :-- | :-- | :----- |
@@ -264,7 +264,7 @@ Bảng giá trị chân lý của các phép toán đái số boolean:
 | 1   | 0   | 1      |
 | 1   | 1   | 1      |
 
-#### Phép `XOR`
+#### Phép `XOR` trong Java
 
 | op1 | op2 | Result |
 | :-- | :-- | :----- |
@@ -273,14 +273,14 @@ Bảng giá trị chân lý của các phép toán đái số boolean:
 | 1   | 0   | 1      |
 | 1   | 1   | 0      |
 
-#### Phép `NOT`
+#### Phép `NOT` trong Java
 
 | op1 | Result |
 | :-- | :----- |
 | 0   | 1      |
 | 1   | 0      |
 
-## Toán tử gán tắt
+## Toán tử gán tắt trong Java
 
 Ngoài ra Java cũng có toán tử gán tắt, ta tóm tắt các toán tử gán qua bảng sau:
 

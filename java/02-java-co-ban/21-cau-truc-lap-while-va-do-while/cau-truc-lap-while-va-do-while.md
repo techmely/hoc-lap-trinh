@@ -1,5 +1,5 @@
 ---
-title: "Cấu trúc lặp while và do-while"
+title: "Cấu trúc lặp while và do-while trong Java"
 description: "Vòng lặp while được sử dụng để thực thi nhiều lần một đoạn chương trình, khi một điều kiện vẫn còn đúng. Vòng lặp while thường được sử dụng khi số lần lặp không được xác định trước"
 chapter:
   name: "Nhập môn Java"
@@ -25,7 +25,7 @@ while (<Điều kiện lặp>) {
 
 Ta có thể thấy được luồng thực hiện của chương trình thông qua sơ đồ khối sau
 
-![cau-truc-lap-while-va-do-while](https://user-images.githubusercontent.com/29374426/125040448-de6e1b80-e0c1-11eb-935f-2d0b21cab63f.png)
+![Cấu trúc lặp while và do-while](https://user-images.githubusercontent.com/29374426/125040448-de6e1b80-e0c1-11eb-935f-2d0b21cab63f.png)
 
 Trước tiên chương trình sẽ tính giá trị của biểu thức **Điều kiện lặp**, nếu giá trị của biểu thức logic là đúng thì câu lệnh trong thân của `while` sẽ được thực hiện, sau khi thực hiện xong nó tính lại giá trị của biểu thức logic, nếu giá trị đúng nó lại tiếp tục thực hiện lệnh trong thân `while` cho đến khi giá trị của biểu thức sai.
 
@@ -62,7 +62,7 @@ Giá trị 9
 
 ::
 
-## Vòng lặp do - while
+## Vòng lặp do - while trong Java
 
 ```java
 do {

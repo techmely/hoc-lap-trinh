@@ -1,5 +1,5 @@
 ---
-title: "Tính đa hình trong OOP"
+title: "Tính đa hình trong lập trình hướng đối tượng(OOP)"
 description: "Bài này chúng ta sẽ tìm hiểu về Từ khóa final, tự học lập trình java, chia sẻ kiến thức về java"
 chapter:
   name: "Lập trình hướng đối tượng"

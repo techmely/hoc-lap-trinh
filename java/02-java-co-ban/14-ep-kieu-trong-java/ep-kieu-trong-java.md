@@ -11,7 +11,7 @@ image: https://user-images.githubusercontent.com/29374426/137243394-f31122f7-8b8
 position: 14
 ---
 
-Trong lập trình ta sẽ gặp một số trường hợp là ban đầu ta khai báo biến ở kiểu dữ liệu này, nhưng sau đó ta cần chuyển nó sang kiểu dữ liệu khác để phù hợp trong tính toán. Vì vậy, bài viết này [KungFu Tech](https://kungfutech.edu.vn/) sẽ hướng dẫn các bạn cách ép kiểu trong Java.
+Trong lập trình ta sẽ gặp một số trường hợp là ban đầu ta khai báo biến ở kiểu dữ liệu này, nhưng sau đó ta cần chuyển nó sang kiểu dữ liệu khác để phù hợp trong tính toán. Vì vậy, bài viết này [KungFuTech](https://kungfutech.edu.vn/) sẽ hướng dẫn các bạn cách ép kiểu trong Java.
 
 Ép kiểu trong java là việc gán giá trị của một biến có kiểu dữ liệu này tới biến khác có kiểu dữ liệu khác, chú ý là trong bài này chỉ nói đến ép kiểu dữ liệu đối với [dữ liệu nguyên thủy](/bai-viet/java/cac-kieu-du-lieu-trong-java). Có 2 kiểu ép kiểu (chuyển đổi kiểu) đó là
 

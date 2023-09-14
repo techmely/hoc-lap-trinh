@@ -65,7 +65,7 @@ Ví dụ để truy xuất ngẫu nhiên một phần tử trong mảng 2 chiề
   <Tên mảng>[<Vị trí hàng>][<Vị trí cột>]
 ```
 
-![mang-da-chieu-trong-java](https://user-images.githubusercontent.com/29374426/127758655-3a4c7e05-729c-4781-9568-9bfa546c0ed8.png)
+![Mảng đa chiều trong java](https://user-images.githubusercontent.com/29374426/127758655-3a4c7e05-729c-4781-9568-9bfa546c0ed8.png)
 
 ```java
 class Thaycacac {

@@ -1,5 +1,5 @@
 ---
-title: "Tính thừa kế trong OOP"
+title: "Tính thừa kế trong lập trình hướng đối tượng(OOP)"
 description: "Tính kế thừa trong lập trình hướng đối tượng cho phép xây dựng một lớp mới dựa trên các định nghĩa của lớp đã có"
 chapter:
   name: "Lập trình hướng đối tượng"

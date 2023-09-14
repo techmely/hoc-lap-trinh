@@ -1,5 +1,5 @@
 ---
-title: "Tính đóng gói trong OOP"
+title: "Tính đóng gói trong lập trình hướng đối tượng(OOP)"
 description: "Tính đóng gói trong java là kỹ thuật ẩn giấu thông tin không liên quan và hiện thị ra thông liên quan. Mục đích chính của đóng gói trong java là giảm thiểu mức độ phức tạp phát triển phần mềm"
 chapter:
   name: "Lập trình hướng đối tượng"
