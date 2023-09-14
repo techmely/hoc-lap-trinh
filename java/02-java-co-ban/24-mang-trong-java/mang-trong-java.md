@@ -67,7 +67,7 @@ public class Thaycacac {
 
 ::
 
-![mang-trong-java](https://user-images.githubusercontent.com/29374426/127758202-bce42e1f-86eb-4557-aaf3-a6afa24bbe29.png)
+![Mảng trong java](https://user-images.githubusercontent.com/29374426/127758202-bce42e1f-86eb-4557-aaf3-a6afa24bbe29.png)
 
 Trong một mảng phần tử đầu tiên (index = 0) gọi là foundation address. Các phần tử khác sẽ được truy xuất dựa vào phần tử đầu tiên.
 

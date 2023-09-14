@@ -1,5 +1,5 @@
 ---
-title: "Tính trừu tượng trong OOP"
+title: "Tính trừu tượng trong lập trình hướng đối tượng(OOP)"
 description: "Trong lập trình hướng đối tượng, tính trừu tượng nghĩa là chọn ra các thuộc tính, phương thức của đối tượng cần cho việc giải quyết bài toán đang lập trình"
 chapter:
   name: "Lập trình hướng đối tượng"
@@ -11,33 +11,57 @@ image: https://user-images.githubusercontent.com/29374426/131304738-aaf13d70-84e
 position: 5
 ---
 
-Trong lập trình OOP, tính trừu tượng nghĩa là chọn ra các thuộc tính, phương thức của đối tượng cần cho việc giải quyết bài toán đang lập trình. Vì một đối tượng có rất nhiều thuộc tính phương thức, nhưng với bài toán cụ thể không nhất thiết phải chọn tất cả.
+Tính trừu tượng (Abstraction) là một trong những khía cạnh quan trọng nhất của Lập Trình Hướng Đối Tượng (OOP). Nó cho phép bạn tạo ra các lớp và đối tượng trừu tượng, tập trung vào các tính năng quan trọng mà bạn quan tâm và che giấu chi tiết phức tạp bên trong. Chúng ta sẽ tìm hiểu về tính trừu tượng thông qua ví dụ thực tế và sử dụng Java để minh họa.
 
-## Tính trừu tượng (Abstraction)
+## Tại sao cần tính trừu tượng?
 
-Trừu tượng có nghĩ là tổng quát hóa một cái gì đó lên, không cần chú ý chi tiết bên trong. Nó không màng đến chi tiết bên trong là gì và người ta vẫn hiểu nó mỗi khi nghe về nó.
+Tính trừu tượng giúp bạn tạo ra mã nguồn dễ bảo trì và dễ mở rộng. Nó cho phép bạn tạo các lớp trừu tượng và định nghĩa các giao diện để đảm bảo rằng các đối tượng sẽ tuân thủ một số quy tắc và chuẩn cố định.
 
-Ví dụ: Bài toán quản lý sinh viên chúng ta chỉ cần quản lý các thông tin như
+## Ví dụ với Java
 
-- Họ tên
-- Ngày sinh
-- Giới tính
-- Điểm thi
+Hãy xem xét ví dụ về tính trừu tượng trong Java với một lớp trừu tượng "Động Vật" và các lớp con "Chó" và "Mèo."
 
-Mà lại không cần quản lý thêm các thông tin:
+```java
+// Lớp trừu tượng "Động Vật"
+abstract class Animal {
+    abstract void sound(); // Phương thức trừu tượng
+}
 
-- Màu tóc
-- Sở thích
-- Chiều cao
+// Lớp con "Chó" kế thừa từ "Động Vật"
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Gâu gâu!");
+    }
+}
 
-Tại vì chúng thực sự không cần thiết.
+// Lớp con "Mèo" kế thừa từ "Động Vật"
+class Cat extends Animal {
+    void sound() {
+        System.out.println("Meo meo!");
+    }
+}
+```
 
-![Tính trừu tượng trong OOP](https://user-images.githubusercontent.com/29374426/131304738-aaf13d70-84e1-4787-b0b0-03fce36eaa2d.png)
+Trong ví dụ này, lớp cha "Động Vật" là một lớp trừu tượng, nghĩa là nó chứa ít nhất một phương thức trừu tượng (`sound`). Các lớp con "Chó" và "Mèo" kế thừa từ lớp cha và phải triển khai phương thức `sound` dựa trên bản chất riêng của mỗi loài.
 
-## Ưu điểm khi sử dụng tính trừu tượng để lập trình
+**Sử dụng tính trừu tượng:**
 
-- Tính trừu tượng cho phép các lập trình viên loại bỏ tính chất phức tạp của đối tượng bằng cách chỉ đưa ra các thuộc tính và phương thức cần thiết của đối tượng trong lập trình, cải thiện khả năng bảo trì của hệ thống.
-- Tính trừu tượng giúp chúng ta tập trung vào những cốt lõi cần thiết của đối tượng thay vì quan tâm đến cách nó thực hiện.
-- Tính trừu tượng cung cấp nhiều tính năng mở rộng khi sử dụng kết hợp với tính đa hình và kế thừa trong lập trình hướng đối tượng.
+```java
+Animal myDog = new Dog();
+Animal myCat = new Cat();
 
-Java trừu tượng hóa thông qua các lớp trừu tượng [Abstract class](/bai-viet/java/lop-abstract-trong-java) và các [Interface](/bai-viet/java/interface-trong-java)
+myDog.sound(); // In ra "Gâu gâu!"
+myCat.sound(); // In ra "Meo meo!"
+```
+
+Dù bạn tạo các đối tượng `myDog` và `myCat` kiểu "Động Vật," nhưng khi bạn gọi phương thức `sound`, Java tự động gọi phương thức tương ứng của lớp con. Điều này cho phép bạn tập trung vào tính năng quan trọng mà là tiếng kêu của động vật mà không quan tâm đến chi tiết bên trong mỗi loài.
+
+## Ưu điểm của tính trừu tượng
+
+- **Tập trung vào tính năng quan trọng**: Tính trừu tượng giúp bạn tập trung vào các tính năng và hành vi quan trọng mà đối tượng nên có mà không bị phân tâm bởi chi tiết triển khai.
+
+- **Bảo trì và mở rộng dễ dàng**: Bằng cách tạo lớp trừu tượng và định nghĩa giao diện, bạn có thể đảm bảo rằng các đối tượng tuân thủ các quy tắc cố định và dễ mở rộng tính năng trong tương lai.
+
+- **Che giấu chi tiết phức tạp**: Tính trừu tượng cho phép bạn che giấu chi tiết triển khai bên trong các lớp con, giúp làm cho mã nguồn trở nên dễ đọc và dễ bảo trì.
+
+Tính trừu tượng là một trong những nguyên tắc quan trọng của OOP, giúp bạn tạo ra mã nguồn linh hoạt và dễ bảo trì bằng cách tập trung vào các tính năng quan trọng và che giấu chi tiết bên trong.
