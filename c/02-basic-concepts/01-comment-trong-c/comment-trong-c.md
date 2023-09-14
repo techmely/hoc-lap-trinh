@@ -11,11 +11,11 @@ image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982
 position: 1
 ---
 
-Comments có thể được sử dụng để giải thích một đoạn code trong C và để làm cho nó dễ đọc - dễ hiểu hơn. Nó cũng có thể được sử dụng để tạm dừng việc thực thi khi kiểm tra một đoạn code thay thế.
+Comment có thể được sử dụng để giải thích một đoạn code trong C và để làm cho nó dễ đọc - dễ hiểu hơn. Nó cũng có thể được sử dụng để tạm dừng việc thực thi khi kiểm tra một đoạn code thay thế.
 
 ## Comment một dòng trong C
 
-Comments một dòng bắt đầu bằng hai dấu gạch chéo `//`.
+Comment một dòng bắt đầu bằng hai dấu gạch chéo `//`.
 
 Bất kỳ văn bản nào nằm giữa `//` đến cuối dòng đều bị C bỏ qua (sẽ không được thực thi).
 
