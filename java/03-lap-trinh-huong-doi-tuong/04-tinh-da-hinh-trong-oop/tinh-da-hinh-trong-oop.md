@@ -11,172 +11,59 @@ image: https://user-images.githubusercontent.com/29374426/131280717-ae65a2c9-0e6
 position: 4
 ---
 
-Đa hình (polymorphism) nghĩa là có nhiều hình thái khác nhau. Tiêu biểu là, đa hình xuất hiện khi có một cấu trúc cấp bậc của các lớp và chúng liên quan với nhau bởi [tính kế thừa](/bai-viet/java/tinh-thua-ke-trong-oop).
+Tính đa hình (Polymorphism) là một khía cạnh quan trọng trong Lập Trình Hướng Đối Tượng (OOP). Nó cho phép bạn thực hiện cùng một hành động trên các đối tượng khác nhau mà không cần quan tâm đến loại đối tượng cụ thể. Chúng ta sẽ tìm hiểu về tính đa hình thông qua ví dụ thực tế và sử dụng Java để minh họa.
 
-Bạn hãy thử tưởng tượng nếu bạn yêu cầu những người sau thực hiện hành động **"cắt"**:
+## Tại sao cần tính đa hình?
 
-- Bác sĩ phẫu thuật
-- Nhà tạo mẫu tóc
-- Diễn viên
+Tính đa hình giúp tạo ra mã nguồn linh hoạt và dễ bảo trì. Nó cho phép bạn viết các phương thức chung mà có thể được sử dụng trên nhiều lớp khác nhau, giúp giảm sự lặp lại mã và tạo ra mã nguồn dễ mở rộng.
 
-Khi đó, chuyện gì sẽ xảy ra?
+## Ví dụ với Java
 
-- Bác sĩ phẫu thuật sẽ bắt đầu rạch dao mổ.
-- Nhà tạo mẫu sẽ bắt đầu cắt tóc cho một ai đó.
-- Nam diễn viên sẽ ngừng diễn cảnh hiện tại, chờ đạo diễn hướng dẫn.
-
-Ví dụ trên cho thấy bản chất của Tính đa hình. Nó tượng trưng cho việc cùng một tên gọi nhưng hành vi thì khác nhau.
-
-## Tính đa hình (Polymorphism) trong lập trình hướng đối tượng
-
-Tính đa hình là một hành động có thể được thực hiện bằng nhiều cách khác nhau. Đây lại là một tính chất có thể nói là chứa đựng hầu hết sức mạnh của lập trình hướng đối tượng.
-
-Hiểu một cách đơn giản hơn: Đa hình là khái niệm mà hai hoặc nhiều lớp có những phương thức giống nhau nhưng có thể thực thi theo những cách thức khác nhau. Một ví dụ về đa hình khác trong thực tế đó là ta có 2 con vật: chó, mèo. Cả 2 con vật này đều là lớp động vật. Nhưng khi ta bảo cả 2 động vật kêu thì con chó sẽ kêu gâu gâu, con mèo sẽ kêu meo meo.
-
-## Các loại đa hình trong lập trình hướng đối tượng
-
-Tính đa hình chủ yếu được chia thành hai loại:
-
-- Đa hình thời gian chạy (Runtime Polymorphism)
-- Đa hình thời gian biên dịch (Compile Time Polymorphism)
-
-![image](https://user-images.githubusercontent.com/29374426/131280717-ae65a2c9-0e6d-4b34-9b60-e0ebdd61331b.png)
-
-### Đa hình thời gian chạy
-
-Đa hình lúc runtime là quá trình gọi phương thức đã được ghi đè trong thời gian thực thi chương trình. Trong quá trình này, một phương thức được ghi đè được gọi thông qua biến tham chiếu của một lớp cha.
-
-Ví dụ chúng ta tạo hai lớp Bike và Car. Lớp Bike kế thừa lớp Car và ghi đè phương thức `run()` của nó. Chúng ta gọi phương thức run bởi biến tham chiếu của lớp cha. Khi nó tham chiếu tới đối tượng của lớp con và phương thức lớp con ghi đè phương thức của lớp cha, phương thức lớp con được gọi lúc runtime.
+Hãy xem xét ví dụ về tính đa hình trong Java sử dụng lớp cha "Hình" và các lớp con "Hình Tròn" và "Hình Vuông."
 
 ```java
-class Car {
-    void run() {
-        System.out.println("chạy");
-    }
-}
-
-public class Bike extends Car {
-    void run() {
-        System.out.println("chạy với tốc độ 30km/h");
-    }
-
-    public static void main(String args[]) {
-        Bike b = new Splender(); // upcasting
-        b.run();
-    }
-}
-```
-
-::result
-
-chạy với tốc độ 30km/h
-
-::
-
-Một ví dụ khác về tính đa hình
-
-```java
+// Lớp cha "Hình"
 class Shape {
     void draw() {
-        System.out.println("vẽ...");
+        System.out.println("Vẽ hình...");
     }
 }
 
-class Rectangle extends Shape {
-    void draw() {
-        System.out.println("vẽ hình chữ nhật...");
-    }
-}
-
+// Lớp con "Hình Tròn"
 class Circle extends Shape {
     void draw() {
-        System.out.println("vẽ hình tròn...");
+        System.out.println("Vẽ hình tròn...");
     }
 }
 
-class Triangle extends Shape {
+// Lớp con "Hình Vuông"
+class Square extends Shape {
     void draw() {
-        System.out.println("vẽ hình tam giác...");
-    }
-}
-
-class Main {
-    public static void main(String args[]) {
-        Shape s;
-        s = new Rectangle();
-        s.draw();
-        s = new Circle();
-        s.draw();
-        s = new Triangle();
-        s.draw();
+        System.out.println("Vẽ hình vuông...");
     }
 }
 ```
 
-::result
+Trong ví dụ này, lớp cha "Hình" có một phương thức `draw` mà các lớp con "Hình Tròn" và "Hình Vuông" ghi đè (override). Điều này có nghĩa là mỗi lớp con có cùng tên phương thức `draw`, nhưng chúng thực hiện hành động riêng biệt.
 
-vẽ hình chữ nhật...<br/>
-vẽ hình tròn...<br/>
-vẽ hình tam giác...
-
-::
-
-Tuy nhiên khi chúng ta truy cập thuộc tính của lớp con thì sẽ không bị ghi đè, mà nó sẽ truy cập thuộc tính của lớp cha.
+**Sử dụng tính đa hình:**
 
 ```java
-class Bike{
- int speedLimit = 90;
-}
+Shape shape1 = new Circle();
+Shape shape2 = new Square();
 
-class Honda3 extends Bike {
- int speedLimit = 150;
-}
-
-public static void main(String args[]){
-  Bike obj=new Honda3();
-  System.out.println(obj.speedLimit);//90
-}
+shape1.draw(); // Gọi phương thức draw() của lớp Circle
+shape2.draw(); // Gọi phương thức draw() của lớp Square
 ```
 
-::result
+Dù bạn gán các đối tượng cho biến `shape1` và `shape2` kiểu lớp cha "Hình," nhưng khi bạn gọi phương thức `draw`, Java sẽ tự động gọi phương thức tương ứng của lớp con. Điều này chính là tính đa hình.
 
-90
+## Ưu điểm của tính đa hình
 
-::
+- **Tái sử dụng mã nguồn**: Bạn có thể sử dụng lại mã nguồn của các phương thức chung trên nhiều lớp con khác nhau.
 
-## Đa hình thời gian biên dịch
+- **Mã nguồn linh hoạt**: Tính đa hình cho phép bạn thay đổi hành vi của các đối tượng mà không cần thay đổi mã nguồn của các lớp khác.
 
-Đa hình thời gian biên dịch sử dụng phương thức nạp chồng. Do sử dụng chung một cái tên cho nhiều phương thức, nên ta phải cho java biết cần phải gọi phương thức nào để thực hiện, java dựa vào sự khác nhau về số lượng đối cũng như kiểu dữ liệu của các đối này để phân biệt các phương thức trùng tên đó..
+- **Tạo cấu trúc phân cấp**: Bằng cách sử dụng tính đa hình, bạn có thể tạo ra các cấu trúc phân cấp cho các đối tượng trong ứng dụng của bạn, làm cho mã nguồn trở nên dễ bảo trì hơn.
 
-```java
-public class OverloadingOrder {
-  static void print(String s, int i) {
-    System.out.println("String: " + s + ", int: " + i);
-  }
-
-  static void print(int i, String s) {
-    System.out.println("int: " + i +", String: " + s);
-  }
-
-  public static void main(String[] args) {
-    print("String first", 11);
-    print(99, "Int first");
-  }
-}
-```
-
-::result
-
-String: String first, int: 11</br>
-int: 99, String: Int first
-
-::
-
-::alert{type="infor"}
-
-- Nếu java không tìm thấy một hàm nạp chồng thích hợp thì nó sẽ đưa ra một thông báo lỗi
-- Ta không thể sử dụng giá trị trả về của hàm để phân biệt sự khác nhau giữa 2 phương thức nạp chồng
-- Không nên quá lạm dụng các phương thức nạp chồng vì trình biên dịch phải mất thời gian phán đoán để tìm ra hàm thích hợp, điều này đôi khi còn dẫn đến sai sót
-- Khi gọi các hàm nạp chồng ta nên có lệnh chuyển kiểu tường minh để trình biên dịch tìm ra hàm phù hợp một cách nhanh nhất
-
-::
+Tính đa hình là một trong những khía cạnh quan trọng của OOP, giúp bạn viết mã nguồn dễ đọc, dễ bảo trì và linh hoạt hơn bằng cách cho phép bạn thực hiện cùng một hành động trên các đối tượng khác nhau một cách tự nhiên.

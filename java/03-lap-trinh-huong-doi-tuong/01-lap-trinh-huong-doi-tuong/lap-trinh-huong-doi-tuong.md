@@ -11,47 +11,49 @@ image: https://user-images.githubusercontent.com/29374426/130178941-fc8cbd22-d12
 position: 1
 ---
 
-Lập trình hướng đối tượng (Object Oriented Programming – OOP) là một trong những kỹ thuật lập trình rất quan trọng và sử dụng nhiều hiện nay. Hầu hết các ngôn ngữ lập trình hiện nay như Java, PHP, .NET, Ruby, Python… đều hỗ trợ OOP.
-
-## Lập trình hướng đối tượng (OOP) là gì?
-
-Lập trình hướng đối tượng (OOP) là một mô hình lập trình dựa trên khái niệm về **lớp** và **đối tượng**. Nó được sử dụng để cấu trúc một chương trình phần mềm thành các phần đơn giản, có thể tái sử dụng của các bản thiết kế mã (thường được gọi là các lớp), được sử dụng để tạo các thể hiện riêng lẻ của các đối tượng.
+Lập trình hướng đối tượng (Object-Oriented Programming – OOP) là một phương pháp lập trình mạnh mẽ và phổ biến trong thế giới phát triển phần mềm. Nó đã trở thành tiêu chuẩn cho nhiều ngôn ngữ lập trình như Java, PHP, .NET, Ruby, Python và nhiều ngôn ngữ khác. OOP giúp tạo ra các ứng dụng phức tạp bằng cách sử dụng mô hình lập trình dựa trên các đối tượng có khả năng tương tác với nhau.
 
 ![Ví dụ lập trình hướng đối tượng](https://user-images.githubusercontent.com/29374426/130178941-fc8cbd22-d121-48e0-a260-7b580e4d1298.png)
 
-### Đối tượng
+## Đối tượng
 
-Một đối tượng bao gồm 2 thông tin **thuộc tính** và **phương thức**
+Tại cơ bản, OOP xoay quanh hai khái niệm quan trọng: **đối tượng** và **lớp**.
 
-- **Thuộc tính** chính là những thông tin, đặc điểm của đối tượng. Ví dụ con người có các đặc tính như tên, tuổi, chiều cao, ...
-- **Phương thức** là những thao tác, hành động mà đối tượng đó có thể thực hiện. Ví dụ một người sẽ có thể thực hiện hành động nói, đi, ăn, uống, . . .
+**Đối tượng** là một thực thể cụ thể trong thế giới thực, có các đặc điểm cụ thể và có thể thực hiện các hành động. Mỗi đối tượng có hai thành phần chính:
 
-### Lớp
+- **Thuộc tính**: Đây là các thông tin và đặc điểm của đối tượng. Ví dụ, một đối tượng "Người" có thể có thuộc tính như tên, tuổi, địa chỉ.
 
-Một lớp là một kiểu dữ liệu bao gồm các **thuộc tính** và các **phương thức** được định nghĩa từ trước. Đây là sự trừu tượng hóa của đối tượng. Khác với kiểu dữ liệu thông thường, một lớp là một đơn vị (trừu tượng) bao gồm sự kết hợp giữa các phương thức và các thuộc tính. Hiểu nôm na hơn là các **đối tượng** có các đặc tính tương tự nhau được gom lại thành một lớp đối tượng.
+- **Phương thức**: Đây là các hành động mà đối tượng có thể thực hiện. Ví dụ, đối tượng "Người" có thể có phương thức như đi, nói, ăn, uống.
 
-### Sự khác nhau giữa đối tượng và lớp
+## Lớp
 
-Lớp bạn có thể hiểu nó như là khuôn mẫu, đối tượng là một thực thể thể hiện dựa trên khuôn mẫu đó. Ví dụ ta nói về chiếc xe thì sẽ có thông tin như sau:
+**Lớp** là một khuôn mẫu hoặc một mô tả trừu tượng của các đối tượng. Nó định nghĩa các thuộc tính và phương thức mà tất cả các đối tượng thuộc về lớp đó sẽ có. Một lớp là một cách để tạo ra các đối tượng có cấu trúc và hành vi tương tự.
 
-- Các thông tin, đặc điểm: màu sắc của xe, thương hiệu của xe, và model của xe.
-- Các hành động như: sơn lại màu xe, xe chạy, ...
+Ví dụ, nếu chúng ta định nghĩa lớp "Học sinh," thì tất cả các đối tượng thuộc lớp này sẽ có các thuộc tính như tên, tuổi, và các phương thức như học bài, nộp bài tập.
 
-Đối tượng thì chính là chiếc xe của chúng ta, xe đang chạy trên đường,... và chúng sẽ có những đặc điểm riêng của các thuộc tính bên trên. Ví dụ như chiếc xe của tôi màu đỏ, thương hiệu Dodge, modal Charger còn chiếc xe của bạn tôi thì lại có màu xanh dương, thương hiệu Nissan, modal Ultima.
+## Sự khác biệt giữa đối tượng và lớp
+
+Để hiểu rõ hơn sự khác biệt giữa đối tượng và lớp, hãy xem xét ví dụ về "Xe hơi." Lớp "Xe hơi" có thể định nghĩa các thuộc tính như màu sắc, thương hiệu và model của xe hơi. Một đối tượng cụ thể của lớp "Xe hơi" có thể là chiếc xe cụ thể, chẳng hạn một chiếc xe màu đỏ, thương hiệu Toyota, model Camry.
 
 ![Sự khác nhau giữa đối tượng và lớp](https://user-images.githubusercontent.com/29374426/130180243-66b064c8-cb08-46b4-80e2-145972a20fbb.png)
 
+Sự khác biệt giữa đối tượng và lớp giúp tổ chức mã nguồn và quản lý dự án phần mềm một cách hiệu quả. Lớp định nghĩa cấu trúc và hành vi chung, trong khi đối tượng thể hiện các phiên bản cụ thể của lớp đó.
+
 ## Các ưu điểm của lập trình hướng đối tượng
 
-- OOP mô hình hóa những thứ phức tạp dưới dạng cấu trúc đơn giản, có thể tái tạo
-- Có thể tái sử dụng, dựa trên nguyên lý kế thừa, trong quá trình mô tả các lớp có thể loại bỏ những chương trình bị lặp, dư. Và có thể mở rộng khả năng sử dụng các lớp mà không cần thực hiện lại
-- Cho phép hành động dành riêng cho lớp thông qua tính đa hình
-- Tính bảo mật cao, bảo vệ thông tin thông qua tính đóng gói
-- Sự xuất hiện của 2 khái niệm mới là lớp và đối tượng chính là đặc trưng của phương pháp lập trình hướng đối tượng. Nó đã giải quyết được các khuyết điểm của phương pháp lập trình hướng cấu trúc để lại. Ngoài ra 2 khái niệm này đã giúp biểu diễn tốt hơn thế giới thực trên máy tính.
+Lập trình hướng đối tượng mang lại nhiều lợi ích quan trọng:
 
-## Các nguyên lý cơ bản của OOP
+1. **Tái sử dụng mã nguồn**: Bằng cách sử dụng lớp và đối tượng, bạn có thể tái sử dụng mã nguồn dễ dàng. Điều này giúp giảm sự lặp lại trong mã và tạo ra mã dễ bảo trì hơn.
 
-Java có 4 tính chất của lập trình hướng đối tượng là:
+2. **Tính đa hình**: OOP cho phép bạn sử dụng tính đa hình, nghĩa là bạn có thể sử dụng các đối tượng cùng một lớp một cách đa dạng. Ví dụ, bạn có thể sử dụng một phương thức "di chuyển" cho nhiều loại đối tượng khác nhau, như "Người" và "Xe hơi."
+
+3. **Tính bảo mật và đóng gói**: OOP cho phép bạn ẩn thông tin cần thiết và chỉ tiết lộ thông qua các phương thức công khai. Điều này giúp bảo vệ dữ liệu và ngăn chặn truy cập trực tiếp đến các thuộc tính của đối tượng.
+
+4. **Mô hình hóa thế giới thực**: OOP cho phép biểu diễn thế giới thực trên máy tính một cách tự nhiên hơn bằng cách sử dụng các đối tượng và lớp tương ứng với các thực thể và khái niệm trong thế giới thực.
+
+Lập trình hướng đối tượng là một phần quan trọng của phát triển phần mềm hiện đại và cung cấp một cách cấu trúc hóa và quản lý mã nguồn mạnh mẽ, giúp tạo ra các ứng dụng phức tạp và dễ bảo trì.
+
+Bạn có thể xem thêm 4 tính chất của lập trình hướng đối tượng dưới đây
 
 - [Tính đóng gói](/bai-viet/java/tinh-dong-goi-trong-oop)
 - [Tính thừa kế](/bai-viet/java/tinh-thua-ke-trong-oop)

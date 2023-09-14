@@ -1,5 +1,5 @@
 ---
-title: "Tính thừa kế trong lập trình hướng đối tượng(OOP)"
+title: "Tính kế thừa trong lập trình hướng đối tượng(OOP)"
 description: "Tính kế thừa trong lập trình hướng đối tượng cho phép xây dựng một lớp mới dựa trên các định nghĩa của lớp đã có"
 chapter:
   name: "Lập trình hướng đối tượng"
@@ -11,113 +11,50 @@ image: https://user-images.githubusercontent.com/29374426/131276922-2608f214-069
 position: 3
 ---
 
-Ý tưởng nảy sinh của Tính kế thừa chính là những mối quan hệ trong đời sống. Chẳng hạn như "MayAsus" và "MayAcer" hay "MayLenovo" đều là hai lớp con thuộc lớp cha là "MayViTinh". Do đó, cả hai lớp con này đều thừa hưởng được những đặc điểm của lớp cha.
+Kế thừa (Inheritance) là một trong những khía cạnh quan trọng nhất của Lập Trình Hướng Đối Tượng (OOP). Nó cho phép bạn tạo ra các lớp mới bằng cách sử dụng thông tin và hành vi từ các lớp đã tồn tại. Hãy tìm hiểu về tính kế thừa thông qua ví dụ thực tế và sử dụng Java để minh họa.
 
-Ví dụ trong lập trình nó được thể hiện thông qua việc ta có các lớp `mayAsus`, `mayAcer`, `mayLenovo` đều có các thuộc tính (attribute): `chieudai`, `chieurong` và phương thức (method): `upRam()`. Khi đó, nếu chúng ta tạo các lớp này thì chúng ta phải viết trong mỗi lớp đều có 3 phương thức trên. Hơn thế nữa, nếu bạn muốn sửa lại code trong một phương thức nào đó thì bạn phải sửa chúng cả ở 3 lớp sẽ rất tốn thời gian, và có thể dễ sai sót. Vì thế tính kế thừa sẽ được sử dụng trong trường hợp này để giải quyết vấn đề trên.
+## Tại sao cần tính kế thừa?
 
-## Tính kế thừa (Inheritance) trong Java
+Tính kế thừa giúp tái sử dụng mã nguồn và tạo ra cấu trúc phân cấp cho các lớp. Điều này cho phép bạn xây dựng các lớp mới trên cơ sở của các lớp đã có, tiết kiệm thời gian và công sức, đồng thời duy trì tính nhất quán trong mã nguồn.
 
-**Tính kế thừa** cho phép xây dựng một lớp mới dựa trên các định nghĩa của lớp đã có. Có nghĩa là lớp cha có thể chia sẽ dữ liệu và phương thức cho các lớp con. Các lớp con khỏi phải định nghĩa lại, ngoài ra có thể mở rộng các thành phần kế thừa và bổ sung thêm các thành phần mới. Tái sử dụng mã nguồn 1 cách tối ưu, tận dụng được mã nguồn.
+## Ví dụ với Java
 
-![image](https://user-images.githubusercontent.com/29374426/131276922-2608f214-0690-4eb4-96e3-b7384d4b2df3.png)
-
-Hình ảnh trên cho thấy khi áp dụng **tính kế thừa**, ta chỉ cần viết một lần các phương thức kia trong lớp cha và cho các lớp con kế thừa lại. Điều này sẽ tránh việc sai sót khi sửa và tăng khả năng sử dụng lại. Ví dụ, nếu bạn muốn thêm một lớp `MayMac` , bạn chỉ cần khai báo nó kế thừa từ Class Mayvitinh là cũng có thể dùng được các thuộc tính và phương thức trên rồi.
-
-## Ví dụ tính kế thừa trong Java
-
-Ví dụ dưới dây lớp A thừa kế lớp B và ở lớp con không gọi hàm tạo của lớp cha nhưng nó vẫn được chạy
+Hãy xem xét ví dụ về tính kế thừa trong Java sử dụng lớp "Động Vật" và lớp con "Chó."
 
 ```java
-class B {
-  public B () {
-    System.out.println ( "Hàm khởi tạo lớp cha" );
-  }
+// Lớp cha "Động Vật"
+class Animal {
+    void eat() {
+        System.out.println("Động vật đang ăn...");
+    }
 }
 
-
-public class A extends B {
-  public A () { // không gọi hàm tạo của lớp cha tường minh
-    System.out.println ( "Hàm khởi tạo lớp con" );
-  }
-
-
-  public static void main ( String arg[] ) {
-    A thu = new A ();
-  }
+// Lớp con "Chó" kế thừa từ lớp "Động Vật"
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Chó sủa...");
+    }
 }
 ```
 
-::result
+Trong ví dụ này, lớp "Chó" (Dog) kế thừa từ lớp "Động Vật" (Animal). Điều này có nghĩa là lớp "Chó" có mọi thông tin và hành vi của lớp "Động Vật," và nó cũng có thể có các phương thức và thuộc tính riêng của nó.
 
-Kết quả sẽ hiển thị thông báo lỗi
-
-Hàm khởi tạo lớp cha<br/>
-Hàm khởi tạo lớp con<br/>
-
-::
-
-Đây là cách gọi tường minh
+**Sử dụng tính kế thừa:**
 
 ```java
-class B {
-  public B () {
-    System.out.println ( "Hàm khởi tạo lớp cha" );
-  }
-}
-
-
-public class A extends B {
-  public A () {
-    super(); // gọi tạo của lớp cha một cách tường minh
-    System.out.println ( "Hàm khởi tạo lớp con" );
-  }
-
-
-  public static void main ( String arg[] ) {
-    A thu = new A ();
-  }
-}
+Dog dog = new Dog();
+dog.eat(); // Gọi phương thức từ lớp cha
+dog.bark(); // Gọi phương thức từ lớp con
 ```
 
-::result
+Lúc này, bạn có thể thấy rằng lớp "Chó" đã kế thừa phương thức `eat` từ lớp "Động Vật," và nó cũng có thêm phương thức `bark` riêng của nó. Điều này cho phép bạn tận dụng lại mã nguồn của lớp "Động Vật" mà không cần viết lại từ đầu.
 
-Hàm khởi tạo lớp cha<br/>
-Hàm khởi tạo lớp con<br/>
+## Ưu điểm của tính kế thừa
 
-::
+- **Tái sử dụng mã nguồn**: Tính kế thừa cho phép bạn sử dụng lại mã nguồn đã tồn tại trong các lớp cha, giúp giảm lặp lại mã và tiết kiệm thời gian lập trình.
 
-Một ví dụ khác
+- **Tạo cấu trúc phân cấp**: Bằng cách xây dựng các lớp con trên cơ sở của các lớp cha, bạn có thể tạo ra cấu trúc phân cấp cho các đối tượng, làm cho mã nguồn trở nên dễ quản lý hơn.
 
-```java
-class B {
-  public B () {
-    System.out.println ( "Hàm khởi tạo lớp cha" );
-  }
+- **Mở rộng tính năng**: Bạn có thể thêm các phương thức và thuộc tính mới vào lớp con mà không làm ảnh hưởng đến lớp cha, giúp bạn mở rộng tính năng của ứng dụng một cách dễ dàng.
 
-  public B ( int i ) {
-    System.out.println ( "Hàm khởi tạo lớp cha" );
-  }
-}
-
-
-public class A extends B {
-  public A () {
-    super();
-    super(10);// không thể gọi nhiều hơn 1 hàm tạo của lớp cơ sở
-    System.out.println ( "Hàm khởi tạo lớp con" );
-  }
-
-
-  public static void main ( String arg[] ) {
-    A thu = new A ();
-  }
-}
-```
-
-::result
-
-Hàm khởi tạo lớp cha<br/>
-Hàm khởi tạo lớp con<br/>
-Hàm khởi tạo lớp con
-
-::
+Tính kế thừa là một trong những nguyên tắc quan trọng của OOP, cho phép bạn tận dụng lại và mở rộng mã nguồn một cách hiệu quả, giúp phát triển ứng dụng dễ bảo trì và mở rộng.

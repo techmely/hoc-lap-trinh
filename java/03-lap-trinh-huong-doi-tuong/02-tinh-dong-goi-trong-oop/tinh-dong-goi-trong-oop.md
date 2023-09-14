@@ -11,83 +11,66 @@ image: https://user-images.githubusercontent.com/29374426/130181521-4a08856a-756
 position: 2
 ---
 
-Tính đóng gói trong java là kỹ thuật ẩn giấu thông tin không liên quan và hiện thị ra thông liên quan. Mục đích chính của đóng gói trong java là giảm thiểu mức độ phức tạp phát triển phần mềm.
+Tính đóng gói (Encapsulation) là một trong những nguyên tắc quan trọng trong Lập Trình Hướng Đối Tượng (OOP). Nguyên tắc này đề cập đến việc che giấu thông tin và hành vi bên trong đối tượng, chỉ tiết lộ những gì cần thiết và quy định cách truy cập thông qua các phương thức công khai. Chúng ta sẽ tìm hiểu về tính đóng gói thông qua ví dụ thực tế và sử dụng Java để minh họa.
 
-### Tính đóng gói (Encapsulation) trong Java
+## Tại sao cần tính đóng gói?
 
-Ví dụ đối với ô tô thì một số thuộc tính ở bên ngoài như xi nhan, đèn. bánh xe là những thuộc tính công khai (public) người khác xem được. nhưng đối với các thuộc tính bên trong như đồ đạc trong cốp xe thì bị giấu đi (private).
+Trong lập trình, tính đóng gói giúp bảo vệ dữ liệu và tránh truy cập trực tiếp đến các thuộc tính của đối tượng từ bên ngoài. Điều này có ích trong việc quản lý và bảo vệ dữ liệu, đồng thời cho phép kiểm soát cách các thành phần khác nhau tương tác với đối tượng đó.
 
-![Tính đóng gói (Encapsulation)](https://user-images.githubusercontent.com/29374426/130181521-4a08856a-756f-46f4-94f4-6ff1a0a90f18.png)
+## Ví dụ với Java
 
-Các dữ liệu và phương thức có liên quan với nhau được đóng gói thành các lớp để tiện cho việc quản lý và sử dụng. Tức là mỗi lớp được xây dựng để thực hiện một nhóm chức năng đặc trưng của riêng lớp đó. Ngoài ra, đóng gói còn để che giấu một số thông tin và chi tiết cài đặt nội bộ để bên ngoài không thể nhìn thấy. Tính đóng gói được thể hiện qua [cấp độ truy cập trong java](/bai-viet/java/cap-do-truy-cap-trong-java)
-
-## Lợi ích của đóng gói trong java
-
-- Bạn có thể tạo lớp read-only hoặc write-only bằng việc cài đặt phương thức setter hoặc getter.
-- Bạn có thể kiểm soát đối với dữ liệu. Giả sử bạn muốn đặt giá trị của id chỉ lớn hơn 100 bạn có thể viết logic bên trong lớp setter.
-
-Ví dụ tính đóng gói trong java
-
-Hãy xem ví dụ sau về đóng gói trong java với một lớp chỉ có một trường và các phướng thức setter và getter của nó.
+Chúng ta hãy tưởng tượng một lớp đại diện cho một người trong Java. Chúng ta sẽ sử dụng tính đóng gói để bảo vệ thông tin cá nhân như tên và tuổi của người đó.
 
 ```java
 public class Person {
-    // khai báo các thuộc tính của đối tượng là private
-    private String cmnd;
-    private String hoTen;
+    private String name;  // Thuộc tính name là private
+    private int age;      // Thuộc tính age là private
 
-    // tạo các phương thức getter/setter
-    // 2 phương thức getCmnd() và getHoTen() là phương thức getter
-    // dùng để trả về số chứng minh nhân dân và họ tên của đối tượng
-    // và kiểu trả về của hai phương thức này tương ứng với kiểu dữ liệu của thuộc tính
-    // 2 phương thức setCmnd() và setHoTen() là phương thức setter
-    // dùng để gán giá trị cho thuộc tính chứng minh nhân dân và họ tên của đối tượng
-    // trong đó tham số truyền vào của 2 phương thức này được gọi là tham số (biến cục bộ)
-    // và có kiểu dữ liệu tương ứng với kiểu dữ liệu của thuộc tính (biến đối tượng)
-    public String getCmnd() {
-        return cmnd;
+    // Phương thức khởi tạo
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
-    // this là từ khóa có ý nghĩa là một tham chiếu đặc biệt
-    // chiếu tới đối tượng chủ của phương thức hiện hành
-    // this có thể được dùng để truy cập biến đối tượng (instance variable)
-    // hoặc gọi phương thức đối với đối tượng hiện hành.
-    // Thông thường, công dụng này của this chỉ có ích
-    // khi tên biến đối tượng bị trùng với tham số (biến cục bộ - local variable) của phương thức
-    public void setCmnd(String cmnd) {
-        this.cmnd = cmnd;
-    }
-    public String getHoTen() {
-        return hoTen;
-    }
-    public void setHoTen(String hoTen) {
-        this.hoTen = hoTen;
+    // Phương thức công khai để lấy tên
+    public String getName() {
+        return name;
     }
 
-}
-
-package vidu;
-
-public class TestPerson {
-
-    public static void main(String[] args) {
-        Person person = new Person();
-
-        // gán giá trị họ tên cho đối tượng person vừa tạo thông qua setHoTen()
-        // và gán số chứng minh nhân dân thông qua setCmnd()
-        person.setHoTen("Thaycacac");
-        person.setCmnd("123456");
-
-        // truy cập đến tên của đối tượng person thông qua phương thức getHoten()
-        // và số chứng minh nhân dân thông qua phương thức getCmnd()
-        System.out.println("Tên: " + person.getHoTen() + ", CMND: " + person.getCmnd());
+    // Phương thức công khai để lấy tuổi
+    public int getAge() {
+        return age;
     }
 
+    // Phương thức công khai để thay đổi tuổi
+    public void setAge(int age) {
+        if (age >= 0) {
+            this.age = age;
+        }
+    }
 }
 ```
 
-::result
+Trong ví dụ này, thuộc tính `name` và `age` được khai báo là private, nghĩa là chúng không thể truy cập trực tiếp từ bên ngoài lớp `Person`. Để lấy hoặc thay đổi giá trị của chúng, chúng ta sử dụng các phương thức công khai `getName`, `getAge`, và `setAge`.
 
-Tên: Thaycacac, CMND: 123456
+**Lấy thông tin:**
 
-::
+```java
+Person person = new Person("John", 30);
+String name = person.getName();
+int age = person.getAge();
+System.out.println("Name: " + name);
+System.out.println("Age: " + age);
+```
+
+**Thay đổi tuổi:**
+
+```java
+person.setAge(31); // Tuổi mới
+int newAge = person.getAge(); // Lấy tuổi sau khi thay đổi
+System.out.println("New Age: " + newAge);
+```
+
+Như bạn thấy, thông tin cá nhân của người được che giấu bên trong lớp `Person`, và bạn chỉ có thể truy cập thông qua các phương thức công khai. Điều này giúp đảm bảo rằng dữ liệu của người không bị sửa đổi hoặc truy cập một cách không kiểm soát.
+
+Tính đóng gói là một nguyên tắc mạnh mẽ trong OOP, giúp tạo ra mã nguồn dễ bảo trì và an toàn hơn bằng cách quản lý truy cập đến thông tin của đối tượng.
