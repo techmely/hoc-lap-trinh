@@ -32,17 +32,15 @@ int main() {
 
 _Lưu ý: chuỗi văn bản cần phải được nằm trong cặp dấu nháy kép `" "` để chương trình hiểu được đó là một chuỗi văn bản bình thường._
 
-Kết quả:
-
-```cpp
+::result
 I am student.
-```
+::
 
-Nếu bạn cần phải sử dụng các ký tự không thể gõ hoặc có ý nghĩa đặc biệt Escape Sequences
+Nếu bạn cần phải sử dụng các ký tự không thể gõ hoặc có ý nghĩa đặc biệt Escape Sequences.
 
 ## Hiển thị giá trị biến trong output
 
-Bây giờ, chúng ta sẽ xem làm sao để hiển thị một giá trị của biến cũng với hàm này. Chúng ta cũng sẽ sử dụng `printf()` với phương pháp cũ, nhưng thêm vào một định dạng đặc biệt tại vị trí mà chúng ta muốn hiển thị giá trị của biến đó.
+Bây giờ, chúng ta sẽ xem làm sao để hiển thị một giá trị của biến cùng với hàm này. Chúng ta cũng sẽ sử dụng `printf()` với phương pháp cũ, nhưng thêm vào một định dạng đặc biệt tại vị trí mà chúng ta muốn hiển thị giá trị của biến đó.
 
 Vậy định dạng đặc biệt đó là gì?
 
@@ -73,11 +71,9 @@ int main() {
 }
 ```
 
-Kết quả nhận được:
-
-```cpp
+::result
 I am 22 year old.
-```
+::
 
 Chúng ta cũng xem tiếp một ví dụ khác:
 
@@ -93,11 +89,9 @@ int main() {
 }
 ```
 
-Kết quả nhận được:
-
-```cpp
+::result
 I am 25 year old.
-```
+::
 
 Ở ví dụ này, tuy bạn đã khai báo và gán giá trị cho biến `age = 22` nhưng ngay dòng tiếp theo chúng ta lại gán lại `age = 25` - vì vậy lúc này giá trị của biến `age` sẽ bị ghi đè và mang giá trị mới.
 
@@ -116,11 +110,9 @@ int main() {
 }
 ```
 
-Kết quả nhận được:
-
-```cpp
+::result
 a = 2.500000
-```
+::
 
 Vì `a` là một số thập phân nên khi hiển thị ra kết quả, chương trình sẽ hiển thị thêm 6 số sau dấu phẩy để người dùng hiểu được đó là số thập phân. Nhưng đôi lúc chúng ta lại nhận được yêu cầu chỉ hiển thị `2` hoặc `3` số sau dấu chấm động thôi. Ví dụ `a = 2.50` hay `a = 2.500`.
 
@@ -133,19 +125,17 @@ int main() {
 
     float a = 2.5;
 
-    printf ("a = %.2f\n", a); // hiện thị 2 số sau dấu phẩy
-    printf ("a = %0.3f", a);  // hiện thị 3 số sau dấu phẩy
+    printf ("a = %.2f\n", a); // hiển thị 2 số sau dấu phẩy
+    printf ("a = %0.3f", a);  // hiển thị 3 số sau dấu phẩy
 }
 ```
 
-Kết quả nhận được:
-
-```cpp
+::result
 a = 2.50
 a = 2.500
-```
+::
 
-Các bạn có thấy chúng ta đã chỉnh sửa thêm gì không? đó là trong `%f` chúng ta viết thêm số lượng số thập phân mà chúng ta muốn hiển thị sau dấy phẩy `%.2f` hoặc `%0.3f`.
+Các bạn có thấy chúng ta đã chỉnh sửa thêm gì không? đó là trong `%f` chúng ta viết thêm số lượng số thập phân mà chúng ta muốn hiển thị sau dấu phẩy `%.2f` hoặc `%0.3f`.
 
 > Trong lập trình nếu một số thập phân bắt đầu bằng chữ số `0`, bạn có thể bỏ số `0` đi cho ngắn gọn, chúng ta có viết `0.2` bằng `.2`.
 
@@ -168,11 +158,9 @@ int main() {
 }
 ```
 
-Kết quả nhận được:
-
-```cpp
+::result
     2.50    3.75    5.66
-```
+::
 
 Lúc này tổng chiều dài hiển thì cho mỗi số là `8` ký tự (đã tính cả dấu `.` và `2` số sau dấu `.`). Xem hình minh hoạ để hiểu rõ hơn:
 

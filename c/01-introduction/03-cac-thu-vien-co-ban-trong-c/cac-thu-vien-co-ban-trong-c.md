@@ -13,7 +13,7 @@ position: 3
 
 Trong bài này, chúng ta sẽ tìm hiểu về các thư viện tiêu chuẩn trong C.
 
-Hiểu đơn giản, thư viên trong C là nơi định nghĩa - viết sẵn các hàm chức năng cơ bản của ngôn ngữ C.
+Hiểu đơn giản, thư viện trong C là nơi định nghĩa - viết sẵn các hàm chức năng cơ bản của ngôn ngữ C.
 
 Như ở ví dụ trước (Program Structure) khi muốn sử dụng hàm `printf()`, chúng ta cần include thư viện `<stdio.h>` vì hàm `printf()` được định nghĩa trong thư viện này - chức năng của nó làm gì.
 

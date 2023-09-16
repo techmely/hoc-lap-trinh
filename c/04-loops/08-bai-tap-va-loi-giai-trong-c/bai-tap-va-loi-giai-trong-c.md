@@ -33,12 +33,12 @@ Nếu bạn để ý thì một số nguyên `>= 2` bất kỳ sẽ luôn có s�
 Phân tích cụ thể:
 
 > Với số **12**, ta có `sqrt(12) ≈ 3.464`  
-> Đoạn [ 2 → 3.464 ] có ước bằng 2, tương ứng đoạn [ 3.464 → 12 ] có ước bằng 6  
-> Đoạn [ 2 → 3.464 ] có ước bằng 3, tương ứng đoạn [ 3.464 → 12 ] có ước bằng 4  
+> Đoạn [ 2 → 3.464 ] có ước bằng 2, tương ứng đoạn [ 3.464 → 12 ] có ước bằng 6.
+> Đoạn [ 2 → 3.464 ] có ước bằng 3, tương ứng đoạn [ 3.464 → 12 ] có ước bằng 4.
 > Trong đoạn [ 2 → 3.464 ] số **12** chia hết cho 2 số [ 2, 3 ] → **12** không phải là số nguyên tố.
 
-> Với số **9**, ta có `sqrt(9) = 3`  
-> Đoạn [ 2 → 3 ] có ước 3, tương ứng đoạn [ 3 → 9 ] có ước 3  
+> Với số **9**, ta có `sqrt(9) = 3`
+> Đoạn [ 2 → 3 ] có ước 3, tương ứng đoạn [ 3 → 9 ] có ước 3.
 > Trong đoạn [ 2 → 3 ] số **9** chia hết cho 1 số [ 3 ] → **9** không phải là số nguyên tố.
 
 > Với số **7**, ta có `sqrt(7) ≈ 2.646`  
@@ -85,24 +85,22 @@ Code hoàn chỉnh:
 28    }
 ```
 
-Kết quả khi chạy chương trình:
-
-```cpp
+::result
 Enter n: 1
 n is not a prime number.
-```
+::
 
-```cpp
+::result
 Enter n: 11
 n a prime number.
-```
+::
 
-```cpp
+::result
 Enter n: 12
 n is not a prime number.
-```
+::
 
-**`return`** - đây là từ khoá dùng để kết thúc một hàm xử lý, khi gặp từ khoá **`return`** thì chương trình sẽ không chạy tiếp các dòng mã bên dưới từ **`return`** nữa. Trong ví dụ trên, khi nhập `n < 2` thì chương trình sẽ chạy vào câu lệnh **`if`** (line 11) và thực hiện lệnh `return 0;` (line 13) - lúc này **chương trình sẽ kết thúc** và những dòng mã từ line 15 → line 27 sẽ **không** được thực hiện.
+**`return`** - đây là từ khóa dùng để kết thúc một hàm xử lý, khi gặp từ khóa **`return`** thì chương trình sẽ không chạy tiếp các dòng mã bên dưới từ **`return`** nữa. Trong ví dụ trên, khi nhập `n < 2` thì chương trình sẽ chạy vào câu lệnh **`if`** (line 11) và thực hiện lệnh `return 0;` (line 13) - lúc này **chương trình sẽ kết thúc** và những dòng mã từ line 15 → line 27 sẽ **không** được thực hiện.
 
 **`break`** - tại sao lại dùng **`break`** tại đây? Vì trong khoảng từ `2 → sqrt(n)` có thể có rất nhiều ước của `n`, chúng ra chỉ cần tìm thấy 1 ước đầu tiên là kết luận được `n is not a prime number` mà không cần chạy hết vòng lặp (dư thừa không cần thiết). Bạn có thể đọc lại về **`break`** [tại đây](/bai-viet/c/cau-lenh-break-trong-c).
 
@@ -134,13 +132,13 @@ Màn hình kết quả chương trình:
 
 Test case 1
 
-```cpp
+::result
 Enter the number: 10
 
 OUTPUT:
 The number of occurrences of even number is 6
 --------------------------------
-```
+::
 
 ### Bài 2
 
@@ -168,13 +166,13 @@ Màn hình kết quả chương trình:
 
 Test case 1
 
-```cpp
+::result
 Enter the number: 10
 
 OUTPUT:
 result is 30
 --------------------------------
-```
+::
 
 ### Bài 3
 
@@ -202,11 +200,11 @@ Màn hình kết quả chương trình:
 
 Test case 1
 
-```cpp
+::result
 Enter the number: 12345
 
 OUTPUT:
 Sum of digits in 0 is 15
 
 --------------------------------
-```
+::

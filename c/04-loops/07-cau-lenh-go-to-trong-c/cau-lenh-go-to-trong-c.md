@@ -16,7 +16,7 @@ Câu lệnh **`goto`** là một câu lệnh nhảy đôi khi cũng được g�
 ## Cú pháp câu lệnh goto trong C
 
 ```cpp
-Syntax1       |    Syntax2
+Syntax1      |    Syntax2
 ------------------------------
 goto label;   |    label:
 .             |    .
@@ -25,7 +25,7 @@ goto label;   |    label:
 label:        |    goto label;
 ```
 
-Các `label` là một định danh (tuỳ bạn đặt tên như tên biến). Khi gặp câu lệnh **`goto`**, chương trình sẽ nhảy tới `label` và bắt đầu thực thi mã.
+Các `label` là một định danh (tùy bạn đặt tên như tên biến). Khi gặp câu lệnh **`goto`**, chương trình sẽ nhảy tới `label` và bắt đầu thực thi mã.
 
 ## Ví dụ câu lệnh goto trong C
 
@@ -62,12 +62,10 @@ int main() {
 }
 ```
 
-Kết quả chương trình:
-
-```cpp
+::result
 Enter n: 44
 44 is even.
-```
+::
 
 Ví dụ 2:
 
@@ -98,9 +96,7 @@ int main() {
 }
 ```
 
-Kết quả chương trình:
-
-```cpp
+::result
 Enter a number: 4
 Enter a number: 6
 Enter a number: 6
@@ -108,7 +104,7 @@ Enter a number: -1
 
 Sum = 16.00
 Average = 5.33
-```
+::
 
 ### Syntax 2
 
@@ -132,9 +128,7 @@ int main() {
 }
 ```
 
-Kết quả chương trình:
-
-```cpp
+::result
 1
 2
 3
@@ -145,7 +139,7 @@ Kết quả chương trình:
 8
 9
 10
-```
+::
 
 ## Disadvantages of using goto statement
 

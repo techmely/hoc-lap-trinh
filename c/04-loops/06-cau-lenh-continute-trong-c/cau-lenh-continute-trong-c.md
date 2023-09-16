@@ -68,11 +68,10 @@ int main() {
 
 Các bạn có thể thấy khi `i = 5` câu lệnh **`continue`** sẽ được thực thi, lúc này chương trình sẽ bỏ qua đoạn mã bên dưới **`continue`** và chạy vòng **`for`** mới - vì vậy câu lệnh `printf()` sẽ không được thực hiện, `5` sẽ không được in ra màn hình.
 
-Kết quả chương trình:
 
-```cpp
+::result
 1 2 3 4 6 7 8 9 10
-```
+::
 
 Ví dụ 2:
 
@@ -103,9 +102,8 @@ int main() {
 
 Khi nhập `n < 0` câu lệnh **`continue`** sẽ được thực thi, lúc này chương trình sẽ bỏ qua đoạn mã bên dưới **`continue`** và chạy vòng **`for`** mới - vì vậy câu lệnh `sum += number;` sẽ không được thực hiện, số âm sẽ không được cộng vào tổng.
 
-Kết quả chương trình:
 
-```cpp
+::result
 Enter a n1: 1
 Enter a n2: 2
 Enter a n3: -3
@@ -113,6 +111,6 @@ Enter a n4: 4
 Enter a n5: -5
 
 Sum = 7
-```
+::
 
 Câu lệnh **`continue`** có thể được sử dụng với bất kỳ vòng lặp nào khác cũng như **`while`** hoặc **`do-while`** theo cách tương tự như nó được sử dụng với vòng lặp **`for`** ở trên.

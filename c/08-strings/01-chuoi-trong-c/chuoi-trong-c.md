@@ -22,9 +22,9 @@ Trong bài học này, chúng ta sẽ tìm hiểu về chuỗi trong lập trìn
 
 ## Chuỗi trong C là gì
 
-Chuỗi là một mảng các kí tự được kết thúc bằng kí tự **_null_** `\0`
+Chuỗi là một mảng các kí tự được kết thúc bằng kí tự **_null_** `\0`.
 
-Ví dụ
+Ví dụ:
 
 ```cpp
 char c[] = "Hello Kungfutech";
@@ -32,8 +32,8 @@ char c[] = "Hello Kungfutech";
 
 Khi trình biên dịch gặp một chuỗi các ký tự được đặt trong dấu ngoặc kép, theo mặc định, nó sẽ thêm một ký tự **_null_** vào cuối.
 
-| H   |  e  | l   | l   | o   |     | A   | n   | e   | s   | t   | \0  |
-| --- | :-: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| H   |  e  | l   | l   | o   |     | K   | u   | n   | g   | f   | u   | t   | e   | c   | h   | \0  |
+| --- | :-: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 ## Khởi tạo chuỗi trong C
 
@@ -71,7 +71,7 @@ Lúc này, ta đang cố gán 6 ký tự (ký tự cuối cùng là `\0`) cho m�
 
 ## Gán giá trị vào chuỗi trong C
 
-Chuỗi không hỗ trợ cho toán tử gán `=` nên ta phải dùng hàm `strcpy()` để sao chép chuỗi
+Chuỗi không hỗ trợ cho toán tử gán `=` nên ta phải dùng hàm `strcpy()` để sao chép chuỗi.
 
 Ví dụ:
 
@@ -88,11 +88,9 @@ int main()
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 Hello Kungfutech
-```
+::
 
 ::alert{type="warning"}
 Lưu ý: khi sử dụng hàm `strcpy()` hãy khai báo thư viên `<string.h>`
@@ -118,12 +116,10 @@ int main()
 }
 ```
 
-kết quả:
-
-```cpp
+::result
 Enter name: Kungfutech Academy
 Your name is Kungfutech.
-```
+::
 
 Mặc dù `Kungfutech Academy` đã được nhập tại chương trình trên nhưng chỉ `Kungfutech` được lưu trữ tại string `name`, đó là vì có một khoảng trắng đằng sau `Kungfutech`
 
@@ -146,14 +142,12 @@ int main()
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 Enter name: Kungfutech Academy
 Name: Kungfutech Academy
-```
+::
 
-Tại chương trình trên ta đã sử dụng hàm `fgets()` để đọc một chuỗi văn bản từ người dùng và hàm `puts()` để hiển thị văn bản đó
+Tại chương trình trên ta đã sử dụng hàm `fgets()` để đọc một chuỗi văn bản từ người dùng và hàm `puts()` để hiển thị văn bản đó.
 
 ```cpp
 fgets(name, sizeof(name), stdin);
@@ -161,7 +155,7 @@ fgets(name, sizeof(name), stdin);
 puts(name);
 ```
 
-`sizeof(name)` sẽ mang giá trị là 30, do đó chúng ta có thể đọc được một chuỗi tối đa 30 kí tự
+`sizeof(name)` sẽ mang giá trị là 30, do đó chúng ta có thể đọc được một chuỗi tối đa 30 kí tự.
 
 ## Truyền chuỗi vào hàm trong C
 
@@ -188,14 +182,12 @@ void displayString(char str[])
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 Enter string: Kungfutech Academy
 String Output: Kungfutech Academy
-```
+::
 
-Tại đây chúng ta truyền một chuỗi `name` vào hàm `displayString()`
+Tại đây chúng ta truyền một chuỗi `name` vào hàm `displayString()`.
 
 ```cpp
 displayString(name);
@@ -203,7 +195,7 @@ displayString(name);
 
 ## Chuỗi và con
 
-Ví dụ
+Ví dụ:
 
 ```cpp
 #include <stdio.h>
@@ -212,7 +204,7 @@ int main(void) {
   char name[] = "Kungfutech Academy";
 
   printf("%c", *name);
-  printf("%c", *(name+1));
+  printf("%c", *(name+4));
   printf("%c", *(name+8));
 
   char *namePtr;
@@ -220,14 +212,12 @@ int main(void) {
 
   namePtr = name;
   printf("%c", *namePtr);
-  printf("%c", *(namePtr+1));
+  printf("%c", *(namePtr+4));
   printf("%c", *(namePtr+8));
 }
 ```
 
-Kết quả:
-
-```cpp
-Ana
-Ana
-```
+::result
+Kfc
+Kfc
+::

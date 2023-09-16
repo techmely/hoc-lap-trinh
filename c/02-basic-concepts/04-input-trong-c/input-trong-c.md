@@ -42,25 +42,24 @@ Trong hàm `scanf()` có 2 phần chính:
 - `"%d"` - định dạng này chúng ta đã nói ở phần in ra giá trị của biến, trong hàm `scanf()` nó có ý nghĩa để báo cho hàm `scanf()` sẽ nhận vào từ bàn phím kiểu giá trị nào. Ví dụ trên là muốn lấy giá trị một số nguyên từ bàn phím nên chúng ta dùng `%d`, nếu bạn muốn lấy một giá trị `float` thì cần thay thế `%d` bằng `%f`...
 - `&n` - phần này có ý nghĩa báo cho hàm `scanf()` sẽ gán giá trị vừa nhận được cho biến nào, ở đây là biến `n` và chúng ta cần viết thêm ký tự `&` trước biến muốn gán giá trị vào.
 
-**Lưu ý:**
+::alert{type="infor"}
 
 - Cần xác định kiểu dữ liệu của biến cần gán giá trị trước để chọn định dạng `%` trong hàm `scanf()` cho đúng.
 - Không giống như hàm `printf()`, chúng ta không được viết thêm bất cứ đoạn text nào trong hàm `scanf()` ngoài định dạng `%`. Nếu bạn viết thêm text, chương trình sẽ chạy ra kết quả không như mong muốn.
+::
 
-Kết quả khi chạy chương trình:
-
-```cpp
+::result
 Enter n: _
-```
+::
 
 Lúc này các bạn sẽ thấy chương trình không kết thúc như những ví dụ trước, mà sẽ tạm dừng tại đây - bạn sẽ thấy có con trỏ `_` nhấp nháy báo hiệu chương trình đang đợi bạn nhập một giá trị vào từ bàn phím.
 
 Và đây là kết quả khi chúng ta nhập vào một số, ví dụ nhập n = 5:
 
-```cpp
+::result
 Enter n: 5
 5
-```
+::
 
 ## Nhập nhiều giá trị từ bàn phím
 
@@ -81,14 +80,12 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 Enter a b c: 1 2 3
 a = 1
 b = 2
 c = 3
-```
+::
 
 Bạn cũng có thể nhập mỗi giá trị cách nhau bằng một dấu phẩy `,` như sau:
 
@@ -105,11 +102,9 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 Enter a b c: 1, 2, 3
 a = 1
 b = 2
 c = 3
-```
+::

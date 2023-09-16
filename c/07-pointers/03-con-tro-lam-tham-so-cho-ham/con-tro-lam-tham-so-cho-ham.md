@@ -44,26 +44,24 @@ void swap(int* n1, int* n2)
 }
 ```
 
-kết quả:
-
-```cpp
+::result
 num1 = 2
 num2 = 1
-```
+::
 
-địa chỉ của `num1` và `num2` được truyền vào hàm `swap()` bằng cách sử dụng cú pháp:
+Địa chỉ của `num1` và `num2` được truyền vào hàm `swap()` bằng cách sử dụng cú pháp:
 
 ```cpp
 swap( &num1, &num2);
 ```
 
-con trỏ n1 và n2 sẽ nhận hai tham số này trong khai báo hàm:
+Con trỏ n1 và n2 sẽ nhận hai tham số này trong khai báo hàm:
 
 ```cpp
 void swap(int *n1, int *n2);
 ```
 
-Bên trong hàm `swap()`, `*n1` và `*n2` hoán đổi. Kể từ đây,`num1` và `num2` cũng được hoán đổi. vì chúng ta đã truyền vào hàm địa chỉ của `num1` chứ không phải là giá trị của `num1`
+Bên trong hàm `swap()`, `*n1` và `*n2` hoán đổi. Kể từ đây,`num1` và `num2` cũng được hoán đổi. vì chúng ta đã truyền vào hàm địa chỉ của `num1` chứ không phải là giá trị của `num1`.
 
 ::alert{type="warning"}
 Lưu ý rằng `swap()` không trả lại bất cứ điều gì; kiểu trả về của nó là `void`.
@@ -95,14 +93,14 @@ int main()
 }
 ```
 
-Kêt quả:
+Kết quả:
 
-```cpp
+::result
 7
 9
-```
+::
 
-Trong chương trình này, con trỏ `pa` nhận địa chỉ của biến `a`, con trỏ `pb` nhận giá trị của biến `b`
+Trong chương trình này, con trỏ `pa` nhận địa chỉ của biến `a`, con trỏ `pb` nhận giá trị của biến `b`.
 
 ```cpp
 int* pa, a = 5;
@@ -111,6 +109,6 @@ pa = &a;
 pb = &b;
 ```
 
-hàm `add()` trong chương trình đang thay đổi giá trị trực tiếp trên địa chỉ của con trỏ do chúng ta truyền con trỏ vào hàm.
+Hàm `add()` trong chương trình đang thay đổi giá trị trực tiếp trên địa chỉ của con trỏ do chúng ta truyền con trỏ vào hàm.
 
-Do đó sau khi hàm `add()` được thực thi, lúc này giá trị của con trỏ `pa` là `7` còn `pb` là `9`, mà hai con trỏ này đang trỏ vào hai biến `a` và `b` nên hai biến này sẽ có giá trị lần lượt là `7` và `9`
+Do đó sau khi hàm `add()` được thực thi, lúc này giá trị của con trỏ `pa` là `7` còn `pb` là `9`, mà hai con trỏ này đang trỏ vào hai biến `a` và `b` nên hai biến này sẽ có giá trị lần lượt là `7` và `9`.

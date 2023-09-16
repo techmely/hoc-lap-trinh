@@ -25,11 +25,11 @@ Trong bài viết này, chúng ta sẽ cùng đi tìm hiểu chi tiết về 2 l
 
 Ví dụ:
 
-- Hàm `Printf()` là một hàm dùng để hiển thị đầu ra được định dạng ra màn hình. Hàm này
+- Hàm `printf()` là một hàm dùng để hiển thị đầu ra được định dạng ra màn hình. Hàm này
   được định nghĩa trong thư viện `stdio.h`, để sử dụng hàm chúng ta cần import thư viện
   với câu lệnh: `#include<stdio.h>`
-- Hàm `Sqrt()` là một hàm dùng để tính căn bậc hai của một số. Hàm này được định nghĩa trong
-  thư viện `math.h` và để sử dụng được hàm này chúng ta cần import thư viện với câu lệnh:`#include<math.h>`
+- Hàm `sqrt()` là một hàm dùng để tính căn bậc hai của một số. Hàm này được định nghĩa trong
+  thư viện `math.h` và để sử dụng được hàm này chúng ta cần import thư viện với câu lệnh:`#include <math.h>`
 
 ### Advantages of Using C library functions
 
@@ -69,12 +69,10 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 Enter a number: -7
 Absolute value = 7
-```
+::
 
 ## Định nghĩa hàm trong C
 
@@ -114,13 +112,11 @@ int addition(int a, int b){ // Định nghĩa hàm (Function definition)
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 Enter x: 3
 Enter y: 4
 x + y = 7
-```
+::
 
 ### Function prototype
 

@@ -84,20 +84,20 @@ int main() {
 }
 ```
 
-Kết quả khi bạn nhập một số âm:
+Khi bạn nhập một số âm:
 
-```cpp
+::result
 Enter an integer: -5
 You entered -5.
 Done.
-```
+::
 
-Kết quả khi bạn nhập một số dương:
+Khi bạn nhập một số dương:
 
-```cpp
+::result
 Enter an integer: 5
 Done.
-```
+::
 
 ### if-else statement
 
@@ -134,19 +134,19 @@ int main() {
 }
 ```
 
-Kết quả khi bạn nhập số tuổi thỏa mãn điều kiện lớn hơn hoặc bằng 18:
+Khi bạn nhập số tuổi thỏa mãn điều kiện lớn hơn hoặc bằng 18:
 
-```cpp
+::result
 Enter your age: 22
 You are eligible for voting.
-```
+::
 
-Kết quả khi bạn nhập số tuổi không thỏa mãn điều kiện lớn hơn hoặc bằng 18:
+Khi bạn nhập số tuổi không thỏa mãn điều kiện lớn hơn hoặc bằng 18:
 
-```cpp
+::result
 Enter your age: 14
 You are not eligible for voting.
-```
+::
 
 **Chú ý:**  
 _Nếu chỉ có một câu lệnh xuất hiện trong thân `if` hoặc `else` thì bạn không cần phải sử dụng cặp dấu `{ }`. Ví dụ, chương trình trên có thể được viết lại như sau:_
@@ -210,14 +210,12 @@ int main() {
 }
 ```
 
-Và sau đây là kết quả:
-
-```cpp
+::result
 Input the value of var1: 9
 Input the value of var2: 8
 
 var1 is greater than var2.
-```
+::
 
 ## Nested if-else statement
 
@@ -270,15 +268,13 @@ int main() {
 }
 ```
 
-Và đây là kết quả:
-
-```cpp
+::result
 Input the value of var1: 5
 Input the value of var2: 2
 
 var1 is not equal to var2.
 var1 is greater than var2.
-```
+::
 
 ## if-else statement with many conditions
 
@@ -310,14 +306,12 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 Input the value of grade: 7.5
 Well done.
-```
+::
 
-```cpp
+::result
 Input the value of grade: -1
 Invalid grade.
-```
+::

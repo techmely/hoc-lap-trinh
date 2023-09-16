@@ -35,7 +35,7 @@ for (int i = 0; i <= 10; i++) {
 
 ![Vòng lặp hoạt động như thế nào](https://user-images.githubusercontent.com/29374426/183098010-5ac9e1d3-66cb-4a83-8a3e-103365f3d933.png)
 
-- Bước 1: Khởi tạo giá trị biến lặp, chỉ thực hiện 1 lần duy nhất
+- Bước 1: Khởi tạo giá trị biến lặp, chỉ thực hiện 1 lần duy nhất.
 - Bước 2: Kiểm tra điều kiện lặp, nếu điều kiện bằng **`false`** thì kết thúc vòng lặp.
 - Bước 3: Tuy nhiên, nếu biểu thức kiểm tra bằng **`true`**, các câu lệnh bên trong phần thân của vòng lặp **`for`** được thực thi.
 - Bước 4: Cập nhật giá trị biến lặp và quay trở lại bước 2 để kiểm tra.
@@ -65,9 +65,7 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 1
 2
 3
@@ -79,15 +77,15 @@ Kết quả:
 9
 10
 End loop!
-```
+::
 
 Giải thích:
 
-- Bước 1. Gán biến lặp `i = 1` - thực hiện 1 lần duy nhất
-- Bước 2. Kiểm tra điều kiện `(i = 1) < 10` → **`true`**
-- Bước 3. Do kiểm tra điều kiện **`true`** → Thực hiện thân vòng lặp **`for`** → in ra giá trị của `i`
-- Bước 4. Gọi tới `i++` → tăng `i` lên `1` đơn vị → lúc này `i = 2`
-- Bước 5. Quay lại bước 2 và chạy lại
+- Bước 1. Gán biến lặp `i = 1` - thực hiện 1 lần duy nhất.
+- Bước 2. Kiểm tra điều kiện `(i = 1) < 10` → **`true`**.
+- Bước 3. Do kiểm tra điều kiện **`true`** → Thực hiện thân vòng lặp **`for`** → in ra giá trị của `i`.
+- Bước 4. Gọi tới `i++` → tăng `i` lên `1` đơn vị → lúc này `i = 2`.
+- Bước 5. Quay lại bước 2 và chạy lại.
 - Chúng ta sẽ lặp đi lặp lại bước 2 đến bước 5 cho đến khi `i = 11`, lúc này bước 2 sẽ trả về **`false`** → Kết thúc luôn vòng lặp.
 
 Ví dụ 2:
@@ -109,16 +107,14 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 2
 4
 6
 8
 10
 End loop!
-```
+::
 
 Chúng ta còn có một cách khác là sửa lại vòng lặp như sau:
 
@@ -154,9 +150,7 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 sum = 55
 End loop!
-```
+::

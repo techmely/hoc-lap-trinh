@@ -1,6 +1,6 @@
 ---
 title: "Giới thiệu và cài đặt C"
-description: "Chào mừng bạn đến với hướng dẫn giới thiệu và cài đặt C! Trong bài viết này, chúng tôi sẽ khám phá ngôn ngữ lập trình C và cung cấp hướng dẫn cài đặt môi trường phát triển C, một ngôn ngữ cơ bản dễ hiểu và dễ dùng, rất thích hợp cho các bạn bắt đầu học lập trình. Cùng tìm hiểu về sức mạnh và tính di động của ngôn ngữ C và cách bắt đầu hành trình lập trình của bạn."
+description: "Chào mừng bạn đến với hướng dẫn giới thiệu và cài đặt C! Trong bài viết này, chúng mình sẽ khám phá ngôn ngữ lập trình C và cung cấp hướng dẫn cài đặt môi trường phát triển C, một ngôn ngữ cơ bản dễ hiểu và dễ dùng, rất thích hợp cho các bạn bắt đầu học lập trình. Cùng tìm hiểu về sức mạnh và tính di động của ngôn ngữ C và cách bắt đầu hành trình lập trình của bạn."
 chapter:
   name: "Giới thiệu"
   slug: "chuong-01-introduction"
@@ -29,7 +29,7 @@ C là một ngôn ngữ lập trình tương đối nhỏ gọn vận hành gầ
   Ngôn ngữ C không đưa ra các ràng buộc đối với người lập trình. C được sử dụng trong nhiều dự án khác nhau, như viết hệ điều hành, chương trình xử lý văn bản, đồ hoạ, bảng tính, và thậm chí cả chương trình dịch cho các ngôn ngữ khác.
 
 - **Ngôn ngữ có tính khả chuyển**  
-  Một chương trình viết bằng C cho một hệ máy tính (ví dụ như IBM PC) có thể được dịch và chạy trên hệ máy tính khác (chẳng hạn như DEC VAX) chỉ với rất ít các sử đổi. Tính khả chuyển đã được bởi chuẩn ANSI cho C.
+  Một chương trình viết bằng C cho một hệ máy tính (ví dụ như IBM PC) có thể được dịch và chạy trên hệ máy tính khác (chẳng hạn như DEC VAX) chỉ với rất ít các sửa đổi. Tính khả chuyển đã được bởi chuẩn ANSI cho C.
 
 ### Điểm yếu ngôn ngữ C
 

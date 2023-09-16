@@ -11,9 +11,9 @@ image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982
 position: 4
 ---
 
-Ở bài này chúng ta sẽ học về phạm vi sử dụng, vòng đời của các biến trong c thông qua **Storage Class**
+Ở bài này chúng ta sẽ học về phạm vi sử dụng, vòng đời của các biến trong c thông qua **Storage Class**.
 
-Lớp lưu trữ `Storage Class` định nghĩa phạm vi và vòng đời của biến và/hoặc các hàm bên trong một chương trình C. Chúng thường đứng trước kiểu dữ liệu mà chúng tác động. Dưới đây là các lớp lưu trữ có thể được sử dụng trong C
+Lớp lưu trữ `Storage Class` định nghĩa phạm vi và vòng đời của biến và/hoặc các hàm bên trong một chương trình C. Chúng thường đứng trước kiểu dữ liệu mà chúng tác động. Dưới đây là các lớp lưu trữ có thể được sử dụng trong C.
 
 Mọi biến trong lập trình C đều có hai thuộc tính: `type` và `Storage Class`.
 
@@ -30,7 +30,7 @@ Mọi biến trong lập trình C đều có hai thuộc tính: `type` và `Stor
 
 Các biến được khai báo bên trong một khối là biến tự động hoặc biến cục bộ. Các biến cục bộ chỉ tồn tại bên trong khối mà nó được khai báo.
 
-Ví dụ
+Ví dụ:
 
 ```cpp
 #include <stdio.h>
@@ -47,13 +47,13 @@ int main(void) {
 }
 ```
 
-Khi bạn chạy chương trình trên, bạn sẽ gặp lỗi `undeclared identifier i`. Là vì `i` được khai báo bên trong khối lặp `for`, bên ngoài khối lặp `for` nó không được khai báo
+Khi bạn chạy chương trình trên, bạn sẽ gặp lỗi `undeclared identifier i`. Là vì `i` được khai báo bên trong khối lặp `for`, bên ngoài khối lặp `for` nó không được khai báo.
 
 ## Biến toàn cục trong C
 
 Các biến được khai báo bên ngoài tất cả các hàm được gọi là biến bên ngoài hoặc biến toàn cục. Chúng có thể truy cập từ bất kỳ vị trí nào bên trong chương trình.
 
-ví dụ
+Ví dụ:
 
 ```cpp
 #include <stdio.h>
@@ -75,19 +75,17 @@ void display()
 }
 ```
 
-Kết quả
-
-```cpp
+::result
 a = 6
-```
+::
 
-Trong ví dụ này t thấy biến `a` được khai báo ở bên ngoài tất cả các hàm nên khi hàm `main()` gọi `a` và tăng giá trị của nó lên **2**, lúc này `a = 5`, trong hàm `display()` lại tăng `a` thêm 1 nên kết quả khi in ra là `a = 6`
+Trong ví dụ này ta thấy biến `a` được khai báo ở bên ngoài tất cả các hàm nên khi hàm `main()` gọi `a` và tăng giá trị của nó lên **2**, lúc này `a = 5`, trong hàm `display()` lại tăng `a` thêm 1 nên kết quả khi in ra là `a = 6`.
 
 ## Biến thanh ghi trong C
 
 Từ khóa `register` dùng để khai báo các biến thanh ghi. Các biến thanh ghi được cho là nhanh hơn các biến cục bộ.
 
-Ví dụ
+Ví dụ:
 
 ```cpp
 {
@@ -118,7 +116,7 @@ void display()
 }
 ```
 
-Kết quả
+Kết quả:
 
 ```cpp
 6 11

@@ -45,12 +45,10 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 a = 10
 b = 10.000000
-```
+::
 
 Ví dụ 2:
 
@@ -96,9 +94,9 @@ Chữ `f` cuối cùng để phân biệt đây là giá trị thập phân củ
 
   Vì `int` chỉ lưu trữ được `+- 2,147,483,647` trong khi `n = 5,000,000,000` vượt quá ngưỡng lưu trữ của `int`, vì vậy khi chạy chúng ta sẽ nhận được kết quả sai không mong muốn như sau:
 
-  ```cpp
+  ::result
   c = 705032704
-  ```
+  ::
 
 - **Đối với kiểu số chấm động (floating point), chuyển đổi giá trị về kiểu dữ liệu nhỏ hơn có thể gây mất độ chính xác.**
 
@@ -115,9 +113,9 @@ Chữ `f` cuối cùng để phân biệt đây là giá trị thập phân củ
 
   Vì kiểu `float` chỉ đủ để lưu trữ 6 đến 7 chữ số thập phân sau dấu phẩy, vì vậy phần thập phân dài hơn của `double` sẽ bị mất, kết quả sẽ mất đi độ chính xác như sau:
 
-  ```cpp
+  ::result
   c = 0.123457
-  ```
+  ::
 
 - **Chuyển đổi một giá trị từ số chấm động sang số nguyên sẽ làm mất đi phần thập thân.**
 
@@ -132,11 +130,11 @@ Chữ `f` cuối cùng để phân biệt đây là giá trị thập phân củ
   }
   ```
 
-  Vì `int` không thế chứa được dấu chấm động vì vậy phần thập phân sẽ bị mất đi như sau:
+  Vì `int` không thể chứa được dấu chấm động vì vậy phần thập phân sẽ bị mất đi như sau:
 
-  ```cpp
+  ::result
   c = 2
-  ```
+  ::
 
 > Chuyển đổi giá trị **từ một kiểu sang một kiểu dữ liệu tương tự nhỏ hơn**, hoặc **giữa các kiểu dữ liệu khác nhau** thường **không an toàn**, nó có thể dẫn đến **mất mát dữ liệu** sau khi chuyển đổi.
 
@@ -157,11 +155,9 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 result = 2.000000
-```
+::
 
 Vì sao lại không ra kết quả mong muốn?
 
@@ -182,11 +178,9 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 result = 2.500000
-```
+::
 
 `(float) 5` được gọi là **casting** - được thực hiện thông qua toán tử `()` với tên của kiểu dữ liệu bạn muốn chuyển đổi được đặt bên trong. Lúc này `5` đang là `int` sẽ được ép kiểu về kiểu `float`, và `float / int = float`. Chúng ta cũng có thể lựa chọn **casting** số `2` đều cho ra kết quả tương tự.
 

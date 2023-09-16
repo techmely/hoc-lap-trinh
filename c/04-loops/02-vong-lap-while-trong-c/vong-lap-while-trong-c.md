@@ -44,11 +44,11 @@ while (i < 10) {
 - Quá trình diễn ra cho đến khi biểu thức kiểm tra được đánh giá là **`false`**.
 - Nếu biểu thức kiểm tra là **`false`**, vòng lặp chấm dứt (kết thúc).
 
-## Luồng hoạt động của vòng lặp white
+## Luồng hoạt động của vòng lặp while
 
-![Luồng hoạt động của vòng lặp white](https://user-images.githubusercontent.com/29374426/183098269-e3c60457-2a26-4c53-a745-c0520308384f.png)
+![Luồng hoạt động của vòng lặp while](https://user-images.githubusercontent.com/29374426/183098269-e3c60457-2a26-4c53-a745-c0520308384f.png)
 
-## Ví dụ vòng lặp white trong c
+## Ví dụ vòng lặp while trong c
 
 Ví dụ 1:
 
@@ -68,15 +68,13 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 1
 2
 3
 4
 5
-```
+::
 
 Giải thích:
 
@@ -109,7 +107,7 @@ Phân tích bài toán:
 - Vậy điều kiện dừng là gì? Đề bài không thấy nói đến?
   - Bạn có nhận thấy mỗi lần chia hết cho `10` thì `n` sẽ giảm dần giá trị, và cuối cùng khi `n < 10` hay là `n` chỉ còn 1 chữ số thì `n / 10 = 0`. Vì vậy chúng ta sẽ có điều kiện dừng ở đây là `n > 0`.
 
-Solution code:
+Coding solution:
 
 ```cpp
 #include <stdio.h>
@@ -131,9 +129,7 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 Enter n: 694
 sum = 19
-```
+::

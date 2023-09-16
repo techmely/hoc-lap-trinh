@@ -32,11 +32,9 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 result = 8
-```
+::
 
 Và đó là phép cộng.
 Và với những phép toán khác, cũng tương tự, chỉ cần thay đổi kí tự tính toán như sau:
@@ -66,11 +64,9 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 result = 15
-```
+::
 
 ### Ví dụ phép chia lấy dư `%`
 
@@ -87,11 +83,9 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 result = 2
-```
+::
 
 #### Một số lưu ý
 
@@ -123,11 +117,9 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 result = 2
-```
+::
 
 ### Ví dụ phép chia có số dư
 
@@ -136,7 +128,7 @@ result = 2
 
 int main() {
 
-    // xác định được kết quả là số thập phân những vẫn khai báo kiểu dữ liệu cho biến result là int
+    // xác định được kết quả là số thập phân nhưng vẫn khai báo kiểu dữ liệu cho biến result là int
     int result = 0;
     result = 5 / 2;
 
@@ -147,9 +139,9 @@ int main() {
 
 Ở ví dụ này bạn **KHÔNG** thay đổi kiểu dữ liệu cho biến `result` là `float` mà vẫn giữ là `int`, kết quả của bạn sẽ được làm tròn mất đi phần thập phân sau dấu phẩy - kết quả nhận được sẽ bị sai như sau:
 
-```cpp
+::result
 result = 2
-```
+::
 
 Chúng ta sẽ sửa lại như sau:
 
@@ -169,19 +161,19 @@ int main() {
 
 **NHƯNG** khi làm đúng với ví dụ, chúng ta lại nhận được một kết quả vẫn không chính xác như sau:
 
-```cpp
+::result
 result = 2.000000
-```
+::
 
 **VÌ SAO LẠI NHƯ VẬY?**
 
-Các bạn hãy chuyển sang đọc tiếp riêng một bài viết về vấn đề này tại đây Type Conversion
+Các bạn hãy chuyển sang đọc tiếp riêng một bài viết về vấn đề này tại đây [Type Conversion](/bai-viet/c/chuyen-doi-kieu-du-lieu-trong-c)
 
 ## Tăng giá trị và giảm giá trị trong
 
 ### Incrementing (Phương pháp tăng giá trị)
 
-Trong qua trình học lập trình C, bạn sẽ thấy rằng - bạn sẽ phải thường xuyên tăng giá trị một biến số lên 1. Và ta làm như sau:
+Trong quá trình học lập trình C, bạn sẽ thấy rằng - bạn sẽ phải thường xuyên tăng giá trị một biến số lên 1. Và ta làm như sau:
 
 ```cpp
 #include <stdio.h>
@@ -239,7 +231,7 @@ int main() {
 
 ### Kiểu tăng và giảm giá trị trong C
 
-Toán tử **Increment** và **Decrement** được chia làm 2 loại tuỳ vào vị trí của dấu `++` hoặc `--` đứng trước hay sau một biến:
+Toán tử **Increment** và **Decrement** được chia làm 2 loại tùy vào vị trí của dấu `++` hoặc `--` đứng trước hay sau một biến:
 
 #### Tiền tố (Prefix)
 
@@ -260,12 +252,10 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 i = 10
 j = 10
-```
+::
 
 #### Hậu tố (Postfix)
 
@@ -286,12 +276,10 @@ int main() {
 }
 ```
 
-Kết quả:
-
-```cpp
+::result
 i = 10
 j = 9
-```
+::
 
 ## Assignment Operators
 
@@ -318,7 +306,7 @@ int main() {
 }
 ```
 
-Với những phép toán cơ bản khác cũng hoạt động y như vậy, đây là một chương trình làm ví dụ :
+Với những phép toán cơ bản khác cũng hoạt động y như vậy, đây là một chương trình làm ví dụ:
 
 ```cpp
 #include <stdio.h>
