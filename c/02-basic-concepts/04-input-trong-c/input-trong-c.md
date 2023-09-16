@@ -48,8 +48,6 @@ Trong hàm `scanf()` có 2 phần chính:
 - Không giống như hàm `printf()`, chúng ta không được viết thêm bất cứ đoạn text nào trong hàm `scanf()` ngoài định dạng `%`. Nếu bạn viết thêm text, chương trình sẽ chạy ra kết quả không như mong muốn.
 ::
 
-Kết quả khi chạy chương trình:
-
 ::result
 Enter n: _
 ::
@@ -82,8 +80,6 @@ int main() {
 }
 ```
 
-Kết quả:
-
 ::result
 Enter a b c: 1 2 3
 a = 1
@@ -105,8 +101,6 @@ int main() {
     printf("a = %d\nb = %d\nc = %d", a, b, c);
 }
 ```
-
-Kết quả:
 
 ::result
 Enter a b c: 1, 2, 3

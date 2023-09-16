@@ -65,8 +65,6 @@ int main() {
 }
 ```
 
-Kết quả:
-
 ::result
 1
 2
@@ -108,8 +106,6 @@ int main() {
     printf("End loop!\n");
 }
 ```
-
-Kết quả:
 
 ::result
 2
@@ -153,8 +149,6 @@ int main() {
     printf("End loop!\n");
 }
 ```
-
-Kết quả:
 
 ::result
 sum = 55

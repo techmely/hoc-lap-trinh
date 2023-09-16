@@ -114,8 +114,6 @@ int main() {
 }
 ```
 
-Kết quả:
-
 ::result
 Enter 5 integer numbers: 1
 4

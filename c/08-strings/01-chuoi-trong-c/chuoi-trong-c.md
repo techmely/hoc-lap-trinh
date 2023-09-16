@@ -32,8 +32,8 @@ char c[] = "Hello Kungfutech";
 
 Khi trình biên dịch gặp một chuỗi các ký tự được đặt trong dấu ngoặc kép, theo mặc định, nó sẽ thêm một ký tự **_null_** vào cuối.
 
-| H   |  e  | l   | l   | o   |     | A   | n   | e   | s   | t   | \0  |
-| --- | :-: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| H   |  e  | l   | l   | o   |     | K   | u   | n   | g   | f   | u   | t   | e   | c   | h   | \0  |
+| --- | :-: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 ## Khởi tạo chuỗi trong C
 
@@ -88,8 +88,6 @@ int main()
 }
 ```
 
-Kết quả:
-
 ::result
 Hello Kungfutech
 ::
@@ -118,8 +116,6 @@ int main()
 }
 ```
 
-Kết quả:
-
 ::result
 Enter name: Kungfutech Academy
 Your name is Kungfutech.
@@ -145,8 +141,6 @@ int main()
     return 0;
 }
 ```
-
-Kết quả:
 
 ::result
 Enter name: Kungfutech Academy
@@ -188,8 +182,6 @@ void displayString(char str[])
 }
 ```
 
-Kết quả:
-
 ::result
 Enter string: Kungfutech Academy
 String Output: Kungfutech Academy
@@ -212,7 +204,7 @@ int main(void) {
   char name[] = "Kungfutech Academy";
 
   printf("%c", *name);
-  printf("%c", *(name+1));
+  printf("%c", *(name+4));
   printf("%c", *(name+8));
 
   char *namePtr;
@@ -220,14 +212,12 @@ int main(void) {
 
   namePtr = name;
   printf("%c", *namePtr);
-  printf("%c", *(namePtr+1));
+  printf("%c", *(namePtr+4));
   printf("%c", *(namePtr+8));
 }
 ```
 
-Kết quả:
-
 ::result
-Ana
-Ana
+Kfc
+Kfc
 ::

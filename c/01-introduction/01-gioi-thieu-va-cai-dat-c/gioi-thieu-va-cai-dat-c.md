@@ -29,7 +29,7 @@ C là một ngôn ngữ lập trình tương đối nhỏ gọn vận hành gầ
   Ngôn ngữ C không đưa ra các ràng buộc đối với người lập trình. C được sử dụng trong nhiều dự án khác nhau, như viết hệ điều hành, chương trình xử lý văn bản, đồ hoạ, bảng tính, và thậm chí cả chương trình dịch cho các ngôn ngữ khác.
 
 - **Ngôn ngữ có tính khả chuyển**  
-  Một chương trình viết bằng C cho một hệ máy tính (ví dụ như IBM PC) có thể được dịch và chạy trên hệ máy tính khác (chẳng hạn như DEC VAX) chỉ với rất ít các sử đổi. Tính khả chuyển đã được bởi chuẩn ANSI cho C.
+  Một chương trình viết bằng C cho một hệ máy tính (ví dụ như IBM PC) có thể được dịch và chạy trên hệ máy tính khác (chẳng hạn như DEC VAX) chỉ với rất ít các sửa đổi. Tính khả chuyển đã được bởi chuẩn ANSI cho C.
 
 ### Điểm yếu ngôn ngữ C
 

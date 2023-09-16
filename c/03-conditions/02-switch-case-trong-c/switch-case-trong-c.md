@@ -11,7 +11,7 @@ image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982
 position: 2
 ---
 
-Lệnh `switch-case` cũng gần tương tự như `if-else` mà chúng ta đã được tìm hiểu ở bài trước. Nghĩa là nó có nhiều điều kiện, chương trình chúng ta duyệt từng điều khiện từ trên xuống dưới, nếu thõa điều kiện nào thì đoạn code bên trong điều kiện đó sẽ được thực thi.
+Lệnh `switch-case` cũng gần tương tự như `if-else` mà chúng ta đã được tìm hiểu ở bài trước. Nghĩa là nó có nhiều điều kiện, chương trình chúng ta duyệt từng điều kiện từ trên xuống dưới, nếu thỏa mãn điều kiện nào thì đoạn code bên trong điều kiện đó sẽ được thực thi.
 
 - `switch-case` là một cấu trúc điều khiển và rẽ nhánh hoàn toàn có thể thay thế được `if-else`.
 - Việc sử dụng `switch-case` sẽ giúp code của chúng ta dễ viết và dễ đọc hơn.
@@ -38,7 +38,7 @@ switch (expression) {
 - `switch` sẽ so sánh giá trị của `expression` với mỗi `case (trường hợp)` bên trong nó.
 - Từ khóa `break` được sử dụng để kết thúc một `case` trong câu lệnh `switch`.
 - Case `default` sẽ được thực hiện nếu không có `case` nào khớp giá trị với `expression`. Trong khối lệnh `switch` có thể có một case `default` hoặc không có.
-- Nếu có một case nào đó khớp giá trị với `expression`, các khối lệnh tương ứng của case đó sẽ được thực hiện cho tới khi gặp từ khoá `break`.
+- Nếu có một case nào đó khớp giá trị với `expression`, các khối lệnh tương ứng của case đó sẽ được thực hiện cho tới khi gặp từ khóa `break`.
 
 ### Lưu ý:
 
@@ -46,7 +46,7 @@ switch (expression) {
 - `expression` phải bắt buộc là giá trị hằng, có thể là biểu thức nhưng kết quả cần là hằng số.
 - Giá trị của các case là một hằng số và các giá trị của các case phải khác nhau.
 - Số lượng các case là không giới hạn nhưng chỉ có thể có duy nhất một `default`.
-- Từ khóa `break` có thể sử dụng hoặc không. Nếu không được sử dụng thì chương trình sẽ không kết thúc khi đã thực hiện hết khối lệnh của case đó. Thay vào đó, nó sẽ thực hiện tiếp các khối lệnh của case tiếp theo cho đến khi gặp từ khoá `break` hoặc dấu `}` cuối cùng của cấu trúc `switch-case`.
+- Từ khóa `break` có thể sử dụng hoặc không. Nếu không được sử dụng thì chương trình sẽ không kết thúc khi đã thực hiện hết khối lệnh của case đó. Thay vào đó, nó sẽ thực hiện tiếp các khối lệnh của case tiếp theo cho đến khi gặp từ khóa `break` hoặc dấu `}` cuối cùng của cấu trúc `switch-case`.
 - Cho phép `switch-case` lồng nhau, tuy nhiên không khuyến khích vì nó làm cho chương trình chúng ta phức tạp và khó đọc hơn thôi.
 
 Dưới đây là sơ đồ khối mô tả hoạt động của lệnh `switch-case`
@@ -93,8 +93,6 @@ int main() {
 }
 ```
 
-Và đây là kết quả sau khi chạy chương trình:
-
 ::result
 Enter the day: 6
 Friday
@@ -140,8 +138,6 @@ int main () {
     printf("Your grade is %c\n", grade);
 }
 ```
-
-Kết quả:
 
 ::result
 Enter grade: B

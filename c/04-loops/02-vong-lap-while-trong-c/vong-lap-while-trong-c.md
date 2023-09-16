@@ -44,11 +44,11 @@ while (i < 10) {
 - Quá trình diễn ra cho đến khi biểu thức kiểm tra được đánh giá là **`false`**.
 - Nếu biểu thức kiểm tra là **`false`**, vòng lặp chấm dứt (kết thúc).
 
-## Luồng hoạt động của vòng lặp white
+## Luồng hoạt động của vòng lặp while
 
-![Luồng hoạt động của vòng lặp white](https://user-images.githubusercontent.com/29374426/183098269-e3c60457-2a26-4c53-a745-c0520308384f.png)
+![Luồng hoạt động của vòng lặp while](https://user-images.githubusercontent.com/29374426/183098269-e3c60457-2a26-4c53-a745-c0520308384f.png)
 
-## Ví dụ vòng lặp white trong c
+## Ví dụ vòng lặp while trong c
 
 Ví dụ 1:
 
@@ -67,8 +67,6 @@ int main() {
     }
 }
 ```
-
-Kết quả:
 
 ::result
 1
@@ -130,8 +128,6 @@ int main() {
     printf("sum = %d", sum);
 }
 ```
-
-Kết quả:
 
 ::result
 Enter n: 694

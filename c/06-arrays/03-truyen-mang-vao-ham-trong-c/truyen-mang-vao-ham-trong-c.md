@@ -44,8 +44,6 @@ void display(int num1, int num2) {
 }
 ```
 
-Kết quả:
-
 ::result
 1
 3
@@ -92,8 +90,6 @@ float sum(float num[]) {
     return s;
 }
 ```
-
-Kết quả:
 
 ::result
 Result = 122.70
@@ -151,7 +147,6 @@ void display(int num[][2]) {
 }
 ```
 
-Kết quả:
 
 ::result
 Enter 4 numbers:

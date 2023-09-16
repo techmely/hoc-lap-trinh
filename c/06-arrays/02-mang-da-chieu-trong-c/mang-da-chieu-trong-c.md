@@ -99,8 +99,6 @@ int main() {
 }
 ```
 
-Kết quả:
-
 ::result
 Enter matrix[1][1]: 1
 Enter matrix[1][2]: 3
@@ -155,8 +153,6 @@ int main() {
     return 0;
 }
 ```
-
-Kết quả:
 
 ::result
 Enter num[0][0][0]: -2

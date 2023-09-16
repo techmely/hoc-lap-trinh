@@ -50,7 +50,7 @@ Frequency of e is 2
 
 ## Bài 2
 
-> **Nhập vào một số thập phân, rồi nhập 1 để chuyển sang hệ nhị phân, nhập 2 để chuyển sang hệ bát phân, nhập 3 để chuyển sáng hệ thập lục phân.**
+> **Nhập vào một số thập phân, rồi nhập 1 để chuyển sang hệ nhị phân, nhập 2 để chuyển sang hệ bát phân, nhập 3 để chuyển sang hệ thập lục phân.**
 
 Template:
 
@@ -90,7 +90,7 @@ Binary is 11011011100101011
 
 Test case 2
 
-```cpp
+::result
 1. Convert to binary
 2. Convert to octal
 3. Convert to hexa
@@ -100,11 +100,11 @@ Enter your choice: 2
 OUTPUT:
 Octal is 25150
 --------------------------------
-```
+::
 
 Test case 3
 
-```cpp
+::result
 1. Convert to binary
 2. Convert to octal
 3. Convert to hexa
@@ -114,4 +114,4 @@ Enter your choice: 3
 OUTPUT:
 Hexa is 40B7C
 --------------------------------
-```
+::

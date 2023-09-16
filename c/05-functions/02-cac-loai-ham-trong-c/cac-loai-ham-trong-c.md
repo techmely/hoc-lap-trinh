@@ -69,8 +69,6 @@ int main() {
 }
 ```
 
-Kết quả:
-
 ::result
 Enter a number: -7
 Absolute value = 7
@@ -113,8 +111,6 @@ int addition(int a, int b){ // Định nghĩa hàm (Function definition)
     return sum; // Trả về kết quả của hàm (Return statement)
 }
 ```
-
-Kết quả:
 
 ::result
 Enter x: 3

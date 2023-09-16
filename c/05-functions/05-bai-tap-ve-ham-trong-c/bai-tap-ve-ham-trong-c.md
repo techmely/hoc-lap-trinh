@@ -37,8 +37,6 @@ int main() {
 }
 ```
 
-Màn hình kết quả chương trình:
-
 ::result
 Enter n: 101
 
@@ -67,8 +65,6 @@ int main() {
     return 0;
 }
 ```
-
-Màn hình kết quả chương trình:
 
 ::result
 Enter a: 7
@@ -102,7 +98,7 @@ int main() {
 }
 ```
 
-Màn hình kết quả chương trình **Test case 1**:
+**Test case 1**:
 
 ::result
 Enter x : 14341
@@ -111,7 +107,7 @@ OUTPUT:
 true
 ::
 
-Màn hình kết quả chương trình **Test case 2**:
+**Test case 2**:
 
 ::result
 Enter x : 123

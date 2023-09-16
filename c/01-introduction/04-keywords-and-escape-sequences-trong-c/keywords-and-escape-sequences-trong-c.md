@@ -11,9 +11,9 @@ image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982
 position: 4
 ---
 
-## Từ khoá (keyword) trong C
+## Từ khóa (keyword) trong C
 
-Ngôn ngữ C có một số từ khoá đặc biệt được tạo ra với mục đích nhất định. Trong quá trình học các bạn sẽ gặp các từ khoá này thường xuyên.
+Ngôn ngữ C có một số từ khóa đặc biệt được tạo ra với mục đích nhất định. Trong quá trình học các bạn sẽ gặp các từ khóa này thường xuyên.
 
 Vì C là ngôn ngữ phân biệt chữ hoa chữ thường, tất cả các từ khóa phải được viết bằng chữ thường. Dưới đây là danh sách tất cả các từ khóa trong C:
 

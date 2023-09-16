@@ -84,7 +84,7 @@ int main() {
 }
 ```
 
-Kết quả khi bạn nhập một số âm:
+Khi bạn nhập một số âm:
 
 ::result
 Enter an integer: -5
@@ -92,7 +92,7 @@ You entered -5.
 Done.
 ::
 
-Kết quả khi bạn nhập một số dương:
+Khi bạn nhập một số dương:
 
 ::result
 Enter an integer: 5
@@ -134,14 +134,14 @@ int main() {
 }
 ```
 
-Kết quả khi bạn nhập số tuổi thỏa mãn điều kiện lớn hơn hoặc bằng 18:
+Khi bạn nhập số tuổi thỏa mãn điều kiện lớn hơn hoặc bằng 18:
 
 ::result
 Enter your age: 22
 You are eligible for voting.
 ::
 
-Kết quả khi bạn nhập số tuổi không thỏa mãn điều kiện lớn hơn hoặc bằng 18:
+Khi bạn nhập số tuổi không thỏa mãn điều kiện lớn hơn hoặc bằng 18:
 
 ::result
 Enter your age: 14
@@ -210,8 +210,6 @@ int main() {
 }
 ```
 
-Và sau đây là kết quả:
-
 ::result
 Input the value of var1: 9
 Input the value of var2: 8
@@ -270,8 +268,6 @@ int main() {
 }
 ```
 
-Và đây là kết quả:
-
 ::result
 Input the value of var1: 5
 Input the value of var2: 2
@@ -309,8 +305,6 @@ int main() {
     }
 }
 ```
-
-Kết quả:
 
 ::result
 Input the value of grade: 7.5

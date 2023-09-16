@@ -63,4 +63,4 @@ int main() {
 
 ### Vậy nên dùng single hay multi-line comments
 
-> Điều này tuỳ thuộc vào cách sử dụng của mỗi người. Thông thường, chúng ta nên sử dụng `//` cho các comment ngắn và `/* */` cho những comment dài cần phải xuống nhiều dòng.
+> Điều này tùy thuộc vào cách sử dụng của mỗi người. Thông thường, chúng ta nên sử dụng `//` cho các comment ngắn và `/* */` cho những comment dài cần phải xuống nhiều dòng.

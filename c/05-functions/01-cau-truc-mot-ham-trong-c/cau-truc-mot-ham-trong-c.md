@@ -65,8 +65,6 @@ int main() {
 - Nhìn cấu trúc hàm `sqrt()` bên trên bạn có thể thấy là lúc sử dụng hàm, chúng ta đã thay thế biến `x` bằng một số cụ thể là `9` để tính toán.
 - Vì hàm `sqrt()` có kiểu dữ liệu là `double` nên chúng ta cần khai báo biến `double result` để lấy kết quả trả về của hàm `sqrt()` gán vào biến `result`.
 
-Kết quả:
-
 ::result
 result = 3.00
 ::

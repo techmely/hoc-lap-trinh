@@ -33,8 +33,6 @@ int main() {
 }
 ```
 
-Kết quả
-
 ::result
 &x[0] = 000000000062FE00
 &x[1] = 000000000062FE04
@@ -44,7 +42,7 @@ Kết quả
 Address of array num: 000000000062FE00
 ::
 
-Cì kích thước của `int` là `4 byte` nên địa chỉ của hai phần tử mảng liên tiếp cũng chênh nhau `4 byte`.
+Vì kích thước của `int` là `4 byte` nên địa chỉ của hai phần tử mảng liên tiếp cũng chênh nhau `4 byte`.
 
 > địa chỉ của `&num[0]` và `num` là giống nhau vì `num` trỏ đến phần tử đầu tiên của mảng
 
@@ -82,8 +80,6 @@ int main() {
 }
 ```
 
-Kết quả:
-
 ::result
 Enter 5 numbers: 1
 -2
@@ -112,8 +108,6 @@ int main() {
 }
 
 ```
-
-Kết quả
 
 ::result
 *pn = 4

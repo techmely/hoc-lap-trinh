@@ -1,5 +1,5 @@
 ---
-title: "Thao tác với chuối trong C"
+title: "Thao tác với chuỗi trong C"
 description: "Một kỹ năng quan trọng giúp bạn xử lý và biến đổi văn bản một cách linh hoạt. Bài viết này sẽ hướng dẫn bạn qua các thao tác cơ bản và tinh tế để làm việc với chuỗi trong C, giúp bạn tận dụng sức mạnh của xử lý văn bản. Chúng mình sẽ giải thích cách sao chép, nối, cắt, và so sánh chuỗi. Bạn sẽ tìm hiểu về các hàm thư viện chuỗi quan trọng như strcpy, strcat, strlen, và cách sử dụng chúng một cách hiệu quả nha."
 chapter:
   name: "Strings"
@@ -19,7 +19,7 @@ Chúng ta cần phải thường xuyên thao tác các chuỗi tùy theo nhu c�
 
 Để giải quyết vấn đề này, C hỗ trợ một số lượng lớn các hàm xử lý chuỗi trong thư viện `string.h`.
 
-Một số hàm xử lí chuỗi thường được sử dụng:
+Một số hàm xử lý chuỗi thường được sử dụng:
 
 |    Hàm     | Mục đích                           |
 | :--------: | ---------------------------------- |
@@ -31,7 +31,7 @@ Một số hàm xử lí chuỗi thường được sử dụng:
 | `strupr()` | chuyển đổi chuỗi thành chữ hoa     |
 
 ::alert{type="warning"}
-Lưu ý: trước khi dùng các hàm xử lí chuỗi trên thì hãy khai báo thư viện chuỗi bằng syntax:
+Lưu ý: trước khi dùng các hàm xử lý chuỗi trên thì hãy khai báo thư viện chuỗi bằng syntax:
 ::
 
 ```cpp
@@ -57,8 +57,6 @@ int main()
     return 0;
 }
 ```
-
-Kết quả:
 
 ::result
 Enter name: Hello Kungfutech

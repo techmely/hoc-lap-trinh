@@ -1,6 +1,6 @@
 ---
 title: "Cấu trúc chương trình C cơ bản"
-description: "Việc nắm vững cấu trúc cơ bản của ngôn ngữ lập trình C là một bước quan trọng để trở thành một lập trình viên thành thạo. Trong bài viết này, chúng t sẽ giới thiệu và giải thích cơ bản về cấu trúc cơ bản của chương trình C"
+description: "Việc nắm vững cấu trúc cơ bản của ngôn ngữ lập trình C là một bước quan trọng để trở thành một lập trình viên thành thạo. Trong bài viết này, chúng ta sẽ giới thiệu và giải thích cơ bản về cấu trúc cơ bản của chương trình C"
 chapter:
   name: "Giới thiệu"
   slug: "chuong-01-introduction"
@@ -23,8 +23,6 @@ int main() {
    return 0;
 }
 ```
-
-Kết quả nhận được:
 
 ::result
 Hello World!
@@ -50,9 +48,9 @@ Sau đây, chúng ta sẽ đi tìm hiểu các thành phần cơ bản bên dư�
   **`printf("Hello World!\n");`**
 
   - Đây là dòng lệnh in ra màn hình dòng chữ `Hello World`. Dòng này kết thúc với dấu `;` (trong ngôn ngữ C tất cả dòng lệnh đều phải kết thúc bằng dấu `;`).
-  - Tạm hiểu câu lệnh `printf()` là câu lệnh in ra - hiển thị ra một chuỗi mà bạn truyển vào `( )`.
+  - Tạm hiểu câu lệnh `printf()` là câu lệnh in ra - hiển thị ra một chuỗi mà bạn truyền vào `( )`.
   - Chuỗi truyền vào cần nằm trong cặp dấu nháy kép `" "` để chương trình hiểu được đó là một đoạn văn bản.
-  - Phần `\n` trong chuỗi là một dạng format để báo rằng chúng ra muốn xuống dòng tại đó.
+  - Phần `\n` trong chuỗi là một dạng format để báo rằng chúng ta muốn xuống dòng tại đó.
 
   **`return 0;`**
   - Câu lệnh này tạm hiểu là để kết thúc viết code trong hàm main, nằm cuối cùng trong hàm main để kết thúc chương trình.

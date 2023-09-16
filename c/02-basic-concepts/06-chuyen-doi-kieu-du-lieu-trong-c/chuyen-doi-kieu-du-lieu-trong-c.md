@@ -45,8 +45,6 @@ int main() {
 }
 ```
 
-Kết quả:
-
 ::result
 a = 10
 b = 10.000000
@@ -132,7 +130,7 @@ Chữ `f` cuối cùng để phân biệt đây là giá trị thập phân củ
   }
   ```
 
-  Vì `int` không thế chứa được dấu chấm động vì vậy phần thập phân sẽ bị mất đi như sau:
+  Vì `int` không thể chứa được dấu chấm động vì vậy phần thập phân sẽ bị mất đi như sau:
 
   ::result
   c = 2
@@ -157,8 +155,6 @@ int main() {
 }
 ```
 
-Kết quả:
-
 ::result
 result = 2.000000
 ::
@@ -181,8 +177,6 @@ int main() {
     printf("result = %f", result);
 }
 ```
-
-Kết quả:
 
 ::result
 result = 2.500000

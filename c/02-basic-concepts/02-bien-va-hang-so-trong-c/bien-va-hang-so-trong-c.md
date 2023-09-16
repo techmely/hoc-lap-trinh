@@ -35,7 +35,7 @@ Một kiểu dữ liệu chỉ định kích thước và loại giá trị. Có
 
 `Biến` là nơi để lưu trữ tạm thời các giá trị với một kiểu dữ liệu xác định.
 
-Chúng ta gọi nó là `biến` vì nó có thể thay đối trong quá trình thực hiện chương trình.
+Chúng ta gọi nó là `biến` vì nó có thể thay đổi trong quá trình thực hiện chương trình.
 
 Các bạn sẽ thấy chương trình của chúng ta sẽ chứa rất nhiều biến. Trong ngôn ngữ C, một biến sẽ có 3 thành phần:
 
@@ -52,7 +52,7 @@ Trong ngôn ngữ C, mỗi biến có một tên gọi, nhưng không phải mu�
 - Chúng ta chỉ có thể đặt tên nó bằng những chữ cái viết thường hay viết hoa và những con số.
 - Tên của biến phải bắt đầu bằng một chữ cái. Chúng ta không được sử dụng khoảng trắng `(space)`, thay vào đó chúng ta có thể sử dụng kí tự `_` `(underscore)`- đó là kí tự duy nhất không thuộc dạng chữ cái hay số được phép sử dụng.
 - Bạn cũng không được phép sử dụng chữ cái mang dấu trọng âm. (ví dụ é è ê...).
-- Tên biến không được trùng với những từ khoá trong C.
+- Tên biến không được trùng với những từ khóa trong C.
 - Và một điều hết sức quan trọng mà bạn cần phải nắm đó là trong ngôn ngữ C có sự khác nhau giữa chữ thường và chữ in hoa: `chieu_rong`, `CHIEU_RONG` và `CHieu_RoNg` là tên của 3 biến khác nhau trong ngôn ngữ C.
 
 ### Vậy đặt tên biến như thế nào cho đúng?
@@ -128,8 +128,6 @@ int main() {
 }
 ```
 
-Kết quả:
-
 ::result
 C
 ::
@@ -178,7 +176,7 @@ int main() {
 
 ## Phạm vi biến trong C
 
-Trong ngôn ngữ lập trình C, mọi biến khi khai báo đều có 2 thuộc tính: kiểu dữ liệu (type) và lớp lưu trữ (storage class) của nó. Lớp lữu trữ ở đây chính là thuộc tính thể hiện phạm vi của biến - nơi nào có thể dùng biến đó và biến đó tồn tại trong bao lâu. Có 2 loại phạm vi chính cần quan tâm như sau:
+Trong ngôn ngữ lập trình C, mọi biến khi khai báo đều có 2 thuộc tính: kiểu dữ liệu (type) và lớp lưu trữ (storage class) của nó. Lớp lưu trữ ở đây chính là thuộc tính thể hiện phạm vi của biến - nơi nào có thể dùng biến đó và biến đó tồn tại trong bao lâu. Có 2 loại phạm vi chính cần quan tâm như sau:
 
 - Global variables (biến toàn cục)
 - Local variables (biến cục bộ)
@@ -199,8 +197,6 @@ int main() {
     return 0;
 }
 ```
-
-Kết quả:
 
 ::result
 7
@@ -244,8 +240,6 @@ int main() {
     printf("%d", a);
 }
 ```
-
-Kết quả:
 
 ::result
 1

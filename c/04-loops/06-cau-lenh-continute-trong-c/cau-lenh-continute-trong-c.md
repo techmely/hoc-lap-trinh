@@ -68,7 +68,6 @@ int main() {
 
 Các bạn có thể thấy khi `i = 5` câu lệnh **`continue`** sẽ được thực thi, lúc này chương trình sẽ bỏ qua đoạn mã bên dưới **`continue`** và chạy vòng **`for`** mới - vì vậy câu lệnh `printf()` sẽ không được thực hiện, `5` sẽ không được in ra màn hình.
 
-Kết quả chương trình:
 
 ::result
 1 2 3 4 6 7 8 9 10
@@ -103,7 +102,6 @@ int main() {
 
 Khi nhập `n < 0` câu lệnh **`continue`** sẽ được thực thi, lúc này chương trình sẽ bỏ qua đoạn mã bên dưới **`continue`** và chạy vòng **`for`** mới - vì vậy câu lệnh `sum += number;` sẽ không được thực hiện, số âm sẽ không được cộng vào tổng.
 
-Kết quả chương trình:
 
 ::result
 Enter a n1: 1

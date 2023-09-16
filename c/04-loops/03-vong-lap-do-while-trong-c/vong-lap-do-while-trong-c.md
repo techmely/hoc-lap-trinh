@@ -77,8 +77,6 @@ int main() {
 }
 ```
 
-Kết quả:
-
 ::result
 Enter a number: 5
 Enter a number: 4

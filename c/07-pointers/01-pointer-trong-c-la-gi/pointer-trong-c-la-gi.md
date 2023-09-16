@@ -85,7 +85,7 @@ c = 10;
 pc = &c;
 c = 2;
 printf("%d", c);    // Output: 2
-printf("%d", *pc);  // Ouptut: 2
+printf("%d", *pc);  // Output: 2
 ```
 
 Tại ví dụ này chúng ta đã dùng con trỏ `pc` để trỏ tới địa chỉ của `c` thì khi ta thay đổi biến `c = 2` đồng nghĩa với việc `*pc` cũng được thay đổi giá trị thành `2`.
@@ -100,7 +100,7 @@ b = -3;
 pa = &a;
 printf("%d", *pa); // Output: 2
 pa = &b;
-printf("%d", *pa); // Ouptut: -3
+printf("%d", *pa); // Output: -3
 ```
 
 Ở ví dụ này con trỏ `pa` sẽ trỏ vào địa chỉ của biến `a`
@@ -136,8 +136,6 @@ int main()
    return 0;
 }
 ```
-
-Kết quả:
 
 ::result
 Address of c: 000000000062FE14

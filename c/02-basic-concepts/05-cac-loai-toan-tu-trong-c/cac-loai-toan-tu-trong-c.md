@@ -32,8 +32,6 @@ int main() {
 }
 ```
 
-Kết quả:
-
 ::result
 result = 8
 ::
@@ -66,8 +64,6 @@ int main() {
 }
 ```
 
-Kết quả:
-
 ::result
 result = 15
 ::
@@ -86,8 +82,6 @@ int main() {
     printf("result = %d", result);
 }
 ```
-
-Kết quả:
 
 ::result
 result = 2
@@ -123,8 +117,6 @@ int main() {
 }
 ```
 
-Kết quả:
-
 ::result
 result = 2
 ::
@@ -136,7 +128,7 @@ result = 2
 
 int main() {
 
-    // xác định được kết quả là số thập phân những vẫn khai báo kiểu dữ liệu cho biến result là int
+    // xác định được kết quả là số thập phân nhưng vẫn khai báo kiểu dữ liệu cho biến result là int
     int result = 0;
     result = 5 / 2;
 
@@ -181,7 +173,7 @@ Các bạn hãy chuyển sang đọc tiếp riêng một bài viết về vấn 
 
 ### Incrementing (Phương pháp tăng giá trị)
 
-Trong qua trình học lập trình C, bạn sẽ thấy rằng - bạn sẽ phải thường xuyên tăng giá trị một biến số lên 1. Và ta làm như sau:
+Trong quá trình học lập trình C, bạn sẽ thấy rằng - bạn sẽ phải thường xuyên tăng giá trị một biến số lên 1. Và ta làm như sau:
 
 ```cpp
 #include <stdio.h>
@@ -239,7 +231,7 @@ int main() {
 
 ### Kiểu tăng và giảm giá trị trong C
 
-Toán tử **Increment** và **Decrement** được chia làm 2 loại tuỳ vào vị trí của dấu `++` hoặc `--` đứng trước hay sau một biến:
+Toán tử **Increment** và **Decrement** được chia làm 2 loại tùy vào vị trí của dấu `++` hoặc `--` đứng trước hay sau một biến:
 
 #### Tiền tố (Prefix)
 
@@ -259,8 +251,6 @@ int main() {
     printf("j = %d", j);
 }
 ```
-
-Kết quả:
 
 ::result
 i = 10
@@ -285,8 +275,6 @@ int main() {
     printf("j = %d", j);
 }
 ```
-
-Kết quả:
 
 ::result
 i = 10

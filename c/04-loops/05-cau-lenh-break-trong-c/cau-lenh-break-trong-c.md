@@ -81,8 +81,6 @@ int main() {
 }
 ```
 
-Kết quả chương trình:
-
 ::result
 Enter a n1: 4
 Enter a n2: 5
@@ -116,8 +114,6 @@ int main() {
 }
 ```
 
-Kết quả chương trình:
-
 ::result
 * * * * * *
 * * * * * *
@@ -145,8 +141,6 @@ int main() {
     }
 }
 ```
-
-Kết quả chương trình:
 
 ::result
 * * *
@@ -197,8 +191,6 @@ int main() {
     }
 }
 ```
-
-Kết quả chương trình:
 
 ::result
 0

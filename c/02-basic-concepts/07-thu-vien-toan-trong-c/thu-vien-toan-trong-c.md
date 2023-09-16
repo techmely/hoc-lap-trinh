@@ -23,8 +23,8 @@ Và ở bài trước chúng ta đã tìm hiểu qua những phép tính toán �
 | 2   | `double sin(double x)`                 | Trả về sin của một góc radian x.                    |
 | 3   | `double exp(double x)`                 | Trả về giá trị của e mũ x.                          |
 | 4   | `double ldexp(double x, int exponent)` | Trả về x \* 2^exp.                                  |
-| 5   | `double log(double x)`                 | Trả về logarit tự nhiên (logarit cơ sở) của x.      |
-| 6   | `double log10(double x)`               | Trả về logarit chung (logarit cơ sở 10) của x.      |
+| 5   | `double log(double x)`                 | Trả về logarit tự nhiên (logarit cơ số) của x.      |
+| 6   | `double log10(double x)`               | Trả về logarit trong (logarit cơ số 10) của x.      |
 | 7   | `double pow(double x, double y)`       | Trả về x mũ y.                                      |
 | 8   | `double sqrt(double x)`                | Trả về căn bậc hai của x.                           |
 | 9   | `double ceil(double x)`                | Trả về giá trị nguyên nhỏ nhất lớn hơn hoặc bằng x. |
@@ -32,9 +32,9 @@ Và ở bài trước chúng ta đã tìm hiểu qua những phép tính toán �
 | 11  | `double floor(double x)`               | Trả về giá trị nguyên lớn nhất nhỏ hơn hoặc bằng x. |
 | 12  | `double fmod(double x, double y)`      | Trả về số dư còn lại của x chia cho y.              |
 
-## Một số ví dụ mình hoạ:
+## Một số ví dụ minh hoạ:
 
-### Hàm fabs
+### Hàm fabs trong C
 
 Hàm này sẽ trả về **giá trị tuyệt đối** của một số, trong toán học viết là `| |`.
 
@@ -53,13 +53,11 @@ int main() {
 }
 ```
 
-Kết quả chương trình:
-
 ::result
 a = 5
 ::
 
-### Hàm ceil
+### Hàm ceil trong C
 
 Hàm này sẽ **trả về giá trị dạng số nguyên** nếu như ta đưa cho nó một số thực. Hay chúng ta còn gọi là **làm tròn số**, nhưng hàm `ceil` sẽ luôn làm tròn giá trị lên (tăng giá trị).
 
@@ -81,13 +79,11 @@ int main() {
 }
 ```
 
-Kết quả chương trình:
-
 ::result
 a = 6, b = 6
 ::
 
-### Hàm floor
+### Hàm floor trong C
 
 Trái ngược với hàm `ceil`, hàm `floor` sẽ luôn làm tròn giá trị xuống (giảm giá trị).
 
@@ -109,13 +105,11 @@ int main() {
 }
 ```
 
-Kết quả chương trình:
-
 ::result
 a = 5, b = 5
 ::
 
-### Hàm pow
+### Hàm pow trong C
 
 Hàm này cho phép tính **lũy thừa** một số. Chúng ta phải chỉ ra cho nó 2 giá trị: số hạng và cấp lũy thừa của số đó. Đây là cấu trúc của hàm này:
 
@@ -138,13 +132,11 @@ int main() {
 }
 ```
 
-Kết quả chương trình:
-
 ::result
 c = 64
 ::
 
-### Hàm sqrt
+### Hàm sqrt trong C
 
 Hàm này sẽ tính **căn bậc 2** của một số được truyền vào. Giá trị trả về có thể là **số nguyên** hoặc **số thập phân**.
 
@@ -166,13 +158,11 @@ int main() {
 }
 ```
 
-Kết quả chương trình:
-
 ::result
 a = 3, b = 3.872983
 ::
 
-### Hàm exp
+### Hàm exp trong C
 
 Hàm này sẽ tính **exponential**, hay còn gọi là **lũy thừa cơ số e**. Trả về giá trị là một **số thập phân**.
 
@@ -191,8 +181,6 @@ int main() {
     printf("a = %lf", a);
 }
 ```
-
-Kết quả chương trình:
 
 ::result
 a = 148.413159

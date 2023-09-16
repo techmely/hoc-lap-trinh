@@ -35,8 +35,6 @@ int main() {
 }
 ```
 
-Màn hình kết quả chương trình:
-
 ::result
 Enter the 10 elements of array: 3 5 6 1 13 54 34 8 22 11
 
@@ -67,8 +65,6 @@ int main() {
     return 0;
 }
 ```
-
-Màn hình kết quả chương trình:
 
 ::result
 Eter the number of elements of the array: 10
@@ -102,7 +98,7 @@ int main() {
 }
 ```
 
-Màn hình kết quả chương trình:
+Màn hình chương trình:
 
 Test case 1
 
@@ -117,11 +113,11 @@ Found 8 at index 5 in array
 
 Test case 2
 
-```cpp
+::result
 Enter value you want to search: 5
 
 OUTPUT:
 Display array: 1, 4, 6, 2, 20, 8, 36, 22, 89, 77
 Not found 5 in array
 --------------------------------
-```
+::

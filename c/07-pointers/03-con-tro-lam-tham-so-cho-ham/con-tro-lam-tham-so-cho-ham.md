@@ -44,8 +44,6 @@ void swap(int* n1, int* n2)
 }
 ```
 
-Kết quả:
-
 ::result
 num1 = 2
 num2 = 1
