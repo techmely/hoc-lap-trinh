@@ -15,11 +15,11 @@ Mảng trong Java là một đối tượng chứa các phần tử có kiểu d
 
 ## Mảng trong Java
 
-Thông thường, mảng (array) là một tập hợp các phần tử có cùng kiểu được lưu trữ gần nhau trong bộ nhớ. Mảng trong java lưu các phần tử theo chỉ số, chỉ số của phần tử đầu tiên là 0.
+Mảng (Array) là một trong những cấu trúc dữ liệu cơ bản và quan trọng trong ngôn ngữ lập trình Java. Mảng cho phép bạn lưu trữ và quản lý nhiều giá trị cùng một loại trong một biến duy nhất. Trong bài viết này, chúng ta sẽ tìm hiểu về mảng trong Java, cách khai báo, sử dụng và ví dụ về các thao tác trên mảng.. Mảng trong java lưu các phần tử theo chỉ số, chỉ số của phần tử đầu tiên là `0`.
 
 Dưới đây là hình ảnh mô tả một mảng một chiều, chúng ta sẽ tìm hiểu kỹ ở phần dưới nhé.
 
-![image](https://user-images.githubusercontent.com/29374426/132833011-54534065-b9ea-48f0-9e44-a9ef4f8a4951.png)
+![Mảng trong Java](https://user-images.githubusercontent.com/29374426/132833011-54534065-b9ea-48f0-9e44-a9ef4f8a4951.png)
 
 ## Mảng 1 chiều trong Java
 

@@ -11,13 +11,13 @@ image: https://user-images.githubusercontent.com/29374426/145005207-2c303812-92f
 position: 9
 ---
 
-## Tập hợp TreeSet trong Java là gì?
+## Tập hợp `TreeSet` trong Java là gì?
 
 Lớp `TreeSet` trong Java cài đặt (implement) Set Interface, nó sử dụng một cây (tree) cho lưu giữ các phần tử. TreeSet kế thừa lớp (extends) `AbstractSet` và cài đặt (implement) `NavigableSet Interface`. Các đối tượng của lớp `TreeSet` được lưu trữ theo thứ tự tăng dần.
 
 ![TreeSet trong Java là gì](https://user-images.githubusercontent.com/29374426/145005207-2c303812-92fc-4e44-bbf0-d4d7119f1117.png)
 
-Các điểm quan trọng về lớp TreeSet trong java là:
+Các điểm quan trọng về lớp `TreeSet` trong java là:
 
 - Chỉ chứa các phần tử duy nhất giống như `HashSet`.
 - Duy trì thứ tự tăng dần.
@@ -27,7 +27,7 @@ Các điểm quan trọng về lớp TreeSet trong java là:
 - Độ phức tạp của `TreeSet` là log(n) cho thao tác thêm (insertion), loại bỏ (removal) và truy xuất (retrieval).
 - `TreeSet` sử dụng `TreeMap` để lưu trữ các phần tử, giống như `HashSet` và `LinkedHashSet` sử dụng `HashMap` và `LinkedHashMap` tương ứng để lưu trữ các phần tử của chúng.
 
-## Khởi tạo TreeSet trong Java
+## Khởi tạo `TreeSet` trong Java
 
 - `TreeSet()`: khởi tạo một tập hợp rỗng.
 - `TreeSet(Collection c)`: khởi tạo một tập hợp với các phần tử của collection c
@@ -77,7 +77,7 @@ New TreeSet: [1, 2, 4, 6]
 
 ::
 
-## Duyệt qua các phần tử trong TreeSet
+## Duyệt qua các phần tử trong `TreeSet`
 
 Để truy cập các phần tử của một tập cây, chúng ta có thể sử dụng `iterator()`. Để sử dụng phương thức này, chúng ta phải nhập gói `java.util.Iterator`.
 
@@ -355,11 +355,11 @@ Using subSet with boolean value: [5, 6]
 
 ::
 
-## Hoạt động của Set
+## Hoạt động của `Set`
 
 Các phương thức của lớp `TreeSet` cũng có thể được sử dụng để thực hiện các hoạt động tập hợp khác nhau.
 
-## Liên hiệp các Set
+## Liên hiệp các `Set`
 
 Để thực hiện kết hợp giữa hai tập hợp, chúng ta sử dụng phương thức `addAll()`
 
@@ -395,7 +395,7 @@ Union is: [1, 2, 3, 4]
 
 ::
 
-### Giao điểm của Set
+### Giao điểm của `Set`
 
 Để thực hiện giao giữa hai tập hợp, ta sử dụng phương thức `retainAll()`.
 
@@ -502,17 +502,17 @@ Is TreeSet2 subset of TreeSet1? True
 
 ::
 
-## Các phương thức khác của TreeSet
+## Các phương thức khác của `TreeSet`
 
-| Phương thức | Sự miêu tả                                                           |
-| ----------- | -------------------------------------------------------------------- |
-| clone()     | Tạo một bản sao của TreeSet                                          |
-| contains()  | Tìm kiếm TreeSet cho phần tử được chỉ định và trả về kết quả Boolean |
-| isEmpty()   | Kiểm tra xem TreeSet có trống không                                  |
-| size()      | Trả về kích thước của TreeSet                                        |
-| clear()     | Loại bỏ tất cả các phần tử khỏi TreeSet                              |
+| Phương thức  | Sự miêu tả                                                               |
+| ------------ | ------------------------------------------------------------------------ |
+| `clone()`    | Tạo một bản sao của `TreeSet`                                            |
+| `contains()` | Tìm kiếm `TreeSet` cho phần tử được chỉ định và trả về kết quả `Boolean` |
+| `isEmpty()`  | Kiểm tra xem `TreeSet` có trống không                                    |
+| `size()`     | Trả về kích thước của `TreeSet`                                          |
+| `clear()`    | Loại bỏ tất cả các phần tử khỏi `TreeSet`                                |
 
-## So sánh TreeSet và HashSet
+## So sánh `TreeSet` và `HashSet`
 
 Cả hai TreeSet cũng như HashSet đều triển khai từ Set interface. Tuy nhiên, tồn tại một số khác biệt giữa chúng.
 

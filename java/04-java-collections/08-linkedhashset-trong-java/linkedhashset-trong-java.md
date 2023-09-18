@@ -11,7 +11,7 @@ image: https://user-images.githubusercontent.com/29374426/144807571-408057c0-4e0
 position: 8
 ---
 
-## Tập hợp LinkedHashSet trong Java là gì?
+## Tập hợp `LinkedHashSet` trong Java là gì?
 
 Lớp `LinkedHashSet` trong Java kế thừa `HashSet` và triển khai `Set Interface`. Nó tạo một collection mà sử dụng một Linked List để lưu giữ các phần tử theo thứ tự chúng đã được chèn.
 
@@ -25,7 +25,7 @@ Các điểm quan trọng về lớp LinkedHashSet trong java là:
 - **LinkedHashSet** cho phép chứa phần tử NULL.
 - **LinkedHashSet** không được đồng bộ. Để có LinkedHashSet đồng bộ, hãy sử dụng phương thức `Collections.synchronizedSet()`.
 
-## Khởi tạo LinkedHashSet trong Java
+## Khởi tạo `LinkedHashSet` trong Java
 
 - `LinkedHashSet()`: khởi tạo một danh sách mảng trống.
 - `LinkedHashSet(Collection c)`: khởi tạo một danh sách với các phần tử của collection c.
@@ -50,7 +50,7 @@ Theo mặc định:
 - Dung lượng của LinkedHashSet sẽ là 16
 - Hệ số tải sẽ là 0,75
 
-## Tạo LinkedHashset từ các collection khác
+## Tạo `LinkedHashSet` từ các collection khác
 
 Chúng ta có thể tạo một LinkedHashSet có chứa tất cả các phần tử của các collection khác theo cách sau đây.
 
@@ -80,7 +80,7 @@ LinkedHashSet: [2, 4]
 
 ::
 
-## Chèn các phần tử vào LinkedHashset
+## Chèn các phần tử vào `LinkedHashSet`
 
 - `add()` – chèn phần tử được chỉ định vào LinkedHashSet
 - `addAll()` – chèn tất cả các phần tử của collection đã chỉ định vào LinkedHashSet
@@ -115,7 +115,7 @@ New LinkedHashSet: [2, 4, 6, 5]
 
 ::
 
-## Duyệt qua các phần tử trong LinkedHashSet
+## Duyệt qua các phần tử trong `LinkedHashSet`
 
 Để truy cập các phần tử của LinkedHashSet, chúng ta có thể sử dụng hàm `iterator()`. Để sử dụng hàm này, chúng ta phải import gói `java.util.Iterator`.
 
@@ -157,7 +157,7 @@ Lưu ý:
 - `hasNext()` trả về true nếu có một phần tử tiếp theo trong `LinkedHashSet`
 - `next()` trả về phần tử tiếp theo trong `LinkedHashSet`
 
-## Xóa các phần tử khỏi LinkedHashSet
+## Xóa các phần tử khỏi `LinkedHashSet`
 
 - `remove()` – xóa phần tử đã chỉ định khỏi LinkedHashSet
 - `removeAll()` – loại bỏ tất cả các phần tử khỏi LinkedHashSet
@@ -331,7 +331,7 @@ Is LinkedHashSet2 is a subset of LinkedHashSet1? true
 
 ::
 
-## Một số hàm khác của LinkedHashset
+## Một số hàm khác của `LinkedHashSet`
 
 | Hàm          | Mô tả                                                                      |
 | ------------ | -------------------------------------------------------------------------- |
@@ -341,7 +341,7 @@ Is LinkedHashSet2 is a subset of LinkedHashSet1? true
 | `size()`     | Trả về kích thước của LinkedHashSet                                        |
 | `clear()`    | Loại bỏ tất cả các phần tử khỏi LinkedHashSet                              |
 
-## So sánh LinkedHashset và Hashset
+## So sánh `LinkedHashSet` và HashSet
 
 Cả `LinkedHashSet` và `HashSet` đều triển khai `Set interface`. Tuy nhiên, có một số khác biệt giữa chúng.
 
@@ -349,7 +349,7 @@ Cả `LinkedHashSet` và `HashSet` đều triển khai `Set interface`. Tuy nhi�
 - Class `LinkedHashSet` đòi hỏi nhiều không gian lưu trữ hơn `HashSet`. Đó là do `LinkedHashSet` duy trì `LinkedList` trong nội bộ.
 - Hiệu suất của `LinkedHashSet` chậm hơn `HashSet`. Bởi vì `LinkedList` có ở trong `LinkedHashSet`.
 
-## So sánh LinkedHashset và TreeSet
+## So sánh LinkedHashSet và TreeSet
 
 Dưới đây là những sự khác biệt chính giữa `LinkedHashSet` và `TreeSet`:
 

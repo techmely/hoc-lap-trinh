@@ -11,7 +11,7 @@ image: https://user-images.githubusercontent.com/29374426/145352732-65bf2fe2-247
 position: 10
 ---
 
-## Map trong Java là gì?
+## `Map` trong Java là gì?
 
 Trong java, `map` được sử dụng để lưu trữ và truy xuất dữ liệu theo cặp **khóa (key)** và **giá trị (value)**. Mỗi cặp key và value được gọi là entry.
 
@@ -30,7 +30,7 @@ Các lớp cài đặt (implements) Map interface là:
 
 ![Các lớp cài đặt Map interface](https://user-images.githubusercontent.com/29374426/145352782-375c0313-e6ba-4610-99a8-4893fd41524a.png)
 
-Sức chứa (compacity) mặc định khi khởi tạo map là `2^4 = 16`. Kích thước này sẽ tự động tăng gấp đôi mỗi khi thêm phần tử vượt quá kích thước của nó.
+Sức chứa (capacity) mặc định khi khởi tạo map là `2^4 = 16`. Kích thước này sẽ tự động tăng gấp đôi mỗi khi thêm phần tử vượt quá kích thước của nó.
 
 ## Sử dụng Map trong Java
 

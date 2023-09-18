@@ -17,7 +17,7 @@ position: 16
 
 - `Arrays.sort(arr)`: sắp xếp tất cả các phần tử của mảng
 - `Arrays.sort(arr, fromIndex, toIndex)`: Sắp xếp một phần của mảng
-- `Arrays.parallelSort.sort(arr)`: Sắp xếp tất cả các phần tử của mảng theo cách xử lý song song. Phương thức này chia nhỏ một mảng thành nhiều mảng con và thực hiện sắp xếp trên các mảng con này một cách song song trên các luồng (Thread) khác nhau, sau đó merge lại để có một mảng được sắp xếp hoàn chình.
+- `Arrays.parallelSort.sort(arr)`: Sắp xếp tất cả các phần tử của mảng theo cách xử lý song song. Phương thức này chia nhỏ một mảng thành nhiều mảng con và thực hiện sắp xếp trên các mảng con này một cách song song trên các luồng (Thread) khác nhau, sau đó merge lại để có một mảng được sắp xếp hoàn chỉnh.
 - `Arrays.parallelSort.sort(arr, fromIndex, toIndex)`: Sắp xếp một phần của mảng theo cách xử lý song song.
 
 ![Sắp xếp trong Java](https://user-images.githubusercontent.com/29374426/146035791-17258761-e284-4388-8508-adcd4a9ed2d2.png)
@@ -51,7 +51,7 @@ public class SortedArrayExample {
 
 [1, 2, 3, 4, 5, 6, 7, 8, 9]<br/>
 [5, 1, 2, 3, 4, 6, 7, 9, 8]<br/>
-[1, 2, 3, 4, 5, 6, 7, 8, 9]<br/>
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 ::
 

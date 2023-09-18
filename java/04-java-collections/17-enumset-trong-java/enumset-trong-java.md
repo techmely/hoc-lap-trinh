@@ -11,7 +11,7 @@ image: https://user-images.githubusercontent.com/29374426/145766680-a7bd0eb6-6b2
 position: 18
 ---
 
-## EnumSet trong Java là gì?
+## `EnumSet` trong Java là gì?
 
 `Class EnumSet` của collections framework trong Java triển khai tập hợp các phần tử của một enum đơn. Trước khi bạn tìm hiểu về `EnumSet`, hãy chắc chắn rằng bạn đã biết về [Enums trong Java](/bai-viet/java/enum-trong-java).
 
@@ -21,11 +21,11 @@ Một `EnumSet` chỉ lưu trữ các giá trị `enum` của một `enum` cụ 
 
 ![EnumSet trong Java](https://user-images.githubusercontent.com/29374426/145766680-a7bd0eb6-6b24-442a-8ff4-13998b902c39.png)
 
-## Tạo Enumset trong Java
+## Tạo `EnumSet` trong Java
 
 Để tạo một `EnumSet`, trước tiên chúng ta phải import gói `java.util.EnumSet`. Khác với việc triển khai `set`, `EnumSet` không có các `constructor` công khai. Chúng ta phải sử dụng các hàm được xác định trước để tạo ra một `EnumSet`.
 
-### Sử dụng hàm allOf(Size)
+### Sử dụng hàm `allOf(Size)`
 
 Hàm `allof()` tạo ra một `EnumSet` có chứa tất cả các giá trị của enum kiểu `Size` đã chỉ định.
 
@@ -35,7 +35,7 @@ import java.util.EnumSet;
 class Main {
     // an enum named Size
     enum Size {
-        SMALL, MEDIUM, LARGE, EXTRALARGE
+        SMALL, MEDIUM, LARGE, EXTRA_LARGE
     }
 
     public static void main(String[] args) {
@@ -49,7 +49,7 @@ class Main {
 
 ::result
 
-EnumSet: [SMALL, MEDIUM, LARGE, EXTRALARGE]
+EnumSet: [SMALL, MEDIUM, LARGE, EXTRA_LARGE]
 
 ::
 
@@ -72,7 +72,7 @@ class Main {
 
      // an enum type Size
     enum Size {
-        SMALL, MEDIUM, LARGE, EXTRALARGE
+        SMALL, MEDIUM, LARGE, EXTRA_LARGE
     }
 
     public static void main(String[] args) {
@@ -93,7 +93,7 @@ Empty EnumSet : []
 
 Ở đây, chúng ta đã tạo ra một `enum` trống có tên là `Size`. Lưu ý chúng ta chỉ có thể chèn các phần tử của kiểu enum `Size` trong chương trình trên. Bởi vì chúng ta đã tạo ra `EnumSet` trống bằng cách sử dụng `enum Size`.
 
-### Sử dụng hàm range(e1, e2)
+### Sử dụng hàm `range(e1, e2)`
 
 Hàm `range()` tạo ra một EnumSet chứa tất cả các giá trị của một `enum` giữa 2 giá trị `e1` và `e2` bao gồm cả hai giá trị này.
 
@@ -103,13 +103,13 @@ import java.util.EnumSet;
 class Main {
 
     enum Size {
-        SMALL, MEDIUM, LARGE, EXTRALARGE
+        SMALL, MEDIUM, LARGE, EXTRA_LARGE
     }
 
     public static void main(String[] args) {
 
         // Creating an EnumSet using range()
-        EnumSet<Size> sizes = EnumSet.range(Size.MEDIUM, Size.EXTRALARGE);
+        EnumSet<Size> sizes = EnumSet.range(Size.MEDIUM, Size.EXTRA_LARGE);
 
         System.out.println("EnumSet: " + sizes);
     }
@@ -118,11 +118,11 @@ class Main {
 
 ::result
 
-EnumSet: [MEDIUM, LARGE, EXTRALARGE]
+EnumSet: [MEDIUM, LARGE, EXTRA_LARGE]
 
 ::
 
-### Sử dụng hàm of()
+### Sử dụng hàm `of()`
 
 Hàm `of()` tạo ra một EnumSet có chứa các phần tử đã chỉ định.
 
@@ -132,7 +132,7 @@ import java.util.EnumSet;
 class Main {
 
     enum Size {
-        SMALL, MEDIUM, LARGE, EXTRALARGE
+        SMALL, MEDIUM, LARGE, EXTRA_LARGE
     }
 
     public static void main(String[] args) {
@@ -154,7 +154,7 @@ EnumSet2: [SMALL, LARGE]
 
 ::
 
-## Chèn các phần tử vào Enumset trong Java
+## Chèn các phần tử vào `EnumSet` trong Java
 
 - `add()` – chèn các giá trị enum được chỉ định vào `EnumSet`
 - `addAll()` chèn tất cả các phần tử của `collection` đã chỉ định vào `set`
@@ -165,7 +165,7 @@ import java.util.EnumSet;
 class Main {
 
     enum Size {
-        SMALL, MEDIUM, LARGE, EXTRALARGE
+        SMALL, MEDIUM, LARGE, EXTRA_LARGE
     }
 
     public static void main(String[] args) {
@@ -190,13 +190,13 @@ class Main {
 ::result
 
 EnumSet using add(): [MEDIUM]<br/>
-EnumSet using addAll(): [SMALL, MEDIUM, LARGE, EXTRALARGE]
+EnumSet using addAll(): [SMALL, MEDIUM, LARGE, EXTRA_LARGE]
 
 ::
 
 Trong ví dụ trên, chúng ta đã sử dụng hàm `addAll()` để chèn tất cả các phần tử của `EnumSet Size1` đến `EnumSet Size2`. Ta cũng có thể chèn các phần tử từ các collection khác như `ArrayList`, Link`edList,... để một `EnumSet`bằng cách sử dụng hàm`addAll()`. Tuy nhiên, tất cả các `collection`nên thuộc cùng loại`enum`.
 
-## Truy cập các phần tử của Enumset
+## Truy cập các phần tử của EnumSet
 
 Để truy cập các phần tử của `EnumSet`, chúng ta có thể sử dụng hàm `iterator()`. Để sử dụng hàm này, chúng ta phải `import` gói `java.util.Iterator`.
 
@@ -207,7 +207,7 @@ import java.util.Iterator;
 class Main {
 
     enum Size {
-        SMALL, MEDIUM, LARGE, EXTRALARGE
+        SMALL, MEDIUM, LARGE, EXTRA_LARGE
     }
 
     public static void main(String[] args) {
@@ -228,7 +228,7 @@ class Main {
 
 ::result
 
-EnumSet: SMALL, MEDIUM, LARGE, EXTRALARGE,
+EnumSet: SMALL, MEDIUM, LARGE, EXTRA_LARGE,
 
 ::
 
@@ -237,7 +237,7 @@ Lưu ý:
 - `hasNext()` trả về `true` nếu có phần tử tiếp theo trong `EnumSet`
 - `next()` trả về phần tử tiếp theo trong `EnumSet`
 
-## Xóa bỏ các phần tử khỏi Enumset
+## Xóa bỏ các phần tử khỏi EnumSet
 
 - `remove()` – xóa phần tử đã chỉ định khỏi `EnumSet`
 - `removeAll()` – loại bỏ tất cả các phần tử khỏi `EnumSet`
@@ -248,7 +248,7 @@ import java.util.EnumSet;
 class Main {
 
     enum Size {
-        SMALL, MEDIUM, LARGE, EXTRALARGE
+        SMALL, MEDIUM, LARGE, EXTRA_LARGE
     }
 
     public static void main(String[] args) {
@@ -270,13 +270,13 @@ class Main {
 
 ::result
 
-EnumSet: [SMALL, MEDIUM, LARGE, EXTRALARGE]<br/>
+EnumSet: [SMALL, MEDIUM, LARGE, EXTRA_LARGE]<br/>
 Is MEDIUM removed? true<br/>
 Are all elements removed? true
 
 ::
 
-## Một số hàm trong Enumset
+## Một số hàm trong EnumSet
 
 | Hàm          | Mô tả                                                                    |
 | ------------ | ------------------------------------------------------------------------ |
