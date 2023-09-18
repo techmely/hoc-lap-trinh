@@ -58,8 +58,6 @@ _Trong đó:_
 - **extends** là từ khoá cho java biết lớp này này được kế thừa từ lớp khác
 - **implements** là từ khoá cho java biết lớp này sẽ triển khai giao diện `Interfaces`, đây là một dạng tương tự như kế thừa bội của java.
 
-::alert{type="infor"}
-
 - Thuộc tính của lớp là một biến có kiểu dữ liệu bất kỳ, nó có thể lại là một biến có kiểu là chính lớp đó
 - Khi khai báo các thành phần của lớp (thuộc tính và phương thức) có thể dùng một trong các từ khoá `private`, `public`, `protected` để giúp hạn sự truy cập đến thành phần đó
 - Các thành phần `private` chỉ có thể sử dụng được ở bên trong lớp, ta không thể truy cập vào các thành phần `private` từ bên ngoài lớp
@@ -69,7 +67,6 @@ _Trong đó:_
 - Các thuộc tính nên để mức truy cập `private` để đảm bảo tính dấu kín và lúc đó để bên ngoài phạm vi của lớp có thể truy cập được đến thành phần `private` này ta phải tạo ra các phương thức phương thức get và set.
 - Các phương thức thường khai báo là `public`, để chúng có thể truy cập từ bất cứ đâu.
 - Trong một tệp chương trình (hay còn gọi là một đơn vị biên dịch) chỉ có một lớp được khai báo là `public`, và tên lớp `public` này phải trùng với tên của tệp kể cả chữ hoa, chữ thường
-  ::
 
 ## Khai báo thuộc tính
 

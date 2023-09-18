@@ -15,7 +15,7 @@ Khi bạn khởi tạo một object với từ khoá new một object mới đư
 
 ![image](https://user-images.githubusercontent.com/29374426/131286911-92c85605-6bb1-4e91-81be-735a89f56188.png)
 
-## Reference là gì?
+## `Reference` trong Java là gì?
 
 Khi bạn khởi tạo một object với từ khoá new một object mới được tạo ra và lưu vào heap và nó trả về một reference. Hay nói cách khác reference là một địa chỉ của object được lưu trong heap.
 

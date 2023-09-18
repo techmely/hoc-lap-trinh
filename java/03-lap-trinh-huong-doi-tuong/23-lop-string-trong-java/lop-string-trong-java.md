@@ -11,145 +11,122 @@ image: https://user-images.githubusercontent.com/29374426/132494584-b9f248b5-258
 position: 23
 ---
 
-Việc xử lý các xâu ký tự trong Java được hỗ trợ bởi hai lớp **String** và **StringBuffer**. Lớp **String** dùng cho những xâu ký tự bất biến, nghĩa là những xâu chỉ đọc và sau khi dược khởi tạo giá trị thì nội dung bên trong xâu không thể thay đổi được. Lớp **StringBuffer** được sử dụng đối với những xâu ký tự động, tức là có thể thay đổi được nội dung bên trong của xâu.
+Việc xử lý các xâu ký tự trong Java được hỗ trợ bởi hai lớp **String** và **StringBuffer**. Lớp **String** dùng cho những xâu ký tự bất biến, nghĩa là những xâu chỉ đọc và sau khi được khởi tạo giá trị thì nội dung bên trong xâu không thể thay đổi được. Lớp **StringBuffer** được sử dụng đối với những xâu ký tự động, tức là có thể thay đổi được nội dung bên trong của xâu. Trong bài viết này, chúng ta sẽ tìm hiểu về cách khởi tạo một đối tượng `String`, các phương thức quan trọng của lớp `String`, và ví dụ cụ thể trong ngôn ngữ Java.
 
 ![image](https://user-images.githubusercontent.com/29374426/132494584-b9f248b5-258d-4760-9d5a-150a366f05e8.png)
 
-## Khởi tạo một lớp String
+## Khởi tạo một đối tượng String
 
-Chuỗi là một dãy các ký tự. Lớp String cung cấp các phương thức để thao tác với các chuỗi. Nó cung cấp các phương thức khởi tạo (constructor) khác nhau:
+Để khởi tạo một đối tượng `String` trong Java, bạn có thể sử dụng các constructor sau:
 
-```java
-String str1 = new String(); // str1 chứa một chuỗi rống.
+1. `String()`: Khởi tạo một đối tượng `String` trống.
 
-String str2 = new String("Hello World"); // str2 chứa "Hello World"
+2. `String(String s)`: Khởi tạo một đối tượng `String` từ một chuỗi có sẵn.
 
-char ch[] = {'A','B','C','D','E'};
-String str3 = new String(ch); // str3 chứa "ABCDE"
+3. `String(char[] ch)`: Khởi tạo một đối tượng `String` từ một mảng ký tự.
 
-String str4 = new String(ch,0,2); // str4 chứa "AB" vì 0- tính từ ký tự bắt đầu, 2- là số lượng ký tự kể từ ký tự bắt đầu.
-```
+4. `String(char[] ch, int startIndex, int length)`: Khởi tạo một đối tượng `String` từ một phần của mảng ký tự, bắt đầu từ chỉ số `startIndex` và có độ dài `length`.
 
-Toán tử "+" được sử dụng để cộng chuỗi khác vào chuỗi đang tồn tại. Toán tử "+" này được gọi như là **nối chuỗi**. Ở đây, nối chuỗi được thực hiện thông qua lớp **StringBuffer**. Chúng ta sẽ thảo luận về lớp này trong phần sau. Phương thức `concat()` của lớp String cũng có thể thực hiện việc nối chuỗi. Không giống như toán tử `+`, phương thức này không thường xuyên nối hai chuỗi tại vị trí cuối cùng của chuỗi đầu tiên. Thay vào đó, phương thức này trả về một chuỗi mới, chuỗi mới đó sẽ chứa giá trị của cả hai. Điều này có thể được gán cho chuỗi đang tồn tại.
+Ví dụ:
 
 ```java
-String strFirst, strSecond, strFinal; StrFirst = "Charlie";
+String str1 = new String(); // str1 chứa một chuỗi rỗng.
 
-StrSecond = "Chaplin";
+String str2 = new String("Hello World"); // str2 chứa "Hello World".
 
-// bằng cách sử dụng phương thức concat() để gán với một chuỗi đang tồn tại.
+char[] charArray = {'A', 'B', 'C', 'D', 'E'};
+String str3 = new String(charArray); // str3 chứa "ABCDE".
 
-StrFinal = strFirst.concat(strSecond);
+String str4 = new String(charArray, 0, 2); // str4 chứa "AB".
 ```
 
-Phương thức `concat()` chỉ làm việc với hai chuỗi tại một thời điểm.
+Bạn cũng có thể nối các chuỗi bằng cách sử dụng toán tử `+` hoặc phương thức `concat()`.
+
+```java
+String strFirst = "Charlie";
+String strSecond = "Chaplin";
+String strFinal = strFirst + strSecond; // Nối chuỗi bằng toán tử +
+String strConcat = strFirst.concat(strSecond); // Nối chuỗi bằng phương thức concat()
+```
 
 ## Các phương thức của lớp String
 
-- `char charAt(int index)`: Phương thức này trả về một ký tự tại vị trí index trong chuỗi.
+### char charAt(int index)
+
+Phương thức `charAt(int index)` trả về ký tự ở vị trí `index` trong chuỗi.
 
 ```java
-String name = new String("Java Language"); char ch = name.charAt(5);
+String name = "Java Language";
+char ch = name.charAt(5); // chứa ký tự 'L'
 ```
 
-Biến "ch" chứa giá trị "L", từ đó vị trí các số bắt đầu từ 0.
+### boolean startsWith(String prefix)
 
-- `boolean startsWith(String s)`: Phương thức này trả về giá trị kiểu logic (Boolean), phụ thuộc vào chuỗi có bắt đầu với một chuỗi con cụ thể nào đó không
+Phương thức `startsWith(String prefix)` kiểm tra xem chuỗi có bắt đầu bằng chuỗi con `prefix` không và trả về `true` nếu có, ngược lại trả về `false`.
 
 ```java
-String strname = "Java Language";
-boolean flag = strname.startsWith("Java");
+String strName = "Java Language";
+boolean startsWithJava = strName.startsWith("Java"); // true
 ```
 
-::result
+### boolean endsWith(String suffix)
 
-true
-
-::
-
-- `boolean endsWith(String s)`: Phương thức này trả về một giá trị kiểu logic (boolean), phụ thuộc vào chuỗi kết thúc bằng một chuỗi con nào đó không
+Phương thức `endsWith(String suffix)` kiểm tra xem chuỗi có kết thúc bằng chuỗi con `suffix` không và trả về `true` nếu có, ngược lại trả về `false`.
 
 ```java
-String strname = "Java Language";
-boolean flag = strname.endsWith("Java");
+String strName = "Java Language";
+boolean endsWithJava = strName.endsWith("Java"); // false
 ```
 
-::result
+### String toUpperCase() và String toLowerCase()
 
-false
-
-::
-
-- `String copyValueOf()`: Phương thức này trả về một chuỗi được rút ra từ một mảng ký tự được truyền như một đối số. Phương thức này cũng lấy hai tham số nguyên. Tham số đầu tiên chỉ định vị trí từ nơi các ký tự phải được rút ra, và tham số thứ hai chỉ định số ký tự được rút ra từ mảng
+Phương thức `toUpperCase()` trả về một bản sao của chuỗi với tất cả các ký tự được chuyển thành chữ hoa, trong khi `toLowerCase()` trả về một bản sao với tất cả các ký tự được chuyển thành chữ thường.
 
 ```java
-char name[] = {'L','a','n','g','u','a','g','e'};
-String subname = String .copyValueOf(name,5,2);
+String lower = "Good Morning";
+String upper = "JAVA";
+String upperCaseString = lower.toUpperCase(); // "GOOD MORNING"
+String lowerCaseString = upper.toLowerCase(); // "java"
 ```
 
-Bây giờ biến "subname" chứa chuỗi "ag".
+### int indexOf(String subString)
 
-- `char [] toCharArray()`: Phương thức này chuyển chuỗi thành một mảng ký tự.
+Phương thức `indexOf(String subString)` trả về vị trí đầu tiên của chuỗi con `subString` trong chuỗi gốc, hoặc -1 nếu không tìm thấy.
 
 ```java
-String text = new String("Hello World");
-char textArray[] = text.toCharArray();
+String day = "Sunday";
+int index1 = day.indexOf('n');     // 2
+int index2 = day.indexOf("Sun");   // 0
+int index3 = day.indexOf('z', 2);  // -1
 ```
 
-- `int indexOf(String sunString)`: Phương thức này trả về thứ tự của một ký tự nào đó, hoặc một chuỗi trong phạm vi một chuỗi. Các câu lệnh sau biểu diễn các cách khác nhau của việc sử dụng hàm.
+### String trim()
+
+Phương thức `trim()` loại bỏ các khoảng trắng ở đầu và cuối chuỗi.
 
 ```java
-String day = new String("Sunday"); int index1 = day.indexOf('n');
-//chứa 2
-int index2 = day.indexOf('z',2);
-
-//chứa –1 nếu "z" không tìm thấy tại vị trí 2.
-
-int index3 = day.indexOf("Sun");
-//chứa mục 0
+String space = "   Spaces   ";
+String trimmed = space.trim(); // "Spaces"
 ```
 
-- `String toUpperCase()`: Phương thức này trả về chữ hoa của chuỗi.
+### boolean equals(String anotherString)
+
+Phương thức `equals(String anotherString)` so sánh hai chuỗi để kiểm tra xem chúng có giống nhau hay không.
 
 ```java
-String lower = new String("good morning");
-System.out.println("Uppercase: "+lower.toUpperCase( ));
+String name1 = "Java";
+String name2 = "JAVA";
+boolean areEqual = name1.equals(name2); // false
 ```
 
-- `String toLowerCase()`: Phương thức này trả về chữ thường của chuỗi.
+## Phương thức `valueOf()`
+
+Lớp `String` cung cấp phương thức `valueOf()` để chuyển đổi các giá trị khác thành chuỗi:
 
 ```java
-String upper = new String("JAVA");
-System.out.println("Lowercase: "+upper.toLowerCase( ));
+String stringValue = String.valueOf(123); // "123"
+String booleanValue = String.valueOf(true); // "true"
+String charValue = String.valueOf('A'); // "A"
 ```
 
-- `String trim()`: Phương thức này cắt bỏ khoảng trắng hai đầu chuỗi. Hãy thử đoạn mã sau để thấy sự khác nhau trước và sau khi cắt bỏ khoảng trắng.
-
-```java
-String space = new String("Spaces");
-System.out.println(space);
-System.out.println(space.trim()); //Sau khi cắt bỏ khoảng trắng
-```
-
-- `boolean equals(String s)`: Phương thức này so sánh nội dung của hai đối tượng chuỗi
-
-```java
-String name1 = "Java", name2 = "JAVA";
-boolean flag = name1.equals(name2);
-```
-
-::result
-
-false
-
-::
-
-- `valueOf()`: Được nạp chồng để cho phép chuyển một giá trị thành xâu
-
-```java
-static String valueOf(Object obj)//Chuyển một đối tượng thành xâu, bẳng cách gọi đến phương thức toString của đối tượng obj
-static String valueOf(char[] characters)//Chuyển mảng các ký tự thành xâu. static String valueOf(boolean b)//Chuyển một giá trị logic thành xâu, xâu nhận được là "true" hoặc "false" tương ứng với giá trị true hoặc false của b
-static String valueOf(char c)//Chuyển kí tự thành xâu
-static String valueOf(int i)//chuyển một số nguyên thành xâu static String valueOf(long l)//Chuyển một giá trị long thành xâu static String valueOf(float f)//chuyển một giá trị float thành xâu
-static String valueOf(double d)//chuyển một giá trị double thành xâu
-```
+Phương thức `valueOf()` cho phép bạn chuyển đổi số nguyên, số thực, boolean, ký tự và các đối tượng thành chuỗi.

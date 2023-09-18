@@ -11,7 +11,7 @@ image: https://user-images.githubusercontent.com/29374426/131236350-539f5fcf-79f
 position: 11
 ---
 
-Từ khóa **static** trong Java được sử dụng chính để quản lý bộ nhớ. Chúng ta có thể áp dụng từ khóa **static** với các biến, các phương thức, các khối, các lớp lồng nhau(nested class). Từ khóa static thuộc về lớp chứ không thuộc về instance(thể hiện) của lớp.
+Từ khóa `static` trong Java được sử dụng chính để quản lý bộ nhớ. Chúng ta có thể áp dụng từ khóa `static` với các biến, các phương thức, các khối, các lớp lồng nhau(nested class). Từ khóa static thuộc về lớp chứ không thuộc về instance(thể hiện) của lớp.
 
 - **Biến static**: Khi bạn khai báo một biến là static, thì biến đó được gọi là biến tĩnh, hay biến static.
 - **Phương thức static**: Khi bạn khai báo một phương thức là static, thì phương thức đó gọi là phương thức static.
@@ -21,7 +21,7 @@ Từ khóa **static** trong Java được sử dụng chính để quản lý b�
 
 ## Biến static trong Java
 
-Biễn được khai báo với từ khoá static gọi là biến tĩnh, và chúng có đặc điểm sau:
+Biến được khai báo với từ khoá static gọi là biến tĩnh, và chúng có đặc điểm sau:
 
 - Biến static có thể được sử dụng để tham chiếu thuộc tính chung của tất cả đối tượng (mà không là duy nhất cho mỗi đối tượng), ví dụ như tên công ty của nhân viên, tên trường học của các sinh viên, ...
 - Các thuộc tính tĩnh được cấp phát một vùng bộ nhớ cố định, trong java bộ nhớ dành cho các thuộc tính tĩnh chỉ được cấp phát khi lần đầu tiên ta truy cập đến nó.

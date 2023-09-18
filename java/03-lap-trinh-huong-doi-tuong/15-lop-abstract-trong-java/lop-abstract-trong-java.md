@@ -13,7 +13,7 @@ position: 15
 
 Một lớp cơ sở trừu tượng là một lớp chỉ được dùng làm cơ sở cho các lớp khác, ta không thể tạo ra thể hiện của lớp này, bởi vì nó được dùng để định nghĩa một giao diện chung cho các lớp khác.
 
-Một lớp được khai báo với từ khóa abstract là lớp abstract trong Java. Lớp abstract có nghĩa là lớp trừu tượng, nó có thể có các phương thức abstract hoặc non-abtract.
+Một lớp được khai báo với từ khóa `abstract` là lớp `abstract` trong Java. Lớp `abstract` có nghĩa là lớp trừu tượng, nó có thể có các phương thức `abstract` hoặc `non-abstract`.
 
 ![image](https://user-images.githubusercontent.com/29374426/131245758-916ed8f2-11d1-4808-b7d4-d1890ad3cc1c.png)
 
@@ -23,12 +23,12 @@ Trước khi tìm hiểu về lớp trừu tượng trong Java, bạn cần hi�
 
 Một lớp trừu tượng có thể chứa một vài phương thức trừu tượng, do lớp trừu tượng chỉ làm lớp cơ sở cho các lớp khác, do vậy các phương thức trừu tượng cũng không được cài đặt cụ thể, chúng chỉ gồm có khai báo, việc cài đặt cụ thể sẽ dành cho lớp con.
 
-Nếu bạn muốn một lớp chứa một phương thức cụ thể nhưng bạn muốn triển khai thực sự phương thức đó để được quyết định bởi các lớp con, thì bạn có thể khai báo phương thức đó trong lớp cha ở dạng abstract.
+Nếu bạn muốn một lớp chứa một phương thức cụ thể nhưng bạn muốn triển khai thực sự phương thức đó để được quyết định bởi các lớp con, thì bạn có thể khai báo phương thức đó trong lớp cha ở dạng `abstract`.
 
-Phương thức trừu tượng được sử dụng từ khóa `abstract` để khai báo, và một phương thức abstract không có thân. Phương thức abstract sẽ không có định nghĩa, được theo sau bởi dấu chấm phảy, không có cặp dấu ngoặc nhọn.
+Phương thức trừu tượng được sử dụng từ khóa `abstract` để khai báo, và một phương thức `abstract` không có thân. Phương thức `abstract` sẽ không có định nghĩa, được theo sau bởi dấu chấm phẩy, không có cặp dấu ngoặc nhọn.
 
 ```java
-// Khai báo phương thwucs với từ khóa abstract và không có thân phương thức
+// Khai báo phương thức với từ khóa abstract và không có thân phương thức
 abstract void printStatus();
 ```
 

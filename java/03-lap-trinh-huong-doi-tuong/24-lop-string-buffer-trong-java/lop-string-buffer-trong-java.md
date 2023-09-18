@@ -11,161 +11,140 @@ image: https://user-images.githubusercontent.com/29374426/132500048-e2a8272c-e22
 position: 24
 ---
 
-Trong java, lớp StringBuffer được sử dụng để tạo chuỗi có thể thay đổi (mutable). Lớp StringBuffer trong java tương tự như lớp String ngoại trừ nó có thể thay đổi.
+Lớp `StringBuffer` trong Java là một công cụ mạnh mẽ để làm việc với chuỗi, cho phép thay đổi, nối chuỗi một cách hiệu quả. Trong bài viết này, chúng ta sẽ tìm hiểu về cách khởi tạo một đối tượng `StringBuffer`, các phương thức quan trọng của lớp `StringBuffer`, và cách sử dụng chúng trong Java.
 
 ![image](https://user-images.githubusercontent.com/29374426/132500048-e2a8272c-e223-4bef-a04e-36a79c9e78d6.png)
 
-## Khởi tạo một lớp StringBuffer
+## Khởi tạo một đối tượng StringBuffer
 
-Lớp này cung cấp nhiều phương thức khởi tạo, chương trình sau minh hoạ cách sử dụng các phương thức khởi tạo khác nhau để tạo ra các đối tượng của lớp này
+Lớp `StringBuffer` cung cấp nhiều cách khởi tạo đối tượng, dưới đây là các ví dụ:
+
+1. Sử dụng constructor mặc định:
 
 ```java
-class StringBuffer {
-  public static void main(String args[]){
-    StringBuffer s1 = new StringBuffer();
-    StringBuffer s2 = new StringBuffer(20);
-    StringBuffer s3 = new StringBuffer("StringBuffer");
-    System.out.println("s3 = "+ s3);
-    System.out.println(s2.length()); // chứa 0
-    System.out.println(s3.length()); //chứa 12
-    System.out.println(s1.capacity());  //chứa 16
-    System.out.println(s2.capacity());  //chứa 20
-    System.out.println(s3.capacity()); //chứa 28
-  }
-}
+StringBuffer s1 = new StringBuffer();
 ```
 
-::result
+2. Sử dụng constructor với dung lượng ban đầu:
 
-0<br/>
-12<br/>
-16<br/>
-20<br/>
-28
+```java
+StringBuffer s2 = new StringBuffer(20);
+```
 
-::
+3. Sử dụng constructor với một chuỗi ban đầu:
 
-`length()` và `capacity()` của StringBuffer là hai phương thức hoàn toàn khác nhau. Phương thức `length()` đề cập đến số các ký tự mà đối tượng thực chứa, trong khi `capacity()` trả về tổng dung lượng của một đối tượng (mặc định là 16) và số ký tự trong đối tượng **StringBuffer**.
+```java
+StringBuffer s3 = new StringBuffer("StringBuffer");
+```
 
-Dung lượng của StringBuffer có thể thay đổi với phương thức `ensureCapacity()`. Đối số `int` đã được truyền đến phương thức này, và dung lượng mới được tính toán như sau:
+Trong ví dụ trên, `s3` sẽ chứa chuỗi "StringBuffer".
+
+```java
+System.out.println("s3 = " + s3); // s3 = StringBuffer
+System.out.println(s2.length());  // 0
+System.out.println(s3.length());  // 12
+System.out.println(s1.capacity());  // 16
+System.out.println(s2.capacity());  // 20
+System.out.println(s3.capacity());  // 28
+```
+
+Hãy lưu ý rằng `length()` và `capacity()` của `StringBuffer` là hai phương thức khác nhau. `length()` trả về số ký tự thực sự trong `StringBuffer`, trong khi `capacity()` trả về dung lượng tối đa mà `StringBuffer` có thể chứa mà không cần tăng cấp thêm.
+
+Dung lượng của `StringBuffer` có thể thay đổi bằng cách sử dụng phương thức `ensureCapacity()`. Nếu dung lượng mới được yêu cầu lớn hơn dung lượng hiện tại, nó sẽ được tăng lên theo cơ chế:
 
 ```java
 NewCapacity = OldCapacity * 2 + 2
 ```
 
-Trước khi dung lượng của **StringBuffer** được đặt lại, điều kiện sau sẽ được kiểm tra:
-
-- Nếu dung lượng mới (NewCapacity) lớn hơn đối số được truyền cho phương thức `ensureCapacity()`, thì dung lượng mới bằng NewCapacity được đặt.
-- Nếu dung lượng mới nhỏ hơn đối số được truyền cho phương thức `ensureCapacity()`, thì dung lượng được đặt bằng giá trị tham số truyền vào.
-
-Chương trình sau minh hoạ dung lượng được tính toán và được đặt như thế nào
+Chúng ta có thể thấy cách hoạt động của `ensureCapacity()` qua ví dụ sau:
 
 ```java
-class StringBuffer {
-  public static void main(String args[]) {
-    StringBuffer s1 = new StringBuffer(5);
-    System.out.println("Dung lượng của bộ nhớ đệm = "+s1.capacity()); //chứa 5
-    s1.ensureCapacity(8);
-    System.out.println("Dung lượng của bộ nhớ đệm = "+s1.capacity()); //chứa 12
-    s1.ensureCapacity(30);
-    System.out.println("Dung lượng của bộ nhớ đệm = "+s1.capacity()); // chứa 30
-  }
-}
-```
-
-Trong đoạn mã trên, dung lượng ban đầu của s1 là 5. Câu lệnh
-
-```java
+StringBuffer s1 = new StringBuffer(5);
+System.out.println("Initial capacity of s1 = " + s1.capacity()); // 5
 s1.ensureCapacity(8);
-```
-
-Thiết lập dung lượng của s1 đến 12 =(5\*2 + 2) bởi vì dung lượng truyền vào là 8 nhỏ hơn dung lượng được tính toán là 12.
-
-```java
+System.out.println("Capacity of s1 after ensureCapacity(8) = " + s1.capacity()); // 12
 s1.ensureCapacity(30);
+System.out.println("Capacity of s1 after ensureCapacity(30) = " + s1.capacity()); // 30
 ```
 
-Thiết lập dung lượng của "s1" đến 30 bởi vì dung lượng truyền vào là 30 thì lớn hơn dung lượng được tính toán (12\*2+2).
+Trong ví dụ trên, dung lượng ban đầu của `s1` là 5. Sau khi sử dụng `ensureCapacity(8)`, dung lượng của `s1` tăng lên thành 12 vì 8 < 12 (5 \* 2 + 2). Sau đó, khi sử dụng `ensureCapacity(30)`, dung lượng của `s1` tăng lên 30 vì 30 > 12.
 
-## Các phương thức lớp StringBuffer
+## Các phương thức của lớp StringBuffer
 
-- `void append()`: Phương thức này nối thêm một chuỗi hoặc một mảng ký tự vào cuối cùng của đối tượng StringBuffer. Ví dụ:
+### `append()`
+
+Phương thức `append()` dùng để nối thêm chuỗi, mảng ký tự hoặc bất kỳ kiểu dữ liệu nào vào cuối của `StringBuffer`. Ví dụ:
 
 ```java
 StringBuffer s1 = new StringBuffer("Good");
-s1.append("evening");
+s1.append(" evening");
 ```
 
-Giá trị trong s1 bây giờ là `Goodevening`.
+Kết quả sau khi sử dụng `append` là chuỗi "Good evening".
 
-- `insert()`: Phương thức này có hai tham số. Tham số đầu tiên là vị trí chèn. Tham số thứ hai có thể là một chuỗi, một ký tự (char), một giá trị nguyên (int), hay một giá trị số thực (float) được chèn vào. Vị trí chèn sẽ lớn hơn hay bằng 0, và nhỏ hơn hay bằng chiều dài của đối tượng StringBuffer. Bất kỳ đối số nào, trừ ký tự hoặc chuỗi, được chuyển sang chuỗi và sau đó mới được chèn vào.
+### `insert()`
+
+Phương thức `insert()` cho phép chèn một chuỗi, một ký tự, một giá trị nguyên hoặc số thực vào vị trí bất kỳ trong `StringBuffer`. Phương thức này có hai tham số: vị trí chèn và giá trị được chèn. Ví dụ:
 
 ```java
 StringBuffer str = new StringBuffer("Java sion");
-str.insert(1,’b’);
+str.insert(1, 'b');
 ```
 
-::result
+Kết quả sau khi sử dụng `insert` là chuỗi "Jbava sion".
 
-Biến "str" chứa chuỗi "Jbava sion"
+### `charAt()`
 
-::
-
-- `char charAt()`: Phương thức này trả về một giá trị ký tự trong đối tượng StringBuffer tại vị trí được chỉ định.
+Phương thức `charAt()` trả về ký tự tại một vị trí xác định trong `StringBuffer`. Ví dụ:
 
 ```java
 StringBuffer str = new StringBuffer("James Gosling");
-char letter = str.charAt(6); //chứa "G"
+char letter = str.charAt(6); // letter chứa 'G'
 ```
 
-- `void setCharAt(int index, char value)`: Phương thức này được sử dụng để thay thế ký tự trong một StringBuffer bằng một ký tự khác tại một vị trí được chỉ định.
+### `setCharAt()`
+
+Phương thức `setCharAt()` dùng để thay thế ký tự tại một vị trí cụ thể trong `StringBuffer` bằng một ký tự khác. Ví dụ:
 
 ```java
 StringBuffer name = new StringBuffer("Jawa");
-name.setCharAt(2,’v’);
+name.setCharAt(2, 'v');
 ```
 
-::result
+Kết quả sau khi sử dụng `setCharAt` là chuỗi "Java".
 
-Biến "name" chứa "Java".
+### `setLength()`
 
-::
-
-- `void setLength()`: Phương thức này thiết lập chiều dài của đối tượng StringBuffer. Nếu chiều dài được chỉ định nhỏ hơn chiều dài dữ liệu hiện tại của nó, thì các ký tự thừa sẽ bị cắt bớt. Nếu chiểu dài chỉ định nhiều hơn chiều dài dữ liệu thì các ký tự null được thêm vào phần cuối của StringBuffer
+Phương thức `setLength()` dùng để thiết lập chiều dài của `StringBuffer`. Nếu chiều dài mới nhỏ hơn chiều dài hiện tại của `StringBuffer`, các ký tự thừa sẽ bị cắt bỏ. Nếu chiều dài mới lớn hơn, các ký tự null sẽ được thêm vào cuối. Ví dụ:
 
 ```java
 StringBuffer str = new StringBuffer(10);
 str.setLength(str.length() + 10);
 ```
 
-`char [] getChars()`: Phương thức này được sử dụng để trích ra các ký tự từ đối tượng StringBuffer, và sao chép chúng vào một mảng và có bốn tham số sau:
+### `getChars()`
 
-- Chỉ số đầu: vị trí bắt đầu, từ nơi mà ký tự được lấy ra.
-- Chỉ số kết thúc: vị trí kết thúc
-- Mảng: Mảng đích, nơi mà các ký tự được sao chép.
-- Vị trí bắt đầu trong mảng đích: Các ký tự được sao chép vào mảng đích từ vị trí này.
+Phương thức `getChars()` dùng để trích xuất các ký tự từ `StringBuffer` và sao chép chúng vào một mảng. Phương thức này có bốn tham số: vị trí bắt đầu, vị trí kết thúc, mảng đích và vị trí bắt đầu trong mảng đích. Ví dụ:
 
 ```java
 StringBuffer str = new StringBuffer("Leopard");
-char ch[] = new char[10];
-str.getChars(3,6,ch,0);
+char[] ch = new char[10];
+str.getChars(3, 6, ch,
+
+0);
 ```
 
-::result
+Kết quả là biến `ch` chứa chuỗi "par".
 
-Bây giờ biến "ch" chứa "par"
+### `reverse()`
 
-::
-
-- `void reverse()`: Phương thức này đảo ngược nội dung của một đối tượng StringBuffer, và trả về một đối tượng StringBuffer khác.
+Phương thức `reverse()` dùng để đảo ngược nội dung của `StringBuffer` và trả về một đối tượng `StringBuffer` mới. Ví dụ:
 
 ```java
 StringBuffer str = new StringBuffer("devil");
 StringBuffer strrev = str.reverse();
 ```
 
-::result
+Kết quả là biến `strrev` chứa chuỗi "lived".
 
-Biến "strrev" chứa "lived".
-
-::
+Lớp `StringBuffer` trong Java là một công cụ mạnh mẽ cho việc làm việc với chuỗi. Bài viết này đã giới thiệu cách khởi tạo đối tượng `StringBuffer`, các phương thức quan trọng và cách sử dụng chúng trong Java. Sử dụng lớp `StringBuffer` có thể giúp bạn thực hiện các thao tác liên quan đến chuỗi một cách thuận tiện và hiệu quả.

@@ -15,7 +15,7 @@ Từ khóa **this** trong java là một biến tham chiếu được sử dụn
 
 ![Từ khóa this trong Java](https://user-images.githubusercontent.com/29374426/131205481-bc00bbd6-82c5-4e1f-b53d-c28d00e98e0f.png)
 
-## Tham chiếu tới biến instance của lớp hiện tại.
+## Tham chiếu tới biến instance của lớp hiện tại
 
 Từ khóa **this** trong java có thể được dùng để tham chiếu tới biến instance của lớp hiện tại. Sẽ rất phức tạp nếu như có một biến toàn cục và biến cục bộ trùng tên thì từ khóa **this** sẽ giúp bạn giải quyết vấn đề này.
 
