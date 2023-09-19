@@ -1,6 +1,6 @@
 ---
 title: "Một số lớp ngoại lệ chuẩn của Java"
-description: "Bài này chúng ta sẽ tìm hiểu về một số lớp ngoại lệ chuẩn của Java, tự học lập trình java, chia sẻ kiến thức về java"
+description: "Trong Java, ngoại lệ là một tình huống xảy ra trong quá trình thực thi chương trình, và chúng có thể gây ra sự cố hoặc làm dừng chương trình. Java cung cấp nhiều lớp ngoại lệ chuẩn để xử lý các tình huống khác nhau. "
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"
@@ -11,24 +11,141 @@ image: https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/0e/cf95afe85a4701937198
 position: 5
 ---
 
-Bảng dưới đây là một số lớp ngoại lệ chuẩn trong java
+Trong Java, ngoại lệ là một tình huống xảy ra trong quá trình thực thi chương trình, và chúng có thể gây ra sự cố hoặc làm dừng chương trình. Java cung cấp nhiều lớp ngoại lệ chuẩn để xử lý các tình huống khác nhau. Trong bài viết này, chúng ta sẽ tìm hiểu về một số lớp ngoại lệ chuẩn trong Java và cách chúng có thể được sử dụng.
 
-|       Tên lớp ngoại lệ        | Ý nghĩa                                                                                                  |
-| :---------------------------: | :------------------------------------------------------------------------------------------------------- |
-|           Throwable           | Đây là lớp cha của mọi lớp ngoại lệ trong Java                                                           |
-|           Exception           | Đây là lớp con trực tiếp của lớp Throwable, nó mô tả một ngoại lệ tổng quát có thể xẩy ra trong ứng dụng |
-|       RuntimeException        | Lớp cơ sở cho nhiều ngoại lệ java.lang                                                                   |
-|      ArthmeticException       | Lỗi về số học, ví dụ như ‘chia cho 0’.                                                                   |
-|    IllegalAccessException     | Lớp không thể truy cập.                                                                                  |
-|   IllegalArgumentException    | Đối số không hợp lệ.                                                                                     |
-| ArrayIndexOutOfBoundsExeption | Lỗi truy cập ra ngoài mảng.                                                                              |
-|     NullPointerException      | Khi truy cập đối tượng null.                                                                             |
-|       SecurityException       | Cơ chế bảo mật không cho phép thực hiện.                                                                 |
-|    ClassNotFoundException     | Không thể nạp lớp yêu cầu.                                                                               |
-|     NumberFormatException     | Việc chuyển đối từ chuỗi sang số không thành công.                                                       |
-|         AWTException          | Ngoại lệ về AWT                                                                                          |
-|          IOException          | Lớp cha của các lớp ngoại lệ I/O                                                                         |
-|     FileNotFoundException     | Không thể định vị tập tin                                                                                |
-|         EOFException          | Kết thúc một tập tin.                                                                                    |
-|     NoSuchMethodException     | Phương thức yêu cầu không tồn tại.                                                                       |
-|     InterruptedException      | Khi một luồng bị ngắt.                                                                                   |
+Dưới đây là một số lớp ngoại lệ chuẩn quan trọng trong Java:
+
+## 1. `Throwable`
+
+- **Ý nghĩa**: Đây là lớp cha của mọi lớp ngoại lệ trong Java.
+
+## 2. `Exception`
+
+- **Ý nghĩa**: Là lớp con trực tiếp của lớp `Throwable`, mô tả một ngoại lệ tổng quát có thể xảy ra trong ứng dụng.
+
+## 3. `RuntimeException`
+
+- **Ý nghĩa**: Lớp cơ sở cho nhiều ngoại lệ trong `java.lang`.
+
+## 4. `ArithmeticException`
+
+- **Ý nghĩa**: Xảy ra khi có lỗi về số học, ví dụ như chia cho 0.
+
+**Ví dụ sử dụng `ArithmeticException`:**
+
+```java
+public class ExampleArithmeticException {
+    public static void main(String[] args) {
+        try {
+            int result = 50 / 0; // Xảy ra ArithmeticException
+        } catch (ArithmeticException e) {
+            System.out.println("Lỗi chia cho 0: " + e.getMessage());
+        }
+    }
+}
+```
+
+::result
+
+Lỗi chia cho 0: / by zero
+
+::
+
+## 5. `IllegalAccessException`
+
+- **Ý nghĩa**: Xảy ra khi không thể truy cập một lớp.
+
+## 6. `IllegalArgumentException`
+
+- **Ý nghĩa**: Xảy ra khi đối số không hợp lệ.
+
+**Ví dụ sử dụng `IllegalArgumentException`:**
+
+```java
+public class ExampleIllegalArgumentException {
+    public static void main(String[] args) {
+        try {
+            int age = -5;
+            if (age < 0) {
+                throw new IllegalArgumentException("Tuổi không được âm!");
+            }
+            System.out.println("Tuổi của bạn: " + age);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Lỗi: " + e.getMessage());
+        }
+    }
+}
+```
+
+::result
+
+Lỗi: Tuổi không được âm!
+
+::
+
+## 7. `ArrayIndexOutOfBoundsException`
+
+- **Ý nghĩa**: Xảy ra khi truy cập ra ngoài mảng.
+
+## 8. `NullPointerException`
+
+- **Ý nghĩa**: Xảy ra khi truy cập một đối tượng null.
+
+## 9. `SecurityException`
+
+- **Ý nghĩa**: Xảy ra khi cơ chế bảo mật không cho phép thực hiện một thao tác.
+
+## 10. `ClassNotFoundException`
+
+- **Ý nghĩa**: Xảy ra khi không thể nạp lớp yêu cầu.
+
+## 11. `NumberFormatException`
+
+- **Ý nghĩa**: Xảy ra khi chuyển đổi từ chuỗi sang số không thành công.
+
+**Ví dụ sử dụng `NumberFormatException`:**
+
+```java
+public class ExampleNumberFormatException {
+    public static void main(String[] args) {
+        try {
+            int number = Integer.parseInt("abc"); // Xảy ra NumberFormatException
+            System.out.println("Số bạn vừa nhập: " + number);
+        } catch (NumberFormatException e) {
+            System.out.println("Sai định dạng số: " + e.getMessage());
+        }
+    }
+}
+```
+
+::result
+
+Sai định dạng số: For input string: "abc"
+
+::
+
+## 12. `AWTException`
+
+- **Ý nghĩa**: Đây là một lớp ngoại lệ liên quan đến AWT (Abstract Window Toolkit).
+
+## 13. `IOException`
+
+- **Ý nghĩa**: Là lớp cha của các lớp ngoại lệ liên quan đến I/O (Input/Output).
+
+## 14. `FileNotFoundException`
+
+- **Ý nghĩa**: Xảy ra khi không thể định vị tập tin.
+
+## 15. `EOFException`
+
+- **Ý nghĩa**: Xảy ra khi kết thúc một tập tin.
+
+## 16. `NoSuchMethodException`
+
+- **Ý nghĩa**: Xảy ra khi phương thức yêu cầu không tồn tại.
+
+## 17. `InterruptedException`
+
+- **Ý nghĩa**: Xảy ra khi một luồng bị ngắt.
+
+Danh sách này chỉ là một phần nhỏ của các lớp ngoại lệ chuẩn trong Java. Mỗi lớp ngoại lệ phù hợp với một tình huống cụ thể, và việc hiểu và xử lý các ngoại lệ này rất quan trọng để viết các ứng dụng Java ổn định và an toàn.

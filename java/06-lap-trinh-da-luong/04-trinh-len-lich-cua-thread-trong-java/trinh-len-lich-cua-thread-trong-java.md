@@ -19,7 +19,7 @@ Không có sự đảm bảo rằng `thread` có trạng thái `runnable` nào s
 
 Chỉ có một `thread` tại một thời điểm có thể chạy trong một xử lý duy nhất.
 
-`Thread scheduler` chủ yếu sử dụng việc lập kệ hoạch ưu tiên hoặc phân chia thời gian để lên lịch các luồng.
+`Thread scheduler` chủ yếu sử dụng việc lập kế hoạch ưu tiên hoặc phân chia thời gian để lên lịch các luồng.
 
 ## Trình lên lịch của Thread hoạt động như thế nào?
 

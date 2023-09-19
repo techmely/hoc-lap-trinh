@@ -45,7 +45,7 @@ public class ThreadSleep {
 
 ::result
 
-Output: leep time in ms = 2001
+Output: Sleep time in ms = 2001
 
 ::
 
@@ -83,7 +83,7 @@ Child thread:1000</br>
 
 ::
 
-## Thread join() là gì?
+## Thread `join()` là gì?
 
 Phương thức `join()` được sử dụng để đảm bảo cho quá trình thực thi của `Thread` đang chạy không bị gián đoạn bởi các `Thread` khác. Nói một cách khác, nếu một `Thread` đang trong quá trình được thực thi thì các `Thread` khác sẽ phải chờ đợi cho đến khi `Thread` đó thực thi xong. `join()` được sử dụng khi trong một chương trình Java có nhiều hơn một `Thread` và chúng ta cần đảm bảo các `Thread` thực thi và kết thúc đúng theo thứ tự mà chúng đã được khởi tạo.
 
@@ -189,7 +189,7 @@ Kết thúc thread:th3</br>
 
 Khi so sánh với chương trình cài đặt không sử dụng hàm `Join`, `thread2, thread3`, chưa khởi chạy ngay được gọi bằng lệnh `th2.start()`, `th3.start()` , `thead2` và `thread3` đã đợi cho đến khi `thread1` thực thi xong mới khởi chạy. Tương tự khi `thread2` chạy thì thread3 vẫn phải đợi cho đến khi `thread2` thực thi xong. Do đó mà kết quả in ra màn hình theo đúng thứ tự `th1>th2>th3` mà chúng đã được khởi chạy.
 
-## Ví dụ phương thức join()
+## Ví dụ phương thức `join()`
 
 - `public void join()throws InterruptedException`
 - `public void join(long milliseconds)throws InterruptedException`

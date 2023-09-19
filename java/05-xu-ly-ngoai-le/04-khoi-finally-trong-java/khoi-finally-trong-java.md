@@ -15,7 +15,7 @@ Khi một ngoại lệ xuất hiện, phương thức đang được thực thi 
 
 Khối lệnh finally trong java luôn được thực thi cho dù có ngoại lệ xảy ra hay không hoặc gặp lệnh `return` trong khối `try`.
 
-## Cấu trúc khối finally trong Java
+## Cấu trúc khối `finally` trong Java
 
 ```java
 try{
@@ -35,7 +35,7 @@ Khối `finally` là tuỳ chọn, không bắt buộc phải có. Khối này �
 
 Khối `finally` bảo đảm lúc nào cũng được thực thi, bất chấp có ngoại lệ xảy ra hay không. Hình minh họa sự thực hiện của các khối `try`, `catch` và `finally`
 
-![image](https://user-images.githubusercontent.com/29374426/126114810-e1c61816-0531-42a8-b493-7232c4d2fcbc.png)
+![Cấu trúc khối finally trong Java](https://user-images.githubusercontent.com/29374426/126114810-e1c61816-0531-42a8-b493-7232c4d2fcbc.png)
 
 ## Ví dụ finally trong Java
 
@@ -84,10 +84,8 @@ public class TestFinallyBlock1 {
 ```
 
 ::result
-
 finally block is always executed<br/>
-Exception in thread "main" java.lang.ArithmeticException: / by zero<br/>
-
+Exception in thread "main" java.lang.ArithmeticException: / by zero
 ::
 
 Ví dụ sử dụng khối lệnh finally nơi ngoại lệ xảy ra và được xử lý.
@@ -138,8 +136,6 @@ public class TestFinallyBlock3 {
 ```
 
 ::result
-
 25 is odd number<br/>
 finally block is always executed
-
-</div>
+::

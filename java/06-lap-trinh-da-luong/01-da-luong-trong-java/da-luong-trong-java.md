@@ -1,6 +1,6 @@
 ---
 title: "Đa luồng trong Java"
-description: "Đa luồng trong Java"
+description: "Đa luồng (Multi-Thread) trong Java là khả năng của một ứng dụng để thực hiện nhiều luồng đồng thời. Thay vì thực hiện công việc tuần tự từ trên xuống dưới, ứng dụng Java có thể chạy nhiều luồng đồng thời, làm cho ứng dụng chạy nhanh và hiệu quả hơn."
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"
@@ -11,53 +11,62 @@ image: https://user-images.githubusercontent.com/29374426/146175674-fa7e09f7-4e4
 position: 1
 ---
 
-## Tiến trình (process) là gì?
+Đa luồng (Multi-Thread) trong Java là khả năng của một ứng dụng để thực hiện nhiều luồng đồng thời. Thay vì thực hiện công việc tuần tự từ trên xuống dưới, ứng dụng Java có thể chạy nhiều luồng đồng thời, làm cho ứng dụng chạy nhanh và hiệu quả hơn.
 
-Tiến trình là một thể hiện của một chương trình đang xử lý. Sở hữu một con trỏ lệnh, tập các thanh ghi và các biến. Để hoàn thành tác vụ của mình, một tiến trình còn cần đến một số tài nguyên khác như: _CPU, bộ nhớ, các tập tin, các thiết bị ngoại vi..._
+## Tiến Trình (Process) là Gì?
 
-Cần phân biệt được giữa tiến trình và chương trình. Một chương trình là một thể hiện thụ động, chứa các chỉ thị điều khiển máy tính để thực hiện mục đích gì đó; khi cho thực thi chỉ thị này thì chương trình sẽ biến thành tiến trình
+Tiến trình là một thể hiện của một chương trình đang chạy trong hệ thống. Mỗi tiến trình sở hữu một con trỏ lệnh, tập các thanh ghi và các biến riêng. Để hoàn thành công việc của mình, tiến trình cần sử dụng các tài nguyên như CPU, bộ nhớ, tệp tin, và các thiết bị ngoại vi.
 
-Có thể nói tóm tắt tiến trình là một chương trình chạy trên hệ điều hành và được quản lý thông qua một số hiệu.
+Để phân biệt giữa tiến trình và chương trình, chúng ta cần hiểu rằng một chương trình là một thực thể tĩnh, nó chỉ chứa các chỉ thị điều khiển máy tính để thực hiện một tác vụ cụ thể. Khi được thực thi, chương trình trở thành một tiến trình.
 
-## Luồng (thread) là gì?
+Một tiến trình có thể sở hữu nhiều luồng (threads) để thực hiện các tác vụ đồng thời. Tiến trình và luồng là hai khái niệm quan trọng liên quan đến đa nhiệm và đa luồng trong lập trình.
 
-Một luồng là một đơn vị xử lý cơ bản trong hệ thống. Mỗi luồng xử lý tuần tự các đoạn code của nó, sở hữu một con trỏ lệnh, một tập các thanh ghi và một vùng nhớ stack riêng, các luồng chia sẻ CPU với nhau giống như cách chia sẻ giữa các tiến trình. Một tiến trình sở hữu nhiều luồng, tuy nhiên một luồng chỉ có thể thuộc về một tiến trình, các luồng bên trong cùng một tiến trình chia sẻ nhau không gian địa chỉ chung, điều này có nghĩa là các luồng có thể chia sẻ nhau các biến toàn cục của tiến trình. Một luồng cũng có thể có các trạng thái giống như các trạng thái của một tiến trình.
+## Luồng (Thread) là Gì?
 
-## Hệ điều hành đơn nhiệm, đa nhiệm
+Một luồng (thread) là một đơn vị xử lý cơ bản trong hệ thống. Mỗi luồng thực hiện tuần tự các đoạn mã của nó và sở hữu một con trỏ lệnh, tập các thanh ghi và một vùng nhớ stack riêng. Các luồng có thể chia sẻ CPU với nhau, tương tự như cách chia sẻ giữa các tiến trình. Một tiến trình có thể sở hữu nhiều luồng, nhưng mỗi luồng chỉ thuộc về một tiến trình duy nhất. Các luồng bên trong cùng một tiến trình chia sẻ không gian địa chỉ chung, cho phép chúng chia sẻ biến toàn cục của tiến trình.
 
-- Hệ điều hành đơn nhiệm là hệ điều hành chỉ cho phép 1 tiến trình chạy tại một thời điểm, ví dụ hệ điều hành DOS là Hệ điều hành đơn nhiệm.
-- Hệ điều hành đa nhiệm cho phép nhiều tiến trình chạy tại một thời điểm, ví dụ hệ điều hành windows, Unix, Linux là các hệ điều hành đa nhiệm
-- Hệ điều hành đa nhiệm ưu tiên: các tiến trình được cấp phát thời gian sử dụng CPU theo mức ưu tiên khác nhau
-- Hệ điều hành đa nhiệm không ưu tiên: các tiến trình không có mức ưu tiên nào cả, chúng "tự giác" nhả quyền kiểm soát `CPU` sau khi kết thúc phần công việc
+Luồng cũng có các trạng thái tương tự như các tiến trình, bao gồm trạng thái "Tạo mới," "Running," "Blocked," "Ready," và "Kết thúc."
 
-_Chú ý:_ trong thực tế mỗi máy thường chỉ có 1 `CPU`, nên không thể có nhiều tiến trình chạy tại một thời điểm. Nên thông thường sự đa chương chỉ là giả lập. Chúng được giả lập bằng cách lưu trữ nhiều tiến trình trong bộ nhớ tại một thời điểm, và điều phối `CPU` qua lại giữa các tiến trình.
+## Hệ Điều Hành Đơn Nhiệm và Đa Nhiệm
 
-## Các trạng thái của tiến trình
+- **Hệ điều hành đơn nhiệm**: Trong hệ điều hành đơn nhiệm, chỉ có một tiến trình có thể chạy tại một thời điểm. Ví dụ về hệ điều hành đơn nhiệm là DOS.
 
-Trạng thái của một tiến trình tại một thời điểm được xác định bởi hoạt động hiện thời của tiến trình đó. Trong quá trình sống một tiến trình thay đổi trạng thái do nhiều nguyên nhân như hết thời gian sử dụng CPU, phải chờ một sự kiện nào đó xẩy ra, hay đợi một thao tác nhập/xuất hoàn tất…
+- **Hệ điều hành đa nhiệm**: Hệ điều hành đa nhiệm cho phép nhiều tiến trình chạy cùng một thời điểm. Ví dụ về hệ điều hành đa nhiệm bao gồm Windows, Unix, và Linux.
 
-Tại một thời điểm một tiến trình có thể nhận một trong các trạng thái sau đây:
+- **Hệ điều hành đa nhiệm ưu tiên**: Trong hệ điều hành đa nhiệm ưu tiên, các tiến trình được cấp phát thời gian sử dụng CPU theo mức ưu tiên khác nhau.
 
-- **Tạo mới**: tiến trình đang được thành lập
-- **Running**: các chỉ thị của tiến trình đang được xử lý, hay nói cách khác tiến trình đang sở hữu CPU
-- **Blocked**: tiến trình đang chờ được cấp tài nguyên, hay chờ một sự kiện nào đó xẩy ra
-- **Ready**: tiến trình đang chờ cấp CPU để xử lý
-- **Kết thúc**: tiến trình đã hoàn tất việc xử lý
+- **Hệ điều hành đa nhiệm không ưu tiên**: Trong hệ điều hành đa nhiệm không ưu tiên, các tiến trình không có mức ưu tiên, chúng "tự giác" nhả quyền kiểm soát CPU sau khi hoàn tất phần công việc.
 
-## Đa luồng trong java là gì?
+Lưu ý rằng trong thực tế, hầu hết các máy tính chỉ có một CPU, do đó không thể có nhiều tiến trình chạy đồng thời. Thay vào đó, hệ thống giả lập đa nhiệm bằng cách lưu trữ nhiều tiến trình trong bộ nhớ tại một thời điểm và điều phối CPU giữa các tiến trình này.
 
-Đa luồng (Multi Thread) là một tiến trình thực hiện nhiều luồng đồng thời. Trong một chương trình, ngoài luồng chính thì có thể có các luồng khác thực thi đồng thời làm ứng dụng chạy nhanh và hiệu quả hơn. Theo như những gì chúng ta làm từ trước đến giờ, thì code của chúng ta sẽ được hệ thống xử lý một cách tuần tự từ trên xuống dưới.
+## Các Trạng Thái của Tiến Trình
 
-![Đa luồng trong java](https://user-images.githubusercontent.com/29374426/146175674-fa7e09f7-4e42-485e-a2b5-8c664601b203.png)
+Trạng thái của một tiến trình tại một thời điểm xác định bởi hoạt động hiện tại của tiến trình đó. Trong suốt quá trình sống của một tiến trình, trạng thái của nó có thể thay đổi do nhiều nguyên nhân như hết thời gian sử dụng CPU, chờ sự kiện xảy ra, hoặc thao tác nhập/xuất hoàn tất.
 
-Giả sử chương trình của chúng ta chia ra làm 3 phần A, B, C và chương trình sẽ chạy lần lượt từ A, rồi đến B, và cuối cùng là C. Nhưng sau bài viết này, chúng ta sẽ tổ chức sao cho A, B, C là 3 thread độc lập nhau và hệ thống sẽ xử lý 3 thread này một cách đồng thời.
+Tại một thời điểm, một tiến trình có thể ở một trong các trạng thái sau:
 
-Một ví dụ đơn giản về đa luồng đó chính là trình phát nhạc trên điện thoại của bạn. Khi bạn đang nghe một bài hát, bạn thấy hay và bạn muồn tải nó về, thì quá trình tải bài hát đó sẽ được chạy trên một thread riêng, quá trình phát nhạc được chạy trên một thread riêng nữa, vì vậy bạn vừa có thể nghe nhạc đồng thời có thể tải bài hát đó về máy.
+- **Tạo mới**: Tiến trình đang được tạo ra và chưa bắt đầu thực hiện.
+- **Running**: Tiến tr
 
-Đa luồng trong java được sử dụng hầu hết trong các game, hoạt hình,...
+ình đang được thực hiện, sở hữu CPU để thực hiện các chỉ thị.
 
-## Ưu điểm của đa luồng trong java
+- **Blocked**: Tiến trình đang chờ đợi được cấp tài nguyên hoặc chờ xảy ra sự kiện nào đó.
+- **Ready**: Tiến trình đã sẵn sàng để thực hiện và chờ CPU.
+- **Kết thúc**: Tiến trình đã hoàn thành tác vụ của mình và chấm dứt.
 
-- Nó không chặn người sử dụng vì các luồng là độc lập và bạn có thể thực hiện nhiều công việc cùng một lúc.
-- Bạn có thể thực hiện nhiều hoạt động với nhau để tiết kiệm thời gian.
-- Luồng là độc lập vì vậy nó không ảnh hưởng đến luồng khác nếu ngoại lệ xảy ra trong một luồng duy nhất.
+## Đa Luồng trong Java
+
+Đa luồng (Multi-Thread) trong Java là khả năng của một ứng dụng để thực hiện nhiều luồng đồng thời. Thay vì thực hiện công việc tuần tự từ trên xuống dưới, ứng dụng Java có thể chạy nhiều luồng đồng thời, làm cho ứng dụng chạy nhanh và hiệu quả hơn.
+
+![Đa Luồng trong Java](https://user-images.githubusercontent.com/29374426/146175674-fa7e09f7-4e42-485e-a2b5-8c664601b203.png)
+
+Ví dụ, một ứng dụng nghe nhạc có thể chạy một luồng để phát nhạc và một luồng khác để tải bài hát mới về máy cùng lúc. Điều này giúp người dùng có thể nghe nhạc mà không cần chờ quá lâu để tải bài hát mới.
+
+## Ưu Điểm của Đa Luồng trong Java
+
+- **Không Chặn Người Sử Dụng**: Đa luồng cho phép ứng dụng thực hiện nhiều công việc cùng một lúc mà không chặn người dùng, do các luồng là độc lập.
+- **Tiết Kiệm Thời Gian**: Ứng dụng có thể thực hiện nhiều hoạt động song song để tiết kiệm thời gian.
+- **Xử Lý Ngoại Lệ Tốt**: Các luồng là độc lập, vì vậy nếu một luồng xảy ra ngoại lệ, nó không ảnh hưởng đến các luồng khác.
+- **Tái Sử Dụng Tài Nguyên**: Luồng cho phép tái sử dụng tài nguyên CPU một cách hiệu quả.
+
+Đa luồng trong Java thường được sử dụng trong các ứng dụng yêu cầu đồng thời xử lý nhiều tác vụ khác nhau như game, ứng dụng đồ họa, và các hệ thống đa nhiệm.

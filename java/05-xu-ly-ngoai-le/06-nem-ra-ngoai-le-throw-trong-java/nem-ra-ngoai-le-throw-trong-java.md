@@ -11,24 +11,27 @@ image: https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/0e/cf95afe85a4701937198
 position: 6
 ---
 
-Từ khóa `throw` trong Java được sử dụng để ném ra một `exception` tường minh. Chúng ta có thể ném hoặc `Checked Exception` hoặc `Unchecked Exception` trong Java bởi từ khóa `throw`. Từ khóa `throw` được sử dụng chủ yếu để ném các `Custom Exception` (là các exception được định nghĩa bởi lập trình viên).
+Từ khóa `throw` trong Java được sử dụng để ném ra một `exception` tường minh. Chúng ta có thể ném cả `Checked Exception` và `Unchecked Exception` trong Java bằng từ khóa `throw`. Từ khóa `throw` thường được sử dụng để ném các `Custom Exception` (là các exception được định nghĩa bởi lập trình viên).
 
-Cú pháp từ khóa throw:
+## Cú Pháp `throw` trong Java
+
+Cú pháp `throw` trong Java như sau:
 
 ```java
 throw exception;
 ```
 
-Ví dụ về throw `IOException`.
+Ví dụ về việc sử dụng `throw` để ném ra một `IOException`:
 
 ```java
-
 throw new IOException("File không tồn tại");
 ```
 
-## Ví dụ về từ khóa throw trong java
+## Ví Dụ về Từ Khóa `throw` trong Java
 
-Ví dụ `throw` ra ngoại lệ nhưng không xử lý: Trong ví dụ này, chúng ta tạo ra phương thức `validate()` với tham số truyền vào là giá trị integer. Nếu tuổi dưới 18, chúng ta ném ra ngoại lệ `ArithmeticException` nếu không in ra một thông báo "welcome".</div>
+### Ví Dụ 1: Ném Ra Ngoại Lệ và Không Xử Lý
+
+Trong ví dụ này, chúng ta tạo một phương thức `validate()` nhận một tham số là giá trị tuổi. Nếu tuổi dưới 18, chúng ta ném ra một ngoại lệ `ArithmeticException`, nếu không, chúng ta in ra một thông báo "welcome".
 
 ```java
 public class TestThrow1 {
@@ -48,11 +51,13 @@ public class TestThrow1 {
 
 ::result
 
-Exception in thread "main" java.lang.ArithmeticException: not valid<br/>
+Exception in thread "main" java.lang.ArithmeticException: not valid
 
 ::
 
-Ví dụ `throw` ra ngoại lệ nhưng có xử lý
+### Ví Dụ 2 Ném Ra Ngoại Lệ và Xử Lý
+
+Trong ví dụ này, chúng ta sử dụng `throw` để ném ra một `ArithmeticException`, nhưng chúng ta cũng có một khối `catch` để xử lý ngoại lệ này.
 
 ```java
 public class TestThrow2 {
@@ -76,7 +81,9 @@ public class TestThrow2 {
 
 ::result
 
-not valid<br/>
+not valid
 rest of the code...
 
 ::
+
+Trong cả hai ví dụ trên, chúng ta đã sử dụng từ khóa `throw` để tạo ra một ngoại lệ và quyết định cách xử lý nó. Việc sử dụng `throw` cho phép chúng ta tạo ra và quản lý các tình huống ngoại lệ một cách tường minh trong chương trình Java của mình.
