@@ -2,8 +2,8 @@
 title: "So sánh ArrayList và LinkedList"
 description: "So sánh ArrayList và LinkedList"
 chapter:
-name: "Java collections"
-slug: "chuong-04-java-collections"
+  name: "Java collections"
+  slug: "chuong-04-java-collections"
 category:
   name: "Java"
   slug: "java"
