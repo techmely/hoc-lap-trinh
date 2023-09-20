@@ -11,8 +11,6 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 7
 ---
 
-# Dependency Injection (DI) và Inversion of Control (IoC) trong Java
-
 Trong thế giới phức tạp của lập trình, Dependency Injection (DI) và Inversion of Control (IoC) là hai khái niệm quan trọng, giúp bạn quản lý phụ thuộc giữa các thành phần trong ứng dụng một cách hiệu quả. Trong bài viết này, chúng ta sẽ giải thích DI và IoC một cách dễ hiểu, đồng thời cung cấp các ví dụ trong ngôn ngữ Java.
 
 ## Dependency Injection (DI)
@@ -90,6 +88,7 @@ public static void main(String[] args) {
 ```
 
 Trong ví dụ này, Spring Framework quản lý việc tạo ra đối tượng `Girl` và cung cấp `Outfit` thông qua DI. Bạn không cần tự tạo đối tượng `Girl`, Spring sẽ làm điều đó và cung cấp `Outfit` cho bạn.
+
 
 ::alert{type="success"}
 Dependency Injection (DI) và Inversion of Control (IoC) là hai khái niệm quan trọng trong lập trình Java. DI giúp giảm sự phụ thuộc giữa các thành phần trong ứng dụng, tạo tính linh hoạt và tùy biến. IoC cho phép framework quản lý việc tạo và cung cấp dependency, tạo điều kiện cho việc quản lý phức tạp hóa ứng dụng. Hi vọng bài viết này đã giúp bạn hiểu rõ hơn về DI và IoC trong Java.
