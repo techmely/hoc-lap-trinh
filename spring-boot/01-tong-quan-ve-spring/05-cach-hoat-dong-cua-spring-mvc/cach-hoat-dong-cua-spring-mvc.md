@@ -12,6 +12,9 @@ position: 5
 
 Spring MVC (Model-View-Controller) là một phần quan trọng của Spring Framework và là một trong những framework phát triển ứng dụng web phổ biến nhất. Nó giúp bạn tách biệt logic trong ứng dụng web thành các phần riêng biệt, giúp quản lý và phát triển dễ dàng hơn. Hãy cùng tìm hiểu cách Spring MVC hoạt động.
 
+![Cách hoạt động của Spring MVC](https://github.com/techmely/hoc-lap-trinh/assets/29374426/46942e94-d850-4fea-9cc1-f7bea3731cd6)
+
+
 ## Quá Trình Hoạt Động của Spring MVC
 
 Dưới đây là một tóm tắt về quá trình hoạt động của Spring MVC khi một yêu cầu được gửi từ máy khách (client) đến máy chủ (server):
