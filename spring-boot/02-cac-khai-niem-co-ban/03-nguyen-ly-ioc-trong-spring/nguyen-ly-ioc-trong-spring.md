@@ -1,5 +1,5 @@
 ---
-title: "Nguyên lý IOC trong Spring"
+title: "Spring IoC , Inversion of Control trong Spring"
 description: "IOC là một trong những khái niệm cốt lõi của Spring Framework"
 chapter:
   name: "Các khái niệm cơ bản về Spring"
@@ -33,7 +33,7 @@ Spring container sử dụng DI để quản lý các thành phần, đối tư�
 
 ## Các kiểu IoC Container
 
-### 1.Bean Factory
+### Bean Factory
 
 Để sử dụng Spring Bean ta cần khai báo thư viện spring-bean sau:
 
@@ -45,9 +45,8 @@ Spring container sử dụng DI để quản lý các thành phần, đối tư�
 </dependency>
 ```
 
-_Class HelloWorld.java_
-
 ```java
+// Class HelloWorld.java
 public class HelloWorld {
   private String message;
 
@@ -61,7 +60,7 @@ public class HelloWorld {
 }
 ```
 
-Để tạo đối tượng HelloWorld thông qua IoC container ta sẽ cấu hình nó trong file beans.xml
+Để tạo đối tượng `HelloWorld` thông qua IoC container ta sẽ cấu hình nó trong file `beans.xml`
 
 ```xml
 <?xml version = "1.0" encoding = "UTF-8"?>
@@ -78,9 +77,9 @@ public class HelloWorld {
 </beans>
 ```
 
-Bây giờ ta sẽ tạo một BeanFactory để đọc các thông tin cấu hình và tạo ra đối tượng HelloWorl.
+Bây giờ ta sẽ tạo một BeanFactory để đọc các thông tin cấu hình và tạo ra đối tượng `HelloWorld`.
 
-BeanFactory chỉ là 1 interface, nên ở đây mình dùng DefaultListableBeanFactory, một implement của BeanFactory. Ở các version cũ thì bạn sẽ thấy hay sử dụng XmlBeanFactory nhưng nó bị đánh dấu @Deprecated ở các version mới.
+`BeanFactory` chỉ là 1 interface, nên ở đây mình dùng DefaultListableBeanFactory, một implement của BeanFactory. Ở các version cũ thì bạn sẽ thấy hay sử dụng XmlBeanFactory nhưng nó bị đánh dấu @Deprecated ở các version mới.
 
 ```java
 // tạo factory
@@ -108,7 +107,7 @@ obj.getMessage();
 </dependency>
 ```
 
-Mình sẽ tạo đối tượng phức tạp hơn HelloWorl.java một chút.
+Mình sẽ tạo đối tượng phức tạp hơn `HelloWorld.java` một chút.
 
 Ví dụ class DataResource.java chứa thông tin kết nối tới database.
 
@@ -157,7 +156,7 @@ public class DataResource {
 }
 ```
 
-Để tạo đối tượng HelloWorld thông qua IoC container ta sẽ cấu hình nó trong file applicationContext.xml (lưu ý là bạn đặt tên file là gì cũng được: bean.xml, applicationContext.xml, dataresource.xml… nhưng cần phải nhớ file cấu hình cho cái gì)
+Để tạo đối tượng HelloWorld thông qua IoC container ta sẽ cấu hình nó trong file `applicationContext.xml` (lưu ý là bạn đặt tên file là gì cũng được: `bean.xml`, `applicationContext.xml`, `dataresource.xml`… nhưng cần phải nhớ file cấu hình cho cái gì)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -183,13 +182,9 @@ public static void main(String[] args) {
 }
 ```
 
-Kết quả:
-
-```bash
+::result
 url: jdbc:mysql://localhost/database_name
 username/password: root/admin1234
-```
+::
 
-Done!
-
-Bây giờ bạn muốn thay đổi messge trong đối tượng HelloWorld, hay database của bạn thay đổi username/password hay bạn đổi kết nối sang database khác bạn chỉ cần đổi lại thông tin trong file config .xml là đã thay đổi được luồng chạy của chương trình, đó chính là IoC.
+Bây giờ bạn muốn thay đổi message trong đối tượng HelloWorld, hay database của bạn thay đổi `username/password` hay bạn đổi kết nối sang database khác bạn chỉ cần đổi lại thông tin trong file config `.xml` là đã thay đổi được luồng chạy của chương trình, đó chính là IoC.

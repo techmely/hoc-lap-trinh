@@ -1,6 +1,6 @@
 ---
-title: "Cấu hình ứng dụng với xml"
-description: "Cấu hình ứng dụng với xml"
+title: "Cấu hình ứng dụng với XML"
+description: "Spring cho phép bạn cấu hình ứng dụng bằng cách sử dụng tệp XML hoặc Annotation. Thường thì người ta sử dụng cả hai loại này để cấu hình ứng dụng. Annotation thường được sử dụng để giảm tải phần cấu hình trong tệp XML để tránh sự phức tạp khi tệp cấu hình quá lớn."
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-01-tong-quan-ve-spring"
@@ -11,55 +11,50 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 7
 ---
 
-Với Spring bạn có thể sử dụng XML để cấu hình hoặc annotation để cấu hình ứng dụng. Thông
-thường người ta sử dụng cả2loại này để cấu hình ứng dụng. Khi đó annotation chỉ đóng vai trò giảm
-tải một số thành phần trong file cấu hình để tránh sự phức tạp khi file cấu hình quá lớn. XML vẫn phải
-được sử dụng chính để chứa các khai báo cơ bản nhất của hệ thống hoặc những bean cũ không sử
-dụng annotation lúc định nghĩa.
+Spring cho phép bạn cấu hình ứng dụng bằng cách sử dụng tệp XML hoặc Annotation. Thường thì người ta sử dụng cả hai loại này để cấu hình ứng dụng. Annotation thường được sử dụng để giảm tải phần cấu hình trong tệp XML để tránh sự phức tạp khi tệp cấu hình quá lớn. Tuy nhiên, tệp XML vẫn phải được sử dụng để chứa các khai báo cơ bản của hệ thống hoặc những bean cũ không sử dụng Annotation khi được định nghĩa.
 
 ## Cấu hình bằng XML
 
-File cấu hình ứng dụng
+Trong ứng dụng Spring thông thường, chúng ta sẽ cấu hình ứng dụng bằng cách sử dụng 2 tệp:
 
-![Cấu hình ứng dụng Spring boot bằng XML](https://1.bp.blogspot.com/-oRr1QEA6qEM/Xg7KBxBC57I/AAAAAAAAAcA/o8kPwFt27N421GadfgAp5j7xeLL2BehBACLcBGAsYHQ/s1600/p1.png)
+1. `web.xml`: Đây là tệp cấu hình cho ứng dụng web Java. Trong tệp này, chúng ta chỉ định tệp cấu hình Spring MVC là `dispatcher-servlet.xml`.
 
-Trong ứng dụng đơn gian, chung ta thương cau hình ứng dụng với3file:
+2. `dispatcher-servlet.xml`: Đây là tệp cấu hình dành riêng cho ứng dụng Spring MVC.
 
-- web.xml
-- dispatcher-servlet.xml
-- applicationContext.xml
+Nếu ứng dụng có nhiều servlet, việc xác định các tài nguyên chung trong `applicationContext.xml` sẽ trở nên quan trọng hơn.
 
-Trong ứng dụng đơn giản, chúng ta thường cấu hình ứng dụng với 2 file web.xml và dispatcher-servlet.xml:
+## Tệp cấu hình web.xml
 
-- `web.xml`: cấu hình ứng dụng web của java, trong đó có chỉ ra file cấu hình Spring MVC là dispatcher-servlet.xml
-- `dispatcher-servlet.xml`: cấu hình dành riêng cho ứng dụng Spring MVC
-- `applicationContext.xml` định nghĩa các bean được chia sẻ giữa tất cả các servlet.
+Tệp web.xml được sử dụng để cấu hình nhiều khía cạnh của ứng dụng web (chẳng hạn như JSP, Servlet, Spring, và nhiều thứ khác). Trong bài viết này, chúng ta chỉ quan tâm đến các khai báo liên quan đến ứng dụng Spring MVC.
 
-Nếu ứng dụng có nhiều hơn một servlet thì việc xác định các tài nguyên phổ biến trong `applicationContext.ml` sẽ có ý nghĩa hơn.
-
-## File cấu hình web.xml
-
-File web.xml được sử dụng để cấu hình nhiều công việc khác nhau cho ứng dụng web nói chung (jsp, servlet, structs, spring v.v) Trong phần này chúng ta chỉ khai thác các khai báo liên quan đến ứng dụng Spring MVC.
+Dưới đây là một ví dụ về tệp web.xml:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLlocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-
-app_4_0.xsd"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
     version="4.0">
+
+  <!-- Khai báo vị trí của tệp applicationContext.xml -->
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>/WEB-INF/applicationContext.xml</param-value>
   </context-param>
+
+  <!-- Sử dụng ContextLoaderListener để tải applicationContext.xml -->
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
+
+  <!-- Định nghĩa DispatcherServlet -->
   <servlet>
     <servlet-name>dispatcher</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
+
+  <!-- Ánh xạ DispatcherServlet với URL pattern "/" -->
   <servlet-mapping>
     <servlet-name>dispatcher</servlet-name>
     <url-pattern>/</url-pattern>
@@ -67,12 +62,17 @@ app_4_0.xsd"
 </web-app>
 ```
 
-Trong khai báo này thì org.springframework.web.servlet.DispatcherServlet được sử dụng để tiếp nhận tất cả các yêu cầu có địa chỉ url (**<'url-pattern'>/ </'url-pattern'>**), nếu **<'url-pattern'>\*.jsp</'url-pattern'>** được hiểu là DispatcherServlet sẽ tiếp nhận tất cả các yêu cầu có địa chỉ url kết thúc bởi .jsp. DispatcherServlet sẽ phân giải để chuyển đến các action phù hợp với các yêu cầu dựa vào định dạng của url.
+Trong tệp cấu hình này:
 
-Hãy lưu ý rằng, trong file cấu hình này chúng ta sử dụng dispatcher để đặt tên cho servlet (**<'servlet-name>dispatcher</'servlet-name'>**). Theo quy ước mặc định của Spring thì file cấu hình Spring sẽ có tên là “<tên servlet>-servlet.xml". Và vì vậy trong trường hợp này là dispatcher-servlet.xml.
-Nếu chúng ta đặt tên là **<'servlet-name'>my-config</'servlet-name'>** thì file cấu hình Spring MVC sẽ là "my-config-servlet.xml".
+- Chúng ta khai báo `contextConfigLocation` để chỉ ra vị trí của tệp `applicationContext.xml`.
+- Sử dụng `ContextLoaderListener` để tải tệp `applicationContext.xml`.
+- Định nghĩa `DispatcherServlet` và ánh xạ nó với URL pattern "/".
 
-## File cầu hình dispatcher-servlet.xml
+Tên `dispatcher` được sử dụng cho `servlet-name` để xác định tên của Servlet và do đó tên của tệp cấu hình Spring MVC là `dispatcher-servlet.xml`. Nếu bạn đặt `servlet-name` thành `my-config`, tên tệp cấu hình Spring MVC sẽ là `my-config-servlet.xml`.
+
+## Tệp cấu hình dispatcher-servlet.xml
+
+Dưới đây là một ví dụ về tệp cấu hình `dispatcher-servlet.xml`:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -80,14 +80,20 @@ Nếu chúng ta đặt tên là **<'servlet-name'>my-config</'servlet-name'>** t
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xmlns:context="http://www.springframework.org/schema/context"
    xmlns:mvc="http://www.springframework.org/schema/mvc"
-   xsi:schemalocation="http://www.springframework.org/schema/beans
+   xsi:schemaLocation="http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans.xsd
    http://www.springframework.org/schema/context
    http://www.springframework.org/schema/context/spring-context.xsd
    http://www.springframework.org/schema/mvc
-   http://www.springframework.org/schema/mvc/spring-mvc.xsd"
-  <context:component-scan base-package%="codelean.controller"/>
+   http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+  <!-- Quét các component trong gói codelean.controller -->
+  <context:component-scan base-package="codelean.controller"/>
+
+  <!-- Cho phép sử dụng Annotation trong Spring MVC -->
   <mvc:annotation-driven/>
+
+  <!-- Cấu hình ViewResolver để xác định vị trí và phần mở rộng của view -->
   <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     <property name="prefix" value="/WEB-INF/views/"/>
     <property name="suffix" value=".jsp"/>
@@ -95,77 +101,15 @@ Nếu chúng ta đặt tên là **<'servlet-name'>my-config</'servlet-name'>** t
 </beans>
 ```
 
-Tập tin cầu hình này chứa đúng một thẻ **< bean>**, thẻ này chứa các thuộc tính khá phức tạp như:
+Trong tệp cấu hình này:
 
-```java
-xmlns="http://www.springframework.org/schema/beans"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xmlns:context="http://www.springframework.org/schema/context"
-xmlns:mvc="http://www.springframework.org/schema/mvc"
-xsi:schemalocation="http://www.springframework.org/schema/beans
-http://www.springframework.org/schema/beans/spring-beans.xsd
-http://www.springframework.org/schema/context
-http://www.springframework.org/schema/context/spring-context.xsd
-http://www.springframework.org/schema/mvc
-http://www.springframework.org/schema/mvc/spring-mvc.xsd"
-```
+- Chúng ta sử dụng các namespace để định nghĩa các thẻ trong tệp XML. Các namespace này được khai báo ở đầu tệp để sử dụng trong các thẻ cấu hình.
+- Chúng ta sử dụng `<context:component-scan>` để quét các thành phần trong gói `codelean.controller`.
+- `<mvc:annotation-driven/>` cho phép sử dụng Annotation trong Spring MVC.
+- `<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">` cấu hình `ViewResolver` để xác định vị trí và phần mở
 
-Các namespace này được khai báo để sử dụng cho các thẻ ở phần cấu hình. Thông thường, chúng ta dùng đến đầu thì khai báo đến đó.
-Tuy nhiên, chúng ta có thể khai báo tất cả những gì cần thiết đế
-chuẩn bị cho các khả năng có thể sử dụng cho ứng dụng sau này.
+rộng của view. Ở đây, view sẽ được tìm ở thư mục `/WEB-INF/views/` và có phần mở rộng là `.jsp`.
 
-## View Resolver
+Khi bạn sử dụng Annotation như `@Controller`, `@RequestMapping`, `@Component`, `@PostMapping`, `@GetMapping`, `@Service`,... bạn cần có khai báo `<mvc:annotation-driven/>` để ứng dụng Spring MVC biết rằng bạn đang sử dụng Annotation trong phần cấu hình.
 
-Sau khi một action trong controller hoàn thành nhiệm vụ thì nó phải chỉ ra view nào cần được sử dụng để hiển thị giao diện kết quả cho người dùng.
-Chỉ có tên view được chỉ định trong action còn vị trí đặt view hoặc phần mở rộng của view thì giao lại cho ViewResolver giải quyết.
-Ví dụ: Trong một controller có định nghĩa một action như sau:
-
-```java
-@RequestMapping(value="/greeting", method= RequestMethod.GET
-public String greeting(){
-    return "greeting";
-}
-```
-
-Với khai báo ViewResolver được cấu hình
-
-```xml
-<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-  <property name="prefix" value="/WEB-INF/views/"/>
-  <property name="suffix" value=".jsp"/>
-</bean>
-```
-
-Khi đó view WEB-INF/views/greeting.jsp se được lựa chọn để sinh giao diện.
-
-## Cho phép sử dụng annotation
-
-Trong các ứng dụng Spring MVC phát triển từ 3+ gần như sử dụng annotation để đơn giải hoá công việc phát triển ứng dụng. Để ứng dụng Spring nhận biết điều này cần khai báo trong file cấu hình dispatcher-servlet dòng mã sau:
-
-```xml
-<mvc:annotation-driven/>
-```
-
-Với khai báo này, trong Spring MVC có thể đánh dấu các thành phần bằng các annotation:
-
-- @Controller
-- @RequestMapping
-- @Component
-- @PostMappling/@GetMapping
-- @Service
-  ...
-
-## Vị trí chứa controller
-
-Khi bạn yêu cần một action, ứng dụng Spring phải truy tìm phương thức ánh xạ tới action đó thông qua @RequestMapping hoặc @PostMapping hoặc @GetMapping.
-Như vậy cần phải biết phương thức của lớpn nào được ánh xạ để thực hiện yêu cầu với khai báo:
-
-```bash
-context:component-scan base-package="codelean.controller"/>
-```
-
-Trong trường hợp này, các lớp controller thuộc gói codelean.controller sẽ được tham chiếu đến. Trong trường hợp có nhiều controller thuộc nhiều gói khác nhau thì phải chỉ rõ các gói bằng dấu phẩy.
-
-```xml
-<context:component-scan base-package%="codelean.controller1, codelean.controller2, "/>
-```
+Điều quan trọng là bạn cần cấu hình `ViewResolver` để xác định nơi và cách bạn lưu trữ các trang JSP để hiển thị giao diện cho người dùng.
