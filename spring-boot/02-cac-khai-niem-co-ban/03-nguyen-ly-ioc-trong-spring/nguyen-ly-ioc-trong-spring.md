@@ -11,8 +11,6 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 7
 ---
 
-## IoC Container
-
 ## IoC là gì?
 
 IoC còn có tên gọi đầy đủ là Inversion of Control, được hiểu là một nguyên lý thiết kế ứng dụng trong công nghệ phần mềm. Kiến trúc phần mềm khi áp dụng nguyên lý thiết kế này sẽ đảo ngược quyền điều khiển so với kiểu lập trình hướng thủ tục.
@@ -95,7 +93,7 @@ obj.getMessage();
 
 ```
 
-### 2.Application Context
+### Application Context
 
 Để sử dụng Spring Context ta cần khai báo thư viện spring-context sau:
 
