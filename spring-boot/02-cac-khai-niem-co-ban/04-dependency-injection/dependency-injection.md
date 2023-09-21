@@ -8,7 +8,7 @@ category:
   name: "Spring Boot"
   slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 8
+position: 4
 ---
 
 ![Dependency Injection](https://github.com/techmely/hoc-lap-trinh/assets/29374426/3bbde695-58c3-472a-a717-201536a42ab3)
@@ -26,9 +26,7 @@ Ví dụ: Để giao tiếp với cơ sở dữ liệu, chúng ta có thể sử
 Có ba dạng chính của Dependency Injection:
 
 1. **Constructor Injection**: Dependency được tiêm vào thông qua constructor của lớp.
-
 2. **Setter Injection**: Dependency được tiêm vào thông qua các phương thức setter.
-
 3. **Interface Injection**: Lớp cần tiêm sẽ thực thi một giao diện (interface) chứa phương thức `inject`. Container sẽ tiêm các dependency vào lớp thông qua phương thức `inject` của giao diện.
 
 ## Dependency Injection trong Java

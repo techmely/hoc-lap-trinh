@@ -8,7 +8,7 @@ category:
   name: "Spring Boot"
   slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 7
+position: 3
 ---
 
 ## IoC là gì?
