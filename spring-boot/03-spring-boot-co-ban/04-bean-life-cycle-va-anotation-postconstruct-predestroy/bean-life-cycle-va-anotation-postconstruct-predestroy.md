@@ -105,7 +105,7 @@ public class Girl {
 
 Một Bean trong Spring Boot có một vòng đời được biểu diễn như hình dưới đây:
 
-![spring-bean-life-cycle](../../images/loda1557583753982/2.jpg)
+![Vòng Đời của Bean](https://github.com/techmely/hoc-lap-trinh/assets/29374426/35c65897-cfdc-4be1-aad6-3f46193df01a)
 
 Tóm tắt vòng đời của Bean:
 
