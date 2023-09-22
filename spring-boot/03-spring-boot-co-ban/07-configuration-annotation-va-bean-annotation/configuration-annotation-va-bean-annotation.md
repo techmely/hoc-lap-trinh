@@ -1,5 +1,5 @@
 ---
-title: "Annotation @Configuration và @Bean"
+title: "@Configuration annotation và @Bean annotation"
 description: "Trong lập trình Spring Boot, hai Annotation quan trọng là @Configuration và @Bean cho phép bạn tạo và quản lý các đối tượng (beans) trong ứng dụng của bạn"
 chapter:
   name: "Spring Boot cơ bản"
@@ -7,7 +7,7 @@ chapter:
 category:
   name: "Spring Boot"
   slug: "spring-boot"
-position: 6
+position: 7
 ---
 
 ## Giới thiệu

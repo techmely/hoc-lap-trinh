@@ -1,5 +1,5 @@
 ---
-title: "Annotation @Component và @Autowired"
+title: "@Component annotation và @Autowired annotation"
 description: "Trong lập trình Spring Boot, hai annotation quan trọng bạn nên biết là @Component và @Autowired. Đây là hai khái niệm cơ bản giúp bạn quản lý và kết nối các thành phần của ứng dụng Spring Boot một cách dễ dàng"
 chapter:
   name: "Spring Boot cơ bản"

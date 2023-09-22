@@ -1,5 +1,5 @@
 ---
-title: "Annotation @Primary và @Qualifier"
+title: "@Primary annotation và @Qualifier annotation"
 description: "Trong Spring Boot, khi bạn có nhiều bean cùng loại trong một ứng dụng và muốn chỉ định bean nào sẽ được ưu tiên sử dụng hoặc chọn bean cụ thể để sử dụng, bạn có thể sử dụng hai annotation quan trọng là @Primary và @Qualifier"
 chapter:
   name: "Spring Boot cơ bản"

@@ -1,5 +1,5 @@
 ---
-title: "Vòng đời của Bean và annotation @PostConstruct, @PreDestroy"
+title: "Vòng đời của Bean và @PostConstruct, @PreDestroy"
 description: "Trong lập trình Spring Boot, việc hiểu vòng đời của một Bean và sử dụng các Annotation như @PostConstruct và @PreDestroy là rất quan trọng. Bài viết này sẽ giúp bạn hiểu rõ hơn về chúng."
 chapter:
   name: "Spring Boot cơ bản"

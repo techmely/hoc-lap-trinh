@@ -1,5 +1,5 @@
 ---
-title: "Annotation @Component @Service @Repository"
+title: "@Component @Service @Repository trong Spring Boot"
 description: "Trong lập trình Spring Boot, chúng ta thường sử dụng các Annotation như @Component, @Service, và @Repository để đánh dấu các thành phần của ứng dụng. Trong bài viết này, chúng ta sẽ tìm hiểu sự khác biệt giữa các Annotation này và cách chúng được sử dụng"
 chapter:
   name: "Spring Boot cơ bản"
