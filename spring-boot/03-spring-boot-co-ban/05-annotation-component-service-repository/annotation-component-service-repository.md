@@ -139,8 +139,10 @@ public class App {
 ```
 
 ::result
+
 Girl(ulmvchvgkf)
-::
+
+ƒ::
 
 ### Giải thích
 
