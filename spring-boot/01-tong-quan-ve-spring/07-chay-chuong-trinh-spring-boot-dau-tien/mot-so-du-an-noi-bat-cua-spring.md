@@ -1,6 +1,6 @@
 ---
 title: "Chạy chương trình spring đầu tiên"
-description: "Chạy chương trình Spring Boot đầu tiên không phải là một công việc phức tạp. Trong bài viết này, chúng ta sẽ hướng dẫn bạn bắt đầu với một ứng dụng Spring Boot đơn giản để tạo một dịch vụ web "Hello World". Chúng ta sẽ làm theo các bước sau"
+description: "Chạy chương trình Spring Boot đầu tiên không phải là một công việc phức tạp. Trong bài viết này, chúng ta sẽ hướng dẫn bạn bắt đầu với một ứng dụng Spring Boot đơn giản để tạo một dịch vụ web Hello World"
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-01-tong-quan-ve-spring"
@@ -23,8 +23,7 @@ Chạy chương trình Spring Boot đầu tiên không phải là một công vi
    - Language: Java.
    - Spring Boot: Phiên bản mới nhất (hoặc bạn có thể chọn phiên bản khác nếu cần).
    - Project Metadata: Điền các thông tin như Group, Artifact, và Package theo ý muốn.
-![Tạo Dự Án Spring Boot Mới](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d804007c-73d3-4577-9593-440f5e820ae5)
-
+     ![Tạo Dự Án Spring Boot Mới](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d804007c-73d3-4577-9593-440f5e820ae5)
 
 3. Bước quan trọng: Trong mục "Dependencies", tìm kiếm và thêm dependency "web" bằng cách gõ "web" vào ô tìm kiếm. Dependency này là cần thiết để tạo dịch vụ web.
 
@@ -85,7 +84,6 @@ Started DemoApplication in x.xxx seconds (JVM running for x.xxx)
 ::
 
 ![Thử Nghiệm](https://github.com/techmely/hoc-lap-trinh/assets/29374426/a270bd4a-6e47-4b1a-9b69-c533324f3595)
-
 
 Dòng cuối cùng ở đây cho chúng ta biết rằng Spring đã khởi động. Máy chủ Apache Tomcat được tích hợp trong Spring Boot đang hoạt động và lắng nghe các yêu cầu trên cổng 8080 của localhost.
 
