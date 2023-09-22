@@ -18,9 +18,9 @@ Spring Framework, một công cụ mạnh mẽ cho lập trình Java, được t
 
 ## Dependency Injection và Inversion of Control
 
-**Dependency Injection (DI)** là một design pattern quan trọng trong Spring Framework, giúp loại bỏ sự phụ thuộc lẫn nhau giữa các thành phần của ứng dụng. Điều này làm cho việc quản lý, mở rộng mã nguồn và kiểm tra ứng dụng trở nên dễ dàng hơn.
+[Dependency Injection (DI)](/bai-viet/spring-boot/dependency-injection) là một design pattern quan trọng trong Spring Framework, giúp loại bỏ sự phụ thuộc lẫn nhau giữa các thành phần của ứng dụng. Điều này làm cho việc quản lý, mở rộng mã nguồn và kiểm tra ứng dụng trở nên dễ dàng hơn.
 
-**Inversion of Control (IoC)** Container trong Spring chịu trách nhiệm khởi tạo, cấu hình và kết nối các đối tượng. Spring cung cấp hai loại IoC containers: **BeanFactory** và **ApplicationContext**, giúp quản lý các đối tượng của bạn một cách thông minh.
+[Inversion of Control (IoC)](/bai-viet/spring-boot/nguyen-ly-ioc-trong-spring) Container trong Spring chịu trách nhiệm khởi tạo, cấu hình và kết nối các đối tượng. Spring cung cấp hai loại IoC containers: **BeanFactory** và **ApplicationContext**, giúp quản lý các đối tượng của bạn một cách thông minh.
 
 ## Các Module Quan Trọng của Spring Framework
 
