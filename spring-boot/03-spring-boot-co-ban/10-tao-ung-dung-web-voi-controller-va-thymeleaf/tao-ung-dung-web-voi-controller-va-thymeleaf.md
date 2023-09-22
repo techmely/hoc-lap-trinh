@@ -173,8 +173,6 @@ Thêm dependency cho Spring Boot và Thymeleaf vào `pom.xml`:
 
 Cấu trúc thư mục của dự án:
 
-![spring-thymeleaf](../../images/loda1558267496214/3.jpg)
-
 ### Cấu hình Thymeleaf
 
 Cấu hình ứng dụng thông qua tệp `application.properties`:
