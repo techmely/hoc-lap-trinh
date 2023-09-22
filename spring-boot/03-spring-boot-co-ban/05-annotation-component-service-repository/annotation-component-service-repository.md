@@ -22,7 +22,7 @@ Spring Boot xây dựng kiến trúc MVC (Model-View-Controller) dựa trên ngu
 
 Kiến trúc Controller-Service-Repository chia ứng dụng thành 3 tầng chính:
 
-![Kiến trúc Spring Boot](../../images/loda1557627097246/2.png)
+![Kiến trúc Spring Boot](https://github.com/techmely/hoc-lap-trinh/assets/29374426/1f22feb7-c049-4419-a7a1-9f8d64daf640)
 
 - **Tầng Controller**: Là tầng giao tiếp với bên ngoài và xử lý các yêu cầu từ người dùng hoặc các yêu cầu gửi đến từ bên ngoài hệ thống.
 - **Tầng Service**: Thực hiện các logic nghiệp vụ và xử lý các yêu cầu từ tầng Controller.
