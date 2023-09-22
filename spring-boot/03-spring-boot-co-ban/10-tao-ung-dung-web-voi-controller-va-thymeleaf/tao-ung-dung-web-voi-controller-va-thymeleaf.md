@@ -18,7 +18,7 @@ Trong bài này, chúng ta sẽ chi tiết hơn về Thymeleaf và sử dụng n
 
 **Thymeleaf** là một Java Template Engine có nhiệm vụ xử lý và tạo ra các tệp HTML, XML, v.v. Các tệp HTML được tạo ra bởi Thymeleaf dựa trên sự kết hợp giữa dữ liệu và các mẫu (templates) cùng với các quy tắc được định sẵn.
 
-![spring-thymeleaf](../../images/loda1558267496214/2.png)
+![Thymeleaf](https://github.com/techmely/hoc-lap-trinh/assets/29374426/0977fea6-eb16-4d23-ada9-d8b0642f555e)
 
 Nhiệm vụ của bạn là cung cấp dữ liệu và chỉ định cách sử dụng các mẫu, còn việc tạo tệp HTML sẽ được Thymeleaf thực hiện.
 
