@@ -1,5 +1,5 @@
 ---
-title: "Tạo ứng dụng web với @Controller và Thymeleaf"
+title: "Cách Thymeleaf hoạt động và expression"
 description: "Trong bài này, chúng ta sẽ chi tiết hơn về Thymeleaf và sử dụng nó để xây dựng một trang web đơn giản"
 chapter:
   name: "Spring Boot cơ bản"
@@ -7,7 +7,7 @@ chapter:
 category:
   name: "Spring Boot"
   slug: "spring-boot"
-position: 9
+position: 10
 ---
 
 ## Giới thiệu
@@ -113,7 +113,7 @@ Tuy nhiên, nó sẽ lấy giá trị của biến trong ngữ cảnh của `th:
 Ví dụ, trong tệp cấu hình `.properties` của bạn, bạn có một thông báo chào đón người dùng bằng nhiều ngôn ngữ:
 
 ```java
-home.welcome=helloworld
+home.welcome=Hello bạn
 ```
 
 Thì cách lấy nó ra nhanh nhất là:
