@@ -7,7 +7,7 @@ chapter:
 category:
   name: "Spring Boot"
   slug: "spring-boot"
-position: 13
+position: 12
 ---
 
 Trong bài viết này, chúng ta sẽ tìm hiểu về cách sử dụng Spring JPA Method và `@Query` để tạo các câu truy vấn trong ứng dụng Spring Boot. Chúng ta sẽ đi từ việc sử dụng các phương thức tạo truy vấn tự động dựa trên tên method của repository đến việc sử dụng `@Query` để tạo các câu truy vấn tùy chỉnh.

@@ -7,7 +7,7 @@ chapter:
 category:
   name: "Spring Boot"
   slug: "spring-boot"
-position: 12
+position: 11
 ---
 
 Trong loạt bài viết về Spring Boot, chúng ta không thể bỏ qua một phần quan trọng trong ứng dụng web - đó là giao tiếp với cơ sở dữ liệu. Trong bài viết này, chúng ta sẽ tìm hiểu về Spring Boot JPA, một công cụ mạnh mẽ cho việc tương tác với cơ sở dữ liệu MySQL. Chúng ta sẽ đi từ việc cài đặt, tạo bảng và dữ liệu, tạo model, và cuối cùng là thao tác với cơ sở dữ liệu bằng Spring Boot JPA.
