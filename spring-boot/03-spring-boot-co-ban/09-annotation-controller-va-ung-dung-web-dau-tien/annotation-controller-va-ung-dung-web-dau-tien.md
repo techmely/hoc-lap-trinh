@@ -85,7 +85,7 @@ Trong ví dụ này, giá trị của `mysqlUrl` sẽ được đọc từ tệp
 
 Dưới đây là ví dụ hoàn chỉnh:
 
-### Tệp application.properties
+### Tệp application.properties`
 
 ```properties
 server.port = 8081
