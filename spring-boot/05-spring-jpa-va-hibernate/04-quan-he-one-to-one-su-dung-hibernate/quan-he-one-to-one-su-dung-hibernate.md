@@ -178,7 +178,7 @@ Trong ví dụ này, chúng ta tạo một `Person` và một `Address`, sau đ�
 
 ### Kiểm Tra Kết Quả
 
-Sau khi chạy ứng dụng, bạn có thể truy cập cơ sở dữ liệu để kiểm tra kết quả. Sử dụng giao diện trình duyệt của **H2 Database**, bạn có thể truy cập tại [http://localhost:8080/h2-console/](http://localhost:8080/h2-console/). Đăng nhập với các thông số cấu hình trong `application.properties`.
+Sau khi chạy ứng dụng, bạn có thể truy cập cơ sở dữ liệu để kiểm tra kết quả. Sử dụng giao diện trình duyệt của **H2 Database**, bạn có thể truy cập tại `http://localhost:8080/h2-console/`. Đăng nhập với các thông số cấu hình trong `application.properties`.
 
 Kết quả trong cơ sở dữ liệu sẽ hiển thị một bảng `PERSON` và một bảng `ADDRESS` với thông tin được liên kết:
 

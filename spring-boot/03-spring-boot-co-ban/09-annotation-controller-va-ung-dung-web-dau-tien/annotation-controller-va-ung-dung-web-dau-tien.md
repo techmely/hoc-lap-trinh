@@ -49,7 +49,7 @@ Trong trường hợp bạn muốn tự cấu hình một số giá trị riêng
 Ví dụ, bạn muốn cấu hình thông tin kết nối database của bạn từ bên ngoài ứng dụng. Trước hết, bạn định nghĩa các thông tin trong tệp `application.properties` như sau:
 
 ```properties
-loda.mysql.url=jdbc:mysql://host1:33060/loda
+kungfutech.mysql.url=jdbc:mysql://host1:33060/kungfutech
 ```
 
 Sau đó, bạn có thể sử dụng `@Value` để đọc giá trị này và sử dụng nó trong mã nguồn của bạn:
@@ -63,7 +63,7 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
     // Sử dụng @Value để lấy giá trị từ application.properties
-    @Value("${loda.mysql.url}")
+    @Value("${kungfutech.mysql.url}")
     String mysqlUrl;
 
     @Bean
@@ -91,7 +91,7 @@ Dưới đây là ví dụ hoàn chỉnh:
 server.port = 8081
 logging.level.root=INFO
 
-loda.mysql.url=jdbc:mysql://host1:33060/loda
+kungfutech.mysql.url=jdbc:mysql://host1:33060/kungfutech
 ```
 
 ### Class `DatabaseConnector`
@@ -133,7 +133,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
 
-    @Value("${loda.mysql.url}")
+    @Value("${kungfutech.mysql.url}")
     String mysqlUrl;
 
     @Bean

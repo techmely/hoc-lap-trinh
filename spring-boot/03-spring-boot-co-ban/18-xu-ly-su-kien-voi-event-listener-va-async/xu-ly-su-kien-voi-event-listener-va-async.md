@@ -84,26 +84,22 @@ public class App {
     @Bean
     CommandLineRunner run() {
         return args -> {
-            System.out.println("Loda đi tới cửa nhà !!!");
-            System.out.println("=> Loda bấm chuông và khai báo họ tên!");
-            myHouse.ringDoorbellBy("Loda");
-            System.out.println("Loda quay lưng bỏ đi");
+            System.out.println("Kungfutech đi tới cửa nhà !!!");
+            System.out.println("=> Kungfutech bấm chuông và khai báo họ tên!");
+            myHouse.ringDoorbellBy("Kungfutech");
+            System.out.println("Kungfutech quay lưng bỏ đi");
         };
     }
 }
 ```
 
-Kết quả:
-
-```
-Loda đi tới cửa nhà !!!
-=> Loda bấm chuông và khai báo họ tên!
-Loda qu
-
-ay lưng bỏ đi
-Chó ngủ dậy!!!
-Go go!! Có người tên là Loda gõ cửa!!!
-```
+::result
+Kungfutech đi tới cửa nhà !!!</br>
+=> Kungfutech bấm chuông và khai báo họ tên!</br>
+Kungfutech quay lưng bỏ đi</br>
+Chó ngủ dậy!!!</br>
+Go go!! Có người tên là Kungfutech gõ cửa!!!
+::
 
 Quá trình xử lý sự kiện xảy ra một cách đồng thời và bất đồng bộ như chúng ta đã mong đợi. Người bấm chuông và chó cùng hoạt động mà không ảnh hưởng tới nhau.
 

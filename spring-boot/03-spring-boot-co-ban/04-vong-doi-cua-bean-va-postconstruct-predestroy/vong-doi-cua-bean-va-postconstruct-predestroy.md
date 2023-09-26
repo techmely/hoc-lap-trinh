@@ -32,7 +32,7 @@ Trước khi tìm hiểu về vòng đời của Bean và Annotation, bạn cầ
         <version>2.0.5.RELEASE</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
-    <groupId>me.loda.spring</groupId>
+    <groupId>me.kungfutech.spring</groupId>
     <artifactId>spring-boot-learning</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-boot-learning</name>

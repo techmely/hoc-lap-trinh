@@ -34,7 +34,7 @@ Trước khi đi sâu vào Component Scan, hãy xem qua cấu trúc Maven của 
         <version>2.0.5.RELEASE</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
-    <groupId>me.loda.spring</groupId>
+    <groupId>me.kungfutech.spring</groupId>
     <artifactId>spring-boot-learning</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-boot-learning</name>
@@ -58,7 +58,7 @@ src
 └── main
     └── java
         └── me
-            └── loda
+            └── kungfutech
                 └── spring
                     ├── App.java
                     ├── Girl.java
@@ -133,7 +133,7 @@ Trong trường hợp bạn muốn tuỳ chỉnh cấu hình cho Component Scan 
 Bạn có thể sử dụng Annotation `@ComponentScan` trên class `App` để chỉ định các package cần quét.
 
 ```java
-@ComponentScan("me.loda.spring.componentscan.others")
+@ComponentScan("me.kungfutech.spring.componentscan.others")
 @SpringBootApplication
 public class App {
     // ...
@@ -147,7 +147,7 @@ Hoặc, bạn có thể sử dụng thuộc tính `scanBasePackages` trong Annot
 ```java
 
 
-@SpringBootApplication(scanBasePackages = "me.loda.spring.componentscan.others")
+@SpringBootApplication(scanBasePackages = "me.kungfutech.spring.componentscan.others")
 public class App {
     // ...
 }

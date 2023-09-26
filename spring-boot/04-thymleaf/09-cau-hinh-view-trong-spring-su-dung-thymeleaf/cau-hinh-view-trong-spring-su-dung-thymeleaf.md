@@ -69,7 +69,7 @@ Trang `index.html` sẽ là trang mặc định mà Thymeleaf tìm khi không c�
     <script th:src="@{/js/bootstrap.js}"></script>
   </head>
   <body>
-    <h1 th:text="#{loda.hello}"></h1>
+    <h1 th:text="#{kungfutech.hello}"></h1>
     <a th:href="@{/profile}" class="btn btn-primary">Kungfutech Profile</a>
   </body>
 </html>
@@ -94,10 +94,10 @@ public class WebController {
     public String profile(Model model) {
         // Tạo danh sách thông tin cá nhân
         List<Info> profile = new ArrayList<>();
-        profile.add(new Info("fullname", "Nguyễn Hoàng Nam"));
-        profile.add(new Info("nickname", "loda"));
-        profile.add(new Info("email", "loda.namnh@gmail.com"));
-        profile.add(new Info("website", "https://loda.me"));
+        profile.add(new Info("fullname", "KungfuTech"));
+        profile.add(new Info("nickname", "kungfutech"));
+        profile.add(new Info("email", "techmely.creation@gmail.com"));
+        profile.add(new Info("website", "https://kungfutech.me"));
 
         // Đưa danh sách vào Model
         model.addAttribute("kungfutechProfile", profile);
@@ -127,7 +127,7 @@ Trang `profile.html` sẽ hiển thị thông tin từ Model, sử dụng Thymel
     <script th:src="@{/js/bootstrap.js}"></script>
   </head>
   <body>
-    <h1 th:text="#{loda.hello}"></h1>
+    <h1 th:text="#{kungfutech.hello}"></h1>
     <h2>Kungfutech Profile</h2>
     <ul>
       <!-- Duyệt qua toàn bộ danh sách kungfutechProfile -->

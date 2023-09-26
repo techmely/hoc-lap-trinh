@@ -139,7 +139,7 @@ _pom.xml_
  <version>2.0.5.RELEASE</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
-    <groupId>me.loda.spring</groupId>
+    <groupId>me.kungfutech.spring</groupId>
     <artifactId>spring-boot-learning</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-boot-learning</name>
@@ -179,11 +179,7 @@ _pom.xml_
 
 Cấu trúc thư mục:
 
-![spring-profiles](../../images/loda1558861382229/2.jpg)
-
 #### Tạo Model, Service, Repository
-
-Chúng ta sử dụng [Lombok](https://loda.me/general-huong-dan-su-dung-lombok-giup-code-java-nhanh-hon-69-loda1552789752787/) cho tiện nhé.
 
 _Todo.java_
 
@@ -294,7 +290,7 @@ Bạn sẽ thấy Test chạy thành công, nhưng sẽ mất thời gian vì kh
 #### Test bằng `@TestConfiguration`
 
 ```java
-package me.loda.spring.testinginspringboot;
+package me.kungfutech.spring.testinginspringboot;
 
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;

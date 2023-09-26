@@ -29,7 +29,7 @@ Testing là một phần quan trọng trong quá trình phát triển ứng dụ
         <version>2.0.5.RELEASE</version>
         <relativePath/>
     </parent>
-    <groupId>me.loda.spring</groupId>
+    <groupId>me.kungfutech.spring</groupId>
     <artifactId>example-independent-maven-spring-project</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>example-independent-maven-spring-project</name>

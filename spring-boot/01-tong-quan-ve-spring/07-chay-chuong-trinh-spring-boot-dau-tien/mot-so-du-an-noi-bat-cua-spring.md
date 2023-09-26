@@ -62,7 +62,7 @@ Mã trên đây đã tạo một dịch vụ web "Hello World" đơn giản tron
 
 Phương thức `hello()` đã được thêm vào để nhận một tham số String có tên là `name`, sau đó kết hợp tham số này với từ "Hello" trong mã. Điều này có nghĩa là nếu bạn đặt tên của mình là "Amy" trong yêu cầu, phản hồi sẽ là "Hello Amy".
 
-Chú thích `@RestController` cho biết rằng mã này mô tả một điểm cuối (endpoint) có sẵn trên web. `@GetMapping("/hello")` cho biết rằng Spring sẽ sử dụng phương thức `hello()` của chúng tôi để xử lý các yêu cầu được gửi đến địa chỉ http://localhost:8080/hello. Cuối cùng, `@RequestParam` nói cho Spring mong đợi một giá trị `name` trong yêu cầu, nhưng nếu không có, nó sẽ sử dụng từ "World" làm giá trị mặc định.
+Chú thích `@RestController` cho biết rằng mã này mô tả một điểm cuối (endpoint) có sẵn trên web. `@GetMapping("/hello")` cho biết rằng Spring sẽ sử dụng phương thức `hello()` của chúng tôi để xử lý các yêu cầu được gửi đến địa chỉ `http://localhost:8080/hello`. Cuối cùng, `@RequestParam` nói cho Spring mong đợi một giá trị `name` trong yêu cầu, nhưng nếu không có, nó sẽ sử dụng từ "World" làm giá trị mặc định.
 
 ## Bước 3: Thử Nghiệm
 

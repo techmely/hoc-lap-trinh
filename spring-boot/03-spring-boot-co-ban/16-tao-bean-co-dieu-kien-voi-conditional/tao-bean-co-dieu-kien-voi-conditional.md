@@ -85,11 +85,11 @@ public class ConditionalOnBeanExample {
 @Configuration
 public class ConditionalOnPropertyExample {
     /*
-    Bean này chỉ được tạo ra khi giá trị của property "loda.bean2.enabled" là "true".
+    Bean này chỉ được tạo ra khi giá trị của property "kungfutech.bean2.enabled" là "true".
     */
     @Bean
     @ConditionalOnProperty(
-            value="loda.bean2.enabled",
+            value="kungfutech.bean2.enabled",
             havingValue = "true", // Bean chỉ được tạo nếu giá trị property là "true"
             matchIfMissing = false) // Bean không được tạo nếu property không tồn tại
     ABeanWithCondition2 aBeanWithCondition2(){
@@ -102,7 +102,7 @@ File cấu hình _application.properties_:
 
 ```properties
 # Thay đổi thành true để tạo bean2
-loda.bean2.enabled=true
+kungfutech.bean2.enabled=true
 ```
 
 ### @ConditionalOnExpression annotation
@@ -112,7 +112,7 @@ loda.bean2.enabled=true
 ```java
 @Configuration
 @ConditionalOnExpression(
-        "${loda.expression1.enabled:true} and ${loda.expression2.enabled:true}"
+        "${kungfutech.expression1.enabled:true} and ${kungfutech.expression2.enabled:true}"
 )
 public class ConditionalOnExpressionExample {
 }

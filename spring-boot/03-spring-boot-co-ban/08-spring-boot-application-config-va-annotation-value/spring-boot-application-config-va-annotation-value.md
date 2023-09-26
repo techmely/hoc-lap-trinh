@@ -51,7 +51,7 @@ Trong trường hợp bạn muốn tự cấu hình các giá trị của riêng
 Ví dụ, nếu bạn muốn cấu hình thông tin về cơ sở dữ liệu của mình từ bên ngoài ứng dụng:
 
 ```properties
-loda.mysql.url=jdbc:mysql://host1:33060/loda
+kungfutech.mysql.url=jdbc:mysql://host1:33060/kungfutech
 ```
 
 Sử dụng `@Value` để lấy giá trị cấu hình này trong class:
@@ -59,7 +59,7 @@ Sử dụng `@Value` để lấy giá trị cấu hình này trong class:
 ```java
 public class AppConfig {
     // Lấy giá trị cấu hình từ file application.properties
-    @Value("${loda.mysql.url}")
+    @Value("${kungfutech.mysql.url}")
     private String mysqlUrl;
 }
 ```
@@ -87,7 +87,7 @@ public class DatabaseConnector {
 Chúng ta muốn cấu hình thông tin về cơ sở dữ liệu từ bên ngoài ứng dụng. File `application.properties` sẽ chứa thông tin cấu hình:
 
 ```properties
-loda.mysql.url=jdbc:mysql://host1:33060/loda
+kungfutech.mysql.url=jdbc:mysql://host1:33060/kungfutech
 ```
 
 Tiếp theo, chúng ta cấu hình và sử dụng class `AppConfig` để sử dụng `@Value` để đọc giá trị từ file cấu hình và tạo bean `DatabaseConnector`:
@@ -101,7 +101,7 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
     // Lấy giá trị cấu hình từ file application.properties
-    @Value("${loda.mysql.url}")
+    @Value("${kungfutech.mysql.url}")
     private String mysqlUrl;
 
     @Bean
@@ -132,7 +132,7 @@ Kết quả khi chạy ứng dụng:
 
 ::result
 
-Kết nối đến cơ sở dữ liệu: `jdbc:mysql://host1:33060/loda`
+Kết nối đến cơ sở dữ liệu: `jdbc:mysql://host1:33060/kungfutech`
 
 ::
 

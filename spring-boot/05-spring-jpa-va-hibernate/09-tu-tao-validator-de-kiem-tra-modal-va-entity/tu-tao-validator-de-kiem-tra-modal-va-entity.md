@@ -24,7 +24,7 @@ Chúng ta sẽ sử dụng một model đơn giản là `User` như sau:
 ```java
 @Data
 public class User {
-    private String lodaId;
+    private String kungfutechId;
 }
 ```
 
@@ -60,15 +60,15 @@ Chúng ta cần thêm Hibernate Validator vào Maven `pom.xml`:
 
 ### Định nghĩa Annotation
 
-Đầu tiên, chúng ta cần định nghĩa một Annotation mới. Trong ví dụ này, chúng ta sẽ tạo Annotation `@LodaId` để kiểm tra tính hợp lệ của trường `lodaId`:
+Đầu tiên, chúng ta cần định nghĩa một Annotation mới. Trong ví dụ này, chúng ta sẽ tạo Annotation `@KungfutechId` để kiểm tra tính hợp lệ của trường `kungfutechId`:
 
 ```java
 @Documented
-@Constraint(validatedBy = LodaIdValidator.class)
+@Constraint(validatedBy = KungfutechIdValidator.class)
 @Target({ElementType.METHOD, ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface LodaId {
-    String message() default "LodaId must start with loda://";
+public @interface KungfutechId {
+    String message() default "KungfutechId must start with kungfutech://";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }
@@ -76,39 +76,39 @@ public @interface LodaId {
 
 ### Gắn Annotation lên Model
 
-Bây giờ, chúng ta có thể gắn `@LodaId` lên trường cần kiểm tra tính hợp lệ trong model `User`:
+Bây giờ, chúng ta có thể gắn `@KungfutechId` lên trường cần kiểm tra tính hợp lệ trong model `User`:
 
 ```java
 @Data
 public class User {
-    @LodaId
-    private String lodaId;
+    @KungfutechId
+    private String kungfutechId;
 }
 ```
 
 ## Tạo Validator
 
-Sau khi đã tạo Annotation, chúng ta cần tạo một Validator để kiểm tra tính hợp lệ của trường dựa trên `@LodaId`. Validator này sẽ kiểm tra xem trường `lodaId` có bắt đầu bằng chuỗi "loda://" hay không.
+Sau khi đã tạo Annotation, chúng ta cần tạo một Validator để kiểm tra tính hợp lệ của trường dựa trên `@KungfutechId`. Validator này sẽ kiểm tra xem trường `kungfutechId` có bắt đầu bằng chuỗi "kungfutech://" hay không.
 
 ```java
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-public class LodaIdValidator implements ConstraintValidator<LodaId, String> {
-    private static final String LODA_PREFIX = "loda://";
+public class KungfutechIdValidator implements ConstraintValidator<KungfutechId, String> {
+    private static final String KUNGFUTECH_PREFIX = "kungfutech://";
 
     @Override
     public boolean isValid(String s, ConstraintValidatorContext constraintValidatorContext) {
         if (s == null || s.isEmpty()) return false;
 
-        return s.startsWith(LODA_PREFIX);
+        return s.startsWith(KUNGFUTECH_PREFIX);
     }
 }
 ```
 
 ## Chạy thử
 
-Bây giờ, chúng ta có thể thực hiện kiểm tra tính hợp lệ của trường `lodaId` trong `User` thông qua `@LodaId` Annotation. Dưới đây là kết quả của việc chạy thử các request:
+Bây giờ, chúng ta có thể thực hiện kiểm tra tính hợp lệ của trường `kungfutechId` trong `User` thông qua `@KungfutechId` Annotation. Dưới đây là kết quả của việc chạy thử các request:
 
 ### Request một User hợp lệ
 
@@ -116,7 +116,7 @@ Bây giờ, chúng ta có thể thực hiện kiểm tra tính hợp lệ của 
 
 ```json
 {
-  "lodaId": "loda://user_1"
+  "kungfutechId": "kungfutech://user_1"
 }
 ```
 
@@ -124,7 +124,7 @@ Bây giờ, chúng ta có thể thực hiện kiểm tra tính hợp lệ của 
 
 ```json
 {
-  "lodaId": "loda://user_1"
+  "kungfutechId": "kungfutech://user_1"
 }
 ```
 
@@ -134,7 +134,7 @@ Bây giờ, chúng ta có thể thực hiện kiểm tra tính hợp lệ của 
 
 ```json
 {
-  "lodaId": "Laula://user_1"
+  "kungfutechId": "Laula://user_1"
 }
 ```
 
@@ -148,25 +148,25 @@ Bây giờ, chúng ta có thể thực hiện kiểm tra tính hợp lệ của 
   "errors": [
     {
       "codes": [
-        "LodaId.user.lodaId",
-        "LodaId.lodaId",
-        "LodaId.java.lang.String",
-        "LodaId"
+        "KungfutechId.user.kungfutechId",
+        "KungfutechId.kungfutechId",
+        "KungfutechId.java.lang.String",
+        "KungfutechId"
       ],
       "arguments": [
         {
-          "codes": ["user.lodaId", "lodaId"],
+          "codes": ["user.kungfutechId", "kungfutechId"],
           "arguments": null,
-          "defaultMessage": "lodaId",
-          "code": "lodaId"
+          "defaultMessage": "kungfutechId",
+          "code": "kungfutechId"
         }
       ],
-      "defaultMessage": "LodaId must start with loda://",
+      "defaultMessage": "KungfutechId must start with kungfutech://",
       "objectName": "user",
-      "field": "lodaId",
+      "field": "kungfutechId",
       "rejectedValue": "Laula://user_1",
       "bindingFailure": false,
-      "code": "LodaId"
+      "code": "KungfutechId"
     }
   ],
   "message": "Validation failed for object='user'. Error count: 1",

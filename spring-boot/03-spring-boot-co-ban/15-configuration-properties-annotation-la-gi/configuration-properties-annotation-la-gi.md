@@ -27,13 +27,13 @@ position: 15
 
 Giả sử bạn muốn ứng dụng của mình có một số giá trị toàn cục, chẳng hạn như email và ID của Google Analytics, mà bạn muốn lưu chúng ở bên ngoài ứng dụng để dễ dàng thay đổi. Để làm điều này, bạn có thể sử dụng **@ConfigurationProperties**.
 
-Chúng ta sẽ tạo một class **LodaAppProperties** chứa các thông tin này:
+Chúng ta sẽ tạo một class **KungfutechAppProperties** chứa các thông tin này:
 
 ```java
 @Data
 @Component
-@ConfigurationProperties(prefix = "loda")
-public class LodaAppProperties {
+@ConfigurationProperties(prefix = "kungfutech")
+public class KungfutechAppProperties {
     private String email;
     private String googleAnalyticsId;
 }
@@ -62,25 +62,25 @@ public class App {
 Sau đó, bạn cần tạo một file **application.yml** trong thư mục **resources** để chứa cấu hình:
 
 ```yml
-loda:
-  email: loda.namnh@gmail.com
+kungfutech:
+  email: techmely.creation@gmail.com
   googleAnalyticsId: U-xxxxx
 ```
 
 ### Sử Dụng Cấu Hình
 
-Bây giờ, bạn có thể sử dụng **LodaAppProperties** để truy xuất các giá trị cấu hình từ bên ngoài ứng dụng một cách dễ dàng. Ví dụ:
+Bây giờ, bạn có thể sử dụng **KungfutechAppProperties** để truy xuất các giá trị cấu hình từ bên ngoài ứng dụng một cách dễ dàng. Ví dụ:
 
 ```java
-@Autowired LodaAppProperties lodaAppProperties;
+@Autowired KungfutechAppProperties kungfutechAppProperties;
 
 public void someMethod() {
-    System.out.println("Email: " + lodaAppProperties.getEmail());
-    System.out.println("Google Analytics ID: " + lodaAppProperties.getGoogleAnalyticsId());
+    System.out.println("Email: " + kungfutechAppProperties.getEmail());
+    System.out.println("Google Analytics ID: " + kungfutechAppProperties.getGoogleAnalyticsId());
 }
 ```
 
-Các giá trị cấu hình này sẽ tự động được nạp vào các thuộc tính tương ứng trong **LodaAppProperties** từ file **application.yml**.
+Các giá trị cấu hình này sẽ tự động được nạp vào các thuộc tính tương ứng trong **KungfutechAppProperties** từ file **application.yml**.
 
 ### Nested Properties
 
@@ -89,8 +89,8 @@ Bạn có thể cấu hình các thuộc tính bên trong class, kể cả khi c
 ```java
 @Data
 @Component
-@ConfigurationProperties(prefix = "loda")
-public class LodaAppProperties {
+@ConfigurationProperties(prefix = "kungfutech")
+public class KungfutechAppProperties {
     private String email;
     private String googleAnalyticsId;
     private List<String> authors;
@@ -101,18 +101,18 @@ public class LodaAppProperties {
 Và cấu hình trong file **application.yml**:
 
 ```yml
-loda:
-  email: loda.namnh@gmail.com
+kungfutech:
+  email: techmely.creation@gmail.com
   googleAnalyticsId: U-xxxxx
   authors:
-    - loda
+    - kungfutech
     - atom
   exampleMap:
     key1: hello
     key2: world
 ```
 
-Khi bạn sử dụng **LodaAppProperties**, các thuộc tính **authors** và **exampleMap** sẽ chứa các giá trị từ cấu hình tương ứng.
+Khi bạn sử dụng **KungfutechAppProperties**, các thuộc tính **authors** và **exampleMap** sẽ chứa các giá trị từ cấu hình tương ứng.
 
 ::alert{type="success"}
 

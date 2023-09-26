@@ -40,7 +40,7 @@ Trong trường hợp này, bạn muốn giả lập `PaymentGateway` để ki�
 
 ## Cài đặt Mockito
 
-Để sử dụng Mockito trong dự án Java của bạn, bạn cần thêm thư viện Mockito vào tệp `pom.xml` (đối với Maven) hoặc thêm vào classpath của dự án.
+Để sử dụng Mockito trong dự án Java của bạn, bạn cần thêm thư viện Mockito vào tệp `pom.xml` (đối với Maven) hoặc thêm vào `classpath` của dự án.
 
 ```xml
 <!--Thêm dependency cho Mockito-->
