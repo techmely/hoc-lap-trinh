@@ -4,9 +4,6 @@ description: "Cài đặt và sử dụng thư viện"
 chapter:
   name: "Tương tác trong react native"
   slug: "chuong-05-tuong-tac-trong-react-native"
-category:
-  name: "React Native"
-  slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

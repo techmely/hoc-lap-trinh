@@ -4,9 +4,6 @@ description: "FPrototype là khái niệm cốt lõi trong JavaScript và là c�
 chapter:
   name: "Prototype và thừa kế prototype"
   slug: "chuong-07-prototype-va-thua-ke-prototype"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

@@ -4,9 +4,6 @@ description: "JavaScript Reduce là một phương thức có sẵn của array,
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168244791-cd8329c4-6a81-4801-b7ae-0846859d3912.png
 position: 20
 ---

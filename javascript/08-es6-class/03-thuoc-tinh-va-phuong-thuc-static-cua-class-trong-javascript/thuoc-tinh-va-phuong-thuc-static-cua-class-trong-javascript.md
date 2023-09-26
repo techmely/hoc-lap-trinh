@@ -4,9 +4,6 @@ description: "Static là một từ khóa giúp ta khai báo những phương th
 chapter:
   name: "ES6 Class"
   slug: "chuong-08-es6-class"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

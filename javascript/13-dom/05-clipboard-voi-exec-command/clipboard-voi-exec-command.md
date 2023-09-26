@@ -4,9 +4,6 @@ description: "Copy nội dung trên web page vào clipboard."
 chapter:
   name: "DOM"
   slug: "chuong-13-dom"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 5
 ---

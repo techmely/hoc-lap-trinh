@@ -4,9 +4,6 @@ description: "Chào mừng đến với loạt bài hướng dẫn sử dụng n
 chapter:
   name: "Giới thiệu tổng quan về khóa học C++"
   slug: "chuong-01-gioi-thieu-tong-quan-ve-khoa-hoc"
-category:
-  name: "Khóa học C++ cơ bản"
-  slug: "C++"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

@@ -4,9 +4,6 @@ description: "Bài viết tóm tắt về khái niệm mảng động trong Go, 
 chapter:
   name: "Maps, Arrays và Slices"
   slug: "chuong-04-maps-arrays-va-slices"
-category:
-  name: "Go"
-  slug: "go"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

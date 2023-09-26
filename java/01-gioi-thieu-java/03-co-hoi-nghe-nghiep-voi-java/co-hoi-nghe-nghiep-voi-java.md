@@ -4,9 +4,6 @@ description: "Bài này chúng ta sẽ tìm hiểu về cơ hội nghề nghiệ
 chapter:
   name: "Giới thiệu Java"
   slug: "chuong-01-gioi-thieu-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/123055645-508f0100-d430-11eb-9291-ca19d9179453.png
 position: 3
 ---

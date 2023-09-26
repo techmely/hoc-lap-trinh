@@ -4,9 +4,6 @@ description: "Vòng lặp for trong java thường được sử dụng trong tr
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/127631954-6589402a-aaab-4df9-b37b-ddebb90db820.png
 position: 20
 ---

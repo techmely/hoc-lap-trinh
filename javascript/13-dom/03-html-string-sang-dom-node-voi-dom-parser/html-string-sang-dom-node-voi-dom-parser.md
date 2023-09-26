@@ -4,9 +4,6 @@ description: "Bài này mình sẽ hướng dẫn mọi người cách chuyển 
 chapter:
   name: "DOM"
   slug: "chuong-13-dom"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

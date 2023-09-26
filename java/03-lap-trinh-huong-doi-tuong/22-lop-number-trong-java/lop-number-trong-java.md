@@ -4,9 +4,6 @@ description: "Lớp Number là một lớp bao trong java. Cung cấp nhiều me
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/132489584-c670b65c-7c28-497e-bca3-f3e8b49215ee.png
 position: 22
 ---

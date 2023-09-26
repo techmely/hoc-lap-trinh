@@ -4,9 +4,6 @@ description: "Đã đến lúc thực hành thật sự rồi. Nên nhớ vừa 
 chapter:
   name: "Mảng"
   slug: "chuong-06-array"
-category:
-  name: "C"
-  slug: "c"
 image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
 position: 4
 ---
@@ -41,7 +38,9 @@ Enter the 10 elements of array: 3 5 6 1 13 54 34 8 22 11
 OUTPUT:
 Unsorted array: 3, 5, 6, 1, 13, 54, 34, 8, 22, 11
 Sorted array: 1, 3, 5, 6, 8, 11 , 13, 22, 34, 54
---------------------------------
+
+---
+
 ::
 
 ## Bài 2
@@ -73,12 +72,14 @@ Enter the 10 elements of array: 3 5 6 1 13 54 34 8 22 11
 OUTPUT:
 Unsorted array: 3, 5, 6, 1, 13, 54, 34, 8, 22, 11
 Sorted array: 1, 3, 5, 6, 8, 11 , 13, 22, 34, 54
---------------------------------
+
+---
+
 ::
 
 ## Bài 3
 
-> Tạo ngẫu nhiên giá trị số nguyên dương từ **_1_** đến **_100_** cho mảng có **_mười phần tử_**, nhập giá trị cần tìm và tìm giá trị đó trong mảng, hiển thị vị trí của giá trị cần tìm trong mảng bằng phương pháp **_Binary Search_**. 
+> Tạo ngẫu nhiên giá trị số nguyên dương từ **_1_** đến **_100_** cho mảng có **_mười phần tử_**, nhập giá trị cần tìm và tìm giá trị đó trong mảng, hiển thị vị trí của giá trị cần tìm trong mảng bằng phương pháp **_Binary Search_**.
 
 Template:
 
@@ -108,7 +109,9 @@ Enter value you want to search: 8
 OUTPUT:
 Display array: 1, 4, 6, 2, 20, 8, 36, 22, 89, 77
 Found 8 at index 5 in array
---------------------------------
+
+---
+
 ::
 
 Test case 2
@@ -119,5 +122,7 @@ Enter value you want to search: 5
 OUTPUT:
 Display array: 1, 4, 6, 2, 20, 8, 36, 22, 89, 77
 Not found 5 in array
---------------------------------
+
+---
+
 ::

@@ -4,9 +4,6 @@ description: "Spring Security là một framework mạnh mẽ cho việc quản 
 chapter:
   name: "Spring security"
   slug: "chuong-08-spring-security"
-category:
-  name: "SpringBoots"
-  slug: "springboots"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

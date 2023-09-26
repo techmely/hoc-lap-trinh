@@ -4,9 +4,6 @@ description: "Một hàm đệ quy là một hàm gọi chính nó cho đến kh
 chapter:
   name: "Kiến thức nâng cao về hàm"
   slug: "chuong-05-kien-thuc-nang-cao-ve-ham"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168244997-b83b39b6-4985-4b14-9b2e-b3e9b7a7c977.png
 position: 1
 ---

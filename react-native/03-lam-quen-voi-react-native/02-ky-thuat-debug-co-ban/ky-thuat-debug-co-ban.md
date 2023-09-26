@@ -4,9 +4,6 @@ description: "Xây dựng ứng dụng React-Native khác với ứng dụng nat
 chapter:
   name: "Làm quen với react native"
   slug: "chuong-03-lam-quen-voi-react-native"
-category:
-  name: "React Native"
-  slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

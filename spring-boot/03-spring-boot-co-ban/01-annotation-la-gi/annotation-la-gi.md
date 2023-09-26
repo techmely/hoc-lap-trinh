@@ -4,9 +4,6 @@ description: "Annotation (chú thích) là một tính năng quan trọng trong 
 chapter:
   name: "Spring Boot cơ bản"
   slug: "chuong-03-spring-boot-co-ban"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 position: 1
 ---
 

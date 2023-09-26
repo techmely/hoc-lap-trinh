@@ -4,9 +4,6 @@ description: "Package (gói) trong java là một nhóm các class, interface v�
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/127757327-7ca27569-a1d9-4345-a313-3785ef68174c.png
 position: 6
 ---

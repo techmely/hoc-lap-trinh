@@ -4,9 +4,6 @@ description: "DOM là một giao diện lập trình ứng dụng (API). DOM đ�
 chapter:
   name: "DOM"
   slug: "chuong-13-dom"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

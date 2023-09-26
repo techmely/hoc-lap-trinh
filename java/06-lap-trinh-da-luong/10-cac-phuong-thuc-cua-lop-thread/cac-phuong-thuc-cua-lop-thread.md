@@ -4,9 +4,6 @@ description: "Trong Java, lớp Thread cung cấp nhiều phương thức quan t
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/146480996-d756c28a-258f-4913-a357-965e22ee85e6.png
 position: 10
 ---

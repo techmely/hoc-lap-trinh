@@ -4,9 +4,6 @@ description: "Với vòng lặp, bạn có khả năng lặp qua danh sách các
 chapter:
   name: "Thymeleaf"
   slug: "chuong-04-thymeleaf"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 8
 ---

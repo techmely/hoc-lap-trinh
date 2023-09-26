@@ -4,9 +4,6 @@ description: "Trong bài viết này, chúng ta sẽ hướng dẫn cách cài �
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-01-tong-quan-ve-spring"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 position: 6
 ---
 

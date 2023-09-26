@@ -4,9 +4,6 @@ description: "Một lớp cơ sở trừu tượng là một lớp chỉ đượ
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131245758-916ed8f2-11d1-4808-b7d4-d1890ad3cc1c.png
 position: 15
 ---

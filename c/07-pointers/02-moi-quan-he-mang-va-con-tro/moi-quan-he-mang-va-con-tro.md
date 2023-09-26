@@ -4,9 +4,6 @@ description: "Mảng và con trỏ là hai khái niệm quan trọng trong lập
 chapter:
   name: "Con trỏ"
   slug: "chuong-07-pointer"
-category:
-  name: "C"
-  slug: "c"
 image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
 position: 2
 ---
@@ -110,9 +107,9 @@ int main() {
 ```
 
 ::result
-*pn = 4
-*(pn+1) = 5
-*(pn-1) = 3
+_pn = 4
+_(pn+1) = 5
+\*(pn-1) = 3
 ::
 
 Trong ví dụ này `&num[3]` là địa chỉ của phần tử thứ tư, được gán cho con trỏ `pn`, do đó giá trị của `*pn` lúc này sẽ là `4`.

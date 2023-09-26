@@ -4,9 +4,6 @@ description: "Việc load động 1 component khác trong lúc runtime đư�
 chapter:
   name: "Angular Forms"
   slug: "chuong-05-angular-forms"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 6
 ---

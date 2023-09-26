@@ -4,9 +4,6 @@ description: "Xử lý ngoại lệ (Exception handling) là một phần quan t
 chapter:
   name: "Spring Boot cơ bản"
   slug: "chuong-03-spring-boot-co-ban"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 position: 14
 ---
 

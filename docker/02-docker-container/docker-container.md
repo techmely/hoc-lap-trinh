@@ -4,9 +4,6 @@ description: "Bài tiếp theo chúng ta sẽ tìm hiểu về docker container 
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"
-category:
-  name: "Docker"
-  slug: "docker"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

@@ -4,9 +4,6 @@ description: "HashTable là một mảng của list, mỗi list được biết 
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/145697837-43c57a8a-b188-4d77-90f1-533edb0caaa2.png
 position: 14
 ---

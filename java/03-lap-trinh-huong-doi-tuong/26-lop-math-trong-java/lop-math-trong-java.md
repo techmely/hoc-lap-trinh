@@ -4,9 +4,6 @@ description: "Bài này chúng ta sẽ tìm hiểu về Lớp math của Java, t
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://media.geeksforgeeks.org/wp-content/uploads/java.math-class-methods1.png
 position: 26
 ---

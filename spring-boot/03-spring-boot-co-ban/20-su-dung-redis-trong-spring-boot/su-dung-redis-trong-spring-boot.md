@@ -4,9 +4,6 @@ description: "Redis là một hệ thống lưu trữ key-value in-memory mạnh
 chapter:
   name: "Spring Boot cơ bản"
   slug: "chuong-03-spring-boot-co-ban"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 position: 20
 ---
 

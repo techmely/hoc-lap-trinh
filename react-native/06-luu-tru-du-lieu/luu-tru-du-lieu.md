@@ -4,9 +4,6 @@ description: "React-Native mặc định hỗ trợ chức năng lưu trữ thô
 chapter:
   name: "Lưu trữ dữ liệu"
   slug: "chuong-06-luu-tru-du-lieu"
-category:
-  name: "React Native"
-  slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

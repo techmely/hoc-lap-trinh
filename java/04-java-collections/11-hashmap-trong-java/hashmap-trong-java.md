@@ -4,9 +4,6 @@ description: "HashMap trong Java là một bảng băm dựa trên việc thực
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/145359882-048ab790-e05c-4594-830e-4380e00dc3c0.png
 position: 11
 ---

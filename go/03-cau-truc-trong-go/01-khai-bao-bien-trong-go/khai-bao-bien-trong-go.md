@@ -4,9 +4,6 @@ description: "Go không phải là ngôn ngữ hướng đối tượng như C++
 chapter:
   name: "Cấu trúc trong Go"
   slug: "chuong-03-cau-truc-trong-go"
-category:
-  name: "Go"
-  slug: "go"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

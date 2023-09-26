@@ -4,9 +4,6 @@ description: "Trong bài này, chúng ta sẽ tiến xa hơn bằng cách giới
 chapter:
   name: "RESTful API Document"
   slug: "chuong-07-restful-api-document"
-category:
-  name: "SpringBoots"
-  slug: "springboots"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

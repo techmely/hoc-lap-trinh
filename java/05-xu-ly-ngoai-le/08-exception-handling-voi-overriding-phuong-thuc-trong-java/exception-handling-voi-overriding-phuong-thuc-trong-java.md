@@ -4,9 +4,6 @@ description: "Trong Java, khi bạn ghi đè một phương thức của lớp c
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"
-category:
-  name: "Java"
-  slug: "java"
 image: https://miro.medium.com/max/1200/1*jJK-9alfR2vnBbXgkDMmkw.png
 position: 8
 ---

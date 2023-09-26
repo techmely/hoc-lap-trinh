@@ -4,9 +4,6 @@ description: "Bài này sẽ cung cấp cho các bạn về khái niệm, kiến
 chapter:
   name: "Giới thiệu Java"
   slug: "chuong-01-gioi-thieu-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/126056559-263bdade-6b6c-4e64-83a7-e21411391d64.png
 position: 1
 ---

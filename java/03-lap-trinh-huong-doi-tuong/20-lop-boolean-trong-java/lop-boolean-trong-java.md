@@ -4,9 +4,6 @@ description: "Lớp Boolean là một Wrapper class của kiểu dữ liệu ngu
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131364995-fd123de1-6e6d-49e8-ae2a-376e62e739db.png
 position: 20
 ---

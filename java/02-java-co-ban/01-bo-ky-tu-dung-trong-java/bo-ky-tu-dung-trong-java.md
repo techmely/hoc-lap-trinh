@@ -4,9 +4,6 @@ description: "Ngôn ngữ dùng để giao tiếp .Mọi ngôn ngữ lập trìn
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/126277395-a24c6713-0e4d-4d7d-9e56-9002ddb4c73a.png
 position: 1
 ---

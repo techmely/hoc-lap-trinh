@@ -4,9 +4,6 @@ description: "LinkedHashSet chỉ chứa các phần tử duy nhất, không ch�
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/144807571-408057c0-4e0c-4f29-85d4-5c928a669ca3.png
 position: 8
 ---

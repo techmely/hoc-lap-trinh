@@ -4,9 +4,6 @@ description: "Chào các bạn, trong bài viết này, mình xin chia sẻ mộ
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 9
 ---

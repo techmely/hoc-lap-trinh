@@ -4,9 +4,6 @@ description: "Trong template thymeleaf, để lấy các thông tin trong Model 
 chapter:
   name: "Thymeleaf"
   slug: "chuong-04-thymeleaf"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

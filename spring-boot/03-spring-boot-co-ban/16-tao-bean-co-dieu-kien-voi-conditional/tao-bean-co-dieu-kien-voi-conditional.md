@@ -4,9 +4,6 @@ description: "Trong quá trình xây dựng ứng dụng với Spring Boot, đô
 chapter:
   name: "Spring Boot cơ bản"
   slug: "chuong-03-spring-boot-co-ban"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 position: 16
 ---
 

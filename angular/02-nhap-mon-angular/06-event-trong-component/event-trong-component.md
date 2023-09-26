@@ -5,9 +5,6 @@ Vậy với những Component mà chúng ta tự định nghĩa thì có cách n
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 6
 ---

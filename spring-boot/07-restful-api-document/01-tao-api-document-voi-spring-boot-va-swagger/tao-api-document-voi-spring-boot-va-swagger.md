@@ -4,9 +4,6 @@ description: "Spring Boot là một framework mạnh mẽ cho phát triển ứn
 chapter:
   name: "RESTful API Document"
   slug: "chuong-07-restful-api-document"
-category:
-  name: "SpringBoots"
-  slug: "springboots"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

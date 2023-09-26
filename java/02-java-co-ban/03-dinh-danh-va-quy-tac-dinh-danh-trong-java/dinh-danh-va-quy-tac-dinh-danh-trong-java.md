@@ -4,9 +4,6 @@ description: "Trong ngôn ngữ lập trình, định danh được sử dụng 
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/126279862-b529dc33-71d9-4346-afb0-9a33a01cbb63.png
 position: 3
 ---

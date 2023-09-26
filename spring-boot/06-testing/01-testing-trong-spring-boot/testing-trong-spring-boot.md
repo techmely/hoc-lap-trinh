@@ -4,9 +4,6 @@ description: "Viết Test là một phần quan trọng trong việc xây dựng
 chapter:
   name: "Testing"
   slug: "chuong-06-testing"
-category:
-  name: "SpringBoots"
-  slug: "springboots"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

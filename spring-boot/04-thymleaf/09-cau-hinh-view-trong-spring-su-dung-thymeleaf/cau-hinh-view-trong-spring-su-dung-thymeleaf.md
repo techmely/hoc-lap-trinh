@@ -4,9 +4,6 @@ description: "Chúng ta sẽ tạo một trang web đơn giản để hiểu rõ
 chapter:
   name: "Thymeleaf"
   slug: "chuong-04-thymeleaf"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 position: 09
 ---
 

@@ -4,9 +4,6 @@ description: "ES6 Template String tạm gọi là một cú pháp, cho phép b�
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168242173-f4c90841-cb1f-4f3f-b978-286dbc7fbd1e.png
 position: 4
 ---

@@ -4,9 +4,6 @@ description: "Java là một ngôn ngữ lập trình phổ biến. Điều này
 chapter:
   name: "Giới thiệu Java"
   slug: "chuong-01-gioi-thieu-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/126056653-c45effaa-d29d-4e4d-857d-845388633329.png
 position: 2
 ---

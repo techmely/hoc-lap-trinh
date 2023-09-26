@@ -4,9 +4,6 @@ description: "Bài này chúng ta sẽ tìm hiểu về List trong Java, chia s�
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://viettuts.vn/images/java/java-collection/hiararchy-lop-arraylist-trong-java.png
 position: 3
 ---

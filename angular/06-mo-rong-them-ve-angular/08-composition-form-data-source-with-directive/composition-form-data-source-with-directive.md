@@ -4,9 +4,6 @@ description: "Trong quá trình phát triển một ứng dụng web, chúng ta 
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 8
 ---

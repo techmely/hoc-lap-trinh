@@ -4,9 +4,6 @@ description: "Trong loạt series về Spring Boot này, chúng ta đã học qu
 chapter:
   name: "Thymeleaf"
   slug: "chuong-04-thymeleaf"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 position: 14
 ---
 

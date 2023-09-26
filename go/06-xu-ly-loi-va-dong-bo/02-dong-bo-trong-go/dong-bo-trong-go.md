@@ -4,9 +4,6 @@ description: "Bài viết tóm tắt về tính toán đồng thời trong Go b�
 chapter:
   name: "Xử lý lỗi và đồng bộ trong Go"
   slug: "chuong-06-xu-ly-loi-va-dong-bo"
-category:
-  name: "Go"
-  slug: "go"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

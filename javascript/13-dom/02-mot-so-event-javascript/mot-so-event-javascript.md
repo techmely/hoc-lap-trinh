@@ -4,9 +4,6 @@ description: "Event là sự tương tác của JavaScript với HMTL được x
 chapter:
   name: "DOM"
   slug: "chuong-13-dom"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

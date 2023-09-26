@@ -4,9 +4,6 @@ description: "Bài này chúng ta sẽ tìm hiểu về Điều khiển việc t
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131236803-4e0e053a-1843-4d16-9306-46140849c6b4.png
 position: 12
 ---

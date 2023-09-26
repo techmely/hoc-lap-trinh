@@ -4,9 +4,6 @@ description: "Trong lập trình Spring Boot, hai annotation quan trọng bạn 
 chapter:
   name: "Spring Boot cơ bản"
   slug: "chuong-03-spring-boot-co-ban"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 position: 2
 ---
 

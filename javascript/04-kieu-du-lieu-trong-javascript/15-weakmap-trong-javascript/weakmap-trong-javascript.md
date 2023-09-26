@@ -4,9 +4,6 @@ description: "WeakMap trong JavaScript là cũng là một loại object, cho ph
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168243960-1fc99145-3e3b-4bb8-b829-b5233a336e90.png
 position: 15
 ---

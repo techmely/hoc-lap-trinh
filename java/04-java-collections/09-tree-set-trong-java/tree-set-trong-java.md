@@ -4,9 +4,6 @@ description: "Lớp TreeSet trong Java cài đặt (implement) Set Interface, n�
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/145005207-2c303812-92fc-4e44-bbf0-d4d7119f1117.png
 position: 9
 ---

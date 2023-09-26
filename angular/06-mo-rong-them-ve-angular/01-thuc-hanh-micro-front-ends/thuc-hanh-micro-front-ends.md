@@ -4,9 +4,6 @@ description: "Hiện nay, các ứng dụng Single Page Apps (SPAs) cực kỳ p
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

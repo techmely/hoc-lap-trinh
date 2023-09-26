@@ -4,9 +4,6 @@ description: "Câu lệnh điều kiện th:if, th:switch. th:case trong Thymele
 chapter:
   name: "Thymeleaf"
   slug: "chuong-04-thymeleaf"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---

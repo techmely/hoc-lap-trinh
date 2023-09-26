@@ -4,9 +4,6 @@ description: "Trong bài viết này, chúng ta sẽ tìm hiểu về Spring Boo
 chapter:
   name: "Spring Boot cơ bản"
   slug: "chuong-03-spring-boot-co-ban"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 position: 11
 ---
 

@@ -4,9 +4,6 @@ description: "Composite Pattern cho phép bạn xử lý tất cả các đối 
 chapter:
   name: "Design Pattern"
   slug: "chuong-07-design-pattern"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/146175674-fa7e09f7-4e42-485e-a2b5-8c664601b203.png
 position: 9
 ---

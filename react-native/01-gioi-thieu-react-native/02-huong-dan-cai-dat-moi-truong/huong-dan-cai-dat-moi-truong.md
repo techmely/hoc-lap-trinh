@@ -4,9 +4,6 @@ description: "Chào mừng các bạn đến với hướng dẫn học React-Na
 chapter:
   name: "Giới thiệu react native"
   slug: "chuong-01-gioi-thieu-react-native"
-category:
-  name: "React Native"
-  slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

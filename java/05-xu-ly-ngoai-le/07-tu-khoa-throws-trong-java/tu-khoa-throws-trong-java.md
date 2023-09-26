@@ -4,9 +4,6 @@ description: "Từ khóa throws trong java được sử dụng để khai báo 
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"
-category:
-  name: "Java"
-  slug: "java"
 image: https://shareprogramming.net/wp-content/uploads/2020/01/throw-1.jpg
 position: 7
 ---

@@ -4,9 +4,6 @@ description: "Bài này chúng ta sẽ tìm hiểu về Từ khóa final, tự h
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131280717-ae65a2c9-0e6d-4b34-9b60-e0ebdd61331b.png
 position: 4
 ---

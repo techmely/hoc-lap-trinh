@@ -4,9 +4,6 @@ description: "Trong bài viết này mình sẽ chia sẻ cho bạn một cấu 
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/125040317-b383c780-e0c1-11eb-8dbc-98bfa0af2509.png
 position: 18
 ---

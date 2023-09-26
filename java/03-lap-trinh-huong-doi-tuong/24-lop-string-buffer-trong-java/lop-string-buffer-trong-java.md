@@ -4,9 +4,6 @@ description: "Trong java, lớp StringBuffer được sử dụng để tạo ch
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/132500048-e2a8272c-e223-4bef-a04e-36a79c9e78d6.png
 position: 24
 ---

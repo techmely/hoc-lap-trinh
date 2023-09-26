@@ -4,9 +4,6 @@ description: "String trong java là một object immutable, nghĩa là bạn kh�
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://i.ytimg.com/vi/r3DBIDyzLUI/maxresdefault.jpg
 position: 23
 ---

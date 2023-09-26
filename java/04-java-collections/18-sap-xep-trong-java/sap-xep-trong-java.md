@@ -4,9 +4,6 @@ description: "Nội dung bài viết bao gồm sắp xếp mảng (Array), Sắp
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/146035791-17258761-e284-4388-8508-adcd4a9ed2d2.png
 position: 16
 ---

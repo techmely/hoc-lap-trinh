@@ -4,9 +4,6 @@ description: "Lệnh hay câu lệnh là tập hợp các từ khóa, tập ký 
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://upload.wikimedia.org/wikipedia/commons/2/29/Linux_command-line._Bash._GNOME_Terminal._screenshot.png
 position: 4
 ---

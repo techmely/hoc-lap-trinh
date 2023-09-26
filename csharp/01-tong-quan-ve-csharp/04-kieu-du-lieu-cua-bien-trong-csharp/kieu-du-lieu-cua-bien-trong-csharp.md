@@ -4,9 +4,6 @@ description: "Trong bài này mình sẽ giới thiệu kiểu dữ liệu của
 chapter:
   name: "Tổng quan về C#"
   slug: "chuong-01-tong-quan-ve-csharp"
-categoy:
-  name: "C#"
-  slug: "C#"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---

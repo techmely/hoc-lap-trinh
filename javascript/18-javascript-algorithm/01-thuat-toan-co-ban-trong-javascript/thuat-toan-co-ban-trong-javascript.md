@@ -4,9 +4,6 @@ description: "Thuật toán giúp cho lập trình viên rèn luyện tư duy.Ng
 chapter:
   name: "Thuật toán với Javascript"
   slug: "chuong-18-javascript-algorithm"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

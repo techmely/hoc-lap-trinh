@@ -4,9 +4,6 @@ description: "Bài này chúng ta sẽ tìm hiểu về Lớp StringTokenizer, t
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/132494584-b9f248b5-258d-4760-9d5a-150a366f05e8.png
 position: 23
 ---

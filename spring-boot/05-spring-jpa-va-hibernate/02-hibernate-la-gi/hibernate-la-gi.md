@@ -4,9 +4,6 @@ description: "Hibernate là một thư viện ORM (Object-Relational Mapping) m�
 chapter:
   name: "Spring JPA và Hibernate"
   slug: "chuong-05-spring-jpa-va-hibernate"
-category:
-  name: "SpringBoots"
-  slug: "springboots"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

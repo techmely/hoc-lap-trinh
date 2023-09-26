@@ -4,9 +4,6 @@ description: "Tự tạo exception (Custom Exception) là một loại ngoại l
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"
-category:
-  name: "Java"
-  slug: "java"
 image: http://3.bp.blogspot.com/-q1b3Acf-2P8/VfaC9Ut1ZiI/AAAAAAAAHgk/Ex0j4ze5FSk/s1600/ExceptionClassHierarchy.png
 position: 9
 ---

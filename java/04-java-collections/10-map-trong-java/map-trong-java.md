@@ -4,9 +4,6 @@ description: "map được sử dụng để lưu trữ và truy xuất dữ li�
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/145352732-65bf2fe2-2478-4163-828e-ce73057c13eb.png
 position: 10
 ---
