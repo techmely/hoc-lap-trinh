@@ -1,6 +1,6 @@
 ---
 title: "Quan hệ @ManyToMany sử dụng Hibernate"
-description: "Chúng ta sẽ tìm hiểu cách sử dụng Hibernate để biểu thị và quản lý quan hệ @ManyToMany giữa hai đối tượng, ví dụ là "Person" và "Address", bằng cách sử dụng ngôn ngữ lập trình Java"
+description: "Chúng ta sẽ tìm hiểu cách sử dụng Hibernate để biểu thị và quản lý quan hệ @ManyToMany giữa hai đối tượng, ví dụ là Person và Address, bằng cách sử dụng ngôn ngữ lập trình Java"
 chapter:
   name: "Spring JPA và Hibernate"
   slug: "chuong-05-spring-jpa-va-hibernate"
