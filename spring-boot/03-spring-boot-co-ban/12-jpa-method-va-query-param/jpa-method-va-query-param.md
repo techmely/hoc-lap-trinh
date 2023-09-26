@@ -1,6 +1,6 @@
 ---
 title: "Spring JPA Method và @Query"
-description: "Trong Spring Boot, Spring Data JPA cung cấp một cách dễ dàng để tạo và thực thi các truy vấn cơ sở dữ liệu. Điều này giúp tiết kiệm thời gian và giảm bớt lặp lại code."
+description: "Trong Spring Boot, Spring JPA cung cấp một cách dễ dàng để tạo và thực thi các truy vấn cơ sở dữ liệu. Điều này giúp tiết kiệm thời gian và giảm bớt lặp lại code."
 chapter:
   name: "Spring Boot cơ bản"
   slug: "chuong-03-spring-boot-co-ban"
@@ -14,7 +14,7 @@ Trong bài viết này, chúng ta sẽ tìm hiểu về cách sử dụng Spring
 
 ## Giới thiệu
 
-Trong Spring Boot, Spring Data JPA cung cấp một cách dễ dàng để tạo và thực thi các truy vấn cơ sở dữ liệu. Điều này giúp tiết kiệm thời gian và giảm bớt lặp lại code.
+Trong Spring Boot, Spring JPA cung cấp một cách dễ dàng để tạo và thực thi các truy vấn cơ sở dữ liệu. Điều này giúp tiết kiệm thời gian và giảm bớt lặp lại code.
 
 ## Query Creation
 
@@ -130,7 +130,7 @@ Dưới đây là một ví dụ hoàn chỉnh về cách sử dụng Spring JPA
 
 - Tạo một ứng dụng Spring Boot v
 
-ới Spring Data JPA và MySQL.
+ới Spring JPA và MySQL.
 
 - Tạo một đối tượng `User` và một repository `UserRepository`.
 - Cấu hình cơ sở dữ liệu MySQL và tạo bảng `user`.
