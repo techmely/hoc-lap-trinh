@@ -82,17 +82,20 @@ Khi chúng ta sử dụng các dịch vụ trên nền tảng của AWS chắc c
 
 ## AWS global infrastructure
 
-AWS có hàng triệu khách hàng, họ cung cấp dịch vụ trên cơ sở hạ tầng toàn cầu. Hạ tầng của AWS xoay quanh 2 khái niệm là **Regions** và **Availability Zones (AZs)**. Tại thời điểm mình viết post này AWS có 25 regions và 81 AZs trên toàn cầu.
+AWS có hàng triệu khách hàng, họ cung cấp dịch vụ trên cơ sở hạ tầng toàn cầu. Hạ tầng của AWS xoay quanh 2 khái niệm là **Regions** và **Availability Zones (AZs)**. Tại thời điểm mình viết post này AWS có 32 regions và 102 AZs trên toàn cầu.
 
 ### Regions and AZs
 
-Mỗi **Regions** là collection của (min 2 AZs, max 6 AZs, **thường là 3**), có thể coi **Region** là cụm data centers (cluster of datacenters). Mỗi regions độc lập với các region khác để đảm bảo an toàn khi có thiên tai xảy ra. Hiện tại ở Việt Nam chưa có datacenter nào của AWS, gần nhất với chúng ra là Nhật Bản (Tokyo, Osaka), Singapore...
+Mỗi **Regions** là collection của (min 3 AZs, max 6 AZs, **thường là 3**), có thể coi **Region** là cụm data centers (cluster of datacenters). Mỗi regions độc lập với các region khác để đảm bảo an toàn khi có thiên tai xảy ra. Hiện tại ở Việt Nam chưa có datacenter nào của AWS, gần nhất với chúng ra là Nhật Bản (Tokyo, Osaka), Singapore...
 
 ![Regions](https://user-images.githubusercontent.com/29729545/162230977-5b127f4a-6c28-416b-9096-4cdc99010ffa.png)
 
 ::alert{type="infor"}AZs bao gồm 1 hoặc nhiều center riêng biệt, mỗi center có hệ thống điện, làm mát... Chúng được kết nối với nhau và kết nối với mạng với băng thông cao và độ trễ thấp.::
 
 Khi lựa chọn region để sử dụng các services, nên chọn region gần với bạn để giảm độ trễ (latency).
+
+### Edge locations (Access points)
+Đây là một trong những hạ tầng mà AWS cung cấp cho người dùng. Hiện tại ở Việt Nam có 2 Edge location đặt tại Hà Nội và Hồ Chí Minh. Edge location như một điểm trung chuyển giúp request người dùng đến các Datacenter nhanh hơn. Edge locations có thể cached những content giúp giảm độ trễ. Ví dụ server bạn đặt ở Tokyo, Edge location ở Hà Nội hoặc Hồ Chí Minh giúp người dùng ở Việt Nam có thể truy cập nhanh hơn. Hiện tại có khoảng hơn 550 Access points trên toàn cầu.
 
 ## SaaS, PaaS, and IaaS
 
@@ -106,3 +109,4 @@ Khi lựa chọn region để sử dụng các services, nên chọn region gầ
 ::alert{type="infor"}
 Tất cả model đều có điểm mạnh, yếu riêng biệt. Càng dễ dùng (convenient) thì càng ít kiểm soát (less-control). Vì vậy hãy chọn model cũng như dịch vụ phù hợp với đặc thù dự án của bạn.
 ::
+

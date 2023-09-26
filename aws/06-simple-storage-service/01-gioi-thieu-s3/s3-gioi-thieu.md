@@ -24,8 +24,8 @@ Amazon S3 (Amazon Simple Storage Service) là dịch vụ lưu trữ dữ liệu
 Amazon S3 cho phép người dùng có thể lưu trữ Objects (files) trong Buckets (directories).
 
 ### S3 Buckets là gì
-
-- S3 Buckets trong aws cần có tên là duy nhất trên toàn cầu
+- Bucket có scope là Region
+- Buckets trong aws cần có tên là duy nhất trên toàn cầu
 - Khi tạo buckets cần chọn region
 - Quy tắc đặt tên:
   - Chỉ chưa ký tự viết thường, số, dấu chấm (.), gạch ngang (-)

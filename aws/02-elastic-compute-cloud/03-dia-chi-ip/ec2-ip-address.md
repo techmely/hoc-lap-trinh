@@ -38,7 +38,7 @@ Hiện tại IPv4 vẫn phổ biến nhất<br/> IPv6 ra đời mới hơn IPv4 
 
 - Private IP tương ứng với máy được định danh trong private network (Mạng trong một công ty)
 - IP đó phải là duy nhất trong private network
-- 2 private network khác nhau có thể trùng IPs với nhau
+- 2 private network khác nhau có thể trùng IP với nhau
 - Máy tính trong private network cần sử dụng Internet Getway để có thể truy cập internet
 
 #### Elastic IP trong EC2
@@ -47,12 +47,7 @@ Hiện tại IPv4 vẫn phổ biến nhất<br/> IPv6 ra đời mới hơn IPv4 
 - Nếu muốn có 1 static IP hãy sử dụng Elastic IP
 - EIP: là 1 IPv4 và có thể attach vào 1 EC2 instance
 - Mặc định mỗi account chỉ có thể tạo 5 EIP, có thể request AWS để tạo được nhiều hơn
-
+<br/>
 ::alert{type="infor"}
-Cố gắng hạn chế sử dụng EIP
-
-<ul>
-  <li>Thay vì vậy có thể sử dụng DNS name kết hợp với Route 53</li>
-  <li>Hoặc sử dụng 1 Load Balancer</li>
-<ul>
+Chú ý AWS sẽ tính phí nếu bạn tạo EIP mà không associate tới một Running instance. Nên hãy sử dụng EIP một cách hợp lý.
 ::

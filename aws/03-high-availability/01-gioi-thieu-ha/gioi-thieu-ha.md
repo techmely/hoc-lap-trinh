@@ -40,13 +40,13 @@ Tiếp đến là về đảm bảo dữ liệu được lưu trữ ở nhiều 
 
 ## AWS Scalability là gì
 
-Scalability là ứng dụng của bạn có khả năng mở rộng một cách nhanh chóng để đối ứng với những vấn đề phát sinh. Ví dụ như website của bạn 1 ngày nào đó tự nhiên trở nên hot và có quá nhiều người truy cập vào , khi đó với tài nguyên hiện hữu thì application của bạn không đủ khả năng phục vụ hết tất cả mọi người, khi đó chúng ta cần scale nó lên .
+Scalability là ứng dụng của bạn có khả năng mở rộng một cách nhanh chóng để đối ứng với những vấn đề phát sinh. Ví dụ như website của bạn 1 ngày nào đó tự nhiên trở nên hot và có quá nhiều người truy cập vào, khi đó với tài nguyên hiện hữu thì application của bạn không đủ khả năng phục vụ hết tất cả mọi người, khi đó chúng ta cần scale nó lên.
 
 Có 2 loại scalability:
 
 - **Vertical Scalability**: có nghĩa là mở rộng theo chiều sâu
-  - Ví dụ bạn đang làm task với junior member, sau đó có nhiều việc hơn leader chuyển sang 1 senior member làm việc đó.
+  - Ví dụ 1 task đang được handle bởi 1 junior member, để xử lý công việc nhanh hơn leader chuyển sang 1 senior member làm việc đó.
 - **Horizontal scalability**: mở rộng theo chiều ngang
-  - Ví dụ bạn đang làm task với junior member, sau đó có nhiều việc hơn leader tuyển thêm 2-3 junior member để làm cho xong việc đó
+  - Tương tự, 1 task đang được handle bởi 1 junior member, sau đó có nhiều việc hơn leader tuyển thêm 2-3 junior member để làm cho xong việc đó.
 
 High Availability không phải là Scalability nhưng chúng có liên quan đến nhau. Chúng kết hợp với nhau để đưa ra một kiến trúc AWS tốt hơn.

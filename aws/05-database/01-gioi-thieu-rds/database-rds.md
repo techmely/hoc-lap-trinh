@@ -19,9 +19,8 @@ position: 20
 
 ![AWS RDS là gì](https://user-images.githubusercontent.com/29729545/166090808-04e7d380-a120-4cc4-b965-9c8b641e198f.png)
 
-- Viết tắt của Relational Database Service, là dịch vụ quản lý Database sử dụng SQL
-- Types:
-
+- Viết tắt của Relational Database Service, là dịch vụ Database do AWS quản lý sử dụng SQL
+- Hỗ trợ các engine:
   - Postgres
   - MySQL
   - MariaDB

@@ -86,3 +86,10 @@ Mỗi storage class khác nhau có các thuộc tính khác nhau về: Chi phí,
 - Thời gian lưu trữ tối thiểu là **180 ngày**
 
 ![s3 storage classes comparison](https://user-images.githubusercontent.com/29729545/151008602-30204774-5704-492b-a009-092785df81f5.png)
+
+## Exam tips
+- Dữ liệu cần độ trễ truy cập dữ liệu thấp (latency sensitive), truy cập thường xuyên (frequently access) => **Standard Tier**
+- Dữ liệu ít truy cập (Infrequently Access) => **IA**
+- Dữ liệu ít truy cập (Infrequently Access), dữ liệu có thể khôi phục nếu một AZ bị sự cố => **One-Zone IA**
+- Dữ liệu lưu trữ lâu dài(1~10 năm),thời gian lấy dữ liệu từ phút tới < 12giờ => **Glacier**
+- Dữ liệu lưu trữ lâu dài ( > 10 năm), thời gian lấy dữ liệu > 12 hours => **Deep Archived**

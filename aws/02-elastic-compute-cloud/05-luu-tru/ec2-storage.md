@@ -20,7 +20,7 @@ position: 7
 EBS (Elastic Block Store) là dịch vụ lưu trữ dưới dạng block của AWS. Một EBS có thể attach vào duy nhất 1 EC2 trong cùng availability zone. Bạn có thể hiểu EBS sẽ giống như 1 USB hay 1 ổ cứng ngoài.
 
 - Có thể attach nhiều EBS vào 1 EC2 instance.
-- EBS trong AWS không cross availability zone
+- EBS trong AWS không cross availability zone (AZ scope)
 - AWS tính phí dựa trên dung lượng của EBS
 
 EBS volume bị lock trong 1 availability zone, có nghĩa là:
@@ -39,6 +39,7 @@ Như đã đề cập ở phần EBS volume, chúng ta không thể cross availa
 
 - EBS snapshots tạo 1 bản backup (snapshot) của EBS volume của bạn
 - Có thể copy snapshots across availability zone hay region
+- Để đảm bảo tính nhất quán của dữ liệu, Instance nên được stop trước khi tạo Snapshot
 
 ![EBS snapshot](https://images.viblo.asia/618fe942-940b-43fa-9185-9b474bd25a4d.png)
 

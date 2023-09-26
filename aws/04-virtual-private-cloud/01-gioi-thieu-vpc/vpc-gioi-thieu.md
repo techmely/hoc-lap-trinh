@@ -17,7 +17,7 @@ position: 15
 
 ## VPC là gì
 
-Virtual private cloud
+VPC là viết tắt của Virtual Private Cloud, giống như một Datacenter trên Cloud. Giúp quản lý, cấp phát IP, cấu hình subnets định tuyến và vvv...
 
 Đầu tiên cần hiểu về một vài concepts về network
 

@@ -24,9 +24,10 @@ DNS là viết tắt của: **Domain Name System** là hệ thống phân giải
 ## Thuật ngữ trong DNS
 
 - **Domain Registrar**: Nơi đăng ký tên miền (Route 53, Tenten, MatBao...)
+- **DNS Resolver**: Nhận các yêu cầu phân giải tên miền từ Clients (Browser) và gửi tới nơi cung cấp dịch vụ DNS (Ví dụ: Google Resolver 8.8.8.8, 8.8.4.4)
 - **DNS Records**: A, AAAA, CNAME, NS,...
 - **Zone File**: Lưu trữ DNS records
-- **Name Server**: Là hệ thống có chức năng điều phối quá trình chuyển đổi từ tên miền sang địa chỉ IP.
+- **Name Server**: Là hệ thống server có chức năng điều phối quá trình chuyển đổi từ tên miền sang địa chỉ IP.
 - **Top Level Domain (TLD)**: .com, .us, .edu,...
 - **Second Level Domain (SLD)**: amazon.com, google.com,...
 

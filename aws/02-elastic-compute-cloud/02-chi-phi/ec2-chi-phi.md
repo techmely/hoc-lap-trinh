@@ -33,10 +33,13 @@ On-demand instance là các tính tiền dễ hiểu nhất "dùng bao nhiêu tr
 - Option đắt tiền nhất
 
 ### 2. Spot instances là gì
-
-Bạn sẽ bid (đấu thầu) giá **max_price** mà mình muốn trả, pot instance sẽ có **current_price** và current_price này sẽ thay đổi theo thời gian <br /> AWS sẽ lấy lại spot instance của bạn khi **max_price** < **current_price**
+AWS có rất nhiều tài nguyên dư thừa, họ một tối ưu hoá phần hạ tầng chưa dùng đến bằng Spot Instance. Bạn có thể hiểu là bán ghế trống trên máy bay hay ô tô.
+Bạn sẽ bid (đấu thầu) giá **max_price** mà mình muốn trả, Spot instance sẽ có **current_price** và current_price này sẽ thay đổi theo thời gian <br /> AWS sẽ thống báo trước 2 phút và lấy lại Spot instance của bạn khi **max_price** < **current_price**
 
 - Use-case: dùng cho những ứng dụng flexible, có thể bị interrupted.
+
+### 2. Spot fleet là gì
+- Spot Fleets là tập hợp các Spot Instances + On-Demand Instances
 
 ### 3. Reserved instances là gì
 
@@ -44,7 +47,7 @@ Khi bạn chạy những ứng dụng lâu bền, AWS cung cấp reserved instan
 
 ### 4. Dedicated hosts là gì
 
-Là thuê luôn phần cứng của AWS, phần cứng đó sẽ được AWS cung cấp chỉ cho bạn sử dụng.
+Đa phần những EC2 chúng ta sử dụng đều được share phần cứng giữa nhiều instance. Dedicated hosts là thuê luôn phần cứng của AWS, phần cứng đó sẽ được AWS cung cấp chỉ cho bạn sử dụng. Có một số trường hợp đặc thù bạn cần cài những software có yêu cầu không được share phần cứng giữa các tenant khác nhau.
 
 - Phù hợp cho ứng dụng license model phức tạp (BYOL- Bring your own license)
 - Hoặc cho các công ty có rule về bảo mật (Họ không muốn sử dụng chung phần cứng với các công ty khác trên môi trường AWS)
