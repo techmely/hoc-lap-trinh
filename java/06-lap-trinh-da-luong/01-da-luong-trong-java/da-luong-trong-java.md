@@ -4,9 +4,6 @@ description: "Đa luồng (Multi-Thread) trong Java là khả năng của một 
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/146175674-fa7e09f7-4e42-485e-a2b5-8c664601b203.png
 position: 1
 ---

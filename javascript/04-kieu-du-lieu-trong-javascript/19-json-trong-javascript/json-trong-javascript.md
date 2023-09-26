@@ -4,9 +4,6 @@ description: "JSON là viết tắt của JavaScript Object Notation, là một 
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168244482-e12888eb-898f-427c-ad6c-4a403cd31dd3.png
 position: 19
 ---

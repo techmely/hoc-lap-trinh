@@ -4,9 +4,6 @@ description: "Mỗi thread có một mức ưu tiên (priority), đại diện b
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/146319085-7f834fbb-f3a4-49a8-996a-13d14b00efd0.png
 position: 5
 ---

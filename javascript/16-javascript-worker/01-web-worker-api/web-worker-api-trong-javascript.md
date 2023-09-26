@@ -4,9 +4,6 @@ description: "Web Workers là một API JavaScript, cho phép bạn chạy các 
 chapter:
   name: "Javascript worker"
   slug: "chuong-16-javascript-worker"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

@@ -4,9 +4,6 @@ description: "Một hàm có thể trả về một hoặc nhiều giá trị, v
 chapter:
   name: "Làm quen với Go"
   slug: "chuong-02-lam-quen-voi-go"
-category:
-  name: "Go"
-  slug: "go"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

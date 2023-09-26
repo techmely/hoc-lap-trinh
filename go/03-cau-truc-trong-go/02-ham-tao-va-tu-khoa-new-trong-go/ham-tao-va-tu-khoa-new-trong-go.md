@@ -4,9 +4,6 @@ description: "Hàm tạo (Constructors) trong Go giới thiệu cách sử dụn
 chapter:
   name: "Cấu trúc trong Go"
   slug: "chuong-03-cau-truc-trong-go"
-category:
-  name: "Go"
-  slug: "go"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

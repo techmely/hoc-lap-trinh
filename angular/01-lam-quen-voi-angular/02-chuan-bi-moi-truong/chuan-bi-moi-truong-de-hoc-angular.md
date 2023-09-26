@@ -4,9 +4,6 @@ description: "Chuẩn bị môi trường để có thể bắt đầu học ang
 chapter:
   name: "Làm quen với Angular"
   slug: "chuong-01-lam-quen-voi-angular"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

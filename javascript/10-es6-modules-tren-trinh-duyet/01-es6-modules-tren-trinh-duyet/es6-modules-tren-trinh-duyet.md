@@ -4,9 +4,6 @@ description: "ES Modules với JavaScript thông thường. Bởi vì, ES Module
 chapter:
   name: "ES6 Modules"
   slug: "chuong-10-es6-modules-tren-trinh-duyet"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

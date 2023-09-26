@@ -4,9 +4,6 @@ description: "Mảng trong Java là một đối tượng chứa các phần t�
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/132833011-54534065-b9ea-48f0-9e44-a9ef4f8a4951.png
 position: 27
 ---

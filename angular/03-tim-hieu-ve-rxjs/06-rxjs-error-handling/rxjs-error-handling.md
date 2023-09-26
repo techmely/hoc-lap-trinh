@@ -4,9 +4,6 @@ description: "Trong ngày hôm nay chúng ta sẽ cùng tìm hiểu một số o
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 6
 ---

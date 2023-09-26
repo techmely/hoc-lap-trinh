@@ -4,9 +4,6 @@ description: "JAngular là một javascript framework do google phát triển đ
 chapter:
   name: "Làm quen với Angular"
   slug: "chuong-01-lam-quen-voi-angular"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

@@ -4,9 +4,6 @@ description: "Thymeleaf là một Java Template Engine có nhiệm vụ xử lý
 chapter:
   name: "Thymeleaf"
   slug: "chuong-04-thymeleaf"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

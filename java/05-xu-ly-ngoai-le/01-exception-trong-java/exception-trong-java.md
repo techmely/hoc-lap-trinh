@@ -4,9 +4,6 @@ description: "Exception là một tình trạng bất thường. Một exception
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/142722429-d5b4a38c-448a-4aed-994b-52e06755bfea.png
 position: 1
 ---

@@ -4,9 +4,6 @@ description: "Dấu ba chấm trong JavaScript được sử dụng trong rất 
 chapter:
   name: "Kiến thức nâng cao về hàm"
   slug: "chuong-05-kien-thuc-nang-cao-ve-ham"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168245396-7febe5dc-f20f-485b-a96d-79801f6cbc05.png
 position: 2
 ---

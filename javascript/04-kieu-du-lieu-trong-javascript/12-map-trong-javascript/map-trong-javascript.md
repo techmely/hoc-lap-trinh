@@ -4,9 +4,6 @@ description: "Javascript map là một hàm dành cho đối tượng mảng tro
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168243549-4803ac2f-e047-4230-8cad-6a059f529826.png
 position: 12
 ---

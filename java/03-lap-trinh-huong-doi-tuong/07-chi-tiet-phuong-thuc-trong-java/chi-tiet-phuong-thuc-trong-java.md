@@ -4,9 +4,6 @@ description: "Một phương thức là một tập hợp các khối lệnh (co
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131202396-f4ab4d7f-60a6-45b4-8f32-9e8ef7fdc63f.png
 position: 7
 ---

@@ -4,9 +4,6 @@ description: "Go được xây dựng như một ngôn ngữ lập trình hệ t
 chapter:
   name: "Giới thiệu về ngôn ngữ Go"
   slug: "chuong-01-gioi-thieu-ve-go"
-category:
-  name: "Go"
-  slug: "go"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

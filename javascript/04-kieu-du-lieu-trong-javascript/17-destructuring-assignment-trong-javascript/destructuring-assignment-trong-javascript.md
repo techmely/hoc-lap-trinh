@@ -4,9 +4,6 @@ description: "Destructuring Assignment là một cú pháp cho phép tách dữ 
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168244233-2501bbc6-9db0-4284-8494-a86d95178fc8.png
 position: 17
 ---

@@ -4,9 +4,6 @@ description: "Bài này chúng ta sẽ tìm hiểu về Thuộc tính tĩnh (sta
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131236350-539f5fcf-79f4-43ed-8d38-35494726df1a.png
 position: 11
 ---

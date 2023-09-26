@@ -4,9 +4,6 @@ description: "Collections (Tập hợp) là một khái niệm quan trọng và 
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/132952801-20345632-c056-4c52-9603-9970fa3988b5.png
 position: 1
 ---

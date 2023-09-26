@@ -4,9 +4,6 @@ description: "Interface trong Java là một bản thiết kế của một lớ
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131247022-a3c4f998-873e-4274-a244-83f4913ca5aa.png
 position: 16
 ---

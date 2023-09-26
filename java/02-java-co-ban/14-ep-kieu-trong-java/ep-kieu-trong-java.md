@@ -4,9 +4,6 @@ description: "Ép kiểu trong java là việc gán giá trị của một biế
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/137243394-f31122f7-8b8c-4d1b-a194-9a0a4a679c61.png
 position: 14
 ---

@@ -4,9 +4,6 @@ description: "Java có một lớp gọi là lớp Math cung cấp các hàm v�
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/135853402-d20a065b-d818-4519-a823-f73709bde64d.png
 position: 16
 ---

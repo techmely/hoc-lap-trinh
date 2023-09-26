@@ -4,9 +4,6 @@ description: "List trong Java là một interface trong java, nó chứa các ph
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/133044726-cd098fdc-4a33-4f3f-a603-82ba49089dc9.png
 position: 2
 ---

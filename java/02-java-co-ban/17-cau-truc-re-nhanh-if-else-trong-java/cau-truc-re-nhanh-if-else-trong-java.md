@@ -4,9 +4,6 @@ description: "Mệnh đề if-else trong java được sử dụng để kiểm 
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/126427809-717c3eb0-ffba-4fa5-8e52-ec12ad9b548d.png
 position: 17
 ---

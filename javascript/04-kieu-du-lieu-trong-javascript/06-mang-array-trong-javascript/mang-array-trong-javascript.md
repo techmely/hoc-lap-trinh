@@ -4,9 +4,6 @@ description: "Array, hay được gọi là mảng, là kiểu dữ liệu mà g
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168242680-a06573d8-935e-4e59-8933-7a46204eb822.png
 position: 6
 ---

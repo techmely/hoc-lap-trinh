@@ -4,9 +4,6 @@ description: "Điều gì sẽ xảy ra nếu một vùng nhớ không còn sử
 chapter:
   name: "Object trong Javascript"
   slug: "chuong-03-object-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---

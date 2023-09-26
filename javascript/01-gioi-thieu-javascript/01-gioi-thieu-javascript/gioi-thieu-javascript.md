@@ -4,9 +4,6 @@ description: "Javascript (thường hay viết tắt là JS) là ngôn ngữ l�
 chapter:
   name: "Giới thiệu Javascript"
   slug: "chuong-01-gioi-thieu-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

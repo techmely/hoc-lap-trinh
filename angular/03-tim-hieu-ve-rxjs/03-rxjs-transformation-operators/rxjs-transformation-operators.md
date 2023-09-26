@@ -4,9 +4,6 @@ description: "Trong bài trước chúng ta đã biết về một số Creation
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

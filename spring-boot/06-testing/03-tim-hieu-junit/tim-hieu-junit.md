@@ -4,9 +4,6 @@ description: "JUnit là một framework phổ biến trong việc thực hiện 
 chapter:
   name: "Testing"
   slug: "chuong-06-testing"
-category:
-  name: "SpringBoots"
-  slug: "springboots"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

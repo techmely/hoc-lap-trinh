@@ -4,9 +4,6 @@ description: "Chào mừng đến với loạt bài hướng dẫn sử dụng n
 chapter:
   name: "Các cấu trúc trong C++"
   slug: "chuong-03-cau-truc-trong-c++"
-category:
-  name: "Khóa học C++ cơ bản"
-  slug: "C++"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

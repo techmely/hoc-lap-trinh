@@ -4,9 +4,6 @@ description: "Number trong JavaScript dùng cho cả số nguyên (integer) và 
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168241811-a6e5438e-3e6f-4e15-b87b-ab20aaba0691.png
 position: 2
 ---

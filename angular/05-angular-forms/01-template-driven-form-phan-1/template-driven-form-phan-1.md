@@ -4,9 +4,6 @@ description: "Form hay biểu mẫu là một thành phần khá quan trọng tr
 chapter:
   name: "Angular Forms"
   slug: "chuong-05-angular-forms"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

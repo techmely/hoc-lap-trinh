@@ -4,9 +4,6 @@ description: "Câu lệnh 'break' là một công cụ quan trọng để kiểm
 chapter:
   name: "Vòng lặp"
   slug: "chuong-04-loops"
-category:
-  name: "C"
-  slug: "c"
 image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
 position: 5
 ---
@@ -115,9 +112,13 @@ int main() {
 ```
 
 ::result
-* * * * * *
-* * * * * *
-* * * * * *
+
+---
+
+---
+
+---
+
 ::
 
 Chúng ta có thể thấy vòng **`for i`** (**`for`** bên ngoài) sẽ chạy 3 lần (từ `0` → `2`). Vòng **`for j`** (**`for`** bên trong) sẽ chạy 6 lần (từ `0` → `5`).
@@ -143,9 +144,13 @@ int main() {
 ```
 
 ::result
-* * *
-* * *
-* * *
+
+---
+
+---
+
+---
+
 ::
 
 Bạn có thể thấy vòng **`for i`** vẫn chạy 3 lần, **`break`** chỉ kết thúc vòng **`for j`**, nơi nó được viết mã khi thoã màn câu lệnh **`if-else`**.

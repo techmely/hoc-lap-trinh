@@ -4,9 +4,6 @@ description: "Lớp TreeMap trong java là một lớp kế thừa lớp Abstrac
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/145682018-69cc074d-31ed-4950-a72d-1bad074b889f.png
 position: 13
 ---

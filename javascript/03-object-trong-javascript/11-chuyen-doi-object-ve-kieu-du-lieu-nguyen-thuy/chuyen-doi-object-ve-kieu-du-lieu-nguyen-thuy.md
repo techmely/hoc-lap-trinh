@@ -4,9 +4,6 @@ description: "Trong bài viết chuyển đổi kiểu dữ liệu, mình đã g
 chapter:
   name: "Object trong Javascript"
   slug: "chuong-03-object-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168241168-64b96466-5b10-4953-b3ef-81a23b40d3ff.png
 position: 11
 ---

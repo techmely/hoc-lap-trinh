@@ -4,9 +4,6 @@ description: "JWT (JSON Web Token) là một phần quan trọng trong bảo m�
 chapter:
   name: "Spring security"
   slug: "chuong-08-spring-security"
-category:
-  name: "SpringBoots"
-  slug: "springboots"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

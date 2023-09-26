@@ -4,9 +4,6 @@ description: "Biểu thức chính quy (regular expressions ) là các mẫu dù
 chapter:
   name: "Regular expression"
   slug: "chuong-12-regular-expression"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

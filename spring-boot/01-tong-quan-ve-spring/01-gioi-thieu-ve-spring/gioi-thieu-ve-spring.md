@@ -4,9 +4,6 @@ description: "Spring Framework là một framework mã nguồn mở được vi�
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-01-tong-quan-ve-spring"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 position: 1
 ---
 

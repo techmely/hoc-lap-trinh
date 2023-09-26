@@ -4,9 +4,6 @@ description: "Function expression trong JavaScript"
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/156868174-f4ad2395-1e35-4569-b63a-fe93aa30466c.png
 position: 18
 ---

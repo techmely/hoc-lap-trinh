@@ -4,9 +4,6 @@ description: "Java chia thread làm 2 loại một loại thông thường và D
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/146481113-81aab741-c1b0-4f17-9280-fb7c393c86db.png
 position: 7
 ---

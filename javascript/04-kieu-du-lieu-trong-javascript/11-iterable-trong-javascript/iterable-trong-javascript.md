@@ -4,9 +4,6 @@ description: "Iterable là khả năng cho phép các đối tượng trong Java
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168243321-75764d51-b0a0-46f4-8bf6-0f24980c1c99.png
 position: 11
 ---

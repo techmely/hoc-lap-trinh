@@ -4,9 +4,6 @@ description: "IOC là một trong những khái niệm cốt lõi của Spring F
 chapter:
   name: "Các khái niệm cơ bản về Spring"
   slug: "chuong-02-cac-khai-niem-co-ban"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

@@ -4,9 +4,6 @@ description: "Bài này chúng ta sẽ cùng nhau tìm hiểu về câu lệnh v
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

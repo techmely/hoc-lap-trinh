@@ -4,9 +4,6 @@ description: "Spring Boot cung cấp một giải pháp mạnh mẽ cho vấn đ
 chapter:
   name: "Spring Boot cơ bản"
   slug: "chuong-03-spring-boot-co-ban"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 position: 19
 ---
 

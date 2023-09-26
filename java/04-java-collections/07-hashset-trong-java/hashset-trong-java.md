@@ -4,9 +4,6 @@ description: "Các điểm quan trọng về lớp HashSet trong java là HashSe
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/144748740-2011fa75-dcf1-40ab-a71a-7a990d52899d.png
 position: 7
 ---

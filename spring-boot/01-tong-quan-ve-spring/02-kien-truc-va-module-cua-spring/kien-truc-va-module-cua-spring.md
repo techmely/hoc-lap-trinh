@@ -4,9 +4,6 @@ description: "Kiến trúc Spring được tổ chức theo kiểu module. Mặc
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-01-tong-quan-ve-spring"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 position: 2
 ---
 

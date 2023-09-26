@@ -4,9 +4,6 @@ description: "Bài này chúng ta sẽ tìm hiểu về Một số lớp cơ b�
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131965653-d093ebae-2089-4057-b718-f2e6bfb13c88.png
 position: 21
 ---

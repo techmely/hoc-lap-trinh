@@ -4,9 +4,6 @@ description: "Ở bài này mình sẽ giới thiệu một thành phần vô c�
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"
-category:
-  name: "Docker"
-  slug: "docker"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 8
 ---

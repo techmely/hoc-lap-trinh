@@ -4,9 +4,6 @@ description: "Trong bài viết này, chúng ta sẽ tìm hiểu cách thực hi
 chapter:
   name: "Testing"
   slug: "chuong-06-testing"
-category:
-  name: "SpringBoots"
-  slug: "springboots"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

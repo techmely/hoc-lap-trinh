@@ -4,9 +4,6 @@ description: "Ngôn ngữ lập trình Java có khoảng 50 từ khóa, bạn c�
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/126283476-8f3179e8-3481-478c-8b1a-14dd8724b333.png
 position: 2
 ---

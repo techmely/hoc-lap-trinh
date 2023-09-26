@@ -4,9 +4,6 @@ description: "Chạy chương trình Spring Boot đầu tiên không phải là 
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-01-tong-quan-ve-spring"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 7
 ---

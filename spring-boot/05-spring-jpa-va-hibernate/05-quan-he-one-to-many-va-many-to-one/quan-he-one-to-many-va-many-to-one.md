@@ -4,9 +4,6 @@ description: "Trong bài viết này, chúng ta sẽ tìm hiểu cách sử dụ
 chapter:
   name: "Spring JPA và Hibernate"
   slug: "chuong-05-spring-jpa-va-hibernate"
-category:
-  name: "SpringBoots"
-  slug: "springboots"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 5
 ---

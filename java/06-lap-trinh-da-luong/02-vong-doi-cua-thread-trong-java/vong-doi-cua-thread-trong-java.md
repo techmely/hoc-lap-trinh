@@ -4,9 +4,6 @@ description: "Chúng ta sẽ cùng tìm hiểu vòng đời của một thread, 
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/146295451-dd3f5502-81f5-4983-bb8b-769b739db327.png
 position: 2
 ---

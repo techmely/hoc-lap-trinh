@@ -4,9 +4,6 @@ description: "Hàm setTimeout() dùng để thiết lập một khoảng thời 
 chapter:
   name: "Kiến thức nâng cao về hàm"
   slug: "chuong-05-kien-thuc-nang-cao-ve-ham"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 8
 ---

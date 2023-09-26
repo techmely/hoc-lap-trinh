@@ -4,9 +4,6 @@ description: "Enum là một từ khóa trong Java, là một kiểu dữ liệu
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/145763981-728dcb20-8cf1-417b-9f3a-45585e48a366.png
 position: 15
 ---

@@ -4,9 +4,6 @@ description: "Bài này chúng ta cùng nhau tìm hiểu về kiến trúc và t
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"
-category:
-  name: "Docker"
-  slug: "docker"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---

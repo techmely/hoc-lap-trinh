@@ -4,9 +4,6 @@ description: "Set Interface là một loại Interface Collection, khác với L
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/144745593-8e1da2a4-1f30-46d6-96cd-4ca90bc30386.png
 position: 6
 ---

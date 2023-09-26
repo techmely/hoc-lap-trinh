@@ -4,9 +4,6 @@ description: "Trong bài này sẽ tìm hiểu về phương thức của object
 chapter:
   name: "Object trong Javascript"
   slug: "chuong-03-object-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 5
 ---

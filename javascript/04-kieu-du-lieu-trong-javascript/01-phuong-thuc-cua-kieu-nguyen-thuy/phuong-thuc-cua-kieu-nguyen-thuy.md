@@ -4,9 +4,6 @@ description: "JavaScript cho phép bạn sử dụng kiểu nguyên thủy giố
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168241439-75b68bba-22a5-4a2c-a3a1-727cd6cb9839.png
 position: 1
 ---

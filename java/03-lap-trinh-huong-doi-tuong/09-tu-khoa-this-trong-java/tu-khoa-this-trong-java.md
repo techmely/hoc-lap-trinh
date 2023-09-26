@@ -4,9 +4,6 @@ description: "Từ khóa this trong java là một biến tham chiếu được 
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131205481-bc00bbd6-82c5-4e1f-b53d-c28d00e98e0f.png
 position: 9
 ---

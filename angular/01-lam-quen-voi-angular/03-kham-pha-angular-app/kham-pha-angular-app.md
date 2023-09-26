@@ -4,9 +4,6 @@ description: "Ở trong AppModule, chúng ta đã thấy được một trong nh
 chapter:
   name: "Làm quen với Angular"
   slug: "chuong-01-lam-quen-voi-angular"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

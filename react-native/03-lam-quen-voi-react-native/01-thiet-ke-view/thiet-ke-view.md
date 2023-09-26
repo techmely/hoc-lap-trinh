@@ -4,9 +4,6 @@ description: "Sau đây là một đoạn code Demo về Style của ứng dụn
 chapter:
   name: "Làm quen với react native"
   slug: "chuong-03-lam-quen-voi-react-native"
-category:
-  name: "React Native"
-  slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

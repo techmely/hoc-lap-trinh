@@ -4,9 +4,6 @@ description: "Trong bài viết này, chúng ta sẽ khám phá các cách cơ b
 chapter:
   name: "Nhập môn C"
   slug: "chuong-02-basic-concepts"
-category:
-  name: "C"
-  slug: "c"
 image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
 position: 3
 ---
@@ -159,7 +156,7 @@ int main() {
 ```
 
 ::result
-    2.50    3.75    5.66
+2.50 3.75 5.66
 ::
 
 Lúc này tổng chiều dài hiển thì cho mỗi số là `8` ký tự (đã tính cả dấu `.` và `2` số sau dấu `.`). Xem hình minh hoạ để hiểu rõ hơn:

@@ -4,9 +4,6 @@ description: "Lệnh break sẽ chấm dứt quá trình lặp mà không thực
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/127758655-3a4c7e05-729c-4781-9568-9bfa546c0ed8.png
 position: 25
 ---

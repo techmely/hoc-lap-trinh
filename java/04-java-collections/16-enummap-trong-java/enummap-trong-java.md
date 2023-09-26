@@ -4,9 +4,6 @@ description: "EnumMap là một Map implementation được thiết kế để l
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/145797889-981dcdc2-f28f-43ac-93f5-bbcef6c199d1.png
 position: 16
 ---

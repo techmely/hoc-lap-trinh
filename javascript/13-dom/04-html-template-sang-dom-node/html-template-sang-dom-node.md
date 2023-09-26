@@ -4,9 +4,6 @@ description: "Như đã nói trong bài viết trước, bài này mình sẽ h�
 chapter:
   name: "DOM"
   slug: "chuong-13-dom"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---

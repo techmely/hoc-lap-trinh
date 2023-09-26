@@ -4,9 +4,6 @@ description: "Trong Spring Boot, Spring JPA cung cấp một cách dễ dàng đ
 chapter:
   name: "Spring Boot cơ bản"
   slug: "chuong-03-spring-boot-co-ban"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 position: 12
 ---
 

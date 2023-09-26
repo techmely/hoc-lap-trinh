@@ -4,9 +4,6 @@ description: "Chào mừng đến với loạt bài hướng dẫn sử dụng n
 chapter:
   name: "Làm quen với ngôn ngữ C++"
   slug: "chuong-01-ngon-ngu-cpp-co-ban"
-category:
-  name: "Khóa học C++ cơ bản"
-  slug: "C++"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

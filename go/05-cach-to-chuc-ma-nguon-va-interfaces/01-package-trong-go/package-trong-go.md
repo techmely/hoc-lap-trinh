@@ -4,9 +4,6 @@ description: "Bài viết này giới thiệu về cách xây dựng và quản 
 chapter:
   name: "Cách tổ chức mã nguồn và Interfaces"
   slug: "chuong-05-cach-to-chuc-ma-nguon-va-interfaces"
-category:
-  name: "Go"
-  slug: "go"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

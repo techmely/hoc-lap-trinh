@@ -4,9 +4,6 @@ description: "Trong bài trước, chúng ta đã tìm hiểu về Reactive Form
 chapter:
   name: "Angular Forms"
   slug: "chuong-05-angular-forms"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---

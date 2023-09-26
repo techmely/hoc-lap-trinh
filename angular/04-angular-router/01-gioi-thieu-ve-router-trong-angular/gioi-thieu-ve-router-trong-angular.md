@@ -4,9 +4,6 @@ description: "Trước đây khi các ứng dụng web vẫn chủ yếu follow 
 chapter:
   name: "Angular Router"
   slug: "chuong-04-angular-router"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

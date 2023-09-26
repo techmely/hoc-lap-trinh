@@ -4,9 +4,6 @@ description: "Java cung cấp một cách thuận tiện để nhóm nhiều thr
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/146481584-116afdfd-3676-4c73-87d7-15bdd8b6b927.png
 position: 9
 ---

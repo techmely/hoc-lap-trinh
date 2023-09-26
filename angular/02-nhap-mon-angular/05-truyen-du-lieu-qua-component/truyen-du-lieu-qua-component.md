@@ -4,9 +4,6 @@ description: "Trong các ứng dụng thực tế, đôi khi chúng ta sẽ có 
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 5
 ---

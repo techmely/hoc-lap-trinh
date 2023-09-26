@@ -4,9 +4,6 @@ description: "Bài viết này sẽ giới thiệu về Keywords và Escape Sequ
 chapter:
   name: "Giới thiệu"
   slug: "chuong-01-introduction"
-category:
-  name: "C"
-  slug: "c"
 image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
 position: 4
 ---

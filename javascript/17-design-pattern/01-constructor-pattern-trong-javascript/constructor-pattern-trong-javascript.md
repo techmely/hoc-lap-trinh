@@ -4,9 +4,6 @@ description: "Trong JavaScript, hầu như mọi thứ đều là một object v
 chapter:
   name: "Design pattern"
   slug: "chuong-17-design-pattern"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

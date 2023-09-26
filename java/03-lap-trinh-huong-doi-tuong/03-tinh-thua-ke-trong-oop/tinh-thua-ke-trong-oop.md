@@ -4,9 +4,6 @@ description: "Tính kế thừa trong lập trình hướng đối tượng cho 
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131276922-2608f214-0690-4eb4-96e3-b7384d4b2df3.png
 position: 3
 ---

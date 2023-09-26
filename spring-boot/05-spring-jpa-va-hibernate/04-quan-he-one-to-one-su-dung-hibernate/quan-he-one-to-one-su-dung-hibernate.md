@@ -4,9 +4,6 @@ description: "Chúng ta sẽ tìm hiểu cách sử dụng Hibernate để thể
 chapter:
   name: "Spring JPA và Hibernate"
   slug: "chuong-05-spring-jpa-va-hibernate"
-category:
-  name: "SpringBoots"
-  slug: "springboots"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---

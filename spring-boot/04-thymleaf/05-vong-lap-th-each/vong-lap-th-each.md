@@ -4,9 +4,6 @@ description: "Trong bài viết này, chúng ta sẽ tìm hiểu về cú pháp 
 chapter:
   name: "Thymeleaf"
   slug: "chuong-04-thymeleaf"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 5
 ---

@@ -4,9 +4,6 @@ description: "Câu lệnh 'continue' cũng là một công cụ mạnh mẽ giú
 chapter:
   name: "Vòng lặp"
   slug: "chuong-04-loops"
-category:
-  name: "C"
-  slug: "c"
 image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
 position: 6
 ---
@@ -68,7 +65,6 @@ int main() {
 
 Các bạn có thể thấy khi `i = 5` câu lệnh **`continue`** sẽ được thực thi, lúc này chương trình sẽ bỏ qua đoạn mã bên dưới **`continue`** và chạy vòng **`for`** mới - vì vậy câu lệnh `printf()` sẽ không được thực hiện, `5` sẽ không được in ra màn hình.
 
-
 ::result
 1 2 3 4 6 7 8 9 10
 ::
@@ -101,7 +97,6 @@ int main() {
 ```
 
 Khi nhập `n < 0` câu lệnh **`continue`** sẽ được thực thi, lúc này chương trình sẽ bỏ qua đoạn mã bên dưới **`continue`** và chạy vòng **`for`** mới - vì vậy câu lệnh `sum += number;` sẽ không được thực hiện, số âm sẽ không được cộng vào tổng.
-
 
 ::result
 Enter a n1: 1

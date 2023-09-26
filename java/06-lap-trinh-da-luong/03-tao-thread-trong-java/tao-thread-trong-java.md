@@ -4,9 +4,6 @@ description: "Trong Java, có hai cách để bạn tạo một thread là thừ
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/146299112-60eb7f5d-8316-4ff9-92a1-f495c3eb8223.png
 position: 3
 ---

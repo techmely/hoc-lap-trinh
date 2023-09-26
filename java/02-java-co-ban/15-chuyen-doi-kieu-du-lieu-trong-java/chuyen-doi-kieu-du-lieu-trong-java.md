@@ -4,9 +4,6 @@ description: "Ngoài việc ép kiểu trong java thì chuyển đối kiểu d�
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/137243686-d91b1294-cb1f-4cc4-9e36-130d13a48352.png
 position: 15
 ---

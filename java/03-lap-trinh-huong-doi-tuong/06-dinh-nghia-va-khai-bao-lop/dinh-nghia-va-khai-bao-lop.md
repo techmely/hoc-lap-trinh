@@ -4,9 +4,6 @@ description: "Lớp là khái niệm trọng tâm của lập trình hướng đ
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/130742965-1f138a2b-3612-4150-884c-fdd62de6c00e.png
 position: 6
 ---

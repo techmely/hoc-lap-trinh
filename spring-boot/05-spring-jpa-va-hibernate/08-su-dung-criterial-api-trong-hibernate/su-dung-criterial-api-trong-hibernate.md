@@ -4,9 +4,6 @@ description: "JPA Criteria API cho phép bạn tạo các câu truy vấn trong 
 chapter:
   name: "Spring JPA và Hibernate"
   slug: "chuong-05-spring-jpa-va-hibernate"
-category:
-  name: "SpringBoots"
-  slug: "springboots"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 8
 ---

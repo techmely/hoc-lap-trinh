@@ -4,9 +4,6 @@ description: "Trình lên lịch của Thread (Thread scheduler) trong java là 
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/146302578-b037c1d6-4274-4153-b0d0-8b7ff37ec592.png
 position: 4
 ---

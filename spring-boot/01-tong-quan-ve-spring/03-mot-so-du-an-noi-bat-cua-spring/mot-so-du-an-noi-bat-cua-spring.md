@@ -4,9 +4,6 @@ description: "Dưới đây là một số dự án nổi bật của Spring Fra
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-01-tong-quan-ve-spring"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

@@ -4,9 +4,6 @@ description: "Trong bài này, bạn sẽ học cách sao chép các đối tư�
 chapter:
   name: "Object trong Javascript"
   slug: "chuong-03-object-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

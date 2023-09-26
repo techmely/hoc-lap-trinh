@@ -4,9 +4,6 @@ description: "Service Worker là một script mà trình duyệt chạy ở dư�
 chapter:
   name: "Javascript worker"
   slug: "chuong-16-javascript-worker"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

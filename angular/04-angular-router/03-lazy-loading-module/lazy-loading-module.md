@@ -4,9 +4,6 @@ description: "Tiếp tục với Angular Router, các bạn đã biết cách t�
 chapter:
   name: "Angular Router"
   slug: "chuong-04-angular-router"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

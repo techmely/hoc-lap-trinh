@@ -4,9 +4,6 @@ description: "Vậy trong trường hợp người dùng nhập các thông tin 
 chapter:
   name: "Angular Forms"
   slug: "chuong-05-angular-forms"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

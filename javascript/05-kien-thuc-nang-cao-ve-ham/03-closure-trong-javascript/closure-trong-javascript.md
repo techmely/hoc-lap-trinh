@@ -4,9 +4,6 @@ description: "Closure là một chức năng có quyền truy cập vào phạm 
 chapter:
   name: "Kiến thức nâng cao về hàm"
   slug: "chuong-05-kien-thuc-nang-cao-ve-ham"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168245638-7082c1ed-ea00-4de8-bedd-41d3cc39e12e.png
 position: 3
 ---

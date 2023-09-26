@@ -4,9 +4,6 @@ description: "Sử dụng loose coupling và Dependency Injection giúp mã ngu�
 chapter:
   name: "Các khái niệm cơ bản về Spring"
   slug: "chuong-02-cac-khai-niem-co-ban"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 position: 1
 ---
 

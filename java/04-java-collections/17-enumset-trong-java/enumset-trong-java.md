@@ -4,9 +4,6 @@ description: "Class EnumSet của collections framework trong Java triển khai 
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/145766680-a7bd0eb6-6b24-442a-8ff4-13998b902c39.png
 position: 18
 ---

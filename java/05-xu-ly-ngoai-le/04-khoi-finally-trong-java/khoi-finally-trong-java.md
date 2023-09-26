@@ -4,9 +4,6 @@ description: "Khi một ngoại lệ xuất hiện, phương thức đang đư�
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/126114810-e1c61816-0531-42a8-b493-7232c4d2fcbc.png
 position: 4
 ---
