@@ -86,18 +86,18 @@ Code hoàn chỉnh:
 ```
 
 ::result
-Enter n: 1
-n is not a prime number.
+Enter n: 1</br>
+n is not a prime number.</br>
 ::
 
 ::result
-Enter n: 11
-n a prime number.
+Enter n: 11</br>
+n a prime number.</br>
 ::
 
 ::result
-Enter n: 12
-n is not a prime number.
+Enter n: 12</br>
+n is not a prime number.</br>
 ::
 
 **`return`** - đây là từ khóa dùng để kết thúc một hàm xử lý, khi gặp từ khóa **`return`** thì chương trình sẽ không chạy tiếp các dòng mã bên dưới từ **`return`** nữa. Trong ví dụ trên, khi nhập `n < 2` thì chương trình sẽ chạy vào câu lệnh **`if`** (line 11) và thực hiện lệnh `return 0;` (line 13) - lúc này **chương trình sẽ kết thúc** và những dòng mã từ line 15 → line 27 sẽ **không** được thực hiện.
@@ -133,10 +133,10 @@ Màn hình kết quả chương trình:
 Test case 1
 
 ::result
-Enter the number: 10
+Enter the number: 10</br>
 
-OUTPUT:
-The number of occurrences of even number is 6
+OUTPUT:</br>
+The number of occurrences of even number is 6</br>
 --------------------------------
 ::
 
@@ -167,10 +167,10 @@ Màn hình kết quả chương trình:
 Test case 1
 
 ::result
-Enter the number: 10
+Enter the number: 10</br>
 
-OUTPUT:
-result is 30
+OUTPUT:</br>
+result is 30</br>
 --------------------------------
 ::
 
@@ -201,10 +201,10 @@ Màn hình kết quả chương trình:
 Test case 1
 
 ::result
-Enter the number: 12345
+Enter the number: 12345</br>
 
-OUTPUT:
-Sum of digits in 0 is 15
+OUTPUT:</br>
+Sum of digits in 0 is 15</br>
 
 --------------------------------
 ::

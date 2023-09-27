@@ -33,11 +33,9 @@ Một kiểu dữ liệu chỉ định kích thước và loại giá trị. Có
 
 ## Biến trong C là gì?
 
-`Biến` là nơi để lưu trữ tạm thời các giá trị với một kiểu dữ liệu xác định.
+`Biến` nơi lưu trữ tạm thời dữ liệu với một kiểu dữ liệu xác định. Biến có thể thay đổi giá trị trong quá trình thực thi chương trình, do đó được gọi là `biến`.
 
-Chúng ta gọi nó là `biến` vì nó có thể thay đổi trong quá trình thực hiện chương trình.
-
-Các bạn sẽ thấy chương trình của chúng ta sẽ chứa rất nhiều biến. Trong ngôn ngữ C, một biến sẽ có 3 thành phần:
+Trong ngôn ngữ C, một biến sẽ có 3 thành phần:
 
 - Kiểu dữ liệu: chính là phần bên trên chúng ta đã tìm hiểu qua.
 - Tên gọi: tên gọi này sẽ giúp ta làm việc với biến đó trong chương trình, ví dụ gọi biến đó ra, tính toán biến đó...
@@ -49,16 +47,17 @@ Các bạn sẽ thấy chương trình của chúng ta sẽ chứa rất nhiều
 
 Trong ngôn ngữ C, mỗi biến có một tên gọi, nhưng không phải muốn đặt tên thế nào tùy theo ý thích của bạn cũng được. Dưới đây là một số nguyên tắc khi đặt tên cho biến:
 
-- Chúng ta chỉ có thể đặt tên nó bằng những chữ cái viết thường hay viết hoa và những con số.
-- Tên của biến phải bắt đầu bằng một chữ cái. Chúng ta không được sử dụng khoảng trắng `(space)`, thay vào đó chúng ta có thể sử dụng kí tự `_` `(underscore)`- đó là kí tự duy nhất không thuộc dạng chữ cái hay số được phép sử dụng.
+- Tên biến chỉ có thể chứa chữ cái (viết hoa hoặc viết thường), chữ số và ký tự _ (gạch dưới).
+- Tên biến phải bắt đầu bằng một chữ cái.
+- Không được sử dụng khoảng trắng hoặc các ký tự đặc biệt như !, @, #, ...
 - Bạn cũng không được phép sử dụng chữ cái mang dấu trọng âm. (ví dụ é è ê...).
 - Tên biến không được trùng với những từ khóa trong C.
 - Và một điều hết sức quan trọng mà bạn cần phải nắm đó là trong ngôn ngữ C có sự khác nhau giữa chữ thường và chữ in hoa: `chieu_rong`, `CHIEU_RONG` và `CHieu_RoNg` là tên của 3 biến khác nhau trong ngôn ngữ C.
 
 ### Vậy đặt tên biến như thế nào cho đúng?
 
-- Hãy sử dụng tiếng anh để đặt tên cho biến.
-- Tên của biến phải bắt đầu bằng một chữ cái viết thường, nếu tên biến có 2 từ trở lên, hãy viết hoa chữ cái đầu tiên của từ tiếp theo. Ví dụ: `phoneNumber`...
+- Hãy sử dụng tiếng anh để đặt tên cho biến sẽ làm cho code dễ đọc và hiểu.
+- Tên của biến phải bắt đầu bằng một chữ cái viết thường, nếu tên biến có 2 từ trở lên, hãy viết hoa chữ cái đầu tiên của từ tiếp theo hoặc sử dụng . Ví dụ: `phoneNumber` hoặc `phone_number`...
 - Tên biến cần tường minh, có nghĩa là tên biến phải thể hiện được ý nghĩa rõ ràng đúng với mục đích nó được khai báo. Ví dụ: `name` thay vì chỉ `n`, `age` thay vì chỉ `a`...
 
 ## Khai báo và khởi tạo biến trong C

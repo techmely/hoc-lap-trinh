@@ -13,13 +13,13 @@ position: 3
 
 Chúng ta đã được xem qua cách hiển thị một đoạn văn bản với hàm `printf()` ở những bài trước.
 
-Trong ngôn ngữ lập trình C, hàm `printf()` được sử dụng để in ra các ký tự, chuỗi, các giá trị số nguyên, số thực hay số thập phân, bát phân... và hiển thị lên màn hình console.
+Trong ngôn ngữ lập trình C, chúng ta sử dụng hàm `printf()` để xuất dữ liệu, bao gồm ký tự, chuỗi văn bản, giá trị số nguyên, số thực, hệ cơ số khác nhau và nhiều loại dữ liệu khác ra màn hình.
 
 Hôm nay chúng ta sẽ cùng tìm hiểu kỹ hơn về hàm `printf()`.
 
 ## Hiển thị chuỗi output trong output
 
-In ra một chuỗi rất đơn giản trong C, bạn chỉ cần truyền chuỗi văn bản vào hàm `printf()` như ví dụ sau:
+Để xuất một chuỗi văn bản trong C, bạn chỉ cần truyền chuỗi văn bản vào hàm `printf()` như ví dụ sau:
 
 ```cpp
 #include <stdio.h>
@@ -125,13 +125,13 @@ int main() {
 
     float a = 2.5;
 
-    printf ("a = %.2f\n", a); // hiển thị 2 số sau dấu phẩy
-    printf ("a = %0.3f", a);  // hiển thị 3 số sau dấu phẩy
+    printf ("a = %.2f\n", a); // hiển thị 2 số sau dấu thập phân
+    printf ("a = %0.3f", a);  // hiển thị 3 số sau dấu thập phân
 }
 ```
 
 ::result
-a = 2.50
+a = 2.50</br>
 a = 2.500
 ::
 

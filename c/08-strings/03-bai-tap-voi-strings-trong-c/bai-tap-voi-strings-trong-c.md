@@ -40,11 +40,11 @@ Màn hình kết quả chương trình:
 Test case 1
 
 ::result
-Enter string: Hello Kungfutech
-Enter character: e
+Enter string: Hello Kungfutech</br>
+Enter character: e</br>
 
-OUTPUT:
-Frequency of e is 2
+OUTPUT:</br>
+Frequency of e is 2</br>
 --------------------------------
 ::
 
@@ -75,14 +75,14 @@ Màn hình kết quả chương trình:
 Test case 1
 
 ::result
-1. Convert to binary
-2. Convert to octal
-3. Convert to hexa
-Enter your number: 112427
-Enter your choice: 1
+1. Convert to binary</br>
+2. Convert to octal</br>
+3. Convert to hexa</br>
+Enter your number: 112427</br>
+Enter your choice: 1</br>
 
-OUTPUT:
-Binary is 11011011100101011
+OUTPUT:</br>
+Binary is 11011011100101011</br>
 --------------------------------
 ::
 
@@ -91,27 +91,27 @@ Binary is 11011011100101011
 Test case 2
 
 ::result
-1. Convert to binary
-2. Convert to octal
-3. Convert to hexa
-Enter your number: 10856
-Enter your choice: 2
+1. Convert to binary</br>
+2. Convert to octal</br>
+3. Convert to hexa</br>
+Enter your number: 10856</br>
+Enter your choice: 2</br>
 
-OUTPUT:
-Octal is 25150
+OUTPUT:</br>
+Octal is 25150</br>
 --------------------------------
 ::
 
 Test case 3
 
 ::result
-1. Convert to binary
-2. Convert to octal
-3. Convert to hexa
-Enter your number: 265084
-Enter your choice: 3
+1. Convert to binary</br>
+2. Convert to octal</br>
+3. Convert to hexa</br>
+Enter your number: 265084</br>
+Enter your choice: 3</br>
 
-OUTPUT:
-Hexa is 40B7C
+OUTPUT:</br>
+Hexa is 40B7C</br>
 --------------------------------
 ::

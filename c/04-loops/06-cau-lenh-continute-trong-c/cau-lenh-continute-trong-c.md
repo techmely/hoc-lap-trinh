@@ -104,13 +104,13 @@ Khi nhập `n < 0` câu lệnh **`continue`** sẽ được thực thi, lúc nà
 
 
 ::result
-Enter a n1: 1
-Enter a n2: 2
-Enter a n3: -3
-Enter a n4: 4
-Enter a n5: -5
+Enter a n1: 1</br>
+Enter a n2: 2</br>
+Enter a n3: -3</br>
+Enter a n4: 4</br>
+Enter a n5: -5</br>
 
-Sum = 7
+Sum = 7</br>
 ::
 
 Câu lệnh **`continue`** có thể được sử dụng với bất kỳ vòng lặp nào khác cũng như **`while`** hoặc **`do-while`** theo cách tương tự như nó được sử dụng với vòng lặp **`for`** ở trên.

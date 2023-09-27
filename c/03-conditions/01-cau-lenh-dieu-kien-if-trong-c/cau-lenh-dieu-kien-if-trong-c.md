@@ -50,15 +50,15 @@ Một biểu thức chứa toán tử logic trả về `0` hoặc `1` tùy thu�
 
 ### if statement
 
-- Nếu điều kiện trả về `true` thì các câu lệnh bên trong phần thân của `if` sẽ được thực thi.
-- Nếu điều kiện trả về `false` thì các câu lệnh bên trong phần thân của `if` sẽ được bỏ qua.
+- Câu lệnh điều kiện "if" trong ngôn ngữ lập trình C cho phép bạn kiểm tra một điều kiện nào đó và thực hiện các hành động khác nhau dựa trên kết quả của điều kiện đó. Hãy bắt đầu với cú pháp cơ bản:
 
 ```cpp
 if (condition) {
     // khối lệnh này được thực thi nếu condition = true
 }
 ```
-
+- `condition` là biểu thức logic bạn muốn kiểm tra.
+- Nếu `condition` là đúng, các câu lệnh bên trong khối lệnh { } sẽ được thực thi. Nếu `condition` là sai, các câu lệnh này sẽ được bỏ qua.
 > **Tại vị trí `condition`, chúng ta sẽ viết một điều kiện để kiểm tra sử dụng các toán tử quan hệ đã được hướng dẫn ở trên.**
 
 Đây là một ví dụ:
@@ -87,22 +87,22 @@ int main() {
 Khi bạn nhập một số âm:
 
 ::result
-Enter an integer: -5
-You entered -5.
-Done.
+Enter an integer: -5</br>
+You entered -5.</br>
+Done.</br>
 ::
 
 Khi bạn nhập một số dương:
 
 ::result
-Enter an integer: 5
-Done.
+Enter an integer: 5</br>
+Done.</br>
 ::
 
-### if-else statement
+- Trong ví dụ này, chúng ta kiểm tra nếu số bạn nhập vào nhỏ hơn 0, thì chúng ta sẽ thông báo rằng bạn đã nhập số đó (You entered -5). Ngay cả khi điều kiện không đúng, chương trình sẽ tiếp tục chạy và hiển thị thông báo "Done"
 
-- Nếu điều kiện trả về `true` thì các câu lệnh bên trong phần thân của `if` được thực thi và các câu lệnh bên trong phần thân của `else` bị bỏ qua.
-- Nếu điều kiện trả về `false` thì các câu lệnh bên trong phần thân của `if` bị bỏ qua và các câu lệnh trong `else` được thực thi.
+### if-else statement
+- Đôi khi, chúng ta cần thực hiện các hành động khác nếu điều kiện không đúng. Đó là lúc chúng ta sử dụng câu lệnh "else."
 
 ```cpp
 if (condition) {
@@ -111,6 +111,8 @@ if (condition) {
     // khối lệnh này được thực thi nếu condition = false
 }
 ```
+- Nếu `condition` trả về `true` thì các câu lệnh bên trong phần thân của `if` được thực thi và các câu lệnh bên trong phần thân của `else` bị bỏ qua.
+- Nếu `condition` trả về `false` thì các câu lệnh bên trong phần thân của `if` bị bỏ qua và các câu lệnh trong `else` được thực thi.
 
 Đây là một ví dụ:
 
@@ -137,15 +139,15 @@ int main() {
 Khi bạn nhập số tuổi thỏa mãn điều kiện lớn hơn hoặc bằng 18:
 
 ::result
-Enter your age: 22
-You are eligible for voting.
+Enter your age: 22</br>
+You are eligible for voting.</br>
 ::
 
 Khi bạn nhập số tuổi không thỏa mãn điều kiện lớn hơn hoặc bằng 18:
 
 ::result
-Enter your age: 14
-You are not eligible for voting.
+Enter your age: 14</br>
+You are not eligible for voting.</br>
 ::
 
 **Chú ý:**  
@@ -211,10 +213,10 @@ int main() {
 ```
 
 ::result
-Input the value of var1: 9
-Input the value of var2: 8
+Input the value of var1: 9</br>
+Input the value of var2: 8</br>
 
-var1 is greater than var2.
+var1 is greater than var2.</br>
 ::
 
 ## Nested if-else statement
@@ -269,11 +271,11 @@ int main() {
 ```
 
 ::result
-Input the value of var1: 5
-Input the value of var2: 2
+Input the value of var1: 5</br>
+Input the value of var2: 2</br>
 
-var1 is not equal to var2.
-var1 is greater than var2.
+var1 is not equal to var2.</br>
+var1 is greater than var2.</br>
 ::
 
 ## if-else statement with many conditions
@@ -307,11 +309,11 @@ int main() {
 ```
 
 ::result
-Input the value of grade: 7.5
-Well done.
+Input the value of grade: 7.5</br>
+Well done.</br>
 ::
 
 ::result
-Input the value of grade: -1
-Invalid grade.
+Input the value of grade: -1</br>
+Invalid grade.</br>
 ::

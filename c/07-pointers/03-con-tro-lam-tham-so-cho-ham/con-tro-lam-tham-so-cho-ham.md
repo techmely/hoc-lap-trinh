@@ -45,8 +45,8 @@ void swap(int* n1, int* n2)
 ```
 
 ::result
-num1 = 2
-num2 = 1
+num1 = 2</br>
+num2 = 1</br>
 ::
 
 Địa chỉ của `num1` và `num2` được truyền vào hàm `swap()` bằng cách sử dụng cú pháp:
@@ -96,8 +96,8 @@ int main()
 Kết quả:
 
 ::result
-7
-9
+7</br>
+9</br>
 ::
 
 Trong chương trình này, con trỏ `pa` nhận địa chỉ của biến `a`, con trỏ `pb` nhận giá trị của biến `b`.

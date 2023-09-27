@@ -15,12 +15,19 @@ Vòng lặp **`for`** được sử dụng để duyệt qua các phần tử tr
 
 ## Cấu trúc vòng lặp for trong C
 
+Cú pháp cơ bản của vòng lặp "for" trong C như sau:
+
 ```cpp
 for (khởi tạo giá trị biến lặp; điều kiện lặp; cập nhật biến lặp) {
 
    // statements inside the body of loop
 }
 ```
+
+- `khởi tạo giá trị biến lặp`: Điều này thường là một biến dùng để kiểm soát số lần lặp. Bạn có thể khởi tạo giá trị ban đầu của biến ở đây.
+- `điều kiện lặp`: Điều kiện được kiểm tra trước mỗi lần lặp. Nếu điều kiện trả về false, vòng lặp sẽ kết thúc.
+- `cập nhật biến lặp`: Bước này thường là để thay đổi giá trị của biến lặp sau mỗi lần lặp.
+
 
 Ví dụ:
 
@@ -35,10 +42,14 @@ for (int i = 0; i <= 10; i++) {
 
 ![Vòng lặp hoạt động như thế nào](https://user-images.githubusercontent.com/29374426/183098010-5ac9e1d3-66cb-4a83-8a3e-103365f3d933.png)
 
-- Bước 1: Khởi tạo giá trị biến lặp, chỉ thực hiện 1 lần duy nhất.
-- Bước 2: Kiểm tra điều kiện lặp, nếu điều kiện bằng **`false`** thì kết thúc vòng lặp.
-- Bước 3: Tuy nhiên, nếu biểu thức kiểm tra bằng **`true`**, các câu lệnh bên trong phần thân của vòng lặp **`for`** được thực thi.
-- Bước 4: Cập nhật giá trị biến lặp và quay trở lại bước 2 để kiểm tra.
+- Bước 1: Khởi tạo giá trị biến lặp.
+    Bước này chỉ diễn ra một lần duy nhất, ở đầu vòng lặp. Nó được sử dụng để khởi tạo biến lặp và thường được thực hiện một lần duy nhất.
+- Bước 2: Kiểm tra điều kiện lặp.
+    Trước mỗi lần lặp, điều kiện lặp được kiểm tra. Nếu điều kiện trả về **`false`**, vòng lặp kết thúc. Nếu trả về **`true`**, vòng lặp tiếp tục.
+- Bước 3: Thực Hiện Câu Lệnh Trong Vòng Lặp.
+    Tuy nhiên, nếu biểu thức kiểm tra bằng **`true`**, các câu lệnh bên trong phần thân của vòng lặp **`for`** được thực thi.
+- Bước 4: Cập Nhật Biến Lặp.
+    Cập nhật giá trị biến lặp và quay trở lại bước 2 để kiểm tra.
 
 Quá trình này diễn ra cho đến khi biểu thức điều kiện (bước 2) kiểm tra là **`false`**. Khi biểu thức điều kiện kiểm tra là **`false`**, vòng lặp chấm dứt.
 
@@ -66,17 +77,17 @@ int main() {
 ```
 
 ::result
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-End loop!
+1</br>
+2</br>
+3</br>
+4</br>
+5</br>
+6</br>
+7</br>
+8</br>
+9</br>
+10</br>
+End loop!</br>
 ::
 
 Giải thích:
@@ -108,12 +119,12 @@ int main() {
 ```
 
 ::result
-2
-4
-6
-8
-10
-End loop!
+2</br>
+4</br>
+6</br>
+8</br>
+10</br>
+End loop!</br>
 ::
 
 Chúng ta còn có một cách khác là sửa lại vòng lặp như sau:
@@ -151,6 +162,6 @@ int main() {
 ```
 
 ::result
-sum = 55
-End loop!
+sum = 55</br>
+End loop!</br>
 ::

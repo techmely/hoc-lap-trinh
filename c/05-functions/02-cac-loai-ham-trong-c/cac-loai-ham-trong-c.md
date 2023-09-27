@@ -70,8 +70,8 @@ int main() {
 ```
 
 ::result
-Enter a number: -7
-Absolute value = 7
+Enter a number: -7</br>
+Absolute value = 7</br>
 ::
 
 ## Định nghĩa hàm trong C
@@ -113,9 +113,9 @@ int addition(int a, int b){ // Định nghĩa hàm (Function definition)
 ```
 
 ::result
-Enter x: 3
-Enter y: 4
-x + y = 7
+Enter x: 3</br>
+Enter y: 4</br>
+x + y = 7</br>
 ::
 
 ### Function prototype

@@ -59,8 +59,8 @@ int main()
 ```
 
 ::result
-Enter name: Hello Kungfutech
-Name: Hello Kungfutech
+Enter name: Hello Kungfutech</br>
+Name: Hello Kungfutech</br>
 ::
 
 > Mặc dù hai hàm `gets()` và `puts()` là các hàm xử lí chuỗi nhưng chúng đều được khai báo trong thư viện `<stdio.h>`

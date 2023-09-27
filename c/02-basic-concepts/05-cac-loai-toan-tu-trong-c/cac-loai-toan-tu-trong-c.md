@@ -253,8 +253,8 @@ int main() {
 ```
 
 ::result
-i = 10
-j = 10
+i = 10</br>
+j = 10</br>
 ::
 
 #### Hậu tố (Postfix)
@@ -277,8 +277,8 @@ int main() {
 ```
 
 ::result
-i = 10
-j = 9
+i = 10</br>
+j = 9</br>
 ::
 
 ## Assignment Operators

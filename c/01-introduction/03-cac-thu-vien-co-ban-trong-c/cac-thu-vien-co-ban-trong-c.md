@@ -13,11 +13,11 @@ position: 3
 
 Trong bài này, chúng ta sẽ tìm hiểu về các thư viện tiêu chuẩn trong C.
 
-Hiểu đơn giản, thư viện trong C là nơi định nghĩa - viết sẵn các hàm chức năng cơ bản của ngôn ngữ C.
+Một cách đơn giản, thư viện trong C là nơi chứa các định nghĩa và source code viết sẵn của các hàm chức năng cơ bản của ngôn ngữ C.
 
 Như ở ví dụ trước (Program Structure) khi muốn sử dụng hàm `printf()`, chúng ta cần include thư viện `<stdio.h>` vì hàm `printf()` được định nghĩa trong thư viện này - chức năng của nó làm gì.
 
-_Thực tế, `stdio.h` là một file code, các file code được lưu với đuôi `.h` trong C được xem là những file thư viện._
+_Thực tế, `stdio.h` là một tệp mã nguồn (file code), các tệp mã nguồn có đuôi tệp là `.h` trong C được xem là những file thư viện._
 
 ```cpp
 #include <stdio.h>
@@ -45,4 +45,4 @@ Nếu bạn cố gắng sử dụng hàm `printf()` mà không include thư vi�
 | `<string.h>` | String handling functions             |
 | `<time.h>`   | Date time functions                   |
 
-Các bạn chỉ cần xem và tìm hiểu qua cho biết, trong chương trình học cơ bản này chúng ta cũng sẽ không đi tìm hiểu hết tất cả những thư viện này đâu.
+Bạn chỉ cần xem qua và hiểu về chúng một chút, trong khóa học cơ bản này, chúng ta sẽ không đi sâu vào tất cả các thư viện này.

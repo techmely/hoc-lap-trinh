@@ -38,10 +38,10 @@ int main() {
 ```
 
 ::result
-Enter n: 101
+Enter n: 101</br>
 
-OUTPUT:
-5
+OUTPUT:</br>
+5</br>
 ::
 
 ## Bài 2
@@ -67,11 +67,11 @@ int main() {
 ```
 
 ::result
-Enter a: 7
-Enter b: 20
+Enter a: 7</br>
+Enter b: 20</br>
 
-OUTPUT:
-11 13 17 19
+OUTPUT:</br>
+11 13 17 19</br>
 ::
 
 ## Bài 3
@@ -101,17 +101,17 @@ int main() {
 **Test case 1**:
 
 ::result
-Enter x : 14341
+Enter x : 14341</br>
 
-OUTPUT:
-true
+OUTPUT:</br>
+true</br>
 ::
 
 **Test case 2**:
 
 ::result
-Enter x : 123
+Enter x : 123</br>
 
-OUTPUT:
-false
+OUTPUT:</br>
+false</br>
 ::

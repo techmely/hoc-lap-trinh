@@ -36,11 +36,11 @@ int main() {
 ```
 
 ::result
-Enter the 10 elements of array: 3 5 6 1 13 54 34 8 22 11
+Enter the 10 elements of array: 3 5 6 1 13 54 34 8 22 11</br>
 
-OUTPUT:
-Unsorted array: 3, 5, 6, 1, 13, 54, 34, 8, 22, 11
-Sorted array: 1, 3, 5, 6, 8, 11 , 13, 22, 34, 54
+OUTPUT:</br>
+Unsorted array: 3, 5, 6, 1, 13, 54, 34, 8, 22, 11</br>
+Sorted array: 1, 3, 5, 6, 8, 11 , 13, 22, 34, 54</br>
 --------------------------------
 ::
 
@@ -67,12 +67,12 @@ int main() {
 ```
 
 ::result
-Eter the number of elements of the array: 10
-Enter the 10 elements of array: 3 5 6 1 13 54 34 8 22 11
+Eter the number of elements of the array: 10</br>
+Enter the 10 elements of array: 3 5 6 1 13 54 34 8 22 11</br>
 
-OUTPUT:
-Unsorted array: 3, 5, 6, 1, 13, 54, 34, 8, 22, 11
-Sorted array: 1, 3, 5, 6, 8, 11 , 13, 22, 34, 54
+OUTPUT:</br>
+Unsorted array: 3, 5, 6, 1, 13, 54, 34, 8, 22, 11</br>
+Sorted array: 1, 3, 5, 6, 8, 11 , 13, 22, 34, 54</br>
 --------------------------------
 ::
 
@@ -103,21 +103,21 @@ Màn hình chương trình:
 Test case 1
 
 ::result
-Enter value you want to search: 8
+Enter value you want to search: 8</br>
 
-OUTPUT:
-Display array: 1, 4, 6, 2, 20, 8, 36, 22, 89, 77
-Found 8 at index 5 in array
+OUTPUT:</br>
+Display array: 1, 4, 6, 2, 20, 8, 36, 22, 89, 77</br>
+Found 8 at index 5 in array</br>
 --------------------------------
 ::
 
 Test case 2
 
 ::result
-Enter value you want to search: 5
+Enter value you want to search: 5</br></br>
 
-OUTPUT:
-Display array: 1, 4, 6, 2, 20, 8, 36, 22, 89, 77
-Not found 5 in array
+OUTPUT:</br></br>
+Display array: 1, 4, 6, 2, 20, 8, 36, 22, 89, 77</br></br>
+Not found 5 in array</br></br>
 --------------------------------
 ::
