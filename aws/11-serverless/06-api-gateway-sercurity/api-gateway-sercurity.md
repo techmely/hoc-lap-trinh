@@ -1,7 +1,6 @@
 ---
 title: "API Gateway Sercurity là gì"
 description: "API Gateway đóng vai trò là cửa trước cho các ứng dụng để truy cập dữ liệu, logic nghiệp vụ hoặc chức năng từ các dịch vụ backend của bạn"
-  description: "Mang kiến thức AWS đến với mọi lập trình viên"
 chapter:
   name: "Serverless"
   slug: "chap-11-serverless"

@@ -1,7 +1,6 @@
 ---
 title: "Giới thiệu DynamoDB"
 description: "DynamoDB là môt dịch vụ quản lý NoSQL có khả năng đáp ứng hiệu suất cao và nhanh kèm theo khả năng mở rộng. Nếu bạn là một nhà phát triển, bạn có thể sử dụng DynamoDB để tạo ra một bảng có khả năng lưu trữ và truy xuất bất kỳ số lượng dữ liệu, mà vẫn có thể phục vụ cho bất kỳ mức độ request traffic."
-  description: "Mang kiến thức AWS đến với mọi lập trình viên"
 chapter:
   name: "Serverless"
   slug: "chap-11-serverless"

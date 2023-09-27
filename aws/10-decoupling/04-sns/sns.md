@@ -1,7 +1,6 @@
 ---
 title: "Giới thiệu SNS"
 description: "Amazon SNS là một dịch vụ cho phép bạn gửi tin nhắn (SMS), thông báo (notification) số lượng lớn tới các thiết bị đầu cuối hay các client thông qua một topic. Các thiết bị đầu cuối (hay client) có thể là một web server (HTTP/S), email, Amazon SQS hay AWS Lambda."
-  description: "Mang kiến thức AWS đến với mọi lập trình viên"
 chapter:
   name: "Decoupling trong AWS"
   slug: "chap-10-decoupling"
