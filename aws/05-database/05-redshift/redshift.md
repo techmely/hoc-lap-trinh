@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu Redshift"
 description: "Amazon Redshift là dịch vụ lưu trữ dữ liệu quy mô hàng petabyte nhanh và mạnh mẽ."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Database"
   slug: "chap-05-database"

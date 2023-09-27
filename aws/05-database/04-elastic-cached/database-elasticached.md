@@ -1,13 +1,6 @@
 ---
 title: "Elasticache là gì"
 description: "Elasticache là dịch vụ bộ nhớ đệm được quản lý dành cho Redis và Memcached"
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Database"
   slug: "chap-05-database"

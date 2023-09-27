@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu NAT trong AWS"
 description: "NAT là gì? NAT (Network Address Translation) kà một kỹ thuật cho phép chuyển đổi từ một địa chỉ IP này thành một địa chỉ IP khác."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Virtual Private Cloud"
   slug: "chap-04-vpc"

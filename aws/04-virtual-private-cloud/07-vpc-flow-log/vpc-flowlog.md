@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu VPC FLow logs"
 description: "VPC FLow logs là tính năng giúp chúng ta có thể nắm bắt được thông tin IP traffic đến và đi Network Interfaces trong VPC."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Virtual Private Cloud"
   slug: "chap-04-vpc"

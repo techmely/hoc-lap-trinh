@@ -1,13 +1,6 @@
 ---
 title: "DynamoDB nâng cao"
 description: "Amazon DynamoDB Accelerator (DAX) là bộ nhớ đệm trong bộ nhớ, có khả năng sử dụng cao, được quản lý toàn phần dành cho Amazon DynamoDB. DAX cải thiện hiệu năng lên tới 10 lần—từ mili giây xuống micro giây—ngay cả khi có hàng triệu yêu cầu mỗi giây."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
   description: "Mang kiến thức AWS đến với mọi lập trình viên"
 chapter:
   name: "Serverless"

@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu VPC Peering, VPC Endpoints"
 description: "VPC peering là cách liên kết giữa 2 VPC với nhau và không phát sinh thêm chi phí. Khi 2 VPC được peering, chúng có thể giao tiếp với nhau bằng private IP."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Virtual Private Cloud"
   slug: "chap-04-vpc"

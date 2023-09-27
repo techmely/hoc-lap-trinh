@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu Kinesis"
 description: "Amazon Kinesis là dịch vụ giúp bạn xây dựng được một ứng dụng có khả năng phân tích và xử lý luồng dữ liệu (stream data) theo thời gian thực (realtime). Amazon Kinesis có khả năng thu nhận, lưu trữ đến hàng terabytes dữ liệu trong một giờ."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
   description: "Mang kiến thức AWS đến với mọi lập trình viên"
 chapter:
   name: "Decoupling trong AWS"

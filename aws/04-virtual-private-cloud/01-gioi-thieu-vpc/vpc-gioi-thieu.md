@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu về VPC"
 description: "VPC (Virtual Private Cloud) giúp bạn tạo ra một môi trường riêng biệt, nơi mà bạn có thể triển khai hệ thống trong một hệ thống mạng ảo riêng mà bạn định nghĩa."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Virtual Private Cloud"
   slug: "chap-04-vpc"

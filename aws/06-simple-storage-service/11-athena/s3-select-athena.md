@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu S3 Select, Athena"
 description: "S3 Select và Athena là hai dịch vụ giúp người dùng có thể truy vấn dữ liệu được lưu trữ trên Amazon S3. Cả Amazon S3 Select và Amazon Athena đều cho phép thực hiện các truy vấn kiểu SQL."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Simple Storage Serivce"
   slug: "chap-06-s3"

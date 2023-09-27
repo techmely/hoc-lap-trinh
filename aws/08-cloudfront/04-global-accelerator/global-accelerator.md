@@ -1,13 +1,6 @@
 ---
 title: "AWS Global Accelerator là gì"
 description: "AWS Global Accelerator là dịch vụ cải thiện hiệu suất của ứng dụng của bạn bằng cách tận dụng mạng nội bộ toàn cầu của AWS."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Cloudfront, Accelerator"
   slug: "chap-08-cloud-front"

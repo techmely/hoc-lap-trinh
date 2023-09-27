@@ -1,13 +1,6 @@
 ---
 title: "DNS là gì"
 description: "DNS là viết tắt của: Domain Name System là hệ thống phân giải tên miền được phát minh vào năm 1984. Hiểu một cách ngắn gọn nhất, DNS cơ bản là một hệ thống chuyển đổi các tên miền website mà chúng ta đang sử dụng, ở dạng www.domain.com sang một địa chỉ IP dạng số tương ứng với tên miền đó và ngược lại."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Route 53"
   slug: "chap-07-route-53"

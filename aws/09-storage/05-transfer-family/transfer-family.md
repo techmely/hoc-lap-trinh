@@ -1,13 +1,6 @@
 ---
 title: "AWS Transfer Family là gì"
 description: "AWS Transfer Family là gì? AWS Transfer Family là dịch vụ quản lý truyền file đến và ra ngoài Amazon S3 hoặc EFS sử dụng giao thức FTP."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Mở rộng storage"
   slug: "chap-09-cloud-storage"

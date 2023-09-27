@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu S3 Analytics, Performance"
 description: "Storage Class Analysis giúp bạn phân tích lượng truy cập, dung lượng lưu trữ... trong một khoảng thời gian nhất định. Từ đó giúp người dùng xác định được khi nào nên chuyển đổi Objects từ Standard => Standard_IA"
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Simple Storage Serivce"
   slug: "chap-06-s3"

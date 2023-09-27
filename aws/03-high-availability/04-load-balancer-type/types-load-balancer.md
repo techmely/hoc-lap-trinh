@@ -1,13 +1,6 @@
 ---
 title: "Các loại Load Balancer trong AWS"
 description: "Application Load Balancer là giải pháp này hoạt động ở tầng ừng dụng (layer 7), phù hợp nhất để cân bằng lưu lượng HTTP và HTTPS. Gateway Load Balancer cho phép bạn triển khai, mở rộng, quản lý các ứng dụng 3th party network (Firewall...)"
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "High Availability"
   slug: "chap-03-ha"
@@ -20,7 +13,7 @@ position: 10
 - Classic Load Balancer - 2009 - CLB
 - Application Load Balancer - 2016 - ALB
 - Network Load Balancer - 2017 - NLB
-- Getway Load Balancer - 2020 - GLB Chúng ta nên sử dụng các phiên bản mới nhất để được hỗ trợ nhiều tính năng nhất có thể. Classic Load Balancer hiện tại không còn được sử dụng nhiều.
+- Gateway Load Balancer - 2020 - GLB Chúng ta nên sử dụng các phiên bản mới nhất để được hỗ trợ nhiều tính năng nhất có thể. Classic Load Balancer hiện tại không còn được sử dụng nhiều.
 
 ## Application Load Balancer trong AWS
 
@@ -54,9 +47,9 @@ position: 10
 
 ## Sticky Session trong load balancer
 
-![Sticky Session trong aws](https://user-images.githubusercontent.com/29729545/163432991-ae56d5dd-acf1-483a-a855-95cd36ad5657.png) Sticky Session là một tính năng trong một hệ thống cân bằng tải cho website. Khi 1 user gửi request lần đầu tiên đến được Load Banlancer chỉ định 1 server xử lý request đó, đến lần request sau, cũng sẽ vẫn là server đó xử lý request. Tính năng này chủ yếu được sử dụng để đảm bảo một in-proc session nào đó sẽ không bị mất bởi các yêu cầu cho session được route đến các máy chủ khác nhau.
+![Sticky Session trong aws](https://user-images.githubusercontent.com/29729545/163432991-ae56d5dd-acf1-483a-a855-95cd36ad5657.png) Sticky Session là một tính năng trong một hệ thống cân bằng tải cho website. Khi 1 user gửi request lần đầu tiên đến được Load Balancer chỉ định 1 server xử lý request đó, đến lần request sau, cũng sẽ vẫn là server đó xử lý request. Tính năng này chủ yếu được sử dụng để đảm bảo một in-proc session nào đó sẽ không bị mất bởi các yêu cầu cho session được route đến các máy chủ khác nhau.
 
-- Option này chỉ hoạt động với Classic Load Banlancers & Application Load Balancers
+- Option này chỉ hoạt động với Classic Load Balancer & Application Load Balancers
 - Để tính năng này hoạt động, Client phải hỗ trợ cookies
 
 ## Cross-Zone Load Balancing
@@ -67,6 +60,7 @@ position: 10
 - Khi disable: một bên là 8.33% còn 1 bên nhận 12.5% traffic
 
 ::alert{type="infor"}
+
 <strong> Application Load Balancer </strong>
 
   <ul>

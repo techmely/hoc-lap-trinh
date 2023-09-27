@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu CloudFront Signed URL/Signed Cookies"
 description: "CloudFront Signed URL/Signed Cookies là gì? Trên thực tế có nhiều nội dung của website của bạn chỉ giới hạn cho những người dùng nhất định (người dùng đã trả phí). Chúng ta có thể dùng Cloudfront Signed URL/Cookie để dễ dàng quản lý truy cập đến nội dung của riêng mình."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Cloudfront, Accelerator"
   slug: "chap-08-cloud-front"

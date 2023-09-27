@@ -1,13 +1,6 @@
 ---
 title: "Routing Policy trong Route 53 (Phần 2)"
 description: "Mỗi khi tạo một record mới, chúng ta cần chọn một Routing Policy. Đây là cách Route 53 phản hồi DNS queries. Routing Policies Simple định tuyến traffic tới một single resource."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Route 53"
   slug: "chap-07-route-53"

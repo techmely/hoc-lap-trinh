@@ -1,13 +1,6 @@
 ---
 title: "Bảo mật trong VPC"
 description: "Amazon cung cấp 2 features để bảo mật(network security) và theo dõi(monitoring). NACL giống như 1 firewall để control traffic vào/ra subnet"
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Virtual Private Cloud"
   slug: "chap-04-vpc"

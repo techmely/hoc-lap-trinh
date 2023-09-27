@@ -1,13 +1,6 @@
 ---
 title: "Amazon FSx là gì"
 description: "Amazon FSx là dịch vụ cho phép bạn có thể launch hệ thống files với hiệu suất cao. FSx được xây dựng trên công nghệ máy tính, network, phần cứng mới nhất hiện nay đem lại hiệu suất cao."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Mở rộng storage"
   slug: "chap-09-cloud-storage"

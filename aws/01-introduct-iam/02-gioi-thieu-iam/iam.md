@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu về IAM và CLI"
 description: "AWS IAM (Identify and Access Management) là công cụ để kiểm soát quyền truy cập của cá nhân và nhóm đến tài nguyên AWS của bạn một cách an toàn."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Giới thiệu AWS"
   slug: "chap-01-introduction"
@@ -30,7 +23,7 @@ AWS IAM thiết kế để quản lý users, groups, roles, policies để quả
 
 ## AWS root user
 
-Khi tạo tài khoản AWS lần đầu tiên, thì đó cũng là root user. Khi dùng email và mật khẩu được gọi là "**root account credentials**"\
+Khi tạo tài khoản AWS lần đầu tiên, thì đó cũng là root user. Khi dùng email và mật khẩu được gọi là "**root account credentials**"
 Root account có quyền cao nhất bao gồm cả thông tin billing.
 
 AWS khuyên rằng nên hạn chế dùng root account hàng ngày, thay vì đó tạo các IAM user tùy thuộc vào vai trò (role) của nó
@@ -43,7 +36,7 @@ AWS khuyên rằng nên hạn chế dùng root account hàng ngày, thay vì đ�
 - **Password policy**: Định nghĩa chính sách về mật khẩu như: độ phức tạp, thời hạn...
 - **Multi-Factor Authentication (MFA)**: Thêm 1 lớp bảo vệ account, khi login sẽ yêu cầu nhập thêm chuỗi 6 ký tự. Thông thường MFA được bật lên cho root user để đảm bảo an toàn
 - **Group**: Một group là 1 collection của IAM users
-- **Role**: Đa số sẽ chỉ apply cho các service, định nghĩa những quyền truy cập đến resources nào của AWS. Bên cạnh đó có một phần về Swtich role chúng ta sẽ cùng tìm hiểu ở một phần khác. 
+- **Role**: Đa số sẽ chỉ apply cho các service, định nghĩa những quyền truy cập đến resources nào của AWS. Bên cạnh đó có một phần về Swtich role chúng ta sẽ cùng tìm hiểu ở một phần khác.
 - **Permission**: Định nghĩa một hoặc nhiều quyền với các services trong hệ thống.
 - **Policy**: Là JSON format, mỗi một policy có những tính năng và quyền hạn (permission) nhất định gắn với User, Group, Roles trong IAM.
 
@@ -54,7 +47,9 @@ AWS khuyên rằng nên hạn chế dùng root account hàng ngày, thay vì đ�
 ::alert{type="warning"}
 Nếu một user thuộc 2 Group và 2 Group đó có quyền đối nghịch nhau thì sẽ thế nào?
 ::
+
 > Nếu user được apply 2 quyền với cùng một service, thì sẽ lấy phép Giao giữa 2 quyền đó. Ví dụ User A inline policy là được quyền tắt EC2 (allow), nhưng user đó thuộc Group B không có quyền tắt EC2 (denied) -> Giao của 2 quyền này sẽ là Denied.
+
 ## AWS CLI là gì
 
 CLI là command line interface giúp người dùng có thể truy cập dịch vụ trông qua màn hình cmd. Chỉ với một công cụ để tải xuống và cấu hình, bạn có thể kiểm soát nhiều dịch vụ AWS bằng một dòng lệnh và tự động hóa chúng thông qua các tập lệnh.

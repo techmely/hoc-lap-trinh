@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu CloudWatch Events"
 description: "CloudWatch Events cung cấp các event để mô tả những thay đổi resource trên AWS. Bằng cách sử dụng những rules, bạn có thể định nghĩa những target mà khi một event được gọi tới. EventBridge là giải pháp thay thế cho CloudWatch Events"
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Monitoring & Audit"
   slug: "chap-12-monitoring"

@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu về Bastion hosts"
 description: "Bastion hosts là cách để chúng ta có thể truy cập vào 1 instance trong private subnet"
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Virtual Private Cloud"
   slug: "chap-04-vpc"

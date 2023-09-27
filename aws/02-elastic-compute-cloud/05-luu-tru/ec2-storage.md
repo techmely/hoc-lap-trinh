@@ -1,13 +1,6 @@
 ---
 title: "Lưu trữ trong EC2"
 description: "EBS (Elastic Block Store) là dịch vụ lưu trữ dưới dạng block của AWS. Một EBS có thể attach vào duy nhất 1 EC2 trong cùng AZ. Bạn có thể hiểu EBS sẽ giống như 1 USB hay 1 ổ cứng ngoài."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Elastic Compute Cloud"
   slug: "chap-02-ec2"

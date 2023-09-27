@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu Transit Gateway"
 description: "Transit Gateway giống như một trung tâm chuyển tiếp các gói tin dùng trong kết nối VPCs với On-premises network thông qua một central hub."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Virtual Private Cloud"
   slug: "chap-04-vpc"

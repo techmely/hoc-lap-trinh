@@ -1,13 +1,6 @@
 ---
 title: "Chi phí sử dụng EC2"
 description: "Tùy theo cấu hình EC2 mình chọn, AWS sẽ tính tiền dựa trên những lựa chọn của mình. Khi bạn chạy những ứng dụng lâu bền, AWS cung cấp reserved instance. Bạn có thể trả trước tiền (1 phần, hoặc trả tất), hoặc commit sử dụng lâu dài. Khi đó AWS sẽ discount giá"
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Elastic Compute Cloud"
   slug: "chap-02-ec2"
@@ -25,27 +18,29 @@ position: 4
 - Reserved instances
 - Dedicated hosts
 
-### 1. On-demand instance là gì
+### On-demand instance là gì
 
 On-demand instance là các tính tiền dễ hiểu nhất "dùng bao nhiêu trả tiền bấy nhiêu" . Tùy theo cấu hình EC2 mình chọn, AWS sẽ tính tiền dựa trên những lựa chọn của mình
 
 - Tính tiền theo thời gian sử dụng thực tế (Chỉ tính tiền khi state running)
 - Option đắt tiền nhất
 
-### 2. Spot instances là gì
+### Spot instances là gì
+
 AWS có rất nhiều tài nguyên dư thừa, họ một tối ưu hoá phần hạ tầng chưa dùng đến bằng Spot Instance. Bạn có thể hiểu là bán ghế trống trên máy bay hay ô tô.
 Bạn sẽ bid (đấu thầu) giá **max_price** mà mình muốn trả, Spot instance sẽ có **current_price** và current_price này sẽ thay đổi theo thời gian <br /> AWS sẽ thống báo trước 2 phút và lấy lại Spot instance của bạn khi **max_price** < **current_price**
 
 - Use-case: dùng cho những ứng dụng flexible, có thể bị interrupted.
 
-### 2. Spot fleet là gì
+### Spot fleet là gì
+
 - Spot Fleets là tập hợp các Spot Instances + On-Demand Instances
 
-### 3. Reserved instances là gì
+### Reserved instances là gì
 
 Khi bạn chạy những ứng dụng lâu bền, AWS cung cấp reserved instance. Bạn có thể trả trước tiền (1 phần, hoặc trả tất), hoặc commit sử dụng lâu dài. Khi đó AWS sẽ discount giá
 
-### 4. Dedicated hosts là gì
+### Dedicated hosts là gì
 
 Đa phần những EC2 chúng ta sử dụng đều được share phần cứng giữa nhiều instance. Dedicated hosts là thuê luôn phần cứng của AWS, phần cứng đó sẽ được AWS cung cấp chỉ cho bạn sử dụng. Có một số trường hợp đặc thù bạn cần cài những software có yêu cầu không được share phần cứng giữa các tenant khác nhau.
 

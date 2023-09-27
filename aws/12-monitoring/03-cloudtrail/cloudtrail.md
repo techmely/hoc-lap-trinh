@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu CloudTrail"
 description: "AWS CloudTrail là một dịch vụ cho phép thực hiện việc quản lý,  kiểm tra vận hành và đánh giá rủi ro cho tài khoản AWS của bạn. Với CloudTrail, bạn có thể ghi nhật ký, giám sát liên tục và duy trì hoạt động của tài khoản có liên quan đến các hoạt động diễn ra trên cơ sở hạ tầng AWS của bạn."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Monitoring & Audit"
   slug: "chap-12-monitoring"

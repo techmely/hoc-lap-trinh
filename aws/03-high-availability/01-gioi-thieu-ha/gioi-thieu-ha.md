@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu về High Availability và Scalability"
 description: "High availability có nghĩa “Độ sẵn sàng cao”. Tức là máy chủ luôn trong tình trạng hoạt động tốt và có tĩnh sẵn sàng cao"
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "High Availability"
   slug: "chap-03-ha"

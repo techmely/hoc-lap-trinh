@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu Amazon RDS"
 description: "Relational Database Service là dịch vụ quản lý Database sử dụng SQL"
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Database"
   slug: "chap-05-database"

@@ -2,13 +2,6 @@
 title: "Placement Group trong EC2"
 description: "Placement group xác định cách các instance được đặt trên phần cứng cơ bản. Đây là cách để chúng ta yêu cầu cầu phần cứng được đặt ở đâu. Chúng ta sẽ cùng tìm hiểu các loại placement group.
 "
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Elastic Compute Cloud"
   slug: "chap-02-ec2"
@@ -34,12 +27,12 @@ Placement group xác định cách các instance được đặt trên phần c�
 - Cons:
   - Giới hạn 7 instance/mỗi AZ/mỗi placement group
 - Use case:
-  - Dùng cho các application cần high avaibility
+  - Dùng cho các application cần high availability
   - Các instance chạy độc lập với nhau
 
 ## Partition Placement Group là gì
 
-Đây là kiểu kết hợp giữa Spread và Clusted
+Đây là kiểu kết hợp giữa Spread và Clustered
 
 **Phân biệt bằng hình vẽ dưới đây:**
 

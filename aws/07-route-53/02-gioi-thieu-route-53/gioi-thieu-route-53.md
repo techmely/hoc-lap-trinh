@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu về Route 53"
 description: "Amazon Route 53 là dịch vụ Domain Name System có khả năng duy trì và mở rộng cao. Route53 cung cấp cho nhà phát triển phương thức hiệu quả trong việc định tuyến cho End User với các ứng dụng Internet bằng cách dịch tên miền, chẳng hạn sample.com sang một địa chỉ IP như 10.22.3.11."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Route 53"
   slug: "chap-07-route-53"

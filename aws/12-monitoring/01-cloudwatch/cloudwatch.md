@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu CloudWatch"
 description: "AWS CloudWatch là một dịch vụ giúp giám sát, tổng hợp, phân tích dữ liệu, nguồn tài nguyên chạy trên AWS. Dịch vụ này giúp cung cấp thông tin thực tiễn một cách realtime, cho phép giám sát các vùng nhớ của ứng dụng"
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Monitoring & Audit"
   slug: "chap-12-monitoring"
@@ -54,7 +47,7 @@ CloudWatch Logs là dịch vụ ghi lại log của hệ thống hoặc của c�
 ## CloudWatch Alarms là gì
 
 - Dùng để trigger thông báo cho metric đã được định nghĩa
-- Có nhiểu option để lựa chọn phân tích (sampling, %, max, min,...)
+- Có nhiều option để lựa chọn phân tích (sampling, %, max, min,...)
 - Alarm states:
   - OK
   - INSUFFICIENT_DATA (không đủ data point để quyết đinh OK hay ALARM)

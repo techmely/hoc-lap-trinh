@@ -1,13 +1,6 @@
 ---
 title: "EC2 Mở rộng"
 description: "EC2 Hibernate một EC2 instance khi được launch bạn có thể stop/terminate nó đi. Nitro là Platform cho thế hệ sau của EC2 instances"
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Elastic Compute Cloud"
   slug: "chap-02-ec2"

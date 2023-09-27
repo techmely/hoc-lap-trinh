@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu PrivateLink và ClassicLink"
 description: "AWS PrivateLink là một các kết nối an toàn giữa VPCs, AWS Serives, hay On-premises network của bạn. Kết nối này không đi qua internet, nó sẽ nằm trong network của AWS."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Virtual Private Cloud"
   slug: "chap-04-vpc"

@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu TTL, CNAME và Alias"
 description: "TTL là viết tắt của Time to Live, là khái niệm được sử dụng trong DNS caching, hay CDN caching. Giá trị TTL thường được tính bằng giây. Theo đó, TTL càng lớn thì máy chủ DNS sẽ ghi nhớ thông tin trong thời gian càng lâu. Điều này đồng nghĩa với việc khi thay đổi tên miền website trên DNS chính thì thời gian cập nhật thông tin trên máy chủ DNS trung gian sẽ bị chậm đi."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Route 53"
   slug: "chap-07-route-53"

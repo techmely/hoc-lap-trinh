@@ -1,13 +1,6 @@
 ---
 title: "Các components trong VPC"
 description: "ENI đại diện như 1 card mạng ảo (virtual network card). Route tables chứa những rules giúp định tuyến network traffic. Internet Getway giúp traffic trong VPC có thể giao tiếp ra ngoài internet"
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Virtual Private Cloud"
   slug: "chap-04-vpc"

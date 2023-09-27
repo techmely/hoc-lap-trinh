@@ -1,13 +1,6 @@
 ---
 title: "Gới thiệu Amazon Aurora"
 description: "Aurora là công nghệ AWS phát triển được tương thích với MySQL và PostgreSQL"
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Database"
   slug: "chap-05-database"

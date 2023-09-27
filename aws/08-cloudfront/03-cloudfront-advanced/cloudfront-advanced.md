@@ -1,13 +1,6 @@
 ---
 title: "CloudFront nâng cao"
 description: "Cloudfront Egde locations được nằm khắp nơi trên toàn cầu, chi phí data của mỗi Egde location là khác nhau. Bạn có thể giảm thiểu chi phí sử dụng Cloudfront bằng cách giảm số lượng edge location."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Cloudfront, Accelerator"
   slug: "chap-08-cloud-front"

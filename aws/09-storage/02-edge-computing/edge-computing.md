@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu Edge Computing"
 description: "Edge computing là quá trình phân tích, xử lý dữ liệu khi chúng được tạo ở một Edge location (không giống Edge location trong Cloudfront). Một egde location có thể là bất kỳ đâu, có thể là một trang trại, hay một chiếc tàu thủy..."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Mở rộng storage"
   slug: "chap-09-cloud-storage"

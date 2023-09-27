@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu AWS Snow Family"
 description: "AWS Snow Family là tập hợp những thiết bị vật lý giúp cho việc migrate dữ liệu từ bên ngoài vào AWS hoặc ngược lại, từ AWS ra bên ngoài. Giải pháp migrate dữ liệu này không phụ thuộc vào các yếu tố của network (tốc độ, băng thông)."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Mở rộng storage"
   slug: "chap-09-cloud-storage"

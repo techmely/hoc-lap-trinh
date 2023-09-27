@@ -1,13 +1,6 @@
 ---
 title: "Gới thiệu AWS Config"
 description: "AWS config là full managed service, cung cấp thông tin history cấu hình, báo notify thì có thay đổi về configuration để đảm bảo security và governance."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Monitoring & Audit"
   slug: "chap-12-monitoring"

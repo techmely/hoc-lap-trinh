@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu Neptune"
 description: "Amazon Neptune là dịch vụ cơ sở dữ liệu đồ thị được quản lý hoàn toàn, có tốc độ cao, đáng tin cậy giúp bạn dễ dàng xây dựng và chạy các ứng dụng."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Database"
   slug: "chap-05-database"

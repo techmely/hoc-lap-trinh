@@ -1,13 +1,6 @@
 ---
 title: "Tổng quan về AWS"
 description: "Amazon Web Services (AWS) là nền tảng đám mây toàn diện và được sử dụng rộng rãi nhất, cung cấp trên 200 dịch vụ đầy đủ tính năng từ các trung tâm dữ liệu trên toàn thế giới."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Giới thiệu AWS"
   slug: "chap-01-introduction"
@@ -95,6 +88,7 @@ Mỗi **Regions** là collection của (min 3 AZs, max 6 AZs, **thường là 3*
 Khi lựa chọn region để sử dụng các services, nên chọn region gần với bạn để giảm độ trễ (latency).
 
 ### Edge locations (Access points)
+
 Đây là một trong những hạ tầng mà AWS cung cấp cho người dùng. Hiện tại ở Việt Nam có 2 Edge location đặt tại Hà Nội và Hồ Chí Minh. Edge location như một điểm trung chuyển giúp request người dùng đến các Datacenter nhanh hơn. Edge locations có thể cached những content giúp giảm độ trễ. Ví dụ server bạn đặt ở Tokyo, Edge location ở Hà Nội hoặc Hồ Chí Minh giúp người dùng ở Việt Nam có thể truy cập nhanh hơn. Hiện tại có khoảng hơn 550 Access points trên toàn cầu.
 
 ## SaaS, PaaS, and IaaS
@@ -109,4 +103,3 @@ Khi lựa chọn region để sử dụng các services, nên chọn region gầ
 ::alert{type="infor"}
 Tất cả model đều có điểm mạnh, yếu riêng biệt. Càng dễ dùng (convenient) thì càng ít kiểm soát (less-control). Vì vậy hãy chọn model cũng như dịch vụ phù hợp với đặc thù dự án của bạn.
 ::
-

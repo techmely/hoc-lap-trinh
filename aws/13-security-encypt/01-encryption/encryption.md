@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu KMS"
 description: "Key Management Service (KMS) là dịch vụ dùng để quản lý key. KMS giúp bạn dễ dàng encrypt/decrypt dữ liệu trên AWS resources."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Security & Encryption"
   slug: "chap-13-security"

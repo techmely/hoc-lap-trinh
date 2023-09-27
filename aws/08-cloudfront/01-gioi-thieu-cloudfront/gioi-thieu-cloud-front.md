@@ -1,13 +1,6 @@
 ---
 title: "Cloudfront là gì"
 description: "Amazon CloudFront là một dạng CDN giúp tăng tốc độ tải một trang web tĩnh hoặc động đến với user của bạn. CloudFront phân phối content của bạn trên khắp mạng internet trên thế thế giới thông qua các data center được gọi là Egde location."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Cloudfront, Accelerator"
   slug: "chap-08-cloud-front"

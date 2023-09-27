@@ -1,13 +1,6 @@
 ---
 title: "Giới thiệu về EC2"
 description: "Amazon EC2 là dịch vụ web cung cấp năng lực điện toán bảo mật và có kích cỡ linh hoạt trên đám mây. Dịch vụ này được thiết kế để giúp các nhà phát triển dễ sử dụng điện toán đám mây ở quy mô web hơn."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "Elastic Compute Cloud"
   slug: "chap-02-ec2"
@@ -66,11 +59,11 @@ ssh -i “ec2-key-pair-name.pem” ec2-user@ec2-public-ip-address
 - Thay đổi trong SG được apply ngay lập tức
 - Mỗi security group có tối đa 50 rules inbound và outbound
 - Tối đa có 5 security group được attach cho 1 instance
-- Statefull
+- State full
   - Những traffic được allowed ở inbound thì cũng tự động được allowed ở outbound.
   - Vì thế ko cần đặt outbound rule nếu rule đó đã được định nghĩa ở inbound
 - Trong trường hợp nhiều rule tương đồng apply cho EC2 instance thì rule nào rộng hơn sẽ được apply. Ví du:
   - Rule 1: cho phép giao tiếp trên TCP port 22 từ IP: 10.115.53.222
   - Rule 2: cho phép giao tiếp trên TCP port 22 từ mọi nơi (0.0.0.0)
   - => Rule 2 (Cho phép truy cập từ mọi nơi) sẽ được apply
-- Mặc định, khi security group mới được tạo, nó sẽ **block tất cả incomming communication** và cho **phép tất cả outgoing communication**
+- Mặc định, khi security group mới được tạo, nó sẽ **block tất cả in coming communication** và cho **phép tất cả outgoing communication**

@@ -1,13 +1,6 @@
 ---
 title: "Elastic Load Balancer trong AWS"
 description: "Load Balancer là 1 server dùng để forward traffic đến nhiêu server (Ec2...). Mỗi Target Group dùng để route request tới 1 hay nhiều target khác nhau. Như ở hình vẽ trê, ALB đặt các Rule Listener để định tuyến request."
-author:
-  fullname: Phan Văn Đức
-  username: ducpv
-  avatar: "/configs/author/ducpv.jpg"
-category:
-  name: "Khóa học AWS từ cơ bản đến nâng cao"
-  slug: "aws"
 chapter:
   name: "High Availability"
   slug: "chap-03-ha"
@@ -25,8 +18,8 @@ Từ hình vẽ trên chúng ta có thể hình dung được cách hoạt độ
 
 - Chia traffic ra nhiều server khác để chia tải
 - Expose ra 1 DNS để truy cập vào ứng dụng của bạn
-  - Điểu này rất quan trọng, nếu chúng ta có 10 server con (ec2), chúng ta không thể truy cập 10 đường link khác nhau
-  - Vì vậy giải pháp sử dụng ALB và truy cập ứng dụng qua 1 enpoint duy nhất là hiệu quả hơn
+  - Điều này rất quan trọng, nếu chúng ta có 10 server con (ec2), chúng ta không thể truy cập 10 đường link khác nhau
+  - Vì vậy giải pháp sử dụng ALB và truy cập ứng dụng qua 1 endpoint duy nhất là hiệu quả hơn
 - ELB có thể tích hợp với rất nhiều dịch vụ của AWS
 - Sử dụng health check cho instance của bạn
 - Cung cấp HTTPS cho ứng dụng (sẽ được tìm hiểu ở phần ALB)
