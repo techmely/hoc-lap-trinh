@@ -4,9 +4,6 @@ description: "Hiểu cách nhận và xử lý dữ liệu đầu vào trong C l
 chapter:
   name: "Nhập môn C"
   slug: "chuong-02-basic-concepts"
-category:
-  name: "C"
-  slug: "c"
 image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
 position: 4
 ---
@@ -46,10 +43,10 @@ Trong hàm `scanf()` có 2 phần chính:
 
 - Cần xác định kiểu dữ liệu của biến cần gán giá trị trước để chọn định dạng `%` trong hàm `scanf()` cho đúng.
 - Không giống như hàm `printf()`, chúng ta không được viết thêm bất cứ đoạn text nào trong hàm `scanf()` ngoài định dạng `%`. Nếu bạn viết thêm text, chương trình sẽ chạy ra kết quả không như mong muốn.
-::
+  ::
 
 ::result
-Enter n: _
+Enter n: \_
 ::
 
 Lúc này các bạn sẽ thấy chương trình không kết thúc như những ví dụ trước, mà sẽ tạm dừng tại đây - bạn sẽ thấy có con trỏ `_` nhấp nháy báo hiệu chương trình đang đợi bạn nhập một giá trị vào từ bàn phím.

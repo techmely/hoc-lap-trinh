@@ -1,31 +1,28 @@
 ---
 title: "HashTable trong Java"
-description: "Hashtable là một mảng của list, mỗi list được biết đến như một bucket vùng chứa) các phần tử, vị trí của một bucket được xác định bằng việc gọi phương thức hashcode"
+description: "HashTable là một mảng của list, mỗi list được biết đến như một bucket vùng chứa) các phần tử, vị trí của một bucket được xác định bằng việc gọi phương thức hashcode"
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/145697837-43c57a8a-b188-4d77-90f1-533edb0caaa2.png
 position: 14
 ---
 
-## HashTable trong Java là gì?
+## `HashTable` trong Java là gì?
 
-Lớp `Java Hashtable` cài đặt (implement) một bảng hashtable để map khóa và giá trị. `Hashtable` kế thừa lớp `Dictionary` và cài đặt (implement) `Map Interface`.
+Lớp `Java HashTable` cài đặt (implement) một bảng HashTable để map khóa và giá trị. `HashTable` kế thừa lớp `Dictionary` và cài đặt (implement) `Map Interface`.
 
 ![HashTable trong Java](https://user-images.githubusercontent.com/29374426/145697837-43c57a8a-b188-4d77-90f1-533edb0caaa2.png)
 
-Các đặc điểm quan trọng về lớp `Hashtable` trong java là:
+Các đặc điểm quan trọng về lớp `HashTable` trong java là:
 
-- `Hashtable` là một mảng của list. Mỗi list được biết đến như một bucket (vùng chứa) các phần tử. Vị trí của một bucket được xác định bằng việc gọi phương thức `hashcode()`.
-- `Hashtable` cũng lưu trữ dữ liệu dưới dạng cặp `key` và `value`.
-- `Hashtable` chứa các key duy nhất.
-- `Hashtable` KHÔNG thể có bất kỳ key hoặc giá trị nào là `null`.
-- `Hashtable` được đồng bộ (synchronized).
+- `HashTable` là một mảng của list. Mỗi list được biết đến như một bucket (vùng chứa) các phần tử. Vị trí của một bucket được xác định bằng việc gọi phương thức `hashcode()`.
+- `HashTable` cũng lưu trữ dữ liệu dưới dạng cặp `key` và `value`.
+- `HashTable` chứa các key duy nhất.
+- `HashTable` KHÔNG thể có bất kỳ key hoặc giá trị nào là `null`.
+- `HashTable` được đồng bộ (synchronized).
 
-## Tạo một HashTable trong Java
+## Tạo một `HashTable` trong Java
 
 Để tạo `HashMap`, trước tiên chúng ta phải import gói `java.util.HashMap`. Khi chúng ta đã `import` xong, sau đây là cách chúng ta có thể tạo các hashmap trong Java.
 
@@ -44,7 +41,7 @@ Lưu ý về đoạn code `new HashMap<>(8, 0.6)`. Ở đây, tham số đầu t
 - `capacity` là dung lượng của HashMap này là 8. Ý nghĩa nó có thể lưu trữ 8 mục.
 - `loadFactor` là hệ số tải của hashmap này là 0,6. Điều này có nghĩa là bất cứ khi nào bảng băm của chúng ta được lấp đầy 60%, các mục mới sẽ được chuyển sang bảng băm mới có kích thước gấp đôi bảng băm ban đầu.
 
-## Tạo HashMap từ các Map khác
+## Tạo `HashMap` từ các Map khác
 
 Sau đây là cách chúng ta có thể tạo một hashmap chứa tất cả các phần tử của các map khác.
 
@@ -74,7 +71,7 @@ HashMap2: {Two=2, Three=3, Four=4}
 
 ::
 
-## Chèn các phần tử vào HashMap
+## Chèn các phần tử vào `HashMap`
 
 - `put()` – chèn cặp `key/value` được chỉ định vào map
 - `putAll()` – chèn tất cả các mục từ map được chỉ định vào map hiện tại
@@ -114,7 +111,7 @@ HashMap of numbers: {Six=6, One=1, Four=4, Two=2}
 
 ::
 
-## Lấy các phần tử trong HashMap
+## Lấy các phần tử trong `HashMap`
 
 - `entrySet()` – trả về một tập hợp gồm tất cả cặp key / value của map
 - `keySet()` – trả về một tập hợp gồm tất cả các key của map
@@ -187,7 +184,7 @@ Returned Number: 5
 
 ::
 
-## Xóa phần tử hỏi HashTable
+## Xóa phần tử hỏi `HashTable`
 
 - `remove(key)` – trả về và xóa mục liên kết với key được chỉ định khỏi map
 - `remove(key, value)` – chỉ xóa mục khỏi map nếu key được chỉ định liên kết với value đã chỉ định và trả về giá trị `boolean`
@@ -226,7 +223,7 @@ Updated HashMap: {One=1}
 
 ::
 
-## Thay thế các phần tử trong HashTable
+## Thay thế các phần tử trong `HashTable`
 
 - `replace(key, value)` – thay thế value liên kết với Key được chỉ định bằng một value mới
 - `replace(key, old, new)` – thay thế value old bằng value new nếu value old đã liên kết với Key được chỉ định
@@ -260,7 +257,7 @@ class Main {
 
 Original HashMap: {Second=2, Third=3, First=1}<br/>
 HashMap using replace: {Second=22, Third=33, First=1}<br/>
-HashMap using replaceAll: {Second=24, Third=35, First=3}<br/>
+HashMap using replaceAll: {Second=24, Third=35, First=3}
 
 ::
 
@@ -402,7 +399,7 @@ Values: 1, 2, ,3,
 
 Trong chương trình trên, lưu ý rằng chúng ta đã import gói `java.util.Map.Entry`. Ở đây, `Map.Entry` là `class` trong của Map interface. Class trong này trả về một view (các phần tử) của map.
 
-Ngoài ra chúng ta cũng có thể lặp lại HashMapbằng cách sử dụng hàm `iterator()`. Để sử dụng hàm này, chúng ta phải `import java.util.Iterator` gói.
+Ngoài ra chúng ta cũng có thể lặp lại HashMap bằng cách sử dụng hàm `iterator()`. Để sử dụng hàm này, chúng ta phải `import java.util.Iterator` gói.
 
 ```java
 import java.util.HashMap;

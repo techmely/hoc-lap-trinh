@@ -1,19 +1,17 @@
 ---
 title: "Standard Expression trong Thymeleaf"
-description: "Trong template thymeleaf, để lấy các thông tin trong Model. bạn sẽ sử dụng Thymeleaf Standard Expression"
+description: "Trong template thymeleaf, để lấy các thông tin trong Model chúng ta sẽ sử dụng Thymeleaf Standard Expression"
 chapter:
   name: "Thymeleaf"
   slug: "chuong-04-thymeleaf"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---
 
-![thymeleaf](https://github.com/techmely/hoc-lap-trinh/assets/29374426/5a614a07-a8c1-4bd5-b750-e6759fd207f5)
+Trong template **Thymeleaf**, để lấy các thông tin trong **Model**. bạn sẽ sử dụng `Thymeleaf Standard Expression`.
 
-Trong template `Thymeleaf`, để lấy các thông tin trong **Model**. bạn sẽ sử dụng `Thymeleaf Standard Expression`.
+![Standard Expression trong Thymeleaf](https://github.com/techmely/hoc-lap-trinh/assets/29374426/5a614a07-a8c1-4bd5-b750-e6759fd207f5)
+
 Ở bài này chúng ta sẽ đề cập đến 4 loại `Expression` sau:
 
 - `${...}`: Lấy giá trị của một biến.
@@ -21,92 +19,88 @@ Trong template `Thymeleaf`, để lấy các thông tin trong **Model**. bạn s
 - `#{...}`: Lấy message
 - `@{...}`: Lấy đường dẫn URL dựa theo context của server
 
-### `${...}` - Lấy giá trị của một biến (Variables Expressions)
+## Biểu thức `${...}` - Truy cập Giá Trị Biến
 
-Ví dụ, trên Controller bạn đưa vào một số giá trị:
-
-```java
-model.addAttribute("techMely", "kenh day lap trinh hap dan");
-```
-
-Để lấy giá trị của biến today, ta sử dụng `${...}`
+Trong Controller, bạn có thể đặt một số giá trị như sau:
 
 ```java
-<p>Techmely la: <span th:text="${today}"></span>.</p>
+model.addAttribute("today", "Monday");
 ```
 
-Kết quả sẽ in ra:
-::result
-Techmely la: kenh day lap trinh hap dan
-::
-Đoạn expression trên tương đương với:
+Để lấy giá trị của biến `today`, bạn sử dụng `${...}` như sau:
+
+```html
+<p>Today is: <span th:text="${today}"></span>.</p>
+```
+
+Biểu thức trên tương đương với:
 
 ```java
 ctx.getVariable("today");
 ```
 
-### `*{...}` - Lấy giá trị của một biến được chỉ định (Variables Expressions on selections)
+Biểu thức `${...}` cho phép bạn truy cập giá trị biến trong phạm vi của Context hoặc Model.
 
-Chức năng của nó giống với `${...}` là lấy giá trị của một biến.
+## Biểu thức `*{...}` - Truy cập Giá Trị Biến trên các Phần Tử
 
-Điểm khác biệt là `*{...}` sẽ lấy ra giá trị của một biến cho trước bởi **th:object**, còn `${...}` sẽ lấy ra giá trị cục bộ trong **Context** hay **Model**.
-Ví dụ:
+Biểu thức `*{...}`, còn được gọi là `asterisk syntax`, có chức năng giống `${...}`, tức là lấy giá trị của một biến. Tuy nhiên, nó sẽ lấy giá trị của biến trong ngữ cảnh của `th:object`.
 
 ```html
-<div th:object="${session.user}">   <!-- th:object tồn tại trong phạm vi của thẻ div này -->
+<div th:object="${session.user}">
+  <!-- th:object tồn tại trong phạm vi của thẻ div này -->
 
-<!-- Lấy ra tên của đối tượng session.user -->
-<p>
-Name: <span th:text="*{firstName}"></span>  <!-- Lấy ra firstName của đối tượng session.user -->
-</p>
-<p>
-Surname: <spanth:text="*{lastName}"></span>. <!-- Lấy ra lastName của đối tượng session.user -->
-</p>
+  <!-- Lấy tên từ đối tượng session.user -->
+  <p>Name: <span th:text="*{firstName}"></span>.</p>
+  <!-- Lấy lastName từ đối tượng session.user -->
+  <p>Surname: <span th:text="*{lastName}"></span>.</p>
 </div>
 ```
 
-Đoạn code này tương đương:
+`${...}` sẽ lấy giá trị cục bộ trong `Context` hoặc `Model`, trong khi `*{...}` sẽ lấy giá trị từ đối tượng đã được chỉ định bởi `th:object`.
 
-```html
-<div>
-<p>Name: <span th:text="${session.user.firstName}"></span>.</p>
-<p>Surname: <spanth:text="${session.user.lastName}"></span>.</p>
-</div>
-```
+## Biểu thức `#{...}` - Lấy Thông Báo (Message)
 
-### `#{...}` - Lấy message (Message Expression)
-
-Ví dụ, trong file config `.properties` có một **_message_** chào người dùng bằng nhiều ngôn ngữ.
+Ví dụ, trong tệp cấu hình `.properties` của bạn, bạn có một thông báo chào đón người dùng bằng nhiều ngôn ngữ:
 
 ```java
-home.welcome = Hello, how's it going!
+home.welcome=Hello bạn
 ```
 
 Thì cách lấy nó ra nhanh nhất là:
 
-```java
+```html
 <p th:utext="#{home.welcome}">Xin chào các bạn!</p>
 ```
 
-Đoạn text tiếng việt _"Xin chào các bạn!"_ bên trong thẻ **p** sẽ bị thay thế bởi `Thymeleaf` khi render `#{home.welcome}`.
-::result
-Hello, how's it going!
-::
+Đoạn văn bản tiếng Việt bên trong thẻ `p` sẽ bị thay thế bởi Thymeleaf khi render `#{home.welcome}`. Điều này cho phép bạn tạo các ứng dụng hỗ trợ nhiều ngôn ngữ một cách dễ dàng.
 
-### `@{...}` - Lấy đường dẫn URL (URL Expression)
+## Biểu thức `@{...}` - Lấy URL Dựa Trên Ngữ Cảnh Máy Chủ
 
-`@{...}` xử lý và trả ra giá trị **URL** theo context của máy chủ cho chúng ta.
+`@{...}` xử lý và trả về giá trị URL dựa trên ngữ cảnh của máy chủ. Bạn có thể sử dụng nó để tạo các liên kết URL động.
+
 Ví dụ:
 
-```java
-<!-- tương đương với 'http://localhost:8080/order/details?orderId=3' -->
-<a href="details.html" th:href="@{http://localhost:8080/order/details(orderId=${o.id})}">view</a>
-<!-- tương đương  '/order/details?orderId=3' -->
+```html
+<!-- Tương đương 'http://localhost:8080/order/details?orderId=3' -->
+<a
+  href="details.html"
+  th:href="@{http://localhost:8080/order/details(orderId=${o.id})}"
+  >view</a
+>
 
+<!-- Tương đương '/order/details?orderId=3' -->
 <a href="details.html" th:href="@{/order/details(orderId=${o.id})}">view</a>
-<!-- tương dương '/gtvg/order/3/details' -->
 
-<a href="details.html" th:href="@{/order/{orderId}/details(orderId=${o.id})}">view</a>
+<!-- Tương đương '/gtvg/order/3/details' -->
+<a href="details.html" th:href="@{/order/{orderId}/details(orderId=${o.id})}"
+  >view</a
+>
 ```
 
-Nếu bắt dầu bằng dấu `/` thì nó sẽ là **Relative URL** và sẽ tương ứng theo context của máy chủ của bạn.
+Nếu bạn bắt đầu bằng dấu `/`, nó sẽ là URL tương đối và sẽ được xác định dựa trên ngữ cảnh máy chủ của bạn.
+
+::alert{type="success"}
+
+Qua bài viết này, bạn đã biết cách sử dụng Thymeleaf Standard Expression để truy cập và hiển thị thông tin từ `Model`, lấy các thông báo đa ngôn ngữ và tạo các liên kết URL động. Sử dụng những biểu thức này, bạn có thể làm cho ứng dụng web của mình trở nên mạnh mẽ và linh hoạt hơn.
+
+::

@@ -4,9 +4,6 @@ description: "Trong ngày hôm nay chúng ta sẽ tiếp tục với các guard 
 chapter:
   name: "Angular Router"
   slug: "chuong-04-angular-router"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 5
 ---

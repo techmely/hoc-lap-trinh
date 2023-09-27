@@ -4,9 +4,6 @@ description: "Toán tử ba ngôi là một toán tử dùng để đánh giá m
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
 position: 19
 ---

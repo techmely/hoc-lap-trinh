@@ -4,9 +4,6 @@ description: "Kế thừa là một khái niệm quan trọng trong lập trình
 chapter:
   name: "ES6 Class"
   slug: "chuong-08-es6-class"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

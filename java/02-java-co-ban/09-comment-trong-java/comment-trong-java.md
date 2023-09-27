@@ -4,9 +4,6 @@ description: "Tất cả các ngôn ngữ lập trình đều hỗ trợ comment
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/126426149-ac16a161-b637-44a5-ba1f-18892453c095.png
 position: 9
 ---

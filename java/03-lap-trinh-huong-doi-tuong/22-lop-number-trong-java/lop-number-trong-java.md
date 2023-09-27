@@ -4,114 +4,111 @@ description: "Lớp Number là một lớp bao trong java. Cung cấp nhiều me
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/132489584-c670b65c-7c28-497e-bca3-f3e8b49215ee.png
 position: 22
 ---
 
-Lớp Number là một [Wrapper class](/bai-viet/java/lop-wrapper-trong-java) trong java. Cung cấp nhiều method giúp thao tác nhanh với số, ngoài ra một object Number chỉ chứa duy nhất một giá trị number.
+Lớp Number là một [Wrapper class](/bai-viet/java/lop-wrapper-trong-java) trong java. Trong Java, các kiểu dữ liệu số nguyên (`byte`, `short`, `int`, `long`) và kiểu số thực (`float`, `double`) đều là các kiểu dữ liệu nguyên thủy. Tuy nhiên, Java cung cấp các lớp bao (wrapper classes) cho các kiểu dữ liệu này để làm việc với chúng như các đối tượng. Các lớp này bao gồm `Byte`, `Short`, `Integer`, `Long`, `Float`, và `Double`, và tất cả đều là các lớp con của lớp `Number`.. Trong bài viết này, chúng ta sẽ tìm hiểu về các lớp bao kiểu số, giới hạn của chúng và cách sử dụng chúng trong Java.
 
-![image](https://user-images.githubusercontent.com/29374426/132489584-c670b65c-7c28-497e-bca3-f3e8b49215ee.png)
+![Lớp Number trong Java](https://user-images.githubusercontent.com/29374426/132489584-c670b65c-7c28-497e-bca3-f3e8b49215ee.png)
 
-### Các lớp bao kiểu số
+Trong bài viết này, chúng ta sẽ tìm hiểu về các lớp bao kiểu số (`Number`) trong Java và cách sử dụng chúng.
 
-Các lớp `Byte`, `Short`, `Integer`, `Long`, `Float`, `Double` là các lớp con của lớp Number.
+### Các giới hạn của kiểu số
 
-Trong các lớp này đều xác định hai giá trị:
+Mỗi lớp bao kiểu số (`Byte`, `Short`, `Integer`, `Long`, `Float`, `Double`) đều xác định hai giá trị quan trọng:
+
+- `<Lớp bao>.MIN_VALUE`: Giá trị tối thiểu mà kiểu dữ liệu đó có thể lưu trữ.
+- `<Lớp bao>.MAX_VALUE`: Giá trị tối đa mà kiểu dữ liệu đó có thể lưu trữ.
+
+Ví dụ:
 
 ```java
-<Lớp bao>.MIN_VALUE
-<Lớp bao>.MAX_VALUE
+byte minByte = Byte.MIN_VALUE;     // -128
+byte maxByte = Byte.MAX_VALUE;     // 127
+int minInt = Integer.MIN_VALUE;    // -2147483648
+int maxInt = Integer.MAX_VALUE;    // 2147483647
 ```
 
-là các giới hạn của các số trong kiểu đó.
+### Chuyển đổi giá trị số từ đối tượng
+
+Trong mỗi lớp bao kiểu số (`Byte`, `Short`, `Integer`, `Long`, `Float`, `Double`), bạn có thể sử dụng các phương thức sau để chuyển đổi giá trị số từ đối tượng:
+
+- `byteValue()`: Chuyển đối tượng thành kiểu `byte`.
+- `shortValue()`: Chuyển đối tượng thành kiểu `short`.
+- `intValue()`: Chuyển đối tượng thành kiểu `int`.
+- `longValue()`: Chuyển đối tượng thành kiểu `long`.
+- `floatValue()`: Chuyển đối tượng thành kiểu `float`.
+- `doubleValue()`: Chuyển đối tượng thành kiểu `double`.
+
+Ví dụ:
 
 ```java
-byte minByte = Byte.MIN_VALUE; // -128
-int maxInt  = Integer.MAX_VALUE; // 2147483647
+Integer myInteger = new Integer(42);
+int intValue = myInteger.intValue(); // Chuyển thành kiểu int
 ```
 
-Trong mỗi lớp bao có hàm `typeValue()` để chuyển các giá trị của các đối tượng nguyên thủy về giá trị số.
+### Chuyển đổi từ chuỗi sang số
+
+Trong mỗi lớp bao kiểu số (`Byte`, `Short`, `Integer`, `Long`, `Float`, `Double`), bạn có thể sử dụng phương thức static `parse<Type>(String s)` để chuyển đổi giá trị từ chuỗi sang kiểu số tương ứng. Ví dụ:
+
+- `Byte.parseByte(String s)`: Chuyển đổi chuỗi thành kiểu `byte`.
+- `Integer.parseInt(String s)`: Chuyển đổi chuỗi thành kiểu `int`.
+- `Double.parseDouble(String s)`: Chuyển đổi chuỗi thành kiểu `double`.
+
+Ví dụ:
 
 ```java
-byte byteValue()
-short shortValue()
-int intValue()
-long longValue()
-float floatValue()
-double doubleValue()
+byte parsedByte = Byte.parseByte("16");
+int parsedInt = Integer.parseInt("2002");
+double parsedDouble = Double.parseDouble("3.14");
 ```
 
-Trong mỗi lớp bao còn có hàm static `parseType(String s)` để chuyển các giá trị được biểu diễn dưới dạng xâu về các giá trị số.
+### Ví dụ: Sắp xếp dãy số trong Java
+
+Dưới đây là một ví dụ minh họa về việc nhập vào một dãy số và sắp xếp chúng theo thứ tự tăng dần:
 
 ```java
-byte value1  = Byte.parseByte(“16”);
-int value2 = Integer.parseInt(“2002”);
-double value3 = Double.parseDouble(“3.14”);
-```
+import java.util.Arrays;
+import java.util.Scanner;
 
-Ví dụ: viết chương trình để nhập vào một dãy số tùy ý và sắp xếp theo thứ tự tăng dần
+public class SortNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-```java
-import java.io.*; class SapXep{
-static int[] day;
+        System.out.print("Nhập số lượng số: ");
+        int n = scanner.nextInt();
 
-static void nhap() {
-  String str;
-  int n = day.length;
-  DataInputStream stream = new DataInputStream(System.in);
-  System.out.println("Nhap vao " + n + " so nguyen");
-  for (int k = 0; k < n; k++) {
-    try{
-      System.out.print(k + ": ");
-      str = stream.readLine();
-      day[k] = Integer.valueOf(str).intValue();
-    } catch(IOException e){
-    System.err.println("I/O Error!");
+        int[] numbers = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.print("Nhập số thứ " + (i + 1) + ": ");
+            numbers[i] = scanner.nextInt();
+        }
+
+        Arrays.sort(numbers);
+
+        System.out.println("Dãy số sau khi sắp xếp:");
+        for (int number : numbers) {
+            System.out.print(number + " ");
+        }
     }
-  }
-}
-
-static void hienThi() {
-  int n = day.length;
-  for (int k = 0; k < n; k++)
-    System.out.print(day[k] + " ");
-  System.out.println();
-}
-
-static void sapXep(){
-  int x, max, k;
-  for(int i =day.length-1; i > 0; i--){
-    max = day[i];k = i;
-    for (int j = 0; j < i; j++)
-      if (max < day[j]) {
-        max = day[j]; k = j;
-      }
-    day[k] = day[i]; day[i] = max;
-    }
-  }
-
-public static void main(String[] args){
-  String str;
-  int n;
-  DataInputStream stream = new DataInputStream(System.in);
-  System.out.print("\nCho biet bao nhieu so nhap vao: ");
-
-  try{
-    str = stream.readLine();
-  } catch(IOException e){
-    System.err.println("I/O Error!");
-    str = "0";
-  }
-
-  n = Integer.valueOf(str).intValue();
-  SapXep.day = new int[n];
-  nhap();
-  sapXep();
-  System.out.println("Day so duoc sap xep: ");
-  hienThi();
-  }
 }
 ```
+
+Kết quả của đoạn mã trên sẽ nhập một dãy số từ người dùng, sau đó sắp xếp chúng theo thứ tự tăng dần và hiển thị dãy số đã sắp xếp.
+
+::Result
+
+Nhập số lượng số: 5
+Nhập số thứ 1: 42
+Nhập số thứ 2: 17
+Nhập số thứ 3: 9
+Nhập số thứ 4: 35
+Nhập số thứ 5: 2
+Dãy số sau khi sắp xếp:
+2 9 17 35 42
+
+::
+
+Chúng ta đã tìm hiểu về các lớp bao kiểu số (`Number`) trong Java và cách sử dụng chúng để làm việc với giá trị số, cũng như một ví dụ về sắp xếp dãy số.

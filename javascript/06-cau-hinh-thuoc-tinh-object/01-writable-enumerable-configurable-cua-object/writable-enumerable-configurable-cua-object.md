@@ -4,9 +4,6 @@ description: "Writable, enumerable và configurable là những cờ quan trọn
 chapter:
   name: "Cấu hình thuộc tính object"
   slug: "chuong-06-cau-hinh-thuoc-tinh-object"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

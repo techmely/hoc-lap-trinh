@@ -4,16 +4,13 @@ description: "Dưới đây là một số dự án nổi bật của Spring Fra
 chapter:
   name: "Tổng quan về Spring"
   slug: "chuong-01-tong-quan-ve-spring"
-category:
-  name: "Spring Boot"
-  slug: "spring-boot"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---
 
 ## Một số dự án nổi bật của Spring Framework
 
-Spring có thể coi là framework của các framework vì nó cung cấp nhiều các framework con khác nhau như Hibernate, Struts, Tapestry, JSF, v.v
+Spring có thể coi là framework của các framework vì nó cung cấp nhiều các framework con khác nhau như `Hibernate`, `Struts`, `Tapestry`, `JSF`, v.v
 
 Cũng dựa trên các nguyên tắc thiết kế cơ bản của Spring Core. Spring còn phát triển nhiều project on như Spring MVC, Spring Boot, Spring Data, Spring Security, v.v
 

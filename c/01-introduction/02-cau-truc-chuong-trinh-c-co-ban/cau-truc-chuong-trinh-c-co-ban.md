@@ -4,9 +4,6 @@ description: "Việc nắm vững cấu trúc cơ bản của ngôn ngữ lập 
 chapter:
   name: "Giới thiệu"
   slug: "chuong-01-introduction"
-category:
-  name: "C"
-  slug: "c"
 image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
 position: 2
 ---
@@ -29,18 +26,23 @@ Kết quả nhận được:
 ```cpp
 Hello World!
 
---------------------------------
+---
+
 Process exited after 0.02965 seconds with return value 0
 Press any key to continue . . .
 ```
 
 Sau đây, chúng ta sẽ đi tìm hiểu các thành phần cơ bản bên dưới để giúp bạn bắt đầu với một chương trình C.
 
+<<<<<<< HEAD
 - **`#include <stdio.h>`**
+=======
+**`#include <stdio.h>`**
+>>>>>>> main
 
-  - Đây được gọi là dòng **khai báo thư viện** cho một chương trình C, `#include` là cú pháp còn tên thư viện sẽ nằm trong cặp dấu `< >`. Một chương trình C cơ bản luôn luôn cần thư viện `stdio.h` - là thư viện cơ bản và cốt lõi nhất.
-  - Thư viện là nơi định nghĩa các câu lệnh mà mình sẽ viết bên dưới cho máy tính hiểu và có thể chạy được những gì mình viết.
-  - Thư viện có khá nhiều và chia ra theo chức năng mà nó có thể làm, ví dụ `stdio.h` là thư viện `core` bắt buộc phải có trong một chương trình, trong quá trình học chúng ta sẽ tìm hiểu thêm về một vài thư viện thường gặp.
+- Đây được gọi là dòng **khai báo thư viện** cho một chương trình C, `#include` là cú pháp còn tên thư viện sẽ nằm trong cặp dấu `< >`. Một chương trình C cơ bản luôn luôn cần thư viện `stdio.h` - là thư viện cơ bản và cốt lõi nhất.
+- Thư viện là nơi định nghĩa các câu lệnh mà mình sẽ viết bên dưới cho máy tính hiểu và có thể chạy được những gì mình viết.
+- Thư viện có khá nhiều và chia ra theo chức năng mà nó có thể làm, ví dụ `stdio.h` là thư viện `core` bắt buộc phải có trong một chương trình, trong quá trình học chúng ta sẽ tìm hiểu thêm về một vài thư viện thường gặp.
 
 - **`int main() { }`**
 

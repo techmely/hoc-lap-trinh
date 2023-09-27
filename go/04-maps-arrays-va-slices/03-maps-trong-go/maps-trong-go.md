@@ -4,9 +4,6 @@ description: "Bài viết tập trung vào Maps trong Go và cách sử dụng c
 chapter:
   name: "Maps, Arrays và Slices"
   slug: "chuong-04-maps-arrays-va-slices"
-category:
-  name: "Go"
-  slug: "go"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

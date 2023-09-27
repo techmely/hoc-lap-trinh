@@ -4,9 +4,6 @@ description: "Module cho phép chúng đóng gói các property, method, biến 
 chapter:
   name: "Design pattern"
   slug: "chuong-17-design-pattern"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

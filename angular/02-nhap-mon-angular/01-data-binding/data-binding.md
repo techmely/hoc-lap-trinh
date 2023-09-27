@@ -4,9 +4,6 @@ description: "Trong Angular chúng ta đã được Angular làm nhiệm vụ đ
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

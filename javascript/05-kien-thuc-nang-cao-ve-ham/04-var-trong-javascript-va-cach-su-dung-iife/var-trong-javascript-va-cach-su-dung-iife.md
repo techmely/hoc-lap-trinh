@@ -4,9 +4,6 @@ description: "Var trong JavaScript là một cách cũ để khai báo biến. V
 chapter:
   name: "Kiến thức nâng cao về hàm"
   slug: "chuong-05-kien-thuc-nang-cao-ve-ham"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168245793-4a038927-177c-4921-aba9-c04651f21190.png
 position: 4
 ---

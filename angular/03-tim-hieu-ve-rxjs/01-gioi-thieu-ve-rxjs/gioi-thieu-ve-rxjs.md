@@ -4,9 +4,6 @@ description: "Khi bạn tìm hiểu về Angular, bạn sẽ thấy rằng nó c
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

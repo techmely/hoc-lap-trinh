@@ -4,9 +4,6 @@ description: "Đối với các ứng dụng Single Page Apps (SPAs) được vi
 chapter:
   name: "Angular Router"
   slug: "chuong-04-angular-router"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---

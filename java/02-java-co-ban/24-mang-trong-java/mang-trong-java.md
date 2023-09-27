@@ -4,9 +4,6 @@ description: "Java cung cấp cho chúng ta rất nhiều cấu trúc dữ liệ
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/127758202-bce42e1f-86eb-4557-aaf3-a6afa24bbe29.png
 position: 24
 ---

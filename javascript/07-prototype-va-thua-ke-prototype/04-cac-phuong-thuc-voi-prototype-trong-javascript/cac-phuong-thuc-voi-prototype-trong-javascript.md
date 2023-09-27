@@ -4,9 +4,6 @@ description: "Tất cả các object trong javascript đều có một prototype
 chapter:
   name: "Prototype và thừa kế prototype"
   slug: "chuong-07-prototype-va-thua-ke-prototype"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---

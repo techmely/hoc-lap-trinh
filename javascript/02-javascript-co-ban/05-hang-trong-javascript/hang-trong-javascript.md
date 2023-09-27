@@ -4,9 +4,6 @@ description: "Tìm hiểu về hằng trong JavaScript"
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 5
 ---

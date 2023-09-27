@@ -4,9 +4,6 @@ description: "IndexedDB là một dạng kho lưu trữ dữ liệu ở phía tr
 chapter:
   name: "Lưu trữ dữ liệu"
   slug: "chuong-15-luu-tru-du-lieu"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

@@ -4,9 +4,6 @@ description: "constructor trong java là một phương thức của lớp nhưn
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131241303-40011fad-8ec9-408e-9590-ddafd7c43734.png
 position: 13
 ---

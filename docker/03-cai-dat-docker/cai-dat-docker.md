@@ -4,9 +4,6 @@ description: "Hướng dẫn cài đặt docker trên windows và trên CentOS"
 chapter:
   name: "Nhập môn docker"
   slug: "chuong-01-nhap-mon-docker"
-category:
-  name: "Docker"
-  slug: "docker"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

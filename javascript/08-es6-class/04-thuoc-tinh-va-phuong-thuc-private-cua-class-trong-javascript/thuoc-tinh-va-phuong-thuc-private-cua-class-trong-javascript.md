@@ -4,9 +4,6 @@ description: "Tính bao đóng trong Java thể hiện bằng cách để phạm
 chapter:
   name: "ES6 Class"
   slug: "chuong-08-es6-class"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---

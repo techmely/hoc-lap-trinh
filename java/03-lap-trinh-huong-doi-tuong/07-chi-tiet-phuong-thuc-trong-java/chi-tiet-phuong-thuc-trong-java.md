@@ -4,9 +4,6 @@ description: "Một phương thức là một tập hợp các khối lệnh (co
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131202396-f4ab4d7f-60a6-45b4-8f32-9e8ef7fdc63f.png
 position: 7
 ---
@@ -17,17 +14,17 @@ Một phương thức là một tập hợp các khối lệnh (code) để thi 
 
 ## Các thành phần trong phương thức
 
-| Thành phần                             | Mô tả                                                   |
-| -------------------------------------- | :------------------------------------------------------ |
-| Access Specifier (hay Access Modifier) | mô tả mức độ truy cập đến phương thức                   |
-| static                                 | đây là phương thức lớp                                  |
-| abstract                               | đây là phương thức không có cài đặt                     |
-| final                                  | phương thức này không thể ghi đè                        |
-| native                                 | phương thức này được viết trong một ngôn ngữ khác       |
-| synchronized                           | đây là phương thức đồng bộ                              |
-| returnType                             | giá trị trả về của phương thức                          |
-| MethodName                             | tên của phương thức                                     |
-| throws exception                       | khai báo các ngoại lệ có thể được nem ra từ phương thức |
+| Thành phần                               | Mô tả                                                   |
+| ---------------------------------------- | :------------------------------------------------------ |
+| `Access Specifier` (hay Access Modifier) | mô tả mức độ truy cập đến phương thức                   |
+| `static`                                 | đây là phương thức lớp                                  |
+| `abstract`                               | đây là phương thức không có cài đặt                     |
+| `final`                                  | phương thức này không thể ghi đè                        |
+| `native`                                 | phương thức này được viết trong một ngôn ngữ khác       |
+| `synchronized`                           | đây là phương thức đồng bộ                              |
+| `returnType`                             | giá trị trả về của phương thức                          |
+| `MethodName`                             | tên của phương thức                                     |
+| `throws exception`                       | khai báo các ngoại lệ có thể được nem ra từ phương thức |
 
 _Trong đó:_
 
@@ -107,24 +104,94 @@ Gia tri của t bên trong ham sau khi tang len 1 la 11 Gia tri của t truoc kh
 
 ::
 
-## Thân của phương thức
+## Ví dụ về phương thức
 
-Trong ví dụ sau thân của phương thức isEmpty và phương thức pop được in đậm và có mầu đỏ
+Dưới đây là một số ví dụ về phương thức trong Java
+
+## Phương thức có `Access Specifier` và `returnType` trong Java
 
 ```java
-class Stack {
-  static final int STACK_EMPTY = -1; Object[] stackelements;
-  int topelement = STACK_EMPTY;
-  ...
-  boolean isEmpty() {
-    if (topelement == STACK_EMPTY) return true;
-    else return false;
-  }
-  Object pop() {
-    if (topelement == STACK_EMPTY) return null;
-    else {
-      return stackelements[topelement--];
-    }
-  }
+public int add(int a, int b) {
+    return a + b;
 }
 ```
+
+Trong ví dụ này, phương thức `add` có mức độ truy cập `public`, và nó trả về một số nguyên.
+
+### Phương thức `static` trong Java
+
+```java
+public static void printMessage() {
+    System.out.println("This is a static method.");
+}
+```
+
+Phương thức `printMessage` là một phương thức tĩnh (static), nghĩa là bạn có thể gọi nó trực tiếp từ lớp mà không cần tạo đối tượng của lớp đó.
+
+### Phương thức `abstract` trong Java
+
+```java
+public abstract void draw();
+```
+
+Trong ví dụ này, phương thức `draw` là một phương thức trừu tượng (abstract), nghĩa là nó không có cài đặt trong lớp hiện tại và lớp chứa nó phải được đánh dấu là abstract.
+
+### Phương thức `final` trong Java
+
+```java
+public final void display() {
+    System.out.println("This is a final method.");
+}
+```
+
+Phương thức `display` là một phương thức cuối cùng (final), nghĩa là nó không thể được ghi đè (override) trong các lớp con.
+
+### Phương thức native trong Java
+
+```java
+public native void nativeMethod();
+```
+
+Phương thức `nativeMethod` được khai báo là một phương thức native, nghĩa là nó được viết bằng một ngôn ngữ khác và không có cài đặt trong Java.
+
+### Phương thức synchronized trong Java
+
+```java
+public synchronized void process() {
+    // Code đồng bộ hóa ở đây
+}
+```
+
+Phương thức `process` là một phương thức đồng bộ (synchronized), nghĩa là chỉ một luồng có thể thực thi phương thức này tại một thời điểm.
+
+7. **Phương thức có tham số và returnType**:
+
+```java
+public double calculateArea(double radius) {
+    return Math.PI * radius * radius;
+}
+```
+
+Trong ví dụ này, phương thức `calculateArea` nhận một tham số `radius` kiểu double và trả về một giá trị kiểu double.
+
+8. **Phương thức có tham số trùng tên với thuộc tính**:
+
+```java
+public void setName(String name) {
+    this.name = name; // Gán giá trị của tham số name cho thuộc tính name
+}
+```
+
+Trong ví dụ này, tham số `name` trùng tên với thuộc tính `name` của lớp, để phân biệt, ta sử dụng từ khóa `this`.
+
+9. **Phương thức có throws exception**:
+
+```java
+public void readFile(String fileName) throws IOException {
+    // Code đọc file
+}
+```
+
+Phương thức `readFile` khai báo rằng nó có thể ném ra một IOException, và các cuộc gọi đến phương thức này phải xử lý hoặc khai báo ngoại lệ này.
+
+Những ví dụ trên giúp bạn hiểu cách sử dụng các thành phần trong một phương thức Java và cách khai báo, triển khai và sử dụng chúng trong code của bạn.

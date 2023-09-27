@@ -4,9 +4,6 @@ description: "Bài viết đề cập đến tổ hợp (composition) trong Go v
 chapter:
   name: "Cấu trúc trong Go"
   slug: "chuong-03-cau-truc-trong-go"
-category:
-  name: "Go"
-  slug: "go"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

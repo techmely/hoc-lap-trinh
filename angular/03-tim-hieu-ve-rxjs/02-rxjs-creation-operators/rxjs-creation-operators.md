@@ -4,9 +4,6 @@ description: "Hôm nay, chúng ta sẽ tìm về các Operators dùng để kh�
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

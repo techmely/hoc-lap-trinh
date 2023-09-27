@@ -4,71 +4,71 @@ description: "Chúng ta sẽ cùng tìm hiểu vòng đời của một thread, 
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/146295451-dd3f5502-81f5-4983-bb8b-769b739db327.png
 position: 2
 ---
 
-Khi một chương trình java khởi chạy JVM sẽ tạo 1 `thread` gọi là `main thread` sẽ được khởi tạo và đây là nơi thực thi chương trình. Ngoài ra chúng ta có thể tạo thêm các `thread` khác tùy vào nhu cầu sử dụng. Khi chương trình tạo ra các `thread` khác ngoài `main thread` thì nhu cầu về đồng bộ hóa là cần thiết để tránh dẫn đến deadlock hoặc thu được các kết quả không mong muốn. Khi sử dụng `wait()`, `join()`, `sleep()` method để đồng bộ hóa có ai đặt câu hỏi rằng `thread` lúc này đang ở trạng thái nào không? Trong bài viết này chúng ta sẽ cùng tìm hiểu vòng đời của một thread, các trạng thái mà nó trải qua trước khi chết đi.
+Khi một chương trình Java khởi chạy, JVM sẽ tạo ra một `thread` gọi là `main thread`, đây là nơi thực thi chương trình. Ngoài `main thread`, chúng ta có thể tạo thêm các `thread` khác tùy theo nhu cầu sử dụng. Khi sử dụng các phương thức như `wait()`, `join()`, `sleep()` để đồng bộ hóa, chúng ta cần biết `thread` đang ở trong trạng thái nào. Trong bài viết này, chúng ta sẽ tìm hiểu về vòng đời của một `thread`, các trạng thái mà nó trải qua trước khi kết thúc.
 
-![Vòng đời của Thread trong Java](https://user-images.githubusercontent.com/29374426/146295451-dd3f5502-81f5-4983-bb8b-769b739db327.png)
+## Các Trạng Thái trong Vòng Đời của Thread trong Java
 
-## Các trạng thái trong vòng đời của thread trong Java
+Một `thread` có các trạng thái sau:
 
-Về cơ bản một thread có các trạng thái sau:
+1. **NEW (Tạo Mới)**: Trạng thái khi `thread` mới được tạo, trước khi gọi `start()`.
+2. **RUNNABLE (Đang Thực Thi)**: `Thread` sẵn sàng để chạy sau khi gọi `start()`.
+3. **BLOCKED (Bị Chặn)**: `Thread` bị chặn khi cố gắng truy cập một đoạn mã đang được chiếm bởi `thread` khác hoặc khi chờ tài nguyên I/O.
+4. **WAITING (Chờ)**: `Thread` chờ vô thời hạn khi gọi `wait()` hoặc chờ với thời gian xác định khi gọi `sleep()`.
+5. **TIMED_WAITING (Chờ Với Thời Gian Xác Định)**: `Thread` chờ với thời gian xác định khi gọi `wait(timeout)` hoặc `sleep(timeout)`.
+6. **TERMINATED (Chấm Dứt)**: `Thread` kết thúc sau khi thực thi xong hoặc xảy ra ngoại lệ.
 
-- `New` – Tạo mới
-- `Runnable` – Đang thực thi
-- `Blocked` – Bị chặn
-- `Waiting` – Trạng thái chờ
-- `Timed Waiting` – Trạng thái chờ trong một khoảng thời gian xác định
-- `Terminated` – Chấm dứt
+Sơ đồ `enum` dưới đây thể hiện các trạng thái trong vòng đời của một `Thread`:
 
-Sơ đồ các `enum` bên trong một `Thread` sẽ thể hiện rõ nhất các trạng thái bên trong một vòng đời của `Thread` này. Bạn hãy nhìn các state dưới `enum` dưới đây
+![Vòng Đời của Thread trong Java](https://user-images.githubusercontent.com/29374426/146295451-dd3f5502-81f5-4983-bb8b-769b739db327.png)
 
-<img width="686" alt="Vòng đời của thread trong Java" src="https://user-images.githubusercontent.com/29374426/146179060-b8b78f3d-f2fd-4aca-91bc-5e212b4a6a87.png">
+### Trạng Thái "NEW" (Tạo Mới)
 
-Ngay khi bạn tạo mới một `Thread`, nhưng vẫn chưa gọi đến phương thức `start()`, trạng thái của nó sẽ là `NEW`.
+Khi một `thread` được tạo nhưng chưa gọi `start()`, nó ở trạng thái "NEW".
 
-![Trạng thái new trong Thread](https://user-images.githubusercontent.com/29374426/146178768-3bd727f2-1b89-4b86-9075-eecd71b5bc25.png)
+![Trạng Thái NEW trong Thread](https://user-images.githubusercontent.com/29374426/146178768-3bd727f2-1b89-4b86-9075-eecd71b5bc25.png)
 
-Còn khi bạn đã gọi đến `start()`, `thread` đó sẽ vào trạng thái `RUNNABLE`, trạng thái này đưa `Thread` vào hàng đợi để đợi hệ thống cấp tài nguyên và khởi chạy sau đó.
+### Trạng Thái "RUNNABLE" (Đang Thực Thi)
 
-![Trạng thái runnable trong java](https://user-images.githubusercontent.com/29374426/146178835-533a1939-0f55-4f6b-a05b-c1317e14106c.png)
+Khi gọi `start()`, `thread` chuyển sang trạng thái "RUNNABLE", và hệ thống sẽ quản lý việc thực thi `thread` này.
 
-Trong quá trình `Thread` đang chạy, nếu có bất kỳ tác động nào, ngoại trừ làm kết thúc vòng đời của `Thread`, nó sẽ vào trạng thái `BLOCKED`, hoặc `WAITING`, hoặc `TIMED_WAITING`.
+![Trạng Thái RUNNABLE trong Java](https://user-images.githubusercontent.com/29374426/146178835-533a1939-0f55-4f6b-a05b-c1317e14106c.png)
 
-**Blocked/Waiting:**
+### Trạng Thái "BLOCKED" (Bị Chặn) và "WAITING" (Chờ)
 
-- Khi một `thread` ngừng hoạt động tạm thời trong một khoảng thời gian thì nó sẽ nằm 1 trong 2 trạng thái `Blocked` hoặc `Waiting`.
-- Khi một `thread` chờ một tác vụ I/O thực thi hoàn tất, nó đang ở trong trạng thái `Blocked`. Khi đang ở trong trại thái này `thread` sẽ không thể thực thi thêm bất kỳ đoạn mã nào của nó cho đến khi nó được chuyển sang trạng thái `Runnable`.
-- Các `thread` sẽ bị chặn khi cố truy cập vào một đoạn mã code đang được chiếm bởi một `thread` khác, lúc này chúng sẽ rơi vào trạng thái `Blocked`. Khi đoạn mã được `thread` chiếm đóng giải phóng, chương trình sẽ chọn 1 trong số các `thread` chờ để thực thi đoạn mã hoặc do các điều kiện mà chúng ta đưa ra thì chúng ta chuyển sang trạng thái `Waiting`. Khi một `thread` được chọn để thực thi đoạn mã thì nó sẽ chuyển sang trạng thái `Runnable`.
+Khi một `thread` chờ tài nguyên hoặc bị chặn khi truy cập vào đoạn mã đang được chiếm bởi `thread` khác, nó có thể ở trong trạng thái "BLOCKED". Khi `thread` gọi `wait()` hoặc `sleep()`, nó có thể chuyển sang trạng thái "WAITING". Khi các điều kiện thỏa mãn, `thread` sẽ trở lại "RUNNABLE".
 
-**Timed Waiting:** các thread sẽ chuyển sang trạng thái `Timed Waiting` khi các method `wait()`, `join()` được gọi với một khoản thời gian cụ thể. Sau khi hết thời gian chờ chúng sẽ quay trở lại với trạng thái `Runnable`.
+![Trạng Thái BLOCKED và WAITING trong Java](https://user-images.githubusercontent.com/29374426/146178947-9994c1aa-4a40-4e87-9fa0-458f2e7809da.png)
 
-![Vòng đời thread trong Java](https://user-images.githubusercontent.com/29374426/146178947-9994c1aa-4a40-4e87-9fa0-458f2e7809da.png)
+### Trạng Thái "TIMED_WAITING" (Chờ Với Thời Gian Xác Định)
 
-Một `thread` sẽ kết thúc chu trình sống sau khi chúng đã thực thi hết mã bên trong nó hoặc xảy ra một lỗi ngoại lệ nào đó. Sau khi chuyển qua trạng thái `Terminated thread` sẽ không còn tiêu tốn tài nguyên của CPU và đợi cho đến khi trình dọn rác dọn dẹp.
+Khi `thread` gọi `wait(timeout)` hoặc `sleep(timeout)`, nó chuyển sang trạng thái "TIMED_WAITING". Sau thời gian chờ, `thread` sẽ trở lại "RUNNABLE".
 
-![Trạng thái terminated trong java](https://user-images.githubusercontent.com/29374426/146179003-9e3a33f5-22f0-4dcd-9282-f100e70443f1.png)
+### Trạng Thái "TERMINATED" (Chấm Dứt)
 
-Tổng quan là vậy, còn chi tiết từng trạng thái thì chúng ta sẽ tiếp tục đến phầnn tiếpp theo.
+`
 
-## Ví dụ vòng đời của Thread trong Java
+Thread` kết thúc sau khi thực thi xong hoặc xảy ra ngoại lệ.
+
+![Trạng Thái TERMINATED trong Java](https://user-images.githubusercontent.com/29374426/146179003-9e3a33f5-22f0-4dcd-9282-f100e70443f1.png)
+
+## Ví Dụ Vòng Đời của Thread trong Java
+
+Dưới đây là một ví dụ minh họa vòng đời của `Thread`:
 
 ```java
-class thread implements Runnable {
+class MyThread implements Runnable {
     public void run() {
-        // moving thread2 to timed waiting state
         try {
             Thread.sleep(1500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("State of thread1 while it called join() method on thread2 -" +
-                Test.thread1.getState());
+        System.out.println("Trạng thái của thread1 sau khi gọi join() trên thread2 - " +
+                Main.thread1.getState());
         try {
             Thread.sleep(200);
         } catch (InterruptedException e) {
@@ -76,57 +76,63 @@ class thread implements Runnable {
         }
     }
 }
-class Test implements Runnable {
+
+public class Main implements Runnable {
     public static Thread thread1;
-    public static Test obj;
+    public static Main obj;
+
     public static void main(String[] args) {
-        obj = new Test();
+        obj = new Main();
         thread1 = new Thread(obj);
-        // thread1 created and is currently in the NEW state.
-        System.out.println("State of thread1 after creating it - " + thread1.getState());
+
+        System.out.println("Trạng thái của thread1 sau khi tạo - " + thread1.getState());
+
         thread1.start();
-        // thread1 moved to Runnable state
-        System.out.println("State of thread1 after calling .start() method on it - " +
+
+        System.out.println("Trạng thái của thread1 sau khi gọi start() - " +
                 thread1.getState());
     }
+
     public void run() {
-        thread myThread = new thread();
+        MyThread myThread = new MyThread();
         Thread thread2 = new Thread(myThread);
-        // thread1 created and is currently in the NEW state.
-        System.out.println("State of thread2 after creating it - " + thread2.getState());
+
+        System.out.println("Trạng thái của thread2 sau khi tạo - " + thread2.getState());
+
         thread2.start();
-        // thread2 moved to Runnable state
-        System.out.println("State of thread2 after calling .start() method on it - " +
+
+        System.out.println("Trạng thái của thread2 sau khi gọi start() - " +
                 thread2.getState());
-        // moving thread1 to timed waiting state
+
         try {
-            //moving thread1 to timed waiting state
             Thread.sleep(200);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("State of thread2 after calling .sleep() method on it - " +
+
+        System.out.println("Trạng thái của thread2 sau khi gọi sleep() - " +
                 thread2.getState());
+
         try {
-            // waiting for thread2 to die
             thread2.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("State of thread2 when it has finished it's execution - " +
+
+        System.out.println("Trạng thái của thread2 sau khi kết thúc - " +
                 thread2.getState());
     }
 }
 ```
 
 ::result
-
-State of thread1 after creating it – NEW<br/>
-State of thread1 after calling .start() method on it – RUNNABLE<br/>
-State of thread2 after creating it – NEW<br/>
-State of thread2 after calling .start() method on it – RUNNABLE<br/>
-State of thread2 after calling .sleep() method on it – TIMED_WAITING<br/>
-State of thread1 while it called join() method on thread2 -WAITING<br/>
-State of thread2 when it has finished it’s execution – TERMINATED<br/>
-
+Trạng thái của thread1 sau khi tạo - NEW<br/>
+Trạng thái của thread1 sau khi gọi start() - RUNNABLE<br/>
+Trạng thái của thread2 sau khi tạo - NEW<br/>
+Trạng thái của thread2 sau khi gọi start() - RUNNABLE<br/>
+Trạng thái của thread2 sau khi gọi sleep() - TIMED_WAITING<br/>
+Trạng thái của thread1 sau khi gọi join() trên thread2 - WAITING<br/>
+Trạng thái của thread2 sau khi kết thúc - TERMINATED
 ::
+
+Trên đây là ví dụ về vòng đời của một `Thread` trong Java, chúng ta đã thấy các trạng thái khác nhau mà một `Thread` có thể trải qua trong quá trình thực thi. Hiểu về vòng đời của `Thread` là quan trọng để quản lý và đồng bộ hóa các `Thread` trong ứng dụng của bạn.

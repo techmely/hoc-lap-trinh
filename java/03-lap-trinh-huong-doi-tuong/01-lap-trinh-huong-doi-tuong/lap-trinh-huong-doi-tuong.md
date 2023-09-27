@@ -4,9 +4,6 @@ description: "Lập trình hướng đối tượng (Object Oriented Programming
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/130178941-fc8cbd22-d121-48e0-a260-7b580e4d1298.png
 position: 1
 ---

@@ -4,9 +4,6 @@ description: "Chúng ta sẽ cùng nhau tìm hiểu về debug trong JavaScript 
 chapter:
   name: "Kiểm thử và đảm bảo chất lượng code"
   slug: "chuong-11-kiem-thu-va-dam-bao-chat-luong-code"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

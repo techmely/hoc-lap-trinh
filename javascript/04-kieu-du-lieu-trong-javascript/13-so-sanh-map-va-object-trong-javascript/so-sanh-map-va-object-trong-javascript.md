@@ -4,9 +4,6 @@ description: "Map là một kiểu dữ liệu mới xuất hiện trong ES6. Ma
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168243549-4803ac2f-e047-4230-8cad-6a059f529826.png
 position: 13
 ---

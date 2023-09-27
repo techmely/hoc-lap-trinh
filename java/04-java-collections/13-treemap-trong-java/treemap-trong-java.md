@@ -4,16 +4,13 @@ description: "Lớp TreeMap trong java là một lớp kế thừa lớp Abstrac
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/145682018-69cc074d-31ed-4950-a72d-1bad074b889f.png
 position: 13
 ---
 
-## TreeMap trong Java là gì?
+## `TreeMap` trong Java là gì?
 
-Lớp TreeMap trong java là một lớp kế thừa lớp `AbstractMap` và triển khai của `NavigableMap Interface` (NavigableMap kế thừa SortedMap, SortedMap kế thừa Map interface). Trong Collections Framework nên nó sẽ có một vài đặc điểm và phương thức tương đồng với `Map` và `SortedMap` và `NavigableMap`. `TreeMap` được sử dụng để lưu trữ các phần tử dưới dạng "key/value". Key và value là kiểu dữ liệu bất kỳ, và bạn có thể try cập các giá trị của `HasMap` bằng một key cụ thể.
+Lớp `TreeMap` trong java là một lớp kế thừa lớp `AbstractMap` và triển khai của `NavigableMap Interface` (NavigableMap kế thừa SortedMap, SortedMap kế thừa Map interface). Trong Collections Framework nên nó sẽ có một vài đặc điểm và phương thức tương đồng với `Map` và `SortedMap` và `NavigableMap`. `TreeMap` được sử dụng để lưu trữ các phần tử dưới dạng "key/value". Key và value là kiểu dữ liệu bất kỳ, và bạn có thể try cập các giá trị của `HasMap` bằng một key cụ thể.
 
 ![TreeMap trong Java](https://user-images.githubusercontent.com/29374426/145682018-69cc074d-31ed-4950-a72d-1bad074b889f.png)
 
@@ -24,7 +21,7 @@ Những điểm quan trọng về lớp TreeMap trong java cần nhớ là:
 - `TreeMap` KHÔNG cho phép bất kỳ key nào là `null` và nhưng có thể có nhiều giá trị `null`.
 - `TreeMap` duy trì các phần tử được thêm vào theo thứ tự key tăng dần.
 
-## Tạo một TreeMap trong Java
+## Tạo một `TreeMap` trong Java
 
 Để tạo một `TreeMap`, chúng ta phải `import java.util.TreeMap` gói đầu tiên. Khi đã `import` xong, chúng ta có thể tạo `TreeMap` trong Java theo cách dưới đây.
 
@@ -79,7 +76,7 @@ TreeMap of numbers: {Four=4, One=1, Six=6, Two=2}
 
 ## Lấy các phần tử trong TreeMap
 
-- `entrySet()` – trả về tập hợp gồm tất cả cặp `key/value` (mục nhập) của treemap
+- `entrySet()` – trả về tập hợp gồm tất cả cặp `key/value` (mục nhập) của TreeMap
 - `keySet()` – trả về tập hợp gồm tất cả các key của `TreeMap`
 - `values()` – trả về một tập hợp gồm tất cả các map của `TreeMap`
 
@@ -117,7 +114,7 @@ Values: [1, 3, 2]
 ::
 
 - `get()` - Trả về value liên kết với key được chỉ định. Trả về null nếu không tìm thấy key.
-- `getOrDefault()` - Trả về value liên kết vớikey được chỉ định. Trả về value mặc định đã chỉ định nếu không tìm thấy key.
+- `getOrDefault()` - Trả về value liên kết với key được chỉ định. Trả về value mặc định đã chỉ định nếu không tìm thấy key.
 
 ```java
 import java.util.TreeMap;
@@ -371,11 +368,11 @@ class Main {
 TreeMap: {First=1, Second=2, Third=3}<br/>
 Using pollFirstEntry(): First=1<br/>
 Using pollLastEntry(): Third=3<br/>
-Updated TreeMap: {Second=2}<br/>
+Updated TreeMap: {Second=2}
 
 ::
 
-- `headMap(key, booleanValue)`: hàm `headMap()` trả về tất cả các cặp `key / value` của một treemap đứng trước key được chỉ định (được thông qua như là một đối số). Tham số `booleanValue` là tùy chọn. Giá trị mặc định của nó là `false`. Nếu `true` được thông qua như một `booleanValue`, hàm này cũng sẽ bao gồm cặp `key/value` của key được truyền dưới dạng đối số.
+`headMap(key, booleanValue)`: hàm `headMap()` trả về tất cả các cặp `key / value` của một `TreeMap` đứng trước key được chỉ định (được thông qua như là một đối số). Tham số `booleanValue` là tùy chọn. Giá trị mặc định của nó là `false`. Nếu `true` được thông qua như một `booleanValue`, hàm này cũng sẽ bao gồm cặp `key/value` của key được truyền dưới dạng đối số.
 
 ```java
 import java.util.TreeMap;
@@ -407,11 +404,11 @@ TreeMap: {First=1, Fourth=4, Second=2, Third=3}<br/>
 <br/>
 Using headMap() Method:<br/>
 Without boolean value: {First=1}<br/>
-With boolean value: {First=1, Fourth=4}<br/>
+With boolean value: {First=1, Fourth=4}
 
 ::
 
-- `tailMap(key, booleanValue)`: hàm `tailMap()` trả về tất cả các cặp `key/value` của một treemap bắt đầu từ key được chỉ định (được thông qua như là một đối số). `booleanValue` là một tham số tùy chọn. Giá trị mặc định của nó là `true`. Nếu `false` được thông qua như một `booleanValue`, hàm sẽ không bao gồm cặp `key/value` của key được chỉ định.
+- `tailMap(key, booleanValue)`: hàm `tailMap()` trả về tất cả các cặp `key/value` của một `TreeMap` bắt đầu từ key được chỉ định (được thông qua như là một đối số). `booleanValue` là một tham số tùy chọn. Giá trị mặc định của nó là `true`. Nếu `false` được thông qua như một `booleanValue`, hàm sẽ không bao gồm cặp `key/value` của key được chỉ định.
 
 ```java
 import java.util.TreeMap;
@@ -447,7 +444,7 @@ With boolean value: {Third=3}
 
 ::
 
-- `subMap (k1, bV1, k2, bV2)`: hàm `subMap()` trả về tất cả các mục có liên quan với các key trong khoảng k1 và k2 bao gồm cả mục của k1. bV1 và bV2 là các tham số `boolean` tùy chọn. Giá trị mặc định của bV1 là true và giá trị mặc định của bV2 là false. Nếu false được thông qua như bv1, hàm này sẽ trả về tất cả các mục được liên kết với các key trong khoảng k1 và k2 không bao gồm mục của k1. Nếu true được thông qua như bV2, hàm này sẽ trả về tất cả các mục được liên kết với các key trong khoảng k1 và k2 bao gồm cả mục của k2.
+`subMap (k1, bV1, k2, bV2)`: hàm `subMap()` trả về tất cả các mục có liên quan với các key trong khoảng k1 và k2 bao gồm cả mục của k1. bV1 và bV2 là các tham số `boolean` tùy chọn. Giá trị mặc định của bV1 là true và giá trị mặc định của bV2 là false. Nếu false được thông qua như bv1, hàm này sẽ trả về tất cả các mục được liên kết với các key trong khoảng k1 và k2 không bao gồm mục của k1. Nếu true được thông qua như bV2, hàm này sẽ trả về tất cả các mục được liên kết với các key trong khoảng k1 và k2 bao gồm cả mục của k2.
 
 ```java
 class Main {

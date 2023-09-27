@@ -4,113 +4,111 @@ description: "Bài này chúng ta sẽ tìm hiểu về Lớp math của Java, t
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://media.geeksforgeeks.org/wp-content/uploads/java.math-class-methods1.png
 position: 26
 ---
 
-Lớp [final](/bai-viet/java/tu-khoa-final-trong-java) class Math định nghĩa một tập các hàm tĩnh để thực hiện các chức năng chung của toán học như các phép làm tròn số, sinh số ngẫu nhiên, tìm số cực đại, cực tiểu,... Ngoài ra lớp này còn cung cấp những hằng số như số e (cơ số của logarithm), số pi thông qua `Math.E` và `Math.PI`.
+Lớp `Math` trong Java định nghĩa một tập các phương thức tĩnh để thực hiện các chức năng toán học cơ bản. Nó cung cấp các phép toán như làm tròn số, tính lũy thừa, tính sin, cos, tan và nhiều phương thức khác. Trong bài viết này, chúng ta sẽ tìm hiểu về các phương thức quan trọng của lớp `Math` và cách sử dụng chúng trong Java.
 
-## Các phương thức trong lớp Math
+## Các Phương Thức Trong Lớp Math
 
-### Các hàm làm tròn và xử lý các giá trị giới hạn
+### Các Hàm Làm Tròn và Xử Lý Giới Hạn
 
-- `abs()`: được nạp chồng để trả lại giá trị tuyệt đối của đối số.
+#### `abs()`
 
-```java
-static int abs(int i)
-static long abs(long l)
-static float abs(float f)
-static double abs(double d)
-```
-
-- `ceil()`: trả lại giá trị nhỏ nhất kiểu double mà không nhỏ hơn đối số và lại bằng số nguyên. Ví dụ ceil(3.14) cho giá trị 4.0 là số trần trên của đối số.
+Phương thức `abs()` được sử dụng để lấy giá trị tuyệt đối của một số. Nó trả về giá trị dương của số được cung cấp.
 
 ```java
-static double ceil(double d)
+double absoluteValue = Math.abs(-5.5); // absoluteValue = 5.5
 ```
 
-- `floor()`: trả lại giá trị lớn nhất kiểu double mà không lớn hơn đối số và lại bằng số nguyên. Ví dụ floor(3.14) cho giá trị 3.0 là số sàn dưới của đối số.
+#### `ceil()`
+
+Phương thức `ceil()` trả về số nguyên lớn nhất không nhỏ hơn một số đã cho. Nó làm tròn số lên.
 
 ```java
-static double floor(double d)
+double ceilingValue = Math.ceil(3.14); // ceilingValue = 4.0
 ```
 
-- `round()`: được nạp chồng để trả lại số nguyên gần nhất của đối số
+#### `floor()`
+
+Phương thức `floor()` trả về số nguyên lớn nhất không lớn hơn một số đã cho. Nó làm tròn số xuống.
 
 ```java
-static int round(float f d)
-static long round(double d)
+double floorValue = Math.floor(3.14); // floorValue = 3.0
 ```
 
-- `max()`: được nạp chồng để trả lại giá trị cực đại của hai đối số
+#### `round()`
+
+Phương thức `round()` làm tròn một số double hoặc float đến số nguyên gần nhất.
 
 ```java
-static int max(int a, int b)
-static long max(long a, long b)
-static float max(float a, float b)
-static double max(double a, double b)
+int roundedValue = Math.round(3.75); // roundedValue = 4
 ```
 
-- `min()`: được nạp chồng để trả lại giá trị cực tiểu của hai đối số.
+#### `max()` và `min()`
+
+Phương thức `max()` và `min()` trả về giá trị lớn nhất và nhỏ nhất trong hai số đã cho.
 
 ```java
-static int	min(int a, int b)
-static long	min(long a, long b)
-static float	min(float a, float b)
-static double min(double a, double b)
+int maxValue = Math.max(10, 20); // maxValue = 20
+int minValue = Math.min(10, 20); // minValue = 10
 ```
 
-### Các hàm lũy thừa
+### Các Hàm Lũy Thừa
 
-- `pow()`: trả lại giá trị là lũy thừa của d1 và d2 (d1d2)
+#### `pow()`
+
+Phương thức `pow()` tính lũy thừa của một số. Nó trả về giá trị của số thứ nhất được nâng lên số mũ của số thứ hai.
 
 ```java
-static double pow(double d1, double d2)
+double result = Math.pow(2, 3); // result = 8.0
 ```
 
-- `exp()`: trả lại giá trị là luỹ thừa cơ số e và số mũ d (ed).
+#### `exp()`
+
+Phương thức `exp()` tính giá trị của lũy thừa cơ số e với một số mũ đã cho.
 
 ```java
-static double exp(double d)
+double result = Math.exp(2); // result = 7.3890560989306495
 ```
 
-- `log()`: trả lại giá trị là lô-ga-rit tự nhiên (cơ số e) của d
+#### `log()`
+
+Phương thức `log()` tính giá trị của logarithm tự nhiên (cơ số e) của một số.
 
 ```java
-static double log(double d)
+double result = Math.log(10); // result = 2.302585092994046
 ```
 
-- `sqrt()` trả lại giá trị là căn bậc hai của d , hoặc giá trị NaN nếu đối số âm.
+#### `sqrt()`
+
+Phương thức `sqrt()` tính căn bậc hai của một số. Nó trả về giá trị căn bậc hai dương của số.
 
 ```java
-static double sqrt(double d)
+double result = Math.sqrt(16); // result = 4.0
 ```
 
-### Các hàm lượng giác
+### Các Hàm Lượng Giác
 
-- `sin()` trả lại giá trị là sine của góc d được cho dưới dạng radian.
+#### `sin()`, `cos()`, và `tan()`
+
+Các phương thức `sin()`, `cos()`, và `tan()` tính giá trị của sin, cos, và tan của một góc được cung cấp dưới dạng radian.
 
 ```java
-static double sin(double d)
+double sinValue = Math.sin(Math.PI / 2);   // sinValue = 1.0
+double cosValue = Math.cos(Math.PI);       // cosValue = -1.0
+double tanValue = Math.tan(Math.PI / 4);   // tanValue = 1.0
 ```
 
-- `cos()` trả lại giá trị là cose của góc d được cho dưới dạng radian
+### Hàm Sinh Số Ngẫu Nhiên
+
+#### `random()`
+
+Phương thức `random()` trả về một số ngẫu nhiên trong khoảng từ 0.0 (bao gồm) đến 1.0 (không bao gồm).
 
 ```java
-static double cos(double d)
+double randomValue = Math.random(); // Giá trị ngẫu nhiên từ 0.0 đến 1.0
 ```
 
-- `tan()` trả lại giá trị là tangent của góc d được cho dưới dạng radian.
-
-```java
-static double tan(double d)
-```
-
-Hàm sinh số ngẫu nhiên, Hàm `random()` cho lại giá trị là số ngẫu nhiên trong khoảng từ 0.0 đến 1.0
-
-```java
-static double random()
-```
+Lớp `Math` trong Java cung cấp một loạt các phương thức toán học cơ bản để thực hiện các phép toán như làm tròn số, tính lũy thừa, tính sin, cos, tan và nhiều chức năng khác. Bài viết này đã giới thiệu các phương thức quan trọng của lớp `Math` và cách sử dụng chúng trong Java. Sử dụng lớp `Math` có thể giúp bạn thực hiện các tính toán toán học một cách thuận tiện và hiệu quả trong ứng dụng Java của bạn.

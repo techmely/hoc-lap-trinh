@@ -4,9 +4,6 @@ description: "Trong lập trình hướng đối tượng, tính trừu tượng
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131304738-aaf13d70-84e1-4787-b0b0-03fce36eaa2d.png
 position: 5
 ---

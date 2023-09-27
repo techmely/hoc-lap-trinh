@@ -4,9 +4,6 @@ description: "Xử lý bất đồng bộ là cơ chế xử lý không thể th
 chapter:
   name: "Callback, Promise, async/await"
   slug: "chuong-09-callback-promise-asyn-await"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

@@ -4,9 +4,6 @@ description: "Prototype là khái niệm cốt lõi trong JavaScript và là cơ
 chapter:
   name: "Prototype và thừa kế prototype"
   slug: "chuong-07-prototype-va-thua-ke-prototype"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168246011-4f728c59-d02c-47df-9c65-50ea792567d8.png
 position: 1
 ---

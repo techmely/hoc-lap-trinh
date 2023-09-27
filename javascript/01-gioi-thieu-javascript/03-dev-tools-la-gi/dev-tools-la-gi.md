@@ -4,9 +4,6 @@ description: "Dev Tools là gì? Code javascript tại sao cần console.log"
 chapter:
   name: "Giới thiệu Javascript"
   slug: "chuong-01-gioi-thieu-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/156757527-629dee15-d91d-4236-ac82-ff8d2d2975d8.png
 position: 3
 ---

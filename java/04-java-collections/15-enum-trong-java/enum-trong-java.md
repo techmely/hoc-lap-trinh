@@ -4,14 +4,11 @@ description: "Enum là một từ khóa trong Java, là một kiểu dữ liệu
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/145763981-728dcb20-8cf1-417b-9f3a-45585e48a366.png
 position: 15
 ---
 
-## Enum trong Java là gì?
+## `Enum` trong Java là gì?
 
 `Enum` là một từ khóa trong Java, là một kiểu dữ liệu đặc biệt được sử dụng để đại diện cho hằng số cố định. Một enum có thể chứa các trường, `phương thức` và `constructor`. Bởi vì các giá trị của `Enum` là các hằng số, nên tên của các trường kiểu `enum` thường là các chữ cái hoa.
 
@@ -53,7 +50,7 @@ public enum Gender {
 }
 ```
 
-## Khai báo Enum trong Java
+## Khai báo `Enum` trong Java
 
 `enum` định nghĩa bên trong một lớp
 
@@ -137,7 +134,7 @@ Các hằng số enum có giá trị ban đầu bắt đầu từ `0, 1, 2, 3, �
 ```java
 public class EnumExample3 {
     enum WeekDay {
-        // Khởi tạo các phần tử từ construnctor
+        // Khởi tạo các phần tử từ constructor
         // Các phần tử này luôn là static final
         MONDAY(2), TUESDAY(3), WEDNESDAY(4), THURSDAY(5), FRIDAY(7), SATURDAY(7), SUNDAY(1);
 
@@ -182,7 +179,7 @@ THURSDAY = 5<br/>
 FRIDAY = 7<br/>
 SATURDAY = 7<br/>
 SUNDAY = 1<br/>
-value 3 is TUESDAY<br/>
+value 3 is TUESDAY
 
 ::
 

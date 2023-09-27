@@ -4,9 +4,6 @@ description: "Trong java ta có thể đặt một khối lệnh không thuộc 
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131244991-bd72ce64-f07c-465c-9a2b-677bcc58ba01.png
 position: 14
 ---

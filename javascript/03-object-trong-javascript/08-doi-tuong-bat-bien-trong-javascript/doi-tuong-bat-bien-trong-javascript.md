@@ -4,9 +4,6 @@ description: "Khi làm việc với javascript, hẳn mọi người đã nghe �
 chapter:
   name: "Object trong Javascript"
   slug: "chuong-03-object-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 8
 ---

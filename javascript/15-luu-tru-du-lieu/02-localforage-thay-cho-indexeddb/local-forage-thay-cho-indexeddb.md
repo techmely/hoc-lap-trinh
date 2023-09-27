@@ -4,9 +4,6 @@ description: "LocalStorage cho phép web dev lưu dữ liệu dưới dạng key
 chapter:
   name: "Lưu trữ dữ liệu"
   slug: "chuong-15-luu-tru-du-lieu"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

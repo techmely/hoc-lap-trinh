@@ -4,9 +4,6 @@ description: "Một cách tuyệt vời để nâng cao kỹ năng lập trình 
 chapter:
   name: "Hàm"
   slug: "chuong-05-functions"
-category:
-  name: "C"
-  slug: "c"
 image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
 position: 5
 ---

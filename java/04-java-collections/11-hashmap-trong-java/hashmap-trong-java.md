@@ -4,14 +4,11 @@ description: "HashMap trong Java là một bảng băm dựa trên việc thực
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/145359882-048ab790-e05c-4594-830e-4380e00dc3c0.png
 position: 11
 ---
 
-## HashMap trong Java là gì?
+## `HashMap` trong Java là gì?
 
 **HashMap** trong Java là một bảng băm dựa trên việc thực hiện Java's Map interface. Map là một tập hợp các cặp `key-value`. Nó ánh xạ các `key` tới các `value`.
 
@@ -26,7 +23,7 @@ Những điểm quan trọng về lớp `HashMap` trong java:
 - `HashMap` có thể có 1 key là `null` và nhiều giá trị `null`.
 - `HashMap` duy trì các phần tử KHÔNG theo thứ tự chèn.
 
-## Tạo một HashMap trong Java
+## Tạo một `HashMap` trong Java
 
 Để tạo `HashMap`, trước tiên chúng ta phải import gói `java.util.HashMap`. Khi chúng ta đã `import` xong, sau đây là cách chúng ta có thể tạo các `hashmap` trong Java.
 
@@ -45,7 +42,7 @@ Lưu ý về đoạn code `new HashMap<>(8, 0.6)`. Ở đây, tham số đầu t
 - `capacity` – Dung lượng của `HashMap` này là `8`. Ý nghĩa: nó có thể lưu trữ 8 mục.
 - `loadFactor` – Hệ số tải của `hashmap` này là `0,6`. Điều này có nghĩa là bất cứ khi nào bảng băm của chúng ta được lấp đầy `60%`, các mục mới sẽ được chuyển sang bảng băm mới có kích thước gấp đôi bảng băm ban đầu.
 
-## Tạo HashMap từ các Map khác
+## Tạo `HashMap` từ các `Map` khác
 
 Sau đây là cách chúng ta có thể tạo một hashmap chứa tất cả các phần tử của các map khác.
 
@@ -273,7 +270,7 @@ numbers.replaceAll((key, oldValue) -> oldValue + 2);
 
 Ở đây, hàm này truy cập tất cả các mục của map. Sau đó, nó thay thế tất cả các value bằng các value mới được cung cấp bởi biểu thức lambda.
 
-## Tính toán lại các value của HashMap
+## Tính toán lại các value của `HashMap`
 
 - `compute()` - Tính toán một value mới bằng cách sử dụng hàm được chỉ định. Sau đó, nó liên kết `value` được tính toán với `key` được chỉ định.
 - `computeIfAbsent()` - Nếu key được chỉ định không được liên kết với bất kỳ `value` nào, hàm này sẽ tính toán một `value` mới bằng cách sử dụng hàm được chỉ định. Sau đó, nó liên kết `value` mới với `key`.
@@ -317,11 +314,7 @@ HashMap using computeIfPresent(): {Second=6, First=3, three=5}
 
 Trong ví dụ trên, chúng ta đã tính toán lại các value của map bằng hàm `compute()`.
 
-Ở đây, chúng ta đã sử dụng các biểu thức `lambda` làm đối số hàm để tính toán lại các `value`.
-
-- `merge()` - liên kết value được chỉ định với để key được chỉ định nếu `key` đó chưa được liên kết với `value` nào.
-
-Tuy nhiên, nếu key được chỉ định đã được liên kết với một `value`, nó sẽ hợp nhất `value` được chỉ định mới với `value` cũ hiện có. Ví dụ:
+Ở đây, chúng ta đã sử dụng các biểu thức `lambda` làm đối số hàm để tính toán lại các `value`. `merge()` - liên kết value được chỉ định với để key được chỉ định nếu `key` đó chưa được liên kết với `value` nào. Tuy nhiên, nếu key được chỉ định đã được liên kết với một `value`, nó sẽ hợp nhất `value` được chỉ định mới với `value` cũ hiện có. Ví dụ:
 
 ```java
 import java.util.HashMap;
@@ -350,7 +343,7 @@ New HashMap: {Second=2, First=5}
 
 Trong ví dụ trên, hàm `merge()` này có 3 tham số: `key` , `newValue` và biểu thức lambda (biểu thức này tính value hợp nhất mới).
 
-## Lặp qua HashMap
+## Lặp qua `HashMap`
 
 Trong một HashMap, chúng ta có thể
 
@@ -413,7 +406,7 @@ Trong chương trình trên, lưu ý rằng chúng ta đã import gói `java.uti
 
 Ví dụ sử dụng hàm `iterator()`
 
-Cũng có thể lặp lại HashMapbằng cách sử dụng hàm `iterator()`. Để sử dụng hàm này, chúng ta phải `import java.util.Iterator` gói.
+Cũng có thể lặp lại HashMap bằng cách sử dụng hàm `iterator()`. Để sử dụng hàm này, chúng ta phải `import java.util.Iterator` gói.
 
 ```java
 import java.util.HashMap;

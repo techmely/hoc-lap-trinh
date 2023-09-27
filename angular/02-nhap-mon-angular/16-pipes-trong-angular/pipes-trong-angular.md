@@ -4,9 +4,6 @@ description: "Hiểu đơn giản, pipe là một function nhận **input** mà 
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 16
 ---

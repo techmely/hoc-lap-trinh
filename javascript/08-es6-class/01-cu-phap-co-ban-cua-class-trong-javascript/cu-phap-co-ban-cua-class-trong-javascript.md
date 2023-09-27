@@ -4,9 +4,6 @@ description: "Các cú pháp cơ bản và hay sử dụng trong Javascript."
 chapter:
   name: "ES6 Class"
   slug: "chuong-08-es6-class"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---

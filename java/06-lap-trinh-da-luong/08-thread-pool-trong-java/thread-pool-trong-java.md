@@ -4,9 +4,6 @@ description: " ThreadPool ra đời để giới hạn số lượng Thread đư
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/146481640-6aee573d-28e4-4f40-b060-36d3e3192291.png
 position: 8
 ---
@@ -19,7 +16,7 @@ Câu trả lời là không phải cứ tạo nhiều `Thread` cùng hoạt đ�
 
 Để giải quyết bài toán đó `ThreadPool` ra đời để giới hạn số lượng `Thread` được chạy bên trong ứng dụng chúng ta cùng một thời điểm.
 
-## ThreadPool là gì?
+## ThreadPool trong Java là gì?
 
 Xét về hiệu suất, tạo ra một `Thread` mới là một hoạt động tốn kém bởi vì nó đòi hỏi hệ điều hành cung cấp tài nguyên để có thể thực thi task (tác vụ). Trên thực tế, `ThreadPool` được sử dụng cho các ứng dụng quy mô lớn khởi chạy rất nhiều luồng ngắn ngủi để sử dụng hiệu quả các tài nguyên và tăng hiệu suất.
 
@@ -60,7 +57,7 @@ Chúng có thể tạo một `Executor` bằng cách sử dụng một trong cá
 - `newScheduledThreadPool(int corePoolSize)`: tương tự như `newCachedThreadPool()` nhưng sẽ có thời gian delay giữa các `Thread`.
 - `newSingleThreadScheduledExecutor()`: tương tự như `newSingleThreadExecutor()` nhưng sẽ có khoảng thời gian delay giữa các `Thread`.
 
-## Các ví dụ minh họa tạo và sử dụng ThreadPool
+## Các ví dụ minh họa tạo và sử dụng `ThreadPool`
 
 Trước khi đi vào chi tiết cách sử dụng các phương thức của lớp `Executors`, hãy xem một task (tác vụ) sẽ được sử dụng để minh họa cho các ví dụ tiếp theo.
 
@@ -141,7 +138,7 @@ pool-1-thread-1 Starting. Task = 9</br>
 pool-1-thread-1 Finished.</br>
 pool-1-thread-1 Starting. Task = 10</br>
 pool-1-thread-1 Finished.</br>
-Finished all threads</br>
+Finished all threads
 
 ::
 
@@ -199,7 +196,7 @@ pool-1-thread-2 Finished.<br/>
 pool-1-thread-5 Finished.<br/>
 pool-1-thread-1 Finished.<br/>
 pool-1-thread-4 Finished.<br/>
-Finished all threads<br/>
+Finished all threads
 
 ::
 
@@ -255,7 +252,7 @@ pool-1-thread-1 Finished.<br/>
 pool-1-thread-3 Finished.<br/>
 pool-1-thread-4 Finished.<br/>
 pool-1-thread-5 Finished.<br/>
-Finished all threads<br/>
+Finished all threads
 
 ::
 
@@ -328,7 +325,7 @@ pool-1-thread-1 Finished.<br/>
 pool-1-thread-1 Starting. Task = 4<br/>
 pool-1-thread-2 Finished.<br/>
 pool-1-thread-1 Finished.<br/>
-Finished all threads<br/>
+Finished all threads
 
 ::
 
@@ -624,7 +621,7 @@ GPCoder-ThreadPool-1 Finished.<br/>
 
 ## Một vài lưu ý về sử dụng ExecutorService
 
-Khi bạn đã thêm tất cả các task cần thiết để thực thi vào `executor` bạn nên tắt nó bằng phương thức `shutdown()`. Khi bạn gọi phương thức này có nghĩa ExcutorService sẽ từ chối nhận thêm các task, và một khi tất cả các nhiệm vụ đã được thêm vào trước đó đã hòan thành thì `Executor` sẽ được tắt. Có nghĩa tất cả các task được thêm vào trước khi gọi `shutdown()` đều sẽ được thực thi, các task thêm sau sẽ bị từ chối (rejected).
+Khi bạn đã thêm tất cả các task cần thiết để thực thi vào `executor` bạn nên tắt nó bằng phương thức `shutdown()`. Khi bạn gọi phương thức này có nghĩa `ExecutorService` sẽ từ chối nhận thêm các task, và một khi tất cả các nhiệm vụ đã được thêm vào trước đó đã hoàn thành thì `Executor` sẽ được tắt. Có nghĩa tất cả các task được thêm vào trước khi gọi `shutdown()` đều sẽ được thực thi, các task thêm sau sẽ bị từ chối (rejected).
 
 Nếu bạn muốn tắt `ExecutorService` ngay lập tức, bạn có thể gọi phương thức `shutdownNow()`. Điều này sẽ cố gắng ngăn chặn tất cả các nhiệm vụ ngay lập tức và loại bỏ các nhiệm vụ đã được đưa vào `Queue` nhưng chưa được thực thi. Không có gì đảm bảo về việc tắt các nhiệm vụ đang chạy hoàn toàn, nhưng phương thức này sẽ cố gắng để tắt tất cả chúng.
 

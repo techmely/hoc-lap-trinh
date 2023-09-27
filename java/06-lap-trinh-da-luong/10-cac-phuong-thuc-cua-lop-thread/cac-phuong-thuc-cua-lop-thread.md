@@ -1,205 +1,119 @@
 ---
 title: "Các phương thức của lớp Thread trong Java"
-description: "Tổng hợp các hàm của lớp Thread như suspend, resume, stop, destroy, isAlive, yeild, getName, currentThread"
+description: "Trong Java, lớp Thread cung cấp nhiều phương thức quan trọng để quản lý và kiểm soát luồng thực thi. Dưới đây, chúng ta sẽ tìm hiểu về các phương thức quan trọng của lớp Thread và cách chúng có thể được sử dụng"
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/146480996-d756c28a-258f-4913-a357-965e22ee85e6.png
 position: 10
 ---
 
-![Các phương thức của lớp Thread trong Java](https://user-images.githubusercontent.com/29374426/146480996-d756c28a-258f-4913-a357-965e22ee85e6.png)
+Lớp `Thread` trong Java cung cấp nhiều phương thức mạnh mẽ để quản lý và tương tác với luồng. Dưới đây, chúng ta sẽ tìm hiểu về các phương thức quan trọng của lớp `Thread` và cách sử dụng chúng.
 
-## Hàm suspend() của lớp Thread
+![Các Phương Thức của Lớp Thread trong Java](https://user-images.githubusercontent.com/29374426/146480996-d756c28a-258f-4913-a357-965e22ee85e6.png)
 
-Đây là phương thức làm tạm dừng hoạt động của 1 luồng nào đó bằng các ngưng cung cấp CPU cho luồng này. Để cung cấp lại CPU cho luồng ta sử dụng phương thức `resume()`. Cần lưu ý 1 điều là ta không thể dừng ngay hoạt động của luồng bằng phương thức này. Phương thức `suspend()` không dừng ngay tức thì hoạt động của luồng mà sau khi luồng này trả CPU về cho hệ điều hành thì không cấp CPU cho luồng nữa.
+## Phương thức `suspend()` và `resume()`
 
-## Hàm resume() của lớp Thread
+- **`suspend()`**: Phương thức này tạm dừng hoạt động của một luồng bằng cách ngưng cung cấp CPU cho luồng đó. Luồng vẫn tồn tại và có thể được khởi động lại bằng phương thức `resume()`. Chú ý rằng việc sử dụng `suspend()` không nên được khuyến nghị vì nó có thể dẫn đến các vấn đề như deadlock.
 
-Đây là phương thức làm cho luồng chạy lại khi luồng bị dừng do phương thức `suspend()` bên trên. Phương thức này sẽ đưa luồng vào lại lịch điều phối CPU để luồng được cấp CPU chạy lại bình thường.
+- **`resume()`**: Phương thức này sử dụng để tiếp tục hoạt động của một luồng sau khi nó đã bị tạm dừng bằng `suspend()`.
 
-## Hàm stop() của lớp Thread
-
-Luồng này sẽ kết thúc phương thức `run()` bằng cách ném ra 1 ngoại lệ ThreadDeath, điều này cũng sẽ làm luồng kết thúc 1 cách ép buộc. Nếu giả sử, trước khi gọi `stop()` mà luồng đang nắm giữa 1 đối tượng nào đó hoặc 1 tài nguyên nào đó mà luồng khác đang chờ thì có thể dẫn tới việc sảy ra deadlock.
-
-Ví dụ sử dụng hàm suspend, resume, stop
+**Ví dụ:**
 
 ```java
-class RunnableDemo implements Runnable {
-   public Thread t;
-   private String threadName;
-   boolean suspended = false;   RunnableDemo( String name){
-       threadName = name;
-       System.out.println("Creating " +  threadName );
-   }
-   public void run() {
-      System.out.println("Running " +  threadName );
-      try {
-         for(int i = 10; i > 0; i--) {
-            System.out.println("Thread: " + threadName + ", " + i);
-            // Let the thread sleep for a while.
-            Thread.sleep(300);
-            synchronized(this) {
-            while(suspended) {
-               wait();
+class MyThread extends Thread {
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Thread " + Thread.currentThread().getId() + " - Count: " + i);
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                System.out.println(e);
             }
-          }
-         }
-     } catch (InterruptedException e) {
-         System.out.println("Thread " +  threadName + " interrupted.");
-     }
-     System.out.println("Thread " +  threadName + " exiting.");
-   }   public void start ()
-   {
-      System.out.println("Starting " +  threadName );
-      if (t == null)
-      {
-         t = new Thread (this, threadName);
-         t.start ();
-      }
-   }
-   void suspend() {
-      suspended = true;
-   }
-   synchronized void resume() {
-      suspended = false;
-       notify();
-   }
-}public class TestThread {
-   public static void main(String args[]) {      RunnableDemo R1 = new RunnableDemo( "Thread-1");
-      R1.start();      RunnableDemo R2 = new RunnableDemo( "Thread-2");
-      R2.start();      try {
-         Thread.sleep(1000);
-         R1.suspend();
-         System.out.println("Suspending First Thread");
-         Thread.sleep(1000);
-         R1.resume();
-         System.out.println("Resuming First Thread");
-         R2.suspend();
-         System.out.println("Suspending thread Two");
-         Thread.sleep(1000);
-         R2.resume();
-         System.out.println("Resuming thread Two");
-      } catch (InterruptedException e) {
-         System.out.println("Main thread Interrupted");
-      }
-      try {
-         System.out.println("Waiting for threads to finish.");
-         R1.t.join();
-         R2.t.join();
-      } catch (InterruptedException e) {
-         System.out.println("Main thread Interrupted");
-      }
-      System.out.println("Main thread exiting.");
-   }
+        }
+    }
+}
+
+public class SuspendResumeExample {
+    public static void main(String[] args) {
+        MyThread t1 = new MyThread();
+        MyThread t2 = new MyThread();
+
+        t1.start();
+        t2.start();
+
+        // Suspend t1 temporarily
+        t1.suspend();
+        System.out.println("Thread " + t1.getId() + " suspended.");
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+
+        // Resume t1
+        t1.resume();
+        System.out.println("Thread " + t1.getId() + " resumed.");
+
+        try {
+            t1.join();
+            t2.join();
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+    }
 }
 ```
 
 ::result
 
-Creating Thread-1<br/>
-Starting Thread-1<br/>
-Creating Thread-2<br/>
-Starting Thread-2<br/>
-Running Thread-1<br/>
-Thread: Thread-1, 10<br/>
-Running Thread-2<br/>
-Thread: Thread-2, 10<br/>
-Thread: Thread-1, 9<br/>
-Thread: Thread-2, 9<br/>
-Thread: Thread-1, 8<br/>
-Thread: Thread-2, 8<br/>
-Thread: Thread-1, 7<br/>
-Thread: Thread-2, 7<br/>
-Suspending First Thread<br/>
-Thread: Thread-2, 6<br/>
-Thread: Thread-2, 5<br/>
-Thread: Thread-2, 4<br/>
-Resuming First Thread<br/>
-Suspending thread Two<br/>
-Thread: Thread-1, 6<br/>
-Thread: Thread-1, 5<br/>
-Thread: Thread-1, 4<br/>
-Thread: Thread-1, 3<br/>
-Resuming thread Two<br/>
-Thread: Thread-2, 3<br/>
-Waiting for threads to finish.<br/>
-Thread: Thread-1, 2<br/>
-Thread: Thread-2, 2<br/>
-Thread: Thread-1, 1<br/>
-Thread: Thread-2, 1<br/>
-Thread Thread-1 exiting.<br/>
-Thread Thread-2 exiting.<br/>
-Main thread exiting.<br/>
+Thread 10 - Count: 1</br>
+Thread 11 - Count: 1</br>
+Thread 10 - Count: 2</br>
+Thread 11 - Count: 2</br>
+Thread 10 - Count: 3</br>
+Thread 11 - Count: 3</br>
+Thread 10 - Count: 4</br>
+Thread 11 - Count: 4</br>
+Thread 10 - Count: 5</br>
+Thread 11 - Count: 5</br>
+Thread 10 suspended.</br>
+Thread 10 resumed.
 
 ::
 
-## Hàm destroy() của lớp Thread
+## Phương thức `stop()`
 
-Hàm này dùng để dừng hẳn luồng. So với `suspend()` thì `destroy()` giống gần như hoàn toàn, Khi `destroy()` luồng cũng sẽ không được cấp CPU nữa, có 1 điều cần lưu ý là: Sau khi luồng bị `suspend()` thì có thể cho luồng tiếp tục chạy bằng phương thức `resume()` nhưng với `destroy()` thì sẽ không có phương thức nào để luồng được cấp CPU lại cả. Như vậy, destroy còn nguy hiểm hơn cà `stop()` và `suspend()` vì:
+- **Ý nghĩa**: Phương thức này dùng để kết thúc một luồng bằng cách ném ra ngoại lệ `ThreadDeath`. Tuy nhiên, việc sử dụng `stop()` không được khuyến nghị, vì nó có thể gây ra các vấn đề như sảy ra deadlock và không giải phóng tài nguyên một cách đúng đắn.
 
-- Tài nguyên của luồng không được giải phóng
-- Nếu luồng đang giữ 1 monitor nào đó của 1 đối tượng, mà đối tượng này đang được chờ bởi 1 luồng khác thì phải chờ vô thời hạn vì luồng giữ `monitor` sẽ không bao giờ chạy lại nên deadlock sảy ra.
+## Phương thức `destroy()`
 
-## Hàm isAlive() của lớp Thread
+- **Ý nghĩa**: Phương thức này dùng để đột ngột dừng một luồng. Tương tự như `stop()`, việc sử dụng `destroy()` không nên được khuyến nghị do nguy cơ gây ra các vấn đề không mong muốn.
 
-Phương thức này kiểm tra xem luồng còn active hay không. Phương thức sẽ trả về true nếu luồng đã được `start()` và chưa rơi vào trạng thái dead. Nếu phương thức trả về false thì luồng đang ở trạng thái _"New Thread"_ hoặc là đang ở trạng thái _"Dead"_.
+## Phương thức `isAlive()`
 
-## Hàm `yield()` của lớp Thread
+- **Ý nghĩa**: Phương thức này kiểm tra xem một luồng còn sống (active) hay không. Nó trả về `true` nếu
 
-Hệ điều hành đa nhiệm sẽ phân phối CPU cho các tiến trình, các luồng theo vòng xoay. Mỗi luồng sẽ được cấp `CPU` trong 1 khoảng thời gian nhất định, sau đó trả lại CPU cho hệ điều hành, hệ điều hành sẽ cấp CPU cho luồng khác. Các luồng sẽ nằm chờ trong hàng đợi Ready để nhận CPU theo thứ tự. Java có cung cấp cho chúng ta 1 phương thức khá đặc biệt là `yield()`, khi gọi phương thức này luồng sẽ bị ngừng cấp CPU và nhường cho luồng tiếp theo trong hàng chờ Ready. Luồng không phải ngưng cấp CPU như suspend mà chỉ ngưng cấp trong lần nhận CPU đó mà thôi.
+luồng đã được khởi động bằng `start()` và vẫn còn hoạt động, ngược lại trả về `false`.
 
-## Hàm sleep(), join() của lớp Thread
+## Phương thức `yield()`
 
-Tìm hiểu thêm tại [sử dụng sleep và join trong java](/bai-viet/java/su-dung-sleep-va-join-trong-java)
+- **Ý nghĩa**: Phương thức `yield()` dùng để nhường CPU cho các luồng khác trong hàng đợi Ready. Nó ngừng cấp CPU trong lần nhận CPU đó và cho phép các luồng khác được chạy.
 
-## Hàm getName() của lớp Thread
+## Các phương thức khác của lớp Thread trong Java
 
-Hàm getNam trả về tên của thread.
+- **`sleep()`:** Sử dụng để ngừng luồng trong một khoảng thời gian nhất định.
+- **`join()`:** Sử dụng để đợi một luồng khác hoàn thành trước khi luồng hiện tại tiếp tục thực thi.
+- **`getName()`:** Trả về tên của luồng.
+- **`setName()`:** Thay đổi tên của luồng.
+- **`getId()`:** Trả về ID của luồng.
+- **`getState()`:** Trả về trạng thái của luồng.
+- **`currentThread()`:** Trả về tham chiếu của luồng đang được thi hành.
+- **`getPriority()`:** Trả về mức độ ưu tiên của luồng.
+- **`setPriority()`:** Thay đổi mức độ ưu tiên của luồng.
+- **`isDaemon()`:** Kiểm tra xem luồng có phải là luồng daemon hay không.
+- **`setDaemon()`:** Xác định xem luồng có phải là luồng daemon hay không.
+- **`interrupt()`:** Sử dụng để gián đoạn một luồng, thường dùng để kết thúc một luồng đang chạy.
 
-## Hàm setName(String name) của lớp Thread
-
-Thay đổi tên của thread.
-
-## Hàm getId() của lớp Thread
-
-Trả về id của thread.
-
-## Hàm getState() của lớp Thread
-
-Trả về trạng thái của thread.
-
-## Hàm currentThread() của lớp Thread
-
-Trả về tham chiếu của thread đang được thi hành.
-
-## Hàm getPriority() của lớp Thread
-
-Trả về mức độ ưu tiên của thread.
-
-## Hàm setPriority(int) của lớp Thread
-
-Thay đổi mức độ ưu tiên của `thread`.
-
-## Hàm isDaemon() của lớp Thread
-
-Kiểm tra nếu `thread` là một luồng Daemon.
-
-## Hàm setDaemon(boolean) của lớp Thread
-
-Xác định thread là một luồng Daemon hay không.
-
-## Hàm interrupt() của lớp Thread
-
-Làm gián đoạn một luồng trong java. Nếu thread nằm trong trạng thái sleep hoặc `wait`, nghĩa là `sleep()` hoặc `wait()` được gọi ra. Việc gọi phương thức `interrupt()` trên `thread` đó sẽ phá vỡ trạng thái `sleep` hoặc `wait` và ném ra ngoại lệ `InterruptedException`. Nếu `thread` không ở trong trạng thái `sleep` hoặc `wait`, việc gọi phương thức `interrupt()` thực hiện hành vi bình thường và không làm gián đoạn thread nhưng đặt cờ `interrupt` thành `true`.
-
-## Hàm isInterrupted() của lớp Thread
-
-Kiểm tra nếu thread đã bị ngắt.
-
-## Hàm interrupted() của lớp Thread
-
-Kiểm tra nếu thread hiện tại đã bị ngắt.
+Trên đây là một số phương thức quan trọng của lớp `Thread` trong Java. Việc hiểu và sử dụng chúng một cách đúng đắn là rất quan trọng để quản lý và tương tác với các luồng trong ứng dụng Java.

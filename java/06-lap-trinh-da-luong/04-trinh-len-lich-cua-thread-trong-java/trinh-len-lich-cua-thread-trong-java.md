@@ -4,9 +4,6 @@ description: "Trình lên lịch của Thread (Thread scheduler) trong java là 
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/146302578-b037c1d6-4274-4153-b0d0-8b7ff37ec592.png
 position: 4
 ---
@@ -19,7 +16,7 @@ Không có sự đảm bảo rằng `thread` có trạng thái `runnable` nào s
 
 Chỉ có một `thread` tại một thời điểm có thể chạy trong một xử lý duy nhất.
 
-`Thread scheduler` chủ yếu sử dụng việc lập kệ hoạch ưu tiên hoặc phân chia thời gian để lên lịch các luồng.
+`Thread scheduler` chủ yếu sử dụng việc lập kế hoạch ưu tiên hoặc phân chia thời gian để lên lịch các luồng.
 
 ## Trình lên lịch của Thread hoạt động như thế nào?
 

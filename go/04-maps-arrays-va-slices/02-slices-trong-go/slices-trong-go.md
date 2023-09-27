@@ -4,9 +4,6 @@ description: "Bài viết này giới thiệu về slice trong ngôn ngữ Go v�
 chapter:
   name: "Maps, Arrays và Slices"
   slug: "chuong-04-maps-arrays-va-slices"
-category:
-  name: "Go"
-  slug: "go"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

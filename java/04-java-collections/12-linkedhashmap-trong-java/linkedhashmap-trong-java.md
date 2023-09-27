@@ -4,14 +4,11 @@ description: "LinkedHashMap trong Java là một lớp triển khai interface (g
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/145676841-ec321d4f-eb6d-46aa-b451-8a2cf775c9d9.png
 position: 12
 ---
 
-## LinkedHashMap trong Java là gì?
+## `LinkedHashMap` trong Java là gì?
 
 Giống như `HashMap`, `LinkedHashMap` trong Java là một lớp triển khai interface (giao diện) Map trong Java, `LinkedHashMap` cho phép chúng ta gán `value (giá trị)` cho một `key (khóa)`.
 
@@ -24,7 +21,7 @@ Những điểm quan trọng về lớp `LinkedHashMap` trong java cần nhớ l
 - `LinkedHashMap` có thể có 1 `key` là `null` và nhiều giá trị `null`.
 - `LinkedHashMap` duy trì các phần tử theo thứ tự chèn.
 
-## Tạo một LinkedHashMap trong Java
+## Tạo một `LinkedHashMap` trong Java
 
 Để tạo một `LinkedHashMap`, trước hết ta cần import gói `java.util.LinkedHashMap`. Khi `import` xong, chúng ta có thể tạo các `LinkedHashMap` trong Java theo cách sau:
 
@@ -43,7 +40,7 @@ Chú ý phần `new LinkedHashMap<>(8, 0.6)`, tham số đầu tiên là `capaci
 - `capacity` là dung lượng của linked hashmap này là `8`. Ý nghĩa nó có thể lưu trữ 8 mục.
 - `loadFactor` là hệ số tải của `LinkedHashMap` này là `0,6`. Điều này có nghĩa là, bất cứ khi nào `HashMap` của chúng ta được lấp đầy `60%`, các mục nhập vào sau đó sẽ được chuyển sang hash table mới có kích thước gấp đôi `hash table` ban đầu.
 
-## Tạo LinkedHashMap từ các Map khác
+## Tạo `LinkedHashMap` từ các Map khác
 
 Sau đây là cách chúng ta có thể tạo một `LinkedHashMap` có chứa tất cả các phần tử của các map khác.
 
@@ -73,7 +70,7 @@ LinkedHashMap2: {Two=2, Four=4, Three=3}
 
 ::
 
-## Chèn các phần tử vào LinkedHashMap
+## Chèn các phần tử vào `LinkedHashMap`
 
 - `put()` – chèn key/ value được chỉ định vào map
 - `putAll()` – chèn tất cả các mục từ map được chỉ định vào map này
@@ -115,7 +112,7 @@ New LinkedHashMap: {One=1, Two=2, Four=4, Six=6}
 
 ::
 
-## Truy cập các phần tử LinkedHashMap
+## Truy cập các phần tử `LinkedHashMap`
 
 - `entrySet()` – trả về một tập hợp tất cả key/ value của map
 - `keySet()` – trả về một tập hợp tất cả các key của map
@@ -227,17 +224,17 @@ Updated LinkedHashMap: {One=1}
 
 ::
 
-## Các hàm khác của LinkedHashMap
+## Các hàm khác của `LinkedHashMap`
 
 | Hàm               | Sự miêu tả                                                                       |
 | ----------------- | -------------------------------------------------------------------------------- |
 | `clear()`         | xóa tất cả các mục khỏi map                                                      |
 | `containsKey()`   | kiểm tra xem map có chứa key được chỉ định hay không và trả về giá trị boolean   |
 | `containsValue()` | kiểm tra xem map có chứa value được chỉ định hay không và trả về giá trị boolean |
-| `size() `         | trả về kích thước của map                                                        |
+| `size()`          | trả về kích thước của map                                                        |
 | `isEmpty()`       | kiểm tra xem map có trống không và trả về giá trị boolean                        |
 
-## So sánh LinkedHashMap với HashMap
+## So sánh `LinkedHashMap` với `HashMap`
 
 Cả `LinkedHashMap` và `HashMap` đều triển khai giao diện Map. Tuy nhiên, có một số khác biệt giữa chúng.
 

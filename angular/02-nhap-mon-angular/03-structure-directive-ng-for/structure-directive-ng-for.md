@@ -4,9 +4,6 @@ description: "Chủ đề 'Cấu trúc NgFor trong Angular' là một trong nh�
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

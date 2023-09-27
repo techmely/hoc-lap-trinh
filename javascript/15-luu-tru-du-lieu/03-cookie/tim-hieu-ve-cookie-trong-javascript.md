@@ -4,9 +4,6 @@ description: "Cookie là phương thức hiệu quả nhất để nhớ và the
 chapter:
   name: "Lưu trữ dữ liệu"
   slug: "chuong-15-luu-tru-du-lieu"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

@@ -4,9 +4,6 @@ description: " Native prototype là các hàm khởi tạo sẵn có khác cũng
 chapter:
   name: "Prototype và thừa kế prototype"
   slug: "chuong-07-prototype-va-thua-ke-prototype"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

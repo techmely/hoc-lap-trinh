@@ -4,9 +4,6 @@ description: "Trong bài 13 chúng ta đã tìm hiểu và thấy rằng Depende
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 14
 ---

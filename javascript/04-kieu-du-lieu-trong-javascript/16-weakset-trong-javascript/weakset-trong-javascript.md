@@ -4,9 +4,6 @@ description: "WeakSet trong JavaScript cũng là một loại object đặc bi�
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168244102-624b9c52-c648-49d6-93ee-188e99530e1a.png
 position: 16
 ---

@@ -4,9 +4,6 @@ description: "Sau hai tutorial với Jira clone, hôm nay chúng ta sẽ đổi 
 chapter:
   name: "Mở rộng thêm về Angular"
   slug: "chuong-06-mo-rong-them-ve-angular"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---

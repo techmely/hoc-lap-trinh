@@ -4,9 +4,6 @@ description: "Bài này chúng ta đề cập tới vấn đề IDE là gì?"
 chapter:
   name: "Giới thiệu Javascript"
   slug: "chuong-01-gioi-thieu-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/156756227-5a14a7e0-b668-4f32-ac3b-a625b8fbab7b.png
 position: 2
 ---

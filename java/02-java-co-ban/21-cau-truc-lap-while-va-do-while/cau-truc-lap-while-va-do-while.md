@@ -4,9 +4,6 @@ description: "Vòng lặp while được sử dụng để thực thi nhiều l�
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/125040448-de6e1b80-e0c1-11eb-935f-2d0b21cab63f.png
 position: 21
 ---

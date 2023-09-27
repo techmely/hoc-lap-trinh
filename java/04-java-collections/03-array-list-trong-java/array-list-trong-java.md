@@ -4,9 +4,6 @@ description: "Bài này chúng ta sẽ tìm hiểu về List trong Java, chia s�
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://viettuts.vn/images/java/java-collection/hiararchy-lop-arraylist-trong-java.png
 position: 3
 ---
@@ -17,13 +14,13 @@ Không giống như mảng, ArrayList (đối tượng của class ArrayList) c�
 
 **Những điểm về ArrayList:**
 
-- Lớp ArrayList trong java có thể chứa các phần tử trùng lặp.
-- Lớp ArrayList duy trì thứ tự của phần tử được thêm vào.
-- Lớp ArrayList là không đồng bộ (non-synchronized).
-- Lớp ArrayList cho phép truy cập ngẫu nhiên vì nó lưu dữ liệu theo chỉ mục.
-- Lớp ArrayList trong java, thao tác chậm vì cần nhiều sự dịch chuyển nếu bất kỳ phần tử nào bị xoá khỏi danh sách.
+- Lớp `ArrayList` trong java có thể chứa các phần tử trùng lặp.
+- Lớp `ArrayList` duy trì thứ tự của phần tử được thêm vào.
+- Lớp `ArrayList` là không đồng bộ (non-synchronized).
+- Lớp `ArrayList` cho phép truy cập ngẫu nhiên vì nó lưu dữ liệu theo chỉ mục.
+- Lớp `ArrayList` trong java, thao tác chậm vì cần nhiều sự dịch chuyển nếu bất kỳ phần tử nào bị xoá khỏi danh sách.
 
-## Khởi tạo một ArrayList
+## Khởi tạo một `ArrayList`
 
 Khởi tạo ArrayList trong java ta sử dụng cú pháp sau
 
@@ -34,24 +31,24 @@ ArrayList<Type> arrayList= new ArrayList<>();
 Trong đó `Type` là kiểu dữ liệu của `ArrayList` mà ta muốn tạo
 
 ```java
-// create Integer type arraylist
+// create Integer type ArrayList
 ArrayList<Integer> arrayList = new ArrayList<>();
 
-// create String type arraylist
+// create String type ArrayList
 ArrayList<String> arrayList = new ArrayList<>();
 ```
 
-## Constructor của lớp ArrayList
+## Constructor của lớp `ArrayList`
 
-| Constructor             | Mô tả                                                                                          |
-| ----------------------- | ---------------------------------------------------------------------------------------------- |
-| ArrayList()             | Nó được sử dụng để khởi tạo một danh sách mảng trống.                                          |
-| ArrayList(Collection c) | Nó được sử dụng để xây dựng một danh sách mảng được khởi tạo với các phần tử của collection c. |
-| ArrayList(int capacity) | Nó được sử dụng để xây dựng một danh sách mảng mà có dung lượng ban đầu được chỉ định.         |
+| Constructor               | Mô tả                                                                                          |
+| ------------------------- | ---------------------------------------------------------------------------------------------- |
+| `ArrayList()`             | Nó được sử dụng để khởi tạo một danh sách mảng trống.                                          |
+| `ArrayList(Collection c)` | Nó được sử dụng để xây dựng một danh sách mảng được khởi tạo với các phần tử của collection c. |
+| `ArrayList(int capacity)` | Nó được sử dụng để xây dựng một danh sách mảng mà có dung lượng ban đầu được chỉ định.         |
 
-## Phương thức của lớp ArrayList
+## Các phương thức của lớp `ArrayList`
 
-### Thêm một phần tử vào ArrayList
+### Thêm một phần tử vào `ArrayList`
 
 Để thêm một phần tử vào ArrayList, chúng ta sử dụng hàm `add()`
 
@@ -61,7 +58,7 @@ import java.util.ArrayList;
 class Main {
   public static void main(String[] args){
       ArrayList<String> animals = new ArrayList<>();
-    // Add elements
+    // Thêm phần tử
     animals.add("Dog");
     animals.add("Cat");
     animals.add("Horse");
@@ -72,7 +69,7 @@ class Main {
 
 ::result
 
-ArrayList: [Dog, Cat, Horse]<br/>
+ArrayList: [Dog, Cat, Horse]
 
 ::
 
@@ -84,7 +81,7 @@ import java.util.ArrayList;
 class Main {
   public static void main(String[] args){
     ArrayList<String> animals = new ArrayList<>();
-    // Add elements
+    // Thêm phần tử
     animals.add(0,"Dog");
     animals.add(1,"Cat");
     animals.add(2,"Horse");
@@ -95,7 +92,7 @@ class Main {
 
 ::result
 
-ArrayList: [Dog, Cat, Horse]<br/>
+ArrayList: [Dog, Cat, Horse]
 
 ::
 
@@ -127,11 +124,11 @@ class Main {
 ::result
 
 Mammals: [Dog, Cat, Horse]<br/>
-Animals: [Crocodile, Dog, Cat, Horse]<br/>
+Animals: [Crocodile, Dog, Cat, Horse]
 
 ::
 
-### Truy cập tới các phần tử trong ArrayList
+### Truy cập tới các phần tử trong `ArrayList`
 
 Để truy cập ngẫu nhiên các phần tử của `ArrayList`, chúng ta sử dụng hàm `get()`
 
@@ -141,12 +138,12 @@ import java.util.ArrayList;
 class Main {
   public static void main(String[] args) {
     ArrayList<String> animals= new ArrayList<>();
-    // Add elements in the array list
+    // Thêm phần tử
     animals.add("Dog");
     animals.add("Horse");
     animals.add("Cat");
     System.out.println("ArrayList: " + animals);
-    // Get the element from the array list
+    // Lấy phần tử từ Array List
     String str = animals.get(0);
     System.out.print("Element at index 0: " + str);
   }
@@ -156,7 +153,7 @@ class Main {
 ::result
 
 ArrayList: [Dog, Horse, Cat]<br/>
-Element at index 0: Dog<br/>
+Element at index 0: Dog
 
 ::
 
@@ -169,15 +166,15 @@ import java.util.Iterator;
 class Main {
   public static void main(String[] args){
     ArrayList<String> animals = new ArrayList<>();
-    // Add elements in the array list
+    // Thêm phần tử vào Array List
     animals.add("Dog");
     animals.add("Cat");
     animals.add("Horse");
     animals.add("Zebra");
-    // Create an object of Iterator
+    // Tạo một object của Iterator
     Iterator<String> iterate = animals.iterator();
     System.out.print("ArrayList: ");
-    // Use methods of Iterator to access elements
+    // Sử dụng method của Iterator để truy cập vào phần tử
     while(iterate.hasNext()){
         System.out.print(iterate.next());
         System.out.print(", ");
@@ -188,16 +185,15 @@ class Main {
 
 ::result
 
-ArrayList: Dog, Cat, Horse, Zebra,<br/>
+ArrayList: Dog, Cat, Horse, Zebra,
 
 ::
 
 ::alert{type="infor"}
 
-<ul>
-  <li>Hàm hasNext() trả về true nếu có một phần tử tiếp theo trong ArrayList.</li>
-  <li>Hàm next() trả về phần tử tiếp theo trong ArrayList.</li>
-</ul>
+- Hàm hasNext() trả về true nếu có một phần tử tiếp theo trong ArrayList.
+- Hàm next() trả về phần tử tiếp theo trong ArrayList.
+
 ::
 
 ### Thay đổi phần tử trong ArrayList
@@ -210,12 +206,12 @@ import java.util.ArrayList;
 class Main {
   public static void main(String[] args) {
     ArrayList<String> animals= new ArrayList<>();
-    // Add elements in the array list
+    // Thêm phần tử vào Array List
     animals.add("Dog");
     animals.add("Cat");
     animals.add("Horse");
     System.out.println("ArrayList: " + animals);
-    // Change the element of the array list
+    // Thay đổi phần tử trong ArrayList
     animals.set(2, "Zebra");
     System.out.println("Modified ArrayList: " + animals);
   }
@@ -229,7 +225,7 @@ Modified ArrayList: [Dog, Cat, Zebra]<br/>
 
 ::
 
-### Xóa phần tử trong ArrayList
+### Xóa phần tử trong `ArrayList`
 
 Để loại bỏ một phần tử khỏi ArrayList, chúng ta có thể sử dụng hàm `remove()`.
 
@@ -239,12 +235,12 @@ import java.util.ArrayList;
 class Main {
   public static void main(String[] args) {
     ArrayList<String> animals = new ArrayList<>();
-    // Add elements in the array list
+    // Thêm phần tử vào Array List
     animals.add("Dog");
     animals.add("Cat");
     animals.add("Horse");
     System.out.println("Initial ArrayList: " + animals);
-    // Remove element from index 2
+    // Xoá phần tử từ vị trí 2
     String str = animals.remove(2);
     System.out.println("Final ArrayList: " + animals);
     System. out.println("Removed Element: " + str);
@@ -256,11 +252,11 @@ class Main {
 
 Initial ArrayList: [Dog, Cat, Horse]<br/>
 Final ArrayList: [Dog, Cat]<br/>
-Removed Element: Horse<br/>
+Removed Element: Horse
 
 ::
 
-Ngoài ra, nếu bạn muốn loại bỏ tất cả các phần tử khỏi ArrayList, chúng ta sử dụng hàm `removeAll()`
+Ngoài ra, nếu bạn muốn loại bỏ tất cả các phần tử khỏi `ArrayList`, chúng ta sử dụng hàm `removeAll()`
 
 ```java
 import java.util.ArrayList;
@@ -268,12 +264,12 @@ import java.util.ArrayList;
 class Main {
   public static void main(String[] args) {
     ArrayList<String> animals = new ArrayList<>();
-    // Add elements in the ArrayList
+    // Thêm phần tử vào ArrayList
     animals.add("Dog");
     animals.add("Cat");
     animals.add("Horse");
     System.out.println("Initial ArrayList: " + animals);
-    // Remove all the elements
+    // Xoá tất cả các phần tử
     animals.removeAll(animals);
     System.out.println("Final ArrayList: " + animals);
   }
@@ -283,7 +279,7 @@ class Main {
 ::result
 
 Initial ArrayList: [Dog, Cat, Horse]<br/>
-Final ArrayList: []<br/>
+Final ArrayList: []
 
 ::
 
@@ -295,12 +291,12 @@ import java.util.ArrayList;
 class Main {
   public static void main(String[] args) {
     ArrayList<String> animals= new ArrayList<>();
-    // Add elements in the array list
+    // Thêm phần tử vào Array List
     animals.add("Dog");
     animals.add("Cat");
     animals.add("Horse");
     System.out.println("Initial ArrayList: " + animals);
-    // Remove all the elements
+    // Xoá tất cả các phần tử
     animals.clear();
     System.out.println("Final ArrayList: " + animals);
   }
@@ -310,7 +306,7 @@ class Main {
 ::result
 
 Initial ArrayList: [Dog, Cat, Horse]<br/>
-Final ArrayList: []<br/>
+Final ArrayList: []
 
 ::
 
@@ -323,13 +319,13 @@ import java.util.ArrayList;
 
 class Main {
   public static void main(String[] args) {
-    // Creating an array list
+    // Tạo một ArrayList
     ArrayList<String> animals = new ArrayList<>();
     animals.add("Cow");
     animals.add("Cat");
     animals.add("Dog");
     System.out.println("ArrayList: " + animals);
-    // Using for loop
+    // Sử dụng for loop
     System.out.print("Accessing individual elements: ");
     for(int i = 0; i < animals.size(); i++) {
         System.out.print(animals.get(i));
@@ -342,7 +338,7 @@ class Main {
 ::result
 
 ArrayList: [Cow, Cat, Dog]<br/>
-Accessing individual elements: Cow, Cat, Dog,<br/>
+Accessing individual elements: Cow, Cat, Dog,
 
 ::
 
@@ -353,13 +349,12 @@ import java.util.ArrayList;
 
 class Main {
   public static void main(String[] args) {
-    // Creating an array list
+    // Tạo một ArrayList
     ArrayList<String> animals = new ArrayList<>();
     animals.add("Cow");
     animals.add("Cat");
     animals.add("Dog");
     System.out.println("ArrayList: " + animals);
-    // Using forEach loop
     System.out.print("Accessing individual elements:  ");
     for(String animal : animals) {
         System.out.print(animal);
@@ -372,11 +367,11 @@ class Main {
 ::result
 
 ArrayList: [Cow, Cat, Dog]<br/>
-Accessing individual elements: Cow, Cat, Dog,<br/>
+Accessing individual elements: Cow, Cat, Dog,
 
 ::
 
-### Kiểm tra độ dài của ArrayList
+### Kiểm tra độ dài của `ArrayList`
 
 Để có thể lấy số lượng các phần tử của một ArrayList chúng ta có thể sử dụng hàm `size()`
 
@@ -386,12 +381,12 @@ import java.util.ArrayList;
 class Main {
   public static void main(String[] args) {
     ArrayList<String> animals= new ArrayList<>();
-    // Adding elements in the arrayList
+    // Thêm phần tử vào ArrayList
     animals.add("Dog");
     animals.add("Horse");
     animals.add("Cat");
     System.out.println("ArrayList: " + animals);
-    // getting the size of the arrayList
+    // Lấy ra số phần tử của ArrayList
     System.out.println("Size: " + animals.size());
   }
 }
@@ -400,13 +395,13 @@ class Main {
 ::result
 
 ArrayList: [Dog, Horse, Cat]<br/>
-Size: 3<br/>
+Size: 3
 
 ::
 
-### Sắp xếp các phần tử của một ArrayList
+### Sắp xếp các phần tử của một `ArrayList`
 
-Để sắp xếp các phần tử của một ArrayList, chúng ta sử dụng hàm `sort()` của class Collections. Theo mặc định, việc sắp xếp xảy ra theo thứ tự bảng chữ cái hoặc thứ tự số theo chiều tăng dần.
+Để sắp xếp các phần tử của một `ArrayList`, chúng ta sử dụng hàm `sort()` của class [Collections](/bai-viet/java/collections-trong-java). Theo mặc định, việc sắp xếp xảy ra theo thứ tự bảng chữ cái hoặc thứ tự số theo chiều tăng dần.
 
 ```java
 import java.util.ArrayList;
@@ -415,13 +410,13 @@ import java.util.Collections;
 class Main {
   public static void main(String[] args){
     ArrayList<String> animals= new ArrayList<>();
-    // Add elements in the array list
+    // Thêm phần tử vào ArrayList
     animals.add("Horse");
     animals.add("Zebra");
     animals.add("Dog");
     animals.add("Cat");
     System.out.println("Unsorted ArrayList: " + animals);
-    // Sort the array list
+    // Sắp xếp ArrayList
     Collections.sort(animals);
     System.out.println("Sorted ArrayList: " + animals);
   }
@@ -431,7 +426,7 @@ class Main {
 ::result
 
 Unsorted ArrayList: [Horse, Zebra, Dog, Cat]<br/>
-Sorted ArrayList: [Cat, Dog, Horse, Zebra]<br/>
+Sorted ArrayList: [Cat, Dog, Horse, Zebra]
 
 ::
 
@@ -445,7 +440,7 @@ import java.util.ArrayList;
 class Main {
   public static void main(String[] args) {
     ArrayList<String> animals= new ArrayList<>();
-    // Add elements in the array list
+    // Thêm phần tử vào Array List
     animals.add("Dog");
     animals.add("Cat");
     animals.add("Horse");
@@ -465,7 +460,7 @@ class Main {
 ::result
 
 ArrayList: [Dog, Cat, Horse]<br/>
-Array: Dog, Cat, Horse,<br/>
+Array: Dog, Cat, Horse,
 
 ::
 
@@ -482,12 +477,11 @@ class Main {
     // Create an array of String type
     String[] arr = {"Dog", "Cat", "Horse"};
     System.out.print("Array: ");
-    // Print array
     for(String str: arr) {
         System.out.print(str);
         System.out.print(" ");
     }
-    // Create an ArrayList from an array
+    // Tạo ArrayList từ mảng
     ArrayList<String> animals = new ArrayList<>(Arrays.asList(arr));
     System.out.println("\nArrayList: " + animals);
   }
@@ -497,7 +491,7 @@ class Main {
 ::result
 
 Array: Dog, Cat, Horse<br/>
-ArrayList: [Dog, Cat, Horse]<br/>
+ArrayList: [Dog, Cat, Horse]
 
 ::
 
@@ -511,12 +505,11 @@ import java.util.ArrayList;
 class Main {
   public static void main(String[] args) {
     ArrayList<String> animals = new ArrayList<>();
-    // Add elements in the ArrayList
+    // Thêm phần tử vào ArrayList
     animals.add("Dog");
     animals.add("Cat");
     animals.add("Horse");
     System.out.println("ArrayList: " + animals);
-    // Convert ArrayList into an String
     String str = animals.toString();
     System.out.println("String: " + str);
   }
@@ -526,17 +519,17 @@ class Main {
 ::result
 
 ArrayList: [Dog, Cat, Horse]<br/>
-String: [Dog, Cat, Horse]<br/>
+String: [Dog, Cat, Horse]
 
 ::
 
-### Một số hàm trong ArrayList
+### Một số hàm trong `ArrayList`
 
-| Hàm              | Mô tả                                                                            |
-| ---------------- | -------------------------------------------------------------------------------- |
-| clone()          | Tạo một ArrayList mới với cùng phần tử, kích thước và dung lượng.                |
-| contains()       | Tìm kiếm ArrayList cho phần tử đã chỉ định và trả về kết quả boolean.            |
-| ensureCapacity() | Chỉ định tổng phần tử mà ArrayList có thể chứa.                                  |
-| isEmpty()        | Kiểm tra nếu ArrayList trống.                                                    |
-| indexOf()        | Tìm kiếm một phần tử được chỉ định trong ArrayList và trả về chỉ số của phần tử. |
-| trimToSize()     | Giảm dung lượng của một ArrayList về kích thước hiện tại của nó.                 |
+| Hàm                | Mô tả                                                                              |
+| ------------------ | ---------------------------------------------------------------------------------- |
+| `clone()`          | Tạo một `ArrayList` mới với cùng phần tử, kích thước và dung lượng.                |
+| `contains()`       | Tìm kiếm `ArrayList` cho phần tử đã chỉ định và trả về kết quả boolean.            |
+| `ensureCapacity()` | Chỉ định tổng phần tử mà `ArrayList` có thể chứa.                                  |
+| `isEmpty()`        | Kiểm tra nếu `ArrayList` trống.                                                    |
+| `indexOf()`        | Tìm kiếm một phần tử được chỉ định trong `ArrayList` và trả về chỉ số của phần tử. |
+| `trimToSize()`     | Giảm dung lượng của một `ArrayList` về kích thước hiện tại của nó.                 |

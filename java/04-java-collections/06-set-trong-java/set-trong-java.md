@@ -4,14 +4,11 @@ description: "Set Interface là một loại Interface Collection, khác với L
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/144745593-8e1da2a4-1f30-46d6-96cd-4ca90bc30386.png
 position: 6
 ---
 
-## Tập hợp Set trong Java là gì?
+## Tập hợp `Set` trong Java là gì?
 
 Set Interface là một loại **Interface Collection**. Khác với `List`, các phần tử trong `List` có thể giống nhau, còn đối với `Set`, các phần tử trong `Set` là duy nhất (nghĩa là giá trị của các phần tử này không được giống nhau). Các phần tử trong Set là duy nhất, chúng ta có thể thêm, xóa, sửa các phần tử trong Set.
 
@@ -33,10 +30,10 @@ public class SetExample {
 
 Trong ví dụ trên ta tạo ra một tập hợp Set với implementation (lớp thực thi) là HashSet. Ngoài HashSet thì chúng ta có những lớp implementation của Set như sau:
 
-- EnumSet
-- HashSet
-- LinkedHashSet
-- TreeSet
+- `EnumSet`
+- `HashSet`
+- `LinkedHashSet`
+- `TreeSet`
 
 Mỗi một implementation của Set đều chứa đựng sự khác biệt về cách sử dụng và tốc độ xử lý các phần tử trong tập hợp. Tuỳ vào yêu cầu bài toán mà ta có thể chọn các loại tập hợp Set tương ứng. Chi tiết mỗi tập hợp sẽ được nói trong từng bài cụ thể sau. Ví dụ:
 
@@ -56,7 +53,7 @@ public class SetExample {
 }
 ```
 
-## Thêm một phần tử vào Set
+## Thêm một phần tử vào `Set`
 
 Để thêm một phần tử vào Set ta sử dụng phương thức `add()`. Ví dụ:
 
@@ -77,7 +74,7 @@ public class SetExample {
 }
 ```
 
-## Duyệt qua các phần tử trong Set
+## Duyệt qua các phần tử trong `Set`
 
 Sử dụng Iterator để duyệt qua các phần tử trong một set. Ví dụ:
 
@@ -105,7 +102,7 @@ for(Object object : set) {
 }
 ```
 
-## Xóa một phần tử trong Set
+## Xóa một phần tử trong `Set`
 
 Chúng ta sử dụng phương thức `remove()` để xóa phần tử trong `Set`. Ví dụ:
 
@@ -113,7 +110,7 @@ Chúng ta sử dụng phương thức `remove()` để xóa phần tử trong `S
 set.remove("object-to-remove");
 ```
 
-## Xóa tất cả các phần tử trong Set
+## Xóa tất cả các phần tử trong `Set`
 
 Để xóa tất cả các phần tử ta sử dụng phương thức `clear()`. Ví dụ:
 
@@ -121,7 +118,7 @@ set.remove("object-to-remove");
 set.clear();
 ```
 
-## Thêm tất cả các phần tử từ một tập hợp Set khác
+## Thêm tất cả các phần tử từ một tập hợp `Set` khác
 
 Set cung cấp cho chúng ta phương thức `addAll()` để thêm các phần tử từ một tập hợp khác vào trong Set. Ví dụ:
 
@@ -137,7 +134,7 @@ set2.add("four");
 set2.addAll(set)
 ```
 
-## Kiểm tra kích thước của Set
+## Kiểm tra kích thước của `Set`
 
 Chúng ta sử dụng phương thức `size()` để xem có bao nhiêu phần tử trong Set. Ví dụ:
 
@@ -151,7 +148,7 @@ set.add("789");
 int size = set.size();
 ```
 
-## Kiểm tra Set có rỗng không
+## Kiểm tra `Set` có rỗng không
 
 Để kiểm tra Set có rỗng không ta sử dụng phương thức `isEmpty()`
 
@@ -160,7 +157,7 @@ Set<String> set = new HashSet<>();
 boolean isEmpty = set.isEmpty();
 ```
 
-## Kiểm tra một phần tử đã tồn tại trong Set chưa
+## Kiểm tra một phần tử đã tồn tại trong `Set` chưa
 
 Chúng ta sử dụng phương thức `contains()` để kiểm tra xem phần tử đã tồn tại trong Set chưa. Ví dụ:
 
@@ -173,7 +170,7 @@ set.add("456");
 boolean contains123 = set.contains("123");
 ```
 
-## Chuyển tập hợp Set thành List
+## Chuyển tập hợp `Set` thành List
 
 Chúng ta có thể cover một tập hợp Set thành List bằng phương thức `addAll()`. Ví dụ:
 

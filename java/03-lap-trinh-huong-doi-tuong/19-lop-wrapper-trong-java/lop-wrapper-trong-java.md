@@ -4,137 +4,95 @@ description: "Lớp Wrapper trong java cung cấp cơ chế để chuyển đổ
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131335866-d1c536a4-fa19-4e3f-9d16-45d6198f7c8f.png
 position: 19
 ---
 
-Lớp Wrapper trong java cung cấp cơ chế để chuyển đổi kiểu dữ liệu nguyên thủy thành kiểu đối tượng và từ đối tượng thành kiểu dữ liệu nguyên thủy.
+Lớp Wrapper trong Java cung cấp cơ chế cho phép chuyển đổi giữa kiểu dữ liệu nguyên thủy và kiểu đối tượng. Đây là một khía cạnh quan trọng của Lập Trình Hướng Đối Tượng (OOP) trong Java. Trong bài viết này, chúng ta sẽ tìm hiểu về Lớp Wrapper, bao gồm tính năng `autoboxing` và `unboxing`, cùng với các ví dụ minh họa bằng ngôn ngữ Java.
 
-![image](https://user-images.githubusercontent.com/29374426/131335866-d1c536a4-fa19-4e3f-9d16-45d6198f7c8f.png)
+![Lớp Wrapper trong Java](https://user-images.githubusercontent.com/29374426/131335866-d1c536a4-fa19-4e3f-9d16-45d6198f7c8f.png)
 
-Tính năng `autoboxing` và `unboxing` chuyển đổi kiểu dữ liệu nguyên thủy thành kiểu đối tượng và từ đối tượng thành kiểu dữ liệu nguyên thủy một cách tự động từ J2SE 5.0. Sự chuyển đổi tự động kiểu dữ liệu nguyên thủy thành kiểu đối tượng được gọi là `autoboxing` và ngược lại được gọi là `unboxing`.
+## Tính Năng Autoboxing và Unboxing
 
-## Các lớp bao kiểu nguyên thủy (Wrapper class)
-
-Các giá trị nguyên thủy không phải là đối tượng trong Java. Để có thể thao tác được trên các giá trị nguyên thủy (giá trị số, kí tự và logic) thì gói java.lang cung cấp các lớp bao gói (Wrapper) cho từng kiểu dữ liệu nguyên thủy (gọi tắt là lớp bao). Có 8 lớp Wrapper chúng được thiết kế trong gói `java.lang` như sau
-
-| Kiểu nguyên thủy | Kiểu Wrapper |
-| ---------------- | ------------ |
-| boolean          | Boolean      |
-| char             | Character    |
-| byte             | Byte         |
-| short            | Short        |
-| int              | Integer      |
-| long             | Long         |
-| float            | Float        |
-| double           | Double       |
-
-Ví dụ: chuyển kiểu dữ liệu nguyên thủy thành kiểu Wrapper
+Từ phiên bản J2SE 5.0 trở đi, Java đã giới thiệu tính năng `autoboxing` và `unboxing` để tự động chuyển đổi kiểu dữ liệu nguyên thủy thành kiểu đối tượng và ngược lại. Dưới đây là một ví dụ đơn giản:
 
 ```java
-public class Thaycacac {
-    public static void main(String args[]) {
-        // Đổi int thành Integer
-        int a = 2;
-        Integer i = Integer.valueOf(a);// đổi int thành Integer
-        Integer j = a;// autoboxing, tự động đổi int thành Integer trong nội bộ trình biên dịch
-        System.out.println(a + " " + i + " " + j);
+int primitiveInt = 42;
+Integer wrapperInt = Integer.valueOf(primitiveInt); // Chuyển từ int thành Integer
+int backToInt = wrapperInt.intValue(); // Chuyển từ Integer thành int
+```
+
+Tính `autoboxing` tự động chuyển đổi kiểu dữ liệu nguyên thủy sang kiểu đối tượng và `unboxing` tự động chuyển đổi từ kiểu đối tượng sang kiểu dữ liệu nguyên thủy.
+
+## Các Lớp Wrapper cho Kiểu Dữ Liệu Nguyên Thủy
+
+Java cung cấp các lớp Wrapper tương ứng cho mỗi kiểu dữ liệu nguyên thủy. Dưới đây là bảng liệt kê các kiểu dữ liệu nguyên thủy và các lớp Wrapper tương ứng:
+
+| Kiểu Nguyên Thủy | Lớp Wrapper |
+| ---------------- | ----------- |
+| boolean          | Boolean     |
+| char             | Character   |
+| byte             | Byte        |
+| short            | Short       |
+| int              | Integer     |
+| long             | Long        |
+| float            | Float       |
+| double           | Double      |
+
+Ví dụ: Chuyển đổi kiểu dữ liệu nguyên thủy thành kiểu Wrapper và ngược lại.
+
+```java
+public class WrapperExample {
+    public static void main(String[] args) {
+        int primitiveInt = 42;
+        Integer wrapperInt = Integer.valueOf(primitiveInt); // Chuyển từ int thành Integer (autoboxing)
+        int backToInt = wrapperInt.intValue(); // Chuyển từ Integer thành int (unboxing)
+
+        System.out.println(primitiveInt + " " + wrapperInt + " " + backToInt);
     }
 }
 ```
 
-::result
+::Result
 
-2 2 2
-
-::
-
-Ví dụ: chuyển kiểu Wrapper thành kiểu dữ liểu nguyên thủy
-
-```java
-public class Thaycacac {
-    public static void main(String args[]) {
-        // đổi Integer thành int
-        Integer a = new Integer(9);
-        int i = a.intValue();// đổi Integer thành int
-        int j = a;// unboxing, tự động đổi Integer thành int trong nội bộ trình biên dịch
-
-        System.out.println(a + " " + i + " " + j);
-    }
-}
-```
-
-::result
-
-9 9 9
+42 42 42
 
 ::
 
-## Các đặc điểm của lớp Wrapper trong Java
+## Đặc Điểm của Lớp Wrapper trong Java
 
-### Khởi tạo
+### Khởi Tạo
 
-Các lớp bao (trừ lớp Character chỉ có một cách khởi tạo) đều có hai cách khởi tạo:
-
-- Các thứ nhất là sử dụng giá trị nguyên thủy để tạo ra đối tượng tương ứng
+Các lớp Wrapper có hai cách khởi tạo. Cách thứ nhất là sử dụng giá trị nguyên thủy để tạo đối tượng tương ứng, cách thứ hai là chuyển một chuỗi biểu diễn kiểu dữ liệu nguyên thủy thành đối tượng Wrapper tương ứng. Lưu ý rằng nếu giá trị chuỗi không hợp lệ, nó sẽ ném ra ngoại lệ `NumberFormatException`.
 
 ```java
-Character charObj = new Character('a');
-Boolean boolObj = new Boolean(true);
-Integer intObj = new Integer(2002);
-Float floatObj = new Float(3.14F);
-Double doubleObj = new Double(3.14);
+Integer intObj1 = Integer.valueOf(42); // Tạo từ giá trị nguyên thủy
+Integer intObj2 = Integer.valueOf("42"); // Tạo từ chuỗi
 ```
 
-- Cách thứ 2 là chuyển thành String biểu diễn cho các giá trị nguyên thủy về các lớp tương ứng. Các toán tử này sẽ ném ra ngoại lệ `NumberFormatException` khi giá trị String truyền vào hàm tạo không hợp lệ.
+### Hàm `toString()`
+
+Các lớp Wrapper (trừ lớp Character) viết đè hàm `toString()` để trả về biểu diễn chuỗi của giá trị nguyên thủy.
 
 ```java
-Boolean boolObj = new Boolean("true");
-Integer intObj = new Integer("2002");
-Float floatObj = new Float("3.14F");
-Double doubleObj= new Double("3.14");
+String intStr = intObj1.toString(); // "42"
 ```
 
-## Có các hàm chung: `valueOf(String s)`, `toString()`, `typeValue()`, `equals()`
+### Hàm `typeValue()`
 
-- Mỗi lớp (trừ lớp Character) đều định nghĩa hàm static `valueOf(String s)` trả lại đối tượng tương ứng
-
-Các hàm này ném ra ngoại lệ `NumberFormatException` khi giá trị String truyền vào phương thức không hợp lệ.
+Các lớp Wrapper có hàm `typeValue()` để trả về giá trị nguyên thủy tương ứng với đối tượng Wrapper.
 
 ```java
-Boolean boolObj = Boolean.valueOf("true");
-Integer intObj = Integer.valueOf("2002");
-Float floatObj = Float.valueOf("3.14F");
-Double doubleObj= Double.valueOf("3.14");
+int intValue = intObj1.intValue(); // 42
 ```
 
-- Các lớp viết đè hàm `toString()` trả lại là các đối tượng String biểu diễn cho các giá trị nguyên thủy ở dạng chuỗi
+### Hàm `equals()`
+
+Các lớp Wrapper viết đè hàm `equals()` để so sánh bằng nhau của các đối tượng Wrapper.
 
 ```java
-String charStr = charObj.toString(); // "a"
-String boolStr = boolObj.toString(); // "true"
-String intStr = intObj.toString(); // "2002"
-String doubleStr = doubleObj.toString(); // "3.14"
+Integer intObj3 = Integer.valueOf(42);
+boolean isEqual = intObj1.equals(intObj3); // true
 ```
 
-- Các lớp định nghĩa hàm `typeValue()` trả lại các giá trị nguyên thủy tương ứng với các đối tượng nguyên thủy
-
-```java
-boolean b = boolObj.booleanValue(); // true
-int i = intObj.intValue(); // 2002
-float f = floatObj.floatValueOf(); // 3.14F
-double d = doubleObj.doubleValueOf(); // 3.14
-char c = charObj.charValue(); // 'a'
-```
-
-- Các lớp viết đè hàm `equals()` để thực hiện so sánh bằng nhau của các đối tượng nguyên thủy
-
-```java
-Character charObj = new Character('a');
-boolean charTest = charObj.equals('b'); // false
-Integer intObj1 = Integer.valueOf("2010");
-boolean intTest = intObj.equals(intObj1); // false
-```
+Lớp Wrapper trong Java cung cấp một cách tiện lợi để làm việc với kiểu dữ liệu nguyên thủy trong môi trường OOP, cho phép bạn chuyển đổi dễ dàng giữa kiểu dữ liệu nguyên thủy và kiểu đối tượng. Tính năng `autoboxing` và `unboxing` giúp giảm thiểu công việc chuyển đổi và làm cho mã nguồn của bạn trở nên dễ đọc hơn

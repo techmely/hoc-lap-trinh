@@ -4,9 +4,6 @@ description: "Một số biểu thức regex hay trong javascript. Cùng tìm hi
 chapter:
   name: "Regular expression"
   slug: "chuong-12-regular-expression"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

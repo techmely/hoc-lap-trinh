@@ -4,9 +4,6 @@ description: "Java chia thread làm 2 loại một loại thông thường và D
 chapter:
   name: "Lập trình đa luồng"
   slug: "chuong-06-lap-trinh-da-luong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/146481113-81aab741-c1b0-4f17-9280-fb7c393c86db.png
 position: 7
 ---
@@ -17,13 +14,13 @@ Java chia `thread` làm 2 loại một loại thông thường và `Daemon Threa
 
 ![Luồng Daemon (Daemon Thread)](https://user-images.githubusercontent.com/29374426/146481113-81aab741-c1b0-4f17-9280-fb7c393c86db.png)
 
-Sử dụng `setDaemon(boolean)` để xác định một luồng là `Daemon` hoặc không. Chú ý, bạn chỉ có thể gọi hàm `setDeamon(boolean)` khi `thread` chưa được chạy. Điều đó có nghĩa là khi `thread` đã chạy bạn không thể chuyển luồng từ `non-daemon` sang `daemon` và ngược lại. Khi bạn cố gắng thay đổi trạng thái của luồng, một ngoại lệ `IllegalThreadStateException` được ném ra và luồng kết thúc xử lý.
+Sử dụng `setDaemon(boolean)` để xác định một luồng là `Daemon` hoặc không. Chú ý, bạn chỉ có thể gọi hàm `setDaemon(boolean)` khi `thread` chưa được chạy. Điều đó có nghĩa là khi `thread` đã chạy bạn không thể chuyển luồng từ `non-daemon` sang `daemon` và ngược lại. Khi bạn cố gắng thay đổi trạng thái của luồng, một ngoại lệ `IllegalThreadStateException` được ném ra và luồng kết thúc xử lý.
 
 Khi một luồng mới được tạo ra, nó được thừa hưởng đặc tính `daemon` từ luồng cha. Như vậy khi bạn tạo một luồng trong hàm main của 1 `class` nó vốn là luồng `non-daemon`, vì vậy `thread` tạo ra mặc định cũng là `non-daemon`. Như vậy nếu bạn tạo một luồng mới trong một luồng `Daemon`, mặc định nó cũng sẽ là `Daemon` .
 
 ## Luồng Daemon thường dùng làm gì?
 
-Một trong các luồng Deamon quan trọng của Java đó là luồng gom rác, nghĩa là gom các tài nguyên không còn sử dụng để giải phóng bộ nhớ. Khi tất cả các luồng người dùng không còn hoạt động nữa luồng gom rác cũng bị dừng theo.
+Một trong các luồng Daemon quan trọng của Java đó là luồng gom rác, nghĩa là gom các tài nguyên không còn sử dụng để giải phóng bộ nhớ. Khi tất cả các luồng người dùng không còn hoạt động nữa luồng gom rác cũng bị dừng theo.
 
 Ví dụ tạo một luồng WorkingThread
 
@@ -77,10 +74,10 @@ Processing working thread</br>
 Processing working thread</br>
 Processing working thread</br>
 
-> > << Finishing main program</br>
-> > Processing working thread</br>
-> > Processing working thread</br>
-> > Processing working thread
+<< Finishing main program</br>
+Processing working thread</br>
+Processing working thread</br>
+Processing working thread
 
 ::
 

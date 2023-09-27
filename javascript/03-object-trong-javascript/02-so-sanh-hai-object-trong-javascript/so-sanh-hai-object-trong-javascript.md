@@ -4,9 +4,6 @@ description: "Hướng dẫn cách so sánh object trong JavaScript. Bạn sẽ 
 chapter:
   name: "Object trong Javascript"
   slug: "chuong-03-object-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

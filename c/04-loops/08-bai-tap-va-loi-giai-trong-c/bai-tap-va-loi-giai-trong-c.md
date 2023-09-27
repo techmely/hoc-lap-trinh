@@ -4,9 +4,6 @@ description: "Cùng tổng hợp những kiến thức đã học được trong
 chapter:
   name: "Vòng lặp"
   slug: "chuong-04-loops"
-category:
-  name: "C"
-  slug: "c"
 image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
 position: 8
 ---
@@ -206,5 +203,6 @@ Enter the number: 12345</br>
 OUTPUT:</br>
 Sum of digits in 0 is 15</br>
 
---------------------------------
+---
+
 ::

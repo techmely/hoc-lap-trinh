@@ -4,9 +4,6 @@ description: "Hàm hay phương thức (method) trong Java là khối lệnh th�
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://static.javatpoint.com/core/images/method-in-java.png
 position: 12
 ---

@@ -4,9 +4,6 @@ description: "Strict Mode là một tính năng rất hay ho được thêm tron
 chapter:
   name: "Javascript cơ bản"
   slug: "chuong-02-javascript-co-ban"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

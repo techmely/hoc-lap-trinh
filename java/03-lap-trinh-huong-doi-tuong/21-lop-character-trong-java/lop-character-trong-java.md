@@ -4,95 +4,105 @@ description: "Bài này chúng ta sẽ tìm hiểu về Một số lớp cơ b�
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131965653-d093ebae-2089-4057-b718-f2e6bfb13c88.png
 position: 21
 ---
 
-Character class là một [Wrapper class](/bai-viet/java/lop-wrapper-trong-java) của char trong java. Cung cấp nhiều method giúp thao tác nhanh với char, ngoài ra một object Character chỉ chứa duy nhất một giá trị char.
+Character class là một [Wrapper class](/bai-viet/java/lop-wrapper-trong-java) của char trong java. Cung cấp nhiều method giúp thao tác nhanh với `char`, ngoài ra một `object Character` chỉ chứa duy nhất một giá trị `char`. Trong bài viết này, chúng ta sẽ tìm hiểu cách khởi tạo một đối tượng `Character` và các phương thức quan trọng của lớp `Character` để thao tác với ký tự trong Java.
 
-![image](https://user-images.githubusercontent.com/29374426/131965653-d093ebae-2089-4057-b718-f2e6bfb13c88.png)
+![Lớp Character trong Java](https://user-images.githubusercontent.com/29374426/131965653-d093ebae-2089-4057-b718-f2e6bfb13c88.png)
 
-## Khởi tạo một lớp Character
+Lớp `Character` trong Java cung cấp các phương thức hữu ích để làm việc với các ký tự. Trong bài viết này, chúng ta sẽ tìm hiểu cách khởi tạo một đối tượng `Character` và các phương thức quan trọng của lớp `Character` để thao tác với ký tự trong Java.
 
-Lớp Character cung cấp một số phương thức hữu ích để thao tác các ký tự. Bạn có thể tạo một đối tượng Ký tự với hàm tạo Constructor
+## Khởi tạo một đối tượng Character
+
+Để khởi tạo một đối tượng `Character`, bạn có thể sử dụng hàm tạo (constructor) như sau:
 
 ```java
 Character ch = new Character('a');
 ```
 
+Trong ví dụ trên, chúng ta đã tạo một đối tượng `Character` với ký tự `'a'`.
+
 ## Các phương thức trong lớp Character
 
-![image](https://user-images.githubusercontent.com/29374426/131965698-235e0ffb-e9f9-4536-a674-7a5e12537e7a.png)
+Lớp `Character` cung cấp một loạt các phương thức để thực hiện các thao tác với ký tự. Dưới đây là một số phương thức quan trọng của lớp `Character`:
 
-- `isLetter()`: Xác định xem giá trị char được chỉ định có phải là một chữ cái hay không.
+### `isLetter()`
 
-```java
-Character ch = new Character('a');// true
-```
-
-- `isDigit()`: Xác định xem giá trị char được chỉ định có phải là một chữ số hay không
+Phương thức `isLetter()` xác định xem một giá trị char có phải là một chữ cái hay không. Nó trả về `true` nếu ký tự là một chữ cái và `false` nếu không phải.
 
 ```java
-System.out.println(Character.isDigit('0')); // true
+Character ch = new Character('a');
+boolean isLetter = Character.isLetter(ch); // true
 ```
 
-- `isWhitespace()`: Xác định xem giá trị char được chỉ định có phải là khoảng trắng hay không
+### `isDigit()`
+
+Phương thức `isDigit()` xác định xem một giá trị char có phải là một chữ số hay không. Nó trả về `true` nếu ký tự là một chữ số và `false` nếu không phải.
 
 ```java
-public static boolean isWhitespace(char ch)
+boolean isDigit = Character.isDigit('0'); // true
 ```
 
-- `isUpperCase()`: Xác định xem giá trị char được chỉ định là chữ hoa hay không.
+### `isWhitespace()`
+
+Phương thức `isWhitespace()` xác định xem một giá trị char có phải là một ký tự khoảng trắng (space) hay không.
 
 ```java
-public static boolean isUpperCase(char ch)
-public static boolean isUpperCase(int codepoint)
+boolean isWhitespace = Character.isWhitespace(' '); // true
 ```
 
-- `isLowerCase()`: Xác định xem giá trị char được chỉ định là chữ thường hay không.
+### `isUpperCase()` và `isLowerCase()`
+
+Phương thức `isUpperCase()` xác định xem một giá trị char có phải là chữ hoa hay không, trong khi `isLowerCase()` xác định xem một giá trị char có phải là chữ thường hay không.
 
 ```java
-public static boolean isLowerCase(char ch)
-public static boolean isLowerCase(int codePoint)
+boolean isUpperCase = Character.isUpperCase('A'); // true
+boolean isLowerCase = Character.isLowerCase('a'); // true
 ```
 
-- `toUpperCase()`: Chuyển ký tự char thường thành chữ hoa.
+### `toUpperCase()` và `toLowerCase()`
+
+Phương thức `toUpperCase()` chuyển đổi một ký tự thường thành ký tự hoa, trong khi `toLowerCase()` chuyển đổi một ký tự hoa thành ký tự thường.
 
 ```java
-public static char toUpperCase(char ch)
-// or
-public static char toUpperCase(int codePoint)
+char uppercaseChar = Character.toUpperCase('a'); // 'A'
+char lowercaseChar = Character.toLowerCase('A'); // 'a'
 ```
 
-- `toLowerCase()`: Chuyển ký tự char thường thành chữ hoa.
+### `toString()`
+
+Phương thức `toString()` chuyển đổi một ký tự char thành chuỗi.
 
 ```java
-public static char toLowerCase(char ch)
-public static char toLowerCase(int codePoint)
+String charToString = Character.toString('a'); // "a"
 ```
 
-- `toString()`: Chuyển ký tự char trong object Character thành chuỗi.
+### `charValue()`
+
+Phương thức `charValue()` trả về giá trị char của đối tượng `Character`.
 
 ```java
-public static String toString(char c)
+char charValue = ch.charValue(); // 'a'
 ```
 
-- `charValue()`: Trả về char value của object Character.
+### `equals()`
+
+Phương thức `equals()` so sánh hai đối tượng `Character` và trả về `true` nếu chúng có giá trị char bằng nhau, ngược lại trả về `false`.
 
 ```java
-public char charValue()
+Character ch1 = new Character('a');
+Character ch2 = new Character('b');
+boolean isEqual = ch1.equals(ch2); // false
 ```
 
-- `equals()`: So sánh bằng 2 object Character.
+### `compareTo()`
+
+Phương thức `compareTo()` so sánh đối tượng `Character` với một đối tượng `Character` khác dựa trên giá trị char. Nó trả về số âm nếu đối tượng gọi (caller) nhỏ hơn, 0 nếu bằng và số dương nếu lớn hơn đối tượng so sánh.
 
 ```java
-public boolean equals(Object obj)
+Character ch1 = new Character('a');
+Character ch2 = new Character('b');
+int compareResult = ch1.compareTo(ch2); // -1
 ```
-
-- `compareTo()`: So sánh với một object Character khác dựa trên char value. Trả về số bé hơn không nếu nhỏ không, 0 – bằng, lớn hơn không nếu lớn hơn.
-- `isAlphabetic()`: Kiểm tra ký tự có nằm trong khoảng a-zA-Z hay không dựa vào mã code.
-- `isLetterOrDigit()`: Kiểm tra ký tự có phải là một ký tự a-zA-Z hoặc là một ký tự hay không
-- `valueOf()`: Trả về một object của Character class.

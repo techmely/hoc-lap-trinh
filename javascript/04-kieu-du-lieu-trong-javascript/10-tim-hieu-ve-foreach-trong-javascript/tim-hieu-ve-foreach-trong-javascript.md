@@ -4,9 +4,6 @@ description: "forEach là một phương thức có sẵn của array, để duy
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168243187-23ec7564-4b55-402b-8663-06ebc2d677f6.png
 position: 10
 ---

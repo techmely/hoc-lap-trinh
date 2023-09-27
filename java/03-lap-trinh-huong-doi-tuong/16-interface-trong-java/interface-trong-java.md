@@ -4,9 +4,6 @@ description: "Interface trong Java là một bản thiết kế của một lớ
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131247022-a3c4f998-873e-4274-a244-83f4913ca5aa.png
 position: 16
 ---
@@ -60,7 +57,7 @@ Khi triển khai interface:
 | Một interface tương tự với một class                                                                              | Một interface khác với một class                                                |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
 | Một interface được viết trong một file với định dạng .java, với tên của interface giống tên của file.             | Bạn không thể khởi tạo một interface                                            |
-| Bytecode của interface được lưu trong file có định dạng .class.                                                   | Một interface không chứa bất cứ hàm Contructor nào.                             |
+| Bytecode của interface được lưu trong file có định dạng .class.                                                   | Một interface không chứa bất cứ hàm `Constructor` nào.                          |
 | Khai báo interface trong một package, những file bytecode tương ứng cũng có cấu trúc thư mục có cùng tên package. | Tất cả các phương thức của interface đều là abstract.                           |
 |                                                                                                                   | Một interface không thể chứa một trường nào trừ các trường vừa static và final. |
 |                                                                                                                   | Một interface không thể kế thừa từ lớp, nó được triển khai bởi một lớp.         |

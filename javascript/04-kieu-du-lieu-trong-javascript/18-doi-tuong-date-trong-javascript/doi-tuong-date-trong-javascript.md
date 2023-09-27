@@ -4,9 +4,6 @@ description: "Date là một đối tượng được tính hợp sẵn (built-i
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168244363-d816a9cf-84ff-4f0e-ad13-a96200f22b93.png
 position: 18
 ---

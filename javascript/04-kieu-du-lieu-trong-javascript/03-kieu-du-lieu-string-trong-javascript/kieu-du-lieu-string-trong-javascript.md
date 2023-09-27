@@ -4,9 +4,6 @@ description: "String là kiểu dữ liệu chứa dữ liệu dưới dạng te
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168241987-e96c8d4c-c105-49ff-a02b-d9e4c27bf4ce.png
 position: 3
 ---

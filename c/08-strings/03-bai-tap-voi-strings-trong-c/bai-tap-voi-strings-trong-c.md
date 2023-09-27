@@ -4,9 +4,6 @@ description: "Bài viết này sẽ giới thiệu một loạt các bài tập 
 chapter:
   name: "Strings"
   slug: "chuong-08-strings"
-category:
-  name: "C"
-  slug: "c"
 image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982f-4a72-b6d1-f7d8f5c5a9b3.png
 position: 3
 ---

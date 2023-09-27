@@ -4,9 +4,6 @@ description: "Một số lỗi phổ biến khi sử dụng Strict mode trong Ja
 chapter:
   name: "Kiểm thử và đảm bảo chất lượng code"
   slug: "chuong-11-kiem-thu-va-dam-bao-chat-luong-code"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

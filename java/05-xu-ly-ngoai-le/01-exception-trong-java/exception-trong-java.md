@@ -4,70 +4,107 @@ description: "Exception là một tình trạng bất thường. Một exception
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/142722429-d5b4a38c-448a-4aed-994b-52e06755bfea.png
 position: 1
 ---
 
-**Exception** là một tình trạng bất thường. Một exception (ngoại lệ) trong Java là một vấn đề xảy ra trong quá trình thực hiện của chương trình mà phá vỡ luồng chuẩn của chương trình.
+`Exception` là một tình trạng bất thường xảy ra trong quá trình thực thi chương trình, phá vỡ luồng chuẩn của chương trình. Trong Java, xử lý ngoại lệ là một khía cạnh quan trọng của lập trình, giúp chúng ta kiểm soát và xử lý các tình huống bất thường.
 
-## Exception trong Java là gì
+## Exception trong Java là gì?
 
-Mô hình sử lý ngoại lệ của java dựa trên ba hoạt động chính: **đặc tả ngoại lệ**, **ném ra ngoại lệ**, và **bắt ngoại lệ**. Mỗi phương thức đều có thể phát sinh các ngoại lệ, các ngoại lệ có thể phát sinh cần được mô tả chi tiết trong lệnh khai báo của phương thức, việc khai báo này đựơc gọi là đặc tả ngoại lệ.
+Exception trong Java là một vấn đề xảy ra trong quá trình thực hiện của chương trình, phá vỡ luồng chuẩn của chương trình. Mô hình xử lý ngoại lệ của Java dựa trên ba hoạt động chính: đặc tả ngoại lệ, ném ra ngoại lệ và bắt ngoại lệ.
 
-Khi một câu lệnh trong phương thức gây lỗi, mà người lập trình không cung cấp mã xử lý lỗi, thì ngoại lệ được chuyển đến phương thức gọi phương thức đó, việc này được gọi là ném ra biệt lệ, ta có thể ném ra biệt lệ một cách tường minh (điều này sẽ được giới thiếu sau).
+### Loại Exception trong Java
 
-Đối với người lập trình họ có thể gặp một trong các lỗi sau:
+Trong Java, có hai loại chính của Exception:
 
-- Lỗi cú pháp (syntac error)
-- Lỗi logic thuật toán
-- Lỗi lúc thực thi ( runtime error)
+1. `Checked Exception`: Đây là các ngoại lệ mà chúng ta phải kiểm tra tại thời điểm biên dịch. Checked Exception thường xảy ra do người dùng và không thể dự đoán được bởi lập trình viên. Ví dụ, `IOException`, `SQLException`.
+2. `Unchecked Exception`: Đây là các ngoại lệ không cần kiểm tra tại thời điểm biên dịch và thường xảy ra do lỗi trong mã nguồn, chẳng hạn như `NullPointerException`, `ArithmeticException`.
+3. `Error`: Là các ngoại lệ không thường được đặt bẫy, và chúng thường xảy ra do lỗi vượt quá tầm kiểm soát của lập trình viên, ví dụ như `OutOfMemoryError`, `StackOverflowError`.
 
-Đối với lỗi cú pháp người lập trình có thể phát hiện và sửa lỗi, dựa vào trình biên dịch, đây là lỗi dễ phát hiện và sửa chữa, tuy nhiêmn đây cũng là lỗi gây khó khăn và chán nản đối với người mới học lập trình.
+## Xử Lý Ngoại Lệ trong Java
 
-Đối với lỗi thuật toán, đây là lỗi khó phát hiện và sửa chữa nhất, tuy nhiên trong bài này ta không bàn luận về vấn đề này.
+### Cấu trúc try-catch
 
-Đối với lỗi lúc thực thi, ta hoàn toàn có thể kiểm soát được chúng, thông thường lỗi runtime thường do nguyên nhân khách quan như: truy cập vào một ổ đĩa nhưng ổ đĩa này lại chưa sẵn sàng, hay thực hiện phép chia nhưng mẫu số lại bằng 0, kết nối với máy tính ở xa nhưng máy đó lại không tồn tại…, khi một lỗi runtime xẩy ra JVM sẽ phát sinh một ngoại lệ, nếu một chương trình không cung cấp mã sử lý ngoại lệ có thể kết thúc không bình thường, trong bài hôm nay ta sẽ bàn về vấn đề sử lý ngoại lệ trong java.
+Để xử lý ngoại lệ trong Java, chúng ta sử dụng cấu trúc try-catch. Trong khối try, chúng ta đặt các đoạn mã có thể gây ra ngoại lệ. Nếu ngoại lệ xảy ra, chúng ta sử dụng khối catch để xử lý ngoại lệ đó.
+
+```java
+try {
+    // Đoạn mã có thể gây ra ngoại lệ
+} catch (ExceptionType e) {
+    // Xử lý ngoại lệ
+}
+```
 
 Ví dụ:
 
-- Người dùng nhập dữ liệu không hợp lệ.
-- Một file cần được mở nhưng không thể tìm thấy.
-- Kết nối mạng bị ngắt trong quá trình thực hiện giao tiếp hoặc JVM hết bộ nhớ.
+```java
+try {
+    int result = 10 / 0; // Gây ra ArithmeticException
+} catch (ArithmeticException e) {
+    System.out.println("Lỗi chia cho 0: " + e.getMessage());
+}
+```
 
-Để hiểu về cách xử lý ngoại lệ trong Java, bạn cần phải hiểu những loại ngoại lệ như sau:
+### Khối `finally`
 
-### Checked Exception
-
-Checked Exception là ngoại lệ thường xảy ra do người dùng mà không thể lường trước được bởi lập trình viên. Ví dụ, một file được mở, nhưng file đó không thể tìm thấy và ngoại lệ xảy ra. Những ngoại lệ này không thể được bỏ qua trong quá trình biên dịch. Checked Exception là các lớp mà kế thừa lớp Throwable ngoại trừ RuntimeException và Error. Ví dụ như `IOException`, `SQLException`, … Checked Exception được kiểm tra tại thời gian biên dịch compile-time.
-
-![Checked Exception](https://user-images.githubusercontent.com/29374426/142722429-d5b4a38c-448a-4aed-994b-52e06755bfea.png)
-
-### Unchecked Exception
-
-Unchecked Exception một ngoại lệ xảy ra ở runtime là ngoại lệ có thể tránh được bởi lập trình viên. Unchecked Exception là các lớp kế thừa `RuntimeException`, ví dụ `ArithmaticException`, `NullPointerException`, `ArrayIndexOutOfBoundsException`, … Unchecked Exception không được kiểm tra tại compile-time, thay vào đó chúng được kiểm tra tại runtime.
-
-![Unchecked Exception](https://user-images.githubusercontent.com/29374426/142722434-f651efed-8d61-4a19-a785-63cf29d23e34.png)
-
-### Error
-
-Nó không giống các exception, nhưng vấn đề xảy ra vượt quá tầm kiểm soát của lập trình viên hay người dùng. Error được bỏ qua trong code của bạn vì bạn hiếm khi có thể làm gì đó khi chương trình bị error. Ví dụ như `OutOfMemoryError`, `VirtualMachineError`, `AssertionError`,… Nó được bỏ qua trong quá trình Java biên dịch.
-
-Giả sử có 10 lệnh trong chương trình của bạn và xuất hiện một Exception tại lệnh 5, phần còn lại của code sẽ không được thực thi (từ lệnh 6 tới lệnh 10). Nếu chúng ta thực hiện Exception Handling, phần lệnh còn lại sẽ được thực thi. Đó là ý nghĩa của việc sử dụng Exception Handling trong Java.
+Khối finally là một phần tử tùy chọn trong cấu trúc try-catch-finally. Khối này chứa các câu lệnh sẽ được thực thi sau cùng, bất kể có xảy ra ngoại lệ hay không.
 
 ```java
-statement 1;
-statement 2;
-statement 3;
-statement 4;
-statement 5; // xuất hiện exception
-statement 6;
-statement 7;
-statement 8;
-statement 9;
-statement 10;
+try {
+    // Đoạn mã có thể gây ra ngoại lệ
+} catch (ExceptionType e) {
+    // Xử lý ngoại lệ
+} finally {
+    // Mã trong khối finally
+}
+```
+
+Ví dụ:
+
+```java
+try {
+    int result = 10 / 2;
+} catch (ArithmeticException e) {
+    System.out.println("Lỗi chia cho 0: " + e.getMessage());
+} finally {
+    System.out.println("Khối finally luôn được thực thi.");
+}
+```
+
+### Sử dụng `throws` và `throw`
+
+Khi bạn viết một phương thức và bạn biết rằng nó có thể gây ra một ngoại lệ nhất định, bạn có thể sử dụng từ khóa `throws` để khai báo ngoại lệ đó. Khi một phương thức được gọi, người gọi phải bắt buộc xử lý ngoại lệ này hoặc cũng sử dụng `throws` để truyền ngoại lệ cho phương thức gọi nó.
+
+```java
+void divide(int a, int b) throws ArithmeticException {
+    if (b == 0) {
+        throw new ArithmeticException("Lỗi chia cho 0");
+    }
+    int result = a / b;
+}
+```
+
+Ví dụ:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        try {
+            divide(10, 0);
+        } catch (ArithmeticException e) {
+            System.out.println("Bắt ngoại lệ: " + e.getMessage());
+        }
+    }
+
+    static void divide(int a, int b) throws ArithmeticException {
+        if (b == 0) {
+            throw new ArithmeticException("Lỗi chia cho 0");
+        }
+        int result = a / b;
+        System.out.println("Kết quả: " + result);
+    }
+}
 ```
 
 ## Hệ thống cấp bậc của các lớp ngoại lệ trong Java
@@ -76,20 +113,24 @@ Tất cả các lớp exception đều là lớp con của lớp `java.lang.Exce
 
 ![Hệ thống cấp bậc của các lớp ngoại lệ trong Java](https://user-images.githubusercontent.com/29374426/142722321-fc300efc-3618-44d7-8334-0ee0ad988471.png)
 
-Erros không thường được đặt bẫy bởi các chương trình Java. Error thường được tạo ra để thể hiện lỗi trong môi trường runtime. Ví dụ: JVM hết bộ nhớ. Thông thường các chương trình không thể khôi phục từ các lỗi.
+`Error` không thường được đặt bẫy bởi các chương trình Java. Error thường được tạo ra để thể hiện lỗi trong môi trường runtime. Ví dụ: JVM hết bộ nhớ. Thông thường các chương trình không thể khôi phục từ các lỗi.
 
 ## Các kiểu ngoại lệ phổ biến
 
-| Phương thức              | Miêu tả                                                                                                                            |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
-| IOException              | Trả về một message cụ thể về exception đã xảy ra. Message này được khởi tạo bởi phương thức contructor của Throwable               |
-| SQLException             | Ngoại lệ liên quan đến cú pháp SQL                                                                                                 |
-| DataAccessException      | Ngoại lệ liên quan đến việc truy cập CSDL                                                                                          |
-| ClassNotFoundException   | Bị ném khi JVM không thể tìm thấy một lớp mà nó cần, do lỗi dòng lệnh, sự cố đường dẫn hoặc tệp, class bị thiếu...                 |
-| InstantiationException   | Ngoại lệ khi cố gắng tạo đối tượng của một abstract class hoặc interface                                                           |
-| NullPointerException     | Ngoại lệ bị ném ra khi cố gắng truy cập một đối tượng có biến tham chiếu có giá trị hiện tại là null                               |
-| ArrayIndexOutOfBound     | Ngoại lệ khi cố gắng truy cập một phần tử vượt quá độ dài của mảng                                                                 |
-| IllegalArgumentException | Ngoại lệ bị ném ra khi một phương thức nhận được một đối số được định dạng khác với phương thức mong đợi.                          |
-| IllegalStateException    | Ngoại lệ bị ném ra khi trạng thái của môi trường không phù hợp với hoạt động cố gắng thực hiện, ví dụ: Sử dụng Scanner đã bị đóng. |
-| NumberFormatException    | Ngoại lệ bị ném khi một phương thức chuyển đổi một Chuỗi thành số nhưng không thể chuyển đổi.                                      |
-| ArithmeticException      | Lỗi số học, chẳng hạn như chia cho 0.                                                                                              |
+| Phương thức                | Miêu tả                                                                                                                            |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `IOException`              | Trả về một message cụ thể về `exception` đã xảy ra. Message này được khởi tạo bởi phương thức `constructor` của Throwable          |
+| `SQLException`             | Ngoại lệ liên quan đến cú pháp SQL                                                                                                 |
+| `DataAccessException`      | Ngoại lệ liên quan đến việc truy cập CSDL                                                                                          |
+| `ClassNotFoundException`   | Bị ném khi JVM không thể tìm thấy một lớp mà nó cần, do lỗi dòng lệnh, sự cố đường dẫn hoặc tệp, class bị thiếu...                 |
+| `InstantiationException`   | Ngoại lệ khi cố gắng tạo đối tượng của một abstract class hoặc interface                                                           |
+| `NullPointerException`     | Ngoại lệ bị ném ra khi cố gắng truy cập một đối tượng có biến tham chiếu có giá trị hiện tại là null                               |
+| `ArrayIndexOutOfBound`     | Ngoại lệ khi cố gắng truy cập một phần tử vượt quá độ dài của mảng                                                                 |
+| `IllegalArgumentException` | Ngoại lệ bị ném ra khi một phương thức nhận được một đối số được định dạng khác với phương thức mong đợi.                          |
+| `IllegalStateException`    | Ngoại lệ bị ném ra khi trạng thái của môi trường không phù hợp với hoạt động cố gắng thực hiện, ví dụ: Sử dụng Scanner đã bị đóng. |
+| `NumberFormatException`    | Ngoại lệ bị ném khi một phương thức chuyển đổi một Chuỗi thành số nhưng không thể chuyển đổi.                                      |
+| `ArithmeticException`      | Lỗi số học, chẳng hạn như chia cho 0.                                                                                              |
+
+::alert{type="success"}
+Xử lý ngoại lệ trong Java là một phần quan trọng của việc phát triển phần mềm. Nó cho phép bạn kiểm soát và xử lý các tình huống bất thường trong chương trình của bạn, giúp đảm bảo tính ổn định và an toàn của ứng dụng. Sử dụng cấu trúc `try-catch`, khối finally, `throws`, và `throw` là những công cụ quan trọng để xử lý ngoại lệ một cách hiệu quả trong Java.
+::

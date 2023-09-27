@@ -4,18 +4,15 @@ description: "LinkedList là một cấu trúc dữ liệu tuyến tính. Các p
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/143202802-fb867763-f54b-40e5-9d4a-64be9ea60016.png
 position: 4
 ---
 
-**LinkedList** là một cấu trúc dữ liệu tuyến tính. Các phần tử trong LinkedList không được lưu trữ liền kề nhau giống như arrays. Mỗi phần tử trong LinkedList liên kết với nhau bằng một con trỏ, nghĩa là mỗi phần tử sẽ tham chiếu đến địa chỉ của phần tử tiếp theo.
+`LinkedList` là một cấu trúc dữ liệu tuyến tính. Các phần tử trong LinkedList không được lưu trữ liền kề nhau giống như arrays. Mỗi phần tử trong LinkedList liên kết với nhau bằng một con trỏ, nghĩa là mỗi phần tử sẽ tham chiếu đến địa chỉ của phần tử tiếp theo.
 
-## Sử dụng LinkedList trong Java
+## Sử dụng `LinkedList` trong Java
 
-Class LinkedList trong Java triển khai danh sách liên kết đôi. Mỗi phần tử trong một LinkedList được gọi là một nút .
+Class `LinkedList` trong Java triển khai danh sách liên kết đôi. Mỗi phần tử trong một LinkedList được gọi là một nút .
 
 ![Sử dụng LinkedList trong Java](https://user-images.githubusercontent.com/29374426/143202802-fb867763-f54b-40e5-9d4a-64be9ea60016.png)
 
@@ -31,11 +28,11 @@ Các phần tử trong **LinkedList** không được lưu trữ theo trình t�
 
 Ở đây chúng ta có 3 phần tử trong một LinkedList:
 
-- Dog – đây là phần tử đầu tiên, phần tử của địa chỉ trước là null và phần tử của địa chỉ tiếp theo là Cat
-- Cat – đây là phần tử thứ hai, phần tử của địa chỉ trước là Dog và phần tử của địa chỉ tiếp theo là Cow
-- Cow – đây là phần tử cuối cùng, phần tử địa chỉ trước là Cat và phần tử của địa chỉ tiếp theo là null
+- Dog – đây là phần tử đầu tiên, phần tử của địa chỉ trước là `null` và phần tử của địa chỉ tiếp theo là `Cat`
+- Cat – đây là phần tử thứ hai, phần tử của địa chỉ trước là `Dog` và phần tử của địa chỉ tiếp theo là `Cow`
+- Cow – đây là phần tử cuối cùng, phần tử địa chỉ trước là `Cat` và phần tử của địa chỉ tiếp theo là `null`
 
-## Cách tạo một LinkedList trong Java
+## Cách tạo một `LinkedList` trong Java
 
 Đây là cách chúng ta có thể tạo các LinkedList trong Java:
 
@@ -59,18 +56,18 @@ LinkedList<String> linkedList = new LinkedList<>();
 List<String> animals1 = new LinkedList<>();
 ```
 
-Ở đây chúng ta đã khai báo một LinkedList animals1, bằng cách sử dụng List interface. LinkedList chỉ có thể truy cập các hàm của List interface. Thêm một ví dụ nữa nhé:
+Ở đây chúng ta đã khai báo một `LinkedList` animals1, bằng cách sử dụng List interface. `LinkedList` chỉ có thể truy cập các hàm của List interface. Thêm một ví dụ nữa nhé:
 
 ```java
 Queue<String> animals2 = new LinkedList<>();
 Deque<String> animals3 = new LinkedList<>();
 ```
 
-Ở đây, animals2 có thể truy cập các hàm của Queue interface. Tuy nhiên, animals3 chỉ có thể truy cập các hàm của Dequevà Queue interface. Đó là bởi vì Deque là một subinterface của Queue.
+Ở đây, animals2 có thể truy cập các hàm của Queue interface. Tuy nhiên, animals3 chỉ có thể truy cập các hàm của `Deque` và `Queue` interface. Đó là bởi vì `Deque` là một `sub interface` của `Queue`.
 
-## Thêm các phần tử vào LinkedList
+## Thêm các phần tử vào `LinkedList`
 
-Để thêm một phần tử (nút) vào cuối LinkedList, chúng ta sử dụng hàm add(). Ví dụ:
+Để thêm một phần tử (nút) vào cuối `LinkedList`, chúng ta sử dụng hàm `add()`. Ví dụ:
 
 ```java
 import java.util.LinkedList;
@@ -90,11 +87,11 @@ class Main {
 
 ::result
 
-LinkedList: [Dog, Cat, Horse]<br/>
+LinkedList: [Dog, Cat, Horse]
 
 ::
 
-## Thêm phần tử từ LinkedList này sang LinkedList khác
+## Thêm phần tử từ `LinkedList` này sang `LinkedList` khác
 
 Để thêm tất cả các phần tử từ LinkedList này sang LinkedList khác, chúng ta sử dụng hàm `addAll()`. Ví dụ:
 
@@ -123,7 +120,7 @@ class Main {
 ::result
 
 Mammals: [Dog, Cat, Horse]<br/>
-Animals: [Crocodile, Dog, Cat, Horse]<br/>
+Animals: [Crocodile, Dog, Cat, Horse]
 
 ::
 
@@ -149,13 +146,13 @@ class Main {
 
 ::result
 
-LinkedList: [Dog, Cat]<br/>
+LinkedList: [Dog, Cat]
 
 ::
 
-## Truy cập tới các phần tử trong LinkedList
+## Truy cập tới các phần tử trong `LinkedList`
 
-Để truy cập một phần tử từ LinkedList, chúng ta có thể sử dụng hàm `get()`. Ví dụ:
+Để truy cập một phần tử từ `LinkedList`, chúng ta có thể sử dụng hàm `get()`. Ví dụ:
 
 ```java
 import java.util.LinkedList;
@@ -180,7 +177,7 @@ class Main {
 ::result
 
 LinkedList: [Dog, Horse, Cat]<br/>
-Element at index 1: Horse<br/>
+Element at index 1: Horse
 
 ::
 
@@ -213,7 +210,7 @@ class Main {
 
 ::result
 
-LinkedList: Dog, Cat, Horse,<br/>
+LinkedList: Dog, Cat, Horse,
 
 ::
 
@@ -260,7 +257,7 @@ class Main {
 ::result
 
 LinkedList: Dog, Horse, Cat,<br/>
-Reverse LinkedList: Cat, Horse, Dog,<br/>
+Reverse LinkedList: Cat, Horse, Dog,
 
 ::
 
@@ -271,9 +268,9 @@ Reverse LinkedList: Cat, Horse, Dog,<br/>
 - Hàm `hasPrevious()` trả về true nếu có các phần tử trước
 - Hàm `previous()` trả về phần tử trước
 
-## Tìm kiếm các phần tử trong LinkedList
+## Tìm kiếm các phần tử trong `LinkedList`
 
-Để kiểm tra xem LinkedList có chứa một phần tử cụ thể hay không, chúng ta sử dụng hàm `contains()`. Ví dụ:
+Để kiểm tra xem `LinkedList` có chứa một phần tử cụ thể hay không, chúng ta sử dụng hàm `contains()`. Ví dụ:
 
 ```java
 import java.util.LinkedList;
@@ -299,11 +296,11 @@ class Main {
 ::result
 
 LinkedList: [Dog, Horse, Cat]<br/>
-Dog is in LinkedList.<br/>
+Dog is in LinkedList.
 
 ::
 
-## Tìm kiếm vị trí phần tử trong LinkedList
+## Tìm kiếm vị trí phần tử trong `LinkedList`
 
 - Hàm `indexOf()` – trả về chỉ số xuất hiện đầu tiên của một phần tử, trả về -1 nếu không tìm thấy phần tử đã chỉ định.
 - Hàm `lastIndexOf()` – trả về chỉ số của lần xuất hiện cuối cùng của một phần tử, trả về -1 nếu không tìm thấy phần tử đã chỉ định.
@@ -337,11 +334,11 @@ class Main {
 
 LinkedList: [Dog, Horse, Cat, Dog]<br/>
 First Occurrence of Dog: 0<br/>
-Last Occurrence of Dog: 3<br/>
+Last Occurrence of Dog: 3
 
 ::
 
-## Thay đổi các phần tử trong LinkedList
+## Thay đổi các phần tử trong `LinkedList`
 
 Để thay đổi các phần tử của LinkedList, chúng ta có thể sử dụng hàm `set()`. Ví dụ:
 
@@ -366,7 +363,7 @@ class Main {
 }
 ```
 
-Chúng ta cũng có thể thay đổi các phần tử trong LinkedList bằng cách sử dụng hàm `listIterator()`. Ví dụ:
+Chúng ta cũng có thể thay đổi các phần tử trong `LinkedList` bằng cách sử dụng hàm `listIterator()`. Ví dụ:
 
 ```java
 import java.util.ArrayList;
@@ -396,13 +393,13 @@ class Main {
 ::result
 
 LinkedList: [Dog, Cat, Horse]<br/>
-New LinkedList: [Cow, Cat, Horse]<br/>
+New LinkedList: [Cow, Cat, Horse]
 
 ::
 
 ## Xóa các phần tử khỏi LinkedList
 
-Để xóa một phần tử khỏi LinkedList, chúng ta có thể sử dụng hàm `remove()`. Ví dụ:
+Để xóa một phần tử khỏi `LinkedList`, chúng ta có thể sử dụng hàm `remove()`. Ví dụ:
 
 ```java
 import java.util.LinkedList;
@@ -431,7 +428,7 @@ class Main {
 
 LinkedList : [Dog, Horse, Cat, Zebra]<br/>
 Removed Element: Horse<br/>
-New LinkedList: [Dog, Cat, Zebra]<br/>
+New LinkedList: [Dog, Cat, Zebra]
 
 ::
 
@@ -465,7 +462,7 @@ class Main {
 ::result
 
 LinkedList: [Dog, Cat, Horse]<br/>
-New LinkedList: [Cat, Horse]<br/>
+New LinkedList: [Cat, Horse]
 
 ::
 
@@ -494,7 +491,7 @@ class Main {
 ::result
 
 LinkedList: [Dog, Cat, Horse]<br/>
-New LinkedList: []<br/>
+New LinkedList: []
 
 ::
 
@@ -537,7 +534,7 @@ class Main {
 ::result
 
 LinkedList: [2, 3, 4, 5]<br/>
-New LinkedList: [4, 5]<br/>
+New LinkedList: [4, 5]
 
 ::
 
@@ -545,12 +542,12 @@ New LinkedList: [4, 5]<br/>
 Lưu ý: `(Integer i)->i<4` là một biểu thức lambda. Để tìm hiểu về biểu thức lambda, hãy truy cập Biểu thức `Lambda` của Java .
 ::
 
-## Deque và Queue trong LinkedList
+## Deque và Queue trong `LinkedList`
 
-Vì class LinkedList cũng triển khai Queue interface và Deque interface, nó cũng có thể thực hiện các hàm của các interface này. Dưới đây là một số hàm thường được sử dụng:
+Vì class `LinkedList` cũng triển khai `Queue interface` và `Deque interface`, nó cũng có thể thực hiện các hàm của các `interface` này. Dưới đây là một số hàm thường được sử dụng:
 
-- Hàm `addFirst()` – thêm phần tử được chỉ định vào đầu LinkedList
-- Hàm `addLast()` – thêm phần tử được chỉ định vào cuối LinkedList
+- Hàm `addFirst()` – thêm phần tử được chỉ định vào đầu `LinkedList`
+- Hàm `addLast()` – thêm phần tử được chỉ định vào cuối `LinkedList`
 
 Ví dụ:
 
@@ -578,7 +575,7 @@ class Main {
 ::result
 
 LinkedList: [Cat, Dog, Cow]<br/>
-New LinkedList: [Cat, Dog, Cow, Zebra]<br/>
+New LinkedList: [Cat, Dog, Cow, Zebra]
 
 ::
 
@@ -616,7 +613,7 @@ class Main {
 
 LinkedList: [Dog, Horse, Cat]<br/>
 First Element: Dog<br/>
-Last Element: Cat<br/>
+Last Element: Cat
 
 ::
 
@@ -657,7 +654,7 @@ class Main {
 LinkedList: [Dog, Horse, Cat]<br/>
 Removed Element: Dog<br/>
 Removed Element: Cat<br/>
-New LinkedList: [Horse]<br/>
+New LinkedList: [Horse]
 
 ::
 
@@ -689,7 +686,7 @@ class Main {
 
 LinkedList: [Dog, Horse, Cat]<br/>
 Element Accessed: Dog<br/>
-New LinkedList: [Dog, Horse, Cat]<br/>
+New LinkedList: [Dog, Horse, Cat]
 
 ::
 
@@ -721,11 +718,11 @@ class Main {
 
 LinkedList: [Dog, Horse, Cat]<br/>
 Removed Element: Dog<br/>
-New LinkedList: [Horse, Cat]<br/>
+New LinkedList: [Horse, Cat]
 
 ::
 
-- Hàm `offer()` bổ sung thêm các phần tử cụ thể ở phần cuối của LinkedList. Ví dụ:
+- Hàm `offer()` bổ sung thêm các phần tử cụ thể ở phần cuối của `LinkedList`. Ví dụ:
 
 ```java
 import java.util.LinkedList;
@@ -750,11 +747,11 @@ class Main {
 ::result
 
 LinkedList: [Dog, Horse]<br/>
-New LinkedList: [Dog, Horse, Cat]<br/>
+New LinkedList: [Dog, Horse, Cat]
 
 ::
 
-## Lặp qua các phần tử của LinkedList
+## Lặp qua các phần tử của `LinkedList`
 
 Chúng ta có thể sử dụng `forEach` để lặp qua các phần tử của LinkList
 
@@ -784,11 +781,11 @@ class Main {
 
 LinkedList: [Cow, Cat, Dog]<br/>
 Accessing linked list elements:<br/>
-Cow, Cat, Dog,<br/>
+Cow, Cat, Dog,
 
 ::
 
-Chúng ta cũng có thể dụng vòng lặp `for` để lặp qua các phần tử của một LinkedList
+Chúng ta cũng có thể dụng vòng lặp `for` để lặp qua các phần tử của một `LinkedList`
 
 ```java
 import java.util.LinkedList;
@@ -816,7 +813,7 @@ class Main {
 
 LinkedList: [Cow, Cat, Dog]<br/>
 Accessing linked list elements:<br/>
-Cow, Cat, Dog,<br/>
+Cow, Cat, Dog,
 
 ::
 
@@ -850,6 +847,6 @@ class Main {
 
 LinkedList: [Cow, Cat, Dog]<br/>
 LinkedList using the iterator() method:<br/>
-Cow, Cat, Dog,<br/>
+Cow, Cat, Dog,
 
 ::

@@ -4,9 +4,6 @@ description: "Set là một bổ sung hữu ích cho bộ công cụ JavaScript 
 chapter:
   name: "Kiểu dữ liệu trong Javascript"
   slug: "chuong-04-kieu-du-lieu-trong-javascript"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://user-images.githubusercontent.com/29374426/168243792-6464321c-f082-4646-bac9-4edf0441231b.png
 position: 14
 ---

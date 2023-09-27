@@ -4,9 +4,6 @@ description: "Từ khoá final trong java có nhiều nghĩa khác nhau, nghĩa 
 chapter:
   name: "Lập trình hướng đối tượng"
   slug: "chuong-03-lap-trinh-huong-doi-tuong"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/131223902-8d3449d5-dd79-4043-9490-129f9ae37aaa.png
 position: 10
 ---

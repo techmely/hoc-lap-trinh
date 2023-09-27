@@ -4,9 +4,6 @@ description: "Singleton hữu dụng khi sử dụng để quản lý các ngu�
 chapter:
   name: "Design pattern"
   slug: "chuong-17-design-pattern"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---

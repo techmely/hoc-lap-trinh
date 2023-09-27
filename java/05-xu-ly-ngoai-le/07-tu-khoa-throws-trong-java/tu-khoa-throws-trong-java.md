@@ -4,40 +4,42 @@ description: "Từ khóa throws trong java được sử dụng để khai báo 
 chapter:
   name: "Xử lý ngoại lệ"
   slug: "chuong-05-xu-ly-ngoai-le"
-category:
-  name: "Java"
-  slug: "java"
 image: https://shareprogramming.net/wp-content/uploads/2020/01/throw-1.jpg
 position: 7
 ---
 
-Từ khóa `throws` trong java được sử dụng để khai báo một ngoại lệ. Nó thể hiện thông tin cho lập trình viên rằng có thể xảy ra một ngoại lệ, vì vậy nó là tốt hơn cho các lập trình viên để cung cấp các mã xử lý ngoại lệ để duy trì luồng bình thường của chương trình.
+Từ khóa `throws` trong Java được sử dụng để khai báo một ngoại lệ. Nó cung cấp thông tin cho lập trình viên rằng có thể xảy ra một ngoại lệ trong phương thức, và do đó, nó yêu cầu lập trình viên cung cấp mã xử lý ngoại lệ để duy trì luồng bình thường của chương trình.
 
-`Exception Handling` chủ yếu được sử dụng để xử lý ngoại lệ `checked`. Nếu xảy ra bất kỳ ngoại lệ `unchecked` như `NullPointerException`, đó là lỗi của lập trình viên mà anh ta không thực hiện kiểm tra trước khi code được sử dụng.
-
-Cú pháp từ khóa throws:
+## Cú Pháp của Từ Khóa "throws"
 
 ```java
 return_type method_name() throws exception_class_name {
-    / /method code
+    // Mã thực hiện của phương thức
 }
 ```
 
-Chỉ những ngoại lệ checked nên được khai báo bởi vì **ngoại lệ unchecked**: nằm trong sự kiểm soát của bạn. Còn **error** nằm ngoài sự kiểm soát của bạn, ví dụ bạn sẽ không thể làm được bất kì điều gì khi các lỗi `VirtualMachineError` hoặc `StackOverflowError` xảy ra.
+- `return_type`: Kiểu dữ liệu của giá trị mà phương thức trả về (ví dụ: `int`, `String`, `void`,...).
+- `method_name`: Tên của phương thức.
+- `exception_class_name`: Tên của lớp ngoại lệ mà phương thức có thể ném ra.
 
-## Lợi ích của từ khóa throws trong java
+Chỉ nên khai báo các ngoại lệ kiểu "checked" bằng từ khóa "throws", vì các ngoại lệ "unchecked" (như `NullPointerException`) thường là lỗi của lập trình viên mà anh ta không thể kiểm tra trước khi sử dụng code.
 
-- Ngoại lệ checked có thể được ném ra ngoài và được xử lý ở một hàm khác.
-- Cung cấp thông tin cho caller của phương thức về các ngoại lệ.
+## Lợi Ích của Từ Khóa "throws" trong Java
 
-## Ví dụ về từ khóa throws trong java
+1. **Xử Lý Ngoại Lệ Checked**: Từ khóa "throws" thường được sử dụng để xử lý các ngoại lệ "checked". Điều này cho phép lập trình viên bắt buộc xử lý các ngoại lệ có thể xảy ra.
+
+2. **Cung Cấp Thông Tin Cho Caller**: Bằng cách sử dụng "throws", phương thức cung cấp thông tin cho caller của nó về các ngoại lệ mà nó có thể gặp phải, giúp caller chuẩn bị và xử lý chúng một cách thích hợp.
+
+## Ví Dụ về Sử Dụng Từ Khóa "throws" trong Java
+
+Dưới đây là một ví dụ minh họa về cách sử dụng từ khóa "throws" trong Java:
 
 ```java
 import java.io.IOException;
 
-public class TestThrows1 {
+public class TestThrows {
     void m() throws IOException {
-        throw new IOException("Loi thiet bi");// checked exception
+        throw new IOException("Lỗi thiết bị"); // Ngoại lệ kiểu checked
     }
 
     void n() throws IOException {
@@ -48,110 +50,53 @@ public class TestThrows1 {
         try {
             n();
         } catch (Exception e) {
-            System.out.println("ngoai le duoc xu ly");
+            System.out.println("Ngoại lệ được xử lý");
         }
     }
 
     public static void main(String args[]) {
-        TestThrows1 obj = new TestThrows1();
+        TestThrows obj = new TestThrows();
         obj.p();
-        System.out.println("luong binh thuong...");
+        System.out.println("Luồng bình thường...");
     }
 }
 ```
 
 ::result
-
-ngoai le duoc xu ly<br/>
-luong binh thuong...<br/>
-
+Ngoại lệ được xử lý</br>
+Luồng bình thường...
 ::
 
-**Trường hợp xử lý ngoại lệ với try/catch**
+Trong ví dụ này, phương thức `m()` khai báo sử dụng từ khóa "throws" để báo cho caller rằng nó có thể ném ra ngoại lệ kiểu checked `IOException`. Trong phương thức `main()`, chúng ta gọi phương thức `p()` để thực hiện cuộc gọi phương thức nội tuyến, và ngoại lệ được xử lý bằng cách sử dụng khối `try-catch`.
 
-Ví dụ trong trường hợp bạn xử lý ngoại lệ, code sẽ được thực thi tốt cho dù ngoại lệ có xuất hiện trong chương trình hay không.
+**Trường hợp xử lý ngoại lệ với try/catch:**
 
 ```java
 import java.io.IOException;
 
 class M {
     void method() throws IOException {
-        throw new IOException("Loi thiet bi");
+        throw new IOException("Lỗi thiết bị"); // Ngoại lệ kiểu checked
     }
 }
 
-public class TestThrows2 {
+public class TestThrows {
     public static void main(String args[]) {
         try {
             M m = new M();
             m.method();
         } catch (Exception e) {
-            System.out.println("Ngoai le duoc xu ly");
+            System.out.println("Ngoại lệ được xử lý");
         }
 
-        System.out.println("Luong binh thuong...");
+        System.out.println("Luồng bình thường...");
     }
 }
 ```
 
 ::result
-
-Ngoai le duoc xu ly<br/>
-Luong binh thuong...<br/>
-
+Ngoại lệ được xử lý</br>
+Luồng bình thường...
 ::
 
-**Khai báo throws ngoại lệ**
-
-Trong trường hợp bạn khai báo throws ngoại lệ, nếu ngoại lệ không xảy ra, code sẽ được thực hiện tốt.
-
-```java
-import java.io.IOException;
-
-class M {
-    void method() throws IOException {
-        System.out.println("Thiet bi dang hoat dong tot");
-    }
-}
-
-public class TestThrows2 {
-    public static void main(String args[]) throws IOException {
-        M m = new M();
-        m.method();
-        System.out.println("Luong binh thuong...");
-    }
-}
-```
-
-::result
-
-Thiet bi dang hoat dong tot<br/>
-Luong binh thuong...<br/>
-
-::
-
-Trong trường hợp bạn khai báo throws ngoại lệ, nếu ngoại lệ xảy ra, một ngoại lệ sẽ được ném ra tại runtime vì throws nên không xử lý ngoại đó.
-
-```java
-import java.io.IOException;
-
-class M {
-    void method() throws IOException {
-        throw new IOException("Thiet bi");
-    }
-}
-
-public class TestThrows2 {
-    public static void main(String args[]) throws IOException {
-        M m = new M();
-        m.method();
-        System.out.println("Luong binh thuong...");
-    }
-}
-```
-
-::result
-
-Exception in thread "main" java.io.IOException: Thiet bi
-
-::
+Trong trường hợp này, ngoại lệ đã được xử lý bởi khối `catch`, và chương trình tiếp tục thực hiện luồng bình thường sau khi xử lý ngoại lệ.

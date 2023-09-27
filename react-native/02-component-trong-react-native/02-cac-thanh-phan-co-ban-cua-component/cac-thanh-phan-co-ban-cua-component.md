@@ -4,9 +4,6 @@ description: "Component là một thành phần cơ bản trong ứng dụng rea
 chapter:
   name: "Component trong react native"
   slug: "chuong-02-component-trong-react-native"
-category:
-  name: "React Native"
-  slug: "react-native"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---

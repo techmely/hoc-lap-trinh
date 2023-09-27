@@ -4,14 +4,11 @@ description: "Các điểm quan trọng về lớp HashSet trong java là HashSe
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/144748740-2011fa75-dcf1-40ab-a71a-7a990d52899d.png
 position: 7
 ---
 
-## HashSet trong Java là gì?
+## `HashSet` trong Java là gì?
 
 Lớp `HashSet` trong Java kế thừa `AbstractSet` và triển khai `Set` Interface. Nó tạo một collection mà sử dụng một hash table để lưu giữ.
 
@@ -47,7 +44,7 @@ public class HashSet<E> extends AbstractSet<E>
 }
 ```
 
-## Khởi tạo HashSet trong Java
+## Khởi tạo `HashSet` trong Java
 
 Để tạo HashSet, trước tiên chúng ta phải import gói `java.util.HashSet`.
 
@@ -75,7 +72,7 @@ Theo mặc định:
 - Công suất của HashSet sẽ là 16
 - Hệ số tải sẽ là 0,75
 
-## Thêm phần tử vào Hashset
+## Thêm phần tử vào `HashSet`
 
 - `add()` – chèn phần tử được chỉ định vào set
 - `addAll()` – chèn tất cả các phần tử của collection đã chỉ định vào `set`
@@ -110,9 +107,9 @@ New HashSet: [2, 4, 5, 6]
 
 ::
 
-## Duyệt qua các phần tử trong Hashset
+## Duyệt qua các phần tử trong `HashSet`
 
-Để truy cập các phần tử của Hashset, chúng ta có thể sử dụng hàm `iterator()`. Để sử dụng hàm này, chúng ta phải import gói `java.util.Iterator`.
+Để truy cập các phần tử của HashSet, chúng ta có thể sử dụng hàm `iterator()`. Để sử dụng hàm này, chúng ta phải import gói `java.util.Iterator`.
 
 ```java
 import java.util.HashSet;
@@ -145,7 +142,7 @@ HashSet using Iterator: 2, 5, 6,
 
 ::
 
-## Xóa các phần tử trong Hashset
+## Xóa các phần tử trong `HashSet`
 
 - `remove()` – xóa phần tử đã chỉ định khỏi set
 - `removeAll()` – loại bỏ tất cả các phần tử khỏi set
@@ -175,11 +172,11 @@ class Main {
 
 HashSet: [2, 5, 6]<br/>
 Is 5 removed? true<br/>
-Are all elements removed? true<br/>
+Are all elements removed? true
 
 ::
 
-## Lấy phần hợp trong HashSet
+## Lấy phần hợp trong `HashSet`
 
 Để lấy phần hợp của 2 set, chúng ta có thể sử dụng hàm `addAll()`.
 
@@ -209,11 +206,11 @@ class Main {
 
 HashSet1: [2, 4]<br/>
 HashSet2: [1, 3]<br/>
-Union is: [1, 2, 3, 4]<br/>
+Union is: [1, 2, 3, 4]
 
 ::
 
-## Lấy phần giao trong HashSet
+## Lấy phần giao trong `HashSet`
 
 Để lấy phần giao của 2 set, chúng ta có thể sử dụng hàm `retainAll()`.
 
@@ -247,7 +244,7 @@ Intersection is: [2]
 
 ::
 
-## Tính hiệu của các set
+## Tính hiệu của các `Set`
 
 Để tính hiệu hai set, chúng ta có thể sử dụng hàm `removeAll()`.
 
@@ -283,7 +280,7 @@ Difference: [2]
 
 ::
 
-## Kiểm tra có phải tập con hay không trong HashSet
+## Kiểm tra có phải tập con hay không trong `HashSet`
 
 Để kiểm tra xem một set có phải là tập con của set khác hay không, chúng ta có thể sử dụng hàm `containsAll()`.
 
@@ -319,7 +316,7 @@ Is HashSet2 is a subset of HashSet1? true
 
 ::
 
-## Một số hàm khác của Hashset
+## Một số hàm khác của `HashSet`
 
 | Hàm          | Mô tả                                                                |
 | ------------ | -------------------------------------------------------------------- |

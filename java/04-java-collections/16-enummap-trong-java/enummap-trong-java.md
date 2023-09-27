@@ -4,26 +4,23 @@ description: "EnumMap là một Map implementation được thiết kế để l
 chapter:
   name: "Java collections"
   slug: "chuong-04-java-collections"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/145797889-981dcdc2-f28f-43ac-93f5-bbcef6c199d1.png
 position: 16
 ---
 
-## EnumMap trong Java là gì?
+## `EnumMap` trong Java là gì?
 
 `EnumMap` là một Map `implementation` được thiết kế để làm việc với kiểu dữ liệu `Enum` trong Java. Trong bài viết này chúng ta sẽ cùng nhau tìm hiểu về nó, cũng như một số trường hợp sử dụng cơ bản, và khi nào thì nên sử dụng `EnumMap`
 
 ![EnumMap trong Java](https://user-images.githubusercontent.com/29374426/145797889-981dcdc2-f28f-43ac-93f5-bbcef6c199d1.png)
 
-## Tạo một EnumMap trong Java
+## Tạo một `EnumMap` trong Java
 
 Để tạo `EnumMap`, trước tiên chúng ta phải import gói `java.util.EnumMap`. Khi chúng ta `import`, sau đây là cách chúng ta có thể tạo `EnumMap` trong Java.
 
 ```java
 enum Size {
-    SMALL, MEDIUM, LARGE, EXTRALARGE
+    SMALL, MEDIUM, LARGE, EXTRA_LARGE
 }
 
 EnumMap<Size, Integer> sizes = new EnumMap<>(Size.class);
@@ -45,7 +42,7 @@ import java.util.EnumMap;
 class Main {
 
     enum Size {
-        SMALL, MEDIUM, LARGE, EXTRALARGE
+        SMALL, MEDIUM, LARGE, EXTRA_LARGE
     }
     public static void main(String[] args) {
 
@@ -70,7 +67,7 @@ class Main {
 ::result
 
 EnumMap1: {SMALL=28, MEDIUM=32}<br/>
-EnumMap2: {SMALL=28, MEDIUM=32, LARGE=36}<br/>
+EnumMap2: {SMALL=28, MEDIUM=32, LARGE=36}
 
 ::
 
@@ -90,7 +87,7 @@ import java.util.EnumMap;
 class Main {
 
     enum Size {
-        SMALL, MEDIUM, LARGE, EXTRALARGE
+        SMALL, MEDIUM, LARGE, EXTRA_LARGE
     }
     public static void main(String[] args) {
 
@@ -99,7 +96,7 @@ class Main {
         sizes.put(Size.SMALL, 28);
         sizes.put(Size.MEDIUM, 32);
         sizes.put(Size.LARGE, 36);
-        sizes.put(Size.EXTRALARGE, 40);
+        sizes.put(Size.EXTRA_LARGE, 40);
         System.out.println("EnumMap: " + sizes);
 
         // Using the entrySet() Method
@@ -116,9 +113,9 @@ class Main {
 
 ::result
 
-EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}<br/>
-Key/Value mappings: [SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40]<br/>
-Keys: [SMALL, MEDIUM, LARGE, EXTRALARGE]<br/>
+EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRA_LARGE=40}<br/>
+Key/Value mappings: [SMALL=28, MEDIUM=32, LARGE=36, EXTRA_LARGE=40]<br/>
+Keys: [SMALL, MEDIUM, LARGE, EXTRA_LARGE]<br/>
 Values: [28, 32, 36, 40]
 
 ::
@@ -131,7 +128,7 @@ import java.util.EnumMap;
 class Main {
 
     enum Size {
-        SMALL, MEDIUM, LARGE, EXTRALARGE
+        SMALL, MEDIUM, LARGE, EXTRA_LARGE
     }
     public static void main(String[] args) {
 
@@ -140,7 +137,7 @@ class Main {
         sizes.put(Size.SMALL, 28);
         sizes.put(Size.MEDIUM, 32);
         sizes.put(Size.LARGE, 36);
-        sizes.put(Size.EXTRALARGE, 40);
+        sizes.put(Size.EXTRA_LARGE, 40);
         System.out.println("EnumMap: " + sizes);
 
         // Using the get() Method
@@ -152,7 +149,7 @@ class Main {
 
 ::result
 
-EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}<br/>
+EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRA_LARGE=40}<br/>
 Value of MEDIUM: 32
 
 ::
@@ -168,7 +165,7 @@ import java.util.EnumMap;
 class Main {
 
     enum Size {
-        SMALL, MEDIUM, LARGE, EXTRALARGE
+        SMALL, MEDIUM, LARGE, EXTRA_LARGE
     }
     public static void main(String[] args) {
 
@@ -177,7 +174,7 @@ class Main {
         sizes.put(Size.SMALL, 28);
         sizes.put(Size.MEDIUM, 32);
         sizes.put(Size.LARGE, 36);
-        sizes.put(Size.EXTRALARGE, 40);
+        sizes.put(Size.EXTRA_LARGE, 40);
         System.out.println("EnumMap: " + sizes);
 
         // Using the remove() Method
@@ -194,17 +191,17 @@ class Main {
 
 ::result
 
-EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}<br/>
+EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRA_LARGE=40}<br/>
 Removed Value: 32<br/>
 Is the entry {SMALL=28} removed? True<br/>
-Updated EnumMap: {LARGE=36, EXTRALARGE=40}
+Updated EnumMap: {LARGE=36, EXTRA_LARGE=40}
 
 ::
 
 ## Thay thế các phần tử EnumMap
 
 - `replace(key, value)` – thay thế `value` liên kết với `key` chỉ định bằng `value` mới
-- `replace(key, old, new)` – thay thế cũ `value` bằng va`lue mới nếu `value`cũ đã được liên kết với`key` chỉ định
+- `replace(key, old, new)` – thay thế cũ `value` bằng value mới nếu `value`cũ đã được liên kết với`key` chỉ định
 - `replaceAll(function)` – thay thế từng `value` của `map` bằng kết quả của chức năng được chỉ định
 
 ```java
@@ -213,7 +210,7 @@ import java.util.EnumMap;
 class Main {
 
     enum Size {
-        SMALL, MEDIUM, LARGE, EXTRALARGE
+        SMALL, MEDIUM, LARGE, EXTRA_LARGE
     }
     public static void main(String[] args) {
 
@@ -222,7 +219,7 @@ class Main {
         sizes.put(Size.SMALL, 28);
         sizes.put(Size.MEDIUM, 32);
         sizes.put(Size.LARGE, 36);
-        sizes.put(Size.EXTRALARGE, 40);
+        sizes.put(Size.EXTRA_LARGE, 40);
         System.out.println("EnumMap: " + sizes);
 
         // Using the replace() Method
@@ -239,9 +236,9 @@ class Main {
 
 ::result
 
-EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRALARGE=40}<br/>
-EnumMap using replace(): {SMALL=28, MEDIUM=30, LARGE=34, EXTRALARGE=40}<br/>
-EnumMap using replaceAll(): {SMALL=31, MEDIUM=33, LARGE=37, EXTRALARGE=43}
+EnumMap: {SMALL=28, MEDIUM=32, LARGE=36, EXTRA_LARGE=40}<br/>
+EnumMap using replace(): {SMALL=28, MEDIUM=30, LARGE=34, EXTRA_LARGE=40}<br/>
+EnumMap using replaceAll(): {SMALL=31, MEDIUM=33, LARGE=37, EXTRA_LARGE=43}
 
 ::
 
@@ -263,9 +260,9 @@ sizes.replaceAll((key, oldValue) -> oldValue + 3);
 | `size()`          | Trả về kích thước của EnumMap                                        |
 | `clear()`         | Xóa tất cả các mục từ EnumMap                                        |
 
-## So sánh Enumset với EnumMap
+## So sánh EnumSet với EnumMap
 
-Cả class [Enumset](/bai-viet/java/enumset-trong-java) và EnumMap đều cung cấp cấu trúc dữ liệu để lưu trữ các `value` `enum`. Tuy nhiên, có một số khác biệt lớn giữa chúng.
+Cả class [EnumSet](/bai-viet/java/enumset-trong-java) và EnumMap đều cung cấp cấu trúc dữ liệu để lưu trữ các `value` `enum`. Tuy nhiên, có một số khác biệt lớn giữa chúng.
 
-- `Enumset` được biểu diễn nội bộ dưới dạng một chuỗi các bit, trong khi `EnumMap` được biểu diễn nội bộ dưới dạng mảng.
-- `Enumset` được tạo ra bằng các hàm xác định trước của nó như `allOf()`, `noneOf()`, `of()`,... Tuy nhiên, một `EnumMap` được tạo bằng `constructor` của nó.
+- `EnumSet` được biểu diễn nội bộ dưới dạng một chuỗi các bit, trong khi `EnumMap` được biểu diễn nội bộ dưới dạng mảng.
+- `EnumSet` được tạo ra bằng các hàm xác định trước của nó như `allOf()`, `noneOf()`, `of()`,... Tuy nhiên, một `EnumMap` được tạo bằng `constructor` của nó.

@@ -4,9 +4,6 @@ description: "Toán tử trong java là một ký hiệu được sử dụng đ
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/126589001-77ef8e76-3d2d-4194-9a0f-c662485056a2.png
 position: 13
 ---

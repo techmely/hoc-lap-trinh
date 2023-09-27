@@ -4,9 +4,6 @@ description: "Trong ngày đầu tiên tìm hiểu về RxJS chúng ta đã đư
 chapter:
   name: "Tìm hiểu về RxJS"
   slug: "chuong-03-tim-hieu-ve-rxjs"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 8
 ---

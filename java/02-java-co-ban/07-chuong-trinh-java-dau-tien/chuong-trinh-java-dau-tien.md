@@ -4,9 +4,6 @@ description: "Trong bài học này chúng ta sẽ viết một chương trình 
 chapter:
   name: "Nhập môn Java"
   slug: "chuong-02-nhap-mon-java"
-category:
-  name: "Java"
-  slug: "java"
 image: https://user-images.githubusercontent.com/29374426/128105937-9674217e-0299-420e-8d65-6546375985eb.png
 position: 7
 ---

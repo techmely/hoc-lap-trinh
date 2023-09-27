@@ -4,9 +4,6 @@ description: "Nếu bạn cần trỏ tới một phần tử (HTMLElement/compo
 chapter:
   name: "Nhập môn Angular"
   slug: "chuong-02-nhap-mon-angular"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 8
 ---

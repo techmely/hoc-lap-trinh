@@ -4,9 +4,6 @@ description: "Publisher/Subscriber pattern, hoặc có tên gọi ngắn hơn Pu
 chapter:
   name: "Design pattern"
   slug: "chuong-17-design-pattern"
-category:
-  name: "Javascript"
-  slug: "javascript"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---

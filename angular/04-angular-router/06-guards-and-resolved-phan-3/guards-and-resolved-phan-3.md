@@ -4,9 +4,6 @@ description: "Trong những ngày trước chúng ta đã tìm hiểu về Route
 chapter:
   name: "Angular Router"
   slug: "chuong-04-angular-router"
-category:
-  name: "Angular"
-  slug: "angular"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 6
 ---

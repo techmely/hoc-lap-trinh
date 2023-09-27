@@ -4,9 +4,6 @@ description: "Bài viết giới thiệu về interfaces trong Go, là kiểu d�
 chapter:
   name: "Cách tổ chức mã nguồn và Interfaces"
   slug: "chuong-05-cach-to-chuc-ma-nguon-va-interfaces"
-category:
-  name: "Go"
-  slug: "go"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---
