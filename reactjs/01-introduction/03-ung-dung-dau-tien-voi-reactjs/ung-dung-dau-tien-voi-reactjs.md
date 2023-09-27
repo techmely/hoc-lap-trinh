@@ -1,5 +1,5 @@
 ---
-title: "Tại sao nên học ReactJs"
+title: "Ứng dụng đầu tiên với ReactJs"
 description: "Tại sao nên học ReactJs"
 chapter:
   name: "Giới thiệu"
