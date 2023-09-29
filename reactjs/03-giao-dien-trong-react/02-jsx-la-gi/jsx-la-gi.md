@@ -20,7 +20,9 @@ Nhưng khi web trở nên tương tác hơn, logic ngày càng quyết định n
 
 Mỗi thành phần React là một hàm JavaScript có thể chứa một số markup mà React sẽ hiển thị trên trình duyệt. Các thành phần React sử dụng một cú pháp mở rộng gọi là JSX để đại diện cho markup đó. JSX trông khá giống HTML, nhưng nó khá nghiêm ngặt hơn và có thể hiển thị thông tin động. Cách tốt nhất để hiểu điều này là chuyển đổi một số markup HTML thành markup JSX.
 
-_Chú ý: JSX và React là hai thứ riêng biệt. Thường, chúng được sử dụng cùng nhau, nhưng bạn có thể sử dụng chúng độc lập. JSX là một cú pháp mở rộng, trong khi React là một thư viện JavaScript._
+::alert{type="warning"}
+Chú ý: JSX và React là hai thứ riêng biệt. Thường, chúng được sử dụng cùng nhau, nhưng bạn có thể sử dụng chúng độc lập. JSX là một cú pháp mở rộng, trong khi React là một thư viện JavaScript.
+::
 
 ### Chuyển đổi HTML thành JSX
 
@@ -128,7 +130,7 @@ Dưới đây là cách đóng thẻ hình ảnh của Hedy Lamarr và các mụ
 </>
 ```
 
-#### Sử dụng camelCase cho hầu hết mọi thứ!
+#### Sử dụng camelCase cho hầu hết mọi thứ
 
 JSX biến thành JavaScript và các thuộc tính được viết trong JSX trở thành các khóa của các đối tượng JavaScript. Trong các thành phần của bạn, bạn thường muốn đọc các thuộc tính đó vào các biến. Tuy nhiên, JavaScript có hạn chế về tên biến. Ví dụ, tên biến không thể chứa dấu gạch ngang hoặc là từ khoá có sẵn như `class`.
 
