@@ -165,7 +165,8 @@ Một vài trường hợp mình viết chú thích:
 - Giải thích ý nghĩa của một hàm (tại sao lại phải viết hàm này...).
 - Tạm thời bỏ qua một vài đoạn code chưa dùng tới.
 - Và nhiều trường hợp khác nữa...
-  ::
+
+::
 
 _Có một số khái niệm mới ở đây, mình sẽ trình bày ở các bài viết sau._
 
