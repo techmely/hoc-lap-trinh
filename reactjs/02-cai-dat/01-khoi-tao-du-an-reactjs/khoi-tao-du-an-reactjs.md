@@ -1,5 +1,5 @@
 ---
-title: "Ứng dụng đầu tiên với ReactJs"
+title: "Khởi tạo dự án với ReactJs"
 description: "Nếu bạn muốn xây dựng một ứng dụng hoặc trang web hoàn toàn bằng React, chúng tôi đề xuất bạn nên chọn một trong các framework sử dụng React phổ biến trong cộng đồng"
 chapter:
   name: "Cài đặt"

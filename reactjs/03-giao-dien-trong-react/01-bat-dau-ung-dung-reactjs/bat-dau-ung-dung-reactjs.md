@@ -114,7 +114,6 @@ export default function Gallery() {
 }
 ```
 
-Những gì trình duyệt thấy
 Chú ý sự khác biệt trong việc viết hoa thường:
 
 - `<section>` viết thường, vì vậy React biết chúng ta đang tham chiếu đến một thẻ HTML.
