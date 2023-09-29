@@ -10,15 +10,9 @@ position: 4
 
 **Components (các thành phần)** là một trong những khái niệm cốt lõi của React. Chúng là nền tảng để bạn xây dựng giao diện người dùng (UI), điều này biến chúng trở thành nơi tuyệt vời để bạn bắt đầu hành trình với React!
 
-## Bạn Sẽ Học Được
-
-- Component là gì
-- Vai trò của các component trong ứng dụng React
-- Cách viết một component React đầu tiên của bạn
-
 ## Components: Những Khối Xây Dựng Giao Diện Người Dùng
 
-Trên web, HTML cho phép chúng ta tạo ra các tài liệu có cấu trúc phong phú với các thẻ tích hợp như <h1> và <li>:
+Trên web, HTML cho phép chúng ta tạo ra các tài liệu có cấu trúc phong phú với các thẻ tích hợp như `<h1>` và `<li>`:
 
 ```html
 <article>
