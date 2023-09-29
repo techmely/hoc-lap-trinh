@@ -62,6 +62,8 @@ Chính như một công thức toán học.
 
 Bạn có thể nghĩ về các component của bạn như các công thức: nếu bạn tuân thủ chúng và không đưa thêm thành phần mới vào quá trình nấu ăn, bạn sẽ luôn luôn có món ăn giống nhau. Món ăn đó chính là JSX mà component trả về để React render.
 
+![Giới thiệu Pure Component trong Reactjs](https://github.com/techmely/hoc-lap-trinh/assets/29374426/9331e2a5-8d3d-4cc1-9f43-bd38f03b7692)
+
 ## Hiệu ứng phụ: Những hậu quả (không) được dự tính
 
 Quá trình render của React luôn phải là "pure". Các component chỉ nên trả về JSX của họ, và không thay đổi bất kỳ đối tượng hoặc biến nào tồn tại trước quá trình render - điều này sẽ làm cho chúng trở thành "không pure"!
