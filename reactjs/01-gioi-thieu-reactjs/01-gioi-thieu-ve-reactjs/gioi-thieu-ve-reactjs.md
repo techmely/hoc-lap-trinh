@@ -76,6 +76,7 @@ function App() {
 export default App;
 ```
 
+
 ::alert{type="success"}
 ReactJS là một thư viện JavaScript mạnh mẽ cho việc xây dựng giao diện người dùng động và tương tác trong các ứng dụng web. Với hiệu suất cao, khả năng tái sử dụng thành phần và quản lý trạng thái tốt, React đã trở thành một công cụ ưa thích của các nhà phát triển web. Hãy bắt đầu học React và khám phá sức mạnh của nó để xây dựng các ứng dụng web tuyệt vời.
 ::
