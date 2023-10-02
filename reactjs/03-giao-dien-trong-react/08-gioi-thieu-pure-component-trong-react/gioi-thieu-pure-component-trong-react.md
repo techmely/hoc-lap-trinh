@@ -2,7 +2,7 @@
 title: "Giới thiệu Pure Component trong Reactjs"
 description: "Trong React, sự hiểu biết về Pure Component là một phần quan trọng để tạo ra mã nguồn sạch sẽ và tránh được nhiều lỗi khó hiểu. Trong bài viết này, chúng ta sẽ tìm hiểu về Pure Component, tại sao chúng quan trọng, và cách sử dụng chúng trong ứng dụng React"
 chapter:
-  name: "Giao diện trong ReactJs"
+  name: "Giao diện trong Reactjs"
   slug: "chuong-03-giao-dien-trong-reactjs"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 8

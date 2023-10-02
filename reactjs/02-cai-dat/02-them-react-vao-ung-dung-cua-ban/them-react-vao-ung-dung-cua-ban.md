@@ -49,7 +49,7 @@ Môi trường JavaScript module hóa cho phép bạn viết các thành phần 
 
 Để kiểm tra xem cài đặt của bạn có hoạt động không, hãy chạy lệnh sau trong thư mục dự án của bạn:
 
-```terminal
+```bash
 npm install react react-dom
 ```
 

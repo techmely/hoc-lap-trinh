@@ -2,7 +2,7 @@
 title: "JSX là gì?"
 description: "Trong thế giới của ReactJS, JSX là một phần quan trọng và không thể thiếu. JSX viết tắt của JavaScript XML là một cú pháp mở rộng cho ngôn ngữ JavaScript, cho phép chúng ta mô tả giao diện người dùng (UI) một cách dễ dàng và rõ ràng hơn"
 chapter:
-  name: "Giao diện trong ReactJs"
+  name: "Giao diện trong Reactjs"
   slug: "chuong-03-giao-dien-trong-reactjs"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 2

@@ -2,7 +2,7 @@
 title: "Components trong React là gì?"
 description: "Components (các thành phần) là một trong những khái niệm cốt lõi của React. Chúng là nền tảng để bạn xây dựng giao diện người dùng (UI), điều này biến chúng trở thành nơi tuyệt vời để bạn bắt đầu hành trình với React!"
 chapter:
-  name: "Giao diện trong ReactJs"
+  name: "Giao diện trong Reactjs"
   slug: "chuong-03-giao-dien-trong-reactjs"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 4

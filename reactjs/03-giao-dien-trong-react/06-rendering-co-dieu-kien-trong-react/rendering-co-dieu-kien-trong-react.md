@@ -2,7 +2,7 @@
 title: "Rendering có điều kiện trong React"
 description: "Trong React, props (viết tắt của properties) được sử dụng để truyền thông tin giữa các component. Mọi component cha có thể truyền thông tin đến các component con của nó bằng cách cung cấp chúng props"
 chapter:
-  name: "Giao diện trong ReactJs"
+  name: "Giao diện trong Reactjs"
   slug: "chuong-03-giao-dien-trong-reactjs"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 6

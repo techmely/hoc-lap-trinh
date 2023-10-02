@@ -2,7 +2,7 @@
 title: "Render các element trong React"
 description: "Bài viết này sẽ hướng dẫn bạn cách render các phần tử trong React bằng JSX và cách sử dụng cặp dấu ngoặc nhọn {} để tích hợp mã JavaScript vào trong JSX"
 chapter:
-  name: "Giao diện trong ReactJs"
+  name: "Giao diện trong Reactjs"
   slug: "chuong-03-giao-dien-trong-reactjs"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 3

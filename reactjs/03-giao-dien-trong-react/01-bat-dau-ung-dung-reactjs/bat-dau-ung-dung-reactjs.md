@@ -2,7 +2,7 @@
 title: "Ứng dụng đầu tiên với ReactJs"
 description: "Các thành phần (components) là một trong những khái niệm cốt lõi của React. Chúng là nền tảng trên đó bạn xây dựng giao diện người dùng (UI), chính vì vậy chúng là nơi hoàn hảo để bạn bắt đầu hành trình với React!"
 chapter:
-  name: "Giao diện trong ReactJs"
+  name: "Giao diện trong Reactjs"
   slug: "chuong-03-giao-dien-trong-reactjs"
 image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
