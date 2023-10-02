@@ -1,6 +1,6 @@
 ---
 title: "Giới thiệu Javascript"
-description: "Javascript (thường hay viết tắt là JS) là ngôn ngữ lập trình kịch bản (scripting language) cho client-side, sau này còn cho cả server-side (Nodejs). Bài này chúng ta sẽ cùng nhau tìm hiểu về javascript"
+description: "Javascript là ngôn ngữ lập trình bậc cao, cực kỳ linh hoạt được sử dụng chủ yếu để tao ra ứng dụng chạy trên trình duyệt web."
 chapter:
   name: "Giới thiệu Javascript"
   slug: "chuong-01-gioi-thieu-javascript"
@@ -8,17 +8,19 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
 
-Javascript (thường hay viết tắt là JS) là ngôn ngữ lập trình kịch bản (scripting language) cho client-side, sau này còn cho cả server-side (Nodejs)
+Javascript là ngôn ngữ lập trình bậc cao, cực kỳ linh hoạt được sử dụng chủ yếu để tao ra ứng dụng chạy trên trình duyệt web. Được tạo ra bởi Brendan Eich vào năm 1995. Nó thể viết code ở text editor và chạy nó trực tiếp trên trình duyệt mà không cần phải trải qua quá trình biên dịch như C++ hoặc Java.
 
-Javascript được sử dụng chủ yếu để nâng cao sự tương tác của người dùng với trang web. Nói cách khác, bạn có thể làm cho trang web trở nên sinh động và tăng tính tương tác hơn. Trong các ứng dụng web, người ta hay dùng JS để làm các hiệu ứng đặc biệt như sliders, pop-ups, hoặc xác thực dữ liệu các form (form validations) trước khi gửi dữ liệu lên server .v.v...
+Javascript tập trung nâng cao sự tương tác của người dùng với trang web. Bạn có thể làm cho trang web trở nên sống động và tăng tính tương tác hơn. Trong các ứng dụng web, người ta hay dùng JS để làm các hiệu ứng đặc biệt như sliders, pop-ups, hoặc xác thực dữ liệu các form (form validations) trước khi gửi dữ liệu lên server .v.v...
 
-Ngày nay, Javascript không chỉ giới hạn trong khuôn khổ xây dựng ứng dụng web, mà còn sử dụng rộng rãi trong phát triển ứng dụng, game trên điện thoại hay các ứng dụng dành cho server.
 
-- Web app: ReactJS, VueJS, Angular...
-- Mobile app: React Native, Ionic...
-- Game: Phaser, Kiwi.js...
-- Server app: Nodejs
+Vì nó cực kỳ linh hoạt, nên gần như rất nhiều lĩnh vực mà Js có thể tạo nên:
+
+- Web App: [ReactJS](https://react.dev/), [VueJS](https://vuejs.org/), [Svelte](https://svelte.dev/), [Astro](https://astro.build/), [Solid](https://www.solidjs.com/)...
+- Mobile App: Có thể tạo ra được các ứng dụng di động chạy được đa nền tảng, như IOS và Android, điển hình có thể kể đến là [React Native](https://reactnative.dev/), [Ionic](https://ionicframework.com/), và [NativeScript](https://nativescript.org/)
+- Desktop App: Js cho phép lập trình viên tạo ra được các ứng dụng trên Desktop dựa trên website một cách dễ dàng, điển hình là [Tauri](https://tauri.app/),  [Electron](https://electronjs.org/) và [NeutralinoJS](https://neutralino.js.org/)
+- Server-side app: Không chỉ ở mỗi website, JS đã được nâng tầm để đáp ứng nhu cầu của cộng đồng, xây các ứng dụng ở phía server như [Nodejs](https://nodejs.org/en), [Bun](https://bun.sh/), và [Deno](https://deno.com/)
 - Graphic: two.js (2D), three.js (3D)...
+- Game: Nhắc đến game, JS 
 - AI: brain.js...
 
 Và còn nhiều nhiều nữa các lĩnh vực mà Javascript có thể làm được.
