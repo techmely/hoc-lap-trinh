@@ -1,6 +1,6 @@
 ---
 title: "Cập nhật state hàng loạt trong Reactjs"
-description: "Đôi khi bạn có thể muốn thực hiện nhiều hoạt động trên giá trị state trước khi kích hoạt lần render tiếp theo. Để thực hiện điều này, bạn cần hiểu cách React thực hiện "batching" (gom nhóm) các cập nhật state"
+description: "Đôi khi bạn có thể muốn thực hiện nhiều hoạt động trên giá trị state trước khi kích hoạt lần render tiếp theo. Để thực hiện điều này, bạn cần hiểu cách React thực hiện batching (gom nhóm) các cập nhật state"
 chapter:
   name: "Tương tác trong Reactjs"
   slug: "chuong-04-tuong-tac-trong-reactjs"
