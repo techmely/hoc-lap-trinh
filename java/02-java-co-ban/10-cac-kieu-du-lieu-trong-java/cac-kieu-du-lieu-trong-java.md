@@ -100,7 +100,8 @@ Một số lưu ý đối với các phép toán trên số dấu chấm động
 - Nếu mỗi toán hạng đều có kiểu dấn chấm động thì phép toán chuyển thành phép toán dấu chấm động.
 - Nếu có một toán hạng là double thì các toán hạng còn lại sẽ được chuyển thành kiểu double trước khi thực hiện phép toán.
 - Biến kiểu float và double có thể ép chuyển sang kiểu dữ liệu khác trừ kiểu boolean.
-  ::
+
+::
 
 ## Kiểu ký tự (char) trong Java
 
