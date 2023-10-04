@@ -1,6 +1,6 @@
 ---
 title: "Reducer trong React"
-description: "Trong bài viết này, chúng ta sẽ tìm hiểu về cách sử dụng một kỹ thuật gọi là "reducer" để tối ưu hóa việc quản lý `state` trong React"
+description: "Trong bài viết này, chúng ta sẽ tìm hiểu về cách sử dụng một kỹ thuật gọi là reducer để tối ưu hóa việc quản lý state trong React"
 chapter:
   name: "Quản lý state trong React"
   slug: "chuong-05-quan-ly-state-trong-react"
