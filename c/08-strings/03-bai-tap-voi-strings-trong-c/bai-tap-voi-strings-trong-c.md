@@ -42,7 +42,6 @@ Enter character: e</br>
 
 OUTPUT:</br>
 Frequency of e is 2</br>
---------------------------------
 ::
 
 ## Bài 2
@@ -80,7 +79,6 @@ Enter your choice: 1</br>
 
 OUTPUT:</br>
 Binary is 11011011100101011</br>
---------------------------------
 ::
 
 > không nên để kiểu dữ liệu của binary là `int` hay `long long` vì giá trị max của long long chỉ giới hạn tại 9,223,372,036,854,775,807.
@@ -96,7 +94,6 @@ Enter your choice: 2</br>
 
 OUTPUT:</br>
 Octal is 25150</br>
---------------------------------
 ::
 
 Test case 3
@@ -110,5 +107,4 @@ Enter your choice: 3</br>
 
 OUTPUT:</br>
 Hexa is 40B7C</br>
---------------------------------
 ::

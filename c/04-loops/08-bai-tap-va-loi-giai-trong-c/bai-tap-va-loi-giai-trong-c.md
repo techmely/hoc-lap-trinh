@@ -131,10 +131,8 @@ Test case 1
 
 ::result
 Enter the number: 10</br>
-
 OUTPUT:</br>
 The number of occurrences of even number is 6</br>
---------------------------------
 ::
 
 ### Bài 2
@@ -165,10 +163,8 @@ Test case 1
 
 ::result
 Enter the number: 10</br>
-
 OUTPUT:</br>
 result is 30</br>
---------------------------------
 ::
 
 ### Bài 3

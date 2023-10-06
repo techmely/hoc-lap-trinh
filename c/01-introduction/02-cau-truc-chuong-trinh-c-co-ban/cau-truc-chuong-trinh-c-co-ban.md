@@ -21,7 +21,7 @@ int main() {
 }
 ```
 
-Kết quả nhận được:
+::result
 
 ```cpp
 Hello World!

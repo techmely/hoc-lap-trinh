@@ -38,7 +38,6 @@ Enter the 10 elements of array: 3 5 6 1 13 54 34 8 22 11</br>
 OUTPUT:</br>
 Unsorted array: 3, 5, 6, 1, 13, 54, 34, 8, 22, 11</br>
 Sorted array: 1, 3, 5, 6, 8, 11 , 13, 22, 34, 54</br>
---------------------------------
 ::
 
 ## Bài 2
@@ -70,7 +69,6 @@ Enter the 10 elements of array: 3 5 6 1 13 54 34 8 22 11</br>
 OUTPUT:</br>
 Unsorted array: 3, 5, 6, 1, 13, 54, 34, 8, 22, 11</br>
 Sorted array: 1, 3, 5, 6, 8, 11 , 13, 22, 34, 54</br>
---------------------------------
 ::
 
 ## Bài 3
@@ -105,7 +103,6 @@ Enter value you want to search: 8</br>
 OUTPUT:</br>
 Display array: 1, 4, 6, 2, 20, 8, 36, 22, 89, 77</br>
 Found 8 at index 5 in array</br>
---------------------------------
 ::
 
 Test case 2
@@ -116,5 +113,4 @@ Enter value you want to search: 5</br></br>
 OUTPUT:</br></br>
 Display array: 1, 4, 6, 2, 20, 8, 36, 22, 89, 77</br></br>
 Not found 5 in array</br></br>
---------------------------------
 ::
