@@ -97,23 +97,23 @@ int main() {
 ```
 
 ::result
-Enter matrix[1][1]: 1
-Enter matrix[1][2]: 3
-Enter matrix[1][3]: 2
-Enter matrix[1][4]: 5
-Enter matrix[2][1]: 2
-Enter matrix[2][2]: 3
-Enter matrix[2][3]: 4
-Enter matrix[2][4]: 5
-Enter matrix[3][1]: 6
-Enter matrix[3][2]: 1
-Enter matrix[3][3]: 3
-Enter matrix[3][4]: 4
+Enter matrix[1][1]: 1</br>
+Enter matrix[1][2]: 3</br>
+Enter matrix[1][3]: 2</br>
+Enter matrix[1][4]: 5</br>
+Enter matrix[2][1]: 2</br>
+Enter matrix[2][2]: 3</br>
+Enter matrix[2][3]: 4</br>
+Enter matrix[2][4]: 5</br>
+Enter matrix[3][1]: 6</br>
+Enter matrix[3][2]: 1</br>
+Enter matrix[3][3]: 3</br>
+Enter matrix[3][4]: 4</br>
 
-Display matrix:
-[1][3][2][5]
-[2][3][4][5]
-[6][1][3][4]
+Display matrix:</br>
+[1][3][2][5]</br>
+[2][3][4][5]</br>
+[6][1][3][4]</br>
 ::
 
 Tương tự ta có ví dụ về nhập và hiển thị mảng ba chiều:
@@ -152,30 +152,30 @@ int main() {
 ```
 
 ::result
-Enter num[0][0][0]: -2
-Enter num[0][0][1]: 0
-Enter num[0][1][0]: 1
-Enter num[0][1][1]: 5
-Enter num[0][2][0]: 4
-Enter num[0][2][1]: -2
-Enter num[1][0][0]: 23
-Enter num[1][0][1]: 32
-Enter num[1][1][0]: -12
-Enter num[1][1][1]: 21
-Enter num[1][2][0]: 32
-Enter num[1][2][1]: -2
+Enter num[0][0][0]: -2</br>
+Enter num[0][0][1]: 0</br>
+Enter num[0][1][0]: 1</br>
+Enter num[0][1][1]: 5</br>
+Enter num[0][2][0]: 4</br>
+Enter num[0][2][1]: -2</br>
+Enter num[1][0][0]: 23</br>
+Enter num[1][0][1]: 32</br>
+Enter num[1][1][0]: -12</br>
+Enter num[1][1][1]: 21</br>
+Enter num[1][2][0]: 32</br>
+Enter num[1][2][1]: -2</br>
 
-Displaying values:
-num[0][0][0] = -2
-num[0][0][1] = 0
-num[0][1][0] = 1
-num[0][1][1] = 5
-num[0][2][0] = 4
-num[0][2][1] = -2
-num[1][0][0] = 23
-num[1][0][1] = 32
-num[1][1][0] = -12
-num[1][1][1] = 21
-num[1][2][0] = 32
-num[1][2][1] = -2
+Displaying values:</br>
+num[0][0][0] = -2</br>
+num[0][0][1] = 0</br>
+num[0][1][0] = 1</br>
+num[0][1][1] = 5</br>
+num[0][2][0] = 4</br>
+num[0][2][1] = -2</br>
+num[1][0][0] = 23</br>
+num[1][0][1] = 32</br>
+num[1][1][0] = -12</br>
+num[1][1][1] = 21</br>
+num[1][2][0] = 32</br>
+num[1][2][1] = -2</br>
 ::

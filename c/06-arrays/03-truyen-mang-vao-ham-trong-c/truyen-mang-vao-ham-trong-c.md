@@ -42,8 +42,8 @@ void display(int num1, int num2) {
 ```
 
 ::result
-1
-3
+1</br>
+3</br>
 ::
 
 > Tại đây chúng ta đã truyền tham số vào trong hàm `display` giống như cách chúng ta truyền các biến cho hàm.
@@ -145,13 +145,13 @@ void display(int num[][2]) {
 ```
 
 ::result
-Enter 4 numbers:
-1 5 4 6
-4 numbers you entered:
-1
-5
-4
-6
+Enter 4 numbers:</br>
+1 5 4 6</br>
+4 numbers you entered:</br>
+1</br>
+5</br>
+4</br>
+6</br>
 ::
 
 > Khi truyền mảng hai chiều, không bắt buộc phải chỉ định số hàng trong mảng. Tuy nhiên, số lượng cột phải luôn được chỉ định.

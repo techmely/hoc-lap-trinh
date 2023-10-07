@@ -79,10 +79,10 @@ int main() {
 ```
 
 ::result
-Enter a n1: 4
-Enter a n2: 5
-Enter a n3: 8
-Enter a n4: -2
+Enter a n1: 4</br>
+Enter a n2: 5</br>
+Enter a n3: 8</br>
+Enter a n4: -2</br>
 
 sum = 17.00
 ::
@@ -112,13 +112,9 @@ int main() {
 ```
 
 ::result
-
----
-
----
-
----
-
+* * * * * *
+* * * * * *
+* * * * * *
 ::
 
 Chúng ta có thể thấy vòng **`for i`** (**`for`** bên ngoài) sẽ chạy 3 lần (từ `0` → `2`). Vòng **`for j`** (**`for`** bên trong) sẽ chạy 6 lần (từ `0` → `5`).
@@ -144,13 +140,9 @@ int main() {
 ```
 
 ::result
-
----
-
----
-
----
-
+* * *
+* * *
+* * *
 ::
 
 Bạn có thể thấy vòng **`for i`** vẫn chạy 3 lần, **`break`** chỉ kết thúc vòng **`for j`**, nơi nó được viết mã khi thoã màn câu lệnh **`if-else`**.
@@ -198,12 +190,12 @@ int main() {
 ```
 
 ::result
-0
-1
-2
-3
-4
-5
+0</br>
+1</br>
+2</br>
+3</br>
+4</br>
+5</br>
 ::
 
 Ngoài ra, bạn cũng có thể thấy **`break`** được sử dụng trong các câu lệnh **`Switch`**.

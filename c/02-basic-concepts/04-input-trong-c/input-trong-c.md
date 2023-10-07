@@ -54,7 +54,7 @@ Lúc này các bạn sẽ thấy chương trình không kết thúc như những
 Và đây là kết quả khi chúng ta nhập vào một số, ví dụ nhập n = 5:
 
 ::result
-Enter n: 5
+Enter n: 5</br>
 5
 ::
 
@@ -78,10 +78,10 @@ int main() {
 ```
 
 ::result
-Enter a b c: 1 2 3
-a = 1
-b = 2
-c = 3
+Enter a b c: 1 2 3</br>
+a = 1</br>
+b = 2</br>
+c = 3</br>
 ::
 
 Bạn cũng có thể nhập mỗi giá trị cách nhau bằng một dấu phẩy `,` như sau:
@@ -100,8 +100,8 @@ int main() {
 ```
 
 ::result
-Enter a b c: 1, 2, 3
-a = 1
-b = 2
-c = 3
+Enter a b c: 1, 2, 3</br>
+a = 1</br>
+b = 2</br>
+c = 3</br>
 ::

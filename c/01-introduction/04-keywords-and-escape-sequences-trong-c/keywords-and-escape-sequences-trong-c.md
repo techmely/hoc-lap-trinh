@@ -30,20 +30,20 @@ Vì C là ngôn ngữ phân biệt chữ hoa chữ thường, tất cả các t�
 
 Ví dụ: dòng mới (enter), tab, dấu hỏi... Chúng ta cũng đã nói qua một chút về nó ở bài trước khi muốn xuống một dòng mới - đó chính là escape sequences `\n`.
 
-Để sử dụng các ký tự này, các **Escape Sequences** được sử dụng.
+Để sử dụng các ký tự này, chúng ta sẽ sử dụng **Escape Sequences**.
 
-| Escape Sequences | Character             |
-| ---------------- | --------------------- |
-| `\b`             | Backspace             |
-| `\f`             | Form feed             |
-| `\n`             | Newline               |
-| `\r`             | Return                |
-| `\t`             | Horizontal tab        |
-| `\v`             | Vertical tab          |
-| `\\`             | Backslash             |
-| `\'`             | Single quotation mark |
-| `\"`             | Double quotation mark |
-| `\?`             | Question mark         |
+| Escape Sequences | Character                            |
+| ---------------- | -------------------------------------|
+| `\b`             | Backspace (Xóa lùi)                  |
+| `\f`             | Form feed  (Nạp mẫu)                 |
+| `\n`             | Newline (Xuống dòng)                 |
+| `\r`             | Return (Trả về)                      |
+| `\t`             | Horizontal tab (Tab ngang)           |
+| `\v`             | Vertical tab (Tab dọc)               |
+| `\\`             | Backslash (Dấu gạch chéo)            |
+| `\'`             | Single quotation mark (Dấu nháy đơn) |
+| `\"`             | Double quotation mark (Dấu nháy kép) |
+| `\?`             | Question mark (Dấu hỏi)              |
 
 Ví dụ muốn in ra dấu `\` trong hàm `printf()`:
 

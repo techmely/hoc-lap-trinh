@@ -1,6 +1,6 @@
 ---
 title: "Cấu trúc chương trình C cơ bản"
-description: "Việc nắm vững cấu trúc cơ bản của ngôn ngữ lập trình C là một bước quan trọng để trở thành một lập trình viên thành thạo. Trong bài viết này, chúng ta sẽ giới thiệu và giải thích cơ bản về cấu trúc cơ bản của chương trình C"
+description: "Việc nắm vững cấu trúc cơ bản của ngôn ngữ lập trình C là một bước quan trọng để trở thành một lập trình viên thành thạo. Trong bài viết này, chúng tôi sẽ giới thiệu và giải thích cơ bản về cấu trúc cơ bản của chương trình C"
 chapter:
   name: "Giới thiệu"
   slug: "chuong-01-introduction"
@@ -8,7 +8,7 @@ image: https://user-images.githubusercontent.com/29374426/127596066-fa46df01-982
 position: 2
 ---
 
-Dưới đây là một đoạn mã chương trình cơ bản nhất khi bắt đầu học lập trình với ngôn ngữ C.
+Để bắt đầu học lập trình C, bạn cần hiểu cấu trúc cơ bản của một chương trình C. Dưới đây là một đoạn mã chương trình cơ bản nhất khi bắt đầu học lập trình với ngôn ngữ C.
 Hãy sao chép đoạn mã ví dụ bên dưới vào **Dev C** và nhấn `F11` để chạy chương trình.
 
 ```cpp
@@ -22,37 +22,44 @@ int main() {
 ```
 
 ::result
+
+```cpp
 Hello World!
 
 ---
 
 Process exited after 0.02965 seconds with return value 0
 Press any key to continue . . .
-::
+```
 
 Sau đây, chúng ta sẽ đi tìm hiểu các thành phần cơ bản bên dưới để giúp bạn bắt đầu với một chương trình C.
 
+<<<<<<< HEAD
+- **`#include <stdio.h>`**
+=======
 **`#include <stdio.h>`**
+>>>>>>> main
 
 - Đây được gọi là dòng **khai báo thư viện** cho một chương trình C, `#include` là cú pháp còn tên thư viện sẽ nằm trong cặp dấu `< >`. Một chương trình C cơ bản luôn luôn cần thư viện `stdio.h` - là thư viện cơ bản và cốt lõi nhất.
 - Thư viện là nơi định nghĩa các câu lệnh mà mình sẽ viết bên dưới cho máy tính hiểu và có thể chạy được những gì mình viết.
 - Thư viện có khá nhiều và chia ra theo chức năng mà nó có thể làm, ví dụ `stdio.h` là thư viện `core` bắt buộc phải có trong một chương trình, trong quá trình học chúng ta sẽ tìm hiểu thêm về một vài thư viện thường gặp.
 
-**`int main() { }`**
+- **`int main() { }`**
 
-- Thường được gọi là `hàm main` - hay là hàm chính - khi chương trình của bạn chạy nó sẽ bắt đầu chạy từ hàm này và nó chỉ chạy những đoạn code có trong này. Do đó mọi chương trình C đều phải tồn tại một hàm main.
-- Tất cả code phải được viết trong cặp dấu ngoặc nhọn `{ }` của hàm main và được xem là code của hàm main.
+  - Thường được gọi là `hàm main` - hay là hàm chính - khi chương trình của bạn chạy nó sẽ bắt đầu chạy từ hàm này và nó chỉ chạy những đoạn code có trong này. Do đó mọi chương trình C đều phải tồn tại một hàm main.
+  - Dấu ngoặc đơn () sau tên hàm là một phần quan trọng của cú pháp trong ngôn ngữ lập trình C và nhiều ngôn ngữ lập trình khác. Dấu () được sử dụng để thực hiện hai chức năng quan trọng:
+  - Trong cặp dấu `{ }`, bạn sẽ thực hiện code ra chương trình của bạn. Mọi dòng lệnh và công việc của chương trình sẽ được định nghĩa trong phạm vi này. Và đương nhiên code trong hàm main thì là code của hàm main rồi
 
-**`printf("Hello World!\n");`**
+- **`printf("Hello World!\n");`**
 
-- Đây là dòng lệnh in ra màn hình dòng chữ `Hello World`. Dòng này kết thúc với dấu `;` (trong ngôn ngữ C tất cả dòng lệnh đều phải kết thúc bằng dấu `;`).
-- Tạm hiểu câu lệnh `printf()` là câu lệnh in ra - hiển thị ra một chuỗi mà bạn truyền vào `( )`.
-- Chuỗi truyền vào cần nằm trong cặp dấu nháy kép `" "` để chương trình hiểu được đó là một đoạn văn bản.
-- Phần `\n` trong chuỗi là một dạng format để báo rằng chúng ta muốn xuống dòng tại đó.
+  - Đây là dòng lệnh in ra màn hình dòng chữ `Hello World`. Dòng này kết thúc với dấu `;`.
+  - Tạm hiểu câu lệnh `printf()` là câu lệnh in ra - hiển thị ra một chuỗi mà bạn truyển vào `( )`.
+  - Chuỗi truyền vào cần nằm trong cặp dấu nháy kép `" "` để chương trình hiểu được đó là một đoạn văn bản.
+  - Phần `\n` trong chuỗi là một dạng format để báo rằng chúng ra muốn xuống dòng tại đó.
 
-**`return 0;`**
+- **`return 0;`**
+  - Câu lệnh này tạm hiểu là để kết thúc viết code trong hàm main, nằm cuối cùng trong hàm main để kết thúc chương trình.
 
-- Câu lệnh này tạm hiểu là để kết thúc viết code trong hàm main, nằm cuối cùng trong hàm main để kết thúc chương trình.
-
-> `printf()` được gọi chính xác là một `hàm (function)` trong C, các bạn có thể hiểu đơn giản một hàm là một chức năng cụ thể, làm một công việc cụ thể nào đó.
-> Trong quá trình học chúng ta sẽ sử dụng rất nhiều hàm có sẵn của C trong các thư viện khác nhau và cũng sẽ tự viết các hàm chức năng của riêng mình.
+> Trong ngôn ngữ C tất cả dòng lệnh đều phải kết thúc bằng dấu `;`.
+> `printf()` được gọi chính xác là một `hàm (function)` trong C, các bạn có thể hiểu đơn giản một hàm là một chức năng cụ thể, làm một công việc cụ thể nào đó. Các bạn có thể chuyển đọc bài viết về vấn đề này tại đây [Cấu trúc một hàm trong C](/bai-viet/cau-truc-mot-ham-trong-c)
+> Trong quá trình học chúng ta sẽ sử dụng rất nhiều hàm có sẵn của C trong các thư viện khác nhau và cũng sẽ tự viết các hàm chức năng của riêng mình. Nên hãy cố gắng nắm rõ cấu trúc của các hàm mà bạn đã, đang và sẽ sử dụng nha, rất hữu ích sau này đấy.

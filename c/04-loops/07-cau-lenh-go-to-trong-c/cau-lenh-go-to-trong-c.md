@@ -60,8 +60,8 @@ int main() {
 ```
 
 ::result
-Enter n: 44
-44 is even.
+Enter n: 44</br>
+44 is even.</br>
 ::
 
 Ví dụ 2:
@@ -94,13 +94,13 @@ int main() {
 ```
 
 ::result
-Enter a number: 4
-Enter a number: 6
-Enter a number: 6
-Enter a number: -1
+Enter a number: 4</br>
+Enter a number: 6</br>
+Enter a number: 6</br>
+Enter a number: -1</br>
 
-Sum = 16.00
-Average = 5.33
+Sum = 16.00</br>
+Average = 5.33</br>
 ::
 
 ### Syntax 2
@@ -126,16 +126,16 @@ int main() {
 ```
 
 ::result
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
+1</br>
+2</br>
+3</br>
+4</br>
+5</br>
+6</br>
+7</br>
+8</br>
+9</br>
+10</br>
 ::
 
 ## Disadvantages of using goto statement

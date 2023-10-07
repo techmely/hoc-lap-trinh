@@ -37,14 +37,11 @@ Màn hình kết quả chương trình:
 Test case 1
 
 ::result
-Enter string: Hello Kungfutech
-Enter character: e
+Enter string: Hello Kungfutech</br>
+Enter character: e</br>
 
-OUTPUT:
-Frequency of e is 2
-
----
-
+OUTPUT:</br>
+Frequency of e is 2</br>
 ::
 
 ## Bài 2
@@ -74,18 +71,14 @@ Màn hình kết quả chương trình:
 Test case 1
 
 ::result
+1. Convert to binary</br>
+2. Convert to octal</br>
+3. Convert to hexa</br>
+Enter your number: 112427</br>
+Enter your choice: 1</br>
 
-1. Convert to binary
-2. Convert to octal
-3. Convert to hexa
-   Enter your number: 112427
-   Enter your choice: 1
-
-OUTPUT:
-Binary is 11011011100101011
-
----
-
+OUTPUT:</br>
+Binary is 11011011100101011</br>
 ::
 
 > không nên để kiểu dữ liệu của binary là `int` hay `long long` vì giá trị max của long long chỉ giới hạn tại 9,223,372,036,854,775,807.
@@ -93,33 +86,25 @@ Binary is 11011011100101011
 Test case 2
 
 ::result
+1. Convert to binary</br>
+2. Convert to octal</br>
+3. Convert to hexa</br>
+Enter your number: 10856</br>
+Enter your choice: 2</br>
 
-1. Convert to binary
-2. Convert to octal
-3. Convert to hexa
-   Enter your number: 10856
-   Enter your choice: 2
-
-OUTPUT:
-Octal is 25150
-
----
-
+OUTPUT:</br>
+Octal is 25150</br>
 ::
 
 Test case 3
 
 ::result
+1. Convert to binary</br>
+2. Convert to octal</br>
+3. Convert to hexa</br>
+Enter your number: 265084</br>
+Enter your choice: 3</br>
 
-1. Convert to binary
-2. Convert to octal
-3. Convert to hexa
-   Enter your number: 265084
-   Enter your choice: 3
-
-OUTPUT:
-Hexa is 40B7C
-
----
-
+OUTPUT:</br>
+Hexa is 40B7C</br>
 ::

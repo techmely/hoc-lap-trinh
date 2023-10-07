@@ -135,17 +135,17 @@ int main()
 ```
 
 ::result
-Address of c: 000000000062FE14
-Value of c: 18
+Address of c: 000000000062FE14</br>
+Value of c: 18</br>
 
-Address of pointer pc: 000000000062FE14
-Content of pointer pc: 18
+Address of pointer pc: 000000000062FE14</br>
+Content of pointer pc: 18</br>
 
-Address of pointer pc: 000000000062FE14
-Content of pointer pc: 10
+Address of pointer pc: 000000000062FE14</br>
+Content of pointer pc: 10</br>
 
-Address of c: 000000000062FE14
-Value of c: -2
+Address of c: 000000000062FE14</br>
+Value of c: -2</br>
 ::
 
 Giải thích về cách hoạt động của con trỏ.

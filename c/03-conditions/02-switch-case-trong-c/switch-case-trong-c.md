@@ -91,15 +91,15 @@ int main() {
 ```
 
 ::result
-Enter the day: 6
-Friday
+Enter the day: 6</br>
+Friday</br>
 ::
 
 Nếu nhập một giá trị không có trong các case, case `default` sẽ được chạy:
 
 ::result
-Enter the day: 12
-Only enter 2 -> 8.
+Enter the day: 12</br>
+Only enter 2 -> 8.</br>
 ::
 
 Cùng xem thêm một ví dụ khác sử dụng kiểu `char`.
@@ -137,9 +137,9 @@ int main () {
 ```
 
 ::result
-Enter grade: B
-Well done.
-Your grade is B
+Enter grade: B</br>
+Well done.</br>
+Your grade is B</br>
 ::
 
 Ở ví dụ này case `B` chúng ta không dùng `break;` - vì vậy khi chọn `B` (không có `break;` chặn lại) nó sẽ chạy xuống thực hiện code trong case `C` và in ra `Well done.`. Có nghĩa là khi chọn `B` hay `C` đều cho ra một kết quả giống nhau.

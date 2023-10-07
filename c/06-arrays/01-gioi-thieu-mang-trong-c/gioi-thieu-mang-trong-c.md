@@ -112,11 +112,11 @@ int main() {
 ```
 
 ::result
-Enter 5 integer numbers: 1
-4
-3
-5
-6
+Enter 5 integer numbers: 1</br>
+4</br>
+3</br>
+5</br>
+6</br>
 
-Display array: 1 4 3 5 6
+Display array: 1 4 3 5 6</br>
 ::

@@ -114,8 +114,8 @@ int main()
 ```
 
 ::result
-Enter name: Kungfutech Academy
-Your name is Kungfutech.
+Enter name: Kungfutech Academy</br>
+Your name is Kungfutech.</br>
 ::
 
 Mặc dù `Kungfutech Academy` đã được nhập tại chương trình trên nhưng chỉ `Kungfutech` được lưu trữ tại string `name`, đó là vì có một khoảng trắng đằng sau `Kungfutech`
@@ -140,8 +140,8 @@ int main()
 ```
 
 ::result
-Enter name: Kungfutech Academy
-Name: Kungfutech Academy
+Enter name: Kungfutech Academy</br>
+Name: Kungfutech Academy</br>
 ::
 
 Tại chương trình trên ta đã sử dụng hàm `fgets()` để đọc một chuỗi văn bản từ người dùng và hàm `puts()` để hiển thị văn bản đó.
@@ -180,8 +180,8 @@ void displayString(char str[])
 ```
 
 ::result
-Enter string: Kungfutech Academy
-String Output: Kungfutech Academy
+Enter string: Kungfutech Academy</br>
+String Output: Kungfutech Academy</br>
 ::
 
 Tại đây chúng ta truyền một chuỗi `name` vào hàm `displayString()`.
@@ -215,6 +215,6 @@ int main(void) {
 ```
 
 ::result
-Kfc
-Kfc
+Kfc</br>
+Kfc</br>
 ::

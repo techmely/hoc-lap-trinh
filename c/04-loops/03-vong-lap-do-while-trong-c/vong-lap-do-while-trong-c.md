@@ -75,11 +75,11 @@ int main() {
 ```
 
 ::result
-Enter a number: 5
-Enter a number: 4
-Enter a number: 6
-Enter a number: 2
-Enter a number: -2
+Enter a number: 5</br>
+Enter a number: 4</br>
+Enter a number: 6</br>
+Enter a number: 2</br>
+Enter a number: -2</br>
 
 Sum = 17
 ::

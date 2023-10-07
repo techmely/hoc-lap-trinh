@@ -31,12 +31,12 @@ int main() {
 ```
 
 ::result
-&x[0] = 000000000062FE00
-&x[1] = 000000000062FE04
-&x[2] = 000000000062FE08
-&x[3] = 000000000062FE0C
-&x[4] = 000000000062FE10
-Address of array num: 000000000062FE00
+&x[0] = 000000000062FE00</br>
+&x[1] = 000000000062FE04</br>
+&x[2] = 000000000062FE08</br>
+&x[3] = 000000000062FE0C</br>
+&x[4] = 000000000062FE10</br>
+Address of array num: 000000000062FE00</br>
 ::
 
 Vì kích thước của `int` là `4 byte` nên địa chỉ của hai phần tử mảng liên tiếp cũng chênh nhau `4 byte`.
@@ -78,12 +78,12 @@ int main() {
 ```
 
 ::result
-Enter 5 numbers: 1
--2
-4
-1
-6
-Sum = 10
+Enter 5 numbers: 1</br>
+-2</br>
+4</br>
+1</br>
+6</br>
+Sum = 10</br>
 ::
 
 Ví dụ 2:
@@ -107,9 +107,9 @@ int main() {
 ```
 
 ::result
-_pn = 4
-_(pn+1) = 5
-\*(pn-1) = 3
+*pn = 4</br>
+*(pn+1) = 5</br>
+*(pn-1) = 3</br>
 ::
 
 Trong ví dụ này `&num[3]` là địa chỉ của phần tử thứ tư, được gán cho con trỏ `pn`, do đó giá trị của `*pn` lúc này sẽ là `4`.
