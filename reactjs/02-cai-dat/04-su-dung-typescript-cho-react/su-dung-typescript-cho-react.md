@@ -208,13 +208,8 @@ interface MyComponentProps {
 }
 ```
 
-::alert{type="infor"}
+::alert{type="success"}
 
-Hướng dẫn này đã giới thiệu các cơ bản của việc sử dụng TypeScript với React, nhưng còn rất nhiều thứ để học. Trang tài liệu chính thức của TypeScript, Handbook, bao gồm hướng dẫn về hầu hết các tính năng quan trọng của ngôn ngữ TypeScript.
-
-Ngoài ra, bạn cũng có thể tham khảo các tài liệu sau:
-
-- [Hướng dẫn sử dụng TypeScript với React](https://react-typescript-cheatsheet.netlify.app/): Một bảng tra cứu cộng đồng cho việc sử dụng TypeScript với React, bao gồm nhiều trường hợp sử dụng hữu ích và mang tính chất mẫu.
-- [Cộng đồng TypeScript Discord](https://discord.gg/typescript): Một nơi tốt để đặt câu hỏi và nhận sự trợ giúp về TypeScript và các vấn đề liên quan đến React.
+Bài này đã giới thiệu các cơ bản của việc sử dụng TypeScript với React, nhưng còn rất nhiều thứ để học. Trang tài liệu chính thức của TypeScript, Handbook, bao gồm hướng dẫn về hầu hết các tính năng quan trọng của ngôn ngữ TypeScript.
 
 ::
