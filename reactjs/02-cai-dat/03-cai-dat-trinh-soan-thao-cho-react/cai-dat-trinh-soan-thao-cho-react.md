@@ -58,7 +58,7 @@ Hãy cài đặt ESLint với cấu hình được khuyến nghị cho React (h�
 Bạn có thể cài đặt tiện ích mở rộng Prettier trong VSCode bằng cách thực hiện các bước sau:
 
 1. Khởi động VS Code.
-2. Sử dụng Quick Open (nhấn Ctrl/Cmd+P).
+2. Sử dụng Quick Open (nhấn `Ctrl/Cmd+P`).
 3. Dán `ext install esbenp.prettier-vscode` vào ô tìm kiếm.
 4. Nhấn Enter để cài đặt.
 
@@ -66,8 +66,8 @@ Bạn có thể cài đặt tiện ích mở rộng Prettier trong VSCode bằng
 
 Lý tưởng, bạn nên định dạng mã của bạn mỗi khi lưu. VS Code có các thiết lập cho điều này!
 
-1. Trong VS Code, nhấn CTRL/CMD + SHIFT + P.
+1. Trong VS Code, nhấn `CTRL/CMD + SHIFT + P`.
 2. Gõ "settings".
-3. Nhấn Enter.
+3. Nhấn `Enter`.
 4. Trong thanh tìm kiếm, gõ "format on save".
 5. Hãy chắc chắn rằng tùy chọn "format on save" đã được chọn!
