@@ -8,25 +8,27 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
 
-Nếu bạn muốn xây dựng một ứng dụng hoặc trang web hoàn toàn bằng React, chúng tôi đề xuất bạn nên chọn một trong các framework sử dụng React phổ biến trong cộng đồng. Các framework cung cấp các tính năng mà hầu hết các ứng dụng và trang web cuối cùng cần, bao gồm định tuyến (routing), truy xuất dữ liệu và tạo HTML.
+Nếu bạn muốn xây dựng một ứng dụng hoặc trang web hoàn toàn bằng React, mình khuyên bạn nên chọn một trong các framework sử dụng React phổ biến trong cộng đồng. Các framework cung cấp các tính năng mà hầu hết các ứng dụng và trang web cần, bao gồm định tuyến (routing), truy xuất dữ liệu và tạo HTML...
 
-## Lưu ý
+::alert{type="warning"}
+Bạn cần cài đặt Node.js để phát triển ứng dụng React cục bộ.
+::
 
-Bạn cần cài đặt Node.js để phát triển ứng dụng React cục bộ. Bạn cũng có thể chọn sử dụng Node.js trong môi trường sản xuất, nhưng bạn không bắt buộc phải làm điều này. Nhiều framework React hỗ trợ xuất ứng dụng thành các tệp HTML/CSS/JS tĩnh.
-
-## Các framework React phù hợp cho sản xuất
+## Các framework React phổ biến nhất
 
 ### Next.js
 
-Next.js là một framework React toàn diện. Nó linh hoạt và cho phép bạn tạo ứng dụng React với bất kỳ kích thước nào - từ một blog chủ yếu tĩnh đến một ứng dụng phức tạp đầy động lực. Để tạo dự án Next.js mới, hãy chạy lệnh sau trong dòng lệnh:
+![Next.js](https://github.com/techmely/hoc-lap-trinh/assets/29374426/1068a801-b2f7-49d3-b121-b49798837846)
+
+Next.js là một framework React toàn diện. Nó linh hoạt và cho phép bạn tạo ứng dụng React từ nhỏ đến lớn - từ một blog tĩnh đến một ứng dụng phức tạp. Để tạo dự án Next.js mới, chỉ cần chạy lệnh sau trong dòng lệnh:
 
 ```shell
 npx create-next-app
 ```
 
-Nếu bạn mới làm quen với Next.js, hãy xem hướng dẫn Next.js.
+Nếu bạn mới làm quen với Next.js, [hãy xem hướng dẫn Next.js](https://nextjs.org/).
 
-Next.js được duy trì bởi Vercel. Bạn có thể triển khai ứng dụng Next.js lên bất kỳ máy chủ Node.js hoặc dịch vụ serverless nào hoặc máy chủ của riêng bạn. Ứng dụng Next.js hoàn toàn tĩnh có thể triển khai lên bất kỳ dịch vụ hosting tĩnh nào.
+Next.js được duy trì bởi Vercel, bạn có thể triển khai ứng dụng Next.js lên bất kỳ máy chủ Node.js hoặc dịch vụ serverless nào hoặc máy chủ của riêng bạn. Ứng dụng Next.js hoàn toàn tĩnh có thể triển khai lên bất kỳ dịch vụ hosting tĩnh nào.
 
 ### Remix
 
