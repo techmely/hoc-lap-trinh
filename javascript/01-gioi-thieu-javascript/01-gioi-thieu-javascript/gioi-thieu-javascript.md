@@ -19,27 +19,26 @@ Vì nó cực kỳ linh hoạt, nên gần như rất nhiều lĩnh vực mà Js
 - Mobile App: Có thể tạo ra được các ứng dụng di động chạy được đa nền tảng, như IOS và Android, điển hình có thể kể đến là [React Native](https://reactnative.dev/), [Ionic](https://ionicframework.com/), và [NativeScript](https://nativescript.org/)
 - Desktop App: Js cho phép lập trình viên tạo ra được các ứng dụng trên Desktop dựa trên website một cách dễ dàng, điển hình là [Tauri](https://tauri.app/),  [Electron](https://electronjs.org/) và [NeutralinoJS](https://neutralino.js.org/)
 - Server-side app: Không chỉ ở mỗi website, JS đã được nâng tầm để đáp ứng nhu cầu của cộng đồng, xây các ứng dụng ở phía server như [Nodejs](https://nodejs.org/en), [Bun](https://bun.sh/), và [Deno](https://deno.com/)
-- Graphic: two.js (2D), three.js (3D)...
-- Game: Nhắc đến game, JS 
-- AI: brain.js...
+- Graphic/Game: Nhắc đến game, JS ThreeJs, [BabylonJs](https://www.babylonjs.com/), [Phaser](https://phaser.io/), [PlayCanvas](https://playcanvas.com/), [GDevelop](https://gdevelop.io/), [Pixijs](https://pixijs.com/), [MelonJs](https://melonjs.org/)...
+- Internet of Things(IoT): Vâng, JS có thể giúp bạn lập trình và điều khiển các thiết bị IoT, như nhà thông minh(smart home) và tự động hoá các quy trình làm việc của máy móc trong nhà máy sản xuất.
+- Machine Learning: JS có thể dùng để train và deploy Machine Learning models. Gần đây nổi nhất là [Hugging Face](https://huggingface.co/) và [TensorFlow](https://www.tensorflow.org/).
+- Virtual Reality(VR) & Augmented Reality(AR): Để tạo ra trải nghiệm vượt bậc trên browser, những công cụ như [AFrame](https://aframe.io/) và [BabylonJs](https://www.babylonjs.com/) sẽ giúp chúng ta xây dựng được những thứ không tưởng!
+- Web Scraping: Nếu muốn đi lấy dữ liệu từ bên ngoài về(website, video, hình ảnh, thông tin...), hãy sử dụng các thư viện như [Cheerio](https://cheerio.js.org/), [Puppeteer](https://pptr.dev) hoặc [Playwight](https://playwright.dev).
+- Automation: Với một số thao tác lặp đi lặp lại, như việc release sản phẩm theo định kỳ, hoặc chạy cron job vào một thời điểm nào đó, thì Js sẽ giúp bạn!
+....
 
-Và còn nhiều nhiều nữa các lĩnh vực mà Javascript có thể làm được.
+Và còn rất rất nhiều các lĩnh vực mà Javascript có thể làm được nữa!
 
-Trình duyệt đã có sẵn một Javascript engine đôi khi được gọi là "JavaScript virtual machine".
+## Javascript Engine
 
-Những engine khác nhau thì sẽ có những "tên mã" khác nhau. Chẳng hạn:
+Khi nghe từ Engine, đó hẳn là 1 cái gì đó cao siêu và phức tạp. Nhưng nếu để phải giải thích cho một người mới học JS, thì đó nên là:
 
-- [V8](https://vi.wikipedia.org/wiki/Chrome_V8) -- trong Chrome và Opera.
-- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- trong Firefox.
-- ...Có một số tên mã khác như "Chakra" cho IE, "ChakraCore" cho Microsoft Edge, "Nitro" và "SquirrelFish" cho Safari v.v.
+1. Engine được tạo ra với mục đích đọc -> Phân tích câu lệnh, cú pháp code
+2. Nó chuyển đổi, biên dịch những dòng code đó sang mã mà máy tính có thể hiểu được(dãy số 0 và 1, VD: 000110101001100010101010110)
+3. Máy chạy phần code và truyền tải thông điệp tới người dùng
 
-Engine khá phức tạp, tuy nhiên có thể hiểu đơn giản như sau:
+Còn nếu muốn hiểu sâu sâu hơn nữa, thì bạn có thể đọc chi tiết về [V8](https://vi.wikipedia.org/wiki/Chrome_V8) Engine mà Chrome/Opera sử dung, hay [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) trong FireFox, hoặc [Nitro](https://vi.wikipedia.org/wiki/WebKit#JavaScriptCore) cho Safari.
 
-1. Engine (được nhúng nếu là trình duyệt) đọc ("phân tích cú pháp") tập lệnh.
-2. Tiếp theo nó chuyển đổi ("biên dịch") tập lệnh sang mã máy.
-3. Và sau đó mã máy chạy, khá nhanh.
-
-Engine áp dụng tối ưu hóa ở mỗi bước của quá trình. Nó thậm chí còn theo dõi tập lệnh đã biên dịch khi nó chạy, phân tích dữ liệu chạy qua nó và tối ưu hóa hơn nữa mã máy dựa trên kiến thức đó.
 
 ![Khoá học javascript cơ bản](https://user-images.githubusercontent.com/29374426/156755813-bd4d0c75-d34c-4585-9423-42fdb45b66d0.png)
 
@@ -48,6 +47,10 @@ Engine áp dụng tối ưu hóa ở mỗi bước của quá trình. Nó thậm
 Javascript được tạo bởi lập trình viên kỳ cựu Brendan Eich, giới thiệu lần đầu năm 1995, xuất hiện trên trình duyệt Netscape, một trình duyệt phổ biến thời bấy giờ.
 
 Ban đầu, ngôn ngữ lập trình này được gọi là LiveScript, sau này mới đổi tên thành Javascript. Mới đọc tên thì nhiều người sẽ nhầm tưởng Javascript có "họ hàng" với Java. Nhưng thực tế, hai ngôn ngữ này không hề có liên quan gì tới nhau cả, cây gia phả của chúng không hề chung gốc. Java là ngôn ngữ lập trình hướng đối tượng phức tạp, còn Javascript là một ngôn ngữ kịch bản (scripting language). Cú pháp của Javascript chủ yếu có hơi hướng ảnh hưởng từ ngôn ngữ C.
+
+Điển hình nhất trong lịch sử của Javascript cho đến tận bây giờ đó là việc ra mắt ES6 vào 2015, nó dường như đã dịch chuyển cả một nền công nghiệp lập trình lúc bấy giờ. Và từ đó đến nay, Javascript như là 1 vị vua của ngôn ngữ lập trình với hàng loạt sản phẩm, thư viện, framework được sinh ra từ nó!
+
+Để tìm hiểu sâu hơn, bạn có thể xem thêm phần lịch sử ra mắt các [phiên bản của ECMAScript](https://en.wikipedia.org/wiki/ECMAScript_version_history), và sự tương thích của ES6 so với các engine ở  [ở đây](https://kangax.github.io/compat-table/es6)
 
 ## Tại sao nên học Javascript?
 
