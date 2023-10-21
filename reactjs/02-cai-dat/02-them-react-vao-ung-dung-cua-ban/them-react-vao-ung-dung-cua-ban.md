@@ -8,6 +8,10 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---
 
+::alert{type="infor"}
+Nếu bạn chưa có trang web của mình hoặc bạn là người mới tiếp cận với Reactjs thì bạn có thể bỏ qua bài này!
+::
+
 Thông thường chúng ta hay [tạo một dự án ReactJS](/bai-viet/reactjs/khoi-tao-du-an-reactjs) riêng biệt để xây dựng một website hoàn chỉnh.
 
 Tuy nhiên, bạn quên mất rằng, bản chất ReactJS chỉ là một thư viện front end, giúp xây dựng giao diện trang web được đơn giản hơn.
@@ -77,82 +81,3 @@ root.render(<PostComments />);
 ```
 
 Như vậy là đã xong! Như vậy là bạn đã tích hợp xong React vào một dự án website đã có sẵn. Công việc tiếp theo thì bạn vẫn code React như bình thường thôi.
-
-## Bước 1: Thiết lập môi trường JavaScript module hóa
-
-Môi trường JavaScript module hóa cho phép bạn viết các thành phần React của bạn trong các tệp riêng lẻ, thay vì viết toàn bộ mã của bạn trong một tệp duy nhất. Nó cũng cho phép bạn sử dụng tất cả các gói tuyệt vời được xuất bản bởi các nhà phát triển khác trên npm registry - bao gồm cả React! Cách bạn thực hiện điều này phụ thuộc vào cài đặt hiện có của bạn:
-
-- Nếu ứng dụng của bạn đã được chia thành các tệp sử dụng câu lệnh import, hãy thử sử dụng cài đặt bạn đã có. Kiểm tra xem việc viết `<div />` trong mã JS của bạn có gây ra lỗi cú pháp không. Nếu nó gây ra lỗi cú pháp, bạn có thể cần biến đổi mã JavaScript của mình bằng Babel và kích hoạt Babel React preset để sử dụng JSX.
-
-- Nếu ứng dụng của bạn chưa có cài đặt hiện có cho việc biên dịch các module JavaScript, hãy thiết lập nó bằng Vite. Cộng đồng Vite duy trì nhiều tích hợp với các framework backend, bao gồm Rails, Django và Laravel. Nếu framework backend của bạn không được liệt kê, hãy tuân theo hướng dẫn này để tích hợp xây dựng Vite vào backend của bạn.
-
-Để kiểm tra xem cài đặt của bạn có hoạt động không, hãy chạy lệnh sau trong thư mục dự án của bạn:
-
-```bash
-npm install react react-dom
-```
-
-Sau đó, thêm các dòng mã sau vào đầu tệp JavaScript chính của bạn (có thể được gọi là index.js hoặc main.js):
-
-```javascript
-import { createRoot } from "react-dom/client";
-
-// Xóa nội dung HTML hiện có
-document.body.innerHTML = '<div id="app"></div>';
-
-// Hiển thị thành phần React của bạn thay vì
-const root = createRoot(document.getElementById("app"));
-root.render(<h1>Hello, world</h1>);
-```
-
-Nếu toàn bộ nội dung của trang của bạn bị thay thế bằng một "Hello, world!", điều đó có nghĩa là mọi thứ đã hoạt động! Hãy tiếp tục đọc.
-
-## Bước 2: Hiển thị các thành phần React bất kỳ nơi nào trên trang
-
-Trong bước trước, bạn đã đặt mã này ở đầu tệp chính của bạn:
-
-```javascript
-import { createRoot } from "react-dom/client";
-
-// Xóa nội dung HTML hiện có
-document.body.innerHTML = '<div id="app"></div>';
-
-// Hiển thị thành phần React của bạn thay vì
-const root = createRoot(document.getElementById("app"));
-root.render(<h1>Hello, world</h1>);
-```
-
-Tất nhiên, bạn thực sự không muốn xóa nội dung HTML hiện có!
-
-Hãy xóa mã này.
-
-Thay vào đó, bạn có thể muốn hiển thị các thành phần React của bạn ở các vị trí cụ thể trong trang HTML của bạn. Mở trang HTML của bạn (hoặc các mẫu máy chủ tạo ra nó) và thêm một thuộc tính id duy nhất vào bất kỳ thẻ nào, ví dụ:
-
-```html
-<!-- ... đâu đó trong trang html của bạn ... -->
-<nav id="navigation"></nav>
-<!-- ... thêm nhiều html khác ... -->
-```
-
-Điều này cho phép bạn tìm thấy phần tử HTML đó bằng document.getElementById và truyền nó cho createRoot để bạn có thể hiển thị thành phần React của riêng bạn bên trong:
-
-```javascript
-import { createRoot } from "react-dom/client";
-
-function NavigationBar() {
-  // TODO: Thực sự triển khai thanh điều hướng
-  return <h1>Hello from React!</h1>;
-}
-
-const domNode = document.getElementById("navigation");
-const root = createRoot(domNode);
-root.render(<NavigationBar />);
-```
-
-Lưu ý cách nội dung HTML gốc từ index.html được bảo toàn, nhưng thành phần React NavigationBar của bạn hiện xuất hiện trong `<nav id="navigation">` từ trang HTML của bạn. Đọc tài liệu sử dụng createRoot để tìm hiểu thêm về cách hiển thị các thành phần React bên trong trang HTML hiện có của bạn.
-
-Khi bạn áp dụng React vào một dự án hiện có, điều phổ biến là bắt đầu bằng các thành phần tương tác nhỏ (như các nút), sau đó dần dần "di chuyển lên" cho đến cuối cùng trang web của bạn được xây dựng bằng React. Nếu bạn bao giờ đạt được điểm đó, chúng tôi đề xuất chuyển sang một framework React ngay sau đó để tận dụng tối đa tính năng của React.
-
-## Sử dụng React Native trong ứng dụng di động native hiện có
-
-React Native cũng có thể được tích hợp vào các ứng dụng native hiện có một cách tăng dần. Nếu bạn có ứng dụng native hiện có cho Android (Java hoặc Kotlin) hoặc iOS (Objective-C hoặc Swift), hãy làm theo hướng dẫn này để thêm một màn hình React Native vào đó.
