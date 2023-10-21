@@ -20,28 +20,63 @@ Trong trường hợp này, bạn có thể sử dụng ReactJS để xây dựn
 
 ## Sử dụng React cho một phần của trang web hiện tại của bạn
 
-Hãy tưởng tượng bạn có một ứng dụng web hiện có tại example.com được xây dựng bằng một công nghệ máy chủ khác (ví dụ: Rails), và bạn muốn triển khai toàn bộ các đường dẫn bắt đầu bằng example.com/some-app/ bằng hoàn toàn với React.
+Để minh họa, giả sử chúng ta có một dự án web nhỏ với tính năng cho phép đăng bài viết và viết bình luận cho bài viết đó.
 
-Dưới đây là cách chúng tôi đề xuất để thiết lập nó:
+Đầu tiên, mình cứ tạo một file `index.html` trong thư mục dự án. Trong thực tế, `index.html` là file gốc của dự án nên có thể sẽ có nhiều mã html của những tính năng khác.
 
-1. Xây dựng phần React của ứng dụng của bạn bằng một trong các framework dựa trên React.
-2. Xác định /some-app là đường dẫn cơ sở trong cấu hình framework của bạn (đây là cách làm: Next.js, Gatsby).
-3. Cấu hình máy chủ của bạn hoặc một proxy để tất cả các yêu cầu dưới /some-app/ được xử lý bởi ứng dụng React của bạn.
+Giả sử index.html đã có mã nguồn như sau:
 
-Điều này đảm bảo phần React của ứng dụng của bạn có thể triển khai theo các thực hành tốt nhất tích hợp trong những framework đó.
+```html
+<div class="post-container">
+  <h1 class="post-header">T-shirt for sale</h1>
+    <div class="post-body">
+      <img src="t-shirt.jpg" alt="img" width="300px" height="300px" />
+    </div>
+</div>
+```
 
-Nhiều framework dựa trên React hỗ trợ toàn bộ ngăn xếp và cho phép ứng dụng React của bạn tận dụng máy chủ. Tuy nhiên, bạn có thể sử dụng cùng phương pháp này ngay cả khi bạn không thể hoặc không muốn chạy JavaScript trên máy chủ. Trong trường hợp này, hãy phục vụ tệp HTML/CSS/JS xuất (đầu ra next export cho Next.js, mặc định cho Gatsby) tại /some-app/ thay vì.
+## Tích hợp Reactjs vào trang web của bạn
 
-## Sử dụng React cho một phần của trang web hiện tại
+Chỉ cần thêm một thẻ html với một unique ID, ví dụ:
 
-Hãy tưởng tượng bạn có một trang web hiện có được xây dựng bằng một công nghệ khác (cả máy chủ như Rails hoặc máy khách như Backbone), và bạn muốn hiển thị các thành phần React tương tác ở một số nơi trên trang đó. Đó là một cách thông thường để tích hợp React - thực tế, đó là cách mà hầu hết sử dụng React nhìn ở Meta trong nhiều năm qua!
+```html
+<div id="post-comments-root">
+    <!--This is a react root node-->
+</div>
+```
 
-Bạn có thể làm điều này trong hai bước:
+Tiếp theo, chúng ta thêm thư viện ReactJS vào cuối của thẻ `<body>`. Khi nào deploy dự án, bạn nhớ thay `react.development.js` thành `react.production.js`
 
-1. Thiết lập một môi trường JavaScript module hóa cho phép bạn sử dụng cú pháp JSX, chia mã của bạn thành các mô-đun với cú pháp import/export, và sử dụng các gói (ví dụ: React) từ npm package registry.
-2. Hiển thị các thành phần React của bạn ở nơi bạn muốn thấy chúng trên trang.
+```js
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+```
 
-Cách tiếp cận chính xác phụ thuộc vào cài đặt trang hiện có của bạn, vì vậy hãy đi vào một số chi tiết.
+Để có thể sử dụng được cú pháp JSX, bạn cần phải cài thêm thư viện babel. Nếu không, bạn sẽ phải sử dụng cú pháp ES5 thông thường, ví dụ: sử dụng `React.createElement()` để trả về một [react component](/bai-viet/reactjs/component-trong-react-la-gi).
+
+```js
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+```
+
+Như vậy là bạn đã cài đặt thư viện ReactJS vào dự án website có sẵn xong rồi đấy. Phần tiếp theo hoàn toàn tương tự như cách mà chúng ta vẫn thực hiện khi làm việc với ReactJS thôi. Đó là tạo một component.
+
+Chúng ta sẽ tạo một `Post component` (đặt tên file là `post-comments.js`), sau đó chèn vào trong `index.html` là được.
+
+```js
+<script src="react/components/post-comments.js" type="text/babel"></script>
+```
+
+Phần nội dung của `Post component` cụ thể như nào thì mình không viết cụ thể ra đây nhé. Bài viết này mình chỉ tập trung vào cách tích hợp ReactJS mà thôi.
+
+Sau khi hoàn thành viết code cho các component xong, truy xuất root React DOM trong `index.html` sử dụng id: `post-comments-root` và render root element sử dụng API: `createRoot()` tương tự như cách mà bạn vẫn làm trong các dự án React
+
+```js
+const domNode = document.getElementById("post-comments-root");
+const root = ReactDOM.createRoot(domNode);
+root.render(<PostComments />);
+```
+
+Như vậy là đã xong! Như vậy là bạn đã tích hợp xong React vào một dự án website đã có sẵn. Công việc tiếp theo thì bạn vẫn code React như bình thường thôi.
 
 ## Bước 1: Thiết lập môi trường JavaScript module hóa
 
