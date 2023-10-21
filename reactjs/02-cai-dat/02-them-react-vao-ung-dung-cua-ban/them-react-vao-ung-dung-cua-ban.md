@@ -8,13 +8,15 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---
 
-Nếu bạn muốn thêm tính năng tương tác vào dự án hiện tại của mình, bạn không cần phải viết lại nó bằng React. Hãy thêm React vào ngăn xếp công nghệ hiện tại của bạn và hiển thị các thành phần React tương tác bất cứ đâu.
+Thông thường chúng ta hay [tạo một dự án ReactJS](/bai-viet/reactjs/khoi-tao-du-an-reactjs) riêng biệt để xây dựng một website hoàn chỉnh.
 
-::alert{type="warning"}
+Tuy nhiên, bạn quên mất rằng, bản chất ReactJS chỉ là một thư viện front end, giúp xây dựng giao diện trang web được đơn giản hơn.
 
-Bạn cần cài đặt Node.js để phát triển cục bộ. Mặc dù bạn có thể thử nghiệm React trực tuyến hoặc bằng một trang HTML đơn giản, nhưng thực tế là hầu hết các công cụ JavaScript mà bạn muốn sử dụng cho phát triển đòi hỏi Node.js.
+Do vậy, xét về khía cạnh tích hợp, việc sử dụng ReactJS hoàn toàn tương tự như cách mà bạn vẫn hay sử dụng các thư viện UI như `bootstrap`, `jQuery`… mà thôi.
 
-::
+Với một dự án rất lớn được xây dựng trên một công nghệ nào đó, ví dụ như `Asp.net`, `Java Spring`, hay `NodeJS`… Trong khi bạn muốn kiểm tra hoặc thêm giao diện cho một tính năng nào đó mà không làm ảnh hưởng tới toàn bộ dự án.
+
+Trong trường hợp này, bạn có thể sử dụng ReactJS để xây dựng giao diện cho tính năng đó mà không ảnh hưởng tới phần còn lại. Thực chất, Reactjs ra đời là để giải quyết những vấn đề như thế này. Nên là, việc tích hợp rất là đơn giản.
 
 ## Sử dụng React cho một phần của trang web hiện tại của bạn
 
