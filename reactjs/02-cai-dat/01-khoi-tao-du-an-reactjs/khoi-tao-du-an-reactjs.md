@@ -8,7 +8,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
 
-Nếu bạn muốn xây dựng một ứng dụng hoặc trang web hoàn toàn bằng React, mình khuyên bạn nên chọn một trong các framework sử dụng React phổ biến trong cộng đồng. Các framework cung cấp các tính năng mà hầu hết các ứng dụng và trang web cần, bao gồm định tuyến (routing), truy xuất dữ liệu và tạo HTML...
+Bạn muốn bắt đầu học ReactJS và tạo dự án đầu tiên của mình? Bài hướng dẫn này là điểm khởi đầu hoàn hảo! Trong bài này, chúng ta sẽ cùng nhau tìm hiểu quy trình khởi tạo dự án ReactJS từ đầu. Chúng ta sẽ chọn một môi trường phát triển và bắt đầu một ứng dụng React đơn giản
 
 ## Thử nghiệm đầu tiên với React Component
 
