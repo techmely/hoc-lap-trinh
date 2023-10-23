@@ -64,12 +64,12 @@ Hãy xem ví dụ sau:
 int main() {
 
     int age = 22;
-    printf ("I am %d year old.", age); // giá trị của biến age sẽ được thay thế vào vị trí %d
+    printf ("I am %d years old.", age); // giá trị của biến age sẽ được thay thế vào vị trí %d
 }
 ```
 
 ::result
-I am 22 year old.
+I am 22 years old.
 ::
 
 Chúng ta cũng xem tiếp một ví dụ khác:
@@ -82,12 +82,12 @@ int main() {
     int age = 22;
     age = 25;
 
-    printf ("I am %d year old.", age); // giá trị của biến age sẽ được thay thế vào vị trí %d
+    printf ("I am %d years old.", age); // giá trị của biến age sẽ được thay thế vào vị trí %d
 }
 ```
 
 ::result
-I am 25 year old.
+I am 25 years old.
 ::
 
 Ở ví dụ này, tuy bạn đã khai báo và gán giá trị cho biến `age = 22` nhưng ngay dòng tiếp theo chúng ta lại gán lại `age = 25` - vì vậy lúc này giá trị của biến `age` sẽ bị ghi đè và mang giá trị mới.

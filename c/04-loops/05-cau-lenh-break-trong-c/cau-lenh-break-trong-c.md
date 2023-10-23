@@ -112,9 +112,9 @@ int main() {
 ```
 
 ::result
-* * * * * *
-* * * * * *
-* * * * * *
+* * * * * * 
+* * * * * * 
+* * * * * * 
 ::
 
 Chúng ta có thể thấy vòng **`for i`** (**`for`** bên ngoài) sẽ chạy 3 lần (từ `0` → `2`). Vòng **`for j`** (**`for`** bên trong) sẽ chạy 6 lần (từ `0` → `5`).
@@ -140,9 +140,9 @@ int main() {
 ```
 
 ::result
-* * *
-* * *
-* * *
+* * * 
+* * * 
+* * * 
 ::
 
 Bạn có thể thấy vòng **`for i`** vẫn chạy 3 lần, **`break`** chỉ kết thúc vòng **`for j`**, nơi nó được viết mã khi thoã màn câu lệnh **`if-else`**.

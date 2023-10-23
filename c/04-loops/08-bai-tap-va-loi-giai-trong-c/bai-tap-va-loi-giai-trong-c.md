@@ -197,7 +197,7 @@ Test case 1
 Enter the number: 12345</br>
 
 OUTPUT:</br>
-Sum of digits in 0 is 15</br>
+Sum of digits in 12345 is 15</br>
 
 ---
 

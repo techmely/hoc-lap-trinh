@@ -43,7 +43,7 @@ Giả sử chúng ta đã khai báo một mảng `number` như trên. Phần t�
 #### Take note
 
 - Mảng có 0 là chỉ mục đầu tiên, không phải 1. Trong ví dụ này, `number[0]` là phần tử đầu tiên.
-- Nếu kích thước của một mảng là `n`, thì để truy cập phần tử cuối cùng, `n-1` chỉ mục được sử dụng. Trong ví dụ này, `number[4]` là phần tử cuối cùng.
+- Nếu kích thước của một mảng là `n`, thì để truy cập phần tử cuối cùng, `n-1` chỉ mục được sử dụng. Trong ví dụ trên, `number[9]` là phần tử cuối cùng.
 
 ## Khởi tạo một mảng trong
 
@@ -76,10 +76,10 @@ Lúc này ta có các giá trị được lưu vào các biến:
 int number[5] = {10, 15, 13, 31, 56};
 
 // thay đổi giá trị phần tử đầu tiên thành -10
-mark[0] = -10;
+number[0] = -10;
 
 // thay đổi giá trị phần tử thứ 4 thành 6
-mark[3] = 6;
+number[3] = 6;
 ```
 
 ## Nhập và xuất các phần tử trong mảng

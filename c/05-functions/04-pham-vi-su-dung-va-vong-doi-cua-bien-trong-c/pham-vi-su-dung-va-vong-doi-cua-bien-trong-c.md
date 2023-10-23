@@ -109,15 +109,15 @@ void display()
 {
     static int a = 1;
     a += 5;
-    printf("%d  ",c);
+    printf("%d  ",a);
 }
 ```
 
 Kết quả:
 
-```cpp
+::result
 6 11
-```
+::
 
 Trong lần gọi hàm đầu tiên, giá trị của `a` được khởi tạo thành 1. Giá trị của nó được tăng lên 5. Bây giờ, giá trị của `a` là 6, được in trên màn hình.
 
