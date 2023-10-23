@@ -10,6 +10,9 @@ position: 1
 
 ReactJS là một thư viện JavaScript phát triển bởi Facebook, được sử dụng rộng rãi để xây dựng giao diện người dùng động và tương tác trong các ứng dụng web. Đây là một công cụ mạnh mẽ cho việc phát triển ứng dụng web động với hiệu suất cao và dễ bảo trì. Bài viết này sẽ giới thiệu bạn vào thế giới của ReactJS, từ các khái niệm cơ bản đến lợi ích và ứng dụng thực tế.
 
+![Giới thiệu về ReactJS](https://github.com/techmely/hoc-lap-trinh/assets/29374426/c6f5af54-dbb0-4c32-8823-d1e3c8d36bd5)
+
+
 ## Lợi ích của việc sử dụng ReactJS
 
 ### Hiệu suất cao

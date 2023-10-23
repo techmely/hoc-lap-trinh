@@ -10,6 +10,8 @@ position: 2
 
 ReactJS là một thư viện JavaScript phát triển bởi Facebook, và đây là lý do tại sao bạn nên học ReactJS. ReactJS đã trở thành một trong những công cụ phát triển giao diện người dùng phổ biến nhất trên thế giới. Hãy khám phá sứ mệnh của ReactJS và các lợi ích mà nó mang lại.
 
+![Tại sao nên học ReactJs](https://github.com/techmely/hoc-lap-trinh/assets/29374426/e747a319-f40d-4481-8728-b8f07e11dad6)
+
 ## Sứ mệnh của ReactJS
 
 ### Tạo giao diện người dùng tương tác
