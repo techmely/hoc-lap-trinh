@@ -34,11 +34,7 @@ Press any key to continue . . .
 
 Sau đây, chúng ta sẽ đi tìm hiểu các thành phần cơ bản bên dưới để giúp bạn bắt đầu với một chương trình C.
 
-<<<<<<< HEAD
-- **`#include <stdio.h>`**
-=======
 **`#include <stdio.h>`**
->>>>>>> main
 
 - Đây được gọi là dòng **khai báo thư viện** cho một chương trình C, `#include` là cú pháp còn tên thư viện sẽ nằm trong cặp dấu `< >`. Một chương trình C cơ bản luôn luôn cần thư viện `stdio.h` - là thư viện cơ bản và cốt lõi nhất.
 - Thư viện là nơi định nghĩa các câu lệnh mà mình sẽ viết bên dưới cho máy tính hiểu và có thể chạy được những gì mình viết.
