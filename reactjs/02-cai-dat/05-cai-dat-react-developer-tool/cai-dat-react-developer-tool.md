@@ -10,6 +10,9 @@ position: 5
 
 React Developer Tools là một công cụ mạnh mẽ giúp bạn kiểm tra, chỉnh sửa các thành phần React, quản lý props và state, cũng như xác định vấn đề về hiệu suất của ứng dụng React của bạn. Trong bài viết này, chúng ta sẽ hướng dẫn bạn cách cài đặt React Developer Tools để sử dụng dễ dàng trong quá trình phát triển ứng dụng React của bạn.
 
+![Cài đặt React Developer Tool](https://github.com/techmely/hoc-lap-trinh/assets/29374426/59a326d1-b2ab-430b-bcc8-8cb6958caa25)
+
+
 ## Bước 1: Cài đặt Tiện ích Mở rộng Trình duyệt
 
 Cách đơn giản và nhanh chóng nhất để gỡ lỗi các trang web được xây dựng bằng React là cài đặt tiện ích mở rộng trình duyệt React Developer Tools. Hiện tại, nó có sẵn cho một số trình duyệt phổ biến như Chrome, Firefox và Edge.
@@ -45,7 +48,6 @@ Nếu bạn đang sử dụng một trình duyệt khác như Safari hoặc mu�
 ### Cài đặt qua `npm`
 
 1. Mở cửa sổ Terminal trên máy tính của bạn.
-
 2. Sử dụng npm hoặc Yarn để cài đặt gói `react-devtools` toàn cục:
 
    ```shell
@@ -76,34 +78,6 @@ Nếu bạn đang sử dụng một trình duyệt khác như Safari hoặc mu�
    ```
 
 3. Lưu lại và tải lại trang web của bạn trong trình duyệt. Trang web sẽ kết nối với React Developer Tools qua cổng 8097.
-
-## Bước 3: Sử dụng React Developer Tools trên Điện thoại Di động (React Native)
-
-React Developer Tools không chỉ hữu ích cho ứng dụng React trên trình duyệt mà còn có thể sử dụng để kiểm tra ứng dụng React Native trên điện thoại di động. Dưới đây là cách cài đặt và sử dụng chúng:
-
-### Đối với ứng dụng React Native trên Điện thoại Di động:
-
-1. Mở cửa sổ Terminal.
-
-2. Sử dụng npm hoặc Yarn để cài đặt gói `react-devtools` toàn cục (nếu bạn chưa cài đặt):
-
-   ```shell
-   # Yarn
-   yarn global add react-devtools
-
-   # npm
-   npm install -g react-devtools
-   ```
-
-3. Khởi động React Developer Tools bằng lệnh sau:
-
-   ```shell
-   react-devtools
-   ```
-
-4. Đảm bảo ứng dụng React Native của bạn đang chạy trên thiết bị hoặc máy ảo.
-
-5. React Developer Tools sẽ tự động kết nối với ứng dụng React Native cục bộ. Bây giờ bạn có thể sử dụng chúng để kiểm tra và gỡ lỗi ứng dụng của mình.
 
 ::alert{type="success"}
 Việc cài đặt React Developer Tools là một bước quan trọng trong quá trình phát triển ứng dụng React của bạn. Nó giúp bạn dễ dàng kiểm tra và gỡ lỗi các thành phần React, theo dõi props và state, và xác định các vấn đề về hiệu suất. Hãy sử dụng công cụ này để nâng cao chất lượng và hiệu suất của ứng dụng React của bạn.
