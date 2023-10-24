@@ -126,7 +126,3 @@ npm start
 ```
 
 Với các bước trên, bạn đã thêm TypeScript vào dự án ReactJS hiện có và có thể bắt đầu viết mã TypeScript trong dự án của mình.
-
-::alert{type="success"}
-Bài này đã giới thiệu các cơ bản của việc sử dụng TypeScript với React, nhưng còn rất nhiều thứ để học.
-::
