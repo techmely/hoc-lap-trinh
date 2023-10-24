@@ -12,9 +12,9 @@ position: 1
 Trước khi đọc bài này, bạn cần [khởi tạo dự án ReactJs](/bai-viet/reactjs/khoi-tao-du-an-reactjs)
 ::
 
-Các thành phần (components) là một trong những khái niệm cốt lõi của React. Chúng là nền tảng trên đó bạn xây dựng giao diện người dùng (UI), chính vì vậy chúng là nơi hoàn hảo để bạn bắt đầu hành trình với React!
+Các `components` là một trong những khái niệm cốt lõi của React. Chúng là nền tảng trên đó bạn xây dựng giao diện người dùng (UI), chính vì vậy `component` là điểm hoàn hảo để bạn bắt đầu hành trình với React!
 
-## Thành phần: Các khối xây dựng giao diện người dùng (UI)
+## Component - các khối xây dựng giao diện người dùng (UI)
 
 Trên web, HTML cho phép chúng ta tạo ra các tài liệu có cấu trúc với bộ các thẻ tích hợp như `<h1>` và `<li>`:
 
@@ -29,29 +29,11 @@ Trên web, HTML cho phép chúng ta tạo ra các tài liệu có cấu trúc v�
 </article>
 ```
 
-Đoạn mã này đại diện cho một bài viết `<article>`, tiêu đề của nó `<h1>`, và một bảng mục lục (rút gọn) dưới dạng danh sách có thứ tự `<ol>`. Markup như thế này, kết hợp với CSS để thiết kế và JavaScript để tạo sự tương tác, là cơ sở của mọi sidebar, avatar, modal, dropdown - mọi phần giao diện người dùng mà bạn thấy trên web.
+Đoạn mã này đại diện cho một bài viết `<article>`, tiêu đề của nó `<h1>`, và một bảng mục lục (rút gọn) dưới dạng danh sách có thứ tự `<ol>`.
 
-React cho phép bạn kết hợp markup, CSS và JavaScript của bạn thành "thành phần" tùy chỉnh, đó là các yếu tố giao diện người dùng có thể tái sử dụng cho ứng dụng của bạn. Đoạn mã bảng mục lục bạn thấy ở trên có thể được chuyển thành một thành phần `<TableOfContents />` mà bạn có thể hiển thị trên mọi trang. Bên trong, nó vẫn sử dụng các thẻ HTML giống như `<article>`, `<h1>`, v.v.
+React cho phép bạn kết hợp markup, CSS và JavaScript của bạn thành `component` tùy chỉnh, đó là các yếu tố giao diện người dùng có thể tái sử dụng cho ứng dụng của bạn. Đoạn mã bảng mục lục bạn thấy ở trên có thể được chuyển thành một thành phần `<TableOfContents />` mà bạn có thể hiển thị trên mọi trang. Bên trong, nó vẫn sử dụng các thẻ HTML giống như `<article>`, `<h1>`, v.v.
 
-Tương tự như các thẻ HTML, bạn có thể sáng tạo, sắp xếp và lồng ghép các thành phần để thiết kế trang web hoàn chỉnh. Ví dụ, trang tài liệu bạn đang đọc được tạo ra từ các thành phần React:
-
-```jsx
-<PageLayout>
-  <NavigationHeader>
-    <SearchBar />
-    <Link to="/docs">Docs</Link>
-  </NavigationHeader>
-  <Sidebar />
-  <PageContent>
-    <TableOfContents />
-    <DocumentationText />
-  </PageContent>
-</PageLayout>
-```
-
-Khi dự án của bạn phát triển, bạn sẽ nhận thấy rằng nhiều thiết kế có thể được tạo bằng cách sử dụng lại các thành phần bạn đã viết, giúp tăng tốc quá trình phát triển. Bảng mục lục của chúng tôi ở trên có thể được thêm vào bất kỳ màn hình nào với `<TableOfContents />`! Bạn thậm chí có thể khởi đầu dự án của bạn với hàng ngàn thành phần được chia sẻ bởi cộng đồng mã nguồn mở React như Chakra UI và Material UI.
-
-## Định nghĩa một thành phần
+## Định nghĩa một component
 
 Truyền thống khi tạo trang web, các nhà phát triển web đánh dấu nội dung của họ và sau đó thêm tính năng tương tác bằng cách trải đều một số mã JavaScript. Điều này hoạt động tốt khi tương tác chỉ là một tính năng bổ sung trên web. Bây giờ, việc tương tác được mong đợi đối với nhiều trang web và tất cả các ứng dụng. React đặt tính tương tác lên hàng đầu trong khi vẫn sử dụng cùng một công nghệ: một thành phần React là một hàm JavaScript bạn có thể nhúng mã markup vào. Dưới đây là cách đó trông như thế nào:
 
