@@ -1,6 +1,6 @@
 ---
 title: "Sử dụng Typescript cho React"
-description: "Sử dụng Typescript cho React"
+description: "TypeScript là một cách phổ biến để thêm các định nghĩa kiểu cho các dự án mã JavaScript, bài này chúng ta sẽ cùng nhau tìm hiểu về typescript và cách sử dụng typescript cho React"
 chapter:
   name: "Cài đặt"
   slug: "chuong-02-cai-dat-reactjs"
@@ -8,208 +8,125 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---
 
-TypeScript là một cách phổ biến để thêm các định nghĩa kiểu cho các dự án mã JavaScript. Mặc định, TypeScript hỗ trợ JSX và bạn có thể có sự hỗ trợ hoàn chỉnh cho React Web bằng cách thêm `@types/react` và `@types/react-dom` vào dự án của bạn.
+TypeScript là một cách phổ biến để thêm các định nghĩa kiểu cho các dự án mã JavaScript, bài này chúng ta sẽ cùng nhau tìm hiểu về typescript và cách sử dụng typescript cho React
 
-## Cài đặt typescript trong React
+![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/8e060b96-bfb5-4b70-867d-3f48292458ab)
 
-Tất cả các framework React chất lượng sản phẩm đều hỗ trợ việc sử dụng TypeScript. Hãy tuân theo hướng dẫn cụ thể của từng framework để cài đặt:
 
-1. Next.js
-2. Remix
-3. Gatsby
-4. Expo
+## Tổng quan về Typecript
 
-### Thêm TypeScript vào dự án React hiện có
+Typecript do Microsoft phát triển ,nó là 1 mã nguồn mở cho lập trình viên phát triển. Là hàng của ông lớn, nên chắc chắn nó phải xịn và được nhiều lập trình viên đón nhận.
 
-Để cài đặt phiên bản mới nhất của định nghĩa kiểu của React:
+Những điểm mạnh của typecript:
 
-```shell
-npm install @types/react @types/react-dom
+- Kế thừa các cú pháp từ javascript nên rất dễ sử dụng hơn các mã nguồn tương tự
+- Ngoài kế thừa từ các phiên bản javascript, nó càng hỗ trợ các cú pháp đặc trưng của hướng đối tượng như interface, class,vv nên rất mạnh mẽ khi apply các design pattern.
+- Được các lib/framework khuyến khích sử dụng(vì bản thân nó cũng được dần chuyển qua viết bằng typescirpt)
+- Những dự án lớn thành công cũng đã áp dụng typescript
+- Một điều nữa là nó hỗ trợ rất tốt khi dùng 1 công cụ là visual code (hàng của microsoft) được nhiều ae frontend sử dụng, hỗ trợ suggest code và báo lỗi cực mạnh khi dùng typescirpt trong công cụ này
+
+Hình dưới đây là các tool hỗ trợ typescipt
+
+![Tổng quan về Typecript](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d80b55af-e450-47b5-9460-dde2efe89be2)
+
+## Lợi ích của việc sử dụng Typescript với React
+
+Bạn vẫn có thể tự hỏi, "nhưng tại sao tôi nên sử dụng Typecript cho một dự án React.js?" . Hãy phân tích các lợi ích của Typescript và chỉ ra cách nó giúp cho việc phát triển frontend React dễ dàng hơn.
+
+- **Gợi ý mã**: Loại chỉ định cung cấp các đề xuất và tùy chọn trong khi bạn nhập. Điều này giúp tiết kiệm rất nhiều công sức và giúp một nhà phát triển mới sử dụng mã nguồn của bạn dễ dàng hơn. Các đề xuất mã này ngăn chặn thời gian lãng phí, dễ dàng giao tiếp nhóm và làm cho cơ sở mã của bạn nhất quán hơn.
+- **Khả năng đọc và xác thực**: Vì Typecript là một hệ thống được định kiểu tĩnh, bạn có thể thêm các kiểu vào các biến, hàm và thuộc tính, làm cho mã của bạn dễ đọc hơn rất nhiều. Typecript cũng dùng để loại bỏ PropTypes của React, điều này giúp cho việc phát triển React dễ dàng hơn.
+- **Bắt lỗi sớm hơn và IntelliSense**: Một trong những tính năng được yêu thích nhất của Typescript là khả năng đánh dấu lỗi ngay khi chúng xuất hiện. Typecript hiển thị cho bạn các lỗi trước khi bạn chạy mã, tiết kiệm hàng giờ đồng hồ để sửa lỗi hoặc nhầm lẫn sớm.
+- **Duy trì và tái cấu trúc mã chính xác**: Khi cơ sở mã của một ứng dụng React phát triển, nó có thể trở nên quá khó khăn để đọc, chia sẻ hoặc duy trì. Việc điều hướng các cơ sở mã này có thể tẻ nhạt và việc cấu trúc lại mã rất rủi ro. Typecript thực sự giúp bạn cấu trúc lại mã và ngăn lỗi chính tả, giúp việc duy trì và cập nhật dễ dàng hơn nhiều mà không thay đổi bất kỳ hành vi nào của nó.
+- **Cải thiện việc sử dụng JavaScript**: Typescript tích hợp hoàn toàn với JavaScript và sử dụng các tính năng mới nhất có sẵn cho nhà phát triển JavaScript. Các dự án React được xây dựng bằng biên dịch Typecript thành một phiên bản JavaScript chạy trên bất kỳ trình duyệt nào.
+
+## Hướng dẫn tạo dự án ReactJS mới sử dụng TypeScript
+
+Trước hết, bạn cần cài đặt Node.js và npm (Node Package Manager) trên máy tính của mình. Sau khi đã cài đặt thành công Node.js và npm, bạn có thể bắt đầu tạo một dự án ReactJS mới sử dụng TypeScript.
+
+### Bước 1: Tạo dự án ReactJS mới với Create React App
+
+Create React App là một công cụ giúp bạn nhanh chóng tạo dự án ReactJS với cấu hình mặc định. Để tạo dự án mới, mở terminal và thực hiện lệnh sau:
+
+```bash
+npx create-react-app ten-du-an --template typescript
 ```
 
-Các tùy chọn biên dịch sau cần phải được thiết lập trong tệp `tsconfig.json` của bạn:
+- `ten-du-an` là tên dự án của bạn. Bạn có thể thay thế nó bằng tên dự án mong muốn.
 
-- `dom` phải được bao gồm trong `lib` (Lưu ý: Nếu không có tùy chọn `lib` được chỉ định, `dom` sẽ được bao gồm mặc định).
-- `jsx` phải được đặt thành một trong các tùy chọn hợp lệ. `preserve` có thể là đủ cho hầu hết các ứng dụng. Nếu bạn đang xuất bản một thư viện, hãy tìm hiểu tài liệu về `jsx` để biết giá trị nào phù hợp.
+Lệnh trên sẽ tạo một thư mục mới với tên dự án của bạn và cấu hình sẵn TypeScript cho dự án ReactJS.
 
-## TypeScript với Các Thành Phần React
+### Bước 2: Khám phá dự án
 
-Lưu ý: Mọi tệp chứa JSX phải sử dụng phần mở rộng tệp .tsx. Đây là một phần mở rộng cụ thể cho TypeScript để nó biết tệp này chứa JSX.
+Sau khi tạo dự án, hãy di chuyển vào thư mục dự án:
 
-Việc viết TypeScript với React rất giống việc viết JavaScript với React. Sự khác biệt chính khi làm việc với một thành phần là bạn có thể cung cấp kiểu cho các thuộc tính của thành phần của bạn. Các kiểu này có thể được sử dụng để kiểm tra tính chính xác và cung cấp tài liệu trực tiếp trong trình soạn thảo.
-
-Ví dụ, với thành phần MyButton từ Hướng dẫn Nhanh, chúng ta có thể thêm một kiểu mô tả tiêu đề cho nút:
-
-```jsx
-function MyButton({ title }: { title: string }) {
-  return <button>{title}</button>;
-}
-
-export default function MyApp() {
-  return (
-    <div>
-      <h1>Welcome to my app</h1>
-      <MyButton title="I'm a button" />
-    </div>
-  );
-}
+```bash
+cd ten-du-an
 ```
 
-Kiểu mô tả cho các props của thành phần của bạn có thể đơn giản hoặc phức tạp tùy thuộc vào nhu cầu của bạn, nhưng chúng nên là kiểu đối tượng được mô tả bằng kiểu dữ liệu hoặc giao diện.
+Trong thư mục này, bạn sẽ thấy cấu trúc dự án ReactJS chuẩn với TypeScript đã được thiết lập sẵn. Bạn có thể bắt đầu phát triển ứng dụng của mình trong các thư mục và tệp tin tương ứng.
 
-## Ví dụ về Các Hooks
+### Bước 3: Chạy ứng dụng
 
-Các định nghĩa kiểu từ `@types/react` bao gồm các kiểu cho các hooks tích hợp, vì vậy bạn có thể sử dụng chúng trong các thành phần của bạn mà không cần cài đặt thêm.
+Để chạy ứng dụng ReactJS, sử dụng lệnh sau:
 
-**useState:** Hook useState sẽ tái sử dụng giá trị được truyền vào làm trạng thái ban đầu để
-
-xác định kiểu của giá trị đó. Ví dụ:
-
-```jsx
-// Xác định kiểu là "boolean" tự động
-const [enabled, setEnabled] = useState(false);
+```bash
+npm start
 ```
 
-Nếu bạn muốn cung cấp một kiểu tường minh cho trạng thái, bạn có thể làm như sau:
+Ứng dụng sẽ khởi động và mở trình duyệt mặc định của bạn, hiển thị ứng dụng ReactJS của bạn tại địa chỉ `http://localhost:3000`.
 
-```jsx
-// Xác định kiểu tường minh là "boolean"
-const [enabled, setEnabled] = useState < boolean > false;
+## Hướng dẫn thêm TypeScript vào dự án ReactJS hiện có
+
+Nếu bạn đã có một dự án ReactJS và muốn thêm TypeScript vào nó, bạn có thể thực hiện các bước sau:
+
+### Bước 1: Cài đặt TypeScript
+
+Trước hết, bạn cần cài đặt TypeScript bằng lệnh:
+
+```bash
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
 ```
 
-Điều này có ích khi bạn muốn định kiểu cho một kiểu hợp nhất hoặc mô tả các trạng thái khác nhau của một thành phần.
+### Bước 2: Tạo tệp `tsconfig.json`
 
-**useReducer:** Hook useReducer phức tạp hơn và yêu cầu bạn định kiểu cho trạng thái ban đầu. Ví dụ:
+Sau khi cài đặt TypeScript, bạn cần tạo một tệp `tsconfig.json` để cấu hình TypeScript cho dự án. Sử dụng lệnh sau:
 
-```jsx
-import { useReducer } from "react";
+```bash
+npx tsc --init
+```
 
-interface State {
-  count: number;
-}
+### Bước 3: Đổi tên tệp JS sang TS
 
-type CounterAction =
-  | { type: "reset" }
-  | { type: "setCount", value: State["count"] };
+Hãy đảm bảo rằng bạn đổi tên các tệp JavaScript hiện có trong dự án thành các tệp TypeScript bằng cách đổi đuôi tệp `.js` thành `.tsx`.
 
-const initialState: State = { count: 0 };
+### Bước 4: Chỉnh sửa tệp `tsconfig.json`
 
-function stateReducer(state: State, action: CounterAction): State {
-  switch (action.type) {
-    case "reset":
-      return initialState;
-    case "setCount":
-      return { ...state, count: action.value };
-    default:
-      throw new Error("Unknown action");
+Mở tệp `tsconfig.json` và chỉnh sửa các tùy chọn cấu hình theo nhu cầu của bạn, ví dụ:
+
+```json
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   }
 }
-
-export default function App() {
-  const [state, dispatch] = useReducer(stateReducer, initialState);
-
-  const addFive = () => dispatch({ type: "setCount", value: state.count + 5 });
-  const reset = () => dispatch({ type: "reset" });
-
-  return (
-    <div>
-      <h1>Welcome to my counter</h1>
-
-      <p>Count: {state.count}</p>
-      <button onClick={addFive}>Add 5</button>
-      <button onClick={reset}>Reset</button>
-    </div>
-  );
-}
 ```
 
-**useContext:** Hook useContext là một kỹ thuật để truyền dữ liệu xuống cây thành phần mà không cần truyền props qua các thành phần. Kiểu của giá trị được cung cấp bởi context sẽ được suy luận từ giá trị được chuyển vào hàm createContext.
+### Bước 5: Chạy dự án
 
-```jsx
-import { createContext, useContext, useState } from "react";
+Sử dụng lệnh để chạy dự án:
 
-type Theme = "light" | "dark" | "system";
-const ThemeContext = createContext < Theme > "system";
-
-const useGetTheme = () => useContext(ThemeContext);
-
-export default function MyApp() {
-  const [theme, setTheme] = useState < Theme > "light";
-
-  return (
-    <ThemeContext.Provider value={theme}>
-      <MyComponent />
-    </ThemeContext.Provider>
-  );
-}
-
-function MyComponent() {
-  const theme = useGetTheme();
-
-  return (
-    <div>
-      <p>Current theme: {theme}</p>
-    </div>
-  );
-}
+```bash
+npm start
 ```
 
-**useMemo và useCallback:** Hook useMemo và useCallback cho phép bạn tạo/mở lại giá trị được ghi nhớ từ cuộc gọi hàm, chạy lại hàm chỉ khi các phụ thuộc truyền vào dưới dạng tham số thứ hai thay đổi. Kết quả từ cuộc gọi hook này được suy luận từ giá trị trả về từ hàm trong tham số đầu tiên. Bạn có thể làm cho việc định kiểu tường minh hơn bằng cách cung cấp một kiểu thông qua tham số cho hook.
-
-Ví dụ:
-
-```jsx
-// Xác định kiểu của visibleTodos từ kết quả trả về của filterTodos
-const visibleTodos = useMemo(() => filterTodos(todos, tab), [todos, tab]);
-
-// Xác định kiểu của handleClick từ tham số của React.ChangeEvent<HTMLInputElement>
-const handleClick =
-  useCallback <
-  React.ChangeEventHandler <
-  HTMLInputElement >>
-    ((event) => {
-      // ...
-    },
-    [todos]);
-```
-
-## Các Kiểu Hữu Ích
-
-Có một loạt các kiểu định nghĩa từ gói `@types/react`, và nó rất đáng đọc khi bạn đã thoải mái với cách React và TypeScript tương tác. Bạn có thể tìm thấy chúng trong thư mục React trong DefinitelyTyped. Dưới đây là một số ví dụ về các kiểu phổ biến hơn.
-
-**Sự kiện DOM (DOM Events):** Khi làm việc với các sự kiện DOM trong React, loại sự kiện có thể được suy luận từ bộ xử lý sự kiện. Tuy nhiên, khi bạn muốn trích xuất một hàm để truyền vào một bộ xử lý sự kiện, bạn cần thiết lập kiểu của sự kiện một cách tường minh.
-
-```jsx
-import { useState } from "react";
-
-export default function Form() {
-  const [value, setValue] = useState("Change me");
-
-  function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
-    setValue(event.currentTarget.value);
-  }
-
-  return (
-    <>
-      <input value={value} onChange={handleChange} />
-      <p>Value: {value}</p>
-    </>
-  );
-}
-```
-
-**Children:** Có hai cách thường được sử dụng để mô tả children của một thành phần. Cách đầu tiên là sử dụng kiểu `React.ReactNode`, đây là một liên minh của tất cả các kiểu có thể được truyền làm children trong JSX. Cách thứ hai là sử dụng kiểu `React.ReactElement`, đây chỉ là các phần tử JSX và không phải là các nguyên thủy JavaScript như chuỗi hoặc số.
-
-**Style Props:** Khi sử dụng kiểu dạng nội tuyến trong React, bạn có thể sử dụng `React.CSSProperties` để mô tả đối tượng được truyền vào prop style. Kiểu này là một liên minh của tất cả các thuộc tính CSS có thể được sử dụng và là một cách tốt để đảm bảo bạn đang truyền các thuộc tính CSS hợp lệ vào prop style và có được tính năng tự động hoàn chỉnh trong trình soạn thảo.
-
-```jsx
-interface MyComponentProps {
-  style: React.CSSProperties;
-}
-```
+Với các bước trên, bạn đã thêm TypeScript vào dự án ReactJS hiện có và có thể bắt đầu viết mã TypeScript trong dự án của mình.
 
 ::alert{type="success"}
-
-Bài này đã giới thiệu các cơ bản của việc sử dụng TypeScript với React, nhưng còn rất nhiều thứ để học. Trang tài liệu chính thức của TypeScript, Handbook, bao gồm hướng dẫn về hầu hết các tính năng quan trọng của ngôn ngữ TypeScript.
-
+Bài này đã giới thiệu các cơ bản của việc sử dụng TypeScript với React, nhưng còn rất nhiều thứ để học.
 ::
