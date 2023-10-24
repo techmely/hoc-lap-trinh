@@ -8,6 +8,10 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
 
+::alert{type="warning"}
+Trước khi đọc bài này, bạn cần [khởi tạo dự án ReactJs](/bai-viet/reactjs/khoi-tao-du-an-reactjs)
+::
+
 Các thành phần (components) là một trong những khái niệm cốt lõi của React. Chúng là nền tảng trên đó bạn xây dựng giao diện người dùng (UI), chính vì vậy chúng là nơi hoàn hảo để bạn bắt đầu hành trình với React!
 
 ## Thành phần: Các khối xây dựng giao diện người dùng (UI)
