@@ -40,32 +40,39 @@ Annotation `@Autowired` cho biết Spring Boot nên tự động inject bean tư
 public class Girl {
     @Autowired
     Outfit outfit;
+}
+```
 
+Annotation `@Autowired` cũng có thể được sử dụng trên constructor hoặc method, thay vì thuộc tính, để Spring Boot tự động inject các dependency vào Class đã gọi. Ví dụ:
+
+```java
+@Component
+public class Girl {
+    Outfit outfit;
+
+    @Autowired
     public Girl(Outfit outfit) {
         this.outfit = outfit;
     }
 }
 ```
 
-Tuy nhiên, quá trình này yêu cầu rằng class phải có constructor hoặc setter cho thuộc tính cần inject.
-
-Nếu bạn không cung cấp constructor hoặc setter, bạn sẽ nhận được một lỗi. Ví dụ:
-
 ```java
 @Component
 public class Girl {
-    @Autowired
     Outfit outfit;
 
-    public Girl() { }
+    public Girl() { 
 
+    @Autowired
     public void setOutfit(Outfit outfit) {
         this.outfit = outfit;
     }
 }
 ```
 
-Annotation `@Autowired` cũng có thể được sử dụng trên method, thay vì thuộc tính, để Spring Boot tự động inject các dependency vào method tương ứng.
+Tuy nhiên, nếu bạn sử dụng constructor hoặc setter để tiêm phụ thuộc, `@Autowired` không bắt buộc.
+Spring IoC Container tự động hiểu cách tiêm phụ thuộc vào constructor mà không cần @Autowired. Tuy nhiên, sử dụng @Autowired trên constructor/setter làm cho mã nguồn rõ ràng hơn và dễ đọc hơn.
 
 ## Vấn đề của `@Autowired` trong Spring Boot
 
