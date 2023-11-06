@@ -41,24 +41,9 @@ This is result content
 
 <img width="1666" alt="Kết quả" src="https://user-images.githubusercontent.com/29374426/175781031-a63f0e31-72c8-476f-b380-f666550c85c1.png">
 
-## Contributor
-
-<table>
-  <tr>
-    <td align="center"><a href="https://www.facebook.com/thaycacac/"><img src="https://avatars.githubusercontent.com/u/29374426?v=4" width="100px;" alt=""/><br /><sub><b>Thaycacac</b></sub></a></td>
-    <td align="center"><a href="https://github.com/AnhBDHE151175"><img src="https://avatars.githubusercontent.com/u/97071021?v=4" width="100px;" alt=""/><br /><sub><b>Duc Anh</b></sub></a></td>
-    <td align="center"><a href="https://github.com/tonyhoang2001"><img src="https://avatars.githubusercontent.com/u/97163071?v=4" width="100px;" alt=""/><br /><sub><b>Tony Hoang</b></sub></a></td>
-    <td align="center"><a href="https://github.com/AnthonyKhieu"><img src="https://avatars.githubusercontent.com/u/86510312?v=4" width="100px;" alt=""/><br /><sub><b>AnthonyKhieu</b></sub></a></td>
-    <td align="center"><a href="https://github.com/phanduc0908"><img src="https://avatars.githubusercontent.com/u/29729545?v=4" width="100px;" alt=""/><br /><sub><b>Phan Van Duc</b></sub></a></td>
-    <td align="center"><a href="https://github.com/luutu868"><img src="https://avatars.githubusercontent.com/u/86488558?v=4" width="100px;" alt=""/><br /><sub><b>luutu868</b></sub></a></td>
-    <td align="center"><a href="https://github.com/kieuminhduc01"><img src="https://avatars.githubusercontent.com/u/50008521?v=4" width="100px;" alt=""/><br /><sub><b>Kieu Duc</b></sub></a></td>
-    <td align="center"><a href="https://github.com/thanh-huong"><img src="https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-1/285500332_2228558547310053_3709849046467668096_n.jpg?stp=c88.0.480.480a_dst-jpg_p480x480&_nc_cat=109&ccb=1-7&_nc_sid=7206a8&_nc_ohc=joKa676FfPYAX_Ovdv9&_nc_ht=scontent.fhan5-9.fna&oh=00_AfCumAyQGIjtkxLaKD7m38PhKyKUdSGqj3-p8ZPToEZ7jQ&oe=64137D4E" width="100px;" alt=""/><br /><sub><b>Thanh Huong</b></sub></a></td>
-  </tr>
-</table>
-
 ## Documentation
 
-[Documentation](https://kungfutech.edu.vn/huong-dan-dong-gop)
+[Documentation](https://kungfutech.edu.vn/blog/huong-dan-dong-gop)
 
 ## 🔗 Links
 
