@@ -14,6 +14,8 @@ Trước khi đọc bài này, bạn cần [khởi tạo dự án ReactJs](/bai-
 
 ReactJS là một thư viện JavaScript phổ biến được sử dụng để xây dựng giao diện người dùng (UI) tương tác. Trong bài viết này, chúng ta sẽ tạo một ứng dụng đơn giản sử dụng ReactJS để hiển thị danh sách công việc.
 
+![Ứng dụng đầu tiên với ReactJs](https://github.com/techmely/hoc-lap-trinh/assets/29374426/d42aeace-486f-460d-a1ac-4c605cf62d7a)
+
 ## Bước 1: Chuẩn Bị Môi Trường
 
 Đầu tiên, hãy chắc chắn bạn đã cài đặt Node.js trên máy tính của mình. Sau đó, sử dụng npm để cài đặt Create React App, công cụ giúp chúng ta nhanh chóng khởi tạo một dự án React.
