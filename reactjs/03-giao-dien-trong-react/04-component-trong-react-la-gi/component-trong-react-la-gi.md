@@ -1,6 +1,6 @@
 ---
 title: "Component trong React là gì?"
-description: "Component (các thành phần) là một trong những khái niệm cốt lõi của React. Chúng là nền tảng để bạn xây dựng giao diện người dùng (UI), điều này biến chúng trở thành nơi tuyệt vời để bạn bắt đầu hành trình với React!"
+description: "Component (thành phần) là một trong những khái niệm cốt lõi của React. Chúng là nền tảng để bạn xây dựng giao diện người dùng (UI), điều này biến chúng trở thành nơi tuyệt vời để bạn bắt đầu hành trình với React!"
 chapter:
   name: "Giao diện trong Reactjs"
   slug: "chuong-03-giao-dien-trong-reactjs"
@@ -20,17 +20,21 @@ Phần Google Custom Search, thanh điều hướng, thanh bên, danh sách các
 
 Khi dự án phát triển, bạn sẽ nhận thấy rằng nhiều phần thiết kế có thể tái sử dụng component bạn đã viết, giúp tăng tốc quá trình phát triển.
 
-## Định Nghĩa Một Component
+## Component trong React là gì?
 
-Truyền thống khi tạo trang web, các nhà phát triển web đánh dấu nội dung của họ sau đó thêm tính năng tương tác thông qua JavaScript. Điều này hoạt động tốt khi tương tác chỉ là một lợi ích thêm vào trang web. Nhưng bây giờ nó được mong đợi trong nhiều trang web và tất cả các ứng dụng. React đặt tính tương tác lên hàng đầu trong khi vẫn sử dụng cùng một công nghệ: một React component là một hàm JavaScript mà bạn có thể nhúng mã markup vào. Dưới đây là ví dụ (bạn có thể chỉnh sửa ví dụ dưới đây):
+Components là những thành phần giao diện (UI) được định nghĩa độc lập, có thể tái sử sụng và hoàn toàn tách biệt nhau.
+
+Chúng ta có thể hiểu component là một hàm trong javascript. Chúng nhận bất kỳ đầu vào nào (hay còn gọi là “props“) và trả về các React elements thể hiện những gì được hiển thị trên trình duyệt. Vì vậy, việc sử dụng và chia nhỏ component hiệu quả sẽ giúp các lập trình viên trở nên chuyên nghiệp và giúp xây dựng một application tốt hơn.
+
+## Các bước tạo component trong React
+
+Dưới đây là các bước giúp tạo tạo một component trong React (ở đây là component `Profile`)
 
 ```javascript
 export default function Profile() {
   return <img src="https://i.imgur.com/MK3eW3Am.jpg" alt="Katherine Johnson" />;
 }
 ```
-
-Và đây là cách xây dựng một component:
 
 ### Bước 1: Xuất Component
 
@@ -70,7 +74,7 @@ Lưu ý: mà không có dấu ngoặc đơn, bất kỳ mã nào trên các dòn
 
 ## Sử Dụng Một Component
 
-Bây giờ khi bạn đã định nghĩa component Profile của mình, bạn có thể lồng nó vào bên trong các component khác. Ví dụ, bạn có thể xuất một component Gallery sử dụng nhiều component Profile:
+Bây giờ khi bạn đã định nghĩa component `Profile` của mình, bạn có thể lồng nó vào bên trong các component khác. Ví dụ, bạn có thể xuất một component Gallery sử dụng nhiều component Profile:
 
 ```javascript
 function Profile() {
@@ -92,8 +96,8 @@ export default function Gallery() {
 Nhìn vào trình duyệt, hãy chú ý đến sự khác biệt về kiểu chữ:
 
 - `<section>` viết thường, vì vậy React biết rằng chúng ta đang đề cập đến một thẻ HTML.
-- `<Profile />` bắt đầu bằng chữ cái viết hoa, vì vậy React biết rằng chúng ta muốn sử dụng component của mình có tên là Profile.
-- Và Profile chứa thậm chí nhiều HTML hơn: `<img />`. Cuối cùng, đây là điều trình duyệt thấy:
+- `<Profile />` bắt đầu bằng chữ cái viết hoa, vì vậy React biết rằng chúng ta muốn sử dụng component của mình có tên là `Profile`.
+- Và `Profile` chứa thậm chí nhiều HTML hơn: `<img />`. Cuối cùng, đây là điều trình duyệt thấy:
 
 ```html
 <section>
@@ -104,11 +108,11 @@ Nhìn vào trình duyệt, hãy chú ý đến sự khác biệt về kiểu ch�
 </section>
 ```
 
-## Lồng Và Tổ Chức Các Component
+## Lồng và tổ chức các component
 
-Các component là các hàm JavaScript thông thường, vì vậy bạn có thể chứa nhiều component trong cùng một tệp. Điều này tiện lợi khi các component tương đối nhỏ hoặc liên quan chặt chẽ đến nhau. Nếu tệp trở nên đông đúc, bạn luôn có thể di chuyển component Profile của mình vào một tệp riêng. Bạn sẽ học cách làm điều này sớm trong phần về nhập.
+Các component là các hàm JavaScript thông thường, vì vậy bạn có thể chứa nhiều component trong cùng một tệp. Điều này tiện lợi khi các component tương đối nhỏ hoặc liên quan chặt chẽ đến nhau.
 
-Bởi vì các component Profile được render bên trong Gallery - thậm chí có thể là nhiều lần! - chúng ta có thể nói rằng Gallery là một component cha, render từng Profile như một "con". Điều này là một phần của ma thuật của React: bạn có thể định nghĩa một component một lần, và sau đó sử dụng nó ở bất kỳ đâu và bất kỳ khi nào bạn muốn.
+Bởi vì các component `Profile` được render bên trong `Gallery` - thậm chí có thể là nhiều lần! - chúng ta có thể nói rằng `Gallery` là một component cha, render từng `Profile` như một component "con".
 
 ::alert{type="warning"}
 Các component có thể render các component khác, nhưng bạn không bao giờ nên lồng định nghĩa của chúng:
@@ -136,7 +140,3 @@ function Profile() {
   // ...
 }
 ```
-
-::alert{type="warning"}
-Lưu ý: khi một component con cần một số dữ liệu từ một component cha, hãy truyền nó qua props thay vì lồng định nghĩa.
-::
