@@ -10,6 +10,8 @@ position: 5
 
 Trong React, **props** được sử dụng để truyền thông tin giữa các [component](/bai-viet/reactjs/component-trong-react-la-gi). Mọi component cha có thể truyền thông tin đến các component con của nó bằng cách cung cấp chúng `props`. Props có thể khiến bạn liên tưởng đến các thuộc tính HTML, nhưng bạn có thể truyền bất kỳ giá trị JavaScript nào thông qua chúng, bao gồm các đối tượng, mảng và hàm.
 
+![Prop và cách truyền prop vào component trong React](https://github.com/techmely/hoc-lap-trinh/assets/29374426/fe8735ba-ad19-49de-8ce9-46a68b22aca7)
+
 ## Props trong React là gì?
 
 Props là tham số đầu vào của các component trong React. Props là một trong những khái niệm cực kỳ quan trọng của React.
