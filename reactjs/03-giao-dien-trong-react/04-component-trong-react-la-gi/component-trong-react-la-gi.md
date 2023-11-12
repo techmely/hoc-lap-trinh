@@ -36,7 +36,7 @@ export default function Profile() {
 }
 ```
 
-### Bước 1: Xuất Component
+### Bước 1: Xuất component
 
 Tiền tố `export default` là một cú pháp JavaScript tiêu chuẩn (không riêng cho React). Nó cho phép bạn đánh dấu hàm chính trong một tệp để sau đó bạn có thể nhập nó từ các tệp khác.
 
@@ -72,7 +72,7 @@ return (
 Lưu ý: mà không có dấu ngoặc đơn, bất kỳ mã nào trên các dòng sau `return` sẽ bị bỏ qua!
 ::
 
-## Sử Dụng Một Component
+## Cách sử dụng một component trong React
 
 Bây giờ khi bạn đã định nghĩa component `Profile` của mình, bạn có thể lồng nó vào bên trong các component khác. Ví dụ, bạn có thể xuất một component Gallery sử dụng nhiều component Profile:
 
