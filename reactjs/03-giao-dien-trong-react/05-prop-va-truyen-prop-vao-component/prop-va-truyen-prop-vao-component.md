@@ -1,6 +1,6 @@
 ---
 title: "Prop và cách truyền prop vào component trong React"
-description: "Prop và cách truyền prop vào component trong React"
+description: "Props là tham số đầu vào của các component trong React. Props là một trong những khái niệm cực kỳ quan trọng của React"
 chapter:
   name: "Giao diện trong Reactjs"
   slug: "chuong-03-giao-dien-trong-reactjs"
@@ -8,47 +8,75 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 5
 ---
 
-Trong React, **props** (viết tắt của _properties_) được sử dụng để truyền thông tin giữa các component. Mọi component cha có thể truyền thông tin đến các component con của nó bằng cách cung cấp chúng props. Props có thể khiến bạn liên tưởng đến các thuộc tính HTML, nhưng bạn có thể truyền bất kỳ giá trị JavaScript nào thông qua chúng, bao gồm các đối tượng, mảng và hàm.
+Trong React, **props** được sử dụng để truyền thông tin giữa các [component](/bai-viet/reactjs/component-trong-react-la-gi). Mọi component cha có thể truyền thông tin đến các component con của nó bằng cách cung cấp chúng `props`. Props có thể khiến bạn liên tưởng đến các thuộc tính HTML, nhưng bạn có thể truyền bất kỳ giá trị JavaScript nào thông qua chúng, bao gồm các đối tượng, mảng và hàm.
 
-## Props Quen Thuộc
+# Props trong React là gì?
 
-Props là thông tin bạn truyền vào một thẻ JSX. Ví dụ, `className`, `src`, `alt`, `width` và `height` là một số props bạn có thể truyền vào một thẻ `<img>`:
+Props là tham số đầu vào của các component trong React. Props là một trong những khái niệm cực kỳ quan trọng của React.
 
-```javascript
-function Avatar() {
-  return (
-    <img
-      className="avatar"
-      src="https://i.imgur.com/1bX5QH6.jpg"
-      alt="Lin Lanying"
-      width={100}
-      height={100}
-    />
-  );
+Liên tưởng đơn giản, props trong React chính là các thuộc tính trong HTML. Điểm khác biệt ở đây là chúng ta có thể tự định nghĩa những thuộc tính đó, thay vì với HTML, các thuộc tính được định nghĩa sẵn.
+
+```jsx
+const App = () => {
+	const x = 1;
+	const y = 2;
+	return (
+		<div>
+			<Sum a={x} b={y} />
+		</div>
+	)
 }
 
+const Sum = (props) => {
+	console.log(props) // {a: 1, b: 2}
+
+	return <div>The value is: {props.a + props.b}</div>
+}
+```
+
+Props có thể nhận giá trị thuộc tất cả các kiểu dữ liệu trong Javascript. Props chính là phương tiện để lưu chuyển dữ liệu bên trong React.
+
+Props hoàn toàn do chúng ta tự định nghĩa. Các `components` do chúng ta định nghĩa không hiểu được các giá trị thuộc tính HTML như `src`, `id`, `className`. Chúng đơn thuần là các key trong một object props. Chúng ta sẽ cần gán lại cho các thẻ HTML tương ứng bên trong component.
+
+```jsx
+const App = () => {
+	return (
+		<div>
+			<NameCard className="name-card" id="alice" />
+		</div>
+	)
+}
+
+const NameCard = (props) => {
+	return (
+		<div className={props.className}>
+			<div id={props.id}>Name: Alice</div>
+		</div>
+	)
+}
+```
+
+Props là `read-only`, nghĩa là chúng ta **không thể thay đổi** được giá trị props bên trong một component.
+
+::alert{type="infor"}
+📌 **Tầm quan trọng của props trong React**: props cho phép tạo ra các Component có khả năng tái sử dụng cao. Thay vì dữ liệu được hard-coded bên trong component, props cho phép component có thể nhận được dữ liệu đầu vào mỗi lần sử dụng nó. Đây chính là công cụ để kết nối các component lại với nhau. Vì vậy, props cho phép ứng dụng được chia nhỏ thành nhiều phần.
+::
+
+## Truyền props vào một component
+
+Trong đoạn code này, component `Profile` không truyền bất kỳ props nào vào component con của nó, `Avatar`:
+
+```javascript
 export default function Profile() {
   return <Avatar />;
 }
 ```
 
-Các props bạn có thể truyền vào thẻ `<img>` đã được định nghĩa trước (ReactDOM tuân thủ theo tiêu chuẩn HTML). Tuy nhiên, bạn có thể truyền bất kỳ props nào vào các component của bạn, chẳng hạn như `<Avatar>`, để tùy chỉnh chúng.
+Bạn có thể truyền các props vào `Avatar` theo hai bước.
 
-## Truyền Props Vào Một Component
+### Bước 1: Truyền props từ component cha vào component con
 
-Trong đoạn mã này, component Profile không truyền bất kỳ props nào vào component con của nó, Avatar:
-
-```javascript
-export default function Profile() {
-  return <Avatar />;
-}
-```
-
-Bạn có thể truyền các props vào Avatar theo hai bước.
-
-### Bước 1: Truyền props vào component con
-
-Đầu tiên, hãy truyền một số props vào Avatar. Ví dụ, hãy truyền hai props: person (một đối tượng) và size (một con số):
+Đầu tiên, hãy truyền một số `props` vào `Avatar`. Ví dụ, hãy truyền hai props: **person (một đối tượng)** và **size (một con số)**:
 
 ```javascript
 export default function Profile() {
@@ -58,11 +86,13 @@ export default function Profile() {
 }
 ```
 
-Lưu Ý: Nếu cặp dấu ngoặc nhọn kép sau person= làm bạn bối rối, hãy nhớ rằng chúng chỉ là một đối tượng bên trong các dấu ngoặc nhọn JSX.
+::alert{type="warning"}
+Lưu ý: Nếu cặp dấu ngoặc nhọn kép sau `person=` làm bạn bối rối, hãy nhớ rằng chúng chỉ là một đối tượng bên trong các dấu ngoặc nhọn JSX.
+::
 
 ### Bước 2: Đọc props bên trong component con
 
-Bạn có thể đọc các props này bằng cách liệt kê tên của chúng, ví dụ: person và size, được ngăn cách bằng dấu phẩy trong ({ và }) ngay sau hàm Avatar. Điều này cho phép bạn sử dụng chúng bên trong mã của component Avatar, giống như bạn thao tác với biến.
+Bạn có thể đọc các props này bằng cách liệt kê tên của chúng, ví dụ: `person` và `size`, được ngăn cách bằng dấu phẩy trong `({ và })` ngay sau hàm `Avatar`. Điều này cho phép bạn sử dụng chúng bên trong mã của component `Avatar`, giống như bạn thao tác với biến.
 
 ```javascript
 function Avatar({ person, size }) {
@@ -70,9 +100,7 @@ function Avatar({ person, size }) {
 }
 ```
 
-Thêm một số logic vào Avatar sử dụng các props person và size để render, và bạn đã xong.
-
-Bây giờ bạn có thể cấu hình Avatar để render theo nhiều cách khác nhau với các props khác nhau. Hãy thử điều chỉnh các giá trị!
+Thêm một số logic vào `Avatar` sử dụng các `props` **person** và **size** để render. Bây giờ bạn có thể cấu hình `Avatar` để render theo nhiều cách khác nhau với các `props` khác nhau. Hãy thử điều chỉnh các giá trị!
 
 ```javascript
 import { getImageUrl } from "./utils.js";
@@ -119,37 +147,6 @@ export default function Profile() {
 ```
 
 Props cho phép bạn suy nghĩ về các component cha và con độc lập. Ví dụ, bạn có thể thay đổi props person hoặc size bên trong Profile mà không cần suy nghĩ về cách Avatar sử dụng chúng. Tương tự, bạn có thể thay đổi cách Avatar sử dụng các props này mà không cần xem xét Profile.
-
-Bạn có thể xem props như "núm điều chỉnh" bạn có thể điều chỉnh. Chúng phục vụ cùng một vai trò như đối số phục vụ cho các hàm - thực ra, props là đối số duy nhất cho component của bạn! Các hàm component React chấp nhận một đối số duy nhất, một đối tượng props:
-
-```javascript
-function Avatar(props) {
-  let person = props.person;
-  let size = props.size;
-  // ...
-}
-```
-
-Thường thì bạn không cần toàn bộ đối tượng props, vì vậy bạn tháo nó thành các props riêng lẻ.
-
-**Lưu Ý:**
-Đừng bỏ lỡ cặp dấu ngoặc nhọn `{ và }` bên trong `( và )` khi khai báo props:
-
-```javascript
-function Avatar({ person, size }) {
-  // ...
-}
-```
-
-Cú pháp này được gọi là "destructuring" và tương đương với việc đọc các thuộc tính từ một tham số hàm:
-
-```javascript
-function Avatar(props) {
-  let person = props.person;
-  let size = props.size;
-  // ...
-}
-```
 
 ## Chỉ Định Giá Trị Mặc Định Cho Props
 
@@ -263,3 +260,85 @@ Ví dụ này minh họa rằng một component có thể nhận các props khá
 Tuy nhiên, props là không thể thay đổi (_immutable_) - một thuật ngữ từ khoa học máy tính có nghĩa là "không thể thay đổi". Khi một component cần thay đổi props của nó (ví dụ: do phản ứng của người dùng hoặc dữ liệu mới), nó sẽ "yêu cầu" component cha của nó chuyển cho nó các props khác - một đối tượng props mới! Props cũ sau đó sẽ được bỏ qua, và cuối cùng bộ máy JavaScript sẽ thu hồi lại bộ nhớ được sử dụng bởi chúng.
 
 **Đừng cố gắng "thay đổi props".** Khi bạn cần phản hồi đối với đầu vào của người dùng (như thay đổi màu được chọn), bạn sẽ cần "đặt state", điều mà bạn có thể tìm hiểu thêm về trong "Trạng thái: Bộ nhớ của một Component".
+
+# 7. Children Props
+
+Các thẻ HTML có thể chứa bên trong nó các thẻ HTML khác, ví dụ như `div`, `p`, ... Tương tự như vậy, các thẻ “HTML” do chúng ta tự tạo cũng có thể làm được điều tương tự thông qua một giá trị props đặc biệt có tên là `children`. Xét ví dụ sau:
+
+```jsx
+import "./Card.css";
+
+const Card = (props) => {
+	return <div className="card">{props.children}</div>
+}
+```
+
+```css
+.card {
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+```
+
+```jsx
+import Card from "./Card.js";
+
+const App = () => {
+	return (
+		<Card>
+			<div>Inside a card</div>
+		</Card>
+	)
+}
+```
+
+Cũng tương tự như các props thông thường khác, `children` có thể nhận giá trị là bất cứ kiểu dữ liệu nào. Với ví dụ ở trên, children nhận vào giá trị là một React Element.
+
+`children` props giúp chúng ta có khả năng “compose” các component lại với nhau. Thay vì cố định giá trị bên trong `Card`, lúc này `Card` có thể cho bất cứ component nào nằm trong nó có thêm các thuộc tính CSS ở trên.
+
+<aside>
+🤔 Điều gì xảy ra nếu như `children` props lại là một function, và function đó trả lại kết quả là JSX?
+
+</aside>
+
+---
+
+# 8. Smart & dump components
+
+Xét 2 ví dụ sau:
+
+```jsx
+const Sum = () => {
+	const x = 1
+	const y = 2
+	return <div>{x + y}</div>
+}
+
+<Sum />
+<Sum />
+<Sum />
+```
+
+```jsx
+const Sum = (props) => {
+	const {x, y} = props
+
+	return <div>{x + y}</div>
+}
+ 
+<Sum x={1} y={2} />
+<Sum x={2} y={3} />
+<Sum x={7} y={5} />
+```
+
+Trong ví dụ trên thì bên trái, component `Sum` có xử lý logic bên trong, còn bên phải thì không.
+
+Phần bên trái là một Smart Component, và phần bên phải là một Dump Component. Trong thực tế thì chúng ta viết càng nhiều dump component nghĩa là chúng ta càng smart 🙂
+
+Ở ví dụ bên trái, smart component không thể tái sử dụng, vì mỗi lần chúng ta dùng nó, nó luôn cho kết quả là 3.
+
+Ngược lại, với ví dụ bên phải, dump component có thể được sử dụng để in ra tổng 2 số bất kỳ khi chúng ta truyền giá trị vào bên trong.
+
+Tuy nhiên, không phải lúc nào dump component cũng tốt. Vì nếu cho phép truyền quá nhiều props sẽ dẫn đến code khó đọc và khó bảo trì hơn do nhiều thành phần tham gia vào logic của component hơn. Việc quyết định “dump” / “smart” bao nhiêu là đủ còn tuỳ thuộc khá nhiều vào kinh nghiệm của lập trình viên và từng tình huống xử lý khác nhau
