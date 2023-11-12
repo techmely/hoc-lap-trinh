@@ -8,44 +8,17 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---
 
-**Components (các thành phần)** là một trong những khái niệm cốt lõi của React. Chúng là nền tảng để bạn xây dựng giao diện người dùng (UI), điều này biến chúng trở thành nơi tuyệt vời để bạn bắt đầu hành trình với React!
+**Component (thành phần)** là một trong những khái niệm cốt lõi của React. Chúng là nền tảng để bạn xây dựng giao diện người dùng (UI)!
 
-## Components: Những Khối Xây Dựng Giao Diện Người Dùng
+## Ví dụ về component trong React
 
-Trên web, HTML cho phép chúng ta tạo ra các tài liệu có cấu trúc phong phú với các thẻ tích hợp như `<h1>` và `<li>`:
+Như ví dụ dưới đây, giao diện người dùng đã được chia nhỏ thành các phần riêng lẻ
 
-```html
-<article>
-  <h1>My First Component</h1>
-  <ol>
-    <li>Components: UI Building Blocks</li>
-    <li>Defining a Component</li>
-    <li>Using a Component</li>
-  </ol>
-</article>
-```
+![Ví dụ về component trong React](https://github.com/techmely/hoc-lap-trinh/assets/29374426/046f2612-9e8f-4346-8262-c45313af9087)
 
-Markup này đại diện cho bài viết này `<article>`, tiêu đề của nó `<h1>`, và một bảng mục lục (rút gọn) dưới dạng danh sách đã sắp xếp `<ol>`. Markup như vậy, kết hợp với CSS để thiết kế và JavaScript để tương tác, đứng đằng sau mọi thanh bên, hình đại diện, hộp thoại modal, menu thả xuống - mọi thành phần giao diện người dùng bạn thấy trên web.
+Phần Google Custom Search, thanh điều hướng, thanh bên, danh sách các bài báo,... đều được coi là một thành phần riêng lẻ. Chúng ta có thể thực hiện hợp nhất tất cả các thành phần này để tạo thành một giao diện chính, là giao diện người dùng cuối cùng cho trang chủ.
 
-React cho phép bạn kết hợp markup, CSS và JavaScript của bạn thành các "component" (thành phần) tùy chỉnh, các phần tử giao diện người dùng có thể sử dụng lại trong ứng dụng của bạn. Mã của bảng mục lục bạn thấy ở trên có thể được chuyển thành một `<TableOfContents />` component mà bạn có thể render ở mọi trang. Bên trong, nó vẫn sử dụng các thẻ HTML giống như `<article>`, `<h1>`, vv.
-
-Tương tự như với các thẻ HTML, bạn có thể xây dựng và lồng ghép các component để thiết kế toàn bộ trang web. Ví dụ, trang tài liệu bạn đang đọc được tạo ra từ các component React:
-
-```javascript
-<PageLayout>
-  <NavigationHeader>
-    <SearchBar />
-    <Link to="/docs">Tài liệu</Link>
-  </NavigationHeader>
-  <Sidebar />
-  <PageContent>
-    <TableOfContents />
-    <DocumentationText />
-  </PageContent>
-</PageLayout>
-```
-
-Khi dự án của bạn phát triển, bạn sẽ nhận thấy rằng nhiều thiết kế của bạn có thể được tạo bằng cách sử dụng lại các component bạn đã viết, giúp tăng tốc quá trình phát triển. Bảng mục lục của chúng ta ở trên có thể được thêm vào bất kỳ màn hình nào với `<TableOfContents />`! Bạn cũng có thể khởi đầu dự án của mình với hàng ngàn component được chia sẻ bởi cộng đồng mã nguồn mở React như Chakra UI và Material UI.
+Khi dự án phát triển, bạn sẽ nhận thấy rằng nhiều phần thiết kế có thể tái sử dụng component bạn đã viết, giúp tăng tốc quá trình phát triển.
 
 ## Định Nghĩa Một Component
 
