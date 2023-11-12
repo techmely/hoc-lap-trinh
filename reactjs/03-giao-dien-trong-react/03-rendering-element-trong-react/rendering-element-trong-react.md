@@ -8,20 +8,9 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---
 
-Trong React, việc hiển thị các phần tử trên trang web là một phần quan trọng của quá trình phát triển ứng dụng web. React cho phép bạn làm điều này dễ dàng thông qua JSX (JavaScript XML), một phần mở rộng của JavaScript cho phép bạn viết mã HTML tương tự bên trong các tệp JavaScript. Bài viết này sẽ hướng dẫn bạn cách render các phần tử trong React bằng JSX và cách sử dụng cặp dấu ngoặc nhọn `{}` để tích hợp mã JavaScript vào trong JSX.
+[JSX](/bai-viet/reactjs/jsx-la-gi) cho phép bạn viết markup giống HTML bên trong tệp JavaScript, giúp giữ logic hiển thị và nội dung ở cùng một nơi. Đôi khi bạn sẽ muốn thêm một chút logic JavaScript hoặc tham chiếu đến một thuộc tính động bên trong markup đó. Trong tình huống này, bạn có thể sử dụng cặp dấu ngoặc nhọn trong JSX để mở cửa sổ tới JavaScript.
 
-## JavaScript Trong JSX Với Cặp Dấu Ngoặc Nhọn
-
-JSX cho phép bạn viết markup giống HTML bên trong tệp JavaScript, giúp giữ logic hiển thị và nội dung ở cùng một nơi. Đôi khi bạn sẽ muốn thêm một chút logic JavaScript hoặc tham chiếu đến một thuộc tính động bên trong markup đó. Trong tình huống này, bạn có thể sử dụng cặp dấu ngoặc nhọn trong JSX để mở cửa sổ tới JavaScript.
-
-### Các Kiến Thức Sẽ Được Học
-
-- Cách truyền chuỗi với dấu ngoặc kép
-- Cách tham chiếu một biến JavaScript bên trong JSX với dấu ngoặc nhọn
-- Cách gọi một hàm JavaScript bên trong JSX với dấu ngoặc nhọn
-- Cách sử dụng một đối tượng JavaScript bên trong JSX với dấu ngoặc nhọn
-
-### Truyền Chuỗi Với Dấu Ngoặc Kép
+### Truyền thuộc tính chuỗi vào JSX
 
 Khi bạn muốn truyền một thuộc tính chuỗi vào JSX, bạn đặt nó trong dấu ngoặc kép hoặc ngoặc đơn:
 
@@ -39,9 +28,9 @@ export default function Avatar() {
 }
 ```
 
-Ở đây, `https://i.imgur.com/7vQD0fPs.jpg` và "Gregorio Y. Zara" đều được truyền dưới dạng chuỗi.
+Ở đây, "https://i.imgur.com/7vQD0fPs.jpg" và "Gregorio Y. Zara" đều được truyền dưới dạng chuỗi.
 
-Nhưng nếu bạn muốn chỉ định động src hoặc alt text, bạn có thể sử dụng một giá trị từ JavaScript bằng cách thay " và " bằng { và }:
+Nhưng nếu bạn muốn chỉ định động `src` hoặc `alt` text, bạn có thể sử dụng một giá trị từ JavaScript bằng cách thay `" và "` bằng `{ và }`:
 
 ```javascript
 import React from "react";
