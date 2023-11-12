@@ -10,7 +10,7 @@ position: 5
 
 Trong React, **props** được sử dụng để truyền thông tin giữa các [component](/bai-viet/reactjs/component-trong-react-la-gi). Mọi component cha có thể truyền thông tin đến các component con của nó bằng cách cung cấp chúng `props`. Props có thể khiến bạn liên tưởng đến các thuộc tính HTML, nhưng bạn có thể truyền bất kỳ giá trị JavaScript nào thông qua chúng, bao gồm các đối tượng, mảng và hàm.
 
-# Props trong React là gì?
+## Props trong React là gì?
 
 Props là tham số đầu vào của các component trong React. Props là một trong những khái niệm cực kỳ quan trọng của React.
 
@@ -18,19 +18,18 @@ Liên tưởng đơn giản, props trong React chính là các thuộc tính tro
 
 ```jsx
 const App = () => {
-	const x = 1;
-	const y = 2;
-	return (
-		<div>
-			<Sum a={x} b={y} />
-		</div>
-	)
+  const x = 1;
+  const y = 2;
+  return (
+    <div>
+      <Sum a={x} b={y} />
+    </div>
+  )
 }
 
 const Sum = (props) => {
-	console.log(props) // {a: 1, b: 2}
-
-	return <div>The value is: {props.a + props.b}</div>
+  console.log(props) // {a: 1, b: 2}
+  return <div>The value is: {props.a + props.b}</div>
 }
 ```
 
@@ -40,19 +39,19 @@ Props hoàn toàn do chúng ta tự định nghĩa. Các `components` do chúng 
 
 ```jsx
 const App = () => {
-	return (
-		<div>
-			<NameCard className="name-card" id="alice" />
-		</div>
-	)
+  return (
+    <div>
+      <NameCard className="name-card" id="alice" />
+    </div>
+  )
 }
 
 const NameCard = (props) => {
-	return (
-		<div className={props.className}>
-			<div id={props.id}>Name: Alice</div>
-		</div>
-	)
+  return (
+    <div className={props.className}>
+      <div id={props.id}>Name: Alice</div>
+    </div>
+  )
 }
 ```
 
@@ -62,7 +61,7 @@ Props là `read-only`, nghĩa là chúng ta **không thể thay đổi** đượ
 📌 **Tầm quan trọng của props trong React**: props cho phép tạo ra các Component có khả năng tái sử dụng cao. Thay vì dữ liệu được hard-coded bên trong component, props cho phép component có thể nhận được dữ liệu đầu vào mỗi lần sử dụng nó. Đây chính là công cụ để kết nối các component lại với nhau. Vì vậy, props cho phép ứng dụng được chia nhỏ thành nhiều phần.
 ::
 
-## Truyền props vào một component
+## Cách truyền props vào một component trong React
 
 Trong đoạn code này, component `Profile` không truyền bất kỳ props nào vào component con của nó, `Avatar`:
 
@@ -146,11 +145,9 @@ export default function Profile() {
 }
 ```
 
-Props cho phép bạn suy nghĩ về các component cha và con độc lập. Ví dụ, bạn có thể thay đổi props person hoặc size bên trong Profile mà không cần suy nghĩ về cách Avatar sử dụng chúng. Tương tự, bạn có thể thay đổi cách Avatar sử dụng các props này mà không cần xem xét Profile.
+## Giá trị mặc định của props
 
-## Chỉ Định Giá Trị Mặc Định Cho Props
-
-Nếu bạn muốn đặt một giá trị mặc định cho props để sử dụng khi không có giá trị được chỉ định, bạn có thể làm điều này bằng cách đặt = và giá trị mặc định ngay sau tham số:
+Nếu bạn muốn đặt một giá trị mặc định cho props để sử dụng khi không có giá trị được chỉ định, bạn có thể làm điều này bằng cách đặt `=` và giá trị mặc định ngay sau tham số:
 
 ```javascript
 function Avatar({ person, size = 100 }) {
@@ -158,13 +155,13 @@ function Avatar({ person, size = 100 }) {
 }
 ```
 
-Bây giờ, nếu `<Avatar person={...} />` được render mà không có props size, size sẽ được đặt thành 100.
+Bây giờ, nếu `<Avatar person={...} />` được render mà không có props `size`, `size` sẽ được đặt thành 100.
 
-Giá trị mặc định chỉ được sử dụng khi props size bị thiếu hoặc nếu bạn truyền size={undefined}. Tuy nhiên, nếu bạn truyền size={null} hoặc size={0}, giá trị mặc định sẽ không được sử dụng.
+Giá trị mặc định chỉ được sử dụng khi props size bị thiếu hoặc nếu bạn truyền `size={undefined}`. Tuy nhiên, nếu bạn truyền `size={null}` hoặc `size={0}`, giá trị mặc định sẽ không được sử dụng.
 
-## Chuyển Tiếp Props Với Cú Pháp Truyền JSX
+## Chuyển tiếp toàn bộ props
 
-Đôi khi, việc truyền props trở nên lặp đi lặp lại:
+Đôi khi, việc truyền `props` trở nên lặp đi lặp lại:
 
 ```javascript
 function Profile({ person, size, isSepia, thickBorder }) {
@@ -181,7 +178,7 @@ function Profile({ person, size, isSepia, thickBorder }) {
 }
 ```
 
-Không có gì sai với mã lặp đi lặp lại - nó có thể dễ đọc hơn. Nhưng đôi khi bạn có thể muốn sự ngắn gọn. Một số component chuyển tiếp tất cả props của họ cho các component con của họ, giống như cách Profile này làm với Avatar. Bởi vì họ không sử dụng bất kỳ props nào của họ trực tiếp, việc sử dụng cú pháp "truyền" ngắn gọn hơn có thể hợp lý:
+Không có gì sai với mã lặp đi lặp lại - nó có thể dễ đọc hơn. Nhưng đôi khi bạn có thể muốn sự ngắn gọn, bạn có thể sử dụng cách sau:
 
 ```javascript
 function Profile(props) {
@@ -193,75 +190,9 @@ function Profile(props) {
 }
 ```
 
-Cú pháp này chuyển tiếp tất cả props của Profile cho Avatar mà không cần liệt kê từng tên props.
+Cú pháp này chuyển tiếp tất cả props của `Profile` cho `Avatar` mà không cần liệt kê từng tên `props`.
 
-Hãy sử dụng cú pháp truyền đàn hồi một cách thận trọng. Nếu bạn sử dụng nó trong mọi component, điều đó có nghĩa có điều gì đó không ổn. Thường thì nó cho thấy bạn nên chia nhỏ các component của bạn và truyền children dưới dạng JSX. Sẽ còn nhiều điều về điều đó ở phần sau!
-
-## Truyền JSX Như Children
-
-Thường xuyên, bạn sẽ lồng các thẻ tích hợp sẵn trong HTML:
-
-```javascript
-<div>
-  <img />
-</div>
-```
-
-Đôi khi bạn muốn lồng các component của riêng bạn theo cách tương tự:
-
-```javascript
-<Card>
-  <Avatar />
-</Card>
-```
-
-Khi bạn lồng nội dung vào bên trong một thẻ JSX, component cha sẽ nhận nội dung đó dưới dạng props có tên là children. Ví dụ, component Card dưới đây sẽ nhận một props children được đặt thành `<Avatar />` và render nó trong một thẻ div gói:
-
-```javascript
-import Avatar from "./Avatar.js";
-
-function Card({ children }) {
-  return <div className="card">{children}</div>;
-}
-
-export default function Profile() {
-  return (
-    <Card>
-      <Avatar
-        size={100}
-        person={{
-          name: "Katsuko Saruhashi",
-          imageId: "YfeOqp2",
-        }}
-      />
-    </Card>
-  );
-}
-```
-
-Hãy thử thay thế `<Avatar>` bên trong `<Card>` bằng một số văn bản để xem cách Card có thể bao quanh bất kỳ nội dung lồng trong nó. Nó không cần "biết" điều gì đang được render bên trong nó. Mẫu linh hoạt này sẽ xuất hiện trong nhiều nơi.
-
-Bạn có thể nghĩ về một component có một props children như một "lỗ" có thể "được lấp đầy" bởi các component cha của nó bằng JSX tùy ý. Bạn thường sử dụng props children cho các bao bọc hình dạng: các panel, lưới, v.v.
-
-## Cách Props Thay Đổi Theo Thời Gian
-
-Component Clock dưới đây nhận hai props từ component cha của nó: `color` và `time`. (Mã của component cha đã được loại bỏ vì nó sử dụng state, mà chúng ta sẽ không nói đến lúc này.)
-
-Hãy thử thay đổi màu trong hộp chọn dưới đây:
-
-```javascript
-export default function Clock({ color, time }) {
-  return <h1 style={{ color: color }}>{time}</h1>;
-}
-```
-
-Ví dụ này minh họa rằng một component có thể nhận các props khác nhau theo thời gian. Props không phải lúc nào cũng là tĩnh! Ở đây, props time thay đổi mỗi giây và props color thay đổi khi bạn chọn một màu khác. Props phản ánh dữ liệu của component tại bất kỳ thời điểm nào, chứ không chỉ trong bắt đầu.
-
-Tuy nhiên, props là không thể thay đổi (_immutable_) - một thuật ngữ từ khoa học máy tính có nghĩa là "không thể thay đổi". Khi một component cần thay đổi props của nó (ví dụ: do phản ứng của người dùng hoặc dữ liệu mới), nó sẽ "yêu cầu" component cha của nó chuyển cho nó các props khác - một đối tượng props mới! Props cũ sau đó sẽ được bỏ qua, và cuối cùng bộ máy JavaScript sẽ thu hồi lại bộ nhớ được sử dụng bởi chúng.
-
-**Đừng cố gắng "thay đổi props".** Khi bạn cần phản hồi đối với đầu vào của người dùng (như thay đổi màu được chọn), bạn sẽ cần "đặt state", điều mà bạn có thể tìm hiểu thêm về trong "Trạng thái: Bộ nhớ của một Component".
-
-# 7. Children Props
+## Children props trong React
 
 Các thẻ HTML có thể chứa bên trong nó các thẻ HTML khác, ví dụ như `div`, `p`, ... Tương tự như vậy, các thẻ “HTML” do chúng ta tự tạo cũng có thể làm được điều tương tự thông qua một giá trị props đặc biệt có tên là `children`. Xét ví dụ sau:
 
@@ -269,16 +200,16 @@ Các thẻ HTML có thể chứa bên trong nó các thẻ HTML khác, ví dụ 
 import "./Card.css";
 
 const Card = (props) => {
-	return <div className="card">{props.children}</div>
+  return <div className="card">{props.children}</div>
 }
 ```
 
 ```css
 .card {
-	padding: 10px;
-	border: 1px solid black;
-	border-radius: 8px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 ```
 
@@ -286,11 +217,11 @@ const Card = (props) => {
 import Card from "./Card.js";
 
 const App = () => {
-	return (
-		<Card>
-			<div>Inside a card</div>
-		</Card>
-	)
+  return (
+    <Card>
+      <div>Inside a card</div>
+    </Card>
+  )
 }
 ```
 
@@ -298,14 +229,7 @@ Cũng tương tự như các props thông thường khác, `children` có thể 
 
 `children` props giúp chúng ta có khả năng “compose” các component lại với nhau. Thay vì cố định giá trị bên trong `Card`, lúc này `Card` có thể cho bất cứ component nào nằm trong nó có thêm các thuộc tính CSS ở trên.
 
-<aside>
-🤔 Điều gì xảy ra nếu như `children` props lại là một function, và function đó trả lại kết quả là JSX?
-
-</aside>
-
----
-
-# 8. Smart & dump components
+## Smart & dump components
 
 Xét 2 ví dụ sau:
 
