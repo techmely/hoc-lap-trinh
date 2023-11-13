@@ -1,6 +1,6 @@
 ---
 title: "State trong Reactjs"
-description: "Trong thế giới của ReactJS, JSX là một phần quan trọng và không thể thiếu. JSX viết tắt của JavaScript XML là một cú pháp mở rộng cho ngôn ngữ JavaScript, cho phép chúng ta mô tả giao diện người dùng (UI) một cách dễ dàng và rõ ràng hơn"
+description: "State về cơ bản là một giá trị biến đặc biệt trong React. Nó là giá trị mà khi thay đổi, React sẽ tiến hành việc tính toán lại kết quả của component, và từ đó cập nhật lại giao diện. Để sử dụng được state, chúng ta cần import một function từ trong thư viện React là useState. useState và một số function khác trong thư viện được gọi là các “hooks”. Chúng ta sẽ biết tới các hooks khác của React ở những bài sau"
 chapter:
   name: "Tương tác trong Reactjs"
   slug: "chuong-04-tuong-tac-trong-reactjs"
@@ -8,14 +8,10 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---
 
-Trong ReactJS, khi bạn xây dựng ứng dụng, các thành phần thường cần thay đổi nội dung trên màn hình dựa vào tương tác của người dùng. Ví dụ, việc nhập dữ liệu vào một biểu mẫu sẽ cập nhật trường nhập, nhấp vào "tiếp theo" trên một carousel hình ảnh sẽ thay đổi hình ảnh hiển thị, nhấp vào "mua" sẽ đặt sản phẩm vào giỏ hàng. Để làm được điều này, các thành phần cần "ghi nhớ" những điều quan trọng như giá trị hiện tại của trường nhập, hình ảnh hiện tại, giỏ hàng của mua sắm. Trong React, loại "bộ nhớ" riêng của thành phần này được gọi là **state**.
-
-## Điểm khởi đầu
-
-Để hiểu rõ hơn về cách làm việc với state trong React, hãy xem xét một ví dụ cụ thể. Dưới đây là một thành phần React đơn giản, thể hiện một hình ảnh điêu khắc. Bằng cách nhấp vào nút "Next," chúng ta muốn chuyển đổi hiển thị hình điêu khắc tiếp theo bằng cách thay đổi chỉ số index từ 0 lên 1, sau đó 2, và cứ tiếp tục như vậy:
+Trong ReactJS, khi bạn xây dựng ứng dụng, các component thường cần thay đổi nội dung trên màn hình dựa vào tương tác của người dùng. Để hiểu rõ hơn về cách làm việc với state trong React, hãy xem một ví dụ. Dưới đây là một component React đơn giản hiển thị danh sách hình ảnh. Bằng cách click vào button "Next," chúng ta muốn chuyển đổi hiển thị hình tiếp theo bằng cách thay đổi chỉ số index từ `0` lên `1`, sau đó `2`, và cứ tiếp tục như vậy:
 
 ```jsx
-import { sculptureList } from "./data.js";
+import { images } from "./data.js";
 
 export default function Gallery() {
   let index = 0;
@@ -24,19 +20,19 @@ export default function Gallery() {
     index = index + 1;
   }
 
-  let sculpture = sculptureList[index];
+  let image = images[index];
   return (
     <>
       <button onClick={handleClick}>Next</button>
       <h2>
-        <i>{sculpture.name} </i>
-        by {sculpture.artist}
+        <i>{image.name} </i>
+        by {image.artist}
       </h2>
       <h3>
-        ({index + 1} of {sculptureList.length})
+        ({index + 1} of {images.length})
       </h3>
-      <img src={sculpture.url} alt={sculpture.alt} />
-      <p>{sculpture.description}</p>
+      <img src={image.url} alt={image.alt} />
+      <p>{image.description}</p>
     </>
   );
 }
