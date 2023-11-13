@@ -8,11 +8,13 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
 
-Trong React, bạn có thể thêm các xử lý sự kiện (event handlers) vào JSX của bạn. Các xử lý sự kiện là các hàm của riêng bạn sẽ được kích hoạt khi có sự tương tác như nhấp chuột, di chuột qua, tập trung vào đầu vào biểu mẫu và nhiều tương tác khác.
+Trong React, bạn có thể thêm các xử lý sự kiện (event handlers) vào JSX của bạn. Các event handlers là các hàm sẽ được kích hoạt khi có sự tương tác như nhấp chuột, di chuột qua, ,... và nhiều tương tác khác.
 
-### Thêm xử lý sự kiện trong Reactjs
+![Sự kiện (event) trong Reactjs](https://github.com/techmely/hoc-lap-trinh/assets/29374426/f34befbd-0e11-4f26-a7a3-cf6f1cd7887b)
 
-Để thêm một xử lý sự kiện, bạn sẽ đầu tiên định nghĩa một hàm và sau đó truyền nó như một prop cho thẻ JSX tương ứng. Ví dụ, dưới đây là một nút không làm gì cả:
+## Thêm xử lý sự kiện trong Reactjs
+
+Để thêm một xử lý sự kiện, đầu tiên bạn sẽ cần định nghĩa một hàm và sau đó truyền nó như một [prop](/bai-viet/reactjs/prop-va-truyen-prop-vao-component) cho thẻ JSX tương ứng. Ví dụ, dưới đây là một nút không làm gì cả:
 
 ```jsx
 import React from "react";
@@ -35,14 +37,14 @@ import React from "react";
 
 export default function Button() {
   function handleClick() {
-    alert("Bạn đã nhấp chuột vào tôi!");
+    alert("Bạn đã click chuột vào tôi!");
   }
 
   return <button onClick={handleClick}>Nhấp chuột vào tôi</button>;
 }
 ```
 
-Trong ví dụ trên, chúng ta đã định nghĩa hàm `handleClick` và sau đó truyền nó như một prop cho `<button>` bằng cách sử dụng `onClick={handleClick}`. `handleClick` là một xử lý sự kiện. Thông thường, các hàm xử lý sự kiện được định nghĩa bên trong thành phần của bạn và có tên bắt đầu bằng `handle`, tiếp theo là tên của sự kiện. Theo quy ước, bạn thường thấy `onClick={handleClick}`, `onMouseEnter={handleMouseEnter}`, và nhiều sự kiện khác tương tự.
+Trong ví dụ trên, chúng ta đã định nghĩa hàm `handleClick` và sau đó truyền nó như một prop cho `<button>` bằng cách sử dụng `onClick={handleClick}` - `handleClick` là một xử lý sự kiện. Thông thường, các hàm xử lý sự kiện được định nghĩa bên trong [component](/bai-viet/reactjs/component-trong-react-la-gi) của bạn và có tên bắt đầu bằng `handle`, tiếp theo là tên của sự kiện. Theo quy ước, bạn thường thấy `onClick={handleClick}`, `onMouseEnter={handleMouseEnter}`, và nhiều sự kiện khác tương tự.
 
 Ngoài ra, bạn cũng có thể định nghĩa một xử lý sự kiện trực tiếp trong JSX:
 
@@ -60,22 +62,18 @@ Hoặc ngắn gọn hơn, bạn có thể sử dụng hàm mũi tên:
 }}>
 ```
 
-Tất cả các cách trên đều tương đương. Xử lý sự kiện trực tiếp trong JSX thường được sử dụng cho các hàm ngắn gọn.
+Tất cả các cách trên đều tương đương.
 
-### Lưu ý quan trọng
+**Lưu ý quan trọng**
 
 Hàm được truyền vào xử lý sự kiện phải được truyền, không được gọi. Ví dụ:
 
-- Đúng: `<button onClick={handleClick}>`
-- Sai: `<button onClick={handleClick()}>`
+- Đúng: `<button onClick={handleClick}>` - trong ví dụ này, hàm `handleClick` được truyền làm xử lý sự kiện `onClick`. Điều này cho biết cho React để nhớ nó và chỉ gọi hàm của bạn khi người dùng nhấp vào `button`
+- Sai: `<button onClick={handleClick()}>` - trong ví dụ này, dấu ngoặc `()` ở cuối của `handleClick()` sẽ kích hoạt hàm ngay lập tức trong quá trình `rendering`, mà không cần có sự kiện nhấp chuột. Điều này xảy ra vì mã JavaScript bên trong `{}` được thực thi ngay lập tức.
 
-Trong ví dụ đúng, hàm `handleClick` được truyền làm xử lý sự kiện `onClick`. Điều này cho biết cho React để nhớ nó và chỉ gọi hàm của bạn khi người dùng nhấp vào nút.
+## Đọc `props` trong xử lý sự kiện trong Reactjs
 
-Trong ví dụ sai, dấu ngoặc `()` ở cuối của `handleClick()` sẽ kích hoạt hàm ngay lập tức trong quá trình rendering, mà không cần có sự kiện nhấp chuột. Điều này xảy ra vì mã JavaScript bên trong `{}` được thực thi ngay lập tức.
-
-### Đọc `props` trong xử lý sự kiện trong Reactjs
-
-Vì xử lý sự kiện được định nghĩa bên trong một thành phần, nó có quyền truy cập vào `props` của thành phần đó. Dưới đây là ví dụ về một nút, khi nhấp vào, sẽ hiển thị một thông báo với `props` message của nó:
+Vì xử lý sự kiện được định nghĩa bên trong một component, nó có quyền truy cập vào `props` của component đó. Dưới đây là ví dụ về một `button`, khi nhấp vào, sẽ hiển thị một thông báo với `props` message của nó:
 
 ```jsx
 import React from "react";
@@ -96,9 +94,9 @@ export default function Toolbar() {
 
 Điều này cho phép hai nút này hiển thị các thông báo khác nhau. Bạn có thể thay đổi thông điệp được truyền vào để thay đổi nội dung thông báo.
 
-### Truyền xử lý sự kiện như `props` trong Reactjs
+## Truyền xử lý sự kiện như `props` trong Reactjs
 
-Thường thì bạn muốn cho phép thành phần cha chỉ định một xử lý sự kiện cho thành phần con của nó. Xem xét trường hợp nút: tùy thuộc vào nơi bạn sử dụng một thành phần Nút, bạn có thể muốn thực thi một hàm khác nhau - có thể một hàm để phát phim và một hàm khác để tải lên hình ảnh.
+Thường thì bạn muốn cho phép component cha chỉ định một xử lý sự kiện cho thành phần con của nó.
 
 Để làm điều này, bạn có thể truyền một `prop` mà thành phần con nhận được từ thành phần cha và sử dụng nó như một xử lý sự kiện. Dưới đây là ví dụ:
 
@@ -133,13 +131,11 @@ export default function Toolbar() {
 }
 ```
 
-Ở đây, thành phần Toolbar hiển thị một PlayButton và một UploadButton. PlayButton truyền `handlePlayClick` như là `onClick` cho thành phần Button bên trong nó, trong khi UploadButton truyền một hàm vô danh để hiển thị thông báo khi người dùng nhấp vào.
+Ở đây, component `Toolbar` hiển thị component `PlayButton` và component `UploadButton`. `PlayButton` truyền `handlePlayClick` như là `onClick` cho component `Button` bên trong nó, trong khi `UploadButton` truyền một hàm vô danh để hiển thị thông báo khi người dùng nhấp vào.
 
-Cuối cùng, thành phần Button của bạn chấp nhận một `prop` gọi là `onClick` và truyền nó trực tiếp cho thẻ `<button>` của trình duyệt với `onClick={onClick}`. Điều này cho biết cho React gọi hàm đã truyền khi người dùng nhấp chuột.
+Cuối cùng, component `Butto`n của bạn chấp nhận một `prop` gọi là `onClick` và truyền nó trực tiếp cho thẻ `<button>` của trình duyệt với `onClick={onClick}`. Điều này cho biết cho React gọi hàm đã truyền khi người dùng click chuột.
 
-Nếu bạn sử dụng một hệ thống thiết kế, thường xuyên các thành phần như nút chỉ chứa các kiểu dáng mà không xác định hành vi. Thay vào đó, các thành phần như PlayButton và UploadButton sẽ truyền các xử lý sự kiện xuống.
-
-### Đặt tên `props` của Xử lý sự kiện trong Reactjs
+## Đặt tên `props` của xử lý sự kiện trong Reactjs
 
 Các thành phần tích hợp sẵn như `<button>` và `<div>` chỉ hỗ trợ các tên sự kiện trình duyệt mặc định như `onClick`. Tuy nhiên, khi bạn xây dựng các thành phần của riêng mình, bạn có thể đặt tên các `prop` của xử lý sự kiện bằng bất kỳ cách nào bạn muốn.
 
@@ -153,9 +149,9 @@ function Button({ onSmash, children }) {
 }
 ```
 
-Ở ví dụ này, `<button onClick={onSmash}>` cho thấy rằng thẻ `<button>` (viết thường) của trình duyệt vẫn cần một `prop` gọi là `onClick`, nhưng tên `prop` nhận được bởi thành phần Button của bạn hoàn toàn do bạn quyết định!
+Ở ví dụ này, `<button onClick={onSmash}>` cho thấy rằng thẻ `<button>` (viết thường) của trình duyệt vẫn cần một `prop` gọi là `onClick`, nhưng tên `prop` nhận được bởi component `Button` của bạn hoàn toàn do bạn quyết định!
 
-Khi thành phần của bạn hỗ trợ nhiều tương tác, bạn có thể đặt tên các `prop` của xử lý sự kiện cho các khái niệm cụ thể cho ứng dụng. Ví dụ, thành phần Toolbar này nhận các xử lý sự kiện `onPlayMovie` và `onUploadImage`:
+Khi component của bạn hỗ trợ nhiều tương tác, bạn có thể đặt tên các `prop` của xử lý sự kiện cho các khái niệm cụ thể cho ứng dụng. Ví dụ, thành phần `Toolbar` này nhận các xử lý sự kiện `onPlayMovie` và `onUploadImage`:
 
 ```jsx
 import React from "react";
@@ -170,11 +166,9 @@ export default function Toolbar({ onPlayMovie, onUploadImage }) {
 }
 ```
 
-Lưu ý rằng thành phần App không cần phải biết Toolbar sẽ thực hiện gì với `onPlayMovie` hoặc `onUploadImage`. Đó là một chi tiết triển khai của Toolbar. Ở đây, Toolbar truyền chúng dưới dạng các xử lý sự kiện `onClick` đến các Button bên trong nó, nhưng sau này nó cũng có thể kích hoạt chúng thông qua phím tắt trên bàn phím. Đặt tên các `prop` sau khi các tương tác cụ thể cho ứng dụng giúp bạn linh hoạt trong việc thay đổi cách chúng được sử dụng sau này.
+## Lan truyền sự kiện trong Reactjs
 
-### Lan truyền sự kiện trong Reactjs
-
-Các xử lý sự kiện cũng sẽ xử lý sự kiện từ bất kỳ thành phần con nào mà thành phần của bạn có. Chúng ta nói rằng một sự kiện "lan truyền" hoặc "nổi lên" theo cây thành phần: nó bắt đầu từ nơi sự kiện xảy ra và sau đó đi lên cây thành phần.
+Các xử lý sự kiện cũng sẽ xử lý sự kiện từ bất kỳ component con nào mà thành phần của bạn có. Chúng ta nói rằng một sự kiện "lan truyền" hoặc "nổi lên" theo cây component: nó bắt đầu từ nơi sự kiện xảy ra và sau đó đi lên cây component.
 
 Dưới đây là một ví dụ về một `<div>` chứa hai nút. Cả `<div>` và từng nút đều có các xử lý sự kiện riêng của họ. Bạn nghĩ rằng những xử lý sự kiện nào sẽ được kích hoạt khi bạn nhấp vào một nút?
 
@@ -196,11 +190,13 @@ export default function Toolbar() {
 }
 ```
 
-Nếu bạn nhấp vào bất kỳ nút nào, xử lý `onClick` của nút đó sẽ chạy đầu tiên, tiếp theo là xử lý `onClick` của `<div>` cha. Vì vậy, hai thông báo sẽ xuất hiện. Nếu bạn nhấp vào thanh công cụ chính, chỉ xử lý `onClick` của `<div>` cha sẽ chạy.
+Nếu bạn nhấp vào bất kỳ nút nào, xử lý `onClick` của nút đó sẽ chạy đầu tiên, tiếp theo là xử lý `onClick` của `<div>` cha. Vì vậy, hai thông báo sẽ xuất hiện. Nếu bạn click vào thanh công cụ chính, chỉ xử lý `onClick` của `<div>` cha sẽ chạy.
 
+::alert{type="warning"}
 **Lưu ý**: Tất cả các sự kiện đều lan truyền trong React ngoại trừ `onScroll`, chỉ hoạt động trên thẻ JSX bạn gắn nó.
+::
 
-### Ngừng lan truyền
+## Ngừng lan truyền sự kiện trong Reactjs
 
 Các xử lý sự kiện nhận một đối tượng sự kiện làm đối số duy nhất. Theo quy ước, thường gọi đối tượng này là `e`, viết tắt của "event". Bạn có thể sử dụng đối tượng này để đọc thông tin về sự kiện.
 
@@ -237,7 +233,7 @@ export default function Toolbar() {
 }
 ```
 
-Khi bạn nhấp vào một nút:
+Khi bạn click vào một button:
 
 1. React sẽ gọi xử lý `onClick` được truyền vào `<button>`.
 2. Xử lý này, được định nghĩa trong Button, thực hiện hai việc sau:
@@ -245,21 +241,8 @@ Khi bạn nhấp vào một nút:
    - Gọi `e.stopPropagation()`, ngăn sự kiện không lan truyền nữa.
    - Gọi hàm `onClick()` được truyền vào từ thành phần cha.
 
-3. Hàm này, được định nghĩa trong thành phần Toolbar, hiển thị thông báo của nút riêng của nó.Nhờ `e.stopPropagation()`, xử lý `onClick` của `<div>` cha không chạy. Kết quả là sau khi ngăn chặn lan truyền, chỉ có một thông báo xuất hiện (từ `<button>`) thay vì hai thông báo (từ `<button>` và `<div>` cha). Việc ngăn chặn lan truyền là hợp lý với giao diện người dùng này vì việc nhấp vào các nút không giống nhau so với nhấp vào thanh công cụ xung quanh chúng.
-
-### Những lưu ý quan trọng
-
-- Bạn có thể thêm xử lý sự kiện trong React bằng cách định nghĩa một hàm và sau đó truyền nó vào JSX tương ứng.
-- Chú ý rằng hàm xử lý sự kiện được truyền vào không được gọi ngay lập tức. Hãy sử dụng `onClick={handleClick}`, không phải `onClick={handleClick()}`.
-- Bạn có thể định nghĩa xử lý sự kiện trực tiếp trong JSX hoặc sử dụng hàm mũi tên.
-- Xử lý sự kiện được định nghĩa bên trong thành phần, do đó chúng có quyền truy cập vào `props` của thành phần.
-- Bạn có thể truyền xử lý sự kiện từ thành phần cha xuống thành phần con bằng cách sử dụng `props`.
-- Khi đặt tên cho `props` của xử lý sự kiện, nên sử dụng tiền tố "on" và theo sau là một chữ cái viết hoa, ví dụ: `onSmash`.
-- Sự kiện lan truyền từ thành phần con đến thành phần cha. Điều này có thể được ngăn chặn bằng cách sử dụng `e.stopPropagation()`.
-- Một số sự kiện trình duyệt có hành vi mặc định liên quan đến chúng. Bạn có thể ngăn chặn hành vi này bằng cách sử dụng `e.preventDefault()`.
+3. Hàm này, được định nghĩa trong component `Toolbar`, hiển thị thông báo của button riêng của nó. Nhờ `e.stopPropagation()`, xử lý `onClick` của `<div>` cha không chạy. Kết quả là sau khi ngăn chặn lan truyền, chỉ có một thông báo xuất hiện (từ `<button>`) thay vì hai thông báo (từ `<button>` và `<div>` cha). Việc ngăn chặn lan truyền là hợp lý với giao diện người dùng này vì việc nhấp vào các nút không giống nhau so với click vào thanh công cụ xung quanh chúng.
 
 ::alert{type="success"}
-
-Xử lý sự kiện là một phần quan trọng của phát triển ứng dụng React. Bằng cách biết cách thêm xử lý sự kiện, truyền chúng giữa các thành phần, và kiểm soát cách sự kiện lan truyền, bạn có thể tạo ra các ứng dụng React phức tạp và tương tác một cách hiệu quả.
-
+Xử lý sự kiện là một phần quan trọng của phát triển ứng dụng React. Bằng cách biết cách thêm xử lý sự kiện, truyền chúng giữa các component, và kiểm soát sự kiện lan truyền, bạn có thể tạo ra các ứng dụng React phức tạp và tương tác một cách hiệu quả.
 ::
