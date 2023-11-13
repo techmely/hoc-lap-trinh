@@ -1,6 +1,6 @@
 ---
 title: "Rendering list trong React"
-description: "Rendering list trong React"
+description: "Trong bài viết này, bạn sẽ tìm hiểu cách sử dụng filter và map của JavaScript cùng với React để lọc và biến đổi mảng dữ liệu thành một mảng các component"
 chapter:
   name: "Giao diện trong Reactjs"
   slug: "chuong-03-giao-dien-trong-reactjs"
@@ -8,7 +8,9 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 7
 ---
 
-Khi bạn phải hiển thị nhiều thành phần tương tự từ một bộ dữ liệu, bạn có thể sử dụng các phương thức của mảng JavaScript để thao tác trên mảng dữ liệu đó. Trong bài viết này, bạn sẽ tìm hiểu cách sử dụng `filter()` và `map()` của JavaScript cùng với React để lọc và biến đổi mảng dữ liệu thành một mảng các thành phần.
+Khi bạn phải hiển thị nhiều [component](/bai-viet/reactjs/component-trong-react-la-gi) tương tự từ một danh sách, bạn có thể sử dụng các phương thức của mảng JavaScript để thao tác trên mảng dữ liệu đó. Trong bài viết này, bạn sẽ tìm hiểu cách sử dụng `filter()` và `map()` của JavaScript cùng với React để lọc và biến đổi mảng dữ liệu thành một mảng các component.
+
+![Rendering list trong React](https://github.com/techmely/hoc-lap-trinh/assets/29374426/1f1c3b65-f629-4de5-9fa4-55475834d50c)
 
 ## Hiển thị dữ liệu từ mảng
 
@@ -24,11 +26,11 @@ Hãy tưởng tượng bạn có một danh sách các nội dung như sau:
 </ul>
 ```
 
-Các mục trong danh sách này chỉ khác nhau về nội dung. Trong thực tế, khi bạn xây dựng giao diện, bạn thường phải hiển thị nhiều phiên bản của cùng một thành phần với dữ liệu khác nhau, chẳng hạn như danh sách bình luận hoặc thư viện hình ảnh cá nhân. Trong các tình huống như vậy, bạn có thể lưu trữ dữ liệu đó trong các đối tượng và mảng JavaScript, sau đó sử dụng các phương thức như `map()` và `filter()` để hiển thị danh sách các thành phần từ chúng.
+Các mục trong danh sách này chỉ khác nhau về nội dung. Trong thực tế, khi bạn xây dựng giao diện, bạn thường phải hiển thị nhiều phiên bản của cùng một component với dữ liệu khác nhau, chẳng hạn như danh sách bình luận hoặc thư viện hình ảnh cá nhân. Trong các tình huống như vậy, bạn có thể lưu trữ dữ liệu đó trong các đối tượng và mảng JavaScript, sau đó sử dụng các phương thức như `map()` và `filter()` để hiển thị danh sách các thành phần từ chúng.
 
 Dưới đây là một ví dụ đơn giản về cách tạo danh sách các mục từ một mảng:
 
-1. Đưa dữ liệu vào một mảng:
+### Bước 1: Đưa dữ liệu vào một mảng
 
 ```javascript
 const people = [
@@ -40,13 +42,13 @@ const people = [
 ];
 ```
 
-2. Sử dụng `map()` để tạo một mảng mới của các phần tử JSX, ví dụ `listItems`:
+### Bước 2: Sử dụng `map()` để tạo một mảng mới của các phần tử JSX, ví dụ `listItems`:
 
 ```javascript
 const listItems = people.map((person) => <li>{person}</li>);
 ```
 
-3. Trả về `listItems` từ thành phần React của bạn bên trong một thẻ `<ul>`:
+### Bước 3: Trả về `listItems` từ thành phần React của bạn bên trong một thẻ `<ul>`:
 
 ```javascript
 return <ul>{listItems}</ul>;
@@ -98,19 +100,19 @@ const people = [
 ];
 ```
 
-Giả sử bạn muốn hiển thị chỉ các thành phần có chuyên ngành là 'nhà hóa học'. Bạn có thể sử dụng phương thức `filter()` của JavaScript để chỉ trả về những người đó. Phương thức này nhận một mảng các phần tử, đi qua chúng qua một "kiểm tra" (một hàm trả về true hoặc false), và trả về một mảng mới chứa chỉ những phần tử đã vượt qua kiểm tra đó (trả về true).
+Giả sử bạn muốn hiển thị chỉ các component có chuyên ngành là 'nhà hóa học'. Bạn có thể sử dụng phương thức `filter()` của JavaScript để chỉ trả về những người đó. Phương thức này nhận một mảng các phần tử, nó sẽ đi qua lần lượt các phần tử để "kiểm tra" (một hàm trả về true hoặc false), và trả về một mảng mới chứa chỉ những phần tử thoả mãn điều kiện (trả về true).
 
 Trong trường hợp này, bạn chỉ muốn các phần tử có chuyên ngành là 'nhà hóa học'. Hàm kiểm tra cho việc này có thể được viết như sau: `(person) => person.profession === 'nhà hóa học'`.
 
 Dưới đây là cách kết hợp các bước để hiển thị danh sách các 'nhà hóa học':
 
-1. Tạo một mảng mới chỉ chứa 'nhà hóa học' bằng cách gọi `filter()` trên `people` với điều kiện `person.profession === 'nhà hóa học'`:
+### Bước 1: Tạo một mảng mới chỉ chứa 'nhà hóa học' bằng cách gọi `filter()` trên `people` với điều kiện `person.profession === 'nhà hóa học'`:
 
 ```javascript
 const chemists = people.filter((person) => person.profession === "nhà hóa học");
 ```
 
-2. Tiếp theo, sử dụng `map()` để tạo một mảng mới của các phần tử JSX từ `chemists`:
+### Bước 2: Tiếp theo, sử dụng `map()` để tạo một mảng mới của các phần tử JSX từ `chemists`:
 
 ```javascript
 const listItems = chemists.map((person) => (
@@ -122,7 +124,7 @@ const listItems = chemists.map((person) => (
 ));
 ```
 
-3. Cuối cùng, trả về `listItems` từ thành phần React của bạn:
+### Bước 3: Cuối cùng, trả về `listItems` từ thành phần React của bạn:
 
 ```javascript
 return <ul>{listItems}</ul>;
@@ -145,7 +147,11 @@ Kết quả là danh sách các 'nhà hóa học':
 </ul>
 ```
 
-## Sử dụng khóa (keys) trong React
+## Key trong React là gì?
+
+`key` là một giá trị props đặc biệt trong React. Key được sử dụng làm định danh cho các phần tử trong một mảng các phần tử component. `key` cho phép React dễ dàng nhận biết được phần tử nào bị thay đổi, phần tử nào được thêm hoặc xoá đi trong mảng các component của React thông qua quá trình **reconcilation**.
+
+![Key trong React là gì](https://github.com/techmely/hoc-lap-trinh/assets/29374426/f052382c-be00-44f0-b64c-76d77ed0ef83)
 
 Lưu ý rằng trong ví dụ trên, bạn có thể thấy một cảnh báo trong console:
 
@@ -155,7 +161,7 @@ Warning: Each child in a list should have a unique "key" prop.
 
 React yêu cầu mỗi thành phần trong một danh sách phải có một khóa (key) duy nhất. Khóa (key) này là một chuỗi hoặc một số duy nhất xác định thành phần đó trong danh sách. Điều này trở nên quan trọng khi các thành phần trong danh sách có thể thay đổi vị trí, bị chèn, hoặc bị xóa. Một khóa (key) được chọn tốt giúp React hiểu rõ điều gì đã xảy ra và cập nhật cây DOM đúng cách.
 
-Thay vì tạo khóa (key) dựa trên tên và chức năng, bạn nên bao gồm nó trong dữ liệu của mình. Điều này giúp bạn duy trì tính độc đáo và ổn định của khóa (key) ngay cả khi dữ liệu thay đổi. Dưới đây là ví dụ:
+Thay vì tạo khóa (key) dựa trên tên và chức năng, bạn nên bao gồm nó trong dữ liệu của mình. Điều này giúp bạn duy trì tính ổn định của khóa (key) ngay cả khi dữ liệu thay đổi. Dưới đây là ví dụ:
 
 ```javascript
 export const people = [
@@ -168,7 +174,7 @@ export const people = [
 ];
 ```
 
-Khi bạn hiển thị các thành phần trong một danh sách, hãy đảm bảo sử dụng `key` cho mỗi thành phần:
+Khi bạn hiển thị các thành phần trong một danh sách, hãy đảm bảo sử dụng `key` cho mỗi component:
 
 ```javascript
 const listItems = chemists.map((person) => (
