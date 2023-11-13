@@ -30,7 +30,7 @@ Các mục trong danh sách này chỉ khác nhau về nội dung. Trong thực 
 
 Dưới đây là một ví dụ đơn giản về cách tạo danh sách các mục từ một mảng:
 
-### Bước 1: Đưa dữ liệu vào một mảng
+#### Bước 1: Đưa dữ liệu vào một mảng
 
 ```javascript
 const people = [
@@ -42,13 +42,13 @@ const people = [
 ];
 ```
 
-### Bước 2: Sử dụng `map()` để tạo một mảng mới của các phần tử JSX, ví dụ `listItems`:
+#### Bước 2: Sử dụng `map()` để tạo một mảng mới của các phần tử JSX, ví dụ `listItems`:
 
 ```javascript
 const listItems = people.map((person) => <li>{person}</li>);
 ```
 
-### Bước 3: Trả về `listItems` từ thành phần React của bạn bên trong một thẻ `<ul>`:
+#### Bước 3: Trả về `listItems` từ thành phần React của bạn bên trong một thẻ `<ul>`:
 
 ```javascript
 return <ul>{listItems}</ul>;
@@ -106,13 +106,13 @@ Trong trường hợp này, bạn chỉ muốn các phần tử có chuyên ngà
 
 Dưới đây là cách kết hợp các bước để hiển thị danh sách các 'nhà hóa học':
 
-### Bước 1: Tạo một mảng mới chỉ chứa 'nhà hóa học' bằng cách gọi `filter()` trên `people` với điều kiện `person.profession === 'nhà hóa học'`:
+#### Bước 1: Tạo một mảng mới chỉ chứa 'nhà hóa học' bằng cách gọi `filter()` trên `people` với điều kiện `person.profession === 'nhà hóa học'`:
 
 ```javascript
 const chemists = people.filter((person) => person.profession === "nhà hóa học");
 ```
 
-### Bước 2: Tiếp theo, sử dụng `map()` để tạo một mảng mới của các phần tử JSX từ `chemists`:
+#### Bước 2: Tiếp theo, sử dụng `map()` để tạo một mảng mới của các phần tử JSX từ `chemists`:
 
 ```javascript
 const listItems = chemists.map((person) => (
@@ -124,7 +124,7 @@ const listItems = chemists.map((person) => (
 ));
 ```
 
-### Bước 3: Cuối cùng, trả về `listItems` từ thành phần React của bạn:
+#### Bước 3: Cuối cùng, trả về `listItems` từ thành phần React của bạn:
 
 ```javascript
 return <ul>{listItems}</ul>;
