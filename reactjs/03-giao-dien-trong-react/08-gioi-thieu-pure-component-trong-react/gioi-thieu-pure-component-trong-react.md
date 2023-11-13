@@ -8,7 +8,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 8
 ---
 
-React.js là một thư viện JavaScript mạnh mẽ được sử dụng rộng rãi để phát triển ứng dụng web hiệu suất cao và dễ bảo trì. Trong React, sự hiểu biết về Pure Component là một phần quan trọng để tạo ra mã nguồn sạch sẽ và tránh được nhiều lỗi khó hiểu. Trong bài viết này, chúng ta sẽ tìm hiểu về Pure Component, tại sao chúng quan trọng, và cách sử dụng chúng trong ứng dụng React.
+React.js là một thư viện JavaScript mạnh mẽ được sử dụng rộng rãi để phát triển ứng dụng web hiệu suất cao và dễ bảo trì. Trong React, sự hiểu biết về **Pure Component** là một phần quan trọng để tạo ra mã nguồn sạch sẽ và tránh được nhiều lỗi khó hiểu. Trong bài viết này, chúng ta sẽ tìm hiểu về Pure Component, tại sao chúng quan trọng, và cách sử dụng chúng trong ứng dụng React.
 
 ![Giới thiệu Pure Component trong Reactjs](https://github.com/techmely/hoc-lap-trinh/assets/29374426/16c1a030-08c4-4e29-927a-3062ada50d33)
 
