@@ -40,13 +40,13 @@ export default function Gallery() {
 
 Tuy nhiên, cách làm này sẽ không hoạt động vì một số lý do:
 
-1. **Biến local không tồn tại giữa các lần render**: Biến `index` ở đây là biến local và không tồn tại qua các lần render khác nhau của thành phần. Khi React render lại thành phần này lần thứ hai, nó sẽ xem xét thành phần này từ đầu mà không xem xét bất kỳ thay đổi nào đối với biến local.
+1. **Biến local không tồn tại giữa các lần render**: Biến `index` ở đây là biến local và không tồn tại qua các lần render khác nhau của component. Khi React render lại component này lần thứ hai, nó sẽ refresh mà không xem xét bất kỳ thay đổi nào đối với biến local.
 2. **Thay đổi biến local không gây render lại**: Các thay đổi đối với biến local không thông báo cho React cần render lại thành phần với dữ liệu mới.
 
-Để cập nhật một thành phần với dữ liệu mới, bạn cần thực hiện hai điều sau:
+Để giải quyết vấn đề trên, chúng ta cần thực hiện hai điều sau:
 
-1. **Lưu giữ dữ liệu qua các lần render**: Bạn cần giữ lại dữ liệu qua các lần render của thành phần.
-2. **Thông báo cho React render lại thành phần**: Khi có thay đổi, bạn cần báo cho React biết để nó vẽ lại thành phần với dữ liệu mới.
+1. **Lưu giữ dữ liệu qua các lần render**: chúng ta cần giữ lại dữ liệu qua các lần render của component.
+2. **Thông báo cho React render lại thành phần**: Khi có thay đổi, chúng ta cần báo cho React biết để nó render lại component với dữ liệu mới.
 
 ## Hook `useState` giúp giải quyết vấn đề
 
