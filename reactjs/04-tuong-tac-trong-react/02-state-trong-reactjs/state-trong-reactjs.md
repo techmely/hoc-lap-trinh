@@ -8,96 +8,91 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 2
 ---
 
-Trong ReactJS, khi bạn xây dựng ứng dụng, các component thường cần thay đổi nội dung trên màn hình dựa vào tương tác của người dùng. Để hiểu rõ hơn về cách làm việc với state trong React, hãy xem một ví dụ. Dưới đây là một component React đơn giản hiển thị danh sách hình ảnh. Bằng cách click vào button "Next," chúng ta muốn chuyển đổi hiển thị hình tiếp theo bằng cách thay đổi chỉ số index từ `0` lên `1`, sau đó `2`, và cứ tiếp tục như vậy:
+State về cơ bản là một giá trị biến đặc biệt trong React. Nó là giá trị mà khi thay đổi, React sẽ tiến hành việc tính toán lại kết quả của component, và từ đó cập nhật lại giao diện. Để sử dụng được state, chúng ta cần import một function từ trong thư viện React là useState. useState và một số function khác trong thư viện được gọi là các “hooks”.
 
-```jsx
-import { images } from "./data.js";
+Xét ví dụ sau:
 
-export default function Gallery() {
-  let index = 0;
+```js
+const App = () => {
+	let count = 0;
 
-  function handleClick() {
-    index = index + 1;
-  }
+	const handleClick = () => {
+		count = count + 1;
+		console.log("count: ", count)
+	}
 
-  let image = images[index];
-  return (
-    <>
-      <button onClick={handleClick}>Next</button>
-      <h2>
-        <i>{image.name} </i>
-        by {image.artist}
-      </h2>
-      <h3>
-        ({index + 1} of {images.length})
-      </h3>
-      <img src={image.url} alt={image.alt} />
-      <p>{image.description}</p>
-    </>
-  );
+	return (
+		<div>
+			<span>{count}</span>
+			<button onClick={handleClick}>Increase</button>
+		</div>
+	)
 }
 ```
 
-Tuy nhiên, cách làm này sẽ không hoạt động vì một số lý do:
+Với ví dụ trên, khi ta click vào button, giá trị của biến `count` sẽ được thay đổi. Khi chúng ta mở màn hình console cũng sẽ nhận được giá trị của `count` in ra màn hình. Và chúng ta cũng sẽ mong đợi rằng component `App` sẽ thực hiện việc tính toán lại để thay đổi giá trị trong cặp thẻ `<span>`. Từ đó, giao diện sẽ được cập nhật.
 
-1. **Biến local không tồn tại giữa các lần render**: Biến `index` ở đây là biến local và không tồn tại qua các lần render khác nhau của component. Khi React render lại component này lần thứ hai, nó sẽ refresh mà không xem xét bất kỳ thay đổi nào đối với biến local.
-2. **Thay đổi biến local không gây render lại**: Các thay đổi đối với biến local không thông báo cho React cần render lại thành phần với dữ liệu mới.
+Tuy nhiên thì giao diện sẽ **không** được cập nhật!
 
-Để giải quyết vấn đề trên, chúng ta cần thực hiện hai điều sau:
+Thực tế, các biến thông thường như `count` trong ví dụ trên sẽ không làm cho React thực hiện việc tính toán lại dữ liệu và cập nhật giao diện. React sẽ hoàn toàn bỏ qua sự thay đổi của các biến đó. Khi chúng ta muốn cho React biết rằng nó cần tính toán lại giao diện, chúng ta cần sử dụng một khái niệm đặc biệt từ React: **“State”**
 
-1. **Lưu giữ dữ liệu qua các lần render**: chúng ta cần giữ lại dữ liệu qua các lần render của component.
-2. **Thông báo cho React render lại thành phần**: Khi có thay đổi, chúng ta cần báo cho React biết để nó render lại component với dữ liệu mới.
+## Sử dụng state với React hooks
 
-## Hook `useState` giúp giải quyết vấn đề
+**State** về cơ bản là một giá trị biến đặc biệt trong React. Nó là giá trị mà khi thay đổi, React sẽ tiến hành việc tính toán lại kết quả của component, và từ đó cập nhật lại giao diện. Để sử dụng được state, chúng ta cần import một function từ trong thư viện React là `useState`. `useState` và một số function khác trong thư viện được gọi là các “hooks”. Chúng ta sẽ biết tới các hooks khác của React ở những bài sau.
 
-Hook `useState` cung cấp cả hai yếu tố cần thiết để giải quyết vấn đề này:
+Cú pháp cơ bản của `useState` như sau:
 
-1. **Biến state để lưu trữ dữ liệu qua các lần render**: Hook `useState` giúp bạn tạo ra biến state để lưu trữ dữ liệu qua các lần render.
-2. **Hàm setter state để cập nhật biến state và thông báo render lại**: Nó cung cấp hàm setter state, khi gọi, nó không chỉ cập nhật biến state mà còn thông báo cho React render lại thành phần với dữ liệu mới.
+`const <tên_biến_state> = useState(<giá_trị_ban_đầu_của_state>)`
 
-## Thêm một biến `state` trong Reactjs
+`useState` trong React là một function với đặc điểm sau:
 
-Để thêm một biến state, bạn cần import `useState` từ React và sử dụng nó trong thành phần của bạn. Dưới đây là cách bạn thay thế biến `index` trong ví dụ trước bằng một biến state:
+- Tham số đầu vào là một giá trị trong JS, đây cũng là giá trị khởi đầu cho state đó.
+- Kết quả trả về là một **array**. Trong đó có 2 phần tử: phần tử thứ nhất là giá trị của state đó, phần tử thứ hai là một function khác.
+
+Xem ví dụ dưới đây:
 
 ```jsx
-import { useState } from "react";
-import { sculptureList } from "./data.js";
+import {useState} from 'react'
 
-export default function Gallery() {
-  const [index, setIndex] = useState(0);
+const App = () => {
+	const countState = useState(10)
+	
+	console.log("count: ", countState[0]);
 
-  function handleClick() {
-    setIndex(index + 1);
-  }
+	return <div>{countState[0]}</div>
+}:
+```
 
-  let sculpture = sculptureList[index];
-  return (
-    <>
-      <button onClick={handleClick}>Next</button>
-      <h2>
-        <i>{sculpture.name} </i>
-        by {sculpture.artist}
-      </h2>
-      <h3>
-        ({index + 1} of {sculptureList.length})
-      </h3>
-      <img src={sculpture.url} alt={sculpture.alt} />
-      <p>{sculpture.description}</p>
-    </>
-  );
+Trong ví dụ, trên, chúng ta khởi tạo một biến là `countState` với giá trị ban đầu bằng 10. `countState` có giá trị là một mảng gồm 2 phần tử. Phần tử ở vị trí 0 của `countState` chính là giá trị của state. Ở trong ví dụ trên thì giá trị của nó ban đầu là 10. Do đó, chúng ta sẽ nhìn thấy số 10 được in ra trên màn hình.
+
+Giá trị state đặc biệt hơn các biến thông thường khác: khi thay đổi, React sẽ tiến hành việc tính toán lại kết quả của [component](/bai-viet/reactjs/component-trong-react-la-gi) và cập nhật lại giao diện. Để có thể cập nhật được giá trị của state. Ta cần sử dụng một function đặc biệt, đó là tham số thứ hai của `countState`:
+
+```jsx
+import {useState} from 'react'
+
+const App = () => {
+	const countState = useState(10)
+	const count = countState[0]
+	const setCount = countState[1]
+
+	const onIncreaseClick = () => {
+		setCount(count + 1)
+	}	
+
+	return (
+		<div>
+			<span>{count}</span>
+			<button onClick={onIncreaseClick}>Increase</button>
+		</div>
+	)
 }
 ```
 
-Bây giờ, `index` đã trở thành một biến state và `setIndex` là hàm setter state. Sử dụng hàm setter `setIndex` trong `handleClick` sẽ cập nhật biến state `index` và kích hoạt React render lại thành phần với dữ liệu mới.
+Function `setCount` nhận vào một tham số là giá trị tiếp theo mà state đó sẽ nhận. Như ở ví dụ trên, ban đầu, giá trị của `count` là 10. Sau khi click vào button “Increase”, giá trị của mới của `count` sẽ bằng giá trị cũ của nó cộng thêm 1 đơn vị.
 
-## Sử dụng Hook đầu tiên của bạn
-
-Trong React, `useState`, cùng với một số Hook khác, được gọi là "Hook." Hooks là các hàm đặc biệt chỉ có sẵn trong quá trình React render (chúng ta sẽ tìm hiểu thêm về điều này sau). Chúng cho phép bạn "kết nối" vào các tính năng khác nhau của React.
-
-::alert{type="warning"}
-
-**Lưu ý**: Các Hook, các hàm bắt đầu bằng "use," chỉ có thể được gọi ở cấp độ cao nhất của các thành phần của bạn hoặc trong các Hook tùy chỉnh của riêng bạn. Bạn không thể gọi Hook bên trong điều kiện, vòng lặp hoặc các hàm lồng nhau khác. Các Hook là hàm, nhưng nó hữu ích khi bạn xem nó như là các khai báo về nhu cầu của thành phần của bạn. Bạn "sử dụng" các tính năng React ở cấp đầu của thành phần tương tự như cách bạn "import" các module ở đầu tệp.
-
+::alert{type="infor"}
+📌 Trong thực tế, người ta thường sử dụng cú pháp destructuring để khai báo biến `state` và `setState`. Cú pháp như sau:
+`const [count, setCount] = useState(10)`. Trong các phần sau, chúng ta sẽ chủ yếu sử dụng cú pháp này.
 ::
 
 ## Cấu trúc của `useState` trong Reactjs
@@ -112,7 +107,7 @@ const [stateVariable, setStateVariable] = useState(initialValue);
 - `setStateVariable` là hàm setter state, nó sẽ cập nhật biến state và kích hoạt React render lại thành phần.
 - `initialValue` là giá trị ban đầu của biến state.
 
-Lưu ý: Quy ước là đặt tên cho cặp này giống như `const [điều_gì_đó, setĐiều_gì_đó]`. Bạn có thể đặt tên bất kỳ, nhưng việc tuân theo quy ước này làm cho mã dễ đọc hơn khi làm việc với React.
+Lưu ý: Quy ước là đặt tên cho cặp này giống như `const [điều_gì_đó, set Điều_gì_đó]`. Bạn có thể đặt tên bất kỳ, nhưng việc tuân theo quy ước này làm cho mã dễ đọc hơn khi làm việc với React.
 
 Mỗi khi thành phần của bạn được render, `useState` sẽ trả về một mảng chứa hai giá trị:
 
