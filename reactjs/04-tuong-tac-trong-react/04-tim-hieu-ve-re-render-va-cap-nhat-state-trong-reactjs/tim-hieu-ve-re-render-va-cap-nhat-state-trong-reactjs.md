@@ -8,12 +8,11 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---
 
-Biến state có vẻ giống như các biến JavaScript thông thường mà bạn có thể đọc và ghi dữ liệu vào. Tuy nhiên, state hoạt động giống như một bản chụp. Việc thiết lập nó không làm thay đổi biến state bạn đã có, mà thay vào đó kích hoạt một quá trình gọi là re-render.
+`State` có vẻ giống như các biến JavaScript thông thường, bạn có thể đọc và ghi dữ liệu vào. Tuy nhiên, `state` hoạt động giống như một bản chụp, việc thiết lập nó không làm thay đổi biến state bạn đã có, mà nó sẽ kích hoạt một quá trình gọi là re-render.
 
-## Khi thiết lập `state`, gây ra re-render
+## Khi setState sẽ gây gây ra re-render
 
-Bạn có thể nghĩ rằng giao diện người dùng của bạn thay đổi trực tiếp dựa trên sự kiện của người dùng như một lần nhấp chuột. Trong React, nó hoạt động khác so với mô hình tư duy này. Trên trang trước, bạn đã thấy rằng việc thiết lập state yêu cầu một yêu cầu re-render từ React. Điều này có nghĩa là để giao diện phản ánh sự kiện, bạn cần phải cập nhật state.
-
+Trong React, khi bạn cập nhật state thì component sẽ bị re-render.
 **Ví dụ:**
 
 ```jsx
