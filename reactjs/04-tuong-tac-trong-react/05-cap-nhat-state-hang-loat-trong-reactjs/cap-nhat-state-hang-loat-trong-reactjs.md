@@ -5,14 +5,16 @@ chapter:
   name: "Tương tác trong Reactjs"
   slug: "chuong-04-tuong-tac-trong-reactjs"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 5
+position: 4
 ---
 
-Khi làm việc với ReactJS, bạn thường sử dụng state để theo dõi và quản lý trạng thái của ứng dụng của bạn. Một điểm cơ bản cần biết là việc thiết lập một biến state sẽ kích hoạt một lần render mới. Tuy nhiên, đôi khi bạn có thể muốn thực hiện nhiều hoạt động trên giá trị state trước khi kích hoạt lần render tiếp theo. Để thực hiện điều này, bạn cần hiểu cách React thực hiện "batching" (gom nhóm) các cập nhật state.
+Khi làm việc với ReactJS, bạn thường sử dụng [state](/bai-viet/reactjs/state-trong-reactjs) để theo dõi và quản lý trạng thái của ứng dụng của bạn. Một điểm cơ bản cần biết là việc thiết lập một biến `state` sẽ kích hoạt một lần render mới. Tuy nhiên, đôi khi bạn có thể muốn thực hiện nhiều hoạt động trên giá trị `state` trước khi kích hoạt lần render tiếp theo. Để thực hiện điều này, bạn cần hiểu cách React thực hiện "batching" (gom nhóm) các cập nhật `state`.
+
+![Cập nhật state hàng loạt trong Reactjs](https://github.com/techmely/hoc-lap-trinh/assets/29374426/9eca7450-57b7-42c4-b33e-47442dcc3ec0)
 
 ## Batching là gì và cách React sử dụng nó để xử lý nhiều cập nhật state
 
-Có thể bạn đã nghĩ rằng khi nhấp vào nút "+3", biến đếm sẽ tăng ba lần vì nó gọi setNumber(number + 1) ba lần:
+Có thể bạn đã nghĩ rằng khi nhấp vào nút "+3", biến đếm sẽ tăng ba lần vì nó gọi `setNumber(number + 1)` ba lần:
 
 ```jsx
 import { useState } from "react";
@@ -37,7 +39,7 @@ export default function Counter() {
 }
 ```
 
-Tuy nhiên, như bạn có thể nhớ từ phần trước, giá trị state của mỗi lần render đều là cố định, vì vậy giá trị của `number` trong trình xử lý sự kiện của lần render đầu tiên luôn luôn là 0, bất kể bạn gọi `setNumber(1)` bao nhiêu lần:
+Tuy nhiên, giá trị `state` của mỗi lần render đều là cố định, vì vậy giá trị của `number` trong trình xử lý sự kiện của lần render đầu tiên luôn luôn là `0`, bất kể bạn gọi `setNumber(1)` bao nhiêu lần:
 
 ```jsx
 setNumber(0 + 1);
@@ -45,15 +47,13 @@ setNumber(0 + 1);
 setNumber(0 + 1);
 ```
 
-Tuy nhiên, còn một yếu tố khác đang ảnh hưởng ở đây. React đợi cho đến khi tất cả mã trong trình xử lý sự kiện đã được thực hiện xong trước khi xử lý các cập nhật state của bạn. Điều này giống như một người phục vụ chờ bạn hoàn thành việc đặt hàng tại nhà hàng. Người phục vụ không chạy vào bếp ngay khi bạn đặt món đầu tiên! Thay vào đó, họ để bạn hoàn thành đơn hàng, để bạn thay đổi đơn hàng nếu cần, thậm chí nhận đơn hàng từ những người khác ngồi cùng bàn.
+Và còn một yếu tố khác sẽ ảnh hưởng ở đây. React đợi cho đến khi tất cả code trong trình xử lý sự kiện đã được thực hiện xong trước khi xử lý các cập nhật state của bạn. Điều này giống như một người phục vụ chờ bạn hoàn thành việc đặt hàng tại nhà hàng. Người phục vụ không chạy vào bếp ngay khi bạn đặt món đầu tiên! Thay vào đó, họ để bạn hoàn thành đơn hàng, để bạn thay đổi đơn hàng nếu cần, thậm chí nhận đơn hàng từ những người khác ngồi cùng bàn.
 
-React xử lý các cập nhật `state` theo cách tương tự. Sau khi bạn gọi `setState()` nhiều lần, React sẽ xem xét tất cả các cập nhật này trước khi thực hiện bất kỳ cập nhật state nào. Điều này cho phép bạn cập nhật nhiều biến state, thậm chí từ nhiều thành phần khác nhau, mà không gây ra quá nhiều lần render. Nhưng điều này cũng đồng nghĩa với việc giao diện người dùng sẽ không được cập nhật cho đến sau khi trình xử lý sự kiện của bạn và bất kỳ mã nào trong đó hoàn thành. Hành vi này, còn được gọi là "batching" (gom nhóm), giúp ứng dụng React của bạn hoạt động nhanh hơn và tránh các trường hợp `render` "chưa hoàn thành" khó hiểu, trong đó chỉ một số biến đã được cập nhật.
-
-**React không gom nhóm các sự kiện click riêng biệt**, điều này đảm bảo rằng React chỉ gom nhóm khi nó làm cho ứng dụng an toàn. Ví dụ, nếu lần nhấp đầu tiên vô hiệu hóa một biểu mẫu, lần nhấp thứ hai sẽ không gửi biểu mẫu đó đi nữa.
+React xử lý các cập nhật `state` theo cách tương tự. Sau khi bạn gọi `setState()` nhiều lần, React sẽ xem xét tất cả các cập nhật này trước khi thực hiện bất kỳ cập nhật `state` nào. Điều này cho phép bạn cập nhật nhiều biến state, thậm chí từ nhiều thành phần khác nhau, mà không gây ra quá nhiều lần render. Nhưng điều này cũng đồng nghĩa với việc giao diện người dùng sẽ không được cập nhật cho đến sau khi trình xử lý sự kiện của bạn và bất kỳ code nào trong đó hoàn thành. Hành vi này, còn được gọi là "batching" (gom nhóm), giúp ứng dụng React của bạn hoạt động nhanh hơn và tránh các trường hợp `render` "chưa hoàn thành" khó hiểu, trong đó chỉ một số biến đã được cập nhật.
 
 ## Cách áp dụng nhiều cập nhật cho cùng một biến state liên tiếp
 
-Mặc dù không phải là trường hợp sử dụng phổ biến, nhưng nếu bạn muốn cập nhật cùng một biến state nhiều lần trước lần render tiếp theo, thay vì truyền giá trị state mới vào như `setNumber(number + 1)`, bạn có thể truyền một hàm tính toán giá trị state mới dựa trên giá trị trước đó trong hàng đợi, như sau: `setNumber(n => n + 1)`. Điều này là cách để cho React biết "làm điều gì đó với giá trị state" thay vì chỉ đơn giản thay thế nó.
+Mặc dù không phải là trường hợp sử dụng phổ biến, nhưng nếu bạn muốn cập nhật cùng một biến `state` nhiều lần trước lần render tiếp theo, thay vì truyền giá trị state mới vào như `setNumber(number + 1)`, bạn có thể truyền một hàm tính toán giá trị state mới dựa trên giá trị trước đó trong hàng đợi, như sau: `setNumber(n => n + 1)`. Điều này là cách để cho React biết "làm điều gì đó với giá trị state" thay vì chỉ đơn giản thay thế nó.
 
 Hãy thử tăng giá trị đếm bằng cách sử dụng cách này:
 
@@ -82,19 +82,19 @@ export default function Counter() {
 
 Ở đây, `n => n + 1` được gọi là một hàm cập nhật. Khi bạn truyền nó vào trình đặt state:
 
-- React đưa hàm này vào hàng đợi để xử lý sau khi tất cả mã trong trình xử lý sự kiện đã chạy xong.
+- React đưa hàm này vào hàng đợi để xử lý sau khi tất cả code trong trình xử lý sự kiện đã chạy xong.
 - Trong lần render tiếp theo, React duyệt qua hàng đợi và truyền giá trị state cuối cùng đã được cập nhật.
   - `setNumber(n => n + 1);`
   - `setNumber(n => n + 1);`
   - `setNumber(n => n + 1);`
 
-Dưới đây là cách React thực hiện các dòng mã này trong khi thực hiện trình xử lý sự kiện:
+Dưới đây là cách React thực hiện các dòng code này trong khi thực hiện trình xử lý sự kiện:
 
 - `setNumber(n => n + 1)`: `n => n + 1` là một hàm. React đưa nó vào hàng đợi.
 - `setNumber(n => n + 1)`: `n => n + 1` là một hàm. React đưa nó vào hàng đợi.
 - `setNumber(n => n + 1)`: `n => n + 1` là một hàm. React đưa nó vào hàng đợi.
 
-Khi bạn gọi `useState` trong lần render tiếp theo, React duyệt qua hàng đợi. Giá trị state trước đó là 0, vì vậy đó là giá trị mà React truyền vào hàm cập nhật đầu tiên như là đối số `n`. Sau đó, React lấy giá trị trả về của hàm cập nhật trước đó và truyền nó vào hàm cập nhật tiếp theo như `n`, và cứ tiếp tục như vậy:
+Khi bạn gọi `useState` trong lần render tiếp theo, React duyệt qua hàng đợi. Giá trị `state` trước đó là `0`, vì vậy đó là giá trị mà React truyền vào hàm cập nhật đầu tiên như là đối số `n`. Sau đó, React lấy giá trị trả về của hàm cập nhật trước đó và truyền nó vào hàm cập nhật tiếp theo như `n`, và cứ tiếp tục như vậy:
 
 - Cập nhật đã được xếp hàng: `"replace with 5"` với `n` là 0 (không sử dụng), trả về 5.
 - `n => n + 1`: với `n` là 5, trả về 5 + 1 = 6.
@@ -142,13 +142,3 @@ Thường thì bạn nên đặt tên đối số của hàm cập nhật bằng
 - `setFriendCount(fc => fc * 2);`
 
 Nếu bạn muốn viết mã dễ đọc hơn, một quy tắc thường thấy là lặp lại tên biến state đầy đủ, chẳng hạn như `setEnabled(enabled => !enabled)`, hoặc sử dụng một tiền tố như `setEnabled(prevEnabled => !prevEnabled)`.
-
-::alert{type="success"}
-
-Tóm tắt:
-
-- Đặt state không thay đổi biến trong lần render hiện tại, mà yêu cầu một lần render mới.
-- React xử lý các cập nhật state sau khi trình xử lý sự kiện đã hoàn thành. Điều này gọi là "batching" (gom nhóm).
-- Để cập nhật một số state nhiều lần trong một sự kiện, bạn có thể sử dụng hàm cập nhật như `setNumber(n => n + 1)`.
-
-::
