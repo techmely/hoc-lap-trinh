@@ -5,12 +5,14 @@ chapter:
   name: "Tương tác trong Reactjs"
   slug: "chuong-04-tuong-tac-trong-reactjs"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 6
+position: 5
 ---
 
-React là một thư viện JavaScript mạnh mẽ cho phát triển giao diện người dùng. Trong quá trình phát triển ứng dụng React, bạn thường sử dụng các biến state để theo dõi và quản lý trạng thái của các thành phần. Trong React, biến `state` có thể chứa bất kỳ loại giá trị JavaScript nào, bao gồm cả đối tượng (object). Tuy nhiên, để cập nhật một đối tượng trong `state`, bạn cần tuân thủ một số quy tắc quan trọng để tránh các vấn đề về hiệu suất và độ tin cậy. Hãy cùng tìm hiểu cách cập nhật đối tượng trong `state` của React một cách đúng đắn.
+Trong quá trình phát triển ứng dụng React, bạn thường sử dụng các biến `state` để theo dõi và quản lý trạng thái của các component. Trong React, biến `state` có thể chứa bất kỳ loại giá trị JavaScript nào, bao gồm cả đối tượng (object). Tuy nhiên, để cập nhật một đối tượng trong `state`, bạn cần tuân thủ một số quy tắc quan trọng để tránh các vấn đề về hiệu suất và độ tin cậy. Hãy cùng tìm hiểu cách cập nhật đối tượng trong `state` của React một cách đúng đắn.
 
-## Nhắc lại useState trong Reactjs
+![Cập nhật state của Đối tượng (Object) trong Reactjs](https://github.com/techmely/hoc-lap-trinh/assets/29374426/5eb321ef-9dff-4e48-881a-fbe04821226a)
+
+## Nhắc lại `useState` trong Reactjs
 
 Trong React, bạn có thể sử dụng hook `useState` để tạo ra biến state. Ví dụ sau cho thấy cách bạn tạo một biến state và cập nhật nó:
 
@@ -74,7 +76,7 @@ Trong ví dụ trên, khi bạn muốn thay đổi email của người dùng, b
 
 ## Sử dụng toán tử Spread
 
-Trong React, bạn có thể tạo ra một bản sao của đối tượng bằng cách sử dụng toán tử Spread (`...`). Toán tử Spread sẽ sao chép tất cả các thuộc tính và giá trị từ đối tượng gốc và cho phép bạn cập nhật một số thuộc tính cụ thể trong bản sao mới mà không làm thay đổi đối tượng gốc. Ví dụ sau minh họa cách bạn sử dụng toán tử Spread để sao chép và cập nhật đối tượng:
+Trong React, bạn có thể tạo ra một bản sao của đối tượng bằng cách sử dụng toán tử Spread (`...`). Toán tử **Spread** sẽ sao chép tất cả các thuộc tính và giá trị từ đối tượng gốc và cho phép bạn cập nhật một số thuộc tính cụ thể trong bản sao mới mà không làm thay đổi đối tượng gốc. Ví dụ sau minh họa cách bạn sử dụng toán tử Spread để sao chép và cập nhật đối tượng:
 
 ```javascript
 import { useState } from "react";
@@ -146,45 +148,3 @@ export default function UpdateNestedObject() {
 ```
 
 Trong ví dụ này, toán tử Spread được sử dụng để tạo bản sao của đối tượng `address` và sau đó tạo bản sao mới của đối tượng `person`, cập nhật đối tượng `address` trong bản sao đó.
-
-## Sử dụng thư viện Immer
-
-Nếu ứng dụng React của bạn có cấu trúc dữ liệu phức tạp và bạn muốn viết mã ngắn gọn hơn khi cập nhật state, bạn có thể sử dụng thư viện Immer. Thư viện này cho phép bạn viết mã giống như bạn đang thay đổi trạng thái một cách trực tiếp (mutable) mà không cần sao chép thủ công đối tượng. Immer sẽ tự động tạo các bản sao và đảm bảo tính bất biến của state.
-
-Dưới đây là một ví dụ về cách bạn sử dụng Immer để cập nhật đối tượng:
-
-```javascript
-import { useImmer } from "use-immer";
-
-export default function UpdateWithImmer() {
-  const [person, updatePerson] = useImmer({
-    name: "Alice",
-    address: {
-      street: "123 Main St",
-      city: "New York",
-    },
-  });
-
-  const updateCity = (newCity) => {
-    updatePerson((draft) => {
-      draft.address.city = newCity;
-    });
-  };
-
-  return (
-    <div>
-      <p>Tên: {person.name}</p>
-      <p>
-        Địa chỉ: {person.address.street}, {person.address.city}
-      </p>
-      <button onClick={() => updateCity("Chicago")}>
-        Đổi thành phố thành Chicago
-      </button>
-    </div>
-  );
-}
-```
-
-Trong ví dụ này, `useImmer` cho phép bạn sử dụng một hàm `updatePerson` để cập nhật trạng thái, và bạn có thể truyền một hàm callback với biến `draft` để thay đổi đối tượng. Immer sẽ tự động xử lý việc tạo bản sao và cập nhật trạng thái một cách bảo đảm tính bất biến.
-
-Những quy tắc và ví dụ trên đảm bảo rằng bạn có khả năng cập nhật đối tượng trong state của React một cách đúng đắn và an toàn. Bằng cách sử dụng toán tử Spread hoặc thư viện `Immer`, bạn có thể viết mã ngắn gọn hơn và duy trì tính bất biến của state, giúp ứng dụng của bạn hoạt động mượt mà và đáng tin cậy hơn.
