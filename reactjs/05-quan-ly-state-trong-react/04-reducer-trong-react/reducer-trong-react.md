@@ -5,7 +5,7 @@ chapter:
   name: "Quản lý state trong React"
   slug: "chuong-05-quan-ly-state-trong-react"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 5
+position: 4
 ---
 
 Trong React, `state` là một khái niệm quan trọng giúp bạn lưu trữ và quản lý dữ liệu trong các `component`. Trạng thái giúp bạn theo dõi các thay đổi và cập nhật giao diện người dùng một cách động dựa trên sự tương tác của người dùng hoặc dữ liệu từ máy chủ. Tuy nhiên, khi các `component` phức tạp và nhiều tương tác, việc quản lý `state` có thể trở nên lộn xộn và khó kiểm soát.

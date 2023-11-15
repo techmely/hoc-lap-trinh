@@ -5,7 +5,7 @@ chapter:
   name: "Quản lý state trong React"
   slug: "chuong-05-quan-ly-state-trong-react"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 3
+position: 2
 ---
 
 Trong quá trình phát triển ứng dụng React, có lúc bạn muốn `state` của hai `component` luôn thay đổi cùng nhau. Để làm điều này, bạn cần loại bỏ `state` khỏi cả hai `component`, di chuyển nó đến `component` cha chung gần nhất của chúng, sau đó truyền nó xuống cho chúng thông qua `props`. Đây được gọi là việc "nâng state lên" và đây là một trong những điều phổ biến nhất bạn sẽ thực hiện khi viết mã React.

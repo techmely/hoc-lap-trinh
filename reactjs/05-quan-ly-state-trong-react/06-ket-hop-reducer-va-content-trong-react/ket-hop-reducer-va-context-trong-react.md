@@ -5,7 +5,7 @@ chapter:
   name: "Quản lý state trong React"
   slug: "chuong-05-quan-ly-state-trong-react"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 1
+position: 6
 ---
 
 Trong React, Reducer (bộ giảm) là một công cụ mạnh mẽ để tối ưu hóa quy trình quản lý `state` của các `component`. Context cho phép bạn truyền thông tin từ `component` gốc đến các `component` khác sâu bên trong ứng dụng. Bài viết này sẽ hướng dẫn bạn cách kết hợp Reducer và Context để quản lý `state` của một màn hình phức tạp mà không cần truyền `state` và hàm điều khiển qua props.

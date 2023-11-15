@@ -5,7 +5,7 @@ chapter:
   name: "Quản lý state trong React"
   slug: "chuong-05-quan-ly-state-trong-react"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 2
+position: 1
 ---
 
 Trong quá trình phát triển ứng dụng React, việc cấu trúc `state` một cách hiệu quả có thể tạo ra sự khác biệt lớn giữa một component dễ dàng chỉnh sửa và fix bug và một component rất khó để sửa chúng. Trong bài viết này, chúng ta sẽ khám phá một số lời khuyên quan trọng khi bạn cần cấu trúc state cho ứng dụng React của bạn.

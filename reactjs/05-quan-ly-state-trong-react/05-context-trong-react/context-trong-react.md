@@ -5,7 +5,7 @@ chapter:
   name: "Quản lý state trong React"
   slug: "chuong-05-quan-ly-state-trong-react"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 6
+position: 5
 ---
 
 Trong React, thường thì bạn sẽ truyền thông tin từ một `component` cha đến một `component` con thông qua `props`. Nhưng việc truyền props có thể trở nên phức tạp và bất tiện khi bạn phải truyền chúng qua nhiều `component` ở giữa, hoặc khi nhiều `component` trong ứng dụng của bạn cần cùng một thông tin. Context cho phép `component` cha làm cho một số thông tin trở nên có sẵn cho bất kỳ `component` nào trong cây `component` dưới nó - bất kể có bao nhiêu lớp, mà không cần truyền thông tin đó một cách tường minh qua props.
