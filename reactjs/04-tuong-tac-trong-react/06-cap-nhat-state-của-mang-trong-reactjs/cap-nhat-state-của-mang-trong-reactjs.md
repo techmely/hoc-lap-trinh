@@ -8,37 +8,28 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 6
 ---
 
-Trong JavaScript, mảng (array) là một cấu trúc dữ liệu có khả năng thay đổi (mutable), nhưng khi bạn lưu trữ chúng trong state của ứng dụng React, bạn nên xem xét chúng như là bất biến (immutable). Tương tự như với các đối tượng (objects), khi bạn muốn cập nhật một mảng được lưu trữ trong state, bạn cần tạo ra một mảng mới (hoặc sao chép một mảng hiện có), sau đó thiết lập state để sử dụng mảng mới đó.
+Trong JavaScript, [mảng](/bai-viet/javascript/mang-array-trong-javascript) là một cấu trúc dữ liệu có khả năng thay đổi (mutable), nhưng khi bạn lưu trữ chúng trong [state](/bai-viet/reactjs/state-trong-reactjs) của ứng dụng React, bạn nên xem xét chúng như là bất biến (immutable). Tương tự như với các đối tượng (objects), khi bạn muốn cập nhật một mảng được lưu trữ trong `state`, bạn cần tạo ra một mảng mới (hoặc sao chép một mảng hiện có), sau đó cập nhật state để sử dụng mảng mới đó.
+
+![Cập nhật state của Mảng (Array) trong Reactjs](https://github.com/techmely/hoc-lap-trinh/assets/29374426/c0961478-8dbc-4a35-abae-213476120182)
 
 ## Cập nhật mảng mà không gây thay đổi
 
-Trong JavaScript, mảng chỉ là một loại đối tượng khác. Tương tự như với các đối tượng, bạn nên xem xét các mảng trong state của React như là chỉ đọc (read-only). Điều này có nghĩa là bạn không nên gán lại các phần tử trong một mảng như `arr[0] = 'bird'`, và bạn cũng không nên sử dụng các phương thức gây thay đổi mảng như `push()` và `pop()`.
+Trong JavaScript, mảng tương tự như đối tượng - bạn nên xem xét các mảng trong `state` của React như là chỉ đọc (read-only). Điều này có nghĩa là bạn không nên gán lại các phần tử trong một mảng như `arr[0] = 'bird'`, và bạn cũng không nên sử dụng các phương thức gây thay đổi mảng như `push()` và `pop()`.
 
-Thay vào đó, mỗi khi bạn muốn cập nhật một mảng, bạn nên truyền một mảng mới cho hàm thiết lập state của bạn. Để làm điều này, bạn có thể tạo ra một mảng mới từ mảng gốc trong state của bạn bằng cách gọi các phương thức không gây thay đổi mảng như `filter()` và `map()`. Sau đó, bạn có thể thiết lập state của bạn để sử dụng mảng mới đã tạo.
+Thay vào đó, mỗi khi bạn muốn cập nhật một mảng, bạn nên truyền một mảng mới cho hàm `setState` của bạn. Để làm điều này, bạn có thể tạo ra một mảng mới từ mảng gốc trong `state` bằng cách gọi các phương thức không gây thay đổi mảng như `filter()` và `map()`. Sau đó, bạn có thể cập nhật `state` của bạn để sử dụng mảng mới đã tạo.
 
-Dưới đây là một bảng tham khảo về các hoạt động phổ biến trên mảng. Khi làm việc với mảng trong state của React, bạn nên tránh sử dụng các phương thức ở cột bên trái, và thay vào đó ưa thích sử dụng các phương thức ở cột bên phải:
+Dưới đây là một bảng tham khảo về các hoạt động phổ biến trên mảng. Khi làm việc với mảng trong `state` của React, bạn nên tránh sử dụng các phương thức ở cột bên trái, và thay vào đó khuyến khích sử dụng các phương thức ở cột bên phải:
 
-| Tránh sử dụng (gây thay đổi mảng)            | Ưa thích sử dụng (trả về mảng mới)                            |
+| Tránh sử dụng (gây thay đổi mảng)            | Khuyến khích sử dụng (trả về mảng mới)                            |
 | -------------------------------------------- | ------------------------------------------------------------- |
 | Thêm phần tử: `push()`, `unshift()`          | Thêm phần tử: `concat()`, `[...arr]` (sử dụng toán tử Spread) |
 | Xóa phần tử: `pop()`, `shift()`, `splice()`  | Xóa phần tử: `filter()`, `slice()`                            |
 | Thay đổi phần tử: `splice()`, `arr[i] = ...` | Thay đổi phần tử: `map()`                                     |
 | Sắp xếp: `reverse()`, `sort()`               | Sắp xếp: Sao chép mảng trước (để sau đó sử dụng `sort()`)     |
 
-Một cách khác, bạn có thể sử dụng thư viện Immer để sử dụng các phương thức từ cả hai cột.
-
-### Lỗi tiềm ẩn
-
-Rất tiếc, `slice` và `splice` có tên giống nhau nhưng khác nhau một cách rõ rệt:
-
-- `slice` cho phép bạn sao chép một mảng hoặc một phần của nó.
-- `splice` gây thay đổi mảng (để chèn hoặc xóa các phần tử).
-
-Trong React, bạn sẽ sử dụng `slice` (không có "p!") nhiều hơn vì bạn không muốn thay đổi các đối tượng hoặc mảng trong state. Lý thuyết về việc cập nhật đối tượng giải thích sự thay đổi và tại sao không khuyến nghị thay đổi state.
-
 ## Thêm phần tử vào mảng trong state của React
 
-Phương thức `push()` sẽ thay đổi mảng mà bạn không muốn:
+Nếu bạn sử dụng phương thức `push()`, state sẽ không được cập nhật mạc dù mảng đã bị thay đổi
 
 ```javascript
 import { useState } from "react";
@@ -51,7 +42,7 @@ export default function List() {
 
   return (
     <>
-      <h1>Những nghệ sĩ điêu khắc đầy cảm hứng:</h1>
+      <h1>Danh sách nghệ sĩ:</h1>
       <input value={name} onChange={(e) => setName(e.target.value)} />
       <button
         onClick={() => {
@@ -73,7 +64,7 @@ export default function List() {
 }
 ```
 
-Thay vào đó, hãy tạo ra một mảng mới chứa các phần tử hiện có và một phần tử mới ở cuối. Có nhiều cách để làm điều này, nhưng cách dễ nhất là sử dụng cú pháp toán tử spread (`...`) cho mảng:
+Thay vào đó, hãy tạo ra một mảng mới chứa các phần tử hiện và một phần tử mới ở cuối. Có nhiều cách để làm điều này, nhưng cách dễ nhất là sử dụng cú pháp toán tử spread (`...`) cho mảng:
 
 ```javascript
 setArtists([...artists, { id: nextId++, name: name }]);
@@ -81,7 +72,7 @@ setArtists([...artists, { id: nextId++, name: name }]);
 
 ## Xóa phần tử khỏi mảng trong state của React
 
-Cách dễ nhất để xóa một phần tử khỏi một mảng là sử dụng phương thức `filter()`. Nói cách khác, bạn sẽ tạo ra một mảng mới không chứa phần tử đó. Để làm điều này, bạn có thể sử dụng phương thức `filter`, ví dụ:
+Cách dễ nhất để xóa một phần tử khỏi một mảng là sử dụng phương thức `filter()`. Nói cách khác, bạn sẽ tạo ra một mảng mới không chứa phần tử đó. Để sử dụng cách này, bạn có thể sử dụng phương thức `filter`, ví dụ:
 
 ```javascript
 import { useState } from "react";
@@ -97,7 +88,7 @@ export default function List() {
 
   return (
     <>
-      <h1>Những nghệ sĩ điêu khắc đầy cảm hứng:</h1>
+      <h1>Danh sách nghệ sĩ:</h1>
       <ul>
         {artists.map((artist) => (
           <li key={artist.id}>
@@ -123,13 +114,13 @@ Bấm vào nút "Xóa" một vài lần và theo dõi xử lý sự kiện của
 setArtists(artists.filter((a) => a.id !== artist.id));
 ```
 
-Ở đây, `artists.filter(a => a.id !== artist.id)` có nghĩa là "tạo ra một mảng chứa những nghệ sĩ có ID khác với `artist.id`". Nói cách khác, nút "Xóa" của từng nghệ sĩ sẽ lọc ra nghệ sĩ đó khỏi mảng và sau đó yêu cầu một lần render lại với mảng kết quả mới. Lưu ý rằng `filter` không thay đổi mảng gốc.
+Ở đây, `artists.filter(a => a.id !== artist.id)` có nghĩa là "tạo ra một mảng chỉ bao gồm các nghệ sĩ có ID khác với `artist.id`". Nói cách khác, nút "Xóa" của từng nghệ sĩ sẽ lọc ra nghệ sĩ đó khỏi mảng và sau đó yêu cầu một lần render lại với mảng kết quả mới.
 
-## Biến đổi mảng trong state của React
+## Biến đổi mảng trong state
 
-Nếu bạn muốn thay đổi một số hoặc tất cả các phần tử trong một mảng, bạn có thể sử dụng `map()` để tạo ra một mảng mới. Hàm mà bạn sẽ truyền vào `map` có thể quyết định xem làm gì với từng phần tử dựa trên dữ liệu hoặc chỉ mục của nó (hoặc cả hai).
+Nếu bạn muốn thay đổi một số hoặc tất cả các phần tử trong một mảng, bạn có thể sử dụng `map()` để tạo ra một mảng mới.
 
-Trong ví dụ sau đây, một mảng chứa tọa độ của hai hình tròn và một hình vuông. Khi bạn nhấn nút, nó chỉ di chuyển các hình tròn xuống 50 pixel. Điều này được thực hiện bằng cách tạo ra một mảng dữ liệu mới sử dụng `map()`:
+Trong ví dụ dưới đây, một mảng chứa tọa độ của hai hình tròn và một hình vuông. Khi bạn nhấn nút, nó chỉ di chuyển các hình tròn xuống 50 pixel. Điều này được thực hiện bằng cách tạo ra một mảng dữ liệu mới sử dụng `map()`:
 
 ```javascript
 import { useState } from 'react';
@@ -177,9 +168,9 @@ export default function ShapeEditor() {
 
 ## Thay thế phần tử trong mảng trong state của React
 
-Thường xuyên, bạn muốn thay thế một hoặc nhiều phần tử trong một mảng. Gán giá trị như `arr[0] = 'bird'` đang làm thay đổi mảng gốc, vì vậy thay vào đó bạn nên sử dụng `map` để làm điều này.
+Đôi khi bạn muốn thay thế một hoặc nhiều phần tử trong một mảng. Gán giá trị như `arr[0] = 'bird'` - điều này sẽ làm thay đổi mảng gốc mà lại không cập nhật state (sẽ không gây re-render)
 
-Để thay thế một phần tử, bạn nên tạo ra một mảng mới với `map`. Bên trong cuộc gọi `map` của bạn, bạn sẽ nhận được chỉ mục phần tử là đối số thứ hai. Sử dụng nó để quyết định liệu có trả lại phần tử ban đầu (đối số thứ nhất) hoặc một cái gì khác:
+Để thay thế một phần tử, bạn nên tạo ra một mảng mới với `map`, hoặc cập nhật mảng gốc và phải set lại state mảng mới
 
 ```javascript
 import { useState } from "react";
@@ -221,9 +212,9 @@ export default function CounterList() {
 }
 ```
 
-## Chèn vào một mảng trong state của React
+## Chèn phần tử vào mảng trong state của React
 
-Đôi khi, bạn có thể muốn chèn một phần tử vào một vị trí cụ thể không phải ở đầu hoặc cuối cùng. Để làm điều này, bạn có thể sử dụng cú pháp `...` kết hợp với phương thức `slice()`. Phương thức `slice()` cho phép bạn cắt một "lát mảng". Để chèn một phần tử, bạn sẽ tạo ra một mảng bằng cách sử dụng cú pháp `...` để chứa lát trước điểm chèn, sau đó là phần tử mới và sau đó là phần còn lại của mảng gốc.
+Đôi khi, bạn muốn chèn một phần tử vào một vị trí cụ thể không phải ở đầu hoặc cuối cùng. Để làm điều này, bạn có thể sử dụng cú pháp `...` kết hợp với phương thức `slice()`.
 
 Trong ví dụ sau đây, nút "Thêm" luôn chèn ở chỉ mục 1:
 
@@ -259,7 +250,7 @@ export default function List() {
 
   return (
     <>
-      <h1>Những nghệ sĩ điêu khắc đầy cảm hứng:</h1>
+      <h1>Danh sách nghệ sĩ:</h1>
       <input
         value={name}
         onChange={e => setName(e.target.value)}
@@ -328,61 +319,3 @@ setList(nextList);
 ```
 
 Mặc dù `nextList` và `list` là hai mảng khác nhau, `nextList[0]` và `list[0]` trỏ đến cùng một đối tượng. Vì vậy, khi bạn thay đổi `nextList[0].seen`, bạn cũng đang thay đổi `list[0].seen`. Điều này có thể dẫn đến sự không nhất quán và lỗi không mong muốn.
-
-## Sử dụng thư viện Immer để làm việc với mảng dễ dàng hơn
-
-Thư viện Immer giúp làm việc với các cấu trúc dữ liệu bất biến (như mảng và đối tượng) trở nên dễ dàng hơn bằng cách cho phép bạn thực hiện các thay đổi "như gây biến đổi" trên chúng. Thay vì phải sao chép mảng hoặc đối tượng và sau đó thay đổi chúng, bạn có thể sử dụng Immer để thực hiện các thay đổi trực tiếp trên một phiên bản tạm thời của cấu trúc dữ liệu và sau đó tự động tạo ra một phiên bản mới, không gây biến đổi.
-
-Để sử dụng Immer trong ứng dụng React, bạn cần cài đặt thư viện và sử dụng hàm `produce()` từ Immer để tạo ra phiên bản mới của state. Dưới đây là một ví dụ về cách sử dụng Immer để cập nhật một mảng:
-
-```javascript
-import { useState } from 'react';
-import produce from 'immer';
-
-let nextId = 3;
-const initialArtists = [
-  { id: 0, name: 'Marta Colvin Andrade' },
-  { id: 1, name: 'Lamidi Olonade Fakeye'},
-  { id: 2, name: 'Louise Nevelson'},
-];
-
-export default function List() {
-  const [name, setName] = useState('');
-  const [artists, setArtists] = useState(initialArtists);
-
-  function handleClick() {
-    setArtists(prevArtists => {
-      return produce(prevArtists, draftArtists => {
-        draftArtists.push({ id: nextId++, name: name });
-      });
-    });
-    setName('');
-  }
-
-  return (
-    <>
-      <h1>Những nghệ sĩ điêu khắc đầy cảm hứng:</h1>
-      <input
-        value={name}
-        onChange={e => setName(e.target.value)}
-      />
-      <button onClick={handleClick}>Thêm</button>
-      <ul>
-        {artists.map(artist => (
-          // Render các nghệ sĩ ở đây
-        ))}
-      </ul>
-    </>
-  );
-}
-```
-
-Trong ví dụ này, chúng ta đã thay đổi phần `handleClick` để sử dụng Immer. Chúng ta gọi `produce()` từ Immer và truyền mảng cần thay đổi `prevArtists` vào hàm này. Sau đó, chúng ta có thể thực hiện các thay đổi trên `draftArtists`, phiên bản tạm thời của mảng. Immer sẽ tự động tạo ra một phiên bản mới của mảng không gây biến đổi sau khi bạn hoàn tất các thay đổi trên `draftArtists`.
-
-Immer giúp giảm bớt việc bạn phải sao chép và quản lý các phiên bản của mảng hoặc đối tượng, làm cho mã của bạn trở nên dễ đọc hơn và ít dễ bị lỗi hơn khi làm việc với trạng thái trong React.
-
-::alert{type="success"}
-
-Khi làm việc với mảng trong React, hãy xem xét chúng như là bất biến (immutable) và tránh gây biến đổi trực tiếp. Thay vào đó, sử dụng các phương thức không gây biến đổi như `map()`, `filter()`, `concat()`, và `...` để tạo ra mảng mới hoặc thay đổi mảng hiện có. Nếu bạn cần thực hiện các thay đổi phức tạp hơn, bạn có thể sử dụng thư viện Immer để làm cho quá trình này dễ dàng hơn và giảm bớt rủi ro lỗi.
-
-::

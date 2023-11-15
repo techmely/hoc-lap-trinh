@@ -8,12 +8,12 @@ image: https://user-images.githubusercontent.com/29374426/168242680-a06573d8-935
 position: 6
 ---
 
-![Mảng array trong Javascript](https://user-images.githubusercontent.com/29374426/168242680-a06573d8-935e-4e59-8933-7a46204eb822.png)
-
 Array trong JavaScript cũng là một loại [object](/bai-viet/javascript/object-la-gi-object-trong-javascript). Nhưng array khác object bình thường ở chỗ là:
 
 - Array (mảng) được thiết kế để **lưu trữ dữ liệu theo thứ tự**.
 - Object (đối tượng) bình thường chỉ là tập hợp của các cặp **key-value**.
+
+![Mảng array trong Javascript](https://user-images.githubusercontent.com/29374426/168242680-a06573d8-935e-4e59-8933-7a46204eb822.png)
 
 Sau đây, mình sẽ tìm hiểu chi tiết về array trong JavaScript.
 
