@@ -5,7 +5,7 @@ chapter:
   name: "Tương tác trong Reactjs"
   slug: "chuong-04-tuong-tac-trong-reactjs"
 image: https://kungfutech.edu.vn/thumbnail.png
-position: 7
+position: 6
 ---
 
 Trong JavaScript, mảng (array) là một cấu trúc dữ liệu có khả năng thay đổi (mutable), nhưng khi bạn lưu trữ chúng trong state của ứng dụng React, bạn nên xem xét chúng như là bất biến (immutable). Tương tự như với các đối tượng (objects), khi bạn muốn cập nhật một mảng được lưu trữ trong state, bạn cần tạo ra một mảng mới (hoặc sao chép một mảng hiện có), sau đó thiết lập state để sử dụng mảng mới đó.
