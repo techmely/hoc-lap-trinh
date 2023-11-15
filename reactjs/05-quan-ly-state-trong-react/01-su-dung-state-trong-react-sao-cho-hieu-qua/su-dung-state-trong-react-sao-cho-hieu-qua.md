@@ -8,11 +8,14 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 1
 ---
 
-Trong quá trình phát triển ứng dụng React, việc cấu trúc `state` một cách hiệu quả có thể tạo ra sự khác biệt lớn giữa một component dễ dàng chỉnh sửa và fix bug và một component rất khó để sửa chúng. Trong bài viết này, chúng ta sẽ khám phá một số lời khuyên quan trọng khi bạn cần cấu trúc state cho ứng dụng React của bạn.
+Trong quá trình phát triển ứng dụng React, việc cấu trúc `state` một cách hiệu quả có thể giúp [component](/bai-viet/reactjs/component-trong-react-la-gi) của bạn dễ dàng chỉnh sửa và fix bug. Trong bài viết này, chúng ta sẽ khám phá một số lời khuyên quan trọng khi bạn cần cấu trúc `state` cho ứng dụng React của bạn.
+
+![Sử dụng State trong React sao cho hiệu quả](https://github.com/techmely/hoc-lap-trinh/assets/29374426/df178bd4-b443-4df7-ba72-0e71d2f8125b)
+
 
 ## Nguyên tắc cho việc cấu trúc `state`
 
-Khi bạn viết một `component` trong React chứa một số `state`, bạn cần phải đưa ra quyết định về việc sử dụng bao nhiêu biến `state` và hình dạng dữ liệu của chúng. Dưới đây là một số nguyên tắc có thể hướng dẫn bạn đưa ra các quyết định tốt hơn:
+Khi bạn viết một `component` trong React chứa một số `state`, bạn cần cân nhắc về việc sử dụng bao nhiêu biến `state` và kiểu dữ liệu của chúng. Dưới đây là một số nguyên tắc có thể hướng dẫn bạn đưa ra các quyết định tốt hơn:
 
 ### Nhóm state có liên quan
 
@@ -22,9 +25,9 @@ Nếu bạn luôn cập nhật hai hoặc nhiều biến `state` cùng một lú
 
 Khi `state` được cấu trúc một cách mà nhiều phần `state` có thể mâu thuẫn và "trái ý" với nhau, bạn để lại khả năng xảy ra lỗi. Hãy cố gắng tránh điều này.
 
-### Tránh state dư thừa
+### Tránh `state` dư thừa
 
-Nếu bạn có thể tính toán một số thông tin từ các `props` của `component` hoặc các biến `state` hiện có trong quá trình render, bạn không nên đặt thông tin đó vào `state` của `component`.
+Nếu bạn có thể tính toán một số thông tin từ các `props` khác của `component` hoặc các biến `state` hiện có trong quá trình render, bạn không nên đặt thông tin đó vào `state` của `component`.
 
 ### Tránh sự trùng lặp trong `state`
 
@@ -32,13 +35,13 @@ Khi dữ liệu giống nhau được lặp lại giữa nhiều biến `state` 
 
 ### Tránh `state` lồng nhau sâu
 
-Trạng thái có cấu trúc phân cấp sâu không tiện lợi cho việc cập nhật. Khi có thể, hãy ưu tiên cấu trúc `state` theo cách phẳng.
+State có cấu trúc phân cấp sâu không tiện lợi cho việc cập nhật. Khi có thể, hãy ưu tiên cấu trúc `state` theo cách phẳng (ít lồng nhau).
 
 ## Ví dụ cách đặt state cho hiệu quả
 
 ### Ví dụ nhóm state có liên quan
 
-Khi bạn đứng trước quyết định giữa việc sử dụng một biến state duy nhất hoặc nhiều biến `state` riêng biệt, hãy xem xét xem liệu hai biến `state` có thay đổi cùng một lúc hay không. Nếu có, hợp nhất chúng thành một biến state duy nhất sẽ giúp bạn tránh quên đồng bộ hóa chúng. Ví dụ:
+Khi bạn đứng trước quyết định giữa việc sử dụng một biến `state` duy nhất hoặc nhiều biến `state` riêng biệt, hãy xem xét xem liệu hai biến `state` có thay đổi cùng một lúc hay không. Nếu có, hợp nhất chúng thành một biến state duy nhất sẽ giúp bạn tránh quên đồng bộ hóa chúng. Ví dụ:
 
 ```jsx
 // Sử dụng nhiều biến state riêng biệt
@@ -151,6 +154,6 @@ Trong ví dụ này, việc cấu trúc state dưới dạng "phẳng" giúp vi�
 
 ::alert{type="success"}
 
-Việc cấu trúc state là một phần quan trọng của việc phát triển ứng dụng React hiệu quả. Bằng cách tuân theo những nguyên tắc cơ bản như nhóm state liên quan, tránh sự không thống nhất và state dư thừa, bạn có thể tạo ra các component dễ quản lý, dễ bảo trì và ít lỗi hơn trong ứng dụng của bạn. Hãy luôn xem xét cách cấu trúc state của bạn để làm cho mã của bạn dễ đọc và hiệu quả hơn.
+Việc cấu trúc state là một phần quan trọng của việc phát triển ứng dụng React hiệu quả. Bằng cách tuân theo những nguyên tắc cơ bản như nhóm `state` liên quan, tránh sự không thống nhất và state dư thừa, bạn có thể tạo ra các `component` dễ quản lý, dễ bảo trì và ít lỗi hơn trong ứng dụng của bạn.
 
 ::
