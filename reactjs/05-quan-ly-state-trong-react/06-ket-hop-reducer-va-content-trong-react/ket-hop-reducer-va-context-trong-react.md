@@ -8,11 +8,14 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 6
 ---
 
-Trong React, Reducer (bộ giảm) là một công cụ mạnh mẽ để tối ưu hóa quy trình quản lý `state` của các `component`. Context cho phép bạn truyền thông tin từ `component` gốc đến các `component` khác sâu bên trong ứng dụng. Bài viết này sẽ hướng dẫn bạn cách kết hợp Reducer và Context để quản lý `state` của một màn hình phức tạp mà không cần truyền `state` và hàm điều khiển qua props.
+Trong React, [Reducer](/bai-viet/reactjs/reducer-trong-react) là một công cụ mạnh mẽ để tối ưu hóa quy trình quản lý `state` của các `component`. [Context](/bai-viet/reactjs/context-trong-react) cho phép bạn truyền dữ liệu từ `component` cha đến các `component` khác sâu bên trong nó. Bài viết này sẽ hướng dẫn bạn cách kết hợp Reducer và Context để quản lý `state` của một màn hình phức tạp mà không cần truyền `state` và `props`.
 
 ## Kết hợp Reducer với Context
 
-Kết hợp Reducer và Context trong React cho phép bạn quản lý `state` của ứng dụng một cách hiệu quả và tránh việc truyền `state` và hàm điều khiển qua nhiều `component` con. Điều này trở nên quan trọng khi ứng dụng phức tạp và có nhiều `component` ở giữa cây `component`.
+Kết hợp Reducer và Context trong React cho phép bạn quản lý `state` của ứng dụng một cách hiệu quả và tránh việc truyền `state` và `props` qua nhiều `component` con. Điều này trở nên quan trọng khi ứng dụng phức tạp và có nhiều `component` ở giữa.
+
+![Kết hợp Reducer và Context trong React](https://github.com/techmely/hoc-lap-trinh/assets/29374426/a3820211-ecbb-44c8-adf9-1ab8f181e06b)
+
 
 ### Bước 1: Tạo Context
 
@@ -27,7 +30,7 @@ export const TasksDispatchContext = createContext(null);
 
 ### Bước 2: Đặt `state` và hàm điều khiển vào Context
 
-Bây giờ, bạn có thể nhập cả hai Context này vào `component` `TaskApp`. Trong ví dụ này, `state` `tasks` và hàm `dispatch` được quản lý bởi Reducer sẽ được cung cấp cho toàn bộ cây `component` dưới đó.
+Bây giờ, bạn có thể nhập cả hai `Context` này vào component `TaskApp`. Trong ví dụ này, `state tasks` và hàm `dispatch` được quản lý bởi Reducer sẽ được cung cấp cho toàn bộ cây `component` dưới đó.
 
 ```jsx
 import { TasksContext, TasksDispatchContext } from "./TasksContext.js";
@@ -62,9 +65,9 @@ function Task({ task }) {
 }
 ```
 
-## Tách mọi thứ vào một tệp duy nhất
+## Lưu ý khi sử dụng Reducer và Context
 
-Để làm cho mã nguồn dễ quản lý hơn, bạn có thể tách cả Reducer và Context vào một tệp duy nhất. Trong ví dụ này, tệp `TasksContext.js` chứa cả hai Context và Reducer, cùng với một `component` `TasksProvider` để quản lý `state` và cung cấp Context.
+Để làm cho mã nguồn dễ quản lý hơn, bạn có thể tách cả `Reducer` và `Context` vào một tệp duy nhất. Trong ví dụ này, tệp `TasksContext.js` chứa cả hai Context và Reducer, cùng với một `component` `TasksProvider` để quản lý `state` và cung cấp Context.
 
 ```jsx
 // TasksContext.js
@@ -106,8 +109,4 @@ export function useTasksDispatch() {
 
 Bây giờ, mã nguồn của các `component` trở nên gọn gàng và không còn phải quan tâm đến việc truyền `state` và hàm điều khiển qua props.
 
-::alert{type="success"}
-
 Kết hợp Reducer và Context trong React giúp bạn quản lý `state` của ứng dụng một cách hiệu quả và tối ưu hóa quy trình làm việc. Bằng cách tạo các Context cho `state` và hàm điều khiển, bạn có thể truy cập chúng từ bất kỳ `component` nào trong cây `component` mà không cần truyền chúng qua props. Điều này giúp làm cho mã nguồn dễ đọc và bảo trì hơn khi ứng dụng của bạn phức tạp lên.
-
-::
