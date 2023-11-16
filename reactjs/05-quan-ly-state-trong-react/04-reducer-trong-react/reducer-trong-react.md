@@ -8,13 +8,15 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 4
 ---
 
-Trong React, `state` là một khái niệm quan trọng giúp bạn lưu trữ và quản lý dữ liệu trong các `component`. Trạng thái giúp bạn theo dõi các thay đổi và cập nhật giao diện người dùng một cách động dựa trên sự tương tác của người dùng hoặc dữ liệu từ máy chủ. Tuy nhiên, khi các `component` phức tạp và nhiều tương tác, việc quản lý `state` có thể trở nên lộn xộn và khó kiểm soát.
+Trong React, [state](/bai-viet/reactjs/state-trong-reactjs) là một khái niệm quan trọng giúp bạn lưu trữ và quản lý dữ liệu trong các `component`. State giúp bạn theo dõi các thay đổi và cập nhật giao diện người dùng dựa trên sự tương tác của người dùng hoặc dữ liệu từ máy chủ. Tuy nhiên, khi các `component` phức tạp và nhiều tương tác, việc quản lý `state` có thể trở nên lộn xộn và khó kiểm soát thì chúng ta có thể nghĩ đến việc sử dụng Reducer
+
+![Reducer trong React](https://github.com/techmely/hoc-lap-trinh/assets/29374426/323678bc-4348-40fd-b32e-e7f6c55ac819)
 
 Trong bài viết này, chúng ta sẽ tìm hiểu về cách sử dụng một kỹ thuật gọi là "reducer" để tối ưu hóa việc quản lý `state` trong React.
 
 ## Reducer là gì?
 
-Một reducer là một hàm JavaScript đơn giản nhận vào hai đối số chính: `state` hiện tại và một đối tượng hành động (action). Nó sau đó trả về `state` mới dựa trên hành động đó. Ví dụ:
+Một reducer là một hàm JavaScript đơn giản nhận vào hai đối số chính: `state` và một đối tượng hành động (action). Nó sau đó trả về `state` mới dựa trên hành động đó. Ví dụ:
 
 ```jsx
 function reducer(state, action) {
@@ -25,7 +27,7 @@ function reducer(state, action) {
 
 ## Chuyển từ `useState` sang `useReducer`
 
-Khi bạn phải quản lý nhiều `state` và có nhiều tương tác khác nhau trong một `component`, việc sử dụng `useState` có thể dẫn đến việc `state` và logic xử lý trải rải rác trong mã nguồn. Điều này có thể khiến mã trở nên khó hiểu và bảo trì.
+Khi bạn phải quản lý nhiều `state` và có nhiều tương tác khác nhau trong một `component`, việc sử dụng `useState` có thể dẫn đến việc `state` và logic xử lý trải rải rác trong code. Điều này có thể khiến code trở nên khó hiểu và bảo trì.
 
 Thay vì sử dụng `useState`, bạn có thể chuyển sang sử dụng `useReducer`. Quy trình chuyển đổi từ `useState` sang `useReducer` bao gồm các bước sau:
 
@@ -66,19 +68,19 @@ function increment() {
 
 ### Bước 2: Viết một reducer function
 
-Bạn cần viết một reducer function để xử lý các hành động mà bạn muốn thực hiện trên `state`. Trong ví dụ trên, reducer function xử lý hành động "INCREMENT" bằng cách tăng giá trị `state` lên 1.
+Bạn cần viết một reducer function để xử lý các hành động mà bạn muốn thực hiện trên `state`. Trong ví dụ trên, reducer function xử lý hành động** "INCREMENT"** bằng cách tăng giá trị `state` lên 1.
 
 ### Bước 3: Sử dụng `useReducer` trong `component` của bạn
 
 Cuối cùng, bạn sẽ sử dụng `useReducer` trong `component` của bạn để quản lý `state` và gửi các hành động khi cần thiết.
 
-## Tại sao sử dụng Reducer?
+## Tại sao sử dụng Reducer trong React?
 
-Sử dụng reducer có một số ưu điểm quan trọng:
+Sử dụng `reducer` có một số ưu điểm sau:
 
-1. **Dễ quản lý:** Reducer giúp bạn tạo một trung tâm xử lý `state` trong ứng dụng của bạn. Tất cả các thay đổi `state` đều được quản lý tập trung trong reducer, làm cho mã nguồn trở nên dễ đọc và dễ bảo trì hơn.
-2. **Tích hợp:** Với reducer, bạn có thể tích hợp tất cả các xử lý liên quan đến `state` vào một nơi duy nhất. Điều này giúp bạn dễ dàng kiểm soát các hành động và giảm nguy cơ xảy ra lỗi.
-3. **Dễ kiểm tra:** Reducer là các hàm JavaScript tiêu chuẩn, có thể dễ dàng kiểm tra độc lập. Bạn có thể viết các unit test cho reducer của bạn để đảm bảo tính chính xác và tạo mã ổn định hơn.
+1. **Dễ quản lý:** Reducer giúp bạn tạo một trung tâm xử lý `state` trong ứng dụng của bạn. Tất cả các thay đổi `state` đều được quản lý tập trung trong reducer, làm cho code trở nên dễ đọc và dễ bảo trì hơn.
+2. **Tích hợp:** Với reducer, bạn có thể tích hợp tất cả các hành động xử lý liên quan đến `state` vào một nơi duy nhất. Điều này giúp bạn dễ dàng kiểm soát các hành động và giảm nguy cơ xảy ra lỗi.
+3. **Dễ test:** Reducer là các hàm JavaScript, có thể dễ dàng test độc lập. Bạn có thể viết các unit test cho reducer của bạn để đảm bảo tính chính xác và tạo code ổn định hơn.
 4. **Mở rộng:** Khi ứng dụng của bạn phát triển và có thêm các hành động phức tạp, reducer giúp bạn mở rộng một cách dễ dàng bằng cách thêm các trường hợp xử lý hành động mới.
 
 ## Ví dụ về sử dụng Reducer trong React
@@ -120,9 +122,5 @@ export default Counter;
 ```
 
 ::alert{type="success"}
-
-Khi bạn cần quản lý `state` phức tạp hoặc khi muốn tối ưu hóa việc quản lý `state` trong React, việc sử dụng reducer là một lựa chọn tốt. Bằng cách gửi các hành động thông qua reducer, bạn có thể kiểm soát `state` của ứng dụng một cách rõ ràng và hiệu quả. Việc này giúp mã nguồn dễ đọc, dễ bảo trì và dễ kiểm tra.
-
-Đừng ngần ngại chuyển từ `useState` sang `useReducer` khi ứng dụng của bạn trở nên phức tạp hơn và bạn muốn tối ưu hóa quy trình quản lý `state` của mình.
-
+Khi bạn cần quản lý `state` phức tạp hoặc khi muốn tối ưu hóa việc quản lý `state` trong React, việc sử dụng reducer là một lựa chọn tối ưu. Bằng cách gửi các hành động thông qua reducer, bạn có thể kiểm soát `state` của ứng dụng một cách rõ ràng và hiệu quả. Việc này giúp code dễ đọc, dễ bảo trì và dễ kiểm tra.
 ::
