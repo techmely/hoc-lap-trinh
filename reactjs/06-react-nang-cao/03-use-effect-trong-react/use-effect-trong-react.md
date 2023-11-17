@@ -8,7 +8,7 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---
 
-`useEffect` là một trong những hooks quan trọng và phổ biến trong thư viện React. Nó cho phép bạn thực hiện các tác vụ phụ sau mỗi lần kết xuất của một component React. Điều này rất hữu ích khi bạn cần đồng bộ hóa component của mình với các hệ thống bên ngoài như API, kết nối máy chủ, hoặc thậm chí là cài đặt các lắng nghe sự kiện.
+`useEffect` là một trong những hooks quan trọng và phổ biến trong thư viện React. Nó cho phép bạn thực hiện các tác vụ phụ sau mỗi lần render của một component React. Điều này rất hữu ích khi bạn cần đồng bộ hóa component của mình với các hệ thống bên ngoài như gọi API, hoặc lắng nghe các event.
 
 ## Effects là gì và sự khác biệt so với sự kiện?
 
