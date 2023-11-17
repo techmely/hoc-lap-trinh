@@ -172,18 +172,5 @@ function MyComp() {
 Lưu ý rằng: Bạn có thể thấy sử dụng phải sử dụng useCallback bên trong ref. Nếu không useCallback sẽ được gọi lại ở mỗi lần hiển thị, điều này sẽ ảnh hưởng không tốt đến tính nhất quán.
 ::
 
-## Sử dụng forwardRef cho component
-
-Trong trường hợp bạn muốn ref một component chứ không phải là các giá trị nhỏ bên trong một component nữa. Chúng ta sẽ cần quan tấm đến forwardRef.
-
-```jsx
-// forwardRef
-const FComp = forwardRef((props, ref) => {
-  return <div {...props} ref={ref}></div>
-})
-
-// the another ways
-function FCompo({ customRef, ...props }) {
-  return <div {...props} ref={customRef}></div>
 }
 ```
