@@ -48,16 +48,14 @@ Sau khi khởi tạo, bạn chỉ việc truy xuất key `current` để lấy g
 import { useRef } from 'react'
 
 function MyComponent() {
-	
-	const myRef = useRef(null);
+  const myRef = useRef(null);
+  useEffect(() => {
+    myRef.current = "Hello world";
+  }, []);
 
-	useEffect(() => {
-		myRef.current = "Hello world";
-	}, []);
+  console.log(myRef.current);
 
-	console.log(myRef.current);
-
-	return (<div>Demo</div>)
+  return (<div>Demo</div>)
 }
 
 // Result 1: null
@@ -108,9 +106,9 @@ Tham chiếu đến real DOM Elements - trong trường hợp này, bạn có th
 
 ```jsx
 function MyComp() {
-	const inputRef = useRef(null);
+  const inputRef = useRef(null);
 
-	return <input type="text" ref={inputRef} />
+  return <input type="text" ref={inputRef} />
 }
 ```
 
@@ -120,18 +118,17 @@ Cho một ví dụ như sau
 
 ```jsx
 function MyComp() {
-	const inputRef = useRef(null);
+  const inputRef = useRef(null);
 
-	const onSubmitForm = (e) => {
-		e.preventDefault();
+  const onSubmitForm = (e) => {
+    e.preventDefault();
+    console.log(inputRef.current.value);
+  }
 
-		console.log(inputRef.current.value);
-	}
-
-	return <form onSubmit={onSubmitForm}>
-		<input type="text" ref={inputRef} />
-		<button htmlType="submit">Submit</button>
-	</form>
+  return <form onSubmit={onSubmitForm}>
+    <input type="text" ref={inputRef} />
+    <button htmlType="submit">Submit</button>
+  </form>
 }
 ```
 
@@ -143,31 +140,31 @@ Lưu ý: Nếu phần tử được hiển thị có điều kiện, bạn có t
 
 ```jsx
 function MyComp() {
-	const [isShowingForm, setShowingForm] = useState(false);
-	const inputRef = useRef(null);
+  const [isShowingForm, setShowingForm] = useState(false);
+  const inputRef = useRef(null);
 
-	const refCallback = useCallback((node) => {
-		console.log(node);
-	}, [])
+  const refCallback = useCallback((node) => {
+    console.log(node);
+  }, [])
 
-	const onSubmitForm = (e) => {
-		e.preventDefault();
+  const onSubmitForm = (e) => {
+    e.preventDefault();
 
-		console.log(inputRef.current.value);
-	}
+    console.log(inputRef.current.value);
+  }
 
-	return <>
-		<button htmlType="button" onClick={() => setShowingForm(!isShowingForm)}>
-			{isShowingForm ? "To Off" : "To On"}
-		</button>
+  return <>
+    <button htmlType="button" onClick={() => setShowingForm(!isShowingForm)}>
+      {isShowingForm ? "To Off" : "To On"}
+    </button>
 		
-		{
-			isShowingForm && <form onSubmit={onSubmitForm}>
-			<input type="text" ref={refCallback} />
-			<button htmlType="submit">Submit</button>
-		</form>
-		}
-	</>
+    {
+      isShowingForm && <form onSubmit={onSubmitForm}>
+        <input type="text" ref={refCallback} />
+        <button htmlType="submit">Submit</button>
+      </form>
+    }
+  </>
 }
 ```
 
@@ -182,11 +179,11 @@ Trong trường hợp bạn muốn ref một component chứ không phải là c
 ```jsx
 // forwardRef
 const FComp = forwardRef((props, ref) => {
-	return <div {...props} ref={ref}></div>
+  return <div {...props} ref={ref}></div>
 })
 
 // the another ways
 function FCompo({ customRef, ...props }) {
-	return <div {...props} ref={customRef}></div>
+  return <div {...props} ref={customRef}></div>
 }
 ```
