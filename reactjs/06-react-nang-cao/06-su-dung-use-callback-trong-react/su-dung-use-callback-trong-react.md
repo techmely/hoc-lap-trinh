@@ -10,15 +10,19 @@ position: 6
 
 React Hooks là một cách mới để quản lý state trong các functional component, đã được giới thiệu từ phiên bản React v16.8. Với các hooks như `useState`, `useEffect`, và nhiều hooks khác, nhà phát triển cuối cùng có thể làm việc với các side effects trong các component function.
 
+![Sử dụng useCallback trong React](https://github.com/techmely/hoc-lap-trinh/assets/29374426/b9e57d5b-d2c4-4cc2-8326-e3cf3c5a781d)
+
 Trong bài viết này, chúng ta sẽ tìm hiểu về `useCallback`, một trong những hooks đặc biệt trong React, và làm thế nào để sử dụng nó một cách hiệu quả.
 
-### Giới thiệu về useCallback
+## Giới thiệu về useCallback
 
 `useCallback` được sử dụng để tối ưu hóa quá trình render của các functional component trong React. Nó rất hữu ích khi một component thường xuyên bị re-render mà không cần thiết trong xử lý sự kiện người dùng, đặc biệt khi có hành vi chức năng phức tạp. Chúng ta sẽ xem qua một ví dụ đơn giản để hiểu rõ cách hook này có thể cải thiện hiệu suất render của component.
 
+::alert{type="warning"}
 Lưu ý, React đã được tối ưu hóa tốt, nên chỉ nên sử dụng tối ưu hóa khi component có khả năng chậm, xử lý tác vụ nặng. Trong trường hợp đó, việc sử dụng `useCallback` có thể giúp tối ưu hiệu suất.
+::
 
-Hãy xem xét một ví dụ đơn giản với Component Counter:
+Hãy xem xét một ví dụ đơn giản với `Component Counter`:
 
 ```jsx
 import React, { useState, useCallback } from "react";
@@ -49,7 +53,7 @@ function Counter() {
 export default Counter;
 ```
 
-Mỗi lần component Counter re-render, cả 4 hàm `increase`, `decrease`, `increaseOther`, và `decreaseOther` sẽ được tạo lại.
+Mỗi lần [component](/bai-viet/reactjs/component-trong-react-la-gi) Counter re-render, cả 4 hàm `increase`, `decrease`, `increaseOther`, và `decreaseOther` sẽ được tạo lại.
 
 Để kiểm tra điều này, chúng ta có thể sử dụng Set để xem các hàm được thêm vào Set mỗi khi Counter re-render:
 
@@ -74,7 +78,7 @@ function Counter() {
 
 Mỗi lần bạn thực hiện hành động (click vào nút tăng/giảm), giá trị trong storeSet sẽ tăng, cho thấy mỗi lần re-render sẽ tạo ra các hàm mới.
 
-### Function Equality trong JavaScript
+## Function Equality trong JavaScript
 
 Chúng ta có thể thấy rằng mỗi hàm trong JavaScript chỉ có thể bằng chính nó. Hãy xem ví dụ sau:
 
@@ -90,11 +94,9 @@ console.log(functionA === functionB); // false
 console.log(functionA === functionA); // true
 ```
 
-Mỗi khi bạn tạo ra một hàm thông qua `factory()`, dù chúng có cùng thực hiện công việc, chúng vẫn là hai đối tượng khác nhau
+Mỗi khi bạn tạo ra một hàm thông qua `factory()`, dù chúng có cùng thực hiện công việc, chúng vẫn là hai đối tượng khác nhau. Điều tương tự cũng xảy ra với React: mỗi lần component re-render, các hàm bên trong nó sẽ được tạo lại.
 
-. Điều tương tự cũng xảy ra với React: mỗi lần component re-render, các hàm bên trong nó sẽ được tạo lại.
-
-### Sử dụng useCallback để memoize
+## Sử dụng useCallback để memoize
 
 Để giải quyết vấn đề trên, chúng ta có thể sử dụng `useCallback` để memoize (cache) lại các hàm giữa các lần render. Ví dụ:
 
