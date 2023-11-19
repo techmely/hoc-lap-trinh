@@ -60,7 +60,7 @@ export default function Form() {
   return (
     <>
       <input ref={inputRef} />
-      <button onClick={handleClick}>Tập trung vào ô nhập</button>
+      <button onClick={handleClick}>focus vào ô nhập</button>
     </>
   );
 }
@@ -119,7 +119,7 @@ Mặc định, React không cho phép một component truy cập các đối tư
 
 ## Truy cập đối tượng DOM của một component con Khác
 
-Trong ví dụ này, chúng ta có một component `<MyInput />` tự tạo và muốn truy cập đối tượng DOM của nó bằng một ref. Mặc dù chúng ta đã sử dụng ref, mặc định React sẽ trả về `null` cho ref này. Điều này dẫn đến việc nhấp vào nút không tập trung vào ô nhập:
+Trong ví dụ này, chúng ta có một component `<MyInput />` tự tạo và muốn truy cập đối tượng DOM của nó bằng một ref. Mặc dù chúng ta đã sử dụng ref, mặc định React sẽ trả về `null` cho ref này. Điều này dẫn đến việc nhấp vào nút không focus vào ô nhập:
 
 ```javascript
 import { useRef } from "react";
@@ -138,7 +138,7 @@ export default function MyForm() {
   return (
     <>
       <MyInput ref={inputRef} />
-      <button onClick={handleClick}>Tập trung vào ô nhập</button>
+      <button onClick={handleClick}>focus vào ô nhập</button>
     </>
   );
 }
@@ -167,7 +167,7 @@ export default function Form() {
   return (
     <>
       <MyInput ref={inputRef} />
-      <button onClick={handleClick}>Tập trung vào ô nhập</button>
+      <button onClick={handleClick}>focus vào ô nhập</button>
     </>
   );
 }
