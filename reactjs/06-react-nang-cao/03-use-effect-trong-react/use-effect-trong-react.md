@@ -1,5 +1,5 @@
 ---
-title: "useEffect trong React"
+title: "Side Effect là gì và useEffect trong React"
 description: "useEffect là một trong những hooks quan trọng và phổ biến trong thư viện React. Nó cho phép bạn thực hiện các tác vụ phụ sau mỗi lần kết xuất của một component React"
 chapter:
   name: "React nâng cao"
@@ -8,28 +8,47 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 3
 ---
 
-`useEffect` là một trong những hooks quan trọng và phổ biến trong thư viện React. Nó cho phép bạn thực hiện các tác vụ phụ sau mỗi lần render của một component React. Điều này rất hữu ích khi bạn cần đồng bộ hóa component của mình với các hệ thống bên ngoài như gọi API, hoặc lắng nghe các event.
+`useEffect` là một trong những hooks quan trọng và phổ biến trong thư viện React. Nó cho phép thực hiện `side effect` bên trong các `function component`, còn side effect là gì thì chúng ta sẽ cùng nhau tìm hiểu trong bài này.
 
-## Effects là gì và sự khác biệt so với sự kiện?
+::alert{type="infor"}
+Có thể bạn chưa biết: hooks là một tính năng mới được thêm vào React 16.8. Nó cho phép bạn có thể sử dụng state và các chứ năng khác của React mà không cần khởi tạo Class, điều đó có nghĩa là có thể sử dụng state trong functional component.
+::
 
-Trước khi tìm hiểu về Effects, hãy hiểu về hai loại logic trong component React:
+## Side Effect là gì
 
-- Mã kết xuất (Rendering code): Đây là nơi bạn nhận `props` và `state`, biến đổi chúng và trả về JSX bạn muốn hiển thị trên màn hình. Mã kết xuất phải là hàm tĩnh, giống như một công thức toán, nó chỉ tính toán kết quả mà không thực hiện bất kỳ điều gì khác.
-- Xử lý sự kiện (Event handlers): Đây là các hàm lồng nhau trong component của bạn thực hiện các hành động thay vì chỉ tính toán chúng. Một xử lý sự kiện có thể cập nhật một trường nhập, gửi yêu cầu `HTTP POST` để mua một sản phẩm hoặc điều hướng người dùng đến màn hình khác.
+![Side Effect là gì](https://github.com/techmely/hoc-lap-trinh/assets/29374426/9aaac367-2f3d-443f-9cbb-76a0095467d5)
 
-Tuy nhiên, đôi khi điều này chưa đủ. Hãy xem xét một ví dụ về component ChatRoom mà phải kết nối với máy chủ chat mỗi khi nó hiển thị trên màn hình. Kết nối với máy chủ không phải là một tính toán tĩnh (nó là một hiệu ứng phụ), vì vậy nó không thể xảy ra trong quá trình kết xuất. Tuy nhiên, không có một sự kiện cụ thể nào giống như một cú nhấp chuột mà khiến ChatRoom xuất hiện.
+Nhiệm vụ của các component và React chủ yếu là tạo ra giao diện người dùng. React đảm bảo việc thay đổi các dữ liệu trên màn hình dựa vào dữ liệu và các tương tác với ứng dụng từ phía người dùng.
 
-Effects cho phép bạn chỉ định các hiệu ứng phụ được gây ra bởi việc kết xuất chính nó, chứ không phải là do một sự kiện cụ thể nào đó. Việc gửi một tin nhắn trong cuộc trò chuyện là một sự kiện vì nó được gây ra trực tiếp bởi người dùng nhấp vào một nút cụ thể. Tuy nhiên, thiết lập kết nối máy chủ là một Effect vì nó nên xảy ra dù làm thế nào mà người dùng tương tác với component.
+Tuy nhiên có rất nhiều những tương tác từ ứng dụng web tới nhiều thành phần khác nhau. Một vài ví dụ có thể kể ra là:
 
-`useEffect` giúp bạn quản lý hiệu suất của ứng dụng và đảm bảo rằng các tác vụ không liên quan đến mã kết xuất chính của bạn vẫn được thực hiện một cách đáng tin cậy. Bạn có thể xác định điều kiện chạy Effect và cũng có thể làm sạch nó sau khi không cần thiết.
+- Xử lý HTTP request, response
+- Tương tác với Local Storage, Session Storage.
+- Xử lý timer (`setTimeout`, `setInterval`)
+- Thực hiện subscribes / unsubscribes các dịch vụ bên ngoài.
+- Tương tác trực tiếp với DOM
 
-Trong đoạn mã React, bạn có thể gọi `useEffect` và truyền một hàm vào đó để định nghĩa các tác vụ cụ thể mà bạn muốn thực hiện. Điều này giúp bạn tách biệt logic của bạn ra khỏi mã kết xuất chính và giữ cho mã của bạn dễ đọc và dễ bảo trì.
+Những logic được thực thi bên ngoài phạm vi của component đều được gọi là các “side effect”. Các side effect có thể cập nhật lại giao diện ứng dụng ở một thời điểm khác nhau.
 
-## Khi nào bạn không cần Effects?
+Xét một ví dụ đơn giản như sau:
 
-Không nên vội vàng thêm Effects vào các component của bạn. Hãy nhớ rằng Effects thường được sử dụng để "thoát ra" khỏi mã React của bạn và đồng bộ hóa với một số hệ thống bên ngoài như các API trình duyệt, tiện ích của bên thứ ba hoặc mạng và vân vân. Nếu Effects của bạn chỉ điều chỉnh trạng thái dựa trên trạng thái khác, bạn có thể không cần Effects.
+1. Người dùng tiến hành đăng nhập. Khi click vào button “Login”, tiến hành gửi thông tin user lên server.
+2. Nếu người dùng nhập chính xác, tiến hành điều hướng về trang chủ.
+3. Nếu người dùng nhập không chính xác, tiến hành hiển thị lỗi yêu cầu người dùng nhập lại.
+
+Ở trong ví dụ trên, bước 1 là công việc của component. Tuy nhiên, bước 2 hoặc bước 3 sẽ được thực hiện dựa vào thông tin kết quả trả về. Đó có thể coi là các side effect, khi việc cập nhật giao diện ứng dụng sẽ phụ thuộc vào kết quả từ bên ngoài.
+
+::alert{type="success"}
+💡 Side effect là một khái niệm trong các ứng dụng nói chung, không chỉ riêng với React. Mỗi một công cụ sẽ có những cách khác nhau để xử lý các side effect. Vì vậy, việc hiểu rõ side effect là một điều quan trọng trong việc xây dựng các ứng dụng hiện đại.
+::
+
+</aside>
 
 ## Cách viết một Effect
+
+Để xử lý các logic bên ngoài component, React cung cấp một function hook đặc biệt là `useEffect`. Cú pháp cơ bản của useEffect như sau:
+
+`useEffect(() => { /* effect here */ })`
 
 Để viết một Effect, bạn thực hiện ba bước sau:
 
@@ -48,7 +67,7 @@ function MyComponent() {
 }
 ```
 
-Mỗi khi component của bạn được kết xuất hoặc trạng thái của nó thay đổi, mã bên trong Effect sẽ chạy.
+Mỗi khi component của bạn được render hoặc state của nó thay đổi, code bên trong Effect sẽ chạy.
 
 ### Bước 2: Xác định điều kiện chạy
 
@@ -72,7 +91,7 @@ function UserProfile({ userId }) {
 
 ### Bước 3: Làm sạch Effect
 
-Một số hiệu ứng cần phải "làm sạch" sau khi chạy. Điều này có thể là việc hủy các kết nối, gỡ bỏ các lắng nghe sự kiện, hoặc thực hiện bất kỳ hành động nào khác để đảm bảo rằng Effect không còn ảnh hưởng đến component của bạn sau khi nó đã được gọi.
+Một số hiệu ứng cần phải "làm sạch" sau khi chạy. Điều này có thể là việc hủy các kết nối, gỡ bỏ các sự kiện, hoặc thực hiện bất kỳ hành động nào khác để đảm bảo rằng Effect không còn ảnh hưởng đến component của bạn sau khi nó đã được gọi.
 
 Bạn có thể thực hiện các công việc này bằng cách trả về một hàm từ Effect:
 
@@ -91,7 +110,7 @@ function MyComponent() {
 }
 ```
 
-Hãy xem xét một ví dụ cụ thể khi bạn muốn làm sạch Effect sau khi thay đổi trang.
+Hãy xem xét một ví dụ cụ thể khi bạn muốn làm sạch `Effect` sau khi thay đổi trang.
 
 ```jsx
 import { useEffect } from "react";
@@ -113,14 +132,14 @@ function MyComponent() {
 
 Một điều quan trọng để hiểu về Effects trong React là chúng có thể chạy hai lần trong quá trình phát triển. Điều này thường xảy ra trong hai tình huống sau:
 
-1. **Mount và update:** Effects sẽ chạy sau mỗi lần kết xuất (mount và update). Điều này bao gồm cả lần đầu tiên khi component được mount (kết xuất lần đầu tiên) và sau mỗi lần trạng thái hoặc props của component thay đổi.
-2. **Khởi tạo (Initialization):** Effects cũng sẽ chạy sau lần đầu tiên component được mount. Điều này có thể dẫn đến việc chúng chạy hai lần: lần đầu khi component được khởi tạo và lần thứ hai khi nó được render lại để cập nhật.
+1. **Mount và update:** Effects sẽ chạy sau mỗi lần render (mount và update), điều này bao gồm cả lần đầu tiên khi component được mount (kết xuất lần đầu tiên) và sau mỗi lần `state` hoặc `props` của `component` thay đổi.
+2. **Khởi tạo (Initialization):** Effects cũng sẽ chạy sau lần đầu tiên component được mount, điều này có thể dẫn đến việc chúng chạy hai lần: lần đầu khi component được khởi tạo và lần thứ hai khi nó được render lại để cập nhật.
 
 Để xác định lý do Effects chạy, bạn có thể sử dụng một điều kiện trong Effect hoặc truyền một mảng thứ hai chứa các phụ thuộc (dependencies). Nếu bạn chỉ muốn chạy Effect một lần sau khi component được mount, bạn có thể truyền một mảng rỗng như sau:
 
 ```jsx
 useEffect(() => {
-  // Mã ở đây sẽ chạy sau khi component được mount
+  // code ở đây sẽ chạy sau khi component được mount
 }, []);
 ```
 
@@ -128,15 +147,8 @@ Nếu bạn muốn Effect chạy sau mỗi lần `userId` thay đổi, bạn có
 
 ```jsx
 useEffect(() => {
-  // Mã ở đây sẽ chạy sau mỗi lần userId thay đổi
+  // code ở đây sẽ chạy sau mỗi lần userId thay đổi
 }, [userId]);
 ```
 
-Nếu bạn để trống mảng dependencies hoặc không truyền nó, Effect sẽ chạy sau mỗi lần kết xuất (mount và update). Điều này có thể gây ra việc chạy Effects không cần thiết và làm tăng tải cho ứng dụng của bạn.
-
-::alert{type="success"}
-
-- Effects trong ReactJS cho phép bạn đồng bộ hóa component của mình với các hệ thống bên ngoài và thực hiện các tác vụ phụ sau mỗi lần kết xuất. Điều này giúp bạn quản lý các tác vụ như gọi API, kết nối máy chủ, hoặc thậm chí cài đặt các lắng nghe sự kiện.
-- Hãy nhớ rằng không phải tất cả các tác vụ đều cần Effects. Bạn nên sử dụng Effects khi bạn muốn thực hiện các tác vụ không liên quan đến mã kết xuất chính của bạn và cần đảm bảo rằng chúng được đồng bộ hóa với trạng thái của bạn. Điều này giúp bạn quản lý hiệu suất của ứng dụng và tránh chạy lại mã không cần thiết.
-
-::
+Nếu bạn để trống mảng dependencies hoặc không truyền nó, Effect sẽ chạy sau mỗi lần render (mount và update). Điều này có thể gây ra việc chạy Effects không cần thiết và làm tăng tải cho ứng dụng của bạn.
