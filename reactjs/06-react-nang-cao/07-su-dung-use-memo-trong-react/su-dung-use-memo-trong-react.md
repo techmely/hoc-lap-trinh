@@ -8,7 +8,9 @@ image: https://kungfutech.edu.vn/thumbnail.png
 position: 7
 ---
 
-Khi ứng dụng của bạn mở rộng, vấn đề về hiệu suất trở nên ngày càng quan trọng hơn. Mặc dù React đã tối ưu và nhanh chóng, việc hiểu và sử dụng các công cụ để làm cho mã của bạn chạy nhanh hơn là điều cần thiết. Một trong số các công cụ này là `useMemo` hook và `useCallback`.
+Khi ứng dụng của bạn mở rộng, vấn đề về hiệu suất trở nên ngày càng quan trọng hơn. Mặc dù React đã tối ưu và nhanh chóng, việc hiểu và sử dụng các công cụ để làm cho mã của bạn chạy nhanh hơn là điều cần thiết. Một trong số các công cụ này là `useMemo` hook và [useCallback](/bai-viet/reactjs/su-dung-use-callback-trong-react).
+
+![Sử dụng useMemo trong React](https://github.com/techmely/hoc-lap-trinh/assets/29374426/be1e7d07-b4f9-49ab-a848-8519c3ee9643)
 
 ### `useMemo` giải quyết vấn đề gì?
 
@@ -95,12 +97,9 @@ function ListedAllNumber({ length }) {
 
 Mặc dù tối ưu hiệu suất là mục tiêu quan trọng, hãy cân nhắc các tác động phụ và khả năng tác động của nó. Điều quan trọng cần lưu ý:
 
-- **Overhead**: `useMemo` là một logic phức tạp và có thể tạo ra vấn đề về hiệu suất hơn là giải quyết vấn đề. Đừng sử dụng nó trừ khi thực sự cần thiết. Đ
-
-ánh giá mức độ cần thiết trước khi sử dụng.
-
+- **Overhead**: `useMemo` là một logic phức tạp và có thể tạo ra vấn đề về hiệu suất hơn là giải quyết vấn đề. Đừng sử dụng nó trừ khi thực sự cần thiết. Đánh giá mức độ cần thiết trước khi sử dụng.
 - **No guarantees**: Mặc dù `useMemo` chỉ gọi lại callback khi dependencies thay đổi, điều này không đảm bảo. Ứng dụng của bạn vẫn cần hoạt động tốt ngay cả khi `useMemo` gọi lại mỗi lần render.
 
-### Kết luận
-
+::alert{type="success"}
 Mục tiêu tối ưu hiệu suất là quan trọng, nhưng cần phải cân nhắc và đánh giá cẩn thận trước khi áp dụng các công cụ như `useMemo`. Bạn cần phải hiểu rõ tác động của nó vào mã của bạn và xác định xem nó có cần thiết không.
+::
