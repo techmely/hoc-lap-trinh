@@ -10,7 +10,9 @@ position: 9
 
 `useImperativeHandle` có lẽ là một trong những hook khó hiểu hơn vì nó hoạt động theo cách rất khác so với hầu hết các hooks. Bắt buộc phải đi ngược lại bản chất khai báo của React khiến nó trở nên khá đặc biệt. Do vậy, nó chỉ nên được sử dụng khi cần thiết. Tuy nhiên, có rất nhiều tình huống mà hook này lại là cần thiết. Vì vậy, mình sẽ trình bày trong bài viết này cùng với phần giải thích về cách thức hoạt động của nó.
 
-### `React.forwardRef`
+![Sử dụng useImperativeHandle trong React](https://github.com/techmely/hoc-lap-trinh/assets/29374426/089eb9eb-db99-42a9-8762-d46f9d7c2f60)
+
+## Nhắc lại về React.forwardRef trong react
 
 Trước khi chúng ta nói về `useImperativeHandle`, trước tiên cần hiểu cách refs hoạt động, đặc biệt là khi chuyển tiếp refs tới các thành phần tuỳ chỉnh. Nếu bạn đã quen thuộc với cách làm việc của refs và `React.forwardRef`, bạn có thể bỏ qua phần này. Nếu không, hãy tìm hiểu sơ về `useRef` trước khi tiếp tục bài viết này.
 
@@ -67,7 +69,7 @@ export default React.forwardRef(CustomInput);
 
 Ở dòng cuối cùng của thành phần tuỳ chỉnh trên, chúng ta gọi `React.forwardRef` và truyền vào `CustomInput`. Bằng cách này, chúng ta đang nói với React rằng thành phần này có thể nhận ref và tham số thứ hai cho `CustomInput` của chúng ta sẽ là ref được truyền vào. Sau đó, tất cả những gì chúng ta cần làm là cho React biết phần tử nào mà ref sẽ trỏ đến trong `CustomInput` của chúng ta.
 
-### `useImperativeHandle`
+## useImperativeHandle trong React là gì
 
 Bây giờ, chúng ta đã hiểu cơ bản về cách hoạt động của refs. Hãy trao đổi thêm về `useImperativeHandle`. Chúng ta sẽ chia thành 2 phần. Phần đầu tiên sẽ là ví dụ cơ bản về `useImperativeHandle` để bạn có thể hiểu nó hoạt động thế nào và khi nào chúng ta cần sử dụng. Phần thứ 2 sẽ về một ví dụ ứng dụng `useImperativeHandle` trong các kịch bản thực tế mà chúng ta cần đến hook này.
 
@@ -77,7 +79,7 @@ Trước khi đi đến phần ví dụ, `useImperativeHandle` được tạo ra
 
 Từ `useImperativeHandle`, bạn có thể làm nhiều việc hơn là chỉ gán một yếu tố ref đến một phần tử.
 
-#### Ví dụ
+## Ví dụ sử dụng useImperativeHandle
 
 Để triển khai một `useImperativeHandle` hook trong thành phần tuỳ chỉnh như `CustomInput`, chúng ta cần:
 
@@ -133,7 +135,9 @@ export default React.forwardRef(CustomInput);
 
 Truyền vào một dependencies là một array tương tự với các hook khác như `useEffect`, `useMemo`,... để quyết định việc kích hoạt lại `useImperativeHandle` khi giá trị của props thay đổi, cập nhật lại giá trị mới nhất mà chúng ta cần để thực hiện các chức năng mà chúng ta cần.
 
-### Phần Kết
+::alert{type="success"}
 
-`useImperativeHandle` được tạo ra cho các kịch bản mà bạn quyết định refs sẽ có và được quyền truy cập gì từ một thành phần tuỳ chỉnh.
-`useImperativeHandle` giúp giới hạn khả năng truy cập đến tầng native của một Component hay một Element để tránh các trường hợp có mục đích xấu.
+- `useImperativeHandle` được tạo ra cho các kịch bản mà bạn quyết định refs sẽ có và được quyền truy cập gì từ một thành phần tuỳ chỉnh.
+- `useImperativeHandle` giúp giới hạn khả năng truy cập đến tầng native của một Component hay một Element để tránh các trường hợp có mục đích xấu.
+
+::
