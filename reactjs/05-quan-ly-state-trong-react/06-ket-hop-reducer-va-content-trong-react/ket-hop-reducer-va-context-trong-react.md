@@ -16,7 +16,6 @@ Kết hợp Reducer và Context trong React cho phép bạn quản lý `state` c
 
 ![Kết hợp Reducer và Context trong React](https://github.com/techmely/hoc-lap-trinh/assets/29374426/a3820211-ecbb-44c8-adf9-1ab8f181e06b)
 
-
 ### Bước 1: Tạo Context
 
 Trước tiên, bạn cần tạo Context bằng cách sử dụng hàm `createContext` từ thư viện React. Trong ví dụ này, chúng ta sẽ tạo hai Context: `TasksContext` để cung cấp danh sách các công việc và `TasksDispatchContext` để cung cấp hàm điều khiển để thay đổi danh sách này.

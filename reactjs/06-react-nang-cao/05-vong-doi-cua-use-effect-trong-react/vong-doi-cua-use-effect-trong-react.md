@@ -22,7 +22,6 @@ Mỗi `component` React đều trải qua cùng một vòng đời cơ bản:
 
 ![image](https://github.com/techmely/hoc-lap-trinh/assets/29374426/7624b5c0-70f4-4349-987b-a076109bd6ad)
 
-
 Hãy xem xét ví dụ sau để minh họa điều này. Dựa trên đoạn code React sử dụng thư viện `React Router`:
 
 ```jsx
@@ -101,7 +100,5 @@ function Example({ count }) {
 ```
 
 Trong ví dụ này, `count` là một dependencies của effect. Nó được sử dụng bên trong effect để tính toán `message`. Vì vậy, chúng ta đưa `count` vào mảng dependencies của `useEffect` để đảm bảo rằng effect sẽ được đồng bộ hóa mỗi khi `count` thay đổi.
-
-
 
 Trong ví dụ này, effect sẽ chạy lại sau mỗi lần `AlwaysRerunEffect` render, ngay cả khi không có dependencies cụ thể nào được xác định.

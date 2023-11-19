@@ -12,7 +12,6 @@ Trong quá trình phát triển ứng dụng React, việc cấu trúc `state` m
 
 ![Sử dụng State trong React sao cho hiệu quả](https://github.com/techmely/hoc-lap-trinh/assets/29374426/df178bd4-b443-4df7-ba72-0e71d2f8125b)
 
-
 ## Nguyên tắc cho việc cấu trúc `state`
 
 Khi bạn viết một `component` trong React chứa một số `state`, bạn cần cân nhắc về việc sử dụng bao nhiêu biến `state` và kiểu dữ liệu của chúng. Dưới đây là một số nguyên tắc có thể hướng dẫn bạn đưa ra các quyết định tốt hơn:

@@ -45,7 +45,7 @@ Bạn có thể truy cập giá trị hiện tại của Ref đó thông qua thu
 Sau khi khởi tạo, bạn chỉ việc truy xuất key `current` để lấy giá trị hoặc gán cho ref một giá trị mà cần giữ cho nó không thay đổi giữa các lần render
 
 ```jsx
-import { useRef } from 'react'
+import { useRef } from "react";
 
 function MyComponent() {
   const myRef = useRef(null);
@@ -55,7 +55,7 @@ function MyComponent() {
 
   console.log(myRef.current);
 
-  return (<div>Demo</div>)
+  return <div>Demo</div>;
 }
 
 // Result 1: null
@@ -108,7 +108,7 @@ Tham chiếu đến real DOM Elements - trong trường hợp này, bạn có th
 function MyComp() {
   const inputRef = useRef(null);
 
-  return <input type="text" ref={inputRef} />
+  return <input type="text" ref={inputRef} />;
 }
 ```
 
@@ -123,12 +123,14 @@ function MyComp() {
   const onSubmitForm = (e) => {
     e.preventDefault();
     console.log(inputRef.current.value);
-  }
+  };
 
-  return <form onSubmit={onSubmitForm}>
-    <input type="text" ref={inputRef} />
-    <button htmlType="submit">Submit</button>
-  </form>
+  return (
+    <form onSubmit={onSubmitForm}>
+      <input type="text" ref={inputRef} />
+      <button htmlType="submit">Submit</button>
+    </form>
+  );
 }
 ```
 
@@ -145,26 +147,28 @@ function MyComp() {
 
   const refCallback = useCallback((node) => {
     console.log(node);
-  }, [])
+  }, []);
 
   const onSubmitForm = (e) => {
     e.preventDefault();
 
     console.log(inputRef.current.value);
-  }
+  };
 
-  return <>
-    <button htmlType="button" onClick={() => setShowingForm(!isShowingForm)}>
-      {isShowingForm ? "To Off" : "To On"}
-    </button>
-		
-    {
-      isShowingForm && <form onSubmit={onSubmitForm}>
-        <input type="text" ref={refCallback} />
-        <button htmlType="submit">Submit</button>
-      </form>
-    }
-  </>
+  return (
+    <>
+      <button htmlType="button" onClick={() => setShowingForm(!isShowingForm)}>
+        {isShowingForm ? "To Off" : "To On"}
+      </button>
+
+      {isShowingForm && (
+        <form onSubmit={onSubmitForm}>
+          <input type="text" ref={refCallback} />
+          <button htmlType="submit">Submit</button>
+        </form>
+      )}
+    </>
+  );
 }
 ```
 
@@ -173,4 +177,7 @@ Lưu ý rằng: Bạn có thể thấy sử dụng phải sử dụng useCallbac
 ::
 
 }
+
+```
+
 ```
