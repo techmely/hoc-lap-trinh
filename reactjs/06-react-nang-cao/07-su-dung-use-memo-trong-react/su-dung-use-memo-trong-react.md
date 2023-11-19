@@ -12,13 +12,13 @@ Khi ứng dụng của bạn mở rộng, vấn đề về hiệu suất trở n
 
 ![Sử dụng useMemo trong React](https://github.com/techmely/hoc-lap-trinh/assets/29374426/be1e7d07-b4f9-49ab-a848-8519c3ee9643)
 
-### `useMemo` giải quyết vấn đề gì?
+## `useMemo` giải quyết vấn đề gì?
 
 `useMemo` trong React là một hook giúp ghi nhớ kết quả của một hàm. Nó cho phép bạn truyền vào hai tham số: callback và dependencies. Khi gọi `useMemo`, nó sẽ gọi hàm và trả về giá trị của nó. Mỗi khi dependencies thay đổi, `useMemo` sẽ kiểm tra và gọi lại callback để tính toán giá trị mới.
 
 Tóm lại, nếu các giá trị dependencies thay đổi, hàm callback sẽ được gọi lại để thực hiện logic bên trong. Đó là cách hoạt động của `useMemo`.
 
-### Sử dụng `useMemo` như thế nào?
+## Sử dụng `useMemo` như thế nào?
 
 Trước khi sử dụng `useMemo`, bạn cần import nó từ thư viện React:
 
@@ -36,7 +36,7 @@ const memoizedValue = useMemo(() => expensiveOperation(param), [param]);
 
 Nếu `expensiveOperation` tốn nhiều công sức tính toán và bạn muốn lưu kết quả khi `param` thay đổi, `useMemo` sẽ giúp lưu lại kết quả này.
 
-### Khi nào nên sử dụng `useMemo`?
+## Khi nào nên sử dụng `useMemo`?
 
 Đầu tiên, đảm bảo mã của bạn không phụ thuộc hoàn toàn vào `useMemo`. Nói cách khác, hãy viết mã mà không cần sử dụng `useMemo` trước tiên và chỉ thêm nó khi cần thiết.
 
@@ -93,7 +93,7 @@ function ListedAllNumber({ length }) {
 }
 ```
 
-### Đừng lạm dụng `useMemo`
+## Đừng lạm dụng `useMemo`
 
 Mặc dù tối ưu hiệu suất là mục tiêu quan trọng, hãy cân nhắc các tác động phụ và khả năng tác động của nó. Điều quan trọng cần lưu ý:
 
