@@ -18,6 +18,7 @@ Có thể nói, sử dụng **console.log** để [debug](/bai-viet/javascript/d
 
 #### Cách 1
 
+```js
     console.log(obj1 [, obj2, ..., objN]);
 
 Đối với cách 1, bạn liệt kê các giá trị, [object](/bai-viet/javascript/object-la-gi-object-trong-javascript) cách nhau bởi dấu phẩy, ví dụ:
@@ -28,21 +29,26 @@ Có thể nói, sử dụng **console.log** để [debug](/bai-viet/javascript/d
 
     console.log(foo, bar, baz);
     // => 1 "bar" {name: "John", age: "30", gender: "male"}
+```
 
 Theo mình đây là cách cơ bản mà hầu như lập trình viên nào cũng sử dụng. Bởi vì, cách này khá đơn giản và nhanh gọn.
 
 #### Cách 2
 
-    console.log(msg [, subst1, ..., substN]);
+```js
+console.log(msg [, subst1, ..., substN]);
+```
 
 Đối với cách 2, bạn hiển thị [string](/bai-viet/javascript/cac-kieu-du-lieu-trong-javascript) cùng với các tham số truyền vào. Mình chưa biết nói sao cho chuẩn. Tuy nhiên, nó khá giống với việc sử dụng hàm **printf()** trong lập trình C, ví dụ:
 
+```js
     const foo = 1;
     const bar = "bar";
     const baz = { name: "John", age: "30", gender: "male" };
 
     console.log("Log: %d, %s and %o", foo, bar, baz);
     // => Log: 1, bar and {name: "John", age: "30", gender: "male"}
+```
 
 Trong đó, phần string hiển thị có 3 tham số cần truyền vào ứng với **%d**, **%s** và **%o**. Và giá trị của nó sẽ được lấy từ 3 thành phần tiếp theo, cách nhau bởi dấu phẩy.
 
@@ -55,12 +61,14 @@ Trong đó, phần string hiển thị có 3 tham số cần truyền vào ứng
 
 Bạn cần sử dụng ký tự đại diện sao cho đúng với kiểu dữ bạn muốn hiển thị. Ngược lại, bạn sẽ thu được kết quả hiển thị không như mong muốn, ví dụ:
 
+```js
     const foo = 1;
     const bar = "bar";
     const baz = { name: "John", age: "30", gender: "male" };
 
     console.log("Log: %d, %s and %s", foo, bar, baz);
     // => Log: 1, bar and Object
+```
 
 Trong ví dụ trên, mặc dù tham số thứ 3 bạn truyền vào là một object. Và bạn cũng muốn hiển thị đầy đủ nội dung của object. Tuy nhiên, nếu bạn sử dụng **%s** thì kết quả thu được sẽ chỉ là một string "Object".
 
@@ -72,6 +80,7 @@ Trên đây, mình nhắc lại 2 cú pháp cơ bản sử dụng console.log r�
 
 Hãy thử xem ví dụ về cách sử dụng console.log sau đây:
 
+```js
     const foo = { name: "Alex", age: "26", gender: "male" };
     const bar = { name: "Jenifer", age: "18", gender: "female" };
     const baz = { name: "John", age: "30", gender: "male" };
@@ -83,6 +92,7 @@ Hãy thử xem ví dụ về cách sử dụng console.log sau đây:
      * {name: "Jenifer", age: "18", gender: "female"}
      * {name: "John", age: "30", gender: "male"}
      */
+```
 
 Cách sử dụng console.log như trên có một vấn đề là: bạn không trực tiếp thấy được mỗi giá trị tương ứng với biến nào. Khi xem log, bạn phải quay lại code để xem thứ tự các biến là gì. Như vậy, chẳng phải là rất mất thời gian hay sao?
 
@@ -90,6 +100,7 @@ Có 2 giải pháp cho vấn đề trên.
 
 - **Giải pháp 1**: Viết thêm nội dung miêu tả
 
+```js
   const foo = { name: "Alex", age: "26", gender: "male" };
   const bar = { name: "Jenifer", age: "18", gender: "female" };
   const baz = { name: "John", age: "30", gender: "male" };
@@ -104,11 +115,13 @@ Có 2 giải pháp cho vấn đề trên.
   - bar {name: "Jenifer", age: "18", gender: "female"}
   - baz {name: "John", age: "30", gender: "male"}
     \*/
+```
 
 Rõ ràng, bây giờ chỉ cần xem log là biết mỗi giá trị tương ứng với biến nào rồi phải không? Cách này khá ổn, tuy nhiên vẫn hơi mất công.
 
 - **Giải pháp 2**: Đóng gói các biến thành object và sử dụng cú pháp khai báo rút gọn của ES6
 
+```js
   const foo = { name: "Alex", age: "26", gender: "male" };
   const bar = { name: "Jenifer", age: "18", gender: "female" };
   const baz = { name: "John", age: "30", gender: "male" };
@@ -122,6 +135,7 @@ Rõ ràng, bây giờ chỉ cần xem log là biết mỗi giá trị tương �
   foo: {name: "Alex", age: "26", gender: "male"},
   }
   _/
+```
 
 Cách này mình thấy khá sáng tạo và thú vị. Bởi cách viết rất ngắn gọn. Mà nội dung hiển thị ra lại đầy đủ và chi tiết.
 
@@ -129,11 +143,13 @@ Cách này mình thấy khá sáng tạo và thú vị. Bởi cách viết rất
 
 Tiếp tục với ví dụ bên trên, mình có thể sử dụng **console.table** để hiển thị các giá trị thành dạng bảng như sau:
 
+```js
     const foo = { name: "Alex", age: "26", gender: "male" };
     const bar = { name: "Jenifer", age: "18", gender: "female" };
     const baz = { name: "John", age: "30", gender: "male" };
 
     console.table([foo, bar, baz]);
+```
 
 Kết quả:
 
@@ -145,6 +161,7 @@ Trong 2 bài viết là: Triển khai Stack trong JavaScript với Array, Object
 
 Trong đó, cách sử dụng của mình như sau:
 
+```js
     let start = performance.now();
 
     let i = 0;
@@ -156,11 +173,13 @@ Trong đó, cách sử dụng của mình như sau:
 
     console.log(`looper: ${end - start}ms`);
     // => looper: 5.25999999808846ms
+```
 
 Ở đây, mình phải lấy thời điểm sau và thời điểm trước rồi trừ cho nhau để suy ra thời gian thực hiện của vòng lặp.
 
 Tuy nhiên, nếu sử dụng **console.time** và **console.timeEnd** thì sẽ đơn giản hơn như sau:
 
+```js
     console.time("looper");
 
     let i = 0;
@@ -170,6 +189,7 @@ Tuy nhiên, nếu sử dụng **console.time** và **console.timeEnd** thì sẽ
 
     console.timeEnd("looper");
     // => looper: 5.14501953125ms
+```
 
 ## Lời kết
 
